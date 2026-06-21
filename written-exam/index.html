@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লিখিত পরীক্ষা — Open Job Solution</title>
+  <meta name="theme-color" content="#1a1814">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      const t = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- MathJax — গণিতের $...$ সমীকরণ সুন্দরভাবে দেখানোর জন্য -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+      },
+      svg: { fontCache: 'global' },
+      options: {
+        // উত্তর লুকানো অবস্থায়ও typeset করা যাবে, সমস্যা নেই
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script" async></script>
+
+  <style>
+    /* ── Filter Bar ── */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+    .filter-select {
+      flex: 1;
+      min-width: 140px;
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.83rem;
+      outline: none;
+      cursor: pointer;
+      transition: border-color var(--transition);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+    }
+    .filter-select:focus { border-color: var(--primary); }
+    .filter-reset {
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text-3);
+      font-family: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .filter-reset:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ── Exam Cards (Home View) ── */
+    .exam-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .exam-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    }
+    .exam-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .exam-card:active { transform: translateY(0); }
+    .exam-ministry {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .exam-post {
+      font-size: 0.82rem;
+      color: var(--text-2);
+      margin-bottom: 8px;
+    }
+    .exam-meta-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .exam-tag {
+      font-size: 0.72rem;
+      padding: 2px 9px;
+      border-radius: 12px;
+      background: var(--surface-2);
+      color: var(--text-3);
+      border: 1px solid var(--border-light);
+    }
+    .exam-tag.date { background: var(--primary-bg); color: var(--primary); border-color: transparent; }
+
+    /* ── Exam Detail View ── */
+    #examView { display: none; }
+
+    .exam-header-detail {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+    }
+    .exam-header-detail h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .exam-header-detail .post-name {
+      font-size: 0.85rem;
+      color: var(--text-2);
+      margin-bottom: 10px;
+    }
+    .exam-info-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text-2);
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      margin-bottom: 14px;
+      transition: all var(--transition);
+    }
+    .back-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ── Subject Filter Tabs (in exam view) ── */
+    .subject-filter-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    /* ── Answer Box ── */
+    .answer-section {
+      margin-top: 10px;
+    }
+    .show-answer-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 6px 14px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      color: var(--primary);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .show-answer-btn:hover { background: var(--primary-bg); border-color: var(--primary); }
+    .answer-body {
+      display: none;
+      margin-top: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 12px 15px;
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .answer-body.visible { display: block; }
+
+    /* ── Empty state ── */
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--text-3);
+    }
+    .empty-state .icon { font-size: 2.5rem; margin-bottom: 10px; }
+    .empty-state p { font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="app-header" id="appHeader">
+    <div class="header-inner">
+      <a href="/" style="text-decoration:none">
+        <span class="app-title">✍️ লিখিত পরীক্ষা</span>
+      </a>
+      <div class="search-wrap" id="searchWrap">
+        <span class="search-icon">🔍</span>
+        <input type="search" class="search-input" id="searchInput"
+               placeholder="মন্ত্রণালয় বা পদ খুঁজুন..." autocomplete="off">
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeBtn" title="Dark/Light">🌙</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- ══ HOME VIEW ══ -->
+    <div id="homeView">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <select class="filter-select" id="ministryFilter">
+          <option value="">সব মন্ত্রণালয়</option>
+        </select>
+        <select class="filter-select" id="yearFilter">
+          <option value="">সব বছর</option>
+        </select>
+        <button class="filter-reset" id="filterReset">↺ রিসেট</button>
+      </div>
+
+      <!-- Result Count -->
+      <div class="result-count" id="resultCount"></div>
+
+      <!-- Exam List -->
+      <div class="exam-grid" id="examGrid"></div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display:none">
+        <div class="icon">🔍</div>
+        <p>কোনো পরীক্ষা পাওয়া যায়নি।<br>ফিল্টার বা সার্চ পরিবর্তন করুন।</p>
+      </div>
+
+    </div>
+
+    <!-- ══ EXAM DETAIL VIEW ══ -->
+    <div id="examView">
+
+      <button class="back-btn" id="backBtn">← ফিরে যান</button>
+
+      <!-- Exam Info -->
+      <div class="exam-header-detail" id="examHeaderDetail"></div>
+
+      <!-- Subject Filter -->
+      <div class="subject-filter-row" id="subjectFilterRow"></div>
+
+      <!-- Questions List -->
+      <div id="questionsList"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+  <!-- Data Files -->
+  <script src="data/job-solution.js"></script>
+  <script src="data/bangla.js"></script>
+  <script src="data/english.js"></script>
+  <script src="data/math.js"></script>
+  <script src="data/general-knowledge.js"></script>
+  <script src="exam-archive.js"></script>
+  <script src="renderer.js"></script>
+
+  <script>
+  // ══════════════════════════════════════════
+  // Theme
+  // ══════════════════════════════════════════
+  const themeBtn = document.getElementById('themeBtn');
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+  }
+  applyTheme(localStorage.getItem('bcs_theme') || 'light');
+  themeBtn.addEventListener('click', () => {
+    const n = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('bcs_theme', n);
+    applyTheme(n);
+  });
+
+  // ══════════════════════════════════════════
+  // Scroll Top
+  // ══════════════════════════════════════════
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ══════════════════════════════════════════
+  // State
+  // ══════════════════════════════════════════
+  let currentSubject = 'all';
+  let currentExamId = null;
+
+  // ══════════════════════════════════════════
+  // Build Dropdowns from EXAM_ARCHIVE
+  // ══════════════════════════════════════════
+  const ministrySet = new Set();
+  const yearSet = new Set();
+
+  EXAM_ARCHIVE.forEach(ex => {
+    ministrySet.add(ex.ministry);
+    if (ex.date) yearSet.add(ex.date.substring(0, 4));
+  });
+
+  const ministryFilter = document.getElementById('ministryFilter');
+  const yearFilter = document.getElementById('yearFilter');
+
+  // মন্ত্রণালয় — sorted alphabetically
+  [...ministrySet].sort().forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m;
+    opt.textContent = m;
+    ministryFilter.appendChild(opt);
+  });
+
+  // বছর — sorted descending (নতুন আগে)
+  [...yearSet].sort((a, b) => b - a).forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearFilter.appendChild(opt);
+  });
+
+  // ══════════════════════════════════════════
+  // Render Exam Cards
+  // ══════════════════════════════════════════
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const [y, m, d] = dateStr.split('-');
+    const months = ['', 'জানু', 'ফেব্রু', 'মার্চ', 'এপ্রিল', 'মে', 'জুন',
+                    'জুলাই', 'আগস্ট', 'সেপ্টে', 'অক্টো', 'নভে', 'ডিসে'];
+    return `${parseInt(d)} ${months[parseInt(m)]} ${y}`;
+  }
+
+  function renderExamCards() {
+    const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+    const ministryVal = ministryFilter.value;
+    const yearVal = yearFilter.value;
+
+    const filtered = EXAM_ARCHIVE.filter(ex => {
+      // মন্ত্রণালয় ফিল্টার
+      if (ministryVal && ex.ministry !== ministryVal) return false;
+      // বছর ফিল্টার
+      if (yearVal && !ex.date.startsWith(yearVal)) return false;
+      // সার্চ — আংশিক মিল, ছোট হাতে
+      if (searchVal) {
+        const haystack = (ex.ministry + ' ' + ex.post).toLowerCase();
+        if (!haystack.includes(searchVal)) return false;
+      }
+      return true;
+    });
+
+    const grid = document.getElementById('examGrid');
+    const empty = document.getElementById('emptyState');
+    const countEl = document.getElementById('resultCount');
+
+    grid.innerHTML = '';
+
+    if (filtered.length === 0) {
+      empty.style.display = 'block';
+      countEl.textContent = '';
+      return;
+    }
+
+    empty.style.display = 'none';
+    countEl.textContent = `${filtered.length}টি পরীক্ষা পাওয়া গেছে`;
+
+    filtered.forEach(ex => {
+      const card = document.createElement('div');
+      card.className = 'exam-card';
+      card.innerHTML = `
+        <div class="exam-ministry">${ex.ministry}</div>
+        <div class="exam-post">${ex.post}</div>
+        <div class="exam-meta-row">
+          <span class="exam-tag date">📅 ${formatDate(ex.date)}</span>
+          <span class="exam-tag">⏱ ${ex.duration || '—'}</span>
+          <span class="exam-tag">📝 ${ex.totalMarks ? toBn(ex.totalMarks) : '—'} নম্বর</span>
+          <span class="exam-tag">${ex.totalQuestions ? toBn(ex.totalQuestions) : '—'}টি প্রশ্ন</span>
+        </div>
+      `;
+      card.addEventListener('click', () => openExam(ex.id));
+      grid.appendChild(card);
+    });
+  }
+
+  // ══════════════════════════════════════════
+  // Open Exam Detail View
+  // ══════════════════════════════════════════
+  function openExam(examId) {
+    currentExamId = examId;
+    currentSubject = 'all';
+
+    const exam = EXAM_ARCHIVE.find(e => e.id === examId);
+    if (!exam) return;
+
+    // Header
+    document.getElementById('examHeaderDetail').innerHTML = `
+      <h2>${exam.ministry}</h2>
+      <div class="post-name">${exam.post}</div>
+      <div class="exam-info-row">
+        <span class="exam-tag date">📅 ${formatDate(exam.date)}</span>
+        <span class="exam-tag">⏱ ${exam.duration || '—'}</span>
+        <span class="exam-tag">📝 ${exam.totalMarks ? toBn(exam.totalMarks) : '—'} নম্বর</span>
+        <span class="exam-tag">${exam.totalQuestions ? toBn(exam.totalQuestions) : '—'}টি প্রশ্ন</span>
+      </div>
+    `;
+
+    // সব প্রশ্ন এই exam এর — examId দিয়ে সরাসরি, নিশ্চিত মিল
+    const allQs = (typeof JOB_SOLUTIONS !== 'undefined' ? JOB_SOLUTIONS : [])
+      .filter(q => q.examId === examId);
+
+    // Subject Tabs — কোন কোন subject আছে সেটা দেখে বানাও
+    buildSubjectTabs(allQs);
+
+    // Show view
+    document.getElementById('homeView').style.display = 'none';
+    document.getElementById('examView').style.display = 'block';
+    document.getElementById('searchWrap').style.display = 'none';
+
+    renderQuestions(examId, currentSubject);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ══════════════════════════════════════════
+  // Build Subject Filter Tabs
+  // ══════════════════════════════════════════
+  const SUBJECT_LABELS = {
+    'all':               'সব',
+    'bangla':            'বাংলা',
+    'english':           'ইংরেজি',
+    'math':              'গণিত',
+    'general-knowledge': 'সাধারণ জ্ঞান',
+  };
+
+  function buildSubjectTabs(questions) {
+    const row = document.getElementById('subjectFilterRow');
+    row.innerHTML = '';
+
+    // কোন subject গুলো আছে বের করো
+    const subjects = ['all', ...new Set(questions.map(q => q.subject).filter(Boolean))];
+
+    subjects.forEach(sub => {
+      const btn = document.createElement('button');
+      btn.className = 'tab-btn' + (sub === currentSubject ? ' active' : '');
+      btn.textContent = SUBJECT_LABELS[sub] || sub;
+      btn.dataset.subject = sub;
+      btn.addEventListener('click', () => {
+        currentSubject = sub;
+        document.querySelectorAll('#subjectFilterRow .tab-btn').forEach(b =>
+          b.classList.toggle('active', b.dataset.subject === sub));
+        renderQuestions(currentExamId, currentSubject);
+      });
+      row.appendChild(btn);
+    });
+  }
+
+  // ══════════════════════════════════════════
+  // Render Questions
+  // ══════════════════════════════════════════
+  function renderQuestions(examId, subject) {
+    const list = document.getElementById('questionsList');
+    list.innerHTML = '';
+
+    if (typeof JOB_SOLUTIONS === 'undefined') {
+      list.innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><p>ডেটা লোড হয়নি।</p></div>';
+      return;
+    }
+
+    // examId দিয়ে সরাসরি মিল — অনুমান নয়, নিশ্চিত সংযোগ
+    let questions = JOB_SOLUTIONS.filter(q => q.examId === examId);
+
+    // Subject filter
+    if (subject !== 'all') {
+      questions = questions.filter(q => q.subject === subject);
+    }
+
+    if (questions.length === 0) {
+      list.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>এই বিষয়ে কোনো প্রশ্ন যোগ হয়নি।</p></div>';
+      return;
+    }
+
+    // qno অনুযায়ী সাজানো (qno সবসময় সংখ্যা হিসেবে রাখা হয়)
+    questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
+
+    questions.forEach(q => {
+      const subLabel = SUBJECT_LABELS[q.subject] || q.subject || '';
+      const topicTag = q.topic ? `<span class="tags">${q.topic}</span>` : '';
+
+      const card = document.createElement('div');
+      card.className = 'question-card';
+      card.innerHTML = `
+        <div class="card-top">
+          <div class="card-meta">
+            <span class="tags subject">${subLabel}</span>
+            ${topicTag}
+            ${q.marks ? `<span class="tags">${toBn(q.marks)} নম্বর</span>` : ''}
+          </div>
+        </div>
+        <div class="question-body">
+          <span class="q-num">${q.qno ? toBn(q.qno) : ''}.</span>
+          <div class="q-text-wrap">
+            <div class="q-text">${escText(q.question || '')}</div>
+          </div>
+        </div>
+        <div class="answer-section">
+          <button class="show-answer-btn">উত্তর দেখুন ▾</button>
+          <div class="answer-body">${renderAnswer(q)}</div>
+        </div>
+      `;
+
+      // Toggle answer
+      const ansBtn = card.querySelector('.show-answer-btn');
+      const ansBody = card.querySelector('.answer-body');
+      ansBtn.addEventListener('click', () => {
+        const open = ansBody.classList.toggle('visible');
+        ansBtn.textContent = open ? 'উত্তর লুকান ▴' : 'উত্তর দেখুন ▾';
+      });
+
+      list.appendChild(card);
+    });
+
+    // সব প্রশ্ন বসানোর পর গণিতের $...$ সমীকরণগুলো সুন্দর করে দেখাও
+    typesetMath(list);
+  }
+
+  function escText(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function toBn(num) {
+    const bnDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    return String(num).replace(/[0-9]/g, d => bnDigits[d]);
+  }
+
+  // গণিতের $...$ অংশগুলো সুন্দর সমীকরণ আকারে রূপান্তর করে
+  function typesetMath(el) {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([el]).catch(err => console.warn('MathJax:', err));
+    } else if (window.MathJax && window.MathJax.startup) {
+      window.MathJax.startup.promise.then(() => window.MathJax.typesetPromise([el]));
+    }
+  }
+
+  // ══════════════════════════════════════════
+  // Back Button
+  // ══════════════════════════════════════════
+  document.getElementById('backBtn').addEventListener('click', () => {
+    document.getElementById('examView').style.display = 'none';
+    document.getElementById('homeView').style.display = 'block';
+    document.getElementById('searchWrap').style.display = '';
+    currentExamId = null;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ══════════════════════════════════════════
+  // Filter & Search Events
+  // ══════════════════════════════════════════
+  let searchTimer;
+  document.getElementById('searchInput').addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(renderExamCards, 200);
+  });
+  ministryFilter.addEventListener('change', renderExamCards);
+  yearFilter.addEventListener('change', renderExamCards);
+  document.getElementById('filterReset').addEventListener('click', () => {
+    document.getElementById('searchInput').value = '';
+    ministryFilter.value = '';
+    yearFilter.value = '';
+    renderExamCards();
+  });
+
+  // ══════════════════════════════════════════
+  // Init
+  // ══════════════════════════════════════════
+  renderExamCards();
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/written-exam/sw.js', { scope: '/written-exam/' })
+        .catch(err => console.warn('SW:', err));
+    });
+  }
+  navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!window.__swReloaded) { window.__swReloaded = true; window.location.reload(); }
+  });
+  </script>
+
+</body>
+</html>

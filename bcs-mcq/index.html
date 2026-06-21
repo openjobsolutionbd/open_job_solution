@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>বিসিএস MCQ প্র্যাকটিস</title>
+  
+  <!-- ✅ Theme Prevention Script — MUST be first to prevent flash -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <meta name="theme-color" content="#1a1814">
+  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--text-2); font-size: 0.85rem;
+      text-decoration: none; margin-bottom: 16px;
+    }
+    .back-link:hover { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <span class="app-title">বিসিএস MCQ <span class="app-version" id="appVersion"></span></span>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="search" id="searchInput" class="search-input"
+        placeholder="প্রশ্ন বা টপিক খুঁজুন…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="weakModeBtn" title="দুর্বল প্রশ্ন আগে">🔴</button>
+      <button class="icon-btn" id="bookmarkModeBtn" title="বুকমার্ক"><svg class="bm-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+      <button class="icon-btn" id="readingModeBtn" title="রিডিং মোড">📖</button>
+      <button class="icon-btn" id="themeBtn" title="Dark/Light">🌙</button>
+      <button class="icon-btn reset-icon" id="headerResetBtn" title="সব রিসেট">🔄</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <a class="back-link" href="../">⬅️ হোমে ফিরুন</a>
+
+  <!-- বিষয় ট্যাব -->
+  <div class="subject-tabs" id="subjectTabs"></div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <div class="progress-stats">
+      <span class="stat-item"><span class="stat-dot pending"></span>মোট: <span class="stat-num" id="totalCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot correct"></span>সঠিক: <span class="stat-num" id="correctCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot incorrect"></span>ভুল: <span class="stat-num" id="incorrectCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot pending"></span>বাকি: <span class="stat-num" id="pendingCount">০</span></span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <p class="result-count" id="resultCount"></p>
+  <div class="reading-mode-banner" id="readingModeBanner">📖 রিডিং মোড চালু — সব উত্তর ও ব্যাখ্যা দেখা যাচ্ছে</div>
+
+  <div id="questionsContainer"></div>
+  <div id="paginationContainer" class="pagination-wrap"></div>
+
+  <div class="reset-wrap">
+    <button class="reset-btn" id="resetBtn">↺ পুনরায় শুরু করুন</button>
+  </div>
+
+</main>
+
+<button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+<!-- ডেটা ফাইল — নতুন বিষয় যোগ হলে এখানে script tag যোগ করুন -->
+<script src="data/science.js"></script>
+<script src="data/computer.js"></script>
+<script src="data/geography.js"></script>
+<script src="data/bangla.js"></script>
+<script src="data/english.js"></script>
+<script src="data/bangladesh.js"></script>
+<script src="data/international.js"></script>
+<script src="data/math.js"></script>
+<script src="data/mental.js"></script>
+<script src="data/ethics.js"></script>
+
+<script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/bcs-mcq/sw.js').catch(err => {
+        console.warn('[SW] Registration failed:', err);
+      });
+    });
+  }
+</script>
+<script>
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  if (!window.__swReloaded) {
+    window.__swReloaded = true;
+    window.location.reload();
+  }
+});
+</script>
+</body>
+</html>

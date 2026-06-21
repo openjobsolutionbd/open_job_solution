@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Job Solution</title>
+  <meta name="theme-color" content="#1a1814">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Open Job Solution">
+  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f1eb;
+      --surface: #ffffff;
+      --border: #e0d8cc;
+      --text-primary: #1a1814;
+      --text-secondary: #6b6358;
+      --accent-bcs: #2563eb;
+      --accent-primary: #16a34a;
+      --accent-written: #9333ea;
+      --shadow: 0 2px 16px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+      --radius: 16px;
+    }
+    [data-theme="dark"] {
+      --bg: #1a1814;
+      --surface: #24211c;
+      --border: #3a3530;
+      --text-primary: #f0ece4;
+      --text-secondary: #a89e92;
+      --shadow: 0 2px 16px rgba(0,0,0,0.4);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    body {
+      font-family: 'Noto Serif Bengali', serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .app-logo { font-size: 2.8rem; margin-bottom: 8px; }
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      text-decoration: none;
+      color: var(--text-primary);
+      box-shadow: var(--shadow);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card:active { transform: translateY(0px); }
+
+    .card.bcs:hover  { border-color: var(--accent-bcs); }
+    .card.prim:hover { border-color: var(--accent-primary); }
+    .card.writ:hover { border-color: var(--accent-written); }
+
+    .card-icon {
+      font-size: 2.2rem;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+    }
+    .bcs  .card-icon { background: #eff6ff; }
+    .prim .card-icon { background: #f0fdf4; }
+    .writ .card-icon { background: #faf5ff; }
+    [data-theme="dark"] .bcs  .card-icon { background: #1e3a5f; }
+    [data-theme="dark"] .prim .card-icon { background: #14532d; }
+    [data-theme="dark"] .writ .card-icon { background: #3b1f5e; }
+
+    .card-text { flex: 1; }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .arrow {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .theme-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      transition: background 0.3s;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+  <script>
+    (function() {
+      const t = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <button class="theme-btn" id="themeBtn" title="Dark/Light">🌙</button>
+
+  <header>
+    <div class="app-logo">📋</div>
+    <h1>Open Job Solution</h1>
+    <p class="subtitle">উন্মুক্ত প্রস্তুতি</p>
+  </header>
+
+  <div class="cards">
+    <a class="card bcs" href="/bcs-mcq/">
+      <div class="card-icon">📚</div>
+      <div class="card-text">
+        <div class="card-title">বিসিএস MCQ</div>
+        <div class="card-desc">বাংলা, ইংরেজি, বিজ্ঞান, গণিত সহ সব বিষয়</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card prim" href="/primary-mcq/">
+      <div class="card-icon">🏫</div>
+      <div class="card-text">
+        <div class="card-title">প্রাইমারি MCQ</div>
+        <div class="card-desc">প্রাথমিক বিদ্যালয় সহকারী শিক্ষক পরীক্ষার MCQ</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card writ" href="/written-exam/">
+      <div class="card-icon">✍️</div>
+      <div class="card-text">
+        <div class="card-title">লিখিত পরীক্ষার প্রস্তুতি</div>
+        <div class="card-desc"> ১১-২০তম গ্রেডের লিখিত বাংলা, ইংরেজি, গণিত, সাধারণ জ্ঞান</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+
+  <footer>Open Job Solution · v1.16</footer>
+
+  <script>
+    const btn = document.getElementById('themeBtn');
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      btn.textContent = t === 'dark' ? '☀️' : '🌙';
+    }
+    applyTheme(localStorage.getItem('bcs_theme') || 'light');
+    btn.addEventListener('click', () => {
+      const n = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('bcs_theme', n);
+      applyTheme(n);
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(err => {
+          console.warn('SW registration failed:', err);
+        });
+      });
+    }
+  </script>
+<script>
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  if (!window.__swReloaded) {
+    window.__swReloaded = true;
+    window.location.reload();
+  }
+});
+</script>
+</body>
+</html>

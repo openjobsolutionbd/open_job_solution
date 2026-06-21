@@ -1,0 +1,23 @@
+{
+  "name": "Open Job Solution",
+  "short_name": "Job Solution",
+  "description": "বিসিএস, প্রাইমারি ও লিখিত পরীক্ষার সম্পূর্ণ প্রস্তুতি — এক অ্যাপে",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1814",
+  "theme_color": "#1a1814",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/"
+}

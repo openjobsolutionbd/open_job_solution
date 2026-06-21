@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Primary MCQ — প্রাথমিক সহকারী শিক্ষক</title>
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <meta name="theme-color" content="#1a1814">
+  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .year-filter{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+    .year-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);background:var(--surface);color:var(--text-3);font-size:0.75rem;font-family:inherit;cursor:pointer;transition:all var(--transition)}
+    .year-btn:hover{border-color:var(--primary);color:var(--primary)}
+    .year-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--text-2);font-size:0.85rem;text-decoration:none;margin-bottom:16px}
+    .back-link:hover{color:var(--primary)}
+    .question-body .bookmark-btn{width:18px;height:18px;border:none;background:none;flex-shrink:0}
+    .question-body .bookmark-btn:hover{background:var(--surface-2)}
+  </style>
+</head>
+<body>
+
+<header class="app-header" id="appHeader">
+  <div class="header-inner">
+    <span class="app-title">Primary MCQ</span>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="search" id="searchInput" class="search-input"
+        placeholder="প্রশ্ন খুঁজুন…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="bookmarkModeBtn" title="বুকমার্ক">
+        <svg class="bm-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="17" height="17"
+          fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" title="Dark/Light">🌙</button>
+      <button class="icon-btn reset-icon" id="resetBtn" title="সব রিসেট">🔄</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <a class="back-link" href="../">⬅️ হোমে ফিরুন</a>
+
+  <div class="subject-tabs" id="subjectTabs"></div>
+  <div class="year-filter" id="yearFilter"></div>
+
+  <div class="progress-section">
+    <div class="progress-stats">
+      <span class="stat-item"><span class="stat-dot pending"></span>মোট: <span class="stat-num" id="totalCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot correct"></span>সঠিক: <span class="stat-num" id="correctCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot incorrect"></span>ভুল: <span class="stat-num" id="incorrectCount">০</span></span>
+      <span class="stat-item"><span class="stat-dot pending"></span>বাকি: <span class="stat-num" id="pendingCount">০</span></span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <p class="result-count" id="resultCount"></p>
+  <div id="questionsContainer"></div>
+  <div id="paginationContainer" class="pagination-wrap"></div>
+
+  <div class="reset-wrap">
+    <button class="reset-btn" id="resetBtnBottom">↺ পুনরায় শুরু করুন</button>
+  </div>
+</main>
+
+<button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+<script src="data/data.js"></script>
+<script>
+const STORE_KEY = 'primary_mcq_v1';
+const PER_PAGE  = 20;
+
+const SUBJECTS = [
+  { id: 'all',     label: 'সব প্রশ্ন' },
+  { id: 'bangla',  label: 'বাংলা' },
+  { id: 'math',    label: 'গণিত' },
+  { id: 'english', label: 'English' },
+  { id: 'gk',      label: 'সাধারণ জ্ঞান' },
+  { id: 'child',   label: 'শিশু বিকাশ' },
+];
+
+let S = { answered:{}, bookmarks:{}, subject:'all', year:'all', page:1, mode:'normal', search:'' };
+
+function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch(e){} }
+function load() { try { const r=localStorage.getItem(STORE_KEY); if(r) Object.assign(S,JSON.parse(r)); } catch(e){} }
+
+const D=['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+function bn(n){ return String(n).replace(/\d/g,d=>D[+d]); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function allQ(){
+  return Object.entries(PRIMARY_DATA).flatMap(([subj,qs])=>qs.map(q=>({...q,subject:subj})));
+}
+function filteredQ(){
+  let qs = S.subject==='all' ? allQ() : (PRIMARY_DATA[S.subject]||[]).map(q=>({...q,subject:S.subject}));
+  if(S.year!=='all') qs=qs.filter(q=>q.year===S.year);
+  if(S.mode==='bookmark') qs=qs.filter(q=>S.bookmarks[q.id]);
+  if(S.search.trim()){ const t=S.search.trim().toLowerCase(); qs=qs.filter(q=>q.q.toLowerCase().includes(t)||q.options.some(o=>o.toLowerCase().includes(t))); }
+  return qs;
+}
+function getYears(){
+  const qs = S.subject==='all' ? allQ() : (PRIMARY_DATA[S.subject]||[]);
+  return [...new Set(qs.map(q=>q.year))].sort();
+}
+function getStats(){
+  const all=allQ(); let c=0,w=0;
+  all.forEach(q=>{ const a=S.answered[q.id]; if(a){ a.correct?c++:w++; } });
+  return {total:all.length, correct:c, incorrect:w, pending:all.length-c-w};
+}
+
+function renderTabs(){
+  const bar=document.getElementById('subjectTabs'); bar.innerHTML='';
+  SUBJECTS.forEach(s=>{
+    const cnt=s.id==='all'?allQ().length:(PRIMARY_DATA[s.id]||[]).length;
+    const btn=document.createElement('button');
+    btn.className='tab-btn'+(s.id===S.subject?' active':'');
+    btn.textContent=s.label+' ('+bn(cnt)+')';
+    btn.onclick=()=>{ S.subject=s.id; S.year='all'; S.page=1; save(); render(); };
+    bar.appendChild(btn);
+  });
+}
+
+function renderYears(){
+  const bar=document.getElementById('yearFilter'); bar.innerHTML='';
+  const years=getYears(); if(years.length<=1) return;
+  const all=document.createElement('button');
+  all.className='year-btn'+(S.year==='all'?' active':'');
+  all.textContent='সব বছর';
+  all.onclick=()=>{ S.year='all'; S.page=1; save(); render(); };
+  bar.appendChild(all);
+  years.forEach(y=>{ const b=document.createElement('button'); b.className='year-btn'+(S.year===y?' active':''); b.textContent=y; b.onclick=()=>{ S.year=y; S.page=1; save(); render(); }; bar.appendChild(b); });
+}
+
+function renderStats(){
+  const st=getStats();
+  document.getElementById('totalCount').textContent=bn(st.total);
+  document.getElementById('correctCount').textContent=bn(st.correct);
+  document.getElementById('incorrectCount').textContent=bn(st.incorrect);
+  document.getElementById('pendingCount').textContent=bn(st.pending);
+  document.getElementById('progressFill').style.width=(st.total>0?(st.correct/st.total*100):0)+'%';
+}
+
+function renderQuestions(){
+  const con=document.getElementById('questionsContainer');
+  const qs=filteredQ();
+  const totalPages=Math.ceil(qs.length/PER_PAGE)||1;
+  if(S.page>totalPages) S.page=1;
+  const start=(S.page-1)*PER_PAGE;
+  const pageQs=qs.slice(start,start+PER_PAGE);
+
+  const rc=document.getElementById('resultCount');
+  rc.textContent=(S.search||S.year!=='all'||S.mode==='bookmark') ? bn(qs.length)+'টি প্রশ্ন পাওয়া গেছে' : '';
+
+  con.innerHTML='';
+  if(!pageQs.length){ con.innerHTML='<div class="no-results">কোনো প্রশ্ন পাওয়া যায়নি।</div>'; renderPagination(qs.length,totalPages); return; }
+
+  const OPT_LABELS=['ক','খ','গ','ঘ'];
+  const SUBJ_LABEL=Object.fromEntries(SUBJECTS.map(s=>[s.id,s.label]));
+
+  pageQs.forEach((q,i)=>{
+    const ans=S.answered[q.id]; const bm=S.bookmarks[q.id];
+    let sc=''; if(ans) sc=ans.correct?' answered-correct':' answered-incorrect'; if(bm) sc+=' bookmarked';
+    const card=document.createElement('div'); card.className='question-card'+sc;
+
+    const opts=q.options.map((opt,oi)=>{
+      let cls='option-btn'; let icon='';
+      if(ans){ cls+=' disabled'; if(oi===q.answer){cls+=' correct-choice';icon='✓';} else if(oi===ans.selected){cls+=' incorrect-choice';icon='✗';} else cls+=' dimmed'; }
+      return `<button class="${cls}" data-idx="${oi}"><span class="opt-label">${OPT_LABELS[oi]}</span><span class="opt-text">${esc(opt)}</span><span class="opt-icon">${icon}</span></button>`;
+    }).join('');
+
+    card.innerHTML=`
+      <div class="card-top">
+        <div class="card-meta">
+          <span class="tags subject">${esc(SUBJ_LABEL[q.subject]||q.subject)}</span>
+          <span class="tags">${esc(q.year)}</span>
+        </div>
+        <button class="icon-btn bookmark-btn${bm?' active':''}" data-qid="${q.id}" title="চিহ্নিত করুন">
+          <svg class="bm-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="8.5" height="8.5"
+            fill="${bm?'currentColor':'none'}" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        </button>
+      </div>
+      <div class="question-body">
+        <span class="q-num">${bn(start+i+1)}।</span>
+        <div class="q-text-wrap"><span class="q-text">${esc(q.q)}</span></div>
+      </div>
+      <div class="options-list">${opts}</div>
+      <div class="explanation-wrap${ans?' visible':''}">
+        <div class="explanation-box"><strong>ব্যাখ্যা:</strong> ${esc(q.explanation||'—')}</div>
+      </div>`;
+
+    card.querySelectorAll('.option-btn:not(.disabled)').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const sel=+btn.dataset.idx;
+        S.answered[q.id]={correct:sel===q.answer, selected:sel};
+        save(); renderQuestions(); renderStats();
+      });
+    });
+
+    card.querySelector('.bookmark-btn').addEventListener('click',()=>{
+      if(S.bookmarks[q.id]) delete S.bookmarks[q.id]; else S.bookmarks[q.id]=true;
+      save();
+      if(S.mode==='bookmark'){S.page=1;render();} else renderQuestions();
+    });
+
+    con.appendChild(card);
+  });
+
+  renderPagination(qs.length, totalPages);
+}
+
+function renderPagination(total, totalPages){
+  const con=document.getElementById('paginationContainer'); con.innerHTML='';
+  if(totalPages<=1) return;
+  const prev=document.createElement('button'); prev.className='page-btn page-nav'; prev.textContent='←'; prev.disabled=S.page===1;
+  prev.onclick=()=>{ S.page--; save(); render(); window.scrollTo({top:0,behavior:'smooth'}); };
+  con.appendChild(prev);
+  for(let i=1;i<=totalPages;i++){
+    const show=i===1||i===totalPages||(i>=S.page-2&&i<=S.page+2);
+    if(!show){ const last=con.lastElementChild; if(!last||!last.classList.contains('page-ellipsis')){ const d=document.createElement('span'); d.className='page-ellipsis'; d.textContent='…'; con.appendChild(d); } continue; }
+    const btn=document.createElement('button'); btn.className='page-btn'+(i===S.page?' active':''); btn.textContent=bn(i);
+    btn.onclick=()=>{ S.page=i; save(); render(); window.scrollTo({top:0,behavior:'smooth'}); };
+    con.appendChild(btn);
+  }
+  const next=document.createElement('button'); next.className='page-btn page-nav'; next.textContent='→'; next.disabled=S.page===totalPages;
+  next.onclick=()=>{ S.page++; save(); render(); window.scrollTo({top:0,behavior:'smooth'}); };
+  con.appendChild(next);
+}
+
+function render(){ renderTabs(); renderYears(); renderStats(); renderQuestions(); document.getElementById('bookmarkModeBtn').classList.toggle('active',S.mode==='bookmark'); }
+
+load(); render();
+
+// Header scroll
+let lastY=0; const hdr=document.getElementById('appHeader');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY; document.getElementById('scrollTopBtn').classList.toggle('visible',y>400);
+  const d=y-lastY; if(d>5&&y>80) hdr.classList.add('header-hidden'); else if(d<-5||y<=80) hdr.classList.remove('header-hidden'); lastY=y;
+});
+document.getElementById('scrollTopBtn').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+// Search
+let st; document.getElementById('searchInput').addEventListener('input',function(){ clearTimeout(st); st=setTimeout(()=>{ S.search=this.value; S.page=1; save(); render(); },280); });
+
+// Bookmark mode
+document.getElementById('bookmarkModeBtn').addEventListener('click',function(){ S.mode=S.mode==='bookmark'?'normal':'bookmark'; S.page=1; save(); render(); });
+
+// Theme
+(function(){
+  const btn=document.getElementById('themeBtn');
+  function apply(t){ document.documentElement.setAttribute('data-theme',t); btn.textContent=t==='dark'?'☀️':'🌙'; }
+  apply(localStorage.getItem('bcs_theme')||'light');
+  btn.addEventListener('click',()=>{ const n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; localStorage.setItem('bcs_theme',n); apply(n); });
+})();
+
+// Reset
+function doReset(){
+  if(!confirm('সব অগ্রগতি মুছে যাবে। নিশ্চিত?')) return;
+  S.answered={}; S.bookmarks={}; S.page=1; S.mode='normal'; S.search='';
+  document.getElementById('searchInput').value='';
+  save(); render();
+}
+document.getElementById('resetBtn').addEventListener('click',doReset);
+document.getElementById('resetBtnBottom').addEventListener('click',doReset);
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/primary-mcq/sw.js').catch(err => {
+        console.warn('[SW] Registration failed:', err);
+      });
+    });
+  }
+</script>
+<script>
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  if (!window.__swReloaded) {
+    window.__swReloaded = true;
+    window.location.reload();
+  }
+});
+</script>
+</body>
+</html>

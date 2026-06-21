@@ -1,0 +1,33 @@
+/* Noto Serif Bengali — Self-hosted (v1.11) */
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-serif-bengali-400.woff2') format('woff2');
+  unicode-range: U+0980-09FF, U+200C-200D, U+25CC, U+A8F1;
+}
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/noto-serif-bengali-500.woff2') format('woff2');
+  unicode-range: U+0980-09FF, U+200C-200D, U+25CC, U+A8F1;
+}
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/noto-serif-bengali-600.woff2') format('woff2');
+  unicode-range: U+0980-09FF, U+200C-200D, U+25CC, U+A8F1;
+}
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/noto-serif-bengali-700.woff2') format('woff2');
+  unicode-range: U+0980-09FF, U+200C-200D, U+25CC, U+A8F1;
+}

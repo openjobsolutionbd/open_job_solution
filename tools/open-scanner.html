@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Open Scanner</title>
+  <meta name="theme-color" content="#4f46e5" />
+  <style>
+    /* ── tokens ── */
+    :root {
+      --brand:       #4f46e5;
+      --brand-dark:  #3730a3;
+      --brand-light: #ede9fe;
+      --accent:      #7c3aed;
+      --success:     #059669;
+      --success-bg:  #d1fae5;
+      --danger:      #dc2626;
+      --danger-bg:   #fee2e2;
+      --warn-bg:     #fef9c3;
+      --surface:     #ffffff;
+      --surface-2:   #f8f7ff;
+      --border:      #e0d9f7;
+      --text:        #1e1b4b;
+      --text-muted:  #6b7280;
+      --radius:      12px;
+      --radius-sm:   8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(160deg, #ede9fe 0%, #f8f7ff 60%, #e0f2fe 100%);
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    /* ── header ── */
+    .app-header {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, var(--accent) 100%);
+      color: #fff;
+      padding: 18px 20px 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(79,70,229,.35);
+    }
+    .app-header h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+    .app-header p {
+      font-size: 0.72rem;
+      opacity: .78;
+      margin-top: 2px;
+    }
+
+    /* ── container ── */
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 16px 14px 32px;
+    }
+
+    /* ── card ── */
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(79,70,229,.07);
+    }
+
+    /* ── buttons ── */
+    button {
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      font-weight: 600;
+      transition: filter .15s, transform .1s;
+      touch-action: manipulation;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    button:active { transform: scale(.97); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) { filter: brightness(1.1); }
+
+    .btn-ghost {
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+    .btn-ghost:hover:not(:disabled) { filter: brightness(.95); }
+
+    .btn-danger {
+      background: var(--danger-bg);
+      color: var(--danger);
+    }
+
+    /* ── inputs ── */
+    select, input, textarea {
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 10px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--surface-2);
+      color: var(--text);
+      width: 100%;
+      outline: none;
+      transition: border-color .15s;
+    }
+    select:focus, input:focus, textarea:focus {
+      border-color: var(--brand);
+      background: #fff;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    textarea.raw-edit {
+      min-height: 300px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    /* ── task select ── */
+    .task-select {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* ── mode tabs ── */
+    .mode-tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .mode-tabs button {
+      flex: 1;
+      padding: 10px 6px;
+      font-size: 0.88rem;
+      background: var(--surface-2);
+      color: var(--text-muted);
+      border: 1.5px solid var(--border);
+    }
+    .mode-tabs button.active-tab {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    /* ── step indicator ── */
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 16px;
+    }
+    .step-indicator .step {
+      flex: 1;
+      text-align: center;
+      padding: 8px 4px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--surface-2);
+      color: var(--text-muted);
+      border: 1.5px solid var(--border);
+      position: relative;
+    }
+    .step-indicator .step:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+    .step-indicator .step:last-child  { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+    .step-indicator .step.active {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(79,70,229,.2);
+      z-index: 1;
+    }
+    .step-indicator .step.done {
+      background: var(--success-bg);
+      color: var(--success);
+      border-color: #6ee7b7;
+    }
+
+    /* ── output box ── */
+    .output-box {
+      background: #1a1814;
+      color: #f0ece4;
+      padding: 14px;
+      max-height: 280px;
+      overflow: auto;
+      white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ── alerts ── */
+    .warn {
+      background: var(--warn-bg);
+      border-left: 3px solid #ca8a04;
+      padding: 10px 14px;
+      margin: 8px 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.88rem;
+    }
+    .err {
+      background: var(--danger-bg);
+      border-left: 3px solid var(--danger);
+      padding: 10px 14px;
+      margin: 8px 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      color: var(--danger);
+      font-size: 0.88rem;
+    }
+    .info {
+      background: var(--brand-light);
+      border-left: 3px solid var(--brand);
+      padding: 10px 14px;
+      margin: 8px 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.88rem;
+      color: var(--brand-dark);
+    }
+
+    /* ── key notice ── */
+    .key-notice {
+      background: linear-gradient(135deg,#e0f2fe,#ede9fe);
+      border: 1px solid #bae6fd;
+      padding: 14px;
+      margin-bottom: 14px;
+      border-radius: var(--radius);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .key-notice a { color: var(--brand); font-weight: 700; }
+
+    /* ── history ── */
+    .history-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      background: var(--surface-2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+
+    /* ── toolbar row ── */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .toolbar button { font-size: 0.85rem; padding: 8px 12px; }
+
+    /* ── spinner ── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .spinner.dark {
+      border-color: rgba(79,70,229,.2);
+      border-top-color: var(--brand);
+    }
+
+    video { width: 100%; max-height: 300px; object-fit: cover; background: #000; border-radius: var(--radius-sm); }
+
+    /* ── push button ── */
+    .push-btn {
+      width: 100%;
+      padding: 13px;
+      font-size: 1rem;
+      font-weight: 800;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      letter-spacing: .3px;
+      transition: filter .15s, transform .1s;
+    }
+    .push-btn:active { transform: scale(.98); }
+    .push-btn.idle    { background: linear-gradient(135deg,#1d4ed8,#4f46e5); color:#fff; }
+    .push-btn.pushing { background: #6b7280; color:#fff; cursor:not-allowed; }
+    .push-btn.success { background: linear-gradient(135deg,#059669,#10b981); color:#fff; }
+    .push-btn.error   { background: linear-gradient(135deg,#dc2626,#ef4444); color:#fff; }
+
+    /* output action row */
+    .output-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .output-actions span { font-size: 0.85rem; font-weight: 600; color: var(--success); }
+  </style>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+<body>
+  <div class="app-header">
+    <h2>🔎 Open Scanner</h2>
+    <p>AI-চালিত প্রশ্নপত্র বিশ্লেষক</p>
+  </div>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useRef, useCallback, useEffect } = React;
+
+    // ============================================================
+    // TASK রেজিস্ট্রি
+    // প্রতিটি task স্বয়ংসম্পূর্ণ: extractPrompt (ধাপ ১), finalizePrompt (ধাপ ২),
+    // validation, file extension, tabOrder।
+    // নতুন task যুক্ত করতে এখানে একটি entry বসালেই চলবে।
+    // ============================================================
+
+    const JOB_JS_TYPE_GUIDE = `## id নিয়ম (গুরুত্বপূর্ণ):
+ফরম্যাট: job-YYYY-MINISTRY-POST-qXX
+- YYYY = পরীক্ষার সাল
+- MINISTRY = মন্ত্রণালয়/প্রতিষ্ঠানের সংক্ষিপ্ত ইংরেজি কোড (যেমন "খাদ্য অধিদপ্তর" → "food", "কারিগরি শিক্ষা অধিদপ্তর" → "tech")
+- POST = পদের নাম থেকে তৈরি সংক্ষিপ্ত ইংরেজি কোড (যেমন "সহকারী কাম কিপার" → "keeper", "মেকানিক্যাল ফোরম্যান" → "mech")
+- একই মন্ত্রণালয়ে একাধিক পদের পরীক্ষা থাকলে শুধু POST অংশ আলাদা হবে, MINISTRY কোড অপরিবর্তিত থাকবে
+- qXX = প্রশ্ন ক্রমিক নম্বর (q01, q02, ...)
+
+## প্রতিটি প্রশ্ন-অবজেক্টে থাকা exam মেটাডেটা (সবসময় এই ৫টি, প্রতিটি প্রশ্নে repeat হবে):
+- ministry: প্রতিষ্ঠানের পূর্ণ নাম (বাংলায়)
+- post: পদের পূর্ণ নাম (বাংলায়)
+- duration: পরীক্ষার সময় (যেমন "৯০ মিনিট")
+- date: YYYY-MM-DD ফরম্যাটে
+- totalMarks: number
+
+এই ৫টির বাইরে কোনো exam-level ফিল্ড দেবে না (যেমন বইয়ের নিজস্ব ক্যাটালগ "প্রশ্ন নং", সেকশন লেবেল ইত্যাদি বাদ দেবে)।
+
+## সাধারণ ফিল্ড (সব প্রশ্নেই থাকবে exam মেটাডেটার পরে):
+- subject: শুধু 4টি মান — "bangla" | "english" | "math" | "general-knowledge" (mixed-qa টাইপে ব্যতিক্রম, কারণ subject প্রতিটি part-এর ভেতরে থাকে)
+- qno: STRING হবে, বাংলা সংখ্যায় (যেমন "০১", "১৮") — ইংরেজি digit ব্যবহার করবে না
+- marks: number
+- type: নিচের তালিকার একটি
+- question: মূল প্রশ্নের টেক্সট
+
+## টপিক (ঐচ্ছিক):
+বাংলা→(সমাস,সন্ধি,কারক,বাগধারা,এক-কথায়-প্রকাশ,বিপরীত-শব্দ,প্রতিশব্দ,শুদ্ধিকরণ,ভাবসম্প্রসারণ,পত্রলিখন,রচনা,অনুবাদ,ব্যাকরণ-অন্যান্য)
+english→(paragraph,letter,translation,fill-in-the-blanks,sentence-making,grammar,vocabulary,english-others)
+math→(বীজগণিত,পাটিগণিত,জ্যামিতি,সংখ্যাতত্ত্ব,পরিসংখ্যান,math-others)
+general-knowledge→(বাংলাদেশ,আন্তর্জাতিক,বিজ্ঞান,সাম্প্রতিক,gk-others)
+
+## type-ভিত্তিক গঠন (সঠিক type চিহ্নিত করা বাধ্যতামূলক, ভুল করে paragraph/short-qa দিয়ে সব ভরবে না):
+
+### "sub-parts" — ক) খ) গ) ভাগে বিভক্ত প্রশ্ন (এক বিষয়ের উপ-প্রশ্ন, সন্ধি/সমাস/কারক/এক-কথায় জাতীয়)
+parts: [{ label, q, a }]
+
+### "table" — দুই/তিন কলামের ছক
+columns: ["কলাম১", "কলাম২"], rows: [["...", "..."], ...]
+
+### "paragraph" — দীর্ঘ রচনা/অনুচ্ছেদ/ভাবসম্প্রসারণ/essay
+answer: "string"
+(সোর্সে answer না থাকলে — যেমন শুধু essay টপিক দেওয়া আছে লেখা নেই — AI নিজে সংক্ষিপ্ত যুক্তিসঙ্গত মূল উত্তর রচনা করে দেবে, এটি সোর্সের হুবহু প্রতিলিপি নয় তা মনে রাখার দরকার নেই)
+
+### "math" — ধাপে ধাপে গাণিতিক সমাধান (জ্যামিতির প্রমাণও এই type-এ পড়বে, "বিশেষ নির্বচন"/"অঙ্কন"/"প্রমাণ" সব ধাপ একই steps অ্যারেতে ক্রমিক মিশিয়ে লিখবে)
+steps: ["ধাপ ১", "ধাপ ২", ...], answer: "চূড়ান্ত উত্তর"
+alternative: { steps, answer } — ঐচ্ছিক
+
+### "translate" — ছোট বিচ্ছিন্ন বাক্য অনুবাদ (বাংলা↔ইংরেজি)
+parts: [{ label, source, target }]
+
+### "passage-summary" — একটি সম্পূর্ণ passage/কবিতার সারমর্ম বা বঙ্গানুবাদ (একক বড় passage, ছোট বাক্য নয়)
+passage: "মূল কবিতা বা ইংরেজি passage", result: "সারমর্ম অথবা বাংলা অনুবাদ"
+
+### "fill-gaps" — শূন্যস্থান পূরণ (preposition/verb/article)
+parts: [{ sentence, answer }]
+
+### "sentence-change" — voice/direct-indirect/transform/correct sentence
+parts: [{ label, original, changed }]
+
+### "idiom" — বাগধারা/phrase, অর্থ ও উদাহরণ বাক্যসহ
+parts: [{ label, phrase, meaning, example }]
+
+### "syn-ant" — Synonym ও Antonym তালিকা
+parts: [{ word, synonym, antonym }]
+
+### "gender-change" — Gender পরিবর্তন (Fox→Vixen জাতীয়)
+parts: [{ word, changed }]
+
+### "letter" — পত্র/আবেদনপত্র
+letter: { date, to, subject, body, closing, sender }
+
+### "read-fill" — passage পড়ে শূন্যস্থান পূরণ
+passage: "পুরো paragraph blanks সহ", answers: "a) ... b) ... c) ..."
+
+### "short-qa" — একই বিষয়ের (single subject) ছোট প্রশ্ন-উত্তরের তালিকা
+parts: [{ label, q, a }]
+
+### "mixed-qa" — বিভিন্ন বিষয়ের (সাহিত্য/GK/বিজ্ঞান) প্রশ্ন একসাথে মিশ্রিত থাকলে (বাইরের subject ফিল্ড দেবে না, প্রতিটি part-এর নিজস্ব subject থাকবে)
+parts: [{ label, subject, q, a }]`;
+
+    const TASKS = {
+      job_js: {
+        id: "job_js",
+        label: "📝 job-solution.js জেনারেটর",
+        description: "প্রশ্নপত্র থেকে job-solution.js ফরম্যাটে (type-aware) JavaScript কোড তৈরি করে। প্রথমে raw তথ্য বের হবে, আপনি রিভিউ/এডিট করতে পারবেন, তারপর নিশ্চিত করলে চূড়ান্ত কোড তৈরি হবে।",
+        fileExt: "js",
+        mimeForOutput: "application/javascript",
+        tabOrder: ["image", "text", "camera"],
+        twoStep: true,
+
+        // ধাপ ১: ইনপুট থেকে raw, মানুষের পড়ার মতো টেক্সট আকারে সব তথ্য বের করা
+        extractSystemPrompt: `তুমি একটি বাংলাদেশ সরকারি চাকরির পরীক্ষার প্রশ্নপত্র বিশ্লেষণ করে তার সম্পূর্ণ তথ্য সুনির্দিষ্ট ও পরিষ্কার বাংলা টেক্সট আকারে বের করার বিশেষজ্ঞ।
+
+তোমার কাজ হলো প্রশ্নপত্র থেকে নিচের তথ্যগুলো খুঁজে বের করে সহজ, পরিষ্কার টেক্সট ফরম্যাটে (plain text, কোনো JSON/JS কোড নয়) উপস্থাপন করা, যাতে একজন মানুষ পড়ে সহজে বুঝতে ও দরকার হলে এডিট করতে পারে।
+
+## যা বের করতে হবে:
+1. পরীক্ষার তথ্য: প্রতিষ্ঠান/মন্ত্রণালয়ের পূর্ণ নাম, পদের পূর্ণ নাম, পরীক্ষার সময়কাল (যেমন "৯০ মিনিট"), পরীক্ষার তারিখ, পূর্ণমান
+2. প্রতিটি প্রশ্ন: প্রশ্ন নম্বর (qno, বাংলা সংখ্যায়), বিষয় (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান), মার্কস, প্রশ্নের পূর্ণ টেক্সট, এবং সম্পূর্ণ উত্তর/সমাধান
+3. যদি প্রশ্নটি একাধিক উপ-প্রশ্নে বিভক্ত (ক/খ/গ/ঘ), প্রতিটি উপ-প্রশ্ন আলাদাভাবে দেখাবে
+4. যদি প্রশ্নটি টেবিল/ছক আকারে হয়, টেবিলের কাঠামো বজায় রেখেই টেক্সট আকারে লিখবে
+5. যদি প্রশ্নটি গাণিতিক সমাধান হয়, প্রতিটি ধাপ ক্রমিকভাবে দেখাবে
+6. যদি সোর্সে কোনো উত্তর/সমাধান অনুপস্থিত থাকে (যেমন essay টপিক দেওয়া কিন্তু লেখা নেই), তুমি নিজে একটি সংক্ষিপ্ত যুক্তিসঙ্গত মূল উত্তর লিখে দেবে এবং স্পষ্টভাবে উল্লেখ করবে যে এটি AI-রচিত (সোর্সে ছিল না)
+7. একাধিক পরীক্ষা একসাথে থাকলে প্রতিটি পরীক্ষাকে স্পষ্ট হেডিং দিয়ে আলাদা করবে
+
+## ফরম্যাট নির্দেশনা:
+- শুধু পরিষ্কার, সুপাঠ্য বাংলা টেক্সট দেবে — কোনো JSON, কোনো কোড সিনট্যাক্স নয়
+- হেডিং, প্রশ্ন নম্বর স্পষ্টভাবে আলাদা লাইনে দেখাবে
+- markdown বোল্ড/হেডার ব্যবহার করতে পারো readability-র জন্য
+- কোনো অংশ অস্পষ্ট/পড়া কঠিন হলে তা উল্লেখ করবে, অনুমান করে ভুল তথ্য দেবে না`,
+
+        extractUserPrompt: (kind) => kind === "text"
+          ? "এই প্রশ্নপত্রের টেক্সট থেকে সম্পূর্ণ তথ্য বের করে পরিষ্কার বাংলা টেক্সট আকারে দাও:"
+          : "এই প্রশ্নপত্রের ছবি থেকে সম্পূর্ণ তথ্য বের করে পরিষ্কার বাংলা টেক্সট আকারে দাও।",
+
+        // ধাপ ২: রিভিউ-করা raw টেক্সট থেকে ফাইনাল JOB_SOLUTIONS কোড তৈরি
+        finalizeSystemPrompt: `তুমি একজন বিশেষজ্ঞ যে একটি বাংলাদেশ সরকারি চাকরির পরীক্ষার প্রশ্ন-উত্তরের প্লেইন টেক্সট বিবরণ থেকে নিচের নিয়ম মেনে ONLY valid JavaScript code তৈরি করো।
+
+## আউটপুট ফরম্যাট (শুধু এই কোড দেবে, অন্য কিছু না):
+
+const JOB_SOLUTIONS = [
+  {
+    id: "job-YYYY-MINISTRY-POST-q01",
+    ministry: "মন্ত্রণালয়ের পূর্ণ নাম",
+    post: "পদের নাম",
+    duration: "৯০ মিনিট",
+    date: "YYYY-MM-DD",
+    totalMarks: 100,
+    subject: "bangla",
+    qno: "০১",
+    marks: 5,
+    type: "...",
+    question: "প্রশ্নের পূর্ণ টেক্সট",
+    // type অনুযায়ী নিচের নিয়মে অতিরিক্ত ফিল্ড
+  },
+];
+
+${JOB_JS_TYPE_GUIDE}
+
+## নিয়ম:
+- ইনপুট টেক্সটে থাকা সব প্রশ্ন কোডে রূপান্তর করতে হবে, কিছু বাদ দেওয়া যাবে না
+- সঠিক type বেছে নেওয়া বাধ্যতামূলক — generic "paragraph" বা "short-qa" দিয়ে জোর করে সব ভরবে না
+- উত্তর সবসময় বিস্তারিত ও সম্পূর্ণ যেখানে প্রযোজ্য
+- শুধু JavaScript কোড দেবে — কোনো ব্যাখ্যা বা markdown নয়`,
+
+        finalizeUserPrompt: (rawText) => `নিচের প্রশ্নপত্র বিবরণ থেকে JOB_SOLUTIONS কোড তৈরি করো:\n\n${rawText}`,
+
+        cleanOutput: (raw) => raw.replace(/^```javascript\s*/i, "").replace(/^```js\s*/i, "").replace(/^```\s*/i, "").replace(/\s*```$/i, "").trim(),
+
+        validate: (code) => {
+          const warnings = [];
+          if (!code.startsWith("const JOB_SOLUTIONS")) warnings.push("⚠️ আউটপুট const JOB_SOLUTIONS দিয়ে শুরু হয়নি।");
+          if (!/qno\s*:\s*"/.test(code)) warnings.push("⚠️ কোনো qno (string ফরম্যাটে) পাওয়া যায়নি।");
+          if (!code.trim().endsWith("];")) warnings.push("⚠️ অ্যারে সঠিকভাবে বন্ধ হয়নি — আউটপুট অসম্পূর্ণ হতে পারে।");
+          if (code.length < 200) warnings.push("⚠️ আউটপুট খুব ছোট — সম্ভবত প্রশ্নপত্র সম্পূর্ণ পড়া হয়নি।");
+          const subjectMatches = code.match(/subject\s*:\s*"([^"]*)"/g) || [];
+          const validSubjects = ["bangla", "english", "math", "general-knowledge"];
+          subjectMatches.forEach(m => {
+            const val = m.match(/"([^"]*)"/)[1];
+            if (!validSubjects.includes(val)) warnings.push(`⚠️ অজানা subject পাওয়া গেছে: "${val}"`);
+          });
+          const typeMatches = code.match(/type\s*:\s*"([^"]*)"/g) || [];
+          const validTypes = ["sub-parts", "table", "paragraph", "math", "translate", "passage-summary", "fill-gaps", "sentence-change", "idiom", "syn-ant", "gender-change", "letter", "read-fill", "short-qa", "mixed-qa"];
+          typeMatches.forEach(m => {
+            const val = m.match(/"([^"]*)"/)[1];
+            if (!validTypes.includes(val)) warnings.push(`⚠️ অজানা type পাওয়া গেছে: "${val}"`);
+          });
+          if (!/id\s*:\s*"job-\d{4}-[a-z0-9-]+-[a-z0-9-]+-q\d+"/.test(code)) {
+            warnings.push("⚠️ id ফরম্যাট প্রত্যাশিত প্যাটার্নের (job-YYYY-MINISTRY-POST-qXX) সাথে মিলছে না — ম্যানুয়ালি যাচাই করুন।");
+          }
+          if (!/ministry\s*:\s*"/.test(code)) warnings.push("⚠️ ministry ফিল্ড পাওয়া যায়নি।");
+          if (!/post\s*:\s*"/.test(code)) warnings.push("⚠️ post ফিল্ড পাওয়া যায়নি।");
+          return warnings;
+        },
+        countItems: (code) => (code.match(/qno\s*:\s*"/g) || []).length,
+        countLabel: "প্রশ্ন",
+      },
+
+      plain_text: {
+        id: "plain_text",
+        label: "📄 প্লেইন টেক্সট এক্সট্র্যাক্টর",
+        description: "ছবি থেকে শুধু টেক্সট বের করে আনে (OCR-এর মতো)। প্রথমে raw এক্সট্র্যাক্ট হবে, আপনি রিভিউ/এডিট করতে পারবেন, তারপর নিশ্চিত করলে ফাইনাল টেক্সট তৈরি হবে।",
+        fileExt: "txt",
+        mimeForOutput: "text/plain",
+        tabOrder: ["camera", "image"],
+        twoStep: true,
+
+        extractSystemPrompt: `তুমি একটি OCR বিশেষজ্ঞ। ব্যবহারকারীর দেওয়া ছবি থেকে সব টেক্সট হুবহু বের করে দাও।
+
+## নিয়ম:
+- ছবিতে যা লেখা আছে ঠিক তাই লিখবে, কোনো ব্যাখ্যা, সারাংশ বা সংশোধন নয়
+- মূল লাইন বিভাজন ও প্যারাগ্রাফ গঠন যতটা সম্ভব বজায় রাখবে
+- বাংলা ও ইংরেজি উভয় টেক্সট থাকলে যেমন আছে তেমনই রাখবে, অনুবাদ করবে না
+- টেবিল থাকলে সরল টেক্সট আকারে সারি-কলাম বুঝে লিখবে
+- কোনো markdown formatting, কোড ব্লক, বা অতিরিক্ত মন্তব্য দেবে না — শুধু খাঁটি টেক্সট`,
+
+        extractUserPrompt: (kind) => "এই ছবি থেকে সব টেক্সট হুবহু বের করে দাও।",
+
+        finalizeSystemPrompt: `তুমি একজন প্রুফরিডার। ব্যবহারকারীর দেওয়া raw OCR টেক্সট (যা সে রিভিউ/এডিট করেছে) তোমাকে দেওয়া হবে। এটি পরিষ্কার করে চূড়ান্ত আকারে দাও।
+
+## নিয়ম:
+- বানান/স্পেসিং/লাইন-ব্রেক সমস্যা ঠিক করো, কিন্তু মূল কনটেন্ট পরিবর্তন করবে না
+- কোনো markdown formatting বা কোড ব্লক দেবে না — শুধু খাঁটি প্লেইন টেক্সট`,
+
+        finalizeUserPrompt: (rawText) => `নিচের টেক্সট পরিষ্কার করে চূড়ান্ত আকারে দাও:\n\n${rawText}`,
+
+        cleanOutput: (raw) => raw.replace(/^```\s*/i, "").replace(/\s*```$/i, "").trim(),
+        validate: (text) => {
+          const warnings = [];
+          if (text.length < 20) warnings.push("⚠️ আউটপুট খুব ছোট — সম্ভবত ছবিতে টেক্সট স্পষ্ট ছিল না।");
+          return warnings;
+        },
+        countItems: (text) => text.split(/\n+/).filter(l => l.trim()).length,
+        countLabel: "লাইন",
+      },
+    };
+
+    const TASK_LIST = Object.values(TASKS);
+
+    // ===================== HELPERS =====================
+
+    function parseGeminiError(errData, status) {
+      const msg = errData?.error?.message || "";
+      if (status === 400) return "❌ অনুরোধ ভুল হয়েছে। ফাইলের সাইজ বা ফরম্যাট চেক করুন।";
+      if (status === 401 || status === 403) return "🔑 API Key ভুল বা মেয়াদ শেষ। সঠিক Gemini API Key দিন।";
+      if (status === 429) return "⏱️ API limit শেষ। কিছুক্ষণ পর আবার চেষ্টা করুন (দৈনিক ১৫০০ রিকোয়েস্ট ফ্রি)।";
+      if (status === 500 || status === 503) return "🔧 Gemini সার্ভারে সমস্যা। একটু পর আবার চেষ্টা করুন।";
+      if (msg.includes("API_KEY_INVALID")) return "🔑 API Key ভুল। Google AI Studio থেকে নতুন Key নিন।";
+      if (msg.includes("QUOTA_EXCEEDED")) return "⏱️ দৈনিক API কোটা শেষ। কাল আবার চেষ্টা করুন।";
+      if (msg.includes("TOKEN_LIMIT")) return "📄 ফাইল অনেক বড়। কিছুটা ছোট করে দিন।";
+      return `API Error ${status}: ${msg || "অজানা সমস্যা"}`;
+    }
+
+    function fileToBase64(file) {
+      return new Promise((res, rej) => {
+        const r = new FileReader();
+        r.onload = () => res(r.result.split(",")[1]);
+        r.onerror = () => rej(new Error("ফাইল পড়া যায়নি"));
+        r.readAsDataURL(file);
+      });
+    }
+
+    const MAX_HISTORY = 2;
+
+    // ============================================================
+    // GitHub Push — config
+    // ============================================================
+    const GITHUB_OWNER = "openjobsolutionbd";
+    const GITHUB_REPO  = "app";
+    const GITHUB_FILE  = "written-exam/data/job-solution.js";
+    const GITHUB_BRANCH = "main";
+
+    async function pushToGitHub(ghToken, newCode) {
+      const apiBase = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+      const headers = {
+        "Authorization": `token ${ghToken}`,
+        "Accept": "application/vnd.github+json",
+        "Content-Type": "application/json",
+      };
+
+      // ধাপ ক: বর্তমান ফাইল ও sha আনো
+      const getRes = await fetch(`${apiBase}?ref=${GITHUB_BRANCH}`, { headers });
+      if (!getRes.ok) {
+        const err = await getRes.json().catch(() => ({}));
+        throw new Error("GitHub ফাইল পড়া যায়নি: " + (err.message || getRes.status));
+      }
+      const fileData = await getRes.json();
+      const currentContent = atob(fileData.content.replace(/\n/g, ""));
+      const sha = fileData.sha;
+
+      // ধাপ খ: বর্তমান কোডের শেষে নতুন কোড যুক্ত করো
+      // JOB_SOLUTIONS array-র শেষের "];" খুঁজে, তার আগে নতুন অবজেক্টগুলো বসাও
+      const newItems = newCode
+        .replace(/^const JOB_SOLUTIONS\s*=\s*\[/, "")
+        .replace(/\];\s*$/, "")
+        .trim();
+
+      let merged;
+      if (currentContent.trim().endsWith("];")) {
+        merged = currentContent.trim().replace(/\];\s*$/, "") + ",\n" + newItems + "\n];";
+      } else {
+        throw new Error("job-solution.js এর শেষে ]; নেই — ফাইল গঠন ঠিক নেই।");
+      }
+
+      // ধাপ গ: আপডেট করা ফাইল push করো
+      const encoded = btoa(unescape(encodeURIComponent(merged)));
+      const now = new Date().toLocaleString("bn-BD");
+      const putRes = await fetch(apiBase, {
+        method: "PUT",
+        headers,
+        body: JSON.stringify({
+          message: `Scanner: নতুন প্রশ্ন যোগ — ${now}`,
+          content: encoded,
+          sha,
+          branch: GITHUB_BRANCH,
+        }),
+      });
+      if (!putRes.ok) {
+        const err = await putRes.json().catch(() => ({}));
+        throw new Error("GitHub-এ push ব্যর্থ: " + (err.message || putRes.status));
+      }
+      return true;
+    }
+
+    function OpenScanner() {
+      const [apiKey, setApiKey] = useState(localStorage.getItem("gemini_api_key") || "");
+      const [showKeyInput, setShowKeyInput] = useState(!apiKey);
+      const [ghToken, setGhToken] = useState(localStorage.getItem("gh_token") || "");
+      const [showGhTokenInput, setShowGhTokenInput] = useState(false);
+      const [pushStatus, setPushStatus] = useState(""); // "", "pushing", "success", "error"
+      const [pushError, setPushError] = useState("");
+      const [taskId, setTaskId] = useState(localStorage.getItem("open_scanner_task") || "job_js");
+      const [mode, setMode] = useState("image");
+      const [textInput, setTextInput] = useState("");
+      const [file, setFile] = useState(null);
+      const [filePreview, setFilePreview] = useState(null);
+      const [loading, setLoading] = useState(false);
+      const [step, setStep] = useState("");
+      const [flowStep, setFlowStep] = useState(1); // 1 = ইনপুট, 2 = রিভিউ/এডিট, 3 = ফাইনাল
+      const [rawText, setRawText] = useState("");
+      const [output, setOutput] = useState("");
+      const [error, setError] = useState("");
+      const [copied, setCopied] = useState(false);
+      const [cameraActive, setCameraActive] = useState(false);
+      const [cameraErr, setCameraErr] = useState("");
+      const [capturedImg, setCapturedImg] = useState(null);
+      const [history, setHistory] = useState(() => { try { return JSON.parse(localStorage.getItem("scanner_history") || "[]"); } catch { return []; } });
+      const [showHistory, setShowHistory] = useState(false);
+      const [warnings, setWarnings] = useState([]);
+
+      const fileRef = useRef();
+      const videoRef = useRef();
+      const canvasRef = useRef();
+      const streamRef = useRef(null);
+      const abortRef = useRef(null);
+      const previewUrlRef = useRef(null);
+
+      const task = TASKS[taskId];
+
+      useEffect(() => { localStorage.setItem("open_scanner_task", taskId); }, [taskId]);
+
+      const getNextSerial = () => {
+        const current = parseInt(localStorage.getItem("download_serial") || "0", 10);
+        const next = current + 1;
+        localStorage.setItem("download_serial", next.toString());
+        return next;
+      };
+
+      const saveApiKey = () => { localStorage.setItem("gemini_api_key", apiKey); setShowKeyInput(false); };
+      const stopCamera = useCallback(() => {
+        if (streamRef.current) { streamRef.current.getTracks().forEach(t => t.stop()); streamRef.current = null; }
+        setCameraActive(false);
+      }, []);
+
+      const startCamera = useCallback(async () => {
+        stopCamera(); setCameraErr(""); setCapturedImg(null);
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment", width: { ideal: 1280 }, height: { ideal: 960 } } });
+          streamRef.current = stream;
+          if (videoRef.current) { videoRef.current.srcObject = stream; videoRef.current.play(); }
+          setCameraActive(true);
+        } catch (e) {
+          if (e.name === "NotAllowedError") setCameraErr("⛔ ক্যামেরা অনুমতি দেওয়া হয়নি। Chrome-এ তালা আইকন থেকে Camera Allow করুন।");
+          else if (e.name === "NotFoundError") setCameraErr("📷 কোনো ক্যামেরা পাওয়া যায়নি।");
+          else if (e.name === "NotReadableError") setCameraErr("🔒 ক্যামেরা অন্য অ্যাপ ব্যবহার করছে।");
+          else setCameraErr("ক্যামেরা চালু করা যায়নি। কারণ: " + e.message);
+        }
+      }, [stopCamera]);
+
+      const capturePhoto = () => {
+        const video = videoRef.current; const canvas = canvasRef.current;
+        if (!video || !canvas) return;
+        canvas.width = video.videoWidth; canvas.height = video.videoHeight;
+        canvas.getContext("2d").drawImage(video, 0, 0);
+        setCapturedImg(canvas.toDataURL("image/jpeg", 0.92).split(",")[1]);
+        stopCamera(); resetFlow();
+      };
+
+      const retake = () => { setCapturedImg(null); startCamera(); };
+
+      useEffect(() => {
+        if (mode === "camera" && !capturedImg) startCamera();
+        else if (mode !== "camera") stopCamera();
+        return () => stopCamera();
+      }, [mode]);
+
+      const handleFile = useCallback((f) => {
+        if (!f) return;
+        if (!f.type.startsWith("image/")) { setError("শুধু ছবি দেওয়া যাবে।"); return; }
+        if (f.size > 10 * 1024 * 1024) { setError("ছবির সাইজ ১০ MB-এর বেশি হওয়া যাবে না।"); return; }
+        if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+        const url = URL.createObjectURL(f);
+        previewUrlRef.current = url;
+        setFile(f); setError(""); setFilePreview(url);
+        resetFlow();
+        setMode("image");
+      }, []);
+
+      useEffect(() => { return () => { if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current); }; }, []);
+
+      const resetFlow = () => { setFlowStep(1); setRawText(""); setOutput(""); setError(""); setWarnings([]); setPushStatus(""); setPushError(""); };
+
+      const switchMode = (m) => {
+        setMode(m); setFile(null);
+        if (previewUrlRef.current) { URL.revokeObjectURL(previewUrlRef.current); previewUrlRef.current = null; }
+        setFilePreview(null); setCapturedImg(null);
+        resetFlow();
+        if (m !== "camera") stopCamera();
+      };
+
+      const switchTask = (newTaskId) => {
+        const newTask = TASKS[newTaskId];
+        setTaskId(newTaskId);
+        resetFlow();
+        if (!newTask.tabOrder.includes(mode)) switchMode(newTask.tabOrder[0]);
+      };
+
+      const saveToHistory = (code, sourceMode) => {
+        const entry = { time: new Date().toLocaleTimeString("bn-BD"), date: new Date().toLocaleDateString("bn-BD"), taskId, count: task.countItems(code), mode: sourceMode, code };
+        const updated = [entry, ...history].slice(0, MAX_HISTORY);
+        setHistory(updated); localStorage.setItem("scanner_history", JSON.stringify(updated));
+      };
+
+      const cancelRequest = () => { abortRef.current?.abort(); setLoading(false); setStep(""); setError("অনুরোধ বাতিল করা হয়েছে।"); };
+
+      const callGemini = async (systemPrompt, parts, signal) => {
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+        const res = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: systemPrompt }] },
+            contents: [{ parts }],
+            generationConfig: { temperature: 0.1, maxOutputTokens: 16384 },
+          }),
+          signal,
+        });
+        if (!res.ok) { const errData = await res.json().catch(() => ({})); throw new Error(parseGeminiError(errData, res.status)); }
+        const data = await res.json();
+        const raw = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (!raw) throw new Error("কোনো উত্তর পাওয়া যায়নি।");
+        return raw;
+      };
+
+      // ধাপ ১: ইনপুট থেকে raw extract
+      const runExtract = async () => {
+        if (!apiKey) { setError("দয়া করে প্রথমে Gemini API Key দিন।"); return; }
+        abortRef.current?.abort(); abortRef.current = new AbortController();
+        const signal = abortRef.current.signal;
+        setError(""); setLoading(true); setStep("");
+
+        try {
+          let parts;
+          if (mode === "camera") {
+            if (!capturedImg) throw new Error("আগে ছবি তুলুন।");
+            setStep("ছবি বিশ্লেষণ করা হচ্ছে...");
+            parts = [{ text: task.extractUserPrompt("image") }, { inlineData: { mimeType: "image/jpeg", data: capturedImg } }];
+          } else if (mode === "image") {
+            if (!file) throw new Error("একটি ছবি আপলোড করুন।");
+            setStep("ছবি পড়া হচ্ছে...");
+            const b64 = await fileToBase64(file);
+            parts = [{ text: task.extractUserPrompt("image") }, { inlineData: { mimeType: file.type, data: b64 } }];
+          } else {
+            if (!textInput.trim()) throw new Error("টেক্সট লিখুন।");
+            setStep("টেক্সট বিশ্লেষণ করা হচ্ছে...");
+            parts = [{ text: `${task.extractUserPrompt("text")}\n\n${textInput}` }];
+          }
+          const raw = await callGemini(task.extractSystemPrompt, parts, signal);
+          setRawText(raw.trim());
+          setFlowStep(2);
+        } catch (e) {
+          if (e.name === "AbortError") return;
+          setError(e.message || "সমস্যা হয়েছে।");
+        } finally { setLoading(false); setStep(""); }
+      };
+
+      // ধাপ ২: রিভিউ-করা rawText থেকে ফাইনাল কোড
+      const runFinalize = async () => {
+        if (!apiKey) { setError("দয়া করে প্রথমে Gemini API Key দিন।"); return; }
+        if (!rawText.trim()) { setError("রিভিউ টেক্সট ফাঁকা থাকতে পারবে না।"); return; }
+        abortRef.current?.abort(); abortRef.current = new AbortController();
+        const signal = abortRef.current.signal;
+        setError(""); setLoading(true); setStep("চূড়ান্ত কোড তৈরি করা হচ্ছে...");
+
+        try {
+          const parts = [{ text: task.finalizeUserPrompt(rawText) }];
+          const raw = await callGemini(task.finalizeSystemPrompt, parts, signal);
+          const clean = task.cleanOutput(raw);
+          setWarnings(task.validate(clean));
+          setOutput(clean);
+          saveToHistory(clean, mode);
+          setFlowStep(3);
+        } catch (e) {
+          if (e.name === "AbortError") return;
+          setError(e.message || "সমস্যা হয়েছে।");
+        } finally { setLoading(false); setStep(""); }
+      };
+
+      const backToEdit = () => { setFlowStep(2); setOutput(""); setWarnings([]); setError(""); };
+      const startOver = () => { resetFlow(); };
+
+      const copyOutput = (code) => { navigator.clipboard.writeText(code || output).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000); }); };
+      const downloadOutput = (code) => {
+        const serial = getNextSerial();
+        const blob = new Blob([code || output], { type: task.mimeForOutput });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url; a.download = `${serial}-${task.id}-output.${task.fileExt}`;
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      };
+
+      const itemCount = output ? task.countItems(output) : 0;
+      const canExtract = !loading && apiKey && (
+        mode === "camera" ? !!capturedImg :
+        mode === "text" ? !!textInput.trim() :
+        !!file
+      );
+
+      return (
+        <div className="container">
+
+          {!apiKey && (
+            <div className="key-notice">
+              <strong>Gemini API Key দিন</strong><br />
+              <a href="https://aistudio.google.com/apikey" target="_blank">এখানে ক্লিক করে ফ্রি Key নিন</a><br />
+              <small style={{color:"#6b7280"}}>Key আপনার ফোনেই জমা থাকবে।</small>
+            </div>
+          )}
+
+          <div className="card">
+            <div className="toolbar">
+              <button className="btn-ghost" onClick={() => setShowHistory(!showHistory)}>📜 ইতিহাস {history.length > 0 ? `(${history.length})` : ""}</button>
+              <button className="btn-ghost" onClick={() => setShowKeyInput(!showKeyInput)}>⚙️ API Key</button>
+            </div>
+
+            {showKeyInput && (
+              <div style={{display:"flex", gap:8, marginBottom:8}}>
+                <input type="password" placeholder="Gemini API Key পেস্ট করুন" value={apiKey} onChange={(e) => setApiKey(e.target.value)} />
+                <button className="btn-primary" style={{width:"auto", whiteSpace:"nowrap"}} onClick={saveApiKey}>Save</button>
+              </div>
+            )}
+
+            {showHistory && (
+              <div style={{marginBottom:8}}>
+                <strong style={{fontSize:"0.88rem", display:"block", marginBottom:6}}>সাম্প্রতিক আউটপুট:</strong>
+                {history.length === 0 ? <p style={{color:"#6b7280", fontSize:"0.88rem"}}>কোনো ইতিহাস নেই।</p> : history.map((h,i) => (
+                  <div key={i} className="history-item">
+                    <span>{h.date} {h.time} · {TASKS[h.taskId]?.label || h.taskId} — ✅ {h.count}</span>
+                    <button className="btn-ghost" style={{fontSize:"0.8rem", padding:"6px 10px"}} onClick={() => { setTaskId(h.taskId); copyOutput(h.code); setShowHistory(false); setOutput(h.code); setFlowStep(3); }}>কপি করুন</button>
+                  </div>
+                ))}
+                {history.length > 0 && <button className="btn-danger" style={{fontSize:"0.82rem", marginTop:4}} onClick={() => { setHistory([]); localStorage.removeItem("scanner_history"); }}>ইতিহাস মুছুন</button>}
+              </div>
+            )}
+
+            <label style={{fontSize:"0.82rem", fontWeight:700, display:"block", marginBottom:6, color:"#6b7280"}}>কাজ বাছাই করুন</label>
+            <select className="task-select" value={taskId} onChange={(e) => switchTask(e.target.value)}>
+              {TASK_LIST.map(t => <option key={t.id} value={t.id}>{t.label}</option>)}
+            </select>
+            <div className="info" style={{marginTop:4, fontSize:"0.83rem"}}>{task.description}</div>
+          </div>
+
+          <div className="step-indicator">
+            <span className={`step ${flowStep === 1 ? "active" : "done"}`}>✏️ ইনপুট</span>
+            <span className={`step ${flowStep === 2 ? "active" : flowStep > 2 ? "done" : ""}`}>👁️ রিভিউ</span>
+            <span className={`step ${flowStep === 3 ? "active" : ""}`}>✅ কোড</span>
+          </div>
+
+          {flowStep === 1 && (
+            <div className="card">
+              <div className="mode-tabs">
+                {task.tabOrder.includes("camera") && <button onClick={() => switchMode("camera")} className={mode==="camera" ? "active-tab" : ""}>📷 ক্যামেরা</button>}
+                {task.tabOrder.includes("image") && <button onClick={() => switchMode("image")} className={mode==="image" ? "active-tab" : ""}>🖼️ ছবি</button>}
+                {task.tabOrder.includes("text") && <button onClick={() => switchMode("text")} className={mode==="text" ? "active-tab" : ""}>✏️ টেক্সট</button>}
+              </div>
+
+              {mode === "camera" && (
+                <div>
+                  {cameraErr && <div className="err">{cameraErr}</div>}
+                  {cameraActive && !capturedImg && (
+                    <div>
+                      <video ref={videoRef} autoPlay playsInline muted />
+                      <canvas ref={canvasRef} style={{display:"none"}} />
+                      <button className="btn-primary" onClick={capturePhoto} style={{display:"block", margin:"8px auto", fontSize:"1.5rem", width:"100%"}}>📷 তুলুন</button>
+                    </div>
+                  )}
+                  {!cameraActive && !capturedImg && !cameraErr && (
+                    <div style={{textAlign:"center"}}>
+                      <button className="btn-primary" style={{width:"100%"}} onClick={() => startCamera()}>▶ ক্যামেরা চালু করুন</button>
+                    </div>
+                  )}
+                  {capturedImg && (
+                    <div>
+                      <img src={`data:image/jpeg;base64,${capturedImg}`} style={{width:"100%", maxHeight:320, objectFit:"cover", borderRadius:8, marginBottom:8}} />
+                      <button className="btn-ghost" style={{width:"100%"}} onClick={retake}>🔄 আবার তুলুন</button>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {mode === "image" && (
+                <div>
+                  <input type="file" accept="image/*" ref={fileRef} style={{display:"none"}} onChange={(e) => handleFile(e.target.files[0])} />
+                  <button className="btn-ghost" style={{width:"100%"}} onClick={() => fileRef.current?.click()}>📁 ছবি বাছাই করুন</button>
+                  {file && (
+                    <div style={{marginTop:10, display:"flex", alignItems:"center", gap:8, background:"#f8f7ff", padding:"8px 10px", borderRadius:8, border:"1px solid #e0d9f7"}}>
+                      <img src={filePreview} style={{width:48, height:48, objectFit:"cover", borderRadius:6}} />
+                      <span style={{flex:1, fontSize:"0.85rem", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{file.name}</span>
+                      <button className="btn-danger" style={{padding:"4px 10px", fontSize:"0.85rem"}} onClick={() => { setFile(null); if(previewUrlRef.current){URL.revokeObjectURL(previewUrlRef.current); previewUrlRef.current=null;} setFilePreview(null); resetFlow(); }}>✕</button>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {mode === "text" && (
+                <textarea placeholder={"টেক্সট এখানে পেস্ট করুন..."} value={textInput} onChange={(e) => setTextInput(e.target.value)} />
+              )}
+
+              <div style={{display:"flex", gap:8, marginTop:14}}>
+                <button className="btn-primary" style={{flex:1}} disabled={!canExtract} onClick={runExtract}>
+                  {loading ? <><span className="spinner"></span>প্রক্রিয়া চলছে...</> : "⚡ তথ্য বের করো"}
+                </button>
+                {loading && <button className="btn-danger" onClick={cancelRequest}>⛔ বাতিল</button>}
+              </div>
+            </div>
+          )}
+
+          {flowStep === 2 && (
+            <div className="card">
+              <div className="info" style={{marginBottom:10}}>AI-এর বের করা তথ্য নিচে আছে। প্রয়োজনে এডিট করুন, তারপর "নিশ্চিত করো" চাপুন।</div>
+              <textarea className="raw-edit" value={rawText} onChange={(e) => setRawText(e.target.value)} />
+              <div style={{display:"flex", gap:8, marginTop:12}}>
+                <button className="btn-ghost" onClick={() => setFlowStep(1)}>◀ পেছনে</button>
+                <button className="btn-primary" style={{flex:1}} disabled={loading} onClick={runFinalize}>
+                  {loading ? <><span className="spinner"></span>কোড তৈরি হচ্ছে...</> : "✅ নিশ্চিত করো"}
+                </button>
+                {loading && <button className="btn-danger" onClick={cancelRequest}>⛔ বাতিল</button>}
+              </div>
+            </div>
+          )}
+
+          {loading && step && (
+            <div className="info" style={{display:"flex", alignItems:"center", gap:8}}>
+              <span className="spinner dark"></span>{step}
+            </div>
+          )}
+          {error && <div className="err">{error}</div>}
+          {warnings.length > 0 && output && (
+            <div className="warn"><strong>সতর্কতা:</strong><ul style={{marginTop:6, paddingLeft:18}}>{warnings.map((w,i) => <li key={i}>{w}</li>)}</ul></div>
+          )}
+
+          {flowStep === 3 && output && (
+            <div className="card">
+              <div className="output-actions">
+                <span>{itemCount > 0 ? `✅ ${itemCount}টি ${task.countLabel} তৈরি` : "আউটপুট প্রস্তুত"}</span>
+                <div style={{display:"flex", gap:6}}>
+                  <button className="btn-ghost" style={{fontSize:"0.85rem", padding:"6px 12px"}} onClick={() => copyOutput(output)}>{copied ? "✓ কপি!" : "📋 কপি"}</button>
+                  <button className="btn-ghost" style={{fontSize:"0.85rem", padding:"6px 12px"}} onClick={() => downloadOutput(output)}>📥 ডাউনলোড</button>
+                </div>
+              </div>
+              <div className="output-box">{output}</div>
+              <div style={{display:"flex", gap:8, marginTop:12}}>
+                <button className="btn-ghost" onClick={backToEdit}>◀ রিভিউ</button>
+                <button className="btn-ghost" style={{flex:1}} onClick={startOver}>🔄 নতুন</button>
+              </div>
+              {taskId === "job_js" && (
+                <div style={{marginTop:14}}>
+                  {showGhTokenInput && (
+                    <div style={{display:"flex", gap:8, marginBottom:10}}>
+                      <input
+                        type="password"
+                        placeholder="GitHub Token (ghp_...)"
+                        value={ghToken}
+                        onChange={(e) => setGhToken(e.target.value)}
+                      />
+                      <button className="btn-primary" style={{width:"auto", whiteSpace:"nowrap"}} onClick={() => { localStorage.setItem("gh_token", ghToken); setShowGhTokenInput(false); }}>Save</button>
+                    </div>
+                  )}
+
+                  <div style={{display:"flex", gap:8, alignItems:"stretch"}}>
+                    <button
+                      className={`push-btn ${pushStatus || "idle"}`}
+                      onClick={async () => {
+                        if (!ghToken) { setShowGhTokenInput(true); setPushError("আগে GitHub Token দিন।"); return; }
+                        setPushStatus("pushing"); setPushError("");
+                        try {
+                          await pushToGitHub(ghToken, output);
+                          setPushStatus("success");
+                        } catch(e) {
+                          setPushStatus("error"); setPushError(e.message);
+                        }
+                      }}
+                      disabled={pushStatus === "pushing"}
+                      style={{flex:1}}
+                    >
+                      {pushStatus === "pushing" ? <><span className="spinner"></span>GitHub-এ পাঠানো হচ্ছে...</> :
+                       pushStatus === "success" ? "✅ GitHub-এ যোগ হয়েছে!" :
+                       pushStatus === "error"   ? "❌ আবার চেষ্টা করুন" :
+                       "🚀 GitHub-এ Push করুন"}
+                    </button>
+                    <button className="btn-ghost" style={{padding:"10px 12px"}} onClick={() => setShowGhTokenInput(!showGhTokenInput)} title="GitHub Token">🔑</button>
+                  </div>
+
+                  {pushStatus === "success" && (
+                    <div className="info" style={{marginTop:8, background:"#d1fae5", borderColor:"#10b981", color:"#065f46"}}>
+                      🎉 সফল! Cloudflare ২-৩ মিনিটে অটো-ডিপ্লয় করবে।
+                    </div>
+                  )}
+                  {pushError && <div className="err" style={{marginTop:8}}>{pushError}</div>}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<OpenScanner />);
+  </script>
+</body>
+</html>

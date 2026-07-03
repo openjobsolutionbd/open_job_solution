@@ -36,6 +36,11 @@
       --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
     }
 
+    /* ══════════════════════════════════════════════════════════
+       ── COMMON (মোবাইল ও ডেস্কটপ উভয়ের বেস স্টাইল) ──
+       এই অংশের নিয়ম দুই ভিউতেই প্রযোজ্য।
+       ══════════════════════════════════════════════════════════ */
+
     body {
       font-family: 'Noto Serif Bengali', serif;
       background: var(--bg);
@@ -49,9 +54,14 @@
       transition: background 0.3s, color 0.3s;
     }
 
+    .page-wrap {
+      width: 100%;
+      max-width: 420px;
+    }
+
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 12px;
     }
     .app-logo { font-size: 2.8rem; margin-bottom: 8px; }
     h1 {
@@ -65,12 +75,34 @@
       margin-top: 6px;
     }
 
+    /* থিম বাটন এখন normal flow-তে থাকে (fixed/absolute না) —
+       তাই এটা সবসময় হেডার আর কার্ডগুলোর মাঝের জায়গায়, ডান পাশে বসে,
+       viewport-এর আকারের সাথে সম্পর্কহীনভাবে। */
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    .theme-btn {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      transition: background 0.3s;
+    }
+
     .cards {
       display: flex;
       flex-direction: column;
       gap: 16px;
       width: 100%;
-      max-width: 420px;
     }
 
     .card {
@@ -132,29 +164,32 @@
       flex-shrink: 0;
     }
 
-    .theme-btn {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow);
-      transition: background 0.3s;
-    }
-
     footer {
       margin-top: 36px;
       color: var(--text-secondary);
       font-size: 0.8rem;
       text-align: center;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       ── MOBILE ONLY (স্ক্রিন প্রস্থ ৭৬৮px পর্যন্ত) ──
+       ভবিষ্যতে মোবাইলের জন্য যেকোনো আলাদা পরিবর্তন এই ব্লকে যোগ হবে।
+       এই ব্লক ডেস্কটপকে প্রভাবিত করবে না।
+       ══════════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      /* বর্তমানে মোবাইলের জন্য বাড়তি কোনো ওভাররাইড প্রয়োজন নেই —
+         উপরের COMMON স্টাইলই মোবাইলে প্রযোজ্য থাকবে। */
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       ── DESKTOP ONLY (স্ক্রিন প্রস্থ ৭৬৯px এবং তার বেশি) ──
+       ভবিষ্যতে ডেস্কটপের জন্য যত পরিবর্তন আনতে চান, সব এই ব্লকে
+       যোগ করা হবে। এই ব্লক মোবাইলকে প্রভাবিত করবে না।
+       ══════════════════════════════════════════════════════════ */
+    @media (min-width: 769px) {
+      /* বর্তমানে ডেস্কটপের জন্য বাড়তি কোনো ওভাররাইড প্রয়োজন নেই —
+         থিম বাটন ইতিমধ্যে .toolbar এর মাধ্যমে সঠিক অবস্থানে আছে।
+         ভবিষ্যতের ডেস্কটপ-নির্দিষ্ট পরিবর্তন এখানে যোগ হবে। */
     }
   </style>
   <script>
@@ -166,44 +201,50 @@
 </head>
 <body>
 
-  <button class="theme-btn" id="themeBtn" title="Dark/Light">🌙</button>
+  <div class="page-wrap">
 
-  <header>
-    <div class="app-logo">📋</div>
-    <h1>Open Job Solution</h1>
-    <p class="subtitle">উন্মুক্ত প্রস্তুতি</p>
-  </header>
+    <header>
+      <div class="app-logo">📋</div>
+      <h1>Open Job Solution</h1>
+      <p class="subtitle">উন্মুক্ত প্রস্তুতি</p>
+    </header>
 
-  <div class="cards">
-    <a class="card bcs" href="/bcs-mcq/">
-      <div class="card-icon">📚</div>
-      <div class="card-text">
-        <div class="card-title">বিসিএস MCQ</div>
-        <div class="card-desc">বাংলা, ইংরেজি, বিজ্ঞান, গণিত সহ সব বিষয়</div>
-      </div>
-      <span class="arrow">›</span>
-    </a>
+    <div class="toolbar">
+      <button class="theme-btn" id="themeBtn" title="Dark/Light">🌙</button>
+    </div>
 
-    <a class="card prim" href="/primary-mcq/">
-      <div class="card-icon">🏫</div>
-      <div class="card-text">
-        <div class="card-title">প্রাইমারি MCQ</div>
-        <div class="card-desc">প্রাথমিক বিদ্যালয় সহকারী শিক্ষক পরীক্ষার MCQ</div>
-      </div>
-      <span class="arrow">›</span>
-    </a>
+    <div class="cards">
+      <a class="card bcs" href="/bcs-mcq/">
+        <div class="card-icon">📚</div>
+        <div class="card-text">
+          <div class="card-title">বিসিএস MCQ</div>
+          <div class="card-desc">বাংলা, ইংরেজি, বিজ্ঞান, গণিত সহ সব বিষয়</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
 
-    <a class="card writ" href="/written-exam/">
-      <div class="card-icon">✍️</div>
-      <div class="card-text">
-        <div class="card-title">লিখিত পরীক্ষার প্রস্তুতি</div>
-        <div class="card-desc"> ১১-২০তম গ্রেডের লিখিত বাংলা, ইংরেজি, গণিত, সাধারণ জ্ঞান</div>
-      </div>
-      <span class="arrow">›</span>
-    </a>
+      <a class="card prim" href="/primary-mcq/">
+        <div class="card-icon">🏫</div>
+        <div class="card-text">
+          <div class="card-title">প্রাইমারি MCQ</div>
+          <div class="card-desc">প্রাথমিক বিদ্যালয় সহকারী শিক্ষক পরীক্ষার MCQ</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card writ" href="/written-exam/">
+        <div class="card-icon">✍️</div>
+        <div class="card-text">
+          <div class="card-title">লিখিত পরীক্ষার প্রস্তুতি</div>
+          <div class="card-desc"> ১১-২০তম গ্রেডের লিখিত বাংলা, ইংরেজি, গণিত, সাধারণ জ্ঞান</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <footer>Open Job Solution · v1.16</footer>
+
   </div>
-
-  <footer>Open Job Solution · v1.16</footer>
 
   <script>
     const btn = document.getElementById('themeBtn');

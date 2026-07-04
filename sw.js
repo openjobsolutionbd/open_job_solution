@@ -6,7 +6,7 @@
 // এক PWA হিসেবে install-যোগ্য হয় (manifest.json + এই SW একসাথে দরকার)।
 
 const CACHE_PREFIX = 'home-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.16';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.17';
 
 const ASSETS = [
   '/',

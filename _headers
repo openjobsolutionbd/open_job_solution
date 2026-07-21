@@ -21,4 +21,5 @@
   Service-Worker-Allowed: /written-exam/
 
 /fonts/*.woff2
+  ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable

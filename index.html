@@ -242,7 +242,7 @@
       </a>
     </div>
 
-    <footer>Open Job Solution · v1.17</footer>
+    <footer>Open Job Solution · v1.21</footer>
 
   </div>
 
@@ -251,6 +251,8 @@
     function applyTheme(t) {
       document.documentElement.setAttribute('data-theme', t);
       btn.textContent = t === 'dark' ? '☀️' : '🌙';
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+      if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#1a1814' : '#f5f1eb');
     }
     applyTheme(localStorage.getItem('bcs_theme') || 'light');
     btn.addEventListener('click', () => {
@@ -268,7 +270,7 @@
     }
   </script>
 <script>
-navigator.serviceWorker.addEventListener('controllerchange', () => {
+navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
   if (!window.__swReloaded) {
     window.__swReloaded = true;
     window.location.reload();

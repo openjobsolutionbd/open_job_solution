@@ -101,7 +101,7 @@
   }
 </script>
 <script>
-navigator.serviceWorker.addEventListener('controllerchange', () => {
+navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
   if (!window.__swReloaded) {
     window.__swReloaded = true;
     window.location.reload();

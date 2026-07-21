@@ -1,11 +1,14 @@
-const CACHE_PREFIX = 'bcs-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.18';
+const CACHE_PREFIX = 'home-';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.21';
 
+// এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/primary-mcq/written-exam
+// প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
 const ASSETS = [
-  '/bcs-mcq/',
-  '/bcs-mcq/index.html',
-  '/bcs-mcq/style.css',
-  '/bcs-mcq/app.js',
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
   '/fonts/noto-bengali.css',
   '/fonts/noto-serif-bengali-400.woff2',
   '/fonts/noto-serif-bengali-500.woff2',
@@ -13,47 +16,20 @@ const ASSETS = [
   '/fonts/noto-serif-bengali-700.woff2'
 ];
 
-const OPTIONAL_ASSETS = [
-  '/bcs-mcq/data/science.js',
-  '/bcs-mcq/data/computer.js',
-  '/bcs-mcq/data/geography.js',
-  '/bcs-mcq/data/bangla.js',
-  '/bcs-mcq/data/english.js',
-  '/bcs-mcq/data/bangladesh.js',
-  '/bcs-mcq/data/international.js',
-  '/bcs-mcq/data/math.js',
-  '/bcs-mcq/data/mental.js',
-  '/bcs-mcq/data/ethics.js'
-];
-
 function isAppFile(url) {
-  return (
-    url.pathname === '/bcs-mcq/' ||
-    url.pathname.startsWith('/bcs-mcq/') && (
-      url.pathname.endsWith('.html') ||
-      url.pathname.endsWith('.css') ||
-      url.pathname.endsWith('.js')
-    )
-  );
+  return url.pathname === '/' || url.pathname === '/index.html';
 }
 
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_VERSION)
       .then(c => c.addAll(ASSETS))
-      .then(() => caches.open(CACHE_VERSION).then(cache =>
-        Promise.all(OPTIONAL_ASSETS.map(url =>
-          fetch(url)
-            .then(res => { if (res.ok) cache.put(url, res); })
-            .catch(() => {})
-        ))
-      ))
       .then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener('activate', e => {
-  // শুধু নিজের prefix ('bcs-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
+  // শুধু নিজের prefix ('home-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
   // অন্য সেকশনের cache স্পর্শ করবে না।
   e.waitUntil(caches.keys().then(keys =>
     Promise.all(
@@ -81,7 +57,7 @@ self.addEventListener('fetch', e => {
         .catch(() => {
           return caches.match(e.request).then(cached => {
             if (cached) return cached;
-            return caches.match('/bcs-mcq/index.html');
+            return caches.match('/index.html');
           });
         })
     );
@@ -96,7 +72,7 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_VERSION).then(c => c.put(e.request, res.clone()));
         }
         return res;
-      }).catch(() => caches.match('/bcs-mcq/index.html'));
+      }).catch(() => caches.match('/index.html'));
     })
   );
 });

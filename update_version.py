@@ -209,7 +209,7 @@ def build_summary(files):
 summary = build_summary(changed_files)
 
 # ── Update MD changelog ────────────────────────────────────────
-md_files = list(ROOT.glob("job-app-MD-*.md")) or list(ROOT.glob("*.md"))
+md_files = list(ROOT.glob("*.md"))
 md_updated = False
 
 for md_path in md_files:

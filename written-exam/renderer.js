@@ -9,6 +9,16 @@ function escHtml(str) {
     .replace(/>/g, '&gt;');
 }
 
+// প্রাপকের (to) টেক্সট দেখে salutation ঠিক করে — ভাষা (বাংলা/ইংরেজি) ও
+// লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) দুটোই বিবেচনা করে।
+function letterSalutation(to) {
+  const t = to || '';
+  const isFemale = /\b(Madam|Ms\.|Mrs\.)\b/i.test(t) || /মহোদয়া/.test(t);
+  const isEnglish = /\b(Mayor|Sir|Madam|Ms\.|Mrs\.)\b/i.test(t);
+  if (isEnglish) return isFemale ? 'Madam,' : 'Sir,';
+  return isFemale ? 'মহোদয়া,' : 'মহোদয়,';
+}
+
 function renderAnswer(q) {
   switch (q.type) {
 
@@ -110,7 +120,7 @@ function renderAnswer(q) {
         ${l.date ? `<div class="letter-date">${escHtml(l.date)}</div>` : ''}
         <div class="letter-to">${escHtml(l.to || '').replace(/\n/g, '<br>')}</div>
         ${l.subject ? `<div class="letter-subject"><strong>বিষয়/Subject:</strong> ${escHtml(l.subject)}</div>` : ''}
-        <div class="letter-salutation">${l.to?.includes('Mayor') || l.to?.includes('Sir') ? 'Sir,' : 'মহোদয়,'}</div>
+        <div class="letter-salutation">${letterSalutation(l.to)}</div>
         <div class="letter-body">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
         <div class="letter-closing">${escHtml(l.closing || '')}</div>
         <div class="letter-sender">${escHtml(l.sender || '').replace(/\n/g, '<br>')}</div>

@@ -3,7 +3,7 @@
 // শুধু sw.js-এ CACHE_VERSION বাড়ান — বাকি সব automatic।
 
 // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-const APP_VERSION = 'v1.16';
+const APP_VERSION = 'v1.21';
 
 const SUBJECTS = [
   { id: 'all', label: 'সব কুইজ', varName: null, marks: null },
@@ -31,8 +31,6 @@ const SUBJECT_ICONS = {
   math: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M16 14v4"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>',
   mental: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.498.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"/></svg>',
   ethics: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16 19 8 22 16c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M2 16 5 8 8 16c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>',
-  written: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
-  primary: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
 };
 
 const ITEMS_PER_PAGE = 50;
@@ -42,9 +40,7 @@ function toBn(n) {
   return String(n).split('').map(ch => d[parseInt(ch)] ?? ch).join('');
 }
 
-// ✅ SECURITY FIX: Escape HTML special characters to prevent render breaks
 function escapeHtml(text) {
-  if (!text) return '';
   const map = {
     '&': '&amp;',
     '<': '&lt;',
@@ -127,12 +123,24 @@ function migrateLegacyIds() {
   saveAll();
 }
 
-function initTheme() { applyTheme(LS.load('bcs_theme', 'light')); }
+function initTheme() {
+  // থিম সবসময় plain string হিসেবে সেভ/রিড হয় (LS.save/LS.load নয়) —
+  // root, primary-mcq, written-exam সবাই এভাবেই পড়ে/লেখে।
+  let t = localStorage.getItem('bcs_theme') || 'light';
+  // আগের বাগের কারণে যদি JSON-quoted মান (যেমন '"dark"') থেকে থাকে, সেটা পরিষ্কার করে নেয়
+  if (t.length > 1 && t.charAt(0) === '"' && t.charAt(t.length - 1) === '"') {
+    try { t = JSON.parse(t); } catch (e) { t = 'light'; }
+  }
+  if (t !== 'dark' && t !== 'light') t = 'light';
+  applyTheme(t);
+}
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  LS.save('bcs_theme', theme);
+  localStorage.setItem('bcs_theme', theme);
   const btn = document.getElementById('themeBtn');
   if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) metaTheme.setAttribute('content', theme === 'dark' ? '#0f0e0d' : '#f7f5f2');
 }
 function toggleTheme() {
   applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');

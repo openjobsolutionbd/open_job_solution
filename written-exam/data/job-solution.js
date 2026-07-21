@@ -11,9 +11,11 @@
 // "sub-parts"      → ক) খ) গ) — সন্ধি, সমাস, কারক, এক কথায়
 //                    parts: [{ label, q, a }]
 //
-// "table"          → দুই কলামের ছক
-//                    columns: [col1, col2], rows: [[c1, c2]]
-//                    optional: columns3 for 3-column tables
+// "table"          → দুই বা তার বেশি কলামের ছক
+//                    columns: [col1, col2, ...], rows: [[c1, c2, ...], ...]
+//                    (৩+ কলামের টেবিলের জন্য columns/rows-এই আরেকটা এলিমেন্ট
+//                    যোগ করুন — renderer.js যেকোনো সংখ্যক কলাম generic ভাবে
+//                    হ্যান্ডেল করে। আলাদা কোনো "columns3" ফিল্ড নেই/দরকার নেই।)
 //
 // "paragraph"      → দীর্ঘ রচনা / অনুচ্ছেদ / ভাবসম্প্রসারণ
 //                    answer: "string"
@@ -945,7 +947,7 @@ const JOB_SOLUTIONS = [
       { label: "h", q: "Translate to English: বিনা মেঘে বজ্রপাত", a: "A bolt from the blue" }
     ] },
 
-  { id: "job-2025-iwta-traffic-q08", examId: "job-2025-iwta-traffic", subject: "english", topic: "paragraph", qno: 8, marks: 7, type: "paragraph",
+  { id: "job-2025-iwta-traffic-q04", examId: "job-2025-iwta-traffic", subject: "english", topic: "paragraph", qno: 4, marks: 7, type: "paragraph",
     question: "Write an essay on \"River Ports of Bangladesh\"",
     answer: "Bangladesh is a riverine country where river ports play a vital role in transportation and trade. Important river ports like Dhaka (Sadarghat), Narayanganj, Khulna, Barisal, Chandpur, and Ashuganj help connect different parts of the country. Sadarghat is one of the busiest river ports in the world, serving thousands of passengers daily. These ports are important for carrying goods like jute, rice, and industrial products. They reduce pressure on roads and are cost-effective. However, many ports face problems like siltation, poor maintenance, and outdated infrastructure. With proper development and management, river ports can boost the economy and improve communication across the country." },
 
@@ -1017,7 +1019,7 @@ const JOB_SOLUTIONS = [
       { label: "", source: "আমি চাকরি পাওয়ার পর আমার বোনকে বিয়ে দেব।", target: "After getting a job, I will marry off my sister." }
     ] },
 
-  { id: "job-2025-dc-bhola-q07", examId: "job-2025-dc-bhola", subject: "english", topic: "gender-change", qno: 7, marks: 4, type: "short-qa",
+  { id: "job-2025-dc-bhola-q07", examId: "job-2025-dc-bhola", subject: "english", topic: "grammar", qno: 7, marks: 4, type: "short-qa",
     question: "Masculine/Feminine Gender:",
     parts: [ { label: "", q: "Widow এর Masculine Gender কি?", a: "Widower" } ] },
 

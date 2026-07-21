@@ -21,7 +21,7 @@
     .year-filter{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
     .year-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);background:var(--surface);color:var(--text-3);font-size:0.75rem;font-family:inherit;cursor:pointer;transition:all var(--transition)}
     .year-btn:hover{border-color:var(--primary);color:var(--primary)}
-    .year-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .year-btn.active{background:var(--primary);color:var(--on-accent);border-color:var(--primary)}
     .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--text-2);font-size:0.85rem;text-decoration:none;margin-bottom:16px}
     .back-link:hover{color:var(--primary)}
     .question-body .bookmark-btn{width:18px;height:18px;border:none;background:none;flex-shrink:0}
@@ -32,7 +32,7 @@
 
 <header class="app-header" id="appHeader">
   <div class="header-inner">
-    <span class="app-title">Primary MCQ</span>
+    <span class="app-title">Primary MCQ <span class="app-version" id="appVersion"></span></span>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input type="search" id="searchInput" class="search-input"
@@ -91,6 +91,9 @@ const SUBJECTS = [
   { id: 'gk',      label: 'সাধারণ জ্ঞান' },
   { id: 'child',   label: 'শিশু বিকাশ' },
 ];
+
+// APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
+const APP_VERSION = 'v1.21';
 
 let S = { answered:{}, bookmarks:{}, subject:'all', year:'all', page:1, mode:'normal', search:'' };
 
@@ -243,6 +246,8 @@ function renderPagination(total, totalPages){
 function render(){ renderTabs(); renderYears(); renderStats(); renderQuestions(); document.getElementById('bookmarkModeBtn').classList.toggle('active',S.mode==='bookmark'); }
 
 load(); render();
+const versionEl = document.getElementById('appVersion');
+if (versionEl) versionEl.textContent = APP_VERSION;
 
 // Header scroll
 let lastY=0; const hdr=document.getElementById('appHeader');
@@ -261,7 +266,12 @@ document.getElementById('bookmarkModeBtn').addEventListener('click',function(){ 
 // Theme
 (function(){
   const btn=document.getElementById('themeBtn');
-  function apply(t){ document.documentElement.setAttribute('data-theme',t); btn.textContent=t==='dark'?'☀️':'🌙'; }
+  function apply(t){
+    document.documentElement.setAttribute('data-theme',t);
+    btn.textContent=t==='dark'?'☀️':'🌙';
+    const metaTheme=document.querySelector('meta[name="theme-color"]');
+    if(metaTheme) metaTheme.setAttribute('content', t==='dark'?'#0f0e0d':'#f7f5f2');
+  }
   apply(localStorage.getItem('bcs_theme')||'light');
   btn.addEventListener('click',()=>{ const n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; localStorage.setItem('bcs_theme',n); apply(n); });
 })();
@@ -286,7 +296,7 @@ document.getElementById('resetBtnBottom').addEventListener('click',doReset);
   }
 </script>
 <script>
-navigator.serviceWorker.addEventListener('controllerchange', () => {
+navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
   if (!window.__swReloaded) {
     window.__swReloaded = true;
     window.location.reload();

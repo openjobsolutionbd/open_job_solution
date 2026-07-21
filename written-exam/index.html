@@ -223,7 +223,7 @@
   <div class="app-header" id="appHeader">
     <div class="header-inner">
       <a href="/" style="text-decoration:none">
-        <span class="app-title">✍️ লিখিত পরীক্ষা</span>
+        <span class="app-title">✍️ লিখিত পরীক্ষা <span class="app-version" id="appVersion"></span></span>
       </a>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
@@ -290,14 +290,18 @@
 
   <!-- Data Files -->
   <script src="data/job-solution.js"></script>
-  <script src="data/bangla.js"></script>
-  <script src="data/english.js"></script>
-  <script src="data/math.js"></script>
-  <script src="data/general-knowledge.js"></script>
   <script src="exam-archive.js"></script>
   <script src="renderer.js"></script>
 
   <script>
+  // ══════════════════════════════════════════
+  // Version
+  // ══════════════════════════════════════════
+  // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
+  const APP_VERSION = 'v1.21';
+  const versionEl = document.getElementById('appVersion');
+  if (versionEl) versionEl.textContent = APP_VERSION;
+
   // ══════════════════════════════════════════
   // Theme
   // ══════════════════════════════════════════
@@ -305,6 +309,8 @@
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
     themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f7f5f2');
   }
   applyTheme(localStorage.getItem('bcs_theme') || 'light');
   themeBtn.addEventListener('click', () => {
@@ -378,7 +384,7 @@
       // মন্ত্রণালয় ফিল্টার
       if (ministryVal && ex.ministry !== ministryVal) return false;
       // বছর ফিল্টার
-      if (yearVal && !ex.date.startsWith(yearVal)) return false;
+      if (yearVal && !(ex.date && ex.date.startsWith(yearVal))) return false;
       // সার্চ — আংশিক মিল, ছোট হাতে
       if (searchVal) {
         const haystack = (ex.ministry + ' ' + ex.post).toLowerCase();
@@ -400,14 +406,14 @@
     }
 
     empty.style.display = 'none';
-    countEl.textContent = `${filtered.length}টি পরীক্ষা পাওয়া গেছে`;
+    countEl.textContent = `${toBn(filtered.length)}টি পরীক্ষা পাওয়া গেছে`;
 
     filtered.forEach(ex => {
       const card = document.createElement('div');
       card.className = 'exam-card';
       card.innerHTML = `
-        <div class="exam-ministry">${ex.ministry}</div>
-        <div class="exam-post">${ex.post}</div>
+        <div class="exam-ministry">${escText(ex.ministry)}</div>
+        <div class="exam-post">${escText(ex.post)}</div>
         <div class="exam-meta-row">
           <span class="exam-tag date">📅 ${formatDate(ex.date)}</span>
           <span class="exam-tag">⏱ ${ex.duration || '—'}</span>
@@ -432,8 +438,8 @@
 
     // Header
     document.getElementById('examHeaderDetail').innerHTML = `
-      <h2>${exam.ministry}</h2>
-      <div class="post-name">${exam.post}</div>
+      <h2>${escText(exam.ministry)}</h2>
+      <div class="post-name">${escText(exam.post)}</div>
       <div class="exam-info-row">
         <span class="exam-tag date">📅 ${formatDate(exam.date)}</span>
         <span class="exam-tag">⏱ ${exam.duration || '—'}</span>

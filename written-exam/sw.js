@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'written-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.17';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.21';
 
 const ASSETS = [
   '/written-exam/',
@@ -15,10 +15,6 @@ const ASSETS = [
 const OPTIONAL_ASSETS = [
   '/written-exam/data/job-solution.js',
   '/written-exam/renderer.js',
-  '/written-exam/data/bangla.js',
-  '/written-exam/data/english.js',
-  '/written-exam/data/math.js',
-  '/written-exam/data/general-knowledge.js',
   '/written-exam/exam-archive.js'
 ];
 

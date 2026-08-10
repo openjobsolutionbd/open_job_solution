@@ -20,6 +20,10 @@
   Cache-Control: no-cache
   Service-Worker-Allowed: /written-exam/
 
+/current-affairs/docs/sw.js
+  Cache-Control: no-cache
+  Service-Worker-Allowed: /current-affairs/docs/
+
 /fonts/*.woff2
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable

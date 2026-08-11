@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Current Affairs — কারেন্ট অ্যাফেয়ার্স রেজিস্টার</title>
+<meta name="description" content="টপিক-ভিত্তিক বাংলা কারেন্ট অ্যাফেয়ার্স নলেজ-বেস, রিয়েল-টাইম সার্চ সহ — প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতির জন্য বিসিএসসহ সব ধরনের চাকরির পরীক্ষায় কাজে লাগবে এমন হালনাগাদ তথ্য।">
+<link rel="canonical" href="https://open-current-affairs.pages.dev/">
+<meta name="theme-color" content="#004d2c">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<script>
+  /* থিম flash এড়াতে head-এই localStorage থেকে পড়া হচ্ছে */
+  (function(){
+    var t;
+    try{ t = localStorage.getItem('oca_theme'); }catch(e){}
+    if(t === 'dark'){
+      document.documentElement.setAttribute('data-theme', t);
+    }
+    // light বা unknown হলে attribute সেট করা হয় না — :root CSS কাজ করে
+  })();
+</script>
+<script src="./vendor/marked.min.js"></script>
+<script src="./vendor/purify.min.js"></script>
+<style>
+  @font-face{
+    font-family:'Kalpurush';
+    src:url('./fonts/Kalpurush.woff2') format('woff2'),
+        url('./fonts/Kalpurush.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  }
+  @font-face{
+    font-family:'Noto Serif Bengali';
+    src:url('./fonts/NotoSerifBengali-Regular.woff2') format('woff2');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  }
+  @font-face{
+    font-family:'Noto Serif Bengali';
+    src:url('./fonts/NotoSerifBengali-Bold.woff2') format('woff2');
+    font-weight:700;
+    font-style:normal;
+    font-display:swap;
+  }
+  @font-face{
+    font-family:'Hind Siliguri';
+    src:url('./fonts/HindSiliguri-SemiBold.woff2') format('woff2');
+    font-weight:600;
+    font-style:normal;
+    font-display:swap;
+  }
+  @font-face{
+    font-family:'Hind Siliguri';
+    src:url('./fonts/HindSiliguri-Medium.woff2') format('woff2');
+    font-weight:500;
+    font-style:normal;
+    font-display:swap;
+  }
+
+  /* ══════════════════════════════════════════════════════
+     Light Mode — বাংলাদেশ সরকারের সিলের রঙ
+     সবুজ #006B3F · লাল #E8112D · হলুদ #F5C518
+     ══════════════════════════════════════════════════════ */
+  :root{
+    --ink:#1a1a1a;
+    --paper:#f2f2ef;
+    --paper-raised:#ffffff;
+    --masthead-bg:#004d2c;
+    --masthead-border:#F5C518;
+    --drawer-bg:#004d2c;
+    --drawer-label-color:#ffffff;
+    --accent:#006B3F;
+    --accent-deep:#004d2c;
+    --accent-light:rgba(0,107,63,0.08);
+    --line:#d8d8d8;
+    --on-dark:#ffffff;
+    --on-accent:#ffffff;
+    --heading:#006B3F;
+    --heading-border:#006B3F;
+    --muted:#666666;
+    --seal:#E8112D;
+    --seal-text:#c00020;
+    --pill-bg:rgba(0,107,63,0.09);
+    --success-bg:#e8f5ee;
+    --success-border:#006B3F;
+    --success-text:#004d2c;
+    --error-bg:#fdecea;
+    --error-text:#c00020;
+    --shadow:0 2px 12px rgba(0,0,0,0.09);
+  }
+
+  /* ══════════════════════════════════════════════════════
+     Dark Mode — গভীর কালো, সরকারি সবুজ heading
+     ══════════════════════════════════════════════════════ */
+  [data-theme="dark"]{
+    --ink:#e8e8e8;
+    --paper:#111111;
+    --paper-raised:#1a1a1a;
+    --masthead-bg:#001a0f;
+    --masthead-border:#F5C518;
+    --drawer-bg:#001a0f;
+    --drawer-label-color:#e0e0e0;
+    --accent:#2aad6e;
+    --accent-deep:#006B3F;
+    --accent-light:rgba(42,173,110,0.10);
+    --line:#2a2a2a;
+    --on-dark:#e8e8e8;
+    --on-accent:#001a0f;
+    --heading:#2aad6e;
+    --heading-border:#2aad6e;
+    --muted:#888888;
+    --seal:#ff3a50;
+    --seal-text:#ff6070;
+    --pill-bg:rgba(42,173,110,0.10);
+    --success-bg:#0d2018;
+    --success-border:#2aad6e;
+    --success-text:#7adaaa;
+    --error-bg:#200a0a;
+    --error-text:#ff8090;
+    --shadow:0 2px 12px rgba(0,0,0,0.5);
+  }
+  *{box-sizing:border-box;}
+
+  /* ── Linen/canvas texture — Lightshot-এর মতো সূক্ষ্ম woven fabric ── */
+  body{
+    margin:0;
+    color:var(--ink);
+    font-family:'Kalpurush', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    transition:background-color 0.2s ease, color 0.2s ease;
+
+    /* light mode: হালকা ধূসর canvas — দুটো আধা-স্বচ্ছ line cross করে texture তৈরি */
+    background-color: var(--paper);
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0,0,0,0.025) 3px,
+        rgba(0,0,0,0.025) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        rgba(0,0,0,0.025) 3px,
+        rgba(0,0,0,0.025) 4px
+      );
+  }
+
+  /* dark mode: একই texture কিন্তু সাদা আভায় */
+  [data-theme="dark"] body{
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255,255,255,0.025) 3px,
+        rgba(255,255,255,0.025) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        rgba(255,255,255,0.025) 3px,
+        rgba(255,255,255,0.025) 4px
+      );
+  }
+  .masthead{
+    background:var(--masthead-bg);
+    color:var(--on-dark);
+    padding:16px 24px 12px;
+    text-align:center;
+    border-bottom:5px solid var(--masthead-border);
+    box-shadow:0 2px 0 var(--seal);
+    position:relative;
+  }
+  .masthead h1{
+    font-family:'Kalpurush', serif;
+    font-weight:700;
+    font-size:clamp(24px,3.84vw,33.6px);
+    margin:0;
+  }
+  .masthead .sub{
+    font-size:14.4px;
+    opacity:0.7;
+    margin-top:4px;
+    font-family:'Kalpurush',sans-serif;
+  }
+
+  /* ══════════════════════════════════════════════════════
+     হেডারের ডান কোণের উইজেট: অ্যানালগ ঘড়ি + স্টাডি টাইমার
+     ══════════════════════════════════════════════════════ */
+  .header-widgets{
+    position:absolute;
+    top:12px;
+    right:16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    z-index:5;
+  }
+  @media (max-width:640px){
+    .header-widgets{
+      position:static;
+      justify-content:center;
+      margin-top:10px;
+    }
+    /* মোবাইলে .header-widgets আর মাসথেডের ডান কোণে fixed/absolute থাকে
+       না (ওপরে static করে দেওয়া হয়েছে), তাই সংঘর্ষ এড়াতে স্ক্রল-পিন
+       করা সার্চ বক্সের top অফসেট এখানে কমানো যেত, কিন্তু মাসথেডের
+       টাইটেল/সাবটাইটেল লেখার সাথে না মেশার জন্য একই 88px রাখা হলো —
+       ছোট স্ক্রিনেও এটা টাইটেলের নিচে, ফাঁকা জায়গায় বসে। */
+  }
+
+  /* ── Windows 7-স্টাইল ৩-কাঁটা অ্যানালগ ঘড়ি ── */
+  .analog-clock{
+    width:68px;
+    height:68px;
+    flex-shrink:0;
+  }
+  .analog-clock-face{
+    position:relative;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:radial-gradient(circle at 32% 28%, #4a4a4a, #0a0a0a 70%);
+    border:3px solid #d8d8d8;
+    box-shadow:
+      0 2px 5px rgba(0,0,0,0.4),
+      inset 0 1px 3px rgba(255,255,255,0.25),
+      inset 0 -3px 6px rgba(0,0,0,0.5);
+  }
+  .clock-tick{
+    position:absolute;
+    top:3px;
+    left:50%;
+    width:2px;
+    height:6px;
+    background:#e8e8e8;
+    transform-origin:1px 31px;
+    margin-left:-1px;
+    opacity:0.85;
+  }
+  .clock-hand{
+    position:absolute;
+    left:50%;
+    bottom:50%;
+    transform-origin:50% 100%;
+    border-radius:3px;
+  }
+  .clock-hand-hour{
+    width:4px;
+    height:17px;
+    margin-left:-2px;
+    background:#f0f0f0;
+  }
+  .clock-hand-minute{
+    width:3px;
+    height:25px;
+    margin-left:-1.5px;
+    background:#f0f0f0;
+  }
+  .clock-hand-second{
+    width:1.5px;
+    height:26px;
+    margin-left:-0.75px;
+    background:#e8112d;
+  }
+  .clock-center-dot{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:6px;
+    height:6px;
+    margin:-3px 0 0 -3px;
+    border-radius:50%;
+    background:#e8112d;
+    box-shadow:0 0 1px rgba(0,0,0,0.6);
+  }
+
+  /* ── স্টাডি টাইমার — পড়ার সময় মাপার জন্য, শুধু ঘণ্টা:মিনিট দেখায় ── */
+  .study-timer{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:8px;
+    padding:5px 8px;
+  }
+  .study-timer-display{
+    font-family:'Kalpurush',monospace,sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:var(--on-dark);
+    min-width:2.6em;
+    text-align:center;
+    letter-spacing:0.02em;
+    font-variant-numeric:tabular-nums;
+  }
+  .study-timer-controls{
+    display:flex;
+    gap:4px;
+  }
+  .study-timer-btn{
+    width:22px;
+    height:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    color:var(--on-dark);
+    font-size:11px;
+    cursor:pointer;
+    transition:background 0.15s ease, transform 0.15s ease;
+  }
+  .study-timer-btn:hover{
+    background:var(--accent);
+    color:var(--on-accent);
+  }
+  .study-timer.running .study-timer-btn#study-timer-toggle{
+    background:var(--seal);
+    color:#fff;
+  }
+
+  .search-bar-wrap{
+    max-width:900px;
+    margin:14px auto 0;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .search-slot{
+    position:relative;
+    background:var(--paper-raised);
+    border:2px solid var(--heading);
+    border-radius:4px;
+    box-shadow:var(--shadow);
+    flex:1 1 260px;
+  }
+  .search-slot::before{
+    content:"সার্চ";
+    position:absolute;
+    top:-11px;
+    left:14px;
+    background:var(--accent);
+    color:var(--on-accent);
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    font-weight:600;
+    padding:2px 10px;
+    border-radius:2px;
+    letter-spacing:0.05em;
+  }
+  #search{
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    padding:9px 14px 7px;
+    font-family:'Kalpurush',sans-serif;
+    font-size:18px;
+    color:var(--ink);
+  }
+  #search::placeholder{color:var(--muted);}
+
+  /* ══════════════════════════════════════════════════════
+     ভাসমান সার্চ বক্স — "দৈনিক ঘটনাপ্রবাহ" মোডে স্ক্রল করলে
+     সাথে সাথে ভেসে থাকে। ছোট, গোলগাল, একটু কিউট।
+     ══════════════════════════════════════════════════════ */
+  .floating-search-wrap{
+    position:relative;
+    z-index:400;
+    display:none; /* শুধু ghotonaprobaho মোডে দেখানো হয় — JS টগল করে */
+    font-family:'Kalpurush', sans-serif;
+  }
+  .floating-search-wrap.visible{ display:block; }
+  /* BUG FIX: আগে পুরো সময় position:relative থাকায় স্ক্রল করলে বক্সটা
+     পেজের বাকি কন্টেন্টের সাথে সাথে ওপরে/নিচে সরে যেত, স্ক্রল করে নিচে
+     গেলে স্ক্রিন থেকে বেরিয়ে যেত। CSS position:sticky এখানে কাজ করে
+     না, কারণ এর প্যারেন্ট (.toolbar) মাত্র একটা সরু সারি — sticky
+     এলিমেন্ট নিজের প্যারেন্টের উচ্চতার বাইরে "ভাসতে" পারে না। তাই JS
+     দিয়ে স্ক্রল-ভিত্তিক টগল করা হচ্ছে: টুলবার ভিউপোর্ট থেকে ওপরে
+     স্ক্রল হয়ে গেলে .scroll-pinned ক্লাস লাগিয়ে position:fixed করা
+     হয় (নিচে ভিডিও/স্ক্রল-হেডিং-এর মতো), আর টুলবার আবার দৃশ্যমান
+     হলে ক্লাসটা সরিয়ে স্বাভাবিক ফ্লোতে ফিরিয়ে আনা হয়। এভাবে বক্সটা
+     সবসময় ভিউপোর্টের একই জায়গায় (top:12px) স্থির দেখা যায়, স্ক্রল
+     ওপরে/নিচে যেকোনো দিকেই করা হোক না কেন — একদম পেজের শুরুতে ফিরলে
+     টুলবারের নিজের জায়গায় ফিরে আসে। */
+  .floating-search-wrap.scroll-pinned{
+    position:fixed;
+    top:88px;
+    right:16px;
+  }
+  .floating-search-wrap.dragged{
+    position:fixed;
+    top:0;
+    left:0;
+  }
+
+  /* আধুনিক 3D "embossed button" pill — গভীরতা তৈরি হয় inset হাইলাইট
+     (ওপরের কিনারায় আলো) ও নিচের গাঢ় শ্যাডো (ভর/উচ্চতা) মিলিয়ে। */
+  .floating-search-pill{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    position:relative;
+    background:transparent;
+    border:none;
+    border-radius:999px;
+    box-shadow:none;
+    padding:0;
+    width:48px;
+    height:48px;
+    transition:width 0.32s cubic-bezier(.34,1.2,.4,1), transform 0.25s ease;
+    overflow:hidden;
+    cursor:grab;
+  }
+  .floating-search-pill:hover{ transform:translateY(-3px) rotate(-3deg); }
+  /* ড্র্যাগ চলাকালীন transition/hover-lift বন্ধ রাখা হয় যাতে বক্সটা
+     মাউসের পিছু পিছু আটকে না গিয়ে ঠিকঠাক অনুসরণ করে। */
+  .floating-search-pill.dragging{
+    cursor:grabbing;
+    transition:none;
+    transform:scale(1.05) rotate(-2deg);
+  }
+  .floating-search-pill.open{
+    width:min(80vw, 280px);
+    cursor:default;
+    border-radius:24px;
+    padding-left:6px;
+    padding-right:6px;
+    background:linear-gradient(160deg, #ffffff 0%, #eafff5 100%);
+    border:2px solid var(--accent-deep);
+    box-shadow:
+      0 2px 0 rgba(0,107,63,0.15),
+      0 20px 38px -10px rgba(0,107,63,0.4);
+    transform:none;
+  }
+  /* BUG FIX: ডার্ক মোডে সার্চ পিল খোলা অবস্থায় আগে হার্ডকোড করা সাদা/হালকা
+     সবুজ ব্যাকগ্রাউন্ড ব্যবহার হতো, যা টেক্সট কালার (--ink, ডার্ক মোডে প্রায়
+     সাদা) এর সাথে মিশে টাইপ করা লেখা প্রায় অদৃশ্য করে দিত। এখানে থিমের
+     নিজস্ব ডার্ক সারফেস কালার ব্যবহার করা হলো, যাতে কনট্রাস্ট বজায় থাকে। */
+  [data-theme="dark"] .floating-search-pill.open{
+    background:linear-gradient(160deg, var(--paper-raised) 0%, #0d2018 100%);
+    border:2px solid var(--accent);
+    box-shadow:
+      0 2px 0 rgba(0,0,0,0.4),
+      0 20px 38px -10px rgba(0,0,0,0.6);
+  }
+
+  /* ══════════════════════════════════════════════════════
+     সার্চ "বাডি" — ম্যাগনিফায়িং গ্লাস চরিত্র। ডিফল্টে অত্যন্ত সূক্ষ্ম
+     "breathe" (নিঃশ্বাসের মতো হালকা scale) ছাড়া কিছুই করে না, যাতে
+     পড়ার মনোযোগ না কাড়ে। hover/drag-এ ছোট্ট wiggle/bounce দিয়ে
+     একটু কিউট প্রতিক্রিয়া দেয়। চোখের পলক (blink) JS থেকে র‍্যান্ডম
+     বিরতিতে ট্রিগার হয়, যাতে যান্ত্রিক/পুনরাবৃত্ত না লাগে।
+     ══════════════════════════════════════════════════════ */
+  .floating-search-icon{
+    flex:0 0 auto;
+    line-height:1;
+    user-select:none;
+    cursor:grab;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:48px;
+    height:48px;
+    filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    animation:fsiBreathe 3.6s ease-in-out infinite;
+    transform-origin:50% 50%;
+  }
+  .fsi-svg{ width:100%; height:100%; overflow:visible; }
+  @keyframes fsiBreathe{
+    0%, 100%{ transform:scale(1) rotate(0deg); }
+    50%{ transform:scale(1.035) rotate(-1.5deg); }
+  }
+  /* hover করলে breathe বন্ধ করে বেশি প্রাণবন্ত wiggle+bounce চালু হয় */
+  .floating-search-pill:not(.open):hover .floating-search-icon{
+    animation:fsiWiggle 0.55s ease-in-out;
+  }
+  @keyframes fsiWiggle{
+    0%{ transform:scale(1) rotate(0deg); }
+    25%{ transform:scale(1.18) rotate(-14deg); }
+    50%{ transform:scale(0.96) rotate(9deg); }
+    75%{ transform:scale(1.1) rotate(-5deg); }
+    100%{ transform:scale(1) rotate(0deg); }
+  }
+  .floating-search-pill.dragging .floating-search-icon{
+    cursor:grabbing;
+    animation:none;
+    transform:scale(1.12) rotate(-6deg);
+  }
+  /* ক্লিক করার মুহূর্তে ছোট্ট "pop" — JS ক্লাস টগল করে */
+  .floating-search-icon.fsi-pop{ animation:fsiPop 0.4s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes fsiPop{
+    0%{ transform:scale(1); }
+    40%{ transform:scale(0.82) rotate(6deg); }
+    70%{ transform:scale(1.15) rotate(-4deg); }
+    100%{ transform:scale(1) rotate(0deg); }
+  }
+  /* চোখের পলক — খুব দ্রুত scaleY(0.1), JS ক্লাস দিয়ে ট্রিগার হয় */
+  .fsi-eye{ transition:none; transform-origin:center; transform-box:fill-box; }
+  .fsi-face.fsi-blink .fsi-eye{ animation:fsiBlink 0.28s ease-in-out; }
+  @keyframes fsiBlink{
+    0%, 100%{ transform:scaleY(1); }
+    50%{ transform:scaleY(0.12); }
+  }
+  /* খোলা অবস্থায় বাডিটা ছোট হয়ে বাম কোণে বসে, breathe থেমে যায় যাতে
+     টাইপ করার সময় দৃষ্টি বিক্ষিপ্ত না হয়। */
+  .floating-search-pill.open .floating-search-icon{
+    width:26px;
+    height:26px;
+    animation:none;
+  }
+  .floating-search-pill.open .fsi-glint,
+  .floating-search-pill.open .fsi-eye-glint{ opacity:0.9; }
+  .floating-search-pill #floating-search-input{
+    flex:1 1 auto;
+    min-width:0;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:var(--ink);
+    font-family:'Kalpurush', sans-serif;
+    font-size:17.4px;
+    padding:2px 0;
+    opacity:0;
+    transform:translateX(4px);
+    transition:opacity 0.22s ease 0.08s, transform 0.22s ease 0.08s;
+  }
+  .floating-search-pill.open #floating-search-input{ opacity:1; transform:translateX(0); }
+  .floating-search-pill #floating-search-input::placeholder{ color:var(--muted); }
+
+  .floating-search-close{
+    flex:0 0 auto;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width:24px;
+    height:24px;
+    border:none;
+    background:var(--accent-light);
+    color:var(--muted);
+    font-size:14.4px;
+    cursor:pointer;
+    border-radius:50%;
+    transition:background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+  .floating-search-pill.open .floating-search-close{ display:flex; }
+  .floating-search-close:hover{
+    background:var(--accent);
+    color:var(--on-accent);
+    transform:rotate(90deg);
+  }
+
+  .floating-search-results{
+    position:absolute;
+    right:0;
+    top:56px;
+    width:min(92vw, 380px);
+    max-height:min(58vh, 420px);
+    overflow-y:auto;
+    background:var(--paper-raised);
+    background:color-mix(in srgb, var(--paper-raised) 92%, transparent);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    backdrop-filter:blur(18px) saturate(160%);
+    border:1px solid var(--line);
+    border:1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
+    border-radius:16px;
+    box-shadow:
+      0 4px 12px rgba(0,0,0,0.1),
+      0 20px 44px -12px rgba(0,0,0,0.3);
+    padding:8px;
+    display:none;
+    opacity:0;
+    transform:translateY(-6px) scale(0.98);
+    transition:opacity 0.18s ease, transform 0.18s ease;
+  }
+  .floating-search-results.visible{ display:block; opacity:1; transform:translateY(0) scale(1); }
+  /* বক্সটা টেনে সরানো (dragged) হলে আবার নিচে-ডানে ফিক্সড পজিশনের
+     পুরনো আচরণে ফিরে যায় — তখন রেজাল্ট বক্সটা ওপরের দিকে খোলে, যাতে
+     স্ক্রিনের নিচের কিনারার বাইরে চলে না যায়। */
+  .floating-search-wrap.dragged .floating-search-results{
+    top:auto;
+    bottom:56px;
+    transform:translateY(6px) scale(0.98);
+  }
+  .floating-search-wrap.dragged .floating-search-results.visible{
+    transform:translateY(0) scale(1);
+  }
+  .floating-search-result-item{
+    display:block;
+    width:100%;
+    text-align:right;
+    background:transparent;
+    border:none;
+    border-radius:10px;
+    padding:10px 12px;
+    font-family:'Kalpurush', sans-serif;
+    font-size:16.2px;
+    color:var(--ink);
+    cursor:pointer;
+    transition:background 0.15s ease, padding-right 0.15s ease;
+  }
+  .floating-search-result-item:hover, .floating-search-result-item:focus-visible{
+    background:var(--accent-light);
+    padding-right:16px;
+  }
+  .floating-search-result-item + .floating-search-result-item{
+    margin-top:2px;
+  }
+  .floating-search-empty{
+    padding:14px 10px;
+    text-align:center;
+    color:var(--muted);
+    font-size:15.6px;
+  }
+  .floating-search-wiki-loading{
+    font-style:italic;
+  }
+  .floating-search-wiki-result{
+    padding:12px 12px 10px;
+  }
+  .floating-search-wiki-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--accent-light);
+    color:var(--accent-deep);
+    font-size:15.1px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:7px;
+  }
+  .floating-search-wiki-badge-icon{
+    width:14px;
+    height:14px;
+    flex:0 0 auto;
+    border-radius:50%;
+  }
+  .floating-search-wiki-title{
+    font-weight:700;
+    font-size:20.2px;
+    color:var(--ink);
+    margin-bottom:5px;
+  }
+  .floating-search-wiki-extract{
+    font-size:18.7px;
+    line-height:1.55;
+    color:var(--ink);
+    margin-bottom:9px;
+  }
+  .floating-search-wiki-link{
+    display:inline-block;
+    font-size:18px;
+    font-weight:600;
+    color:var(--accent-deep);
+    text-decoration:none;
+  }
+  .floating-search-wiki-link:hover{ text-decoration:underline; }
+  .main-wiki-result{
+    max-width:640px;
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:16px 18px 14px;
+  }
+  .main-wiki-result .floating-search-wiki-title{ font-size:23px; }
+  .main-wiki-result .floating-search-wiki-extract{ font-size:20.9px; }
+
+  @media (max-width:720px){
+    /* আগে এখানে .floating-search-wrap-কে right/bottom দিয়ে ফিক্সড পজিশন
+       করা হতো, কিন্তু ডিফল্ট পজিশন এখন টুলবারের ভেতরে (in-flow), তাই এই
+       ওভাররাইডের আর দরকার নেই — clampFloatingSearchToViewport() ইতিমধ্যে
+       ড্র্যাগ করা অবস্থায় ছোট স্ক্রিনেও বক্সটাকে ভিউপোর্টের মধ্যে রাখে। */
+  }
+
+  /* ভাসমান সার্চ থেকে টপিক খুললে এই মডালে দেখানো হয় — এতে বর্তমান
+     মোড/স্ক্রিন (যেমন "দৈনিক ঘটনাপ্রবাহ") অক্ষত থাকে, অন্য কোথাও যেতে হয় না। */
+  .topic-modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:500;
+    display:none;
+    align-items:flex-start;
+    justify-content:center;
+    padding:40px 16px;
+    overflow-y:auto;
+  }
+  .topic-modal-overlay.visible{ display:flex; }
+  .topic-modal{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:8px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.35);
+    max-width:720px;
+    width:100%;
+    padding:30px 34px 34px;
+    position:relative;
+    font-family:'Kalpurush', sans-serif;
+  }
+  .topic-modal-close{
+    position:absolute;
+    top:14px;
+    right:14px;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:none;
+    background:var(--accent-light);
+    color:var(--ink);
+    font-size:19.2px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .topic-modal-close:hover{ background:var(--heading); color:var(--paper-raised); }
+  @media (max-width:720px){
+    .topic-modal{ padding:24px 18px 26px; }
+  }
+
+  .layout{
+    max-width:1080px;
+    margin:18px auto 60px;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:22px;
+  }
+  #ghotonaprobaho-layout, #top-news-layout{
+    grid-template-columns:1fr;
+  }
+  @media (max-width:760px){
+    .layout{grid-template-columns:1fr;}
+    #browse-layout.showing-article .drawer{ display:none; }
+    #browse-layout:not(.showing-article) .card{ display:none; }
+    .mobile-back-btn{ display:inline-block; }
+    .card{ padding:20px 16px 24px; }
+    .card h2{ margin-left:66px; font-size:25.2px; }
+    .card .tags-row{ margin-left:66px; }
+    .seal{ width:48px; height:48px; font-size:10.8px; top:18px; left:16px; }
+    .search-bar-wrap{ justify-content:center; }
+    .search-slot{ flex-basis:100%; }
+    .toolbar{ justify-content:center; flex-basis:100%; }
+  }
+
+  .drawer{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    align-self:start;
+  }
+  .drawer-label{
+    background:var(--drawer-bg);
+    color:var(--drawer-label-color);
+    font-family:'Kalpurush',sans-serif;
+    font-size:14.4px;
+    letter-spacing:0.08em;
+    padding:10px 14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+  }
+  #topic-count{color:var(--on-dark);}
+  .tab{
+    display:block;
+    width:100%;
+    text-align:right;
+    padding:12px 16px;
+    border:none;
+    background:none;
+    border-bottom:1px solid var(--line);
+    font-family:'Kalpurush',sans-serif;
+    font-size:18px;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .tab:last-child{border-bottom:none;}
+  .tab:hover{background:var(--accent-light);}
+  .tab.active{
+    background:var(--drawer-bg);
+    color:var(--on-dark);
+    font-weight:600;
+    border-left:3px solid var(--accent);
+  }
+  @media (max-width:700px){
+    .tab{ text-align:left; }
+  }
+  .tab .tab-tags{
+    display:block;
+    font-family:'Kalpurush',sans-serif;
+    font-size:15px;
+    color:var(--ink);
+    margin-top:2px;
+  }
+  .tab.active .tab-tags{
+    color:var(--on-dark);
+    opacity:0.92;
+  }
+  .tab mark{
+    background:rgba(232,17,45,0.12);
+    color:var(--heading);
+    font-weight:600;
+    border-radius:2px;
+    padding:0 1px;
+  }
+  .empty-note{
+    padding:16px;
+    font-size:15.6px;
+    color:var(--muted);
+    text-align:center;
+  }
+
+  .card{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:4px;
+    box-shadow:var(--shadow);
+    padding:30px 34px 34px;
+    min-height:300px;
+    position:relative;
+  }
+  .card-placeholder{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    min-height:300px;
+    color:var(--muted);
+    text-align:center;
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+  }
+  .card-placeholder .big{
+    font-family:'Kalpurush',serif;
+    font-size:26.4px;
+    color:var(--heading);
+    margin-bottom:8px;
+  }
+
+  .seal{
+    position:absolute;
+    top:22px;
+    left:28px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--seal);
+    color:var(--on-dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-family:'Kalpurush',sans-serif;
+    font-size:12px;
+    line-height:1.2;
+    font-weight:600;
+    border:2px dashed rgba(255,255,255,0.6);
+    box-shadow:0 3px 8px rgba(0,0,0,0.25);
+    transform:rotate(-8deg);
+  }
+
+  .card-actions{
+    position:absolute;
+    top:22px;
+    right:28px;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    max-width:calc(100% - 110px);
+  }
+  /* মূল পাতার কার্ডে .card-actions যেভাবে বসে, ভাসমান সার্চ থেকে খোলা
+     পপআপ-মডালেও ঠিক একই HTML (একই .card-actions সহ) ভেতরে বসানো হয় —
+     কিন্তু মডালের নিজের বন্ধ-করার (✕) বাটনও একই কোণায় (top:14/right:14,
+     ৩২×৩২px) বসে, ফলে দুটো একে অপরের ওপর মিলে যায়। এখানে শুধু মডালের
+     ভেতরের .card-actions-কে বাঁ দিকে সরিয়ে ✕ বাটনের জন্য জায়গা ছেড়ে
+     দেওয়া হচ্ছে — সাধারণ পাতার লেআউট অপরিবর্তিত থাকে। */
+  #topic-modal-body .card-actions{
+    right:56px;
+  }
+  .mobile-back-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+    font-weight:600;
+    padding:8px 4px 14px;
+    margin:0;
+    cursor:pointer;
+  }
+  .months-back-btn{
+    display:inline-block;
+    background:none;
+    border:none;
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+    font-weight:600;
+    padding:8px 4px 14px;
+    margin:0;
+    cursor:pointer;
+  }
+  .copy-link{
+    background:var(--paper);
+    border:1px solid var(--heading);
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    font-weight:600;
+    padding:5px 10px;
+    border-radius:16px;
+    cursor:pointer;
+    transition:background 0.15s ease;
+  }
+  .copy-link:hover{background:var(--accent-light);}
+  @media (max-width:700px){
+    .card-actions{
+      position:static;
+      max-width:100%;
+      margin:0 0 14px 8px;
+      justify-content:flex-start;
+    }
+  }
+
+  .card h2{
+    font-family:'Hind Siliguri',sans-serif;
+    font-weight:600;
+    color:var(--heading);
+    font-size:31.2px;
+    margin:0 0 4px 90px;
+    border-bottom:2px solid var(--heading-border);
+    padding-bottom:10px;
+    padding-right:320px;
+  }
+  @media (max-width:700px){
+    .card h2{ padding-right:0; }
+  }
+  .card .tags-row{
+    margin:8px 0 20px 90px;
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  .pill{
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    background:var(--pill-bg);
+    color:var(--ink);
+    padding:3px 10px;
+    border-radius:12px;
+    border:1px solid var(--line);
+    cursor:pointer;
+  }
+  [data-theme="dark"] .pill{
+    color:var(--on-dark);
+    border-color:var(--line);
+  }
+  .pill:hover{background:var(--accent); color:var(--on-accent);}
+  .card-body{margin-top:6px;}
+  .card-body h2{
+    font-family:'Hind Siliguri',sans-serif;
+    font-weight:600;
+    font-size:22.8px;
+    color:var(--heading);
+    margin:22px 0 10px;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--line);
+  }
+  .card-body h1{display:none;}
+  .card-body p{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:19.8px;
+    line-height:1.8;
+    margin:0 0 12px;
+  }
+  .card-body strong{color:var(--heading);}
+  .table-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:14px 0 20px;
+  }
+  .table-scroll table{ margin:0; }
+  .card-body table{
+    width:100%;
+    min-width:420px;
+    border-collapse:collapse;
+    font-size:16.8px;
+  }
+  .card-body th, .card-body td{
+    border:1px solid var(--line);
+    padding:8px 10px;
+    text-align:right;
+  }
+  .card-body td{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:17.4px;
+  }
+  .card-body th{
+    background:var(--drawer-bg);
+    color:var(--on-dark);
+    font-family:'Kalpurush',sans-serif;
+    font-weight:500;
+    font-size:15px;
+  }
+  .card-body tr:nth-child(even) td{background:rgba(0,107,63,0.05);}
+  .card-body ul{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:19.8px;
+    padding-right:20px;
+    line-height:1.8;
+  }
+
+  .card-body h2.history-heading{
+    font-family:'Kalpurush',serif !important;
+    color:var(--heading);
+    font-size:21.6px;
+    border-top:2px solid var(--line);
+    padding-top:18px;
+    margin-top:26px !important;
+  }
+
+  .related-topics{
+    margin-top:26px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+  }
+  .related-title{
+    font-family:'Kalpurush',sans-serif;
+    font-size:14.4px;
+    color:var(--accent);
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .related-chip{
+    display:inline-block;
+    background:var(--paper);
+    border:1px dashed var(--heading);
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:15.6px;
+    padding:6px 13px;
+    border-radius:14px;
+    margin:0 6px 6px 0;
+    cursor:pointer;
+  }
+  .related-chip:hover{background:var(--accent-light);}
+
+  footer{
+    text-align:center;
+    font-family:'Kalpurush',sans-serif;
+    font-size:14.4px;
+    color:var(--muted);
+    padding:0 20px 40px;
+  }
+  .cache-refresh-btn{
+    background:none;
+    border:none;
+    color:var(--muted);
+    font-family:'Kalpurush',sans-serif;
+    font-size:14.4px;
+    text-decoration:underline;
+    text-underline-offset:2px;
+    cursor:pointer;
+    padding:0;
+  }
+  .cache-refresh-btn:hover{ color:var(--accent); }
+  .cache-refresh-btn:disabled{ opacity:0.6; cursor:default; text-decoration:none; }
+
+  .toolbar{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    flex:0 0 auto;
+  }
+  .theme-toggle{
+    font-family:'Kalpurush',sans-serif;
+    font-size:15.6px;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:16px;
+    border:1px solid var(--heading);
+    background:var(--paper-raised);
+    color:var(--heading);
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .theme-toggle:hover{background:var(--accent-light);}
+
+  /* তিনটা মোড (সকল টপিক / দৈনিক ঘটনাপ্রবাহ / টপ নিউজ) একই সারিতে সমান-গুরুত্বের
+     ট্যাব হিসেবে — একসাথে সব কনটেন্ট হোমপেজে না রেখে, প্রতিটা মোড স্পষ্ট আলাদা
+     ট্যাবে থাকে। flex:1 1 0 থাকায় নতুন ট্যাব যোগ হলে বাকিগুলোর প্রস্থ এমনিতেই
+     সমান হয়ে যায়, আলাদা CSS বদলাতে হয় না। */
+  .mode-tabs-row{
+    max-width:1080px;
+    margin:16px auto 0;
+    padding:0 20px;
+    display:flex;
+    gap:8px;
+  }
+  .mode-tab{
+    flex:1 1 0;
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+    font-weight:600;
+    padding:10px 14px;
+    border-radius:8px 8px 0 0;
+    border:1px solid var(--line);
+    border-bottom:3px solid transparent;
+    background:var(--paper-raised);
+    color:var(--ink);
+    cursor:pointer;
+    text-align:center;
+    transition:background 0.15s;
+  }
+  .mode-tab:hover{background:var(--accent-light);}
+  .mode-tab.active{
+    background:var(--drawer-bg);
+    color:var(--on-dark);
+    border-color:var(--drawer-bg);
+    border-bottom:3px solid var(--accent);
+  }
+  @media (max-width:760px){
+    .mode-tabs-row{
+      gap:6px;
+      padding:0 12px;
+    }
+    .mode-tab{
+      font-size:14.4px;
+      padding:9px 6px;
+    }
+  }
+
+  .ghotonaprobaho-month-block{
+    margin-bottom:28px;
+    padding-bottom:8px;
+  }
+  .ghotonaprobaho-month-block:not(:first-of-type){
+    margin-top:28px;
+    padding-top:22px;
+    border-top:1px dashed var(--line);
+  }
+  .ghotonaprobaho-month-heading-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px 12px;
+    margin-bottom:14px;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--line);
+  }
+  .ghotonaprobaho-month-heading{
+    font-family:'Kalpurush',serif;
+    font-size:22.8px;
+    font-weight:700;
+    color:var(--heading);
+  }
+  /* "দৈনিক ঘটনাপ্রবাহ" হেডিং-এর লাইভ ক্যালেন্ডার আইকন — SVG-এর ভেতরের
+     সংখ্যাটা JS দিয়ে বাংলাদেশ সময়ের আজকের তারিখ অনুযায়ী বসানো হয়
+     (দেখুন liveCalendarIconHtml())। h1/h2 হেডিং-এর টেক্সটের সাথে
+     উচ্চতা মিলিয়ে vertical-align করা হয়েছে। */
+  .live-calendar-icon{
+    display:inline-block;
+    width:1.05em;
+    height:1.05em;
+    vertical-align:-0.18em;
+  }
+  .live-calendar-icon svg{
+    width:100%;
+    height:100%;
+    display:block;
+  }
+  .month-print-btn{
+    flex-shrink:0;
+  }
+  .ghotonaprobaho-pager{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-top:24px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+  }
+  .ghotonaprobaho-page-btn{
+    background:none;
+    border:1px solid var(--line);
+    color:var(--ink);
+    font-family:'Kalpurush',sans-serif;
+    font-size:15.6px;
+    padding:8px 16px;
+    border-radius:4px;
+    cursor:pointer;
+  }
+  .ghotonaprobaho-page-btn:hover:not(:disabled){background:var(--accent-light);}
+  .ghotonaprobaho-page-btn:disabled{opacity:0.4;cursor:default;}
+  .ghotonaprobaho-page-info{
+    font-family:'Kalpurush',sans-serif;
+    font-size:14.4px;
+    color:var(--muted);
+    white-space:nowrap;
+  }
+  .ghotonaprobaho-day{
+    margin-bottom:22px;
+    padding-bottom:18px;
+    border-bottom:1px solid var(--line);
+  }
+  .ghotonaprobaho-day:last-child{ border-bottom:none; }
+  .ghotonaprobaho-date{
+    font-family:'Kalpurush',serif;
+    font-size:20.4px;
+    font-weight:700;
+    color:var(--heading);
+    margin-bottom:10px;
+  }
+  .ghotonaprobaho-category{
+    font-family:'Kalpurush',sans-serif;
+    font-size:15.6px;
+    font-weight:600;
+    color:var(--accent);
+    margin:10px 0 6px;
+  }
+  .ghotonaprobaho-items{
+    margin:0;
+    padding-right:18px;
+    list-style-position:outside;
+  }
+  .ghotonaprobaho-items li{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:17.4px;
+    line-height:1.65;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+
+  /* "টপ নিউজ" ট্যাব — এক পলকে দেখার জন্য একটা সাধারণ তারিখ-ভিত্তিক তালিকা,
+     ঘটনাপ্রবাহের মাস-ব্লক/পেজিনেশনের বদলে হালকা ও সংক্ষিপ্ত রাখা হয়েছে। */
+  .top-news-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .top-news-item{
+    display:flex;
+    gap:14px;
+    align-items:baseline;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .top-news-item:last-child{ border-bottom:none; }
+  .top-news-date{
+    flex:0 0 auto;
+    font-family:'Kalpurush',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:#fff;
+    background:var(--accent);
+    padding:3px 10px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .top-news-text{
+    flex:1 1 auto;
+    font-family:'Noto Serif Bengali',serif;
+    font-size:18px;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  @media (max-width:520px){
+    .top-news-item{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:6px;
+    }
+  }
+  /* "MCQ" ট্যাব — ইন্টারেক্টিভ কুইজ কার্ড: প্রশ্নের নিচে ৪টা অপশন বাটন,
+     ক্লিক করলে সঠিক হলে সবুজ, ভুল হলে লাল + সঠিক উত্তরও সবুজ করে দেখানো হয়।
+     একবার উত্তর দিলে সেই প্রশ্নের বাটনগুলো আর ক্লিকযোগ্য থাকে না। */
+  .mcq-section-heading{
+    font-family:'Kalpurush',sans-serif;
+    font-size:20px;
+    font-weight:700;
+    color:var(--accent);
+    margin:28px 0 14px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--line);
+  }
+  .mcq-section-heading:first-of-type{ margin-top:8px; }
+  .mcq-question{
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .mcq-question:last-child{ border-bottom:none; }
+  .mcq-question-text{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:18px;
+    line-height:1.6;
+    color:var(--ink);
+    margin-bottom:12px;
+  }
+  .mcq-question-number{
+    color:var(--accent);
+    font-weight:700;
+    margin-right:6px;
+  }
+  .mcq-options{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  @media (max-width:560px){
+    .mcq-options{ grid-template-columns:1fr; }
+  }
+  .mcq-option{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:16px;
+    text-align:left;
+    padding:10px 14px;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    background:var(--card-bg,transparent);
+    color:var(--ink);
+    cursor:pointer;
+    transition:background-color 0.15s ease, border-color 0.15s ease;
+  }
+  .mcq-option:hover:not(:disabled){
+    border-color:var(--accent);
+    background:var(--accent-light);
+  }
+  .mcq-option:disabled{ cursor:default; }
+  .mcq-option.mcq-correct{
+    background:var(--success-bg);
+    border-color:var(--success-border);
+    color:var(--success-text);
+    font-weight:700;
+  }
+  .mcq-option.mcq-wrong{
+    background:var(--error-bg);
+    border-color:var(--error-text);
+    color:var(--error-text);
+    font-weight:700;
+  }
+  .mcq-set-heading{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .mcq-set-progress{
+    font-family:'Kalpurush',sans-serif;
+    font-size:14px;
+    color:var(--muted,#777);
+  }
+  /* ঘটনাপ্রবাহ লাইনের ভেতরে টপিক-লিংকযুক্ত নির্দিষ্ট শব্দ/বাক্যাংশ — একই
+     লাইনে একাধিক থাকতে পারে (যেমন "WHO" আর "ইবোলা" আলাদা আলাদা), হালকা
+     আন্ডারলাইন ডট দিয়ে বোঝানো হয় এগুলো ইন্টারঅ্যাক্টিভ (Wikipedia-স্টাইল) */
+  .ghotonaprobaho-term{
+    cursor:pointer;
+    border-bottom:1.5px dotted var(--accent);
+    text-underline-offset:3px;
+    transition:background-color 0.15s ease;
+    border-radius:3px;
+  }
+  .ghotonaprobaho-term:hover, .ghotonaprobaho-term:focus-visible{
+    background:var(--accent-light);
+    outline:none;
+  }
+  .ghotonaprobaho-term-icon{
+    display:inline-block;
+    font-size:13.2px;
+    margin-left:2px;
+    margin-right:3px;
+    opacity:0.7;
+    vertical-align:middle;
+  }
+
+  /* ── টপিক প্রিভিউ পপআপ ──────────────────────────────────
+     ডেস্কটপ: ক্লিক করা লাইনের কাছে ছোট অ্যাংকরড কার্ড (Wikipedia hover-preview-এর
+     মতো, কিন্তু ক্লিকে খোলে যাতে টাচ-স্ক্রিন ল্যাপটপেও কাজ করে)।
+     মোবাইল (ডিফল্ট, যেহেতু বেশিরভাগ ব্যবহারকারী মোবাইলে): নিচ থেকে উঠে আসা শিট,
+     পুরো প্রস্থ জুড়ে, বড় টাচ-টার্গেট সহ। */
+  .topic-preview-overlay{
+    position:fixed; inset:0; z-index:500;
+    opacity:0; transition:opacity 0.18s ease;
+    pointer-events:none;
+  }
+  .topic-preview-overlay.open{ opacity:1; pointer-events:auto; }
+  .topic-preview-overlay.mobile{
+    background:rgba(0,0,0,0.42);
+    display:flex; align-items:flex-end; justify-content:center;
+  }
+  .topic-preview-overlay.desktop{ background:transparent; }
+
+  .topic-preview-popup{
+    background:var(--paper-raised);
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .topic-preview-popup.mobile{
+    width:100%; max-width:640px;
+    border-radius:16px 16px 0 0;
+    padding:8px 20px 24px;
+    max-height:70vh; overflow-y:auto;
+    transform:translateY(100%);
+    transition:transform 0.22s ease;
+  }
+  .topic-preview-overlay.mobile.open .topic-preview-popup.mobile{ transform:translateY(0); }
+  .topic-preview-popup.desktop{
+    position:absolute;
+    width:360px; max-width:calc(100vw - 32px);
+    border-radius:10px;
+    padding:14px 16px 16px;
+    max-height:60vh; overflow-y:auto;
+    transform:translateY(-6px);
+    transition:transform 0.15s ease;
+  }
+  .topic-preview-overlay.desktop.open .topic-preview-popup.desktop{ transform:translateY(0); }
+
+  .topic-preview-handle{
+    width:40px; height:4px; border-radius:2px;
+    background:var(--line); margin:10px auto 6px;
+  }
+  .topic-preview-header{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap:10px; margin-bottom:6px;
+  }
+  .topic-preview-header h3{
+    font-family:'Kalpurush',sans-serif;
+    font-size:19.2px; font-weight:700;
+    color:var(--heading);
+    margin:0;
+    line-height:1.4;
+  }
+  .topic-preview-close{
+    flex-shrink:0;
+    background:none; border:none; cursor:pointer;
+    font-size:18px; color:var(--muted);
+    padding:2px 4px; line-height:1;
+  }
+  .topic-preview-close:hover{ color:var(--ink); }
+  .topic-preview-snippet{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:16.8px; line-height:1.7;
+    color:var(--ink);
+    margin-bottom:12px;
+  }
+  .topic-preview-more{
+    display:inline-flex; align-items:center; gap:6px;
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.2px; font-weight:600;
+    color:var(--on-accent);
+    background:var(--accent);
+    border:none; border-radius:8px;
+    padding:8px 16px;
+    cursor:pointer;
+    width:100%; justify-content:center;
+  }
+  .topic-preview-popup.desktop .topic-preview-more{ width:auto; }
+  .topic-preview-more:hover{ background:var(--accent-deep); }
+
+  .tab.read-topic:not(.active){opacity:0.6;}
+  .tab .read-badge{color:var(--success-border); margin-left:4px;}
+  .tab .bookmark-badge{color:#c8952a; margin-left:4px;}
+  .bookmark-filter-toggle{
+    background:transparent;
+    border:1px solid var(--drawer-label-color);
+    color:var(--drawer-label-color);
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    font-weight:600;
+    padding:3px 8px;
+    border-radius:12px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .bookmark-filter-toggle.active{
+    background:#c8952a;
+    border-color:#c8952a;
+    color:#1a1200;
+  }
+  .tab .months-item-index{
+    display:inline-block;
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    color:var(--muted);
+    margin-left:8px;
+  }
+  .mark-read-btn, .bookmark-btn, .month-print-btn{
+    background:var(--paper);
+    border:1px solid var(--heading);
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    font-weight:600;
+    padding:5px 10px;
+    border-radius:16px;
+    cursor:pointer;
+  }
+  .mark-read-btn.done{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text);}
+  .bookmark-btn.active{background:#c8952a;border-color:#c8952a;color:#1a1200;}
+  .print-topic-btn{
+    background:var(--paper);
+    border:1px solid var(--heading);
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:13.2px;
+    font-weight:600;
+    padding:5px 10px;
+    border-radius:16px;
+    cursor:pointer;
+  }
+
+  .print-watermark{
+    display:none; /* স্ক্রিনে দেখা যায় না, শুধু প্রিন্ট/PDF আউটপুটে দেখা যায় */
+  }
+  @media print{
+    .masthead, .search-bar-wrap, .toolbar, .drawer, footer,
+    .card-actions, .seal, .related-topics, .mobile-back-btn,
+    .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout{
+      display:none !important;
+    }
+    body{ background:#fff; }
+    #browse-layout{ display:block !important; max-width:100%; margin:0; padding:0; }
+    .card{
+      display:block !important; /* মোবাইলে #browse-layout:not(.showing-article) .card{display:none} থাকে — প্রিন্টের সময় সেটা override না করলে ফাঁকা পেজ আসে (BUGFIX.md BUG-01) */
+      box-shadow:none;
+      border:none;
+      padding:0;
+      min-height:0;
+      padding-bottom:40px; /* নিচের ফিক্সড ওয়াটারমার্কের সাথে শেষ লাইন যেন না মিশে যায় */
+    }
+    .card h2{ margin-left:0; color:#000; }
+    .card .tags-row{ margin-left:0; }
+    .card-body{ color:#000; }
+    .card-body strong{ color:#000; }
+    .pill{ border:1px solid #999; background:none; color:#333; }
+    a[href]::after{ content:""; }
+    .ghotonaprobaho-term-icon{ display:none; }
+    .ghotonaprobaho-term{ color:#000; font-weight:600; }
+    .print-watermark{
+      display:block;
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      text-align:center;
+      font-family:'Kalpurush',sans-serif;
+      font-size:12px;
+      color:#888;
+      padding:6px 0;
+      background:#fff;
+      text-decoration:none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <h1>কারেন্ট অ্যাফেয়ার্স রেজিস্টার</h1>
+  <div class="sub">টপিক অনুযায়ী সাজানো, প্রতি মাসে হালনাগাদ</div>
+
+  <!-- হেডারের ডান কোণে: (১) অ্যানালগ ঘড়ি (বাংলাদেশ সময়, Windows 7-স্টাইল
+       ৩ কাঁটা) এবং (২) পড়ার সময় মাপার স্টাডি টাইমার (স্টার্ট/স্টপ/রিসেট,
+       শুধু ঘণ্টা:মিনিট — সেকেন্ড দেখানো হয় না)। -->
+  <div class="header-widgets" id="header-widgets">
+    <div class="analog-clock" id="analog-clock" aria-hidden="true" title="বাংলাদেশ সময়">
+      <div class="analog-clock-face">
+        <div class="clock-tick" style="transform:rotate(0deg)"></div>
+        <div class="clock-tick" style="transform:rotate(30deg)"></div>
+        <div class="clock-tick" style="transform:rotate(60deg)"></div>
+        <div class="clock-tick" style="transform:rotate(90deg)"></div>
+        <div class="clock-tick" style="transform:rotate(120deg)"></div>
+        <div class="clock-tick" style="transform:rotate(150deg)"></div>
+        <div class="clock-tick" style="transform:rotate(180deg)"></div>
+        <div class="clock-tick" style="transform:rotate(210deg)"></div>
+        <div class="clock-tick" style="transform:rotate(240deg)"></div>
+        <div class="clock-tick" style="transform:rotate(270deg)"></div>
+        <div class="clock-tick" style="transform:rotate(300deg)"></div>
+        <div class="clock-tick" style="transform:rotate(330deg)"></div>
+        <div class="clock-hand clock-hand-hour" id="clock-hand-hour"></div>
+        <div class="clock-hand clock-hand-minute" id="clock-hand-minute"></div>
+        <div class="clock-hand clock-hand-second" id="clock-hand-second"></div>
+        <div class="clock-center-dot"></div>
+      </div>
+    </div>
+
+    <div class="study-timer" id="study-timer">
+      <div class="study-timer-display" id="study-timer-display" title="পড়ার সময়">০:০০</div>
+      <div class="study-timer-controls">
+        <button type="button" id="study-timer-toggle" class="study-timer-btn" aria-label="টাইমার শুরু করুন">▶</button>
+        <button type="button" id="study-timer-reset" class="study-timer-btn" aria-label="টাইমার রিসেট করুন">↺</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="search-bar-wrap">
+  <div class="search-slot">
+    <input id="search" type="text" placeholder="যে বিষয়ে জানতে চাও লেখো..." autocomplete="off">
+  </div>
+  <div class="toolbar">
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 ডার্ক মোড</button>
+    <div class="floating-search-wrap" id="floating-search-wrap">
+      <div class="floating-search-pill" id="floating-search-pill">
+        <span class="floating-search-icon" id="floating-search-icon" aria-hidden="true">
+          <svg class="fsi-svg" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="fsiLensGrad" cx="35%" cy="30%" r="75%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="50%" stop-color="#c9f5e0"/>
+                <stop offset="100%" stop-color="var(--accent)"/>
+              </radialGradient>
+              <linearGradient id="fsiRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)"/>
+                <stop offset="100%" stop-color="var(--accent-deep)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="22" cy="22" r="21" fill="url(#fsiRimGrad)"/>
+            <circle cx="22" cy="22" r="18" fill="url(#fsiLensGrad)"/>
+            <ellipse class="fsi-glint" cx="15.5" cy="14" rx="6.5" ry="4.2" fill="#ffffff" opacity="0.85" transform="rotate(-30 15.5 14)"/>
+            <g class="fsi-face">
+              <circle class="fsi-eye fsi-eye-l" cx="17.2" cy="23.5" r="3.6" fill="var(--accent-deep)"/>
+              <circle class="fsi-eye fsi-eye-r" cx="27.4" cy="23.5" r="3.6" fill="var(--accent-deep)"/>
+              <circle class="fsi-eye-glint" cx="18.4" cy="22" r="1.15" fill="#ffffff"/>
+              <circle class="fsi-eye-glint" cx="28.6" cy="22" r="1.15" fill="#ffffff"/>
+              <path class="fsi-smile" d="M16.5 29.6 Q22 34.8 27.5 29.6" fill="none" stroke="var(--accent-deep)" stroke-width="2.2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </span>
+        <input id="floating-search-input" type="text" placeholder="সার্চ..." autocomplete="off">
+        <button type="button" class="floating-search-close" id="floating-search-close" aria-label="সার্চ বন্ধ করুন">✕</button>
+      </div>
+      <div class="floating-search-results" id="floating-search-results"></div>
+    </div>
+  </div>
+</div>
+
+<div class="mode-tabs-row" id="mode-tabs-row">
+  <button id="browse-toggle-btn" class="mode-tab">📋 সকল টপিক</button>
+  <button id="ghotonaprobaho-toggle-btn" class="mode-tab">🗓️ দৈনিক ঘটনাপ্রবাহ</button>
+  <button id="top-news-toggle-btn" class="mode-tab">⭐ টপ নিউজ</button>
+  <button id="mcq-toggle-btn" class="mode-tab">📝 MCQ</button>
+</div>
+
+<div class="layout" id="browse-layout">
+  <div class="drawer">
+    <div class="drawer-label">
+      <span>টপিক তালিকা — <span id="topic-count">0</span></span>
+      <button type="button" class="bookmark-filter-toggle" id="bookmark-filter-toggle">⭐ শুধু প্রিয়</button>
+    </div>
+    <div id="tab-list"></div>
+  </div>
+
+  <div class="card" id="card">
+    <div class="card-placeholder">
+      <div class="big">একটি টপিক খুলুন</div>
+      বাম পাশের তালিকা থেকে বেছে নিন, বা উপরে সার্চ করুন
+    </div>
+  </div>
+</div>
+
+<div class="layout" id="ghotonaprobaho-layout" style="display:none;">
+  <div class="card" id="ghotonaprobaho-card"></div>
+</div>
+
+<div class="layout" id="top-news-layout" style="display:none;">
+  <div class="card" id="top-news-card"></div>
+</div>
+
+<div class="layout" id="mcq-layout" style="display:none;">
+  <div class="card" id="mcq-card"></div>
+</div>
+
+
+<div class="topic-modal-overlay" id="topic-modal-overlay">
+  <div class="topic-modal" id="topic-modal">
+    <button type="button" class="topic-modal-close" id="topic-modal-close" aria-label="বন্ধ করুন">✕</button>
+    <div id="topic-modal-body"></div>
+  </div>
+</div>
+
+<footer>প্রতিটি এন্ট্রির শেষে "পরিবর্তনের ইতিহাস" থেকে যাচাই করা যাবে কবে ও কেন তথ্য বদলেছে। <span id="app-version"></span> · <button id="cache-refresh-btn" class="cache-refresh-btn" type="button" title="পুরনো ক্যাশ মুছে সর্বশেষ ভার্সন লোড করবে">🧹 সর্বশেষ ভার্সন লোড করুন</button></footer>
+
+<!-- শুধু প্রিন্ট/PDF আউটপুটে দেখা যায় (স্ক্রিনে display:none) — প্রতিটা
+     প্রিন্ট করা পাতার নিচে থাকে (position:fixed print CSS-এর কল্যাণে
+     প্রতি পাতায় পুনরাবৃত্তি হয়)। <a> ট্যাগ হওয়ায় ব্রাউজারের
+     "প্রিন্ট → PDF হিসেবে সেভ" করলে PDF-এও লিংকটা ক্লিকযোগ্য থাকে। -->
+<a href="https://open-current-affairs.pages.dev/" class="print-watermark">open-current-affairs.pages.dev</a>
+
+<script>
+let ALL_TOPICS = [];
+let LAST_TOPIC_PREVIEW_ANCHOR = null; // টপিক-প্রিভিউ পপআপ বন্ধ হলে কি-বোর্ড
+                                       // ফোকাস কোন এলিমেন্টে ফিরিয়ে দিতে হবে তা মনে রাখে
+let ACTIVE_SLUG = null;
+let CURRENT_MODE = 'browse';
+let GHOTONAPROBAHO_MONTHS = null;
+let GHOTONAPROBAHO_MONTHS_PROMISE = null; // Bug 7: concurrent call guard
+let GHOTONAPROBAHO_PAGE = 0; // ০ = সবচেয়ে সাম্প্রতিক ৩ মাস; বাড়লে আরও পুরনোর দিকে
+const GHOTONAPROBAHO_PAGE_SIZE = 3; // প্রতি পেজে কয় মাস একসাথে দেখানো হয়
+let TOP_NEWS_ITEMS = null; // "টপ নিউজ" ট্যাবের তারিখ-ভিত্তিক হাইলাইট — একবার লোড হলে ক্যাশ থাকে
+let TOP_NEWS_ITEMS_PROMISE = null; // Bug 7: concurrent call guard
+let MCQ_SETS = null; // "MCQ" ট্যাবের কুইজ-সেট — একবার লোড হলে ক্যাশ থাকে
+let MCQ_SETS_PROMISE = null; // concurrent call guard
+let RENDER_TOPIC_SEQ = 0; // Bug 1: race condition guard — প্রতিটা renderTopicContent কলে বাড়ে
+
+// ══════════════════════════════════════════════════════
+// বাংলাদেশ সময় (Asia/Dhaka, UTC+6) — ভিজিটরের ব্রাউজার/ডিভাইস যে
+// টাইমজোনেই থাকুক না কেন, Intl.DateTimeFormat দিয়ে সবসময় সঠিক
+// বাংলাদেশ তারিখ/সময় বের করা হয়। এভাবে রাত ১২টা বাংলাদেশ সময়েই
+// (ভিজিটরের লোকাল মিডনাইটে নয়) দিনের সংখ্যা বদলাবে।
+// ══════════════════════════════════════════════════════
+function getBDDateParts(){
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Dhaka',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  });
+  const parts = {};
+  fmt.formatToParts(new Date()).forEach(p => { if(p.type !== 'literal') parts[p.type] = p.value; });
+  return {
+    day: parseInt(parts.day, 10),
+    month: parseInt(parts.month, 10),
+    year: parseInt(parts.year, 10),
+    hour: parseInt(parts.hour, 10),
+    minute: parseInt(parts.minute, 10)
+  };
+}
+
+// "দৈনিক ঘটনাপ্রবাহ" হেডিং-এর ক্যালেন্ডার আইকন — আগে 🗓️ ইমোজি ব্যবহার
+// হতো, যেটাতে স্থায়ীভাবে "৩১" লেখা থাকে (এটা ইউনিকোড ইমোজির নিজস্ব
+// আর্টওয়ার্ক, বদলানো যায় না)। তার বদলে এই ছোট SVG আইকন ব্যবহার করা
+// হচ্ছে, যেখানে দিনের সংখ্যাটা বাংলাদেশ সময় অনুযায়ী সবসময় হালনাগাদ
+// থাকে (রাত ১২টা বাংলাদেশ সময়ে বদলে যায়)।
+function liveCalendarIconHtml(){
+  const { day } = getBDDateParts();
+  return `<span class="live-calendar-icon" aria-hidden="true">
+    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="34" height="34" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+      <rect x="3" y="3" width="34" height="10" rx="6" fill="#c0392b"/>
+      <rect x="3" y="9" width="34" height="4" fill="#c0392b"/>
+      <rect x="10" y="0" width="3" height="8" rx="1.5" fill="#7a7a7a"/>
+      <rect x="27" y="0" width="3" height="8" rx="1.5" fill="#7a7a7a"/>
+      <text x="20" y="29" text-anchor="middle" font-family="Kalpurush, sans-serif" font-size="16" font-weight="700" fill="#1a1a1a">${day}</text>
+    </svg>
+  </span>`;
+}
+// পেজ খোলা অবস্থায় বাংলাদেশ সময় রাত ১২টা পার হয়ে গেলে (ইউজার ব্রাউজার
+// রিফ্রেশ না করলেও) আইকনের দিনের সংখ্যাটা যাতে নিজে থেকেই বদলে যায়,
+// তাই প্রতি মিনিটে একবার চেক করে শুধু SVG-এর <text> নোডটুকু আপডেট করা
+// হয় — পুরো হেডিং/ভিউ আবার রেন্ডার করা হয় না, যাতে স্ক্রল পজিশন বা
+// অন্য কোনো স্টেট নষ্ট না হয়।
+setInterval(() => {
+  const { day } = getBDDateParts();
+  document.querySelectorAll('.live-calendar-icon svg text').forEach(el => {
+    if(el.textContent !== String(day)) el.textContent = String(day);
+  });
+}, 60000);
+
+// ══════════════════════════════════════════════════════
+// অ্যানালগ ঘড়ি — Windows 7-স্টাইল ৩ কাঁটা (ঘণ্টা/মিনিট/সেকেন্ড),
+// সবসময় বাংলাদেশ সময় (Asia/Dhaka) অনুযায়ী চলে, প্রতি সেকেন্ডে আপডেট হয়।
+// ══════════════════════════════════════════════════════
+(function initAnalogClock(){
+  const hourHand = document.getElementById('clock-hand-hour');
+  const minuteHand = document.getElementById('clock-hand-minute');
+  const secondHand = document.getElementById('clock-hand-second');
+  if(!hourHand || !minuteHand || !secondHand) return;
+
+  function tick(){
+    const fmt = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Dhaka', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
+    });
+    const parts = {};
+    fmt.formatToParts(new Date()).forEach(p => { if(p.type !== 'literal') parts[p.type] = p.value; });
+    const h = parseInt(parts.hour, 10) % 12;
+    const m = parseInt(parts.minute, 10);
+    const s = parseInt(parts.second, 10);
+
+    const secDeg = s * 6;
+    const minDeg = m * 6 + s * 0.1;
+    const hourDeg = h * 30 + m * 0.5;
+
+    hourHand.style.transform = `rotate(${hourDeg}deg)`;
+    minuteHand.style.transform = `rotate(${minDeg}deg)`;
+    secondHand.style.transform = `rotate(${secDeg}deg)`;
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// ══════════════════════════════════════════════════════
+// স্টাডি টাইমার — একজন শিক্ষার্থী কত সময় ধরে পড়ছে তা মাপার জন্য।
+// স্টার্ট/স্টপ/রিসেট বাটন দিয়ে ইউজার নিজে নিয়ন্ত্রণ করে। শুধু
+// ঘণ্টা:মিনিট দেখানো হয় (সেকেন্ড দেখানো হয় না, তবে হিসাব নির্ভুল
+// রাখতে ভেতরে মিলিসেকেন্ড পর্যন্ত ট্র্যাক করা হয়)। চলমান অবস্থা ও
+// সময় localStorage-এ থাকে, তাই পেজ রিফ্রেশ/ট্যাব বদলেও হারায় না।
+// ══════════════════════════════════════════════════════
+(function initStudyTimer(){
+  const display = document.getElementById('study-timer-display');
+  const toggleBtn = document.getElementById('study-timer-toggle');
+  const resetBtn = document.getElementById('study-timer-reset');
+  const wrap = document.getElementById('study-timer');
+  if(!display || !toggleBtn || !resetBtn || !wrap) return;
+
+  const STORAGE_KEY = 'oca_study_timer';
+  let state = { elapsedMs: 0, running: false, startedAt: null };
+  try{
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if(saved && typeof saved.elapsedMs === 'number') state = saved;
+  }catch(e){}
+
+  function persist(){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){}
+  }
+
+  function currentElapsedMs(){
+    if(state.running && state.startedAt){
+      return state.elapsedMs + (Date.now() - state.startedAt);
+    }
+    return state.elapsedMs;
+  }
+
+  function toBengaliDigits(str){
+    return str.replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+  }
+  function formatDisplay(ms){
+    const totalMinutes = Math.floor(ms / 60000);
+    const h = Math.floor(totalMinutes / 60);
+    const m = totalMinutes % 60;
+    const mm = String(m).padStart(2, '0');
+    return toBengaliDigits(`${h}:${mm}`);
+  }
+
+  function render(){
+    display.textContent = formatDisplay(currentElapsedMs());
+    toggleBtn.textContent = state.running ? '⏸' : '▶';
+    toggleBtn.setAttribute('aria-label', state.running ? 'টাইমার থামান' : 'টাইমার শুরু করুন');
+    wrap.classList.toggle('running', state.running);
+  }
+
+  let tickInterval = null;
+  function startTicking(){
+    if(tickInterval) return;
+    tickInterval = setInterval(render, 1000);
+  }
+  function stopTicking(){
+    if(tickInterval){ clearInterval(tickInterval); tickInterval = null; }
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    if(state.running){
+      state.elapsedMs = currentElapsedMs();
+      state.running = false;
+      state.startedAt = null;
+      stopTicking();
+    } else {
+      state.running = true;
+      state.startedAt = Date.now();
+      startTicking();
+    }
+    persist();
+    render();
+  });
+
+  resetBtn.addEventListener('click', () => {
+    state = { elapsedMs: 0, running: false, startedAt: null };
+    stopTicking();
+    persist();
+    render();
+  });
+
+  if(state.running) startTicking();
+  render();
+})();
+
+
+function loadProgress(){
+  try{ return JSON.parse(localStorage.getItem('oca_progress') || '{}'); }
+  catch(e){ return {}; }
+}
+function saveProgress(p){
+  try{ localStorage.setItem('oca_progress', JSON.stringify(p)); }catch(e){}
+}
+function isRead(slug){
+  return !!loadProgress()[slug];
+}
+function toggleRead(slug){
+  const p = loadProgress();
+  p[slug] = !p[slug];
+  saveProgress(p);
+  return p[slug];
+}
+
+function loadBookmarks(){
+  try{ return JSON.parse(localStorage.getItem('oca_bookmarks') || '{}'); }
+  catch(e){ return {}; }
+}
+function saveBookmarks(b){
+  try{ localStorage.setItem('oca_bookmarks', JSON.stringify(b)); }catch(e){}
+}
+function isBookmarked(slug){
+  return !!loadBookmarks()[slug];
+}
+function toggleBookmark(slug){
+  const b = loadBookmarks();
+  b[slug] = !b[slug];
+  saveBookmarks(b);
+  return b[slug];
+}
+let BOOKMARK_FILTER_ACTIVE = false;
+
+/* থিম টগল: light ↔ dark */
+const THEME_CYCLE = ['light', 'dark'];
+const THEME_LABELS = {
+  'light': '🌙 ডার্ক মোড',
+  'dark':  '☀️ লাইট মোড',
+};
+const THEME_COLORS = {
+  'light': '#004d2c',
+  'dark':  '#001a0f',
+};
+
+function applyTheme(theme, persist){
+  // Bug 3 fix: light থিমে attribute না রাখলেই হয়, :root CSS কাজ করে
+  if(theme === 'light'){
+    document.documentElement.removeAttribute('data-theme');
+  } else {
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+  // Bug 1 fix: btn null হলে skip, DOMContentLoaded এর পরে আবার call হবে
+  const btn = document.getElementById('theme-toggle-btn');
+  if(btn) btn.textContent = THEME_LABELS[theme] || '🌙 থিম';
+  // Bug 2 fix: meta theme-color আপডেট
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if(metaTheme) metaTheme.setAttribute('content', THEME_COLORS[theme] || THEME_COLORS['light']);
+  if(persist){
+    try{ localStorage.setItem('oca_theme', theme); }catch(e){}
+  }
+}
+function initTheme(){
+  let saved = null;
+  try{ saved = localStorage.getItem('oca_theme'); }catch(e){}
+  if(saved && THEME_CYCLE.includes(saved)){
+    applyTheme(saved, false);
+    return;
+  }
+  // সিস্টেমের prefers-color-scheme উপেক্ষা করা হয় — সেভ করা পছন্দ না থাকলে
+  // সবসময় লাইট মোডই ডিফল্ট থাকবে।
+  applyTheme('light', false);
+}
+
+async function loadIndex(){
+  try{
+    const res = await fetch('./topics-index.json');
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    ALL_TOPICS = data.topics || [];
+  }catch(e){
+    document.getElementById('tab-list').innerHTML =
+      '<div class="empty-note">topics-index.json লোড করা যাচ্ছে না। GitHub Pages ঠিকভাবে সেটআপ হয়েছে কিনা দেখুন।</div>';
+  }
+  renderList(ALL_TOPICS);
+  try{
+    const versionRes = await fetch('./version.json');
+    const versionData = await versionRes.json();
+    if(versionData.version){
+      document.getElementById('app-version').textContent = `· সংস্করণ ${versionData.version}`;
+    }
+  }catch(e){
+    // ভার্সন না দেখাতে পারলে চুপচাপ বাদ দেওয়া হয় — এটা কোনো ক্রিটিক্যাল ফিচার না,
+    // ফুটারে টেক্সট না থাকলে কিছু ভাঙে না।
+  }
+}
+
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+async function ensureGhotonaprobahoLoaded(){
+  if(GHOTONAPROBAHO_MONTHS !== null) return;
+  // concurrent কল দুটো একই fetch না পাঠাতে in-flight Promise ক্যাশ করা হয়
+  if(!GHOTONAPROBAHO_MONTHS_PROMISE){
+    GHOTONAPROBAHO_MONTHS_PROMISE = fetch('./ghotonaprobaho-index.json')
+      .then(r => { if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => { GHOTONAPROBAHO_MONTHS = data.months || []; })
+      .catch(() => { GHOTONAPROBAHO_MONTHS = []; });
+  }
+  await GHOTONAPROBAHO_MONTHS_PROMISE;
+}
+
+
+// একটা ঘটনাপ্রবাহ আইটেমের টেক্সট রেন্ডার করে — item.terms-এ যতগুলো
+// {phrase, slug} আছে, প্রতিটা phrase-কে টেক্সটের ভেতরেই আলাদা আলাদা
+// ক্লিকযোগ্য স্প্যানে মুড়ে দেয় (একই লাইনে একাধিক শব্দ আলাদা টপিকের সাথে
+// লিংক থাকতে পারে, যেমন এক লাইনে "WHO" আর "ইবোলা" দুটোই আলাদা পপআপ খুলবে)।
+// terms খালি থাকলে পুরো টেক্সট প্লেইন থাকে। cursor দিয়ে ক্রমান্বয়ে খোঁজা হয়
+// যাতে একই phrase একাধিকবার থাকলেও সঠিক অকারেন্সেই ম্যাচ হয়, আগেরটার উপর
+// দিয়ে না বসে।
+function renderGhotonaprobahoItemText(item){
+  if(!item.terms || item.terms.length === 0){
+    return escapeHtml(item.text);
+  }
+  const text = item.text;
+  let out = '';
+  let cursor = 0;
+  item.terms.forEach(term => {
+    const idx = text.indexOf(term.phrase, cursor);
+    if(idx === -1) return; // ডেটা মিসম্যাচ হলে চুপচাপ স্কিপ করে, ক্র্যাশ না করে
+    out += escapeHtml(text.slice(cursor, idx));
+    out += `<span class="ghotonaprobaho-term" data-slug="${escapeHtml(term.slug)}" role="button" tabindex="0">${escapeHtml(term.phrase)}<span class="ghotonaprobaho-term-icon" aria-hidden="true">ℹ️</span></span>`;
+    cursor = idx + term.phrase.length;
+  });
+  out += escapeHtml(text.slice(cursor));
+  return out;
+}
+
+// TASK: মাস-তালিকা থেকে ক্লিক করে একটা মাস দেখার বদলে, প্রতি ৩ মাসের ডেটা
+// একসাথে টানা (সব দিন পরপর, মাস অনুযায়ী ভাগ করা হেডিং সহ) একটা "পেজ"-এ
+// দেখানো হয়। GHOTONAPROBAHO_MONTHS আগে থেকেই নতুন→পুরনো সাজানো (build_index.py-তে),
+// তাই পেজ ০ মানে সবচেয়ে সাম্প্রতিক ৩ মাস। পেজ নম্বর বাড়া মানে আরও পুরনোর
+// দিকে যাওয়া ("আগের ৩ মাস"), কমা মানে নতুনের দিকে ("পরের ৩ মাস")।
+function renderGhotonaprobahoView(){
+  closeTopicPreview(); // পেজ/মোড পাল্টানোর সময় আগের কোনো টপিক-প্রিভিউ পপআপ খোলা
+                        // থেকে গেলে সেটা এতিম হয়ে যায় (যে লাইনের জন্য খোলা হয়েছিল
+                        // সেটাই আর স্ক্রিনে থাকে না) — তাই রি-রেন্ডারের শুরুতেই বন্ধ করা হয়।
+  const card = document.getElementById('ghotonaprobaho-card');
+  if(!GHOTONAPROBAHO_MONTHS || GHOTONAPROBAHO_MONTHS.length === 0){
+    card.innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">এখনো কোনো ঘটনাপ্রবাহ যোগ হয়নি</div>
+        নতুন মাসের তথ্য যোগ হলে এখানে দেখা যাবে
+      </div>`;
+    return;
+  }
+
+  const totalPages = Math.ceil(GHOTONAPROBAHO_MONTHS.length / GHOTONAPROBAHO_PAGE_SIZE);
+  if(GHOTONAPROBAHO_PAGE < 0) GHOTONAPROBAHO_PAGE = 0;
+  if(GHOTONAPROBAHO_PAGE > totalPages - 1) GHOTONAPROBAHO_PAGE = totalPages - 1;
+
+  const start = GHOTONAPROBAHO_PAGE * GHOTONAPROBAHO_PAGE_SIZE;
+  const pageMonths = GHOTONAPROBAHO_MONTHS.slice(start, start + GHOTONAPROBAHO_PAGE_SIZE);
+
+  let html = `<h2 style="margin-left:0;">${liveCalendarIconHtml()} দৈনিক ঘটনাপ্রবাহ</h2>`;
+  html += pageMonths.map(month => `
+    <div class="ghotonaprobaho-month-block">
+      <div class="ghotonaprobaho-month-heading-row">
+        <div class="ghotonaprobaho-month-heading">${escapeHtml(month.month_label)}</div>
+        <button class="month-print-btn" type="button" data-month-key="${escapeHtml(month.month_key)}" data-month-label="${escapeHtml(month.month_label)}">🖨️ এই মাসের সারাংশ প্রিন্ট/PDF</button>
+      </div>
+      ${month.days.map(day => `
+        <div class="ghotonaprobaho-day">
+          <div class="ghotonaprobaho-date">${escapeHtml(day.date)}</div>
+          ${day.categories.map(cat => `
+            <div class="ghotonaprobaho-category">${escapeHtml(cat.category)}</div>
+            <ul class="ghotonaprobaho-items">
+              ${cat.items.map(item => `<li>${renderGhotonaprobahoItemText(item)}</li>`).join('')}
+            </ul>
+          `).join('')}
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+
+  html += `
+    <div class="ghotonaprobaho-pager">
+      <button class="ghotonaprobaho-page-btn" id="ghotonaprobaho-prev-btn" type="button" ${GHOTONAPROBAHO_PAGE >= totalPages - 1 ? 'disabled' : ''}>← আগের ৩ মাস</button>
+      <span class="ghotonaprobaho-page-info">পেজ ${GHOTONAPROBAHO_PAGE + 1} / ${totalPages}</span>
+      <button class="ghotonaprobaho-page-btn" id="ghotonaprobaho-next-btn" type="button" ${GHOTONAPROBAHO_PAGE <= 0 ? 'disabled' : ''}>পরের ৩ মাস →</button>
+    </div>
+  `;
+
+  card.innerHTML = html;
+
+  document.getElementById('ghotonaprobaho-next-btn').addEventListener('click', () => {
+    GHOTONAPROBAHO_PAGE--;
+    renderGhotonaprobahoView();
+  });
+  document.getElementById('ghotonaprobaho-prev-btn').addEventListener('click', () => {
+    GHOTONAPROBAHO_PAGE++;
+    renderGhotonaprobahoView();
+  });
+
+  card.querySelectorAll('.month-print-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      printMonthlySummary(btn.dataset.monthKey, btn.dataset.monthLabel);
+    });
+  });
+
+  // সংশ্লিষ্ট টপিক থাকা লাইনে ক্লিক/কি-বোর্ড এন্টার করলে প্রিভিউ পপআপ খোলে
+  // (মোবাইলে নিচ থেকে শিট, ডেস্কটপে ক্লিক করা জায়গার কাছে অ্যাংকর করা কার্ড)
+  card.querySelectorAll('.ghotonaprobaho-term').forEach(term => {
+    term.addEventListener('click', (e) => {
+      showTopicPreview(term.dataset.slug, term);
+    });
+    term.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        showTopicPreview(term.dataset.slug, term);
+      }
+    });
+  });
+}
+
+// "১৪ মে ২০২৬"-এর মতো টপ-নিউজ তারিখকে "２０２৬-０５" (month.month_key) এর
+// সাথে মেলানোর জন্য "2026-05" ফরম্যাটে রূপান্তর করে। এটা
+// scripts/build_index.py-এর BENGALI_MONTHS/bengali_date_sort_key-এর
+// JS-সংস্করণ — top-news-index.json-এ প্রতিটা আইটেমের সাথে আলাদা
+// month_key সংরক্ষিত নেই (শুধু তারিখের টেক্সট), তাই ক্লায়েন্ট-সাইডেই
+// পার্স করতে হচ্ছে। মাসের বাংলা নাম কখনো বদলালে দুই জায়গাতেই (এখানে ও
+// build_index.py-তে) হালনাগাদ করা লাগবে।
+const BENGALI_MONTHS_JS = {
+  'জানুয়ারি':1,'ফেব্রুয়ারি':2,'মার্চ':3,'এপ্রিল':4,'মে':5,'জুন':6,
+  'জুলাই':7,'আগস্ট':8,'সেপ্টেম্বর':9,'অক্টোবর':10,'নভেম্বর':11,'ডিসেম্বর':12,
+};
+function bengaliDigitsToAscii(s){
+  const bengaliDigits = '০১২৩৪৫৬৭৮৯';
+  return s.replace(/[০-৯]/g, d => bengaliDigits.indexOf(d).toString());
+}
+function parseBengaliDateToMonthKey(dateStr){
+  if(!dateStr) return null;
+  const parts = dateStr.trim().split(/\s+/);
+  if(parts.length < 3) return null;
+  const monthNum = BENGALI_MONTHS_JS[parts[1]];
+  if(!monthNum) return null;
+  const year = bengaliDigitsToAscii(parts[2]);
+  if(!/^\d{4}$/.test(year)) return null;
+  const mm = String(monthNum).padStart(2, '0');
+  return `${year}-${mm}`;
+}
+
+// একটা মাসের "দৈনিক ঘটনাপ্রবাহ" ও সেই একই মাসে পড়া "টপ নিউজ" হাইলাইট
+// একসাথে করে প্রিন্ট-উপযোগী HTML বানিয়ে ব্রাউজারের প্রিন্ট ডায়ালগ খোলে —
+// ঠিক টপিক-পাতার 🖨️ প্রিন্ট/PDF বাটনের মতোই window.print() ও বিদ্যমান
+// @media print CSS পুনর্ব্যবহার করে (নতুন কোনো PDF লাইব্রেরি লাগেনি)।
+// #card-এ সাময়িকভাবে বসিয়ে প্রিন্ট করা হয় (browse-layout-এর CSS
+// @media print-এ আগে থেকেই দৃশ্যমান করার নিয়ম আছে), প্রিন্ট শেষে
+// (afterprint) #card-এর আগের অবস্থা ফিরিয়ে আনা হয় যাতে পরে "সকল টপিক"
+// মোডে গেলে পুরনো টপিক/প্লেসহোল্ডার ঠিকভাবে দেখা যায়।
+async function printMonthlySummary(monthKey, monthLabel){
+  const month = (GHOTONAPROBAHO_MONTHS || []).find(m => m.month_key === monthKey);
+  if(!month) return;
+
+  await ensureTopNewsLoaded();
+  const matchingTopNews = (TOP_NEWS_ITEMS || [])
+    .filter(item => parseBengaliDateToMonthKey(item.date) === monthKey);
+
+  let html = `<h2 style="margin-left:0;">🗓️ মাসিক সারাংশ — ${escapeHtml(monthLabel)}</h2>`;
+
+  if(matchingTopNews.length > 0){
+    html += `<div class="ghotonaprobaho-month-heading" style="margin-top:0;">⭐ টপ নিউজ</div>`;
+    html += `<ul class="ghotonaprobaho-items">`;
+    html += matchingTopNews.map(item =>
+      `<li><strong>${escapeHtml(item.date)}</strong> — ${renderGhotonaprobahoItemText(item)}</li>`
+    ).join('');
+    html += `</ul>`;
+  }
+
+  html += `<div class="ghotonaprobaho-month-heading">🗓️ দৈনিক ঘটনাপ্রবাহ</div>`;
+  html += month.days.map(day => `
+    <div class="ghotonaprobaho-day">
+      <div class="ghotonaprobaho-date">${escapeHtml(day.date)}</div>
+      ${day.categories.map(cat => `
+        <div class="ghotonaprobaho-category">${escapeHtml(cat.category)}</div>
+        <ul class="ghotonaprobaho-items">
+          ${cat.items.map(item => `<li>${renderGhotonaprobahoItemText(item)}</li>`).join('')}
+        </ul>
+      `).join('')}
+    </div>
+  `).join('');
+
+  const card = document.getElementById('card');
+  const previousCardHtml = card.innerHTML;
+  card.innerHTML = html;
+
+  let restored = false;
+  const restoreCard = () => {
+    if(restored) return;
+    restored = true;
+    card.innerHTML = previousCardHtml;
+    window.removeEventListener('afterprint', restoreCard);
+  };
+  window.addEventListener('afterprint', restoreCard);
+  // কিছু browser (mobile Chrome সহ) print cancel করলে afterprint fire করে না।
+  // ৬০ সেকেন্ড পরেও না হলে fallback-এ card পুনরুদ্ধার করা হয়।
+  setTimeout(restoreCard, 60_000);
+  window.print();
+}
+
+async function ensureTopNewsLoaded(){
+  if(TOP_NEWS_ITEMS !== null) return;
+  if(!TOP_NEWS_ITEMS_PROMISE){
+    TOP_NEWS_ITEMS_PROMISE = fetch('./top-news-index.json')
+      .then(r => { if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => { TOP_NEWS_ITEMS = data.items || []; })
+      .catch(() => { TOP_NEWS_ITEMS = []; });
+  }
+  await TOP_NEWS_ITEMS_PROMISE;
+}
+
+// "টপ নিউজ" ট্যাব — এক পলকে সবচেয়ে গুরুত্বপূর্ণ হাইলাইটগুলো দেখার জন্য।
+// ঘটনাপ্রবাহের বিপরীতে এখানে মাস-ভিত্তিক ভাগ বা পেজিনেশন নেই — পুরো তালিকাটাই
+// (সাধারণত ছোট, কারণ প্রতিদিনের না, শুধু সবচেয়ে গুরুত্বপূর্ণ খবর) একবারে
+// তারিখ অনুযায়ী (নতুন → পুরনো) দেখানো হয়।
+function renderTopNewsView(){
+  closeTopicPreview();
+  const card = document.getElementById('top-news-card');
+  if(!TOP_NEWS_ITEMS || TOP_NEWS_ITEMS.length === 0){
+    card.innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">এখনো কোনো টপ নিউজ যোগ হয়নি</div>
+        নতুন হাইলাইট যোগ হলে এখানে দেখা যাবে
+      </div>`;
+    return;
+  }
+
+  let html = `<h2 style="margin-left:0;">⭐ টপ নিউজ</h2>`;
+  html += `<ul class="top-news-list">`;
+  html += TOP_NEWS_ITEMS.map(item => `
+    <li class="top-news-item">
+      <div class="top-news-date">${escapeHtml(item.date)}</div>
+      <div class="top-news-text">${renderGhotonaprobahoItemText(item)}</div>
+    </li>
+  `).join('');
+  html += `</ul>`;
+
+  card.innerHTML = html;
+
+  card.querySelectorAll('.ghotonaprobaho-term').forEach(term => {
+    term.addEventListener('click', () => {
+      showTopicPreview(term.dataset.slug, term);
+    });
+    term.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        showTopicPreview(term.dataset.slug, term);
+      }
+    });
+  });
+}
+
+async function ensureMcqLoaded(){
+  if(MCQ_SETS !== null) return;
+  if(!MCQ_SETS_PROMISE){
+    MCQ_SETS_PROMISE = fetch('./mcq-index.json')
+      .then(r => { if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => { MCQ_SETS = data.sets || []; })
+      .catch(() => { MCQ_SETS = []; });
+  }
+  await MCQ_SETS_PROMISE;
+}
+
+const BN_OPTION_LABELS = ['ক', 'খ', 'গ', 'ঘ'];
+
+// একটা প্রশ্নের অপশন-বাটনে ক্লিক করলে চলে — সঠিক হলে ক্লিক করা বাটনটাই
+// সবুজ হয়ে যায়; ভুল হলে ক্লিক করা বাটন লাল ও সঠিক অপশনটা আলাদাভাবে সবুজ
+// হয়ে দেখানো হয়। একবার উত্তর দেওয়ার পর প্রশ্নটার সব বাটন disable হয়ে যায়,
+// যাতে দ্বিতীয়বার ক্লিক করে উত্তর বদলানো না যায়।
+function handleMcqOptionClick(questionEl, clickedIndex, correctIndex){
+  if(questionEl.dataset.answered === '1') return;
+  questionEl.dataset.answered = '1';
+  const buttons = questionEl.querySelectorAll('.mcq-option');
+  buttons.forEach((btn, idx) => {
+    btn.disabled = true;
+    if(idx === correctIndex){
+      btn.classList.add('mcq-correct');
+    } else if(idx === clickedIndex){
+      btn.classList.add('mcq-wrong');
+    }
+  });
+}
+
+// "MCQ" ট্যাব — ইন্টারেক্টিভ কুইজ। প্রতিটা সেট বিভাগ (বাংলাদেশ/আন্তর্জাতিক/...)
+// অনুযায়ী ভাগ করা প্রশ্নের তালিকা দেখায়; প্রতিটা প্রশ্নের ৪টা অপশন-বাটনে ক্লিক
+// করলেই সাথে সাথে সঠিক/ভুল ফিডব্যাক পাওয়া যায় (সার্ভার/নেটওয়ার্ক ছাড়াই,
+// পুরোটাই লোকাল JS — উত্তর-কী আগে থেকেই mcq-index.json-এ থাকে)।
+function renderMcqView(){
+  closeTopicPreview();
+  const card = document.getElementById('mcq-card');
+  if(!MCQ_SETS || MCQ_SETS.length === 0){
+    card.innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">এখনো কোনো MCQ যোগ হয়নি</div>
+        নতুন প্রশ্ন যোগ হলে এখানে দেখা যাবে
+      </div>`;
+    return;
+  }
+
+  let html = `<h2 style="margin-left:0;">📝 সাম্প্রতিক বিষয়ের MCQ</h2>`;
+  MCQ_SETS.forEach(set => {
+    html += `<div class="mcq-set-heading"><span style="font-family:'Kalpurush',sans-serif;font-weight:700;font-size:16px;">${escapeHtml(set.label)}</span><span class="mcq-set-progress">${set.question_count} টা প্রশ্ন</span></div>`;
+    set.sections.forEach(section => {
+      html += `<div class="mcq-section-heading">${escapeHtml(section.name)}</div>`;
+      section.questions.forEach(q => {
+        html += `<div class="mcq-question" data-answered="0" data-correct-idx="${q.answer_index}">`;
+        html += `<div class="mcq-question-text"><span class="mcq-question-number">${escapeHtml(q.number)}.</span>${escapeHtml(q.text)}</div>`;
+        html += `<div class="mcq-options">`;
+        q.options.forEach((opt, idx) => {
+          html += `<button type="button" class="mcq-option" data-idx="${idx}">${BN_OPTION_LABELS[idx] || ''}) ${escapeHtml(opt)}</button>`;
+        });
+        html += `</div></div>`;
+      });
+    });
+  });
+
+  card.innerHTML = html;
+
+  card.querySelectorAll('.mcq-question').forEach(qEl => {
+    const questionButtons = qEl.querySelectorAll('.mcq-option');
+    questionButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx, 10);
+        const correctIdx = parseInt(qEl.dataset.correctIdx, 10);
+        handleMcqOptionClick(qEl, idx, correctIdx);
+      });
+    });
+  });
+}
+
+// Wikipedia-ধাঁচের টপিক প্রিভিউ পপআপ। ডেস্কটপে (>720px ভিউপোর্ট) যে
+// এলিমেন্টে ক্লিক হয়েছে তার কাছাকাছি একটা ছোট অ্যাংকরড কার্ড হিসেবে দেখা যায়;
+// সরু/মোবাইল স্ক্রিনে বরাবরের মতো ডকুমেন্টের নিচ থেকে উঠে আসা শিট হিসেবে দেখা যায়,
+// যেহেতু বেশিরভাগ ব্যবহারকারী মোবাইল থেকেই ব্যবহার করেন।
+function showTopicPreview(slug, anchorEl){
+  const topic = ALL_TOPICS.find(t => t.slug === slug);
+  closeTopicPreview();
+  if(!topic) return;
+
+  LAST_TOPIC_PREVIEW_ANCHOR = anchorEl || null;
+  const isDesktop = window.innerWidth > 720;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'topic-preview-overlay';
+  overlay.className = isDesktop ? 'topic-preview-overlay desktop' : 'topic-preview-overlay mobile';
+
+  const popup = document.createElement('div');
+  popup.id = 'topic-preview-popup';
+  popup.className = isDesktop ? 'topic-preview-popup desktop' : 'topic-preview-popup mobile';
+  // স্ক্রিন-রিডারের জন্য এটা একটা dialog হিসেবে ঘোষণা করা হয়, যাতে খোলার
+  // সাথে সাথে ব্যবহারকারী বুঝতে পারেন নতুন একটা প্যানেল খুলেছে এবং তার শিরোনাম কী।
+  popup.setAttribute('role', 'dialog');
+  popup.setAttribute('aria-modal', 'true');
+  popup.setAttribute('aria-labelledby', 'topic-preview-title');
+  popup.innerHTML = `
+    ${isDesktop ? '' : '<div class="topic-preview-handle"></div>'}
+    <div class="topic-preview-header">
+      <h3 id="topic-preview-title">${escapeHtml(topic.title)}</h3>
+      <button type="button" class="topic-preview-close" aria-label="বন্ধ করুন">✕</button>
+    </div>
+    <div class="topic-preview-snippet">${escapeHtml(topic.snippet || '')}</div>
+    <button type="button" class="topic-preview-more">📖 বিস্তারিত দেখুন</button>
+  `;
+
+  overlay.appendChild(popup);
+  document.body.appendChild(overlay);
+
+  if(isDesktop && anchorEl){
+    // overlay position:fixed হওয়ায় এর ভেতরের position:absolute পপআপের
+    // কো-অর্ডিনেট সিস্টেম viewport-ভিত্তিক — getBoundingClientRect()-ও
+    // viewport-ভিত্তিক কো-অর্ডিনেট দেয়, তাই এখানে scrollX/scrollY যোগ করা
+    // ঠিক না (যোগ করলে পেজ স্ক্রল করা থাকলে পপআপ ভুল জায়গায় বসে যেত)।
+    const rect = anchorEl.getBoundingClientRect();
+    const popupWidth = 360;
+    let left = rect.left;
+    if(left + popupWidth > window.innerWidth - 16) left = window.innerWidth - popupWidth - 16;
+    if(left < 16) left = 16;
+    popup.style.left = left + 'px';
+
+    // আগে নিচে বসিয়ে প্রকৃত উচ্চতা মাপা হয়; ভিউপোর্টের নিচে জায়গা না থাকলে
+    // অ্যাংকরের উপরের দিকে উল্টে বসানো হয় (পেজের একদম নিচের লাইনে ক্লিক করলে
+    // পপআপ যাতে স্ক্রিনের বাইরে কাটা না পড়ে)।
+    let top = rect.bottom + 8;
+    popup.style.top = top + 'px';
+    const popupHeight = popup.getBoundingClientRect().height;
+    if(top + popupHeight > window.innerHeight - 16){
+      const flippedTop = rect.top - popupHeight - 8;
+      top = flippedTop >= 16 ? flippedTop : Math.max(16, window.innerHeight - popupHeight - 16);
+      popup.style.top = top + 'px';
+    }
+  }
+
+  requestAnimationFrame(() => {
+    overlay.classList.add('open');
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if(e.target === overlay) closeTopicPreview();
+  });
+  popup.querySelector('.topic-preview-close').addEventListener('click', closeTopicPreview);
+  popup.querySelector('.topic-preview-more').addEventListener('click', () => {
+    closeTopicPreview();
+    openTopic(slug);
+  });
+  document.addEventListener('keydown', escCloseTopicPreview);
+  // ডেস্কটপে অ্যাংকর-নির্ভর পজিশনিং যেহেতু রিসাইজে আপডেট হয় না, তাই জটিল
+  // রিক্যালকুলেশনের বদলে সহজভাবে রিসাইজ হলে পপআপ বন্ধ করে দেওয়া হয়।
+  window.addEventListener('resize', closeTopicPreview);
+
+  // কি-বোর্ড/স্ক্রিন-রিডার ব্যবহারকারীর জন্য পপআপ খোলার সাথে সাথে ফোকাস
+  // তার ভেতরে (বন্ধ-বাটনে) নিয়ে যাওয়া হয়।
+  popup.querySelector('.topic-preview-close').focus();
+}
+
+function escCloseTopicPreview(e){
+  if(e.key === 'Escape') closeTopicPreview();
+}
+
+function closeTopicPreview(){
+  const overlay = document.getElementById('topic-preview-overlay');
+  if(overlay) overlay.remove();
+  document.removeEventListener('keydown', escCloseTopicPreview);
+  window.removeEventListener('resize', closeTopicPreview);
+  // পপআপ বন্ধ হলে যে টার্মে ক্লিক করে খোলা হয়েছিল, ফোকাস সেখানেই ফিরিয়ে
+  // দেওয়া হয় — কি-বোর্ড ব্যবহারকারী পপআপ বন্ধ করার পর যেন হারিয়ে না যান।
+  if(LAST_TOPIC_PREVIEW_ANCHOR && document.body.contains(LAST_TOPIC_PREVIEW_ANCHOR)){
+    LAST_TOPIC_PREVIEW_ANCHOR.focus();
+  }
+  LAST_TOPIC_PREVIEW_ANCHOR = null;
+}
+
+
+// দুইটা মোড (browse, ghotonaprobaho) এখন উপরের
+// mode-tabs-row-এ সমান-গুরুত্বের দুইটা ট্যাব হিসেবে দেখানো হয় — পরস্পর
+// exclusive, একটা সক্রিয় হলে অন্যটার layout লুকিয়ে যায় ও ট্যাব-বাটনের
+// active ক্লাস রিসেট হয়।
+const MODE_TAB_IDS = {
+  'browse': 'browse-toggle-btn',
+  'ghotonaprobaho': 'ghotonaprobaho-toggle-btn',
+  'top-news': 'top-news-toggle-btn',
+  'mcq': 'mcq-toggle-btn'
+};
+
+function setActiveLayout(mode){
+  document.getElementById('browse-layout').style.display = mode === 'browse' ? '' : 'none';
+  document.getElementById('ghotonaprobaho-layout').style.display = mode === 'ghotonaprobaho' ? '' : 'none';
+  document.getElementById('top-news-layout').style.display = mode === 'top-news' ? '' : 'none';
+  document.getElementById('mcq-layout').style.display = mode === 'mcq' ? '' : 'none';
+  // ভাসমান সার্চ বক্স "দৈনিক ঘটনাপ্রবাহ" ও "টপ নিউজ" — দুই মোডেই দেখানো হয়,
+  // কারণ এই দুই মোডেই বাম পাশের টপিক-তালিকা থাকে না।
+  const fsWrap = document.getElementById('floating-search-wrap');
+  if(mode === 'ghotonaprobaho' || mode === 'top-news'){
+    fsWrap.classList.add('visible');
+  } else {
+    fsWrap.classList.remove('visible');
+    closeFloatingSearch();
+  }
+}
+
+function resetModeTabButtons(){
+  Object.values(MODE_TAB_IDS).forEach(id => {
+    document.getElementById(id).classList.remove('active');
+  });
+}
+
+// একটা মোডে সরাসরি সুইচ করে — টগল নয়, কারণ তিনটা ট্যাবই সবসময় দৃশ্যমান।
+async function setMode(mode){
+  CURRENT_MODE = mode;
+  setActiveLayout(mode);
+  resetModeTabButtons();
+  document.getElementById(MODE_TAB_IDS[mode]).classList.add('active');
+
+  if(mode === 'ghotonaprobaho'){
+    await ensureGhotonaprobahoLoaded();
+    GHOTONAPROBAHO_PAGE = 0; // প্রতিবার মোডে ঢুকলে সবচেয়ে সাম্প্রতিক ৩ মাস থেকে শুরু
+    renderGhotonaprobahoView();
+  } else if(mode === 'top-news'){
+    await ensureTopNewsLoaded();
+    renderTopNewsView();
+  } else if(mode === 'mcq'){
+    await ensureMcqLoaded();
+    renderMcqView();
+  } else {
+    document.getElementById('browse-layout').classList.remove('showing-article');
+  }
+}
+
+// আগের নাম দুটো (ব্যাকওয়ার্ড কম্প্যাটিবিলিটির জন্য অন্য কোথাও রেফারেন্স
+// থাকলে) — সরাসরি নতুন setMode()-এ পাঠিয়ে দেয়।
+async function setGhotonaprobahoMode(showGhotonaprobaho){
+  await setMode(showGhotonaprobaho ? 'ghotonaprobaho' : 'browse');
+}
+
+
+function matchTopic(t, q){
+  if(!q) return { match:true, context:null };
+  const title = (t.title||'').toLowerCase();
+  const tags = (t.tags||[]).join(' ').toLowerCase();
+  if(title.includes(q) || tags.includes(q)){
+    return { match:true, context:null };
+  }
+  const body = (t.body||'').toLowerCase();
+  const idx = body.includes(q) ? body.indexOf(q) : -1;
+  if(idx === -1) return { match:false };
+  const raw = t.body || '';
+  const start = Math.max(0, idx - 60);
+  const end = Math.min(raw.length, idx + q.length + 60);
+  let excerpt = raw.slice(start, end).replace(/\s+/g,' ').trim();
+  if(start > 0) excerpt = '…' + excerpt;
+  if(end < raw.length) excerpt = excerpt + '…';
+  return { match:true, context:excerpt };
+}
+
+function highlight(text, q){
+  if(!q) return escapeHtml(text);
+  const idx = text.toLowerCase().indexOf(q.toLowerCase());
+  if(idx === -1) return escapeHtml(text);
+  return escapeHtml(text.slice(0,idx)) + '<mark>' + escapeHtml(text.slice(idx, idx+q.length)) + '</mark>' + escapeHtml(text.slice(idx+q.length));
+}
+
+// ══════════════════════════════════════════════════════
+// স্থানীয় টপিকে ফলাফল না পেলে বাংলা উইকিপিডিয়া থেকে সরাসরি
+// সারাংশ এনে দেখানো হয় (কোনো key/টোকেন লাগে না, ব্রাউজার থেকেই
+// সরাসরি ফ্রি পাবলিক API কল করা হয়)। রেজাল্ট cache করা হয় যাতে
+// একই শব্দ বারবার টাইপ করলে বারবার নেটওয়ার্ক কল না হয়। এই
+// ফাংশনটা মূল সার্চ বার ও ভাসমান সার্চ বাডি — দুইখানেই ব্যবহৃত হয়।
+// ══════════════════════════════════════════════════════
+const wikiCache = new Map();
+let wikiRequestSeq = 0;
+
+async function fetchWikipediaSummary(q){
+  if(wikiCache.has(q)) return wikiCache.get(q);
+  try{
+    // ধাপ ১: প্রথমে সার্চ করে সবচেয়ে কাছের আর্টিকেলের শিরোনাম বের করা
+    const searchUrl = `https://bn.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&format=json&origin=*&srlimit=1`;
+    const searchRes = await fetch(searchUrl);
+    if(!searchRes.ok){
+      wikiCache.set(q, null);
+      return null;
+    }
+    const searchData = await searchRes.json();
+    const hit = searchData?.query?.search?.[0];
+    if(!hit){
+      wikiCache.set(q, null);
+      return null;
+    }
+    // ধাপ ২: সেই শিরোনামের সারাংশ (summary) আনা
+    const summaryUrl = `https://bn.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(hit.title)}`;
+    const summaryRes = await fetch(summaryUrl);
+    if(!summaryRes.ok){
+      wikiCache.set(q, null);
+      return null;
+    }
+    const summaryData = await summaryRes.json();
+    if(!summaryData.extract){
+      wikiCache.set(q, null);
+      return null;
+    }
+    const result = {
+      title: summaryData.title || hit.title,
+      extract: summaryData.extract,
+      url: summaryData.content_urls?.desktop?.page || `https://bn.wikipedia.org/wiki/${encodeURIComponent(hit.title)}`
+    };
+    wikiCache.set(q, result);
+    return result;
+  } catch(err){
+    wikiCache.set(q, null);
+    return null;
+  }
+}
+
+// উইকিপিডিয়া badge-এর ছোট গোল আইকন — নিজস্ব সরল ডিজাইন (globe-grid আদলে,
+// আসল লোগোর ধূসর/কালো রঙের সাথে মিলিয়ে বানানো, কোনো bitmap বা
+// third-party asset/ট্রেডমার্কড পাজল-প্যাটার্ন হুবহু কপি করা হয়নি)।
+const WIKIPEDIA_BADGE_ICON = `<svg class="floating-search-wiki-badge-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="10" cy="10" r="10" fill="#f8f9fa"/>
+  <circle cx="10" cy="10" r="9.2" fill="none" stroke="#a2a9b1" stroke-width="0.6"/>
+  <g stroke="#202122" stroke-width="1" fill="none" opacity="0.85">
+    <ellipse cx="10" cy="10" rx="4" ry="8"/>
+    <line x1="2" y1="10" x2="18" y2="10"/>
+    <line x1="3.2" y1="6" x2="16.8" y2="6"/>
+    <line x1="3.2" y1="14" x2="16.8" y2="14"/>
+  </g>
+</svg>`;
+
+let mainWikiSeq = 0;
+
+function renderList(list, q){
+  q = (q||'').trim().toLowerCase();
+  mainWikiSeq++;
+  const seq = mainWikiSeq;
+  const wrap = document.getElementById('tab-list');
+  const progress = loadProgress();
+  const bookmarks = loadBookmarks();
+  const readCount = list.filter(t => progress[t.slug]).length;
+  document.getElementById('topic-count').textContent =
+    `${list.length} টি${ALL_TOPICS.length ? ` · ${readCount} পড়া হয়েছে` : ''}`;
+  if(list.length === 0){
+    if(BOOKMARK_FILTER_ACTIVE && !q){
+      // বুকমার্ক ফিল্টার চালু থাকলে খালি তালিকার কারণ সার্চ না, তাই
+      // উইকিপিডিয়া fallback দেখানো ভুল বার্তা দেবে — স্পষ্ট করে বলা হলো।
+      wrap.innerHTML = '<div class="empty-note">এখনো কোনো টপিক ⭐ প্রিয় হিসেবে যোগ করা হয়নি</div>';
+      return;
+    }
+    if(q){
+      wrap.innerHTML = '<div class="empty-note floating-search-wiki-loading">উইকিপিডিয়ায় খোঁজা হচ্ছে…</div>';
+      fetchWikipediaSummary(q).then(result => {
+        if(seq !== mainWikiSeq) return;
+        if(!result){
+          wrap.innerHTML = '<div class="empty-note">কোনো টপিক পাওয়া যায়নি</div>';
+          return;
+        }
+        wrap.innerHTML = `
+          <div class="floating-search-wiki-result main-wiki-result">
+            <div class="floating-search-wiki-badge">${WIKIPEDIA_BADGE_ICON}উইকিপিডিয়া</div>
+            <div class="floating-search-wiki-title">${escapeHtml(result.title)}</div>
+            <div class="floating-search-wiki-extract">${escapeHtml(result.extract)}</div>
+            <a class="floating-search-wiki-link" href="${escapeHtml(result.url)}" target="_blank" rel="noopener noreferrer">পুরো আর্টিকেল পড়ুন ↗</a>
+          </div>
+        `;
+      });
+    } else {
+      wrap.innerHTML = '<div class="empty-note">কোনো টপিক পাওয়া যায়নি</div>';
+    }
+    return;
+  }
+  wrap.innerHTML = list.map(t => {
+    const info = q ? matchTopic(t, q) : { context:null };
+    const sub = info.context
+      ? `<span class="tab-tags">${highlight(info.context, q)}</span>`
+      : `<span class="tab-tags">${escapeHtml((t.tags||[]).join(' · '))}</span>`;
+    const readMark = progress[t.slug] ? '<span class="read-badge">✓</span>' : '';
+    const bookmarkMark = bookmarks[t.slug] ? '<span class="bookmark-badge">⭐</span>' : '';
+    return `
+    <button class="tab ${t.slug===ACTIVE_SLUG?'active':''} ${progress[t.slug]?'read-topic':''}" data-slug="${t.slug}">
+      ${escapeHtml(t.title)}${readMark}${bookmarkMark}
+      ${sub}
+    </button>
+  `;
+  }).join('');
+  wrap.querySelectorAll('.tab').forEach(btn=>{
+    btn.addEventListener('click', ()=> openTopic(btn.dataset.slug));
+  });
+}
+
+function currentFiltered(q){
+  if(!q) return ALL_TOPICS;
+  return ALL_TOPICS.filter(t => matchTopic(t, q).match);
+}
+
+// "সকল টপিক" তালিকায় দেখানোর জন্য চূড়ান্ত ফিল্টার — সার্চ কোয়েরি +
+// ঐচ্ছিক "শুধু প্রিয়" ফিল্টার একসাথে প্রয়োগ করে। ভাসমান সার্চ
+// (renderFloatingResults) ইচ্ছাকৃতভাবে এটা ব্যবহার করে না, কারণ সেটা
+// "দৈনিক ঘটনাপ্রবাহ" মোডে যেকোনো টপিক খুঁজে বের করার জন্য — বুকমার্ক
+// ফিল্টার দিয়ে সীমিত করা উচিত না।
+function visibleTopics(q){
+  let list = currentFiltered(q);
+  if(BOOKMARK_FILTER_ACTIVE){
+    const bookmarks = loadBookmarks();
+    list = list.filter(t => bookmarks[t.slug]);
+  }
+  return list;
+}
+
+document.getElementById('search').addEventListener('input', (e)=>{
+  const q = e.target.value.trim().toLowerCase();
+  renderList(visibleTopics(q), q);
+  document.getElementById('browse-layout').classList.remove('showing-article');
+});
+
+document.getElementById('bookmark-filter-toggle').addEventListener('click', (e) => {
+  BOOKMARK_FILTER_ACTIVE = !BOOKMARK_FILTER_ACTIVE;
+  e.target.classList.toggle('active', BOOKMARK_FILTER_ACTIVE);
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  renderList(visibleTopics(q), q);
+});
+
+// ══════════════════════════════════════════════════════
+// ভাসমান সার্চ বক্স ("দৈনিক ঘটনাপ্রবাহ" মোডে) — উপরের মূল #search-এর
+// মতোই matchTopic/currentFiltered ব্যবহার করে টপিক খোঁজে, কিন্তু ফলাফল
+// একটা ছোট dropdown-এ দেখায় এবং ক্লিক করলে openTopicInModal() দিয়ে
+// একটা মডাল ওভারলেতে দেখায় — বর্তমান মোড/স্ক্রিন বদলায় না।
+// ══════════════════════════════════════════════════════
+const floatWrap = document.getElementById('floating-search-wrap');
+
+// ══════════════════════════════════════════════════════
+// স্ক্রল করলে সার্চ বাডি যাতে স্ক্রিনে একটা নির্দিষ্ট জায়গায় (উপরের
+// টুলবার এলাকায়) স্থির থেকে যায় — IntersectionObserver দিয়ে টুলবার
+// (theme-toggle-btn) ভিউপোর্টের ভেতরে আছে কিনা চেক করা হয়। টুলবার
+// দৃশ্যমান থাকলে বাডিটা স্বাভাবিক ফ্লোতে থাকে; স্ক্রল করে টুলবার
+// ভিউপোর্টের বাইরে চলে গেলে (ওপরে বা নিচে, যেকোনো দিকে স্ক্রল করলেই)
+// .scroll-pinned ক্লাস লেগে position:fixed হয়ে যায়, তাই বাডিটা
+// ভিউপোর্টের একই কোণায় (top:12px; right:16px) স্থির দেখা যায়। বক্সটা
+// টেনে সরানো (dragged) অবস্থায় থাকলে এই পিনিং প্রযোজ্য নয় — তখন
+// ড্র্যাগের নিজস্ব পজিশন প্রাধান্য পায়।
+// ══════════════════════════════════════════════════════
+(function enableFloatingSearchScrollPin(){
+  const anchor = document.getElementById('theme-toggle-btn');
+  if(!anchor || !('IntersectionObserver' in window)) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(floatWrap.classList.contains('dragged')) return; // ড্র্যাগ করা অবস্থায় হস্তক্ষেপ করা হয় না
+      floatWrap.classList.toggle('scroll-pinned', !entry.isIntersecting);
+    });
+  }, { threshold: 0 });
+  observer.observe(anchor);
+})();
+
+// স্ক্রিন ঘোরালে, উইন্ডো রিসাইজ করলে, বা সার্চ পিল ওপেন করলে (width বেড়ে
+// যাওয়ায়) আগে টেনে সরানো বক্সটা স্ক্রিনের বাইরে চলে যেতে পারে — সেটা
+// ঠেকাতে বক্সটাকে আবার স্ক্রিনের সীমার মধ্যে টেনে আনা হয়। যেসব ক্ষেত্রে
+// বক্স কখনো টানা হয়নি (ডিফল্ট right/bottom পজিশনে আছে), সেখানে কিছু
+// করার দরকার নেই — CSS নিজেই সামলায়।
+function clampFloatingSearchToViewport(){
+  if(!floatWrap.classList.contains('dragged')) return;
+  const rect = floatWrap.getBoundingClientRect();
+  const maxLeft = Math.max(0, window.innerWidth - rect.width);
+  const maxTop = Math.max(0, window.innerHeight - rect.height);
+  const newLeft = Math.min(rect.left, maxLeft);
+  const newTop = Math.min(rect.top, maxTop);
+  floatWrap.style.left = newLeft + 'px';
+  floatWrap.style.top = newTop + 'px';
+}
+const floatPill = document.getElementById('floating-search-pill');
+const floatInput = document.getElementById('floating-search-input');
+const floatResults = document.getElementById('floating-search-results');
+const floatClose = document.getElementById('floating-search-close');
+const topicModalOverlay = document.getElementById('topic-modal-overlay');
+const topicModalClose = document.getElementById('topic-modal-close');
+
+function openFloatingSearch(){
+  floatPill.classList.add('open');
+  floatInput.focus();
+  // BUG FIX: পিল আগে থেকে টেনে সরানো (dragged) থাকলে এবং ডান কিনারার
+  // কাছাকাছি অবস্থায় থাকলে, ওপেন হওয়ার সময় width বেড়ে গিয়ে বক্সটা
+  // ভিউপোর্টের বাইরে চলে যেত — ইউজারকে হাত দিয়ে টেনে আনতে হতো। এখন
+  // ওপেন হওয়ার সাথে সাথেই ভিউপোর্টের মধ্যে ফিরিয়ে আনা হয়।
+  requestAnimationFrame(clampFloatingSearchToViewport);
+}
+
+function closeFloatingSearch(){
+  floatPill.classList.remove('open');
+  floatInput.value = '';
+  floatResults.classList.remove('visible');
+  floatResults.innerHTML = '';
+}
+
+function renderWikiFallback(container, q, seq){
+  container.innerHTML = '<div class="floating-search-empty floating-search-wiki-loading">উইকিপিডিয়ায় খোঁজা হচ্ছে…</div>';
+  fetchWikipediaSummary(q).then(result => {
+    if(seq !== wikiRequestSeq) return; // এর মধ্যে নতুন সার্চ হয়ে গেলে পুরনো ফলাফল উপেক্ষা করা হয়
+    if(!result){
+      container.innerHTML = '<div class="floating-search-empty">কোনো টপিক পাওয়া যায়নি</div>';
+      return;
+    }
+    container.innerHTML = `
+      <div class="floating-search-wiki-result">
+        <div class="floating-search-wiki-badge">${WIKIPEDIA_BADGE_ICON}উইকিপিডিয়া</div>
+        <div class="floating-search-wiki-title">${escapeHtml(result.title)}</div>
+        <div class="floating-search-wiki-extract">${escapeHtml(result.extract)}</div>
+        <a class="floating-search-wiki-link" href="${escapeHtml(result.url)}" target="_blank" rel="noopener noreferrer">পুরো আর্টিকেল পড়ুন ↗</a>
+      </div>
+    `;
+  });
+}
+
+function renderFloatingResults(q){
+  wikiRequestSeq++;
+  const seq = wikiRequestSeq;
+  if(!q){
+    floatResults.classList.remove('visible');
+    floatResults.innerHTML = '';
+    return;
+  }
+  const list = currentFiltered(q).slice(0, 8);
+  if(list.length === 0){
+    renderWikiFallback(floatResults, q, seq);
+  } else {
+    floatResults.innerHTML = list.map(t =>
+      `<button type="button" class="floating-search-result-item" data-slug="${escapeHtml(t.slug)}">${escapeHtml(t.title)}</button>`
+    ).join('');
+    floatResults.querySelectorAll('.floating-search-result-item').forEach(btn=>{
+      btn.addEventListener('click', () => {
+        closeFloatingSearch();
+        openTopicInModal(btn.dataset.slug);
+      });
+    });
+  }
+  floatResults.classList.add('visible');
+}
+
+floatPill.addEventListener('click', (e)=>{
+  if(!floatPill.classList.contains('open')) openFloatingSearch();
+});
+
+floatClose.addEventListener('click', (e)=>{
+  e.stopPropagation();
+  closeFloatingSearch();
+});
+
+floatInput.addEventListener('click', (e)=> e.stopPropagation());
+
+floatInput.addEventListener('input', (e)=>{
+  const q = e.target.value.trim().toLowerCase();
+  renderFloatingResults(q);
+});
+
+floatInput.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape'){
+    closeFloatingSearch();
+  }
+});
+
+// বাইরে ক্লিক করলে বক্স বন্ধ হবে না — শুধু ✕ বাটনে বা Escape চাপলেই বন্ধ হয়,
+// যাতে ফলাফলের টেক্সট সিলেক্ট করা বা বাইরের কিছু দেখার সময় বক্স হুট করে
+// বন্ধ হয়ে না যায়।
+
+// মডাল বন্ধ করা — ক্রস বাটনে, ওভারলের বাইরে ক্লিকে, বা Escape-এ
+topicModalClose.addEventListener('click', closeTopicModal);
+topicModalOverlay.addEventListener('click', (e)=>{
+  if(e.target === topicModalOverlay) closeTopicModal();
+});
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape' && topicModalOverlay.classList.contains('visible')){
+    closeTopicModal();
+  }
+});
+
+// ══════════════════════════════════════════════════════
+// ভাসমান সার্চ বক্স মাউস/টাচ দিয়ে টেনে মনিটরের যেকোনো জায়গায় রাখা যায়।
+// পজিশনটা শুধু চলতি সেশনে থাকে — পেজ রিফ্রেশ করলে আবার ডিফল্ট জায়গায়
+// (টুলবারে, লাইট/ডার্ক মোড বাটনের পাশে) ফিরে যায়, তাই কোথাও সংরক্ষণ
+// করার দরকার নেই। পিলের "🔍" আইকন বা বন্ধ-অবস্থার গোল বাটনটাই handle —
+// খোলা অবস্থায় ইনপুট বক্সের ভেতর ক্লিক করলে টাইপ করা যাবে, ড্র্যাগ
+// শুরু হবে না।
+// ══════════════════════════════════════════════════════
+(function enableFloatingSearchDrag(){
+  let dragging = false;
+  let moved = false;
+  let startX = 0, startY = 0;
+  let startLeft = 0, startTop = 0;
+
+  function getClientXY(e){
+    if(e.touches && e.touches.length) return {x:e.touches[0].clientX, y:e.touches[0].clientY};
+    return {x:e.clientX, y:e.clientY};
+  }
+
+  function dragStart(e){
+    // ইনপুট বক্স বা বন্ধ-বাটনে ক্লিক করলে ড্র্যাগ শুরু হবে না, শুধু
+    // পিলের বাকি অংশ (আইকন/ব্যাকগ্রাউন্ড) থেকেই ড্র্যাগ শুরু হয়।
+    if(e.target === floatInput || e.target === floatClose) return;
+    const {x, y} = getClientXY(e);
+    const rect = floatWrap.getBoundingClientRect();
+    dragging = true;
+    moved = false;
+    startX = x;
+    startY = y;
+    startLeft = rect.left;
+    startTop = rect.top;
+    floatPill.classList.add('dragging');
+    document.addEventListener('mousemove', dragMove);
+    document.addEventListener('mouseup', dragEnd);
+    document.addEventListener('touchmove', dragMove, {passive:false});
+    document.addEventListener('touchend', dragEnd);
+  }
+
+  function dragMove(e){
+    if(!dragging) return;
+    const {x, y} = getClientXY(e);
+    const dx = x - startX;
+    const dy = y - startY;
+    if(Math.abs(dx) > 3 || Math.abs(dy) > 3) moved = true;
+    if(!moved) return;
+    if(e.cancelable) e.preventDefault();
+
+    const rect = floatWrap.getBoundingClientRect();
+    const maxLeft = window.innerWidth - rect.width;
+    const maxTop = window.innerHeight - rect.height;
+    let newLeft = startLeft + dx;
+    let newTop = startTop + dy;
+    // মনিটরের বাইরে চলে যাওয়া ঠেকাতে সীমার মধ্যে রাখা হয়
+    newLeft = Math.max(0, Math.min(newLeft, Math.max(0, maxLeft)));
+    newTop = Math.max(0, Math.min(newTop, Math.max(0, maxTop)));
+
+    floatWrap.classList.add('dragged');
+    floatWrap.classList.remove('scroll-pinned'); // ড্র্যাগ শুরু হলে scroll-pin বাতিল, নাহলে দুই fixed পজিশন সাংঘর্ষিক হতে পারে
+    floatWrap.style.left = newLeft + 'px';
+    floatWrap.style.top = newTop + 'px';
+  }
+
+  function dragEnd(){
+    dragging = false;
+    floatPill.classList.remove('dragging');
+    document.removeEventListener('mousemove', dragMove);
+    document.removeEventListener('mouseup', dragEnd);
+    document.removeEventListener('touchmove', dragMove);
+    document.removeEventListener('touchend', dragEnd);
+    // ড্র্যাগ শেষে ক্লিক ইভেন্ট বাতিল করা হয়, যাতে টেনে ছাড়ার পর
+    // ভুলবশত পিল open/close টগল না হয়ে যায়। এই লিসেনারটা নিজে থেকেই
+    // সরে যায় ক্লিক এলে — কিন্তু কোনো কারণে click ইভেন্ট না এলে (যেমন
+    // ছেড়ে দেওয়ার পর মাউস অন্য কোথাও চলে যায়) যাতে চিরস্থায়ীভাবে লেগে
+    // থেকে পরের আসল ক্লিককে দমন না করে, তাই একটা টাইমআউট ফলব্যাক
+    // হিসেবে অল্প সময় পরই নিজে থেকে সরিয়ে দেয়।
+    if(moved){
+      const suppressClick = (ev) => {
+        ev.stopPropagation();
+        floatPill.removeEventListener('click', suppressClick, true);
+        clearTimeout(cleanupTimer);
+      };
+      floatPill.addEventListener('click', suppressClick, true);
+      const cleanupTimer = setTimeout(() => {
+        floatPill.removeEventListener('click', suppressClick, true);
+      }, 300);
+    }
+  }
+
+  floatPill.addEventListener('mousedown', dragStart);
+  floatPill.addEventListener('touchstart', dragStart, {passive:true});
+
+  window.addEventListener('resize', clampFloatingSearchToViewport);
+  window.addEventListener('orientationchange', clampFloatingSearchToViewport);
+})();
+
+// ══════════════════════════════════════════════════════
+// সার্চ বাডির কিউট আচরণ: র‍্যান্ডম বিরতিতে চোখের পলক (যাতে যান্ত্রিক
+// না লাগে — মানুষ যেভাবে অনিয়মিত সময়ে পলক ফেলে), আর ক্লিক করলে
+// ছোট্ট "pop" bounce। দুটোই খুব হালকা — মূল কন্টেন্ট পড়ায় ব্যাঘাত
+// না করেই মাঝেমধ্যে একটু প্রাণবন্ত অনুভূতি দেয়।
+// ══════════════════════════════════════════════════════
+(function enableSearchBuddyPersonality(){
+  const fsiIcon = document.getElementById('floating-search-icon');
+  const fsiFace = fsiIcon ? fsiIcon.querySelector('.fsi-face') : null;
+  if(!fsiIcon || !fsiFace) return;
+
+  let blinkTimer = null;
+
+  function scheduleBlink(){
+    // ৩–৭ সেকেন্ড পরপর র‍্যান্ডম পলক — মাঝে মাঝে দুইবার পরপর (মানুষের
+    // মতো), বেশিরভাগ সময় একবার।
+    const delay = 3000 + Math.random() * 4000;
+    blinkTimer = setTimeout(() => {
+      if(floatPill.classList.contains('open')){
+        scheduleBlink();
+        return;
+      }
+      fsiFace.classList.add('fsi-blink');
+      setTimeout(() => fsiFace.classList.remove('fsi-blink'), 300);
+      if(Math.random() < 0.2){
+        setTimeout(() => {
+          fsiFace.classList.add('fsi-blink');
+          setTimeout(() => fsiFace.classList.remove('fsi-blink'), 300);
+        }, 260);
+      }
+      scheduleBlink();
+    }, delay);
+  }
+  scheduleBlink();
+
+  // পিল ক্লিক (খোলার সময়) করলে বাডিটা ছোট্ট "pop" করে বসে যায়
+  floatPill.addEventListener('click', () => {
+    fsiIcon.classList.remove('fsi-pop');
+    // reflow ট্রিগার করে animation পুনরায় চালানো
+    void fsiIcon.offsetWidth;
+    fsiIcon.classList.add('fsi-pop');
+  });
+})();
+
+function showPlaceholder(){
+  document.getElementById('card').innerHTML = `
+    <div class="card-placeholder">
+      <div class="big">একটি টপিক খুলুন</div>
+      বাম পাশের তালিকা থেকে বেছে নিন, বা উপরে সার্চ করুন
+    </div>`;
+}
+
+// টপিকের মার্কডাউন ফাইল fetch করে sanitize/render করে দেওয়া কমন লজিক।
+// openTopic() (মূল আর্কাইভ কার্ড) এবং openTopicInModal() (ভাসমান সার্চের
+// ফলাফল) — দুই জায়গাতেই একই ফাংশন ব্যবহার হয়, যাতে দুটো জায়গায় একই
+// কোড কপি-পেস্ট করে রাখতে না হয়।
+// container-এ শুধু "লোড হচ্ছে…" থেকে চূড়ান্ত কার্ড HTML বসানো পর্যন্ত হয়;
+// backBtnId দিয়ে "তালিকায় ফিরুন" বাটনের আইডি ঠিক করা যায় (মডালে দরকার নেই),
+// onRelatedClick দিয়ে "এটাও দেখো" চিপে ক্লিক করলে কী হবে তা কলার ঠিক করে দেয়।
+async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} = {}){
+  // প্রতিটা কলে seq বাড়ে। fetch শেষে seq মিলিয়ে দেখা হয় — এর মধ্যে নতুন
+  // কল এলে পুরনোটার ফলাফল container-এ বসানো হয় না (race condition fix)।
+  const mySeq = ++RENDER_TOPIC_SEQ;
+  container.innerHTML = '<div class="card-placeholder">লোড হচ্ছে…</div>';
+  try{
+    const res = await fetch('./' + topic.file);
+    if(mySeq !== RENDER_TOPIC_SEQ) return; // নতুন কল এসে গেছে, এটা বাতিল
+    if(!res.ok){
+      container.innerHTML = '<div class="card-placeholder">এই টপিক পেজ লোড করা যাচ্ছে না (ফাইল খুঁজে পাওয়া যায়নি)।</div>';
+      return;
+    }
+    const raw = (await res.text()).replace(/^\uFEFF/, '');
+    const body = raw.replace(/^---[\s\S]*?---\s*/, '');
+    let html = marked.parse(body);
+    html = DOMPurify.sanitize(html);
+    html = html.replace(/<h2>পরিবর্তনের ইতিহাস<\/h2>/, '<h2 class="history-heading">পরিবর্তনের ইতিহাস</h2>');
+    html = html.replace(/<table(\s[^>]*)?>/g, (m, attrs) => `<div class="table-scroll"><table${attrs||''}>`);
+    html = html.replace(/<\/table>/g, '</table></div>');
+
+    const alreadyRead = isRead(topic.slug);
+    const alreadyBookmarked = isBookmarked(topic.slug);
+    const related = getRelatedTopics(topic);
+    container.innerHTML = `
+      ${backBtnId ? `<button class="mobile-back-btn" id="${backBtnId}">← তালিকায় ফিরুন</button>` : ''}
+      <div class="seal">সর্বশেষ<br>${escapeHtml(topic.last_updated || '—')}</div>
+      <div class="card-actions">
+        <button class="print-topic-btn" id="print-topic-btn-${topic.slug}">🖨️ প্রিন্ট / PDF</button>
+        <button class="mark-read-btn ${alreadyRead?'done':''}" id="mark-read-btn-${topic.slug}">${alreadyRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?'}</button>
+        <button class="bookmark-btn ${alreadyBookmarked?'active':''}" id="bookmark-btn-${topic.slug}">${alreadyBookmarked ? '⭐ প্রিয়' : '☆ প্রিয়'}</button>
+        <button class="copy-link" id="copy-link-btn-${topic.slug}" title="এই টপিকের লিংক কপি করো">🔗 লিংক কপি</button>
+      </div>
+      <h2>${escapeHtml(topic.title)}</h2>
+      <div class="tags-row">${(topic.tags||[]).map(t=>`<span class="pill" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}</div>
+      <div class="card-body">${html}</div>
+      ${related.length ? `
+        <div class="related-topics">
+          <div class="related-title">🔗 এটাও দেখো</div>
+          ${related.map(r => `<span class="related-chip" data-slug="${r.slug}">${escapeHtml(r.title)}</span>`).join('')}
+        </div>
+      ` : ''}
+    `;
+
+    if(backBtnId){
+      document.getElementById(backBtnId).addEventListener('click', backToList);
+    }
+
+    document.getElementById(`print-topic-btn-${topic.slug}`).addEventListener('click', () => {
+      window.print();
+    });
+
+    document.getElementById(`copy-link-btn-${topic.slug}`).addEventListener('click', async (e) => {
+      const url = window.location.origin + window.location.pathname + '#' + topic.slug;
+      try{
+        await navigator.clipboard.writeText(url);
+        e.target.textContent = '✓ কপি হয়েছে';
+      }catch(err){
+        e.target.textContent = url;
+      }
+      setTimeout(()=>{ e.target.textContent = '🔗 লিংক কপি'; }, 1800);
+    });
+
+    document.getElementById(`mark-read-btn-${topic.slug}`).addEventListener('click', (e) => {
+      const nowRead = toggleRead(topic.slug);
+      e.target.classList.toggle('done', nowRead);
+      e.target.textContent = nowRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?';
+      const qNow = document.getElementById('search').value.trim().toLowerCase();
+      renderList(visibleTopics(qNow), qNow);
+    });
+
+    document.getElementById(`bookmark-btn-${topic.slug}`).addEventListener('click', (e) => {
+      const nowBookmarked = toggleBookmark(topic.slug);
+      e.target.classList.toggle('active', nowBookmarked);
+      e.target.textContent = nowBookmarked ? '⭐ প্রিয়' : '☆ প্রিয়';
+      const qNow = document.getElementById('search').value.trim().toLowerCase();
+      renderList(visibleTopics(qNow), qNow);
+    });
+
+    container.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', () => filterByTag(pill.dataset.tag));
+    });
+    container.querySelectorAll('.related-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        if(onRelatedClick) onRelatedClick(chip.dataset.slug);
+        else openTopic(chip.dataset.slug);
+      });
+    });
+
+  }catch(e){
+    container.innerHTML = '<div class="card-placeholder">এই টপিক পেজ লোড করা যাচ্ছে না।</div>';
+  }
+}
+
+async function openTopic(slug, updateHash=true){
+  if(CURRENT_MODE === 'ghotonaprobaho' || CURRENT_MODE === 'top-news'){
+    await setGhotonaprobahoMode(false);
+  }
+  const topic = ALL_TOPICS.find(t=>t.slug===slug);
+  const card = document.getElementById('card');
+  const browseLayout = document.getElementById('browse-layout');
+
+  window.scrollTo(0, 0);
+
+  if(!topic){
+    ACTIVE_SLUG = null;
+    browseLayout.classList.add('showing-article');
+    card.innerHTML = `
+      <button class="mobile-back-btn" id="mobile-back-btn-notfound">← তালিকায় ফিরুন</button>
+      <div class="card-placeholder">এই লিংকের টপিকটা খুঁজে পাওয়া যাচ্ছে না — হয়তো নাম বদলেছে বা মুছে গেছে।</div>
+    `;
+    document.getElementById('mobile-back-btn-notfound').addEventListener('click', backToList);
+    return;
+  }
+
+  ACTIVE_SLUG = slug;
+  browseLayout.classList.add('showing-article');
+  if(updateHash) location.hash = slug;
+
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  renderList(visibleTopics(q), q);
+
+  await renderTopicContent(topic, card, {backBtnId:'mobile-back-btn'});
+}
+
+// ভাসমান সার্চের ফলাফলে ক্লিক করলে এটা কল হয়। openTopic()-এর মতো মোড
+// বদলায় না — "দৈনিক ঘটনাপ্রবাহ" (বা যেকোনো) মোডে যেখানে ছিলেন সেখানেই
+// থেকে যান, টপিকটা শুধু একটা মডাল ওভারলেতে দেখানো হয়।
+async function openTopicInModal(slug){
+  const topic = ALL_TOPICS.find(t=>t.slug===slug);
+  const overlay = document.getElementById('topic-modal-overlay');
+  const body = document.getElementById('topic-modal-body');
+  // পুরনো content এখনই মুছে দেওয়া হয় — নইলে overlay দেখানোর সাথে সাথে
+  // আগের topic-এর content flash করে (Bug 3 fix)
+  body.innerHTML = '<div class="card-placeholder">লোড হচ্ছে…</div>';
+  overlay.classList.add('visible');
+  if(!topic){
+    body.innerHTML = '<div class="card-placeholder">এই টপিকটা খুঁজে পাওয়া যাচ্ছে না — হয়তো নাম বদলেছে বা মুছে গেছে।</div>';
+    return;
+  }
+  await renderTopicContent(topic, body, {
+    backBtnId:null,
+    onRelatedClick:(relatedSlug) => openTopicInModal(relatedSlug)
+  });
+}
+
+function closeTopicModal(){
+  // modal-এর ভেতর থেকে topic-preview খোলা থাকলে সেটাও বন্ধ করা হয়,
+  // নইলে overlay DOM-এ আটকে থাকে (Bug 4 fix)
+  closeTopicPreview();
+  document.getElementById('topic-modal-overlay').classList.remove('visible');
+  document.getElementById('topic-modal-body').innerHTML = '';
+}
+
+function backToList(){
+  // ACTIVE_SLUG clear না করলে sidebar-এ কোনো topic highlighted থাকে অথচ
+  // কোনো article খোলা নেই — UI inconsistency (Bug 6 fix)
+  ACTIVE_SLUG = null;
+  document.getElementById('browse-layout').classList.remove('showing-article');
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  renderList(visibleTopics(q), q);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function getRelatedTopics(topic, limit=5){
+  const myTags = topic.tags || [];
+  if(myTags.length === 0) return [];
+  return ALL_TOPICS
+    .filter(t => t.slug !== topic.slug)
+    .map(t => ({ topic: t, shared: (t.tags||[]).filter(tag => myTags.includes(tag)).length }))
+    .filter(x => x.shared > 0)
+    .sort((a,b) => b.shared - a.shared)
+    .slice(0, limit)
+    .map(x => x.topic);
+}
+
+function filterByTag(tag){
+  // browse mode-এ switch না করলে mode tab-এ ঘটনাপ্রবাহ active থাকে
+  // অথচ নিচে browse list দেখায় — UI mismatch (Bug 5 fix)
+  setMode('browse');
+  const input = document.getElementById('search');
+  input.value = tag;
+  input.dispatchEvent(new Event('input'));
+  input.scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+let INDEX_LOADED = false;
+let PENDING_HASH_SLUG = null;
+
+window.addEventListener('hashchange', () => {
+  const slug = decodeURIComponent(location.hash.slice(1));
+  if(!INDEX_LOADED){
+    // ALL_TOPICS তখনও খালি, তাই openTopic() ভুলভাবে "পাওয়া যায়নি" দেখাবে —
+    // loadIndex() শেষ না হওয়া পর্যন্ত অপেক্ষা করে পরে প্রসেস করা হবে
+    PENDING_HASH_SLUG = slug;
+    return;
+  }
+  if(slug && slug !== ACTIVE_SLUG){
+    openTopic(slug, false);
+  } else if(!slug && ACTIVE_SLUG){
+    ACTIVE_SLUG = null;
+    showPlaceholder();
+    document.getElementById('browse-layout').classList.remove('showing-article');
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    renderList(visibleTopics(q), q);
+  }
+});
+
+// Script <body> শেষে আছে, তাই DOM ready — DOMContentLoaded wrapper লাগবে না
+initTheme();
+
+document.getElementById('theme-toggle-btn').addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  const idx = THEME_CYCLE.indexOf(current);
+  const next = THEME_CYCLE[(idx + 1) % THEME_CYCLE.length];
+  applyTheme(next, true);
+});
+
+// তিনটা মোড-ট্যাব — "সকল টপিক" / "দৈনিক ঘটনাপ্রবাহ" / "টপ নিউজ" — সবসময়
+// mode-tabs-row-তে পাশাপাশি থাকে, ক্লিকে সরাসরি সেই মোডে সুইচ করে
+// (টগল নয়, তাই বারবার ক্লিকেও ঠিকঠাক আচরণ করে)।
+document.getElementById('browse-toggle-btn').addEventListener('click', () => {
+  setMode('browse');
+});
+
+document.getElementById('ghotonaprobaho-toggle-btn').addEventListener('click', () => {
+  setMode('ghotonaprobaho');
+});
+
+document.getElementById('top-news-toggle-btn').addEventListener('click', () => {
+  setMode('top-news');
+});
+document.getElementById('mcq-toggle-btn').addEventListener('click', () => {
+  setMode('mcq');
+});
+
+loadIndex().then(() => {
+  INDEX_LOADED = true;
+  // লোডিং চলাকালীন hashchange ইভেন্ট এসে থাকলে সেই স্লাগ ব্যবহার করা হবে,
+  // নাহলে বর্তমান location.hash থেকে ইনিশিয়াল স্লাগ নেওয়া হবে
+  const initialSlug = PENDING_HASH_SLUG !== null
+    ? PENDING_HASH_SLUG
+    : decodeURIComponent(location.hash.slice(1));
+  PENDING_HASH_SLUG = null;
+  if(initialSlug){
+    openTopic(initialSlug, false);
+  } else {
+    // হ্যাশে নির্দিষ্ট কোনো টপিক না থাকলে ডিফল্ট হিসেবে "দৈনিক ঘটনাপ্রবাহ" মোড খুলবে
+    setMode('ghotonaprobaho');
+  }
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+
+  let refreshedOnce = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshedOnce) return;
+    refreshedOnce = true;
+    window.location.reload();
+  });
+}
+
+// VERSION বাড়লে sw.js নিজে থেকেই পুরনো ক্যাশ ফেলে দেয় (অটো ক্যাশ-ক্লিনার,
+// দেখুন docs/sw.js-এর activate ইভেন্ট)। তবু কখনো ব্রাউজার পুরনো sw.js/ক্যাশ
+// আটকে রাখলে (যেমন ব্যাকগ্রাউন্ড ট্যাব, অস্বাভাবিক নেটওয়ার্ক অবস্থা), এই বাটন
+// দিয়ে ম্যানুয়ালি সব caches মুছে, service worker আনরেজিস্টার করে, cache-bust
+// query দিয়ে জোর করে রিলোড করা যাবে — একটা এক-ক্লিক "hard reset"।
+const cacheRefreshBtn = document.getElementById("cache-refresh-btn");
+if (cacheRefreshBtn) {
+  cacheRefreshBtn.addEventListener("click", async () => {
+    cacheRefreshBtn.disabled = true;
+    cacheRefreshBtn.textContent = "রিফ্রেশ হচ্ছে…";
+    try {
+      if ("caches" in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((key) => caches.delete(key)));
+      }
+      if ("serviceWorker" in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((reg) => reg.unregister()));
+      }
+    } catch (e) {
+      // ক্যাশ/এসডব্লিউ মুছতে সমস্যা হলেও নিচের রিলোড অন্তত পুরনো পেজ থেকে
+      // বের করে নতুন করে সব ফাইল আনার চেষ্টা করবে
+    }
+    const url = new URL(window.location.href);
+    url.searchParams.set("_refresh", Date.now().toString());
+    window.location.href = url.toString();
+  });
+}
+</script>
+
+</body>
+</html>

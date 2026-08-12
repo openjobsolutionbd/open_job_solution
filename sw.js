@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'home-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.21';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.22';
 
 // এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/primary-mcq/written-exam
 // প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।

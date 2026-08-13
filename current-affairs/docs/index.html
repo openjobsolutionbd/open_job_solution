@@ -3268,13 +3268,21 @@ if (cacheRefreshBtn) {
     cacheRefreshBtn.disabled = true;
     cacheRefreshBtn.textContent = "রিফ্রেশ হচ্ছে…";
     try {
+      // বাগ-ফিক্স: আগে caches.keys()/getRegistrations() পুরো origin-এর
+      // (পুরো ওয়েবসাইটের) সব cache আর সব service worker মুছে দিত। standalone
+      // সাইটে এতে সমস্যা ছিল না (তখন পুরো origin-ই current-affairs ছিল),
+      // কিন্তু open_job_solution-এর ভেতরে এখন এটা হোমপেজ + অন্য তিনটা সেকশনের
+      // ক্যাশও মুছে ফেলত। এখন শুধু নিজের ("oca-cache-" প্রিফিক্স) cache আর
+      // নিজের scope-এর service worker registration মোছা হচ্ছে।
       if ("caches" in window) {
         const keys = await caches.keys();
-        await Promise.all(keys.map((key) => caches.delete(key)));
+        await Promise.all(
+          keys.filter((key) => key.startsWith("oca-cache-")).map((key) => caches.delete(key))
+        );
       }
       if ("serviceWorker" in navigator) {
-        const regs = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(regs.map((reg) => reg.unregister()));
+        const reg = await navigator.serviceWorker.getRegistration(); // শুধু এই পেজের নিজস্ব registration
+        if (reg) await reg.unregister();
       }
     } catch (e) {
       // ক্যাশ/এসডব্লিউ মুছতে সমস্যা হলেও নিচের রিলোড অন্তত পুরনো পেজ থেকে

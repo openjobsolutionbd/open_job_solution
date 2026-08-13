@@ -3004,6 +3004,8 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       return;
     }
     const raw = (await res.text()).replace(/^\uFEFF/, '');
+    if(mySeq !== RENDER_TOPIC_SEQ) return; // Bug-ফিক্স: res.text() পড়ার সময়ও
+                                            // নতুন কল আসতে পারে, তাই এখানেও আবার চেক
     const body = raw.replace(/^---[\s\S]*?---\s*/, '');
     let html = marked.parse(body);
     html = DOMPurify.sanitize(html);

@@ -71,7 +71,11 @@ Cloudflare Pages-এর output directory `docs`। তাই `docs/` path বদ
 
 ## ৬. বর্তমান scope
 
-এই project-এর website এখন search ও topic-reading-কেন্দ্রিক। Quiz/MCQ data, quiz UI, quiz build pipeline এবং আলাদা revision workflow এই scope-এর অংশ নয়। পুরনো পরিবর্তনের ইতিহাস `CHANGELOG.md`-এ historical record হিসেবে থাকতে পারে, কিন্তু নতুন runtime বা maintenance নির্দেশনা হিসেবে ব্যবহার করা যাবে না।
+এই project-এর website search, topic-reading, দৈনিক ঘটনাপ্রবাহ, টপ নিউজ, ও ইন্টারেক্টিভ MCQ কুইজ — সবগুলো নিয়েই। **(সংশোধন, ২০২৬-০৮-১২):** এখানে আগে ভুলভাবে লেখা ছিল "Quiz/MCQ এই scope-এর অংশ না" — বাস্তবে MCQ-এর নিজস্ব হাতে-লেখা raw সোর্স (`docs/mcq/*.md`), আলাদা build ধাপ (`compile_mcq()` → `docs/mcq-index.json`, `scripts/build_index.py`-এ), এবং লাইভ ওয়েবসাইটে ইন্টারেক্টিভ কুইজ UI (📝 MCQ ট্যাব, `docs/index.html`) — এই তিনটাই এখন সত্যিই আছে ও scope-এর অংশ। কোনো একটা session সম্ভবত পুরনো তথ্য দিয়ে এই লাইন লিখেছিল বা MCQ যোগ হওয়ার পর এই লাইন আপডেট করা হয়নি।
+
+`docs/proshnottor/*.md` (প্র/উ আর্কাইভ) এখনও raw সোর্স হিসেবেই আছে, ওয়েবসাইটে wire করা হয়নি — এটা এখনো scope-এর বাইরে, যতক্ষণ না আলাদাভাবে যোগ করার সিদ্ধান্ত হয়।
+
+পুরনো পরিবর্তনের ইতিহাস `CHANGELOG.md`-এ historical record হিসেবে থাকতে পারে, কিন্তু নতুন runtime বা maintenance নির্দেশনা হিসেবে ব্যবহার করা যাবে না।
 
 ## ৭. ভবিষ্যৎ পরিকল্পনা (Roadmap)
 

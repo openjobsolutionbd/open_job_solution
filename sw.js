@@ -1,8 +1,8 @@
 const CACHE_PREFIX = 'home-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.22';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.21';
 
-// এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/primary-mcq/written-exam
-// প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
+// এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/primary-mcq/written-exam/
+// current-affairs প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
 const ASSETS = [
   '/',
   '/index.html',
@@ -16,8 +16,25 @@ const ASSETS = [
   '/fonts/noto-serif-bengali-700.woff2'
 ];
 
+// বাগ-ফিক্স: এই চারটা সেকশনের প্রতিটার নিজস্ব sw.js আছে, নিজের এলাকার
+// জন্য। কেউ প্রথমবার ওই সেকশনে ঢোকার সময়, নিজস্ব sw.js activate হওয়ার
+// আগ পর্যন্ত এই রুট sw.js-ই ওই পেজ নিয়ন্ত্রণ করত (কারণ scope অনুযায়ী
+// রুট sw সবচেয়ে আগে সক্রিয় থাকে) — ফলে বিরল ক্ষেত্রে (ওই মুহূর্তে নেট
+// সমস্যা হলে) ভুল/ভাঙা কনটেন্ট দেখানোর ঝুঁকি ছিল। তাই এই পাথগুলো রুট
+// sw.js এখন সম্পূর্ণ ছেড়ে দেয় — নিজস্ব sw.js (বা ব্রাউজার সরাসরি) সামলাবে।
+const SECTION_PREFIXES = [
+  '/bcs-mcq/',
+  '/primary-mcq/',
+  '/written-exam/',
+  '/current-affairs/'
+];
+
 function isAppFile(url) {
   return url.pathname === '/' || url.pathname === '/index.html';
+}
+
+function isSectionOwned(url) {
+  return SECTION_PREFIXES.some(p => url.pathname.startsWith(p));
 }
 
 self.addEventListener('install', e => {
@@ -43,6 +60,9 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
+
+  // বাগ-ফিক্স: সেকশন-নিজস্ব এলাকায় হাত না দেওয়া (উপরের নোট দেখুন)
+  if (isSectionOwned(url) && url.origin === self.location.origin) return;
 
   if (isAppFile(url) && url.origin === self.location.origin) {
     e.respondWith(

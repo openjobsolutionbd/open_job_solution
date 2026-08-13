@@ -90,6 +90,7 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.25 | ১৩ আগস্ট ২০২৬ | Version v1.25-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.24 | ১৩ আগস্ট ২০২৬ | Version v1.24-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.23 | ১৩ আগস্ট ২০২৬ | Version v1.23-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.22 | ৯ আগস্ট ২০২৬ | **চতুর্থ সেকশন যোগ — Current Affairs (Section ১৮):** `open_current_affairs` নামের আলাদা রিপো থেকে স্বয়ংক্রিয় সিঙ্কের মাধ্যমে (প্রতি ৩ দিন পরপর) `current-affairs/docs/` ফোল্ডারে কনটেন্ট আসে। হোমপেজে চতুর্থ কার্ড যোগ (🌍 কারেন্ট অ্যাফেয়ার্স)। root `_headers`-এ `Service-Worker-Allowed: /current-affairs/docs/` এন্ট্রি যোগ। এই সেকশন বাকি তিনটার মতো সরাসরি এডিট করা হয় না — বিস্তারিত নিয়ম Section ১৮-এ। |

@@ -39,12 +39,18 @@ self.addEventListener("install", (event) => {
 });
 
 // পুরনো ক্যাশ পরিষ্কার করা
+// বাগ-ফিক্স: caches.keys() পুরো origin-এর সব cache-এর নাম দেখায়, শুধু এই
+// service worker-এরটা না। standalone সাইটে সমস্যা ছিল না, কিন্তু
+// open_job_solution-এর ভেতরে এই SW প্রতিবার activate হওয়ার সময় (মানে
+// প্রতিবার VERSION বাড়লে) হোমপেজ + অন্য তিন সেকশনের cache-ও মুছে ফেলত।
+// অন্য তিনটা সেকশনের sw.js যেভাবে নিজের প্রিফিক্স দিয়ে ফিল্টার করে, এখানেও
+// একই নিয়মে শুধু "oca-cache-" প্রিফিক্সের পুরনো cache মোছা হচ্ছে।
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((names) =>
       Promise.all(
         names
-          .filter((name) => name !== CACHE_NAME)
+          .filter((name) => name.startsWith("oca-cache-") && name !== CACHE_NAME)
           .map((name) => caches.delete(name))
       )
     )

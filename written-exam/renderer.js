@@ -13,8 +13,8 @@ function escHtml(str) {
 // লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) দুটোই বিবেচনা করে।
 function letterSalutation(to) {
   const t = to || '';
-  const isFemale = /\b(Madam|Ms\.|Mrs\.)\b/i.test(t) || /মহোদয়া/.test(t);
-  const isEnglish = /\b(Mayor|Sir|Madam|Ms\.|Mrs\.)\b/i.test(t);
+  const isFemale = /\bMadam\b|\bMs\.|\bMrs\./i.test(t) || /মহোদয়া/.test(t);
+  const isEnglish = /\bMayor\b|\bSir\b|\bMadam\b|\bMs\.|\bMrs\./i.test(t);
   if (isEnglish) return isFemale ? 'Madam,' : 'Sir,';
   return isFemale ? 'মহোদয়া,' : 'মহোদয়,';
 }

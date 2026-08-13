@@ -41,6 +41,7 @@ function toBn(n) {
 }
 
 function escapeHtml(text) {
+  if (!text) return '';
   const map = {
     '&': '&amp;',
     '<': '&lt;',

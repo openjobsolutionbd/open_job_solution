@@ -3,7 +3,7 @@
 // শুধু sw.js-এ CACHE_VERSION বাড়ান — বাকি সব automatic।
 
 // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-const APP_VERSION = 'v1.28';
+const APP_VERSION = 'v1.29';
 
 const SUBJECTS = [
   { id: 'all', label: 'সব কুইজ', varName: null, marks: null },

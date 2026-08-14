@@ -9,6 +9,13 @@ function escHtml(str) {
     .replace(/>/g, '&gt;');
 }
 
+// একাধিক অংশের উত্তরে (idiom/translate/sentence-change/short-qa) ডেটায়
+// label ফাঁকা থাকলে এখান থেকে ক্রমানুসারে (ক, খ, গ, ঘ...) বসে।
+const BN_PART_LABELS = ['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ','ট','ঠ','ড','ঢ','ণ'];
+function partLabel(p, i) {
+  return p.label || BN_PART_LABELS[i] || String(i + 1);
+}
+
 // প্রাপকের (to) টেক্সট দেখে salutation ঠিক করে — ভাষা (বাংলা/ইংরেজি) ও
 // লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) দুটোই বিবেচনা করে।
 function letterSalutation(to) {
@@ -28,9 +35,9 @@ function renderAnswer(q) {
     }
 
     case 'sub-parts':
-      return `<div class="ans-parts">${(q.parts || []).map(p => `
+      return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(p.label)})</span>
+          <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             ${p.q ? `<span class="part-q">${escHtml(p.q)}</span> <span class="part-eq">=</span> ` : ''}
             <span class="part-a">${escHtml(p.a)}</span>
@@ -61,9 +68,9 @@ function renderAnswer(q) {
       </div>`;
 
     case 'translate':
-      return `<div class="ans-parts">${(q.parts || []).map(p => `
+      return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(p.label)})</span>
+          <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             <div class="trans-source">${escHtml(p.source)}</div>
             <div class="trans-arrow">➜</div>
@@ -82,9 +89,9 @@ function renderAnswer(q) {
         </div>`).join('')}</div>`;
 
     case 'sentence-change':
-      return `<div class="ans-parts">${(q.parts || []).map(p => `
+      return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(p.label)})</span>
+          <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             <div class="sent-original">${escHtml(p.original)}</div>
             <div class="sent-arrow">➜</div>
@@ -93,9 +100,9 @@ function renderAnswer(q) {
         </div>`).join('')}</div>`;
 
     case 'idiom':
-      return `<div class="ans-parts">${(q.parts || []).map(p => `
+      return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(p.label)})</span>
+          <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             <span class="idiom-phrase">${escHtml(p.phrase)}</span>
             <span class="idiom-eq"> = </span>
@@ -105,9 +112,9 @@ function renderAnswer(q) {
         </div>`).join('')}</div>`;
 
     case 'short-qa':
-      return `<div class="ans-parts">${(q.parts || []).map(p => `
+      return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(p.label)})</span>
+          <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             <span class="part-q">${escHtml(p.q)}</span>
             <div class="short-answer">উত্তর: ${escHtml(p.a)}</div>

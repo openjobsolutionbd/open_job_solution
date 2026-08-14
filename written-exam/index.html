@@ -526,8 +526,8 @@
     questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
 
     questions.forEach(q => {
-      const subLabel = SUBJECT_LABELS[q.subject] || q.subject || '';
-      const topicTag = q.topic ? `<span class="tags">${q.topic}</span>` : '';
+      const subLabel = SUBJECT_LABELS[q.subject] || escText(q.subject || '');
+      const topicTag = q.topic ? `<span class="tags">${escText(q.topic)}</span>` : '';
 
       const card = document.createElement('div');
       card.className = 'question-card';

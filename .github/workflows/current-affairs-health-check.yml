@@ -1,0 +1,100 @@
+name: Current Affairs Health Check (scheduled)
+
+# উদ্দেশ্য: current-affairs/docs/ (open_current_affairs থেকে সিঙ্ক হওয়া
+# generated output) নিয়মিত স্বয়ংক্রিয়ভাবে পরীক্ষা করে — যাতে কোনো
+# রিগ্রেশন (পুরনো ডোমেইন ফিরে আসা, ভাঙা JSON, cache-scope বাগ, বা
+# সিঙ্ক অনেকদিন না চলা) কারো ম্যানুয়াল অডিট সেশন ছাড়াই ধরা পড়ে।
+#
+# এই workflow নিজে থেকে কিছু ফিক্স করে না, শুধু GitHub Issue বানিয়ে
+# জানায় — কারণ non-technical owner-এর পক্ষে auto-generated ফিক্স-PR
+# রিভিউ করা সম্ভব না, তাই বিনা-রিভিউ auto-merge ঝুঁকিপূর্ণ।
+
+on:
+  schedule:
+    # প্রতিদিন বাংলাদেশ সময় সকাল ৯টায় (UTC ০৩:০০) — sync workflow
+    # প্রতি ৩ দিনে চলে, কিন্তু bit-rot (cache, ম্যানুয়াল এডিট) যেকোনো
+    # দিন হতে পারে বলে এটা আলাদাভাবে প্রতিদিন চলে
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: স্বাস্থ্য-পরীক্ষা চালানো
+        id: check
+        run: python3 scripts/current_affairs_health_check.py
+
+      - name: সমস্যা পেলে GitHub Issue বানানো
+        if: failure() && steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/health_check_report.md', 'utf8');
+
+            // ডুপ্লিকেট Issue এড়াতে — আগে থেকে একই লেবেলের খোলা Issue
+            // থাকলে নতুন না বানিয়ে সেটাতেই কমেন্ট করা হবে
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'current-affairs-health-check',
+            });
+
+            if (existing.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing[0].number,
+                body: `আজও (${new Date().toISOString().slice(0,10)}) একই ধরনের সমস্যা পাওয়া গেছে:\n\n${report}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `⚠️ Current Affairs স্বাস্থ্য-পরীক্ষা ব্যর্থ — ${new Date().toISOString().slice(0,10)}`,
+                body: report,
+                labels: ['current-affairs-health-check'],
+              });
+            }
+
+      - name: সমস্যা না পেলে পুরনো Issue বন্ধ করা
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'current-affairs-health-check',
+            });
+            for (const issue of existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: 'পরবর্তী স্বয়ংক্রিয় পরীক্ষায় সব ঠিক পাওয়া গেছে — এই Issue বন্ধ করা হলো।',
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+              });
+            }

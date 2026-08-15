@@ -1537,7 +1537,7 @@
   @media print{
     .masthead, .search-bar-wrap, .toolbar, .drawer, footer,
     .card-actions, .seal, .related-topics, .mobile-back-btn,
-    .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout{
+    .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout, #mcq-layout{
       display:none !important;
     }
     body{ background:#fff; }
@@ -2643,7 +2643,7 @@ function renderList(list, q){
     const readMark = progress[t.slug] ? '<span class="read-badge">✓</span>' : '';
     const bookmarkMark = bookmarks[t.slug] ? '<span class="bookmark-badge">⭐</span>' : '';
     return `
-    <button class="tab ${t.slug===ACTIVE_SLUG?'active':''} ${progress[t.slug]?'read-topic':''}" data-slug="${t.slug}">
+    <button class="tab ${t.slug===ACTIVE_SLUG?'active':''} ${progress[t.slug]?'read-topic':''}" data-slug="${escapeHtml(t.slug)}">
       ${escapeHtml(t.title)}${readMark}${bookmarkMark}
       ${sub}
     </button>
@@ -3031,7 +3031,7 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       ${related.length ? `
         <div class="related-topics">
           <div class="related-title">🔗 এটাও দেখো</div>
-          ${related.map(r => `<span class="related-chip" data-slug="${r.slug}">${escapeHtml(r.title)}</span>`).join('')}
+          ${related.map(r => `<span class="related-chip" data-slug="${escapeHtml(r.slug)}">${escapeHtml(r.title)}</span>`).join('')}
         </div>
       ` : ''}
     `;
@@ -3087,7 +3087,12 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
 }
 
 async function openTopic(slug, updateHash=true){
-  if(CURRENT_MODE === 'ghotonaprobaho' || CURRENT_MODE === 'top-news'){
+  // 'browse' ছাড়া বাকি যেকোনো মোডে থাকলে আগে browse-এ ফিরিয়ে আনতে হবে —
+  // নাহলে সেই মোডের লেআউট (ঘটনাপ্রবাহ/টপ-নিউজ/MCQ) দৃশ্যমান থেকে যায় আর
+  // browse-layout display:none-ই থেকে যায়, টপিক লোড হলেও স্ক্রিনে দেখা
+  // যায় না (আগে এখানে শুধু ghotonaprobaho/top-news চেক করা হতো, mcq বাদ
+  // পড়ে গিয়েছিল — BUGFIX.md BUG-13)
+  if(CURRENT_MODE !== 'browse'){
     await setGhotonaprobahoMode(false);
   }
   const topic = ALL_TOPICS.find(t=>t.slug===slug);

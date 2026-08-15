@@ -228,6 +228,15 @@ const EXAM_ARCHIVE = [
     date: "2025-10-11",
     duration: "৯০ মিনিট",
     totalMarks: 100,
+    totalQuestions: 18,
+  },
+  {
+    id: "job-2025-nbr-steno-typist",
+    ministry: "জাতীয় রাজস্ব বোর্ড",
+    post: "সাঁটমুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+    date: "2025-10-11",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
     totalQuestions: 16,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন

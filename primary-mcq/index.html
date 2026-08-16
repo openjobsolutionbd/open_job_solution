@@ -303,5 +303,32 @@ navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerc
   }
 });
 </script>
+<script src="/shared/floating-search.js"></script>
+<script>
+  // ভাসমান সার্চ — সব বিষয়ের সব প্রশ্নের মধ্যে খুঁজবে। ক্লিক করলে
+  // 'সব প্রশ্ন' মোডে গিয়ে অ্যাপের নিজস্ব state (S) ও render() ব্যবহার
+  // করেই ওই প্রশ্নটা দেখানো হয় — নতুন navigation লজিক লাগেনি।
+  (function () {
+    initFloatingSearch({
+      localSearch: function (q) {
+        const items = allQ().filter(item => item.q.toLowerCase().includes(q));
+        return items.map(item => ({
+          label: item.q,
+          onSelect: function () {
+            S.subject = 'all';
+            S.year = 'all';
+            S.page = 1;
+            S.search = item.q;
+            save();
+            const box = document.getElementById('searchInput');
+            if (box) box.value = item.q;
+            render();
+            if (box) box.scrollIntoView({ behavior: 'smooth' });
+          }
+        }));
+      }
+    });
+  })();
+</script>
 </body>
 </html>

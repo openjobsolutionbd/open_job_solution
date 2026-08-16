@@ -108,5 +108,34 @@ navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerc
   }
 });
 </script>
+<script src="/shared/floating-search.js"></script>
+<script>
+  // ভাসমান সার্চ — সব বিষয়ের সব প্রশ্নের মধ্যে খুঁজবে (subject tab নির্বিশেষে)।
+  // কোনো আইটেমে ক্লিক করলে "সব কুইজ" ট্যাবে গিয়ে বিদ্যমান সার্চ বক্সে
+  // ওই প্রশ্নটাই বসিয়ে দেওয়া হয় — অ্যাপের নিজস্ব ফিল্টার ইঞ্জিন ব্যবহার
+  // করেই দেখানো হয়, আলাদা নতুন navigation লজিক লেখার দরকার নেই।
+  (function () {
+    initFloatingSearch({
+      localSearch: function (q) {
+        const items = getAllQuestions().filter(item =>
+          normalizeText(item.question).includes(q) ||
+          (item.topic && normalizeText(item.topic).includes(q))
+        );
+        return items.map(item => ({
+          label: item.question,
+          onSelect: function () {
+            const allTab = document.querySelector('.tab-btn[data-subject="all"]');
+            if (allTab) allTab.click();
+            const box = document.getElementById('searchInput');
+            box.value = item.question;
+            box.dispatchEvent(new Event('input'));
+            const container = document.getElementById('questionsContainer');
+            if (container) container.scrollIntoView({ behavior: 'smooth' });
+          }
+        }));
+      }
+    });
+  })();
+</script>
 </body>
 </html>

@@ -28,7 +28,6 @@ Source: 1. Accessible Dictionary by Bangla Academy.
 
 সঠিক উত্তর: গ) break
 
-Live MCQ Analytics: Right: 20%; Wrong: 33%; Unanswered: 45%; [Total: 27459]
 
 ব্যাখ্যা: সঠিক উত্তর হলো— গ) break.
 
@@ -82,7 +81,6 @@ Source:
 
 সঠিক উত্তর: গ) 3/2
 
-Live MCQ Analytics: Right: 10%; Wrong: 16%; Unanswered: 73%; [Total: 27459]
 
 সমাধান:
 আমরা জানি,

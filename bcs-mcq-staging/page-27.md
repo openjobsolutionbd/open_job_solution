@@ -59,7 +59,6 @@ Source: 1. Britannica. 2. English Essence by Live MCQ.
 
 সঠিক উত্তর: গ) to make a try
 
-Live MCQ Analytics: Right: 52%; Wrong: 14%; Unanswered: 33%; [Total: 27459]
 
 ব্যাখ্যা: • 'To have a shot' means: to make a try.
 
@@ -83,7 +82,6 @@ Source: 1. Accessible Dictionary by Bangla Academy.
 
 সঠিক উত্তর: ঘ) common
 
-Live MCQ Analytics: Right: 33%; Wrong: 42%; Unanswered: 24%; [Total: 27459]
 
 ব্যাখ্যা: • 'Monarch' is a common gender.
 

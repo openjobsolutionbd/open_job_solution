@@ -28,7 +28,6 @@ notes: "পেজের শুরুতে বাংলা বিভাগের
 
 সঠিক উত্তর: গ) Waiting for Godot
 
-Live MCQ Analytics: Right: 19%; Wrong: 5%; Unanswered: 75%; [Total: 27459]
 
 ব্যাখ্যা: সঠিক উত্তর: গ) Waiting for Godot.
 
@@ -66,7 +65,6 @@ Source: 1. Britannica.
 
 সঠিক উত্তর: ক) transition sentence
 
-Live MCQ Analytics: Right: 10%; Wrong: 48%; Unanswered: 40%; [Total: 27459]
 
 ব্যাখ্যা: সঠিক উত্তর: ক) transition sentence.
 

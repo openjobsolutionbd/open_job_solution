@@ -1,8 +1,8 @@
 ---
 source: "৫০তম বিসিএস মূল প্রশ্নের অথেনটিক রেফারেন্সসহ সমাধান (Live MCQ)"
 printed_page: 2
-status: pending
-notes: ""
+status: confirmed
+notes: "সেলিম কনফার্ম করেছেন"
 ---
 
 - অ + ই = এ; শুভ + ইচ্ছা = শুভেচ্ছা।

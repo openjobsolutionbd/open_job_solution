@@ -13,7 +13,6 @@ notes: "পেজের শুরুতে প্রশ্ন ৬৫ সংক�
 
 সঠিক উত্তর: গ) 4 : 9
 
-Live MCQ Analytics: Right: 47%; Wrong: 14%; Unanswered: 37%; [Total: 27459]
 
 সমাধান:
 দেওয়া আছে,
@@ -36,7 +35,6 @@ b/c = 2/3
 
 সঠিক উত্তর: ঘ) 76
 
-Live MCQ Analytics: Right: 46%; Wrong: 4%; Unanswered: 48%; [Total: 27459]
 
 সমাধান:
 ভাগশেষ উপপাদ্য অনুসারে,
@@ -55,7 +53,6 @@ p(x) = x⁴ - 2x + 1
 
 সঠিক উত্তর: খ) - 1/8
 
-Live MCQ Analytics: Right: 12%; Wrong: 10%; Unanswered: 76%; [Total: 27459]
 
 সমাধান:
 প্রদত্ত সমীকরণ,
@@ -74,7 +71,6 @@ a = 2, b = 3 এবং c = 1
 
 সঠিক উত্তর: খ) 32
 
-Live MCQ Analytics: Right: 60%; Wrong: 11%; Unanswered: 27%; [Total: 27459]
 
 সমাধান:
 দেওয়া আছে,
@@ -95,7 +91,6 @@ A-এর উপাদান সংখ্যা, n(A) = 5
 
 সঠিক উত্তর: গ) (- 1/3, 1)
 
-Live MCQ Analytics: Right: 59%; Wrong: 6%; Unanswered: 34%; [Total: 27459]
 
 সমাধান:
 দেওয়া আছে,

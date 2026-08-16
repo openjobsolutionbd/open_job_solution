@@ -629,6 +629,38 @@
     if (!window.__swReloaded) { window.__swReloaded = true; window.location.reload(); }
   });
   </script>
+  <script src="/shared/floating-search.js"></script>
+  <script>
+    // ভাসমান সার্চ — EXAM_ARCHIVE-এর মন্ত্রণালয়/পদের নামে খুঁজবে (বিদ্যমান
+    // সার্চ বক্স যেভাবে খোঁজে, একই যুক্তি)। ক্লিক করলে ফিল্টার রিসেট করে
+    // বিদ্যমান সার্চ বক্সে বসিয়ে renderExamCards() নিজে থেকেই চলবে
+    // (input ইভেন্ট ডিসপ্যাচ করার মাধ্যমে)।
+    (function () {
+      initFloatingSearch({
+        localSearch: function (q) {
+          const items = EXAM_ARCHIVE.filter(ex =>
+            (ex.ministry + ' ' + ex.post).toLowerCase().includes(q)
+          );
+          return items.map(ex => ({
+            label: ex.ministry + ' — ' + ex.post,
+            onSelect: function () {
+              const mf = document.getElementById('ministryFilter');
+              const yf = document.getElementById('yearFilter');
+              const box = document.getElementById('searchInput');
+              if (mf) mf.value = '';
+              if (yf) yf.value = '';
+              if (box) {
+                box.value = ex.post;
+                box.dispatchEvent(new Event('input'));
+              }
+              const grid = document.getElementById('examGrid');
+              if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+            }
+          }));
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>

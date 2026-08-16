@@ -18,7 +18,6 @@ notes: "পেজের শুরুতে প্রশ্ন ৬১-এর স�
 
 সঠিক উত্তর: খ) 6/5
 
-Live MCQ Analytics: Right: 43%; Wrong: 25%; Unanswered: 31%; [Total: 27459]
 
 সমাধান:
 আমরা জানি,
@@ -35,7 +34,6 @@ Live MCQ Analytics: Right: 43%; Wrong: 25%; Unanswered: 31%; [Total: 27459]
 
 সঠিক উত্তর: ক) π/6
 
-Live MCQ Analytics: Right: 41%; Wrong: 16%; Unanswered: 41%; [Total: 27459]
 
 সমাধান:
 দেওয়া আছে,
@@ -65,7 +63,6 @@ x = 60°, x/2 = 60°/2 = 30° এবং 3x/2 = (3 × 60°)/2 = 90°
 
 সঠিক উত্তর: ঘ) 3√2
 
-Live MCQ Analytics: Right: 63%; Wrong: 6%; Unanswered: 29%; [Total: 27459]
 
 সমাধান:
 দেওয়া আছে,
@@ -83,7 +80,6 @@ log_x 324 = 4
 
 সঠিক উত্তর: ক) 3/11
 
-Live MCQ Analytics: Right: 72%; Wrong: 3%; Unanswered: 23%; [Total: 27459]
 
 সমাধান:
 40 থেকে 50 এর মধ্যে সংখ্যা আছে = 41, 42, 43, 44, 45, 46, 47, 48, 49 = 9টি

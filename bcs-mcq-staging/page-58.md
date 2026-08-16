@@ -27,7 +27,6 @@ notes: "সেলিম কনফার্ম করেছেন। প্রশ
 
 সঠিক উত্তর: ঘ) ৩৩
 
-Live MCQ Analytics: Right: 10%; Wrong: 12%; Unanswered: 76%; [Total: 27459]
 
 ব্যাখ্যা:→ Habeas Corpus writ দায়ের করা হয় সংবিধানের ৩৩ নং অনুচ্ছেদ লংঘনের কারনে।
 

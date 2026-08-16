@@ -23,7 +23,6 @@ Source: A Passage to the English Language, S.M. Zakir Hussain. Indiana Universit
 
 সঠিক উত্তর: খ) William Wordsworth
 
-Live MCQ Analytics: Right: 39%; Wrong: 11%; Unanswered: 49%; [Total: 27459]
 
 ব্যাখ্যা: • 'Poetry is the spontaneous overflow of powerful feeling: it takes its origin from emotion recollected in tranquillity' is a statement ascribed to William Wordsworth.
 
@@ -69,7 +68,6 @@ Source: 1. Britannica. 2. Poetry Foundation.
 
 সঠিক উত্তর: খ) Areopagitica
 
-Live MCQ Analytics: Right: 20%; Wrong: 5%; Unanswered: 73%; [Total: 27459]
 
 ব্যাখ্যা: • "Areopagitica" contains a defence of the right of freedom of speech and expression.
 

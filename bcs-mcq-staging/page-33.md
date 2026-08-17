@@ -1,5 +1,5 @@
 ---
-status: pending
+status: confirmed
 source: ৫০তম বিসিএস মূল প্রশ্নের অথেনটিক রেফারেন্সসহ সমাধান (Live MCQ)
 page: 33
 ---

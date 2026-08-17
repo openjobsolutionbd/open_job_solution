@@ -27,7 +27,7 @@ Live MCQ Analytics: Right: 43%; Wrong: 32%; Unanswered: 24%; [Total: 27459]
 (১) অভাববোধ (Need)
 (২) তাড়না (Drive)
 (৩) করণ আচরণ (Instrumental Behavior)
-(৮) উদ্দেশ্য সাধন (Goal)
+(৪) উদ্দেশ্য সাধন (Goal)
 
 উৎস:
 ১। Philosophical and Psychological Foundation of Education, স্কুল অব এডুকেশন, এমএড প্রোগ্রাম, উন্মুক্ত বিশ্ববিদ্যালয়।

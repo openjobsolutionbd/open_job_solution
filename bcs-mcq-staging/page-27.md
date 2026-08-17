@@ -1,7 +1,7 @@
 ---
 source: "৫০তম বিসিএস মূল প্রশ্নের অথেনটিক রেফারেন্সসহ সমাধান (Live MCQ)"
 printed_page: 27
-status: pending
+status: confirmed
 notes: "পেজের শুরুতে প্রশ্ন ৫৭-এর ব্যাখ্যার শেষাংশ (পেজ ২৬ থেকে চলে এসেছে), তারপর প্রশ্ন ৫৮ ও ৫৯।"
 ---
 
@@ -22,7 +22,7 @@ notes: "পেজের শুরুতে প্রশ্ন ৫৭-এর ব�
 - Paradise Regained (Epic),
 - Areopagitica (Prose),
 - Of Education (Prose),
-- Of Reformation Prose),
+- Of Reformation (Prose),
 - Lycidas (Elegy),
 - L'Allegro (lyric poem),
 - On the Morning of Christ's Nativity (Early poem),

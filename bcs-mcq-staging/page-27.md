@@ -22,7 +22,7 @@ notes: "পেজের শুরুতে প্রশ্ন ৫৭-এর ব�
 - Paradise Regained (Epic),
 - Areopagitica (Prose),
 - Of Education (Prose),
-- Of Reformation Prose),
+- Of Reformation (Prose),
 - Lycidas (Elegy),
 - L'Allegro (lyric poem),
 - On the Morning of Christ's Nativity (Early poem),

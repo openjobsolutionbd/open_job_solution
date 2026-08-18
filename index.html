@@ -22,6 +22,7 @@
       --accent-bcs: #2563eb;
       --accent-primary: #16a34a;
       --accent-written: #9333ea;
+      --accent-books: #b45309;
       --shadow: 0 2px 16px rgba(0,0,0,0.08);
       --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
       --radius: 16px;
@@ -129,6 +130,7 @@
     .card.prim:hover { border-color: var(--accent-primary); }
     .card.writ:hover { border-color: var(--accent-written); }
     .card.ca:hover   { border-color: var(--accent-ca, #0e7c66); }
+    .card.books:hover { border-color: var(--accent-books); }
 
     .card-icon {
       font-size: 2.2rem;
@@ -143,9 +145,11 @@
     .bcs  .card-icon { background: #eff6ff; }
     .prim .card-icon { background: #f0fdf4; }
     .writ .card-icon { background: #faf5ff; }
+    .books .card-icon { background: #fef3e2; }
     [data-theme="dark"] .bcs  .card-icon { background: #1e3a5f; }
     [data-theme="dark"] .prim .card-icon { background: #14532d; }
     [data-theme="dark"] .writ .card-icon { background: #3b1f5e; }
+    [data-theme="dark"] .books .card-icon { background: #3a2a14; }
 
     .card-text { flex: 1; }
     .card-title {
@@ -250,6 +254,15 @@
         </div>
         <span class="arrow">›</span>
       </a>
+
+      <a class="card books" href="/books/">
+        <div class="card-icon">📖</div>
+        <div class="card-text">
+          <div class="card-title">বই সমূহ</div>
+          <div class="card-desc">বিষয়ভিত্তিক গোছানো বই — BCS MCQ ও ১১-২০তম গ্রেডের লিখিত</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
     </div>
 
     <footer>Open Job Solution · v1.92</footer>
@@ -297,7 +310,8 @@ navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerc
       { label: 'বিসিএস MCQ — বাংলা, ইংরেজি, বিজ্ঞান, গণিত সহ সব বিষয়', href: '/bcs-mcq/' },
       { label: 'প্রাইমারি MCQ — প্রাথমিক বিদ্যালয় সহকারী শিক্ষক পরীক্ষা', href: '/primary-mcq/' },
       { label: 'লিখিত পরীক্ষার প্রস্তুতি — ১১-২০তম গ্রেড', href: '/written-exam/' },
-      { label: 'কারেন্ট অ্যাফেয়ার্স — টপিক, ঘটনাপ্রবাহ, টপ নিউজ', href: '/current-affairs/docs/' }
+      { label: 'কারেন্ট অ্যাফেয়ার্স — টপিক, ঘটনাপ্রবাহ, টপ নিউজ', href: '/current-affairs/docs/' },
+      { label: 'বই সমূহ — BCS MCQ বই ও ১১-২০তম গ্রেডের লিখিত বই', href: '/books/' }
     ];
     initFloatingSearch({
       localSearch: function (q) {

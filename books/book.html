@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">বই সমূহ — Open Job Solution</title>
+  <meta name="theme-color" content="#1a1814">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script>
+    (function() {
+      const t = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="page-wrap">
+
+    <header class="top">
+      <a class="back-btn" href="index.html" title="বই সমূহে ফিরুন">←</a>
+      <h1 id="crumbTitle">বই সমূহ</h1>
+      <button class="theme-btn" id="themeBtn" title="Dark/Light">🌙</button>
+    </header>
+
+    <div class="subject-page-header">
+      <div class="subject-page-icon" id="subjectIcon"></div>
+      <div>
+        <div class="subject-page-title" id="subjectTitle">—</div>
+        <div class="subject-page-book" id="subjectBook">—</div>
+      </div>
+    </div>
+
+    <!--
+      এই জায়গাটাতেই পরে আসল কনটেন্ট বসবে (প্রশ্ন-উত্তর-ব্যাখ্যা,
+      অধ্যায় ইত্যাদি) — কনটেন্টের ফরম্যাট এখনো ঠিক হয়নি, তাই এখন
+      শুধু "শীঘ্রই আসছে" প্লেসহোল্ডার। এই ডিভ-এর id ধরে পরে
+      content.js থেকে রেন্ডার করা হবে।
+    -->
+    <div id="contentArea">
+      <div class="coming-soon">
+        <div class="emoji">🚧</div>
+        <div class="msg">এই বিষয়ের কনটেন্ট এখনো যোগ করা হয়নি।<br>শীঘ্রই আসছে।</div>
+      </div>
+    </div>
+
+    <footer>Open Job Solution · বই সমূহ</footer>
+
+  </div>
+
+  <script src="data/manifest.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const bookId = params.get('b');
+    const subjectId = params.get('s');
+    const book = BOOKS[bookId];
+    const subject = book && book.subjects.find(s => s.id === subjectId);
+
+    if (book && subject) {
+      document.getElementById('pageTitle').textContent = `${subject.label} — ${book.title}`;
+      document.getElementById('crumbTitle').textContent = book.title;
+      document.getElementById('subjectTitle').textContent = subject.label;
+      document.getElementById('subjectBook').textContent = book.title + (subject.marks ? ` · ${subject.marks} নম্বর` : '');
+      document.getElementById('subjectIcon').innerHTML = BOOK_ICONS[subject.id] || '';
+    } else {
+      // ভুল/অচেনা URL প্যারামিটার হলে শেলফ পেজে ফেরত পাঠানো
+      document.getElementById('contentArea').innerHTML = `
+        <div class="coming-soon">
+          <div class="emoji">❓</div>
+          <div class="msg">এই বিষয়টি খুঁজে পাওয়া যায়নি।<br><a href="index.html">বই সমূহ-এ ফিরে যান</a></div>
+        </div>
+      `;
+    }
+
+    const btn = document.getElementById('themeBtn');
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      btn.textContent = t === 'dark' ? '☀️' : '🌙';
+    }
+    applyTheme(localStorage.getItem('bcs_theme') || 'light');
+    btn.addEventListener('click', () => {
+      const n = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('bcs_theme', n);
+      applyTheme(n);
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/books/sw.js').catch(err => {
+          console.warn('[SW] Registration failed:', err);
+        });
+      });
+    }
+    navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!window.__swReloaded) {
+        window.__swReloaded = true;
+        window.location.reload();
+      }
+    });
+  </script>
+</body>
+</html>

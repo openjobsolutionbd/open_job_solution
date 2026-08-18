@@ -1,0 +1,11 @@
+{
+  "name": "open_job_solution",
+  "private": true,
+  "devDependencies": {
+    "cspell": "^10.0.1",
+    "@cspell/dict-bn": "^1.0.4"
+  },
+  "scripts": {
+    "spellcheck": "node check-spelling.js"
+  }
+}

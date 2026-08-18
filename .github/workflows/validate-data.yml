@@ -20,3 +20,10 @@ jobs:
 
       - name: Validate question data
         run: node validate_data.js
+
+      - name: Install spellcheck dependencies
+        run: npm install
+
+      - name: Bangla spell-check (advisory)
+        run: npm run spellcheck
+        continue-on-error: true

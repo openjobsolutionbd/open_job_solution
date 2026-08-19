@@ -179,7 +179,7 @@
     position:relative;
   }
   .masthead h1{
-    font-family:'Kalpurush', serif;
+    font-family:'Kalpurush', sans-serif;
     font-weight:700;
     font-size:clamp(24px,3.84vw,33.6px);
     margin:0;
@@ -849,7 +849,7 @@
     font-size:16.8px;
   }
   .card-placeholder .big{
-    font-family:'Kalpurush',serif;
+    font-family:'Kalpurush',sans-serif;
     font-size:26.4px;
     color:var(--heading);
     margin-bottom:8px;
@@ -980,7 +980,7 @@
   .card-body h2{
     font-family:'Hind Siliguri',sans-serif;
     font-weight:600;
-    font-size:22.8px;
+    font-size:20.5px;
     color:var(--heading);
     margin:22px 0 10px;
     padding-bottom:6px;
@@ -989,7 +989,7 @@
   .card-body h1{display:none;}
   .card-body p{
     font-family:'Noto Serif Bengali',serif;
-    font-size:19.8px;
+    font-size:17.8px;
     line-height:1.8;
     margin:0 0 12px;
   }
@@ -1004,7 +1004,7 @@
     width:100%;
     min-width:420px;
     border-collapse:collapse;
-    font-size:16.8px;
+    font-size:15.1px;
   }
   .card-body th, .card-body td{
     border:1px solid var(--line);
@@ -1013,27 +1013,27 @@
   }
   .card-body td{
     font-family:'Noto Serif Bengali',serif;
-    font-size:17.4px;
+    font-size:15.7px;
   }
   .card-body th{
     background:var(--drawer-bg);
     color:var(--on-dark);
     font-family:'Kalpurush',sans-serif;
     font-weight:500;
-    font-size:15px;
+    font-size:13.5px;
   }
   .card-body tr:nth-child(even) td{background:rgba(0,107,63,0.05);}
   .card-body ul{
     font-family:'Noto Serif Bengali',serif;
-    font-size:19.8px;
+    font-size:17.8px;
     padding-right:20px;
     line-height:1.8;
   }
 
   .card-body h2.history-heading{
-    font-family:'Kalpurush',serif !important;
+    font-family:'Kalpurush',sans-serif !important;
     color:var(--heading);
-    font-size:21.6px;
+    font-size:19.4px;
     border-top:2px solid var(--line);
     padding-top:18px;
     margin-top:26px !important;
@@ -1171,7 +1171,7 @@
     border-bottom:1px solid var(--line);
   }
   .ghotonaprobaho-month-heading{
-    font-family:'Kalpurush',serif;
+    font-family:'Kalpurush',sans-serif;
     font-size:22.8px;
     font-weight:700;
     color:var(--heading);
@@ -1228,7 +1228,7 @@
   }
   .ghotonaprobaho-day:last-child{ border-bottom:none; }
   .ghotonaprobaho-date{
-    font-family:'Kalpurush',serif;
+    font-family:'Kalpurush',sans-serif;
     font-size:20.4px;
     font-weight:700;
     color:var(--heading);
@@ -1724,6 +1724,12 @@ let TOP_NEWS_ITEMS = null; // "টপ নিউজ" ট্যাবের তা
 let TOP_NEWS_ITEMS_PROMISE = null; // Bug 7: concurrent call guard
 let MCQ_SETS = null; // "MCQ" ট্যাবের কুইজ-সেট — একবার লোড হলে ক্যাশ থাকে
 let MCQ_SETS_PROMISE = null; // concurrent call guard
+// Bug 14: ব্যবহারকারী কোন প্রশ্নে কোন অপশনে ক্লিক করেছেন তার স্মৃতি — renderMcqView()
+// প্রতিবার MCQ ট্যাবে ঢোকার সময় (setMode('mcq')) DOM পুরোপুরি নতুন করে বানায়, তাই এই
+// state ছাড়া অন্য ট্যাবে গিয়ে ফিরলেই উত্তর দেওয়া প্রশ্নগুলো আবার "un-answered" দেখাত।
+// key: `${set.label}||${q.number}` (একই সেটের ভেতর number ইউনিক, একাধিক সেট এলে
+// আলাদা সেট-লেবেল দিয়ে সংঘর্ষ এড়ানো হয়)। value: ক্লিক করা option-এর index।
+let MCQ_ANSWERED = {};
 let RENDER_TOPIC_SEQ = 0; // Bug 1: race condition guard — প্রতিটা renderTopicContent কলে বাড়ে
 
 // ══════════════════════════════════════════════════════
@@ -2281,6 +2287,9 @@ const BN_OPTION_LABELS = ['ক', 'খ', 'গ', 'ঘ'];
 function handleMcqOptionClick(questionEl, clickedIndex, correctIndex){
   if(questionEl.dataset.answered === '1') return;
   questionEl.dataset.answered = '1';
+  if(questionEl.dataset.mcqKey){
+    MCQ_ANSWERED[questionEl.dataset.mcqKey] = clickedIndex; // Bug 14: পরের রি-রেন্ডারে ফেরত আনার জন্য মনে রাখা
+  }
   const buttons = questionEl.querySelectorAll('.mcq-option');
   buttons.forEach((btn, idx) => {
     btn.disabled = true;
@@ -2314,7 +2323,8 @@ function renderMcqView(){
     set.sections.forEach(section => {
       html += `<div class="mcq-section-heading">${escapeHtml(section.name)}</div>`;
       section.questions.forEach(q => {
-        html += `<div class="mcq-question" data-answered="0" data-correct-idx="${q.answer_index}">`;
+        const mcqKey = `${set.label}||${q.number}`; // Bug 14: MCQ_ANSWERED-এ লুকআপের জন্য ইউনিক key
+        html += `<div class="mcq-question" data-answered="0" data-correct-idx="${q.answer_index}" data-mcq-key="${escapeHtml(mcqKey)}">`;
         html += `<div class="mcq-question-text"><span class="mcq-question-number">${escapeHtml(q.number)}.</span>${escapeHtml(q.text)}</div>`;
         html += `<div class="mcq-options">`;
         q.options.forEach((opt, idx) => {
@@ -2336,6 +2346,14 @@ function renderMcqView(){
         handleMcqOptionClick(qEl, idx, correctIdx);
       });
     });
+    // Bug 14: এই প্রশ্ন আগে কোনো এক render-এ উত্তর দেওয়া হয়ে থাকলে (MCQ_ANSWERED-এ
+    // পাওয়া গেলে) সেই অবস্থা এখনই ফিরিয়ে আনা হচ্ছে, যাতে ট্যাব বদলে ফিরে এলেও
+    // আগের সবুজ/লাল ফিডব্যাক ও disabled বাটন বহাল থাকে।
+    const previousClick = MCQ_ANSWERED[qEl.dataset.mcqKey];
+    if(previousClick !== undefined){
+      const correctIdx = parseInt(qEl.dataset.correctIdx, 10);
+      handleMcqOptionClick(qEl, previousClick, correctIdx);
+    }
   });
 }
 
@@ -3040,11 +3058,20 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       document.getElementById(backBtnId).addEventListener('click', backToList);
     }
 
-    document.getElementById(`print-topic-btn-${topic.slug}`).addEventListener('click', () => {
+    // BUG-15 ফিক্স: এই ৪টা বাটনের id-তে শুধু topic.slug থাকে, container-স্কোপড
+    // কোনো prefix নেই — তাই একই টপিক একসাথে মূল কার্ড ও মডাল দুই জায়গায় থাকলে
+    // (যেমন কার্ডে টপিক খোলা রেখে ভাসমান সার্চ দিয়ে সেই একই টপিক মডালেও খোলা হলে)
+    // DOM-এ একই id দুইবার তৈরি হয়। document.getElementById() তখন সবসময় DOM-এ
+    // প্রথম মিলে যাওয়া এলিমেন্টই ফেরত দেয় (এখানে card-এরটা, যেহেতু card
+    // topic-modal-body-এর আগে আসে) — ফলে modal-এর নিজের বাটনে কোনো listener
+    // বাঁধা পড়ে না, ক্লিক করলে কিছুই হয় না। container.querySelector() দিয়ে
+    // ঠিক এই renderTopicContent()-কলের container-এর ভেতরের এলিমেন্টটাই
+    // নিশ্চিতভাবে বাছাই করা হচ্ছে।
+    container.querySelector(`#print-topic-btn-${topic.slug}`).addEventListener('click', () => {
       window.print();
     });
 
-    document.getElementById(`copy-link-btn-${topic.slug}`).addEventListener('click', async (e) => {
+    container.querySelector(`#copy-link-btn-${topic.slug}`).addEventListener('click', async (e) => {
       const url = window.location.origin + window.location.pathname + '#' + topic.slug;
       try{
         await navigator.clipboard.writeText(url);
@@ -3055,7 +3082,7 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       setTimeout(()=>{ e.target.textContent = '🔗 লিংক কপি'; }, 1800);
     });
 
-    document.getElementById(`mark-read-btn-${topic.slug}`).addEventListener('click', (e) => {
+    container.querySelector(`#mark-read-btn-${topic.slug}`).addEventListener('click', (e) => {
       const nowRead = toggleRead(topic.slug);
       e.target.classList.toggle('done', nowRead);
       e.target.textContent = nowRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?';
@@ -3063,7 +3090,7 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       renderList(visibleTopics(qNow), qNow);
     });
 
-    document.getElementById(`bookmark-btn-${topic.slug}`).addEventListener('click', (e) => {
+    container.querySelector(`#bookmark-btn-${topic.slug}`).addEventListener('click', (e) => {
       const nowBookmarked = toggleBookmark(topic.slug);
       e.target.classList.toggle('active', nowBookmarked);
       e.target.textContent = nowBookmarked ? '⭐ প্রিয়' : '☆ প্রিয়';

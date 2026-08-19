@@ -1,10 +1,12 @@
-const CACHE_PREFIX = 'written-';
+const CACHE_PREFIX = 'books-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1.100';
 
 const ASSETS = [
-  '/written-exam/',
-  '/written-exam/style.css',
-  '/written-exam/index.html',
+  '/books/',
+  '/books/index.html',
+  '/books/book.html',
+  '/books/style.css',
+  '/books/data/manifest.js',
   '/fonts/noto-bengali.css',
   '/fonts/noto-serif-bengali-400.woff2',
   '/fonts/noto-serif-bengali-500.woff2',
@@ -12,16 +14,10 @@ const ASSETS = [
   '/fonts/noto-serif-bengali-700.woff2'
 ];
 
-const OPTIONAL_ASSETS = [
-  '/written-exam/data/job-solution.js',
-  '/written-exam/renderer.js',
-  '/written-exam/exam-archive.js'
-];
-
 function isAppFile(url) {
   return (
-    url.pathname === '/written-exam/' ||
-    url.pathname.startsWith('/written-exam/') && (
+    url.pathname === '/books/' ||
+    url.pathname.startsWith('/books/') && (
       url.pathname.endsWith('.html') ||
       url.pathname.endsWith('.css') ||
       url.pathname.endsWith('.js')
@@ -33,19 +29,12 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_VERSION)
       .then(c => c.addAll(ASSETS))
-      .then(() => caches.open(CACHE_VERSION).then(cache =>
-        Promise.all(OPTIONAL_ASSETS.map(url =>
-          fetch(url)
-            .then(res => { if (res.ok) cache.put(url, res); })
-            .catch(() => {})
-        ))
-      ))
       .then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener('activate', e => {
-  // শুধু নিজের prefix ('written-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
+  // শুধু নিজের prefix ('books-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
   // অন্য সেকশনের cache স্পর্শ করবে না।
   e.waitUntil(caches.keys().then(keys =>
     Promise.all(
@@ -73,7 +62,7 @@ self.addEventListener('fetch', e => {
         .catch(() => {
           return caches.match(e.request).then(cached => {
             if (cached) return cached;
-            return caches.match('/written-exam/index.html');
+            return caches.match('/books/index.html');
           });
         })
     );
@@ -88,7 +77,7 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_VERSION).then(c => c.put(e.request, res.clone()));
         }
         return res;
-      }).catch(() => caches.match('/written-exam/index.html'));
+      }).catch(() => caches.match('/books/index.html'));
     })
   );
 });

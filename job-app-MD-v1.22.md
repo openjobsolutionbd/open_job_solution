@@ -90,6 +90,25 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.100 | ১৯ আগস্ট ২০২৬ | Version v1.100-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.99 | ১৯ আগস্ট ২০২৬ | Version v1.99-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.98 | ১৯ আগস্ট ২০২৬ | Version v1.98-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.97 | ১৯ আগস্ট ২০২৬ | Version v1.97-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.96 | ১৯ আগস্ট ২০২৬ | Version v1.96-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.95 | ১৯ আগস্ট ২০২৬ | Version v1.95-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.94 | ১৯ আগস্ট ২০২৬ | Version v1.94-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.93 | ১৮ আগস্ট ২০২৬ | Version v1.93-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.92 | ১৮ আগস্ট ২০২৬ | Version v1.92-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.91 | ১৮ আগস্ট ২০২৬ | Version v1.91-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.90 | ১৮ আগস্ট ২০২৬ | Version v1.90-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.89 | ১৮ আগস্ট ২০২৬ | Version v1.89-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.88 | ১৮ আগস্ট ২০২৬ | Version v1.88-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.87 | ১৮ আগস্ট ২০২৬ | Version v1.87-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.86 | ১৭ আগস্ট ২০২৬ | Version v1.86-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.85 | ১৭ আগস্ট ২০২৬ | Version v1.85-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.84 | ১৭ আগস্ট ২০২৬ | Version v1.84-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.83 | ১৭ আগস্ট ২০২৬ | Version v1.83-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.82 | ১৭ আগস্ট ২০২৬ | Version v1.82-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.81 | ১৭ আগস্ট ২০২৬ | Version v1.81-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.80 | ১৭ আগস্ট ২০২৬ | Version v1.80-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.79 | ১৭ আগস্ট ২০২৬ | Version v1.79-এ আপগ্রেড। Cache সব module-এ update। |

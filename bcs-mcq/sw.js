@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'bcs-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.81';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.100';
 
 const ASSETS = [
   '/bcs-mcq/',

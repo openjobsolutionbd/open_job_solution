@@ -1,0 +1,155 @@
+/* ══════════════════════════════════════════════════════════════
+   বই সমূহ — style.css
+   root index.html-এর ডিজাইন সিস্টেম অনুসরণ করে (--bg/--surface/
+   --border/--text-primary ইত্যাদি নাম হুবহু মিলিয়ে রাখা হয়েছে
+   যাতে ভবিষ্যতে ভিজুয়াল ভাষা এক থাকে)।
+   ══════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5f1eb;
+  --surface: #ffffff;
+  --border: #e0d8cc;
+  --text-primary: #1a1814;
+  --text-secondary: #6b6358;
+  --accent-books: #b45309;
+  --accent-books-light: #fef3e2;
+  --shadow: 0 2px 16px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+  --radius: 16px;
+}
+[data-theme="dark"] {
+  --bg: #1a1814;
+  --surface: #24211c;
+  --border: #3a3530;
+  --text-primary: #f0ece4;
+  --text-secondary: #a89e92;
+  --accent-books: #f0a24d;
+  --accent-books-light: #3a2a14;
+  --shadow: 0 2px 16px rgba(0,0,0,0.4);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+body {
+  font-family: 'Noto Serif Bengali', serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100dvh;
+  padding: 24px 16px 60px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.page-wrap { width: 100%; max-width: 640px; margin: 0 auto; }
+
+header.top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.back-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--text-primary);
+  font-size: 1.2rem; flex-shrink: 0;
+  box-shadow: var(--shadow);
+}
+h1 { font-size: 1.5rem; font-weight: 700; flex: 1; }
+.theme-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  font-size: 1.1rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow); flex-shrink: 0;
+}
+
+/* ── শেলফ পেজ ── */
+.book-section { margin-bottom: 32px; }
+.book-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex; align-items: center; gap: 8px;
+}
+.book-section-desc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.subject-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.subject-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent-books);
+}
+.subject-card:active { transform: translateY(0px); }
+.subject-icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--accent-books-light);
+  color: var(--accent-books);
+  display: flex; align-items: center; justify-content: center;
+}
+.subject-icon svg { width: 22px; height: 22px; }
+.subject-label { font-weight: 700; font-size: 0.98rem; }
+.subject-marks { color: var(--text-secondary); font-size: 0.78rem; }
+
+/* ── বিষয়-পাতা (book.html) ── */
+.subject-page-header {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 20px;
+}
+.subject-page-icon {
+  width: 56px; height: 56px; flex-shrink: 0;
+  border-radius: 14px;
+  background: var(--accent-books-light);
+  color: var(--accent-books);
+  display: flex; align-items: center; justify-content: center;
+}
+.subject-page-icon svg { width: 30px; height: 30px; }
+.subject-page-title { font-size: 1.4rem; font-weight: 700; }
+.subject-page-book { color: var(--text-secondary); font-size: 0.85rem; }
+
+.coming-soon {
+  background: var(--surface);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+.coming-soon .emoji { font-size: 2.2rem; margin-bottom: 10px; }
+.coming-soon .msg { font-size: 1rem; line-height: 1.6; }
+
+footer {
+  margin-top: 36px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .subject-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .subject-card { padding: 14px; }
+}

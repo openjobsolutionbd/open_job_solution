@@ -2,12 +2,17 @@
   "version": "0.2",
   "language": "bn,en",
   "import": ["@cspell/dict-bn/cspell-ext.json"],
-  "dictionaries": ["bn", "en_US", "known-words"],
+  "dictionaries": ["bn", "en_US", "known-words", "prothomalo-words"],
   "dictionaryDefinitions": [
     {
       "name": "known-words",
       "path": "./known-words.txt",
       "addWords": true
+    },
+    {
+      "name": "prothomalo-words",
+      "path": "./prothomalo-words.txt",
+      "addWords": false
     }
   ],
   "ignoreRegExpList": [

@@ -239,5 +239,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 16,
   },
+  {
+    id: "job-2025-bof-office-asst-typist",
+    ministry: "বাংলাদেশ সমরাস্ত্র কারখানা (বিওএফ)",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-17",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 26,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

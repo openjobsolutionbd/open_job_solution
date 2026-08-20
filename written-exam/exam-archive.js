@@ -248,5 +248,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 26,
   },
+  {
+    id: "job-2025-barc-maintenance-inspector",
+    ministry: "বাংলাদেশ কৃষি গবেষণা কাউন্সিল",
+    post: "রক্ষণাবেক্ষণ পরিদর্শক",
+    date: "2025-10-17",
+    duration: "৬০ মিনিট",
+    totalMarks: 75,
+    totalQuestions: 8,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

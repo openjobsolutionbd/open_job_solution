@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'primary-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.103';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.104';
 
 const ASSETS = [
   '/primary-mcq/',

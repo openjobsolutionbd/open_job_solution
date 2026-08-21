@@ -2391,6 +2391,427 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-barc-maintenance-inspector-q08", "examId": "job-2025-barc-maintenance-inspector", "subject": "general-knowledge", "topic": "gk-others", "qno": 8, "marks": 12, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ", "parts": [{"label": "ক", "q": "সংবিধানের কোন অনুচ্ছেদে \"রাষ্ট্র ও গণজীবনের সর্বস্তরে নারী পুরুষের সমান অধিকার লাভ করিবেন\" বলা আছে?", "a": "২৮(২) নং অনুচ্ছেদ"}, {"label": "খ", "q": "ইরাটম কী?", "a": "উন্নত জাতের ধান"}, {"label": "গ", "q": "\"দ্য গল\" কোন দেশের প্রাচীন নাম?", "a": "ফ্রান্স"}, {"label": "ঘ", "q": "\"সুয়েজ খাল\" কোন দেশে অবস্থিত?", "a": "মিশর"}, {"label": "ঙ", "q": "\"বাংলাদেশ স্কয়ার\" কোথায় অবস্থিত?", "a": "লাইবেরিয়ায়"}, {"label": "চ", "q": "\"আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি\" গানটির রচয়িতা কে?", "a": "আবদুল গাফ্‌ফার চৌধুরী"}, {"label": "ছ", "q": "গ্রিনিচের দ্রাঘিমা কত ডিগ্রি?", "a": "০° (শূন্য ডিগ্রি)"}, {"label": "জ", "q": "বাংলাদেশের white gold হিসেবে পরিচিত কোনটি?", "a": "চিংড়ি"}, {"label": "ঝ", "q": "বাংলাদেশ রেলওয়ের সর্ববৃহৎ কারখানা কোথায়?", "a": "সৈয়দপুর, নীলফামারী"}, {"label": "ঞ", "q": "কুষ্টিয়ার পূর্বনাম কি?", "a": "নদীয়া"}]},
 
   // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জেলা প্রশাসকের কার্যালয়, নেত্রকোণা — অফিস সহায়ক
+  // id prefix: job-2025-dc-netrokona
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-dc-netrokona-q01", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 3, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["ক্ষুধার্ত", "ক্ষুধা + ঋত"],
+      ["সম্প্রীতি", "সম্ + প্রীতি"],
+      ["ভাবুক", "ভৌ + উক"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q02", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "শুদ্ধিকরণ", qno: 2, marks: 4, type: "table",
+    question: "শুদ্ধ বানান লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["দূর্ঘটনা", "দুর্ঘটনা"],
+      ["ন্যুনতম", "নূ্যনতম"],
+      ["মুমুর্ষ", "মুমূর্ষু"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q03", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "কারক", qno: 3, marks: 2, type: "table",
+    question: "কারক ও বিভক্তি নির্ণয় করুন:",
+    columns: ["বাক্য", "কারক ও বিভক্তি"],
+    rows: [
+      ["ধোপাকে কাপড় দাও।", "কর্মে ২য়া"],
+      ["সর্বভূতে ধন দাও।", "সম্প্রদানে ৭মী"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q04", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 4, marks: 3, type: "idiom",
+    question: "বাগধারা (অর্থসহ বাক্য গঠন করুন):",
+    parts: [
+      { label: "ক", phrase: "কেঁচে গণ্ডুষ", meaning: "নতুন করে শুরু করা" },
+      { label: "খ", phrase: "নিরানব্বইয়ের ধাক্কা", meaning: "সঞ্চয়ের প্রবৃত্তি" },
+      { label: "গ", phrase: "উনপাঁজুরে", meaning: "দুর্বল" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q05", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "সমাস", qno: 5, marks: 2, type: "table",
+    question: "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    columns: ["শব্দ", "ব্যাসবাক্য", "সমাসের নাম"],
+    rows: [
+      ["বিজয় পতাকা", "বিজয়ের পতাকা", "৬ষ্ঠী তৎপুরুষ"],
+      ["সিংহপুরুষ", "পুরুষ সিংহের ন্যায়", "উপমিত কর্মধারয়"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q06", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 6, marks: 2, type: "paragraph",
+    question: "'এক পয়সার বাঁশি' কাব্যগ্রন্থের রচয়িতা কে?",
+    answer: "জসীমউদ্দীন।" },
+
+  { id: "job-2025-dc-netrokona-q07", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 7, marks: 2, type: "paragraph",
+    question: "'বৃষ্টি শেষ হওয়ার আগেই আমরা বাড়ি পৌঁছেছিলাম।' বাক্যটি কোন কাল?",
+    answer: "পুরাঘটিত অতীত কাল।" },
+
+  { id: "job-2025-dc-netrokona-q08", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 8, marks: 3, type: "paragraph",
+    question: "যৌগিক বাক্যে রূপান্তর করুন: তুমি চেষ্টা না করায় ব্যর্থ হয়েছো।",
+    answer: "তুমি চেষ্টা করনি, তাই ব্যর্থ হয়েছো।" },
+
+  { id: "job-2025-dc-netrokona-q09", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 9, marks: 3, type: "paragraph",
+    question: "বাক্যটি সঠিকভাবে লিখুন: তোমায় দেখে সে আশ্চর্য হয়েছে।",
+    answer: "তোমায় দেখে সে আশ্চর্যান্বিত হয়েছে।" },
+
+  { id: "job-2025-dc-netrokona-q10", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 10, marks: 3, type: "short-qa",
+    question: "সঠিক উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "'বুলবুলিস্তান' কার লেখা?", a: "গোলাম মোস্তফা" },
+      { label: "খ", q: "'নৌফেল ও হাতেম' কার লেখা?", a: "ফররুখ আহমেদ" },
+      { label: "গ", q: "চর্যাপদে সবচেয়ে বেশি পদ কার লেখা?", a: "কাহ্নপা" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q11", examId: "job-2025-dc-netrokona", subject: "english", topic: "spelling", qno: 11, marks: 2, type: "table",
+    question: "Correct the spelling:",
+    columns: ["Incorrect", "Correct"],
+    rows: [
+      ["Griveince", "Grievance"],
+      ["Commity", "Committee"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q12", examId: "job-2025-dc-netrokona", subject: "english", qno: 12, marks: 2, type: "paragraph",
+    question: "What is the noun form of 'Depart'?",
+    answer: "Departure" },
+
+  { id: "job-2025-dc-netrokona-q13", examId: "job-2025-dc-netrokona", subject: "english", topic: "sentence-correction", qno: 13, marks: 4, type: "sentence-change",
+    question: "Correct the following sentences:",
+    parts: [
+      { label: "a", original: "I prefer tea from coffee.", changed: "I prefer tea to coffee." },
+      { label: "b", original: "I saw a dream last light.", changed: "I dreamt a dream last light." }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q14", examId: "job-2025-dc-netrokona", subject: "english", topic: "translation", qno: 14, marks: 8, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তিনি সাঁতার কাটতে জানে না।", target: "He does not know how to swim." },
+      { label: "খ", source: "বাংলাদেশ একটি স্বাধীন রাষ্ট্র।", target: "Bangladesh is an independent country." },
+      { label: "গ", source: "প্রয়োজনীয়তা আবিষ্কারের জননী।", target: "Necessity is the mother of invention." },
+      { label: "ঘ", source: "আমাকে কাজটি করতে হবে।", target: "I have to do the work." },
+      { label: "ঙ", source: "এখন কয়টা বাজে?", target: "What time is it?" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q15", examId: "job-2025-dc-netrokona", subject: "english", topic: "fill-in-the-blanks", qno: 15, marks: 6, type: "fill-gaps",
+    question: "Fill in the gaps:",
+    parts: [
+      { sentence: "He is good...... English.", answer: "at" },
+      { sentence: "We have to go there.......... five minutes.", answer: "by" },
+      { sentence: "He died....... overeating.", answer: "from" },
+      { sentence: "He speaks English like..... English.", answer: "the" },
+      { sentence: "The play \"Hamlet\" is written by.......", answer: "Shakespeare" },
+      { sentence: "\"The old man and the sea\" is written by.......", answer: "Earnest Hemingway" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q16", examId: "job-2025-dc-netrokona", subject: "english", qno: 16, marks: 2, type: "paragraph",
+    question: "What is the plural form of 'Mouse'?",
+    answer: "Mice" },
+
+  { id: "job-2025-dc-netrokona-q17", examId: "job-2025-dc-netrokona", subject: "english", qno: 17, marks: 2, type: "paragraph",
+    question: "'By the by' এর অর্থ কী?",
+    answer: "প্রসঙ্গক্রমে" },
+
+  { id: "job-2025-dc-netrokona-q18", examId: "job-2025-dc-netrokona", subject: "english", qno: 18, marks: 3, type: "paragraph",
+    question: "What is the passive form of this sentence: 'Keep your word'?",
+    answer: "Your word should be kept." },
+
+  { id: "job-2025-dc-netrokona-q19", examId: "job-2025-dc-netrokona", subject: "english", qno: 19, marks: 3, type: "paragraph",
+    question: "Change the narrations: She asked me, \"Are you happy in your new job.\"",
+    answer: "She asked me if I was happy in my new job." },
+
+  { id: "job-2025-dc-netrokona-q20", examId: "job-2025-dc-netrokona", subject: "math", topic: "বীজগণিত", qno: 20, marks: 6, type: "math",
+    question: "একটি প্রকৃত ভগ্নাংশের হর, লব অপেক্ষা 4 বেশি। ভগ্নাংশটির বর্গ করলে যে ভগ্নাংশ পাওয়া যাবে তার হর, লব অপেক্ষা 40 বেশি হবে। ভগ্নাংশটি নির্ণয় করুন।",
+    steps: [
+      "ধরি, ভগ্নাংশটির লব x এবং হর x + 4",
+      "সুতরাং ভগ্নাংশটি = x/(x+4)",
+      "ভগ্নাংশটির বর্গ = x²/(x+4)²",
+      "এখানে, লব = x² এবং হর = x² + 8x + 16",
+      "প্রশ্নমতে, x² + 8x + 16 = x² + 40",
+      "বা, 8x + 16 = 40",
+      "বা, 8x = 24",
+      "∴ x = 3",
+      "∴ x + 4 = 3 + 4 = 7"
+    ],
+    answer: "ভগ্নাংশটি ৩/৭।" },
+
+  { id: "job-2025-dc-netrokona-q21", examId: "job-2025-dc-netrokona", subject: "math", topic: "জ্যামিতি", qno: 21, marks: 6, type: "math",
+    question: "১০ সেন্টিমিটার বাহুবিশিষ্ট কোন রম্বসের একটি কর্ণ ১৬ সেন্টিমিটার হলে রম্বসটির ক্ষেত্রফল কত?",
+    steps: [
+      "মনে করি, ABCD রম্বসের একটি কর্ণ AC = 16 সে.মি এবং অপর কর্ণ BD সে.মি",
+      "রম্বসের বাহুর দৈর্ঘ্য AB = 10 সে.মি",
+      "ΔAOB সমকোণী ত্রিভুজে, AB² = AO² + BO²",
+      "বা, (10)² = 8² + BO²",
+      "বা, BO² = 100 - 64 = 36",
+      "∴ BO = 6",
+      "যেহেতু BO = 6 সুতরাং কর্ণ BD = 12 সে.মি",
+      "আমরা জানি, রম্বসের ক্ষেত্রফল = 1/2 × কর্ণদ্বয়ের গুণফল = 1/2 × 16 × 12 = 96 বর্গ সে.মি"
+    ],
+    answer: "৯৬ বর্গ সে.মি।" },
+
+  { id: "job-2025-dc-netrokona-q22", examId: "job-2025-dc-netrokona", subject: "math", topic: "পাটিগণিত", qno: 22, marks: 4, type: "math",
+    question: "৮৪ টাকা কত টাকার ১২.৫০%?",
+    steps: [
+      "১২.৫০% ধরে হিসাব করে পাওয়া যায়",
+      "৮৪ টাকা = x টাকার ১২.৫০%",
+      "x = ৮৪ × ১০০ / ১২.৫০ = ৬৭২"
+    ],
+    answer: "৬৭২ টাকা।" },
+
+  { id: "job-2025-dc-netrokona-q23", examId: "job-2025-dc-netrokona", subject: "math", topic: "বীজগণিত", qno: 23, marks: 6, type: "math",
+    question: "যদি a = √7 + √6 হয় তবে, a² + 1/a² এর মান কত?",
+    steps: [
+      "দেওয়া আছে, a = √7 + √6",
+      "1/a = 1/(√7+√6) = (√7-√6)/{(√7+√6)(√7-√6)} = (√7-√6)/(7-6) = √7-√6",
+      "∴ a + 1/a = √7+√6 + √7-√6 = 2√7",
+      "এখন, a² + 1/a² = (a + 1/a)² - 2.a.(1/a)",
+      "= (2√7)² - 2 = 28 - 2 = 26"
+    ],
+    answer: "২৬" },
+
+  { id: "job-2025-dc-netrokona-q24", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 24, marks: 2, type: "paragraph",
+    question: "ভূমি জরিপ অনুযায়ী CS ও RS এর পূর্ণরূপ কী?",
+    answer: "CS = Cadastral Survey; RS = Revisional Survey।" },
+
+  { id: "job-2025-dc-netrokona-q25", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 25, marks: 2, type: "paragraph",
+    question: "দাখিলা কী?",
+    answer: "ভূমি কর বা খাজনার রসিদ।" },
+
+  { id: "job-2025-dc-netrokona-q26", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 26, marks: 2, type: "paragraph",
+    question: "ইউনিয়ন ভূমি অফিসের দপ্তর প্রধানের পদবি কী?",
+    answer: "ইউনিয়ন ভূমি সহকারী কর্মকর্তা।" },
+
+  { id: "job-2025-dc-netrokona-q27", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 27, marks: 2, type: "paragraph",
+    question: "১ শতাংশ জমি কত বর্গফুট?",
+    answer: "৪৩৫.৬ বর্গফুট।" },
+
+  { id: "job-2025-dc-netrokona-q28", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 28, marks: 2, type: "paragraph",
+    question: "গহীরা কোন অঞ্চলের লোকসঙ্গীত?",
+    answer: "রাজশাহী ও চাঁপাইনবাবগঞ্জ।" },
+
+  { id: "job-2025-dc-netrokona-q29", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 29, marks: 2, type: "paragraph",
+    question: "CPU এর পূর্ণরূপ কী?",
+    answer: "Central Processing Unit" },
+
+  { id: "job-2025-dc-netrokona-q30", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 30, marks: 2, type: "paragraph",
+    question: "বাংলাদেশ সংবিধানের কতটি সংশোধনী হয়েছে?",
+    answer: "১৭টি।" },
+
+  { id: "job-2025-dc-netrokona-q31", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বিজ্ঞান", qno: 31, marks: 2, type: "paragraph",
+    question: "তেঁতুলে কোন এসিড থাকে?",
+    answer: "টারটারিক এসিড।" },
+
+  { id: "job-2025-dc-netrokona-q32", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 32, marks: 2, type: "paragraph",
+    question: "গোবি মরুভূমি কোন দেশে অবস্থিত?",
+    answer: "চীন ও মঙ্গোলিয়া।" },
+
+  { id: "job-2025-dc-netrokona-q33", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 33, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সমুদ্রবন্দর কতটি?",
+    answer: "৩টি।" },
+
+  { id: "job-2025-dc-netrokona-q34", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 34, marks: 2, type: "paragraph",
+    question: "সোনারগাঁওয়ের পূর্বনাম কী?",
+    answer: "সুবর্ণগ্রাম।" },
+
+  { id: "job-2025-dc-netrokona-q35", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 35, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সাথে ভারতের সীমান্ত রাজ্য কতটি?",
+    answer: "৫টি।" },
+
+  { id: "job-2025-dc-netrokona-q36", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 36, marks: 2, type: "paragraph",
+    question: "UNCTAD এর পূর্ণরূপ কী?",
+    answer: "United Nations Conference on Trade and Development" },
+
+  { id: "job-2025-dc-netrokona-q37", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 37, marks: 2, type: "paragraph",
+    question: "নেত্রকোণা জেলার কতটি উপজেলা ও কয়টি পৌরসভা আছে?",
+    answer: "১০ উপজেলা ও ৫টি পৌরসভা।" },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বস্ত্র অধিদপ্তর — অফিস সহায়ক
+  // id prefix: job-2025-textile-office-sohayok
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-textile-office-sohayok-q01", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 3, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["ষষ্ঠ", "ষষ্ + থ"],
+      ["পরস্পর", "পর + পর"],
+      ["মনীষা", "মনস্ + ঈষা"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q02", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 2, marks: 3, type: "idiom",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", phrase: "উপকারীর অপকার করে যে", meaning: "কৃতঘ্ন" },
+      { label: "খ", phrase: "আয় বুঝে ব্যয় করে যে", meaning: "মিতব্যয়ী" },
+      { label: "গ", phrase: "হনন করার ইচ্ছা", meaning: "জিঘাংসা" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q03", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "সমাস", qno: 3, marks: 2, type: "table",
+    question: "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    columns: ["শব্দ", "ব্যাসবাক্য", "সমাসের নাম"],
+    rows: [
+      ["বিষাদ সিন্ধু", "বিষাদ রূপ সিন্ধু", "রূপক কর্মধারয়"],
+      ["কানাকানি", "কানে কানে যে কথা", "ব্যতিহার বহুব্রীহি"],
+      ["পিতামাতা", "পিতা ও মাতা", "দ্বন্দ্ব সমাস"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q04", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 4, marks: 3, type: "sentence-change",
+    question: "শুদ্ধ করে লিখুন:",
+    parts: [
+      { label: "ক", original: "তিনি আরোগ্য হয়েছেন।", changed: "তিনি আরোগ্য লাভ করেছেন।" },
+      { label: "খ", original: "দৈন্যতা প্রশংসনীয় নয়।", changed: "দৈন্য/দীনতা প্রশংসনীয় নয়।" },
+      { label: "গ", original: "মিথ্যা বলা সমিচিন নয়।", changed: "মিথ্যা বলা সমীচীন নয়।" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q05", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 5, marks: 3, type: "idiom",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", phrase: "মাটির মানুষ", meaning: "নিরীহ ব্যক্তি" },
+      { label: "খ", phrase: "গড্ডলিকা প্রবাহ", meaning: "অন্ধ অনুকরণ" },
+      { label: "গ", phrase: "অরণ্যে রোদন", meaning: "নিষ্ফল আবেদন" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q06", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "বিপরীত-শব্দ", qno: 6, marks: 4, type: "table",
+    question: "বিপরীত শব্দ লিখুন:",
+    columns: ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    rows: [
+      ["অমৃত", "গরল"],
+      ["অলীক", "সত্য"],
+      ["তক্কর", "সাধু"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q07", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 7, marks: 4, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর দাও:",
+    parts: [
+      { label: "ক", q: "রবীন্দ্রনাথ ঠাকুর কোন কাব্যগ্রন্থের জন্য নোবেল পুরস্কার পান?", a: "গীতাঞ্জলি" },
+      { label: "খ", q: "'মেঘনাদবধ কাব্য' কার লেখা?", a: "মাইকেল মধুসূদন দত্ত" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q08", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "translation", qno: 8, marks: 6, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "যেমন কর্ম, তেমন ফল।", target: "As you sow, so you reap." },
+      { label: "খ", source: "আমি তোমার চিঠি পেয়েছি।", target: "I have received your letter." },
+      { label: "গ", source: "তিন দিন ধরে বৃষ্টি হচ্ছে।", target: "It has been raining for three days." },
+      { label: "ঘ", source: "রহিম পরীক্ষায় অংশগ্রহণ করবে।", target: "Rahim will appear for the examination." },
+      { label: "ঙ", source: "তুমি আসবে তো?", target: "Will you come?" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q09", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "fill-in-the-blanks", qno: 9, marks: 8, type: "fill-gaps",
+    question: "Fill in the gaps:",
+    parts: [
+      { sentence: "I want to live........ peace with you.", answer: "in" },
+      { sentence: "He is...... LLB.", answer: "an" },
+      { sentence: "I saw...... one-eyed man.", answer: "a" },
+      { sentence: "Ronaldo is....... better of the two footballers.", answer: "the" },
+      { sentence: "I went to Dhaka..... train.", answer: "by" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q10", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "gender", qno: 10, marks: 5, type: "table",
+    question: "Change the gender:",
+    columns: ["Given Gender", "Opposite Gender"],
+    rows: [
+      ["Drone", "Bee"],
+      ["Fox", "Vixen"],
+      ["Nephew", "Niece"],
+      ["Dog", "Bitch"],
+      ["Lord", "Lady"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q11", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "sentence-making", qno: 11, marks: 5, type: "idiom",
+    question: "Make sentences with the following idioms & phrases:",
+    parts: [
+      { label: "a", phrase: "For good", meaning: "চিরতরে", example: "He left the country for good." },
+      { label: "b", phrase: "Maiden Speech", meaning: "প্রথম বক্তব্য", example: "His maiden speech pleased all." },
+      { label: "c", phrase: "A slow coach", meaning: "অলস ব্যক্তি", example: "A slow coach can't shine in life." },
+      { label: "d", phrase: "Crying need", meaning: "অতি প্রয়োজনীয়", example: "Mass education is the crying need of Bangladesh." },
+      { label: "e", phrase: "Part and parcel", meaning: "অবিচ্ছেদ্য অংশ", example: "A library is part and parcel of a school." }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q12", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "বীজগণিত", qno: 12, marks: 6, type: "math",
+    question: "x² - 8x - 20 কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ করুন।",
+    steps: [
+      "এখানে, x² - 8x - 20 = x² - 10x + 2x - 20 = x(x-10) + 2(x-10) = (x-10)(x+2)",
+      "ধরি, (x-10) = a, (x+2) = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² - {(a-b)/2}²",
+      "= {(x-10+x+2)/2}² - {(x-10-x-2)/2}²",
+      "= {(2x-8)/2}² - {(-12)/2}²",
+      "= (x-4)² - 6²"
+    ],
+    answer: "(x-4)² - 6²" },
+
+  { id: "job-2025-textile-office-sohayok-q13", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "জ্যামিতি", qno: 13, marks: 6, type: "math",
+    question: "একটি বর্গক্ষেত্রের পরিসীমা একটি আয়তক্ষেত্রের পরিসীমার সমান। আয়তক্ষেত্রটির দৈর্ঘ্য প্রস্থের ৩ গুণ এবং ক্ষেত্রফল ৯৭২ বর্গমিটার। বর্গক্ষেত্রের ক্ষেত্রফল নির্ণয় করুন।",
+    steps: [
+      "ধরি, আয়তক্ষেত্রের প্রস্থ = x মিটার ও দৈর্ঘ্য = 3x মিটার",
+      "প্রশ্নমতে, 3x² = 972 বা, x² = 324 ∴ x = 18",
+      "∴ প্রস্থ 18 মিটার, দৈর্ঘ্য = 3 × 18 = 54 মিটার",
+      "∴ আয়তক্ষেত্রের পরিসীমা = 2(দৈর্ঘ্য + প্রস্থ) = 2(54+18) মিটার = 144 মিটার",
+      "∴ বর্গের বাহুর দৈর্ঘ্য = 144/4 মিটার = 36 মিটার",
+      "বর্গক্ষেত্রের ক্ষেত্রফল = (36)² = 1296 বর্গ মিটার"
+    ],
+    answer: "১২৯৬ বর্গ মিটার।" },
+
+  { id: "job-2025-textile-office-sohayok-q14", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 14, marks: 6, type: "math",
+    question: "একটি পানির ট্যাংকে দুটি নল আছে। প্রথম নলটি খুলে দিলে ট্যাংকটি ২০ ঘণ্টায় পানিতে পূর্ণ হয়। দ্বিতীয় নল দ্বারা পূর্ণ ট্যাংক ৩০ ঘণ্টায় খালি হয়। দুইটি নল একসঙ্গে খুলে দিলে কত ঘণ্টায় ট্যাংকটি পূর্ণ হবে?",
+    steps: [
+      "প্রথম নল দ্বারা ২০ ঘণ্টায় পূর্ণ হয় ১ অংশ, সুতরাং ১ ঘণ্টায় পূর্ণ হয় ১/২০ অংশ",
+      "দ্বিতীয় নল দ্বারা ৩০ ঘণ্টায় খালি হয় ১ অংশ, সুতরাং ১ ঘণ্টায় খালি হয় ১/৩০ অংশ",
+      "উভয় নল একত্রে খুললে ১ ঘণ্টায় পূর্ণ হয় (১/২০ - ১/৩০) অংশ = (৩-২)/৬০ অংশ = ১/৬০ অংশ",
+      "১/৬০ অংশ পূর্ণ হয় ১ ঘণ্টায়, সুতরাং ১ অংশ পূর্ণ হয় ৬০ ঘণ্টায়"
+    ],
+    answer: "৬০ ঘণ্টা।" },
+
+  { id: "job-2025-textile-office-sohayok-q15", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 15, marks: 6, type: "math",
+    question: "পিতার বর্তমান বয়স পুত্রের বয়সের ৩ গুণ। ৫ বছর আগে পিতার বয়স পুত্রের বয়সের ৪ গুণ ছিল। পিতা ও পুত্রের বর্তমান বয়স কত?",
+    steps: [
+      "মনে করি, পুত্রের বর্তমান বয়স x বছর, পিতার বর্তমান বয়স 3x বছর",
+      "প্রশ্নমতে, 4(x-5) = 3x-5",
+      "বা, 4x-20 = 3x-5",
+      "∴ x = 15",
+      "সুতরাং পুত্রের বর্তমান বয়স ১৫ বছর, পিতার বর্তমান বয়স ৩ × ১৫ = ৪৫ বছর"
+    ],
+    answer: "পিতার বর্তমান বয়স ৪৫ বছর; পুত্রের বয়স ১৫ বছর।" },
+
+  { id: "job-2025-textile-office-sohayok-q16", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 16, marks: 2, type: "paragraph",
+    question: "ইউক্রেনের রাজধানীর নাম কি?",
+    answer: "কিয়েভ।" },
+
+  { id: "job-2025-textile-office-sohayok-q17", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "gk-others", qno: 17, marks: 2, type: "paragraph",
+    question: "ChatGPT কী?",
+    answer: "OpenAI কোম্পানি কর্তৃক তৈরিকৃত কৃত্রিম বুদ্ধিমত্তাভিত্তিক এক ধরণের চ্যাটবট।" },
+
+  { id: "job-2025-textile-office-sohayok-q18", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 18, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের প্রথম ভৌগোলিক নির্দেশক (GI) পণ্য কোনটি?",
+    answer: "জামদানি শাড়ি।" },
+
+  { id: "job-2025-textile-office-sohayok-q19", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 19, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের 'White Gold' হিসেবে পরিচিত কোনটি?",
+    answer: "চিংড়ি।" },
+
+  { id: "job-2025-textile-office-sohayok-q20", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 20, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের কোন জেলায় বেশি রেশম চাষ হয়?",
+    answer: "রাজশাহী।" },
+
+  { id: "job-2025-textile-office-sohayok-q21", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 21, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সাথে কোন দুই দেশের আন্তর্জাতিক সীমানা রয়েছে?",
+    answer: "ভারত ও মিয়ানমার।" },
+
+  { id: "job-2025-textile-office-sohayok-q22", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "gk-others", qno: 22, marks: 2, type: "paragraph",
+    question: "বিশ্ব মানবাধিকার দিবস কত তারিখে?",
+    answer: "১০ ডিসেম্বর।" },
+
+  { id: "job-2025-textile-office-sohayok-q23", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 23, marks: 2, type: "paragraph",
+    question: "OIC এর প্রধান কার্যালয় কোথায় অবস্থিত?",
+    answer: "জেদ্দা।" },
+
+  { id: "job-2025-textile-office-sohayok-q24", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বিজ্ঞান", qno: 24, marks: 2, type: "paragraph",
+    question: "বাষ্পীয় ইঞ্জিনের আবিষ্কারক কে?",
+    answer: "জেমস ওয়াট।" },
+
+  { id: "job-2025-textile-office-sohayok-q25", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 25, marks: 2, type: "paragraph",
+    question: "RMG এর পূর্ণরূপ কী?",
+    answer: "Ready Made Garments" },
+
+  // ══════════════════════════════════════════════════════════
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
   // ══════════════════════════════════════════════════════════
 

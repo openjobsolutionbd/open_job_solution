@@ -9,7 +9,7 @@ const EXAM_ARCHIVE = [
     date: "2025-06-27",
     duration: "৯০ মিনিট",
     totalMarks: 100,
-    totalQuestions: 15,
+    totalQuestions: 18,
   },
   {
     id: "job-2025-tech-edu-keeper",
@@ -256,6 +256,24 @@ const EXAM_ARCHIVE = [
     duration: "৬০ মিনিট",
     totalMarks: 75,
     totalQuestions: 8,
+  },
+  {
+    id: "job-2025-dc-netrokona",
+    ministry: "জেলা প্রশাসকের কার্যালয়, নেত্রকোণা",
+    post: "অফিস সহায়ক",
+    date: "2025-11-21",
+    duration: "৬০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 37,
+  },
+  {
+    id: "job-2025-textile-office-sohayok",
+    ministry: "বস্ত্র অধিদপ্তর",
+    post: "অফিস সহায়ক",
+    date: "2025-11-29",
+    duration: "৬০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 25,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

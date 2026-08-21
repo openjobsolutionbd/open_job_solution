@@ -2631,6 +2631,15 @@ function renderList(list, q){
       wrap.innerHTML = '<div class="empty-note">এখনো কোনো টপিক ⭐ প্রিয় হিসেবে যোগ করা হয়নি</div>';
       return;
     }
+    // BUG-16 ফিক্স: বুকমার্ক ফিল্টার চালু অবস্থায় সার্চ করলে, টপিকটা আসলে
+    // সাইটে থাকলেও (শুধু বুকমার্ক করা না থাকায়) আগে ভুলভাবে "কোনো টপিক
+    // পাওয়া যায়নি" বা উইকিপিডিয়া fallback দেখাত — যা বিভ্রান্তিকর, কারণ
+    // টপিকটা সাইটেই আছে, শুধু বুকমার্ক-ফিল্টারে বাদ পড়েছে। bookmark ফিল্টার
+    // ছাড়া (currentFiltered) চেক করে আসল কারণ স্পষ্ট করে জানানো হচ্ছে।
+    if(BOOKMARK_FILTER_ACTIVE && currentFiltered(q).length > 0){
+      wrap.innerHTML = '<div class="empty-note">প্রিয় তালিকায় এই সার্চের সাথে মেলে এমন কোনো টপিক নেই</div>';
+      return;
+    }
     if(q){
       wrap.innerHTML = '<div class="empty-note floating-search-wiki-loading">উইকিপিডিয়ায় খোঁজা হচ্ছে…</div>';
       fetchWikipediaSummary(q).then(result => {

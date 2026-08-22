@@ -302,5 +302,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-lgd-shorthand-typist",
+    ministry: "স্থানীয় সরকার বিভাগ",
+    post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 17,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

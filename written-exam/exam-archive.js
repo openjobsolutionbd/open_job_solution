@@ -275,5 +275,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 30,
   },
+  {
+    id: "job-2025-pwd-office-sohayok",
+    ministry: "গণপূর্ত অধিদপ্তর",
+    post: "অফিস সহায়ক",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 27,
+  },
+  {
+    id: "job-2025-pwd-designer",
+    ministry: "গণপূর্ত অধিদপ্তর",
+    post: "নকশাকার",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 24,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

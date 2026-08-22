@@ -2484,6 +2484,119 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-pwd-shorthand-typist-q30", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 30, "marks": 0.4, "type": "paragraph", "question": "Wifi এর পূর্ণরূপ কী?", "answer": "Wireless Fidelity"},
 
   // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — অফিস সহায়ক (job-2025-pwd-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬৪-৪৬৭, ক্রম ৬০২)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-office-sohayok-q01", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "আষাঢ়ে বৃষ্টি হয়।", "a": "অধিকরণে ৭মী"}, {"label": "খ", "q": "অল্পবিদ্যা ভয়ংকরী।", "a": "কর্মকারকে শূন্য"}, {"label": "গ", "q": "রেখ মা দাসেরে মনে।", "a": "কর্মকারকে ৭মী"}, {"label": "ঘ", "q": "ধোপাকে কাপড় দাও।", "a": "কর্মকারকে ২য়া"}, {"label": "ঙ", "q": "অধ্যয়নে বিরত হতে নেই।", "a": "অপাদানে ৭মী"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q02", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "খ", "q": "বিদ্যালয়", "a": "বিদ্যা + আলয়"}, {"label": "গ", "q": "জনৈক", "a": "জন + এক"}, {"label": "ঘ", "q": "ষষ্ঠ", "a": "ষষ্ + থ"}, {"label": "ঙ", "q": "মনোযোগ", "a": "মনঃ + যোগ"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q03", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মুমূর্ষ", "মুমূর্ষু"], ["বুদ্ধিজিবী", "বুদ্ধিজীবী"], ["মরিচিকা", "মরীচিকা"], ["কৃতিত", "কৃতিত্ব"], ["পিপিলিকা", "পিপীলিকা"]]},
+
+  {"id": "job-2025-pwd-office-sohayok-q04", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "জমাখরচ", "a": "জমা ও খরচ - দ্বন্দ্ব সমাস"}, {"label": "খ", "q": "মনমাঝি", "a": "মন রূপ মাঝি - রূপক কর্মধারয়"}, {"label": "গ", "q": "রাজপথ", "a": "পথের রাজা - ৬ষ্ঠী তৎপুরুষ"}, {"label": "ঘ", "q": "হাতাহাতি", "a": "হাতে হাতে যে যুদ্ধ - ব্যতিহার বহুব্রীহি"}, {"label": "ঙ", "q": "দুঃখপ্রাপ্ত", "a": "দুঃখকে প্রাপ্ত - ২য়া তৎপুরুষ"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q05", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 3, "type": "fill-gaps", "question": "Fill in the blanks:", "parts": [{"sentence": "You seem to be annoyed...... me", "answer": "with"}, {"sentence": "The house is adjacent...... mine", "answer": "to"}, {"sentence": "Suddenly he burst....... tears.", "answer": "into"}, {"sentence": "He is capable....... solving the problem", "answer": "of"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q06", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "grammar", "qno": 6, "marks": 3, "type": "sentence-change", "question": "Change the voice:", "parts": [{"label": "a", "original": "He is writing a letter.", "changed": "A letter is being written by him"}, {"label": "b", "original": "Who gave you this pen?", "changed": "By whom were you given this pen?"}, {"label": "c", "original": "Let me know it.", "changed": "Let it be known to me."}, {"label": "d", "original": "Leave the room", "changed": "Let the room be left."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q07", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 3, "type": "idiom", "question": "Make sentence with meaning", "parts": [{"label": "a", "phrase": "Call on", "meaning": "ডাকা", "example": "He called me yesterday."}, {"label": "b", "phrase": "Due to", "meaning": "কারণে", "example": "He was absent due to his illness."}, {"label": "c", "phrase": "On the behalf of", "meaning": "পক্ষে", "example": "I thank you on behalf of the them."}, {"label": "d", "phrase": "A man of letters", "meaning": "পণ্ডিত ব্যক্তি", "example": "He is a man of letters."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q08", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "translation", "qno": 8, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "তিনি আমার পরিচিত।", "target": "He is known to me."}, {"label": "খ", "source": "ঢাকা একটি পুরাতন শহর।", "target": "Dhaka is an old city."}, {"label": "গ", "source": "আমি যদি পাখি হইতাম।", "target": "I wish I were a bird."}, {"label": "ঘ", "source": "ইংরেজি শেখা সহজ।", "target": "It is easy to learn English."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q09", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "vocabulary", "qno": 9, "marks": 3, "type": "table", "question": "Write the opposite word:", "columns": ["Given Word", "Opposite Word"], "rows": [["Right", "Wrong"], ["Far", "Near"], ["Up", "Down"], ["Strong", "Weak"]]},
+
+  {"id": "job-2025-pwd-office-sohayok-q10", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 10, "marks": 5, "type": "math", "question": "২০ মিটার দীর্ঘ একটি কামরার মেঝে কার্পেট দিয়ে ঢাকতে ৭৫০০.০০ টাকা খরচ হয়। যদি ঐ কামরাটির প্রস্থ ৪ মিটার কম হতো, তবে ৬০০০.০০ টাকা খরচ হতো। কামরাটির প্রস্থ কত?", "steps": ["কামরার দৈর্ঘ্য ২০ মিটার। প্রস্থ ৪ মিটার কমলে ক্ষেত্রফল কমে (২০ মিটার × ৪ মিটার) = ৮০ বর্গমিটার", "ক্ষেত্রফল ৮০ বর্গমিটার কমার জন্য খরচ কমে (৭৫০০ − ৬০০০) টাকা = ১৫০০ টাকা", "১৫০০ টাকা খরচ হয় ৮০ বর্গমিটারে", "∴ ১ টাকা খরচ হয় ৮০/১৫০০ বর্গমিটারে", "∴ ৭৫০০ টাকা খরচ হয় (৮০ × ৭৫০০)/১৫০০ = ৪০০ বর্গমিটারে", "অতএব, কামরার ক্ষেত্রফল ৪০০ বর্গমিটার", "∴ কামরাটির প্রস্থ = ক্ষেত্রফল/দৈর্ঘ্য = ৪০০/২০ মিটার = ২০ মিটার", "∴ কামরাটির প্রস্থ ২০ মিটার।"], "answer": "প্রস্থ ২০ মিটার"},
+
+  {"id": "job-2025-pwd-office-sohayok-q11", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "মুনাফা-আসল", "qno": 11, "marks": 5, "type": "math", "question": "বার্ষিক ১০.৫০% মুনাফায় ৫০০০ টাকার ২ বছরের চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।", "steps": ["চক্রবৃদ্ধি মুনাফা নির্ণয়ের জন্য প্রথমে চক্রবৃদ্ধি মূলধন নির্ণয় করি।", "আমরা জানি, চক্রবৃদ্ধি মূলধন C = P (১ + r)ⁿ, যেখানে মূলধন P = ৫০০০ টাকা", "মুনাফার হার, r = ১০.৫০% = ২১/২০০", "সময়, n = ২ বছর", "∴ C = P(১ + r)²", "= ৫০০০ × (১ + ২১/২০০)²", "= ৫০০০ × (২২১/২০০)²", "= ৫০০০ × ২২১/২০০ × ২২১/২০০", "= ৬১০৫.১৩ টাকা (প্রায়)", "∴ চক্রবৃদ্ধি মুনাফা = C − P = P(১ + r)² − P", "= (৬১০৫.১৩ − ৫০০০) টাকা", "= ১১০৫.১৩ টাকা (প্রায়)"], "answer": "১১০৫.১৩ টাকা (প্রায়)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q12", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "বয়স নির্ণয়", "qno": 12, "marks": 5, "type": "math", "question": "১০ বছর পূর্বে পিতা ও পুত্রের বয়সের অনুপাত ছিল ৪:১। ১০ বছর পরে পিতা ও পুত্রের বয়সের অনুপাত হবে ২:১। পিতা ও পুত্রের বর্তমান বয়স নির্ণয় করুন।", "steps": ["মনে করি, ১০ বছর পূর্বে পিতার বয়স 4x, ১০ বছর পূর্বে পুত্রের বয়স x", "∴ পিতার বর্তমান বয়স = 4x + 10", "পুত্রের বর্তমান বয়স = x + 10", "প্রশ্নমতে, 4x + 10 + 10 : x + 10 + 10 = 2:1", "বা, (4x + 20)/(x + 20) = 2/1", "বা, 4x + 20 = 2x + 40", "বা, 4x − 2x = 40 − 20", "বা, 2x = 20", "∴ x = 10", "∴ পিতার বর্তমান বয়স = (4 × 10 + 10) = 50 বছর", "এবং পুত্রের বর্তমান বয়স = (10 + 10) = 20 বছর"], "answer": "পিতার বয়স 50 বছর; পুত্রের বয়স 20 বছর।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q13", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 13, "marks": 5, "type": "math", "question": "এর ঘন নির্ণয় করুনঃ 4x − 5y", "steps": ["(4x − 5y)³", "= (4x)³ − 3.(4x)². 5y + 3 .4x (5y)² − (5y)³", "= 64x³ − 240x²y + 300xy² − 125y³"], "answer": "64x³ − 240x²y + 300xy² − 125y³"},
+
+  {"id": "job-2025-pwd-office-sohayok-q14", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 14, "marks": 5, "type": "math", "question": "x³ − 2x², x² − 4, xy − 2y এর গ.সা.গু নির্ণয় করুন।", "steps": ["১ম রাশি = x³ − 2x² = x²(x − 2)", "২য় রাশি = x² − 4 = (x+2)(x − 2)", "৩য় রাশি = xy − 2y = y(x − 2)", "নির্ণেয় গ.সা.গু = (x − 2)"], "answer": "(x − 2)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q15", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 15, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করুনঃ x² − 2x − 15", "steps": ["x² − 2x − 15", "= x² − 5x + 3x − 15", "= x(x − 5) + 3(x − 5)", "= (x − 5)(x + 3)"], "answer": "(x − 5)(x + 3)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q16", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 16, "marks": 5, "type": "math", "question": "10 সে.মি ব্যাসের বৃত্তের পরিধি কত?", "steps": ["মনে করি, বৃত্তের ব্যাসার্ধ r", "∴ বৃত্তের ব্যাস = 2r এবং বৃত্তের পরিধি = 2πr", "প্রশ্নানুসারে, 2r = 10", "বা, r = 10/2", "∴ r = 5 সে.মি", "∴ বৃত্তের পরিধি = 2πr = 2 × 3.1416 × 5 সে.মি.", "= 31.41 সে.মি. (প্রায়)"], "answer": "31.41 সে.মি. (প্রায়)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q17", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 17, "marks": 5, "type": "math", "question": "x − y = 3 এবং xy = 10 হলে, (x + y)² এর মান কত?", "steps": ["প্রদত্ত রাশি = (x + y)²", "= (x−y)² + 4xy", "= 3² + 4.10", "= 9 + 40", "= 49"], "answer": "49"},
+
+  {"id": "job-2025-pwd-office-sohayok-q18", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "সাত গম্বুজ মসজিদ ও ষাট গম্বুজ মসজিদ কোথায় অবস্থিত?", "answer": "সাত গম্বুজ - মোহাম্মদপুর, ঢাকা; ষাট গম্বুজ - বাগেরহাট।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q19", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের কোন জেলায় কঠিন শিলা পাওয়া গিয়েছে?", "answer": "দিনাজপুর"},
+
+  {"id": "job-2025-pwd-office-sohayok-q20", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "মুদ্রাস্ফীতি হলে কেন্দ্রীয় ব্যাংক কি পদক্ষেপ নেবে?", "answer": "ব্যাংক হার বাড়িয়ে দিবে।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q21", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "স্মার্টফোন তৈরিতে ব্যবহৃত প্রযুক্তির নাম কি?", "answer": "ন্যানোটেকনোলজি"},
+
+  {"id": "job-2025-pwd-office-sohayok-q22", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের কৃষিভিত্তিক ইপিজেড কোথায় অবস্থিত?", "answer": "উত্তরা ইপিজেড, নীলফামারী"},
+
+  {"id": "job-2025-pwd-office-sohayok-q23", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের লোকশিল্প জাদুঘর কোথায় অবস্থিত?", "answer": "সোনারগাঁও"},
+
+  {"id": "job-2025-pwd-office-sohayok-q24", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "ফেসবুকের সদর দপ্তর কোথায়?", "answer": "ক্যালিফোর্নিয়া, যুক্তরাষ্ট্র"},
+
+  {"id": "job-2025-pwd-office-sohayok-q25", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 25, "marks": 0.4, "type": "paragraph", "question": "মোনালিসা চিত্রটির চিত্রকর কে?", "answer": "লিওনার্দো দ্য ভিঞ্চি"},
+
+  {"id": "job-2025-pwd-office-sohayok-q26", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 26, "marks": 0.4, "type": "paragraph", "question": "পৃথিবীর গভীরতম স্থান কোনটি?", "answer": "মারিয়ানা ট্রেঞ্চ"},
+
+  {"id": "job-2025-pwd-office-sohayok-q27", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 27, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রধান খনিজ সম্পদ কোনটি?", "answer": "প্রাকৃতিক গ্যাস"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — নকশাকার (job-2025-pwd-designer)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬৭-৪৬৯, ক্রম ৬০৩)
+  // মন্তব্য: শেষে একটি "পদ সংশ্লিষ্ট (কারিগরি প্রশ্ন)" অংশ (প্রশ্ন ২৫-৩০) ছিল কিন্তু উত্তর ছাপা হয়নি বলে বাদ দেওয়া হয়েছে
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-designer-q01", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিকেল পাঁচটায় অফিস ছুটি হবে।", "a": "অধিকরণে ৭মী"}, {"label": "খ", "q": "গুণহীনে ত্যাগ কর।", "a": "কর্মে ৭মী বিভক্তি"}, {"label": "গ", "q": "দেশে মিলে করি কাজ।", "a": "কর্তৃকারকে ৭মী"}, {"label": "ঘ", "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা", "a": "কর্ম কারকে ২য়া"}, {"label": "ঙ", "q": "ছাত্ররা বল খেলে", "a": "করণে শূন্য।"}]},
+
+  {"id": "job-2025-pwd-designer-q02", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "পুরস্কার", "a": "পুরঃ + কার"}, {"label": "খ", "q": "মন্বন্তর", "a": "মনু + অন্তর"}, {"label": "গ", "q": "উপর্যুক্ত", "a": "উপরি+ উক্ত"}, {"label": "ঘ", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "ঙ", "q": "কিংবদন্তি", "a": "কিম্ + বদন্তি"}]},
+
+  {"id": "job-2025-pwd-designer-q03", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মরুধান", "মরুদ্যান"], ["মরিচিকা", "মরীচিকা"], ["প্রতুপন্নমতি", "প্রত্যুৎপন্নমতি"], ["ইতমধ্যে", "ইতোমধ্যে"], ["দৈন্যতা", "দীনতা"]]},
+
+  {"id": "job-2025-pwd-designer-q04", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিজয় পতাকা", "a": "বিজয় নির্দেশক পতাকা - মধ্যপদলোপী কর্মধারয়"}, {"label": "খ", "q": "আশীবিষ", "a": "আশীতে (দাঁত) বিষ যার - বহুব্রীহি সমাস"}, {"label": "গ", "q": "পঙ্কজ", "a": "পঙ্কে জন্মে যা - উপপদ তৎপুরুষ"}, {"label": "ঘ", "q": "চতুর্ভুজ", "a": "চার ভুজের সমাহার - দ্বিগু সমাস"}, {"label": "ঙ", "q": "কাজলকালো", "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"}]},
+
+  {"id": "job-2025-pwd-designer-q05", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 5, "type": "fill-gaps", "question": "Fill in the blank with preposition:", "parts": [{"sentence": "The book is composed...... five chapters.", "answer": "of"}, {"sentence": "She burst ........tears.", "answer": "into"}, {"sentence": "Listen......what I say.", "answer": "to"}, {"sentence": "The man died...... Dengue fever.", "answer": "of"}]},
+
+  {"id": "job-2025-pwd-designer-q06", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "grammar", "qno": 6, "marks": 5, "type": "sentence-change", "question": "Correct the following sentences", "parts": [{"label": "a", "original": "She insisted me to go there.", "changed": "She insisted on my going there."}, {"label": "b", "original": "He is superior than me", "changed": "He is superior to me."}, {"label": "c", "original": "He was hung for murder.", "changed": "He was hanged for murder."}, {"label": "d", "original": "He is very weak to work.", "changed": "He is too weak to work."}]},
+
+  {"id": "job-2025-pwd-designer-q07", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 5, "type": "idiom", "question": "Make sentences with the following:", "parts": [{"label": "a", "phrase": "Carry the day", "meaning": "জয়ী হওয়া", "example": "Our team played well and carried the day."}, {"label": "b", "phrase": "With one voice", "meaning": "সর্বসম্মতভাবে", "example": "They all shouted with one voice for justice."}, {"label": "c", "phrase": "At stake", "meaning": "বিপদাপন্ন", "example": "His life is at stake now."}, {"label": "d", "phrase": "In quest of", "meaning": "সন্ধানে", "example": "He went to the forest in quest of honey."}]},
+
+  {"id": "job-2025-pwd-designer-q08", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "grammar", "qno": 8, "marks": 5, "type": "sentence-change", "question": "Change the voice:", "parts": [{"label": "a", "original": "Do not laugh at the poor.", "changed": "Let not the poor be laughed at."}, {"label": "b", "original": "Take care of your health.", "changed": "Let your health be taken care of."}, {"label": "c", "original": "He killed himself.", "changed": "He was killed by himself."}]},
+
+  {"id": "job-2025-pwd-designer-q09", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "paragraph", "qno": 9, "marks": 5, "type": "paragraph", "question": "Write 5 sentences on the following topic: July Revolution 2024", "answer": "The July Revolution 2024 was a mass uprising in Bangladesh led primarily by students demanding reform and justice. It began as a protest against discriminatory quota systems in government jobs. The movement quickly grew into a nationwide call for accountability and change. Many people participated across the country, showing widespread public support. The revolution marked a significant turning point in the nation's recent history."},
+
+  {"id": "job-2025-pwd-designer-q10", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "জ্যামিতি", "qno": 10, "marks": 5, "type": "math", "question": "9.8 মি. ব্যাসের বৃত্তাকার একটি বাগানের ক্ষেত্রফল কত?", "steps": ["বৃত্তাকার বাগানটির ব্যাস, 2r = 9.8 মি.", "বৃত্তাকার বাগানটির ব্যাসার্ধ r = 9.8/2 মি. = 4.9 মি.", "বৃত্তাকার বাগানটির ক্ষেত্রফল = πr²", "= 3.14 × (4.9)² বর্গমিটার", "= 75.39 বর্গমিটার (প্রায়)"], "answer": "ক্ষেত্রফল 75.39 বর্গমি. (প্রায়)"},
+
+  {"id": "job-2025-pwd-designer-q11", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 11, "marks": 5, "type": "math", "question": "24x³ − 81y³ -কে উৎপাদকে বিশ্লেষণ কর।", "steps": ["24x³ − 81y³ = 3(8x³ − 27y³)", "= 3{(2x)³ − (3y)³}", "= 3(2x − 3y) {(2x)² + (2x) × (3y) + (3y)²}", "= 3(2x − 3y) (4x² + 6xy + 9y²)"], "answer": "3(2x − 3y) (4x² + 6xy + 9y²)"},
+
+  {"id": "job-2025-pwd-designer-q12", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 12, "marks": 5, "type": "math", "question": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?", "steps": ["x³ + y³ + 12xy", "= x³ + y³ + 3 × 4 × xy [মান বসিয়ে]", "= x³ + y³ + 3(x + y) × xy", "= x³ + y³ + 3xy(x + y)", "= (x + y)³", "= (4)³ = 64", "বিকল্প সমাধানঃ x³ + y³ + 12xy", "= (x + y)³ − 3xy(x+y) + 12xy", "= 4³ − 3.4.xy + 12xy", "= 64 − 12xy + 12xy = 64"], "answer": "64"},
+
+  {"id": "job-2025-pwd-designer-q13", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "একটি শ্রেণির প্রতিবেঞ্চে ৪ জন করে ছাত্র বসালে ৩টি বেঞ্চ খালি থাকে। আবার, প্রতিবেঞ্চে ৩ জন করে ছাত্র বসালে ৬ জন ছাত্রকে দাঁড়িয়ে থাকতে হয়। ঐ শ্রেণির ছাত্র সংখ্যা কত?", "steps": ["মনে করি, শ্রেণিটির ছাত্র সংখ্যা x", "যেহেতু, প্রতিবেঞ্চে ৪ জন করে বসালে ৩টি বেঞ্চ খালি থাকে, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = x/4 + 3", "আবার, যেহেতু প্রতিবেঞ্চে ৩ জন করে বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = (x − 6)/3", "যেহেতু শ্রেণির বেঞ্চের সংখ্যা একই থাকবে,", "সুতরাং x/4 + 3 = (x − 6)/3", "বা, (x + 12)/4 = (x − 6)/3", "বা, 4x − 24 = 3x + 36", "বা, 4x − 3x = 36 + 24", "বা, x = 60", "∴ ঐ শ্রেণির ছাত্র সংখ্যা ৬০ জন।"], "answer": "৬০ জন।"},
+
+  {"id": "job-2025-pwd-designer-q14", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "লাভ-ক্ষতি", "qno": 14, "marks": 5, "type": "math", "question": "একটি বইয়ের মূল্য ২৪ টাকা। এই মূল্য প্রকৃত মূল্যের ৮০%। বাকি মূল্য সরকার ভর্তুকি দিয়ে থাকেন। সরকার প্রতি বইয়ের কত টাকা ভর্তুকি দেন?", "steps": ["মনে করি, বইটির প্রকৃত মূল্য x টাকা", "প্রশ্নমতে, x এর ৮০% = ২৪", "বা, ৮০x/১০০ = ২৪", "বা, ৮০x = ২৪০০", "বা, x = ২৪০০/৮০", "∴ x = ৩০", "সুতরাং, বই এর প্রকৃত মূল্য ৩০ টাকা", "মূল্য ধরা হয়েছে ২৪ টাকা", "ভর্তুকি দেন = (৩০ − ২৪) = ৬ টাকা"], "answer": "৬ টাকা।"},
+
+  {"id": "job-2025-pwd-designer-q15", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 15, "marks": 5, "type": "math", "question": "এর বর্গ নির্ণয় কর। 4x − 7y", "steps": ["(4x − 7y)²", "= (4x)² − 2.4x. 7y + (7y)²", "= 16x² − 56xy + 49y²"], "answer": "16x² − 56xy + 49y²"},
+
+  {"id": "job-2025-pwd-designer-q16", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 16, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি?", "answer": "সেন্টমার্টিন দ্বীপ।"},
+
+  {"id": "job-2025-pwd-designer-q17", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 17, "marks": 0.4, "type": "paragraph", "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?", "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"},
+
+  {"id": "job-2025-pwd-designer-q18", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "হালদা নদী কেন বিখ্যাত?", "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"},
+
+  {"id": "job-2025-pwd-designer-q19", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?", "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"},
+
+  {"id": "job-2025-pwd-designer-q20", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?", "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"},
+
+  {"id": "job-2025-pwd-designer-q21", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?", "answer": "বাউন্ডুলে আত্মকাহিনী।"},
+
+  {"id": "job-2025-pwd-designer-q22", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?", "answer": "পূর্ব জার্মানি।"},
+
+  {"id": "job-2025-pwd-designer-q23", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?", "answer": "সোমপুর বৌদ্ধবিহার।"},
+
+  {"id": "job-2025-pwd-designer-q24", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের সংবিধানের রক্ষক কে?", "answer": "সুপ্রিম কোর্ট।"},
+
+  // ══════════════════════════════════════════════════════════
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
   // ══════════════════════════════════════════════════════════
 

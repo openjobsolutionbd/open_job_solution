@@ -1,15 +1,15 @@
 const CACHE_PREFIX = 'written-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.104';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.112';
 
 const ASSETS = [
   '/written-exam/',
   '/written-exam/style.css',
   '/written-exam/index.html',
-  '/fonts/noto-bengali.css',
-  '/fonts/noto-serif-bengali-400.woff2',
-  '/fonts/noto-serif-bengali-500.woff2',
-  '/fonts/noto-serif-bengali-600.woff2',
-  '/fonts/noto-serif-bengali-700.woff2'
+  '/_assets/fonts/noto-bengali.css',
+  '/_assets/fonts/noto-serif-bengali-400.woff2',
+  '/_assets/fonts/noto-serif-bengali-500.woff2',
+  '/_assets/fonts/noto-serif-bengali-600.woff2',
+  '/_assets/fonts/noto-serif-bengali-700.woff2'
 ];
 
 const OPTIONAL_ASSETS = [
@@ -73,7 +73,14 @@ self.addEventListener('fetch', e => {
         .catch(() => {
           return caches.match(e.request).then(cached => {
             if (cached) return cached;
-            return caches.match('/written-exam/index.html');
+            // বাগ-ফিক্স: শুধু navigation (পেজ-লোড) রিকোয়েস্টের জন্যই app-shell
+            // ফলব্যাক দেওয়া হচ্ছে। navigate না হলে (যেমন .css/.js রিকোয়েস্ট)
+            // ভুল কনটেন্ট-টাইপ (HTML) ফেরত না দিয়ে স্বাভাবিক network error
+            // propagate করতে দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
+            if (e.request.mode === 'navigate') {
+              return caches.match('/written-exam/index.html');
+            }
+            return undefined;
           });
         })
     );
@@ -88,7 +95,14 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_VERSION).then(c => c.put(e.request, res.clone()));
         }
         return res;
-      }).catch(() => caches.match('/written-exam/index.html'));
+      }).catch(() => {
+        // বাগ-ফিক্স: fonts/ডেটা ফাইল অফলাইনে cache-এ না থাকলে HTML app-shell
+        // ফেরত না দিয়ে স্বাভাবিক network error propagate করতে দেওয়া হচ্ছে।
+        if (e.request.mode === 'navigate') {
+          return caches.match('/written-exam/index.html');
+        }
+        return undefined;
+      });
     })
   );
 });

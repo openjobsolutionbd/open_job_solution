@@ -16,6 +16,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # GITHUB_TOKEN দিয়ে না — কারণ GITHUB_TOKEN দিয়ে খোলা PR কখনো অন্য
+          # workflow/check ট্রিগার করে না (GitHub-এর ডকুমেন্টেড সীমাবদ্ধতা,
+          # infinite-loop এড়াতে)। main এখন protected (required check),
+          # তাই checkout ও পরবর্তী push/PR-এর জন্য একটা real PAT লাগবে যা
+          # 'validate' check ঠিকভাবে ট্রিগার করতে পারে।
+          token: ${{ secrets.OJS_BOT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,7 +34,73 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Run version bump
-        run: python3 update_version.py
+        run: python3 _dev/update_version.py
 
-      - name: Push changes
-        run: git push
+      - name: পরিবর্তন branch+PR দিয়ে merge করা (main protected, সরাসরি push অসম্ভব)
+        # বাগ-ফিক্স (২০২৬-০৮-২১): main branch protected হওয়ার পর সরাসরি
+        # 'git push' এখানেও ব্যর্থ হচ্ছিল (sync-to-job-solution.yml-এর একই
+        # সমস্যা)। এখন branch → PR → 'validate' check পাস → squash merge।
+        # রিকার্সন-গার্ড (উপরের 'if') ঠিক রাখতে squash-commit-এর title-ও
+        # হুবহু আগের 'chore: bump version to vX.X.X' মেসেজ ব্যবহার করে।
+        env:
+          GH_TOKEN: ${{ secrets.OJS_BOT_TOKEN }}
+        run: |
+          set -e
+          BUMP_MSG=$(git log -1 --format=%s)
+          echo "সর্বশেষ local commit: $BUMP_MSG"
+
+          if [[ "$BUMP_MSG" != chore:\ bump\ version\ to* ]]; then
+            echo "কোনো নতুন bump-commit পাওয়া যায়নি (সম্ভবত পরিবর্তনের কিছু ছিল না) — থেমে যাচ্ছি।"
+            exit 0
+          fi
+
+          BRANCH="bot/auto-bump-version"
+          git push origin "HEAD:refs/heads/${BRANCH}" --force
+
+          API="https://api.github.com/repos/openjobsolutionbd/open_job_solution"
+
+          EXISTING_PR=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/pulls?head=openjobsolutionbd:${BRANCH}&state=open" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print(d[0]['number'] if d else '')")
+
+          if [ -n "$EXISTING_PR" ]; then
+            PR_NUMBER="$EXISTING_PR"
+            echo "বিদ্যমান PR পুনর্ব্যবহার করা হচ্ছে: #$PR_NUMBER"
+          else
+            PR_NUMBER=$(curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "$API/pulls" \
+              -d "{\"title\":\"${BUMP_MSG}\",\"head\":\"${BRANCH}\",\"base\":\"main\",\"body\":\"auto-bump-version.yml দ্বারা স্বয়ংক্রিয়ভাবে তৈরি।\"}" \
+              | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['number'])")
+            echo "নতুন PR খোলা হলো: #$PR_NUMBER"
+          fi
+
+          MERGEABLE_STATE=""
+          for i in $(seq 1 20); do
+            sleep 15
+            MERGEABLE_STATE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "$API/pulls/$PR_NUMBER" | python3 -c "import json,sys; print(json.load(sys.stdin).get('mergeable_state'))")
+            echo "চেষ্টা $i — mergeable_state: $MERGEABLE_STATE"
+            if [ "$MERGEABLE_STATE" = "clean" ]; then
+              break
+            fi
+            if [ "$MERGEABLE_STATE" = "behind" ]; then
+              curl -s -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                "$API/pulls/$PR_NUMBER/update-branch" > /dev/null
+            fi
+          done
+
+          if [ "$MERGEABLE_STATE" != "clean" ]; then
+            echo "::error::PR #$PR_NUMBER ৫ মিনিটেও merge-উপযোগী হয়নি — শেষ অবস্থা: $MERGEABLE_STATE। ম্যানুয়ালি চেক করা দরকার: https://github.com/openjobsolutionbd/open_job_solution/pull/$PR_NUMBER"
+            exit 1
+          fi
+
+          MERGE_RESULT=$(curl -s -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/pulls/$PR_NUMBER/merge" \
+            -d "{\"merge_method\":\"squash\",\"commit_title\":\"${BUMP_MSG}\"}")
+          echo "$MERGE_RESULT"
+          MERGED=$(echo "$MERGE_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin).get('merged', False))")
+          if [ "$MERGED" != "True" ]; then
+            echo "::error::PR #$PR_NUMBER merge ব্যর্থ হয়েছে — ম্যানুয়ালি চেক করা দরকার: https://github.com/openjobsolutionbd/open_job_solution/pull/$PR_NUMBER"
+            exit 1
+          fi
+          echo "✅ PR #$PR_NUMBER সফলভাবে merge হয়েছে (commit title রিকার্সন-গার্ডের জন্য সংরক্ষিত)।"

@@ -14,7 +14,7 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
   <meta name="theme-color" content="#1a1814">
-  <link href="/fonts/noto-bengali.css" rel="stylesheet">
+  <link href="/_assets/fonts/noto-bengali.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -93,7 +93,7 @@ const SUBJECTS = [
 ];
 
 // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-const APP_VERSION = 'v1.104';
+const APP_VERSION = 'v1.112';
 
 let S = { answered:{}, bookmarks:{}, subject:'all', year:'all', page:1, mode:'normal', search:'' };
 
@@ -303,7 +303,7 @@ navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerc
   }
 });
 </script>
-<script src="/shared/floating-search.js"></script>
+<script src="/_assets/shared/floating-search.js"></script>
 <script>
   // ভাসমান সার্চ — সব বিষয়ের সব প্রশ্নের মধ্যে খুঁজবে। ক্লিক করলে
   // 'সব প্রশ্ন' মোডে গিয়ে অ্যাপের নিজস্ব state (S) ও render() ব্যবহার

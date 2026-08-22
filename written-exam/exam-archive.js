@@ -275,5 +275,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 21,
   },
+  {
+    id: "job-2025-dpe-accountant",
+    ministry: "প্রাথমিক শিক্ষা অধিদপ্তর",
+    post: "উচ্চমান সহকারী কাম হিসাবরক্ষক",
+    date: "2025-10-24",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 21,
+  },
+  {
+    id: "job-2025-dpe-store-keeper",
+    ministry: "প্রাথমিক শিক্ষা অধিদপ্তর",
+    post: "ভান্ডার রক্ষক",
+    date: "2025-10-24",
+    duration: "৯০ মিনিট",
+    totalMarks: 80,
+    totalQuestions: 19,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

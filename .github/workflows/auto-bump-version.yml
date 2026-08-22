@@ -34,7 +34,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Run version bump
-        run: python3 update_version.py
+        run: python3 _dev/update_version.py
 
       - name: পরিবর্তন branch+PR দিয়ে merge করা (main protected, সরাসরি push অসম্ভব)
         # বাগ-ফিক্স (২০২৬-০৮-২১): main branch protected হওয়ার পর সরাসরি

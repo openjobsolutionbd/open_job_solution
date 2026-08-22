@@ -257,5 +257,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 75,
     totalQuestions: 8,
   },
+  {
+    id: "job-2025-nlasp-office-asst-typist",
+    ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
+    post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 8,
+  },
+  {
+    id: "job-2025-islamic-foundation-office-asst",
+    ministry: "ইসলামিক ফাউন্ডেশন",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-24",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 21,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

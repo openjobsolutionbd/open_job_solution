@@ -590,5 +590,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 17,
   },
+  {
+    id: "job-2025-primary-mass-edu-steno-typist",
+    ministry: "প্রাথমিক ও গণশিক্ষা মন্ত্রণালয়",
+    post: "সাঁট-মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+    date: "2025-11-21",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 16,
+  },
+  {
+    id: "job-2025-primary-mass-edu-office-sohayok",
+    ministry: "প্রাথমিক ও গণশিক্ষা মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2025-11-21",
+    duration: "৬০ মিনিট",
+    totalMarks: 40,
+    totalQuestions: 21,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

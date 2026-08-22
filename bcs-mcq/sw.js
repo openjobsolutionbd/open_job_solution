@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'bcs-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.104';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.110';
 
 const ASSETS = [
   '/bcs-mcq/',
@@ -81,7 +81,14 @@ self.addEventListener('fetch', e => {
         .catch(() => {
           return caches.match(e.request).then(cached => {
             if (cached) return cached;
-            return caches.match('/bcs-mcq/index.html');
+            // বাগ-ফিক্স: শুধু navigation (পেজ-লোড) রিকোয়েস্টের জন্যই app-shell
+            // ফলব্যাক দেওয়া হচ্ছে। navigate না হলে (যেমন .css/.js রিকোয়েস্ট)
+            // ভুল কনটেন্ট-টাইপ (HTML) ফেরত না দিয়ে স্বাভাবিক network error
+            // propagate করতে দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
+            if (e.request.mode === 'navigate') {
+              return caches.match('/bcs-mcq/index.html');
+            }
+            return undefined;
           });
         })
     );
@@ -96,7 +103,14 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_VERSION).then(c => c.put(e.request, res.clone()));
         }
         return res;
-      }).catch(() => caches.match('/bcs-mcq/index.html'));
+      }).catch(() => {
+        // বাগ-ফিক্স: fonts/ডেটা ফাইল অফলাইনে cache-এ না থাকলে HTML app-shell
+        // ফেরত না দিয়ে স্বাভাবিক network error propagate করতে দেওয়া হচ্ছে।
+        if (e.request.mode === 'navigate') {
+          return caches.match('/bcs-mcq/index.html');
+        }
+        return undefined;
+      });
     })
   );
 });

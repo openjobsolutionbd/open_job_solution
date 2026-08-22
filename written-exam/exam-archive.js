@@ -518,5 +518,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-dmch-computer-operator",
+    ministry: "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+    post: "কম্পিউটার অপারেটর",
+    date: "2025-10-31",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 15,
+  },
+  {
+    id: "job-2025-dphe-rangamati-office-asst-typist",
+    ministry: "জনস্বাস্থ্য প্রকৌশলী অধিদপ্তর, রাঙ্গামাটি",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-31",
+    duration: "৯০ মিনিট",
+    totalMarks: 80,
+    totalQuestions: 11,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

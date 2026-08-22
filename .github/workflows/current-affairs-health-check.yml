@@ -37,7 +37,7 @@ jobs:
 
       - name: স্বাস্থ্য-পরীক্ষা চালানো
         id: check
-        run: python3 scripts/current_affairs_health_check.py
+        run: python3 _dev/scripts/current_affairs_health_check.py
 
       - name: সমস্যা পেলে GitHub Issue বানানো
         if: failure() && steps.check.outcome == 'failure'

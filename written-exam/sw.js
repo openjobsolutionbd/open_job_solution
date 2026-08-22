@@ -5,11 +5,11 @@ const ASSETS = [
   '/written-exam/',
   '/written-exam/style.css',
   '/written-exam/index.html',
-  '/fonts/noto-bengali.css',
-  '/fonts/noto-serif-bengali-400.woff2',
-  '/fonts/noto-serif-bengali-500.woff2',
-  '/fonts/noto-serif-bengali-600.woff2',
-  '/fonts/noto-serif-bengali-700.woff2'
+  '/_assets/fonts/noto-bengali.css',
+  '/_assets/fonts/noto-serif-bengali-400.woff2',
+  '/_assets/fonts/noto-serif-bengali-500.woff2',
+  '/_assets/fonts/noto-serif-bengali-600.woff2',
+  '/_assets/fonts/noto-serif-bengali-700.woff2'
 ];
 
 const OPTIONAL_ASSETS = [

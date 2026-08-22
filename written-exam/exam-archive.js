@@ -257,5 +257,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 75,
     totalQuestions: 8,
   },
+  {
+    id: "job-2025-pwd-office-asst-typist",
+    ministry: "গণপূর্ত অধিদপ্তর",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 31,
+  },
+  {
+    id: "job-2025-pwd-shorthand-typist",
+    ministry: "গণপূর্ত অধিদপ্তর",
+    post: "সাঁট-মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 30,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

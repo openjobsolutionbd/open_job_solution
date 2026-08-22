@@ -293,5 +293,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 24,
   },
+  {
+    id: "job-2025-labour-ministry-bench-asst",
+    ministry: "শ্রম ও কর্মসংস্থান মন্ত্রণালয়",
+    post: "বেঞ্চ সহকারী",
+    date: "2025-12-19",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -536,5 +536,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 80,
     totalQuestions: 11,
   },
+  {
+    id: "job-2025-land-appeal-board-office-sohayok",
+    ministry: "ভূমি আপীল বোর্ড",
+    post: "অফিস সহায়ক",
+    date: "2025-11-14",
+    duration: "৬০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 19,
+  },
+  {
+    id: "job-2025-biddyut-office-sohayok",
+    ministry: "বিদ্যুৎ বিভাগ",
+    post: "অফিস সহায়ক",
+    date: "2025-11-14",
+    duration: "৬০ মিনিট",
+    totalMarks: 40,
+    totalQuestions: 11,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

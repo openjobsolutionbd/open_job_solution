@@ -7,11 +7,11 @@ const ASSETS = [
   '/books/book.html',
   '/books/style.css',
   '/books/data/manifest.js',
-  '/fonts/noto-bengali.css',
-  '/fonts/noto-serif-bengali-400.woff2',
-  '/fonts/noto-serif-bengali-500.woff2',
-  '/fonts/noto-serif-bengali-600.woff2',
-  '/fonts/noto-serif-bengali-700.woff2'
+  '/_assets/fonts/noto-bengali.css',
+  '/_assets/fonts/noto-serif-bengali-400.woff2',
+  '/_assets/fonts/noto-serif-bengali-500.woff2',
+  '/_assets/fonts/noto-serif-bengali-600.woff2',
+  '/_assets/fonts/noto-serif-bengali-700.woff2'
 ];
 
 function isAppFile(url) {

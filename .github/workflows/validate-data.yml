@@ -19,11 +19,11 @@ jobs:
           node-version: '20'
 
       - name: Validate question data
-        run: node validate_data.js
+        run: node _dev/validate_data.js
 
       - name: Install spellcheck dependencies
-        run: npm install
+        run: npm install --prefix _dev
 
       - name: Bangla spell-check (advisory)
-        run: npm run spellcheck
+        run: npm run spellcheck --prefix _dev
         continue-on-error: true

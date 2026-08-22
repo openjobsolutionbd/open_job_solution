@@ -17,7 +17,7 @@ import re, sys, os, subprocess
 from pathlib import Path
 from datetime import datetime
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.parent
 
 # ── Bengali helpers ────────────────────────────────────────────
 BN_MONTHS = [
@@ -92,7 +92,7 @@ def git_stage_and_commit(new_tag):
         print(f"  ⚠️  git commit ব্যর্থ: {err}")
 
 # ── Read current version ───────────────────────────────────────
-VERSION_FILE = ROOT / "version.txt"
+VERSION_FILE = ROOT / "_docs" / "version.txt"
 current = VERSION_FILE.read_text().strip() if VERSION_FILE.exists() else "1.7.1"
 
 # ── Determine new version ──────────────────────────────────────
@@ -218,7 +218,7 @@ def build_summary(files):
 summary = build_summary(changed_files)
 
 # ── Update MD changelog ────────────────────────────────────────
-md_files = list(ROOT.glob("*.md"))
+md_files = list((ROOT / "_docs").glob("*.md"))
 md_updated = False
 
 for md_path in md_files:

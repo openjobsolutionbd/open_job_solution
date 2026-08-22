@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, '..');
 
 function loadDataArray(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8');
@@ -47,8 +47,8 @@ function main() {
   const args = process.argv.slice(2);
   const files = args.length > 0 ? args : defaultFiles();
 
-  const tmpDir = fs.mkdtempSync(path.join(ROOT, '.spellcheck-tmp-'));
-  const configPath = path.join(ROOT, 'cspell.json');
+  const tmpDir = fs.mkdtempSync(path.join(__dirname, '.spellcheck-tmp-'));
+  const configPath = path.join(__dirname, 'cspell.json');
   let anyIssue = false;
 
   for (const file of files) {

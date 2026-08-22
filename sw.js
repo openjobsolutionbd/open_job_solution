@@ -7,13 +7,13 @@ const ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/fonts/noto-bengali.css',
-  '/fonts/noto-serif-bengali-400.woff2',
-  '/fonts/noto-serif-bengali-500.woff2',
-  '/fonts/noto-serif-bengali-600.woff2',
-  '/fonts/noto-serif-bengali-700.woff2'
+  '/_assets/icons/icon-192.png',
+  '/_assets/icons/icon-512.png',
+  '/_assets/fonts/noto-bengali.css',
+  '/_assets/fonts/noto-serif-bengali-400.woff2',
+  '/_assets/fonts/noto-serif-bengali-500.woff2',
+  '/_assets/fonts/noto-serif-bengali-600.woff2',
+  '/_assets/fonts/noto-serif-bengali-700.woff2'
 ];
 
 // বাগ-ফিক্স: এই চারটা সেকশনের প্রতিটার নিজস্ব sw.js আছে, নিজের এলাকার

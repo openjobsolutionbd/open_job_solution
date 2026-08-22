@@ -500,5 +500,32 @@ const EXAM_ARCHIVE = [
     totalMarks: 100,
     totalQuestions: 16,
   },
+  {
+    id: "job-2025-health-nimc-tc-uccho-man",
+    ministry: "স্বাস্থ্য সেবা বিভাগ এর নিমিউ এন্ড টিসি",
+    post: "উচ্চমান সহকারী",
+    date: "2025-10-17",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
+  {
+    id: "job-2025-railway-office-asst-typist",
+    ministry: "রেলপথ মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 24,
+  },
+  {
+    id: "job-2025-nlasi-bench-assistant",
+    ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
+    post: "বেঞ্চ সহকারী",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

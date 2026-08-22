@@ -554,5 +554,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 40,
     totalQuestions: 11,
   },
+  {
+    id: "job-2025-biddyut-steno-typist",
+    ministry: "বিদ্যুৎ বিভাগ",
+    post: "সাঁটমুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-11-14",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 16,
+  },
+  {
+    id: "job-2025-biddyut-office-asst-typist",
+    ministry: "বিদ্যুৎ বিভাগ",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-11-14",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 16,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

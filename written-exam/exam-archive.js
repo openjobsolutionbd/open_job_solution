@@ -572,5 +572,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 16,
   },
+  {
+    id: "job-2025-immigration-passport-office-asst-typist",
+    ministry: "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-11-14",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 16,
+  },
+  {
+    id: "job-2025-primary-mass-edu-office-asst-typist",
+    ministry: "প্রাথমিক ও গণশিক্ষা মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-11-21",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 17,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

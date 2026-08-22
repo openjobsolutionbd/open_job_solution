@@ -482,5 +482,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 40,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-dc-narayanganj-nazir-cashier",
+    ministry: "জেলা প্রশাসকের কার্যালয়, নারায়ণগঞ্জ",
+    post: "নাজির কাম ক্যাশিয়ার, অফিস সহকারী",
+    date: "2025-10-24",
+    duration: "৯০ মিনিট",
+    totalMarks: 100,
+    totalQuestions: 16,
+  },
+  {
+    id: "job-2025-navy-artificer",
+    ministry: "প্রতিরক্ষা মন্ত্রণালয় (বাংলাদেশ নৌবাহিনী)",
+    post: "আর্টিফিসার",
+    date: "2025-10-25",
+    duration: "১২০ মিনিট",
+    totalMarks: 100,
+    totalQuestions: 16,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -293,5 +293,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 80,
     totalQuestions: 19,
   },
+  {
+    id: "job-2025-biwta-store-officer",
+    ministry: "বাংলাদেশ অভ্যন্তরীন নৌ-পরিবহন কর্তৃপক্ষ",
+    post: "ভান্ডারী",
+    date: "2025-10-24",
+    duration: "৬০ মিনিট",
+    totalMarks: 50,
+    totalQuestions: 6,
+  },
+  {
+    id: "job-2025-health-services-office-sohayak",
+    ministry: "স্বাস্থ্য সেবা বিভাগ",
+    post: "অফিস সহায়ক",
+    date: "2025-10-24",
+    duration: "৬০ মিনিট",
+    totalMarks: 40,
+    totalQuestions: 15,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

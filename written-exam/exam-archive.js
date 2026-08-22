@@ -311,5 +311,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 17,
   },
+  {
+    id: "job-2025-ncc-sub-asst-engineer-civil",
+    ministry: "নারায়ণগঞ্জ সিটি কর্পোরেশন",
+    post: "উপ সহকারী প্রকৌশলী (সিভিল)",
+    date: "2025-12-22",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 20,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

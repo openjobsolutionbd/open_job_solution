@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'home-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.105';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.110';
 
 // এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/primary-mcq/written-exam/
 // current-affairs প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
@@ -77,7 +77,12 @@ self.addEventListener('fetch', e => {
         .catch(() => {
           return caches.match(e.request).then(cached => {
             if (cached) return cached;
-            return caches.match('/index.html');
+            // বাগ-ফিক্স: শুধু navigation (পেজ-লোড) রিকোয়েস্টের জন্যই app-shell
+            // ফলব্যাক দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
+            if (e.request.mode === 'navigate') {
+              return caches.match('/index.html');
+            }
+            return undefined;
           });
         })
     );
@@ -92,7 +97,14 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_VERSION).then(c => c.put(e.request, res.clone()));
         }
         return res;
-      }).catch(() => caches.match('/index.html'));
+      }).catch(() => {
+        // বাগ-ফিক্স: manifest/আইকন/ফন্ট অফলাইনে cache-এ না থাকলে HTML
+        // app-shell ফেরত না দিয়ে স্বাভাবিক network error propagate হচ্ছে।
+        if (e.request.mode === 'navigate') {
+          return caches.match('/index.html');
+        }
+        return undefined;
+      });
     })
   );
 });

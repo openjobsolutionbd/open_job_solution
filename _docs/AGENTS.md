@@ -4,14 +4,14 @@
 
 ## ⚠️ প্রথম ধাপ — যেকোনো কাজ শুরুর আগে বাধ্যতামূলক
 
-**`bash scripts/session_status.sh` চালান — এটাই সবার আগে করুন, অন্য যেকোনো কিছুর আগে।**
+**`bash _dev/scripts/session_status.sh` চালান — এটাই সবার আগে করুন, অন্য যেকোনো কিছুর আগে।**
 
 কারণ: ব্যবহারকারী নিয়মিত **একাধিক Claude অ্যাকাউন্ট এবং একাধিক চ্যাট থেকে একই সময়ে এই রিপোতে কাজ করান**। local sandbox-এর অবস্থা কথোপকথনের এই মুহূর্তের সাথে নাও মিলতে পারে — একমাত্র জিনিস যেটা সবসময় নির্ভরযোগ্য তা হলো GitHub-এর remote অবস্থা। `session_status.sh` remote ফেচ করে, local-remote তুলনা করে, working directory-তে stray/অসম্পূর্ণ পরিবর্তন আছে কিনা দেখায়, এবং **সব খোলা branch + খোলা/merge/abandoned PR-এর লাইভ তালিকাও** দেখায় — যাতে কোনো টাস্ক অন্য সেশন থেকে ইতিমধ্যে শুরু বা শেষ হয়ে গিয়ে থাকলে সেটা সাথে সাথে ধরা পড়ে, পুনরাবৃত্তি না ঘটে।
 
 repo এখনো ক্লোন করা না থাকলে (প্রথমবার এই sandbox-এ):
 ```bash
 git clone https://github.com/openjobsolutionbd/open_job_solution.git
-cd open_job_solution && bash scripts/session_status.sh
+cd open_job_solution && bash _dev/scripts/session_status.sh
 ```
 
 ## main branch protected — সরাসরি push করা যায় না
@@ -36,15 +36,15 @@ cd open_job_solution && bash scripts/session_status.sh
 
 | পাথ | কী |
 |---|---|
-| `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা ও সব branch/PR-এর লাইভ তালিকা দেখায় |
-| `scripts/current_affairs_health_check.py` | current-affairs সিঙ্ক করা কনটেন্টের দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা |
+| `_dev/scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা ও সব branch/PR-এর লাইভ তালিকা দেখায় |
+| `_dev/scripts/current_affairs_health_check.py` | current-affairs সিঙ্ক করা কনটেন্টের দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা |
 | `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
-| `bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |
-| `books-staging/` | বই-সংক্রান্ত কনটেন্ট প্রসেসিংয়ের স্টেজিং এলাকা |
-| `validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
-| `check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
+| `_staging/bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |
+| `_staging/books-staging/` | বই-সংক্রান্ত কনটেন্ট প্রসেসিংয়ের স্টেজিং এলাকা |
+| `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
+| `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 
 ## বর্তমান অবস্থা
 
-এই ফাইলে হাতে-লেখা কমিট/PR-স্ট্যাটাস রাখা হয় না — দ্রুত stale হয়ে ভুল তথ্য ছড়ায়। বাস্তব অবস্থা সবসময় `bash scripts/session_status.sh` থেকে যাচাই করুন।
+এই ফাইলে হাতে-লেখা কমিট/PR-স্ট্যাটাস রাখা হয় না — দ্রুত stale হয়ে ভুল তথ্য ছড়ায়। বাস্তব অবস্থা সবসময় `bash _dev/scripts/session_status.sh` থেকে যাচাই করুন।

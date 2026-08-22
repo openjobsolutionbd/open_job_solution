@@ -1,15 +1,15 @@
 const CACHE_PREFIX = 'primary-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.110';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.115';
 
 const ASSETS = [
   '/primary-mcq/',
   '/primary-mcq/style.css',
   '/primary-mcq/index.html',
-  '/fonts/noto-bengali.css',
-  '/fonts/noto-serif-bengali-400.woff2',
-  '/fonts/noto-serif-bengali-500.woff2',
-  '/fonts/noto-serif-bengali-600.woff2',
-  '/fonts/noto-serif-bengali-700.woff2'
+  '/_assets/fonts/noto-bengali.css',
+  '/_assets/fonts/noto-serif-bengali-400.woff2',
+  '/_assets/fonts/noto-serif-bengali-500.woff2',
+  '/_assets/fonts/noto-serif-bengali-600.woff2',
+  '/_assets/fonts/noto-serif-bengali-700.woff2'
 ];
 
 const OPTIONAL_ASSETS = [

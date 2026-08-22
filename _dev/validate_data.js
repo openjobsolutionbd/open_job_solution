@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, '..');
 let issues = [];
 
 function loadJsVar(relPath, varName) {

@@ -438,6 +438,15 @@ const EXAM_ARCHIVE = [
     totalQuestions: 8,
   },
   {
+    id: "job-2025-nlasp-bench-asst",
+    ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
+    post: "বেঞ্চ সহকারী",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 8,
+  },
+  {
     id: "job-2025-islamic-foundation-office-asst",
     ministry: "ইসলামিক ফাউন্ডেশন",
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",

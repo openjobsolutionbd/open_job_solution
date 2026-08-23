@@ -335,7 +335,7 @@ const JOB_SOLUTIONS = [
   },
 
   { id: "job-2025-dc-q18", examId: "job-2025-dc", subject: "general-knowledge", qno: 18, marks: 20, type: "short-qa",
-    question: "সাধারণ জ্ঞান-২০: নিচের প্রশ্নগুলোর উত্তর দিন:",
+    question: "সাধারণ জ্ঞান-১৫: নিচের প্রশ্নগুলোর উত্তর দিন:",
     parts: [
       { label: "১৮", q: "বাংলাদেশের সর্বোচ্চ আইন কোনটি?", a: "সংবিধান" },
       { label: "১৯", q: "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ কোনটি?", a: "মহেশখালী" },
@@ -347,7 +347,11 @@ const JOB_SOLUTIONS = [
       { label: "২৫", q: "ইরানের মুদ্রার নাম কী?", a: "রিয়াল" },
       { label: "২৬", q: "রাশিয়ার রাজধানীর নাম কী?", a: "মস্কো" },
       { label: "২৭", q: "বিশ্ব স্বাস্থ্য সংস্থার সদর দপ্তর কোথায় অবস্থিত?", a: "জেনেভা, সুইজারল্যান্ড" },
-      { label: "২৮", q: "UNESCO এর পূর্ণরূপ কী?", a: "United Nations Educational, Scientific and Cultural Organization" }
+      { label: "২৮", q: "UNESCO এর পূর্ণরূপ কী?", a: "United Nations Educational, Scientific and Cultural Organization" },
+      { label: "২৯", q: "লেবুতে কোন এসিড থাকে?", a: "সাইট্রিক এসিড" },
+      { label: "৩০", q: "'কোর্ট অব রেকর্ড' কোন কোর্টকে বলা হয়?", a: "সুপ্রিম কোর্ট" },
+      { label: "৩১", q: "রবীন্দ্রনাথ ঠাকুরের ছদ্মনাম কী?", a: "ভানুসিংহ ঠাকুর" },
+      { label: "৩২", q: "বাংলা সনের প্রবর্তক কে?", a: "সম্রাট আকবর" }
     ]
   },
 

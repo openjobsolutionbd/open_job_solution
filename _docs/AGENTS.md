@@ -41,6 +41,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 - সরাসরি push-এর কোনো সুবিধা নেই এখন (protection চালুর পর) — তবু PR তৈরি/merge করতে **Contents: Read & Write** ও **Pull requests: Read & Write** পারমিশনসহ টোকেন লাগবে
 - Fine-grained PAT ব্যবহার করার চেষ্টা করুন এবং **Contents ও Pull requests উভয় পারমিশনই "Read and write"** আছে কিনা টোকেন বানানোর সময় নিশ্চিত করুন — শুধু repo-level "push: true" API রেসপন্স দেখে ভরসা করবেন না, একটা ছোট write টেস্ট (যেমন dummy branch তৈরির চেষ্টা) করে যাচাই করে নিন
 - কাজ শেষ হলে ব্যবহারকারীকে টোকেন মুছে ফেলার কথা মনে করিয়ে দিন
+- চ্যাটে একবার টোকেন দেওয়া হলে পুরো সেশন জুড়ে সেটা ব্যবহার করুন — বারবার টোকেন চাইবেন না; expire/auth error হলেই শুধু জানান
 
 ## ফাইল-কাঠামো (সংক্ষেপে)
 

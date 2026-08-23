@@ -671,5 +671,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 20,
   },
+  {
+    id: "job-2025-nlasi-bench-assistant",
+    ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
+    post: "বেঞ্চ সহকারী",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

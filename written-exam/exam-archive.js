@@ -345,7 +345,7 @@ const EXAM_ARCHIVE = [
     date: "2025-08-01",
     duration: "৯০ মিনিট",
     totalMarks: 90,
-    totalQuestions: 14,
+    totalQuestions: 13,
   },
   {
     id: "job-2025-mopa-account-keeper",
@@ -417,7 +417,7 @@ const EXAM_ARCHIVE = [
     date: "2025-08-09",
     duration: "৯০ মিনিট",
     totalMarks: 100,
-    totalQuestions: 16,
+    totalQuestions: 19,
   },
   {
     id: "job-2025-food-dept-electrical-foreman",
@@ -432,6 +432,15 @@ const EXAM_ARCHIVE = [
     id: "job-2025-nlasp-office-asst-typist",
     ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
     post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-18",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 8,
+  },
+  {
+    id: "job-2025-nlasp-bench-asst",
+    ministry: "জাতীয় আইনগত সহায়তা প্রদান সংস্থা",
+    post: "বেঞ্চ সহকারী",
     date: "2025-10-18",
     duration: "৯০ মিনিট",
     totalMarks: 70,

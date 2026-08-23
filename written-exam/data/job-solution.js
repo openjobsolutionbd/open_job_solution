@@ -3315,9 +3315,9 @@ const JOB_SOLUTIONS = [
     answer: "২০০ বর্গফুট।" },
 
   { id: "job-2025-air-force-office-sohayok-q10", examId: "job-2025-air-force-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 10, marks: 5, type: "math",
-    question: "৫/৮ × ২/১ × ৮/৫ = কত?",
+    question: "১ ৩/৮ × ১/২ ÷ ১/৮ = কত?",
     steps: [
-      "৫/৮ × ২/১ × ৮/৫"
+      "= ৫/৮ × ২/১ × ৮/১"
     ],
     answer: "৫" },
 

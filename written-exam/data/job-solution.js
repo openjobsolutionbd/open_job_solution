@@ -312,6 +312,45 @@ const JOB_SOLUTIONS = [
     answer: "পঞ্চাশ পয়সার মুদ্রা ২০টি, পঁচিশ পয়সার মুদ্রা ১০০টি।"
   },
 
+  {
+    id: "job-2025-dc-q16",
+    examId: "job-2025-dc",
+    subject: "general-knowledge",
+    qno: 16,
+    marks: 5,
+    type: "paragraph",
+    question: "আপনি যে পদে আবেদন করেছেন সে পদের দায়িত্ব ও কর্তব্য সম্পর্কে লিখুন।",
+    answer: "প্রার্থীর আবেদনকৃত পদ অনুযায়ী নিজ ভাষায় লিখতে হবে — উত্তর প্রার্থীভেদে ভিন্ন হবে বিধায় বইয়ে নির্দিষ্ট উত্তর দেওয়া হয়নি।"
+  },
+
+  {
+    id: "job-2025-dc-q17",
+    examId: "job-2025-dc",
+    subject: "general-knowledge",
+    qno: 17,
+    marks: 5,
+    type: "paragraph",
+    question: "'ই-নামজারি' সম্পর্কে লিখুন।",
+    answer: "নামজারি বা মিউটেশন হচ্ছে জমি সংক্রান্ত বিষয়ে মালিকানা পরিবর্তন করা। কোনো ব্যক্তি বা প্রতিষ্ঠান কোনো বৈধ পন্থায় ভূমি/জমির মালিকানা অর্জন করলে সরকারি রেকর্ড সংশোধন করে তার নামে রেকর্ড হালনাগাদ করাকেই নামজারি বলা হয়। অনলাইনের মাধ্যমে নামজারির আবেদন, প্রক্রিয়া ও রেকর্ড করাই হচ্ছে ই-নামজারি।"
+  },
+
+  { id: "job-2025-dc-q18", examId: "job-2025-dc", subject: "general-knowledge", qno: 18, marks: 20, type: "short-qa",
+    question: "সাধারণ জ্ঞান-২০: নিচের প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "১৮", q: "বাংলাদেশের সর্বোচ্চ আইন কোনটি?", a: "সংবিধান" },
+      { label: "১৯", q: "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ কোনটি?", a: "মহেশখালী" },
+      { label: "২০", q: "পৃথিবীর দীর্ঘতম নদী কোনটি?", a: "নীলনদ" },
+      { label: "২১", q: "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম দেশ কোনটি?", a: "ভুটান" },
+      { label: "২২", q: "পানামা খাল কোন দুইটি মহাসাগরকে যুক্ত করেছে?", a: "আটলান্টিক ও প্রশান্ত" },
+      { label: "২৩", q: "চাকমাদের বর্ষবরণ অনুষ্ঠানকে কী বলা হয়?", a: "বিজু" },
+      { label: "২৪", q: "আইফেল টাওয়ার কোথায় অবস্থিত?", a: "ফ্রান্স, প্যারিস" },
+      { label: "২৫", q: "ইরানের মুদ্রার নাম কী?", a: "রিয়াল" },
+      { label: "২৬", q: "রাশিয়ার রাজধানীর নাম কী?", a: "মস্কো" },
+      { label: "২৭", q: "বিশ্ব স্বাস্থ্য সংস্থার সদর দপ্তর কোথায় অবস্থিত?", a: "জেনেভা, সুইজারল্যান্ড" },
+      { label: "২৮", q: "UNESCO এর পূর্ণরূপ কী?", a: "United Nations Educational, Scientific and Cultural Organization" }
+    ]
+  },
+
   // ══════════════════════════════════════════════════════════
   // পরীক্ষা: কারিগরি শিক্ষা অধিদপ্তর — সহকারী কাম কিপার
   // id prefix: job-2025-tech-edu-keeper
@@ -2494,6 +2533,1345 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-food-dept-electrical-foreman-q19", "examId": "job-2025-food-dept-electrical-foreman", "subject": "general-knowledge", "qno": 19, "marks": 5, "type": "short-qa", "question": "পূর্ণরূপ লিখুনঃ", "parts": [{"label": "", "q": "RAM", "a": "Random Access Memory"}, {"label": "", "q": "WTO", "a": "World Trade Organization"}, {"label": "", "q": "BARI", "a": "Bangladesh Agricultural Research Institute"}, {"label": "", "q": "UNESCO", "a": "United Nations Educational, Scientific and Culture Organization"}, {"label": "", "q": "GDP", "a": "Gross Domestic Product"}]},
 
   // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জেলা প্রশাসকের কার্যালয়, নেত্রকোণা — অফিস সহায়ক
+  // id prefix: job-2025-dc-netrokona
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-dc-netrokona-q01", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 3, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["ক্ষুধার্ত", "ক্ষুধা + ঋত"],
+      ["সম্প্রীতি", "সম্ + প্রীতি"],
+      ["ভাবুক", "ভৌ + উক"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q02", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "শুদ্ধিকরণ", qno: 2, marks: 4, type: "table",
+    question: "শুদ্ধ বানান লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["দূর্ঘটনা", "দুর্ঘটনা"],
+      ["ন্যুনতম", "নূ্যনতম"],
+      ["মুমুর্ষ", "মুমূর্ষু"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q03", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "কারক", qno: 3, marks: 2, type: "table",
+    question: "কারক ও বিভক্তি নির্ণয় করুন:",
+    columns: ["বাক্য", "কারক ও বিভক্তি"],
+    rows: [
+      ["ধোপাকে কাপড় দাও।", "কর্মে ২য়া"],
+      ["সর্বভূতে ধন দাও।", "সম্প্রদানে ৭মী"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q04", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 4, marks: 3, type: "idiom",
+    question: "বাগধারা (অর্থসহ বাক্য গঠন করুন):",
+    parts: [
+      { label: "ক", phrase: "কেঁচে গণ্ডুষ", meaning: "নতুন করে শুরু করা" },
+      { label: "খ", phrase: "নিরানব্বইয়ের ধাক্কা", meaning: "সঞ্চয়ের প্রবৃত্তি" },
+      { label: "গ", phrase: "উনপাঁজুরে", meaning: "দুর্বল" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q05", examId: "job-2025-dc-netrokona", subject: "bangla", topic: "সমাস", qno: 5, marks: 2, type: "table",
+    question: "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    columns: ["শব্দ", "ব্যাসবাক্য", "সমাসের নাম"],
+    rows: [
+      ["বিজয় পতাকা", "বিজয়ের পতাকা", "৬ষ্ঠী তৎপুরুষ"],
+      ["সিংহপুরুষ", "পুরুষ সিংহের ন্যায়", "উপমিত কর্মধারয়"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q06", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 6, marks: 2, type: "paragraph",
+    question: "'এক পয়সার বাঁশি' কাব্যগ্রন্থের রচয়িতা কে?",
+    answer: "জসীমউদ্দীন।" },
+
+  { id: "job-2025-dc-netrokona-q07", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 7, marks: 2, type: "paragraph",
+    question: "'বৃষ্টি শেষ হওয়ার আগেই আমরা বাড়ি পৌঁছেছিলাম।' বাক্যটি কোন কাল?",
+    answer: "পুরাঘটিত অতীত কাল।" },
+
+  { id: "job-2025-dc-netrokona-q08", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 8, marks: 3, type: "paragraph",
+    question: "যৌগিক বাক্যে রূপান্তর করুন: তুমি চেষ্টা না করায় ব্যর্থ হয়েছো।",
+    answer: "তুমি চেষ্টা করনি, তাই ব্যর্থ হয়েছো।" },
+
+  { id: "job-2025-dc-netrokona-q09", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 9, marks: 3, type: "paragraph",
+    question: "বাক্যটি সঠিকভাবে লিখুন: তোমায় দেখে সে আশ্চর্য হয়েছে।",
+    answer: "তোমায় দেখে সে আশ্চর্যান্বিত হয়েছে।" },
+
+  { id: "job-2025-dc-netrokona-q10", examId: "job-2025-dc-netrokona", subject: "bangla", qno: 10, marks: 3, type: "short-qa",
+    question: "সঠিক উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "'বুলবুলিস্তান' কার লেখা?", a: "গোলাম মোস্তফা" },
+      { label: "খ", q: "'নৌফেল ও হাতেম' কার লেখা?", a: "ফররুখ আহমেদ" },
+      { label: "গ", q: "চর্যাপদে সবচেয়ে বেশি পদ কার লেখা?", a: "কাহ্নপা" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q11", examId: "job-2025-dc-netrokona", subject: "english", topic: "spelling", qno: 11, marks: 2, type: "table",
+    question: "Correct the spelling:",
+    columns: ["Incorrect", "Correct"],
+    rows: [
+      ["Griveince", "Grievance"],
+      ["Commity", "Committee"]
+    ] },
+
+  { id: "job-2025-dc-netrokona-q12", examId: "job-2025-dc-netrokona", subject: "english", qno: 12, marks: 2, type: "paragraph",
+    question: "What is the noun form of 'Depart'?",
+    answer: "Departure" },
+
+  { id: "job-2025-dc-netrokona-q13", examId: "job-2025-dc-netrokona", subject: "english", topic: "sentence-correction", qno: 13, marks: 4, type: "sentence-change",
+    question: "Correct the following sentences:",
+    parts: [
+      { label: "a", original: "I prefer tea from coffee.", changed: "I prefer tea to coffee." },
+      { label: "b", original: "I saw a dream last light.", changed: "I dreamt a dream last light." }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q14", examId: "job-2025-dc-netrokona", subject: "english", topic: "translation", qno: 14, marks: 8, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তিনি সাঁতার কাটতে জানে না।", target: "He does not know how to swim." },
+      { label: "খ", source: "বাংলাদেশ একটি স্বাধীন রাষ্ট্র।", target: "Bangladesh is an independent country." },
+      { label: "গ", source: "প্রয়োজনীয়তা আবিষ্কারের জননী।", target: "Necessity is the mother of invention." },
+      { label: "ঘ", source: "আমাকে কাজটি করতে হবে।", target: "I have to do the work." },
+      { label: "ঙ", source: "এখন কয়টা বাজে?", target: "What time is it?" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q15", examId: "job-2025-dc-netrokona", subject: "english", topic: "fill-in-the-blanks", qno: 15, marks: 6, type: "fill-gaps",
+    question: "Fill in the gaps:",
+    parts: [
+      { sentence: "He is good...... English.", answer: "at" },
+      { sentence: "We have to go there.......... five minutes.", answer: "by" },
+      { sentence: "He died....... overeating.", answer: "from" },
+      { sentence: "He speaks English like..... English.", answer: "the" },
+      { sentence: "The play \"Hamlet\" is written by.......", answer: "Shakespeare" },
+      { sentence: "\"The old man and the sea\" is written by.......", answer: "Earnest Hemingway" }
+    ] },
+
+  { id: "job-2025-dc-netrokona-q16", examId: "job-2025-dc-netrokona", subject: "english", qno: 16, marks: 2, type: "paragraph",
+    question: "What is the plural form of 'Mouse'?",
+    answer: "Mice" },
+
+  { id: "job-2025-dc-netrokona-q17", examId: "job-2025-dc-netrokona", subject: "english", qno: 17, marks: 2, type: "paragraph",
+    question: "'By the by' এর অর্থ কী?",
+    answer: "প্রসঙ্গক্রমে" },
+
+  { id: "job-2025-dc-netrokona-q18", examId: "job-2025-dc-netrokona", subject: "english", qno: 18, marks: 3, type: "paragraph",
+    question: "What is the passive form of this sentence: 'Keep your word'?",
+    answer: "Your word should be kept." },
+
+  { id: "job-2025-dc-netrokona-q19", examId: "job-2025-dc-netrokona", subject: "english", qno: 19, marks: 3, type: "paragraph",
+    question: "Change the narrations: She asked me, \"Are you happy in your new job.\"",
+    answer: "She asked me if I was happy in my new job." },
+
+  { id: "job-2025-dc-netrokona-q20", examId: "job-2025-dc-netrokona", subject: "math", topic: "বীজগণিত", qno: 20, marks: 6, type: "math",
+    question: "একটি প্রকৃত ভগ্নাংশের হর, লব অপেক্ষা 4 বেশি। ভগ্নাংশটির বর্গ করলে যে ভগ্নাংশ পাওয়া যাবে তার হর, লব অপেক্ষা 40 বেশি হবে। ভগ্নাংশটি নির্ণয় করুন।",
+    steps: [
+      "ধরি, ভগ্নাংশটির লব x এবং হর x + 4",
+      "সুতরাং ভগ্নাংশটি = x/(x+4)",
+      "ভগ্নাংশটির বর্গ = x²/(x+4)²",
+      "এখানে, লব = x² এবং হর = x² + 8x + 16",
+      "প্রশ্নমতে, x² + 8x + 16 = x² + 40",
+      "বা, 8x + 16 = 40",
+      "বা, 8x = 24",
+      "∴ x = 3",
+      "∴ x + 4 = 3 + 4 = 7"
+    ],
+    answer: "ভগ্নাংশটি ৩/৭।" },
+
+  { id: "job-2025-dc-netrokona-q21", examId: "job-2025-dc-netrokona", subject: "math", topic: "জ্যামিতি", qno: 21, marks: 6, type: "math",
+    question: "১০ সেন্টিমিটার বাহুবিশিষ্ট কোন রম্বসের একটি কর্ণ ১৬ সেন্টিমিটার হলে রম্বসটির ক্ষেত্রফল কত?",
+    steps: [
+      "মনে করি, ABCD রম্বসের একটি কর্ণ AC = 16 সে.মি এবং অপর কর্ণ BD সে.মি",
+      "রম্বসের বাহুর দৈর্ঘ্য AB = 10 সে.মি",
+      "ΔAOB সমকোণী ত্রিভুজে, AB² = AO² + BO²",
+      "বা, (10)² = 8² + BO²",
+      "বা, BO² = 100 - 64 = 36",
+      "∴ BO = 6",
+      "যেহেতু BO = 6 সুতরাং কর্ণ BD = 12 সে.মি",
+      "আমরা জানি, রম্বসের ক্ষেত্রফল = 1/2 × কর্ণদ্বয়ের গুণফল = 1/2 × 16 × 12 = 96 বর্গ সে.মি"
+    ],
+    answer: "৯৬ বর্গ সে.মি।" },
+
+  { id: "job-2025-dc-netrokona-q22", examId: "job-2025-dc-netrokona", subject: "math", topic: "পাটিগণিত", qno: 22, marks: 4, type: "math",
+    question: "৮৪ টাকা কত টাকার ১২.৫০%?",
+    steps: [
+      "১২.৫০% ধরে হিসাব করে পাওয়া যায়",
+      "৮৪ টাকা = x টাকার ১২.৫০%",
+      "x = ৮৪ × ১০০ / ১২.৫০ = ৬৭২"
+    ],
+    answer: "৬৭২ টাকা।" },
+
+  { id: "job-2025-dc-netrokona-q23", examId: "job-2025-dc-netrokona", subject: "math", topic: "বীজগণিত", qno: 23, marks: 6, type: "math",
+    question: "যদি a = √7 + √6 হয় তবে, a² + 1/a² এর মান কত?",
+    steps: [
+      "দেওয়া আছে, a = √7 + √6",
+      "1/a = 1/(√7+√6) = (√7-√6)/{(√7+√6)(√7-√6)} = (√7-√6)/(7-6) = √7-√6",
+      "∴ a + 1/a = √7+√6 + √7-√6 = 2√7",
+      "এখন, a² + 1/a² = (a + 1/a)² - 2.a.(1/a)",
+      "= (2√7)² - 2 = 28 - 2 = 26"
+    ],
+    answer: "২৬" },
+
+  { id: "job-2025-dc-netrokona-q24", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 24, marks: 2, type: "paragraph",
+    question: "ভূমি জরিপ অনুযায়ী CS ও RS এর পূর্ণরূপ কী?",
+    answer: "CS = Cadastral Survey; RS = Revisional Survey।" },
+
+  { id: "job-2025-dc-netrokona-q25", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 25, marks: 2, type: "paragraph",
+    question: "দাখিলা কী?",
+    answer: "ভূমি কর বা খাজনার রসিদ।" },
+
+  { id: "job-2025-dc-netrokona-q26", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 26, marks: 2, type: "paragraph",
+    question: "ইউনিয়ন ভূমি অফিসের দপ্তর প্রধানের পদবি কী?",
+    answer: "ইউনিয়ন ভূমি সহকারী কর্মকর্তা।" },
+
+  { id: "job-2025-dc-netrokona-q27", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 27, marks: 2, type: "paragraph",
+    question: "১ শতাংশ জমি কত বর্গফুট?",
+    answer: "৪৩৫.৬ বর্গফুট।" },
+
+  { id: "job-2025-dc-netrokona-q28", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 28, marks: 2, type: "paragraph",
+    question: "গহীরা কোন অঞ্চলের লোকসঙ্গীত?",
+    answer: "রাজশাহী ও চাঁপাইনবাবগঞ্জ।" },
+
+  { id: "job-2025-dc-netrokona-q29", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 29, marks: 2, type: "paragraph",
+    question: "CPU এর পূর্ণরূপ কী?",
+    answer: "Central Processing Unit" },
+
+  { id: "job-2025-dc-netrokona-q30", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 30, marks: 2, type: "paragraph",
+    question: "বাংলাদেশ সংবিধানের কতটি সংশোধনী হয়েছে?",
+    answer: "১৭টি।" },
+
+  { id: "job-2025-dc-netrokona-q31", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বিজ্ঞান", qno: 31, marks: 2, type: "paragraph",
+    question: "তেঁতুলে কোন এসিড থাকে?",
+    answer: "টারটারিক এসিড।" },
+
+  { id: "job-2025-dc-netrokona-q32", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 32, marks: 2, type: "paragraph",
+    question: "গোবি মরুভূমি কোন দেশে অবস্থিত?",
+    answer: "চীন ও মঙ্গোলিয়া।" },
+
+  { id: "job-2025-dc-netrokona-q33", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 33, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সমুদ্রবন্দর কতটি?",
+    answer: "৩টি।" },
+
+  { id: "job-2025-dc-netrokona-q34", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 34, marks: 2, type: "paragraph",
+    question: "সোনারগাঁওয়ের পূর্বনাম কী?",
+    answer: "সুবর্ণগ্রাম।" },
+
+  { id: "job-2025-dc-netrokona-q35", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 35, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সাথে ভারতের সীমান্ত রাজ্য কতটি?",
+    answer: "৫টি।" },
+
+  { id: "job-2025-dc-netrokona-q36", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "gk-others", qno: 36, marks: 2, type: "paragraph",
+    question: "UNCTAD এর পূর্ণরূপ কী?",
+    answer: "United Nations Conference on Trade and Development" },
+
+  { id: "job-2025-dc-netrokona-q37", examId: "job-2025-dc-netrokona", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 37, marks: 2, type: "paragraph",
+    question: "নেত্রকোণা জেলার কতটি উপজেলা ও কয়টি পৌরসভা আছে?",
+    answer: "১০ উপজেলা ও ৫টি পৌরসভা।" },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বস্ত্র অধিদপ্তর — অফিস সহায়ক
+  // id prefix: job-2025-textile-office-sohayok
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-textile-office-sohayok-q01", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 3, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["ষষ্ঠ", "ষষ্ + থ"],
+      ["পরস্পর", "পর + পর"],
+      ["মনীষা", "মনস্ + ঈষা"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q02", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 2, marks: 3, type: "idiom",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", phrase: "উপকারীর অপকার করে যে", meaning: "কৃতঘ্ন" },
+      { label: "খ", phrase: "আয় বুঝে ব্যয় করে যে", meaning: "মিতব্যয়ী" },
+      { label: "গ", phrase: "হনন করার ইচ্ছা", meaning: "জিঘাংসা" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q03", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "সমাস", qno: 3, marks: 2, type: "table",
+    question: "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    columns: ["শব্দ", "ব্যাসবাক্য", "সমাসের নাম"],
+    rows: [
+      ["বিষাদ সিন্ধু", "বিষাদ রূপ সিন্ধু", "রূপক কর্মধারয়"],
+      ["কানাকানি", "কানে কানে যে কথা", "ব্যতিহার বহুব্রীহি"],
+      ["পিতামাতা", "পিতা ও মাতা", "দ্বন্দ্ব সমাস"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q04", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 4, marks: 3, type: "sentence-change",
+    question: "শুদ্ধ করে লিখুন:",
+    parts: [
+      { label: "ক", original: "তিনি আরোগ্য হয়েছেন।", changed: "তিনি আরোগ্য লাভ করেছেন।" },
+      { label: "খ", original: "দৈন্যতা প্রশংসনীয় নয়।", changed: "দৈন্য/দীনতা প্রশংসনীয় নয়।" },
+      { label: "গ", original: "মিথ্যা বলা সমিচিন নয়।", changed: "মিথ্যা বলা সমীচীন নয়।" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q05", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 5, marks: 3, type: "idiom",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", phrase: "মাটির মানুষ", meaning: "নিরীহ ব্যক্তি" },
+      { label: "খ", phrase: "গড্ডলিকা প্রবাহ", meaning: "অন্ধ অনুকরণ" },
+      { label: "গ", phrase: "অরণ্যে রোদন", meaning: "নিষ্ফল আবেদন" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q06", examId: "job-2025-textile-office-sohayok", subject: "bangla", topic: "বিপরীত-শব্দ", qno: 6, marks: 4, type: "table",
+    question: "বিপরীত শব্দ লিখুন:",
+    columns: ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    rows: [
+      ["অমৃত", "গরল"],
+      ["অলীক", "সত্য"],
+      ["তক্কর", "সাধু"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q07", examId: "job-2025-textile-office-sohayok", subject: "bangla", qno: 7, marks: 4, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর দাও:",
+    parts: [
+      { label: "ক", q: "রবীন্দ্রনাথ ঠাকুর কোন কাব্যগ্রন্থের জন্য নোবেল পুরস্কার পান?", a: "গীতাঞ্জলি" },
+      { label: "খ", q: "'মেঘনাদবধ কাব্য' কার লেখা?", a: "মাইকেল মধুসূদন দত্ত" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q08", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "translation", qno: 8, marks: 6, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "যেমন কর্ম, তেমন ফল।", target: "As you sow, so you reap." },
+      { label: "খ", source: "আমি তোমার চিঠি পেয়েছি।", target: "I have received your letter." },
+      { label: "গ", source: "তিন দিন ধরে বৃষ্টি হচ্ছে।", target: "It has been raining for three days." },
+      { label: "ঘ", source: "রহিম পরীক্ষায় অংশগ্রহণ করবে।", target: "Rahim will appear for the examination." },
+      { label: "ঙ", source: "তুমি আসবে তো?", target: "Will you come?" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q09", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "fill-in-the-blanks", qno: 9, marks: 8, type: "fill-gaps",
+    question: "Fill in the gaps:",
+    parts: [
+      { sentence: "I want to live........ peace with you.", answer: "in" },
+      { sentence: "He is...... LLB.", answer: "an" },
+      { sentence: "I saw...... one-eyed man.", answer: "a" },
+      { sentence: "Ronaldo is....... better of the two footballers.", answer: "the" },
+      { sentence: "I went to Dhaka..... train.", answer: "by" }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q10", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "gender", qno: 10, marks: 5, type: "table",
+    question: "Change the gender:",
+    columns: ["Given Gender", "Opposite Gender"],
+    rows: [
+      ["Drone", "Bee"],
+      ["Fox", "Vixen"],
+      ["Nephew", "Niece"],
+      ["Dog", "Bitch"],
+      ["Lord", "Lady"]
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q11", examId: "job-2025-textile-office-sohayok", subject: "english", topic: "sentence-making", qno: 11, marks: 5, type: "idiom",
+    question: "Make sentences with the following idioms & phrases:",
+    parts: [
+      { label: "a", phrase: "For good", meaning: "চিরতরে", example: "He left the country for good." },
+      { label: "b", phrase: "Maiden Speech", meaning: "প্রথম বক্তব্য", example: "His maiden speech pleased all." },
+      { label: "c", phrase: "A slow coach", meaning: "অলস ব্যক্তি", example: "A slow coach can't shine in life." },
+      { label: "d", phrase: "Crying need", meaning: "অতি প্রয়োজনীয়", example: "Mass education is the crying need of Bangladesh." },
+      { label: "e", phrase: "Part and parcel", meaning: "অবিচ্ছেদ্য অংশ", example: "A library is part and parcel of a school." }
+    ] },
+
+  { id: "job-2025-textile-office-sohayok-q12", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "বীজগণিত", qno: 12, marks: 6, type: "math",
+    question: "x² - 8x - 20 কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ করুন।",
+    steps: [
+      "এখানে, x² - 8x - 20 = x² - 10x + 2x - 20 = x(x-10) + 2(x-10) = (x-10)(x+2)",
+      "ধরি, (x-10) = a, (x+2) = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² - {(a-b)/2}²",
+      "= {(x-10+x+2)/2}² - {(x-10-x-2)/2}²",
+      "= {(2x-8)/2}² - {(-12)/2}²",
+      "= (x-4)² - 6²"
+    ],
+    answer: "(x-4)² - 6²" },
+
+  { id: "job-2025-textile-office-sohayok-q13", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "জ্যামিতি", qno: 13, marks: 6, type: "math",
+    question: "একটি বর্গক্ষেত্রের পরিসীমা একটি আয়তক্ষেত্রের পরিসীমার সমান। আয়তক্ষেত্রটির দৈর্ঘ্য প্রস্থের ৩ গুণ এবং ক্ষেত্রফল ৯৭২ বর্গমিটার। বর্গক্ষেত্রের ক্ষেত্রফল নির্ণয় করুন।",
+    steps: [
+      "ধরি, আয়তক্ষেত্রের প্রস্থ = x মিটার ও দৈর্ঘ্য = 3x মিটার",
+      "প্রশ্নমতে, 3x² = 972 বা, x² = 324 ∴ x = 18",
+      "∴ প্রস্থ 18 মিটার, দৈর্ঘ্য = 3 × 18 = 54 মিটার",
+      "∴ আয়তক্ষেত্রের পরিসীমা = 2(দৈর্ঘ্য + প্রস্থ) = 2(54+18) মিটার = 144 মিটার",
+      "∴ বর্গের বাহুর দৈর্ঘ্য = 144/4 মিটার = 36 মিটার",
+      "বর্গক্ষেত্রের ক্ষেত্রফল = (36)² = 1296 বর্গ মিটার"
+    ],
+    answer: "১২৯৬ বর্গ মিটার।" },
+
+  { id: "job-2025-textile-office-sohayok-q14", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 14, marks: 6, type: "math",
+    question: "একটি পানির ট্যাংকে দুটি নল আছে। প্রথম নলটি খুলে দিলে ট্যাংকটি ২০ ঘণ্টায় পানিতে পূর্ণ হয়। দ্বিতীয় নল দ্বারা পূর্ণ ট্যাংক ৩০ ঘণ্টায় খালি হয়। দুইটি নল একসঙ্গে খুলে দিলে কত ঘণ্টায় ট্যাংকটি পূর্ণ হবে?",
+    steps: [
+      "প্রথম নল দ্বারা ২০ ঘণ্টায় পূর্ণ হয় ১ অংশ, সুতরাং ১ ঘণ্টায় পূর্ণ হয় ১/২০ অংশ",
+      "দ্বিতীয় নল দ্বারা ৩০ ঘণ্টায় খালি হয় ১ অংশ, সুতরাং ১ ঘণ্টায় খালি হয় ১/৩০ অংশ",
+      "উভয় নল একত্রে খুললে ১ ঘণ্টায় পূর্ণ হয় (১/২০ - ১/৩০) অংশ = (৩-২)/৬০ অংশ = ১/৬০ অংশ",
+      "১/৬০ অংশ পূর্ণ হয় ১ ঘণ্টায়, সুতরাং ১ অংশ পূর্ণ হয় ৬০ ঘণ্টায়"
+    ],
+    answer: "৬০ ঘণ্টা।" },
+
+  { id: "job-2025-textile-office-sohayok-q15", examId: "job-2025-textile-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 15, marks: 6, type: "math",
+    question: "পিতার বর্তমান বয়স পুত্রের বয়সের ৩ গুণ। ৫ বছর আগে পিতার বয়স পুত্রের বয়সের ৪ গুণ ছিল। পিতা ও পুত্রের বর্তমান বয়স কত?",
+    steps: [
+      "মনে করি, পুত্রের বর্তমান বয়স x বছর, পিতার বর্তমান বয়স 3x বছর",
+      "প্রশ্নমতে, 4(x-5) = 3x-5",
+      "বা, 4x-20 = 3x-5",
+      "∴ x = 15",
+      "সুতরাং পুত্রের বর্তমান বয়স ১৫ বছর, পিতার বর্তমান বয়স ৩ × ১৫ = ৪৫ বছর"
+    ],
+    answer: "পিতার বর্তমান বয়স ৪৫ বছর; পুত্রের বয়স ১৫ বছর।" },
+
+  { id: "job-2025-textile-office-sohayok-q16", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 16, marks: 2, type: "paragraph",
+    question: "ইউক্রেনের রাজধানীর নাম কি?",
+    answer: "কিয়েভ।" },
+
+  { id: "job-2025-textile-office-sohayok-q17", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "gk-others", qno: 17, marks: 2, type: "paragraph",
+    question: "ChatGPT কী?",
+    answer: "OpenAI কোম্পানি কর্তৃক তৈরিকৃত কৃত্রিম বুদ্ধিমত্তাভিত্তিক এক ধরণের চ্যাটবট।" },
+
+  { id: "job-2025-textile-office-sohayok-q18", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 18, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের প্রথম ভৌগোলিক নির্দেশক (GI) পণ্য কোনটি?",
+    answer: "জামদানি শাড়ি।" },
+
+  { id: "job-2025-textile-office-sohayok-q19", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 19, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের 'White Gold' হিসেবে পরিচিত কোনটি?",
+    answer: "চিংড়ি।" },
+
+  { id: "job-2025-textile-office-sohayok-q20", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 20, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের কোন জেলায় বেশি রেশম চাষ হয়?",
+    answer: "রাজশাহী।" },
+
+  { id: "job-2025-textile-office-sohayok-q21", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 21, marks: 2, type: "paragraph",
+    question: "বাংলাদেশের সাথে কোন দুই দেশের আন্তর্জাতিক সীমানা রয়েছে?",
+    answer: "ভারত ও মিয়ানমার।" },
+
+  { id: "job-2025-textile-office-sohayok-q22", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "gk-others", qno: 22, marks: 2, type: "paragraph",
+    question: "বিশ্ব মানবাধিকার দিবস কত তারিখে?",
+    answer: "১০ ডিসেম্বর।" },
+
+  { id: "job-2025-textile-office-sohayok-q23", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "আন্তর্জাতিক", qno: 23, marks: 2, type: "paragraph",
+    question: "OIC এর প্রধান কার্যালয় কোথায় অবস্থিত?",
+    answer: "জেদ্দা।" },
+
+  { id: "job-2025-textile-office-sohayok-q24", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বিজ্ঞান", qno: 24, marks: 2, type: "paragraph",
+    question: "বাষ্পীয় ইঞ্জিনের আবিষ্কারক কে?",
+    answer: "জেমস ওয়াট।" },
+
+  { id: "job-2025-textile-office-sohayok-q25", examId: "job-2025-textile-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 25, marks: 2, type: "paragraph",
+    question: "RMG এর পূর্ণরূপ কী?",
+    answer: "Ready Made Garments" },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বাংলাদেশ সুপ্রীম কোর্ট — অফিস সহকারী
+  // id prefix: job-2025-supreme-court-office-asst
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-supreme-court-office-asst-q01", examId: "job-2025-supreme-court-office-asst", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 8, type: "table",
+    question: "বাংলা ব্যাকরণ — সন্ধি বিচ্ছেদ ও অন্যান্য:",
+    columns: ["ক্রম", "প্রশ্ন", "উত্তর"],
+    rows: [
+      ["ক", "সন্ধি বিচ্ছেদ করুন: ষড়ানন", "ষট্ + আনন"],
+      ["খ", "ব্যাসবাক্যসহ সমাস নির্ণয় করুন: উপকথা", "কথার সদৃশ (অব্যয়ীভাব সমাস)"],
+      ["গ", "এককথায় প্রকাশ করুন: যে পরের গুণেও দোষ ধরে", "অসূয়ক"],
+      ["ঘ", "বাগধারাটির অর্থ লিখুন: জড়ভরত", "অকর্মণ্য ব্যক্তি"],
+      ["ঙ", "শুদ্ধ করে লিখুন: ইক্ষুর চারা বপণ করা হলো।", "ইক্ষুর চারা রোপণ করা হলো"]
+    ] },
+
+  { id: "job-2025-supreme-court-office-asst-q02", examId: "job-2025-supreme-court-office-asst", subject: "bangla", qno: 2, marks: 5, type: "short-qa",
+    question: "সংক্ষেপে উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "'মৌরীফুল' গল্পগ্রন্থ কার রচনা?", a: "বিভূতিভূষণ বন্দ্যোপাধ্যায়" },
+      { label: "খ", q: "মনসামঙ্গল কাব্যের আদি কবি কে?", a: "কানা হরিদত্ত" },
+      { label: "গ", q: "'আমি কষ্টহীনদের কষ্টস্বর, আশাহীনদের আশা' উক্তিটি কোন প্রবন্ধের?", a: "আমার ভাষা (কাজী নজরুল ইসলাম)" },
+      { label: "ঘ", q: "বাংলা সাহিত্যে 'মৌমাছি' ছদ্মনাম কার?", a: "বিমল ঘোষ" },
+      { label: "ঙ", q: "'উমা' ও 'প্যারীমোহন' রবীন্দ্রনাথ ঠাকুরের কোন গল্পের চরিত্র?", a: "খাতা" }
+    ] },
+
+  { id: "job-2025-supreme-court-office-asst-q03", examId: "job-2025-supreme-court-office-asst", subject: "bangla", qno: 3, marks: 5, type: "letter",
+    question: "মনে করুন আপনার নাম 'জাহিদ' এবং বয়স ৩৫ বছর। আপনি হাইকোর্ট বিভাগের একজন অফিস সহকারী। সম্প্রতি হাইকোর্ট বিভাগের 'ব্যক্তিগত কর্মকর্তা' পদে সরাসরি নিয়োগের নিমিত্তে নিয়োগ বিজ্ঞপ্তি প্রকাশিত হয়েছে। আপনি উক্ত পদে পরীক্ষায় অংশগ্রহণের অনুমতি চেয়ে উপযুক্ত কর্তৃপক্ষ বরাবর একটি আবেদনপত্র লিখুন।",
+    letter: {
+      to: "উপযুক্ত কর্তৃপক্ষ\nবাংলাদেশ সুপ্রীম কোর্ট\nঢাকা।",
+      subject: "'ব্যক্তিগত কর্মকর্তা' পদে পরীক্ষায় অংশগ্রহণের অনুমতির জন্য আবেদন।",
+      body: "সবিনয় নিবেদন এই যে, আমি জাহিদ, বয়স ৩৫ বছর, হাইকোর্ট বিভাগের একজন কর্মরত অফিস সহকারী। সম্প্রতি হাইকোর্ট বিভাগের 'ব্যক্তিগত কর্মকর্তা' পদে সরাসরি নিয়োগের বিজ্ঞপ্তি প্রকাশিত হয়েছে। আমি উক্ত পদের জন্য প্রয়োজনীয় যোগ্যতা সম্পন্ন এবং আগ্রহী।\n\nঅতএব, বিনীত অনুরোধ এই যে, আমাকে উক্ত পদের নিয়োগ পরীক্ষায় অংশগ্রহণের অনুমতি প্রদান করতে আপনার মর্জি হয়।",
+      closing: "বিনীত নিবেদক,",
+      sender: "জাহিদ\nঅফিস সহকারী, হাইকোর্ট বিভাগ"
+    } },
+
+  { id: "job-2025-supreme-court-office-asst-q04", examId: "job-2025-supreme-court-office-asst", subject: "english", topic: "translation", qno: 4, marks: 5, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তিনি সময়মতো কাজটি শেষ করেছেন।", target: "He has finished the work on time." },
+      { label: "খ", source: "তিনি হাইকোর্ট বিভাগের একজন অফিস সহকারী।", target: "He is an office Assistant in the High Court Department." },
+      { label: "গ", source: "কাপড়টির রং পাকা।", target: "The cloth is color fast." },
+      { label: "ঘ", source: "মন্ত্রের সাধন কিংবা শরীর পাতন।", target: "Do or die." },
+      { label: "ঙ", source: "ছেলেটি হাড়ে হাড়ে দুষ্ট।", target: "The boy is wicked to the backbone." }
+    ] },
+
+  { id: "job-2025-supreme-court-office-asst-q05", examId: "job-2025-supreme-court-office-asst", subject: "english", topic: "grammar", qno: 5, marks: 5, type: "short-qa",
+    question: "Grammar and literature:",
+    parts: [
+      { label: "a", q: "Write the meaning of the phrase: Bon Voyage.", a: "যাত্রা শুভ হোক" },
+      { label: "b", q: "Correct the sentence: Each of the candidates have submitted their forms.", a: "Each of the candidates has submitted their forms." },
+      { label: "c", q: "Write the verb form of 'Registar'.", a: "Register" },
+      { label: "d", q: "Change the voice: Do it.", a: "Let it be done." },
+      { label: "e", q: "Who wrote 'The Rime of the Ancient Mariner'?", a: "S.T. Coleridge" }
+    ] },
+
+  { id: "job-2025-supreme-court-office-asst-q06", examId: "job-2025-supreme-court-office-asst", subject: "english", topic: "paragraph", qno: 6, marks: 5, type: "paragraph",
+    question: "Write a paragraph on 'Earthquake threat in Dhaka city'",
+    answer: "Dhaka city faces a serious earthquake threat due to its location near active fault lines and its dense, poorly planned infrastructure. Many old buildings in Dhaka were not constructed following proper building codes, making them highly vulnerable to collapse during a strong earthquake. Experts warn that a major earthquake could cause massive destruction and loss of life in the city because of overcrowding and lack of open spaces for evacuation. To reduce this risk, the government should strictly enforce building codes, conduct regular safety inspections, and raise public awareness about earthquake preparedness." },
+
+  { id: "job-2025-supreme-court-office-asst-q07", examId: "job-2025-supreme-court-office-asst", subject: "math", topic: "বীজগণিত", qno: 7, marks: 10, type: "math",
+    question: "উৎপাদকে বিশ্লেষণ করুন: a² − b² − 2bc − c² + a − b − c",
+    steps: [
+      "a² − b² − 2bc − c² + a − b − c",
+      "= a² − (b² + 2bc + c²) + 1(a − b − c)",
+      "= (a)² − (b+c)² + 1(a − b − c)",
+      "= {a + (b+c)}{a − (b+c)} + 1(a − b − c)",
+      "= (a+b+c)(a−b−c) + 1(a−b−c)",
+      "= (a−b−c)(a+b+c+1)"
+    ],
+    answer: "(a−b−c)(a+b+c+1)" },
+
+  { id: "job-2025-supreme-court-office-asst-q08", examId: "job-2025-supreme-court-office-asst", subject: "math", topic: "পাটিগণিত", qno: 8, marks: 10, type: "math",
+    question: "কোন একটি পণ্য উৎপাদনকারী ২০% লাভে পুচরা বিক্রেতার নিকট বিক্রয় করেন। খুচরা বিক্রেতা ২০% লাভে ভোক্তার নিকট বিক্রয় করেন। উৎপাদন খরচ ১০০ টাকা হলে ভোক্তা কত টাকায় পণ্যটি কিনতে পারবেন?",
+    steps: [
+      "২০% লাভে উৎপাদনকারীর বিক্রয়মূল্য = ১২০ টাকা (ক্রয়মূল্য ১০০ টাকা হলে)",
+      "উৎপাদনকারীর বিক্রয়মূল্যই পাইকারি বিক্রেতার ক্রয়মূল্য = ১২০ টাকা",
+      "২০% লাভে খুচরা বিক্রেতার বিক্রয়মূল্য: ক্রয়মূল্য ১০০ টাকা হলে বিক্রয়মূল্য ১২০ টাকা",
+      "ক্রয়মূল্য ১২০ টাকা হলে বিক্রয়মূল্য = (১২০ × ১২০)/১০০ = ১৪৪ টাকা"
+    ],
+    answer: "ভোক্তা ১৪৪ টাকায় পণ্যটি কিনতে পারবেন।" },
+
+  { id: "job-2025-supreme-court-office-asst-q09", examId: "job-2025-supreme-court-office-asst", subject: "general-knowledge", topic: "gk-others", qno: 9, marks: 12, type: "short-qa",
+    question: "সংক্ষেপে উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "থাইল্যান্ডের মুদ্রার নাম কী?", a: "বাথ" },
+      { label: "খ", q: "'ভবদহ বিল' কোন জেলায় অবস্থিত?", a: "যশোর" },
+      { label: "গ", q: "'ফ্লোটিলা' শব্দের অর্থ কী?", a: "ছোট ছোট জাহাজের নৌবহর" },
+      { label: "ঘ", q: "পৃথিবীর কোন শহর দুটি মহাদেশে অবস্থিত?", a: "ইস্তাম্বুল" },
+      { label: "ঙ", q: "'সলভওয়্যার' কী?", a: "নারীদের সুরক্ষার ডিভাইস (উদ্ভাবক- শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের শিক্ষার্থীরা)" },
+      { label: "চ", q: "নির্বাচন পদ্ধতিতে আলোচিত PR এর পূর্ণরূপ কী?", a: "Proportional representation" },
+      { label: "ছ", q: "সার্ক কত সালে প্রতিষ্ঠিত হয়?", a: "১৯৮৫ সালে" },
+      { label: "জ", q: "বাংলাদেশ সুপ্রীম কোর্ট এর কয়টি বিভাগ রয়েছে?", a: "২টি" },
+      { label: "ঝ", q: "বাংলাদেশে স্টারলিংক ইন্টারনেট কত তারিখে পরীক্ষামূলকভাবে যাত্রা শুরু করে?", a: "৯ এপ্রিল, ২০২৫ সালে (আনুষ্ঠানিক যাত্রা ২০ মে, ২০২৫)" },
+      { label: "ঞ", q: "বাংলাদেশের প্রথম এভারেস্টজয়ী নারীর নাম কী?", a: "নিশাত মজুমদার" }
+    ] },
+
+  { id: "job-2025-supreme-court-office-asst-q10", examId: "job-2025-supreme-court-office-asst", subject: "general-knowledge", topic: "gk-others", qno: 10, marks: 5, type: "paragraph",
+    question: "সংক্ষেপে উত্তর লিখুন: বাংলাদেশ সুপ্রীম কোর্ট এর কয়টি বিভাগ রয়েছে?",
+    answer: "২টি।" },
+
+  { id: "job-2025-supreme-court-office-asst-q11", examId: "job-2025-supreme-court-office-asst", subject: "general-knowledge", topic: "gk-others", qno: 11, marks: 10, type: "paragraph",
+    question: "টীকা লিখুন: বিশ্বজুড়ে সংঘাত ও শান্তি প্রক্রিয়া।",
+    answer: "বিশ্বজুড়ে সংঘাত ও শান্তি প্রক্রিয়া বলতে জাতিগত, রাজনৈতিক ও ধর্মীয় বিভেদ থেকে সৃষ্ট সহিংসতা মোকাবিলা করে আলোচনা, কূটনীতি ও ন্যায়বিচারের মাধ্যমে স্থিতিশীলতা প্রতিষ্ঠার বৈশ্বিক প্রচেষ্টাকে বোঝায়। বর্তমানে অধিকাংশ সংঘাতই রাষ্ট্রের অভ্যন্তরে সংঘটিত হচ্ছে, যার পেছনে দারিদ্র্য, বৈষম্য, মানবাধিকার লঙ্ঘন, দুর্বল শাসনব্যবস্থা, জলবায়ু পরিবর্তন ও সম্পদ নিয়ে প্রতিযোগিতা গুরুত্বপূর্ণ ভূমিকা রাখছে। এসব সংঘাত মানুষের জীবন ও উন্নয়নের জন্য বড় হুমকি সৃষ্টি করেছে। অন্যদিকে, জাতিসংঘ ও বিভিন্ন আন্তর্জাতিক সংস্থা শান্তিরক্ষা মিশন, শান্তি আলোচনা ও শান্তি বিনির্মাণ কার্যক্রমের মাধ্যমে সংঘাত নিরসনের চেষ্টা করছে। তবে শান্তি প্রক্রিয়া প্রায়শই দীর্ঘ, জটিল ও চ্যালেঞ্জিং হয়, তাই টেকসই শান্তি প্রতিষ্ঠার জন্য অন্তর্ভুক্তিমূলক অংশগ্রহণ, ন্যায়বিচার ও সহযোগিতার ওপর বিশেষ গুরুত্ব দেওয়া জরুরি।" },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জেলা প্রশাসকের কার্যালয়, লালমনিরহাট — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক
+  // id prefix: job-2025-dc-lalmonirhat
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-dc-lalmonirhat-q01", examId: "job-2025-dc-lalmonirhat", subject: "bangla", qno: 1, marks: 5, type: "idiom",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", phrase: "কান পাতলা", meaning: "সহজেই বিশ্বাসপ্রবণ" },
+      { label: "খ", phrase: "বালির বাঁধ", meaning: "ক্ষণস্থায়ী বস্তু" },
+      { label: "গ", phrase: "কানে তুলো দেওয়া", meaning: "ক্ষেপক্ষেপ না করা" },
+      { label: "ঘ", phrase: "শাপে বর", meaning: "অনিষ্টেই ইষ্ট লাভ" },
+      { label: "ঙ", phrase: "সোনার পাথর বাটি", meaning: "অলীক বস্তু" }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q02", examId: "job-2025-dc-lalmonirhat", subject: "bangla", qno: 2, marks: 5, type: "idiom",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", phrase: "ঘোড়ার ডাক", meaning: "হ্রেষা" },
+      { label: "খ", phrase: "যার স্ত্রী মারা গিয়েছে", meaning: "বিপত্নীক" },
+      { label: "গ", phrase: "যে নারীর এখনো বিয়ে হয়নি", meaning: "কুমারী" },
+      { label: "ঘ", phrase: "বনের আগুন", meaning: "দাবানল" },
+      { label: "ঙ", phrase: "জলে ও স্থলে চরে যে", meaning: "উভচর" }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q03", examId: "job-2025-dc-lalmonirhat", subject: "bangla", topic: "কারক", qno: 3, marks: 5, type: "table",
+    question: "কারক ও বিভক্তি নির্ণয় করুন:",
+    columns: ["বাক্য", "কারক ও বিভক্তি"],
+    rows: [
+      ["জল পড়ে পাতা নড়ে", "কর্তায় শূন্য"],
+      ["আকাশে আজ অনেক তারা উঠেছে", "অধিকরণে ৭মী"],
+      ["তারা সবাই মিলে গল্প করছে", "কর্মকারকে শূন্য"],
+      ["এ কলমে ভাল লেখা যায় না", "করণে ৭মী"],
+      ["ভিক্ষা দাও দুয়ারে ভিক্ষুক", "সম্প্রদানে শূন্য"]
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q04", examId: "job-2025-dc-lalmonirhat", subject: "bangla", qno: 4, marks: 5, type: "paragraph",
+    question: "একটি অনুচ্ছেদ লিখুন: উত্তরবঙ্গের কৃষিতে লালমনিরহাটের অবদান।",
+    answer: "লালমনিরহাট জেলা উত্তরবঙ্গের একটি গুরুত্বপূর্ণ কৃষিপ্রধান জেলা। তিস্তা নদীবিধৌত এই জেলার উর্বর পলিমাটিতে ধান, পাট, তামাক, ভুট্টা ও বিভিন্ন সবজি ব্যাপকভাবে উৎপাদিত হয়। এখানকার কৃষকরা আধুনিক কৃষিপ্রযুক্তি ব্যবহার করে ফসলের উৎপাদন বৃদ্ধি করে চলেছেন। তিস্তা সেচ প্রকল্পের মাধ্যমে সেচ ব্যবস্থার উন্নতি হওয়ায় ফসল উৎপাদন আরও বৃদ্ধি পেয়েছে। এছাড়া এই জেলার তামাক চাষ সারাদেশে সুপরিচিত।" },
+
+  { id: "job-2025-dc-lalmonirhat-q05", examId: "job-2025-dc-lalmonirhat", subject: "english", topic: "sentence-correction", qno: 5, marks: 5, type: "sentence-change",
+    question: "Correct the following sentences:",
+    parts: [
+      { label: "a", original: "Time and tide waits for none.", changed: "Time and tide wait for none." },
+      { label: "b", original: "Masuma sing well always.", changed: "Masuma always sings well." },
+      { label: "c", original: "He is addicted with gambling.", changed: "He is addicted to gambling." },
+      { label: "d", original: "English is a famous nation.", changed: "The English are a famous nation." },
+      { label: "e", original: "The boy was sunk.", changed: "The boy was drowned." }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q06", examId: "job-2025-dc-lalmonirhat", subject: "english", topic: "sentence-making", qno: 6, marks: 5, type: "idiom",
+    question: "Make Sentences with following words:",
+    parts: [
+      { label: "a", phrase: "Run away", meaning: "পালিয়ে যাওয়া", example: "He ran away seeing me." },
+      { label: "b", phrase: "Do or die", meaning: "প্রাণপণ চেষ্টা করা", example: "Do or die, you have to win." },
+      { label: "c", phrase: "In a nutshell", meaning: "সংক্ষেপে", example: "Tell the story in a nutshell." },
+      { label: "d", phrase: "To and fro", meaning: "এদিক-ওদিক", example: "Do not walk to and fro" },
+      { label: "e", phrase: "Fresh blood", meaning: "নতুন সদস্য", example: "The Company needs fresh blood." }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q07", examId: "job-2025-dc-lalmonirhat", subject: "english", topic: "grammar", qno: 7, marks: 10, type: "sentence-change",
+    question: "Change the voice:",
+    parts: [
+      { label: "a", original: "They are playing football in the field.", changed: "Football is being played by them in the field." },
+      { label: "b", original: "Test the data.", changed: "Let the data be tested." },
+      { label: "c", original: "We are taught English by Rahim.", changed: "Rahim teaches us English." },
+      { label: "d", original: "It was informed by the media men.", changed: "The media men informed it." },
+      { label: "e", original: "You will do the work within two days.", changed: "The work will be done by you within two days." }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q08", examId: "job-2025-dc-lalmonirhat", subject: "english", topic: "paragraph", qno: 8, marks: 10, type: "paragraph",
+    question: "Write a paragraph on \"Unemployment\"",
+    answer: "Unemployment is a serious social and economic problem that occurs when people who are able and willing to work cannot find suitable jobs. It affects not only individuals but also families and the overall development of a country. Unemployment leads to poverty, frustration, and sometimes crime, as people struggle to meet their basic needs. Rapid population growth, lack of education, and limited job opportunities are some of the main causes of unemployment. To reduce unemployment, the government should create more job opportunities, promote skill-based education and encourage industrial and self-employment activities." },
+
+  { id: "job-2025-dc-lalmonirhat-q09", examId: "job-2025-dc-lalmonirhat", subject: "math", topic: "পাটিগণিত", qno: 9, marks: 6, type: "math",
+    question: "সরল করুন: (৫+৩)৪ × ৪ ÷ ২(২+২)",
+    steps: [
+      "(৫+৩)৪ × ৪ ÷ ২(২+২)",
+      "= ৮৪ × ৪ ÷ ২(৪)",
+      "= ৮ × ৮ × ৪ ÷ ৮",
+      "= ১০২৪"
+    ],
+    answer: "১০২৪" },
+
+  { id: "job-2025-dc-lalmonirhat-q10", examId: "job-2025-dc-lalmonirhat", subject: "math", topic: "বীজগণিত", qno: 10, marks: 6, type: "math",
+    question: "উৎপাদকে বিশ্লেষণ করুন: ক) a⁴ − b² + 2b − 1  খ) 9a² + 9ab + 2b²",
+    steps: [
+      "ক) a⁴ − b² + 2b − 1 = a⁴ − (b² − 2b + 1) = (a²)² − (b−1)² = {a²+(b−1)}{a²−(b−1)} = (a²+b−1)(a²−b+1)",
+      "খ) 9a² + 9ab + 2b² = 9a² + 6ab + 3ab + 2b² = 3a(3a+b) + b(3a+2b) = (3a+2b)(3a+b)"
+    ],
+    answer: "ক) (a²+b−1)(a²−b+1)   খ) (3a+2b)(3a+b)" },
+
+  { id: "job-2025-dc-lalmonirhat-q11", examId: "job-2025-dc-lalmonirhat", subject: "math", topic: "পাটিগণিত", qno: 11, marks: 8, type: "math",
+    question: "একটি চৌবাচ্চায় তিনটি নল আছে। প্রথম ও দ্বিতীয় নল দ্বারা যথাক্রমে ৩০ মিনিট ও ৪০ মিনিটে চৌবাচ্চাটি পূর্ণ হয়। তৃতীয় নল দ্বারা পূর্ণ চৌবাচ্চাটি ২০ মিনিটে খালি হয়। তিনটি নল একসাথে চালু করলে চৌবাচ্চাটি পূর্ণ হতে কত সময় লাগবে?",
+    steps: [
+      "১ম নল দ্বারা, ৩০ মিনিটে পূর্ণ হয় ১ অংশ, সুতরাং ১ মিনিটে পূর্ণ হয় ১/৩০ অংশ",
+      "২য় নল দ্বারা, ৪০ মিনিটে পূর্ণ হয় ১ অংশ, সুতরাং ১ মিনিটে পূর্ণ হয় ১/৪০ অংশ",
+      "৩য় নল দ্বারা, ২০ মিনিটে খালি হয় ১ অংশ, সুতরাং ১ মিনিটে খালি হয় ১/২০ অংশ",
+      "তিনটি নল একসঙ্গে খুলে দিলে, ১ মিনিটে পূর্ণ হয় (১/৩০ + ১/৪০ − ১/২০) অংশ = ১/১২০ অংশ",
+      "১/১২০ অংশ পূর্ণ হয় ১ মিনিটে, সুতরাং ১ অংশ পূর্ণ হয় ১২০ মিনিটে"
+    ],
+    answer: "১২০ মিনিট।" },
+
+  { id: "job-2025-dc-lalmonirhat-q12", examId: "job-2025-dc-lalmonirhat", subject: "bangla", qno: 12, marks: 5, type: "short-qa",
+    question: "সংজ্ঞা লিখুন:",
+    parts: [
+      { label: "ক", q: "সন্নিহিত কোণ কাকে বলে?", a: "দুটি কোণের একটি সাধারণ বাহু ও একই শীর্ষ বিন্দু থাকলে তাদের পরস্পরকে সন্নিহিত কোণ বলে।" },
+      { label: "খ", q: "বিপ্রতীপ কোণ কাকে বলে?", a: "দুটি কোণের একটির বাহুদ্বয় অপরটির বাহুদ্বয়ের বিপরীত রশ্মি হলে, কোণ দুটিকে বিপ্রতীপ কোণ বলে।" }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q13", examId: "job-2025-dc-lalmonirhat", subject: "math", topic: "জ্যামিতি", qno: 13, marks: 5, type: "paragraph",
+    question: "পিথাগোরাসের সূত্রটি চিত্রসহ বর্ণনা করুন।",
+    answer: "কোনো একটি সমকোণী ত্রিভুজের অতিভুজের উপর অঙ্কিত বর্গক্ষেত্রের ক্ষেত্রফল ঐ ত্রিভুজের অপর দুই বাহুর উপর অঙ্কিত বর্গক্ষেত্রদ্বয়ের ক্ষেত্রফলের সমষ্টির সমান। চিত্র অনুসারে, অতিভুজ a এবং অপর দুই বাহু b ও c এক্ষেত্রে পিথাগোরাসের সূত্র: a² = b² + c²" },
+
+  { id: "job-2025-dc-lalmonirhat-q14", examId: "job-2025-dc-lalmonirhat", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 14, marks: 12, type: "short-qa",
+    question: "নিম্নের প্রশ্নের উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "রংপুর বিভাগে সংসদীয় আসন কয়টি?", a: "৩৩টি" },
+      { label: "খ", q: "কোন বস্তুকে সাদা দেখি কেন?", a: "সাদা বস্তু সব রং কে প্রতিফলিত করে।" },
+      { label: "গ", q: "বাতাসে অক্সিজেনের পরিমাণ শতকরা কত ভাগ?", a: "২০.৭১%" },
+      { label: "ঘ", q: "ইউরিয়া সার তৈরির কাঁচামাল কী?", a: "প্রাকৃতিক গ্যাস" },
+      { label: "ঙ", q: "উড়োজাহাজ কোন সংকর ধাতুর তৈরি?", a: "অ্যালুমিনিয়াম" },
+      { label: "চ", q: "এভিয়েশন বিশ্ববিদ্যালয় কোন জেলায়?", a: "লালমনিরহাট" },
+      { label: "ছ", q: "গাজী মিয়ার বস্তানি'র লেখক কে?", a: "মীর মশাররফ হোসেন" },
+      { label: "জ", q: "কালকূট কোন লেখকের ছদ্মনাম?", a: "সমরেশ বসু" },
+      { label: "ঝ", q: "উত্তরবঙ্গের গান কি নামে পরিচিত?", a: "ভাওয়াইয়া" },
+      { label: "ঞ", q: "আয়োডিনের অভাবে কোন রোগ হয়?", a: "গলগণ্ড" },
+      { label: "ট", q: "রাতকানা রোগ হয় কোন ভিটামিনের অভাবে?", a: "ভিটামিন 'এ'" },
+      { label: "ঠ", q: "বিশ্বের কোন শহরে জনসংখ্যা সবচেয়ে বেশি?", a: "জাকার্তা, ইন্দোনেশিয়া" }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q15", examId: "job-2025-dc-lalmonirhat", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 15, marks: 8, type: "short-qa",
+    question: "কম্পিউটার সংক্রান্ত নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "Save- এর জন্য সংক্ষিপ্ত Key কোনটি?", a: "Ctrl + S" },
+      { label: "খ", q: "ফাংশন 'কী' তে মোট কতটি কী আছে?", a: "১২টি (F1-F12)" },
+      { label: "গ", q: "LAN শব্দের পূর্ণরূপ কোনটি?", a: "Local Area Network" },
+      { label: "ঘ", q: "Page Break করার কী-বোর্ড কমান্ড কোনটি?", a: "Ctrl + Enter" },
+      { label: "ঙ", q: "এক স্থানের লেখা মুছে অন্য স্থানে নিতে হলে কী করতে হবে?", a: "Cut (Ctrl+X) করে Paste (Ctrl+V)" },
+      { label: "চ", q: "OMR এর পূর্ণরূপ কী?", a: "Optical Mark Recognition/Reader" },
+      { label: "ছ", q: "CPU এর পূর্ণরূপ কী?", a: "Central Processing Unit" },
+      { label: "জ", q: "মনিটর কোন ধরনের ডিভাইস?", a: "Output Device" },
+      { label: "ঝ", q: "USB এর পূর্ণরূপ কী?", a: "Universal Serial Bus" },
+      { label: "ঞ", q: "ইন্টারনেটের মাধ্যমে প্রদত্ত চিকিৎসা পদ্ধতিকে কি বলে?", a: "টেলিমেডিসিন (Telemedicine)" }
+    ] },
+
+  { id: "job-2025-dc-lalmonirhat-q16", examId: "job-2025-dc-lalmonirhat", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 16, marks: 8, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "রংপুর বিভাগে সংসদীয় আসন কয়টি?", a: "৩৩টি" },
+      { label: "খ", q: "উত্তরবঙ্গের গান কি নামে পরিচিত?", a: "ভাওয়াইয়া" },
+      { label: "গ", q: "আয়োডিনের অভাবে কোন রোগ হয়?", a: "গলগণ্ড" },
+      { label: "ঘ", q: "রাতকানা রোগ হয় কোন ভিটামিনের অভাবে?", a: "ভিটামিন 'এ'" },
+      { label: "ঙ", q: "বিশ্বের কোন শহরে জনসংখ্যা সবচেয়ে বেশি?", a: "জাকার্তা, ইন্দোনেশিয়া" },
+      { label: "চ", q: "ঢাকা শহরের বর্তমান জনসংখ্যা কত?", a: "৩ কোটি ৬৬ লাখ" },
+      { label: "ছ", q: "উত্তরা ইপিজেড কোন জেলায়?", a: "নীলফামারী" },
+      { label: "জ", q: "ডালিয়া রেস্ট হাউজ কোন উপজেলায়?", a: "হাতীবান্ধা, লালমনিরহাট" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বিমান বাহিনী সদর দপ্তর — অফিস সহায়ক ও বিভিন্ন
+  // id prefix: job-2025-air-force-office-sohayok
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-air-force-office-sohayok-q01", examId: "job-2025-air-force-office-sohayok", subject: "bangla", qno: 1, marks: 5, type: "idiom",
+    question: "বাগধারা অর্থসহ:",
+    parts: [
+      { label: "ক", phrase: "পটল তোলা", meaning: "মারা যাওয়া" },
+      { label: "খ", phrase: "অর্ধচন্দ্র", meaning: "গলাধাক্কা দেওয়া" },
+      { label: "গ", phrase: "অক্কা পাওয়া", meaning: "মারা যাওয়া" },
+      { label: "ঘ", phrase: "ঠোঁটকাটা", meaning: "স্পষ্টভাষী" },
+      { label: "ঙ", phrase: "ঘোড়ার ডিম", meaning: "অলীক বস্তু" }
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q02", examId: "job-2025-air-force-office-sohayok", subject: "bangla", topic: "সন্ধি", qno: 2, marks: 5, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["জনৈক", "জন + এক"],
+      ["বৃষ্টি", "বৃষ্ + তি"],
+      ["ক্ষুধার্ত", "ক্ষুধা + ঋত"],
+      ["মিথ্যুক", "মিথ্যা + উক"],
+      ["বিদ্যালয়", "বিদ্যা + আলয়"]
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q03", examId: "job-2025-air-force-office-sohayok", subject: "bangla", topic: "বিপরীত-শব্দ", qno: 3, marks: 5, type: "table",
+    question: "বিপরীত শব্দ লিখুন:",
+    columns: ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    rows: [
+      ["উচিত", "অনুচিত"],
+      ["আত্মীয়", "অনাত্মীয়"],
+      ["আস্থা", "অনাস্থা"],
+      ["ঐক্য", "অনৈক্য"],
+      ["কোমল", "কর্কশ"]
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q04", examId: "job-2025-air-force-office-sohayok", subject: "bangla", qno: 4, marks: 5, type: "idiom",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", phrase: "অন্য উপায় না থাকা", meaning: "অনন্যোপায়" },
+      { label: "খ", phrase: "আয় বুঝে ব্যয় করে যে", meaning: "মিতব্যয়ী" },
+      { label: "গ", phrase: "ক্ষমার যোগ্য", meaning: "ক্ষমার্হ" },
+      { label: "ঘ", phrase: "আকাশে চড়ে যে", meaning: "খেচর" },
+      { label: "ঙ", phrase: "যার কিছুই নেই", meaning: "হতসর্বস্ব" }
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q05", examId: "job-2025-air-force-office-sohayok", subject: "english", topic: "translation", qno: 5, marks: 5, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "সদা সত্য কথা বল।", target: "Always speak the truth." },
+      { label: "খ", source: "আজ বৃষ্টি হবে।", target: "It will rain today." },
+      { label: "গ", source: "বিমান আকাশে উড়ে।", target: "The airplane flies in the sky." },
+      { label: "ঘ", source: "লোকটি কী অসুস্থ?", target: "Is the man sick?" },
+      { label: "ঙ", source: "সে স্কুলে যায়।", target: "He goes to school." }
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q06", examId: "job-2025-air-force-office-sohayok", subject: "english", topic: "gender", qno: 6, marks: 5, type: "table",
+    question: "Change the Gender:",
+    columns: ["Masculine", "Feminine"],
+    rows: [
+      ["Husband", "Wife"],
+      ["Man", "Woman"],
+      ["Hero", "Heroine"],
+      ["King", "Queen"],
+      ["Ram", "Ewe"]
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q07", examId: "job-2025-air-force-office-sohayok", subject: "english", topic: "number", qno: 7, marks: 5, type: "table",
+    question: "Change the Number:",
+    columns: ["Singular", "Plural"],
+    rows: [
+      ["Calf", "Calves"],
+      ["Horse", "Horses"],
+      ["Woman", "Women"],
+      ["Knife", "Knives"],
+      ["Pen", "Pens"]
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q08", examId: "job-2025-air-force-office-sohayok", subject: "english", qno: 8, marks: 5, type: "idiom",
+    question: "Write the Bangla meaning:",
+    parts: [
+      { label: "a", phrase: "Camel", meaning: "উট" },
+      { label: "b", phrase: "Painter", meaning: "চিত্রশিল্পী" },
+      { label: "c", phrase: "Ocean", meaning: "মহাসাগর" },
+      { label: "d", phrase: "Flower", meaning: "ফুল" },
+      { label: "e", phrase: "Waiter", meaning: "বেয়ারা/ খাদ্য পরিবেশক" }
+    ] },
+
+  { id: "job-2025-air-force-office-sohayok-q09", examId: "job-2025-air-force-office-sohayok", subject: "math", topic: "জ্যামিতি", qno: 9, marks: 8, type: "math",
+    question: "একটি আয়তাকার ঘরের দৈর্ঘ্য প্রস্থের দ্বিগুণ। প্রস্থ যদি ১০ ফুট হয়, তবে ঘরের ক্ষেত্রফল কত?",
+    steps: [
+      "দেওয়া আছে, প্রস্থ ১০ ফুট সুতরাং দৈর্ঘ্য ২০ ফুট",
+      "ঘরের ক্ষেত্রফল = ১০ × ২০ = ২০০ বর্গফুট"
+    ],
+    answer: "২০০ বর্গফুট।" },
+
+  { id: "job-2025-air-force-office-sohayok-q10", examId: "job-2025-air-force-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 10, marks: 5, type: "math",
+    question: "৫/৮ × ২/১ × ৮/৫ = কত?",
+    steps: [
+      "৫/৮ × ২/১ × ৮/৫"
+    ],
+    answer: "৫" },
+
+  { id: "job-2025-air-force-office-sohayok-q11", examId: "job-2025-air-force-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 11, marks: 6, type: "math",
+    question: "১ মেট্রিক টন চাল ২৫ শ্রমিকের মধ্যে সমান ভাগে ভাগ করে দিলে প্রত্যেকে কি পরিমাণ চাল পাবে?",
+    steps: [
+      "আমরা জানি, ১ মেট্রিক টন = ১০০০ কেজি",
+      "২৫ জন শ্রমিক পায় ১০০০ কেজি",
+      "১ জন শ্রমিক পায় ১০০০/২৫ = ৪০ কেজি"
+    ],
+    answer: "৪০ কেজি।" },
+
+  { id: "job-2025-air-force-office-sohayok-q12", examId: "job-2025-air-force-office-sohayok", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 12, marks: 10, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "বাংলাদেশ বিমান বাহিনী কোন সালে প্রতিষ্ঠিত হয়?", a: "২৮ সেপ্টেম্বর ১৯৭১" },
+      { label: "খ", q: "বাংলাদেশ বিমান বাহিনী প্রধানের নাম লিখুন?", a: "এয়ার ভাইস মার্শাল হাসান মাহমুদ খান" },
+      { label: "গ", q: "বাংলাদেশের কোন জেলায় বেশি বৃষ্টিপাত হয়?", a: "সিলেট।" },
+      { label: "ঘ", q: "কোন তারিখে আন্তর্জাতিক মাতৃভাষা দিবস পালিত হয়?", a: "২১শে ফেব্রুয়ারি" },
+      { label: "ঙ", q: "পদ্মা সেতুর দৈর্ঘ্য কত?", a: "৬.১৫ কিলোমিটার" },
+      { label: "চ", q: "বাংলাদেশের জেলা কয়টি?", a: "৬৪টি।" },
+      { label: "ছ", q: "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?", a: "নিউইয়র্ক, যুক্তরাষ্ট্র।" },
+      { label: "জ", q: "বাংলাদেশের পতাকার অনুপাত কত?", a: "১০:৬ বা ৫:৩।" },
+      { label: "ঝ", q: "বাংলাদেশের জাতীয় ফলের নাম কি?", a: "কাঁঠাল।" },
+      { label: "ঞ", q: "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র কোন জেলায় অবস্থিত?", a: "পাবনা।" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতাল — টেলিফোন অপারেটর
+  // id prefix: job-2025-heart-institute-telephone-op
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-heart-institute-telephone-op-q01", examId: "job-2025-heart-institute-telephone-op", subject: "bangla", topic: "সন্ধি", qno: 1, marks: 6, type: "table",
+    question: "সন্ধি বিচ্ছেদ করুন:",
+    columns: ["সন্ধি", "বিচ্ছেদ"],
+    rows: [
+      ["বাগদান", "বাক্ + দান"],
+      ["ষড়ঋতু", "ষট্ + ঋতু"],
+      ["উদ্যম", "উৎ + যম"],
+      ["দিগন্ত", "দিক্ + অন্ত"],
+      ["চিত্রার্কষণ", "চিত্র + আকর্ষণ"]
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q02", examId: "job-2025-heart-institute-telephone-op", subject: "bangla", qno: 2, marks: 6, type: "idiom",
+    question: "বাগধারার অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", phrase: "সোনায় সোহাগা", meaning: "উপযুক্ত মিলন" },
+      { label: "খ", phrase: "গোঁফ খেজুরে", meaning: "অলস ব্যক্তি" },
+      { label: "গ", phrase: "উনপাঁজুরে", meaning: "দুর্বল ব্যক্তি" },
+      { label: "ঘ", phrase: "দুধের মাছি", meaning: "সুসময়ের বন্ধু" },
+      { label: "ঙ", phrase: "এলাহি কাণ্ড", meaning: "বিশাল ব্যাপার/আয়োজন" }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q03", examId: "job-2025-heart-institute-telephone-op", subject: "bangla", qno: 3, marks: 6, type: "table",
+    question: "শুদ্ধ বানান লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["মরিচীকা", "মরীচিকা"],
+      ["স্ববিশেষ", "সবিশেষ"],
+      ["জেষ্ঠা", "জ্যেষ্ঠ"],
+      ["দৈনতা", "দীনতা/দৈন্য"],
+      ["জীবীকা", "জীবিকা"]
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q04", examId: "job-2025-heart-institute-telephone-op", subject: "bangla", topic: "কারক", qno: 4, marks: 6, type: "table",
+    question: "কারক ও বিভক্তি নির্ণয় করুন:",
+    columns: ["বাক্য", "কারক ও বিভক্তি"],
+    rows: [
+      ["গৃহহীনে গৃহ দাও", "সম্প্রদানে ৭মী"],
+      ["সহিদ অঙ্গে কাঁচা", "অধিকরণে ৭মী"],
+      ["বিপদে মোরে রক্ষা কর", "অপাদানে ৭মী"],
+      ["প্রাণপণে চেষ্টা কর", "করণে ৭মী"],
+      ["মাকে বড্ড ভয় পাই", "অপাদানে ২য়া"]
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q05", examId: "job-2025-heart-institute-telephone-op", subject: "english", topic: "translation", qno: 5, marks: 6, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "এখন চারটা বেজে পনেরো মিনিট।", target: "It is fifteen minutes past four now." },
+      { label: "খ", source: "গুড়ি গুড়ি বৃষ্টি হচ্ছে।", target: "It is drizzling." },
+      { label: "গ", source: "মেয়েটি হাসতে হাসতে ঘরে ঢুকলো।", target: "The girl entered the room laughing." },
+      { label: "ঘ", source: "সৎ ব্যক্তি সর্বত্র সম্মানিত।", target: "An honest person is honored everywhere" },
+      { label: "ঙ", source: "আমাকে এক গ্লাস পানি দাও।", target: "Give me a glass of water." }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q06", examId: "job-2025-heart-institute-telephone-op", subject: "english", topic: "grammar", qno: 6, marks: 10, type: "sentence-change",
+    question: "Change the voice:",
+    parts: [
+      { label: "a", original: "I shall do the work.", changed: "The work will be done by me." },
+      { label: "b", original: "Who will help you?", changed: "By whom will you be helped?" },
+      { label: "c", original: "Write the letter without any delay.", changed: "Let the letter be written without any delay." },
+      { label: "d", original: "He called it laurel.", changed: "It was called laurel by him." },
+      { label: "e", original: "Cricket was played by you.", changed: "You played cricket." }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q07", examId: "job-2025-heart-institute-telephone-op", subject: "english", topic: "fill-in-the-blanks", qno: 7, marks: 5, type: "fill-gaps",
+    question: "Fill in the blanks with preposition:",
+    parts: [
+      { sentence: "Nazrul can be compared.... Shelly.", answer: "with" },
+      { sentence: "This is the more in interesting ....... the two.", answer: "of" },
+      { sentence: "He married...... money.", answer: "for" },
+      { sentence: "He fell ...........the horse.", answer: "off" },
+      { sentence: "I am satisfied....... your behavior.", answer: "with" }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q08", examId: "job-2025-heart-institute-telephone-op", subject: "english", topic: "sentence-change", qno: 8, marks: 10, type: "sentence-change",
+    question: "Change the sentences as direction:",
+    parts: [
+      { label: "a", original: "Tea is the most popular drink. (Comparative)", changed: "Tea is more popular than any other drink." },
+      { label: "b", original: "Everybody wants friend. (Negative)", changed: "There is no body but wants friend." },
+      { label: "c", original: "What a pity! You have failed. (Assertive)", changed: "It is a great pity that you have failed." },
+      { label: "d", original: "They are peace loving (Complex)", changed: "They are the people who are peace loving." },
+      { label: "e", original: "Although I was ill, I attended the meeting (Simple)", changed: "In spite of my illness, I attended the meeting." }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q09", examId: "job-2025-heart-institute-telephone-op", subject: "english", topic: "sentence-making", qno: 9, marks: 5, type: "idiom",
+    question: "Make sentence with following words:",
+    parts: [
+      { label: "a", phrase: "All the same", meaning: "একই", example: "It is all the same to me whether you come or not." },
+      { label: "b", phrase: "Loud and clear", meaning: "স্পষ্টভাবে", example: "I heard you loud and clear." },
+      { label: "c", phrase: "Take liberties", meaning: "স্বাধীনতা হরণ করা", example: "We should not take liberties from anyone." },
+      { label: "d", phrase: "Read between the lines", meaning: "মধ্যবর্তীকে বুঝা", example: "Try to read between the lines of the letter" },
+      { label: "e", phrase: "At most", meaning: "সর্বাধিক হিসেবে/ বড় জোর", example: "At most, the work will take a week." }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q10", examId: "job-2025-heart-institute-telephone-op", subject: "math", topic: "জ্যামিতি", qno: 10, marks: 8, type: "math",
+    question: "৪০ মিটার দৈর্ঘ্য এবং ৩০ মিটার প্রস্থবিশিষ্ট একটি মাঠের ঠিক মাঝে আড়াআড়িভাবে ১.৫ মিটার প্রশস্ত দুইটি রাস্তা আছে। রাস্তা দুইটির মোট ক্ষেত্রফল কত?",
+    steps: [
+      "দৈর্ঘ্য বরাবর রাস্তাটির ক্ষেত্রফল = ৪০ × ১.৫ বর্গমিটার = ৬০ বর্গমিটার",
+      "প্রস্থ বরাবর রাস্তাটির ক্ষেত্রফল = (৩০ − ১.৫) × ১.৫ বর্গমিটার = ২৮.৫ × ১.৫ বর্গমিটার = ৪২.৭৫ বর্গমিটার",
+      "অতএব, রাস্তাদ্বয়ের ক্ষেত্রফল = (৬০ + ৪২.৭৫) বর্গমিটার = ১০২.৭৫ বর্গমিটার"
+    ],
+    answer: "রাস্তাদ্বয়ের মোট ক্ষেত্রফল ১০২.৭৫ বর্গমিটার।" },
+
+  { id: "job-2025-heart-institute-telephone-op-q11", examId: "job-2025-heart-institute-telephone-op", subject: "math", topic: "বীজগণিত", qno: 11, marks: 10, type: "math",
+    question: "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার অঙ্কদ্বয়ের সমষ্টির সাথে ৭ যোগ করলে যোগফল দশক স্থানীয় অঙ্কটির তিনগুণ হয়। কিন্তু সংখ্যাটি থেকে ১৮ বাদ দিলে অঙ্কদ্বয় স্থান পরিবর্তন করে। সংখ্যাটি নির্ণয় করুন।",
+    steps: [
+      "মনে করি, দুই অঙ্কবিশিষ্ট সংখ্যাটির একক স্থানীয় অঙ্ক x এবং দশক স্থানীয় অঙ্ক y।",
+      "∴ সংখ্যাটি = x + 10y",
+      "১ম শর্তানুসারে, x + y + 7 = 3y",
+      "বা, x + y − 3y = −7",
+      "বা, x − 2y = −7 ................. (1)",
+      "অঙ্কদ্বয় স্থান বিনিময় করলে পরিবর্তিত সংখ্যাটি হবে 10x + (y)",
+      "২য় শর্তানুসারে, x + 10y − 18 = y + 10x",
+      "বা, x + 10y − y − 10x = 18",
+      "বা, 9y − 9x = 18",
+      "বা, 9(y − x) = 18",
+      "বা, y − x = 18/9 = 2",
+      "∴ y − x = 2 ................. (2)",
+      "(1) ও (2) যোগ করে পাই, − y = −5",
+      "∴ y = 5",
+      "y-এর মান (1) নং-এ বসিয়ে পাই, x − 2×5 = −7",
+      "∴ x = 3",
+      "∴ নির্ণেয় সংখ্যাটি = x + 10y = 3 + 10×5 = 3 + 50 = 53"
+    ],
+    answer: "সংখ্যাটি ৫৩।" },
+
+  { id: "job-2025-heart-institute-telephone-op-q12", examId: "job-2025-heart-institute-telephone-op", subject: "math", topic: "বীজগণিত", qno: 12, marks: 8, type: "math",
+    question: "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?",
+    steps: [
+      "x³ + y³ + 12xy",
+      "= x³ + y³ + 3(x+y) × xy   [মান বসিয়ে]",
+      "= x³ + y³ + 3xy(x+y)",
+      "= (x+y)³",
+      "= (4)³",
+      "= 64 (Answer)"
+    ],
+    alternative: {
+      steps: [
+        "x³ + y³ + 12xy",
+        "= (x+y)³ − 3xy(x+y) + 12xy",
+        "= 4³ − 3.4.xy + 12xy",
+        "= 64 − 12xy + 12xy",
+        "= 64 (Answer)"
+      ],
+      answer: "৬৪"
+    },
+    answer: "৬৪" },
+
+  { id: "job-2025-heart-institute-telephone-op-q13", examId: "job-2025-heart-institute-telephone-op", subject: "math", topic: "বীজগণিত", qno: 13, marks: 10, type: "math",
+    question: "উৎপাদকে বিশ্লেষণ করুন: x³ + 6x²y + 11xy² + 6y³",
+    steps: [
+      "x³ + 6x²y + 11xy² + 6y³ = x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³",
+      "= (x + 2y)³ − y²(x + 2y)",
+      "= (x + 2y){(x+2y)² − y²}",
+      "= (x+2y)(x+2y+y)(x+2y−y)",
+      "= (x+2y)(x+3y)(x+y)"
+    ],
+    answer: "(x+y)(x+2y)(x+3y)" },
+
+  { id: "job-2025-heart-institute-telephone-op-q14", examId: "job-2025-heart-institute-telephone-op", subject: "general-knowledge", topic: "বাংলাদেশ", qno: 14, marks: 12, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    parts: [
+      { label: "ক", q: "'পুন্ড্রনগর' কোথায় অবস্থিত?", a: "বগুড়া" },
+      { label: "খ", q: "বাংলাদেশ ও মিয়ানমারকে বিভক্তকারী 'নাফ' নদীর দৈর্ঘ্য কত?", a: "৫৬ কিলোমিটার" },
+      { label: "গ", q: "'ঢাকা গেইট' কে নির্মাণ করেন?", a: "মীর জুমলা" },
+      { label: "ঘ", q: "'অপরাজেয় বাংলা'র ভাস্কর কে?", a: "সৈয়দ আব্দুল্লাহ খালিদ" },
+      { label: "ঙ", q: "টেস্ট ক্রিকেটে প্রথম বাংলাদেশী হিসেবে শততম টেস্ট খেলেন?", a: "মুশফিকুর রহিম" },
+      { label: "চ", q: "'ইরাটম' কি?", a: "উন্নত জাতের ধান" },
+      { label: "ছ", q: "ইনকা সভ্যতা কোন মহাদেশে বিরাজমান ছিল?", a: "দক্ষিণ আমেরিকা" },
+      { label: "জ", q: "জাতিসংঘ বিশ্ববিদ্যালয় কোন দেশে অবস্থিত?", a: "টোকিও, জাপান" },
+      { label: "ঝ", q: "UNHCR এর পূর্ণরূপ কি?", a: "United Nations Higher Commissioner for Refugees" }
+    ] },
+
+  { id: "job-2025-heart-institute-telephone-op-q15", examId: "job-2025-heart-institute-telephone-op", subject: "general-knowledge", topic: "gk-others", qno: 15, marks: 12, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    parts: [
+      { label: "ঞ", q: "বিশ্বের দীর্ঘতম রেলপথের নাম কি?", a: "ট্রান্স সাইবেরিয়ান" },
+      { label: "ট", q: "দ্বিতীয় বিশ্বযুদ্ধ শুরু হয় কোন সালে কোন তারিখে?", a: "১লা সেপ্টেম্বর ১৯৩৯" },
+      { label: "ঠ", q: "'গ্রাভস্লাম' শব্দটি কোন খেলার ক্ষেত্রে ব্যবহৃত হয়?", a: "টেনিস" },
+      { label: "ড", q: "পানামা খাল কোন কোন মহাসাগরকে যুক্ত করেছে?", a: "আটলান্টিক ও প্রশান্ত মহাসাগর" },
+      { label: "ঢ", q: "পেন্সিল তৈরিতে কোন গাছের কাঠ ব্যবহৃত হয়?", a: "ধুন্দল" },
+      { label: "ণ", q: "বাংলাদেশ ডাক বিভাগের স্লোগান কী?", a: "সেবাই আদর্শ" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন — অফিস সহায়ক
+  // id prefix: job-2025-judicial-service-office-sohayok
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-judicial-service-office-sohayok-q01", examId: "job-2025-judicial-service-office-sohayok", subject: "bangla", qno: 1, marks: 8, type: "paragraph",
+    question: "ভাব সম্প্রসারণ করুন: \"সত্য জুতার ফিতা বাঁধতে বাঁধতে মিথ্যা অর্ধেক পৃথিবী ঘুরে আসে।\"",
+    answer: "সম্প্রসারিত ভাব: এই প্রবাদটি সত্য ও মিথ্যার স্বভাব এবং তাদের গতির একটি বাস্তব ও গভীর চিত্র তুলে ধরে। এর মূল বক্তব্য হলো, সত্য প্রতিষ্ঠা করতে সময়, ধৈর্য ও প্রমাণের প্রয়োজন হয়, অথচ মিথ্যা খুব অল্প সময়েই মানুষের মধ্যে ছড়িয়ে পড়তে পারে। সত্যের প্রকৃতি ধীর ও স্থির। সত্যকে যাচাই করা, প্রমাণ হাজির করা এবং সকলের সামনে গ্রহণযোগ্য করে তোলার জন্য প্রস্তুতির প্রয়োজন হয়। অন্যদিকে, মিথ্যার কোনো শক্ত ভিত্তি নেই, কিন্তু এটি আকর্ষণীয় ও চটকদার হওয়ায় খুব সহজে মানুষের দৃষ্টি আকর্ষণ করে এবং দ্রুত ছড়িয়ে পড়ে। যদিও মিথ্যা দ্রুত ছড়িয়ে পড়ে, তবু তার স্থায়িত্ব খুব কম। সময়ের সঙ্গে সঙ্গে সত্য উদঘাটিত হয় এবং শেষ পর্যন্ত সত্যেরই জয় হয়। পরিশেষে বলা যায়, এই প্রবাদের মাধ্যমে সত্যের ধীরস্থির ও স্থায়ী রূপ এবং মিথ্যার দ্রুত কিন্তু ক্ষণস্থায়ী প্রকৃতির মধ্যেকার পার্থক্য স্পষ্টভাবে ফুটে উঠেছে।" },
+
+  { id: "job-2025-judicial-service-office-sohayok-q02", examId: "job-2025-judicial-service-office-sohayok", subject: "bangla", qno: 2, marks: 10, type: "short-qa",
+    question: "নিম্নের প্রশ্নগুলোর উত্তর লিখুন (যে-কোনো ১০টি):",
+    parts: [
+      { label: "ক", q: "বাংলা ভাষার শব্দ সম্ভার কয়টি শ্রেণিতে বিভক্ত ও কি কি?", a: "৫টি যথা: তৎসম, অর্ধ-তৎসম, তদ্ভব, দেশি ও বিদেশি।" },
+      { label: "খ", q: "স্বরধ্বনি ও ব্যঞ্জনধ্বনির পার্থক্য কোথায়?", a: "যে ধনি উচ্চারণের সময় মুখবিবরে বাতাস বাধাহীনভাবে বেরিয়ে আসে এবং অন্য কোন ধ্বনির সাহায্য লাগে না, তাকে স্বরধ্বনি বলে। অপরদিকে, যে ধনি উচ্চারণের সময় মুখবিবরে বাতাস বাধা পায় এবং স্বরধ্বনির সাহায্য ছাড়া উচ্চারণ করা যায় না, তাকে ব্যঞ্জনধ্বনি বলে।" },
+      { label: "গ", q: "দুটি নিত্য স্ত্রী বাচক শব্দ লিখুন।", a: "সতী, বিধবা" },
+      { label: "ঘ", q: "সরল বাক্যে রূপান্তর করুন- 'যে ভিক্ষা করতে এসেছে, তাকে ভিক্ষা দাও।'", a: "ভিক্ষুককে ভিক্ষা দাও।" },
+      { label: "ঙ", q: "বাক্য সংক্ষেপণ করুন- 'পা থেকে মাথা পর্যন্ত'", a: "আপাদমস্তক" },
+      { label: "চ", q: "এক শব্দে পরিণত করে ঐ শব্দ দ্বারা বাক্য রচনা করুন- 'সকলের জন্য প্রযোজ্য'।", a: "সর্বজনীন; বাক্য: দেশের উন্নয়নের জন্য দরকার সর্বজনীন শিক্ষা।" },
+      { label: "ছ", q: "অর্থ লিখে বাগধারা যোগে বাক্য রচনা করুন- 'ঘোড়া রোগ'।", a: "সাধ্যের অতিরিক্ত সাধ; বাক্য: সরকারের নতুন প্রকল্পটি ঘোড়া রোগ।" }
+    ] },
+
+  { id: "job-2025-judicial-service-office-sohayok-q03", examId: "job-2025-judicial-service-office-sohayok", subject: "bangla", qno: 3, marks: 10, type: "translate",
+    question: "বাংলায় অনুবাদ করুন:",
+    parts: [
+      { label: "-", source: "No work is superior or inferior in itself. Work is work. It is absolutely wrong to consider any work as high or low. The work itself is a dignity. Every work has some dignity attached to it. It is improper for anybody to think that a certain work is undignified or below his status. Dignity of labour means that all and every kind of work is dignified.", target: "কোনো কাজই কাজের দিক থেকে শ্রেষ্ঠ বা নিকৃষ্ট নয়। কাজ মাত্রই কাজ। কোনো কাজকে উচ্চ বা নীচু বলে বিবেচনা করা সম্পূর্ণ ভুল। কাজ মাত্রই সম্মানের। প্রতিটি কাজের সাথেই কিছু মর্যাদা/সম্মান জড়িত থাকে। এটা কারো পক্ষেই উচিত নয় যে কোনো কাজকে অসম্মানজনক বা তার মর্যাদার নিচে মনে করা। শ্রমের মর্যাদা মানে হলো সব ধরনের কাজেই সম্মানের।" }
+    ] },
+
+  { id: "job-2025-judicial-service-office-sohayok-q04", examId: "job-2025-judicial-service-office-sohayok", subject: "english", topic: "paragraph", qno: 4, marks: 8, type: "paragraph",
+    question: "Write a paragraph on: a) Global Warming or b) Value of Time",
+    answer: "Global Warming: Global warming refers to the gradual increase in the Earth's average temperature due to the excessive release of greenhouse gases such as carbon dioxide and methane into the atmosphere. Human activities like deforestation, burning fossil fuels, and industrialization are the main causes of this phenomenon. Global warming leads to serious consequences such as rising sea levels, melting glaciers, unpredictable weather patterns, and the extinction of various species. To combat global warming, it is essential to reduce carbon emissions, promote renewable energy sources, and encourage afforestation." },
+
+  { id: "job-2025-judicial-service-office-sohayok-q05", examId: "job-2025-judicial-service-office-sohayok", subject: "english", topic: "grammar", qno: 5, marks: 12, type: "short-qa",
+    question: "Answer the following questions:",
+    parts: [
+      { label: "a", q: "We started early. We arrived in time. (Combine these two sentences using participle)", a: "Starting early, we arrived in time." },
+      { label: "b", q: "We know that Columbus discovered America. (Write down the passive voice of the sentence)", a: "It is known to us that America was discovered by Columbus" },
+      { label: "c", q: "Arif is the best boy in the class. (Here the word 'class' is a noun)", a: "Collective Noun" },
+      { label: "d", q: "The ship lost all........boats in the storm. (Fill in the blank)", a: "her" },
+      { label: "e", q: "Iron is more useful than any other metal. (Change the degree to positive)", a: "No other metal is as useful as iron." },
+      { label: "f", q: "Write down the indirect speech of the sentence: Sujon said, \"I walk for an hour every morning\"", a: "Sujon said that he walked for an hour every morning." }
+    ] },
+
+  { id: "job-2025-judicial-service-office-sohayok-q06", examId: "job-2025-judicial-service-office-sohayok", subject: "english", topic: "translation", qno: 6, marks: 10, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তুমি কি তোমার বাবাকে চিঠি লিখেছিলে?", target: "Did you write a letter to your father?" },
+      { label: "খ", source: "সে দারুণ যুদ্ধ করেছে।", target: "He fought bravely." },
+      { label: "গ", source: "ক্লান্ত হয়ে সে কিছুক্ষণ বিশ্রাম নিল।", target: "Being tired, he took rest for a while." },
+      { label: "ঘ", source: "ঘন্টা পড়ার পূর্বে তারা স্কুলে পৌঁছাল।", target: "They had reached the school before the bell rang." },
+      { label: "ঙ", source: "চুপ! লোকটি ঘুমিয়েছে।", target: "Hush! The man has fallen asleep." },
+      { label: "চ", source: "কোন বইটি সে পড়ছে?", target: "Which book is he reading?" }
+    ] },
+
+  { id: "job-2025-judicial-service-office-sohayok-q07", examId: "job-2025-judicial-service-office-sohayok", subject: "math", topic: "পাটিগণিত", qno: 7, marks: 12, type: "math",
+    question: "ক) একটি সোনার গহনার ওজন ১৬ গ্রাম। এতে সোনা ও তামার অনুপাত ৩:১। এতে কি পরিমাণ সোনা মেশালে অনুপাত ৪:১ হবে?\nখ) ΔABC এর BE=FE=CF। ΔAEC এর ক্ষেত্রফল ৪৮ বর্গফুট হলে, ΔABC এর ক্ষেত্রফল কত বর্গফুট?\nগ) x⁴ + 2x² + 1 = 5x² হলে x + 1/x = কত?",
+    steps: [
+      "ক) সোনার পরিমাণ = ১৬ এর ৩/৪ = ১২ গ্রাম; ধরি, x গ্রাম সোনা মেশালে অনুপাত ৪:১ হবে; (১২+x):৪ = ৪:১ থেকে x = ৪",
+      "খ) BE=FE=CF সমান হওয়ায়, AE ও AF মধ্যমা; ΔAFC = ২৪ বর্গফুট; ΔABC = ΔABE + ΔAEC = ২৪ + ৪৮ = ৭২ বর্গফুট",
+      "গ) x⁴ + 2x² + 1 = 5x² থেকে x²+1/x² = 3; (x+1/x)² = 3+2 = 5; ∴ x + 1/x = √5"
+    ],
+    answer: "ক) ৪ গ্রাম   খ) ৭২ বর্গফুট   গ) x + 1/x = √5" },
+
+  { id: "job-2025-judicial-service-office-sohayok-q08", examId: "job-2025-judicial-service-office-sohayok", subject: "general-knowledge", topic: "gk-others", qno: 8, marks: 20, type: "short-qa",
+    question: "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "পানগাঁও অভ্যন্তরীণ কনটেইনার টার্মিনাল কোন নদীর তীরে অবস্থিত?", a: "বুড়িগঙ্গা নদী।" },
+      { label: "খ", q: "বিখ্যাত চিত্রকর্ম 'তিন কন্যা' এর চিত্রকর কে?", a: "কামরুল হাসান।" },
+      { label: "গ", q: "বাংলাদেশের সংবিধান রচনা কমিটির একমাত্র মহিলা সদস্য কে?", a: "বেগম রাজিয়া বানু।" },
+      { label: "ঘ", q: "বাংলাদেশের সাথে বর্তমানে কয়টি দেশের বন্দি প্রত্যর্পণ চুক্তি রয়েছে?", a: "২টি; ভারত ও থাইল্যান্ড; (সূত্র: বিবিসি বাংলা)" },
+      { label: "ঙ", q: "গণভোট অধ্যাদেশ, ২০২৫ জারি হয় কবে?", a: "২৫ নভেম্বর, ২০২৫।" },
+      { label: "চ", q: "বাংলাদেশের প্রথম ক্রিকেটার হিসাবে শততম টেস্ট ম্যাচ খেলেছেন কে?", a: "মুশফিকুর রহিম।" },
+      { label: "ছ", q: "'UN House in Bangladesh' কোথায় অবস্থিত?", a: "গুলশান, ঢাকা।" },
+      { label: "জ", q: "ঋতিক ঘটক পরিচালিত একটি চলচিত্রের নাম লিখুন।", a: "তিতাস একটি নদীর নাম।" },
+      { label: "ঝ", q: "আফ্রিকান ইউনিয়নের সদর দফতর কোথায় অবস্থিত?", a: "আদ্দিস আবাবা, ইথিওপিয়া।" },
+      { label: "ঞ", q: "বিশ্বের প্রথম মহিলা প্রধানমন্ত্রী কে ছিলেন?", a: "শ্রীমাভো বন্দরনায়েক (শ্রীলঙ্কা)।" },
+      { label: "ট", q: "'ChatGPT' এর পূর্ণরূপ কী?", a: "Chat Generative Pre-trained Transformer" },
+      { label: "ঠ", q: "সম্প্রতি মালয়েশিয়ায় কততম আসিয়ান শীর্ষ সম্মেলন অনুষ্ঠিত হয়েছে?", a: "৪৭তম।" },
+      { label: "ড", q: "কৃত্রিমভাবে বৃষ্টি ঘটানোর পদ্ধতি 'ক্লাউড সিডিং' এর জনক কে?", a: "ভিনসেন্ট জে. শেফার।" },
+      { label: "ঢ", q: "২০২৫ সালে কেমব্রিজ ডিকশনারীর বর্ষসেরা শব্দ কোনটি?", a: "প্যারাসোশ্যাল (Parasocial); বাংলা অর্থ এক পক্ষীয় প্রেম বা বন্ধুত্ব।" },
+      { label: "ণ", q: "বিশ্ব এইডস দিবস পালন করা হয় কবে?", a: "১লা ডিসেম্বর।" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: ভূমি রেকর্ড ও জরিপ অধিদপ্তর — পেশকার
+  // id prefix: job-2025-land-survey-peshkar
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-land-survey-peshkar-q01", examId: "job-2025-land-survey-peshkar", subject: "bangla", qno: 1, marks: 6, type: "idiom",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", phrase: "যিনি ভবিষ্যৎ না ভেবেই কাজ করেন", meaning: "অবিমৃষ্যকারী" },
+      { label: "খ", phrase: "যিনি ন্যায়শাস্ত্র জানেন", meaning: "নৈয়ায়িক" },
+      { label: "গ", phrase: "মৃত্তিকার দ্বারা নির্মিত", meaning: "মৃন্ময়" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q02", examId: "job-2025-land-survey-peshkar", subject: "bangla", topic: "সমাস", qno: 2, marks: 6, type: "table",
+    question: "ব্যাসবাক্যসহ সমাস লিখুন:",
+    columns: ["শব্দ", "ব্যাসবাক্য", "সমাসের নাম"],
+    rows: [
+      ["নীলাম্বর", "নীল অম্বর যার", "বহুব্রীহি"],
+      ["ক্ষীণজীবী", "ক্ষীণভাবে বাঁচে যে", "উপপদ তৎপুরুষ"],
+      ["শতবার্ষিকি", "শত বর্ষের সমাহার", "দ্বিগু সমাস"]
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q03", examId: "job-2025-land-survey-peshkar", subject: "bangla", qno: 3, marks: 6, type: "idiom",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", phrase: "ঘুঘু চরানো", meaning: "সর্বনাশ করা" },
+      { label: "খ", phrase: "হযবরল", meaning: "বিশৃঙ্খলা" },
+      { label: "গ", phrase: "শরতের শিশির", meaning: "সুসময়ের বন্ধু" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q04", examId: "job-2025-land-survey-peshkar", subject: "bangla", qno: 4, marks: 6, type: "sentence-change",
+    question: "শুদ্ধ করে লিখুন:",
+    parts: [
+      { label: "ক", original: "আকষ্ঠ পর্যন্ত ভোজনে স্বাস্থ্যহানি ঘটে।", changed: "আকণ্ঠ ভোজনে স্বাস্থ্যহানি ঘটে।" },
+      { label: "খ", original: "তার ব্যবহার মাধুর্যতা নেই।", changed: "তার ব্যবহারে মাধুর্য নেই।" },
+      { label: "গ", original: "অনুষ্ঠানে স্বপরিবারে আপনি আমন্ত্রিত।", changed: "অনুষ্ঠানে সপরিবারে আপনি আমন্ত্রিত।" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q05", examId: "job-2025-land-survey-peshkar", subject: "bangla", qno: 5, marks: 10, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    parts: [
+      { label: "ক", q: "W.B Yeats এবং রবীন্দ্রনাথ ঠাকুর কত সালে এবং কী কারণে সাহিত্যে নোবেল পুরস্কার পেয়েছিলেন?", a: "W.B Yeats ১৯২৩ সালে \"তার সর্বদা অনুপ্রাণিত কবিতার জন্য, যা অত্যন্ত শৈল্পিক রূপে একটি সমগ্র জাতির চেতনার প্রকাশ ঘটায়\" এর জন্য সাহিত্যে নোবেল পুরস্কার পান এবং রবীন্দ্রনাথ ঠাকুর তার গীতাঞ্জলি কাব্যের জন্য সাহিত্যে নোবেল পুরস্কার পেয়েছিলেন।" },
+      { label: "খ", q: "চর্যাপদ কী? কবে আবিষ্কার হয়?", a: "বাংলা সাহিত্যে আদি নিদর্শন চর্যাপদ হলো বৌদ্ধ ধর্মের তত্ত্বকথা নিয়ে গানের সংকলন বা সাধন সংগীত যা বৌদ্ধ সহজিয়াগণ রচনা করেন। হরপ্রসাদ শাস্ত্রী ১৯০৭ সালে নেপালের রাজদরবার (রয়েল লাইব্রেরি) থেকে 'চর্যাপদ' আবিষ্কার করেন।" },
+      { label: "গ", q: "ক্রীতদাসের হাসি গ্রন্থের লেখক কে? রচনার উদ্দেশ্য কী?", a: "লেখক শওকত ওসমান। এ প্রতীকাশ্রয়ী উপন্যাস রচনার মূল উদ্দেশ্য হলো বাগদাদের বাদশা হারুন অর রশিদের মাধ্যমে তৎকালীন পশ্চিম পাকিস্তানি শাসকদের বিরূপ শাসনের সমালোচনা করা।" },
+      { label: "ঘ", q: "'দুর্গম গিরি কান্তার মরু দুস্তর পারাবার' পঙ্‌ক্তিতে 'কান্তার' শব্দের অর্থ কী? কবিতাটির রচয়িতা কে?", a: "নিবিড় বন, দুর্গম পথ। কাজী নজরুল ইসলাম এর 'কাণ্ডারী হুঁশিয়ার' কবিতার একটি লাইন।" },
+      { label: "ঙ", q: "ভাব-সম্প্রসারণ করুন: বই কিনে কেউ দেউলিয়া হয় না।", a: "একটি সৃজনশীল বই অপরিসীম জ্ঞানের আধার। এতে যে অল্প অর্থ ব্যয় হয় তা অর্জিত জ্ঞানের তুলনায় খুবই নগণ্য। জগতের শ্রেষ্ঠ মনীষীদের চিন্তা-চেতনা ও সৃষ্টির অন্যতম আধার হলো বই। বই এক যুগের মানুষকে পরবর্তী যুগের মানুষের কাছে নিয়ে যেতে পারে, সুযোগ করে দিতে পারে অতীতের অভিজ্ঞতা আর জ্ঞান-বিজ্ঞানকে জানার। কিন্তু অধিকাংশ সময়ই আমরা এ সত্যটি উপলব্ধি করতে ব্যর্থ হই। যারা কুরুচিপূর্ণ সিনেমা কিংবা স্টেডিয়ামে খেলা দেখার টিকেট কিনতে অকপটে অর্থ ব্যয় করে, তারাই আবার বই কেনার ক্ষেত্রে চূড়ান্ত কৃপণতার পরিচয় দেয়। বই কেনার জন্য অর্থ ব্যয়কে তারা বাহুল্য বলে মনে করে। অনেকে আবার বইয়ের অগ্নিমূল্য বা আর্থিক অসচ্ছলতার অজুহাত দাঁড় করিয়ে বসে। কিন্তু এসব ধারণা অযৌক্তিক নয়, অনাকাঙ্ক্ষিতও বটে। প্রকৃতপক্ষে, এ জাতীয় ধারণা কেবল তারাই প্রচার করে যারা বই পড়ার আদৌ আগ্রহী নয় বা জ্ঞানার্জনের পক্ষপাতি নয়। কিন্তু বই পড়ার মাধ্যমে চিত্তের যে পরম সুখ লাভ সম্ভব তা তারা কখনও অনুভব করতে পারে না। আর পারে না বলেই তারা বেশি দামের অজুহাতে বই কিনতে চায় না। অথচ বই কিনে কেউ দেউলিয়া হয়েছে এমন নজির খুঁজে পাওয়া কঠিন। কেননা, জ্ঞান পিপাসা মিটানোর উপযোগিতার তুলনায় বইয়ের দাম খুবই তুচ্ছ।" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q06", examId: "job-2025-land-survey-peshkar", subject: "english", topic: "translation", qno: 6, marks: 10, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তুমি কি কখনও বিদেশ গিয়েছ?", target: "Have you ever been abroad?" },
+      { label: "খ", source: "রিয়াজ দশ বছর ধরে আমেরিকায় বসবাস করছে।", target: "Riyaz has been living in America for ten years." },
+      { label: "গ", source: "তোমার ইংরেজিতে দক্ষ হওয়া উচিত।", target: "You should be good at English." },
+      { label: "ঘ", source: "সে কঠোর পরিশ্রম করে, তাই না?", target: "He works hard, doesn't he?" },
+      { label: "ঙ", source: "নাচতে না জানলে উঠান বাঁকা।", target: "A bad workman quarrel with his tools." }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q07", examId: "job-2025-land-survey-peshkar", subject: "english", topic: "verb-forms", qno: 7, marks: 10, type: "short-qa",
+    question: "Use right form of verbs:",
+    parts: [
+      { label: "a", q: "Traffic jam (mean) blockade of vehicles.", a: "means" },
+      { label: "b", q: "The increasing number of vehicles (be) creating this problem.", a: "is" },
+      { label: "c", q: "However, this problem can (solve) by taking some steps.", a: "be solved" },
+      { label: "d", q: "The authority (impose) the traffic rules strictly.", a: "imposes" },
+      { label: "e", q: "By (implement) some actions we can reduce the problem.", a: "implementing" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q08", examId: "job-2025-land-survey-peshkar", subject: "english", topic: "sentence-change", qno: 8, marks: 10, type: "sentence-change",
+    question: "Transform the following sentences as directed:",
+    parts: [
+      { label: "a", original: "Give me some water that I may drink. (Simple)", changed: "Give me some water to drink." },
+      { label: "b", original: "When did you write the letter? (Passive)", changed: "When was the letter written by you?" },
+      { label: "c", original: "He was a very cunning man. (Exclamatory)", changed: "What a cunning man he was!" },
+      { label: "d", original: "Every rose has a thorn. (Negative)", changed: "There is no rose without a thorn." },
+      { label: "e", original: "Mamun said, \"What a nice bird it is!\" (Indirect Narration)", changed: "Mamun exclaimed that it was a very nice bird." }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q09", examId: "job-2025-land-survey-peshkar", subject: "english", topic: "sentence-making", qno: 9, marks: 10, type: "idiom",
+    question: "Write meaningful sentences with the following idioms:",
+    parts: [
+      { label: "a", phrase: "Take off", meaning: "উড্ডয়ন করা", example: "The plane will take off in five minutes." },
+      { label: "b", phrase: "Give a hand", meaning: "সহায়তা করা", example: "Please give me a hand with this heavy box." },
+      { label: "c", phrase: "A castle in the air", meaning: "আকাশ কুসুম কল্পনা", example: "His plan to be a millionaire in a week is just a castle in the air." },
+      { label: "d", phrase: "Better half", meaning: "অর্ধাঙ্গী", example: "He came to the party with his better half." },
+      { label: "e", phrase: "Dark horse", meaning: "অজ্ঞাত ব্যক্তি", example: "Hasan is a dark horse in the society." }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q10", examId: "job-2025-land-survey-peshkar", subject: "english", topic: "paragraph", qno: 10, marks: 10, type: "paragraph",
+    question: "Write a short passage on 'The Moon' (around 70 words)",
+    answer: "The moon is the only natural satellite of the Earth. It has no light of its own; rather it reflects the light of the sun. The moon takes about 29.5 days to complete one orbit around the Earth, which gives us the different phases of the moon. It has a great influence on the tides of the sea. The moon has always fascinated human beings, and in 1969, humans first landed on the moon." },
+
+  { id: "job-2025-land-survey-peshkar-q11", examId: "job-2025-land-survey-peshkar", subject: "math", topic: "পাটিগণিত", qno: 11, marks: 5, type: "math",
+    question: "২৩০ মিটার দীর্ঘ একটি ট্রেন ঘণ্টায় ৪০ কি.মি বেগে চলছে। পিছন থেকে সমান্তরালভাবে ২৭০ মিটার দীর্ঘ একটি ট্রেন ঘণ্টায় ৫০ কি.মি বেগে আসছিল। ২য় ট্রেনটি কত সময়ে প্রথম ট্রেনটিকে অতিক্রম করবে?",
+    steps: [
+      "ট্রেন দুটির দৈর্ঘ্য = (২৩০ + ২৭০) মি. = ৫০০ মিটার",
+      "যেহেতু গাড়ি দুটি পরস্পর একই দিকে চলে, তাদের আপেক্ষিক বেগ = (৫০ − ৪০) কি.মি./ঘণ্টা = ১০ কি.মি./ঘণ্টা = ১০০০০ মি./ঘণ্টা",
+      "১০০০০ মি. অতিক্রম করে ১ ঘণ্টায়, ৫০০ মি. অতিক্রম করে ৫০০/১০০০০ ঘণ্টা = (৫০০×৬০)/১০০০০ মিনিটে = ৩ মিনিটে"
+    ],
+    answer: "৩ মিনিট" },
+
+  { id: "job-2025-land-survey-peshkar-q12", examId: "job-2025-land-survey-peshkar", subject: "math", topic: "পাটিগণিত", qno: 12, marks: 5, type: "math",
+    question: "কোন মূলধন ৩ বছরে সুদে-মূলে ১১০০০ হয়। সুদ আসলের ৩/৮ অংশ হলে, আসল ও সুদের হার কত?",
+    steps: [
+      "মনে করি, আসল ৮ টাকা, মুনাফা = ৮ এর ৩/৮ টাকা = ৩ টাকা",
+      "মুনাফা-আসল = (৮+৩) টাকা = ১১ টাকা",
+      "মুনাফা-আসল ১১ টাকা হলে আসল ৮ টাকা; ১১০০০ টাকা হলে আসল = (৮×১১০০০)/১১ = ৮০০০ টাকা",
+      "∴ মুনাফা = (১১০০০−৮০০০) টাকা = ৩০০০ টাকা",
+      "৮০০০ টাকার ৩ বছরের মুনাফা ৩০০০ টাকা হলে, ১০০ টাকার ১ বছরের মুনাফা = (৩০০০×১০০)/(৮০০০×৩) = ১২.৫ টাকা"
+    ],
+    answer: "আসল ৮০০০ টাকা এবং মুনাফার হার ১২.৫%" },
+
+  { id: "job-2025-land-survey-peshkar-q13", examId: "job-2025-land-survey-peshkar", subject: "math", topic: "বীজগণিত", qno: 13, marks: 5, type: "math",
+    question: "উৎপাদকে বিশ্লেষণ করুন: a³ − 6a² + 12a − 9",
+    steps: [
+      "a³ − 6a² + 12a − 9 = a³ − 3.a².2 + 3a.(2)² − (2)³ − 1",
+      "= (a−2)³ − 1",
+      "= (a−2−1){(a−2)² + (a−2).1 + (1)²}",
+      "= (a−3){a² − 4a + 4 + a − 2 + 1}",
+      "= (a−3)(a² − 3a + 3)"
+    ],
+    answer: "(a−3)(a²−3a+3)" },
+
+  { id: "job-2025-land-survey-peshkar-q14", examId: "job-2025-land-survey-peshkar", subject: "math", topic: "জ্যামিতি", qno: 14, marks: 5, type: "math",
+    question: "একটি ত্রিভুজের একটি কোণ যদি দ্বিতীয় কোণের তিনগুণ এবং তৃতীয় কোণ যদি দ্বিতীয় কোণ চেয়ে ২০ ডিগ্রি বড় হয় তবে ২য় কোণটি কত ডিগ্রি?",
+    steps: [
+      "মনে করি, দ্বিতীয় কোণটি = x; প্রথম কোণ = 3x; তৃতীয় কোণ = x+20°",
+      "প্রশ্নমতে, 3x + x + x + 20° = 180°",
+      "বা, 5x + 20° = 180°",
+      "বা, 5x = 160°",
+      "∴ x = 32°"
+    ],
+    answer: "দ্বিতীয় কোণ ৩২°" },
+
+  { id: "job-2025-land-survey-peshkar-q15", examId: "job-2025-land-survey-peshkar", subject: "general-knowledge", topic: "gk-others", qno: 15, marks: 10, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    parts: [
+      { label: "ক", q: "উপজেলা সেটেলমেন্ট অফিসের পেশকার এর দায়িত্ব ও কর্তব্য সম্পর্কে লিখুন।", a: "১) জন সাধারণের নিকট হতে অভিযোগের চিঠি গ্রহণ ও নথিতে পেশ করুন। ২) আদালত হইতে ভূমি সংক্রান্ত মামলার সমন গ্রহণ ও নথিপেশ। ৩) আপত্তি, আপীল, চূড়ান্ত প্রকাশনা ক্যাম্পের কার্যক্রম গ্রহণ।" },
+      { label: "খ", q: "একটি আয়তকার জমির দৈর্ঘ্য ৬৬০ ফুট এবং প্রস্থ ৬৬ ফুট হলে জমির ক্ষেত্রফল কত একর?", a: "১ একর" },
+      { label: "গ", q: "দাখিলা এবং DCR বলতে কী বুঝায়?", a: "দাখিলা: ভূমির খাজনা বা ভূমি উন্নয়ন কর পরিশোধের পর সরকার কর্তৃক যে রসিদ প্রদান করা হয় তাকে দাখিলা বলা হয়। এটি ভূমির মালিকানার একটি গুরুত্বপূর্ণ প্রমাণপত্র। DCR: ভূমি কর ব্যতীত অন্যান্য সরকারি পাওনা আদায় করার পর যে নির্ধারিত ফর্মে রশিদ দেওয়া হয় তাকে DCR (Duplicate Carbon Receipt) বলে।" },
+      { label: "ঘ", q: "সাফ কবলা দলিল এবং এওয়াজ দলিল বলতে কি বুঝায়?", a: "সাফ কবলা দলিল: যখন কোন দলিল দ্বারা একজনের স্বত্ব দখলীয় জমির উপর ক্রেতার স্বত্ব জন্মায় তখন তা সাফ কবলা দলিল হিসাবে গণ্য হয়। কবলা দলিল অবশ্যই রেজিস্ট্রি করতে হয়। এওয়াজ দলিল: সম্পত্তির চাষাবাদের সুবিধার জন্য যদি কোন জমির মালিক অন্য কোন মালিকের সঙ্গে তার জমির ভোগদখল হস্তান্তর করে তাহলে তাকে এওয়াজ বদল বলে।" },
+      { label: "ঙ", q: "জরিপে ব্যবহৃত চারটি যন্ত্রের নাম লিখুন।", a: "থিওডোলাইট (Theodolite), ইলেকট্রনিক টোটাল স্টেশন (Electronic Total Station), জিপিএস রিসিভার (GPS Receiver) এবং পরিমাপক টেপ বা শিকল (Measuring Tape/Chain)" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q16", examId: "job-2025-land-survey-peshkar", subject: "general-knowledge", topic: "gk-others", qno: 16, marks: 10, type: "short-qa",
+    question: "সংক্ষেপে উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "সূর্যগ্রহণ ও চন্দ্রগ্রহণ কখন হয়?", a: "অমাবস্যা তিথিতে যখন চাঁদ, সূর্য ও পৃথিবীর মাঝখানে আসে তখন সূর্যগ্রহণ হয়। আর পূর্ণিমা তিথিতে যখন পৃথিবী, সূর্য ও চাঁদের মাঝখানে আসে তখন চন্দ্রগ্রহণ হয়।" },
+      { label: "খ", q: "কোন দুইটি উৎস থেকে বাংলাদেশ সরকারের সর্বাধিক রাজস্ব আয় হয়?", a: "মূল্য সংযোজন কর এবং আয়কর।" },
+      { label: "গ", q: "হরমুজ প্রণালী কেন গুরুত্বপূর্ণ?", a: "পারস্য উপসাগরের একমাত্র জলপথ হলো হরমুজ প্রণালী যা ওমান সাগর এবং আরব সাগরের সাথে সংযুক্ত।" },
+      { label: "ঘ", q: "আসন্ন জাতীয় সংসদ নির্বাচন কততম এবং কোন তারিখে অনুষ্ঠিত হবে?", a: "ত্রয়োদশ (১৩তম) এবং ১২ ফেব্রুয়ারি, ২০২৬ সালে।" },
+      { label: "ঙ", q: "ইমেইলের CC এবং ইন্টারনেটের Mbps এর পূর্ণরূপ লিখুন।", a: "CC = Carbon Copy; Mbps = Megabits Per Second" },
+      { label: "চ", q: "বিখ্যাত চিত্রকর্ম 'তিন কন্যা'র চিত্রকর কে?", a: "কামরুল হাসান" },
+      { label: "ছ", q: "বাংলাদেশে সর্বশেষ জনতমারি হয়েছে কত সালে? এ পর্যন্ত কতবার জনতমারি হয়েছে?", a: "২০২২ সালে; ৬ বার" },
+      { label: "জ", q: "বাংলাদেশের ২টি সাংবিধানিক প্রতিষ্ঠানের নাম লিখুন।", a: "নির্বাচন কমিশন ও সরকারি কর্ম কমিশন।" },
+      { label: "ঝ", q: "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র কোন জেলায় অবস্থিত? এর মূল জ্বালানী কী?", a: "পাবনা; ইউরেনিয়াম-২৩৫" },
+      { label: "ঞ", q: "ইনসুলিন মানবদেহের কোন অঙ্গ থেকে নিঃসৃত হয়? ইনসুলিনের একটি কাজ লিখুন।", a: "অগ্ন্যাশয়; রক্তের গ্লুকোজ কোষে প্রবেশ করতে সাহায্য করে" },
+      { label: "ট", q: "ভূমি জরিপ অনুযায়ী CS ও RS এর পূর্ণরূপ কী?", a: "CS = Cadastral Survey; RS = Revisional Survey" }
+    ] },
+
+  { id: "job-2025-land-survey-peshkar-q17", examId: "job-2025-land-survey-peshkar", subject: "general-knowledge", topic: "gk-others", qno: 17, marks: 15, type: "short-qa",
+    question: "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "বাংলাদেশের সংবিধান রচনা কমিটির একমাত্র মহিলা সদস্য কে?", a: "বেগম রাজিয়া বানু।" },
+      { label: "খ", q: "বাংলাদেশের সাথে কর্তমানে কয়টি দেশের বন্দি প্রত্যর্পণ চুক্তি রয়েছে?", a: "২টি; ভারত ও থাইল্যান্ড; (সূত্র: বিবিসি বাংলা)" },
+      { label: "গ", q: "গণভোট অধ্যাদেশ, ২০২৫ জারি হয় কবে?", a: "২৫ নভেম্বর, ২০২৫।" },
+      { label: "ঘ", q: "বাংলাদেশের প্রথম ক্রিকেটার হিসাবে শততম টেস্ট ম্যাচ খেলেছেন কে?", a: "মুশফিকুর রহিম।" },
+      { label: "ঙ", q: "'UN House in Bangladesh' কোথায় অবস্থিত?", a: "গুলশান, ঢাকা।" },
+      { label: "চ", q: "ঋতিক ঘটক পরিচালিত একটি চলচিত্রের নাম লিখুন।", a: "তিতাস একটি নদীর নাম।" },
+      { label: "ছ", q: "আফ্রিকান ইউনিয়নের সদর দফতর কোথায় অবস্থিত?", a: "আদ্দিস আবাবা, ইথিওপিয়া।" },
+      { label: "জ", q: "বিশ্বের প্রথম মহিলা প্রধানমন্ত্রী কে ছিলেন?", a: "শ্রীমাভো বন্দরনায়েক (শ্রীলঙ্কা)।" },
+      { label: "ঝ", q: "'ChatGPT' এর পূর্ণরূপ কী?", a: "Chat Generative Pre-trained Transformer" },
+      { label: "ঞ", q: "সম্প্রতি মালয়েশিয়ায় কততম আসিয়ান শীর্ষ সম্মেলন অনুষ্ঠিত হয়েছে?", a: "৪৭তম।" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন — সাঁটমুদ্রাক্ষরিক-কাম-কম্পিউটার অপারেটর
+  // id prefix: job-2025-judicial-service-steno
+  // ══════════════════════════════════════════════════════════
+
+  { id: "job-2025-judicial-service-steno-q01", examId: "job-2025-judicial-service-steno", subject: "bangla", topic: "ক-বিভাগ", qno: 1, marks: 5, type: "paragraph",
+    question: "ভাব সম্প্রসারণ করুন: ক) গতিই জীবন, স্থিতিতে মৃত্যু। অথবা খ) হে অতীত তুমি ভুবনে ভুবনে, কাজ করে যাও গোপনে গোপনে।",
+    answer: "ক) গতিই জীবন, স্থিতিতে মৃত্যু: জীবনের মূল সত্য হলো গতিশীলতা। প্রকৃতির প্রতিটি বস্তু, প্রতিটি প্রাণী গতিশীল থাকার মাধ্যমেই বেঁচে থাকে ও উন্নতি লাভ করে। যে থেমে যায়, স্থবির হয়ে পড়ে, তার অস্তিত্ব বিপন্ন হয়। মানুষের জীবনেও এই সত্য প্রযোজ্য—যে মানুষ কর্মহীন, উদ্যমহীন হয়ে জীবনযাপন করে, সে ক্রমশ জীবনের প্রতিযোগিতা থেকে ছিটকে পড়ে। তাই জীবনে টিকে থাকতে হলে, উন্নতি করতে হলে গতিশীল থাকা আবশ্যক।" },
+
+  { id: "job-2025-judicial-service-steno-q02", examId: "job-2025-judicial-service-steno", subject: "bangla", topic: "ক-বিভাগ", qno: 2, marks: 10, type: "short-qa",
+    question: "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "স্বভাবতই মূর্ধন্য-ণ হয় এরূপ দুটি বাংলা শব্দ লিখুন।", a: "চাণক্য, মাণিক্য, বাণিজ্য, বীণা, কণিকা" },
+      { label: "খ", q: "সমাস উল্লেখে ব্যাসবাক্য লিখুন- দণ্ডাজ্ঞি।", a: "দণ্ড ও উক্তি (দ্বন্দ্ব সমাস)" },
+      { label: "গ", q: "সন্ধি বিচ্ছেদ করুন- দিধিদিক।", a: "দিক্ + বিদিক" },
+      { label: "ঘ", q: "'যেহেতু কোথাও পথ পেলাম না সেহেতু আপনার কাছে এসেছি' এই বাক্যটিকে যৌগিক বাক্যে রূপান্তর করুন।", a: "কোথাও পথ পায়নি তাই আপনার কাছে এসেছি।" },
+      { label: "ঙ", q: "যে কোনো দুটি খাঁটি বাংলা উপসর্গ উল্লেখে শব্দ গঠন করুন।", a: "কদবেল, রামছাগল, সুনজর, সুখবর, অনাবৃষ্টি" },
+      { label: "চ", q: "শুদ্ধ করে লিখুন 'সর্ববিষয়ে বাহুল্যতা বর্জন করবে'।", a: "সর্ববিষয়ে বাহুল্য বর্জন করিবে।" }
+    ] },
+
+  { id: "job-2025-judicial-service-steno-q03", examId: "job-2025-judicial-service-steno", subject: "bangla", topic: "ক-বিভাগ", qno: 3, marks: 10, type: "translate",
+    question: "বাংলায় অনুবাদ করুন:",
+    parts: [
+      { label: "-", source: "Truthfulness is the greatest of all virtues which makes a man really great. If we do not cultivate the habit of speaking the truth, we will never win the respect of others. A lie never lies hidden for long. Today or tomorrow it comes to light. Then the real character of the liar is revealed and nobody trusts him.", target: "যে সকল গুণ মানুষকে প্রকৃতপক্ষে মহৎ করে সেগুলোর মধ্যে সত্যবাদিতা সর্বোৎকৃষ্ট। আমরা যদি সত্য কথা বলার অভ্যাস না করি, তাহলে আমরা কখনও অপরের শ্রদ্ধা অর্জন করতে পারব না। মিথ্যা কখনও দীর্ঘদিন গোপন থাকে না। আজ কিংবা কাল তা প্রকাশ পাবেই তখন মিথ্যাবাদীর প্রকৃত চরিত্র প্রকাশ পায় এবং তাকে আর কেউ বিশ্বাস করে না।" }
+    ] },
+
+  { id: "job-2025-judicial-service-steno-q04", examId: "job-2025-judicial-service-steno", subject: "english", topic: "খ-বিভাগ", qno: 4, marks: 8, type: "paragraph",
+    question: "Write a paragraph on: a) Global Warming or b) Value of Time / Which books is to be read",
+    answer: "Global Warming: Global warming refers to the gradual increase in the Earth's average temperature due to the excessive release of greenhouse gases into the atmosphere. Human activities like deforestation, burning fossil fuels, and industrialization are the main causes of this phenomenon. It leads to serious consequences such as rising sea levels, melting glaciers, and unpredictable weather patterns. To combat global warming, it is essential to reduce carbon emissions and promote renewable energy sources." },
+
+  { id: "job-2025-judicial-service-steno-q05", examId: "job-2025-judicial-service-steno", subject: "english", topic: "খ-বিভাগ", qno: 5, marks: 12, type: "short-qa",
+    question: "Answer the following questions:",
+    parts: [
+      { label: "a", q: "We started early. We arrived in time. (Combine these two sentences using participle)", a: "Starting early, we arrived in time." },
+      { label: "b", q: "We know that Columbus discovered America. (Write down the passive voice of the sentence)", a: "It is known to us that America was discovered by Columbus" },
+      { label: "c", q: "Arif is the best boy in the class. (Here the word 'class' is a noun)", a: "Collective Noun" },
+      { label: "d", q: "The ship lost all........boats in the storm. (Fill in the blank)", a: "her" },
+      { label: "e", q: "Iron is more useful than any other metal. (Change the degree to positive)", a: "No other metal is as useful as iron." },
+      { label: "f", q: "Write down the indirect speech of the sentence: Sujon said, \"I walk for an hour every morning\"", a: "Sujon said that he walked for an hour every morning." }
+    ] },
+
+  { id: "job-2025-judicial-service-steno-q06", examId: "job-2025-judicial-service-steno", subject: "english", topic: "খ-বিভাগ", qno: 6, marks: 10, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "তুমি কি তোমার বাবাকে চিঠি লিখেছিলে?", target: "Did you write a letter to your father?" },
+      { label: "খ", source: "সে দারুণ যুদ্ধ করেছে।", target: "He fought bravely." },
+      { label: "গ", source: "ক্লান্ত হয়ে সে কিছুক্ষণ বিশ্রাম নিল।", target: "Being tired, he took rest for a while." },
+      { label: "ঘ", source: "ঘন্টা পড়ার পূর্বে তারা স্কুলে পৌঁছাল।", target: "They had reached the school before the bell rang." },
+      { label: "ঙ", source: "চুপ! লোকটি ঘুমিয়েছে।", target: "Hush! The man has fallen asleep." },
+      { label: "চ", source: "কোন বইটি সে পড়ছে?", target: "Which book is he reading?" }
+    ] },
+
+  { id: "job-2025-judicial-service-steno-q07", examId: "job-2025-judicial-service-steno", subject: "math", topic: "গ-বিভাগ (গণিত)", qno: 7, marks: 12, type: "math",
+    question: "ক) একটি সোনার গহনার ওজন ১৬ গ্রাম। এতে সোনা ও তামার অনুপাত ৩:১। এতে কি পরিমাণ সোনা মেশালে অনুপাত ৪:১ হবে?\nখ) ΔABC এর BE=FE=CF। ΔAEC এর ক্ষেত্রফল ৪৮ বর্গফুট হলে, ΔABC এর ক্ষেত্রফল কত বর্গফুট?\nগ) x⁴ + 2x² + 1 = 5x² হলে x + 1/x = কত?",
+    steps: [
+      "ক) সোনার পরিমাণ = ১৬ এর ৩/৪ = ১২ গ্রাম; ধরি, x গ্রাম সোনা মেশালে অনুপাত ৪:১ হবে; (১২+x):৪ = ৪:১ থেকে x = ৪",
+      "খ) BE=FE=CF সমান হওয়ায়, AE ও AF মধ্যমা; ΔAFC = ২৪ বর্গফুট; ΔABC = ΔABE + ΔAEC = ২৪ + ৪৮ = ৭২ বর্গফুট",
+      "গ) x⁴ + 2x² + 1 = 5x² থেকে x²+1/x² = 3; (x+1/x)² = 3+2 = 5; ∴ x + 1/x = √5"
+    ],
+    answer: "ক) ৪ গ্রাম   খ) ৭২ বর্গফুট   গ) x + 1/x = √5" },
+
+  { id: "job-2025-judicial-service-steno-q08", examId: "job-2025-judicial-service-steno", subject: "general-knowledge", topic: "ঘ-বিভাগ (সাধারণ জ্ঞান)", qno: 8, marks: 20, type: "short-qa",
+    question: "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "পানগাঁও অভ্যন্তরীণ কনটেইনার টার্মিনাল কোন নদীর তীরে অবস্থিত?", a: "বুড়িগঙ্গা নদী।" },
+      { label: "খ", q: "বিখ্যাত চিত্রকর্ম 'তিন কন্যা' এর চিত্রকর কে?", a: "কামরুল হাসান।" },
+      { label: "গ", q: "বাংলাদেশের সংবিধান রচনা কমিটির একমাত্র মহিলা সদস্য কে?", a: "বেগম রাজিয়া বানু।" },
+      { label: "ঘ", q: "বাংলাদেশের সাথে বর্তমানে কয়টি দেশের বন্দি প্রত্যর্পণ চুক্তি রয়েছে?", a: "২টি; ভারত ও থাইল্যান্ড; (সূত্র: বিবিসি বাংলা)" },
+      { label: "ঙ", q: "গণভোট অধ্যাদেশ, ২০২৫ জারি হয় কবে?", a: "২৫ নভেম্বর, ২০২৫।" },
+      { label: "চ", q: "বাংলাদেশের প্রথম ক্রিকেটার হিসাবে শততম টেস্ট ম্যাচ খেলেছেন কে?", a: "মুশফিকুর রহিম।" },
+      { label: "ছ", q: "'UN House in Bangladesh' কোথায় অবস্থিত?", a: "গুলশান, ঢাকা।" },
+      { label: "জ", q: "ঋতিক ঘটক পরিচালিত একটি চলচিত্রের নাম লিখুন।", a: "তিতাস একটি নদীর নাম।" },
+      { label: "ঝ", q: "আফ্রিকান ইউনিয়নের সদর দফতর কোথায় অবস্থিত?", a: "আদ্দিস আবাবা, ইথিওপিয়া।" },
+      { label: "ঞ", q: "বিশ্বের প্রথম মহিলা প্রধানমন্ত্রী কে ছিলেন?", a: "শ্রীমাভো বন্দরনায়েক (শ্রীলঙ্কা)।" },
+      { label: "ট", q: "'ChatGPT' এর পূর্ণরূপ কী?", a: "Chat Generative Pre-trained Transformer" },
+      { label: "ঠ", q: "সম্প্রতি মালয়েশিয়ায় কততম আসিয়ান শীর্ষ সম্মেলন অনুষ্ঠিত হয়েছে?", a: "৪৭তম।" },
+      { label: "ড", q: "কৃত্রিমভাবে বৃষ্টি ঘটানোর পদ্ধতি 'ক্লাউড সিডিং' এর জনক কে?", a: "ভিনসেন্ট জে. শেফার।" },
+      { label: "ঢ", q: "২০২৫ সালে কেমব্রিজ ডিকশনারীর বর্ষসেরা শব্দ কোনটি?", a: "প্যারাসোশ্যাল (Parasocial); বাংলা অর্থ এক পক্ষীয় প্রেম বা বন্ধুত্ব।" },
+      { label: "ণ", q: "বিশ্ব এইডস দিবস পালন করা হয় কবে?", a: "১লা ডিসেম্বর।" }
+    ] },
+
+  // ══════════════════════════════════════════════════════════
   // পরীক্ষা: জাতীয় আইনগত সহায়তা প্রদান সংস্থা — অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক (job-2025-nlasp-office-asst-typist)
   // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৩৮৮-৩৯১)
   // ══════════════════════════════════════════════════════════
@@ -2702,6 +4080,891 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-health-services-office-sohayak-q14", "examId": "job-2025-health-services-office-sohayak", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 5, "type": "math", "question": "x − 1/x = 2 হলে, x⁴ + 1/x⁴ এর মান কত?", "steps": ["দেওয়া আছে, x − 1/x = 2", "বামপক্ষ = x⁴ + 1/x⁴", "= (x²)² + (1/x²)²", "= (x² + 1/x²)² − 2.x².1/x²", "= (x² + 1/x²)² − 2", "= {(x − 1/x)² + 2.x.1/x}² − 2", "= (2² + 2)² − 2", "= (4 + 2)² − 2", "= (6)² − 2", "= 36 − 2 = 34 (Answer)", "বিকল্প সমাধান: দেওয়া আছে, x − 1/x = 2", "বা, (x − 1/x)² = (2)²  [উভয় পক্ষকে বর্গ করে]", "বা, x² − 2.x.1/x + (1/x)² = 4", "বা, x² − 2 + 1/x² = 4", "বা, x² + 1/x² = 4 + 2", "বা, x² + 1/x² = 6", "বা, (x² + 1/x²)² = (6)²  [পুনরায় বর্গ করে]", "বা, (x²)² + 2.x².1/x² + (1/x²)² = 36", "বা, x⁴ + 2 + 1/x⁴ = 36", "বা, x⁴ + 1/x⁴ = 36 − 2", "∴ x⁴ + 1/x⁴ = 34 (Answer)"], "answer": "৩৪। (লক্ষণীয়: মূল বইয়ের প্রথম সমাধান পদ্ধতির শুরুতে লেখা 'x − 1/x = 4' একটি মুদ্রণ ত্রুটি বলে মনে হয়, কারণ প্রশ্নে ও বিকল্প সমাধানে 'x − 1/x = 2' দেওয়া আছে — বই অনুযায়ী হুবহু রাখা হলো)"},
 
   {"id": "job-2025-health-services-office-sohayak-q15", "examId": "job-2025-health-services-office-sohayak", "subject": "general-knowledge", "topic": "gk-others", "qno": 15, "marks": 15, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর করুন।", "parts": [{"label": "ক", "q": "জাতীয় বাজেট ২০২৫-২৬ এ বার্ষিক উন্নয়ন কর্মসূচিতে বরাদ্দ কত?", "a": "২,৩০,০০০ কোটি টাকা"}, {"label": "খ", "q": "জরুরি হটলাইন স্বাস্থ্য বাতায়ন এর নম্বরটি লিখুন।", "a": "১৬২৬৩"}, {"label": "গ", "q": "সিরাজউদ্দৌলা এর প্রকৃত নাম কী?", "a": "মির্জা মুহম্মদ সিরাজউদ্দৌলা"}, {"label": "ঘ", "q": "NITOR এর পূর্ণরূপ কী?", "a": "National Institute of Traumatology and Orthopaedic Rehabilitation"}, {"label": "ঙ", "q": "অপারেশন আয়রন সোর্ড কী?", "a": "অপারেশন আয়রন সোর্ড হলো ২০২৩ সালের ৭ অক্টোবরের হামাসের আকস্মিক হামলার প্রতিক্রিয়ায় ইসরায়েল কর্তৃক পরিচালিত এক সামরিক অভিযান।"}, {"label": "চ", "q": "বাংলাদেশের জাতীয় পতাকার ডিজাইনার কে?", "a": "কামরুল হাসান"}, {"label": "ছ", "q": "সেভেন সিস্টার্স কী?", "a": "ভারতের উত্তর-পূর্বাঞ্চলের সাতটি রাজ্যের সমষ্টিগত নাম সেভেন সিস্টার্স। রাজ্যগুলো হলো: আসাম, অরুণাচল প্রদেশ, মণিপুর, মেঘালয়, মিজোরাম, নাগাল্যান্ড ও ত্রিপুরা।"}, {"label": "জ", "q": "বর্তমানে LDC ভুক্ত দেশ কয়টি?", "a": "৪৪ টি"}, {"label": "ঝ", "q": "ডোভার প্রণালী পৃথক করেছে কোন দুটি দেশকে?", "a": "যুক্তরাজ্য ও ফ্রান্স"}, {"label": "ঞ", "q": "পুনর্ভবা, নাগর ও টাঙন কোন নদীর উপনদী?", "a": "মহানন্দা"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জেলা প্রশাসকের কার্যালয়, নারায়ণগঞ্জ — নাজির কাম ক্যাশিয়ার, অফিস সহকারী (job-2025-dc-narayanganj-nazir-cashier)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪০২-৪০৫)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q01", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "প্রকৃতি ও প্রত্যয়", "qno": 1, "marks": 4, "type": "short-qa", "question": "প্রকৃতি ও প্রত্যয় নির্ণয় করুন:", "parts": [{"label": "ক", "q": "কর্তব্য", "a": "কৃ + তব্য"}, {"label": "খ", "q": "দৈনিক", "a": "দিন + ইক"}, {"label": "গ", "q": "মানব", "a": "মনু + ষ্ণ"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q02", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 2, "marks": 3, "type": "short-qa", "question": "এক কথায় প্রকাশ করুন:", "parts": [{"label": "ক", "q": "পা থেকে মাথা পর্যন্ত", "a": "আপাদমস্তক"}, {"label": "খ", "q": "নষ্ট হওয়ার স্বভাব যার", "a": "নশ্বর"}, {"label": "গ", "q": "কি করতে হবে তা বুঝতে না পারা", "a": "কিংকর্তব্যবিমূঢ়"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q03", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "অর্থসহ বাক্য রচনা", "qno": 3, "marks": 3, "type": "short-qa", "question": "অর্থসহ বাক্য রচনা করুন:", "parts": [{"label": "ক", "q": "কেতাদুরস্ত", "a": "পরিপাটি"}, {"label": "খ", "q": "চিনে জোঁক", "a": "নাছোড়বান্দা"}, {"label": "গ", "q": "রাঙা মুলো", "a": "সুন্দর কিন্তু গুণহীন"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q04", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 4, "marks": 4, "type": "short-qa", "question": "শুদ্ধ বানান লিখুন।", "parts": [{"label": "ক", "q": "বৃতপত্তি", "a": "ব্যুৎপত্তি"}, {"label": "খ", "q": "দোষনিয়", "a": "দূষণীয়"}, {"label": "গ", "q": "শ্রদ্ধাঞ্জলি", "a": "শ্রদ্ধাঞ্জলি"}, {"label": "ঘ", "q": "আভ্যন্তরীন", "a": "অভ্যন্তরীণ"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q05", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "সাহিত্য ও ব্যাকরণ", "qno": 5, "marks": 8, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দাও:", "parts": [{"label": "ক", "q": "চোরাবালি কাব্যগ্রন্থ কার লেখা?", "a": "কবি বিষ্ণু দে"}, {"label": "খ", "q": "আমি কলম দিয়ে লিখি। এখানে কলম কোন কারকের উদাহরণ?", "a": "করণ কারক"}, {"label": "গ", "q": "জমিদার শব্দের স্ত্রীলিঙ্গ কি?", "a": "জমিদারনি"}, {"label": "ঘ", "q": "'সব ঝিনুকে মুক্তা মিলে না।' এখানে 'ঝিনুকে' কোন কারকে কোন বিভক্তি?", "a": "অপাদান কারকে ৭মী বিভক্তি"}, {"label": "ঙ", "q": "'সুশিক্ষিত লোক মাত্রই স্বশিক্ষিত।' উক্তিটি কার?", "a": "প্রমথ চৌধুরী"}, {"label": "চ", "q": "'প্রভাত চিন্তা, নিভৃত চিন্তা, নিশীথ চিন্তা' প্রভৃতি গ্রন্থের রচয়িতা কে?", "a": "কালীপ্রসন্ন ঘোষ"}, {"label": "ছ", "q": "বাংলা একাডেমী থেকে প্রকাশিত ত্রৈমাসিক পত্রিকার নাম কী?", "a": "ধান শালিকের দেশ"}, {"label": "জ", "q": "সর্বজন এর বিশেষণ কী?", "a": "সর্বজনীন"}, {"label": "ঝ", "q": "রবীন্দ্রনাথ ঠাকুর তাঁর কোন নাটক কাজী নজরুল ইসলামকে উৎসর্গ করেন?", "a": "বসন্ত"}, {"label": "এ়", "q": "'সোনালী কাবিন' কাব্যগ্রন্থের রচয়িতা কে?", "a": "আল মাহমুদ"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q06", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "আবেদনপত্র", "qno": 6, "marks": 10, "type": "letter", "question": "একটি সামাজিক সমস্যার কথা বর্ণনা করে এবং তা সমাধানের ব্যবস্থা গ্রহণের অনুরোধ জানিয়ে জেলা প্রশাসকের বরাবর একটি আবেদন লিখুন।", "letter": {"to": "জেলা প্রশাসক, নারায়ণগঞ্জ", "body": "তারিখ: ২৪ অক্টোবর ২০২৫\n\nবরাবর\nজেলা প্রশাসক\nনারায়ণগঞ্জ\n\nবিষয়: মশক নিধন ও পানির সংকট সমাধানের জন্য আবেদন।\n\nমহোদয়,\n\nআমি খন্দকার আব্দুল কাদের রেজা, নারায়ণগঞ্জ এর বাসিন্দা। বিনীতভাবে জানাতে চাই যে, আমাদের এলাকার মানুষের জন্য মশক জনিত সমস্যা এবং পানির সংকট অনেক উদ্বেগের বিষয় হয়ে দাঁড়িয়েছে। বিশেষ করে বর্ষা মৌসুমে মশার প্রকোপ বৃদ্ধি পাচ্ছে, যার ফলে ডেঙ্গু, ম্যালেরিয়া সহ বিভিন্ন রোগের ঝুঁকি বাড়ছে। একই সঙ্গে, পানির সরবরাহও অনিয়মিত এবং অপ্রতুল হওয়ায় সাধারণ মানুষ দৈনন্দিন জীবনে কষ্ট ভোগ করছে।\n\nএই সমস্যাগুলো সমাধানের জন্য আমি আন্তরিকভাবে জেলা প্রশাসকের দৃষ্টি আকর্ষণ করে অনুরোধ করছি যে, আমাদের এলাকায় মশক নিধন কার্যক্রম চালু করা এবং পানির সংকট নিরসনের জন্য প্রয়োজনীয় ব্যবস্থা গ্রহণ করা হোক। এতে এলাকার মানুষ সুস্থ ও স্বাচ্ছন্দ্যে জীবনযাপন করতে পারবে। আপনার সদয় দৃষ্টি ও সহযোগিতার জন্য অগ্রিম ধন্যবাদ।\n\nআপনার বিশ্বস্ত,\nখন্দকার আব্দুল কাদের রেজা\nফতুল্লা, নারায়ণগঞ্জ"}},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q07", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "fill-in-the-blank", "qno": 7, "marks": 5, "type": "fill-gaps", "question": "Use appropriate word/words:", "parts": [{"sentence": "My friend always goes home........ foot.", "answer": "on"}, {"sentence": "At least one of the students...... full marks every time.", "answer": "gets"}, {"sentence": "The team is ........ eleven players.", "answer": "made up of"}, {"sentence": "The path.......... paved, so we were able to walk through the path.", "answer": "had been"}, {"sentence": "To stay healthy, we must plan to have a balanced.......", "answer": "diet"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q08", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "translation", "qno": 8, "marks": 5, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "আমি, তুমি ও সে স্কুলে যাব।", "target": "You, he and I will go to school."}, {"label": "খ", "source": "সে কঠোর পরিশ্রম করে, তাই না?", "target": "He works hard, doesn't he?"}, {"label": "গ", "source": "সে এক সপ্তাহ যাবৎ অসুস্থ।", "target": "He has been ill for a week."}, {"label": "ঘ", "source": "আমি সেখানে যাব।", "target": "I will go there."}, {"label": "ঙ", "source": "তোমরা কি এখানে থাক?", "target": "Do you live here?"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q09", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "vocabulary", "qno": 9, "marks": 5, "type": "table", "question": "Write down the synonym:", "columns": ["Given Word", "Synonym"], "rows": [["Ability", "Capability"], ["Flame", "Fire"], ["Purchase", "Buy"], ["Bold", "Brave"], ["Defense", "Protection"]]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q10", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "idiom", "qno": 10, "marks": 5, "type": "idiom", "question": "Make a meaningful sentence with the following words or Phrases. (any five)", "parts": [{"label": "a", "phrase": "A hair's breadth escape", "meaning": "হাতের মুঠোর মতো নিরাপদে বাঁচা। চুল পরিমাণ নিরাপদ জায়গা", "example": "He had a hair's breadth escape when the car skidded off the road."}, {"label": "b", "phrase": "A man of word", "meaning": "এক কথার লোক", "example": "He is a man of word."}, {"label": "c", "phrase": "A turn coat", "meaning": "যে ব্যক্তি নিজের অবস্থান বা বিশ্বাস পরিবর্তন করে/দল ত্যাগ করা", "example": "Betraying his friends, he proved himself a turn coat."}, {"label": "d", "phrase": "A wolf in sheep's clothing", "meaning": "যে ব্যক্তি নিরীহ বা ভাল চেহারায় ভীষণ বিপজ্জনক", "example": "The fraudster is a wolf in sheep's clothing, pretending to be kind."}, {"label": "e", "phrase": "All and sundry", "meaning": "সকলেই", "example": "The festival was open to all and sundry, rich or poor."}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q11", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "transformation", "qno": 11, "marks": 5, "type": "sentence-change", "question": "Transform the following Sentences as directed in the bracket.", "parts": [{"label": "a", "original": "He pleases us. (Passive)", "changed": "We are pleased with him."}, {"label": "b", "original": "He said, \"The train reached at nine.\" (Indirect)", "changed": "He said that the train had reached at nine."}, {"label": "c", "original": "He admitted his guilt. (Complex)", "changed": "He admitted that he was guilty."}, {"label": "d", "original": "Walk carefully lest you should fall. (Compound)", "changed": "Walk carefully or you will fall."}, {"label": "e", "original": "He is always on time. (Negative)", "changed": "He is never late."}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q12", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 12, "marks": 4, "type": "table", "question": "শুদ্ধ বানান লিখুন:", "columns": ["Incorrect", "Correct"], "rows": [["misisipi", "Mississippi"], ["millinium", "Millennium"], ["hicriarchy", "Hierarchy"], ["priveleg", "Privilege"], ["enterpeneur", "Entrepreneur"], ["playrite", "Playwright"], ["exagarate", "Exaggerate"]]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q13", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "fill-in-the-blank", "qno": 13, "marks": 5, "type": "fill-gaps", "question": "Fill the gaps with preposition:", "parts": [{"sentence": "A good student is fond (a).......books.", "answer": "of"}, {"sentence": "He adheres (b).......his studies.", "answer": "to"}, {"sentence": "He always tries to cut a brilliant figure (c).......the examination.", "answer": "in"}, {"sentence": "He never deviates (d)........his duties because", "answer": "from"}, {"sentence": "success depends (e).......hard work.", "answer": "on"}]},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q14", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "letter", "qno": 14, "marks": 10, "type": "letter", "question": "Write an application to the Deputy Commissioner for establishing a language club in your school.", "letter": {"to": "The Deputy Commissioner Narayanganj", "body": "Subject: Request for Permission to Establish a Language Club\n\nRespected Sir,\n\nWith due respect, I would like to inform you that we, the students of [School Name], wish to establish a Language Club in our school to promote reading, speaking, and writing skills in English and other languages. This club will help students improve their communication skills and participate in debates, discussions, and cultural activities.\n\nWe kindly request your permission to establish this club and provide necessary guidance.\n\nYours obediently,\nMiraz, Class Seven"}},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q15", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "math", "topic": "গণিত সমস্যা", "qno": 15, "marks": 30, "type": "math", "question": "নিম্নলিখিত গাণিতিক প্রশ্নগুলোর উত্তর দিন:\n১২। 0.8 × 0.2 × 0.৪ = ?\n১৩। (0.9)³+(0.4)³ / 0.9+0.4 = ?\n১৪। 125(√5)^2x = 1 হলে x এর মান কত?\n১৫। একটি সংখ্যার ৩০% থেকে ৩০ বিয়োগ করলে বিয়োগফল ৩০ হবে। সংখ্যাটি কত?\n১৬। চার অংকের বৃহত্তম সংখ্যা থেকে তিন অংকের ক্ষুদ্রতম সংখ্যা বিয়োগ করলে বিয়োগফল কত?\n১৭। ৮, ১১, ১৭, ২৯, ৫৩ __ পরবর্তী সংখ্যাটি কত?\n১৮। একটি সমচতুর্ভুজের ক্ষেত্রফল নির্ণয়ের সূত্র কী?\n১৯। 0.0001 এর বর্গমূল কত?\n২০। একটি গাড়ির চাকা মিনিটে ৯০ বার ঘোরে। ১ সেকেন্ডে চাকাটি কত ডিগ্রী ঘুরবে নির্ণয় করুন।\n২১। একটি বর্গাকার বাগানের ক্ষেত্রফল ১ হেক্টর হলে বাগানটির পরিসীমা কত?\n২২। মামুন ও তপনের আয়ের অনুপাত ৪ঃ৩। তপন ও বশিরের আয়ের অনুপাত ৫ঃ৪। মামুনের আয় ১২০ টাকা হলে, বশিরের আয় কত?\n২৩। একটি মটর সাইকেল ১২% ক্ষতিতে বিক্রয় করা হল। যদি বিক্রয়মূল্য ১২০০ টাকা বেশি হতো তাহলে ৮% লাভ হত। মটর সাইকেলটির ক্রয়মূল্য কত?\n২৪। একটি আয়তক্ষেত্রের দৈর্ঘ্য ১৮ সে.মি এবং প্রস্থ ১০ সে.মি। আয়তক্ষেত্রটির দৈর্ঘ্য বৃদ্ধি করে ২৫ সে.মি করা হলো। আয়তক্ষেত্রটির প্রস্থ কত হলে ক্ষেত্রফল অপরিবর্তিত থাকবে?\n২৫। যদি x + 1/x = 5 হয়, x² + 1/x² তবে এর মান কত?", "steps": ["১২) 0.8 × 0.2 × 0.৪ = 0.064", "১৩) (0.9)³+(0.4)³ / (0.9+0.4) = 0.61", "১৪) 125(√5)^2x = 1", "বা, 5³.5^(2x/2) = 1", "বা, 5³.5^x = 1", "বা, 5^(3+x) = 5^0", "বা, 3+x = 0", "∴ x = −3 (Answer)", "১৫) মনে করি, সংখ্যাটি ক", "প্রশ্নমতে, ক এর ৩০% - ৩০ = ৩০", "বা, ৩০ক/১০০ = ৬০", "বা, ৩০ক = ৬০০০", "ক = ২০০", "উত্তর: ২০০", "১৬) চার অংকের বৃহত্তম সংখ্যা ৯৯৯৯ থেকে তিন অংকের ক্ষুদ্রতম সংখ্যা ১০০ বিয়োগ করলে বিয়োগফল = ৯৮৯৯", "১৭) ৮, ১১, ১৭, ২৯, ৫৩ ধারায় পার্থক্য ৩, ৬, ১২, ২৪ (দ্বিগুণ ধারা), পরবর্তী পার্থক্য ৪৮, সুতরাং পরবর্তী সংখ্যা = ৫৩+৪৮ = ১০১", "১৮) সমচতুর্ভুজের ক্ষেত্রফল = ১/২ × কর্ণদ্বয়ের গুণফল", "১৯) 0.0001 এর বর্গমূল = 0.01", "২০) ১ বার ঘুরলে অতিক্রম করে ৩৬০°; ৯০ বার ঘুরলে অতিক্রম করে ৯০ × ৩৬০° = ৩২৪০০°, যা ৬০ সেকেন্ডে ঘোরে; ১ সেকেন্ডে ঘুরবে ৩২৪০০°/৬০ = ৫৪০°", "২১) মনে করি, বাগানের দৈর্ঘ্য a মিটার; ক্ষেত্রফল = a²; প্রশ্নমতে, a² = 10000 [১ হেক্টর = ১০০০০ বর্গ মি.]; ∴ a² = 100; সুতরাং বাগানের পরিসীমা = 4a = 4 × 100 = 400 মিটার", "২২) মামুন ও তপনের আয়ের অনুপাত ৪ঃ৩ = ২০ঃ১৫; তপন ও বশিরের আয়ের অনুপাত ৫ঃ৪ = ১৫ঃ১২; মামুনের আয় : তপনের আয় : বশিরের আয় = ২০ : ১৫ : ১২; মামুনের আয়/বশিরের আয় = ২০/১২; বশিরের আয় = (মামুনের আয় × ১২)/২০ = (১২০ × ১২)/২০ = ৭২ টাকা", "২৩) মনে করি, ক্রয়মূল্য ১০০ টাকা; ১২% ক্ষতিতে বিক্রয়মূল্য (১০০-১২)=৮৮ টাকা; ৮% লাভে বিক্রয়মূল্য (১০০+৮)=১০৮ টাকা; বিক্রয়মূল্য বেশি (১০৮-৮৮)=২০ টাকা; বিক্রয়মূল্য ২০ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা; \"১২০০\" হলে ক্রয়মূল্য = (১০০×১২০০)/২০ = ৬০০০ টাকা", "২৪) অপরিবর্তিত অবস্থায় ক্ষেত্রফল = (১৮ × ১০) বর্গ সে.মি = ১৮০ বর্গ সে.মি; ধরি, পরিবর্তিত অবস্থায় প্রস্থ = x; প্রশ্নমতে, ২৫x = ১৮০; ∴ x = ৭.২; উত্তর: ৭.২ সে.মি", "২৫) প্রদত্ত রাশি = x² + (1/x)² = (x+1/x)² − 2.x.1/x = 5² − 2 [মান বসিয়ে] = 25 − 2 = 23 (Answer)"], "answer": "১২) ০.০৬৪ ১৩) ০.৬১ ১৪) x=−৩ ১৫) ২০০ ১৬) ৯৮৯৯ ১৭) ১০১ ১৮) ১/২×কর্ণদ্বয়ের গুণফল ১৯) ০.০১ ২০) ৫৪০° ২১) ৪০০ মিটার ২২) ৭২ টাকা ২৩) ৬০০০ টাকা ২৪) ৭.২ সে.মি ২৫) ২৩"},
+
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q16", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 26, "marks": 20, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর করুন:", "parts": [{"label": "ক", "q": "জাতিসংঘের সংস্থা IPCC এর পূর্ণরূপ কি?", "a": "Intergovernmental Panel on Climate Change"}, {"label": "খ", "q": "Three Zeros তত্ত্বের প্রবক্তা কে?", "a": "ড. মুহম্মদ ইউনূস"}, {"label": "গ", "q": "কুসুম্বা মসজিদ কোথায় অবস্থিত?", "a": "নওগাঁ"}, {"label": "ঘ", "q": "শালবন বিহার কোন রাজবংশের কীর্তি?", "a": "দেব বংশ"}, {"label": "ঙ", "q": "মালদ্বীপের প্রধান ভাষার নাম কী?", "a": "দিবেহী"}, {"label": "চ", "q": "'সোয়াচ অব নো গ্রাউন্ড' মানে কি?", "a": "বঙ্গোপসাগরের একটি খাদ"}, {"label": "ছ", "q": "আধুনিক অলিম্পিকের প্রবর্তক কে?", "a": "ব্যারন পিয়েরে দ্যা কুবার্তা"}, {"label": "জ", "q": "বাংলাদেশের বর্তমান এটর্নি জেনারেলের নাম কি?", "a": "মো. আসাদুজ্জামান"}, {"label": "ঝ", "q": "বাংলাদেশের একটি জীবন্ত জীবাশ্মের নাম কী?", "a": "রাজ কাঁকড়া"}, {"label": "এঞ", "q": "বাংলাদেশ জাতিসংঘের সদস্যপদ লাভ করে কবে?", "a": "১৭ সেপ্টেম্বর ১৯৭৪"}, {"label": "ট", "q": "Natural Protein এর কোডের নাম কী?", "a": "P49"}, {"label": "ঠ", "q": "বাংলাদেশ প্রথম বিশ্বকাপ ক্রিকেটে অংশ নেয় কত সালে?", "a": "১৯৯৯ সালে"}, {"label": "ড", "q": "কম্পিউটারের প্রধান প্রিন্টেড সার্কিট বোর্ডকে কি বলা হয়?", "a": "মাদারবোর্ড"}, {"label": "ঢ", "q": "প্লটার কী?", "a": "প্লটার (Plotter) হলো একটি আউটপুট ডিভাইস, যা চিত্র, নকশা, মানচিত্র বা গ্রাফ কাগজে অঙ্কন করতে ব্যবহৃত হয়।"}, {"label": "ণ", "q": "মৌলিক পদার্থের ক্ষুদ্রতম কণা যা রাসায়নিক প্রক্রিয়ায় অংশগ্রহণ করে তাকে বলা হয়?", "a": "পরমাণু"}, {"label": "ত", "q": "কম্পিউটারের কাজ করার গতির একক কী?", "a": "ন্যানো সেকেন্ড"}, {"label": "থ", "q": "কম্পিউটারের বাইনারী সংখ্যা পদ্ধতিতে কোন দুইটি সংখ্যা ব্যবহার করা হয়?", "a": "০,১"}, {"label": "দ", "q": "GUI এর পূর্ণরূপ কী?", "a": "Graphical User Interface"}, {"label": "ন", "q": "১টি কীবোর্ডে কতটি Function কী থাকে?", "a": "১২টি"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: প্রতিরক্ষা মন্ত্রণালয় — বাংলাদেশ নৌবাহিনীর আর্টিফিসার (job-2025-navy-artificer)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪০৬-৪০৯)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-navy-artificer-q01", "examId": "job-2025-navy-artificer", "subject": "bangla", "topic": "সন্ধি বিচ্ছেদ", "qno": 1, "marks": 5, "type": "short-qa", "question": "সন্ধি বিচ্ছেদ করুন:", "parts": [{"label": "ক", "q": "কটাক্ষ", "a": "কট + অক্ষ"}, {"label": "খ", "q": "অধ্যুষিত", "a": "অধি + উষিত"}, {"label": "গ", "q": "ব্যর্থ", "a": "বি + অর্থ"}, {"label": "ঘ", "q": "শীতার্ত", "a": "শীত + ঋত"}, {"label": "ঙ", "q": "জাত্যভিমান", "a": "জাতি + অভিমান"}]},
+
+  {"id": "job-2025-navy-artificer-q02", "examId": "job-2025-navy-artificer", "subject": "bangla", "topic": "প্রতিশব্দ", "qno": 2, "marks": 5, "type": "short-qa", "question": "'অক্ষয়' শব্দের পাঁচটি প্রতিশব্দ লিখুন।", "parts": [{"label": "", "q": "'অক্ষয়' শব্দের পাঁচটি প্রতিশব্দ লিখুন।", "a": "চিরন্তন, চিরস্থায়ী, অনন্ত, অবিনশ্বর, স্থায়ী"}]},
+
+  {"id": "job-2025-navy-artificer-q03", "examId": "job-2025-navy-artificer", "subject": "bangla", "topic": "অর্থসহ বাক্য গঠন", "qno": 3, "marks": 5, "type": "short-qa", "question": "অর্থসহ বাক্য গঠন করুন:", "parts": [{"label": "ক", "q": "চিনে জোঁক", "a": "নাছোড়বান্দা"}, {"label": "খ", "q": "সংঘমে চড়া", "a": "প্রচণ্ড উত্তেজনা"}, {"label": "গ", "q": "ভিটায় ঘুঘু চরানো", "a": "সর্বস্বান্ত/সর্বনাশ করা"}, {"label": "ঘ", "q": "তালকানা", "a": "বেতাল হওয়া/কাণ্ডজ্ঞানহীন"}, {"label": "ঙ", "q": "খেজুরে আলাপ", "a": "অকাজের কথা"}]},
+
+  {"id": "job-2025-navy-artificer-q04", "examId": "job-2025-navy-artificer", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 4, "marks": 5, "type": "short-qa", "question": "বিপরীত শব্দ লিখুন:", "parts": [{"label": "", "q": "অনুরক্ত", "a": "বিরক্ত"}, {"label": "", "q": "উদ্দিষ্ট", "a": "নিরুদ্দিষ্ট"}, {"label": "", "q": "গৃহী", "a": "সন্ন্যাসী"}, {"label": "", "q": "গুপ্ত", "a": "ব্যক্ত"}, {"label": "", "q": "জ্বলন", "a": "নির্বাপণ"}]},
+
+  {"id": "job-2025-navy-artificer-q05", "examId": "job-2025-navy-artificer", "subject": "bangla", "topic": "অনুবাদ", "qno": 5, "marks": 5, "type": "translate", "question": "ইংরেজিতে অনুবাদ করুন:", "parts": [{"label": "ক", "source": "অতি লোভে তাঁতী নষ্ট।", "target": "Grasp all, lose all"}, {"label": "খ", "source": "অভাবে স্বভাব নষ্ট।", "target": "Necessity knows no law"}, {"label": "গ", "source": "নাচতে না জানলে উঠান বাঁকা।", "target": "A bad workman quarrels with his tools"}, {"label": "ঘ", "source": "নানা মুনির নানা মত।", "target": "Many men, many minds"}, {"label": "ঙ", "source": "পুরানো চাল ভাতে বাড়ে।", "target": "All that is old is not bad"}]},
+
+  {"id": "job-2025-navy-artificer-q06", "examId": "job-2025-navy-artificer", "subject": "english", "topic": "fill-in-the-blank", "qno": 6, "marks": 5, "type": "fill-gaps", "question": "Use appropriate word/words:", "parts": [{"sentence": "My friend always goes home........ foot.", "answer": "on"}, {"sentence": "At least one of the students...... full marks every time.", "answer": "gets"}, {"sentence": "The team is ........ eleven players.", "answer": "made up of"}, {"sentence": "The path.......... paved, so we were able to walk through the path.", "answer": "had been"}, {"sentence": "To stay healthy, we must plan to have a balanced.......", "answer": "diet"}]},
+
+  {"id": "job-2025-navy-artificer-q07", "examId": "job-2025-navy-artificer", "subject": "english", "topic": "translation", "qno": 7, "marks": 5, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "আমি, তুমি ও সে স্কুলে যাব।", "target": "You, he and I will go to school."}, {"label": "খ", "source": "সে কঠোর পরিশ্রম করে, তাই না?", "target": "He works hard, doesn't he?"}, {"label": "গ", "source": "সে এক সপ্তাহ যাবৎ অসুস্থ।", "target": "He has been ill for a week."}, {"label": "ঘ", "source": "আমি সেখানে যাব।", "target": "I will go there."}, {"label": "ঙ", "source": "তোমরা কি এখানে থাক?", "target": "Do you live here?"}]},
+
+  {"id": "job-2025-navy-artificer-q08", "examId": "job-2025-navy-artificer", "subject": "english", "topic": "vocabulary", "qno": 8, "marks": 5, "type": "table", "question": "Write down the synonym:", "columns": ["Given Word", "Synonym"], "rows": [["Ability", "Capability"], ["Flame", "Fire"], ["Purchase", "Buy"], ["Bold", "Brave"], ["Defense", "Protection"]]},
+
+  {"id": "job-2025-navy-artificer-q09", "examId": "job-2025-navy-artificer", "subject": "english", "topic": "vocabulary", "qno": 9, "marks": 5, "type": "table", "question": "Write down the antonyms:", "columns": ["Given Word", "Antonym"], "rows": [["Like", "Dislike"], ["Fire", "Water"], ["Sense", "Nonsense"], ["Regular", "Irregular"], ["Valid", "Invalid"]]},
+
+  {"id": "job-2025-navy-artificer-q10", "examId": "job-2025-navy-artificer", "subject": "english", "topic": "grammar", "qno": 10, "marks": 5, "type": "sentence-change", "question": "Correct the following sentences:", "parts": [{"label": "a", "original": "I shall go to yours.", "changed": "I shall go to you."}, {"label": "b", "original": "He has a strong headache.", "changed": "He has a bad headache."}, {"label": "c", "original": "It is a true fact.", "changed": "It is true."}, {"label": "d", "original": "Open page forty.", "changed": "Open at page forty."}, {"label": "e", "original": "He came yesterday night.", "changed": "He came last night."}]},
+
+  {"id": "job-2025-navy-artificer-q11", "examId": "job-2025-navy-artificer", "subject": "math", "topic": "চৌবাচ্চা ও নল", "qno": 11, "marks": 10, "type": "math", "question": "একটি নল ১২ মিনিটে একটি খালি চৌবাচ্চা পূর্ণ করতে পারে। অপর একটি নল প্রতি মিনিটে ১৪ লিটার পানি বের করে দেয়। চৌবাচ্চাটি খালি থাকা অবস্থায় দুইটি নল একসঙ্গে খুলে দেয়া হয় এবং চৌবাচ্চাটি ৯৬ মিনিটে পূর্ণ হয়। চৌবাচ্চাটিতে কত লিটার পানি ধরে?", "steps": ["মনে করি, প্রথম নল দ্বারা প্রতি মিনিটে x লিটার পানি প্রবেশ করে এবং চৌবাচ্চাটিকে মোট y লিটার পানি ধরে।", "∴ y = 12x ...... (1)", "আবার, দুইটি নল দ্বারা ৯৬ মিনিটে খালি চৌবাচ্চা পূর্ণ হয়", "∴ y = 96x − 96 × 14 ...... (2)", "সমীকরণ (1) থেকে পাই, x = y/12", "x এর মান সমীকরণ (2) এ বসিয়ে পাই,", "y = 96 × y/12 − 96 × 14", "বা, y = 8y − 96×14", "বা, 7y = 96×14", "বা, y = (96×14)/7 = 192", "উত্তর: চৌবাচ্চাটিতে মোট 192 লিটার পানি ধরে।", "বিকল্প সমাধান: ধরি, চৌবাচ্চাটিতে পানি ধরে x লিটার", "12 মিনিটে পূর্ণ করে x লিটার", "1 \" \" \" x/12 \"", "আবার, 96 মিনিটে পূর্ণ করে x লিটার", "1 \" \" \" x/96 \"", "প্রশ্নমতে, x/12 − x/96 = 14", "বা, (8x−x)/96 = 14", "বা, 7x/96 = 14", "বা, 7x = 1344", "বা, x = 1344/7 = 192", "∴ চৌবাচ্চাটিতে 192 লিটার পানি ধরে।"], "answer": "১৯২ লিটার।"},
+
+  {"id": "job-2025-navy-artificer-q12", "examId": "job-2025-navy-artificer", "subject": "math", "topic": "লাভ-ক্ষতি (চেইন)", "qno": 12, "marks": 10, "type": "math", "question": "A একটি দ্রব্য ১২০ টাকা খরচে তৈরি করে ২৫% লাভে B এর কাছে বিক্রয় করে। B আবার দ্রব্যটি C এর কাছে বিক্রয় করে যা C ১০% লাভে ১৯৮ টাকায় বিক্রয় করে। B শতকরা কত লাভ করে।", "steps": ["A এর বিক্রয়মূল্য = ১২০+ ১২০ এর ২৫% = ১৫০ টাকা", "A এর বিক্রয়মূল্যই B এর ক্রয়মূল্য বা ১৫০ টাকা", "C এর ১০% লাভে, বিক্রয়মূল্য ১১০ টাকা হলে ক্রয়মূল্য ১০০ টাকা", "\" ১ \" \" \" ১০০/১১০", "\" ১৯৮ \" \" \" (১০০×১৯৮)/১১০", "= ১৮০ টাকা", "C এর ক্রয়মূল্যই B এর বিক্রয়মূল্য বা ১৮০ টাকা", "সুতরাং B এর লাভ = ১৮০ − ১৫০ = ৩০ টাকা", "B এর ১৫০ টাকায় লাভ হয় ৩০ টাকা", "১ \" \" \" ৩০/১৫০", "১০০ \" \" \" (৩০×১০০)/১৫০", "= ২০ টাকা"], "answer": "২০%"},
+
+  {"id": "job-2025-navy-artificer-q13", "examId": "job-2025-navy-artificer", "subject": "math", "topic": "মুনাফা ও বিনিয়োগ", "qno": 13, "marks": 10, "type": "math", "question": "রাজু সাহেব তার 56000 টাকার কিছু টাকা বার্ষিক 12% মুনাফায় ও বাকি টাকা বার্ষিক 10% মুনাফায় বিনিয়োগ করলেন। এক বছর পর তিনি মোট 6400 টাকা মুনাফা পেলেন। তিনি 12% মুনাফায় কত টাকা বিনিয়োগ করেছেন?", "steps": ["মনে করি, রাজু সাহেব 12% মুনাফায় x টাকা বিনিয়োগ করেছেন।", "∴ তিনি 10% মুনাফায় বিনিয়োগ করেছেন (56000 − x) টাকা।", "100 টাকায় 1 বছরের মুনাফা 12 টাকা", "1 \" 1 \" \" 12/100", "x \" 1 \" \" 12x/100", "আবার, 100 টাকায় 1 বছরের মুনাফা 10 টাকা", "1 \" 1 \" \" 10/100", "(56000−x) \" 1 \" \" 10(56000−x)/100", "প্রশ্নমতে, 12x/100 + 10(56000−x)/100 = 6400", "বা, (12x + 560000 − 10x)/100 = 6400", "বা, 12x + 560000 − 10x = 640000", "বা, 2x = 640000 − 560000", "বা, x = 80000/2 ∴ x = 40000", "∴ রাজু সাহেব 12% মুনাফায় 40000 টাকা বিনিয়োগ করেছেন।"], "answer": "৪০০০০ টাকা।"},
+
+  {"id": "job-2025-navy-artificer-q14", "examId": "job-2025-navy-artificer", "subject": "math", "topic": "বীজগণিত (দুই চলক)", "qno": 14, "marks": 10, "type": "math", "question": "বাবু ও তপুর কাছে কিছু মার্বেল আছে। বাবু যদি তপুকে ১০টি মার্বেল দিয়ে দেয় তবে তাদের মার্বেলের সংখ্যা সমান হবে। আবার তপু যদি বাবুকে ২০টি মার্বেল দেয় তবে বাবুর মার্বেলের সংখ্যা দ্বিগুণ হবে। বাবুর কাছে কতটি মার্বেল আছে।", "steps": ["মনে করি, বাবুর আছে = ক টি", "তপুর আছে = খ টি", "প্রশ্নমতে, ক − ১০ = খ + ১০", "ক = খ + ২০ ....... (1)", "আবার, ক + ২০ = 2(খ − ২০)", "বা, ক + ২০ = ২খ − ৪০", "বা, খ + ২০ − ২খ = − ৬০ (ক এর মান বসিয়ে)", "∴ খ = ৮০", "খ এর মান (1) নং সমীকরণে বসিয়ে পাই,", "ক = ৮০ + ২০ = ১০০", "সুতরাং তপুর কাছে মার্বেল আছে ৮০ টি এবং বাবুর কাছে আছে ১০০টি।"], "answer": "বাবুর কাছে ১০০টি মার্বেল আছে।"},
+
+  {"id": "job-2025-navy-artificer-q15", "examId": "job-2025-navy-artificer", "subject": "math", "topic": "বীজগাণিতিক সমীকরণ", "qno": 15, "marks": 10, "type": "math", "question": "সমাধান করুন: (6x+1)/15 − (2x−4)/(7x−1) = (2x−1)/5", "steps": ["(6x+1)/15 − (2x−1)/5 = (2x−4)/(7x−1)", "বা, (6x+1−6x+3)/15 = (2x−4)/(7x−1)", "বা, 4/15 = (2x−4)/(7x−1)", "বা, 30x − 60 = 28x − 4", "বা, 2x = 56", "∴ x = 28 (Answer)"], "answer": "২৮"},
+
+  {"id": "job-2025-navy-artificer-q16", "examId": "job-2025-navy-artificer", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 20, "type": "short-qa", "question": "সংক্ষেপে উত্তর দিন:", "parts": [{"label": "ক", "q": "সর্বস্তরে বাংলা ভাষা প্রচলন আইন কত সালে পাশ হয়?", "a": "১৯৮৭ সালে।"}, {"label": "খ", "q": "ঢাকায় কেন্দ্রীয় শহিদ মিনার কে উদ্বোধন করেন?", "a": "শহীদ বরকতের মা"}, {"label": "গ", "q": "বাংলাদেশের সবচেয়ে পূর্বে অবস্থিত উপজেলার নাম কী?", "a": "থানচি"}, {"label": "ঘ", "q": "বাংলাদেশের মানচিত্র প্রথম কে আঁকেন?", "a": "জেমস রেনেল"}, {"label": "ঙ", "q": "বাংলাদেশের কোন জেলা দুই দেশের সীমানা দ্বারা বেষ্টিত?", "a": "রাঙ্গামাটি"}, {"label": "চ", "q": "বাংলাদেশ কবে জাতিসংঘের সদস্যপদ লাভ করে?", "a": "১৭ সেপ্টেম্বর, ১৯৭৪"}, {"label": "ছ", "q": "ভৌগোলিক নির্দেশক পণ্যের স্বীকৃতি দেয় কোন প্রতিষ্ঠান?", "a": "শিল্প মন্ত্রণালয়ের আওতাধীন পেটেন্ট, ডিজাইন ও ট্রেডমার্কস অধিদপ্তর (DPDT)"}, {"label": "জ", "q": "পায়রা বন্দর কোন নদীর মোহনায় অবস্থিত?", "a": "রামনাবাদ চ্যানেল সংলগ্ন আন্ধারমানিক নদী"}, {"label": "ঝ", "q": "বিলোনিয়া সীমান্ত কোন জেলার অন্তর্গত?", "a": "ফেনী"}, {"label": "ঞ", "q": "বাংলাদেশ বিমানের প্রতীকটি কে ডিজাইন করেন?", "a": "কামরুল হাসান"}, {"label": "১৭", "q": "দেশ দুইটির রাজধানীর নাম লিখুন: ডোমিনিকা, হন্ডুরাস", "a": "ডোমিনিকা- রোসেউ। হন্ডুরাস- তেগুসিগালপা"}, {"label": "১৮", "q": "সংস্থা দুইটির সদর দপ্তর কোথায়? IMO, UNIDO", "a": "IMO: লন্ডন, যুক্তরাজ্য। UNIDO: ভিয়েনা, অস্ট্রিয়া"}, {"label": "১৯", "q": "দেশ দুইটির মুদ্রার নাম লিখুন: হাইতি, প্যারাগুয়ে", "a": "হাইতি- গুরদে। প্যারাগুয়ে- গুয়ারানি"}, {"label": "২০", "q": "পূর্ণরূপ লিখুন: WCED, CEDAW", "a": "WCED: World Commission on Environment and Development। CEDAW: Convention on the Elimination of All Forms of Discrimination Against Women"}, {"label": "২১", "q": "দেশ দুইটির পূর্ব নাম লিখুন: ঘানা, জিম্বাবুয়ে", "a": "ঘানা- গোল্ড কোস্ট; জিম্বাবুয়ে- দক্ষিণ রোডেশিয়া"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: স্বাস্থ্য সেবা বিভাগ এর নিমিউ এন্ড টিসি — উচ্চমান সহকারী (job-2025-health-nimu-tc-uccho-man-sohokari)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৩৮০-৩৮২)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q01", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "bangla", "topic": "বাগধারা", "qno": 1, "marks": 5, "type": "idiom", "question": "বাগধারাগুলোর অর্থ লিখুনঃ", "parts": [{"label": "ক", "phrase": "গোকুলের ষাঁড়", "meaning": "স্বেচ্ছাচারী"}, {"label": "খ", "phrase": "ঘোড়ার কামড়", "meaning": "দৃঢ় পণ"}, {"label": "গ", "phrase": "ঝড়ো কাক", "meaning": "বিপর্যস্ত"}, {"label": "ঘ", "phrase": "ব্যাঙের আধুলি", "meaning": "সামান্য সম্পদ"}, {"label": "ঙ", "phrase": "এক লহমা", "meaning": "এক মুহূর্ত"}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q02", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 2, "marks": 5, "type": "table", "question": "বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["অনুসূয়া", "অনসূয়া"], ["মুমূর্ষ", "মুমূর্ষু"], ["অভ্যান্তরিন", "অভ্যন্তরীণ"], ["উচ্ছাস", "উচ্ছ্বাস"], ["উদ্ভিজ", "উদ্ভিদ"]]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q03", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "bangla", "topic": "বাক্য শুদ্ধিকরণ", "qno": 3, "marks": 4, "type": "sub-parts", "question": "বাক্য শুদ্ধিকরণ করুনঃ", "parts": [{"label": "ক", "q": "তার দুচোখ অশ্রুজলে ভেসে গেল।", "a": "তার দুচোখ অশ্রুতে ভেসে গেল।"}, {"label": "খ", "q": "অতিশয় দুঃখিত হলাম।", "a": "খুব দুঃখ পেলাম।"}, {"label": "গ", "q": "অপমান হবার ভয় নেই।", "a": "অপমানিত হবার ভয় নেই।"}, {"label": "ঘ", "q": "গণিত খুব কঠিন বিষয়।", "a": "গণিত খুব কঠিন।"}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q04", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 4, "marks": 5, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "জয় করার ইচ্ছা", "a": "জিগীষা"}, {"label": "খ", "q": "বাঘের চামড়া", "a": "কৃত্তি"}, {"label": "গ", "q": "পা দিয়ে চলে না যে", "a": "প্রবগ"}, {"label": "ঘ", "q": "যে বৃক্ষের ফল হয় কিন্তু ফুল হয় না", "a": "বনস্পতি"}, {"label": "ঙ", "q": "দিন ও রাতের সন্ধিক্ষণ", "a": "গোধূলি"}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q05", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 5, "type": "fill-gaps", "question": "Fill in the gaps with preposition:", "parts": [{"sentence": "He went there..... 7.0'clock in evening.", "answer": "at"}, {"sentence": "Dhaka is........the Buriganga.", "answer": "on"}, {"sentence": "The house is made........ brick.", "answer": "of"}, {"sentence": "I will speak.......you.", "answer": "for"}, {"sentence": "He is not....... good health.", "answer": "in"}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q06", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "english", "topic": "spelling", "qno": 6, "marks": 5, "type": "table", "question": "Correct Spelling:", "columns": ["Incorrect", "Correct"], "rows": [["Difinition", "Definition"], ["Hidrozen", "Hydrogen"], ["Atomsphare", "Atmosphere"], ["Dialoge", "Dialogue"], ["Achivment", "Achievement"]]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q07", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "english", "topic": "grammar", "qno": 7, "marks": 5, "type": "sentence-change", "question": "Voice change: (active to passive)", "parts": [{"label": "a", "original": "He will have read the book.", "changed": "The book will have been read by him."}, {"label": "b", "original": "I may help you.", "changed": "You may be helped by me."}, {"label": "c", "original": "Shut the door.", "changed": "Let the door be shut."}, {"label": "d", "original": "Whom is he teaching English?", "changed": "Who is being taught English by him?"}, {"label": "e", "original": "He made me do the work.", "changed": "I was made to do the work by him."}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q08", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "english", "topic": "idiom", "qno": 8, "marks": 5, "type": "idiom", "question": "Write the meaning of phrase:", "parts": [{"label": "a", "phrase": "End in smoke", "meaning": "ব্যর্থ হওয়া"}, {"label": "b", "phrase": "Blue Blood", "meaning": "অভিজাত বংশীয়"}, {"label": "c", "phrase": "Gala day", "meaning": "আনন্দের দিন"}, {"label": "d", "phrase": "In a nutshell", "meaning": "সংক্ষেপে"}, {"label": "e", "phrase": "Black and White", "meaning": "লিখিতভাবে"}]},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q09", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "math", "topic": "পাটিগণিত", "qno": 9, "marks": 10, "type": "math", "question": "একটি শ্রেণির প্রতিবেঞ্চে ৪ জন করে ছাত্র বসালে ৩টি বেঞ্চ খালি থাকে। আবার, প্রতিবেঞ্চে ৩ জন করে ছাত্র বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়। ঐ শ্রেণির ছাত্র সংখ্যা কত?", "steps": ["মনে করি, শ্রেণিটির বেঞ্চের সংখ্যা x", "যেহেতু, প্রতিবেঞ্চে ৪ জন করে বসালে ৩টি বেঞ্চ খালি থাকে, সেহেতু ঐ শ্রেণির ছাত্র সংখ্যা = x/4 + 3", "আবার, যেহেতু প্রতিবেঞ্চে ৩ জন করে বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = (x−6)/3", "যেহেতু শ্রেণির বেঞ্চের সংখ্যা একই থাকবে, সুতরাং x/4 + 3 = (x−6)/3", "বা, (x+12)/4 = (x−6)/3", "বা, 4x − 24 = 3x + 36", "বা, 4x − 3x = 36 + 24", "বা, x = 60", "∴ ঐ শ্রেণির ছাত্র সংখ্যা 60"], "answer": "৬০ জন"},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q10", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "math", "topic": "বীজগণিত", "qno": 10, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ কর: 9x² − 30xy + 25y²", "steps": ["9x² − 30xy + 25y²", "= (3x)² − 2.3.5.xy + (5y)²", "= (3x − 5y)²"], "answer": "(3x − 5y)(3x − 5y)"},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q11", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "math", "topic": "বীজগণিত", "qno": 11, "marks": 5, "type": "math", "question": "মান নির্ণয় করঃ (y−1)(y+2)=(y+4)(y−2)", "steps": ["(y−1)(y+2)=(y+4)(y−2)", "বা, y² + 2y − y − 2 = y² − 2y + 4y − 8", "বা, y² − y² + 2y + 2y − 4y − y = −8 + 2", "বা, −y = −6", "∴ y = 6"], "answer": "y = 6"},
+
+  {"id": "job-2025-health-nimu-tc-uccho-man-sohokari-q12", "examId": "job-2025-health-nimu-tc-uccho-man-sohokari", "subject": "general-knowledge", "topic": "gk-others", "qno": 12, "marks": 15, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দিনঃ", "parts": [{"label": "ক", "q": "বাংলাদেশের সর্বাধিক বৈদেশিক মুদ্রা অর্জনের খাত কি?", "a": "তৈরি পোশাক খাত"}, {"label": "খ", "q": "জাতিসংঘের সর্বশেষ সদস্য কোন দেশ?", "a": "দক্ষিণ সুদান (১৯৩ তম)"}, {"label": "গ", "q": "বাংলার সর্বপ্রাচীন জনপদের রাজধানী কোনটি?", "a": "পুণ্ড্র"}, {"label": "ঘ", "q": "ASEAN এর সদস্য রাষ্ট্র কতটি?", "a": "১১টি (সর্বশেষ- পূর্ব তিমুর)"}, {"label": "ঙ", "q": "ইউরোপের শস্য ভান্ডার কোন দেশ?", "a": "ইউক্রেন"}, {"label": "চ", "q": "বাংলাদেশের সংবিধানে কতটি মৌলিক অধিকার স্বীকৃত আছে?", "a": "১৮ টি"}, {"label": "ছ", "q": "গুগল এর প্রতিষ্ঠাতা কে?", "a": "Larry Page ও Sergey Brin"}, {"label": "জ", "q": "চন্দ্রদ্বীপ এর মূলভূমি কোন জেলায় অবস্থিত?", "a": "বরিশাল"}, {"label": "ঝ", "q": "তেঁতুলে কোন এসিড রয়েছে?", "a": "টারটারিক এসিড"}, {"label": "ঞ", "q": "ঢাকার পূর্বনাম কি ছিল?", "a": "জাহাঙ্গীর নগর"}, {"label": "ট", "q": "২০২৫ সালে শান্তিতে নোবেল পুরস্কার পেয়েছিলেন কে?", "a": "মারিয়া কোরিনা মাচাদো (ভেনেজুয়েলা)"}, {"label": "ঠ", "q": "ট্রয় নগরী কোন দেশে অবস্থিত?", "a": "তুরস্ক"}, {"label": "ড", "q": "১ম নোবেল বিজয়ী নারী কে?", "a": "মারি কুরি"}, {"label": "ঢ", "q": "রক্তের গ্রুপ কতটি? কি কি?", "a": "৪টি; A, B, AB ও O"}, {"label": "ণ", "q": "বাংলা সনেটের জনক কে?", "a": "মাইকেল মধুসূদন দত্ত"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: রেলপথ মন্ত্রণালয় — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-railway-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৩৮২-৩৮৪)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-railway-office-asst-typist-q01", "examId": "job-2025-railway-office-asst-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 1, "marks": 5, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "যা ক্রমশ বর্ধিত হচ্ছে", "a": "বর্ধিষ্ণু"}, {"label": "খ", "q": "যা দীপ্তি পাচ্ছে", "a": "দেদীপ্যমান"}, {"label": "গ", "q": "সম্মুখে অগ্রসর হয়ে অভ্যর্থনা", "a": "প্রত্যুদ্‌গমন"}, {"label": "ঘ", "q": "উপকারীর অপকার করে যে", "a": "কৃতঘ্ন"}, {"label": "ঙ", "q": "উপস্থিত বুদ্ধি আছে যার", "a": "প্রত্যুৎপন্নমতি"}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q02", "examId": "job-2025-railway-office-asst-typist", "subject": "bangla", "topic": "বাগধারা", "qno": 2, "marks": 5, "type": "idiom", "question": "নিম্নোক্ত বাগধারা নিয়ে অর্থপূর্ণ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "phrase": "আক্কেল সেলামি", "meaning": "নির্বুদ্ধিতার দণ্ড"}, {"label": "খ", "phrase": "গরজ বড় বালাই", "meaning": "প্রয়োজনে গুরুত্ব"}, {"label": "গ", "phrase": "ইঁদুর কপালে", "meaning": "নিতান্ত মন্দ ভাগ্য"}, {"label": "ঘ", "phrase": "চোখের সাতার পানি", "meaning": "অতিরিক্ত মায়াকান্না"}, {"label": "ঙ", "phrase": "ঢাকের কাঠি", "meaning": "তোষামোদে"}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q03", "examId": "job-2025-railway-office-asst-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 5, "type": "table", "question": "নিম্নোক্ত শব্দগুলো শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["ত্রিনয়ণ", "ত্রিনয়ন"], ["বিপনী", "বিপণি"], ["সুমুগ্ধ", "সুমুগ্ধ"], ["সূচরীতাসু", "সূচরিতাসু"], ["ভূমিস্যাত", "ভূমিসাৎ"]]},
+
+  {"id": "job-2025-railway-office-asst-typist-q04", "examId": "job-2025-railway-office-asst-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 4, "marks": 5, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "মুখচ্ছবি", "a": "মুখ + ছবি"}, {"label": "খ", "q": "চলচ্চিত্র", "a": "চলৎ + চিত্র"}, {"label": "গ", "q": "উচ্ছৃঙ্খল", "a": "উৎ + শৃঙ্খল"}, {"label": "ঘ", "q": "বনস্পতি", "a": "বন + পতি"}, {"label": "ঙ", "q": "পরিচ্ছেদ", "a": "পরি + ছেদ"}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q05", "examId": "job-2025-railway-office-asst-typist", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 5, "marks": 5, "type": "sub-parts", "question": "নিম্নোক্ত বাক্যগুলির কারক ও বিভক্তি নির্ণয় করুন।", "parts": [{"label": "ক", "q": "ঘোড়ায় গাড়ি টানে", "a": "কর্তায় ৭মী"}, {"label": "খ", "q": "ছাদে বৃষ্টি পড়ে", "a": "অধিকরণে ৭মী"}, {"label": "গ", "q": "কৃষক লাঙ্গল চষে", "a": "করণে শূন্য"}, {"label": "ঘ", "q": "খোপাকে কাপড় দাও।", "a": "কর্মে ২য়া"}, {"label": "ঙ", "q": "দেশের জন্য প্রাণ দাও।", "a": "সম্প্রদানে ৬ষ্ঠী"}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q06", "examId": "job-2025-railway-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 6, "marks": 5, "type": "sentence-change", "question": "Correct the following sentences:", "parts": [{"label": "a", "original": "He is superior than me.", "changed": "He is superior to me."}, {"label": "b", "original": "Would you mind to open the gate.", "changed": "Would you mind opening the gate?"}, {"label": "c", "original": "I had better attended the meeting.", "changed": "I had better attend the meeting."}, {"label": "d", "original": "One should do his duty.", "changed": "One should do one's duty."}, {"label": "e", "original": "It is Imran who come here regularly.", "changed": "It is Imran who comes here regularly."}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q07", "examId": "job-2025-railway-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 7, "marks": 5, "type": "sentence-change", "question": "Transform the sentences.", "parts": [{"label": "a", "original": "Do or die. (complex)", "changed": "If you do not do, you will die."}, {"label": "b", "original": "Although he is poor, he is lazy. (simple)", "changed": "In spite of being poor, he is lazy."}, {"label": "c", "original": "Mutir Chowdhury is more famous than most other playwrights in Bangladesh. (positive)", "changed": "Very few playwrights in Bangladesh are as famous as Mutir Chowdhury."}, {"label": "d", "original": "He said, \\\"You had better see a doctor\\\" (indirect speech)", "changed": "He advised him to see a doctor."}, {"label": "e", "original": "Mango tastes sour. (change the voice)", "changed": "Mango is tasted sour."}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q08", "examId": "job-2025-railway-office-asst-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 8, "marks": 5, "type": "fill-gaps", "question": "Fill in the gaps with appropriate words.", "parts": [{"sentence": "He was deprived....... all power.", "answer": "of"}, {"sentence": "He is eager....... fame.", "answer": "for"}, {"sentence": "Either Raju or his brother... responsible.", "answer": "is"}, {"sentence": "He does not know...... swim.", "answer": "how"}, {"sentence": "He fell...... while he was walking.", "answer": "down"}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q09", "examId": "job-2025-railway-office-asst-typist", "subject": "english", "topic": "translation", "qno": 9, "marks": 5, "type": "translate", "question": "Translate the following sentences into English.", "parts": [{"label": "ক", "source": "সে সাতার কাটা পছন্দ করে।", "target": "He likes swimming."}, {"label": "খ", "source": "আকাশে পাখিটি উড়িতেছে।", "target": "The bird is flying in the sky."}, {"label": "গ", "source": "সেতু লিখতে ও পড়তে পারে না।", "target": "Setu can neither read nor write."}, {"label": "ঘ", "source": "কুকুর হতে সাবধান।", "target": "Beware of the dog."}, {"label": "ঙ", "source": "সময় ও স্রোত কাহারো জন্য অপেক্ষা করে না।", "target": "Time and tide wait for none."}]},
+
+  {"id": "job-2025-railway-office-asst-typist-q10", "examId": "job-2025-railway-office-asst-typist", "subject": "english", "topic": "essay", "qno": 10, "marks": 5, "type": "paragraph", "question": "Write five sentences on 'Artificial Intelligence'.", "answer": "Artificial Intelligence (AI) is the simulation of human intelligence by machines. It has many benefits, such as saving time, increasing efficiency, reducing human error, and helping in complex decision-making. AI is widely used in various fields. In healthcare, it helps in diagnosing diseases, developing treatments, and managing patient data. In education, AI provides personalized learning and online tutoring. In business, it automates tasks, improves customer service, and analyzes data. It is also used in transportation for self-driving cars and traffic management, and in daily life through smartphones, virtual assistants, and online recommendations. Overall, AI makes work easier, faster, and more effective."},
+
+  {"id": "job-2025-railway-office-asst-typist-q11", "examId": "job-2025-railway-office-asst-typist", "subject": "math", "topic": "শতকরা", "qno": 11, "marks": 5, "type": "math", "question": "প্রতি বছর কোনো শহরে লোকসংখ্যার ৭% জন্মগ্রহণ করে এবং ৩% মৃত্যুবরণ করে। এক বছরে শহরে ৪০০ লোক বৃদ্ধি পেলে ঐ শহরের লোক সংখ্যা কত?", "steps": ["শতকরা বৃদ্ধি = (৭ − ৩)% = ৮%", "৪০০ জন বৃদ্ধি পায় বৃদ্ধি পেলে লোক সংখ্যা ১০০ জন", "১ \" \" \" \" \" \" ১০০/৮", "৮০০ \" \" \" \" \" \" (১০০×৮০০)/৮", "= ১০০০০ জন"], "answer": "১০০০০ জন"},
+
+  {"id": "job-2025-railway-office-asst-typist-q12", "examId": "job-2025-railway-office-asst-typist", "subject": "math", "topic": "অনুপাত", "qno": 12, "marks": 5, "type": "math", "question": "দুটি সংখ্যার অনুপাত ৫ঃ৮। উভয়ের সাথে ২ যোগ করলে অনুপাত ২ঃ৩ হয়। সংখ্যা দুটি কত?", "steps": ["মনে করি, সংখ্যা দুটি যথাক্রমে ৫ক ও ৮ক", "প্রশ্নমতে, (৫ক+২)/(৮ক+২) = ২/৩", "বা, ১৫ক + ৬ = ১৬ক + ৮", "∴ ক = −২"], "answer": "সংখ্যা দুটি যথাক্রমে (৫×২)=১০ ও (৮×২)=১৬"},
+
+  {"id": "job-2025-railway-office-asst-typist-q13", "examId": "job-2025-railway-office-asst-typist", "subject": "math", "topic": "চক্রবৃদ্ধি মুনাফা", "qno": 13, "marks": 5, "type": "math", "question": "বার্ষিক ১০.৫০% মুনাফায় ৫০০০ টাকার ২ বছরের চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।", "steps": ["চক্রবৃদ্ধি মুনাফা নির্ণয়ের জন্য প্রথমে চক্রবৃদ্ধি মূলধন নির্ণয় করি।", "আমরা জানি, চক্রবৃদ্ধি মূলধন C = P(১+r)ⁿ, যেখানে মূলধন P = ৫০০০ টাকা", "মুনাফার হার, r = ১০.৫০% = ২১/২০০", "সময়, n = ২ বছর", "∴ C = P(১+r)² = ৫০০০ × (১ + ২১/২০০)² = ৫০০০ × (২২১/২০০)² = ৫০০০ × ২২১/২০০ × ২২১/২০০ = ৮৮৮৮১/৮ টাকা = ৬১০৫.১৩ টাকা (প্রায়)", "∴ চক্রবৃদ্ধি মুনাফা = C − P = P(১+r)² − P = (৬১০৫.১৩ − ৫০০০) টাকা = ১১০৫.১৩ টাকা (প্রায়)"], "answer": "১১০৫.১৩ টাকা (প্রায়)"},
+
+  {"id": "job-2025-railway-office-asst-typist-q14", "examId": "job-2025-railway-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 5, "type": "math", "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।", "steps": ["ধরি, x + 6 = a এবং x + 4 = b", "প্রদত্ত রাশি: ab = {(a+b)/2}² − {(a−b)/2}²", "= {(x+6+x+4)/2}² − {(x+6−x−4)/2}²", "= {(2x+10)/2}² − (2/2)²", "= {2(x+5)/2}² − 1²", "= (x+5)² − 1²"], "answer": "(x+5)² − 1²"},
+
+  {"id": "job-2025-railway-office-asst-typist-q15", "examId": "job-2025-railway-office-asst-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 15, "marks": 20, "type": "short-qa", "question": "সাধারণ জ্ঞানের প্রশ্নগুলোর উত্তর দিনঃ", "parts": [{"label": "ক", "q": "ম্যাগনাকার্টা কী? এটি কত সালে স্বাক্ষরিত হয়?", "a": "ম্যাগনাকার্টা হলো একটি ঐতিহাসিক দলিল, যা ইংল্যান্ডের রাজা জন ১২১৫ সালে স্বাক্ষর করেন। এটি রাজা ও প্রজাদের মধ্যে এক ধরনের চুক্তি ছিল, যার মাধ্যমে রাজাকে কিছু নির্দিষ্ট সীমার মধ্যে থাকতে বাধ্য করা হয়। স্বাক্ষরিত হয়: ১৫ জুন ১২১৫ সালে"}, {"label": "খ", "q": "ডোনাল্ড ট্রাম্প বর্তমান মেয়াদে আমেরিকার কততম প্রেসিডেন্ট এবং তিনি কোন দলের নেতা?", "a": "৪৭তম প্রেসিডেন্ট এবং নেতা- রিপাবলিকান পার্টি"}, {"label": "গ", "q": "নিউজিল্যান্ড ও ঘানার রাজধানী শহরের নাম লিখুন।", "a": "ওয়েলিংটন ও আক্রা"}, {"label": "ঘ", "q": "বঙ্গভঙ্গ কবে হয় এবং কবে রদ হয়?", "a": "১৯০৫ সালে এবং ১৯১১ সালে"}, {"label": "ঙ", "q": "মোনালিসা চিত্রটি কে এঁকেছেন এবং কোন যাদুঘরে রক্ষিত?", "a": "লিওনার্দো দ্যা ভিঞ্চি এবং লুভর যাদুঘরে (প্যারিস, ফ্রান্স)"}, {"label": "চ", "q": "জাতিসংঘের দাপ্তরিক ভাষা কয়টি ও কী কী?", "a": "৬টি; যথা- ইংরেজি, ফারসি, স্প্যানিশ, রুশ, চীনা ও আরবি"}, {"label": "ছ", "q": "ব্রেইল পদ্ধতি উদ্ভাবক কে, তিনি কোন দেশের নাগরিক?", "a": "লুই ব্রেইল। ফ্রান্সের নাগরিক"}, {"label": "জ", "q": "এক নটিক্যাল মাইল সমান কত মাইল এবং কত কিলোমিটার?", "a": "১.১৫০৮ মাইল এবং ১.৮৫২ কিলোমিটার"}, {"label": "ঝ", "q": "প্রথম বিশ্বযুদ্ধের অক্ষশক্তি ও মিত্রশক্তিগুলির নাম লিখুন।", "a": "অক্ষশক্তি: জার্মানি, অস্ট্রিয়া, হাঙ্গেরি, বুলগেরিয়া, তুরস্ক এবং মিত্রশক্তি: রাশিয়া, ইতালি, যুক্তরাষ্ট্র, ফ্রান্স, চীন, জাপান"}, {"label": "ঞ", "q": "ভাটিয়ালী ও গম্ভীরা কোন কোন অঞ্চলের গান?", "a": "ভাটিয়ালী-ময়মনসিংহ ও সিলেট; গম্ভীরা-চাপাইনবাবগঞ্জ ও রাজশাহী অঞ্চলের"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: ঢাকা মেডিকেল কলেজ হাসপাতাল — কম্পিউটার অপারেটর (job-2025-dmch-computer-operator)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪১২-৪১৪)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-dmch-computer-operator-q01", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "পারিভাষিক শব্দ", "qno": 1, "marks": 4, "type": "sub-parts", "question": "পারিভাষিক শব্দ লিখুনঃ", "parts": [{"label": "a", "q": "Census", "a": "আদমশুমারি"}, {"label": "b", "q": "Pleadings", "a": "মামলার আবেদনপত্র/ নালিশ"}, {"label": "c", "q": "Notification", "a": "বিজ্ঞপ্তি"}, {"label": "d", "q": "Glossary", "a": "শব্দার্থ তালিকা/ শব্দকোষ"}]},
+
+  {"id": "job-2025-dmch-computer-operator-q02", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 8, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "দ্যুলোক", "a": "দিব্ + লোক"}, {"label": "খ", "q": "বৃহস্পতি", "a": "বৃহৎ + পতি"}, {"label": "গ", "q": "ষোড়শ", "a": "ষট্ + দশ"}, {"label": "ঘ", "q": "রাজর্ষি", "a": "রাজা + ঋষি"}, {"label": "ঙ", "q": "ষড়ানন", "a": "ষট্ + আনন"}, {"label": "চ", "q": "গবাক্ষ", "a": "গো + অক্ষ"}, {"label": "ছ", "q": "জ্যোতির্ময়", "a": "জ্যোতিঃ + ময়"}, {"label": "জ", "q": "শীতার্ত", "a": "শীত + ঋত"}]},
+
+  {"id": "job-2025-dmch-computer-operator-q03", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 8, "type": "table", "question": "শুদ্ধ বানান/ শব্দ লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["দ্বায়িত্ব", "দায়িত্ব"], ["সমীচিন", "সমীচীন"], ["অদ্যাবধি", "অদ্যাবধি"], ["গিতাঞ্জলি", "গীতাঞ্জলি"], ["দারিদ্রতা", "দারিদ্র্য"], ["লজ্জাস্কর", "লজ্জাকর"], ["ফটোষ্ট্যাট", "ফটোস্ট্যাট"], ["ইতিমধ্যে", "ইতোমধ্যে"]]},
+
+  {"id": "job-2025-dmch-computer-operator-q04", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 4, "marks": 4, "type": "sub-parts", "question": "অর্থসহ বাক্য গঠন করুনঃ", "parts": [{"label": "ক", "q": "ইতর বিশেষ", "a": "পার্থক্য"}, {"label": "খ", "q": "ভূষণ্ডির কাক", "a": "দীর্ঘজীবী"}, {"label": "গ", "q": "অজগরবৃত্তি", "a": "আলসেমি"}, {"label": "ঘ", "q": "গৌরচন্দ্রিকা", "a": "ভূমিকা"}]},
+
+  {"id": "job-2025-dmch-computer-operator-q05", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "short-qa", "qno": 5, "marks": 2, "type": "sub-parts", "question": "সংক্ষিপ্ত প্রশ্নের উত্তর দিনঃ", "parts": [{"label": "ক", "q": "নেমেসিস কোন জাতীয় রচনা?", "a": "নাটক"}, {"label": "খ", "q": "'সর্বাঙ্গে ব্যথা ঔষধ দিব কোথা' - এখানে ঔষধ কোন কারকে কোন বিভক্তি?", "a": null}]},
+
+  {"id": "job-2025-dmch-computer-operator-q06", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "essay", "qno": 6, "marks": 2, "type": "paragraph", "question": "স্বাস্থ্যখাতে টেকসই উন্নয়ন লক্ষ্যমাত্রা ও বাংলাদেশ- এ বিষয়ে সর্বোচ্চ ২০০ শব্দের নাতিদীর্ঘ একটি অনুচ্ছেদ লিখুন।", "answer": "টেকসই উন্নয়ন লক্ষ্যমাত্রা (SDG) এর তৃতীয় লক্ষ্য হলো সুস্বাস্থ্য ও কল্যাণ নিশ্চিত করা। বাংলাদেশ ২০৩০ সালের মধ্যে এই লক্ষ্য অর্জনে নিরলসভাবে কাজ করে যাচ্ছে। মাতৃমৃত্যু ও শিশুমৃত্যুর হার কমানো, সংক্রামক ব্যাধি নির্মূল, প্রজনন স্বাস্থ্যসেবা সহজলভ্যকরণ এবং সর্বজনীন স্বাস্থ্যসেবা নিশ্চিতকরণ এই লক্ষ্যের মূল দিক। বাংলাদেশ ইতিমধ্যে শিশুমৃত্যু হার হ্রাসে উল্লেখযোগ্য সাফল্য দেখিয়েছে এবং টিকাদান কর্মসূচি, কমিউনিটি ক্লিনিক স্থাপন ও মা ও শিশু স্বাস্থ্যসেবা কর্মসূচির মাধ্যমে অগ্রগতি অব্যাহত রেখেছে। তবে গ্রামীণ ও প্রত্যন্ত অঞ্চলে স্বাস্থ্যসেবার অপ্রতুলতা, দক্ষ জনবলের ঘাটতি ও অসংক্রামক রোগের ক্রমবর্ধমান প্রকোপ এখনো বড় চ্যালেঞ্জ। এই লক্ষ্য অর্জনে সরকারি-বেসরকারি অংশীদারিত্ব বৃদ্ধি, স্বাস্থ্য বাজেট বৃদ্ধি এবং প্রযুক্তিনির্ভর স্বাস্থ্যসেবা সম্প্রসারণ জরুরি। সবার জন্য সাশ্রয়ী ও মানসম্মত স্বাস্থ্যসেবা নিশ্চিত করতে পারলেই বাংলাদেশ এই লক্ষ্যমাত্রা যথাসময়ে অর্জন করতে সক্ষম হবে।"},
+
+  {"id": "job-2025-dmch-computer-operator-q07", "examId": "job-2025-dmch-computer-operator", "subject": "english", "topic": "fill-in-the-blanks", "qno": 7, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks:", "parts": [{"sentence": "She is named ...... a flower.", "answer": "after"}, {"sentence": "My father ........ before I came.", "answer": "had gone/left"}, {"sentence": "Anger may be compared ....... fire.", "answer": "to"}, {"sentence": "She succeeded ...... her rigorous work.", "answer": "in"}, {"sentence": "He divided the money........ the two children.", "answer": "between"}]},
+
+  {"id": "job-2025-dmch-computer-operator-q08", "examId": "job-2025-dmch-computer-operator", "subject": "english", "topic": "spelling", "qno": 8, "marks": 5, "type": "table", "question": "Mention the correct spelling:", "columns": ["Incorrect", "Correct"], "rows": [["Comitee", "Committee"], ["Repitetion", "Repetition"], ["Atticude", "Attitude"], ["Milenium", "Millennium"], ["Neumonia", "Pneumonia"]]},
+
+  {"id": "job-2025-dmch-computer-operator-q09", "examId": "job-2025-dmch-computer-operator", "subject": "english", "topic": "translation", "qno": 9, "marks": 5, "type": "translate", "question": "ইংরেজিতে অনুবাদ করুনঃ", "parts": [{"label": "ক", "source": "কলম দুইটির একটিতেও চলবে না।", "target": "The pen does not write in either of the two./ Neither of the two pens will do."}, {"label": "খ", "source": "আমি কতক্ষণ তার জন্য অপেক্ষা করবো?", "target": "How long will I wait for him?"}, {"label": "গ", "source": "সকাল থেকে মুষলধারে বৃষ্টি হচ্ছে।", "target": "It has been raining cats and dogs since morning."}, {"label": "ঘ", "source": "অতি ভক্তি চোরের লক্ষণ।", "target": "Too much courtesy, too much craft."}]},
+
+  {"id": "job-2025-dmch-computer-operator-q10", "examId": "job-2025-dmch-computer-operator", "subject": "english", "topic": "essay", "qno": 10, "marks": 5, "type": "paragraph", "question": "Write five sentences about \\\"July Mass Uprising, 2024\\\" in Bangladesh.", "answer": "The July Revolution of 2024 in Bangladesh marks a turning point in the nation's history. Initially, the students raised their voice against the longstanding unjust quota system. Gradually, this turned into a movement, which soon became a powerful wave against the authoritarian rule and systemic corruption that prevailed over the last 16 years. The government was criticized for its deeply corrupt institutions and lack of accountability. But the government responded with violent repression. In the early stage of the quota reform protests, the government's heavy-handed approach led to multiple student deaths, including those of Abu Sayed and Mugdha, and several others. This brutality ignited widespread protests, and thousands took to the streets, transforming the student protest into a nationwide movement. Throughout the revolution, over a thousand students and common people, including at least 67 children, lost their lives. By August 5, the people of Bangladesh had reached their limit and took to the streets to oust the fascist regime. Being frightened, the fascist Prime Minister, along with family and close party members, fled the country. They sought shelter in a neighboring country, India. Following their departure, Nobel Laureate Dr. Muhammad Yunus answered the call of the people, assuming the role of Chief Advisor to an Interim Government on August 8. This revolution stands as a testament to the power of collective will."},
+
+  {"id": "job-2025-dmch-computer-operator-q11", "examId": "job-2025-dmch-computer-operator", "subject": "math", "topic": "বয়স", "qno": 11, "marks": 5, "type": "math", "question": "পিতা ও পুত্রের বর্তমান বয়সের অনুপাত ৭ঃ২ এবং ৫ বছর পরে তাদের বয়সের অনুপাত ৮ঃ৩ হবে। তাদের বর্তমান বয়স কত?", "steps": ["মনে করি, পিতার বর্তমান বয়স ৭x, পুত্রের বর্তমান বয়স ২x", "প্রশ্নমতে, ৭x+৫ : ২x+৫ = ৮ : ৩", "বা, (৭x+৫)/(২x+৫) = ৮/৩", "বা, ২১x + ১৫ = ১৬x + ৪০", "বা, ২১x − ১৬x = ৪০ − ১৫", "বা, ৫x = ২৫", "∴ x = ৫", "∴ পিতার বর্তমান বয়স = ৭ × ৫ = ৩৫ বছর, পুত্রের বর্তমান বয়স = ৫ × ২ = ১০"], "answer": "পিতার বয়স ৩৫ বছর এবং পুত্রের বয়স ১০ বছর।"},
+
+  {"id": "job-2025-dmch-computer-operator-q12", "examId": "job-2025-dmch-computer-operator", "subject": "math", "topic": "জ্যামিতি", "qno": 12, "marks": 5, "type": "math", "question": "একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ক্ষেত্রফল ৩√৩ বর্গমিটার বেড়ে যায়। ত্রিভুজটির বাহুর দৈর্ঘ্য নির্ণয় করুন।", "steps": ["মনে করি, সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য a মিটার", "∴ ত্রিভুজটির ক্ষেত্রফল = (√৩/৪)a² বর্গমিটার", "ত্রিভুজটির প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ত্রিভুজটির ক্ষেত্রফল (√৩/৪)(a+১)² বর্গমিটার", "প্রশ্নানুসারে, (√৩/৪)(a+১)² − (√৩/৪)a² = ৩√৩", "বা, (a+১)² − a² = ১২", "বা, a² + ২a + ১ − a² = ১২", "বা, ২a = ১১", "∴ a = ৫.৫"], "answer": "নির্ণেয় বাহুর দৈর্ঘ্য ৫.৫ মিটার"},
+
+  {"id": "job-2025-dmch-computer-operator-q13", "examId": "job-2025-dmch-computer-operator", "subject": "math", "topic": "ধারা", "qno": 13, "marks": 5, "type": "math", "question": "৭ + ১২ + ১৭ +.......... ধারাটির ৩০ টি পদের সমষ্টি কত?", "steps": ["ধারাটির প্রথম পদ a = ৭, সাধারণ অন্তর d = ১২ − ৭ = ৫", "ইহা একটি সমান্তর ধারা। এখানে পদ সংখ্যা n = ৩০", "আমরা জানি, সমান্তর ধারার প্রথম n সংখ্যক পদের সমষ্টি, Sₙ = (n/2){2a + (n−1)d}", "তাহলে, ৩০টি পদের সমষ্টি S₃₀ = (৩০/২){২.৭ + (৩০−১)৫}", "= ১৫(১৪ + ২৯ × ৫)", "= ১৫(১৪ + ১৪৫)", "= ১৫ × ১৫৯", "= ২৩৮৫"], "answer": "২৩৮৫"},
+
+  {"id": "job-2025-dmch-computer-operator-q14", "examId": "job-2025-dmch-computer-operator", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 5, "type": "math", "question": "x³ + 6x²y + 11xy² + 6y³ কে উৎপাদকে বিশ্লেষণ কর।", "steps": ["x³ + 6x²y + 11xy² + 6y³", "= x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³", "= {x³ + 3.x².2y + 3.x.(2y)² + (2y)³} − xy² − 2y³", "= (x+2y)³ − y²(x+2y)", "= (x+2y){(x+2y)² − y²}", "= (x+2y)(x+2y+y)(x+2y−y)", "= (x+2y)(x+3y)(x+y)"], "answer": "(x+y)(x+2y)(x+3y)"},
+
+  {"id": "job-2025-dmch-computer-operator-q15", "examId": "job-2025-dmch-computer-operator", "subject": "general-knowledge", "topic": "computer-tech", "qno": 15, "marks": 30, "type": "short-qa", "question": "সাধারণ জ্ঞান-৩০ঃ নিচের প্রশ্নগুলোর উত্তর দিনঃ", "parts": [{"label": "১৫", "q": "কম্পিউটার সিস্টেম ইউনিটে মাইক্রোপ্রসেসর বলতে কী বুঝায়?", "a": "কম্পিউটারের যে অংশে ডেটা প্রক্রিয়াকরণ হয় তাকে মাইক্রোপ্রসেসর বলে। মাইক্রোপ্রসেসরকে কম্পিউটারের ব্রেইন/মস্তিষ্ক বলা হয়। একটি একক সিলিকন চিপের/ ইন্টিগ্রেটেড সার্কিট (IC) মধ্যে এক মিলিয়নের মত বা তার চেয়ে অধিক ট্রানজিস্টর, রেজিস্টার, ক্যাপাসিটর, ডায়োড ইত্যাদি থাকে।"}, {"label": "১৬", "q": "কম্পিউটার ভাইরাস কী?", "a": "ক্ষতিকারক প্রোগ্রাম"}, {"label": "১৭", "q": "কৃত্রিম বুদ্ধিমত্তা (Artifical Intelligence) বলতে কী বুঝায়? এর ব্যবহারিক প্রয়োগ সম্পর্কে লিখুন।", "a": "মানুষের চিন্তা ভাবনার অথবা বুদ্ধিমত্তার পদ্ধতিকে কৃত্রিম উপায়ে প্রযুক্তি নির্ভর যন্ত্র বা কম্পিউটারের মাধ্যমে বাস্তবায়ন করাই হলো কৃত্রিম বুদ্ধিমত্তা (Artifical Intelligence)। শিক্ষা, স্বাস্থ্য, চিকিৎসা, মেশিন, কৃষি, উদ্ভাবন, আইন-শৃঙ্খলা, রোবোটিক্স, ব্যবসা-বাণিজ্য ইত্যাদি কাজে কৃত্রিম বুদ্ধিমত্তা ব্যবহার হচ্ছে।"}, {"label": "১৮", "q": "স্প্যামিং (Spamming) কী?", "a": "স্প্যামিং হল অসংখ্য প্রাপককে অযাচিত, অনাকাঙ্ক্ষিত বা অপ্রাসঙ্গিক বার্তা (স্প্যাম) পাঠানোর একটি প্রক্রিয়া, যা সাধারণত বাণিজ্যিক বিজ্ঞাপন, প্রতারণা, বা ক্ষতিকারক উদ্দেশ্যে করা হয়।"}, {"label": "১৯", "q": "ওয়াই-ফাই (Wi-fi) কী?", "a": "ওয়াই-ফাই (Wi-fi) হচ্ছে এমন একটি জনপ্রিয় তারবিহীন প্রযুক্তি যা উচ্চ ফ্রিকুয়েন্সির রেডিও ওয়েভ ব্যবহার করে কোনো ইলেকট্রনিক ডিভাইসকে উচ্চগতি সম্পন্ন ইন্টারনেট সংযোগ কিংবা কম্পিউটার নেটওয়ার্কের মাধ্যমে ডেটা আদান প্রদান করতে পারে। এর জনক ভিক্টর হেয়েস।"}, {"label": "২০", "q": "আইএসপি (ISP) কী? ইন্টারনেট ব্যবহারের জনপ্রিয় তিনটি সার্চ ইঞ্জিনের নাম লিখুন।", "a": "আইএসপি (Internet Service Provider) হলো এমন একটি প্রতিষ্ঠান, যা ব্যবহারকারীদের ইন্টারনেট সংযোগ প্রদান করে। তিনটি জনপ্রিয় সার্চ ইঞ্জিন: ১) Google ২) Bing ৩) Yahoo"}, {"label": "২১", "q": "পূর্ণরূপ লিখুন: CPU, RAM, ROM, WWW, E-mail, AI", "a": "CPU = Central Processing Unit; RAM = Random Access Memory; ROM = Read Only Memory; WWW = World Wide Web; E-mail = Electronic Mail; AI = Artificial Intelligence"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জনস্বাস্থ্য প্রকৌশলী অধিদপ্তর, রাঙ্গামাটি — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-dphe-rangamati-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪১৫-৪১৬)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q01", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 1, "marks": 3, "type": "table", "question": "শুদ্ধ বানান লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["গিতাঞ্জলি", "গীতাঞ্জলি"], ["বিভিষিকা", "বিভীষিকা"], ["দোষণীয়", "দূষণীয়"]]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q02", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "বাগধারা", "qno": 2, "marks": 3, "type": "idiom", "question": "বাগধারা সমূহের অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "phrase": "চাঁদের হাট", "meaning": "আনন্দের প্রাচুর্য"}, {"label": "খ", "phrase": "বসন্তের কোকিল", "meaning": "সুদিনের বন্ধু"}, {"label": "গ", "phrase": "আঠার মাসে বছর", "meaning": "দীর্ঘসূত্রতা"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q03", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "translation", "qno": 3, "marks": 3, "type": "translate", "question": "অনুবাদ করুন (ইংরেজি থেকে বাংলা)", "parts": [{"label": "a", "source": "Switch on the light.", "target": "বাতি জ্বালাও/ লাইটের সুইচ দাও।"}, {"label": "b", "source": "A friend in need is a friend indeed", "target": "বিপদে বন্ধুর পরিচয়"}, {"label": "c", "source": "It hardly rains in Spain", "target": "স্পেনে কদাচিৎ বৃষ্টি হয়।"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q04", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 4, "marks": 3, "type": "sub-parts", "question": "বিপরীত শব্দ লিখুনঃ", "parts": [{"label": "ক", "q": "অগ্রজ", "a": "অনুজ"}, {"label": "খ", "q": "অলীক", "a": "বাস্তব"}, {"label": "গ", "q": "আত্মীয়", "a": "অনাত্মীয়"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q05", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 5, "marks": 3, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "যা বলা হবে", "a": "বক্তব্য"}, {"label": "খ", "q": "আদি নেই যার", "a": "অনাদি"}, {"label": "গ", "q": "জলে চরে যে", "a": "জলচর"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q06", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "bangla", "topic": "essay", "qno": 6, "marks": 10, "type": "paragraph", "question": "অনুচ্ছেদ লিখুনঃ \\\"অফিস সহকারীর দায়িত্ব ও কর্তব্য\\\"", "answer": "একজন অফিস সহকারী একটি দপ্তর বা প্রতিষ্ঠানের প্রশাসনিক ও দাপ্তরিক কার্যক্রম পরিচালনায় সহায়ক ভূমিকা পালন করে। অফিস সহকারীর প্রধান দায়িত্ব ও কর্তব্যঃ ১. ফাইল ও নথি ব্যবস্থাপনা: বিভিন্ন রেজিস্টার ও নথি সংগ্রহ, সংরক্ষণ ও সঠিকভাবে সাজানো। নথির বিষয়, নম্বর, পূর্ববর্তী নথির সূত্র, নথি খোলা/বন্ধের তারিখ ইত্যাদি বিষয় লিপিবদ্ধকরণ। ২. চিঠি ও ডাক ব্যবস্থাপনা: অফিসে আসা চিঠি, ডাকপত্র, পার্সেল গ্রহণ ও তা রেজিস্টারে লিপিবদ্ধ করে সংশ্লিষ্ট শাখায় বিতরণের ব্যবস্থা করা। ৩. প্রশাসনিক কাজ: আগত চিঠি বিপরীতে নোট লিখন/ ঊর্ধ্বতন কর্মকর্তার নিকট উপস্থাপন, পত্র ড্রাফট, পত্র জারি করা, নোটিশ বোর্ডে বিজ্ঞপ্তি প্রদর্শন করা ইত্যাদি। ৪. সভা সংক্রান্ত: অফিসে বিভিন্ন সময় মিটিং এর নোটিশ, হাজিরা, কার্যপত্র ও কার্যবিবরণী প্রস্তুতকরণ। ৫. শৃঙ্খলা ও ভদ্রতা বজায় রাখা: অফিসে আগত ব্যক্তি বা অতিথিদের সঙ্গে ভদ্র ও সৌজন্যমূলক আচরণ করা। অফিসের পরিবেশ পরিচ্ছন্ন ও সুশৃঙ্খল রাখা। ৬. বিবিধ: ঊর্ধ্বতন কর্তৃপক্ষের যৌক্তিক আদেশ যেমন, কর্তৃপক্ষের ভ্রমণ ব্যয় বিল করা, চেক ইস্যুকরণ, বেতন-ভাতা বিল করা, দপ্তরের জন্য নাস্তা ক্রয়, প্রতিষ্ঠানের বিভিন্ন অনুষ্ঠান বা বিশেষ কার্যক্রমে সহায়তা প্রদান ইত্যাদি।"},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q07", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "english", "topic": "translation", "qno": 7, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "পানির অপর নাম জীবন।", "target": "Another name of water is life"}, {"label": "খ", "source": "আমাদের দেশের নাম বাংলাদেশ।", "target": "The name of our country is Bangladesh."}, {"label": "গ", "source": "তুমি কি কখনো রাঙ্গামাটি গিয়েছে?", "target": "Have you ever been to Rangamati?"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q08", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 8, "marks": 3, "type": "fill-gaps", "question": "Fill in the blanks:", "parts": [{"sentence": "She has been ill........ Friday last.", "answer": "since"}, {"sentence": "I ........ to Dhaka yesterday.", "answer": "went"}, {"sentence": "Time and tide......... for none.", "answer": "waits"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q09", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "english", "topic": "essay", "qno": 9, "marks": 10, "type": "paragraph", "question": "Write a paragraph on \\\"Water Pollution\\\".", "answer": "Water pollution is one of the most serious environmental problems in Bangladesh. It occurs when harmful substances, such as industrial waste, chemicals, sewage, and plastic, contaminate rivers, canals, and other water bodies. Rapid industrialization and unplanned urbanization are the main causes of water pollution. Factories often dump untreated waste directly into rivers, while household waste and agricultural chemicals also pollute water sources. Water pollution has serious effects on human health and the environment. Contaminated water can cause diseases like diarrhoea, cholera, and skin infections. It also destroys aquatic life and disrupts the ecological balance of rivers and wetlands. To prevent water pollution, we must ensure proper treatment of industrial and household waste before it is released into water bodies. The government should enforce strict environmental laws, and people should be made aware of the dangers of water pollution. If we fail to act now, our rivers and water resources will become unusable for future generations."},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q10", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "english", "topic": "idiom", "qno": 10, "marks": 5, "type": "idiom", "question": "Make sentences with the following idioms and phrases:", "parts": [{"label": "a", "phrase": "By dint of", "meaning": "বদৌলতে"}, {"label": "b", "phrase": "For good", "meaning": "চিরতরে"}, {"label": "c", "phrase": "Bag and baggage", "meaning": "তল্পি-তল্পাসহ"}]},
+
+  {"id": "job-2025-dphe-rangamati-office-asst-typist-q11", "examId": "job-2025-dphe-rangamati-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 11, "marks": 3, "type": "fill-gaps", "question": "Use appropriate articles in the blanks:", "parts": [{"sentence": "He is......M.A.", "answer": "an"}, {"sentence": "He is..... one eyed man.", "answer": "a"}, {"sentence": "26th March is..... Independence Day of Bangladesh.", "answer": "the"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: ভূমি আপীল বোর্ড — অফিস সহায়ক (job-2025-land-appeal-board-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪১৭-৪১৯)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q01", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "essay", "qno": 1, "marks": 10, "type": "paragraph", "question": "ভাব-সম্প্রসারণ লিখুনঃ 'শিক্ষাই জাতির মেরুদণ্ড'", "answer": "মেরুদণ্ড ছাড়া যেমন কোনো প্রাণী উঠে দাঁড়াতে পারে না, তেমনি শিক্ষা ছাড়া কোনো জাতি উন্নতির শিখরে আরোহণ করতে পারে না। শিক্ষা জাতির প্রধান চালিকাশক্তি। নিরক্ষর মানুষ সমাজের জন্য শুধু বোঝা নয়, দেশের অগ্রগতির পথেও বাধাস্বরূপ। কারণ, শিক্ষা মানুষকে কর্মদক্ষ ও সচেতন নাগরিক হতে সাহায্য করে। দেশ ও জাতির উন্নয়নের জন্য দরকার সচেতন ও কর্মদক্ষ মানুষ। মেরুদণ্ডহীন প্রাণী যেমন সোজা হয়ে দাঁড়াতে পারে না, তেমনি শিক্ষা ছাড়া কোন জাতিই পৃথিবীর বুকে মাথা উঁচু করে দাঁড়াতে পারে না। এ জন্য শিক্ষাকে মেরুদণ্ডের সঙ্গে তুলনা করা হয়েছে। পৃথিবীতে যে জাতি যত বেশি শিক্ষিত সে জাতি তত বেশি উন্নত। শিক্ষা মানবসম্পদ উন্নয়নের প্রধান সোপান। আত্মশক্তি অর্জনের প্রধান উপায় শিক্ষা। তাই জাতির উন্নয়নের জন্য শিক্ষাকে সবচেয়ে বেশি গুরুত্ব দেওয়া উচিত। শিক্ষাকে সহজলভ্য ও সবার জন্য উন্মুক্ত করে দিতে হবে। মনে রাখতে হবে শিক্ষা সুযোগ নয়, অধিকার।"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q02", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "grammar", "qno": 2, "marks": 3, "type": "paragraph", "question": "গঠনগত দিক দিয়ে বাক্যকে কয় ভাগে ভাগ করা যায় ও কী কী?", "answer": "৩ প্রকার; সরল বাক্য, জটিল বাক্য ও যৌগিক বাক্য"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q03", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "short-qa", "qno": 3, "marks": 3, "type": "paragraph", "question": "কোন কবিকে ছন্দের যাদুকর বলা হয়?", "answer": "সত্যেন্দ্রনাথ দত্ত"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q04", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "short-qa", "qno": 4, "marks": 3, "type": "paragraph", "question": "\\\"ভানুসিংহ\\\" কার ছদ্মনাম?", "answer": "রবীন্দ্রনাথ ঠাকুর"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q05", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 5, "marks": 3, "type": "sub-parts", "question": "শুদ্ধ বানান লিখুনঃ", "parts": [{"label": "ক", "q": "সমিচিন", "a": "সমীচীন"}, {"label": "খ", "q": "শ্রদ্ধাঞ্জলী", "a": "শ্রদ্ধাঞ্জলি"}, {"label": "গ", "q": "মন্ত্রীসভা", "a": "মন্ত্রিসভা"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q06", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "সন্ধি", "qno": 6, "marks": 3, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "শীতার্ত", "a": "শীত + ঋত"}, {"label": "খ", "q": "স্বাধীন", "a": "স্ব + অধীন"}, {"label": "গ", "q": "নবান্ন", "a": "নব + অন্ন"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q07", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "বাক্য সংকোচন", "qno": 7, "marks": 3, "type": "sub-parts", "question": "বাক্য সংকোচন করুনঃ", "parts": [{"label": "ক", "q": "ক্ষমার অযোগ্য", "a": "ক্ষমার্হ"}, {"label": "খ", "q": "যিনি বক্তৃতা দানে পটু", "a": "বাগ্মী"}, {"label": "গ", "q": "যা বলা হয়নি", "a": "অনুক্ত"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q08", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "bangla", "topic": "বাগধারা", "qno": 8, "marks": 3, "type": "idiom", "question": "বাগধারার অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "phrase": "কে মাছের প্রাণ", "meaning": "দীর্ঘজীবী"}, {"label": "খ", "phrase": "গণলিকা প্রবাহ", "meaning": "অন্ধ অনুকরণ"}, {"label": "গ", "phrase": "সঙ্গমে চড়া", "meaning": "প্রচণ্ড উত্তেজনা"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q09", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "essay", "qno": 9, "marks": 10, "type": "paragraph", "question": "Write a paragraph on \\\"Water Pollution\\\".", "answer": "Water pollution is one of the most serious environmental problems in Bangladesh. It occurs when harmful substances, such as industrial waste, chemicals, sewage, and plastic, contaminate rivers, canals, and other water bodies. Rapid industrialization and unplanned urbanization are the main causes of water pollution. Factories often dump untreated waste directly into rivers, while household waste and agricultural chemicals also pollute water sources. Water pollution has serious effects on human health and the environment. Contaminated water can cause diseases like diarrhoea, cholera, and skin infections. It also destroys aquatic life and disrupts the ecological balance of rivers and wetlands. To prevent water pollution, we must ensure proper treatment of industrial and household waste before it is released into water bodies. The government should enforce strict environmental laws, and people should be made aware of the dangers of water pollution."},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q10", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "translation", "qno": 10, "marks": 3, "type": "translate", "question": "Translate the following sentences into English:", "parts": [{"label": "ক", "source": "বাংলাদেশ ষড়ঋতুর দেশ।", "target": "Bangladesh is a land of six seasons."}, {"label": "খ", "source": "সে স্কুলে যায় না।", "target": "He does not go to school."}, {"label": "গ", "source": "ত্রিশ দিনে এক মাস।", "target": "Thirty days make a month."}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q11", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "idiom", "qno": 11, "marks": 3, "type": "idiom", "question": "Make sentences with the following idioms and phrases:", "parts": [{"label": "a", "phrase": "By dint of", "meaning": "বদৌলতে"}, {"label": "b", "phrase": "For good", "meaning": "চিরতরে"}, {"label": "c", "phrase": "Bag and baggage", "meaning": "তল্পি-তল্পাসহ"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q12", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "grammar", "qno": 12, "marks": 3, "type": "fill-gaps", "question": "Use appropriate articles in the blanks:", "parts": [{"sentence": "He is......M.A.", "answer": "an"}, {"sentence": "He is..... one eyed man.", "answer": "a"}, {"sentence": "26th March is..... Independence Day of Bangladesh.", "answer": "the"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q13", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "fill-in-the-blanks", "qno": 13, "marks": 3, "type": "fill-gaps", "question": "Write the appropriate prepositions:", "parts": [{"sentence": "I was admitted........class VII.", "answer": "to"}, {"sentence": "Take care.......your health.", "answer": "of"}, {"sentence": "You should abide........the rules of the office.", "answer": "by"}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q14", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "english", "topic": "grammar", "qno": 14, "marks": 3, "type": "sentence-change", "question": "Change the form of voice:", "parts": [{"label": "a", "original": "She was singing a song.", "changed": "A song was being sung by her."}, {"label": "b", "original": "Do this work.", "changed": "Let this work be done."}, {"label": "c", "original": "Honey tastes sweet.", "changed": "Honey is tasted sweet."}]},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q15", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "math", "topic": "শতকরা", "qno": 15, "marks": 5, "type": "math", "question": "একজন দোকানদার ৪৮ টাকা হালি দরে ৭ ডজন ডিম ক্রয় করে প্রতি হালি ৫০ টাকা দরে বিক্রয় করলে তার শতকরা কত টাকা লাভ হবে?", "steps": ["আমরা জানি, ১ ডজন = ৩ হালি", "৭ ডজন = (৩×৭) হালি = ২১ হালি", "২১ হালি ডিমের ক্রয়মূল্য = ২১ × ৪৮ = ১০০৮ টাকা", "২১ হালি ডিমের বিক্রয়মূল্য = ২১ × ৫০ = ১০৫০ টাকা", "লাভ হয়= (১০৫০ − ১০০৮) টাকা = ৪২ টাকা", "শতকরা লাভ হয় = (৪২×১০০)/১০০৮ = ৪.১৭ টাকা"], "answer": "লাভ ৪.১৭%"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q16", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "math", "topic": "বয়স", "qno": 16, "marks": 5, "type": "math", "question": "রহিম ও করিমের বয়সের গড় ৩৫ বছর। রহিম ও হামজার বয়সের গড় ২০ বছর। হামজার বয়স ১১ বছর হলে করিমের বয়স কত?", "steps": ["রহিম ও করিমের বয়সের সমষ্টি = ৭০ বছর", "রহিম ও হামজার বয়সের সমষ্টি = ৪০ বছর", "হামজার বয়স ১১ হলে রহিমের বয়স = ৪০ − ১১ = ২৯ বছর", "সুতরাং করিমের বয়স = ৭০ − ২৯ = ৪১ বছর"], "answer": "৪১ বছর"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q17", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 17, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করঃ x⁴ − 4x + 3", "steps": ["x⁴ − 4x + 3", "= x⁴ − x³ + x³ − x² + x² − x − 3x + 3", "= x³(x−1) + x²(x−1) + x(x−1) − 3(x−1)", "= (x−1)(x³+x²+x−3)", "= (x−1){x³ − x² + 2x² − 2x + 3x − 3}", "= (x−1){x²(x−1) + 2x(x−1) + 3(x−1)}", "= (x−1)(x−1)(x²+2x+3)"], "answer": "(x−1)²(x²+2x+3)"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q18", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 18, "marks": 5, "type": "math", "question": "১৩ সে.মি. ব্যাসার্ধ বিশিষ্ট কোনো বৃত্তের কেন্দ্র হতে একটি জ্যা এর লম্ব দূরত্ব ৫ সে.মি. হলে জ্যা এর দৈর্ঘ্য কত?", "steps": ["ধরি, জ্যা এর দৈর্ঘ্য 2a, অর্ধ জ্যা এর দৈর্ঘ্য a", "বৃত্তের কেন্দ্র হতে কোন জ্যা এর উপর অঙ্কিত লম্ব- উক্ত জ্যাকে সমদ্বিখণ্ডিত করে।", "এখানে, a² + 5² = (13)²", "বা, a² + 25 = 169", "বা, a² = 144", "∴ a = 12", "∴ জ্যা এর দৈর্ঘ্য 2 × 12 = 24 সে.মি"], "answer": "২৪ সে.মি"},
+
+  {"id": "job-2025-land-appeal-board-office-sohayok-q19", "examId": "job-2025-land-appeal-board-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 19, "marks": 10, "type": "short-qa", "question": "সাধারণ জ্ঞান-১০ঃ নিচের প্রশ্নের উত্তর দিনঃ", "parts": [{"label": "১৯", "q": "বর্তমানে কোন দেশে বাংলাদেশের সবচেয়ে বেশি শান্তিরক্ষী বাহিনী অবস্থান করছে?", "a": "ডেমোক্র্যাটিক রিপাবলিক অফ কঙ্গো"}, {"label": "২০", "q": "\\\"মোনালিসা\\\" কী?", "a": "একটি চিত্রকর্ম"}, {"label": "২১", "q": "বাংলাদেশের প্রাচীনতম জনপদ কোনটি?", "a": "পুণ্ড্র"}, {"label": "২২", "q": "\\\"সকল নাগরিক আইনের দৃষ্টিতে সমান এবং আইনের সমান আশ্রয় লাভের অধিকারী\\\" বাংলাদেশের সংবিধানের কোন অনুচ্ছেদে বর্ণিত আছে?", "a": "২৭"}, {"label": "২৩", "q": "রোহিঙ্গা নিয়ে জাতিসংঘের কোন সংস্থা কাজ করে?", "a": "UNHCR"}, {"label": "২৪", "q": "\\\"রূপালী\\\" ও \\\"ডেলফোজ\\\" কী?", "a": "উন্নত জাতের তুলা"}, {"label": "২৫", "q": "\\\"সঞ্চিতা\\\" কার লেখা?", "a": "কাজী নজরুল ইসলাম"}, {"label": "২৬", "q": "বাংলাদেশে \\\"The Bay of Bengal Industrial Growth Belt (BiG-B)\\\" সহযোগিতার উদ্যোক্তা দেশ কোনটি?", "a": "জাপান"}, {"label": "২৭", "q": "\\\"IAEA\\\" এর পূর্ণরূপ কী?", "a": "International Atomic Energy Agency"}, {"label": "২৮", "q": "\\\"UNIIMOG\\\" এর পূর্ণরূপ কী?", "a": "United Nations Iran-Iraq Military Observer Group"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বিদ্যুৎ বিভাগ — অফিস সহায়ক (job-2025-biddyut-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪১৯-৪২০)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-biddyut-office-sohayok-q01", "examId": "job-2025-biddyut-office-sohayok", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 1, "marks": 3, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুন।", "parts": [{"label": "ক", "q": "অন্য উপায় নেই যার", "a": "অনন্যোপায়"}, {"label": "খ", "q": "অর্থহীন উক্তি", "a": "প্রলাপ"}, {"label": "গ", "q": "জলে জন্মে যা", "a": "জলজ"}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q02", "examId": "job-2025-biddyut-office-sohayok", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 2, "marks": 2, "type": "sub-parts", "question": "অর্থসহ বাক্য লিখুন।", "parts": [{"label": "ক", "q": "শিরে সংক্রান্তি", "a": "আসন্ন বিপদ"}, {"label": "খ", "q": "কাছা টিলা", "a": "অসাবধানতা"}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q03", "examId": "job-2025-biddyut-office-sohayok", "subject": "bangla", "topic": "সন্ধি", "qno": 3, "marks": 3, "type": "sub-parts", "question": "সন্ধি-বিচ্ছেদ করুন।", "parts": [{"label": "ক", "q": "তন্বী", "a": "তনু + ঈ"}, {"label": "খ", "q": "ষোড়শ", "a": "ষট্ + দশ"}, {"label": "গ", "q": "সংবাদ", "a": "সম্ + বাদ"}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q04", "examId": "job-2025-biddyut-office-sohayok", "subject": "english", "topic": "translation", "qno": 4, "marks": 3, "type": "translate", "question": "Translate into English.", "parts": [{"label": "ক", "source": "তোমার বাড়ি যাওয়াই ভালা।", "target": "You had better go home."}, {"label": "খ", "source": "ত্রিশ দিনে এক মাস।", "target": "Thirty days makes a month."}, {"label": "গ", "source": "আমি তোমাকে ভাত খাওয়াবো।", "target": "I will feed you rice."}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q05", "examId": "job-2025-biddyut-office-sohayok", "subject": "english", "topic": "idiom", "qno": 5, "marks": 2, "type": "idiom", "question": "Make sentence with the following idioms:", "parts": [{"label": "a", "phrase": "Round the clock", "meaning": "সারাদিন", "example": "He works round the clock."}, {"label": "b", "phrase": "Bread and butter", "meaning": "জীবিকা", "example": "He earns bread and butter by means of honest labour."}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q06", "examId": "job-2025-biddyut-office-sohayok", "subject": "english", "topic": "fill-in-the-blanks", "qno": 6, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks with appropriate word/preposition.", "question_extra": "The main cause ..... road accidents ......Bangladesh.... the violation of traffic rules ......the drivers ...... do not care .......human lives.", "parts": [{"sentence": "The main cause ..... road accidents ......Bangladesh.... the violation of traffic rules ......the drivers ...... do not care .......human lives.", "answer": "of, in, is, by, who, for"}]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q07", "examId": "job-2025-biddyut-office-sohayok", "subject": "english", "topic": "spelling", "qno": 7, "marks": 5, "type": "table", "question": "Correct the spelling of the following words:", "columns": ["Incorrect", "Correct"], "rows": [["Diciplin", "Discipline"], ["Exersice", "Exercise"], ["Embition", "Ambition"], ["Honasty", "Honesty"]]},
+
+  {"id": "job-2025-biddyut-office-sohayok-q08", "examId": "job-2025-biddyut-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 8, "marks": 5, "type": "math", "question": "একটি চৌবাচ্চায় ৮০০০ লিটার পানি ধরে। চৌবাচ্চাটির দৈর্ঘ্য ২.৫৬ মিটার এবং প্রস্থ ১.২৫ মিটার হলে, গভীরতা কত?", "steps": ["চৌবাচ্চাটির তলার ক্ষেত্রফল = ২.৫৬ মিটার × ১.২৫ মিটার", "= ২৫৬ সে.মি. × ১২৫ সে.মি.", "= ৩২০০০ বর্গ সে.মি.", "চৌবাচ্চায় ৮০০০ লিটার বা ৮০০০ × ১০০০ ঘন সে.মি. পানি ধরে। [১০০০ ঘন সে.মি. = ১ লিটার]", "অতএব, চৌবাচ্চাটির আয়তন ৮০০০০০০ ঘন সে.মি.", "∴ চৌবাচ্চাটির গভীরতা = ৮০০০০০০/৩২০০০ সে.মি. = ২৫০ সে.মি. = ২.৫ মিটার"], "answer": "২.৫ মিটার"},
+
+  {"id": "job-2025-biddyut-office-sohayok-q09", "examId": "job-2025-biddyut-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 9, "marks": 5, "type": "math", "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।", "steps": ["ধরি, x + 6 = a এবং x + 4 = b", "প্রদত্ত রাশি: ab = {(a+b)/2}² − {(a−b)/2}²", "= {(x+6+x+4)/2}² − {(x+6−x−4)/2}²", "= {(2x+10)/2}² − (2/2)²", "= {2(x+5)/2}² − 1²", "= (x+5)² − 1²"], "answer": "(x+5)² − 1²"},
+
+  {"id": "job-2025-biddyut-office-sohayok-q10", "examId": "job-2025-biddyut-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 10, "marks": 5, "type": "paragraph", "question": "সংজ্ঞা লিখুনঃ সন্নিহিত কোণ, ট্রাপিজিয়াম, জ্যা", "answer": "সন্নিহিত কোণ: দুটি কোণের একটি সাধারণ বাহু ও একই শীর্ষ বিন্দু থাকলে তাদের পরস্পরকে সন্নিহিত কোণ বলে। ট্রাপিজিয়াম: যে চতুর্ভুজের এক জোড়া বিপরীত বাহু সমান্তরাল, একে ট্রাপিজিয়াম বলে। জ্যা: বৃত্তের যেকোন দুইটি বিন্দুর সংযোজক রেখাংশকে বৃত্তের জ্যা বলে।"},
+
+  {"id": "job-2025-biddyut-office-sohayok-q11", "examId": "job-2025-biddyut-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 11, "marks": 12, "type": "short-qa", "question": "সাধারণ জ্ঞান-১০ঃ এক কথায় উত্তর দিনঃ", "parts": [{"label": "ক", "q": "টাঙ্গুয়ার হাওড় কোন জেলায় অবস্থিত?", "a": "সুনামগঞ্জ"}, {"label": "খ", "q": "জাতিসংঘর শরণার্থী বিষয়ক সংস্থার নাম কি?", "a": "UNHCR"}, {"label": "গ", "q": "বাংলাদেশের সবচেয়ে উষ্ণ স্থানের নাম কি?", "a": "নাটোরের লালপুর।"}, {"label": "ঘ", "q": "এপিকালচার কি?", "a": "মৌমাছি চাষ"}, {"label": "ঙ", "q": "কম্পিউটারের ব্রেইন কাকে বলা হয়?", "a": "মাইক্রোপ্রসেসর"}, {"label": "চ", "q": "বাংলাদেশের মুক্তিযুদ্ধের প্রথম শত্রুমুক্ত জেলা কোনটি?", "a": "যশোর"}, {"label": "ছ", "q": "ড্রাই আইস কি?", "a": "কার্বন ড্রাই অক্সাইডের কঠিন রূপ"}, {"label": "জ", "q": "কেন্দ্রীয় শহীদ মিনারের স্থপতি কে?", "a": "হামিদুর রহমান"}, {"label": "ঝ", "q": "আয়তনে এশিয়ার সবচেয়ে ছোট দেশ কোনটি?", "a": "মালদ্বীপ"}, {"label": "ঞ", "q": "\\\"অগ্নিবীণা\\\" কাব্যগ্রন্থের রচয়িতা কে?", "a": "কাজী নজরুল ইসলাম"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বিদ্যুৎ বিভাগ — সাঁটমুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর (job-2025-biddyut-steno-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪২০-৪২২)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-biddyut-steno-typist-q01", "examId": "job-2025-biddyut-steno-typist", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 1, "marks": 5, "type": "table", "question": "বিপরীত শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["আবশ্যিক", "ঐচ্ছিক"], ["উৎকর্ষ", "অপকর্ষ"], ["অর্বাচীন", "প্রাচীন"], ["পটু", "অপটু"], ["আবির্ভাব", "তিরোভাব"]]},
+
+  {"id": "job-2025-biddyut-steno-typist-q02", "examId": "job-2025-biddyut-steno-typist", "subject": "bangla", "topic": "অর্থ লিখুন", "qno": 2, "marks": 5, "type": "sub-parts", "question": "অর্থ লিখুনঃ", "parts": [{"label": "ক", "q": "কুয়ার ব্যাঙ", "a": "সংকীর্ণমনা/ সীমাবদ্ধ জ্ঞান"}, {"label": "খ", "q": "উজানের কৈ", "a": "সহজলভ্য"}, {"label": "গ", "q": "তুলসী বনের বাঘ", "a": "ভণ্ড"}, {"label": "ঘ", "q": "ঝড়ো কাক", "a": "বিপদগ্রস্ত ব্যক্তি"}, {"label": "ঙ", "q": "বালির বাঁধ", "a": "অস্থায়ী বস্তু"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q03", "examId": "job-2025-biddyut-steno-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 3, "marks": 5, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "যার উপমা নেই", "a": "অনুপম"}, {"label": "খ", "q": "জয়ের জন্য উৎসব", "a": "জয়ন্তী"}, {"label": "গ", "q": "দমন করা কষ্টকর যা", "a": "দুর্দমনীয়"}, {"label": "ঘ", "q": "পূর্বে শোনা যায়নি", "a": "অশ্রুতপূর্ব"}, {"label": "ঙ", "q": "যে ভূমিতে ফসল জন্মায় না", "a": "ঊষর"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q04", "examId": "job-2025-biddyut-steno-typist", "subject": "bangla", "topic": "essay", "qno": 4, "marks": 5, "type": "paragraph", "question": "নবায়ন জ্বালানি সম্পর্কে সংক্ষেপে লিখুন।", "answer": "নবায়নযোগ্য জ্বালানি হলো এমন শক্তির উৎস যা প্রকৃতিতে পুনরায় সৃষ্টি হয় এবং সহজে ফুরিয়ে যায় না। সূর্যালোক, বায়ু, পানি, জৈববস্তু ও ভূ-তাপীয় শক্তি নবায়নযোগ্য জ্বালানির প্রধান উৎস। জীবাশ্ম জ্বালানির বিপরীতে নবায়নযোগ্য জ্বালানি পরিবেশবান্ধব এবং কার্বন নিঃসরণ কম করে। বাংলাদেশে সৌরবিদ্যুৎ ও বায়ুবিদ্যুৎ উৎপাদনে ক্রমাগত অগ্রগতি হচ্ছে। জ্বালানি নিরাপত্তা নিশ্চিত করতে এবং জলবায়ু পরিবর্তনের ঝুঁকি কমাতে নবায়নযোগ্য জ্বালানির ব্যবহার বৃদ্ধি করা অত্যন্ত জরুরি।"},
+
+  {"id": "job-2025-biddyut-steno-typist-q05", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "translation", "qno": 5, "marks": 5, "type": "translate", "question": "Translate the following sentences into English:", "parts": [{"label": "ক", "source": "তিনি একজন চরিত্রবান মানুষ", "target": "He is a virtuous person."}, {"label": "খ", "source": "সে গতকাল স্কুলে যায়নি।", "target": "He didn't go to school yesterday."}, {"label": "গ", "source": "রাজশাহী শহর পদ্মা নদীর তীরে অবস্থিত।", "target": "Rajshahi stands/ is situated on the bank of the Padma river"}, {"label": "ঘ", "source": "তাকে দেখে ভদ্রলোক মনে হয়।", "target": "He seems to be a gentleman."}, {"label": "ঙ", "source": "আমি কমিটিতে নেই।", "target": "I am not on the committee"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q06", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 6, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks with prepositions:", "parts": [{"sentence": "I am tired........ waiting for you.", "answer": "of"}, {"sentence": "He is not good...... mathematics.", "answer": "at"}, {"sentence": "It's 10 o'clock....... my watch.", "answer": "by"}, {"sentence": "He went abroad...... good.", "answer": "for"}, {"sentence": "The children were entrusted....... their uncle.", "answer": "to"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q07", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "grammar", "qno": 7, "marks": 4, "type": "sentence-change", "question": "Transform the sentences:", "parts": [{"label": "a", "original": "Shut the door. (Passive)", "changed": "Let the door be shut."}, {"label": "b", "original": "Everyone wants to succeed in life. (Interrogative)", "changed": "Who does not want to succeed in life?"}, {"label": "c", "original": "As he was ill, he did not go to school. (Compound)", "changed": "He was ill and did not go to school."}, {"label": "d", "original": "He said, \\\"Do it\\\" (Indirect)", "changed": "He ordered to do it."}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q08", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "spelling", "qno": 8, "marks": 3, "type": "table", "question": "Correct the following words:", "columns": ["Incorrect", "Correct"], "rows": [["Disciplin", "Discipline"], ["Perticipation", "Participation"], ["Sireous", "Serious"]]},
+
+  {"id": "job-2025-biddyut-steno-typist-q09", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "idiom", "qno": 9, "marks": 2, "type": "idiom", "question": "Make sentences with the following idioms:", "parts": [{"label": "a", "phrase": "Break the ice", "meaning": "সংকোচ কাটানো"}, {"label": "b", "phrase": "Once in a blue moon", "meaning": "কদাচিৎ"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q10", "examId": "job-2025-biddyut-steno-typist", "subject": "english", "topic": "essay", "qno": 10, "marks": 5, "type": "paragraph", "question": "Write five sentences on \\\"Traffic Jam\\\"", "answer": "Traffic jam is a long line of vehicles on a road that can't move or that can't move very slowly. Traffic jam is common affair in the big cities and towns. It is one of the major problems. The causes of traffic jam are many. The increase in the number of buses, trucks, rickshaws, auto rickshaws is also responsible for this problem. The drivers are not willing to obey the traffic rules. Illegal parking of vehicles and overtaking tendency are also responsible for traffic jam. At office time traffic jam is intolerable. It kills our valuable time. Students, patient, workers, employs can't reach their goal in time. This problem can be solved by adopting some measures. Traffic police should be skilled. Traffic rules should impose strictly. Unlicensed vehicles should be removed. Public awareness is also needed in this respect."},
+
+  {"id": "job-2025-biddyut-steno-typist-q11", "examId": "job-2025-biddyut-steno-typist", "subject": "math", "topic": "নৌকা ও স্রোত", "qno": 11, "marks": 5, "type": "math", "question": "একটি নৌকা স্থির পানিতে ঘণ্টায় ৬ কি.মি. যেতে পারে। স্রোতের প্রতিকূলে ৬ কি.মি. যেতে নৌকাটির ৩ গুণ সময় লাগে। স্রোতের অনুকূলে ৫০ কি.মি. যেতে নৌকাটির কত সময় লাগবে?", "steps": ["নৌকাটি স্থির পানিতে ৬ কি.মি. যায় ১ ঘণ্টায়", "স্রোতের প্রতিকূলে ৬ কি.মি. যায় ১×৩ ঘণ্টায় বা ৩ ঘণ্টায়", "প্রশ্নমতে, ৩ ঘণ্টায় যায় ৬ কি.মি.", "∴ ১ ঘণ্টায় যায় ৬/৩ কি.মি. বা ২ কি.মি.", "স্রোতের প্রতিকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ − স্রোতের বেগ", "∴ স্রোতের বেগ = নৌকার প্রকৃত বেগ − নৌকার কার্যকরী বেগ = (৬ − ২) কি.মি. = ৪ কি.মি./ঘণ্টায়", "স্রোতের অনুকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ + স্রোতের বেগ = (৬ + ৪) কি.মি = ১০ কি.মি./ঘণ্টায়", "স্রোতের অনুকূলে ১০ কি.মি যায় ১ ঘণ্টায়", "১ \" \" ১/১০ \" \"", "৫০ \" \" (১×৫০)/১০ ঘণ্টায় বা ৫ ঘণ্টায়", "স্রোতের অনুকূলে যেতে ৫ ঘণ্টা লাগবে।"], "answer": "৫ ঘণ্টা"},
+
+  {"id": "job-2025-biddyut-steno-typist-q12", "examId": "job-2025-biddyut-steno-typist", "subject": "math", "topic": "বীজগণিত", "qno": 12, "marks": 5, "type": "math", "question": "দুইটি সংখ্যার যোগফল ৬০ এবং বিয়োগফল ২০ হলে, সংখ্যা দুইটি নির্ণয় করুন।", "steps": ["মনে করি, একটি সংখ্যাটি = ক, অপর সংখ্যাটি = খ", "১ম শর্তে, ক + খ = ৬০ ....... (১)", "২য় শর্তে, ক − খ = ২০ ........... (২)", "(১) নং ও (২) নং সমীকরণ যোগ করে পাই, ২ক = ৮০", "∴ ক = ৪০", "ক এর মান (১) নং সমীকরণে বসাই, ৪০ + খ = ৬০", "∴ খ = ২০", "সুতরাং একটি সংখ্যাটি = ৪০ অপর সংখ্যাটি = ২০"], "answer": "৪০ ও ২০"},
+
+  {"id": "job-2025-biddyut-steno-typist-q13", "examId": "job-2025-biddyut-steno-typist", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "সরল করুনঃ x/(x+y) + y/(x−y) ÷ x/(x−y) + y/(x+y)", "steps": ["{x/(x+y) + y/(x−y)} ÷ {x/(x−y) + y/(x+y)}", "= {(x²−xy+xy+y²)/((x+y)(x−y))} ÷ {(x²+xy−xy+y²)/((x−y)(x+y))}", "= {(x²+y²)/(x²−y²)} ÷ {(x²+y²)/(x²−y²)}", "= (x²+y²)/(x²−y²) × (x²−y²)/(x²+y²)", "= 1"], "answer": "1"},
+
+  {"id": "job-2025-biddyut-steno-typist-q14", "examId": "job-2025-biddyut-steno-typist", "subject": "math", "topic": "ত্রিকোণমিতি", "qno": 14, "marks": 5, "type": "math", "question": "secA + tanA = ৫/২ হলে, secA − tanA এর মান নির্ণয় করুন।", "steps": ["আমরা জানি, sec²A = 1 + tan²A", "বা, sec²A − tan²A = 1", "বা, (secA + tanA)(secA − tanA) = 1", "বা, (৫/২)(secA − tanA) = 1", "∴ secA − tanA = ২/৫"], "answer": "২/৫"},
+
+  {"id": "job-2025-biddyut-steno-typist-q15", "examId": "job-2025-biddyut-steno-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 15, "marks": 5, "type": "short-qa", "question": "সংজ্ঞা লিখুনঃ ক) পূরক কোণ, খ) বৃত্তকলা", "parts": [{"label": "ক", "q": "পূরক কোণ", "a": "দুইটি কোণের সমষ্টি ৯০° হলে কোণ দুইটিকে পরস্পর পূরক কোণ বলে।"}, {"label": "খ", "q": "বৃত্তকলা", "a": "বৃত্তের দুইটি ব্যাসার্ধ ও একটি চাপ দ্বারা গঠিত অঞ্চলকে বৃত্তকলা বা বৃত্তীয় ক্ষেত্র বলে।"}]},
+
+  {"id": "job-2025-biddyut-steno-typist-q16", "examId": "job-2025-biddyut-steno-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 12, "type": "short-qa", "question": "সাধারণ জ্ঞানঃ সংক্ষেপে উত্তর দিনঃ", "parts": [{"label": "ক", "q": "সমুদ্রের গভীরতা মাপার যন্ত্রের নাম কী?", "a": "ফ্যাদোমিটার"}, {"label": "খ", "q": "কোন ভিটামিনের অভাবে রাতকানা রোগ হয়?", "a": "ভিটামিন 'এ'"}, {"label": "গ", "q": "UNESCO এর সদর দপ্তর কোথায়?", "a": "প্যারিস, ফ্রান্স"}, {"label": "ঘ", "q": "পূর্ণরূপ লিখুনঃ ATM, TIN", "a": "ATM = Automated Teller Machine; TIN = Taxpayer's Identification Number"}, {"label": "ঙ", "q": "১ নটিক্যাল মাইল সমান কত কিলোমিটার?", "a": "১.৮৫২ কি.মি"}, {"label": "চ", "q": "বাংলাদেশ কত সালে জাতিসংঘের সদস্যপদ লাভ করে?", "a": "১৯৭৪ সালে"}, {"label": "ছ", "q": "বাংলাদেশের সমুদ্রবন্দর কয়টি ও কি কি?", "a": "৩টি। যথা: চট্টগ্রাম, মংলা ও পায়রা সমুদ্র বন্দর।"}, {"label": "জ", "q": "২০২৬ সালের ফুটবল বিশ্বকাপ কোন কোন দেশে অনুষ্ঠিত হবে?", "a": "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো"}, {"label": "ঝ", "q": "জাপানের পার্লামেন্টের নাম কী?", "a": "ডায়েট"}, {"label": "ঞ", "q": "ইন্টারনেটের মাধ্যমে প্রদত্ত চিকিৎসা পদ্ধতিকে কী বলে?", "a": "টেলিমেডিসিন"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: বিদ্যুৎ বিভাগ — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-biddyut-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪২৩-৪২৫)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-biddyut-office-asst-typist-q01", "examId": "job-2025-biddyut-office-asst-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 1, "marks": 5, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "যিনি প্রথম পথ দেখান", "a": "পথিকৃৎ"}, {"label": "খ", "q": "বেশি কথা বলে যে", "a": "বাচাল"}, {"label": "গ", "q": "আমিষের অভাব", "a": "নিরামিষ"}, {"label": "ঘ", "q": "নৌ চলাচলের যোগ্য", "a": "নাব্য"}, {"label": "ঙ", "q": "যা নির্ণয় করা যায় না", "a": "অনির্ণেয়"}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q02", "examId": "job-2025-biddyut-office-asst-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 5, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "স্বৈর", "a": "স্ব + ঈর"}, {"label": "খ", "q": "ইচ্ছা", "a": "ইষ্ + ছা"}, {"label": "গ", "q": "যদিচ্ছা", "a": "যদি + ইচ্ছা"}, {"label": "ঘ", "q": "মহর্ষি", "a": "মহা + ঋষি"}, {"label": "ঙ", "q": "অহরহ", "a": "অহঃ + অহ"}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q03", "examId": "job-2025-biddyut-office-asst-typist", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 3, "marks": 5, "type": "table", "question": "বিপরীত শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["ইতর", "ভদ্র"], ["বিষ", "অমৃত"], ["অনুরাগ", "বিরাগ"], ["আবাহন", "বিসর্জন"], ["অবনত", "উন্নত"]]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q04", "examId": "job-2025-biddyut-office-asst-typist", "subject": "bangla", "topic": "essay", "qno": 4, "marks": 10, "type": "paragraph", "question": "ভাব-সম্প্রসারণ লিখুনঃ 'হাতে কাজ করায় অগৌরব নেই, অগৌরব হয় মিথ্যায়, মূর্ধতায়।'", "answer": "মানুষের জীবন কর্মেই ভরপুর। জীবিকা নির্বাহের জন্য প্রতিটি মানুষকে কোনো না কোনো কাজে নিয়োজিত থাকতে হয়। দৈনন্দিন চাহিদা মেটাতে অর্থ উপার্জন করতে হয়। বাঁচতে আমাদের খাদ্য, পরিধেয় বস্ত্র ও অন্যান্য অনেক জিনিসের প্রয়োজন হয়। যে যত পরিশ্রম করে, তার উন্নতির সুযোগ তত বেশি হয়। তাই দেখা যায় জীবনের সঙ্গে পরিশ্রমের ঘনিষ্ঠ সম্পর্ক রয়েছে। মানুষে মানুষে শিক্ষা ও যোগ্যতার অনেক পার্থক্য থাকে। এর ফলে জীবিকা অর্জনে পরিশ্রমের পরিমাণেও ভিন্নতা আসে। কেউ অল্প পরিশ্রমে ভালো ফল পায়, আবার কেউ কঠোর পরিশ্রম করেও সহজে রোজগার করতে পারে না। পরিশ্রমের এই তারতম্য সামাজিক মর্যাদাতেও প্রভাব ফেলে। কেউ যোগ্যতার অভাবে সাধারণ কাজ করে, আবার কেউ উচ্চ যোগ্যতার জন্য উন্নত পদে কর্মরত থাকে। যোগ্যতার পার্থক্যের কারণে কাজের ধরন ভিন্ন হলেও সকল শ্রেণির কাজেরই গুরুত্ব আছে। কোনো ধরনের শারীরিক শ্রমই অপমানজনক নয়। তবুও অনেকের ধারণা কাজ থেকে দূরে থাকলেই সম্মান বেশি পাওয়া যায়। অনেক শিক্ষিত ব্যক্তি অশিক্ষিতদের কাজ অবহেলা করে, যা ভুল। বাস্তবে হাতে কাজ করা কোনো অগৌরবের ব্যাপার নয়, বরং মিথ্যা ও মূর্খতাই লজ্জার কারণ।"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q05", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "translation", "qno": 5, "marks": 5, "type": "translate", "question": "Translate the following sentences into English:", "parts": [{"label": "ক", "source": "তিনি একজন চরিত্রবান মানুষ", "target": "He is a virtuous person."}, {"label": "খ", "source": "সে গতকাল স্কুলে যায়নি।", "target": "He didn't go to school yesterday."}, {"label": "গ", "source": "রাজশাহী শহর পদ্মা নদীর তীরে অবস্থিত।", "target": "Rajshahi stands/situated on the bank of Padma river"}, {"label": "ঘ", "source": "তাকে দেখে ভদ্রলোক মনে হয়।", "target": "He seems to be a gentleman."}, {"label": "ঙ", "source": "টিপ টিপ বৃষ্টি হচ্ছে।", "target": "It is drizzling"}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q06", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 6, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks with prepositions:", "parts": [{"sentence": "I am tired........ waiting for you.", "answer": "of"}, {"sentence": "He is not good...... mathematics.", "answer": "at"}, {"sentence": "It's 10 o'clock....... my watch.", "answer": "by"}, {"sentence": "He went abroad...... good.", "answer": "for"}, {"sentence": "The children were entrusted....... their uncle.", "answer": "to"}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q07", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 7, "marks": 4, "type": "sentence-change", "question": "Transform the sentences:", "parts": [{"label": "a", "original": "Shut the door. (Passive)", "changed": "Let the door be shut."}, {"label": "b", "original": "Everyone wants to succeed in life. (Interrogative)", "changed": "Who does not want to succeed in life?"}, {"label": "c", "original": "As he was ill, he did not go to school. (Compound)", "changed": "He was ill and did not go to school."}], "note": "প্রশ্নে চারটি বাক্য উল্লেখ থাকলেও বইয়ে তিনটির সমাধান দেখা যায়।"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q08", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "spelling", "qno": 8, "marks": 4, "type": "table", "question": "Correct the following words:", "columns": ["Incorrect", "Correct"], "rows": [["Disciplin", "Discipline"], ["Perticipation", "Participation"], ["Sireous", "Serious"], ["Expart", "Expert"]]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q09", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "idiom", "qno": 9, "marks": 3, "type": "idiom", "question": "Make sentences with the following idioms:", "parts": [{"label": "a", "phrase": "Break the ice", "meaning": "সংকোচ কাটানো"}, {"label": "b", "phrase": "Once in a blue moon", "meaning": "কদাচিৎ"}, {"label": "c", "phrase": "Cats and dogs", "meaning": "মুষলধারে", "example": "It has been raining cats and dogs since morning."}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q10", "examId": "job-2025-biddyut-office-asst-typist", "subject": "english", "topic": "essay", "qno": 10, "marks": 5, "type": "paragraph", "question": "Write five sentences on \\\"Traffic Jam\\\"", "answer": "Traffic jam is a long line of vehicles on a road that can't move or that can't move very slowly. Traffic jam is common affair in the big cities and towns. It is one of the major problems. The causes of traffic jam are many. The increase in the number of buses, trucks, rickshaws, auto rickshaws is also responsible for this problem. The drivers are not willing to obey the traffic rules. Illegal parking of vehicles and overtaking tendency are also responsible for traffic jam. At office time traffic jam is intolerable. It kills our valuable time. Students, patient, workers, employs can't reach their goal in time. This problem can be solved by adopting some measures. Traffic police should be skilled. Traffic rules should impose strictly. Unlicensed vehicles should be removed. Public awareness is also needed in this respect."},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q11", "examId": "job-2025-biddyut-office-asst-typist", "subject": "math", "topic": "গতিবেগ", "qno": 11, "marks": 5, "type": "math", "question": "৬০ মিটার দীর্ঘ একটি ট্রেনের গতিবেগ ঘণ্টায় ৪৮ কি.মি.। রেললাইনের পাশের একটি খুঁটিকে অতিক্রম করতে ট্রেনটির কত সময় লাগবে?", "steps": ["খুঁটিটি অতিক্রম করতে ট্রেনটিকে নিজের দৈর্ঘ্যের সমান দূরত্ব অতিক্রম করতে হবে।", "৪৮ কি.মি. = ৪৮ × ১০০০ মিটার বা ৪৮০০০ মিটার", "১ ঘন্টা = ৩৬০০ সেকেন্ড", "ট্রেনটি ৪৮০০০ মি. অতিক্রম করে ৩৬০০ সেকেন্ডে", "১ \" \" \" ৩৬০০/৪৮০০০", "৬০ \" \" \" (৩৬০০×৬০)/৪৮০০০", "= ৯/২ সেকেন্ড", "= ৮১/২ সেকেন্ড"], "answer": "৮১/২ সেকেন্ড"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q12", "examId": "job-2025-biddyut-office-asst-typist", "subject": "math", "topic": "মুনাফা", "qno": 12, "marks": 5, "type": "math", "question": "কোনো আসল ৩ বছরে মুনাফা-আসলে ৫৫০০ টাকা হয়। মুনাফা, আসলের ৩/৮ অংশ হলে, আসল ও মুনাফার হার নির্ণয় করুন।", "steps": ["মনে করি, আসল ৮ টাকা", "মুনাফা = ৮ এর ৩/৮ টাকা = ৩ টাকা", "মুনাফা-আসল = (৮ + ৩) টাকা = ১১ টাকা", "মুনাফা-আসল ১১ টাকা হলে আসল ৮ টাকা", "১ \" \" \" ৮/১১ \"", "৫৫০০ \" \" \" (৮×৫৫০০)/১১ = ৪০০০ টাকা", "∴ মুনাফা = (৫৫০০ − ৪০০০) টাকা বা ১৫০০ টাকা", "৪০০০ টাকার ৩ বছরের মুনাফা ১৫০০ টাকা", "১ \" ১ \" \" ১৫০০/(৪০০০×৩)", "১০০ \" ১ \" \" (১৫০০×১০০)/(৪০০০×৩) = ২৫/২ টাকা = ১২১/২ টাকা"], "answer": "আসল ৪০০০ টাকা, মুনাফার হার ১২১/২%"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q13", "examId": "job-2025-biddyut-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "সমাধান করুনঃ 1/(x−3) + 1/(x−4) = 1/(x−2) + 1/(x−5)", "steps": ["1/(x−3) + 1/(x−4) = 1/(x−2) + 1/(x−5)", "বা, 1/(x−3) − 1/(x−2) = 1/(x−5) − 1/(x−4)", "বা, (x−2−x+3)/{(x−3)(x−2)} = (x−4−x+5)/{(x−5)(x−4)}", "বা, 1/(x²−5x+6) = 1/(x²−9x+20)", "বা, x² − 5x + 6 = x² − 9x + 20", "বা, −5x + 9x = 20 − 6", "বা, 4x = 14", "∴ x = 7/2"], "answer": "x = 7/2"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q14", "examId": "job-2025-biddyut-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 5, "type": "math", "question": "4(x²+ax)², 6(x³ − a²x) এবং 14x³(x³−a³) এর ল.সা.গু নির্ণয় করুন।", "steps": ["১ম রাশি = 4(x²+ax)² = 4{x(x+a)}² = 4x²(x+a)²", "২য় রাশি = 6(x³ − a²x) = 6x(x² − a²) = 6x(x+a)(x−a)", "৩য় রাশি = 14x³(x³−a³) = 14x³(x−a)(x²+ax+a²)", "নির্ণেয় ল.সা.গু = 84x³(x+a)²(x³−a³)"], "answer": "84x³(x+a)²(x³−a³)"},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q15", "examId": "job-2025-biddyut-office-asst-typist", "subject": "math", "topic": "একক রূপান্তর", "qno": 15, "marks": 2, "type": "sub-parts", "question": "শূন্যস্থান পূরণ করুনঃ", "parts": [{"label": "ক", "q": "১ মাইল = ......... কিলোমিটার", "a": "১.৬১ কিলোমিটার"}, {"label": "খ", "q": "........ ঘনমিটার = ১ স্টেয়ার", "a": "১"}]},
+
+  {"id": "job-2025-biddyut-office-asst-typist-q16", "examId": "job-2025-biddyut-office-asst-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 10, "type": "short-qa", "question": "সাধারণ জ্ঞানঃ সংক্ষেপে উত্তর দিনঃ", "parts": [{"label": "ক", "q": "বাংলাদেশের বিদ্যুৎ উৎপাদনে সর্বাধিক ব্যবহৃত উপকরণ কোনটি?", "a": "গ্যাস"}, {"label": "খ", "q": "ভূমিকম্প নির্ণায়ক যন্ত্রের নাম কী?", "a": "সিসমোগ্রাফ"}, {"label": "গ", "q": "কোন দেশকে 'হর্ন অব আফ্রিকা' বলা হয়?", "a": "ইথিওপিয়া"}, {"label": "ঘ", "q": "কম্পিউটার কোন দু'টি সংখ্যার প্রয়োগে কাজ করে?", "a": "০ ও ১"}, {"label": "ঙ", "q": "পূর্ণরূপ লিখুনঃ UNESCO, SAARC", "a": "UNESCO = United Nations Educational, Scientific and Cultural Organization; SAARC = South Asian Association for Regional Cooperation"}, {"label": "চ", "q": "বাংলাদেশ কত সালে জাতিসংঘের সদস্যপদ লাভ করে?", "a": "১৯৭৪ সালে"}, {"label": "ছ", "q": "২০২৫-২৬ অর্থবছরের বাজেট কত?", "a": "৭৯০০০০ কোটি টাকা"}, {"label": "জ", "q": "২০২৬ সালের ফুটবল বিশ্বকাপ কোন কোন দেশে অনুষ্ঠিত হবে?", "a": "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো"}, {"label": "ঝ", "q": "বায়ুমণ্ডলে কোন গ্যাস বেশি থাকে?", "a": "নাইট্রোজেন"}, {"label": "ঞ", "q": "বায়োডিগ্রেডেবল প্লাস্টিক কী?", "a": "বায়োডিগ্রেডেবল প্লাস্টিক হলো এমন প্লাস্টিক যা প্রাকৃতিকভাবে ব্যাকটেরিয়া বা জীবাণুর দ্বারা সহজে পচে যায় এবং পরিবেশে ক্ষতিকর প্রভাব ফেলে না।"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-immigration-passport-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪২৬-৪২৭)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q01", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 1, "marks": 3, "type": "table", "question": "বিপরীত শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["মুখরতা", "মৌন"], ["সমবেত", "ছত্রভঙ্গ"], ["বিজন", "জনবহুল"]]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q02", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 3, "type": "sub-parts", "question": "সন্ধি-বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "বিদ্যোৎসাহী", "a": "বিদ্যা+উৎসাহী"}, {"label": "খ", "q": "পবিত্র", "a": "পো+ইত্র"}, {"label": "গ", "q": "মহেশ", "a": "মহা+ঈশ"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q03", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 3, "type": "sub-parts", "question": "শুদ্ধ বানান লিখুনঃ", "parts": [{"label": "ক", "q": "মনিষী", "a": "মনীষী"}, {"label": "খ", "q": "ইতিমধ্যে", "a": "ইতোমধ্যে"}, {"label": "গ", "q": "পাসান", "a": "পাষাণ"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q04", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 4, "marks": 3, "type": "sub-parts", "question": "এক কথায় প্রকাশ করঃ", "parts": [{"label": "ক", "q": "যা উচ্চারণ করা যায় না", "a": "অনুচ্চার্য"}, {"label": "খ", "q": "হরিণের চামড়া", "a": "অজিন"}, {"label": "গ", "q": "একই সময়ে", "a": "যুগপৎ"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q05", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "বাগধারা", "qno": 5, "marks": 3, "type": "sub-parts", "question": "বাগধারাগুলোর অর্থ লিখুনঃ", "parts": [{"label": "ক", "q": "আদার ব্যাপারী", "a": "সামান্য বিষয়ে ব্যক্ত ব্যক্তি"}, {"label": "খ", "q": "পর্বতের মূষিক প্রসব", "a": "বিরাট সম্ভাবনার সামান্য প্রাপ্তি"}, {"label": "গ", "q": "অগ্রপশ্চাৎ", "a": "ভেবে-চিন্তে"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q06", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "bangla", "topic": "কারক", "qno": 6, "marks": 2, "type": "sub-parts", "question": "কারক নির্ণয় করঃ", "parts": [{"label": "ক", "q": "গাড়ি স্টেশন ছেড়েছে", "a": "অপাদানে শূন্য"}, {"label": "খ", "q": "পাছে লোকে কিছু বলে", "a": "কর্তৃকারকে ৭মী"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q07", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "english", "topic": "essay", "qno": 7, "marks": 5, "type": "paragraph", "question": "Write a short paragraph on Metro rail in Bangladesh", "answer": "Metro rail is one of the most significant achievements of modern Bangladesh. It is an electric railway system that runs above the ground on elevated tracks, mainly to reduce traffic congestion in Dhaka city. The construction of Dhaka Metro Rail, also known as MRT Line-6, began under the guidance of Dhaka Mass Transit Company Limited (DMTCL). The metro rail has made commuting faster, safer, and more comfortable for the people of Dhaka. It has significantly reduced travel time and traffic jams on the busy roads of the capital. The government plans to expand the metro rail network further to cover more areas of the city. This modern transportation system is a symbol of Bangladesh's progress towards a developed and smart nation."},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q08", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "english", "topic": "translation", "qno": 8, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "ভাবছি আমি যদি রাজা হতাম", "target": "I wish I were a king."}, {"label": "খ", "source": "তুমি কি কখনো বিদেশ গিয়েছ?", "target": "Have you ever been abroad?"}, {"label": "গ", "source": "দেখতে পেলেই বিশ্বাস হয়।", "target": "Seeing is believing."}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q09", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 9, "marks": 3, "type": "sentence-change", "question": "Change the following sentences as directed:", "parts": [{"label": "a", "original": "Post the letter (Passive)", "changed": "Let the letter be posted."}, {"label": "b", "original": "I said to her, \\\"He will not come\\\".", "changed": "I told her that he would not go."}, {"label": "c", "original": "Only Rahim can do the sum (Negative)", "changed": "None but Rahim can do the sum."}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q10", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "english", "topic": "idiom", "qno": 10, "marks": 4, "type": "idiom", "question": "Make sentence with the following idioms:", "parts": [{"label": "a", "phrase": "Red letter day", "meaning": "স্মরণীয় দিন", "example": "16th December is our red letter day."}, {"label": "b", "phrase": "Once in a blue moon", "meaning": "কদাচিৎ", "example": "He comes here once in a blue moon."}, {"label": "c", "phrase": "French leave", "meaning": "বিনা অনুমতিতে ছুটি", "example": "No one should enjoy French leave."}, {"label": "d", "phrase": "End in smoke", "meaning": "ব্যর্থ হওয়া", "example": "All his plans ended in smoke."}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q11", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "english", "topic": "spelling", "qno": 11, "marks": 5, "type": "table", "question": "Correct the following words:", "columns": ["Incorrect", "Correct"], "rows": [["Cornel", "Colonel"], ["Neumonia", "Pneumonia"], ["Commetti", "Committee"], ["Sychology", "Psychology"], ["Pediatric", "Paediatric"]]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q12", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 12, "marks": 4, "type": "short-qa", "question": "চিত্রসহ সংজ্ঞা দাওঃ ক) রম্বস, খ) বিপ্রতীপ কোণ", "parts": [{"label": "ক", "q": "রম্বস", "a": "যে চতুর্ভুজের প্রতিটি বাহু পরস্পর সমান ও বিপরীত বাহুগুলো সমান্তরাল কিন্তু কোণ গুলো সমকোণ নয় তাকে রম্বস বলে।"}, {"label": "খ", "q": "বিপ্রতীপ কোণ", "a": "দুটি কোণের একটির বাহুদ্বয় অপরটির বাহুদ্বয়ের বিপরীত রশ্মি হলে, কোণ দুটিকে বিপ্রতীপ কোণ বলে।"}]},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q13", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 4, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করঃ x² − 13x − 48", "steps": ["x² − 13x − 48", "= x² − 16x + 3x − 48", "= x(x−16) + 3(x−16)", "= (x−16)(x+3)"], "answer": "(x−16)(x+3)"},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q14", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 4, "type": "math", "question": "x − 1/x = 5 হলে, (x⁴+1)/x² এর মান কত?", "steps": ["প্রদত্ত রাশি = (x⁴+1)/x²", "= x²/x² + 1/x²", "= x² + (1/x)²", "= (x − 1/x)² + 2.x.(1/x)", "= 5² + 2 [মান বসিয়ে]", "= 25 + 2", "= 27"], "answer": "27"},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q15", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 15, "marks": 4, "type": "math", "question": "একটি আয়তক্ষেত্রের ক্ষেত্রফল ১৬০ বর্গমিটার। প্রস্থ দৈর্ঘ্য অপেক্ষা ৬ মিটার কম। আয়তক্ষেত্রটির দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন।", "steps": ["মনে করি, আয়তক্ষেত্রটির প্রস্থ = ক মিটার", "দৈর্ঘ্য = ক + ৬", "প্রশ্নমতে, ক(ক+৬) = ১৬০", "বা, ক² + ৬ক = ১৬০", "বা, ক² + ৬ক − ১৬০ = ০", "বা, ক² + ১৬ক − ১০ক − ১৬০ = ০", "বা, ক(ক+১৬) − ১০(ক+১৬) = ০", "বা, (ক+১৬)(ক−১০) = ০", "হয়, ক+১৬ = ০ অথবা, ক−১০ = ০", "∴ ক = −১৬ [গ্রহণযোগ্য নয়] অথবা ∴ ক = ১০", "সুতরাং প্রস্থ = ১০ মিটার এবং দৈর্ঘ্য = ১০ + ৬ = ১৬ মিটার"], "answer": "দৈর্ঘ্য ১৬ মিটার এবং প্রস্থ ১০ মিটার"},
+
+  {"id": "job-2025-immigration-passport-office-asst-typist-q16", "examId": "job-2025-immigration-passport-office-asst-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 20, "type": "short-qa", "question": "সাধারণ জ্ঞানঃ নিচের প্রশ্নগুলোর উত্তর করুনঃ", "parts": [{"label": "ক", "q": "বাংলাদেশের ফুসফুস বলা হয় কোন স্থানকে?", "a": "সুন্দরবন।"}, {"label": "খ", "q": "কোন দেশের দ্বিতীয় ভাষা বাংলা?", "a": "সিয়েরালিওন।"}, {"label": "গ", "q": "ড্রাইস আইস কি?", "a": "কঠিন অবস্থায় কার্বন-ডাই অক্সাইড"}, {"label": "ঘ", "q": "কম্পিউটারের ব্রেইন কোনটি?", "a": "মাইক্রোপ্রসেসর"}, {"label": "ঙ", "q": "Three Zero তত্ত্বের প্রবক্তা কে?", "a": "ড. মুহাম্মদ ইউনূস"}, {"label": "চ", "q": "বাংলাদেশের 'হোয়াইট গোল্ড' হিসেবে পরিচিত কোনটি?", "a": "চিংড়ি"}, {"label": "ছ", "q": "কম্পিউটারের বহুল ব্যবহৃত ২টি এন্টিভাইরাসের নাম লিখুন।", "a": "AVG, Avast"}, {"label": "জ", "q": "২য় বিশ্বযুদ্ধের অক্ষশক্তি কারা?", "a": "জার্মানি, জাপান, ইতালি"}, {"label": "ঝ", "q": "এভারেস্ট জয়ী প্রথম বাংলাদেশী নারীর নাম কী?", "a": "নিশাত মজুমদার"}, {"label": "ঞ", "q": "বাংলাদেশের সমুদ্র বন্দর কয়টি ও কি কি?", "a": "৩টি। যথা: চট্টগ্রাম, মংলা ও পায়রা সমুদ্র বন্দর।"}, {"label": "ট", "q": "বাংলাদেশ কত সালে টেস্ট ক্রিকেট খেলায় মর্যাদা পায়?", "a": "২৬ জুন, ২০০০ সালে।"}, {"label": "ঠ", "q": "বাংলাদেশের প্রথম সার্চ ইঞ্জিনের নাম কী?", "a": "পিপীলিকা"}, {"label": "ড", "q": "কম্পিউটারের কাজের গতি কি দ্বারা প্রকাশ করা হয়?", "a": "ন্যানো সেকেন্ড।"}, {"label": "ঢ", "q": "জাপানের মুদ্রার নাম কি?", "a": "ইয়েন"}, {"label": "ণ", "q": "পৃথিবীর দীর্ঘতম নদী কোনটি?", "a": "নীলনদ"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: প্রাথমিক ও গণশিক্ষা মন্ত্রণালয় — অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক (job-2025-primary-mass-edu-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪২৮-৪৩০)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q01", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 1, "marks": 2, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "অরিকে দমন করে যে", "a": "অরিন্দম"}, {"label": "খ", "q": "মন হরণ করে যে", "a": "মনোহর"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q02", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 2, "marks": 5, "type": "table", "question": "বিপরীত শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["প্রচ্ছন্ন", "ব্যক্ত"], ["শ্লিষ্ট", "রুক্ষ"], ["বিনীত", "উদ্ধত/দুর্বিনীত"], ["কনিষ্ঠ", "জ্যেষ্ঠ"], ["উপচিকীর্ষা", "অপচিকীর্ষা"]]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q03", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 3, "marks": 3, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "পরীক্ষা", "a": "পরি + ঈক্ষা"}, {"label": "খ", "q": "নয়ন", "a": "নে + অন"}, {"label": "গ", "q": "নিশ্চয়", "a": "নিঃ + চয়"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q04", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "শুদ্ধ বাক্য", "qno": 4, "marks": 6, "type": "sub-parts", "question": "শুদ্ধ বাক্যটি লিখুনঃ", "parts": [{"label": "ক", "q": "অন্যায়ের প্রতিফল দুর্নিবার্য", "a": "অন্যায়ের প্রতিফল অনিবার্য"}, {"label": "খ", "q": "তারা যাইতে যাইতে এ দৃশ্য দেখিয়া মুগ্ধ ও বিস্মিত হন।", "a": "তারা যেতে যেতে এ দৃশ্য দেখে মুগ্ধ ও বিস্মিত হল।"}, {"label": "গ", "q": "ধন ধান্যে পুষ্পে ভরা আমাদের এই বসুন্ধরা।", "a": "ধন ধান্যে পুষ্পে ভরা আমাদের এই বসুন্ধরা।"}, {"label": "ঘ", "q": "নিরপরাধী ব্যক্তিকে ক্ষমা কর।", "a": "নিরপরাধ ব্যক্তিকে ক্ষমা কর।"}, {"label": "ঙ", "q": "তিনি আসামীর বিরুদ্ধে স্বাক্ষী দিলেন।", "a": "তিনি আসামীর বিরুদ্ধে সাক্ষ্য দিলেন।"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q05", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "সমাস", "qno": 5, "marks": 5, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "হাটে-বাজারে", "a": "হাটে ও বাজারে - দ্বন্দ্ব সমাস"}, {"label": "খ", "q": "গুরুভক্তি", "a": "গুরুকে ভক্তি -৪র্থী তৎপুরুষ"}, {"label": "গ", "q": "উপকূল", "a": "কূলের সমীপে"}, {"label": "ঘ", "q": "সুন্দরলতা", "a": "কূলের সমীপে- অব্যয়ীভাব"}, {"label": "ঙ", "q": "হাসিমুখ", "a": "হাসি মাখা মুখ - কর্মধারয় সমাস"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q06", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "bangla", "topic": "বাগধারা", "qno": 6, "marks": 6, "type": "idiom", "question": "নিচের বাগধারাগুলোর অর্থসহ বাক্য রচনা করঃ", "parts": [{"label": "ক", "phrase": "আক্কেল সেলামী", "meaning": "হতবুদ্ধি, ক্ষতি"}, {"label": "খ", "phrase": "ডুমুরের ফুল", "meaning": "দুর্লভ বস্তু/অদৃশ্য বস্তু"}, {"label": "গ", "phrase": "ছকড়া-নকড়া", "meaning": "সস্তা দর"}, {"label": "ঘ", "phrase": "চোখের মণি", "meaning": "প্রিয়"}, {"label": "ঙ", "phrase": "গড্ডলিকা প্রবাহ", "meaning": "অন্ধ ভাবে অনুকরণ"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q07", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "english", "topic": "essay", "qno": 7, "marks": 6, "type": "paragraph", "question": "Write a passage on \\\"My favorite teacher\\\"", "answer": "A teacher plays a vital role in shaping a student's life, and among all my teachers, one holds a special place in my heart. My favorite teacher is my class teacher, who taught us English in high school. She was not only knowledgeable but also kind, patient, and inspiring. She always encouraged us to ask questions and think critically rather than memorize lessons. Her teaching methods were simple yet effective, making even difficult topics easy to understand. Beyond academics, she taught us the importance of honesty, discipline, and hard work. She always motivated us to pursue our dreams and never give up, no matter how hard the circumstances were. Her guidance helped me build confidence and a positive attitude towards life. I will always remember her for the values and knowledge she gave me. She truly represents what an ideal teacher should be."},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q08", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 8, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks with preposition:", "parts": [{"sentence": "He passed ....... last night.", "answer": "away"}, {"sentence": "The man died......... over eating.", "answer": "from"}, {"sentence": "There is a bank ......... my house.", "answer": "near"}, {"sentence": "He needs to abide....... the rules.", "answer": "by"}, {"sentence": "The cat jumped..... the wall.", "answer": "over"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q09", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "english", "topic": "idiom", "qno": 9, "marks": 5, "type": "idiom", "question": "Make sentence with following words:", "parts": [{"label": "a", "phrase": "Give up", "meaning": "ত্যাগ করা", "example": "You should give up smoking."}, {"label": "b", "phrase": "Well off", "meaning": "সচ্ছল", "example": "His father is not well off."}, {"label": "c", "phrase": "Once in a blue moon", "meaning": "কালেভদ্রে", "example": "He comes to his village one in a blue moon"}, {"label": "d", "phrase": "In reference to", "meaning": "প্রত্যুত্তর", "example": "I am writing in reference to your letter."}, {"label": "e", "phrase": "Black and White", "meaning": "লিখিত ভাবে", "example": "We charged against him in black and white."}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q10", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 10, "marks": 5, "type": "sentence-change", "question": "Change the sentences as per direction:", "parts": [{"label": "a", "original": "I shall always remember you. (Make it negative)", "changed": "I shall never forget you."}, {"label": "b", "original": "Unity is strength (Make it complex)", "changed": "It is unity which is strength."}, {"label": "c", "original": "Karim is not better than him. (Make it positive)", "changed": "He is as good as Karim."}, {"label": "d", "original": "Shut the door. (Make it passive)", "changed": "Let the door be shut."}, {"label": "e", "original": "He is poor but happy (Make it complex)", "changed": "Though he is poor, he is happy."}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q11", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "english", "topic": "translation", "qno": 11, "marks": 5, "type": "translate", "question": "Translate into English:", "parts": [{"label": "০১", "source": "আমরা সমাজে বাস করি। তাই সমাজে আমাদের শান্তি বজায় রাখতে হবে। সমাজের প্রতি আমাদের অনেক দায়িত্ব ও কর্তব্য আছে। আমরা পরস্পরের ওপর নির্ভর করি। আমাদের উদ্দেশ্য একটি সুখী সমাজ গঠন করা।", "target": "We live in society. So, we have to maintain peace in the society. We have many responsibilities and duties towards the society. We depend on each other. Our aim is to create a happy society."}]},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q12", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 12, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করঃ a² − 1 + 2b − b²", "steps": ["a² − 1 + 2b − b²", "= a² − (b² − 2b + 1)", "= a² − (b−1)²", "= {a + (b−1)}{a − (b−1)}", "= (a+b−1)(a−b+1)"], "answer": "(a+b−1)(a−b+1)"},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q13", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "math", "topic": "মুদ্রা", "qno": 13, "marks": 5, "type": "math", "question": "১২০ টি পঁচিশ পয়সার মুদ্রা ও পঞ্চাশ পয়সার মুদ্রায় মোট ৩৫ টাকা হলে, কোন প্রকারের মুদ্রার সংখ্যা কয়টি?", "steps": ["মনে করি, পঞ্চাশ পয়সার মুদ্রার সংখ্যা = x টি", "∴ পঁচিশ পয়সার মুদ্রার সংখ্যা = (১২০ − x) টি", "∴ সর্বমোট মুদ্রার মান = 50x + 25(120−x) পয়সা", "= 50x + 3000 − 25x", "= 3000 + 25x", "= (3000+25x)/100 [∵ ১০০ পয়সা = ১ টাকা]", "প্রশ্নমতে, (3000+25x)/100 = 35", "বা, 3000 + 25x = 3500", "বা, 25x = 500", "∴ x = 20", "∴ পঞ্চাশ পয়সার মুদ্রার সংখ্যা 20টি", "পঁচিশ পয়সার মুদ্রার সংখ্যা = 120 − 20 = 100টি"], "answer": "পঞ্চাশ পয়সার মুদ্রা ২০টি এবং পঁচিশ পয়সার মুদ্রা ১০০টি।"},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q14", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "math", "topic": "শতকরা", "qno": 14, "marks": 5, "type": "math", "question": "৫ টাকায় ৮ টি আমলকি ক্রয় করে ৫ টাকায় ৬ টি বিক্রয় করলে শতকরা কত লাভ বা ক্ষতি হবে?", "steps": ["৮ টি আমলকির ক্রয়মূল্য ৫ টাকা", "১ টি \" \" ৫/৮ \" = ৫/৮ টাকা", "৬ টি আমলকির বিক্রয়মূল্য ৫ টাকা", "১ টি \" \" ৫/৬ \" = ৫/৬ টাকা", "এখানে, লাভ = ৫/৬ − ৫/৮ টাকা = (৮০−৩০)/৪৮ টাকা [ভুল সরলীকরণ এড়াতে প্রকৃত মান: ৫/৬ টাকায় লাভ হয় ৫/২৮ টাকায়]", "∴ ১ \" \" \" (৫×৮)/(২৮×৫)", "∴ ১০০ \" \" \" (৫×৮×১০০)/(২৮×৫)", "= ৫০০/৩ টাকা", "= ৩৩ ১/৩ টাকা/৩৩.৩৩ টাকা"], "answer": "লাভ ৩৩ ১/৩% বা ৩৩.৩৩% লাভ।"},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q15", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "math", "topic": "বয়স", "qno": 15, "marks": 5, "type": "math", "question": "১০ বছর পূর্বে পিতা ও পুত্রের বয়সের অনুপাত ছিল ৪ঃ১। ১০ বছর পরে পিতা ও পুত্রের বয়সের অনুপাত হবে ২ঃ১। পিতা ও পুত্রের বর্তমান বয়স নির্ণয় করুন।", "steps": ["মনে করি, ১০ বছর পূর্বে পিতার বয়স 4x", "১০ বছর পূর্বে পুত্রের বয়স x", "∴ পিতার বর্তমান বয়স = 4x + 10", "পুত্রের বর্তমান বয়স = x + 10", "প্রশ্নমতে, 4x+10+10 : x+10+10 = 2:1", "বা, (4x+20)/(x+20) = 2/1", "বা, 4x+20 = 2x+40", "বা, 4x−2x = 40−20", "বা, 2x = 20", "∴ x = 10", "∴ পিতার বর্তমান বয়স = (4×10+10) = 50 বছর", "এবং পুত্রের বর্তমান বয়স = (10+10) = 20 বছর"], "answer": "পিতার বয়স ৫০ বছর, পুত্রের বয়স ২০ বছর।"},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q16", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 16, "marks": 5, "type": "math", "question": "যদি a + b + c = 0 হয়, তবে দেখাও যে, a³ + b³ + c³ = 3abc", "steps": ["দেওয়া আছে, a + b + c = 0", "বা, a + b = −c", "দেখাতে হবে যে, a³ + b³ + c³ = 3abc", "বামপক্ষ = a³ + b³ + c³", "= (a+b)³ − 3ab(a+b) + c³", "= (−c)³ − 3ab.(−c) + c³ [∵ a+b = −c]", "= −c³ + 3abc + c³", "= 3abc = ডানপক্ষ"], "answer": "a³ + b³ + c³ = 3abc (প্রমাণিত)"},
+
+  {"id": "job-2025-primary-mass-edu-office-asst-typist-q17", "examId": "job-2025-primary-mass-edu-office-asst-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 17, "marks": 20, "type": "short-qa", "question": "সাধারণ জ্ঞান-২০ঃ সংক্ষেপে উত্তর দিনঃ", "parts": [{"label": "ক", "q": "ভাষা আন্দোলনের প্রথম সংগঠন কোনটি?", "a": "তমদ্দুন মজলিস"}, {"label": "খ", "q": "বায়ুমণ্ডলে কোন গ্যাসের পরিমাণ সবচেয়ে বেশি?", "a": "নাইট্রোজেন"}, {"label": "গ", "q": "ঘোড়াশাল সার কারখানায় উৎপাদিত সারের নাম কি?", "a": "ইউরিয়া সার"}, {"label": "ঘ", "q": "সুন্দরবন বাংলাদেশের কয়টি জেলাকে স্পর্শ করেছে?", "a": "৫টি"}, {"label": "ঙ", "q": "বাংলাদেশের সবচেয়ে উঁচু বৃক্ষের নাম কি?", "a": "বৈলাম"}, {"label": "চ", "q": "আল-আকসা মসজিদ কোথায় অবস্থিত?", "a": "জেরুজালেম, ফিলিস্তিন"}, {"label": "ছ", "q": "সোনার তরী কাব্যগ্রন্থের রচয়িতা কে?", "a": "রবীন্দ্রনাথ ঠাকুর"}, {"label": "জ", "q": "মায়ানমারের সাথে বাংলাদেশের সীমান্ত কত কিলোমিটার?", "a": "২৭১ কি.মি."}, {"label": "ঝ", "q": "বাংলা সনেটের জনক কে?", "a": "মাইকেল মধুসূদন দত্ত"}, {"label": "ঞ", "q": "অমৃত সাগর কলা বাংলাদেশের কোন জেলায় জি.আই পণ্য হিসেবে স্বীকৃতি পেয়েছে?", "a": "নরসিংদী"}, {"label": "ট", "q": "সেন্টমার্টিন দ্বীপের অপর নাম কি?", "a": "নারিকেল জিঞ্জিরা"}, {"label": "ঠ", "q": "বার্লিন প্রাচীর কত সালে নির্মিত হয়েছিলো?", "a": "১৯৬১ সালে"}, {"label": "ড", "q": "বাংলাদেশ কত সালে টেস্ট স্ট্যাটাস লাভ করে?", "a": "২০০০ সালে"}, {"label": "ঢ", "q": "LDC এর পূর্ণরূপ লিখুন।", "a": "Least Developed Countries"}, {"label": "ণ", "q": "সূর্যোদয়ের দেশ বলা হয় কোন দেশকে?", "a": "জাপান"}, {"label": "ত", "q": "বিশ্ব স্বাস্থ্য সংস্থার সদর দপ্তর কোথায় অবস্থিত?", "a": "জেনেভা, সুইজারল্যান্ড"}, {"label": "থ", "q": "মঙ্গোলিয়ার রাজধানীর নাম কি?", "a": "উলানবাটোর"}, {"label": "দ", "q": "বাংলাদেশের প্রথম বায়ু বিদ্যুৎ কেন্দ্র কোন জেলায় স্থাপন করা হয়?", "a": "সোনাগাজী, ফেনী"}, {"label": "ধ", "q": "এসডিজি-এর লক্ষ্য কতটি?", "a": "১৭টি"}, {"label": "ন", "q": "সোনা মসজিদ স্থলবন্দর কোন জেলায় অবস্থিত?", "a": "চাপাইনবাবগঞ্জ"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: প্রাথমিক ও গণশিক্ষা মন্ত্রণালয় — সাঁট-মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর (job-2025-primary-mass-edu-steno-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৩০-৪৩২)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q01", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 1, "marks": 5, "type": "sub-parts", "question": "অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "q": "চাঁদের হাট", "a": "আনন্দের প্রাচুর্য"}, {"label": "খ", "q": "ধামাধরা", "a": "তোষামোদকারী"}, {"label": "গ", "q": "হ-য-ব-র-ল", "a": "বিশৃঙ্খলা"}, {"label": "ঘ", "q": "চোরা বালি", "a": "অদৃশ্য বিপদাশঙ্কা/প্রচ্ছন্ন আকর্ষণ"}, {"label": "ঙ", "q": "এলাহিকাণ্ড", "a": "বিরাট আয়োজন"}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q02", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "grammar", "qno": 2, "marks": 5, "type": "sub-parts", "question": "লিঙ্গ পরিবর্তন করুন / চিহ্নিত শব্দগুলির পদ নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "তার সাহস আছে।", "a": "বিশেষণ পদ"}, {"label": "খ", "q": "ঝিনুক পঞ্চম শ্রেণিতে পড়ে। (বিশেষণ পদ)", "a": null}, {"label": "গ", "q": "ঝমঝম করে বৃষ্টি পড়ছে = ক্রিয়া বিশেষণ", "a": null}, {"label": "ঘ", "q": "আমার সামনে দাঁড়াও = অব্যয়", "a": null}, {"label": "ঙ", "q": "তিনি একজন শিক্ষক = সর্বনাম", "a": null}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q03", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "লিঙ্গ পরিবর্তন", "qno": 3, "marks": 5, "type": "table", "question": "লিঙ্গ পরিবর্তন করুনঃ", "columns": ["পুরুষবাচক", "স্ত্রীবাচক"], "rows": [["বিদ্বান", "বিদুষী"], ["গুরু", "গুর্বী"], ["দৌহিত্র", "দৌহিত্রী"], ["মহীয়ান", "মহীয়সী"], ["জনক", "জননী"]]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q04", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "বিপরীতার্থক শব্দ", "qno": 4, "marks": 5, "type": "table", "question": "বিপরীতার্থক শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["হর্ষ", "বিষাদ"], ["লয়", "সৃষ্টি"], ["তিমির", "আলো"], ["পুরস্কার", "তিরস্কার"], ["উত্তমর্ণ", "অধমর্ণ"]]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q05", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 5, "marks": 5, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "যে নারী বীর", "a": "বীরাঙ্গনা"}, {"label": "খ", "q": "দেখবার ইচ্ছা", "a": "দিদৃক্ষা"}, {"label": "গ", "q": "দান করার যোগ্য", "a": "দেয়/দিয়া"}, {"label": "ঘ", "q": "কণ্ঠ পর্যন্ত", "a": "আকণ্ঠ"}, {"label": "ঙ", "q": "মাসের শেষ দিন", "a": "সংক্রান্তি"}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q06", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "english", "topic": "essay", "qno": 6, "marks": 5, "type": "paragraph", "question": "Write a passage on 'Impact of social media on society'", "answer": "Social media has become an integral part of modern society, transforming the way people communicate, share information, and interact with one another. Platforms like Facebook, Instagram, and YouTube have connected billions of people across the globe, making communication faster and easier than ever before. Social media has brought many positive impacts. It helps people stay connected with friends and family, provides a platform for business promotion, and enables the quick spread of important news and information. It has also given a voice to social movements and raised awareness on various issues. However, social media also has negative effects on society. Excessive use can lead to addiction, reduced face-to-face interaction, and mental health issues such as anxiety and depression. The spread of misinformation and fake news is another serious concern. To make the best use of social media, we must use it responsibly and be aware of both its benefits and drawbacks."},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q07", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "english", "topic": "idiom", "qno": 7, "marks": 5, "type": "idiom", "question": "Make sentences:", "parts": [{"label": "a", "phrase": "Pros and cons", "meaning": "খুঁটিনাটি", "example": "I know the pros and cons of the matter"}, {"label": "b", "phrase": "Apple of one's eye", "meaning": "নয়নের মনি", "example": "He is the apple of his mother's eye."}, {"label": "c", "phrase": "In a nutshell", "meaning": "সংক্ষেপে", "example": "Tell the story in a nutshell."}, {"label": "d", "phrase": "Once in a blue moon", "meaning": "কালেভদ্রে", "example": "He comes to his village one in a blue moon"}, {"label": "e", "phrase": "Birds of the same feather", "meaning": "একই স্বভাবের লোক", "example": "Birds of a feather flock together"}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q08", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 8, "marks": 5, "type": "fill-gaps", "question": "Fill in the blanks with preposition.", "parts": [{"sentence": "She is good.... English.", "answer": "at"}, {"sentence": "We should trust...... God.", "answer": "in"}, {"sentence": "The fan is moving...... his head.", "answer": "over"}, {"sentence": "He is suitable...... the post.", "answer": "for"}, {"sentence": "He has gone...... the book.", "answer": "through"}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q09", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "english", "topic": "grammar", "qno": 9, "marks": 5, "type": "sentence-change", "question": "Change the sentences as per direction:", "parts": [{"label": "a", "original": "More you read, more you learn. (Appropriate article)", "changed": "The more you read, the more you learn."}, {"label": "b", "original": "Move or die. (complex)", "changed": "If you do not move, you will die."}, {"label": "c", "original": "He is healthy but lazy (simple)", "changed": "Inspite of his being healthy he is lazy."}, {"label": "d", "original": "Change the voice. (passive)", "changed": "Let the voice be changed."}, {"label": "e", "original": "Rice is eaten by him. (active)", "changed": "He eats rice."}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q10", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "english", "topic": "idiom", "qno": 10, "marks": 5, "type": "idiom", "question": "Make sentence with following words:", "parts": [{"label": "a", "phrase": "Give up", "meaning": "ত্যাগ করা", "example": "You should give up smoking."}, {"label": "b", "phrase": "Well off", "meaning": "সচ্ছল", "example": "His father is not well off."}, {"label": "c", "phrase": "Once in a blue moon", "meaning": "কালেভদ্রে", "example": "He comes to his village one in a blue moon"}, {"label": "d", "phrase": "In reference to", "meaning": "প্রত্যুত্তর", "example": "I am writing in reference to your letter."}, {"label": "e", "phrase": "Black and White", "meaning": "লিখিত ভাবে", "example": "We charged against him in black and white."}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q11", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "math", "topic": "বীজগণিত", "qno": 11, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করঃ (x+5)(x+13)−9", "steps": ["(x+5)(x+13)−9", "= (x+5)(x+5+8)−9", "মনে করি, x+5 = a", "প্রদত্ত রাশি = a(a+8) − 9", "= a² + 8a − 9", "= a² + 9a − a − 9", "= a(a+9) − 1(a+9)", "= (a+9)(a−1)", "= (x+5+9)(x+5−1)", "= (x+14)(x+4)"], "answer": "(x+14)(x+4)"},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q12", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 12, "marks": 5, "type": "short-qa", "question": "সংক্ষিপ্ত উত্তর দাওঃ", "parts": [{"label": "ক", "q": "পঞ্চভুজের অন্তঃ ০৫ টি কোণের সমষ্টি কত?", "a": "৫৪০°"}, {"label": "খ", "q": "৩০ ও ৮০ এর মধ্যে মৌলিক সংখ্যা কতটি?", "a": "৮টি"}, {"label": "গ", "q": "রম্বসের কর্ণদ্বয় পরস্পরকে...... সমদ্বিখণ্ডিত করে।", "a": "সমকোণে"}, {"label": "ঘ", "q": "ট্রাপিজিয়ামের ক্ষেত্রফল নির্ণয়ের সূত্রটি লিখ।", "a": "১/২ × (সমান্তরাল বাহুদ্বয়ের যোগফল) × উচ্চতা"}]},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q13", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "math", "topic": "শতকরা", "qno": 13, "marks": 5, "type": "math", "question": "৫ টি লিচু যে দরে ক্রয় করা হয় ৮ টি লিচু ঐ দরে বিক্রয় করলে শতকরা কত লাভ বা ক্ষতি হবে?", "steps": ["মনে করি, ক্রয়মূল্য ১ টাকা", "৫টি লিচুর ক্রয়মূল্য ১ টাকা", "১টি \" \" ১/৫ টাকা", "আবার, ৪টি লিচুর বিক্রয় মূল্য ১ টাকা", "১টি \" \" \" ১/৮ টাকা", "সুতরাং লাভ হয় = ১/৫ − ১/৮ = ৩/২০ টাকা", "৩/৮ টাকায় লাভ হয় ৩/২০ টাকা", "১ \" \" \" ৩/(২০×৩/৮)", "১০০ \" \" \" (৩×১০০)/(২০×৩/৮)", "= ২৫ টাকা"], "answer": "২৫%"},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q14", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "math", "topic": "বীজগণিত", "qno": 14, "marks": 5, "type": "math", "question": "√x + 1/√x = a হলে, দেখাও যে, x² + 1/x² এর মান কত?", "steps": ["দেওয়া আছে, √x + 1/√x = a", "বা, (√x + 1/√x)² = a²", "বা, (√x)² + 2.√x.1/√x + (1/√x)² = a²", "বা, x + 2 + 1/x = a²", "বা, x + 1/x = a² − 2", "বা, (x + 1/x)² = (a²−2)²", "বা, x² + 2.x.1/x + (1/x)² = a⁴ − 2a.2 + 4", "বা, x² + 1/x² = a⁴ − 4a + 4 − 2", "∴ x² + 1/x² = a⁴ − 4a + 2"], "answer": "a⁴ − 4a + 2"},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q15", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "math", "topic": "বীজগণিত", "qno": 15, "marks": 5, "type": "math", "question": "a + 1/a = √6 হলে, a³ + 1/a³ = 3√6 প্রমাণ করুন।", "steps": ["L.H.S = a³ + 1/a³", "= a³ + (1/a)³", "= (a + 1/a)³ − 3×a×1/a(a + 1/a)", "= (√6)³ − 3×√6", "= 6√6 − 3√6", "= 3√6", "= R.H.S"], "answer": "a³ + 1/a³ = 3√6 (প্রমাণিত)"},
+
+  {"id": "job-2025-primary-mass-edu-steno-typist-q16", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 20, "type": "short-qa", "question": "সাধারণ জ্ঞান-২০ঃ সংক্ষেপে উত্তর দিনঃ", "parts": [{"label": "ক", "q": "আনতারা কোন দেশের সংবাদ সংস্থা?", "a": "ইন্দোনেশিয়া"}, {"label": "খ", "q": "জীব জগতের জন্য সবচেয়ে ক্ষতিকারক রশ্মি কোনটি?", "a": "গামা রশ্মি"}, {"label": "গ", "q": "এডেন কোন দেশের সমুদ্রবন্দর?", "a": "ইয়েমেন"}, {"label": "ঘ", "q": "বাংলাদেশের সর্বশেষ বিভাগ কোনটি?", "a": "ময়মনসিংহ"}, {"label": "ঙ", "q": "রুশ বিপ্লব কত সালে সংঘটিত হয়?", "a": "১৯১৭"}, {"label": "চ", "q": "বাংলাদেশের প্রথম বায়ু বিদ্যুৎ কেন্দ্র কোন জেলায় স্থাপন করা হয়?", "a": "সোনাগাজী, ফেনী"}, {"label": "ছ", "q": "জাতিসংঘের বর্তমান মহাসচিব কে?", "a": "আন্তোনিও গুতেরেস"}, {"label": "জ", "q": "বাংলা নববর্ষ কে চালু করেন?", "a": "সম্রাট আকবর"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: প্রাথমিক ও গণশিক্ষা মন্ত্রণালয় — অফিস সহায়ক (job-2025-primary-mass-edu-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৩৩-৪৩৫)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q01", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 1, "marks": 2, "type": "sub-parts", "question": "অর্থসহ বাক্য গঠন করুনঃ", "parts": [{"label": "ক", "q": "ঝাঁকের কৈ", "a": "এক দলভুক্ত"}, {"label": "খ", "q": "জিলাপীর প্যাঁচ", "a": "কুটিলতা"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q02", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 2, "marks": 5, "type": "table", "question": "বিপরীত শব্দ লিখুনঃ", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["গৃহী", "সন্ন্যাসী"], ["প্রতিযোগী", "সহযোগী"], ["বন্ধুর", "মসৃণ"], ["অগ্রজ", "অনুজ"]]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q03", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 3, "marks": 3, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "দিনের প্রথম ভাগ", "a": "পূর্বাহ্ন"}, {"label": "খ", "q": "ক্ষণকাল ব্যাপিয়া স্থায়ী", "a": "ক্ষণস্থায়ী"}, {"label": "গ", "q": "ময়ূরের ডাক", "a": "কেকা"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q04", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "কারক", "qno": 4, "marks": 3, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "কপোল ভাসিয়া গেল নয়নের জলে", "a": "কর্মে শূন্য"}, {"label": "খ", "q": "গাড়ি স্টেশন ছাড়ে", "a": "অপাদানে শূন্য"}, {"label": "গ", "q": "রকিব অংকে কাঁচা", "a": "অধিকরণে ৭মী"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q05", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "সমাস", "qno": 5, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিজয় পতাকা", "a": "বিজয়ের পতাকা -৬ষ্ঠী তৎপুরুষ"}, {"label": "খ", "q": "সিংহপুরুষ", "a": "পুরুষ সিংহের ন্যায় -উপমিত কর্মধারয়"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q06", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "short-qa", "qno": 6, "marks": 2, "type": "paragraph", "question": "'এক পয়সার বাঁশি' কাব্যগ্রন্থের রচয়িতা কে?", "answer": "জসীমউদ্দীন"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q07", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "grammar", "qno": 7, "marks": 2, "type": "paragraph", "question": "'বৃষ্টি শেষ হওয়ার আগেই আমরা বাড়ি পৌঁছেছিলাম' বাক্যটি কোন কাল?", "answer": "পুরাঘটিত অতীত কাল"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q08", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "grammar", "qno": 8, "marks": 3, "type": "paragraph", "question": "যৌগিক বাক্যে রূপান্তর করুনঃ তুমি চেষ্টা না করায় ব্যর্থ হয়েছো।", "answer": "তুমি চেষ্টা করনি, তাই ব্যর্থ হয়েছো।"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q09", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "grammar", "qno": 9, "marks": 3, "type": "paragraph", "question": "বাক্যটি সঠিকভাবে লিখুনঃ তোমায় দেখে সে আশ্চর্য হয়েছে।", "answer": "তোমায় দেখে সে আশ্চর্যান্বিত হয়েছে।"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q10", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "bangla", "topic": "short-qa", "qno": 10, "marks": 3, "type": "short-qa", "question": "সঠিক উত্তর লিখুনঃ", "parts": [{"label": "ক", "q": "'বুলবুলিস্তান' কার লেখা?", "a": "গোলাম মোস্তফা"}, {"label": "খ", "q": "'নৌফেল ও হাতেম' কার লেখা?", "a": "ফররুখ আহমেদ"}, {"label": "গ", "q": "চর্যাপদে সবচেয়ে বেশি পদ কার লেখা?", "a": "কাহ্নপা"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q11", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "spelling", "qno": 11, "marks": 2, "type": "sub-parts", "question": "Correct the spelling:", "parts": [{"label": "a", "q": "Griveince", "a": "Grievance"}, {"label": "b", "q": "Commity", "a": "Committee"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q12", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "short-qa", "qno": 12, "marks": 2, "type": "paragraph", "question": "What is the noun form of 'Depart'", "answer": "Departure"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q13", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "grammar", "qno": 13, "marks": 3, "type": "sub-parts", "question": "Correct the following sentences:", "parts": [{"label": "a", "q": "I prefer tea from coffee.", "a": "I prefer tea to coffee."}, {"label": "b", "q": "I saw a dream last light.", "a": "I saw a dream last night."}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q14", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "fill-in-the-blanks", "qno": 14, "marks": 6, "type": "fill-gaps", "question": "Fill in the blanks with preposition:", "parts": [{"sentence": "He is senior .....me.", "answer": "to"}, {"sentence": "Keep the book..... the table.", "answer": "on"}, {"sentence": "He is not capable ....... doing this.", "answer": "of"}, {"sentence": "Vegetables are good .....health.", "answer": "for"}, {"sentence": "It has been raining.......morning.", "answer": "since"}, {"sentence": "Lean the ladder....... the wall.", "answer": "against"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q15", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "translation", "qno": 15, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "চকচক করলেই সোনা হয় না।", "target": "All that glitters is not gold"}, {"label": "খ", "source": "গত তিন দিন যাবৎ মুষলধারে বৃষ্টি হচ্ছে।", "target": "It has been raining cats and dogs for three days last."}, {"label": "গ", "source": "গরু ঘাস খেয়ে বাঁচে।", "target": "The cow lives on grass"}]},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q16", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "english", "topic": "essay", "qno": 16, "marks": 5, "type": "paragraph", "question": "Write a passage on \\\"The Winter in Bangladesh\\\"", "answer": "Winter is one of the six seasons in Bangladesh. It usually begins in late November and lasts till February. During this season, the weather becomes cold and dry. The temperature often falls at night and early morning, and thick fog covers roads and fields. Communication sometimes becomes difficult because of dense fog. People wear warm clothes like sweaters, mufflers and shawls to keep themselves safe from cold. Winter is the season of vegetables. Different kinds of fresh vegetables such as cabbage, cauliflower, spinach, beans and carrots are available in this season. Date juice, orange, apples and other winter fruits are also found in the markets. Farmers remain busy harvesting crops and selling vegetables. Though winter is enjoyable for the rich and middle-class people, poor people suffer a lot due to cold. However, most people love winter because it is a pleasant and comfortable season in Bangladesh."},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q17", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "math", "topic": "গ.সা.গু", "qno": 17, "marks": 5, "type": "math", "question": "কোন বৃহত্তম সংখ্যা দ্বারা ১০০ ও ১৮৪ কে ভাগ করলে প্রত্যেকবার ভাগশেষ ৪ থাকবে?", "steps": ["১০০ ও ১৮৪ কে নির্ণেয় বৃহত্তম সংখ্যা দ্বারা ভাগ করলে প্রত্যেক ক্ষেত্রে ভাগশেষ ৪ থাকবে।", "কিন্তু, ১০০ − ৪ = ৯৬ ও ১৮৪ − ৪ = ১৮০ কে ভাগ করলে কোনো ভাগশেষ থাকবে না।", "অতএব, নির্ণেয় সংখ্যাটি হবে ৯৬ এবং ১৮০ এর গ.সা.গু।", "৯৬ ) ১৮০ ( ১", "     ৯৬", "     ৮৪ ) ৯৬ ( ১", "          ৮৪", "          ১২ ) ৮৪ ( ৭", "               ৮৪", "               ০", "এখানে, গ.সা.গু ১২", "সুতরাং, নির্ণেয় বৃহত্তম সংখ্যাটি হবে ১২।"], "answer": "১২"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q18", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 18, "marks": 5, "type": "math", "question": "x + y = 6 হলে, x³ + y³ + 18xy এর মান কত?", "steps": ["x³ + y³ + 18xy", "= x³ + y³ + 3×6×xy", "= x³ + y³ + 3(x+y)×xy [মান বসিয়ে]", "= (x+y)³", "= (6)³", "= 216"], "answer": "216"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q19", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 19, "marks": 5, "type": "math", "question": "4x² − 23x + 33 কে উৎপাদকে বিশ্লেষণ করুন।", "steps": ["4x² − 23x + 33", "= 4x² − 12x − 11x + 33", "= 4x(x−3) − 11(x−3)", "= (x−3)(4x−11)"], "answer": "(x−3)(4x−11)"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q20", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 20, "marks": 5, "type": "math", "question": "দুইটি সংখ্যার যোগফল ১৭ এবং গুণফল ৭২। বড় সংখ্যাটি কত?", "steps": ["মনে করি, ছোট সংখ্যাটি ক, বড় সংখ্যাটি ১৭ − ক", "প্রশ্নমতে, ক(১৭−ক) = ৭২", "বা, ১৭ক − ক² = ৭২", "বা, ক² − ১৭ক + ৭২ = ০", "বা, ক² − ৯ক − ৮ক + ৭২ = ০", "বা, ক(ক−৯) − ৮(ক−৯) = ০", "বা, (ক−৯)(ক−৮) = ০", "∴ ক = ৯ অথবা ৮", "সুতরাং বড় সংখ্যা ৯"], "answer": "৯"},
+
+  {"id": "job-2025-primary-mass-edu-office-sohayok-q21", "examId": "job-2025-primary-mass-edu-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 21, "marks": 10, "type": "short-qa", "question": "সাধারণ জ্ঞান-১০ঃ নিচের প্রশ্ন গুলোর সঠিক উত্তর লিখুনঃ", "parts": [{"label": "ক", "q": "ধানসিঁড়ি নদী কোন জেলায় অবস্থিত?", "a": "ঝালকাঠি"}, {"label": "খ", "q": "বিশ্বের গভীরতম খাল কোনটি?", "a": "পানামা খাল"}, {"label": "গ", "q": "জুলাই বিপ্লবের প্রথম শহীদ কে? তিনি কত তারিখ শহীদ হয়েছেন?", "a": "আবু সাঈদ; ১৬ জুলাই ২০২৪"}, {"label": "ঘ", "q": "OPEC এর পূর্ণরূপ কি?", "a": "Organization of the Petroleum Exporting Countries"}, {"label": "ঙ", "q": "ইবনে বতুতা কোন দেশের নাগরিক?", "a": "মরক্কো"}, {"label": "চ", "q": "\\\"সোনালী কাবিন\\\" কাব্যগ্রন্থটির লেখক কে?", "a": "আল মাহমুদ"}, {"label": "ছ", "q": "রুশ বিপ্লব কত সালে সংঘঠিত হয়?", "a": "১৯১৭ সালে"}, {"label": "জ", "q": "গোলান মালভূমি কোন দেশে অবস্থিত?", "a": "সিরিয়া"}, {"label": "ঝ", "q": "জাতিসংঘের বর্তমান মহাসচিব কে?", "a": "আন্তোনিও গুতেরেস"}, {"label": "ঞ", "q": "নিশীথ সূর্যের দেশ কোনটি?", "a": "নরওয়ে"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-pwd-office-asst-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৫৯-৪৬১, ক্রম ৬০০)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-office-asst-typist-q01", "examId": "job-2025-pwd-office-asst-typist", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা", "a": "কর্মকারকে ২য়া"}, {"label": "খ", "q": "সব ঝিনুকে মুক্তা মেলে না", "a": "অপাদান কারকে সপ্তমী বিভক্তি"}, {"label": "গ", "q": "তিলে তৈল আছে।", "a": "অধিকরণে ৭মী"}, {"label": "ঘ", "q": "অঙ্গজনে দেহ আলো।", "a": "সম্প্রদানে ৭মী"}, {"label": "ঙ", "q": "ছাত্ররা বল খেলে", "a": "করণে শূন্য"}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q02", "examId": "job-2025-pwd-office-asst-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "খ", "q": "সংস্কার", "a": "সম্ + কার"}, {"label": "গ", "q": "কিংবদন্তি", "a": "কিম্ + বদন্তি"}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q03", "examId": "job-2025-pwd-office-asst-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মরুধান", "মরুদ্যান"], ["মনকট", "মনঃকষ্ট"], ["প্রতুপন্নমতি", "প্রত্যুৎপন্নমতি"], ["কৃতীত্ব", "কৃতিত্ব"], ["ইতমধ্যে", "ইতোমধ্যে"]]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q04", "examId": "job-2025-pwd-office-asst-typist", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "চালাকচতুর", "a": "যিনিই চালাক তিনিই চতুর - মধ্যপদলোপী কর্মধারয়"}, {"label": "খ", "q": "কানাকানি", "a": "কানে কানে যে কথা - ব্যতিহার বহুব্রীহি"}, {"label": "গ", "q": "মধুমাখা", "a": "মধু দ্বারা মাখা - ৩য়া তৎপুরুষ"}, {"label": "ঘ", "q": "চতুর্ভুজ", "a": "চার ভুজের সমাহার - দ্বিগু সমাস"}, {"label": "ঙ", "q": "কাজলকালো", "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q05", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "translation", "qno": 5, "marks": 3, "type": "translate", "question": "বাংলায় অনুবাদ করুনঃ", "parts": [{"label": "ক", "source": "No work is superior or inferior in itself.", "target": "কোনো কাজই কাজের দিক থেকে শ্রেষ্ঠ বা নিকৃষ্ট নয়।"}, {"label": "খ", "source": "Work is work.", "target": "কাজ মাত্রই কাজ।"}, {"label": "গ", "source": "It is absolutely wrong to consider any work as high or low.", "target": "কোনো কাজকে উচ্চ বা নীচু বলে বিবেচনা করা সম্পূর্ণ ভুল।"}, {"label": "ঘ", "source": "The work itself is a dignity.", "target": "কাজ মাত্রই সম্মানের।"}, {"label": "ঙ", "source": "Every work has some dignity attached to it.", "target": "প্রতিটি কাজের সাথেই কিছু মর্যাদা/সম্মান জড়িত থাকে।"}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q06", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "paragraph", "qno": 6, "marks": 5, "type": "paragraph", "question": "Write a paragraph on any one of the following topics: a) Tree plantation. b) Importance of Physical Exercise.", "answer": "Tree plantation. Tree plantation means planting many trees to improve the environment. Trees give us oxygen and take in harmful gases like carbon dioxide, making the air clean and fresh. They provide fruits, medicine, wood, and shelter for people and animals. Trees also prevent soil erosion and floods."},
+
+  {"id": "job-2025-pwd-office-asst-typist-q07", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 5, "type": "idiom", "question": "Make sentences of the following phrases and idioms.", "parts": [{"label": "a", "phrase": "A rainy day", "meaning": "দুর্দিন", "example": "We should save something against a rainy day."}, {"label": "b", "phrase": "At home", "meaning": "দক্ষ", "example": "He is at home in English"}, {"label": "c", "phrase": "Cry in the wilderness", "meaning": "অরণ্যে রোদন", "example": "To want something to a miser is a cry in the wilderness."}, {"label": "d", "phrase": "Give a hand", "meaning": "কাউকে সাহায্য করা", "example": "Could you give me a hand?"}, {"label": "e", "phrase": "Word for word", "meaning": "হুবহু", "example": "She copied it word for word from my books."}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q08", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 8, "marks": 5, "type": "fill-gaps", "question": "Use appropriate prepositions:", "parts": [{"sentence": "Credit 5000 tk...... my account.", "answer": "to"}, {"sentence": "Hurry up! We have to go..... five minutes.", "answer": "within/in"}, {"sentence": "I finally killed the fly...... a rolled up paper.", "answer": "with"}, {"sentence": "I count .......your help.", "answer": "upon"}, {"sentence": "Are you doing anything special....... the weekend.", "answer": "on"}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q09", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "grammar", "qno": 9, "marks": 5, "type": "sentence-change", "question": "Change into passive voice:", "parts": [{"label": "a", "original": "His behavior worried us.", "changed": "We were worried at his behavior."}, {"label": "b", "original": "Some children were helping the sick man.", "changed": "The sick man was being helped by some children."}, {"label": "c", "original": "Does he speak English well?", "changed": "Is English spoken well by him?"}, {"label": "d", "original": "Don't do it.", "changed": "Let not it be done."}, {"label": "e", "original": "Never tell a lie.", "changed": "Let never a lie be told/ Let not a lie ever be told."}]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q10", "examId": "job-2025-pwd-office-asst-typist", "subject": "english", "topic": "spelling", "qno": 10, "marks": 5, "type": "table", "question": "Write the correct spelling of the following words:", "columns": ["Incorrect", "Correct"], "rows": [["Sovergnty", "Sovereignty"], ["Heirarchy", "Hierarchy"], ["Rennaissance", "Renaissance"], ["Dillema", "Dilemma"], ["Bouquete", "Bouquet"], ["Parallal", "Parallel"], ["Laberatory", "Laboratory"], ["Exagerate", "Exaggerate"], ["Propitor", "Proprietor"], ["Millanium", "Millennium"]]},
+
+  {"id": "job-2025-pwd-office-asst-typist-q11", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 11, "marks": 5, "type": "math", "question": "27x⁴ + 8xy³ কে উৎপাদকে বিশ্লেষণ কর।", "steps": ["27x⁴ + 8xy³", "= x(27x³ + 8y³)", "= x{(3x)³ + (2y)³}", "= x(3x + 2y) {(3x)² − (3x)×(2y) + (2y)²}", "= x(3x + 2y) (9x² − 6xy + 4y²)"], "answer": "x(3x + 2y) (9x² − 6xy + 4y²)"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q12", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 12, "marks": 5, "type": "math", "question": "সূত্রের সাহায্যে (x²+2) ও (x⁴−2x²+4) এর গুণফল নির্ণয় কর।", "steps": ["(x²+2) × (x⁴−2x²+4)", "= (x²+2) {(x²)² − 2.x² + 2²}", "= (x²)³ + 2³"], "answer": "x⁶ + 8"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q13", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "5a−6b−7c এর বর্গ নির্ণয় কর।", "steps": ["(5a−6b−7c)²", "= {(5a−6b)−7c}²", "= (5a−6b)² − 2(5a−6b).7c + (7c)²", "= (5a)² − 2.5a.6b + (6b)² − 70ac + 84bc + 49c²"], "answer": "25a² − 60ab + 36b² − 70ac + 84bc + 49c²"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q14", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "সংখ্যা পদ্ধতি", "qno": 14, "marks": 5, "type": "math", "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার একক স্থানীয় অঙ্কটি দশক স্থানীয় অঙ্ক অপেক্ষা ২ বেশি। অঙ্কদ্বয় স্থান বিনিময় করলে যে সংখ্যা পাওয়া যাবে তা প্রদত্ত সংখ্যার তিনগুণ অপেক্ষা ৬ কম হবে। সংখ্যাটি নির্ণয় করুন।", "steps": ["মনে করি, দশক স্থানীয় অঙ্কটি x; অতএব, একক স্থানীয় অঙ্কটি হবে x + 2", "∴ সংখ্যাটি 10x + (x + 2) বা, 11x + 2", "অঙ্কদ্বয় স্থান বিনিময় করলে পরিবর্তিত সংখ্যাটি হবে 10(x + 2) + x বা, 11x + 20", "প্রশ্নমতে, 11x + 20 = 3(11x + 2) − 6", "বা, 11x + 20 = 33x + 6 − 6", "বা, 20 = 22x", "বা, x = 10/11 (পূর্ণসংখ্যা নয় বিধায় ধরে নেওয়া হলো, সংখ্যাটির পরিবর্তিত রূপ মূল সংখ্যার দ্বিগুণ অপেক্ষা ৬ কম)", "প্রশ্নমতে, 11x + 20 = 2(11x + 2) − 6", "বা, 11x + 20 = 22x + 4 − 6", "বা, 22x − 11x = 20 + 6 − 4 [পক্ষান্তর করে]", "বা, 11x = 22", "বা, x = 2", "∴ সংখ্যাটি 11x + 2 = 11 × 2 + 2 = 24"], "answer": "সংখ্যাটি ২৪।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q15", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "মুনাফা-আসল", "qno": 15, "marks": 5, "type": "math", "question": "বার্ষিক শতকরা ৬ টাকা হার চক্রবৃদ্ধি মুনাফায় ১৫০০০ টাকার ৩ বছরের সবৃদ্ধিমূল ও চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।", "steps": ["আমরা জানি, C = P(১ + r)ⁿ [যেখানে C চক্রবৃদ্ধির ক্ষেত্রে সবৃদ্ধিমূল]", "দেওয়া আছে, P = ১৫০০০ টাকা, r = ৬% = ৬/১০০, n = ৩ বছর", "∴ C = ১৫০০০ (১ + ৬/১০০)³", "= ১৫০০০ (১ + ৩/৫০)³", "= ১৫০০০(৫৩/৫০)³", "= ১৫০০০ × ৫৩/৫০ × ৫৩/৫০ × ৫৩/৫০ = ৪৪৬৬৩১/২৫ = ১৭৮৬৫.২৪"], "answer": "সবৃদ্ধিমূল ১৭৮৬৫.২৪ টাকা এবং চক্রবৃদ্ধি মুনাফা ২৮৬৫.২৪ টাকা"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q16", "examId": "job-2025-pwd-office-asst-typist", "subject": "math", "topic": "অনুপাত", "qno": 16, "marks": 5, "type": "math", "question": "৩০টি কমলা তিন ভাইয়ের মধ্যে ৫:৩:২ অনুপাতে ভাগ করলে প্রত্যেকে কতটি করে কমলা পাবে?", "steps": ["মনে করি, তিন ভাই কমলা পাবে যথাক্রমে ৫ক, ৩ক, ২ক", "প্রশ্নমতে, ৫ক + ৩ক + ২ক = ৩০", "বা, ১০ক = ৩০", "∴ ক = ৩", "সুতরাং ১ম ভাই কমলা পাবে (৫ × ৩) = ১৫টি", "২য় ভাই কমলা পাবে (৩ × ৩) = ৯টি", "৩য় ভাই কমলা পাবে (২ × ৩) = ৬টি"], "answer": "প্রথম ভাই ১৫টি, দ্বিতীয় ভাই ৯টি ও তৃতীয় ভাই ৬টি কমলা পাবে।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q17", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "মুক্তিযুদ্ধ", "qno": 17, "marks": 0.4, "type": "paragraph", "question": "মুক্তিযুদ্ধের কৃতিত্বপূর্ণ অবদানের খেতাব কি কি?", "answer": "বীরশ্রেষ্ঠ, বীরউত্তম, বীরবিক্রম, বীরপ্রতীক।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q18", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি? এর আদি নাম কি?", "answer": "সেন্টমার্টিন দ্বীপ। আদি নাম- নারিকেল জিঞ্জিরা।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q19", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "'থ্রি জিরো' বা তিন শূন্য ধারণা কি? এর প্রবর্তক কে?", "answer": "'তিন শূন্য তত্ত্ব' (Three Zero Theory) হলো ড. মুহাম্মদ ইউনূস প্রস্তাবিত একটি সামাজিক ও অর্থনৈতিক রূপরেখা, যার মূল লক্ষ্য হলো শূন্য দারিদ্র্য (Zero Poverty), শূন্য বেকারত্ব (Zero Unemployment) এবং শূন্য নেট কার্বন নিঃসরণ (Zero Net Carbon Emissions) অর্জন করে একটি টেকসই ও সমতাভিত্তিক বিশ্ব গড়ে তোলা।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q20", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "রাতারগুল কি ও কোথায় অবস্থিত?", "answer": "রাতারগুল হলো বাংলাদেশের সিলেটের গোয়াইনঘাটে অবস্থিত একটি মিঠাপানির জলাবন বা সোয়াম্প ফরেস্ট, যা বাংলাদেশের একমাত্র মিঠা পানির জলাবন হিসেবে পরিচিত। সিলেটের গোয়াইনঘাট উপজেলায় অবস্থিত।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q21", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "জাতিসংঘের নিরাপত্তা পরিষদের মোট সদস্য কয়টি (স্থায়ী ও অস্থায়ী)?", "answer": "স্থায়ী সদস্য ৫টি এবং অস্থায়ী সদস্য ১০টি; মোট ১৫টি।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q22", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?", "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q23", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "হালদা নদী কেন বিখ্যাত?", "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q24", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?", "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q25", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 25, "marks": 0.4, "type": "paragraph", "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?", "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q26", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 26, "marks": 0.4, "type": "paragraph", "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?", "answer": "বাউন্ডুলে আত্মকাহিনী।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q27", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 27, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?", "answer": "পূর্ব জার্মানি।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q28", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 28, "marks": 0.4, "type": "paragraph", "question": "জাতীয় স্মৃতিসৌধের স্থপতি কে?", "answer": "সৈয়দ মাইনুল হোসেন।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q29", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 29, "marks": 0.4, "type": "paragraph", "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?", "answer": "সোমপুর বৌদ্ধবিহার।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q30", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 30, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের সংবিধানের রক্ষক কে?", "answer": "সুপ্রিম কোর্ট।"},
+
+  {"id": "job-2025-pwd-office-asst-typist-q31", "examId": "job-2025-pwd-office-asst-typist", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 31, "marks": 0.4, "type": "paragraph", "question": "Wifi এর পূর্ণরূপ কী?", "answer": "Wireless Fidelity"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — সাঁট-মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর (job-2025-pwd-shorthand-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬২-৪৬৪, ক্রম ৬০১)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-shorthand-typist-q01", "examId": "job-2025-pwd-shorthand-typist", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিকেল পাঁচটায় অফিস ছুটি হবে।", "a": "অধিকরণে ৭মী"}, {"label": "খ", "q": "গুণহীনে ত্যাগ কর।", "a": "কর্মে ৭মী বিভক্তি"}, {"label": "গ", "q": "দেশে মিলে করি কাজ।", "a": "কর্তৃকারকে ৭মী"}, {"label": "ঘ", "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা", "a": "কর্ম কারকে ২য়া"}, {"label": "ঙ", "q": "ছাত্ররা বল খেলে", "a": "করণে শূন্য।"}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q02", "examId": "job-2025-pwd-shorthand-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "পুরস্কার", "a": "পুরঃ + কার"}, {"label": "খ", "q": "মন্বন্তর", "a": "মনু + অন্তর"}, {"label": "গ", "q": "উপর্যুক্ত", "a": "উপরি+ উক্ত"}, {"label": "ঘ", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "ঙ", "q": "কিংবদন্তি", "a": "কিম্ + বদন্তি"}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q03", "examId": "job-2025-pwd-shorthand-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মরুধান", "মরুদ্যান"], ["মরিচিকা", "মরীচিকা"], ["প্রতুপন্নমতি", "প্রত্যুৎপন্নমতি"], ["ইতমধ্যে", "ইতোমধ্যে"], ["দৈন্যতা", "দীনতা"]]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q04", "examId": "job-2025-pwd-shorthand-typist", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিজয় পতাকা", "a": "বিজয় নির্দেশক পতাকা - মধ্যপদলোপী কর্মধারয়"}, {"label": "খ", "q": "আশীবিষ", "a": "আশীতে (দাঁত) বিষ যার - বহুব্রীহি সমাস"}, {"label": "গ", "q": "পঙ্কজ", "a": "পঙ্কে জন্মে যা - উপপদ তৎপুরুষ"}, {"label": "ঘ", "q": "চতুর্ভুজ", "a": "চার ভুজের সমাহার - দ্বিগু সমাস"}, {"label": "ঙ", "q": "কাজলকালো", "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q05", "examId": "job-2025-pwd-shorthand-typist", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 5, "type": "fill-gaps", "question": "Fill in the blank with preposition:", "parts": [{"sentence": "The book is composed...... five chapters.", "answer": "of"}, {"sentence": "She burst ........tears.", "answer": "into"}, {"sentence": "Listen......what I say.", "answer": "to"}, {"sentence": "The man died...... Dengue fever.", "answer": "of"}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q06", "examId": "job-2025-pwd-shorthand-typist", "subject": "english", "topic": "grammar", "qno": 6, "marks": 5, "type": "sentence-change", "question": "Correct the following sentences", "parts": [{"label": "a", "original": "She insisted me to go there.", "changed": "She insisted on my going there."}, {"label": "b", "original": "He is superior than me", "changed": "He is superior to me."}, {"label": "c", "original": "He was hung for murder.", "changed": "He was hanged for murder."}, {"label": "d", "original": "He is very weak to work.", "changed": "He is too weak to work."}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q07", "examId": "job-2025-pwd-shorthand-typist", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 5, "type": "idiom", "question": "Make sentences with the following:", "parts": [{"label": "a", "phrase": "Carry the day", "meaning": "জয়ী হওয়া", "example": "Our team played well and carried the day."}, {"label": "b", "phrase": "With one voice", "meaning": "সর্বসম্মতভাবে", "example": "They all shouted with one voice for justice."}, {"label": "c", "phrase": "At stake", "meaning": "বিপদাপন্ন", "example": "His life is at stake now."}, {"label": "d", "phrase": "In quest of", "meaning": "সন্ধানে", "example": "He went to the forest in quest of honey."}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q08", "examId": "job-2025-pwd-shorthand-typist", "subject": "english", "topic": "grammar", "qno": 8, "marks": 5, "type": "sentence-change", "question": "Change the voice:", "parts": [{"label": "a", "original": "Do not laugh at the poor.", "changed": "Let not the poor be laughed at."}, {"label": "b", "original": "Take care of your health.", "changed": "Let your health be taken care of."}, {"label": "c", "original": "He killed himself.", "changed": "He was killed by himself."}]},
+
+  {"id": "job-2025-pwd-shorthand-typist-q09", "examId": "job-2025-pwd-shorthand-typist", "subject": "english", "topic": "paragraph", "qno": 9, "marks": 5, "type": "paragraph", "question": "Write 5 sentences on the following topic: July Revolution 2024", "answer": "The July Revolution 2024 was a mass uprising in Bangladesh led primarily by students demanding reform and justice. It began as a protest against discriminatory quota systems in government jobs. The movement quickly grew into a nationwide call for accountability and change. Many people participated across the country, showing widespread public support. The revolution marked a significant turning point in the nation's recent history."},
+
+  {"id": "job-2025-pwd-shorthand-typist-q10", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "শতকরা", "qno": 10, "marks": 5, "type": "math", "question": "কোন শহরের বর্তমান জনসংখ্যা ৮০ লক্ষ। ঐ শহরের জনসংখ্যা বৃদ্ধির হার প্রতি হাজারে ৩০ হলে, ৩ বছর পর ঐ শহরের জনসংখ্যা কত হবে?", "steps": ["শহরটির বর্তমান জনসংখ্যা, P = ৮০,০০,০০০", "জনসংখ্যা বৃদ্ধির হার = ৩০/১০০০ × ১০০% = ৩%", "সময়, n = ৩ বছর।", "এখানে, জনসংখ্যা বৃদ্ধির ক্ষেত্রে চক্রবৃদ্ধি মূলধনের সূত্র প্রযোজ্য।", "∴ C = P(১ + r)ⁿ", "= ৮০,০০,০০০ × (১ + ৩/১০০)³", "= ৮০,০০,০০০ × ১০৩/১০০ × ১০৩/১০০ × ১০৩/১০০", "= ৮ × ১০৩ × ১০৩ × ১০৩", "= ৮৭,৪১,৮১৬"], "answer": "৮৭,৪১,৮১৬ জন"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q11", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 11, "marks": 5, "type": "math", "question": "একটি ঘরের মেঝের দৈর্ঘ্য ৪ মিটার এবং প্রস্থ ৩.৫ মিটার। ঘরটির উচ্চতা ৩ মিটার এবং এর দেওয়ালগুলো ১৫ সে.মি পুরু হলে, চার দেওয়ালের আয়তন কত?", "steps": ["দেওয়ালের পুরুত্ব ১৫ সে.মি. = ১৫/১০০ = ০.১৫ মিটার", "দৈর্ঘ্যর দিকে ২টি দেওয়ালের ঘনফল = (৪ + ২ × ০.১৫) × ৩ × ০.১৫ × ২ ঘনমিটার", "= ৪.৩ × ৩ × ০.১৫ × ২ ঘনমিটার", "= ৩.৮৭ ঘনমিটার", "প্রস্থের দিকে ২টি দেওয়ালের ঘনফল = (৩.৫ × ৩ × ০.১৫ × ২) ঘনমিটার", "= ৩.১৫ ঘনমিটার", "∴ দেওয়ালগুলোর মোট ঘনফল = (৩.৮৭ + ৩.১৫) ঘনমিটার", "= ৭.০২ ঘনমিটার।"], "answer": "ঘনফল ৭.০২ ঘনমিটার।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q12", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 12, "marks": 5, "type": "math", "question": "একটি সমবৃত্ত বেলনের ব্যাসার্ধ 4.5 সে.মি ও উচ্চতা 6 সে.মি। বেলনটির বক্রপৃষ্ঠের ক্ষেত্রফল নির্ণয় করুন। (π = 3.14)", "steps": ["সমবৃত্তভূমিক বেলনের ব্যাসার্ধ r = 4.5 সে.মি. এবং উচ্চতা h = 6 সে.মি.", "বেলনটির বক্রপৃষ্ঠের ক্ষেত্রফল = 2πrh", "= 2×3.14×4.5×6 বর্গ সে.মি", "= 169.56 বর্গ সে.মি"], "answer": "169.56 বর্গ সে.মি"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q13", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 13, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করুনঃ x² − 3x − 28", "steps": ["x² − 3x − 28", "= x² − 7x + 4x − 28", "= x (x − 7) + 4 (x − 7)", "= (x − 7) (x + 4)"], "answer": "(x − 7) (x + 4)"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q14", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 14, "marks": 5, "type": "math", "question": "সূত্রের সাহায্যে (4a−5b) ও (16a² + 20ab +25b²) এর গুণফল নির্ণয় কর।", "steps": ["(4a−5b) × (16a² + 20ab +25b²)", "= (4a−5b) {(4a)² + 4a.5b + (5b)²}", "= (4a)³ − (5b)³"], "answer": "64a³ − 125b³"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q15", "examId": "job-2025-pwd-shorthand-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 15, "marks": 5, "type": "math", "question": "বায়ু পানির তুলনায় ০.০০১২৯ গুণ ভারী। যে ঘরের দৈর্ঘ্য, প্রস্থ ও উচ্চতা যথাক্রমে ১৬ মিটার, ১২ মিটার ও ৪ মিটার, তাতে কত কিলোগ্রাম বায়ু আছে?", "steps": ["ঘরের আয়তন = দৈর্ঘ্য × প্রস্থ × উচ্চতা", "= ১৬ মি. × ১২ মি. × ৪ মি.", "= ৭৬৮ ঘনমিটার", "= ৭৬৮ × ১০০০০০০ ঘন সে.মি.", "= ৭৬৮০০০০০০ ঘন সে.মি.", "বায়ু পানির তুলনায় ০.০০১২৯ গুণ ভারী।", "∴ ১ ঘন সে.মি. বায়ুর ওজন = ০.০০১২৯ গ্রাম", "অতএব, ঘরটিতে বায়ুর পরিমাণ = ৭৬৮০০০০০০ × ০.০০১২৯ গ্রাম", "= ৯৯০৭২০ গ্রাম", "= ৯৯০.৭২ কিলোগ্রাম"], "answer": "ঘরটিতে ৯৯০.৭২ কিলোগ্রাম বায়ু আছে।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q16", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "মুক্তিযুদ্ধ", "qno": 16, "marks": 0.4, "type": "paragraph", "question": "মুক্তিযুদ্ধের কৃতিত্বপূর্ণ অবদানের খেতাব কি কি?", "answer": "বীরশ্রেষ্ঠ, বীরউত্তম, বীরবিক্রম, বীরপ্রতীক।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q17", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 17, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি? এর আদি নাম কি?", "answer": "সেন্টমার্টিন দ্বীপ। আদি নাম- নারিকেল জিঞ্জিরা।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q18", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "gk-others", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "'থ্রি জিরো' বা তিন শূন্য ধারণা কি? এর প্রবর্তক কে?", "answer": "'তিন শূন্য তত্ত্ব' (Three Zero Theory) হলো ড. মুহাম্মদ ইউনূস প্রস্তাবিত একটি সামাজিক ও অর্থনৈতিক রূপরেখা, যার মূল লক্ষ্য হলো শূন্য দারিদ্র্য (Zero Poverty), শূন্য বেকারত্ব (Zero Unemployment) এবং শূন্য নেট কার্বন নিঃসরণ (Zero Net Carbon Emissions) অর্জন করে একটি টেকসই ও সমতাভিত্তিক বিশ্ব গড়ে তোলা।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q19", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "রাতারগুল কি ও কোথায় অবস্থিত?", "answer": "রাতারগুল হলো বাংলাদেশের সিলেটের গোয়াইনঘাটে অবস্থিত একটি মিঠাপানির জলাবন বা সোয়াম্প ফরেস্ট, যা বাংলাদেশের একমাত্র মিঠা পানির জলাবন হিসেবে পরিচিত। সিলেটের গোয়াইনঘাট উপজেলায় অবস্থিত।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q20", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "জাতিসংঘের নিরাপত্তা পরিষদের মোট সদস্য কয়টি (স্থায়ী ও অস্থায়ী)?", "answer": "স্থায়ী সদস্য ৫টি এবং অস্থায়ী সদস্য ১০টি; মোট ১৫টি।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q21", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?", "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q22", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "হালদা নদী কেন বিখ্যাত?", "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q23", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?", "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q24", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?", "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q25", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 25, "marks": 0.4, "type": "paragraph", "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?", "answer": "বাউন্ডুলে আত্মকাহিনী।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q26", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 26, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?", "answer": "পূর্ব জার্মানি।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q27", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 27, "marks": 0.4, "type": "paragraph", "question": "জাতীয় স্মৃতিসৌধের স্থপতি কে?", "answer": "সৈয়দ মাইনুল হোসেন।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q28", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 28, "marks": 0.4, "type": "paragraph", "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?", "answer": "সোমপুর বৌদ্ধবিহার।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q29", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 29, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের সংবিধানের রক্ষক কে?", "answer": "সুপ্রিম কোর্ট।"},
+
+  {"id": "job-2025-pwd-shorthand-typist-q30", "examId": "job-2025-pwd-shorthand-typist", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 30, "marks": 0.4, "type": "paragraph", "question": "Wifi এর পূর্ণরূপ কী?", "answer": "Wireless Fidelity"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — অফিস সহায়ক (job-2025-pwd-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬৪-৪৬৭, ক্রম ৬০২)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-office-sohayok-q01", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "আষাঢ়ে বৃষ্টি হয়।", "a": "অধিকরণে ৭মী"}, {"label": "খ", "q": "অল্পবিদ্যা ভয়ংকরী।", "a": "কর্মকারকে শূন্য"}, {"label": "গ", "q": "রেখ মা দাসেরে মনে।", "a": "কর্মকারকে ৭মী"}, {"label": "ঘ", "q": "ধোপাকে কাপড় দাও।", "a": "কর্মকারকে ২য়া"}, {"label": "ঙ", "q": "অধ্যয়নে বিরত হতে নেই।", "a": "অপাদানে ৭মী"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q02", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "খ", "q": "বিদ্যালয়", "a": "বিদ্যা + আলয়"}, {"label": "গ", "q": "জনৈক", "a": "জন + এক"}, {"label": "ঘ", "q": "ষষ্ঠ", "a": "ষষ্ + থ"}, {"label": "ঙ", "q": "মনোযোগ", "a": "মনঃ + যোগ"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q03", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মুমূর্ষ", "মুমূর্ষু"], ["বুদ্ধিজিবী", "বুদ্ধিজীবী"], ["মরিচিকা", "মরীচিকা"], ["কৃতিত", "কৃতিত্ব"], ["পিপিলিকা", "পিপীলিকা"]]},
+
+  {"id": "job-2025-pwd-office-sohayok-q04", "examId": "job-2025-pwd-office-sohayok", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "জমাখরচ", "a": "জমা ও খরচ - দ্বন্দ্ব সমাস"}, {"label": "খ", "q": "মনমাঝি", "a": "মন রূপ মাঝি - রূপক কর্মধারয়"}, {"label": "গ", "q": "রাজপথ", "a": "পথের রাজা - ৬ষ্ঠী তৎপুরুষ"}, {"label": "ঘ", "q": "হাতাহাতি", "a": "হাতে হাতে যে যুদ্ধ - ব্যতিহার বহুব্রীহি"}, {"label": "ঙ", "q": "দুঃখপ্রাপ্ত", "a": "দুঃখকে প্রাপ্ত - ২য়া তৎপুরুষ"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q05", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 3, "type": "fill-gaps", "question": "Fill in the blanks:", "parts": [{"sentence": "You seem to be annoyed...... me", "answer": "with"}, {"sentence": "The house is adjacent...... mine", "answer": "to"}, {"sentence": "Suddenly he burst....... tears.", "answer": "into"}, {"sentence": "He is capable....... solving the problem", "answer": "of"}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q06", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "grammar", "qno": 6, "marks": 3, "type": "sentence-change", "question": "Change the voice:", "parts": [{"label": "a", "original": "He is writing a letter.", "changed": "A letter is being written by him"}, {"label": "b", "original": "Who gave you this pen?", "changed": "By whom were you given this pen?"}, {"label": "c", "original": "Let me know it.", "changed": "Let it be known to me."}, {"label": "d", "original": "Leave the room", "changed": "Let the room be left."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q07", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 3, "type": "idiom", "question": "Make sentence with meaning", "parts": [{"label": "a", "phrase": "Call on", "meaning": "ডাকা", "example": "He called me yesterday."}, {"label": "b", "phrase": "Due to", "meaning": "কারণে", "example": "He was absent due to his illness."}, {"label": "c", "phrase": "On the behalf of", "meaning": "পক্ষে", "example": "I thank you on behalf of the them."}, {"label": "d", "phrase": "A man of letters", "meaning": "পণ্ডিত ব্যক্তি", "example": "He is a man of letters."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q08", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "translation", "qno": 8, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "তিনি আমার পরিচিত।", "target": "He is known to me."}, {"label": "খ", "source": "ঢাকা একটি পুরাতন শহর।", "target": "Dhaka is an old city."}, {"label": "গ", "source": "আমি যদি পাখি হইতাম।", "target": "I wish I were a bird."}, {"label": "ঘ", "source": "ইংরেজি শেখা সহজ।", "target": "It is easy to learn English."}]},
+
+  {"id": "job-2025-pwd-office-sohayok-q09", "examId": "job-2025-pwd-office-sohayok", "subject": "english", "topic": "vocabulary", "qno": 9, "marks": 3, "type": "table", "question": "Write the opposite word:", "columns": ["Given Word", "Opposite Word"], "rows": [["Right", "Wrong"], ["Far", "Near"], ["Up", "Down"], ["Strong", "Weak"]]},
+
+  {"id": "job-2025-pwd-office-sohayok-q10", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 10, "marks": 5, "type": "math", "question": "২০ মিটার দীর্ঘ একটি কামরার মেঝে কার্পেট দিয়ে ঢাকতে ৭৫০০.০০ টাকা খরচ হয়। যদি ঐ কামরাটির প্রস্থ ৪ মিটার কম হতো, তবে ৬০০০.০০ টাকা খরচ হতো। কামরাটির প্রস্থ কত?", "steps": ["কামরার দৈর্ঘ্য ২০ মিটার। প্রস্থ ৪ মিটার কমলে ক্ষেত্রফল কমে (২০ মিটার × ৪ মিটার) = ৮০ বর্গমিটার", "ক্ষেত্রফল ৮০ বর্গমিটার কমার জন্য খরচ কমে (৭৫০০ − ৬০০০) টাকা = ১৫০০ টাকা", "১৫০০ টাকা খরচ হয় ৮০ বর্গমিটারে", "∴ ১ টাকা খরচ হয় ৮০/১৫০০ বর্গমিটারে", "∴ ৭৫০০ টাকা খরচ হয় (৮০ × ৭৫০০)/১৫০০ = ৪০০ বর্গমিটারে", "অতএব, কামরার ক্ষেত্রফল ৪০০ বর্গমিটার", "∴ কামরাটির প্রস্থ = ক্ষেত্রফল/দৈর্ঘ্য = ৪০০/২০ মিটার = ২০ মিটার", "∴ কামরাটির প্রস্থ ২০ মিটার।"], "answer": "প্রস্থ ২০ মিটার"},
+
+  {"id": "job-2025-pwd-office-sohayok-q11", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "মুনাফা-আসল", "qno": 11, "marks": 5, "type": "math", "question": "বার্ষিক ১০.৫০% মুনাফায় ৫০০০ টাকার ২ বছরের চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।", "steps": ["চক্রবৃদ্ধি মুনাফা নির্ণয়ের জন্য প্রথমে চক্রবৃদ্ধি মূলধন নির্ণয় করি।", "আমরা জানি, চক্রবৃদ্ধি মূলধন C = P (১ + r)ⁿ, যেখানে মূলধন P = ৫০০০ টাকা", "মুনাফার হার, r = ১০.৫০% = ২১/২০০", "সময়, n = ২ বছর", "∴ C = P(১ + r)²", "= ৫০০০ × (১ + ২১/২০০)²", "= ৫০০০ × (২২১/২০০)²", "= ৫০০০ × ২২১/২০০ × ২২১/২০০", "= ৬১০৫.১৩ টাকা (প্রায়)", "∴ চক্রবৃদ্ধি মুনাফা = C − P = P(১ + r)² − P", "= (৬১০৫.১৩ − ৫০০০) টাকা", "= ১১০৫.১৩ টাকা (প্রায়)"], "answer": "১১০৫.১৩ টাকা (প্রায়)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q12", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "বয়স নির্ণয়", "qno": 12, "marks": 5, "type": "math", "question": "১০ বছর পূর্বে পিতা ও পুত্রের বয়সের অনুপাত ছিল ৪:১। ১০ বছর পরে পিতা ও পুত্রের বয়সের অনুপাত হবে ২:১। পিতা ও পুত্রের বর্তমান বয়স নির্ণয় করুন।", "steps": ["মনে করি, ১০ বছর পূর্বে পিতার বয়স 4x, ১০ বছর পূর্বে পুত্রের বয়স x", "∴ পিতার বর্তমান বয়স = 4x + 10", "পুত্রের বর্তমান বয়স = x + 10", "প্রশ্নমতে, 4x + 10 + 10 : x + 10 + 10 = 2:1", "বা, (4x + 20)/(x + 20) = 2/1", "বা, 4x + 20 = 2x + 40", "বা, 4x − 2x = 40 − 20", "বা, 2x = 20", "∴ x = 10", "∴ পিতার বর্তমান বয়স = (4 × 10 + 10) = 50 বছর", "এবং পুত্রের বর্তমান বয়স = (10 + 10) = 20 বছর"], "answer": "পিতার বয়স 50 বছর; পুত্রের বয়স 20 বছর।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q13", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 13, "marks": 5, "type": "math", "question": "এর ঘন নির্ণয় করুনঃ 4x − 5y", "steps": ["(4x − 5y)³", "= (4x)³ − 3.(4x)². 5y + 3 .4x (5y)² − (5y)³", "= 64x³ − 240x²y + 300xy² − 125y³"], "answer": "64x³ − 240x²y + 300xy² − 125y³"},
+
+  {"id": "job-2025-pwd-office-sohayok-q14", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 14, "marks": 5, "type": "math", "question": "x³ − 2x², x² − 4, xy − 2y এর গ.সা.গু নির্ণয় করুন।", "steps": ["১ম রাশি = x³ − 2x² = x²(x − 2)", "২য় রাশি = x² − 4 = (x+2)(x − 2)", "৩য় রাশি = xy − 2y = y(x − 2)", "নির্ণেয় গ.সা.গু = (x − 2)"], "answer": "(x − 2)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q15", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 15, "marks": 5, "type": "math", "question": "উৎপাদকে বিশ্লেষণ করুনঃ x² − 2x − 15", "steps": ["x² − 2x − 15", "= x² − 5x + 3x − 15", "= x(x − 5) + 3(x − 5)", "= (x − 5)(x + 3)"], "answer": "(x − 5)(x + 3)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q16", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "জ্যামিতি", "qno": 16, "marks": 5, "type": "math", "question": "10 সে.মি ব্যাসের বৃত্তের পরিধি কত?", "steps": ["মনে করি, বৃত্তের ব্যাসার্ধ r", "∴ বৃত্তের ব্যাস = 2r এবং বৃত্তের পরিধি = 2πr", "প্রশ্নানুসারে, 2r = 10", "বা, r = 10/2", "∴ r = 5 সে.মি", "∴ বৃত্তের পরিধি = 2πr = 2 × 3.1416 × 5 সে.মি.", "= 31.41 সে.মি. (প্রায়)"], "answer": "31.41 সে.মি. (প্রায়)"},
+
+  {"id": "job-2025-pwd-office-sohayok-q17", "examId": "job-2025-pwd-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 17, "marks": 5, "type": "math", "question": "x − y = 3 এবং xy = 10 হলে, (x + y)² এর মান কত?", "steps": ["প্রদত্ত রাশি = (x + y)²", "= (x−y)² + 4xy", "= 3² + 4.10", "= 9 + 40", "= 49"], "answer": "49"},
+
+  {"id": "job-2025-pwd-office-sohayok-q18", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "সাত গম্বুজ মসজিদ ও ষাট গম্বুজ মসজিদ কোথায় অবস্থিত?", "answer": "সাত গম্বুজ - মোহাম্মদপুর, ঢাকা; ষাট গম্বুজ - বাগেরহাট।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q19", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের কোন জেলায় কঠিন শিলা পাওয়া গিয়েছে?", "answer": "দিনাজপুর"},
+
+  {"id": "job-2025-pwd-office-sohayok-q20", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "মুদ্রাস্ফীতি হলে কেন্দ্রীয় ব্যাংক কি পদক্ষেপ নেবে?", "answer": "ব্যাংক হার বাড়িয়ে দিবে।"},
+
+  {"id": "job-2025-pwd-office-sohayok-q21", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "স্মার্টফোন তৈরিতে ব্যবহৃত প্রযুক্তির নাম কি?", "answer": "ন্যানোটেকনোলজি"},
+
+  {"id": "job-2025-pwd-office-sohayok-q22", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের কৃষিভিত্তিক ইপিজেড কোথায় অবস্থিত?", "answer": "উত্তরা ইপিজেড, নীলফামারী"},
+
+  {"id": "job-2025-pwd-office-sohayok-q23", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের লোকশিল্প জাদুঘর কোথায় অবস্থিত?", "answer": "সোনারগাঁও"},
+
+  {"id": "job-2025-pwd-office-sohayok-q24", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "ফেসবুকের সদর দপ্তর কোথায়?", "answer": "ক্যালিফোর্নিয়া, যুক্তরাষ্ট্র"},
+
+  {"id": "job-2025-pwd-office-sohayok-q25", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 25, "marks": 0.4, "type": "paragraph", "question": "মোনালিসা চিত্রটির চিত্রকর কে?", "answer": "লিওনার্দো দ্য ভিঞ্চি"},
+
+  {"id": "job-2025-pwd-office-sohayok-q26", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 26, "marks": 0.4, "type": "paragraph", "question": "পৃথিবীর গভীরতম স্থান কোনটি?", "answer": "মারিয়ানা ট্রেঞ্চ"},
+
+  {"id": "job-2025-pwd-office-sohayok-q27", "examId": "job-2025-pwd-office-sohayok", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 27, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রধান খনিজ সম্পদ কোনটি?", "answer": "প্রাকৃতিক গ্যাস"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: গণপূর্ত অধিদপ্তর — নকশাকার (job-2025-pwd-designer)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬৭-৪৬৯, ক্রম ৬০৩)
+  // মন্তব্য: শেষে একটি "পদ সংশ্লিষ্ট (কারিগরি প্রশ্ন)" অংশ (প্রশ্ন ২৫-৩০) ছিল কিন্তু উত্তর ছাপা হয়নি বলে বাদ দেওয়া হয়েছে
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-pwd-designer-q01", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "কারক ও বিভক্তি", "qno": 1, "marks": 2, "type": "sub-parts", "question": "কারক ও বিভক্তি নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিকেল পাঁচটায় অফিস ছুটি হবে।", "a": "অধিকরণে ৭মী"}, {"label": "খ", "q": "গুণহীনে ত্যাগ কর।", "a": "কর্মে ৭মী বিভক্তি"}, {"label": "গ", "q": "দেশে মিলে করি কাজ।", "a": "কর্তৃকারকে ৭মী"}, {"label": "ঘ", "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা", "a": "কর্ম কারকে ২য়া"}, {"label": "ঙ", "q": "ছাত্ররা বল খেলে", "a": "করণে শূন্য।"}]},
+
+  {"id": "job-2025-pwd-designer-q02", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "ক", "q": "পুরস্কার", "a": "পুরঃ + কার"}, {"label": "খ", "q": "মন্বন্তর", "a": "মনু + অন্তর"}, {"label": "গ", "q": "উপর্যুক্ত", "a": "উপরি+ উক্ত"}, {"label": "ঘ", "q": "মনীষা", "a": "মনস্ + ঈষা"}, {"label": "ঙ", "q": "কিংবদন্তি", "a": "কিম্ + বদন্তি"}]},
+
+  {"id": "job-2025-pwd-designer-q03", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 3, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মরুধান", "মরুদ্যান"], ["মরিচিকা", "মরীচিকা"], ["প্রতুপন্নমতি", "প্রত্যুৎপন্নমতি"], ["ইতমধ্যে", "ইতোমধ্যে"], ["দৈন্যতা", "দীনতা"]]},
+
+  {"id": "job-2025-pwd-designer-q04", "examId": "job-2025-pwd-designer", "subject": "bangla", "topic": "সমাস", "qno": 4, "marks": 2, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "বিজয় পতাকা", "a": "বিজয় নির্দেশক পতাকা - মধ্যপদলোপী কর্মধারয়"}, {"label": "খ", "q": "আশীবিষ", "a": "আশীতে (দাঁত) বিষ যার - বহুব্রীহি সমাস"}, {"label": "গ", "q": "পঙ্কজ", "a": "পঙ্কে জন্মে যা - উপপদ তৎপুরুষ"}, {"label": "ঘ", "q": "চতুর্ভুজ", "a": "চার ভুজের সমাহার - দ্বিগু সমাস"}, {"label": "ঙ", "q": "কাজলকালো", "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"}]},
+
+  {"id": "job-2025-pwd-designer-q05", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 5, "type": "fill-gaps", "question": "Fill in the blank with preposition:", "parts": [{"sentence": "The book is composed...... five chapters.", "answer": "of"}, {"sentence": "She burst ........tears.", "answer": "into"}, {"sentence": "Listen......what I say.", "answer": "to"}, {"sentence": "The man died...... Dengue fever.", "answer": "of"}]},
+
+  {"id": "job-2025-pwd-designer-q06", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "grammar", "qno": 6, "marks": 5, "type": "sentence-change", "question": "Correct the following sentences", "parts": [{"label": "a", "original": "She insisted me to go there.", "changed": "She insisted on my going there."}, {"label": "b", "original": "He is superior than me", "changed": "He is superior to me."}, {"label": "c", "original": "He was hung for murder.", "changed": "He was hanged for murder."}, {"label": "d", "original": "He is very weak to work.", "changed": "He is too weak to work."}]},
+
+  {"id": "job-2025-pwd-designer-q07", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 5, "type": "idiom", "question": "Make sentences with the following:", "parts": [{"label": "a", "phrase": "Carry the day", "meaning": "জয়ী হওয়া", "example": "Our team played well and carried the day."}, {"label": "b", "phrase": "With one voice", "meaning": "সর্বসম্মতভাবে", "example": "They all shouted with one voice for justice."}, {"label": "c", "phrase": "At stake", "meaning": "বিপদাপন্ন", "example": "His life is at stake now."}, {"label": "d", "phrase": "In quest of", "meaning": "সন্ধানে", "example": "He went to the forest in quest of honey."}]},
+
+  {"id": "job-2025-pwd-designer-q08", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "grammar", "qno": 8, "marks": 5, "type": "sentence-change", "question": "Change the voice:", "parts": [{"label": "a", "original": "Do not laugh at the poor.", "changed": "Let not the poor be laughed at."}, {"label": "b", "original": "Take care of your health.", "changed": "Let your health be taken care of."}, {"label": "c", "original": "He killed himself.", "changed": "He was killed by himself."}]},
+
+  {"id": "job-2025-pwd-designer-q09", "examId": "job-2025-pwd-designer", "subject": "english", "topic": "paragraph", "qno": 9, "marks": 5, "type": "paragraph", "question": "Write 5 sentences on the following topic: July Revolution 2024", "answer": "The July Revolution 2024 was a mass uprising in Bangladesh led primarily by students demanding reform and justice. It began as a protest against discriminatory quota systems in government jobs. The movement quickly grew into a nationwide call for accountability and change. Many people participated across the country, showing widespread public support. The revolution marked a significant turning point in the nation's recent history."},
+
+  {"id": "job-2025-pwd-designer-q10", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "জ্যামিতি", "qno": 10, "marks": 5, "type": "math", "question": "9.8 মি. ব্যাসের বৃত্তাকার একটি বাগানের ক্ষেত্রফল কত?", "steps": ["বৃত্তাকার বাগানটির ব্যাস, 2r = 9.8 মি.", "বৃত্তাকার বাগানটির ব্যাসার্ধ r = 9.8/2 মি. = 4.9 মি.", "বৃত্তাকার বাগানটির ক্ষেত্রফল = πr²", "= 3.14 × (4.9)² বর্গমিটার", "= 75.39 বর্গমিটার (প্রায়)"], "answer": "ক্ষেত্রফল 75.39 বর্গমি. (প্রায়)"},
+
+  {"id": "job-2025-pwd-designer-q11", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 11, "marks": 5, "type": "math", "question": "24x³ − 81y³ -কে উৎপাদকে বিশ্লেষণ কর।", "steps": ["24x³ − 81y³ = 3(8x³ − 27y³)", "= 3{(2x)³ − (3y)³}", "= 3(2x − 3y) {(2x)² + (2x) × (3y) + (3y)²}", "= 3(2x − 3y) (4x² + 6xy + 9y²)"], "answer": "3(2x − 3y) (4x² + 6xy + 9y²)"},
+
+  {"id": "job-2025-pwd-designer-q12", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 12, "marks": 5, "type": "math", "question": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?", "steps": ["x³ + y³ + 12xy", "= x³ + y³ + 3 × 4 × xy [মান বসিয়ে]", "= x³ + y³ + 3(x + y) × xy", "= x³ + y³ + 3xy(x + y)", "= (x + y)³", "= (4)³ = 64", "বিকল্প সমাধানঃ x³ + y³ + 12xy", "= (x + y)³ − 3xy(x+y) + 12xy", "= 4³ − 3.4.xy + 12xy", "= 64 − 12xy + 12xy = 64"], "answer": "64"},
+
+  {"id": "job-2025-pwd-designer-q13", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "একটি শ্রেণির প্রতিবেঞ্চে ৪ জন করে ছাত্র বসালে ৩টি বেঞ্চ খালি থাকে। আবার, প্রতিবেঞ্চে ৩ জন করে ছাত্র বসালে ৬ জন ছাত্রকে দাঁড়িয়ে থাকতে হয়। ঐ শ্রেণির ছাত্র সংখ্যা কত?", "steps": ["মনে করি, শ্রেণিটির ছাত্র সংখ্যা x", "যেহেতু, প্রতিবেঞ্চে ৪ জন করে বসালে ৩টি বেঞ্চ খালি থাকে, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = x/4 + 3", "আবার, যেহেতু প্রতিবেঞ্চে ৩ জন করে বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = (x − 6)/3", "যেহেতু শ্রেণির বেঞ্চের সংখ্যা একই থাকবে,", "সুতরাং x/4 + 3 = (x − 6)/3", "বা, (x + 12)/4 = (x − 6)/3", "বা, 4x − 24 = 3x + 36", "বা, 4x − 3x = 36 + 24", "বা, x = 60", "∴ ঐ শ্রেণির ছাত্র সংখ্যা ৬০ জন।"], "answer": "৬০ জন।"},
+
+  {"id": "job-2025-pwd-designer-q14", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "লাভ-ক্ষতি", "qno": 14, "marks": 5, "type": "math", "question": "একটি বইয়ের মূল্য ২৪ টাকা। এই মূল্য প্রকৃত মূল্যের ৮০%। বাকি মূল্য সরকার ভর্তুকি দিয়ে থাকেন। সরকার প্রতি বইয়ের কত টাকা ভর্তুকি দেন?", "steps": ["মনে করি, বইটির প্রকৃত মূল্য x টাকা", "প্রশ্নমতে, x এর ৮০% = ২৪", "বা, ৮০x/১০০ = ২৪", "বা, ৮০x = ২৪০০", "বা, x = ২৪০০/৮০", "∴ x = ৩০", "সুতরাং, বই এর প্রকৃত মূল্য ৩০ টাকা", "মূল্য ধরা হয়েছে ২৪ টাকা", "ভর্তুকি দেন = (৩০ − ২৪) = ৬ টাকা"], "answer": "৬ টাকা।"},
+
+  {"id": "job-2025-pwd-designer-q15", "examId": "job-2025-pwd-designer", "subject": "math", "topic": "বীজগণিত", "qno": 15, "marks": 5, "type": "math", "question": "এর বর্গ নির্ণয় কর। 4x − 7y", "steps": ["(4x − 7y)²", "= (4x)² − 2.4x. 7y + (7y)²", "= 16x² − 56xy + 49y²"], "answer": "16x² − 56xy + 49y²"},
+
+  {"id": "job-2025-pwd-designer-q16", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 16, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি?", "answer": "সেন্টমার্টিন দ্বীপ।"},
+
+  {"id": "job-2025-pwd-designer-q17", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 17, "marks": 0.4, "type": "paragraph", "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?", "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"},
+
+  {"id": "job-2025-pwd-designer-q18", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 18, "marks": 0.4, "type": "paragraph", "question": "হালদা নদী কেন বিখ্যাত?", "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"},
+
+  {"id": "job-2025-pwd-designer-q19", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 19, "marks": 0.4, "type": "paragraph", "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?", "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"},
+
+  {"id": "job-2025-pwd-designer-q20", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 20, "marks": 0.4, "type": "paragraph", "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?", "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"},
+
+  {"id": "job-2025-pwd-designer-q21", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 21, "marks": 0.4, "type": "paragraph", "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?", "answer": "বাউন্ডুলে আত্মকাহিনী।"},
+
+  {"id": "job-2025-pwd-designer-q22", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 22, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?", "answer": "পূর্ব জার্মানি।"},
+
+  {"id": "job-2025-pwd-designer-q23", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 23, "marks": 0.4, "type": "paragraph", "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?", "answer": "সোমপুর বৌদ্ধবিহার।"},
+
+  {"id": "job-2025-pwd-designer-q24", "examId": "job-2025-pwd-designer", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 24, "marks": 0.4, "type": "paragraph", "question": "বাংলাদেশের সংবিধানের রক্ষক কে?", "answer": "সুপ্রিম কোর্ট।"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: শ্রম ও কর্মসংস্থান মন্ত্রণালয় — বেঞ্চ সহকারী (job-2025-labour-ministry-bench-asst)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৬৯, ৪৯০-৪৯২, ক্রম ৬০৪)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-labour-ministry-bench-asst-q01", "examId": "job-2025-labour-ministry-bench-asst", "subject": "bangla", "topic": "সমাস", "qno": 1, "marks": 3, "type": "sub-parts", "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "মনমাঝি", "a": "মন রূপ মাঝি - রূপক কর্মধারয়"}, {"label": "খ", "q": "আয়কর", "a": "আয়ের ওপর কর - মধ্যপদলোপী কর্মধারয়"}, {"label": "গ", "q": "হাসাহাসি", "a": "হাসিতে হাসিতে যে ক্রিয়া - ব্যতিহার বহুব্রীহি"}, {"label": "ঘ", "q": "দেশান্তর", "a": "অন্য দেশ - নিত্য সমাস"}, {"label": "ঙ", "q": "খাসজমি", "a": "খাস যে জমি - কর্মধারয়"}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q02", "examId": "job-2025-labour-ministry-bench-asst", "subject": "bangla", "topic": "বাগধারা", "qno": 2, "marks": 3, "type": "sub-parts", "question": "অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "q": "ঢক্কা নিনাদ", "a": "আড়ম্বরপূর্ণ ঘোষণা"}, {"label": "খ", "q": "কান পাতা", "a": "মনোযোগ দিয়ে শোনা"}, {"label": "গ", "q": "যক্ষের ধন", "a": "কৃপণের ধন"}, {"label": "ঘ", "q": "দিবাস্বপ্ন", "a": "অলীক কল্পনা"}, {"label": "ঙ", "q": "রাজা-উজির মারা", "a": "বড় বড় গালগল্প করা"}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q03", "examId": "job-2025-labour-ministry-bench-asst", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 3, "marks": 3, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "মৃত্তিকা দিয়ে তৈরি", "a": "মৃন্ময়"}, {"label": "খ", "q": "হরিণের চামড়া", "a": "অজিন"}, {"label": "গ", "q": "ইতিহাস বিষয়ে অভিজ্ঞ যিনি", "a": "ইতিহাসবেত্তা"}, {"label": "ঘ", "q": "উপকারীর অপকার করে যে", "a": "কৃতঘ্ন"}, {"label": "ঙ", "q": "রাতের শিশির", "a": "শবনম"}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q04", "examId": "job-2025-labour-ministry-bench-asst", "subject": "bangla", "topic": "ভাবসম্প্রসারণ", "qno": 4, "marks": 6, "type": "paragraph", "question": "ভাবসম্প্রসারণ করুনঃ জননী জন্মভূমিশ্চ স্বর্গাদপি গরিয়সী গাদপি গরিয়সী", "answer": "মূলভাব: মানুষের জীবনে আপন জননী এবং জন্মভূমির স্থান সবার উপরে। মা যেমন আমাদের জন্য দিয়ে লালন-পালন করেন, জন্মভূমিও তেমনি তার আলো-বাতাস ও অন্ন-জল দিয়ে আমাদের জীবন রক্ষা করে। তাই মা ও মাতৃভূমি উভয়েই স্বর্গের চেয়েও শ্রেষ্ঠ ও মহান। ভাব-সম্প্রসারণ: স্বর্গ মানুষের কাছে এক পরম সুখের স্থান এবং পরম কাম্য। কিন্তু এই কল্পিত স্বর্গের চেয়েও বাস্তব জগতের মা এবং মাতৃভূমি অনেক বেশি গুরুত্বপূর্ণ। জননী আমাদের অন্ধকার গর্ভ থেকে আলোর পৃথিবীতে নিয়ে আসেন। নিজের রক্তবিন্দু দিয়ে তিনি সন্তানকে তিল তিল করে বড় করে তোলেন। সন্তানের সুখে মায়ের হাসি আর সন্তানের দুঃখে মায়ের চোখের জল পৃথিবীর কোনো সম্পদের সাথেই তুলনা করা যায় না। জননী ছাড়া এই পৃথিবীর রূপ-রস ভোগ করা আমাদের পক্ষে অসম্ভব ছিল। ঠিক তেমনিভাবে জন্মভূমি আমাদের কাছে মায়ের মতো। জন্মভূমির মাটিতে আমাদের বেড়ে ওঠা, তার জল-বায়ু আর প্রকৃতির কোলে আমাদের জীবন অতিবাহিত হয়। বিদেশের ঐশ্বর্য বা চাকচিক্য কখনোই স্বদেশের মাটির টান বা মমতাকে ছাড়িয়ে যেতে পারে না। দেশের প্রতি মমতা আর শ্রদ্ধা মানুষের অন্তরের এক গভীর ও অকৃত্রিম আবেগ। ইতিহাস সাক্ষী দেয়, যুগে যুগে দেশপ্রেমিকেরা তাঁদের জন্মভূমিকে রক্ষার জন্য হাসিমুখে নিজের জীবন বিসর্জন দিয়েছেন। কারণ তাঁরা জানতেন, পরাধীন স্বর্গের চেয়ে স্বাধীন মাতৃভূমি অনেক বেশি গৌরবের। বস্তুত, যার মধ্যে মা ও মাতৃভূমির প্রতি শ্রদ্ধা নেই, সে প্রকৃত মানুষ হতে পারে না। মা এবং মাতৃভূমি এই দুইয়ের আশীর্বাদ ও মমতাই মানুষের জীবনের শ্রেষ্ঠ অর্জন। স্বর্গের সুখ ক্ষণস্থায়ী বা পারলৌকিক হতে পারে, কিন্তু মা ও মাতৃভূমির স্নেহ ও আশ্রয় ইহকালেই মানুষকে পরম তৃপ্তি দেয়। উপসংহার: মা ও মাতৃভূমি মানুষের অস্তিত্বের মূল ভিত্তি। তাঁদের সম্মান রক্ষা করা এবং তাঁদের প্রতি নিবেদিত থাকা প্রতিটি মানুষের পরম ধর্ম ও পবিত্র কর্তব্য।"},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q05", "examId": "job-2025-labour-ministry-bench-asst", "subject": "english", "topic": "fill-in-the-blanks", "qno": 5, "marks": 5, "type": "fill-gaps", "question": "Put appropriate prepositions in the gaps.", "parts": [{"sentence": "He gave me a synonym .......the hard word.", "answer": "for"}, {"sentence": "Man should not be slave....... his passion.", "answer": "to"}, {"sentence": "His words are void.........meaning.", "answer": "of"}, {"sentence": "The authoress was astonished........Jerry's integrity", "answer": "at"}, {"sentence": "I can confide......... in his honesty", "answer": "in"}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q06", "examId": "job-2025-labour-ministry-bench-asst", "subject": "english", "topic": "paragraph", "qno": 6, "marks": 5, "type": "paragraph", "question": "Write a paragraph on \"The 4th Industrial Revolution\"", "answer": "4IR, the Fourth Industrial Revolution, also known as Industry 4.0, is a fundamental change in the way of living and working style of human beings. The Fourth Industrial Revolution is a way of describing the blurring of boundaries between the physical, digital, and biological worlds. It's a fusion of advances in artificial intelligence (AI), cloud computing, robotics, the Internet of Things (IoT), Web3, block chain, 3D printing, genetic engineering, quantum computing, and other technologies. The 4IR will change many aspects of human living systems. As a result of the 4IR the quality of living of people will improve. Productivity as well as quality will increase. Risk will be reduced and customer service will be ensured through efficient management. In the near future, it will help to build sustainable economies, to unite global communities, to reduce social inequalities, adapt and modernize governance models, etc."},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q07", "examId": "job-2025-labour-ministry-bench-asst", "subject": "english", "topic": "idioms-and-phrases", "qno": 7, "marks": 5, "type": "idiom", "question": "Write the meaning of the following and make sentences with them-", "parts": [{"label": "a", "phrase": "A piece of cake", "meaning": "খুবই সহজ কাজ", "example": "Solving this math problem was a piece of cake for him."}, {"label": "b", "phrase": "Double-minded man", "meaning": "দ্বিধাগ্রস্ত ব্যক্তি", "example": "A double-minded man can never succeed in life because he can't stick to a single decision."}, {"label": "c", "phrase": "A hard nut to crack", "meaning": "কঠিন সমস্যা", "example": "Convincing him to change his mind will be a hard nut to crack."}, {"label": "d", "phrase": "Come round", "meaning": "আরোগ্য লাভ করা", "example": "We hope that your mother will come round very soon."}, {"label": "e", "phrase": "Point blank", "meaning": "সরাসরি", "example": "He refused my proposal point blank."}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q08", "examId": "job-2025-labour-ministry-bench-asst", "subject": "english", "topic": "translation", "qno": 8, "marks": 5, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "তিনি প্রতিদিন সকালে ব্যায়াম করেন।", "target": "He takes exercise every morning."}, {"label": "খ", "source": "রবীন্দ্রনাথ ঠাকুর আমাদের জাতীয় সংগীতের রচয়িতা।", "target": "Rabindranath Tagore is the composer of our national anthem."}, {"label": "গ", "source": "হিমালয়ের সর্বোচ্চ শৃঙ্গের নাম এভারেস্ট।", "target": "The highest peak of the Himalayas is Everest."}, {"label": "ঘ", "source": "ডাক্তার আসার পর রোগী মারা গেল।", "target": "The patient died after the doctor had come."}, {"label": "ঙ", "source": "জাহাজটি বন্দরে ভিড়েছে।", "target": "The ship has berthed at the port."}]},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q09", "examId": "job-2025-labour-ministry-bench-asst", "subject": "math", "topic": "পাটিগণিত", "qno": 9, "marks": 6, "type": "math", "question": "একটি নল ১২ মিনিটে একটি খালি চৌবাচ্চা পূর্ণ করতে পারে। অপর একটি নল প্রতি মিনিটে ১৪ লিটার পানি বের করে দেয়। চৌবাচ্চাটি খালি থাকা অবস্থায় দুইটি নল একসঙ্গে খুলে দেওয়া হয় এবং চৌবাচ্চাটি ৯৬ মিনিটে পূর্ণ হয়। চৌবাচ্চাটিতে কত লিটার পানি ধরে?", "steps": ["মনে করি, প্রথম নল দ্বারা প্রতি মিনিটে x লিটার পানি প্রবেশ করে এবং চৌবাচ্চাটিতে মোট y লিটার পানি ধরে।", "∴ y = 12x ...... (1)", "আবার, দুইটি নল দ্বারা ৯৬ মিনিটে খালি চৌবাচ্চা পূর্ণ হয়", "∴ y = 96x − 96 × 14 ...... (2)", "সমীকরণ (1) থেকে পাই, x = y/12", "x এর মান সমীকরণ (2) এ বসিয়ে পাই,", "y = 96 × y/12 − 96 × 14", "বা, y = 8y − 96 × 14", "বা, 7y = 96 × 14", "বা, y = (96×14)/7 = 192", "বিকল্প সমাধানঃ", "ধরি, চৌবাচ্চাটিতে পানি ধরে x লিটার", "১২ মিনিটে পূর্ণ করে x লিটার", "১ মিনিটে পূর্ণ করে x/12 লিটার", "আবার, ৯৬ মিনিটে পূর্ণ করে x লিটার", "১ মিনিটে পূর্ণ করে x/96 লিটার", "প্রশ্নমতে, x/12 − x/96 = 14", "বা, (8x − x)/96 = 14", "বা, 7x/96 = 14", "বা, 7x = 1344", "বা, x = 1344/7", "∴ x = 192"], "answer": "চৌবাচ্চাটিতে মোট ১৯২ লিটার পানি ধরে।"},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q10", "examId": "job-2025-labour-ministry-bench-asst", "subject": "math", "topic": "গড়", "qno": 10, "marks": 6, "type": "math", "question": "তিনটি ক্রমিক সংখ্যার গুণফল তাদের যোগফলের 5 গুণ; সংখ্যা তিনটির গড় কত?", "steps": ["মনে করি, তিনটি ক্রমিক সংখ্যা যথাক্রমে x − 1, x ও x + 1", "প্রশ্নমতে, (x − 1) (x + 1) x = 5(x − 1 + x + x + 1)", "বা, x(x² − 1) = 5 × 3x", "বা, x² − 1 = 15", "বা, x² = 16", "∴ x = 4", "সুতরাং ২য় সংখ্যা = 4, ১ম সংখ্যা = 4 − 1 = 3 এবং ৩য় সংখ্যা = 4 + 1 = 5", "সুতরাং ক্রমিক সংখ্যা তিনটি ৩, ৪, ৫", "∴ সংখ্যা তিনটির গড় = (৩ + ৪ + ৫)/৩ = ১২/৩ = ৪"], "answer": "৪"},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q11", "examId": "job-2025-labour-ministry-bench-asst", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 11, "marks": 6, "type": "math", "question": "x² − y², x³−y³, x⁴ +x²y² + y⁴ এই রাশিগুলোর গ.সা.গু কত?", "steps": ["১ম রাশি = x² − y² = (x + y) (x − y)", "২য় রাশি = x³ − y³ = (x − y) (x² +xy + y²)", "৩য় রাশি = x⁴ +x²y² + y⁴ = (x²)² + 2.x².y² + (y²)² − x²y²", "= (x² + y²)² − (xy)²", "= (x² + y² + xy) (x² + y² − xy)", "এখানে রাশি তিনটির সাধারণ কোন উৎপাদক নেই সুতরাং নির্ণেয় গ.সা.গু = 1"], "answer": "গ.সা.গু = 1"},
+
+  {"id": "job-2025-labour-ministry-bench-asst-q12", "examId": "job-2025-labour-ministry-bench-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 12, "marks": 12, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দিনঃ", "parts": [{"label": "ক", "q": "ফরায়েজী আন্দোলনের নেতার নাম কী?", "a": "হাজী শরীয়তুল্লাহ।"}, {"label": "খ", "q": "সতীদাহ প্রথা রদ হয় কত সালে?", "a": "১৮২৯ সালে।"}, {"label": "গ", "q": "বাংলাদেশের কোন নেতা কলকাতা কর্পোরেশনের মেয়র ছিলেন?", "a": "শেরে বাংলা এ. কে. ফজলুল হক।"}, {"label": "ঘ", "q": "বাংলাদেশের রণ সংগীতের রচয়িতা কে?", "a": "কাজী নজরুল ইসলাম।"}, {"label": "ঙ", "q": "বাংলাদেশের রাষ্ট্রপতিকে অভিশংসন করতে পারেন কে?", "a": "জাতীয় সংসদ।"}, {"label": "চ", "q": "আইএলও এর সদর দপ্তর কোথায়?", "a": "জেনেভা, সুইজারল্যান্ড।"}, {"label": "ছ", "q": "বাংলাদেশের বৃহত্তম নদীর নাম কী?", "a": "পদ্মা।"}, {"label": "জ", "q": "কোন বনাঞ্চল প্রতিনিয়ত লবণাক্ত পানি দ্বারা প্লাবিত হয়?", "a": "ম্যানগ্রোভ বন বা সুন্দরবন।"}, {"label": "ঝ", "q": "হিমালয়, আল্পস, ইউরাল কোন ধরনের পর্বত?", "a": "ভঙ্গিল পর্বত।"}, {"label": "ঞ", "q": "WiMAX কী?", "a": "WiMAX (Worldwide Interoperability for Microwave Access) হলো একটি উচ্চগতির তারবিহীন যোগাযোগ প্রযুক্তি, যা বিশাল এলাকা জুড়ে উচ্চগতির ইন্টারনেট সেবা প্রদানে ব্যবহৃত হয়"}, {"label": "ট", "q": "ভূমিকম্পের তীব্রতা মাপার যন্ত্রের নাম কী?", "a": "সিসমোগ্রাফ (যন্ত্রের নাম) এবং রিখটার স্কেল (তীব্রতা পরিমাপের একক)।"}, {"label": "ঠ", "q": "বাংলাদেশের সংবিধানে কতটি অনুচ্ছেদ আছে?", "a": "১৫৩টি।"}, {"label": "ড", "q": "পানামা খাল কোন কোন মহাসাগরকে যুক্ত করেছে?", "a": "আটলান্টিক মহাসাগর ও প্রশান্ত মহাসাগর।"}, {"label": "ঢ", "q": "ফারাক্কা বাঁধ বাংলাদেশের সীমান্ত থেকে কত দূরে অবস্থিত?", "a": "প্রায় ১৬.৫ কিলোমিটার।"}, {"label": "ণ", "q": "BIMSTEC এর পূর্ণরূপ কী?", "a": "Bay of Bengal Initiative for Multi Sectoral Technical and Economic Cooperation."}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: স্থানীয় সরকার বিভাগ — সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর (job-2025-lgd-shorthand-typist)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৯২-৪৯৫, ক্রম ৬০৫)
+  // মন্তব্য: মূল বইয়ে প্রশ্ন ০২ (সমাস) এবং প্রশ্ন ০৩ এর ক,খ অংশের উত্তর ছাপা হয়নি বলে বাদ দেওয়া হয়েছে
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-lgd-shorthand-typist-q01", "examId": "job-2025-lgd-shorthand-typist", "subject": "bangla", "topic": "প্রকৃতি ও প্রত্যয়", "qno": 1, "marks": 2, "type": "sub-parts", "question": "প্রকৃতিসহ প্রত্যয়ের নাম লিখুনঃ", "parts": [{"label": "ক", "q": "মজুরি", "a": "মজুর + ই - তদ্ধিত প্রত্যয়"}, {"label": "খ", "q": "রক্ষণীয়", "a": "√রক্ষ + অনীয় - কৃৎ প্রত্যয়"}, {"label": "গ", "q": "রাজত্ব", "a": "রাজন্ + ত্ব - তদ্ধিত প্রত্যয়"}, {"label": "ঘ", "q": "সৃষ্টি", "a": "√সৃজ + তি - কৃৎ প্রত্যয়"}, {"label": "ঙ", "q": "ত্যাজ্য", "a": "√ত্যাজ + য"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q02", "examId": "job-2025-lgd-shorthand-typist", "subject": "bangla", "topic": "সন্ধি", "qno": 2, "marks": 2, "type": "sub-parts", "question": "সন্ধি বিচ্ছেদ করুনঃ", "parts": [{"label": "গ", "q": "শয়ন", "a": "শৈ + অন"}, {"label": "ঘ", "q": "হিংসা", "a": "হিন্ + সা"}, {"label": "ঙ", "q": "সর্বংসহা", "a": "সর্বম্ + সহা"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q03", "examId": "job-2025-lgd-shorthand-typist", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 3, "marks": 2, "type": "sub-parts", "question": "এক কথায় প্রকাশ করুনঃ", "parts": [{"label": "ক", "q": "অগ্র-পশ্চাৎ ক্রম অনুযায়ী", "a": "আনুপূর্বিক"}, {"label": "খ", "q": "অতিশয় তাড়াতাড়ি", "a": "তড়িঘড়ি"}, {"label": "গ", "q": "উপকার করার ইচ্ছা", "a": "উপচিকীর্ষা"}, {"label": "ঘ", "q": "ক্ষীণ প্রতিধ্বনি বিস্তার", "a": "অনুরণন"}, {"label": "ঙ", "q": "ধ্যান করার যোগ্য", "a": "ধ্যেয়"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q04", "examId": "job-2025-lgd-shorthand-typist", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 4, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["অশখ", "অশথ"], ["আর্দালি", "আরদালি"], ["শিরোপীড়া", "শিরঃপীড়া"], ["ঘ্রানেন্দ্রীয়", "ঘ্রাণেন্দ্রিয়"], ["চন্ঠী", "চণ্ডী"]]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q05", "examId": "job-2025-lgd-shorthand-typist", "subject": "bangla", "topic": "বাগধারা", "qno": 5, "marks": 2, "type": "sub-parts", "question": "বাগধারাগুলোর সঠিক অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "q": "উলুখাগড়া", "a": "গুরুত্বহীন লোক"}, {"label": "খ", "q": "ঘোড়ার ডিম", "a": "অবাস্তব বস্তু"}, {"label": "গ", "q": "চক্ষুদান করা", "a": "চুরি করা"}, {"label": "ঘ", "q": "মগজধোলাই", "a": "ক্রমাগত প্রচারণা"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q06", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "vocabulary", "qno": 6, "marks": 5, "type": "idiom", "question": "Please write the meaning and make sentences with the following words:", "parts": [{"label": "a", "phrase": "Accept", "meaning": "গ্রহণ করা", "example": "He gladly accepted the invitation."}, {"label": "b", "phrase": "Except", "meaning": "ব্যতীত/ছাড়া", "example": "Everyone was present except Rahim."}, {"label": "c", "phrase": "Credible", "meaning": "বিশ্বাসযোগ্য", "example": "His speech is credible."}, {"label": "d", "phrase": "Creditable", "meaning": "প্রশংসনীয়", "example": "Her performance in the exam was creditable."}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q07", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "grammar", "qno": 7, "marks": 5, "type": "sentence-change", "question": "Choose the correct sentence", "parts": [{"label": "a", "original": "He suffer fever.", "changed": "He is suffering from fever."}, {"label": "b", "original": "The football is a beautiful game.", "changed": "Football is a beautiful game."}, {"label": "c", "original": "He discussed on the matter.", "changed": "He discussed the matter."}, {"label": "d", "original": "Doesn't he have a meal?", "changed": "Correct sentence"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q08", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "spelling", "qno": 8, "marks": 5, "type": "table", "question": "Identify the correct spelling:", "columns": ["Incorrect", "Correct"], "rows": [["Plentifull", "Plentiful"], ["Magnanimty", "Magnanimity"], ["Occassion", "Occasion"], ["Accoommodation", "Accommodation"]]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q09", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "translation", "qno": 9, "marks": 5, "type": "translate", "question": "Translation English:", "parts": [{"label": "ক", "source": "আমার বন্ধু গতকাল এসেছিল কিন্তু আমার দেখা পায়নি।", "target": "My friend came yesterday but did not meet me."}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q10", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "grammar", "qno": 10, "marks": 5, "type": "sentence-change", "question": "Make changes of the following as directed:", "parts": [{"label": "a", "original": "It was really a hard thing to do. (Complex)", "changed": "It was a thing which was really hard to do."}, {"label": "b", "original": "Scientists were interested about the radioactivity emanating from the nuclear plant. (Voice Change)", "changed": "The radioactivity emanating from the nuclear plant interested scientists."}, {"label": "c", "original": "The doctor was kind. (Complex)", "changed": "It was the doctor who was kind."}, {"label": "d", "original": "Close-fisted...... write the meaning and sentence with it.", "changed": "কৃপণ - He is close-fisted man."}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q11", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "vocabulary", "qno": 11, "marks": 5, "type": "table", "question": "Write the adjective form:", "columns": ["Given Word", "Adjective form"], "rows": [["Genocide", "Genocidal"], ["Computer", "Computational"], ["Military", "Military"], ["Pigment", "Pigmented"]]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q12", "examId": "job-2025-lgd-shorthand-typist", "subject": "english", "topic": "vocabulary", "qno": 12, "marks": 5, "type": "sub-parts", "question": "Write down the meaning of the following pairs.", "parts": [{"label": "a", "q": "Fair", "a": "সুন্দর"}, {"label": "", "q": "Fare", "a": "ভাড়া"}, {"label": "b", "q": "Hair", "a": "চুল"}, {"label": "", "q": "Heir", "a": "উত্তরাধিকারী"}, {"label": "c", "q": "Principle", "a": "মূলনীতি"}, {"label": "", "q": "Principal", "a": "অধ্যক্ষ"}, {"label": "d", "q": "Quiet", "a": "নীরব/শান্ত"}, {"label": "", "q": "Quite", "a": "সম্পূর্ণভাবে"}, {"label": "e", "q": "Rare", "a": "দুর্লভ"}, {"label": "", "q": "Rear", "a": "শেষ অংশ"}]},
+
+  {"id": "job-2025-lgd-shorthand-typist-q13", "examId": "job-2025-lgd-shorthand-typist", "subject": "math", "topic": "বীজগণিত", "qno": 13, "marks": 5, "type": "math", "question": "a = √3 + √2 হলে, a³ + 3a + 3a⁻¹ + a⁻³ এর মান কত?", "steps": ["দেওয়া আছে, a = √3 + √2", "1/a = 1/(√3 + √2) = (√3 − √2)/{(√3 + √2)(√3 − √2)} [লব ও হরকে (√3 − √2) দ্বারা গুণ করে]", "= (√3 − √2)/{(√3)² − (√2)²}", "= (√3 − √2)/(3 − 2)", "= √3 − √2", "∴ a + 1/a = (√3 + √2) + (√3 − √2) = 2√3", "প্রদত্ত রাশি: a³ + 3a + 3a⁻¹ + a⁻³", "= a³ + a⁻³ + 3a + 3a⁻¹", "= a³ + 1/a³ + 3a + 3.1/a", "= a³ + 1/a³ + 3(a + 1/a)", "= (a + 1/a)³ − 3.a.1/a (a + 1/a) + 3(a + 1/a)", "= (2√3)³"], "answer": "= 24√3"},
+
+  {"id": "job-2025-lgd-shorthand-typist-q14", "examId": "job-2025-lgd-shorthand-typist", "subject": "math", "topic": "জ্যামিতি", "qno": 14, "marks": 5, "type": "math", "question": "একটি ঘরের মেঝের দৈর্ঘ্য ৪ মিটার এবং প্রস্থ ৩.৫ মিটার। ঘরটির উচ্চতা ৩ মিটার এবং এর দেওয়ালগুলো ১৫ সে.মি পুরু হলে, চার দেওয়ালের আয়তন কত?", "steps": ["দেওয়ালের পুরুত্ব ১৫ সে.মি. = ১৫/১০০ = ০.১৫ মিটার", "দৈর্ঘ্যর দিকে ২টি দেওয়ালের ঘনফল = (৪ + ২ × ০.১৫) × ৩ × ০.১৫ × ২ ঘনমিটার", "= ৪.৩ × ৩ × ০.১৫ × ২ ঘনমিটার", "= ৩.৮৭ ঘনমিটার", "প্রস্থের দিকে ২টি দেওয়ালের ঘনফল = (৩.৫ × ৩ × ০.১৫ × ২) ঘনমিটার", "= ৩.১৫ ঘনমিটার", "∴ দেওয়ালগুলোর মোট ঘনফল = (৩.৮৭ + ৩.১৫) ঘনমিটার", "= ৭.০২ ঘনমিটার।"], "answer": "ঘনফল ৭.০২ ঘনমিটার।"},
+
+  {"id": "job-2025-lgd-shorthand-typist-q15", "examId": "job-2025-lgd-shorthand-typist", "subject": "math", "topic": "সংখ্যা পদ্ধতি", "qno": 15, "marks": 5, "type": "math", "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার অঙ্কদ্বয়ের সমষ্টির সাথে ৭ যোগ করলে যোগফল দশক স্থানীয় অঙ্কটির তিনগুণ হয়। কিছু সংখ্যাটি থেকে ১৮ বাদ দিলে অঙ্কদ্বয় স্থান পরিবর্তন করে। সংখ্যাটি নির্ণয় করুন।", "steps": ["মনে করি, দুই অঙ্কবিশিষ্ট সংখ্যাটির একক স্থানীয় অঙ্ক x এবং দশক স্থানীয় অঙ্ক y।", "∴ সংখ্যাটি = x + 10y", "১ম শর্তানুসারে, x + y + 7 = 3y", "বা, x + y − 3y = −7", "বা, x − 2y = −7 ................. (1)", "২য় শর্তানুসারে, x + 10y − 18 = y + 10x", "বা, x + 10y − y − 10x = 18", "বা, 9y − 9x = 18", "বা, 9(y − x) = 18", "বা, y − x = 18/9 = 2", "∴ y − x = 2 ................. (2)", "(1) ও (2) নং যোগ করে পাই, − y = −5", "∴ y = 5", "y-এর মান (1) নং-এ বসিয়ে পাই, x − 2 × 5 = −7", "∴ x = 3", "∴ নির্ণেয় সংখ্যাটি = 3 + 10 × 5 = 3 + 50 = 53"], "answer": "সংখ্যাটি ৫৩।"},
+
+  {"id": "job-2025-lgd-shorthand-typist-q16", "examId": "job-2025-lgd-shorthand-typist", "subject": "math", "topic": "ধারা", "qno": 16, "marks": 5, "type": "math", "question": "সামাদ সাহেব তার বেতন থেকে প্রথম মাসে ১২০০ টাকা সঞ্চয় করেন এবং পরবর্তী প্রতিমাসে এর পূর্ববর্তী মাসের তুলনায় ১০০ টাকা বেশি সঞ্চয় করেন। তিনি কত বছরে মোট ১০৬২০০ টাকা সঞ্চয় করেন?", "steps": ["মনে করি, n মাসে ১০৬২০০ টাকা সঞ্চয় করেন।", "প্রশ্নানুসারে, n/2 {2a + (n − 1)d} = 106200", "বা, n/2 {2 × 1200 + (n − 1) × 100} = 106200", "বা, n(2400 + 100n − 100) = 212400", "বা, 100n² + 2300n − 212400 = 0", "বা, n² + 23n − 2124 = 0", "বা, n² + 59n − 36n − 2124 = 0", "বা, n(n + 59) − 36(n + 59) = 0", "বা, (n + 59)(n − 36) = 0", "অর্থাৎ n = −59 [মাস কখনো ঋণাত্মক হতে পারে না] অথবা n = 36", "নির্ণেয় সময় ৩৬ মাস বা ৩ বছর।"], "answer": "৩৬ মাস বা ৩ বছর।"},
+
+  {"id": "job-2025-lgd-shorthand-typist-q17", "examId": "job-2025-lgd-shorthand-typist", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 17, "marks": 3.4, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ", "parts": [{"label": "ক", "q": "গ্র্যান্ড ট্রাঙ্ক রোড-এর বিস্তার অধুনা কোন শহর থেকে কোন শহর পর্যন্ত রয়েছে?", "a": "উত্তর: বাংলার সোনারগাঁও থেকে পাঞ্জাব (সূত্র- বাংলাপিডিয়া)"}, {"label": "খ", "q": "'ছিয়াত্তরের মন্বন্তর' ও 'পঞ্চাশের মন্বন্তর' নামীয় দুর্ভিক্ষ ইংরেজি কত সালে হয়েছিল?", "a": "উত্তর: ছিয়াত্তরের মন্বন্তর ১৭৭০ এবং পঞ্চাশের মন্বন্তর ১৯৪৩ সাল"}, {"label": "গ", "q": "BEZA ও BEPZA এর পূর্ণরূপ কী?", "a": "উত্তর: BEZA = Bangladesh Economic Zones Authority; BEPZA = Bangladesh Export Processing Zones Authority"}, {"label": "ঘ", "q": "সুন্দরবনে দুই ধরণের হরিণ দেখা যায়। এদের নাম কী?", "a": "উত্তর: চিত্রা হরিণ ও মায়া হরিণ"}, {"label": "ঙ", "q": "টেস্ট ক্রিকেটে সর্বোচ্চ উইকেট শিকারী এবং এক ইনিংসে সর্বোচ্চ ব্যক্তিগত রানের রেকর্ডধারী ক্রিকেটার কে?", "a": "উত্তর: বাংলাদেশের হয়ে সর্বোচ্চ উইকেট শিকারী তাইজুল ইসলাম এবং সর্বোচ্চ রানের রেকর্ডধারী মুশফিকুর রহিম"}, {"label": "চ", "q": "COP এর পূর্ণরূপ কী? সর্বশেষ কততম COP সম্মেলন অনুষ্ঠিত হয়েছে?", "a": "উত্তর: Conference of the Parties; কপ-৩০ বেলম, ব্রাজিলে অনুষ্ঠিত হয়েছে।"}, {"label": "ছ", "q": "যুক্তরাষ্ট্রে মোট অঙ্গরাজ্য কতটি? ওয়াশিংটন ডিসি এর ডিসি বলতে কী বোঝায়?", "a": "উত্তর: ৫০টি; ডিস্ট্রিক্ট অফ কলাম্বিয়া (District of Columbia, সংক্ষেপে D.C.)"}, {"label": "জ", "q": "দজলা ও ফোরাত নদীর ইংরেজি নাম কী?", "a": "উত্তর: টাইগ্রিস (দজলা) ও ইউফ্রেটিস (ফোরাত)"}, {"label": "ঝ", "q": "প্লেটোর শিক্ষক কে ছিলেন এবং ছাত্র কে ছিলেন?", "a": "উত্তর: প্লেটোর শিক্ষক সক্রেটিস এবং ছাত্র এরিস্টটল"}, {"label": "ঞ", "q": "এস্ট্রোনমিক্যাল ইউনিট বলতে কোন দুটি মহাজাগতিক বস্তুর দূরত্ব বোঝায়?", "a": "উত্তর: পৃথিবী ও সূর্য"}]},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: নারায়ণগঞ্জ সিটি কর্পোরেশন — উপ সহকারী প্রকৌশলী (সিভিল) (job-2025-ncc-sub-asst-engineer-civil)
+  // সোর্স: Self_job_solution_book_part_5.pdf (বইয়ের পৃষ্ঠা ৪৯৬-৪৯৭, ক্রম ৬০৬)
+  // মন্তব্য: শেষে "বিষয়ভিত্তিক প্রশ্ন" (সিভিল ইঞ্জিনিয়ারিং টেকনিক্যাল, প্রশ্ন ২১-৩০, মান ৮×১০=৪০) ছিল কিন্তু উত্তর ছাপা হয়নি বলে বাদ দেওয়া হয়েছে
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q01", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "bangla", "topic": "শুদ্ধ বানান", "qno": 1, "marks": 2, "type": "table", "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["অশখ", "অশথ"], ["আর্দালি", "আরদালি"], ["শিরোপীড়া", "শিরঃপীড়া"], ["ঘ্রানেন্দ্রীয়", "ঘ্রাণেন্দ্রিয়"], ["চন্ঠী", "চণ্ডী"]]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q02", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "bangla", "topic": "বাগধারা", "qno": 2, "marks": 2, "type": "sub-parts", "question": "বাগধারাগুলোর সঠিক অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "q": "উলুখাগড়া", "a": "গুরুত্বহীন লোক"}, {"label": "খ", "q": "ঘোড়ার ডিম", "a": "অবাস্তব বস্তু"}, {"label": "গ", "q": "চক্ষুদান করা", "a": "চুরি করা"}, {"label": "ঘ", "q": "মগজধোলাই", "a": "ক্রমাগত প্রচারণা"}]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q03", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "english", "topic": "vocabulary", "qno": 3, "marks": 5, "type": "idiom", "question": "Please write the meaning and make sentences with the following words:", "parts": [{"label": "a", "phrase": "Accept", "meaning": "গ্রহণ করা", "example": "He gladly accepted the invitation."}, {"label": "b", "phrase": "Except", "meaning": "ব্যতীত/ছাড়া", "example": "Everyone was present except Rahim."}, {"label": "c", "phrase": "Credible", "meaning": "বিশ্বাসযোগ্য", "example": "His speech is credible."}, {"label": "d", "phrase": "Creditable", "meaning": "প্রশংসনীয়", "example": "Her performance in the exam was creditable."}]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q04", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "english", "topic": "grammar", "qno": 4, "marks": 5, "type": "sentence-change", "question": "Choose the correct sentence", "parts": [{"label": "a", "original": "He suffer fever.", "changed": "He is suffering from fever."}, {"label": "b", "original": "The football is a beautiful game.", "changed": "Football is a beautiful game."}, {"label": "c", "original": "He discussed on the matter.", "changed": "He discussed the matter."}, {"label": "d", "original": "Doesn't he have a meal?", "changed": "Correct sentence"}]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q05", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "english", "topic": "spelling", "qno": 5, "marks": 5, "type": "table", "question": "Identify the correct spelling:", "columns": ["Incorrect", "Correct"], "rows": [["Plentifull", "Plentiful"], ["Magnanimty", "Magnanimity"], ["Occassion", "Occasion"], ["Accoommodation", "Accommodation"]]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q06", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "english", "topic": "translation", "qno": 6, "marks": 5, "type": "translate", "question": "Translation English:", "parts": [{"label": "ক", "source": "আমার বন্ধু গতকাল এসেছিল কিন্তু আমার দেখা পায়নি।", "target": "My friend came yesterday but did not meet me."}]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q07", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "english", "topic": "grammar", "qno": 7, "marks": 5, "type": "sentence-change", "question": "Make changes of the following as directed:", "parts": [{"label": "a", "original": "It was really a hard thing to do. (Complex)", "changed": "It was a thing which was really hard to do."}, {"label": "b", "original": "Scientists were interested about the radioactivity emanating from the nuclear plant. (Voice Change)", "changed": "The radioactivity emanating from the nuclear plant interested scientists."}, {"label": "c", "original": "The doctor was kind. (Complex)", "changed": "It was the doctor who was kind."}, {"label": "d", "original": "Close-fisted...... write the meaning and sentence with it.", "changed": "কৃপণ - He is close-fisted man."}]},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q08", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "math", "topic": "জ্যামিতি", "qno": 8, "marks": 6, "type": "math", "question": "৫০ মিটার দৈর্ঘ্য এবং ৪০ মিটার প্রস্থবিশিষ্ট একটি আয়তাকার বাগানের ভিতরের চারদিকে সমান চওড়া একটি রাস্তা আছে। রাস্তাবাদে বাগানের ক্ষেত্রফল ১২০০ বর্গমিটার হলে, রাস্তাটি কত মিটার চওড়া?", "steps": ["মনে করি, রাস্তাটি x মিটার চওড়া।", "রাস্তা বাদে বাগানটির দৈর্ঘ্য (৫০ − ২x) মিটার এবং প্রস্থ (৪০ − ২x) মিটার", "∴ রাস্তা বাদে বাগানটির ক্ষেত্রফল = (৫০ − ২x) × (৪০ − ২x) বর্গমিটার", "প্রশ্নমতে, (৫০ − ২x) × (৪০ − ২x) = ১২০০", "বা, ২০০০ − ৮০x − ১০০x + ৪x² = ১২০০", "বা, ৪x² − ১৮০x + ৮০০ = ০", "বা, x² − ৪৫x + ২০০ = ০ [৪ দিয়ে ভাগ করে]", "বা, x² − ৫x − ৪০x + ২০০ = ০", "বা, x(x − ৫) − ৪০(x − ৫) = ০", "বা, (x − ৫)(x − ৪০) = ০", "∴ x − ৫ = ০ অথবা x − ৪০ = ০", "x − ৫ = ০ হলে, x = ৫", "x − ৪০ = ০ হলে, x = ৪০", "কিন্তু রাস্তাটি বাগানটির প্রস্থ ৪০ মিটার থেকে কম চওড়া হবে।", "x ≠ ৪০; ∴ x = ৫"], "answer": "রাস্তাটি ৫ মিটার চওড়া।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q09", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "math", "topic": "উৎপাদকে বিশ্লেষণ", "qno": 9, "marks": 6, "type": "math", "question": "x³ + 6x²y + 11xy² + 6y³ কে উৎপাদকে বিশ্লেষণ করুন।", "steps": ["x³ + 6x²y + 11xy² + 6y³", "= x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³", "= {x³ + 3.x².2y + 3.x.(2y)² + (2y)³} − xy² − 2y³", "= (x + 2y)³ − y²(x + 2y)", "= (x + 2y) {(x + 2y)² − y²}", "= (x + 2y) (x + 2y + y)(x + 2y − y)", "= (x + 2y) (x + 3y) (x + y)"], "answer": "(x + y)(x + 2y)(x + 3y)"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q10", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "math", "topic": "সূচক", "qno": 10, "marks": 6, "type": "math", "question": "দেখান যে, (aᵖ)^(q−r) . (aᑫ)^(r−p) . (aʳ)^(p−q) = 1", "steps": ["L.H.S = (aᵖ)^(q−r).(aᑫ)^(r−p).(aʳ)^(p−q)", "= a^(pq−pr).a^(qr−pq).a^(pr−qr)", "= a^(pq−pr+qr−pq+pr−qr)", "= a⁰", "= 1", "= R.H.S"], "answer": "প্রমাণিত"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q11", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "মুক্তিযুদ্ধ", "qno": 11, "marks": 0.55, "type": "paragraph", "question": "মুক্তিযুদ্ধের খেতাব কয়টি ও কী কী?", "answer": "বীরত্বসূচক খেতাব মোট ৪টি। বীরশ্রেষ্ঠ, বীর উত্তম, বীর বিক্রম, বীর প্রতীক।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q12", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 12, "marks": 0.55, "type": "paragraph", "question": "২০২৮ সালের বিশ্ব অলিম্পিক কোন দেশে অনুষ্ঠিত হবে?", "answer": "যুক্তরাষ্ট্রের লস অ্যাঞ্জেলেস শহরে।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q13", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 13, "marks": 0.55, "type": "paragraph", "question": "জামদানি শাড়িকে কত সালে জিআই পণ্য হিসেবে স্বীকৃতি প্রদান করা হয়?", "answer": "২০১৬ সালে।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q14", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 14, "marks": 0.55, "type": "paragraph", "question": "মাতামুহুরী নদীর উৎপত্তি স্থল কোথায় অবস্থিত?", "answer": "বান্দরবানের লামার মাইছার পর্বত (মিয়ানমার সীমান্ত)।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q15", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "gk-others", "qno": 15, "marks": 0.55, "type": "paragraph", "question": "ভূমিকম্পের কেন্দ্রের ঠিক সোজাসুজি উপরের ভূ-পৃষ্ঠের নাম কী?", "answer": "এপিসেন্টার (Epicenter) বা উপকেন্দ্র।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q16", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "বাংলাদেশ", "qno": 16, "marks": 0.55, "type": "paragraph", "question": "বাংলাদেশে সুন্দরবনের আয়তন কত বর্গকিলোমিটার?", "answer": "প্রায় ৬,০১৭ বর্গকিলোমিটার।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q17", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "gk-others", "qno": 17, "marks": 0.55, "type": "paragraph", "question": "রাষ্ট্রের উপাদানগুলো লিখুন।", "answer": "১. জনসমষ্টি ২. নির্দিষ্ট ভূখণ্ড ৩. সরকার ৪. সার্বভৌমত্ব"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q18", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 18, "marks": 0.55, "type": "paragraph", "question": "CIRDAP এর পূর্ণরূপ লিখুন।", "answer": "Centre on Integrated Rural Development for Asia and the Pacific."},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q19", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "কম্পিউটার", "qno": 19, "marks": 0.55, "type": "paragraph", "question": "Bandwidth বলতে কী বুঝায়?", "answer": "ডাটা প্রবাহের হারকে Bandwidth বলে।"},
+
+  {"id": "job-2025-ncc-sub-asst-engineer-civil-q20", "examId": "job-2025-ncc-sub-asst-engineer-civil", "subject": "general-knowledge", "topic": "আন্তর্জাতিক", "qno": 20, "marks": 0.55, "type": "paragraph", "question": "২০২৬ সালের জলবায়ু সম্মেলন (COP-৩১) কোথায় অনুষ্ঠিত হবে?", "answer": "আনতালিয়া, তুরস্ক।"},
+
+  // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: জাতীয় আইনগত সহায়তা প্রদান সংস্থা — বেঞ্চ সহকারী (job-2025-nlasp-bench-asst)
+  // সোর্স: Self_job_solution_book_part_5.rar (বইয়ের পৃষ্ঠা ৩৮৫-৩৮৭, ক্রম ৫৭১)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-nlasp-bench-asst-q01", "examId": "job-2025-nlasp-bench-asst", "subject": "bangla", "topic": "ভাবসম্প্রসারণ", "qno": 1, "marks": 10, "type": "paragraph", "question": "ভাব সম্প্রসারণ লিখুন: (যে-কোনো ১টি)\nক) অভাব অল্প হলে দুঃখও অল্প হয়ে থাকে\nখ) উত্তম নিশ্চিন্তে চলে অধমের সাথে, তিনিই মধ্যম যিনি চলেন তফাতে", "answer": "অভাব অল্প হলে দুঃখও অল্প হয়ে থাকে\n\nদুঃখ আসে অভাবের ফলে। অভাব ও দুঃখ আনুপাতিক হারে বাড়ে ও কমে। অর্থাৎ অভাব যদি বেশি হয় তাহলে দুঃখও বেশি হবে, আবার অভাব কম হলে দুঃখও কম হবে। মানুষের অভাবের কোনো শেষ নেই। একটি অভাব পূরণের পর আর একটি অভাবের জন্ম হয়। মানুষের জীবনধারণের জন্য অনেক কিছু প্রয়োজন হয়। কিন্তু তার সবকিছু সব সময় করায়ত্ত করা সম্ভব নয়। এর ফলে অভাবের সৃষ্টি হয়। মানুষের অভাব সাধারণত দু'ধরনের হয়ে থাকে। প্রথমত মৌলিক অভাব, দ্বিতীয়ত মৌলিক বস্তুর বাইরে মানুষ অন্যান্য বিলাস দ্রব্যের জন্য যে অভাব বোধ করে। মৌলিক অভাব হচ্ছে জীবনধারণের জন্য যা অপরিহার্য। বেঁচে থাকতে হলে এগুলো খুবই প্রয়োজন। দ্বিতীয় অভাবটি হচ্ছে আরাম-আনন্দে জীবন উপভোগ করার জন্য প্রয়োজন। আর এ অভাবগুলো মানুষ যখন পূরণ করতে পারে না তখনই দুঃখ আসে। এ জগতে যার চাহিদার পরিমাণ বেশি, সে যা পেয়েছে তা নিয়ে তুষ্ট নয়, তার মধ্যে দুঃখও বেশি। না পাবার বেদনা তাকে সব সময় পীড়িত করে, তাকে ঠেলে দেয় দুঃখের সাগরে। অপরপক্ষে যার চাহিদা কম তার দুঃখও কম। কারণ না পাবার বেদনায় তাকে জর্জরিত হতে হয় না।\n\nকোনো মানুষ তার অভাব পূরণে ব্যর্থ হলে মনে দুঃখবোধ জাগ্রত হয়। তাই অভাব যত কম হয় ততই ভালো। সেজন্য চাহিদাবোধ কম হলে আমাদের জীবনে দুঃখও কম আসবে।\n\nউত্তম নিশ্চিন্তে চলে অধমের সাথে, তিনিই মধ্যম যিনি চলেন তফাতে\n\nউত্তম চরিত্রের অধিকারীর মনোবল এত দৃঢ় যে সে অধমের সাথে চলতে দ্বিধা করে না, ভয় পায় না কিন্তু যার মনোবল ক্ষীণ সে ছিটকে পড়ার ভয়ে অধমের কাছ থেকে দূরে থাকে।\n\nউত্তম আর অধমের মধ্যে যে পার্থক্য ও তফাৎ রয়েছে, মধ্যমের সাথে সে তফাৎ ও পার্থক্য অনেক কম। কেননা, উত্তম ও অধমের মধ্যস্থলেই মধ্যমের স্থান। পথচলা ও জীবনাচরণের ক্ষেত্রেও উত্তম মধ্যম ও অধমের মধ্যে ভিন্নতা রয়েছে। এদের মানসিকতাও ভিন্ন। যে উত্তম বা শ্রেষ্ঠ, অধমের সঙ্গে পথ চলতে তার কোনো বাধা নেই। কারণ, তার কোনো সংশয় নেই এবং হীনম্মন্যতা নেই। সে নিজের অবস্থান সম্পর্কে নিশ্চিত। তার ভেতরে যে স্পষ্ট, বাইরেও তেমনি স্পষ্ট। অধমের সাথে পথ চলতে উত্তমের মনে কোনো সংশয় থাকে না কারণ, অধমের সাথে তার পার্থক্য ও দূরত্ব খুবই স্পষ্ট। তার পদস্খলনের সম্ভাবনাও সেখানে থাকে না। কিন্তু সমস্যা হলো মধ্যমের। কারণ, সে যেমন উত্তমের নিকটবর্তী, তেমনি নিকটবর্তী অধমের। সে উত্তম হতে চায়, কিন্তু উত্তম হওয়ার সাধ্য তার নেই। আবার অধম হতে চায় না, মোটেও চায় না। অসলে এই মধ্যম শ্রেণির মানুষের দোদুল্যমানতা ও হীনতাবোধ বেশি। কারণ, এরা ইচ্ছে করলেই উত্তম হতে পারে না; কিন্তু পদস্খলন হলেই সে অধমের দলে ভিড়ে যাবে। যে কারণে মধ্যম স্তরের মানুষ নিজেকে আলাদা করে রাখে। মধ্যমের সুবিধাবাদও বেশি। সামাজিক স্তরে এদের সংকট ও সমস্যাও অনেক। এদের হারানোর ভয় থাকে, উত্তম বা অধমের সে ভয় নেই।\n\nআমাদের সমাজে বর্তমানে উত্তম চরিত্রের মানুষের সংখ্যা অতি নগণ্য। তাই অধমের সংখ্যাই বেড়ে চলেছে। কারণ উত্তমের সহচর্য পায় না বলে অধমের উত্তরণ ঘটে না। অন্যদিকে যারা মধ্যম তারা নিজেদের আড়াল রেখে এক সময় চলে যায় অধমের দলে।"},
+
+  {"id": "job-2025-nlasp-bench-asst-q02", "examId": "job-2025-nlasp-bench-asst", "subject": "bangla", "topic": "শব্দার্থ ও বাগধারা", "qno": 2, "marks": 10, "type": "short-qa", "question": "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন।", "parts": [{"label": "ক", "q": "'ইচ্ছা' শব্দের দুটি সমার্থক শব্দ লিখুন।", "a": "শখ, আশা"}, {"label": "খ", "q": "'পায়া ভারী' বাগধারাটির অর্থ উল্লেখে বাক্য প্রয়োগ করুন।", "a": "অহংকারী (মজিদ মিয়া একজন পায়া ভারী লোক)"}, {"label": "গ", "q": "'আমি অহনির্শ সে কথাই ভেবেছি' বাক্যটি শুদ্ধ করে লিখুন।", "a": "আমি অহর্নিশ সে কথাই ভেবেছি"}, {"label": "ঘ", "q": "'যিনি বিদ্বান তিনি সর্বত্র আদরণীয়' বাক্যটিকে সরল বাক্যে রূপান্তর কর।", "a": "বিদ্বান সর্বত্রই আদরণীয়"}, {"label": "ঙ", "q": "'আয়কর' শব্দটির ব্যাসবাক্য উল্লেখে কোন সমাস তা লিখুন।", "a": "আয়ের উপর কর (মধ্যপদলোপী কর্মধারয়)"}]},
+
+  {"id": "job-2025-nlasp-bench-asst-q03", "examId": "job-2025-nlasp-bench-asst", "subject": "bangla", "topic": "অনুবাদ", "qno": 3, "marks": 10, "type": "translate", "question": "বাংলায় অনুবাদ করুন:", "parts": [{"label": "", "source": "Work is life. It is the true source of health and happiness. Man cannot be altogether idle. They must have something to do or to think upon. An idle man is busy with evil thoughts and goes to ruin.", "target": "কর্মই জীবন। এটা স্বাস্থ্য ও সুখের প্রকৃত উৎস। মানুষ পুরোপুরি অলস থাকতে পারে না। তাদের অবশ্যই কিছু না কিছু করা বা চিন্তা করার মতো কিছু থাকতে হবে। অলস মানুষ কুচিন্তা নিয়ে ব্যস্ত থাকে এবং সর্বনাশ হয়ে যায়।"}]},
+
+  {"id": "job-2025-nlasp-bench-asst-q04", "examId": "job-2025-nlasp-bench-asst", "subject": "english", "topic": "paragraph", "qno": 4, "marks": 10, "type": "paragraph", "question": "Write a paragraph on any one of the following:\na) Unemployment\nb) Environment pollution", "answer": "Environment Pollution\n\nEnvironment pollution is one of the most serious problems the world is facing today. It refers to the contamination of air, water, and soil by harmful substances, which disturbs the natural balance. Industrial waste, vehicle emissions, plastic use, and deforestation are the main causes of pollution. Air pollution leads to respiratory diseases, while water pollution causes waterborne illnesses and destroys aquatic life. Soil pollution reduces the fertility of land and affects crop production. Pollution also contributes to climate change, causing global warming and unpredictable weather patterns. To reduce environmental pollution, we must plant more trees, reduce the use of plastic, control industrial waste, and use eco-friendly means of transport. Government and citizens must work together to protect the environment. A clean and healthy environment is essential for the survival of all living beings on earth."},
+
+  {"id": "job-2025-nlasp-bench-asst-q05", "examId": "job-2025-nlasp-bench-asst", "subject": "english", "topic": "grammar", "qno": 5, "marks": 10, "type": "short-qa", "question": "Fill in the blanks with appropriate words:", "parts": [{"label": "a", "q": "Water..... no colour. (has/have)", "a": "has"}, {"label": "b", "q": "He is............ M.A in English. (a/an)", "a": "an"}, {"label": "c", "q": "I am accustomed. ....such a life (to/with)", "a": "to"}, {"label": "d", "q": "The man........I invited is my friend. (who/whom)", "a": "Whom"}, {"label": "e", "q": "The train stops......all stations. (at/in)", "a": "at"}, {"label": "f", "q": "He has sold all his........(furniture/furnitures)", "a": "furniture"}]},
+
+  {"id": "job-2025-nlasp-bench-asst-q06", "examId": "job-2025-nlasp-bench-asst", "subject": "english", "topic": "translation", "qno": 6, "marks": 10, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "বাবুল রাজুর চেয়ে লম্বা।", "target": "Babul is taller than Raju."}, {"label": "খ", "source": "সে ও তার বন্ধু এখানে এসেছে।", "target": "He and his friend have come here."}, {"label": "গ", "source": "পদার্থবিদ্যা বিজ্ঞানের একটি শাখা।", "target": "Physics is a branch of science."}, {"label": "ঘ", "source": "আমরা পাঁচ বছর যাবৎ এখানে বাস করছি।", "target": "We have been living here for five years."}, {"label": "ঙ", "source": "তোমার ঘড়িতে সময় কত?", "target": "What is the time by your watch?"}, {"label": "চ", "source": "রবিন সাইকেল চড়তে পারে না।", "target": "Robin does not know how to ride a bicycle."}]},
+
+  {"id": "job-2025-nlasp-bench-asst-q07", "examId": "job-2025-nlasp-bench-asst", "subject": "math", "topic": "গণিত সমস্যা", "qno": 7, "marks": 10, "type": "math", "question": "নিচের প্রশ্নগুলোর উত্তর দিন:\nক) একজন বই বিক্রেতা একটি বই এর বিক্রয় মূল্যের উপর ৫% ছাড় দিয়ে ক্রয়মূল্যের উপর ২৫% লাভ করলে যদি ঐ বইয়ের ক্রয়মূল্য ৩৮০ টাকা হয়ে থাকে তবে ঐ বইয়ের বিক্রয়মূল্য কত ছিল?\nখ) সম্পূর্ণ খালি একটি চৌবাচ্চা একটি পাইপ দিয়ে ৫ ঘণ্টায় সম্পূর্ণ ভর্তি করা যায়। দ্বিতীয় একটি পাইপ দিয়ে চৌবাচ্চাটি পূর্ণ করতে ৩ ঘণ্টা সময় লাগে। দুইটি পাইপ একসাথে ব্যবহার করে চৌবাচ্চাটির দুই-তৃতীয়াংশ পূর্ণ করতে কত সময় লাগবে?\nগ) a+b=৭ এবং ab=১০ হলে, a² + b² + 3ab= কত?", "steps": ["ক) ২৫% লাভে ক্রয়মূল্য ১০০ টাকা হলে বিক্রয়মূল্য ১২৫ টাকা", "৩৮০ টাকা ক্রয়মূল্যে বিক্রয়মূল্য = (১২৫ × ৩৮০)/১০০ = ৪৭৫ টাকা", "৫% ছাড়ে বিক্রয়মূল্য = ১০০ − ৫ = ৯৫ টাকা (লিখিত মূল্যের ভিত্তিতে)", "বিক্রয়মূল্য ৯৫ টাকা হলে লিখিত মূল্য ১০০ টাকা", "বিক্রয়মূল্য ৪৭৫ টাকা হলে লিখিত মূল্য = (১০০ × ৪৭৫)/৯৫ = ৫০০ টাকা", "খ) ১ম পাইপে ১ ঘণ্টায় ভর্তি হয় ১/৫ অংশ", "২য় পাইপে ১ ঘণ্টায় ভর্তি হয় ১/৩ অংশ", "উভয় পাইপ দ্বারা ১ ঘণ্টায় ভর্তি হয় (১/৫ + ১/৩) = ৮/১৫ অংশ", "২/৩ অংশ ভর্তি হতে সময় লাগে = (২/৩) ÷ (৮/১৫) = (২/৩) × (১৫/৮) = ৫/৪ ঘণ্টা", "গ) a² + b² + 3ab = (a+b)² − 2ab + 3ab = (a+b)² + ab", "= ৭² + ১০ = ৪৯ + ১০ = ৫৯"], "answer": "ক) বিক্রয়মূল্য ৫০০ টাকা। খ) ৫/৪ ঘণ্টা। গ) ৫৯।"},
+
+  {"id": "job-2025-nlasp-bench-asst-q08", "examId": "job-2025-nlasp-bench-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 8, "marks": 10, "type": "short-qa", "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিন:", "parts": [{"label": "ক", "q": "পানামা খাল কোন দুটি মহাদেশকে যুক্ত করেছে?", "a": "উত্তর আমেরিকা ও দক্ষিণ আমেরিকা"}, {"label": "খ", "q": "ক্যাম্প ডেভিড চুক্তি কোন দুটি দেশের মধ্যে স্বাক্ষরিত হয়?", "a": "মিশর ও ইসরাইল"}, {"label": "গ", "q": "ILO এর সদর দপ্তর কোথায়?", "a": "জেনেভা, সুইজারল্যান্ড"}, {"label": "ঘ", "q": "সুনামী কোন দেশী শব্দ ও অর্থ কি?", "a": "জাপানি শব্দ, অর্থ পোতাশ্রয়ের ঢেউ"}, {"label": "ঙ", "q": "অন্ধকারাচ্ছন্ন মহাদেশ বলা হয় কোন মহাদেশকে?", "a": "আফ্রিকা মহাদেশ"}, {"label": "চ", "q": "বাংলাদেশে জিআই স্বীকৃত পাওয়া মোট পণ্য সংখ্যা কত?", "a": "৬২টি (সর্বশেষ- কালিগঞ্জের তোয়ালে)"}, {"label": "ছ", "q": "বাংলাদেশের পরিসংখ্যান ব্যুরো এর সাম্প্রতিক জরীপে কোন বিভাগে জমিতে লাভ বেশি বলে তথ্য উঠে এসেছে?", "a": "খুলনা"}, {"label": "জ", "q": "জুলাই স্মৃতি উদ্যান কোথায় অবস্থিত?", "a": "চট্টগ্রাম"}, {"label": "ঝ", "q": "জাতিসংঘে ব্যবহারের জন্য UNDP যে বাংলা ফন্ট চালু করেছে তার নাম কি?", "a": "UN Bangla"}, {"label": "ঞ", "q": "আশ্রয়নবিরোধী আট স্তম্ভ কোথায় স্থাপন করা হয়েছে?", "a": "পলাশী চত্বর, ঢাকা বিশ্ববিদ্যালয়"}, {"label": "ট", "q": "বাংলাদেশের দীর্ঘতম একক রেলসেতু কোনটি?", "a": "যমুনা রেলসেতু"}, {"label": "ঠ", "q": "বিশ্বের কোন দেশের নারীরা প্রথম ভোটাধিকার পায়?", "a": "নিউজিল্যান্ড"}, {"label": "ড", "q": "বাংলাদেশের একমাত্র দ্বীপ জেলা কোনটি?", "a": "ভোলা"}, {"label": "ঢ", "q": "তিস্তা কোন নদীর উপনদী?", "a": "ব্রহ্মপুত্র"}, {"label": "ণ", "q": "শীতল যুদ্ধের অবসানের পর কোন সংস্থাটি তার প্রাসঙ্গিকতা হারিয়ে ফেলেছে বলে মনে করা হয়?", "a": "সোভিয়েত ইউনিয়ন"}]},
 
   // ══════════════════════════════════════════════════════════
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন

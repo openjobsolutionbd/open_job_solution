@@ -680,5 +680,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 20,
   },
+  {
+    id: "job-2025-agri-info-office-asst",
+    ministry: "কৃষি তথ্য সার্ভিস",
+    post: "কম্পিউটার অপারেটর/অফিস সহকারী",
+    date: "2025-08-09",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 13,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

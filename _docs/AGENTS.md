@@ -26,6 +26,18 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 
 `enforce_admins: true` করা আছে — admin/owner token দিয়েও এই নিয়ম bypass করা যায় না, কেউ ভুলবশত সরাসরি push করলেও GitHub সেটা প্রত্যাখ্যান করবে।
 
+## 🔄 রিপো ঘনঘন আপডেট হয় — push-এর ঠিক আগে অবশ্যই re-check করুন
+
+একাধিক সেশন/অ্যাকাউন্ট সমান্তরালে কাজ করায়, branch তৈরির পর কাজ শেষ হতে হতে `main` এগিয়ে যেতে পারে — এমনকি একই টাস্কের মাঝেও একাধিকবার এটা ঘটতে পারে। তাই শুধু কাজ শুরুর আগে একবার চেক করাই যথেষ্ট নয়; **push/merge করার প্রতিটা ধাপে** আবার যাচাই করুন:
+
+1. **branch তৈরির আগে**: `session_status.sh` চালান (উপরে বাধ্যতামূলক ধাপ)।
+2. **push করার ঠিক আগে** (এডিটিং শেষে): `git fetch origin main` চালান। remote এগিয়ে থাকলে push-এর আগেই `git rebase origin/main` করুন — conflict এলে resolve করুন, শুধু এক পক্ষ blindly নেবেন না।
+3. **ডেটা ফাইল (`job-solution.js`, `exam-archive.js`, `PROGRESS.md` ইত্যাদি) সংক্রান্ত rebase-এর পর**: আপনার লেখা কোনো সংখ্যা/count/সারাংশ (যেমন "মোট X এক্সাম, Y প্রশ্ন") থাকলে সেটা **script দিয়ে আবার গণনা করে** নিশ্চিত হন এখনো সঠিক আছে কিনা — rebase-এ অন্য সেশনের যোগ করা ডেটা মিশে গিয়ে সংখ্যা বদলে যেতে পারে (এটা আগে দুইবার ঘটেছে)।
+4. **PR খোলার পর, merge করার ঠিক আগে**: PR-এর `mergeable_state` আবার চেক করুন। `behind` বা `dirty` দেখালে rebase করে (বা `PUT /pulls/{number}/update-branch`) আবার push করুন, `clean` না হওয়া পর্যন্ত merge করবেন না। merge করার ঠিক আগে required check (`validate`) পাস করেছে কিনা সেটাও শেষবার নিশ্চিত করুন।
+5. rebase-এর পর push করতে **সবসময় `git push --force-with-lease`** ব্যবহার করুন, কখনো `--force` না — অন্য কারো কাজ ভুলবশত overwrite হওয়া এড়াতে।
+
+সংক্ষেপে: "চেক করেছিলাম তো একটু আগে" — যথেষ্ট না। রিপো এত ঘনঘন বদলায় যে প্রতিটা push/merge-এর ঠিক আগমুহূর্তেই freshly যাচাই করা লাগবে।
+
 ## ⚡ কনটেক্সট-টোকেন সাশ্রয়
 
 বড় ফাইল (`job-solution.js`, `bcs-mcq`/`primary-mcq` ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না।

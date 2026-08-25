@@ -107,7 +107,7 @@ function renderAnswer(q) {
             <span class="idiom-phrase">${escHtml(p.phrase)}</span>
             <span class="idiom-eq"> = </span>
             <span class="idiom-meaning">${escHtml(p.meaning)}</span>
-            ${p.example ? `<div class="idiom-example">✍ ${escHtml(p.example)}</div>` : ''}
+            ${p.example ? `<div class="idiom-example">${escHtml(p.example)}</div>` : ''}
           </div>
         </div>`).join('')}</div>`;
 

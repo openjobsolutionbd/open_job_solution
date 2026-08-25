@@ -209,7 +209,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 
 /* Translate */
 .trans-source { color: var(--text-2); }
-.trans-arrow { color: var(--text-3); font-size: 0.85rem; margin: 2px 0; }
+.trans-arrow { color: var(--text-3); font-size: 0.85rem; }
 .trans-target { font-weight: 600; color: var(--text); }
 
 /* Fill gaps */

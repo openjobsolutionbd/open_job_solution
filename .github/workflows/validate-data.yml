@@ -21,6 +21,9 @@ jobs:
       - name: Validate question data
         run: node _dev/validate_data.js
 
+      - name: Check governance-doc consistency
+        run: node _dev/check_docs_consistency.js
+
       - name: Install spellcheck dependencies
         run: npm install --prefix _dev
 

@@ -5060,6 +5060,71 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-bac-office-asst-typist-q12", "examId": "job-2025-bac-office-asst-typist", "subject": "math", "topic": "বীজগণিত", "qno": 12, "marks": 10, "type": "math", "question": "x² − √3x + 1 = 0 হলে, x³ + 1/x³ এর মান কত?", "steps": ["দেওয়া আছে, x² − √3 x + 1 = 0", "বা, x² + 1 = √3x", "বা, x²/x + 1/x = √3", "∴ x + 1/x = √3", "প্রদত্ত রাশি: x³ + 1/x³ = (x + 1/x)³ − 3.x.(1/x)(x + 1/x)", "= (√3)³ − 3√3", "= 3√3 − 3√3", "= 0"], "answer": "0 (Answer)"},
 
   // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: কারিগরি শিক্ষা অধিদপ্তর — ক্যাশিয়ার (job-2025-dte-cashier)
+  // সোর্স: Self_job_solution_book_part_5.rar (বইয়ের পৃষ্ঠা ৩১৭-৩১৯, ক্রম ৫৪৪)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-dte-cashier-q01", "examId": "job-2025-dte-cashier", "subject": "bangla", "topic": "এক কথায় প্রকাশ", "qno": 1, "marks": 4, "type": "short-qa", "question": "এক কথায় প্রকাশ করুন:", "parts": [{"label": "ক", "q": "যা দীপ্তি পাচ্ছে", "a": "দেদীপ্যমান"}, {"label": "খ", "q": "মুক্তি পেতে ইচ্ছুক", "a": "মুমুক্ষু"}, {"label": "গ", "q": "নিন্দা করার ইচ্ছা", "a": "জুগুপ্সা"}, {"label": "ঘ", "q": "হাতির শাবক", "a": "করভ"}]},
+
+  {"id": "job-2025-dte-cashier-q02", "examId": "job-2025-dte-cashier", "subject": "bangla", "topic": "অর্থসহ বাক্য রচনা", "qno": 2, "marks": 4, "type": "short-qa", "question": "অর্থসহ বাক্য রচনা করুন:", "parts": [{"label": "ক", "q": "লেফাফা দুরস্ত", "a": "বাইরে পরিপাটি"}, {"label": "খ", "q": "ছেড়ে বালি", "a": "আশার নৈরাশ্য"}, {"label": "গ", "q": "নয় ছয়", "a": "অপচয়"}, {"label": "ঘ", "q": "ফপর দালালি", "a": "অতিরিক্ত চালবাজি"}, {"label": "ঙ", "q": "হাতের পাঁচ", "a": "শেষ সম্বল"}]},
+
+  {"id": "job-2025-dte-cashier-q03", "examId": "job-2025-dte-cashier", "subject": "bangla", "topic": "সন্ধি বিচ্ছেদ", "qno": 3, "marks": 5, "type": "short-qa", "question": "সন্ধি বিচ্ছেদ করুন:", "parts": [{"label": "ক", "q": "বনৌষধি", "a": "বন + ওষধি"}, {"label": "খ", "q": "মহর্ষি", "a": "মহা + ঋষি"}, {"label": "গ", "q": "সঞ্চয়", "a": "সম্ + চয়"}, {"label": "ঘ", "q": "ষষ্ঠ", "a": "ষষ্ + থ"}, {"label": "ঙ", "q": "গায়ক", "a": "গৈ + অক"}]},
+
+  {"id": "job-2025-dte-cashier-q04", "examId": "job-2025-dte-cashier", "subject": "bangla", "topic": "প্রত্যয়", "qno": 4, "marks": 5, "type": "short-qa", "question": "প্রত্যয় লিখুন (৫টি করে):", "parts": [{"label": "ক", "q": "পৃথিবী", "a": "ভূ, ধরণী, ধরিত্রী, বসুন্ধরা, মেদিনী, পৃথ্বী, ভুবন, জগৎ, অদিতি, ক্ষিতি"}, {"label": "খ", "q": "বৃক্ষ", "a": "উদ্ভিদ, বিটপী, পল্লবী, মহীরুহ, অটবী, তরু"}]},
+
+  {"id": "job-2025-dte-cashier-q05", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "preposition", "qno": 5, "marks": 3, "type": "short-qa", "question": "Fill in the blank with Preposition.", "parts": [{"label": "a", "q": "He has none to help him….. you.", "a": "but"}, {"label": "b", "q": "He is slow………figures.", "a": "at"}, {"label": "c", "q": "He has been ill….. Sunday last.", "a": "since"}]},
+
+  {"id": "job-2025-dte-cashier-q06", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "transformation", "qno": 6, "marks": 3, "type": "short-qa", "question": "Transformation of sentences:", "parts": [{"label": "a", "q": "Was he not a villain to do such a deed? (Assertive)", "a": "He was a villain to do such a deed."}, {"label": "b", "q": "He said, \"I shall go to Delhi tomorrow\". (Indirect)", "a": "He said that he would go to Delhi the next day."}, {"label": "c", "q": "A Child likes only sweets (Negative).", "a": "A child likes nothing but sweets."}]},
+
+  {"id": "job-2025-dte-cashier-q07", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "translation", "qno": 7, "marks": 3, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "লোকটি যেমন বোকা তেমন গরিব।", "target": "This man is as poor as he is stupid."}, {"label": "খ", "source": "নিজেকে তুমি কী মনে কর?", "target": "What do you think about yourself?"}, {"label": "গ", "source": "আমি একটি ভালো চাকুরি পেতে ইচ্ছুক।", "target": "I want to get a good job."}]},
+
+  {"id": "job-2025-dte-cashier-q08", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "idioms and phrases", "qno": 8, "marks": 3, "type": "short-qa", "question": "Make sentences using the following idioms and phrases:", "parts": [{"label": "a", "q": "Come into question = সন্দেহ হওয়া", "a": "The results of the study have come into question"}, {"label": "b", "q": "At round rate = নির্ধারিত মূল্য", "a": "They sell the book at a round rate."}, {"label": "c", "q": "Black and blue = প্রচণ্ড প্রহার করা", "a": "They beat the thief black and blue"}]},
+
+  {"id": "job-2025-dte-cashier-q09", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "verb form", "qno": 9, "marks": 4, "type": "short-qa", "question": "Use right form of verbs.", "parts": [{"label": "a", "q": "I wish I (be) in the occasion.", "a": "were"}, {"label": "b", "q": "Bengali (speak) in Calcutta also.", "a": "is spoken"}, {"label": "c", "q": "Two years (pass) since he left home.", "a": "have passed"}]},
+
+  {"id": "job-2025-dte-cashier-q10", "examId": "job-2025-dte-cashier", "subject": "english", "topic": "paragraph", "qno": 10, "marks": 8, "type": "paragraph", "question": "Write a Paragraph: Fourth industrial Revolution", "answer": "The Fourth Industrial Revolution, also known as Industry 4.0, refers to the current era of rapid technological advancement that is fundamentally transforming the way we live, work and interact. It builds upon the digital revolution and is characterized by the fusion of technologies such as artificial intelligence, robotics, the Internet of Things, big data, and automation. Unlike previous industrial revolutions that were driven by steam power, electricity and computers, the fourth one blurs the lines between physical, digital and biological spheres. Industries are increasingly adopting smart technologies to improve efficiency, reduce costs and enhance productivity. This revolution is creating new job opportunities in technology-driven sectors, while also making some traditional jobs obsolete, which calls for reskilling of the workforce. For a developing country like Bangladesh, embracing the Fourth Industrial Revolution is crucial to remain competitive in the global economy. The government and private sector must invest in digital infrastructure, technical education and innovation to ensure that the nation can fully benefit from this transformative era."},
+
+  {"id": "job-2025-dte-cashier-q11", "examId": "job-2025-dte-cashier", "subject": "math", "topic": "সমীকরণ", "qno": 11, "marks": 6, "type": "math", "question": "বনভোজনে যাওয়ার জন্য ৫৭০০ টাকায় একটি বাস ভাড়া করা হলো এবং শর্ত হলো যে, প্রত্যেক যাত্রী সমান ভাড়া বহন করবে। ৫ জন যাত্রী না যাওয়ায় মাথাপিছু ভাড়া ৩ টাকা বৃদ্ধি পেল। বাসে কতজন যাত্রী গিয়েছিল।", "steps": ["মনে করি, মোট যাত্রী সংখ্যা x জন।", "৫ জন যাত্রী না যাওয়ায় যাত্রী গিয়েছিল = (x − ৫) জন", "প্রশ্নমতে, 5700/x + 3 = 5700/(x−5)", "বা, (5700 + 3x)/x = 5700/(x−5)", "বা, 3(1900+x)/x = 1900/(x−5)", "বা, (1900+x)/x = 1900/(3(x−5)) [৩ দ্বারা ভাগ করে]", "বা, 1900x + x² − 9500 − 5x = 1900x", "বা, x² − 100x + 9500 − 9500= 0", "বা, x(x − 100) + 95(x − 100) = 0", "বা, (x − 100) (x + 95) = 0", "বা, x − 100 = 0 অথবা, x + 95 = 0", "∴ x = 100 [যাত্রী সংখ্যা ঋণাত্মক হতে পারে না]", "∴ মোট যাত্রী সংখ্যা ছিল ১০০ জন", "∴ যাত্রী গিয়েছিল = (১০০ − ৫) জন = ৯৫ জন।"], "answer": "৯৫ জন।"},
+
+  {"id": "job-2025-dte-cashier-q12", "examId": "job-2025-dte-cashier", "subject": "math", "topic": "মুনাফা", "qno": 12, "marks": 6, "type": "math", "question": "একজন ব্যক্তি ব্যাংকে ৪০০০ টাকা রেখে ৪ বছর পর দেখলো মুনাফাসহ ব্যাংকে ৫২৮০ টাকা আছে। আর কত বছর পর সে তার একাউন্টে ৮৮০০ টাকা দেখতে পাবে?", "steps": ["এখানে আসল = ৪০০০", "৪ বছরের মুনাফা = ৫২৮০ − ৪০০০ = ১২৮০ টাকা", "৮৮০০ টাকা জমা হলে সুদ = ৮৮০০ − ৪০০০ = ৪৮০০ টাকা", "১২৮০ টাকা সুদ হয় ৪ বছরে", "∴ ১ \" \" \" 4/1280", "∴ ৪৮০০ \" \" \" (4×4800)/1280", "= ১৫ বছরে", "∴ (১৫ − ৪) = ১১ বছর পর তার একাউন্টে ৮৮০০ টাকা দেখতে পাবে।"], "answer": "১১ বছর"},
+
+  {"id": "job-2025-dte-cashier-q13", "examId": "job-2025-dte-cashier", "subject": "math", "topic": "অনুপাত", "qno": 13, "marks": 6, "type": "math", "question": "ক, খ ও গ ২৮০০ টাকা নিয়ে ব্যবসা শুরু করল। ক ও খ এর মূলধন সমান কিন্তু 'গ' এর মূলধন ২০০ টাকা কম। মোট ৫৬০ টাকা লাভ হলে 'গ' কত টাকা লাভ পাবে?", "steps": ["মনে করি, ক এর মূলধন p", "খ এর মূলধন p", "গ এর মূলধন = (p − ২০০) টাকা", "প্রশ্নমতে, p + p + p − ২০০ = ২৮০০", "বা, ৩p = ৩০০০", "∴ p = ১০০০", "সুতরাং ক এর মূলধন = ১০০০ টাকা", "খ এর মূলধন = ১০০০ টাকা", "গ এর মূলধন (১০০০ − ২০০) = ৮০০ টাকা", "ক, খ ও গ এর মূলধনের অনুপাত = ১০০০ : ১০০০ : ৮০০ = ৫ : ৫ : ৪", "অনুপাতের যোগফল = ১৪", "'গ' এর লাভ = ৫৬০ টাকার ৪/১৪ অংশ = ১৬০ টাকা"], "answer": "১৬০ টাকা"},
+
+  {"id": "job-2025-dte-cashier-q14", "examId": "job-2025-dte-cashier", "subject": "math", "topic": "রম্বস", "qno": 14, "marks": 6, "type": "math", "question": "একটি রম্বসের পরিসীমা ১৮০ সে.মি. এবং ক্ষুদ্রতম কর্ণ ৫৪ সে.মি.। এর অপর কর্ণ এবং ক্ষেত্রফল নির্ণয় করুন।", "steps": ["রম্বসের পরিসীমা = ১৮০ সে.মি.", "রম্বসের এক বাহুর দৈর্ঘ্য = ১৮০ ÷ ৪ = ৪৫ সে.মি.", "আমরা জানি, রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে।", "সুতরাং রম্বসের অপর কর্ণের অর্ধ দৈর্ঘ্য = √(৪৫² − ২৭²) = √১২৯৬ = ৩৬ সে.মি.", "সম্পূর্ণ অপর কর্ণের দৈর্ঘ্য = ৩৬ × ২ = ৭২ সে.মি.", "রম্বসের ক্ষেত্রফল = (১/২) × কর্ণদ্বয়ের গুণফল = (১/২) × ৫৪ × ৭২ = ১৯৪৪"], "answer": "অপর কর্ণ ৭২ সে.মি., ক্ষেত্রফল ১৯৪৪ বর্গ সে.মি."},
+
+  {"id": "job-2025-dte-cashier-q15", "examId": "job-2025-dte-cashier", "subject": "math", "topic": "বীজগণিত", "qno": 15, "marks": 6, "type": "math", "question": "a = √3 + √2 হলে, a³ + 1/a³ = কত?", "steps": ["দেওয়া আছে, a = √3 + √2", "∴ 1/a = 1/(√3+√2) = (√3−√2)/((√3+√2)(√3−√2)) [লব ও হরকে (√3−√2) দ্বারা গুণ করে]", "= (√3−√2)/((√3)²−(√2)²)", "= (√3−√2)/(3−2)", "= √3 − √2", "∴ a + 1/a = (√3+√2) + (√3−√2) = √3+√2+√3−√2 = 2√3", "এখন, a³ + 1/a³ = (a+1/a)³ − 3.a.(1/a)(a+1/a)", "= (2√3)³ − 3(2√3)", "= 2³.(√3)³ − 3×2√3", "= 8.3√3 − 6√3", "= 24√3 − 6√3", "= 18√3"], "answer": "18√3 (Answer)"},
+
+  {"id": "job-2025-dte-cashier-q16", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 1, "type": "short-qa", "question": "ট্রেম্পল ট্রি কি?", "answer": "শ্রীলংকার প্রধানমন্ত্রীর সরকারি বাসভবনের নাম।"},
+
+  {"id": "job-2025-dte-cashier-q17", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "সংক্ষিপ্ত রূপ", "qno": 17, "marks": 1, "type": "short-qa", "question": "পূর্ণরূপ লিখুন: SPARSO, ECNEC", "answer": "SPARSO = Bangladesh Space Research and Remote Sensing Organization. ECNEC = Executive Committee of the National Economic Council."},
+
+  {"id": "job-2025-dte-cashier-q18", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 18, "marks": 1, "type": "short-qa", "question": "সুদানের রাজধানীর নাম কি?", "answer": "খার্তুম। দক্ষিণ সুদানের রাজধানী জুবা।"},
+
+  {"id": "job-2025-dte-cashier-q19", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 19, "marks": 1, "type": "short-qa", "question": "তাসমানিয়া কোন মহাদেশে অবস্থিত?", "answer": "অস্ট্রেলিয়া মহাদেশে।"},
+
+  {"id": "job-2025-dte-cashier-q20", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 20, "marks": 1, "type": "short-qa", "question": "আয়তনে সবচেয়ে বড় উপজেলার নাম কী?", "answer": "শ্যামনগর উপজেলা, সাতক্ষীরা।"},
+
+  {"id": "job-2025-dte-cashier-q21", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 21, "marks": 1, "type": "short-qa", "question": "বাংলাদেশে মুক্তিযুদ্ধের সময় সাব-সেক্টর কয়টি ছিল?", "answer": "৬৪টি।"},
+
+  {"id": "job-2025-dte-cashier-q22", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 22, "marks": 1, "type": "short-qa", "question": "এসডিজি এর গোল কতটি?", "answer": "১৭টি।"},
+
+  {"id": "job-2025-dte-cashier-q23", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 23, "marks": 1, "type": "short-qa", "question": "দ্বিতীয় বিশ্বযুদ্ধের সময় বাফার রাষ্ট্র ছিল কোন দেশ?", "answer": "বেলজিয়াম।"},
+
+  {"id": "job-2025-dte-cashier-q24", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 24, "marks": 1, "type": "short-qa", "question": "কিউবার মুদ্রার নাম কি?", "answer": "পেসো।"},
+
+  {"id": "job-2025-dte-cashier-q25", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 25, "marks": 1, "type": "short-qa", "question": "ভুটানের মুদ্রার নাম কি?", "answer": "গুল্ট্রাম।"},
+
+  {"id": "job-2025-dte-cashier-q26", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 26, "marks": 1, "type": "short-qa", "question": "ব্রাজিলের রাষ্ট্র ভাষার নাম কী?", "answer": "পর্তুগীজ।"},
+
+  {"id": "job-2025-dte-cashier-q27", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 27, "marks": 1, "type": "short-qa", "question": "বাংলাদেশের রাষ্ট্রপতি হওয়ার সর্বনিম্ন বয়স কত?", "answer": "৩৫ বছর।"},
+
+  {"id": "job-2025-dte-cashier-q28", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 28, "marks": 1, "type": "short-qa", "question": "বাংলাদেশের গভীর সমুদ্র বন্দরের নাম কী?", "answer": "মাতারবাড়ী গভীর সমুদ্র বন্দর।"},
+
+  {"id": "job-2025-dte-cashier-q29", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 29, "marks": 1, "type": "short-qa", "question": "SAARC (সার্ক) এর কৃষি গবেষণা কেন্দ্র কোথায় অবস্থিত?", "answer": "খামার বাড়ি রোড, ঢাকায় অবস্থিত।"},
+
+  {"id": "job-2025-dte-cashier-q30", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 30, "marks": 1, "type": "short-qa", "question": "উয়ারী বটেশ্বর কোন জেলায় অবস্থিত?", "answer": "নরসিংদী।"},
+
+  // ══════════════════════════════════════════════════════════
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
   // ══════════════════════════════════════════════════════════
 

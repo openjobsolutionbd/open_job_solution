@@ -24,8 +24,11 @@ jobs:
       - name: Check governance-doc consistency
         run: node _dev/check_docs_consistency.js
 
-      - name: Install spellcheck dependencies
+      - name: Install dev dependencies
         run: npm install --prefix _dev
+
+      - name: JS regression tests (bcs-mcq, primary-mcq, written-exam)
+        run: npm run test:js --prefix _dev
 
       - name: Bangla spell-check (advisory)
         run: npm run spellcheck --prefix _dev

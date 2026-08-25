@@ -224,7 +224,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .idiom-phrase { font-weight: 700; color: var(--text); }
 .idiom-eq { color: var(--text-3); }
 .idiom-meaning { color: var(--text); font-weight: 600; }
-.idiom-example { font-size: 0.85rem; color: var(--text-3); margin-top: 4px; font-style: italic; }
+.idiom-example { color: var(--text); font-style: italic; }
 
 /* Short QA */
 .short-answer { font-weight: 600; color: var(--text); margin-top: 3px; }

@@ -67,6 +67,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 | `_staging/bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |
 | `_staging/books-staging/` | বই-সংক্রান্ত কনটেন্ট প্রসেসিংয়ের স্টেজিং এলাকা |
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
+| `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট (`job-app-MD.md`) যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — ডুপ্লিকেট মাস্টার-ডক ফাইল ও অনুল্লেখিত root ফোল্ডার ধরে। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift ধরে, prose-এর সঠিকতা না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
 | `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 

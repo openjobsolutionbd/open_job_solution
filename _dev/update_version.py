@@ -218,7 +218,13 @@ def build_summary(files):
 summary = build_summary(changed_files)
 
 # ── Update MD changelog ────────────────────────────────────────
-md_files = list((ROOT / "_docs").glob("*.md"))
+# শুধু job-app-MD.md-এই changelog entry যোগ হবে (একমাত্র "live" reference
+# doc)। আগে এখানে _docs/*.md এর সব ফাইলে (glob) blindly যোগ হতো, ফলে পুরনো
+# version-snapshot ফাইলে (যেমন job-app-MD-v1.22.md) অনন্তকাল ধরে নতুন রো
+# যোগ হয়ে যেত অথচ বাকি কনটেন্ট sync হতো না — সেই ফাইলটাই পরে delete করা
+# হয়েছে। নতুন কোনো MD "master doc" দরকার হলে এখানে নাম explicit যোগ করুন,
+# আবার glob দিয়ে সব ফাইল ধরাবেন না।
+md_files = [ROOT / "_docs" / "job-app-MD.md"]
 md_updated = False
 
 for md_path in md_files:

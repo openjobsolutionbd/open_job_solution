@@ -23,7 +23,11 @@
         inlineMath: [['$', '$']],
         displayMath: [['$$', '$$']]
       },
-      svg: { fontCache: 'global' },
+      // svg scale বাড়ানো হলো — fraction/ভগ্নাংশের মতো নেস্টেড অংশ (numerator/denominator)
+      // TeX-এর নিয়মে ছোট ফন্টে আঁকা হয়, স্কেল বাড়ালে সেগুলোও সুস্পষ্ট পড়া যায়
+      // blacker বাড়ানো হলো — character stroke মোটা/গাঢ় করে আরও স্পষ্ট দেখানোর জন্য
+      // (ডিফল্ট ~৩, ২০-এর বেশি গেলে অক্ষর একটার সাথে আরেকটা মিশে অস্পষ্ট হয়ে যেতে পারে)
+      svg: { fontCache: 'global', scale: 1.3, blacker: 20 },
       options: {
         // উত্তর লুকানো অবস্থায়ও typeset করা যাবে, সমস্যা নেই
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
@@ -170,32 +174,9 @@
     }
     .back-btn:hover { border-color: var(--primary); color: var(--primary); }
 
-    /* ── Subject Filter Tabs (in exam view) ── */
-    .subject-filter-row {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-
-    /* ── Answer Box ── */
-    .answer-section {
-      margin-top: 10px;
-    }
-    .show-answer-btn {
-      background: none;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 6px 14px;
-      font-family: inherit;
-      font-size: 0.82rem;
-      color: var(--primary);
-      cursor: pointer;
-      transition: all var(--transition);
-    }
-    .show-answer-btn:hover { background: var(--primary-bg); border-color: var(--primary); }
+    /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */
     .answer-body {
-      display: none;
+      display: block;
       margin-top: 10px;
       background: var(--surface-2);
       border: 1px solid var(--border-light);
@@ -205,7 +186,18 @@
       color: var(--text);
       line-height: 1.8;
     }
-    .answer-body.visible { display: block; }
+
+    /* ── Subject Heading (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান section) ── */
+    .subject-heading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-align: center;
+      margin: 26px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+    .subject-heading:first-child { margin-top: 6px; }
 
     /* ── Empty state ── */
     .empty-state {
@@ -275,9 +267,6 @@
       <!-- Exam Info -->
       <div class="exam-header-detail" id="examHeaderDetail"></div>
 
-      <!-- Subject Filter -->
-      <div class="subject-filter-row" id="subjectFilterRow"></div>
-
       <!-- Questions List -->
       <div id="questionsList"></div>
 
@@ -298,7 +287,7 @@
   // Version
   // ══════════════════════════════════════════
   // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-  const APP_VERSION = 'v1.113';
+  const APP_VERSION = 'v1.147';
   const versionEl = document.getElementById('appVersion');
   if (versionEl) versionEl.textContent = APP_VERSION;
 
@@ -331,7 +320,6 @@
   // ══════════════════════════════════════════
   // State
   // ══════════════════════════════════════════
-  let currentSubject = 'all';
   let currentExamId = null;
 
   // ══════════════════════════════════════════
@@ -431,7 +419,6 @@
   // ══════════════════════════════════════════
   function openExam(examId) {
     currentExamId = examId;
-    currentSubject = 'all';
 
     const exam = EXAM_ARCHIVE.find(e => e.id === examId);
     if (!exam) return;
@@ -452,55 +439,30 @@
     const allQs = (typeof JOB_SOLUTIONS !== 'undefined' ? JOB_SOLUTIONS : [])
       .filter(q => q.examId === examId);
 
-    // Subject Tabs — কোন কোন subject আছে সেটা দেখে বানাও
-    buildSubjectTabs(allQs);
-
     // Show view
     document.getElementById('homeView').style.display = 'none';
     document.getElementById('examView').style.display = 'block';
     document.getElementById('searchWrap').style.display = 'none';
 
-    renderQuestions(examId, currentSubject);
+    renderQuestions(examId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   // ══════════════════════════════════════════
-  // Build Subject Filter Tabs
+  // Subject labels (section heading-এর জন্য)
   // ══════════════════════════════════════════
   const SUBJECT_LABELS = {
-    'all':               'সব',
     'bangla':            'বাংলা',
     'english':           'ইংরেজি',
     'math':              'গণিত',
     'general-knowledge': 'সাধারণ জ্ঞান',
   };
 
-  function buildSubjectTabs(questions) {
-    const row = document.getElementById('subjectFilterRow');
-    row.innerHTML = '';
-
-    // কোন subject গুলো আছে বের করো
-    const subjects = ['all', ...new Set(questions.map(q => q.subject).filter(Boolean))];
-
-    subjects.forEach(sub => {
-      const btn = document.createElement('button');
-      btn.className = 'tab-btn' + (sub === currentSubject ? ' active' : '');
-      btn.textContent = SUBJECT_LABELS[sub] || sub;
-      btn.dataset.subject = sub;
-      btn.addEventListener('click', () => {
-        currentSubject = sub;
-        document.querySelectorAll('#subjectFilterRow .tab-btn').forEach(b =>
-          b.classList.toggle('active', b.dataset.subject === sub));
-        renderQuestions(currentExamId, currentSubject);
-      });
-      row.appendChild(btn);
-    });
-  }
-
   // ══════════════════════════════════════════
-  // Render Questions
+  // Render Questions — বইয়ের ফরম্যাট: subject অনুযায়ী section heading,
+  // উত্তর সবসময় সরাসরি দেখা যায় (toggle নেই), badge/tag নেই।
   // ══════════════════════════════════════════
-  function renderQuestions(examId, subject) {
+  function renderQuestions(examId) {
     const list = document.getElementById('questionsList');
     list.innerHTML = '';
 
@@ -510,12 +472,7 @@
     }
 
     // examId দিয়ে সরাসরি মিল — অনুমান নয়, নিশ্চিত সংযোগ
-    let questions = JOB_SOLUTIONS.filter(q => q.examId === examId);
-
-    // Subject filter
-    if (subject !== 'all') {
-      questions = questions.filter(q => q.subject === subject);
-    }
+    const questions = JOB_SOLUTIONS.filter(q => q.examId === examId);
 
     if (questions.length === 0) {
       list.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>এই বিষয়ে কোনো প্রশ্ন যোগ হয়নি।</p></div>';
@@ -525,39 +482,28 @@
     // qno অনুযায়ী সাজানো (qno সবসময় সংখ্যা হিসেবে রাখা হয়)
     questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
 
+    let lastSubject = null;
     questions.forEach(q => {
-      const subLabel = SUBJECT_LABELS[q.subject] || escText(q.subject || '');
-      const topicTag = q.topic ? `<span class="tags">${escText(q.topic)}</span>` : '';
+      // subject বদলালে একটা section heading বসাও (বইয়ে যেমন বাংলা/ইংরেজি/গণিত)
+      if (q.subject !== lastSubject) {
+        lastSubject = q.subject;
+        const heading = document.createElement('div');
+        heading.className = 'subject-heading';
+        heading.textContent = SUBJECT_LABELS[q.subject] || escText(q.subject || '');
+        list.appendChild(heading);
+      }
 
       const card = document.createElement('div');
       card.className = 'question-card';
       card.innerHTML = `
-        <div class="card-top">
-          <div class="card-meta">
-            <span class="tags subject">${subLabel}</span>
-            ${topicTag}
-            ${q.marks ? `<span class="tags">${toBn(q.marks)} নম্বর</span>` : ''}
-          </div>
-        </div>
         <div class="question-body">
           <span class="q-num">${q.qno ? toBn(q.qno) : ''}.</span>
           <div class="q-text-wrap">
             <div class="q-text">${escText(q.question || '')}</div>
           </div>
         </div>
-        <div class="answer-section">
-          <button class="show-answer-btn">উত্তর দেখুন ▾</button>
-          <div class="answer-body">${renderAnswer(q)}</div>
-        </div>
+        <div class="answer-body">${renderAnswer(q)}</div>
       `;
-
-      // Toggle answer
-      const ansBtn = card.querySelector('.show-answer-btn');
-      const ansBody = card.querySelector('.answer-body');
-      ansBtn.addEventListener('click', () => {
-        const open = ansBody.classList.toggle('visible');
-        ansBtn.textContent = open ? 'উত্তর লুকান ▴' : 'উত্তর দেখুন ▾';
-      });
 
       list.appendChild(card);
     });

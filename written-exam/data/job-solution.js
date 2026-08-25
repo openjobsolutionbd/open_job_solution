@@ -5125,6 +5125,51 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-dte-cashier-q30", "examId": "job-2025-dte-cashier", "subject": "general-knowledge", "topic": "gk-others", "qno": 30, "marks": 1, "type": "short-qa", "question": "উয়ারী বটেশ্বর কোন জেলায় অবস্থিত?", "answer": "নরসিংদী।"},
 
   // ══════════════════════════════════════════════════════════
+  // পরীক্ষা: আইন, বিচার ও সংসদ বিষয়ক মন্ত্রণালয় — অফিস সহায়ক (job-2025-law-justice-parliament-office-sohayok)
+  // সোর্স: Self_job_solution_book_part_5.rar (বইয়ের পৃষ্ঠা ৩২০-৩২১, ক্রম ৫৪৫)
+  // ══════════════════════════════════════════════════════════
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q01", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "bangla", "topic": "বিপরীত শব্দ", "qno": 1, "marks": 5, "type": "table", "question": "বিপরীত শব্দ লিখুন।", "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"], "rows": [["প্রাচীন", "অর্বাচীন"], ["সন্ধি", "বিগ্রহ"], ["নৈসর্গিক", "কৃত্রিম"], ["বিরত", "নিরত"], ["সংশয়", "প্রত্যয়"]]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q02", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "bangla", "topic": "সন্ধি বিচ্ছেদ", "qno": 2, "marks": 6, "type": "short-qa", "question": "সন্ধি বিচ্ছেদ করুন:", "parts": [{"label": "ক", "q": "মৃন্ময়", "a": "মৃৎ + ময়"}, {"label": "খ", "q": "ষড়যন্ত্র", "a": "ষট্ + যন্ত্র"}, {"label": "গ", "q": "দ্যুলোক", "a": "দিব্ + লোক"}, {"label": "ঘ", "q": "সংসার", "a": "সম্ + সার"}, {"label": "ঙ", "q": "উপর্যুপরি", "a": "উপরি + উপরি"}]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q03", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "bangla", "topic": "প্রমিত বানান", "qno": 3, "marks": 5, "type": "table", "question": "শুদ্ধ করে লিখুন।", "columns": ["অশুদ্ধ", "শুদ্ধ"], "rows": [["মুমুর্ষূ", "মুমূর্ষু"], ["নিরিহ", "নিরীহ"], ["নিরোপায়", "নিরুপায়"], ["অন্যানাপায়", "অন্যোপায়"], ["জৈষ্ঠ্য", "জ্যৈষ্ঠ"]]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q04", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "bangla", "topic": "অর্থসহ বাক্য রচনা", "qno": 4, "marks": 5, "type": "short-qa", "question": "অর্থসহ বাক্য রচনা করুন:", "parts": [{"label": "ক", "q": "গদাই লস্কর চাল", "a": "অতি ধীর গতি, আলসেমি"}, {"label": "খ", "q": "পদ্ম পাতার জল", "a": "ক্ষণস্থায়ী"}, {"label": "গ", "q": "আটকপালে", "a": "হতভাগ্য"}, {"label": "ঘ", "q": "উনপঞ্চাশ বায়ু", "a": "পাগলামি"}, {"label": "ঙ", "q": "কেতা দুরস্ত", "a": "পরিপাটি"}]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q05", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "english", "topic": "preposition", "qno": 5, "marks": 4, "type": "short-qa", "question": "Fill in the gaps with preposition:", "parts": [{"label": "a", "q": "He is good…… Mathematics.", "a": "at"}, {"label": "b", "q": "He put his wallet…… his pocket.", "a": "in"}, {"label": "c", "q": "I was pleased……. your answer.", "a": "at"}, {"label": "d", "q": "He died…… overeating.", "a": "from"}]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q06", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "english", "topic": "translation", "qno": 6, "marks": 4, "type": "translate", "question": "Translate into English:", "parts": [{"label": "ক", "source": "সে সাঁতার কাটতে পারে না।", "target": "He does not know how to swim"}, {"label": "খ", "source": "দুইয়ে দুইয়ে চার হয়।", "target": "Two and two makes four"}, {"label": "গ", "source": "মানুষ মাত্রই ভুল করে।", "target": "To err is human"}, {"label": "ঘ", "source": "স্বদেশপ্রীতি একটি মহৎ গুণ।", "target": "Patriotism is a noble virtue."}]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q07", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "english", "topic": "idioms and phrases", "qno": 7, "marks": 4, "type": "short-qa", "question": "Make sentence with each of the following phrases with Bengali meaning:", "parts": [{"label": "a", "q": "Take after = সদৃশ হওয়া", "a": "He takes after his father."}, {"label": "b", "q": "Bring to light = প্রকাশ করা", "a": "At last the truth was brought to light"}, {"label": "c", "q": "Leave no stone unturned = চেষ্টার ত্রুটি না করা", "a": "I left no stone unturned to finish this work in time."}, {"label": "d", "q": "Dawn to dusk = সকাল থেকে সন্ধ্যা", "a": "He works from dawn to dusk."}]},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q08", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "math", "topic": "সমীকরণ", "qno": 8, "marks": 6, "type": "math", "question": "দুইটি সংখ্যার যোগফল ৪৫০। সংখ্যা দুটির অনুপাত ৭ঃ৮ হলে সংখ্যা দুটি নির্ণয় কর।", "steps": ["মনে করি সংখ্যা দুটি যথাক্রমে ৭ক ও ৮ক", "প্রশ্নমতে, ৭ক + ৮ক = ৪৫০", "বা, ১৫ক = ৪৫০", "∴ ক = ৩০", "সুতরাং সংখ্যা দুটি যথাক্রমে ৭ × ৩০ = ২১০ ও ৮ × ৩০ = ২৪০"], "answer": "২১০ ও ২৪০"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q09", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "math", "topic": "নৌকা ও স্রোত", "qno": 9, "marks": 6, "type": "math", "question": "একটি নৌকা স্থির পানিতে ঘণ্টায় ৬ কি.মি. যেতে পারে। স্রোতের প্রতিকূলে ৬ কি.মি. যেতে নৌকাটির ৩ গুণ সময় লাগে। স্রোতের অনুকূলে ৫০ কি.মি. যেতে নৌকাটির কত সময় লাগবে?", "steps": ["নৌকাটি স্থির পানিতে ৬ কি.মি. যায় ১ ঘণ্টায়", "স্রোতের প্রতিকূলে ৬ কি.মি. যায় ১×৩ ঘণ্টায় বা ৩ ঘণ্টায়", "প্রশ্নমতে, ৩ ঘণ্টায় যায় ৬ কি.মি.", "∴ ১ \" \" \" ৬/৩ \" বা ২ কি.মি.", "স্রোতের প্রতিকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ − স্রোতের বেগ", "∴ স্রোতের বেগ = নৌকার প্রকৃত বেগ − নৌকার কার্যকরী বেগ = (৬ − ২) কি.মি. = ৪ কি.মি./ঘণ্টায়", "স্রোতের অনুকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ + স্রোতের বেগ = (৬ + ৪) কি.মি. = ১০ কি.মি./ঘণ্টায়", "স্রোতের অনুকূলে ১০ কি.মি যায় ১ ঘণ্টায়", "∴ \" \" ১ \" \" ১/১০", "∴ \" \" ৫০ \" \" (১×৫০)/১০ ঘণ্টায় বা ৫ ঘণ্টায়"], "answer": "স্রোতের অনুকূলে যেতে ৫ ঘণ্টা লাগবে। উত্তর: ৫ ঘণ্টা।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q10", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "math", "topic": "বীজগণিত", "qno": 10, "marks": 6, "type": "math", "question": "x − y = 3 এবং xy = 10 হলে, x³ − y³ এর মান কত?", "steps": ["x³ − y³", "= (x − y)³ + 3xy(x − y)", "= (3)³ + 3 × 10 × 3 [মান বসিয়ে]", "= 27 + 90", "= 117"], "answer": "117 (Answer)"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q11", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 11, "marks": 1, "type": "short-qa", "question": "বরেন্দ্র অঞ্চল বলতে কি বোঝায়?", "answer": "উত্তরবঙ্গ তথা রাজশাহী অঞ্চলকে বুঝায়।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q12", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 12, "marks": 1, "type": "short-qa", "question": "আমার ভাইয়ের রক্তে রাঙানো গানটির রচয়িতা কে?", "answer": "আবদুল গাফফার চৌধুরী।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q13", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 13, "marks": 1, "type": "short-qa", "question": "জাতীয় সংসদ ভবনের নকশা কে করেন?", "answer": "লুই আই কান।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q14", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 14, "marks": 1, "type": "short-qa", "question": "কম্পিউটারে ব্যবহৃত দুটি অংক কি কি?", "answer": "০, ১।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q15", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 15, "marks": 1, "type": "short-qa", "question": "প্লেটোর গৃহশিক্ষক কে ছিলেন?", "answer": "সক্রেটিস।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q16", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 16, "marks": 1, "type": "short-qa", "question": "স্পেশাল অলিম্পিকের সূচনা হয় কবে?", "answer": "১৯৬৮ সালে।"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q17", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "সংক্ষিপ্ত রূপ", "qno": 17, "marks": 1, "type": "short-qa", "question": "UNHCR এর পূর্ণ রূপ কি?", "answer": "United Nations High Commissioner for Refugees"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q18", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 18, "marks": 1, "type": "short-qa", "question": "বাংলাদেশের সবচেয়ে উঁচু পাহাড়ের নাম কি?", "answer": "গারো পাহাড়"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q19", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 19, "marks": 1, "type": "short-qa", "question": "আরব-লীগ কবে গঠিত হয়?", "answer": "২২ মার্চ ১৯৪৫"},
+
+  {"id": "job-2025-law-justice-parliament-office-sohayok-q20", "examId": "job-2025-law-justice-parliament-office-sohayok", "subject": "general-knowledge", "topic": "gk-others", "qno": 20, "marks": 1, "type": "short-qa", "question": "বাংলাদেশের প্রথম শিক্ষা কমিশনের প্রধান কে ছিলেন?", "answer": "ড. কুদরত-এ-খুদা"},
+
+  // ══════════════════════════════════════════════════════════
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
   // ══════════════════════════════════════════════════════════
 

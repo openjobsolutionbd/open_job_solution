@@ -2,6 +2,8 @@
 
 এই ফাইলটা যেকোনো AI এজেন্ট/টুলের জন্য (Claude, ChatGPT/Codex, Cursor, Copilot ইত্যাদি) — এই রিপোতে কাজ করার আগে এটা পড়ে নিন।
 
+**এই ফাইল শুধু git/push/PR/merge ওয়ার্কফ্লো নিয়ম নিয়ে।** প্রজেক্টের আর্কিটেকচার, ফোল্ডার স্ট্রাকচার, ডেটা ফরম্যাট নিয়মের জন্য `_docs/job-app-MD.md` দেখুন — দুটো ডকুমেন্ট একে অপরের পরিপূরক, কোনোটাই অন্যটার বিকল্প না।
+
 ## ⚠️ প্রথম ধাপ — যেকোনো কাজ শুরুর আগে বাধ্যতামূলক
 
 **`bash _dev/scripts/session_status.sh` চালান — এটাই সবার আগে করুন, অন্য যেকোনো কিছুর আগে।**
@@ -25,6 +27,18 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 6. squash merge করুন
 
 `enforce_admins: true` করা আছে — admin/owner token দিয়েও এই নিয়ম bypass করা যায় না, কেউ ভুলবশত সরাসরি push করলেও GitHub সেটা প্রত্যাখ্যান করবে।
+
+## 🔄 রিপো ঘনঘন আপডেট হয় — push-এর ঠিক আগে অবশ্যই re-check করুন
+
+একাধিক সেশন/অ্যাকাউন্ট সমান্তরালে কাজ করায়, branch তৈরির পর কাজ শেষ হতে হতে `main` এগিয়ে যেতে পারে — এমনকি একই টাস্কের মাঝেও একাধিকবার এটা ঘটতে পারে। তাই শুধু কাজ শুরুর আগে একবার চেক করাই যথেষ্ট নয়; **push/merge করার প্রতিটা ধাপে** আবার যাচাই করুন:
+
+1. **branch তৈরির আগে**: `session_status.sh` চালান (উপরে বাধ্যতামূলক ধাপ)।
+2. **push করার ঠিক আগে** (এডিটিং শেষে): `git fetch origin main` চালান। remote এগিয়ে থাকলে push-এর আগেই `git rebase origin/main` করুন — conflict এলে resolve করুন, শুধু এক পক্ষ blindly নেবেন না। **ব্যতিক্রম:** সত্যিকারের বিষয়বস্তু-দ্বন্দ্ব না হয়ে শুধু একই জায়গায় দুই সেশনের ভিন্ন নতুন সংযোজন হলে (যেমন একই exam-archive.js-এ দুই নতুন এন্ট্রি, বা Version History-তে দুই নতুন সারি) — দুটোই রেখে (id/তারিখ অনুযায়ী সাজিয়ে) নিজে মিলিয়ে নেওয়া ঠিক, ব্যবহারকারীকে জিজ্ঞেস করার দরকার নেই। প্রকৃত বিষয়বস্তু-দ্বন্দ্ব হলে (একই লাইন/একই ফিল্ডে দুই ভিন্ন মান) — নিজে অনুমান করে কোনদিক রাখবেন ঠিক করবেন না, conflict ও উভয় পক্ষের পরিবর্তন ব্যবহারকারীকে দেখিয়ে জিজ্ঞেস করুন।
+3. **ডেটা ফাইল (`job-solution.js`, `exam-archive.js`, `PROGRESS.md` ইত্যাদি) সংক্রান্ত rebase-এর পর**: আপনার লেখা কোনো সংখ্যা/count/সারাংশ (যেমন "মোট X এক্সাম, Y প্রশ্ন") থাকলে সেটা **script দিয়ে আবার গণনা করে** নিশ্চিত হন এখনো সঠিক আছে কিনা — rebase-এ অন্য সেশনের যোগ করা ডেটা মিশে গিয়ে সংখ্যা বদলে যেতে পারে (এটা আগে দুইবার ঘটেছে)।
+4. **PR খোলার পর, merge করার ঠিক আগে**: PR-এর `mergeable_state` আবার চেক করুন। `behind` বা `dirty` দেখালে rebase করে (বা `PUT /pulls/{number}/update-branch`) আবার push করুন, `clean` না হওয়া পর্যন্ত merge করবেন না। merge করার ঠিক আগে required check (`validate`) পাস করেছে কিনা সেটাও শেষবার নিশ্চিত করুন।
+5. rebase-এর পর push করতে **সবসময় `git push --force-with-lease`** ব্যবহার করুন, কখনো `--force` না — অন্য কারো কাজ ভুলবশত overwrite হওয়া এড়াতে।
+
+সংক্ষেপে: "চেক করেছিলাম তো একটু আগে" — যথেষ্ট না। রিপো এত ঘনঘন বদলায় যে প্রতিটা push/merge-এর ঠিক আগমুহূর্তেই freshly যাচাই করা লাগবে।
 
 ## ⚡ কনটেক্সট-টোকেন সাশ্রয়
 
@@ -53,6 +67,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 | `_staging/bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |
 | `_staging/books-staging/` | বই-সংক্রান্ত কনটেন্ট প্রসেসিংয়ের স্টেজিং এলাকা |
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
+| `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট (`job-app-MD.md`) যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — ডুপ্লিকেট মাস্টার-ডক ফাইল ও অনুল্লেখিত root ফোল্ডার ধরে। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift ধরে, prose-এর সঠিকতা না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
 | `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 

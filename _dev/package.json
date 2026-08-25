@@ -3,9 +3,11 @@
   "private": true,
   "devDependencies": {
     "cspell": "^10.0.1",
-    "@cspell/dict-bn": "^1.0.4"
+    "@cspell/dict-bn": "^1.0.4",
+    "jsdom": "^25.0.1"
   },
   "scripts": {
-    "spellcheck": "node check-spelling.js"
+    "spellcheck": "node check-spelling.js",
+    "test:js": "node js_tests/run.mjs"
   }
 }

@@ -72,9 +72,9 @@ function renderAnswer(q) {
         <div class="ans-part">
           <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
-            <div class="trans-source">${escHtml(p.source)}</div>
-            <div class="trans-arrow">➜</div>
-            <div class="trans-target">${escHtml(p.target)}</div>
+            <span class="trans-source">${escHtml(p.source)}</span>
+            <span class="trans-arrow"> ➜ </span>
+            <span class="trans-target">${escHtml(p.target)}</span>
           </div>
         </div>`).join('')}</div>`;
 

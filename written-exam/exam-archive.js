@@ -543,7 +543,7 @@ const EXAM_ARCHIVE = [
     date: "2025-10-31",
     duration: "৯০ মিনিট",
     totalMarks: 80,
-    totalQuestions: 11,
+    totalQuestions: 14,
   },
   {
     id: "job-2025-land-appeal-board-office-sohayok",

@@ -1,8 +1,9 @@
 # BCS-MCQ-Project — Master Reference Document
 
-> **Version:** v1.16
-> **তারিখ:** ২০ জুন ২০২৬
+> **আর্কিটেকচার/কনটেন্ট ভার্সন:** v1.22 (সর্বশেষ অর্থপূর্ণ পরিবর্তন — Current Affairs সেকশন যোগ)
+> **সর্বশেষ যাচাই/সম্পাদনা:** ২৪ আগস্ট ২০২৬
 > **উদ্দেশ্য:** এই ডকুমেন্ট যেকোনো AI-কে দিলে সে প্রজেক্টের সম্পূর্ণ কাঠামো বুঝতে পারবে।
+> **নোট:** নিচের Version History টেবিলের বেশিরভাগ এন্ট্রি (v1.23+) `_dev/update_version.py` স্ক্রিপ্ট প্রতিটা ডিপ্লয়ে স্বয়ংক্রিয়ভাবে যোগ করে (routine cache/version bump, সাইটের `APP_VERSION`-এর সাথে মেলে) — এগুলো এই ডকুমেন্টের নিজস্ব আর্কিটেকচার-ভার্সন থেকে আলাদা। প্রজেক্টের গিট/পুশ/মার্জ ওয়ার্কফ্লো নিয়মের জন্য `_docs/AGENTS.md` দেখুন — এই দুই ডকুমেন্ট একে অপরের পরিপূরক।
 
 ---
 
@@ -90,120 +91,7 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
-| v1.135 | ২৪ আগস্ট ২০২৬ | Version v1.135-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.134 | ২৪ আগস্ট ২০২৬ | Version v1.134-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.133 | ২৪ আগস্ট ২০২৬ | Version v1.133-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.132 | ২৪ আগস্ট ২০২৬ | Version v1.132-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.131 | ২৪ আগস্ট ২০২৬ | Version v1.131-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.130 | ২৪ আগস্ট ২০২৬ | Version v1.130-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.129 | ২৩ আগস্ট ২০২৬ | Version v1.129-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.128 | ২৩ আগস্ট ২০২৬ | Version v1.128-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.127 | ২৩ আগস্ট ২০২৬ | Version v1.127-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.126 | ২৩ আগস্ট ২০২৬ | Version v1.126-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.125 | ২৩ আগস্ট ২০২৬ | Version v1.125-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.124 | ২৩ আগস্ট ২০২৬ | Version v1.124-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.123 | ২৩ আগস্ট ২০২৬ | Version v1.123-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.122 | ২৩ আগস্ট ২০২৬ | Version v1.122-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.121 | ২২ আগস্ট ২০২৬ | Version v1.121-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.120 | ২২ আগস্ট ২০২৬ | Version v1.120-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.119 | ২২ আগস্ট ২০২৬ | Version v1.119-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.118 | ২২ আগস্ট ২০২৬ | Version v1.118-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.117 | ২২ আগস্ট ২০২৬ | Version v1.117-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.116 | ২২ আগস্ট ২০২৬ | Version v1.116-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.115 | ২২ আগস্ট ২০২৬ | Version v1.115-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.114 | ২২ আগস্ট ২০২৬ | Version v1.114-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.113 | ২২ আগস্ট ২০২৬ | Version v1.113-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.112 | ২২ আগস্ট ২০২৬ | Version v1.112-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.111 | ২২ আগস্ট ২০২৬ | Version v1.111-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.110 | ২২ আগস্ট ২০২৬ | Version v1.110-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.109 | ২২ আগস্ট ২০২৬ | Version v1.109-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.108 | ২২ আগস্ট ২০২৬ | Version v1.108-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.107 | ২২ আগস্ট ২০২৬ | Version v1.107-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.106 | ২২ আগস্ট ২০২৬ | Version v1.106-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.105 | ২১ আগস্ট ২০২৬ | Version v1.105-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.104 | ২০ আগস্ট ২০২৬ | Version v1.104-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.103 | ২০ আগস্ট ২০২৬ | Version v1.103-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.102 | ২০ আগস্ট ২০২৬ | Version v1.102-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.101 | ১৯ আগস্ট ২০২৬ | Version v1.101-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.100 | ১৯ আগস্ট ২০২৬ | Version v1.100-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.99 | ১৯ আগস্ট ২০২৬ | Version v1.99-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.98 | ১৯ আগস্ট ২০২৬ | Version v1.98-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.97 | ১৯ আগস্ট ২০২৬ | Version v1.97-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.96 | ১৯ আগস্ট ২০২৬ | Version v1.96-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.95 | ১৯ আগস্ট ২০২৬ | Version v1.95-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.94 | ১৯ আগস্ট ২০২৬ | Version v1.94-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.93 | ১৮ আগস্ট ২০২৬ | Version v1.93-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.92 | ১৮ আগস্ট ২০২৬ | Version v1.92-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.91 | ১৮ আগস্ট ২০২৬ | Version v1.91-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.90 | ১৮ আগস্ট ২০২৬ | Version v1.90-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.89 | ১৮ আগস্ট ২০২৬ | Version v1.89-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.88 | ১৮ আগস্ট ২০২৬ | Version v1.88-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.87 | ১৮ আগস্ট ২০২৬ | Version v1.87-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.86 | ১৭ আগস্ট ২০২৬ | Version v1.86-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.85 | ১৭ আগস্ট ২০২৬ | Version v1.85-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.84 | ১৭ আগস্ট ২০২৬ | Version v1.84-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.83 | ১৭ আগস্ট ২০২৬ | Version v1.83-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.82 | ১৭ আগস্ট ২০২৬ | Version v1.82-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.81 | ১৭ আগস্ট ২০২৬ | Version v1.81-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.80 | ১৭ আগস্ট ২০২৬ | Version v1.80-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.79 | ১৭ আগস্ট ২০২৬ | Version v1.79-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.78 | ১৭ আগস্ট ২০২৬ | Version v1.78-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.77 | ১৭ আগস্ট ২০২৬ | Version v1.77-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.76 | ১৭ আগস্ট ২০২৬ | Version v1.76-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.75 | ১৭ আগস্ট ২০২৬ | Version v1.75-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.74 | ১৭ আগস্ট ২০২৬ | Version v1.74-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.73 | ১৭ আগস্ট ২০২৬ | Version v1.73-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.72 | ১৭ আগস্ট ২০২৬ | Version v1.72-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.71 | ১৭ আগস্ট ২০২৬ | Version v1.71-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.70 | ১৭ আগস্ট ২০২৬ | Version v1.70-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.69 | ১৬ আগস্ট ২০২৬ | Version v1.69-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.68 | ১৬ আগস্ট ২০২৬ | Version v1.68-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.67 | ১৬ আগস্ট ২০২৬ | Version v1.67-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.66 | ১৬ আগস্ট ২০২৬ | Version v1.66-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.65 | ১৬ আগস্ট ২০২৬ | Version v1.65-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.64 | ১৬ আগস্ট ২০২৬ | Version v1.64-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.63 | ১৬ আগস্ট ২০২৬ | Version v1.63-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.62 | ১৬ আগস্ট ২০২৬ | Version v1.62-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.61 | ১৬ আগস্ট ২০২৬ | Version v1.61-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.60 | ১৬ আগস্ট ২০২৬ | Version v1.60-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.59 | ১৬ আগস্ট ২০২৬ | Version v1.59-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.58 | ১৬ আগস্ট ২০২৬ | Version v1.58-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.57 | ১৬ আগস্ট ২০২৬ | Version v1.57-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.56 | ১৬ আগস্ট ২০২৬ | Version v1.56-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.55 | ১৬ আগস্ট ২০২৬ | Version v1.55-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.54 | ১৬ আগস্ট ২০২৬ | Version v1.54-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.53 | ১৬ আগস্ট ২০২৬ | Version v1.53-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.52 | ১৬ আগস্ট ২০২৬ | Version v1.52-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.51 | ১৬ আগস্ট ২০২৬ | Version v1.51-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.50 | ১৬ আগস্ট ২০২৬ | Version v1.50-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.49 | ১৬ আগস্ট ২০২৬ | Version v1.49-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.48 | ১৬ আগস্ট ২০২৬ | Version v1.48-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.47 | ১৬ আগস্ট ২০২৬ | Version v1.47-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.46 | ১৬ আগস্ট ২০২৬ | Version v1.46-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.45 | ১৬ আগস্ট ২০২৬ | Version v1.45-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.44 | ১৬ আগস্ট ২০২৬ | Version v1.44-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.43 | ১৬ আগস্ট ২০২৬ | Version v1.43-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.42 | ১৬ আগস্ট ২০২৬ | Version v1.42-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.41 | ১৬ আগস্ট ২০২৬ | Version v1.41-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.40 | ১৬ আগস্ট ২০২৬ | Version v1.40-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.39 | ১৫ আগস্ট ২০২৬ | Version v1.39-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.38 | ১৫ আগস্ট ২০২৬ | Version v1.38-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.37 | ১৫ আগস্ট ২০২৬ | Version v1.37-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.36 | ১৫ আগস্ট ২০২৬ | Version v1.36-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.35 | ১৫ আগস্ট ২০২৬ | Version v1.35-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.34 | ১৫ আগস্ট ২০২৬ | Version v1.34-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.33 | ১৫ আগস্ট ২০২৬ | Version v1.33-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.32 | ১৪ আগস্ট ২০২৬ | Version v1.32-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.31 | ১৪ আগস্ট ২০২৬ | Version v1.31-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.30 | ১৪ আগস্ট ২০২৬ | Version v1.30-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.29 | ১৪ আগস্ট ২০২৬ | Version v1.29-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.28 | ১৪ আগস্ট ২০২৬ | Version v1.28-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.27 | ১৪ আগস্ট ২০২৬ | Version v1.27-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.26 | ১৩ আগস্ট ২০২৬ | Version v1.26-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.25 | ১৩ আগস্ট ২০২৬ | Version v1.25-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.24 | ১৩ আগস্ট ২০২৬ | Version v1.24-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.23 | ১৩ আগস্ট ২০২৬ | Version v1.23-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.22 | ১২ আগস্ট ২০২৬ | Version v1.22-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.22–v1.135 | ১২ আগস্ট ২০২৬ – ২৪ আগস্ট ২০২৬ | *(routine, auto-generated by `_dev/update_version.py` — শুধু cache/version bump, কোনো architecture/content পরিবর্তন নেই, 114টা এন্ট্রি কম্প্রেস করা হলো)* |
 | v1.16 | ২০ জুন ২০২৬ | **Lazy Loading পরিকল্পনা যোগ (Section ১৫):** ডেটা বড় হলে speed সমস্যা এড়াতে একটা নতুন Pending Task যোগ করা হয়েছে। নিয়ম: `job-solution.js`-এ মোট প্রশ্ন সংখ্যা ৫০০ ছাড়ালে, এক ফাইলের বদলে প্রতিটা পরীক্ষার জন্য আলাদা ফাইল (`written-exam/data/exams/{examId}.js`) বানিয়ে শুধু প্রয়োজনীয় পরীক্ষার ডেটা লোড করতে হবে। AI-কে নির্দেশ দেওয়া হয়েছে যেন প্রশ্ন সংখ্যা ৫০০ এর কাছাকাছি পৌঁছালে প্রজেক্ট মালিককে সতর্ক করে। |
 | v1.15 | ২০ জুন ২০২৬ | **পুরো প্রজেক্ট লাইন-বাই-লাইন গভীর স্ক্যান — ৩টা বাগ পাওয়া ও ঠিক করা হয়েছে:** (১) `primary-mcq/index.html`-এ `<script src="data.js">` ভুল path ছিল — আসল ফাইল `data/data.js`-এ, ফলে পুরো Primary MCQ সেকশন ডেটা লোড না হয়ে ভেঙে ছিল; path ঠিক করা হয়েছে। (২) `bcs-mcq/style.css`-এ `.tab-icon` ক্লাসের কোনো CSS রুল ছিল না এবং SVG আইকনে width/height সেট ছিল না — ফলে বিষয়ের ট্যাবের আইকন ব্রাউজারের ডিফল্ট সাইজে (৩০০×১৫০px) বিশাল হয়ে দেখাতো; `.tab-icon` ও `.tab-icon svg` রুল যোগ করা হয়েছে। (৩) `bcs-mcq/app.js`-এ ভুল উত্তরের সংখ্যা দেখানোর badge-এ `class="tag error"` (একবচন) লেখা ছিল কিন্তু CSS-এ `.tags`/`.tags.error` (বহুবচন) সংজ্ঞায়িত — ক্লাস নাম না মেলায় badge স্টাইল পেত না; `tag` কে `tags` করে ঠিক করা হয়েছে। এছাড়া ডেটা ইন্টিগ্রিটি সম্পূর্ণভাবে যাচাই করা হয়েছে: ১৩১৭টা BCS প্রশ্নে id/options/correctIndex, ৩০টা Primary প্রশ্নে id prefix, এবং ১৫টা Written Exam প্রশ্নে examId/type — সব সঠিক পাওয়া গেছে, কোনো নতুন সমস্যা নেই। |
 | v1.14 | ২০ জুন ২০২৬ | **MathJax যোগ ও গণিত নোটেশন ঠিক করা:** `written-exam/index.html`-এ MathJax (CDN) যোগ করা হয়েছে যাতে `$...$` এর ভেতরের LaTeX সমীকরণ সুন্দর গাণিতিক আকারে দেখায়। `job-solution.js`-এর সব গণিত প্রশ্নে en-dash (`–`) বাদ দিয়ে সাধারণ হাইফেন (`-`) এ পরিবর্তন করা হয়েছে, কারণ MathJax en-dash কে বিয়োগ চিহ্ন হিসেবে চেনে না। Section ১৪-এ নতুন নিয়ম যোগ — ভবিষ্যতে গণিত প্রশ্ন লেখার সময় সবসময় সাধারণ হাইফেন ব্যবহার করতে হবে। |
@@ -269,50 +157,52 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 ```
 📂 BCS-MCQ-Project              ← শুধু এই ফোল্ডার Cloudflare-এ আপলোড হয়
 │
-├── 📄 index.html               ← হোম পেজ (৩টা কার্ড — সেকশন বাছাই)
+├── 📄 index.html               ← হোম পেজ (সেকশন বাছাই)
 ├── 📄 manifest.json            ← ★ একমাত্র manifest — "Open Job Solution" PWA
 ├── 📄 sw.js                    ← root SW, শুধু হোম পেজ cache করে (scope: /)
 ├── 📄 _headers
 ├── 📄 _redirects
 │
-├── 📁 bcs-mcq/                  ← স্বাধীন সেকশন ১
-│   ├── index.html
-│   ├── app.js
-│   ├── style.css
-│   ├── sw.js                    ← নিজস্ব scope (/bcs-mcq/), কিন্তু manifest.json নেই
-│   ├── version.txt
+├── 📁 bcs-mcq/                  ← সেকশন ১
+│   ├── index.html / app.js / style.css / sw.js / version.txt
+│   └── 📁 data/                 (science.js, computer.js, geography.js, bangla.js,
+│                                  english.js, bangladesh.js, international.js,
+│                                  math.js, mental.js, ethics.js)
+│
+├── 📁 primary-mcq/              ← সেকশন ২
+│   ├── index.html / style.css / sw.js
 │   └── 📁 data/
-│       ├── science.js
-│       ├── computer.js
-│       ├── geography.js
-│       ├── bangla.js
-│       ├── english.js
-│       ├── bangladesh.js
-│       ├── international.js
-│       ├── math.js
-│       ├── mental.js
-│       └── ethics.js
+│       └── data.js              ← ⚠️ root-এ সরাসরি data.js না, data/ সাবফোল্ডারে
 │
-├── 📁 primary-mcq/              ← স্বাধীন সেকশন ২
-│   ├── index.html
-│   ├── style.css
-│   ├── sw.js
-│   └── data.js
+├── 📁 written-exam/             ← সেকশন ৩
+│   ├── index.html / style.css / sw.js / renderer.js
+│   ├── exam-archive.js
+│   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
+│   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
+│       ├── job-solution.js      ← ★ মূল ডেটার উৎস (সব প্রশ্ন এখানে)
+│       ├── bangla.js / english.js / general-knowledge.js / math.js
+│       │                         (job-solution.js থেকে অটো-ফিল্টার হয়)
 │
-└── 📁 written-exam/             ← স্বাধীন সেকশন ৩
-    ├── index.html
-    ├── style.css
-    ├── sw.js
-    ├── job-solution.js          ← ★ মূল ডেটার উৎস (সব প্রশ্ন এখানে)
-    ├── bangla.js                ← job-solution.js থেকে ফিল্টার
-    ├── english.js               ← job-solution.js থেকে ফিল্টার
-    ├── general-knowledge.js     ← job-solution.js থেকে ফিল্টার
-    ├── math.js                  ← job-solution.js থেকে ফিল্টার
-    └── exam-archive.js
+├── 📁 current-affairs/          ← সেকশন ৪ (বাংলা কারেন্ট অ্যাফেয়ার্স)
+│   └── 📁 docs/                 ← ⚠️ generated/synced — সরাসরি এডিট করবেন না
+│       (mcq/, topics/, top-news/, ghotonaprobaho/ ইত্যাদি সাবফোল্ডার)
+│
+├── 📁 books/                    ← সেকশন ৫ (বই রিডার)
+│   ├── index.html / book.html / style.css / sw.js
+│   └── 📁 data/
+│       └── manifest.js
+│
+├── 📁 _assets/                  ← shared static (fonts, icons, floating-search.js)
+│
+├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
+├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
+└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (bcs-mcq-staging, books-staging) — deploy হয় না
 
 📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
     └── metadata.js           ← কখনো Cloudflare-এ যাবে না
 ```
+
+> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`, `_staging/bcs-mcq-staging/STATUS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
 
 প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/primary-mcq/`, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
 
@@ -328,6 +218,7 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 | `general-knowledge.js` | `job-solution.js` থেকে `subject: "general-knowledge"` ফিল্টার করা ভিউ |
 | `math.js` | `job-solution.js` থেকে `subject: "math"` ফিল্টার করা ভিউ |
 | `exam-archive.js` | সব পরীক্ষার হেডিং তথ্যের মাস্টার লিস্ট |
+| `PROGRESS.md` | কোন এক্সাম/ক্রম নম্বর ইতিমধ্যে যোগ করা হয়েছে তার ট্র্যাকিং — **নতুন এক্সাম যোগ করার আগে অবশ্যই পড়ুন**, যোগ করার পর অবশ্যই আপডেট করুন (নাহলে অন্য সেশন ডুপ্লিকেট কাজ করবে) |
 | `metadata.js` | AI Classification Rules — পাবলিক নয়, `admin/` ফোল্ডারে |
 
 ---

@@ -23,7 +23,9 @@
         inlineMath: [['$', '$']],
         displayMath: [['$$', '$$']]
       },
-      svg: { fontCache: 'global' },
+      // svg scale বাড়ানো হলো — fraction/ভগ্নাংশের মতো নেস্টেড অংশ (numerator/denominator)
+      // TeX-এর নিয়মে ছোট ফন্টে আঁকা হয়, স্কেল বাড়ালে সেগুলোও সুস্পষ্ট পড়া যায়
+      svg: { fontCache: 'global', scale: 1.3 },
       options: {
         // উত্তর লুকানো অবস্থায়ও typeset করা যাবে, সমস্যা নেই
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']

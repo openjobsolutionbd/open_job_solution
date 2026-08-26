@@ -725,5 +725,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 45,
     totalQuestions: 4,
   },
+  {
+    id: "job-2025-archives-library-office-shohayok",
+    ministry: "আরকাইভস ও গ্রন্থাগার অধিদপ্তর",
+    post: "অফিস সহায়ক",
+    date: "2025-07-25",
+    duration: "৬০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

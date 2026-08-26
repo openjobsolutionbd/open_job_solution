@@ -716,5 +716,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 32,
     totalQuestions: 6,
   },
+  {
+    id: "job-2025-biwta-shulko-adaykari",
+    ministry: "বাংলাদেশ অভ্যন্তরীণ নৌ-পরিবহন কর্তৃপক্ষ",
+    post: "শুল্ক আদায়কারী",
+    date: "2025-07-25",
+    duration: "৯০ মিনিট",
+    totalMarks: 45,
+    totalQuestions: 4,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

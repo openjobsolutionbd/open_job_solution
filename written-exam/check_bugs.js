@@ -103,7 +103,7 @@ report('totalQuestions mismatch (exam-archive.js vs actual question count)', qCo
 const marksMismatch = [];
 exams.forEach(e => {
   const qs = byExam[e.id] || [];
-  const sum = qs.reduce((s, q) => s + (Number(q.marks) || 0), 0);
+  const sum = Math.round(qs.reduce((s, q) => s + (Number(q.marks) || 0), 0) * 100) / 100;
   if (e.totalMarks !== undefined && sum !== e.totalMarks) {
     marksMismatch.push(`${e.id}: archive totalMarks=${e.totalMarks}, sum of question marks=${sum} (diff ${sum - e.totalMarks})`);
   }

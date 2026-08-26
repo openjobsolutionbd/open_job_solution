@@ -689,5 +689,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 13,
   },
+  {
+    id: "job-2025-mowe-shorthand-typist",
+    ministry: "প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয়",
+    post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-07-25",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 15,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

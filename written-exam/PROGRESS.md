@@ -121,7 +121,9 @@ Part-5 সোর্স ফাইলের শেষ পাতা (বইয়�
 ✅ **ঠিক করা হয়েছে:** ৭৬টি এক্সামের মধ্যে ৫৮টিতে `totalMarks` (`exam-archive.js`) প্রশ্নগুলোর marks যোগফলের সাথে মিলছিল না — সব কটি `exam-archive.js`-এ actual marks-যোগফলের সাথে sync করে দেওয়া হয়েছে (`check_bugs.js` দিয়ে যাচাই করা)। এছাড়া `dc-narayanganj-nazir-cashier-q06`/`q14`-এ letter fields (subject/closing/sender) body টেক্সট থেকে আলাদা করা হয়েছে, আর `primary-mass-edu-steno-typist-q02`-এ প্রশ্নের ভেতরে গোঁজা থাকা উত্তরগুলো `a` field-এ বসানো হয়েছে।
 
 ⚠️ **বাকি ইস্যু (সোর্স ছাড়া ঠিক করা যাবে না):**
-- `dmch-computer-operator-q05` এর একটা sub-part এ উত্তর ফাঁকা (কারক-বিভক্তি প্রশ্ন) — অনুমান করে বসানো হয়নি, সোর্স/answer-key যাচাই লাগবে
 - `dc-narayanganj-nazir-cashier`-এ প্রশ্ন ১৬–২৫ পুরোপুরি মিসিং (qno gap ১৫→২৬) — মূল exam paper/ছবি লাগবে
+
+🔍 **যাচাই প্রয়োজন (উত্তর দেওয়া হয়েছে, কিন্তু answer key দিয়ে যাচাই করা হয়নি):**
+- `dmch-computer-operator-q05` এর "ঔষধ কোন কারকে কোন বিভক্তি" প্রশ্নের উত্তর "কর্মকারকে শূন্য বিভক্তি" — এটা ব্যাকরণ বিশ্লেষণ করে বসানো (ঔষধ = "দিব" ক্রিয়ার কর্ম, কোনো বিভক্তি প্রত্যয় নেই), মূল answer key থেকে confirm করা হয়নি
 
 `check_bugs.js` স্ক্রিপ্টটা রিপোতে যোগ করা আছে (`written-exam/check_bugs.js`) — `node check_bugs.js` চালিয়ে যেকোনো সময় structural + marks-mismatch যাচাই করা যাবে।

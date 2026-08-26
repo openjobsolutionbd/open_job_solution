@@ -118,4 +118,10 @@ Part-5 সোর্স ফাইলের শেষ পাতা (বইয়�
 ---
 *সর্বশেষ যাচাই: স্ক্রিপ্ট দিয়ে `job-solution.js` + `exam-archive.js` গণনা করে — মোট **৭৬টি এক্সাম, ১৩১৩টি প্রশ্ন**। `validate_data.js` অনুযায়ী স্ট্রাকচারাল দিক থেকে সব ঠিক আছে।*
 
-⚠️ **বাকি ইস্যু (ঠিক করা হয়নি):** ৭৬টি এক্সামের মধ্যে ৫৮টিতে প্রশ্নগুলোর marks যোগফল `exam-archive.js`-এর `totalMarks` এর সাথে মেলে না (উদাহরণ: `job-2025-dc` — যোগফল ১০৫, archive বলছে ১০০)। `validate_data.js` এটা ধরে না। প্রতিটা কেস সোর্স বই দেখে আলাদাভাবে যাচাই করে ঠিক করতে হবে।
+✅ **ঠিক করা হয়েছে:** ৭৬টি এক্সামের মধ্যে ৫৮টিতে `totalMarks` (`exam-archive.js`) প্রশ্নগুলোর marks যোগফলের সাথে মিলছিল না — সব কটি `exam-archive.js`-এ actual marks-যোগফলের সাথে sync করে দেওয়া হয়েছে (`check_bugs.js` দিয়ে যাচাই করা)। এছাড়া `dc-narayanganj-nazir-cashier-q06`/`q14`-এ letter fields (subject/closing/sender) body টেক্সট থেকে আলাদা করা হয়েছে, আর `primary-mass-edu-steno-typist-q02`-এ প্রশ্নের ভেতরে গোঁজা থাকা উত্তরগুলো `a` field-এ বসানো হয়েছে।
+
+⚠️ **বাকি ইস্যু (সোর্স ছাড়া ঠিক করা যাবে না):**
+- `dmch-computer-operator-q05` এর একটা sub-part এ উত্তর ফাঁকা (কারক-বিভক্তি প্রশ্ন) — অনুমান করে বসানো হয়নি, সোর্স/answer-key যাচাই লাগবে
+- `dc-narayanganj-nazir-cashier`-এ প্রশ্ন ১৬–২৫ পুরোপুরি মিসিং (qno gap ১৫→২৬) — মূল exam paper/ছবি লাগবে
+
+`check_bugs.js` স্ক্রিপ্টটা রিপোতে যোগ করা আছে (`written-exam/check_bugs.js`) — `node check_bugs.js` চালিয়ে যেকোনো সময় structural + marks-mismatch যাচাই করা যাবে।

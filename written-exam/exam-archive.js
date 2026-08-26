@@ -698,5 +698,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-nipor-steno",
+    ministry: "জাতীয় জনসংখ্যা গবেষণা ও প্রশিক্ষণ ইনস্টিটিউট",
+    post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-07-25",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -734,5 +734,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-probashi-kollan-office-sohayok",
+    ministry: "প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয়",
+    post: "অফিস সহকারী/সাঁট মুদ্রাক্ষরিক",
+    date: "2025-08-01",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 14,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

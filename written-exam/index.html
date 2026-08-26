@@ -16,13 +16,16 @@
     })();
   </script>
 
-  <!-- MathJax — গণিতের $...$ সমীকরণ সুন্দরভাবে দেখানোর জন্য -->
+  <!-- MathJax v4 — গণিতের $...$ সমীকরণ STIX2 ফন্টে (বইয়ের সেরিফ টাইপের মতো স্পষ্ট) দেখানোর জন্য -->
   <script>
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$']],
         displayMath: [['$$', '$$']]
       },
+      // v4-এ ফন্ট এখানে সেট করা যায় — STIX2 হলো একটা সেরিফ, প্রিন্টেড বইয়ের
+      // মতো দেখতে গণিত-ফন্ট, ডিফল্ট mathjax-newcm এর চেয়ে বেশি পরিচিত/স্পষ্ট
+      output: { font: 'https://cdn.jsdelivr.net/npm/@mathjax/mathjax-stix2-font' },
       // svg scale বাড়ানো হলো — fraction/ভগ্নাংশের মতো নেস্টেড অংশ (numerator/denominator)
       // TeX-এর নিয়মে ছোট ফন্টে আঁকা হয়, স্কেল বাড়ালে সেগুলোও সুস্পষ্ট পড়া যায়
       // blacker বাড়ানো হলো — character stroke মোটা/গাঢ় করে আরও স্পষ্ট দেখানোর জন্য
@@ -34,7 +37,12 @@
       }
     };
   </script>
+  <!-- -nofont ভার্সন লোড করা হচ্ছে যাতে অব্যবহৃত ডিফল্ট mathjax-newcm ফন্ট
+       ডাউনলোড না হয় (আমরা উপরে output.font দিয়ে STIX2 নির্দিষ্ট করেছি) -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg-nofont.js" id="MathJax-script" async></script>
+  <!-- পুরনো MathJax v3 script ট্যাগ (রেফারেন্সের জন্য কমেন্টে রাখা হলো):
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script" async></script>
+  -->
 
   <style>
     /* ── Filter Bar ── */

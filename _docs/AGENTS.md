@@ -16,6 +16,20 @@ git clone https://github.com/openjobsolutionbd/open_job_solution.git
 cd open_job_solution && bash _dev/scripts/session_status.sh
 ```
 
+## 🔒 কাজের রেঞ্জ ক্লেইম করা (একাধিক Claude সমান্তরালে কাজ করলে)
+
+যখন একটা নির্দিষ্ট অংশ (যেমন বইয়ের ১০টা অধ্যায়, বা exam ক্রম ৫১৩–৫২২) নিয়ে একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে সমান্তরালে কাজ হতে পারে, শুধু branch/PR তালিকা যথেষ্ট না — কেউ branch এখনো push না করেই কাজ শুরু করে থাকতে পারে। তাই একটা হালকা "claim" (দখল-ঘোষণা) সিস্টেম ব্যবহার করা হয়, GitHub Issue দিয়ে (branch/PR-এর মতো `main` protection-এর আওতায় না বলে সাথে সাথে খোলা/বন্ধ করা যায়):
+
+1. **কাজ শুরুর আগে**: `label=claim` দিয়ে খোলা issue-গুলো চেক করুন (`session_status.sh`-এর আউটপুটে এখন এটাও দেখায়)। আপনার নেওয়া রেঞ্জ/অধ্যায়ের সাথে ওভারল্যাপ থাকলে সেই অংশ এড়িয়ে অন্য অংশ ধরুন, বা ব্যবহারকারীকে জানান।
+2. **কাজ শুরু করার সাথে সাথে** (কোড লেখার আগেই): একটা নতুন issue খুলুন —
+   - টাইটেল: `🔒 claim: <সংক্ষিপ্ত স্কোপ>` (যেমন `🔒 claim: written-exam ক্রম ৫১৩–৫২২`, `🔒 claim: ৫০তম BCS পেজ ৩৬–৪৫`)
+   - body-তে: ঠিক কোন রেঞ্জ/ফাইল/এক্সাম নিয়ে কাজ হচ্ছে, তারিখ-সময়
+   - label: `claim`
+3. **কাজ শেষ হলে (merge হোক বা abandon)**: সাথে সাথে issue close করুন — খোলা claim পরে অন্য সেশনকে বিভ্রান্ত করবে।
+4. একটা claim অনেকক্ষণ (কয়েক ঘণ্টার বেশি) খোলা থাকলে সেটা stale/abandoned হতে পারে — নিজে অনুমান করে ওভাররাইট না করে ব্যবহারকারীকে জিজ্ঞেস করুন।
+
+এই সিস্টেম কিছু জোর করে block করে না (GitHub-এ automatic enforcement নেই) — এটা শুধু coordination signal, তাই প্রতিটা Claude সেশনের সততার উপর নির্ভর করে এটা মেনে চলা।
+
 ## main branch protected — সরাসরি push করা যায় না
 
 **২০২৬-০৮-২০ থেকে `main` branch protected** (আগে সরাসরি push করা যেত, এখন যায় না)। প্রতিটা পরিবর্তনের জন্য:
@@ -61,7 +75,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 
 | পাথ | কী |
 |---|---|
-| `_dev/scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা ও সব branch/PR-এর লাইভ তালিকা দেখায় |
+| `_dev/scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, সব branch/PR-এর লাইভ তালিকা, এবং খোলা `claim` issue-এর তালিকা দেখায় |
 | `_dev/scripts/current_affairs_health_check.py` | current-affairs সিঙ্ক করা কনটেন্টের দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা |
 | `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
 | `_staging/bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |

@@ -101,6 +101,23 @@ except Exception as e:
 "
 
 echo ""
+echo "--- 🔒 সক্রিয় কাজের ক্লেইম (label: claim) ---"
+echo "একই রেঞ্জ/অধ্যায়ে অন্য Claude সেশন ইতিমধ্যে কাজ করছে কিনা এখানে দেখুন।"
+curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/${REPO}/issues?state=open&labels=claim&per_page=30" \
+  | python3 -c "
+import json, sys
+try:
+    data = json.load(sys.stdin)
+    if not data:
+        print('  (কোনো সক্রিয় claim নেই)')
+    for i in data:
+        print(f\"  #{i['number']} {i['title']}  (খোলা হয়েছে: {i['created_at'][:10]})\")
+except Exception as e:
+    print(f'  ✗ পড়া যায়নি: {e}')
+"
+
+echo ""
 echo "--- সর্বশেষ ১০টা merge হওয়া PR (সম্পন্ন কাজ) ---"
 curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
   "https://api.github.com/repos/${REPO}/pulls?state=closed&sort=updated&direction=desc&per_page=15" \

@@ -8,7 +8,7 @@ const EXAM_ARCHIVE = [
     post: "নাজির কাম ক্যাশিয়ার / সার্টিফিকেট পেশকার",
     date: "2025-06-27",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 105,
     totalQuestions: 18,
   },
   {
@@ -17,7 +17,7 @@ const EXAM_ARCHIVE = [
     post: "সহকারী কাম কিপার",
     date: "2025-07-04",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 113,
     totalQuestions: 34,
   },
   {
@@ -26,7 +26,7 @@ const EXAM_ARCHIVE = [
     post: "ড্রাইভার কাম মেকানিক",
     date: "2025-07-04",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 97,
     totalQuestions: 34,
   },
   {
@@ -35,7 +35,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁটলিপিকার কাম-কম্পিউটার অপারেটর",
     date: "2025-07-04",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 104,
     totalQuestions: 34,
   },
   {
@@ -44,7 +44,7 @@ const EXAM_ARCHIVE = [
     post: "ট্রাফিক সুপারভাইজার",
     date: "2025-07-04",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 70,
     totalQuestions: 6,
   },
   {
@@ -62,7 +62,7 @@ const EXAM_ARCHIVE = [
     post: "উচ্চমান সহকারী",
     date: "2025-07-05",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 67,
     totalQuestions: 12,
   },
   {
@@ -71,7 +71,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম-কম্পিউটার অপারেটর",
     date: "2025-07-11",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 86,
     totalQuestions: 28,
   },
   {
@@ -80,7 +80,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-07-12",
     duration: "৬০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 69,
     totalQuestions: 13,
   },
   {
@@ -89,7 +89,7 @@ const EXAM_ARCHIVE = [
     post: "ডাটা এন্ট্রি অপারেটর",
     date: "2025-07-18",
     duration: "৬০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 60,
     totalQuestions: 10,
   },
   // ══════════════════════════════════════════════════════════
@@ -101,7 +101,7 @@ const EXAM_ARCHIVE = [
     post: "শিক্ষক",
     date: "2025-09-05",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 85,
     totalQuestions: 14,
   },
   {
@@ -137,7 +137,7 @@ const EXAM_ARCHIVE = [
     post: "কারা সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-09-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 84,
     totalQuestions: 16,
   },
   {
@@ -146,7 +146,7 @@ const EXAM_ARCHIVE = [
     post: "টেকনিশিয়ান",
     date: "2025-09-19",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 72,
     totalQuestions: 20,
   },
   {
@@ -164,7 +164,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-09-26",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 75,
     totalQuestions: 28,
   },
   {
@@ -191,7 +191,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-09-26",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 85,
     totalQuestions: 15,
   },
   {
@@ -200,7 +200,7 @@ const EXAM_ARCHIVE = [
     post: "প্রধান সহকারী",
     date: "2025-10-04",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 75,
     totalQuestions: 13,
   },
   {
@@ -263,7 +263,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-11-21",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 109,
     totalQuestions: 37,
   },
   {
@@ -272,7 +272,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-11-29",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 90,
     totalQuestions: 25,
   },
   {
@@ -281,7 +281,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী",
     date: "2025-11-29",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 80,
     totalQuestions: 11,
   },
   {
@@ -290,7 +290,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-12-04",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 108,
     totalQuestions: 16,
   },
   {
@@ -299,7 +299,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক ও বিভিন্ন",
     date: "2025-12-06",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 69,
     totalQuestions: 12,
   },
   {
@@ -308,7 +308,7 @@ const EXAM_ARCHIVE = [
     post: "টেলিফোন অপারেটর",
     date: "2025-12-06",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 120,
     totalQuestions: 15,
   },
   {
@@ -326,7 +326,7 @@ const EXAM_ARCHIVE = [
     post: "পেশকার",
     date: "2025-12-12",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 139,
     totalQuestions: 17,
   },
   {
@@ -335,7 +335,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁটমুদ্রাক্ষরিক-কাম-কম্পিউটার অপারেটর",
     date: "2025-12-13",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 87,
     totalQuestions: 8,
   },
   {
@@ -353,7 +353,7 @@ const EXAM_ARCHIVE = [
     post: "হিসাব রক্ষক",
     date: "2025-08-01",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 80,
     totalQuestions: 14,
   },
   {
@@ -371,7 +371,7 @@ const EXAM_ARCHIVE = [
     post: "হিসাব সহকারী",
     date: "2025-08-08",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 102,
     totalQuestions: 13,
   },
   {
@@ -380,7 +380,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-08-08",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 64,
     totalQuestions: 13,
   },
   {
@@ -389,7 +389,7 @@ const EXAM_ARCHIVE = [
     post: "ডাটা এন্ট্রি কাম কম্পিউটার অপারেটর",
     date: "2025-08-08",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 68,
     totalQuestions: 13,
   },
   {
@@ -398,7 +398,7 @@ const EXAM_ARCHIVE = [
     post: "জুনিয়র টেকনিশিয়ান",
     date: "2025-08-08",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 66,
     totalQuestions: 15,
   },
   {
@@ -407,7 +407,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-08-09",
     duration: "৬০ মিনিট",
-    totalMarks: 80,
+    totalMarks: 72,
     totalQuestions: 10,
   },
   {
@@ -416,7 +416,7 @@ const EXAM_ARCHIVE = [
     post: "মেকানিক্যাল ফোরম্যান ও অন্যান্য",
     date: "2025-08-09",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 112,
     totalQuestions: 19,
   },
   {
@@ -425,7 +425,7 @@ const EXAM_ARCHIVE = [
     post: "ইলেকট্রিক্যাল ফোরম্যান ও ইলেকট্রিশিয়ান",
     date: "2025-08-09",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 109,
     totalQuestions: 19,
   },
   {
@@ -434,7 +434,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-10-18",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 66,
     totalQuestions: 8,
   },
   {
@@ -443,7 +443,7 @@ const EXAM_ARCHIVE = [
     post: "বেঞ্চ সহকারী",
     date: "2025-10-18",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 80,
     totalQuestions: 8,
   },
   {
@@ -452,7 +452,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-10-24",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 69,
     totalQuestions: 21,
   },
   {
@@ -461,7 +461,7 @@ const EXAM_ARCHIVE = [
     post: "উচ্চমান সহকারী কাম হিসাবরক্ষক",
     date: "2025-10-24",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 83,
     totalQuestions: 21,
   },
   {
@@ -470,7 +470,7 @@ const EXAM_ARCHIVE = [
     post: "ভান্ডার রক্ষক",
     date: "2025-10-24",
     duration: "৯০ মিনিট",
-    totalMarks: 80,
+    totalMarks: 83,
     totalQuestions: 19,
   },
   {
@@ -488,7 +488,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-10-24",
     duration: "৬০ মিনিট",
-    totalMarks: 40,
+    totalMarks: 77,
     totalQuestions: 15,
   },
   {
@@ -497,7 +497,7 @@ const EXAM_ARCHIVE = [
     post: "নাজির কাম ক্যাশিয়ার, অফিস সহকারী",
     date: "2025-10-24",
     duration: "৯০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 126,
     totalQuestions: 16,
   },
   {
@@ -506,7 +506,7 @@ const EXAM_ARCHIVE = [
     post: "আর্টিফিসার",
     date: "2025-10-25",
     duration: "১২০ মিনিট",
-    totalMarks: 100,
+    totalMarks: 120,
     totalQuestions: 16,
   },
   {
@@ -515,7 +515,7 @@ const EXAM_ARCHIVE = [
     post: "উচ্চমান সহকারী",
     date: "2025-10-17",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 74,
     totalQuestions: 12,
   },
   {
@@ -533,7 +533,7 @@ const EXAM_ARCHIVE = [
     post: "কম্পিউটার অপারেটর",
     date: "2025-10-31",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 98,
     totalQuestions: 15,
   },
   {
@@ -542,7 +542,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-10-31",
     duration: "৯০ মিনিট",
-    totalMarks: 80,
+    totalMarks: 89,
     totalQuestions: 14,
   },
   {
@@ -551,7 +551,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-11-14",
     duration: "৬০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 86,
     totalQuestions: 19,
   },
   {
@@ -560,7 +560,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-11-14",
     duration: "৬০ মিনিট",
-    totalMarks: 40,
+    totalMarks: 50,
     totalQuestions: 11,
   },
   {
@@ -569,7 +569,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁটমুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-11-14",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 81,
     totalQuestions: 16,
   },
   {
@@ -578,7 +578,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-11-14",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 83,
     totalQuestions: 16,
   },
   {
@@ -587,7 +587,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-11-14",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 73,
     totalQuestions: 16,
   },
   {
@@ -596,7 +596,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-11-21",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 98,
     totalQuestions: 17,
   },
   {
@@ -605,7 +605,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট-মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
     date: "2025-11-21",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 95,
     totalQuestions: 16,
   },
   {
@@ -614,7 +614,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-11-21",
     duration: "৬০ মিনিট",
-    totalMarks: 40,
+    totalMarks: 79,
     totalQuestions: 21,
   },
   {
@@ -623,7 +623,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 72,
     totalQuestions: 31,
   },
   {
@@ -632,7 +632,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট-মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 69,
     totalQuestions: 30,
   },
   {
@@ -641,7 +641,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 67,
     totalQuestions: 27,
   },
   {
@@ -650,7 +650,7 @@ const EXAM_ARCHIVE = [
     post: "নকশাকার",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 66.6,
     totalQuestions: 24,
   },
   {
@@ -659,7 +659,7 @@ const EXAM_ARCHIVE = [
     post: "বেঞ্চ সহকারী",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 65,
     totalQuestions: 12,
   },
   {
@@ -668,7 +668,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-12-19",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 68.4,
     totalQuestions: 17,
   },
   {
@@ -677,7 +677,7 @@ const EXAM_ARCHIVE = [
     post: "উপ সহকারী প্রকৌশলী (সিভিল)",
     date: "2025-12-22",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 52.5,
     totalQuestions: 20,
   },
   {
@@ -686,8 +686,17 @@ const EXAM_ARCHIVE = [
     post: "কম্পিউটার অপারেটর/অফিস সহকারী",
     date: "2025-08-09",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 95,
     totalQuestions: 13,
+  },
+  {
+    id: "job-2025-expatriate-welfare-steno",
+    ministry: "প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয়",
+    post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+    date: "2025-07-25",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 15,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

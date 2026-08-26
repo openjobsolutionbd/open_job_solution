@@ -4096,7 +4096,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-dc-narayanganj-nazir-cashier-q05", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "সাহিত্য ও ব্যাকরণ", "qno": 5, "marks": 8, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দাও:", "parts": [{"label": "ক", "q": "চোরাবালি কাব্যগ্রন্থ কার লেখা?", "a": "কবি বিষ্ণু দে"}, {"label": "খ", "q": "আমি কলম দিয়ে লিখি। এখানে কলম কোন কারকের উদাহরণ?", "a": "করণ কারক"}, {"label": "গ", "q": "জমিদার শব্দের স্ত্রীলিঙ্গ কি?", "a": "জমিদারনি"}, {"label": "ঘ", "q": "'সব ঝিনুকে মুক্তা মিলে না।' এখানে 'ঝিনুকে' কোন কারকে কোন বিভক্তি?", "a": "অপাদান কারকে ৭মী বিভক্তি"}, {"label": "ঙ", "q": "'সুশিক্ষিত লোক মাত্রই স্বশিক্ষিত।' উক্তিটি কার?", "a": "প্রমথ চৌধুরী"}, {"label": "চ", "q": "'প্রভাত চিন্তা, নিভৃত চিন্তা, নিশীথ চিন্তা' প্রভৃতি গ্রন্থের রচয়িতা কে?", "a": "কালীপ্রসন্ন ঘোষ"}, {"label": "ছ", "q": "বাংলা একাডেমী থেকে প্রকাশিত ত্রৈমাসিক পত্রিকার নাম কী?", "a": "ধান শালিকের দেশ"}, {"label": "জ", "q": "সর্বজন এর বিশেষণ কী?", "a": "সর্বজনীন"}, {"label": "ঝ", "q": "রবীন্দ্রনাথ ঠাকুর তাঁর কোন নাটক কাজী নজরুল ইসলামকে উৎসর্গ করেন?", "a": "বসন্ত"}, {"label": "এ়", "q": "'সোনালী কাবিন' কাব্যগ্রন্থের রচয়িতা কে?", "a": "আল মাহমুদ"}]},
 
-  {"id": "job-2025-dc-narayanganj-nazir-cashier-q06", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "আবেদনপত্র", "qno": 6, "marks": 10, "type": "letter", "question": "একটি সামাজিক সমস্যার কথা বর্ণনা করে এবং তা সমাধানের ব্যবস্থা গ্রহণের অনুরোধ জানিয়ে জেলা প্রশাসকের বরাবর একটি আবেদন লিখুন।", "letter": {"to": "জেলা প্রশাসক, নারায়ণগঞ্জ", "body": "তারিখ: ২৪ অক্টোবর ২০২৫\n\nবরাবর\nজেলা প্রশাসক\nনারায়ণগঞ্জ\n\nবিষয়: মশক নিধন ও পানির সংকট সমাধানের জন্য আবেদন।\n\nমহোদয়,\n\nআমি খন্দকার আব্দুল কাদের রেজা, নারায়ণগঞ্জ এর বাসিন্দা। বিনীতভাবে জানাতে চাই যে, আমাদের এলাকার মানুষের জন্য মশক জনিত সমস্যা এবং পানির সংকট অনেক উদ্বেগের বিষয় হয়ে দাঁড়িয়েছে। বিশেষ করে বর্ষা মৌসুমে মশার প্রকোপ বৃদ্ধি পাচ্ছে, যার ফলে ডেঙ্গু, ম্যালেরিয়া সহ বিভিন্ন রোগের ঝুঁকি বাড়ছে। একই সঙ্গে, পানির সরবরাহও অনিয়মিত এবং অপ্রতুল হওয়ায় সাধারণ মানুষ দৈনন্দিন জীবনে কষ্ট ভোগ করছে।\n\nএই সমস্যাগুলো সমাধানের জন্য আমি আন্তরিকভাবে জেলা প্রশাসকের দৃষ্টি আকর্ষণ করে অনুরোধ করছি যে, আমাদের এলাকায় মশক নিধন কার্যক্রম চালু করা এবং পানির সংকট নিরসনের জন্য প্রয়োজনীয় ব্যবস্থা গ্রহণ করা হোক। এতে এলাকার মানুষ সুস্থ ও স্বাচ্ছন্দ্যে জীবনযাপন করতে পারবে। আপনার সদয় দৃষ্টি ও সহযোগিতার জন্য অগ্রিম ধন্যবাদ।\n\nআপনার বিশ্বস্ত,\nখন্দকার আব্দুল কাদের রেজা\nফতুল্লা, নারায়ণগঞ্জ"}},
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q06", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "bangla", "topic": "আবেদনপত্র", "qno": 6, "marks": 10, "type": "letter", "question": "একটি সামাজিক সমস্যার কথা বর্ণনা করে এবং তা সমাধানের ব্যবস্থা গ্রহণের অনুরোধ জানিয়ে জেলা প্রশাসকের বরাবর একটি আবেদন লিখুন।", "letter": {"date": "২৪ অক্টোবর ২০২৫", "to": "জেলা প্রশাসক, নারায়ণগঞ্জ", "subject": "মশক নিধন ও পানির সংকট সমাধানের জন্য আবেদন।", "body": "মহোদয়,\n\nআমি খন্দকার আব্দুল কাদের রেজা, নারায়ণগঞ্জ এর বাসিন্দা। বিনীতভাবে জানাতে চাই যে, আমাদের এলাকার মানুষের জন্য মশক জনিত সমস্যা এবং পানির সংকট অনেক উদ্বেগের বিষয় হয়ে দাঁড়িয়েছে। বিশেষ করে বর্ষা মৌসুমে মশার প্রকোপ বৃদ্ধি পাচ্ছে, যার ফলে ডেঙ্গু, ম্যালেরিয়া সহ বিভিন্ন রোগের ঝুঁকি বাড়ছে। একই সঙ্গে, পানির সরবরাহও অনিয়মিত এবং অপ্রতুল হওয়ায় সাধারণ মানুষ দৈনন্দিন জীবনে কষ্ট ভোগ করছে।\n\nএই সমস্যাগুলো সমাধানের জন্য আমি আন্তরিকভাবে জেলা প্রশাসকের দৃষ্টি আকর্ষণ করে অনুরোধ করছি যে, আমাদের এলাকায় মশক নিধন কার্যক্রম চালু করা এবং পানির সংকট নিরসনের জন্য প্রয়োজনীয় ব্যবস্থা গ্রহণ করা হোক। এতে এলাকার মানুষ সুস্থ ও স্বাচ্ছন্দ্যে জীবনযাপন করতে পারবে। আপনার সদয় দৃষ্টি ও সহযোগিতার জন্য অগ্রিম ধন্যবাদ।", "closing": "আপনার বিশ্বস্ত,", "sender": "খন্দকার আব্দুল কাদের রেজা\nফতুল্লা, নারায়ণগঞ্জ"}},
 
   {"id": "job-2025-dc-narayanganj-nazir-cashier-q07", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "fill-in-the-blank", "qno": 7, "marks": 5, "type": "fill-gaps", "question": "Use appropriate word/words:", "parts": [{"sentence": "My friend always goes home........ foot.", "answer": "on"}, {"sentence": "At least one of the students...... full marks every time.", "answer": "gets"}, {"sentence": "The team is ........ eleven players.", "answer": "made up of"}, {"sentence": "The path.......... paved, so we were able to walk through the path.", "answer": "had been"}, {"sentence": "To stay healthy, we must plan to have a balanced.......", "answer": "diet"}]},
 
@@ -4112,7 +4112,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-dc-narayanganj-nazir-cashier-q13", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "fill-in-the-blank", "qno": 13, "marks": 5, "type": "fill-gaps", "question": "Fill the gaps with preposition:", "parts": [{"sentence": "A good student is fond (a).......books.", "answer": "of"}, {"sentence": "He adheres (b).......his studies.", "answer": "to"}, {"sentence": "He always tries to cut a brilliant figure (c).......the examination.", "answer": "in"}, {"sentence": "He never deviates (d)........his duties because", "answer": "from"}, {"sentence": "success depends (e).......hard work.", "answer": "on"}]},
 
-  {"id": "job-2025-dc-narayanganj-nazir-cashier-q14", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "letter", "qno": 14, "marks": 10, "type": "letter", "question": "Write an application to the Deputy Commissioner for establishing a language club in your school.", "letter": {"to": "The Deputy Commissioner Narayanganj", "body": "Subject: Request for Permission to Establish a Language Club\n\nRespected Sir,\n\nWith due respect, I would like to inform you that we, the students of [School Name], wish to establish a Language Club in our school to promote reading, speaking, and writing skills in English and other languages. This club will help students improve their communication skills and participate in debates, discussions, and cultural activities.\n\nWe kindly request your permission to establish this club and provide necessary guidance.\n\nYours obediently,\nMiraz, Class Seven"}},
+  {"id": "job-2025-dc-narayanganj-nazir-cashier-q14", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "english", "topic": "letter", "qno": 14, "marks": 10, "type": "letter", "question": "Write an application to the Deputy Commissioner for establishing a language club in your school.", "letter": {"to": "The Deputy Commissioner Narayanganj", "subject": "Request for Permission to Establish a Language Club", "body": "Respected Sir,\n\nWith due respect, I would like to inform you that we, the students of [School Name], wish to establish a Language Club in our school to promote reading, speaking, and writing skills in English and other languages. This club will help students improve their communication skills and participate in debates, discussions, and cultural activities.\n\nWe kindly request your permission to establish this club and provide necessary guidance.", "closing": "Yours obediently,", "sender": "Miraz, Class Seven"}},
 
   {"id": "job-2025-dc-narayanganj-nazir-cashier-q15", "examId": "job-2025-dc-narayanganj-nazir-cashier", "subject": "math", "topic": "গণিত সমস্যা", "qno": 15, "marks": 30, "type": "math", "question": "নিম্নলিখিত গাণিতিক প্রশ্নগুলোর উত্তর দিন:\n১২। 0.8 × 0.2 × 0.৪ = ?\n১৩। (0.9)³+(0.4)³ / 0.9+0.4 = ?\n১৪। 125(√5)^2x = 1 হলে x এর মান কত?\n১৫। একটি সংখ্যার ৩০% থেকে ৩০ বিয়োগ করলে বিয়োগফল ৩০ হবে। সংখ্যাটি কত?\n১৬। চার অংকের বৃহত্তম সংখ্যা থেকে তিন অংকের ক্ষুদ্রতম সংখ্যা বিয়োগ করলে বিয়োগফল কত?\n১৭। ৮, ১১, ১৭, ২৯, ৫৩ __ পরবর্তী সংখ্যাটি কত?\n১৮। একটি সমচতুর্ভুজের ক্ষেত্রফল নির্ণয়ের সূত্র কী?\n১৯। 0.0001 এর বর্গমূল কত?\n২০। একটি গাড়ির চাকা মিনিটে ৯০ বার ঘোরে। ১ সেকেন্ডে চাকাটি কত ডিগ্রী ঘুরবে নির্ণয় করুন।\n২১। একটি বর্গাকার বাগানের ক্ষেত্রফল ১ হেক্টর হলে বাগানটির পরিসীমা কত?\n২২। মামুন ও তপনের আয়ের অনুপাত ৪ঃ৩। তপন ও বশিরের আয়ের অনুপাত ৫ঃ৪। মামুনের আয় ১২০ টাকা হলে, বশিরের আয় কত?\n২৩। একটি মটর সাইকেল ১২% ক্ষতিতে বিক্রয় করা হল। যদি বিক্রয়মূল্য ১২০০ টাকা বেশি হতো তাহলে ৮% লাভ হত। মটর সাইকেলটির ক্রয়মূল্য কত?\n২৪। একটি আয়তক্ষেত্রের দৈর্ঘ্য ১৮ সে.মি এবং প্রস্থ ১০ সে.মি। আয়তক্ষেত্রটির দৈর্ঘ্য বৃদ্ধি করে ২৫ সে.মি করা হলো। আয়তক্ষেত্রটির প্রস্থ কত হলে ক্ষেত্রফল অপরিবর্তিত থাকবে?\n২৫। যদি x + 1/x = 5 হয়, x² + 1/x² তবে এর মান কত?", "steps": ["১২) 0.8 × 0.2 × 0.৪ = 0.064", "১৩) (0.9)³+(0.4)³ / (0.9+0.4) = 0.61", "১৪) 125(√5)^2x = 1", "বা, 5³.5^(2x/2) = 1", "বা, 5³.5^x = 1", "বা, 5^(3+x) = 5^0", "বা, 3+x = 0", "∴ x = −3 (Answer)", "১৫) মনে করি, সংখ্যাটি ক", "প্রশ্নমতে, ক এর ৩০% - ৩০ = ৩০", "বা, ৩০ক/১০০ = ৬০", "বা, ৩০ক = ৬০০০", "ক = ২০০", "উত্তর: ২০০", "১৬) চার অংকের বৃহত্তম সংখ্যা ৯৯৯৯ থেকে তিন অংকের ক্ষুদ্রতম সংখ্যা ১০০ বিয়োগ করলে বিয়োগফল = ৯৮৯৯", "১৭) ৮, ১১, ১৭, ২৯, ৫৩ ধারায় পার্থক্য ৩, ৬, ১২, ২৪ (দ্বিগুণ ধারা), পরবর্তী পার্থক্য ৪৮, সুতরাং পরবর্তী সংখ্যা = ৫৩+৪৮ = ১০১", "১৮) সমচতুর্ভুজের ক্ষেত্রফল = ১/২ × কর্ণদ্বয়ের গুণফল", "১৯) 0.0001 এর বর্গমূল = 0.01", "২০) ১ বার ঘুরলে অতিক্রম করে ৩৬০°; ৯০ বার ঘুরলে অতিক্রম করে ৯০ × ৩৬০° = ৩২৪০০°, যা ৬০ সেকেন্ডে ঘোরে; ১ সেকেন্ডে ঘুরবে ৩২৪০০°/৬০ = ৫৪০°", "২১) মনে করি, বাগানের দৈর্ঘ্য a মিটার; ক্ষেত্রফল = a²; প্রশ্নমতে, a² = 10000 [১ হেক্টর = ১০০০০ বর্গ মি.]; ∴ a² = 100; সুতরাং বাগানের পরিসীমা = 4a = 4 × 100 = 400 মিটার", "২২) মামুন ও তপনের আয়ের অনুপাত ৪ঃ৩ = ২০ঃ১৫; তপন ও বশিরের আয়ের অনুপাত ৫ঃ৪ = ১৫ঃ১২; মামুনের আয় : তপনের আয় : বশিরের আয় = ২০ : ১৫ : ১২; মামুনের আয়/বশিরের আয় = ২০/১২; বশিরের আয় = (মামুনের আয় × ১২)/২০ = (১২০ × ১২)/২০ = ৭২ টাকা", "২৩) মনে করি, ক্রয়মূল্য ১০০ টাকা; ১২% ক্ষতিতে বিক্রয়মূল্য (১০০-১২)=৮৮ টাকা; ৮% লাভে বিক্রয়মূল্য (১০০+৮)=১০৮ টাকা; বিক্রয়মূল্য বেশি (১০৮-৮৮)=২০ টাকা; বিক্রয়মূল্য ২০ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা; \"১২০০\" হলে ক্রয়মূল্য = (১০০×১২০০)/২০ = ৬০০০ টাকা", "২৪) অপরিবর্তিত অবস্থায় ক্ষেত্রফল = (১৮ × ১০) বর্গ সে.মি = ১৮০ বর্গ সে.মি; ধরি, পরিবর্তিত অবস্থায় প্রস্থ = x; প্রশ্নমতে, ২৫x = ১৮০; ∴ x = ৭.২; উত্তর: ৭.২ সে.মি", "২৫) প্রদত্ত রাশি = x² + (1/x)² = (x+1/x)² − 2.x.1/x = 5² − 2 [মান বসিয়ে] = 25 − 2 = 23 (Answer)"], "answer": "১২) ০.০৬৪ ১৩) ০.৬১ ১৪) x=−৩ ১৫) ২০০ ১৬) ৯৮৯৯ ১৭) ১০১ ১৮) ১/২×কর্ণদ্বয়ের গুণফল ১৯) ০.০১ ২০) ৫৪০° ২১) ৪০০ মিটার ২২) ৭২ টাকা ২৩) ৬০০০ টাকা ২৪) ৭.২ সে.মি ২৫) ২৩"},
 
@@ -4232,7 +4232,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-dmch-computer-operator-q04", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 4, "marks": 4, "type": "sub-parts", "question": "অর্থসহ বাক্য গঠন করুনঃ", "parts": [{"label": "ক", "q": "ইতর বিশেষ", "a": "পার্থক্য"}, {"label": "খ", "q": "ভূষণ্ডির কাক", "a": "দীর্ঘজীবী"}, {"label": "গ", "q": "অজগরবৃত্তি", "a": "আলসেমি"}, {"label": "ঘ", "q": "গৌরচন্দ্রিকা", "a": "ভূমিকা"}]},
 
-  {"id": "job-2025-dmch-computer-operator-q05", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "short-qa", "qno": 5, "marks": 2, "type": "sub-parts", "question": "সংক্ষিপ্ত প্রশ্নের উত্তর দিনঃ", "parts": [{"label": "ক", "q": "নেমেসিস কোন জাতীয় রচনা?", "a": "নাটক"}, {"label": "খ", "q": "'সর্বাঙ্গে ব্যথা ঔষধ দিব কোথা' - এখানে ঔষধ কোন কারকে কোন বিভক্তি?", "a": null}]},
+  {"id": "job-2025-dmch-computer-operator-q05", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "short-qa", "qno": 5, "marks": 2, "type": "sub-parts", "question": "সংক্ষিপ্ত প্রশ্নের উত্তর দিনঃ", "parts": [{"label": "ক", "q": "নেমেসিস কোন জাতীয় রচনা?", "a": "নাটক"}, {"label": "খ", "q": "'সর্বাঙ্গে ব্যথা ঔষধ দিব কোথা' - এখানে ঔষধ কোন কারকে কোন বিভক্তি?", "a": "কর্মকারকে শূন্য বিভক্তি"}]},
 
   {"id": "job-2025-dmch-computer-operator-q06", "examId": "job-2025-dmch-computer-operator", "subject": "bangla", "topic": "essay", "qno": 6, "marks": 2, "type": "paragraph", "question": "স্বাস্থ্যখাতে টেকসই উন্নয়ন লক্ষ্যমাত্রা ও বাংলাদেশ- এ বিষয়ে সর্বোচ্চ ২০০ শব্দের নাতিদীর্ঘ একটি অনুচ্ছেদ লিখুন।", "answer": "টেকসই উন্নয়ন লক্ষ্যমাত্রা (SDG) এর তৃতীয় লক্ষ্য হলো সুস্বাস্থ্য ও কল্যাণ নিশ্চিত করা। বাংলাদেশ ২০৩০ সালের মধ্যে এই লক্ষ্য অর্জনে নিরলসভাবে কাজ করে যাচ্ছে। মাতৃমৃত্যু ও শিশুমৃত্যুর হার কমানো, সংক্রামক ব্যাধি নির্মূল, প্রজনন স্বাস্থ্যসেবা সহজলভ্যকরণ এবং সর্বজনীন স্বাস্থ্যসেবা নিশ্চিতকরণ এই লক্ষ্যের মূল দিক। বাংলাদেশ ইতিমধ্যে শিশুমৃত্যু হার হ্রাসে উল্লেখযোগ্য সাফল্য দেখিয়েছে এবং টিকাদান কর্মসূচি, কমিউনিটি ক্লিনিক স্থাপন ও মা ও শিশু স্বাস্থ্যসেবা কর্মসূচির মাধ্যমে অগ্রগতি অব্যাহত রেখেছে। তবে গ্রামীণ ও প্রত্যন্ত অঞ্চলে স্বাস্থ্যসেবার অপ্রতুলতা, দক্ষ জনবলের ঘাটতি ও অসংক্রামক রোগের ক্রমবর্ধমান প্রকোপ এখনো বড় চ্যালেঞ্জ। এই লক্ষ্য অর্জনে সরকারি-বেসরকারি অংশীদারিত্ব বৃদ্ধি, স্বাস্থ্য বাজেট বৃদ্ধি এবং প্রযুক্তিনির্ভর স্বাস্থ্যসেবা সম্প্রসারণ জরুরি। সবার জন্য সাশ্রয়ী ও মানসম্মত স্বাস্থ্যসেবা নিশ্চিত করতে পারলেই বাংলাদেশ এই লক্ষ্যমাত্রা যথাসময়ে অর্জন করতে সক্ষম হবে।"},
 
@@ -4509,7 +4509,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-primary-mass-edu-steno-typist-q01", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "অর্থসহ বাক্য", "qno": 1, "marks": 5, "type": "sub-parts", "question": "অর্থসহ বাক্য রচনা করুনঃ", "parts": [{"label": "ক", "q": "চাঁদের হাট", "a": "আনন্দের প্রাচুর্য"}, {"label": "খ", "q": "ধামাধরা", "a": "তোষামোদকারী"}, {"label": "গ", "q": "হ-য-ব-র-ল", "a": "বিশৃঙ্খলা"}, {"label": "ঘ", "q": "চোরা বালি", "a": "অদৃশ্য বিপদাশঙ্কা/প্রচ্ছন্ন আকর্ষণ"}, {"label": "ঙ", "q": "এলাহিকাণ্ড", "a": "বিরাট আয়োজন"}]},
 
-  {"id": "job-2025-primary-mass-edu-steno-typist-q02", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "grammar", "qno": 2, "marks": 5, "type": "sub-parts", "question": "লিঙ্গ পরিবর্তন করুন / চিহ্নিত শব্দগুলির পদ নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "তার সাহস আছে।", "a": "বিশেষণ পদ"}, {"label": "খ", "q": "ঝিনুক পঞ্চম শ্রেণিতে পড়ে। (বিশেষণ পদ)", "a": null}, {"label": "গ", "q": "ঝমঝম করে বৃষ্টি পড়ছে = ক্রিয়া বিশেষণ", "a": null}, {"label": "ঘ", "q": "আমার সামনে দাঁড়াও = অব্যয়", "a": null}, {"label": "ঙ", "q": "তিনি একজন শিক্ষক = সর্বনাম", "a": null}]},
+  {"id": "job-2025-primary-mass-edu-steno-typist-q02", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "grammar", "qno": 2, "marks": 5, "type": "sub-parts", "question": "লিঙ্গ পরিবর্তন করুন / চিহ্নিত শব্দগুলির পদ নির্ণয় করুনঃ", "parts": [{"label": "ক", "q": "তার সাহস আছে।", "a": "বিশেষণ পদ"}, {"label": "খ", "q": "ঝিনুক পঞ্চম শ্রেণিতে পড়ে।", "a": "বিশেষণ পদ"}, {"label": "গ", "q": "ঝমঝম করে বৃষ্টি পড়ছে", "a": "ক্রিয়া বিশেষণ"}, {"label": "ঘ", "q": "আমার সামনে দাঁড়াও", "a": "অব্যয়"}, {"label": "ঙ", "q": "তিনি একজন শিক্ষক", "a": "সর্বনাম"}]},
 
   {"id": "job-2025-primary-mass-edu-steno-typist-q03", "examId": "job-2025-primary-mass-edu-steno-typist", "subject": "bangla", "topic": "লিঙ্গ পরিবর্তন", "qno": 3, "marks": 5, "type": "table", "question": "লিঙ্গ পরিবর্তন করুনঃ", "columns": ["পুরুষবাচক", "স্ত্রীবাচক"], "rows": [["বিদ্বান", "বিদুষী"], ["গুরু", "গুর্বী"], ["দৌহিত্র", "দৌহিত্রী"], ["মহীয়ান", "মহীয়সী"], ["জনক", "জননী"]]},
 
@@ -4967,8 +4967,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-nlasp-bench-asst-q08", "examId": "job-2025-nlasp-bench-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 8, "marks": 10, "type": "short-qa", "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিন:", "parts": [{"label": "ক", "q": "পানামা খাল কোন দুটি মহাদেশকে যুক্ত করেছে?", "a": "উত্তর আমেরিকা ও দক্ষিণ আমেরিকা"}, {"label": "খ", "q": "ক্যাম্প ডেভিড চুক্তি কোন দুটি দেশের মধ্যে স্বাক্ষরিত হয়?", "a": "মিশর ও ইসরাইল"}, {"label": "গ", "q": "ILO এর সদর দপ্তর কোথায়?", "a": "জেনেভা, সুইজারল্যান্ড"}, {"label": "ঘ", "q": "সুনামী কোন দেশী শব্দ ও অর্থ কি?", "a": "জাপানি শব্দ, অর্থ পোতাশ্রয়ের ঢেউ"}, {"label": "ঙ", "q": "অন্ধকারাচ্ছন্ন মহাদেশ বলা হয় কোন মহাদেশকে?", "a": "আফ্রিকা মহাদেশ"}, {"label": "চ", "q": "বাংলাদেশে জিআই স্বীকৃত পাওয়া মোট পণ্য সংখ্যা কত?", "a": "৬২টি (সর্বশেষ- কালিগঞ্জের তোয়ালে)"}, {"label": "ছ", "q": "বাংলাদেশের পরিসংখ্যান ব্যুরো এর সাম্প্রতিক জরীপে কোন বিভাগে জমিতে লাভ বেশি বলে তথ্য উঠে এসেছে?", "a": "খুলনা"}, {"label": "জ", "q": "জুলাই স্মৃতি উদ্যান কোথায় অবস্থিত?", "a": "চট্টগ্রাম"}, {"label": "ঝ", "q": "জাতিসংঘে ব্যবহারের জন্য UNDP যে বাংলা ফন্ট চালু করেছে তার নাম কি?", "a": "UN Bangla"}, {"label": "ঞ", "q": "আশ্রয়নবিরোধী আট স্তম্ভ কোথায় স্থাপন করা হয়েছে?", "a": "পলাশী চত্বর, ঢাকা বিশ্ববিদ্যালয়"}, {"label": "ট", "q": "বাংলাদেশের দীর্ঘতম একক রেলসেতু কোনটি?", "a": "যমুনা রেলসেতু"}, {"label": "ঠ", "q": "বিশ্বের কোন দেশের নারীরা প্রথম ভোটাধিকার পায়?", "a": "নিউজিল্যান্ড"}, {"label": "ড", "q": "বাংলাদেশের একমাত্র দ্বীপ জেলা কোনটি?", "a": "ভোলা"}, {"label": "ঢ", "q": "তিস্তা কোন নদীর উপনদী?", "a": "ব্রহ্মপুত্র"}, {"label": "ণ", "q": "শীতল যুদ্ধের অবসানের পর কোন সংস্থাটি তার প্রাসঙ্গিকতা হারিয়ে ফেলেছে বলে মনে করা হয়?", "a": "সোভিয়েত ইউনিয়ন"}]},
 
-  // ══════════════════════════════════════════════════════════
-  // পরীক্ষা: কৃষি তথ্য সার্ভিস — কম্পিউটার অপারেটর/অফিস সহকারী (job-2025-agri-info-office-asst)
+  // ══════════════════════════════════════════════════════════ — কম্পিউটার অপারেটর/অফিস সহকারী (job-2025-agri-info-office-asst)
   // সোর্স: Self_job_solution_book_part_5.rar (বইয়ের পৃষ্ঠা ৩১১-৩১৩, ক্রম ৫৪১)
   // ══════════════════════════════════════════════════════════
 
@@ -4999,7 +4998,166 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-agri-info-office-asst-q13", "examId": "job-2025-agri-info-office-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 13, "marks": 10, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দিন:", "parts": [{"label": "ক", "q": "PATC এর পূর্ণরূপ কী? এটি কোন সালে প্রতিষ্ঠিত হয়েছিল?", "a": "Public Administration Training Centre। প্রতিষ্ঠাকাল: ১৯৮৪"}, {"label": "খ", "q": "সবুজ বিপ্লবের জনক কাকে বলা হয়?", "a": "নরম্যান আর্নেস্ট বোরলগ"}, {"label": "গ", "q": "বাংলাদেশের সাংবিধানিক নাম কী? রাষ্ট্রপতি পদত্যাগ করতে চাইলে কাকে উদ্দেশ্য করে পদত্যাগপত্র লিখবেন?", "a": "গণপ্রজাতন্ত্রী বাংলাদেশ (The People's Republic of Bangladesh); স্পিকার কে উদ্দেশ্য করে পদত্যাগ পত্র লিখবে।"}, {"label": "ঘ", "q": "মাধ্যাকর্ষণ শক্তি কে আবিষ্কার করেন?", "a": "স্যার আইজ্যাক নিউটন"}, {"label": "ঙ", "q": "পৃথিবীর সর্বোচ্চ ভবনের নাম কী? এটি কোন দেশে অবস্থিত?", "a": "বুর্জ খলিফা। অবস্থান: সংযুক্ত আরব আমিরাত (শহর- দুবাই)।"}, {"label": "চ", "q": "শাতিল আরব নদী কোন দু'দেশের মাঝখানে অবস্থিত?", "a": "ইরান ও ইরাক (শাত-ইল-আরব নদী)"}, {"label": "ছ", "q": "আফগানিস্তানের পার্লামেন্টের নাম কী?", "a": "লয়া জিরগা/ন্যাশনাল অ্যাসেম্বলি"}, {"label": "জ", "q": "জুম চাষ কোথায় হয়? কারা জুমের চাষাবাদ করে?", "a": "পার্বত্য চট্টগ্রাম অঞ্চলে। চাকমা, মারমা, ত্রিপুরা ইত্যাদি বিভিন্ন ক্ষুদ্র নৃ-গোষ্ঠীরা চাষাবাদ করে।"}, {"label": "ঝ", "q": "VoIP- এর পূর্ণরূপ কী?", "a": "Voice Over Internet Protocol"}, {"label": "ঞ", "q": "এক নটিক্যাল মাইল (Nautical Mile) এর সমান কত কিলোমিটার?", "a": "১.৮৫২ কিলোমিটার"}, {"label": "ট", "q": "BIMSTEC এর পূর্ণরূপ কি? বর্তমানে BIMSTEC এর সভাপতির দায়িত্ব পালন করছে কোন দেশ?", "a": "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation; বাংলাদেশ"}, {"label": "ঠ", "q": "সংবিধান অনুযায়ী সর্বময় ক্ষমতার অধিকারী কে? এটি সংবিধানের কততম অনুচ্ছেদ উল্লেখ রয়েছে?", "a": "সর্বময় ক্ষমতার অধিকারী জনগণ; অনুচ্ছেদ ৭(১)"}, {"label": "ড", "q": "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ কোনটি? এটি কোন জেলায় অবস্থিত?", "a": "মহেশখালী, কক্সবাজার"}]},
 
   // ══════════════════════════════════════════════════════════
-  // পরবর্তী পরীক্ষার data এখানে যোগ করুন
+  // পরীক্ষা: প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয় (সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর)
+  // id prefix: job-2025-expatriate-welfare-steno
   // ══════════════════════════════════════════════════════════
 
+  { id: "job-2025-expatriate-welfare-steno-q01", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "শুদ্ধিকরণ", qno: 1, marks: 5, type: "table",
+    question: "শুদ্ধ বানান লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["স্নেহাশীষ", "স্নেহাশিস"],
+      ["মূমুর্ষ", "মুমূর্ষু"],
+      ["জ্যোতির্ময়", "জ্যোতির্ময়"],
+      ["ন্যুনতম", "ন্যূনতম"],
+      ["সমীচিন", "সমীচীন"]
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q02", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "অর্থসহ বাক্য রচনা", qno: 2, marks: 5, type: "short-qa",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", q: "অহিনকুল", a: "ভীষণ শত্রুতা। বাক্য: রহিম ও করিমের মধ্যে অহিনকুল সম্পর্ক বিরাজ করছে।" },
+      { label: "খ", q: "লেফাফা দুরস্ত", a: "বাইরে পরিপাটি। বাক্য: তার লেফাফা দুরস্ত ভাব দেখে সবাই বিভ্রান্ত হয়।" },
+      { label: "গ", q: "ননীর পুতুল", a: "শ্রমবিমুখ। বাক্য: ননীর পুতুল ছেলেটি একটুতেই ক্লান্ত হয়ে পড়ে।" },
+      { label: "ঘ", q: "পোয়াবারো", a: "সৌভাগ্য। বাক্য: চাকরিটা পেয়ে তার পোয়াবারো হয়ে গেছে।" },
+      { label: "ঙ", q: "তাসের ঘর", a: "ক্ষণস্থায়ী বস্তু। বাক্য: তার সব পরিকল্পনা তাসের ঘরের মতো ভেঙে পড়ল।" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q03", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "এক কথায় প্রকাশ", qno: 3, marks: 5, type: "short-qa",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", q: "পা থেকে মাথা পর্যন্ত", a: "আপাদমস্তক" },
+      { label: "খ", q: "অক্ষির অগোচরে", a: "পরোক্ষ" },
+      { label: "গ", q: "অন্য দেশ", a: "দেশান্তর" },
+      { label: "ঘ", q: "ময়ূরের ডাক", a: "কেকা" },
+      { label: "ঙ", q: "অন্তরের ভাব জানেন যিনি", a: "অন্তর্যামী" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q04", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "বিপরীত শব্দ", qno: 4, marks: 5, type: "table",
+    question: "বিপরীত শব্দ লিখুন:",
+    columns: ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    rows: [
+      ["উদ্ধত", "বিনীত"],
+      ["অন্তর", "বাহির"],
+      ["আদেশ", "নিষেধ"],
+      ["অগ্র", "পশ্চাৎ"],
+      ["উৎকৃষ্ট", "অপকৃষ্ট/নিকৃষ্ট"]
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q05", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", qno: 5, marks: 5, type: "paragraph",
+    question: "\"দেশের উন্নয়নে প্রবাসীদের ভূমিকা\" বিষয়ে ৫টি বাক্য লিখুন।",
+    answer: "প্রবাসীরা বৈদেশিক মুদ্রা অর্জন করে দেশের অর্থনীতিকে সমৃদ্ধ করেন। তাদের পাঠানো রেমিট্যান্স দেশের বৈদেশিক মুদ্রার রিজার্ভ বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখে। প্রবাসী আয় দেশের বৈদেশিক লেনদেনের ভারসাম্য বজায় রাখতে সহায়তা করে। প্রবাসীদের পাঠানো অর্থ পরিবার ও সমাজের আর্থ-সামাজিক উন্নয়নে ব্যয় হয়। এছাড়া প্রবাসীরা বিদেশে দেশের ভাবমূর্তি উজ্জ্বল করতে গুরুত্বপূর্ণ ভূমিকা পালন করেন।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q06", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "preposition", qno: 6, marks: 2, type: "fill-gaps",
+    question: "Write the appropriate preposition:",
+    parts: [
+      { sentence: "You must abide.......... the rules of office.", answer: "by" },
+      { sentence: "He died...... over eating.", answer: "from" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q07", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "translation", qno: 7, marks: 5, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "কর্তব্যে কারো অবহেলা করা উচিত নয়।", target: "Nobody should neglect duty." },
+      { label: "খ", source: "সে তোমার মত বুদ্ধিমান নয়।", target: "He is not as intelligent as you." },
+      { label: "গ", source: "আমি, তুমি ও সে একত্রে যাব।", target: "You, he and I will go together." },
+      { label: "ঘ", source: "তার ঠাণ্ডা লেগেছে।", target: "He has caught cold." },
+      { label: "ঙ", source: "আমি লোকটিকে হাসতে দেখলাম।", target: "I saw the man laughing." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q08", examId: "job-2025-expatriate-welfare-steno", subject: "english", qno: 8, marks: 5, type: "short-qa",
+    question: "Make sentences with meaning:",
+    parts: [
+      { label: "a", q: "Crying need (অতি প্রয়োজন)", a: "Mass education is the crying need of Bangladesh." },
+      { label: "b", q: "Sixth sense (ষষ্ঠইন্দ্রিয়)", a: "She had a sixth sense." },
+      { label: "c", q: "To get rid of (অব্যাহতি লাভ করা)", a: "He tries seriously to get rid of poverty." },
+      { label: "d", q: "Fair and square (সততার সাথে/নিয়মানুসারে)", a: "She won the election fair and square." },
+      { label: "e", q: "In spite of (সত্ত্বেও)", a: "In spite of his illness, he walks fast." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q09", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "voice-change", qno: 9, marks: 4, type: "sentence-change",
+    question: "Change the voice:",
+    parts: [
+      { label: "a", original: "Don't play football.", changed: "Let not football be played." },
+      { label: "b", original: "What does she like?", changed: "What is liked by her?" },
+      { label: "c", original: "How did he manage the problem?", changed: "How was the problem managed by him?" },
+      { label: "d", original: "We ought to love our country.", changed: "Our country ought to be loved by us." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q10", examId: "job-2025-expatriate-welfare-steno", subject: "english", qno: 10, marks: 5, type: "paragraph",
+    question: "Write five sentences on \"The International Mother Language Day\".",
+    answer: "Mother Language Day is celebrated every year on 21st February to honor those who sacrificed their lives in 1952 for the right to speak Bengali in Bangladesh. This day reminds us about the importance of protecting our mother tongue and respecting all languages. On this day, people pay tribute at Shaheed Minar with flowers and songs, remembering the martyrs who fought for their linguistic freedom. UNESCO declared 21st February as International Mother Language Day in 1999 to promote awareness about cultural diversity and multilingual education. It encourages students and people worldwide to respect their native languages and learn other languages too." },
+
+  { id: "job-2025-expatriate-welfare-steno-q11", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "বয়স সংক্রান্ত", qno: 11, marks: 6, type: "math",
+    question: "১০ বছর পূর্বে পিতার বয়স পুত্রের বয়সের ৪ গুণ ছিল। ৮ বছর পরে পিতার বয়স পুত্রের বয়সের ২ গুণ হবে। বর্তমানে কার বয়স কত?",
+    steps: [
+      "মনে করি, ১০ বছর পূর্বে পুত্রের বয়স x বছর",
+      "১০ বছর পূর্বে পিতার বয়স 8x বছর",
+      "পুত্রের বর্তমান বয়স = x + ১০",
+      "পিতার বর্তমান বয়স = 8x + ১০",
+      "৮ বছর পর পুত্রের বয়স = x + ১০ + ৮ = (x + ১৮) বছর",
+      "৮ বছর পর পিতার বয়স = 8x + ১০ + ৮ = (8x + ১৮) বছর",
+      "প্রশ্নমতে, 8x + ১৮ = ২ (x + ১৮)",
+      "বা, 8x + ১৮ = ২x + ৩৬",
+      "বা, ৬x = ১৮",
+      "∴ x = ৩"
+    ],
+    answer: "পুত্রের বর্তমান বয়স = (৩ + ১০) = ১৩ বছর; পিতার বর্তমান বয়স = (৩ × ৮ + ১০) = ৩৪ বছর।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q12", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "লাভ-ক্ষতি", qno: 12, marks: 6, type: "math",
+    question: "একটি ঘড়ি ৮% ক্ষতিতে বিক্রয় করা হলো। ঘড়িটি আরো ৮০০ টাকা বেশি মূল্যে বিক্রয় করা হলে ৮% লাভ হতো। ঘড়িটির ক্রয়মূল্য কত?",
+    steps: [
+      "মনে করি, ঘড়িটির ক্রয়মূল্য ১০০ টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য (১০০ - ৮) = ৯২ টাকা",
+      "৮% লাভে বিক্রয়মূল্য (১০০ + ৮) = ১০৮ টাকা",
+      "বিক্রয়মূল্য বেশি (১০৮ - ৯২) = ১৬ টাকা",
+      "বিক্রয়মূল্য ১৬ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ১ টাকা বেশি হলে ক্রয়মূল্য ১০০/১৬ টাকা",
+      "বিক্রয়মূল্য ৮০০ টাকা বেশি হলে ক্রয়মূল্য (১০০ × ৮০০)/১৬ = ৫০০০ টাকা"
+    ],
+    answer: "ঘড়িটির ক্রয়মূল্য ৫০০০ টাকা।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q13", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "জ্যামিতি", qno: 13, marks: 6, type: "math",
+    question: "একটি ঘরের দৈর্ঘ্য, প্রস্থের ৩ গুণ। প্রতি বর্গমিটারে ৭.৫০ টাকা দরে ঘরের মেঝে কার্পেট দিয়ে মুড়লে মোট ১১০২.৫০ টাকা ব্যয় হয়। ঘরটির দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন।",
+    steps: [
+      "৭.৫০ টাকা খরচ হয় ১ বর্গমিটারে",
+      "∴ ১১০২.৫০ টাকা খরচ হয় (১ × ১১০২.৫০)/৭.৫০ = ১৪৭ বর্গমিটারে",
+      "অর্থাৎ, ঘরের ক্ষেত্রফল ১৪৭ বর্গমিটার",
+      "মনে করি, প্রস্থ = ক মিটার",
+      "∴ দৈর্ঘ্য = ৩ক মিটার",
+      "∴ ক্ষেত্রফল = (দৈর্ঘ্য × প্রস্থ) বর্গ একক = (৩ক × ক) বর্গমিটার = ৩ক² বর্গমিটার",
+      "শর্তানুসারে, ৩ক² = ১৪৭",
+      "বা, ক² = ১৪৭/৩ = ৪৯",
+      "∴ ক = √৪৯ = ৭"
+    ],
+    answer: "প্রস্থ = ৭ মিটার এবং দৈর্ঘ্য = (৩ × ৭) = ২১ মিটার।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q14", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "বীজগণিত", qno: 14, marks: 6, type: "math",
+    question: "যদি: (a + 1/a)² = 3 হয়, তবে a³ + 1/a³ এর মান কত?",
+    steps: [
+      "দেওয়া আছে, (a + 1/a)² = 3",
+      "∴ a + 1/a = √3",
+      "প্রদত্ত রাশি = a³ + 1/a³",
+      "= (a + 1/a)³ - 3.a.1/a.(a + 1/a)",
+      "= (√3)³ - 3√3",
+      "= 3√3 - 3√3"
+    ],
+    answer: "a³ + 1/a³ = 0" },
+
+  { id: "job-2025-expatriate-welfare-steno-q15", examId: "job-2025-expatriate-welfare-steno", subject: "gk", topic: "সাধারণ জ্ঞান", qno: 15, marks: 20, type: "short-qa",
+    question: "সংক্ষেপে উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "জাতিসংঘের সাধারণ পরিষদের নিয়মিত বার্ষিক অধিবেশন কবে শুরু হয়?", a: "সেপ্টেম্বর মাসের দ্বিতীয় মঙ্গলবার (২০২৩ সাল হতে)। [সূত্র: জাতিসংঘের ওয়েবসাইট]" },
+      { label: "খ", q: "বিশ্বের কোন দেশ প্রথম সাগর তলে মন্ত্রিসভার বৈঠক করে?", a: "মালদ্বীপ" },
+      { label: "গ", q: "IOM এর পূর্ণরূপ কি?", a: "International Organization for Migration" },
+      { label: "ঘ", q: "ILO এর সদর দপ্তর কোন দেশের কোন শহরে?", a: "জেনেভা, সুইজারল্যান্ড" },
+      { label: "ঙ", q: "চতুর্থ শিল্প বিপ্লবের ধারণার প্রবর্তক কে?", a: "ক্লাউস শোয়াব" },
+      { label: "চ", q: "ঢাকা বিশ্ববিদ্যালয়ের প্রথম ভাইস চ্যান্সেলর কে ছিলেন?", a: "পি. জে. হার্টস" },
+      { label: "ছ", q: "বাংলাদেশে সর্বোচ্চ রেমিট্যান্স আয় হয় কোন অর্থবছরে এবং এর পরিমাণ কত বিলিয়ন মার্কিন ডলার?", a: "২০২৪-২৫ অর্থবছর, ৩০.৩৩ বিলিয়ন মার্কিন ডলার" },
+      { label: "জ", q: "২য় বিশ্বযুদ্ধ চলাকালীন মার্কিন যুক্তরাষ্ট্রের ২ জন প্রেসিডেন্টের নাম লিখুন।", a: "ফ্র্যাঙ্কলিন ডি. রুজভেল্ট ও হ্যারি এস. ট্রুম্যান" },
+      { label: "ঝ", q: "ঢাকায় অবস্থিত তিন নেতার মাজারে শায়িত তিন নেতা কে কে?", a: "এ. কে ফজলুল হক, খাজা নাজিমুদ্দিন, হোসেন শহীদ সোহরাওয়ার্দী" },
+      { label: "ঞ", q: "কবি জসীমউদ্দীনের ২টি কাব্যগ্রন্থের নাম লিখুন।", a: "নকশী কাঁথার মাঠ ও সোজন বাদিয়ার ঘাট" }
+    ] },
+
+  // পরবর্তী পরীক্ষার data এখানে যোগ করুন
 ];

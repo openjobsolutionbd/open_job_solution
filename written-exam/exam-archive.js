@@ -707,5 +707,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-btmc-sub-asst-engineer-civil",
+    ministry: "বাংলাদেশ টেক্সটাইল মিলস কর্পোরেশন",
+    post: "উপ সহকারী প্রকৌশলী (পুর)",
+    date: "2025-07-25",
+    duration: "৯০ মিনিট",
+    totalMarks: 32,
+    totalQuestions: 6,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

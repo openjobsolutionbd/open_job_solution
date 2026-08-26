@@ -4967,8 +4967,7 @@ const JOB_SOLUTIONS = [
 
   {"id": "job-2025-nlasp-bench-asst-q08", "examId": "job-2025-nlasp-bench-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 8, "marks": 10, "type": "short-qa", "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিন:", "parts": [{"label": "ক", "q": "পানামা খাল কোন দুটি মহাদেশকে যুক্ত করেছে?", "a": "উত্তর আমেরিকা ও দক্ষিণ আমেরিকা"}, {"label": "খ", "q": "ক্যাম্প ডেভিড চুক্তি কোন দুটি দেশের মধ্যে স্বাক্ষরিত হয়?", "a": "মিশর ও ইসরাইল"}, {"label": "গ", "q": "ILO এর সদর দপ্তর কোথায়?", "a": "জেনেভা, সুইজারল্যান্ড"}, {"label": "ঘ", "q": "সুনামী কোন দেশী শব্দ ও অর্থ কি?", "a": "জাপানি শব্দ, অর্থ পোতাশ্রয়ের ঢেউ"}, {"label": "ঙ", "q": "অন্ধকারাচ্ছন্ন মহাদেশ বলা হয় কোন মহাদেশকে?", "a": "আফ্রিকা মহাদেশ"}, {"label": "চ", "q": "বাংলাদেশে জিআই স্বীকৃত পাওয়া মোট পণ্য সংখ্যা কত?", "a": "৬২টি (সর্বশেষ- কালিগঞ্জের তোয়ালে)"}, {"label": "ছ", "q": "বাংলাদেশের পরিসংখ্যান ব্যুরো এর সাম্প্রতিক জরীপে কোন বিভাগে জমিতে লাভ বেশি বলে তথ্য উঠে এসেছে?", "a": "খুলনা"}, {"label": "জ", "q": "জুলাই স্মৃতি উদ্যান কোথায় অবস্থিত?", "a": "চট্টগ্রাম"}, {"label": "ঝ", "q": "জাতিসংঘে ব্যবহারের জন্য UNDP যে বাংলা ফন্ট চালু করেছে তার নাম কি?", "a": "UN Bangla"}, {"label": "ঞ", "q": "আশ্রয়নবিরোধী আট স্তম্ভ কোথায় স্থাপন করা হয়েছে?", "a": "পলাশী চত্বর, ঢাকা বিশ্ববিদ্যালয়"}, {"label": "ট", "q": "বাংলাদেশের দীর্ঘতম একক রেলসেতু কোনটি?", "a": "যমুনা রেলসেতু"}, {"label": "ঠ", "q": "বিশ্বের কোন দেশের নারীরা প্রথম ভোটাধিকার পায়?", "a": "নিউজিল্যান্ড"}, {"label": "ড", "q": "বাংলাদেশের একমাত্র দ্বীপ জেলা কোনটি?", "a": "ভোলা"}, {"label": "ঢ", "q": "তিস্তা কোন নদীর উপনদী?", "a": "ব্রহ্মপুত্র"}, {"label": "ণ", "q": "শীতল যুদ্ধের অবসানের পর কোন সংস্থাটি তার প্রাসঙ্গিকতা হারিয়ে ফেলেছে বলে মনে করা হয়?", "a": "সোভিয়েত ইউনিয়ন"}]},
 
-  // ══════════════════════════════════════════════════════════
-  // পরীক্ষা: কৃষি তথ্য সার্ভিস — কম্পিউটার অপারেটর/অফিস সহকারী (job-2025-agri-info-office-asst)
+  // ══════════════════════════════════════════════════════════ — কম্পিউটার অপারেটর/অফিস সহকারী (job-2025-agri-info-office-asst)
   // সোর্স: Self_job_solution_book_part_5.rar (বইয়ের পৃষ্ঠা ৩১১-৩১৩, ক্রম ৫৪১)
   // ══════════════════════════════════════════════════════════
 
@@ -4999,7 +4998,166 @@ const JOB_SOLUTIONS = [
   {"id": "job-2025-agri-info-office-asst-q13", "examId": "job-2025-agri-info-office-asst", "subject": "general-knowledge", "topic": "gk-others", "qno": 13, "marks": 10, "type": "short-qa", "question": "নিচের প্রশ্নগুলোর উত্তর দিন:", "parts": [{"label": "ক", "q": "PATC এর পূর্ণরূপ কী? এটি কোন সালে প্রতিষ্ঠিত হয়েছিল?", "a": "Public Administration Training Centre। প্রতিষ্ঠাকাল: ১৯৮৪"}, {"label": "খ", "q": "সবুজ বিপ্লবের জনক কাকে বলা হয়?", "a": "নরম্যান আর্নেস্ট বোরলগ"}, {"label": "গ", "q": "বাংলাদেশের সাংবিধানিক নাম কী? রাষ্ট্রপতি পদত্যাগ করতে চাইলে কাকে উদ্দেশ্য করে পদত্যাগপত্র লিখবেন?", "a": "গণপ্রজাতন্ত্রী বাংলাদেশ (The People's Republic of Bangladesh); স্পিকার কে উদ্দেশ্য করে পদত্যাগ পত্র লিখবে।"}, {"label": "ঘ", "q": "মাধ্যাকর্ষণ শক্তি কে আবিষ্কার করেন?", "a": "স্যার আইজ্যাক নিউটন"}, {"label": "ঙ", "q": "পৃথিবীর সর্বোচ্চ ভবনের নাম কী? এটি কোন দেশে অবস্থিত?", "a": "বুর্জ খলিফা। অবস্থান: সংযুক্ত আরব আমিরাত (শহর- দুবাই)।"}, {"label": "চ", "q": "শাতিল আরব নদী কোন দু'দেশের মাঝখানে অবস্থিত?", "a": "ইরান ও ইরাক (শাত-ইল-আরব নদী)"}, {"label": "ছ", "q": "আফগানিস্তানের পার্লামেন্টের নাম কী?", "a": "লয়া জিরগা/ন্যাশনাল অ্যাসেম্বলি"}, {"label": "জ", "q": "জুম চাষ কোথায় হয়? কারা জুমের চাষাবাদ করে?", "a": "পার্বত্য চট্টগ্রাম অঞ্চলে। চাকমা, মারমা, ত্রিপুরা ইত্যাদি বিভিন্ন ক্ষুদ্র নৃ-গোষ্ঠীরা চাষাবাদ করে।"}, {"label": "ঝ", "q": "VoIP- এর পূর্ণরূপ কী?", "a": "Voice Over Internet Protocol"}, {"label": "ঞ", "q": "এক নটিক্যাল মাইল (Nautical Mile) এর সমান কত কিলোমিটার?", "a": "১.৮৫২ কিলোমিটার"}, {"label": "ট", "q": "BIMSTEC এর পূর্ণরূপ কি? বর্তমানে BIMSTEC এর সভাপতির দায়িত্ব পালন করছে কোন দেশ?", "a": "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation; বাংলাদেশ"}, {"label": "ঠ", "q": "সংবিধান অনুযায়ী সর্বময় ক্ষমতার অধিকারী কে? এটি সংবিধানের কততম অনুচ্ছেদ উল্লেখ রয়েছে?", "a": "সর্বময় ক্ষমতার অধিকারী জনগণ; অনুচ্ছেদ ৭(১)"}, {"label": "ড", "q": "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ কোনটি? এটি কোন জেলায় অবস্থিত?", "a": "মহেশখালী, কক্সবাজার"}]},
 
   // ══════════════════════════════════════════════════════════
-  // পরবর্তী পরীক্ষার data এখানে যোগ করুন
+  // পরীক্ষা: প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয় (সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর)
+  // id prefix: job-2025-expatriate-welfare-steno
   // ══════════════════════════════════════════════════════════
 
+  { id: "job-2025-expatriate-welfare-steno-q01", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "শুদ্ধিকরণ", qno: 1, marks: 5, type: "table",
+    question: "শুদ্ধ বানান লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["স্নেহাশীষ", "স্নেহাশিস"],
+      ["মূমুর্ষ", "মুমূর্ষু"],
+      ["জ্যোতির্ময়", "জ্যোতির্ময়"],
+      ["ন্যুনতম", "ন্যূনতম"],
+      ["সমীচিন", "সমীচীন"]
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q02", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "অর্থসহ বাক্য রচনা", qno: 2, marks: 5, type: "short-qa",
+    question: "অর্থসহ বাক্য রচনা করুন:",
+    parts: [
+      { label: "ক", q: "অহিনকুল", a: "ভীষণ শত্রুতা। বাক্য: রহিম ও করিমের মধ্যে অহিনকুল সম্পর্ক বিরাজ করছে।" },
+      { label: "খ", q: "লেফাফা দুরস্ত", a: "বাইরে পরিপাটি। বাক্য: তার লেফাফা দুরস্ত ভাব দেখে সবাই বিভ্রান্ত হয়।" },
+      { label: "গ", q: "ননীর পুতুল", a: "শ্রমবিমুখ। বাক্য: ননীর পুতুল ছেলেটি একটুতেই ক্লান্ত হয়ে পড়ে।" },
+      { label: "ঘ", q: "পোয়াবারো", a: "সৌভাগ্য। বাক্য: চাকরিটা পেয়ে তার পোয়াবারো হয়ে গেছে।" },
+      { label: "ঙ", q: "তাসের ঘর", a: "ক্ষণস্থায়ী বস্তু। বাক্য: তার সব পরিকল্পনা তাসের ঘরের মতো ভেঙে পড়ল।" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q03", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "এক কথায় প্রকাশ", qno: 3, marks: 5, type: "short-qa",
+    question: "এক কথায় প্রকাশ করুন:",
+    parts: [
+      { label: "ক", q: "পা থেকে মাথা পর্যন্ত", a: "আপাদমস্তক" },
+      { label: "খ", q: "অক্ষির অগোচরে", a: "পরোক্ষ" },
+      { label: "গ", q: "অন্য দেশ", a: "দেশান্তর" },
+      { label: "ঘ", q: "ময়ূরের ডাক", a: "কেকা" },
+      { label: "ঙ", q: "অন্তরের ভাব জানেন যিনি", a: "অন্তর্যামী" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q04", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", topic: "বিপরীত শব্দ", qno: 4, marks: 5, type: "table",
+    question: "বিপরীত শব্দ লিখুন:",
+    columns: ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    rows: [
+      ["উদ্ধত", "বিনীত"],
+      ["অন্তর", "বাহির"],
+      ["আদেশ", "নিষেধ"],
+      ["অগ্র", "পশ্চাৎ"],
+      ["উৎকৃষ্ট", "অপকৃষ্ট/নিকৃষ্ট"]
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q05", examId: "job-2025-expatriate-welfare-steno", subject: "bangla", qno: 5, marks: 5, type: "paragraph",
+    question: "\"দেশের উন্নয়নে প্রবাসীদের ভূমিকা\" বিষয়ে ৫টি বাক্য লিখুন।",
+    answer: "প্রবাসীরা বৈদেশিক মুদ্রা অর্জন করে দেশের অর্থনীতিকে সমৃদ্ধ করেন। তাদের পাঠানো রেমিট্যান্স দেশের বৈদেশিক মুদ্রার রিজার্ভ বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখে। প্রবাসী আয় দেশের বৈদেশিক লেনদেনের ভারসাম্য বজায় রাখতে সহায়তা করে। প্রবাসীদের পাঠানো অর্থ পরিবার ও সমাজের আর্থ-সামাজিক উন্নয়নে ব্যয় হয়। এছাড়া প্রবাসীরা বিদেশে দেশের ভাবমূর্তি উজ্জ্বল করতে গুরুত্বপূর্ণ ভূমিকা পালন করেন।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q06", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "preposition", qno: 6, marks: 2, type: "fill-gaps",
+    question: "Write the appropriate preposition:",
+    parts: [
+      { sentence: "You must abide.......... the rules of office.", answer: "by" },
+      { sentence: "He died...... over eating.", answer: "from" }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q07", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "translation", qno: 7, marks: 5, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "কর্তব্যে কারো অবহেলা করা উচিত নয়।", target: "Nobody should neglect duty." },
+      { label: "খ", source: "সে তোমার মত বুদ্ধিমান নয়।", target: "He is not as intelligent as you." },
+      { label: "গ", source: "আমি, তুমি ও সে একত্রে যাব।", target: "You, he and I will go together." },
+      { label: "ঘ", source: "তার ঠাণ্ডা লেগেছে।", target: "He has caught cold." },
+      { label: "ঙ", source: "আমি লোকটিকে হাসতে দেখলাম।", target: "I saw the man laughing." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q08", examId: "job-2025-expatriate-welfare-steno", subject: "english", qno: 8, marks: 5, type: "short-qa",
+    question: "Make sentences with meaning:",
+    parts: [
+      { label: "a", q: "Crying need (অতি প্রয়োজন)", a: "Mass education is the crying need of Bangladesh." },
+      { label: "b", q: "Sixth sense (ষষ্ঠইন্দ্রিয়)", a: "She had a sixth sense." },
+      { label: "c", q: "To get rid of (অব্যাহতি লাভ করা)", a: "He tries seriously to get rid of poverty." },
+      { label: "d", q: "Fair and square (সততার সাথে/নিয়মানুসারে)", a: "She won the election fair and square." },
+      { label: "e", q: "In spite of (সত্ত্বেও)", a: "In spite of his illness, he walks fast." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q09", examId: "job-2025-expatriate-welfare-steno", subject: "english", topic: "voice-change", qno: 9, marks: 4, type: "sentence-change",
+    question: "Change the voice:",
+    parts: [
+      { label: "a", original: "Don't play football.", changed: "Let not football be played." },
+      { label: "b", original: "What does she like?", changed: "What is liked by her?" },
+      { label: "c", original: "How did he manage the problem?", changed: "How was the problem managed by him?" },
+      { label: "d", original: "We ought to love our country.", changed: "Our country ought to be loved by us." }
+    ] },
+
+  { id: "job-2025-expatriate-welfare-steno-q10", examId: "job-2025-expatriate-welfare-steno", subject: "english", qno: 10, marks: 5, type: "paragraph",
+    question: "Write five sentences on \"The International Mother Language Day\".",
+    answer: "Mother Language Day is celebrated every year on 21st February to honor those who sacrificed their lives in 1952 for the right to speak Bengali in Bangladesh. This day reminds us about the importance of protecting our mother tongue and respecting all languages. On this day, people pay tribute at Shaheed Minar with flowers and songs, remembering the martyrs who fought for their linguistic freedom. UNESCO declared 21st February as International Mother Language Day in 1999 to promote awareness about cultural diversity and multilingual education. It encourages students and people worldwide to respect their native languages and learn other languages too." },
+
+  { id: "job-2025-expatriate-welfare-steno-q11", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "বয়স সংক্রান্ত", qno: 11, marks: 6, type: "math",
+    question: "১০ বছর পূর্বে পিতার বয়স পুত্রের বয়সের ৪ গুণ ছিল। ৮ বছর পরে পিতার বয়স পুত্রের বয়সের ২ গুণ হবে। বর্তমানে কার বয়স কত?",
+    steps: [
+      "মনে করি, ১০ বছর পূর্বে পুত্রের বয়স x বছর",
+      "১০ বছর পূর্বে পিতার বয়স 8x বছর",
+      "পুত্রের বর্তমান বয়স = x + ১০",
+      "পিতার বর্তমান বয়স = 8x + ১০",
+      "৮ বছর পর পুত্রের বয়স = x + ১০ + ৮ = (x + ১৮) বছর",
+      "৮ বছর পর পিতার বয়স = 8x + ১০ + ৮ = (8x + ১৮) বছর",
+      "প্রশ্নমতে, 8x + ১৮ = ২ (x + ১৮)",
+      "বা, 8x + ১৮ = ২x + ৩৬",
+      "বা, ৬x = ১৮",
+      "∴ x = ৩"
+    ],
+    answer: "পুত্রের বর্তমান বয়স = (৩ + ১০) = ১৩ বছর; পিতার বর্তমান বয়স = (৩ × ৮ + ১০) = ৩৪ বছর।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q12", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "লাভ-ক্ষতি", qno: 12, marks: 6, type: "math",
+    question: "একটি ঘড়ি ৮% ক্ষতিতে বিক্রয় করা হলো। ঘড়িটি আরো ৮০০ টাকা বেশি মূল্যে বিক্রয় করা হলে ৮% লাভ হতো। ঘড়িটির ক্রয়মূল্য কত?",
+    steps: [
+      "মনে করি, ঘড়িটির ক্রয়মূল্য ১০০ টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য (১০০ - ৮) = ৯২ টাকা",
+      "৮% লাভে বিক্রয়মূল্য (১০০ + ৮) = ১০৮ টাকা",
+      "বিক্রয়মূল্য বেশি (১০৮ - ৯২) = ১৬ টাকা",
+      "বিক্রয়মূল্য ১৬ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ১ টাকা বেশি হলে ক্রয়মূল্য ১০০/১৬ টাকা",
+      "বিক্রয়মূল্য ৮০০ টাকা বেশি হলে ক্রয়মূল্য (১০০ × ৮০০)/১৬ = ৫০০০ টাকা"
+    ],
+    answer: "ঘড়িটির ক্রয়মূল্য ৫০০০ টাকা।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q13", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "জ্যামিতি", qno: 13, marks: 6, type: "math",
+    question: "একটি ঘরের দৈর্ঘ্য, প্রস্থের ৩ গুণ। প্রতি বর্গমিটারে ৭.৫০ টাকা দরে ঘরের মেঝে কার্পেট দিয়ে মুড়লে মোট ১১০২.৫০ টাকা ব্যয় হয়। ঘরটির দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন।",
+    steps: [
+      "৭.৫০ টাকা খরচ হয় ১ বর্গমিটারে",
+      "∴ ১১০২.৫০ টাকা খরচ হয় (১ × ১১০২.৫০)/৭.৫০ = ১৪৭ বর্গমিটারে",
+      "অর্থাৎ, ঘরের ক্ষেত্রফল ১৪৭ বর্গমিটার",
+      "মনে করি, প্রস্থ = ক মিটার",
+      "∴ দৈর্ঘ্য = ৩ক মিটার",
+      "∴ ক্ষেত্রফল = (দৈর্ঘ্য × প্রস্থ) বর্গ একক = (৩ক × ক) বর্গমিটার = ৩ক² বর্গমিটার",
+      "শর্তানুসারে, ৩ক² = ১৪৭",
+      "বা, ক² = ১৪৭/৩ = ৪৯",
+      "∴ ক = √৪৯ = ৭"
+    ],
+    answer: "প্রস্থ = ৭ মিটার এবং দৈর্ঘ্য = (৩ × ৭) = ২১ মিটার।" },
+
+  { id: "job-2025-expatriate-welfare-steno-q14", examId: "job-2025-expatriate-welfare-steno", subject: "math", topic: "বীজগণিত", qno: 14, marks: 6, type: "math",
+    question: "যদি: (a + 1/a)² = 3 হয়, তবে a³ + 1/a³ এর মান কত?",
+    steps: [
+      "দেওয়া আছে, (a + 1/a)² = 3",
+      "∴ a + 1/a = √3",
+      "প্রদত্ত রাশি = a³ + 1/a³",
+      "= (a + 1/a)³ - 3.a.1/a.(a + 1/a)",
+      "= (√3)³ - 3√3",
+      "= 3√3 - 3√3"
+    ],
+    answer: "a³ + 1/a³ = 0" },
+
+  { id: "job-2025-expatriate-welfare-steno-q15", examId: "job-2025-expatriate-welfare-steno", subject: "gk", topic: "সাধারণ জ্ঞান", qno: 15, marks: 20, type: "short-qa",
+    question: "সংক্ষেপে উত্তর লিখুন:",
+    parts: [
+      { label: "ক", q: "জাতিসংঘের সাধারণ পরিষদের নিয়মিত বার্ষিক অধিবেশন কবে শুরু হয়?", a: "সেপ্টেম্বর মাসের দ্বিতীয় মঙ্গলবার (২০২৩ সাল হতে)। [সূত্র: জাতিসংঘের ওয়েবসাইট]" },
+      { label: "খ", q: "বিশ্বের কোন দেশ প্রথম সাগর তলে মন্ত্রিসভার বৈঠক করে?", a: "মালদ্বীপ" },
+      { label: "গ", q: "IOM এর পূর্ণরূপ কি?", a: "International Organization for Migration" },
+      { label: "ঘ", q: "ILO এর সদর দপ্তর কোন দেশের কোন শহরে?", a: "জেনেভা, সুইজারল্যান্ড" },
+      { label: "ঙ", q: "চতুর্থ শিল্প বিপ্লবের ধারণার প্রবর্তক কে?", a: "ক্লাউস শোয়াব" },
+      { label: "চ", q: "ঢাকা বিশ্ববিদ্যালয়ের প্রথম ভাইস চ্যান্সেলর কে ছিলেন?", a: "পি. জে. হার্টস" },
+      { label: "ছ", q: "বাংলাদেশে সর্বোচ্চ রেমিট্যান্স আয় হয় কোন অর্থবছরে এবং এর পরিমাণ কত বিলিয়ন মার্কিন ডলার?", a: "২০২৪-২৫ অর্থবছর, ৩০.৩৩ বিলিয়ন মার্কিন ডলার" },
+      { label: "জ", q: "২য় বিশ্বযুদ্ধ চলাকালীন মার্কিন যুক্তরাষ্ট্রের ২ জন প্রেসিডেন্টের নাম লিখুন।", a: "ফ্র্যাঙ্কলিন ডি. রুজভেল্ট ও হ্যারি এস. ট্রুম্যান" },
+      { label: "ঝ", q: "ঢাকায় অবস্থিত তিন নেতার মাজারে শায়িত তিন নেতা কে কে?", a: "এ. কে ফজলুল হক, খাজা নাজিমুদ্দিন, হোসেন শহীদ সোহরাওয়ার্দী" },
+      { label: "ঞ", q: "কবি জসীমউদ্দীনের ২টি কাব্যগ্রন্থের নাম লিখুন।", a: "নকশী কাঁথার মাঠ ও সোজন বাদিয়ার ঘাট" }
+    ] },
+
+  // পরবর্তী পরীক্ষার data এখানে যোগ করুন
 ];

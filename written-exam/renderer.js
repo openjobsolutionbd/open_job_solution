@@ -126,7 +126,7 @@ function renderAnswer(q) {
       return `<div class="ans-letter">
         ${l.date ? `<div class="letter-date">${escHtml(l.date)}</div>` : ''}
         <div class="letter-to">${escHtml(l.to || '').replace(/\n/g, '<br>')}</div>
-        ${l.subject ? `<div class="letter-subject"><strong>বিষয়/Subject:</strong> ${escHtml(l.subject)}</div>` : ''}
+        ${l.subject ? `<div class="letter-subject"><strong>${q.subject === 'english' ? 'Subject:' : 'বিষয়:'}</strong> ${escHtml(l.subject)}</div>` : ''}
         <div class="letter-salutation">${letterSalutation(l.to)}</div>
         <div class="letter-body">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
         <div class="letter-closing">${escHtml(l.closing || '')}</div>

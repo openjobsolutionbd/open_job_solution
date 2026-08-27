@@ -6109,5 +6109,93 @@ const JOB_SOLUTIONS = [
       { label: "ণ", q: "পারস্য দেশের বর্তমান নাম কী?", a: "ইরান" }
     ] },
 
+  // ══════════════════════════════════════════════════════════ — স্পারসো (SPARRSO), অফিস সহায়ক (job-2025-sparrso-office-sohayok)
+  { id: "job-2025-sparrso-office-sohayok-q01", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "বর্ণমালা", qno: 1, marks: 2, type: "paragraph",
+    question: "বাংলায় ব্যঞ্জনবর্ণ কয়টি?",
+    answer: "৩৯টি" },
+
+  { id: "job-2025-sparrso-office-sohayok-q02", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "সন্ধি", qno: 2, marks: 2, type: "paragraph",
+    question: "কিসের সাহায্যে সন্ধি হয়?",
+    answer: "পাশাপাশি দুটি বর্ণ বা ধ্বনির মিলনে সন্ধি হয়।" },
+
+  { id: "job-2025-sparrso-office-sohayok-q03", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "সাহিত্য", qno: 3, marks: 2, type: "paragraph",
+    question: "রবীন্দ্রনাথ ঠাকুর কোন সাহিত্যের জন্য নোবেল পুরস্কার পান?",
+    answer: "গীতাঞ্জলি" },
+
+  { id: "job-2025-sparrso-office-sohayok-q04", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "বিপরীত শব্দ", qno: 4, marks: 2, type: "paragraph",
+    question: "নিরীহ এর বিপরীত শব্দ কী?",
+    answer: "দুর্দান্ত" },
+
+  { id: "job-2025-sparrso-office-sohayok-q05", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "শব্দার্থ", qno: 5, marks: 2, type: "paragraph",
+    question: "লিঙ্গ শব্দের অর্থ কী?",
+    answer: "চিহ্ন" },
+
+  { id: "job-2025-sparrso-office-sohayok-q06", examId: "job-2025-sparrso-office-sohayok", subject: "bangla", topic: "এক কথায় প্রকাশ", qno: 6, marks: 2, type: "paragraph",
+    question: "এক কথায় প্রকাশ করুন: একই কালে বর্তমান",
+    answer: "সমকালীন" },
+
+  { id: "job-2025-sparrso-office-sohayok-q08", examId: "job-2025-sparrso-office-sohayok", subject: "english", topic: "gender", qno: 8, marks: 4, type: "short-qa",
+    question: "Change the gender:",
+    parts: [
+      { label: "a", q: "Fox", a: "Vixen" },
+      { label: "b", q: "Ram", a: "Ewe" },
+      { label: "c", q: "Nice", a: "Nephew" },
+      { label: "d", q: "Drone", a: "Bee" }
+    ] },
+
+  { id: "job-2025-sparrso-office-sohayok-q09", examId: "job-2025-sparrso-office-sohayok", subject: "english", topic: "translation", qno: 9, marks: 4, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "গতকাল আমি মানিকগঞ্জ গিয়েছিলাম।", target: "I went to Manikganj yesterday." },
+      { label: "খ", source: "কাজটি তাড়াতাড়ি কর।", target: "Do the work quickly." }
+    ] },
+
+  { id: "job-2025-sparrso-office-sohayok-q11", examId: "job-2025-sparrso-office-sohayok", subject: "math", topic: "বীজগণিত", qno: 11, marks: 5, type: "math",
+    question: "(x+3)² − (x−2)² সরল কর যখন x = ১ হবে।",
+    steps: [
+      "(x+3)² − (x−2)²",
+      "= (x² + 6x + 9) − (x² − 4x + 4)",
+      "= x² + 6x + 9 − x² + 4x − 4",
+      "= 10x + 5",
+      "= 10.1 + 5 [x=১ বসিয়ে]"
+    ],
+    answer: "= ১৫ (Answer)" },
+
+  { id: "job-2025-sparrso-office-sohayok-q12", examId: "job-2025-sparrso-office-sohayok", subject: "math", topic: "কাজ ও সময়", qno: 12, marks: 5, type: "math",
+    question: "৪ জন পুরুষ বা ৮ জন স্ত্রীলোকের একটি কাজ করতে পারে ১২ দিনে আর ২ জন পুরুষ ও ১২ জন স্ত্রীলোক ঐ কাজটি কত দিনে করতে পারবে?",
+    steps: [
+      "৪ জন পুরুষ = ৮ জন স্ত্রীলোক, ∴ ১ জন পুরুষ = ৮/৪ জন স্ত্রীলোক = ২ জন স্ত্রীলোক",
+      "∴ ২ জন পুরুষ = (২×২) জন স্ত্রীলোক = ৪ জন স্ত্রীলোক",
+      "৮ জন স্ত্রীলোক ১টি কাজ করে ১২ দিনে",
+      "∴ ১ জন স্ত্রীলোক \"  \"  \" (১২×৮) দিনে",
+      "∴ (১২+৪) বা ১৬ জন স্ত্রীলোক \"  \"  \" (১২×৮)/১৬ দিনে = ৬ দিনে"
+    ],
+    answer: "উত্তর: ৬ দিন।" },
+
+  { id: "job-2025-sparrso-office-sohayok-q13", examId: "job-2025-sparrso-office-sohayok", subject: "math", topic: "বৃত্ত", qno: 13, marks: 5, type: "math",
+    question: "একটি বৃত্তের ব্যাস ১৪ সে.মি হলে বৃত্তের ক্ষেত্রফল ও পরিধি বের করুন।",
+    steps: [
+      "মনে করি, বৃত্তের ব্যাসার্ধ r। ∴ বৃত্তের ব্যাস = 2r এবং বৃত্তের পরিধি = 2πr",
+      "প্রশ্নানুসারে, 2r = 14 বা, r = 14/2 ∴ r = 7 সে.মি",
+      "∴ বৃত্তের ক্ষেত্রফল = πr² = (22/7) × 7² = 154 বর্গ সে.মি",
+      "∴ বৃত্তের পরিধি = 2πr = 2 × (22/7) × 7 সে.মি = 44 সে.মি (প্রায়)"
+    ],
+    answer: "উত্তর: ১৫৪ বর্গ সে.মি ও ৪৪ সে.মি" },
+
+  { id: "job-2025-sparrso-office-sohayok-q14", examId: "job-2025-sparrso-office-sohayok", subject: "gk", topic: "সাধারণ জ্ঞান", qno: 14, marks: 9, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    parts: [
+      { label: "ক", q: "সাজেক উপত্যকা কোন জেলায় অবস্থিত?", a: "রাঙামাটি" },
+      { label: "খ", q: "গাছপালা প্রাণীদের কাছ থেকে কী পায়?", a: "কার্বন-ডাই-অক্সাইড" },
+      { label: "গ", q: "সৌরজগতের বৃহত্তম গ্রহ কোনটি?", a: "বৃহস্পতি" },
+      { label: "ঘ", q: "২০২৬ সালের ফুটবল বিশ্বকাপ কোন কোন দেশে অনুষ্ঠিত হবে?", a: "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো" },
+      { label: "ঙ", q: "মানবদেহের কোন অঙ্গে রক্ত পরিশোধিত হয়?", a: "বৃক্কে" },
+      { label: "চ", q: "পৃথিবীর কোন শহর দুই মহাদেশে অবস্থিত?", a: "ইস্তাম্বুল (তুরস্ক)" },
+      { label: "ছ", q: "বাংলাদেশের একমাত্র প্রবাল দ্বীপের নাম কী?", a: "সেন্টমার্টিন" },
+      { label: "জ", q: "পানি থেকে বিদ্যুৎ উৎপাদনের পদ্ধতিকে কী বলা হয়?", a: "জলবিদ্যুৎ" },
+      { label: "ঝ", q: "NBR এর পূর্ণরূপ কী?", a: "National Board of Revenue" },
+      { label: "ঞ", q: "বায়ুমণ্ডলে কোন গ্যাস বেশি থাকে?", a: "নাইট্রোজেন" }
+    ] },
+
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
 ];

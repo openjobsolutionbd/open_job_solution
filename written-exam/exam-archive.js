@@ -743,5 +743,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 14,
   },
+  {
+    id: "job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik",
+    ministry: "জনপ্রশাসন মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-08-01",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 15,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -761,5 +761,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 10,
   },
+  {
+    id: "job-2025-janaprashasan-hisab-rakkhok",
+    ministry: "জনপ্রশাসন মন্ত্রণালয়",
+    post: "হিসাব রক্ষক",
+    date: "2025-08-01",
+    duration: "৯০ মিনিট",
+    totalMarks: 100,
+    totalQuestions: 17,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

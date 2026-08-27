@@ -770,5 +770,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 77,
     totalQuestions: 8,
   },
+  {
+    id: "job-2025-sparrso-office-sohayok",
+    ministry: "মহাকাশ গবেষণা ও দূর অনুধাবন প্রতিষ্ঠান (স্পারসো)",
+    post: "অফিস সহায়ক",
+    date: "2025-08-09",
+    duration: "৬০ মিনিট",
+    totalMarks: 44,
+    totalQuestions: 12,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

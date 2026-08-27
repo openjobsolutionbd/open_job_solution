@@ -752,5 +752,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-janaprashasan-data-entry-control-operator",
+    ministry: "জনপ্রশাসন মন্ত্রণালয়",
+    post: "ডাটা এন্ট্রি/কন্ট্রোল অপারেটর",
+    date: "2025-08-01",
+    duration: "৯০ মিনিট",
+    totalMarks: 90,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

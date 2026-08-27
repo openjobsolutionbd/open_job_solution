@@ -91,6 +91,20 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.174 | ২৭ আগস্ট ২০২৬ | Version v1.174-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.173 | ২৭ আগস্ট ২০২৬ | Version v1.173-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.172 | ২৭ আগস্ট ২০২৬ | Version v1.172-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.171 | ২৭ আগস্ট ২০২৬ | Version v1.171-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.170 | ২৭ আগস্ট ২০২৬ | Version v1.170-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.169 | ২৭ আগস্ট ২০২৬ | Version v1.169-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.168 | ২৭ আগস্ট ২০২৬ | Version v1.168-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.167 | ২৭ আগস্ট ২০২৬ | Version v1.167-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.166 | ২৭ আগস্ট ২০২৬ | Version v1.166-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.165 | ২৭ আগস্ট ২০২৬ | Version v1.165-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.164 | ২৭ আগস্ট ২০২৬ | Version v1.164-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.163 | ২৭ আগস্ট ২০২৬ | Version v1.163-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.162 | ২৬ আগস্ট ২০২৬ | Version v1.162-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.161 | ২৬ আগস্ট ২০২৬ | Version v1.161-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.160 | ২৬ আগস্ট ২০২৬ | Version v1.160-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.159 | ২৬ আগস্ট ২০২৬ | Version v1.159-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.158 | ২৬ আগস্ট ২০২৬ | Version v1.158-এ আপগ্রেড। Cache সব module-এ update। |

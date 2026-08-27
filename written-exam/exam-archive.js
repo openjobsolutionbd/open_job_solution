@@ -779,5 +779,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 44,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    ministry: "জাতীয় জনসংখ্যা গবেষণা ও প্রশিক্ষণ ইনস্টিটিউট",
+    post: "প্রধান সহকারী",
+    date: "2025-08-01",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
+  {
+    id: "job-2025-dc-office-sunamganj-hisab-sohokari",
+    ministry: "জেলা প্রশাসকের কার্যালয়, সুনামগঞ্জ",
+    post: "হিসাব সহকারী",
+    date: "2025-08-08",
+    duration: "৯০ মিনিট",
+    totalMarks: 100,
+    totalQuestions: 13,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

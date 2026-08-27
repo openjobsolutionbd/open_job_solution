@@ -5691,7 +5691,7 @@ const JOB_SOLUTIONS = [
     ] },
 
   // ══════════════════════════════════════════════════════════ — জনপ্রশাসন মন্ত্রণালয়, অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক (job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik)
-  { id: "job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik-q01", examId: "job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik", subject: "bangla", topic: "উপসর্গ", qno: 1, marks: 5, type: "short-qa",
+  { id: "job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik-q01", examId: "job-2025-janaprashasan-office-sohayok-cum-mudrakkhorik", subject: "bangla", topic: "উপসর্গ", qno: 1, marks: 5, type: "paragraph",
     question: "উপসর্গ কাকে বলে? বাংলা ভাষায় উপসর্গ কত প্রকার ও কী কী?",
     answer: "শব্দ বা ধাতুর পূর্বে কতিপয় সুনির্দিষ্ট অব্যয় জাতীয় শব্দাংশ যুক্ত হয়ে সাধিত শব্দে অর্থের পরিবর্তন, সম্প্রসারণ বা সংকোচন ঘটিয়ে থাকে। এগুলোকে বলা হয় উপসর্গ (Prefix)। যেমন, প, পরা, পরি, নির ইত্যাদি। বাংলা ভাষায় উপসর্গ ৩ প্রকার। যথা: বাংলা উপসর্গ (অ, অঘা, অজ ইত্যাদি), তৎসম উপসর্গ (প্র, পরা, অপ, সম, নি ইত্যাদি), বিদেশি উপসর্গ (ফুল, নিম, ফি, হা ইত্যাদি)।" },
 

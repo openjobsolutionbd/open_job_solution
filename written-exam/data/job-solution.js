@@ -7027,5 +7027,118 @@ const JOB_SOLUTIONS = [
       { label: "২০", q: "বাংলাদেশের প্রথম শিক্ষা কমিশনের প্রধান কে ছিলেন?", a: "ড. কুদরাত-এ-খুদা" }
     ] },
 
+  // ══════════════════════════════════════════════════════════ — জনপ্রশাসন মন্ত্রণালয়, অফিস সহায়ক (job-2025-janaprashasan-office-sohayok-2)
+  { id: "job-2025-janaprashasan-office-sohayok-2-q01", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "bangla", topic: "শুদ্ধ বানান", qno: 1, marks: 4, type: "table",
+    question: "শব্দগুলো শুদ্ধ করে লিখুন:",
+    columns: ["অশুদ্ধ", "শুদ্ধ"],
+    rows: [
+      ["কুজ্জটিকা", "কুজ্ঝটিকা"],
+      ["ইদানিং", "ইদানীং"],
+      ["প্রনাম", "প্রণাম"],
+      ["পূবালী", "পূবালি"],
+      ["মূলতঃ", "মূলত"],
+      ["কল্যানিয়েসু", "কল্যাণীয়েষু"]
+    ] },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q02", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "bangla", topic: "সন্ধি বিচ্ছেদ", qno: 2, marks: 6, type: "short-qa",
+    question: "শব্দগুলোর সন্ধি বিচ্ছেদ করুন:",
+    parts: [
+      { label: "ক", q: "সত্তাপ", a: "সম্ + তাপ" },
+      { label: "খ", q: "যশোভিলাষ", a: "যশঃ + অভিলাষ" },
+      { label: "গ", q: "বধূক্তি", a: "বধূ + উক্তি" },
+      { label: "ঘ", q: "উড্ডীন", a: "উৎ + ডীন" },
+      { label: "ঙ", q: "নাতবৌ", a: "নাতি + বৌ" },
+      { label: "চ", q: "সুবন্ত", a: "সুপ্ + অন্ত" }
+    ] },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q03", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "bangla", topic: "অনুচ্ছেদ", qno: 3, marks: 6, type: "paragraph",
+    question: "\"৩৬ জুলাই\" সম্পর্কে সংক্ষেপে অনুচ্ছেদ লিখুন।",
+    answer: "২০২৪ সালের জুলাই মাসে বাংলাদেশে সংঘটিত ছাত্র-জনতার গণঅভ্যুত্থান জুলাই মাস পেরিয়ে আগস্টের প্রথম দিকে গিয়ে চূড়ান্ত রূপ লাভ করে। এই আন্দোলনের ধারাবাহিকতাকে প্রতীকীভাবে বোঝাতে \"৩৬ জুলাই\" শব্দবন্ধটি ব্যবহৃত হয়, যা প্রকৃতপক্ষে ৫ আগস্ট, ২০২৪-কে নির্দেশ করে (জুলাই মাসের ৩১ দিনের সাথে আগস্টের প্রথম পাঁচ দিন যোগ করে)। এই দিনেই দীর্ঘ আন্দোলনের পরিসমাপ্তি ঘটে এবং তৎকালীন সরকারের পতন হয়। \"৩৬ জুলাই\" তাই ছাত্র-জনতার আত্মত্যাগ, সাহস ও ঐক্যবদ্ধ সংগ্রামের এক প্রতীকী নাম হিসেবে ইতিহাসে স্থান করে নিয়েছে।" },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q04", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "english", topic: "fill-gaps", qno: 4, marks: 3, type: "fill-gaps",
+    question: "Fill in the blanks:",
+    parts: [
+      { sentence: "Punishment should be proportionate...... crime.", answer: "to" },
+      { sentence: "A slave is always zealous...... freedom.", answer: "for" },
+      { sentence: "Student should not be negligent........... their duties.", answer: "in" }
+    ] },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q05", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "english", topic: "idioms", qno: 5, marks: 3, type: "idiom",
+    question: "Make sentences with meaning:",
+    parts: [
+      { label: "a", phrase: "With flying colours", meaning: "বিজয়", example: "He passed the examination with flying colours." },
+      { label: "b", phrase: "End in smoke", meaning: "ব্যর্থ হওয়া", example: "All his plans ended in smoke." },
+      { label: "c", phrase: "Chalk and cheese", meaning: "একদম আলাদা", example: "Their opinions on politics are chalk and cheese." }
+    ] },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q06", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "english", topic: "translation", qno: 6, marks: 4, type: "translate",
+    question: "Translate into English:",
+    parts: [
+      { label: "ক", source: "কঠোর পরিশ্রম করা সত্ত্বেও সে পরীক্ষায় অকৃতকার্য হলো।", target: "Despite working hard, he failed the exam." },
+      { label: "খ", source: "দুঃখের পরে সুখ আসে।", target: "Happiness comes after sorrow" },
+      { label: "গ", source: "জুলাই গণঅভ্যুত্থান ২০২৪-এ অনেক ছাত্র-জনতা অকাতরে প্রাণ বিসর্জন দিয়েছিলেন।", target: "During the July Mass Uprising of 2024, many students and people sacrificed their lives selflessly." },
+      { label: "ঘ", source: "নিয়মিত বই পড়া মানুষকে আলোকিত করে।", target: "Reading books regularly enlightens a person." }
+    ] },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q07", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "math", topic: "ক্ষেত্রফল ও পরিসীমা", qno: 7, marks: 5, type: "math",
+    question: "একটি আয়তকার ঘরের পরিসীমা একটি বর্গাকার ঘরের পরিসীমার সমান। আয়তকার ঘরের দৈর্ঘ্য প্রস্থের ৩ গুণ। প্রতি বর্গমিটারে ৭৫ টাকা দরে ঘরের মেঝে কার্পেট দিয়ে মুড়তে মোট ১১০২৫ টাকা ব্যয় হয়। ৪০ সে.মি. বর্গাকার টাইলস দ্বারা বর্গাকার ঘরের মেঝে ঢাকতে কয়টি টাইলস লাগবে?",
+    steps: [
+      "মনে করি, আয়তকার ঘরের প্রস্থ ক মিটার",
+      "সুতরাং দৈর্ঘ্য ৩ক মিটার",
+      "অতএব, ক্ষেত্রফল = (৩ক × ক) বর্গমিটার = ৩ক² বর্গমিটার",
+      "ঘরটিতে ৭৫ টাকা খরচ হয় ১ বর্গ মি. মেঝে মোড়াতে",
+      "∴ ১ \" \" \" ১/৭৫ \" \" \"",
+      "∴ ১১০২৫ \" \" \" (১ × ১১০২৫)/৭৫ \" \" \" = ১৪৭ বর্গ মি. মেঝে মোড়াতে",
+      "সুতরাং মেঝের ক্ষেত্রফল ১৪৭ বর্গ মিটার",
+      "প্রশ্নমতে, ৩ক² = ১৪৭",
+      "বা, ক² = ১৪৭/৩",
+      "বা, ক² = ৪৯",
+      "বা, ক = √৪৯ = ৭ মি.",
+      "সুতরাং ঘরটির প্রস্থ = ৭ মি.",
+      "সুতরাং ঘরটির দৈর্ঘ্য = ৩ ক মি. = (৩ × ৭) = ২১ মি.",
+      "আয়তাকার ঘরের পরিসীমা = ২(২১ + ৭) মিটার = ৫৬ মিটার",
+      "বর্গাকার ঘরের পরিসীমা = ৫৬ মিটার",
+      "বর্গাকার ঘরের বাহুর দৈর্ঘ্য = ৫৬/৮ মিটার = ১৪ মিটার",
+      "বর্গক্ষেত্রের মেঝের ক্ষেত্রফল = ১৪ × ১৪ = ১৯৬ বর্গমিটার",
+      "একটি বর্গাকার পাথরের ক্ষেত্রফল ৪০ সে.মি. × ৪০ সে.মি. = ০.৮ মিটার × ০.৮ মিটার = ০.১৬ বর্গমিটার",
+      "অতএব বর্গাকার ঘরের মেঝে ঢাকতে টাইলস লাগবে = ১৯৬/০.১৬ = ১২২৫টি"
+    ],
+    answer: "উত্তর: ১২২৫টি।" },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q08", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "math", topic: "গতিবেগ ও দূরত্ব", qno: 8, marks: 5, type: "math",
+    question: "একটি বাস ঘণ্টায় ২৫ কি.মি গতিবেগে ঢাকার গাবতলী থেকে আরিচা পৌঁছাল। আবার বাসটি ঘণ্টায় ৩০ কি.মি গতিবেগে আরিচা থেকে গাবতলী ফিরে এল। যাতায়াতে বাসটির মোট ৫২/৫ ঘণ্টা সময় লাগল। গাবতলী থেকে আরিচার দূরত্ব কত?",
+    steps: [
+      "মনে করি, গাবতলী থেকে আরিচার দূরত্ব d কি.মি.",
+      "∴ গাবতলী থেকে আরিচা যেতে সময় লাগে d/25 ঘণ্টা",
+      "আবার আরিচা থেকে গাবতলী ফিরে আসতে সময় লাগে d/30 ঘণ্টা",
+      "∴ যাতায়াতে বাসটির মোট সময় লাগে (d/25 + d/30) ঘণ্টা",
+      "প্রশ্নমতে, d/25 + d/30 = ৫১/২ = ১১/২",
+      "বা, (6d + 5d)/150 = ১১/২",
+      "বা, 11d = 150 × ১১/২",
+      "∴ d = 75"
+    ],
+    answer: "উত্তর: গাবতলী থেকে আরিচার দূরত্ব ৭৫ কি.মি." },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q09", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "math", topic: "বীজগণিত", qno: 9, marks: 5, type: "math",
+    question: "x³ + 6x²y + 11xy² + 6y³ কে উৎপাদকে বিশ্লেষণ করুন।",
+    steps: [
+      "x³ + 6x²y + 11xy² + 6y³",
+      "= x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³",
+      "= {x³ + 3.x².2y + 3.x.(2y)² + (2y)³} − xy² − 2y³",
+      "= (x + 2y)³ − y²(x + 2y)",
+      "= (x + 2y){(x + 2y)² − y²}",
+      "= (x + 2y)(x + 2y + y)(x + 2y − y)",
+      "= (x + 2y)(x + 3y)(x + y)"
+    ],
+    answer: "উত্তর: (x + y)(x + 2y)(x + 3y)" },
+
+  { id: "job-2025-janaprashasan-office-sohayok-2-q10", examId: "job-2025-janaprashasan-office-sohayok-2", subject: "gk", topic: "সাধারণ জ্ঞান", qno: 10, marks: 3, type: "short-qa",
+    question: "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    parts: [
+      { label: "ক", q: "\"থ্রি জিরো\" প্রবক্তা কে?", a: "ড. মুহাম্মদ ইউনূস" },
+      { label: "খ", q: "আয়তনের দিক থেকে বাংলাদেশের সবচেয়ে ছোট জেলা কোনটি?", a: "নারায়ণগঞ্জ" },
+      { label: "গ", q: "জুলাই গণঅভ্যুত্থান অধিদপ্তর কোন মন্ত্রণালয়ের অধীন গঠিত হয়েছে?", a: "মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়" }
+    ] },
+
   // পরবর্তী পরীক্ষার data এখানে যোগ করুন
 ];

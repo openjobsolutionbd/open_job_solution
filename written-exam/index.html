@@ -452,6 +452,10 @@
     document.getElementById('examView').style.display = 'block';
     document.getElementById('searchWrap').style.display = 'none';
 
+    // ভাসমান সার্চ (fs-widget) শুধু হোমপেজে থাকবে — exam detail-এ লুকিয়ে ফেলা হলো
+    const fsWidget = document.getElementById('fs-widget-root');
+    if (fsWidget) fsWidget.style.display = 'none';
+
     renderQuestions(examId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -547,6 +551,11 @@
     document.getElementById('homeView').style.display = 'block';
     document.getElementById('searchWrap').style.display = '';
     currentExamId = null;
+
+    // হোমপেজে ফিরলে ভাসমান সার্চ আবার দেখানো হলো
+    const fsWidget = document.getElementById('fs-widget-root');
+    if (fsWidget) fsWidget.style.display = '';
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 

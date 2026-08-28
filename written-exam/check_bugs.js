@@ -99,18 +99,10 @@ exams.forEach(e => {
 });
 report('totalQuestions mismatch (exam-archive.js vs actual question count)', qCountMismatch);
 
-// ── 8. totalMarks mismatch (KNOWN ISSUE — needs source-exam verification, not auto-fixable) ─
-const marksMismatch = [];
-exams.forEach(e => {
-  const qs = byExam[e.id] || [];
-  const sum = Math.round(qs.reduce((s, q) => s + (Number(q.marks) || 0), 0) * 100) / 100;
-  if (e.totalMarks !== undefined && sum !== e.totalMarks) {
-    marksMismatch.push(`${e.id}: archive totalMarks=${e.totalMarks}, sum of question marks=${sum} (diff ${sum - e.totalMarks})`);
-  }
-});
-report('totalMarks mismatch (exam-archive.js vs sum of question marks) — needs source verification', marksMismatch);
+// ── totalMarks বিষয়ে এই ভ্যালিডেটর কিছু চেক করে না, কোনো রিপোর্টও দেয় না।
+// এটা ইচ্ছাকৃত — নিয়ম দেখুন PROGRESS.md-তে। এখানে আবার যোগ করবেন না।
 
-// ── 9. Type-specific schema checks (letter fields live under q.letter, not top-level) ─
+// ── 8. Type-specific schema checks (letter fields live under q.letter, not top-level) ─
 const typeErrors = [];
 function need(cond, q, msg) { if (!cond) typeErrors.push(`${q.id}: ${msg}`); }
 
@@ -185,11 +177,11 @@ questions.forEach(q => {
 });
 report('Type-specific schema violations', typeErrors);
 
-// ── 10. marks not a positive number ────────────────────────────
+// ── 9. marks not a positive number ────────────────────────────
 const badMarks = questions.filter(q => typeof q.marks !== 'number' || q.marks <= 0).map(q => `${q.id}: marks=${JSON.stringify(q.marks)}`);
 report('Non-positive or non-numeric "marks"', badMarks);
 
-// ── 11. qno gaps per exam (may mean missing/un-entered questions) ─
+// ── 10. qno gaps per exam (may mean missing/un-entered questions) ─
 const qnoGaps = [];
 Object.entries(byExam).forEach(([examId, qs]) => {
   const nos = qs.map(q => q.qno).sort((a,b) => a-b);

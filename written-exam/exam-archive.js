@@ -824,5 +824,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 75,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-law-justice-office-sohayok",
+    ministry: "আইন, বিচার ও সংসদ বিষয়ক মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2025-08-30",
+    duration: "৬০ মিনিট",
+    totalMarks: 48,
+    totalQuestions: 11,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

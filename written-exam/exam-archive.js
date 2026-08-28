@@ -815,5 +815,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 75,
     totalQuestions: 10,
   },
+  {
+    id: "job-2025-tech-edu-cashier",
+    ministry: "কারিগরি শিক্ষা অধিদপ্তর",
+    post: "ক্যাশিয়ার",
+    date: "2025-08-23",
+    duration: "৯০ মিনিট",
+    totalMarks: 75,
+    totalQuestions: 15,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -833,5 +833,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 48,
     totalQuestions: 11,
   },
+  {
+    id: "job-2025-janaprashasan-office-sohayok-2",
+    ministry: "জনপ্রশাসন মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2025-08-09",
+    duration: "৬০ মিনিট",
+    totalMarks: 50,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -779,5 +779,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 44,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-bab-office-asst-typist",
+    ministry: "বাংলাদেশ অ্যাক্রেডিটেশন কাউন্সিল, ঢাকা",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-08-16",
+    duration: "৯০ মিনিট",
+    totalMarks: 75,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

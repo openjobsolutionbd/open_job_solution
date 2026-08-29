@@ -1,0 +1,309 @@
+[
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q01",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ-বানান",
+    "qno": 1,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মুমুর্ষ",
+        "মুমূর্ষু"
+      ],
+      [
+        "বিভিসিকা",
+        "বিভীষিকা"
+      ],
+      [
+        "প্রতিদ্বন্দীতা",
+        "প্রতিদ্বন্দ্বিতা"
+      ],
+      [
+        "লজ্জাসকর",
+        "লজ্জাকর"
+      ],
+      [
+        "সদ্যজাত",
+        "সদ্যোজাত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q02",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমার্থক-শব্দ",
+    "qno": 2,
+    "type": "short-qa",
+    "question": "\"জন্ম\" শব্দের ৫টি সমার্থক শব্দ লিখুন:",
+    "parts": [
+      {
+        "label": "",
+        "q": "\"জন্ম\" শব্দের ৫টি সমার্থক শব্দ লিখুন",
+        "a": "উৎপত্তি, উদ্ভব, সৃষ্টি, ভূমিষ্ঠ, জনম, আবির্ভাব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q03",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 3,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": [
+      "বাক্যাংশ",
+      "এক কথায়"
+    ],
+    "rows": [
+      [
+        "যা প্রকাশ করা হয়নি",
+        "অনির্বচনীয়"
+      ],
+      [
+        "যা খুব শীতল বা উষ্ণ নয়",
+        "নাতিশীতোষ্ণ"
+      ],
+      [
+        "তালু হতে উচ্চারিত",
+        "তালব্য"
+      ],
+      [
+        "ক্ষুদ্র বাগান",
+        "বাগিচা"
+      ],
+      [
+        "যিনি প্রথম পথ দেখান",
+        "পথিকৃৎ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q04",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 4,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "শীতার্ত",
+        "শীত + ঋত"
+      ],
+      [
+        "সংরক্ষণ",
+        "সম্ + রক্ষণ"
+      ],
+      [
+        "নাবিক",
+        "নৌ + ইক"
+      ],
+      [
+        "গতানুগতিক",
+        "গত + অনুগতিক"
+      ],
+      [
+        "মহর্ষি",
+        "মহা + ঋষি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q05",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "english",
+    "topic": "voice-change",
+    "qno": 5,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "There are lots of things to do.",
+        "changed": "There are lots of things to be done."
+      },
+      {
+        "label": "b",
+        "original": "You can do it.",
+        "changed": "It can be done by you."
+      },
+      {
+        "label": "c",
+        "original": "Don't play that.",
+        "changed": "Let not that be played."
+      },
+      {
+        "label": "d",
+        "original": "She fans herself.",
+        "changed": "She is fanned by herself."
+      },
+      {
+        "label": "e",
+        "original": "Who is calling me?",
+        "changed": "By whom am I being called?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q06",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "english",
+    "topic": "opposite-words",
+    "qno": 6,
+    "type": "table",
+    "question": "Write the opposite words of the following:",
+    "columns": [
+      "Given Word",
+      "Opposite Word"
+    ],
+    "rows": [
+      [
+        "Hate",
+        "Love"
+      ],
+      [
+        "Safe",
+        "Dangerous/Unsafe"
+      ],
+      [
+        "Unique",
+        "Common"
+      ],
+      [
+        "Sweet",
+        "Sour/Bitter"
+      ],
+      [
+        "Empty",
+        "Full"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q07",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 7,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Panchagarh District'.",
+    "answer": "Panchagarh is a district located in the northernmost part of Bangladesh, in the Rangpur Division. It shares its border with India on three sides and is well known for its scenic beauty, tea gardens, and stone collection industry. On a clear day, the Kanchenjunga mountain range can be seen from Panchagarh, making it a notable attraction for tourists. The district is also historically significant as the location of Mahasthangarh-adjacent trade routes and Tetulia, its northernmost upazila. Agriculture, particularly tea cultivation, forms a major part of the local economy."
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q08",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 8,
+    "type": "math",
+    "question": "তিনটি ক্রমিক সংখ্যার যোগফল ৩৩ হলে, সংখ্যা তিনটির গুণফল কত?",
+    "steps": [
+      "ধরি, তিনটি ক্রমিক সংখ্যা যথাক্রমে ক, ক+১, ক+২",
+      "প্রশ্নমতে, ক + ক+১ + ক+২ = ৩৩",
+      "বা, ৩ক = ৩০",
+      "∴ ক = ১০",
+      "সুতরাং সংখ্যা তিনটি যথাক্রমে = ১০, ১১, ১২",
+      "সংখ্যা তিনটির গুণফল = ১০ × ১১ × ১২ = ১৩২০"
+    ],
+    "answer": "১৩২০"
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q09",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "math",
+    "topic": "বয়স",
+    "qno": 9,
+    "type": "math",
+    "question": "এক ব্যক্তি তার স্ত্রীর চেয়ে ৫ বছরের বড়। তার স্ত্রীর বয়স ছেলের বয়সের ৪ গুণ। ৫ বছর পরে ছেলের বয়স ১২ বছর হলে বর্তমান ঐ ব্যক্তির বয়স কত?",
+    "steps": [
+      "৫ বছর পর ছেলের বয়স ১২ বছর।",
+      "সুতরাং ছেলের বর্তমান বয়স = ১২ - ৫ = ৭ বছর",
+      "স্ত্রীর বয়স = ৭ × ৪ = ২৮ বছর",
+      "ব্যক্তির বয়স = ২৮ + ৫ = ৩৩ বছর"
+    ],
+    "answer": "৩৩ বছর"
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q10",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "type": "math",
+    "question": "যদি x−y = ৮ এবং xy = ৫ হয় তবে x³ − y³ + 8(x+y)² এর মান কত?",
+    "steps": [
+      "x³ − y³ + 8(x+y)² = (x − y)³ + 3xy(x − y) + 8{(x − y)² + 4xy}",
+      "= (8)³ + 3 × 5 × 8 + 8(8² + 4 × 5) [মান বসিয়ে]",
+      "= 8³ + 15 × 8 + 8(8² + 4 × 5)",
+      "= 8³ + 15 × 8 + 8 × 84",
+      "= 8(8² + 15 + 84)",
+      "= 8(64 + 15 + 84)",
+      "= 1304 (Answer)"
+    ],
+    "answer": "১৩০৪"
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q11a",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "type": "math",
+    "question": "a² + 1/a² = 5 হলে a + 1/a এর মান কত?",
+    "steps": [
+      "(a + 1/a)² = a² + 2a.(1/a) + (1/a)²",
+      "= a² + 1/a² + 2",
+      "= 5 + 2",
+      "= 7"
+    ],
+    "answer": "∴ a + 1/a = ±√7"
+  },
+  {
+    "id": "job-2025-dc-panchagarh-office-sohayok-q11b",
+    "examId": "job-2025-dc-panchagarh-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "সাধারণ-জ্ঞান",
+    "qno": 11,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পূর্ণরূপ করুন: CNG, HTTP, BBC, BSTI, VIRUS",
+        "a": "CNG = Compressed Natural Gas; HTTP = HyperText Transfer Protocol; BBC = British Broadcasting Corporation; BSTI = Bangladesh Standards and Testing Institution; VIRUS = Vital Information Resources Under Siege"
+      },
+      {
+        "label": "খ",
+        "q": "পঞ্চগড় জেলায় মোট ইউনিয়ন কয়টি?",
+        "a": "৪৩টি"
+      },
+      {
+        "label": "গ",
+        "q": "কোন মশার কারণে ডেঙ্গু হয়?",
+        "a": "এডিস মশা"
+      },
+      {
+        "label": "ঘ",
+        "q": "এস এম সুলতান কোন জেলায় জন্মগ্রহণ করেন?",
+        "a": "নড়াইল"
+      },
+      {
+        "label": "ঙ",
+        "q": "পঞ্চগড় জেলার কোন নারী বাংলাদেশ মহিলা জাতীয় ফুটবল দলের গোলরক্ষক?",
+        "a": "ফেরদৌসি আক্তার সোনালী"
+      }
+    ]
+  }
+]

@@ -48,6 +48,15 @@ const EXAM_ARCHIVE = [
     totalQuestions: 6,
   },
   {
+    id: "job-2025-dc-panchagarh-office-sohayok",
+    ministry: "জেলা প্রশাসকের কার্যালয়, পঞ্চগড়",
+    post: "অফিস সহায়ক",
+    date: "2025-09-05",
+    duration: "৬০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
+  {
     id: "job-2025-dc-bhola",
     ministry: "জেলা প্রশাসকের কার্যালয়, ভোলা",
     post: "অফিস সহায়ক/নিরাপত্তা প্রহরী",

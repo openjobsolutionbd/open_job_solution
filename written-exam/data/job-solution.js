@@ -1192,7 +1192,7 @@ const JOB_SOLUTIONS = [
 
   {"id":"job-2025-election-commission-office-assistant-computer-operator-q01","examId":"job-2025-election-commission-office-assistant-computer-operator","subject":"bangla","topic":"এক-কথায়-প্রকাশ","qno":1,"type":"table","question":"এক কথায় প্রকাশ করুন:","columns":["বাক্যাংশ","এক কথায়"],"rows":[["যিনি বক্তৃতা দানে পটু","বাগ্মী"],["একই মায়ের সন্তান","সহোদর"],["যার কোথাও উঁচু কোথাও নিচু","বন্ধুর"],["যা বলা হয়নি","অনুক্ত"],["যা ক্ষয় পাচ্ছে","ক্ষয়িষ্ণু"]]},
 
-  {"id":"job-2025-election-commission-office-assistant-computer-operator-q02","examId":"job-2025-election-commission-office-assistant-computer-operator","subject":"bangla","topic":"শুদ্ধ-বানান","qno":2,"type":"table","question":"সঠিক বানান লিখুন:","columns":["অশুদ্ধ","শুদ্ধ"],"rows":[["শারিরীক","শারীরিক"],["উর্ধতন","ঊর্ধ্বতন"],["ঐক্যতান","ঐকতান"],["দিবারাত্রি","দিবারাত্র"],["শ্রেষ্ঠতম","শ্রেষ্ঠ"]]},
+  {"id":"job-2025-election-commission-office-assistant-computer-operator-q02","examId":"job-2025-election-commission-office-assistant-computer-operator","subject":"bangla","topic":"শুদ্ধ-বানান","qno":2,"type":"table","question":"সঠিক বানান লিখুন:","columns":["অশুদ্ধ","শুদ্ধ"],"rows":[["শারিরীক","শারীরিক"],["উর্ধতন","ঊর্ধ্বতন"],["ঐক্যতান","ঐকতান"],["দিবারাত্রি","দিবারাত্র"],["শ্রেষ্ঠতম","শ্রেষ্ঠ"],["মূহুর্মুহু","মুহুর্মুহু"]]},
 
   {"id":"job-2025-election-commission-office-assistant-computer-operator-q03","examId":"job-2025-election-commission-office-assistant-computer-operator","subject":"bangla","topic":"সন্ধি","qno":3,"type":"table","question":"সন্ধি বিচ্ছেদ করুন:","columns":["সন্ধি","বিচ্ছেদ"],"rows":[["মরুদ্যান","মরু + উদ্যান"],["মহর্ষি","মহা + ঋষি"],["জনৈক","জন + এক"],["বনৌষধি","বন + ওষধি"]]},
 

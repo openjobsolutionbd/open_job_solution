@@ -857,8 +857,8 @@ const EXAM_ARCHIVE = [
     post: "ক্যাশিয়ার",
     date: "2025-08-23",
     duration: "৯০ মিনিট",
-    totalMarks: 75,
-    totalQuestions: 15,
+    totalMarks: 80,
+    totalQuestions: 16,
   },
   {
     id: "job-2025-law-justice-office-sohayok",

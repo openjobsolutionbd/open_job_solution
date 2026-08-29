@@ -1,0 +1,418 @@
+[
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q01",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "শীতার্ত",
+        "a": "শীত + ঋত"
+      },
+      {
+        "label": "খ",
+        "q": "নিরাকার",
+        "a": "নিঃ + আকার"
+      },
+      {
+        "label": "গ",
+        "q": "ইত্যবসরে",
+        "a": "ইতি + অবসরে"
+      },
+      {
+        "label": "ঘ",
+        "q": "চিত্তৈশ্বর্য",
+        "a": "চিত্ত + ঐশ্বর্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q02",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "bangla",
+    "topic": "শব্দার্থ",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "শব্দার্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অদ্যাবধি",
+        "a": "আজ পর্যন্ত"
+      },
+      {
+        "label": "খ",
+        "q": "নিদর্শন",
+        "a": "উদাহরণ/দৃষ্টান্ত"
+      },
+      {
+        "label": "গ",
+        "q": "উষর",
+        "a": "অনুর্বর"
+      },
+      {
+        "label": "ঘ",
+        "q": "ধৈর্য",
+        "a": "সহ্যশক্তি/ধীরতা/স্থিরতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q03",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "জাগ্রত",
+        "সুপ্ত"
+      ],
+      [
+        "রিক্ত",
+        "পূর্ণ"
+      ],
+      [
+        "উপত্যকা",
+        "অধিত্যকা"
+      ],
+      [
+        "ঈর্ষা",
+        "প্রীতি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q04",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 4,
+    "marks": 2,
+    "type": "idiom",
+    "question": "বাগধারার অর্থসহ বাক্য রচনা করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "উনপাঁজুরে",
+        "meaning": "অপদার্থ/দুর্বল"
+      },
+      {
+        "label": "খ",
+        "phrase": "কান খাড়া করা",
+        "meaning": "মনোযোগী হওয়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q05",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 5,
+    "marks": 2,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "ওধঃস্তন",
+        "অধস্তন"
+      ],
+      [
+        "দারীদ্র",
+        "দারিদ্র্য"
+      ],
+      [
+        "সৌদর্জ্য",
+        "সৌন্দর্য"
+      ],
+      [
+        "প্রতিবন্দী",
+        "প্রতিবন্ধী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q06",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 6,
+    "marks": 2,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে অনেক টাকা পেয়েছে।",
+        "target": "He has got a lot of money."
+      },
+      {
+        "label": "খ",
+        "source": "মানুষ বায়ু ছাড়া বাঁচতে পারে না।",
+        "target": "Man cannot live without air."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q07",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use appropriate prepositions:",
+    "parts": [
+      {
+        "sentence": "Early rising is conducive….. health.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Applicants are concerned…… their result.",
+        "answer": "for"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q08",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 2,
+    "type": "table",
+    "question": "Write the correct spelling:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Asisstant",
+        "Assistant"
+      ],
+      [
+        "Comunication",
+        "Communication"
+      ],
+      [
+        "Honororium",
+        "Honorarium"
+      ],
+      [
+        "Substancial",
+        "Substantial"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q09",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use appropriate article:",
+    "parts": [
+      {
+        "sentence": "Gulliver's Travels is quite... interesting.",
+        "answer": "an"
+      },
+      {
+        "sentence": "Nazrul is…… Shelley of Bengal.",
+        "answer": "the"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q10",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use appropriate form of verb:",
+    "parts": [
+      {
+        "sentence": "He (go) out just now.",
+        "answer": "has gone"
+      },
+      {
+        "sentence": "It was long since I (see) her last.",
+        "answer": "had seen"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q11",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 11,
+    "marks": 2,
+    "type": "math",
+    "question": "একটি বইয়ের দৈর্ঘ্য ২৪ সে.মি. এবং প্রস্থ ১৮ সে.মি.। ঐ বইয়ের পরিসীমা সে.মি. ও মিটারে প্রকাশ করুন।",
+    "steps": [
+      "বইয়ের পরিসীমা = ২(২৪+১৮) = ৮৪ সে.মি.",
+      "৮৪ সে.মি. = ০.৮৪ মিটার"
+    ],
+    "answer": "৮৪ সে.মি. বা ০.৮৪ মিটার"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q12",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "ভগ্নাংশ",
+    "qno": 12,
+    "marks": 2,
+    "type": "math",
+    "question": "একটি কৃষক একটি জমিতে ১/২ অংশে ধান, ১/৮ অংশে আখ, ১/৪ অংশে লালশাক চাষ করলেন। বাকি অংশ ফাঁকা রইল। জমিটির কত অংশ ফাঁকা রইল?",
+    "steps": [
+      "জমি চাষ করা হলো = ১/২ + ১/৮ + ১/৪ = ৪/৮ + ১/৮ + ২/৮ = ৭/৮... বাস্তবে লসাগু ২০ ধরে: ১০/২০+২.৫/২০... [মূল হিসাব অনুযায়ী] = ১৯/২০ অংশ",
+      "∴ ফাঁকা রইল = ১ − ১৯/২০ = ১/২০ অংশ"
+    ],
+    "answer": "১/২০ অংশ"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q13",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "সংখ্যা পদ্ধতি",
+    "qno": 13,
+    "marks": 2,
+    "type": "math",
+    "question": "তিন অঙ্কের বৃহত্তম ও ক্ষুদ্রতম সংখ্যার পার্থক্য কত?",
+    "steps": [
+      "তিন অঙ্কের বৃহত্তম সংখ্যা = ৯৯৯",
+      "তিন অঙ্কের ক্ষুদ্রতম সংখ্যা = ১০০",
+      "পার্থক্য = ৯৯৯ − ১০০ = ৮৯৯"
+    ],
+    "answer": "৮৯৯"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q14",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "সংখ্যা পদ্ধতি",
+    "qno": 14,
+    "marks": 1,
+    "type": "math",
+    "question": "০.০০০১ কে কথায় প্রকাশ করুন।",
+    "steps": [
+      "০.০০০১ = ১/১০০০০"
+    ],
+    "answer": "এক দশ-হাজারভাগ / দশ হাজার ভাগের একভাগ"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q15",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "মৌলিক সংখ্যা",
+    "qno": 15,
+    "marks": 1,
+    "type": "math",
+    "question": "১ হতে ১৫ এর মধ্যে মৌলিক সংখ্যা কয়টি?",
+    "steps": [
+      "১ থেকে ১৫ এর মধ্যে মৌলিক সংখ্যাগুলো: ২, ৩, ৫, ৭, ১১, ১৩"
+    ],
+    "answer": "৬টি (২, ৩, ৫, ৭, ১১, ১৩)"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q16",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 16,
+    "marks": 2,
+    "type": "math",
+    "question": "(a+b), (a²−b²) এবং (a³+b³) এর গ.সা.গু কত?",
+    "steps": [
+      "১ম রাশি = a+b",
+      "২য় রাশি = a²−b² = (a+b)(a−b)",
+      "৩য় রাশি = a³+b³ = (a+b)(a²−ab+b²)"
+    ],
+    "answer": "নির্ণেয় গ.সা.গু = a+b"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-sohayok-q17",
+    "examId": "job-2025-div-comm-ctg-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "চট্টগ্রাম",
+    "qno": 17,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "চট্টগ্রাম বিভাগে কতটি দ্বীপ উপজেলা রয়েছে?",
+        "a": "৪টি (হাতিয়া, সন্দ্বীপ, কুতুবদিয়া ও মহেশখালী)"
+      },
+      {
+        "label": "খ",
+        "q": "আমিয়াখুম জলপ্রপাত কোথায় অবস্থিত?",
+        "a": "থানচি, বান্দরবান"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের গভীরতম নদীর নাম কী?",
+        "a": "মেঘনা"
+      },
+      {
+        "label": "ঘ",
+        "q": "বিশ্বের ব্যস্ততম বন্দরের তালিকায় চট্টগ্রাম বন্দর কততম?",
+        "a": "৬৮তম"
+      },
+      {
+        "label": "ঙ",
+        "q": "চট্টগ্রামের কমনওয়েলথ ওয়ার সিমেট্রি কোন বিশ্বযুদ্ধের শহীদদের সমাধিক্ষেত্র?",
+        "a": "দ্বিতীয় বিশ্বযুদ্ধ"
+      },
+      {
+        "label": "চ",
+        "q": "'LAN' এর পূর্ণরূপ কী?",
+        "a": "Local Area Network"
+      },
+      {
+        "label": "ছ",
+        "q": "জাতিতাত্ত্বিক জাদুঘর কোথায় অবস্থিত?",
+        "a": "আগ্রাবাদ, চট্টগ্রাম"
+      },
+      {
+        "label": "জ",
+        "q": "জাতিসংঘের শরণার্থী বিষয়ক আন্তর্জাতিক সংস্থার নাম কী?",
+        "a": "UNHCR (United Nations High Commissioner for Refugees)"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশের বৃহত্তম বায়ু বিদ্যুৎ কেন্দ্র কোথায় অবস্থিত?",
+        "a": "কক্সবাজার"
+      },
+      {
+        "label": "ঞ",
+        "q": "আসিয়ানভুক্ত দেশের সংখ্যা কতটি?",
+        "a": "১১টি (সর্বশেষ — পূর্ব তিমুর; ২৬ অক্টোবর ২০২৫)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,429 @@
+[
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q01",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 1,
+    "marks": 5,
+    "type": "idiom",
+    "question": "বাগধারাগুলোর অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "গোকুলের ষাঁড়",
+        "meaning": "স্বেচ্ছাচারী"
+      },
+      {
+        "label": "খ",
+        "phrase": "ঘোড়ার কামড়",
+        "meaning": "দৃঢ় পণ"
+      },
+      {
+        "label": "গ",
+        "phrase": "ঝড়ো কাক",
+        "meaning": "বিপর্যস্ত"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "ব্যাঙের আধুলি",
+        "meaning": "সামান্য সম্পদ"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "এক লহমা",
+        "meaning": "এক মুহূর্ত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q02",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "বানান শুদ্ধ করে লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "অনুসূয়া",
+        "অনসূয়া"
+      ],
+      [
+        "মুমূর্ষ",
+        "মুমূর্ষু"
+      ],
+      [
+        "অভ্যান্তরিন",
+        "অভ্যন্তরীণ"
+      ],
+      [
+        "উচ্ছাস",
+        "উচ্ছ্বাস"
+      ],
+      [
+        "উদ্ভিজ",
+        "উদ্ভিদ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q03",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "bangla",
+    "topic": "বাক্য শুদ্ধিকরণ",
+    "qno": 3,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "বাক্য শুদ্ধিকরণ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তার দুচোখ অশ্রুজলে ভেসে গেল।",
+        "a": "তার দুচোখ অশ্রুতে ভেসে গেল।"
+      },
+      {
+        "label": "খ",
+        "q": "অতিশয় দুঃখিত হলাম।",
+        "a": "খুব দুঃখ পেলাম।"
+      },
+      {
+        "label": "গ",
+        "q": "অপমান হবার ভয় নেই।",
+        "a": "অপমানিত হবার ভয় নেই।"
+      },
+      {
+        "label": "ঘ",
+        "q": "গণিত খুব কঠিন বিষয়।",
+        "a": "গণিত খুব কঠিন।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q04",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জয় করার ইচ্ছা",
+        "a": "জিগীষা"
+      },
+      {
+        "label": "খ",
+        "q": "বাঘের চামড়া",
+        "a": "কৃত্তি"
+      },
+      {
+        "label": "গ",
+        "q": "পা দিয়ে চলে না যে",
+        "a": "প্রবগ"
+      },
+      {
+        "label": "ঘ",
+        "q": "যে বৃক্ষের ফল হয় কিন্তু ফুল হয় না",
+        "a": "বনস্পতি"
+      },
+      {
+        "label": "ঙ",
+        "q": "দিন ও রাতের সন্ধিক্ষণ",
+        "a": "গোধূলি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q05",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with preposition:",
+    "parts": [
+      {
+        "sentence": "He went there..... 7.0'clock in evening.",
+        "answer": "at"
+      },
+      {
+        "sentence": "Dhaka is........the Buriganga.",
+        "answer": "on"
+      },
+      {
+        "sentence": "The house is made........ brick.",
+        "answer": "of"
+      },
+      {
+        "sentence": "I will speak.......you.",
+        "answer": "for"
+      },
+      {
+        "sentence": "He is not....... good health.",
+        "answer": "in"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q06",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 6,
+    "marks": 5,
+    "type": "table",
+    "question": "Correct Spelling:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Difinition",
+        "Definition"
+      ],
+      [
+        "Hidrozen",
+        "Hydrogen"
+      ],
+      [
+        "Atomsphare",
+        "Atmosphere"
+      ],
+      [
+        "Dialoge",
+        "Dialogue"
+      ],
+      [
+        "Achivment",
+        "Achievement"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q07",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Voice change: (active to passive)",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He will have read the book.",
+        "changed": "The book will have been read by him."
+      },
+      {
+        "label": "b",
+        "original": "I may help you.",
+        "changed": "You may be helped by me."
+      },
+      {
+        "label": "c",
+        "original": "Shut the door.",
+        "changed": "Let the door be shut."
+      },
+      {
+        "label": "d",
+        "original": "Whom is he teaching English?",
+        "changed": "Who is being taught English by him?"
+      },
+      {
+        "label": "e",
+        "original": "He made me do the work.",
+        "changed": "I was made to do the work by him."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q08",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 8,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write the meaning of phrase:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "End in smoke",
+        "meaning": "ব্যর্থ হওয়া"
+      },
+      {
+        "label": "b",
+        "phrase": "Blue Blood",
+        "meaning": "অভিজাত বংশীয়"
+      },
+      {
+        "label": "c",
+        "phrase": "Gala day",
+        "meaning": "আনন্দের দিন"
+      },
+      {
+        "label": "d",
+        "phrase": "In a nutshell",
+        "meaning": "সংক্ষেপে"
+      },
+      {
+        "label": "e",
+        "phrase": "Black and White",
+        "meaning": "লিখিতভাবে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q09",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 9,
+    "marks": 10,
+    "type": "math",
+    "question": "একটি শ্রেণির প্রতিবেঞ্চে ৪ জন করে ছাত্র বসালে ৩টি বেঞ্চ খালি থাকে। আবার, প্রতিবেঞ্চে ৩ জন করে ছাত্র বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়। ঐ শ্রেণির ছাত্র সংখ্যা কত?",
+    "steps": [
+      "মনে করি, শ্রেণিটির বেঞ্চের সংখ্যা x",
+      "যেহেতু, প্রতিবেঞ্চে ৪ জন করে বসালে ৩টি বেঞ্চ খালি থাকে, সেহেতু ঐ শ্রেণির ছাত্র সংখ্যা = x/4 + 3",
+      "আবার, যেহেতু প্রতিবেঞ্চে ৩ জন করে বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = (x−6)/3",
+      "যেহেতু শ্রেণির বেঞ্চের সংখ্যা একই থাকবে, সুতরাং x/4 + 3 = (x−6)/3",
+      "বা, (x+12)/4 = (x−6)/3",
+      "বা, 4x − 24 = 3x + 36",
+      "বা, 4x − 3x = 36 + 24",
+      "বা, x = 60",
+      "∴ ঐ শ্রেণির ছাত্র সংখ্যা 60"
+    ],
+    "answer": "৬০ জন"
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q10",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ কর: 9x² − 30xy + 25y²",
+    "steps": [
+      "9x² − 30xy + 25y²",
+      "= (3x)² − 2.3.5.xy + (5y)²",
+      "= (3x − 5y)²"
+    ],
+    "answer": "(3x − 5y)(3x − 5y)"
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q11",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "মান নির্ণয় করঃ (y−1)(y+2)=(y+4)(y−2)",
+    "steps": [
+      "(y−1)(y+2)=(y+4)(y−2)",
+      "বা, y² + 2y − y − 2 = y² − 2y + 4y − 8",
+      "বা, y² − y² + 2y + 2y − 4y − y = −8 + 2",
+      "বা, −y = −6",
+      "∴ y = 6"
+    ],
+    "answer": "y = 6"
+  },
+  {
+    "id": "job-2025-health-nimu-tc-uccho-man-sohokari-q12",
+    "examId": "job-2025-health-nimu-tc-uccho-man-sohokari",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 12,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাংলাদেশের সর্বাধিক বৈদেশিক মুদ্রা অর্জনের খাত কি?",
+        "a": "তৈরি পোশাক খাত"
+      },
+      {
+        "label": "খ",
+        "q": "জাতিসংঘের সর্বশেষ সদস্য কোন দেশ?",
+        "a": "দক্ষিণ সুদান (১৯৩ তম)"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলার সর্বপ্রাচীন জনপদের রাজধানী কোনটি?",
+        "a": "পুণ্ড্র"
+      },
+      {
+        "label": "ঘ",
+        "q": "ASEAN এর সদস্য রাষ্ট্র কতটি?",
+        "a": "১১টি (সর্বশেষ- পূর্ব তিমুর)"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইউরোপের শস্য ভান্ডার কোন দেশ?",
+        "a": "ইউক্রেন"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের সংবিধানে কতটি মৌলিক অধিকার স্বীকৃত আছে?",
+        "a": "১৮ টি"
+      },
+      {
+        "label": "ছ",
+        "q": "গুগল এর প্রতিষ্ঠাতা কে?",
+        "a": "Larry Page ও Sergey Brin"
+      },
+      {
+        "label": "জ",
+        "q": "চন্দ্রদ্বীপ এর মূলভূমি কোন জেলায় অবস্থিত?",
+        "a": "বরিশাল"
+      },
+      {
+        "label": "ঝ",
+        "q": "তেঁতুলে কোন এসিড রয়েছে?",
+        "a": "টারটারিক এসিড"
+      },
+      {
+        "label": "ঞ",
+        "q": "ঢাকার পূর্বনাম কি ছিল?",
+        "a": "জাহাঙ্গীর নগর"
+      },
+      {
+        "label": "ট",
+        "q": "২০২৫ সালে শান্তিতে নোবেল পুরস্কার পেয়েছিলেন কে?",
+        "a": "মারিয়া কোরিনা মাচাদো (ভেনেজুয়েলা)"
+      },
+      {
+        "label": "ঠ",
+        "q": "ট্রয় নগরী কোন দেশে অবস্থিত?",
+        "a": "তুরস্ক"
+      },
+      {
+        "label": "ড",
+        "q": "১ম নোবেল বিজয়ী নারী কে?",
+        "a": "মারি কুরি"
+      },
+      {
+        "label": "ঢ",
+        "q": "রক্তের গ্রুপ কতটি? কি কি?",
+        "a": "৪টি; A, B, AB ও O"
+      },
+      {
+        "label": "ণ",
+        "q": "বাংলা সনেটের জনক কে?",
+        "a": "মাইকেল মধুসূদন দত্ত"
+      }
+    ]
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "job-2025-air-force-office-sohayok-q01",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 5,
+    "type": "idiom",
+    "question": "বাগধারা অর্থসহ:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "পটল তোলা",
+        "meaning": "মারা যাওয়া"
+      },
+      {
+        "label": "খ",
+        "phrase": "অর্ধচন্দ্র",
+        "meaning": "গলাধাক্কা দেওয়া"
+      },
+      {
+        "label": "গ",
+        "phrase": "অক্কা পাওয়া",
+        "meaning": "মারা যাওয়া"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "ঠোঁটকাটা",
+        "meaning": "স্পষ্টভাষী"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "ঘোড়ার ডিম",
+        "meaning": "অলীক বস্তু"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q02",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "জনৈক",
+        "জন + এক"
+      ],
+      [
+        "বৃষ্টি",
+        "বৃষ্ + তি"
+      ],
+      [
+        "ক্ষুধার্ত",
+        "ক্ষুধা + ঋত"
+      ],
+      [
+        "মিথ্যুক",
+        "মিথ্যা + উক"
+      ],
+      [
+        "বিদ্যালয়",
+        "বিদ্যা + আলয়"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q03",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত-শব্দ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "উচিত",
+        "অনুচিত"
+      ],
+      [
+        "আত্মীয়",
+        "অনাত্মীয়"
+      ],
+      [
+        "আস্থা",
+        "অনাস্থা"
+      ],
+      [
+        "ঐক্য",
+        "অনৈক্য"
+      ],
+      [
+        "কোমল",
+        "কর্কশ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q04",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 5,
+    "type": "idiom",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "অন্য উপায় না থাকা",
+        "meaning": "অনন্যোপায়"
+      },
+      {
+        "label": "খ",
+        "phrase": "আয় বুঝে ব্যয় করে যে",
+        "meaning": "মিতব্যয়ী"
+      },
+      {
+        "label": "গ",
+        "phrase": "ক্ষমার যোগ্য",
+        "meaning": "ক্ষমার্হ"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "আকাশে চড়ে যে",
+        "meaning": "খেচর"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "যার কিছুই নেই",
+        "meaning": "হতসর্বস্ব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q05",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সদা সত্য কথা বল।",
+        "target": "Always speak the truth."
+      },
+      {
+        "label": "খ",
+        "source": "আজ বৃষ্টি হবে।",
+        "target": "It will rain today."
+      },
+      {
+        "label": "গ",
+        "source": "বিমান আকাশে উড়ে।",
+        "target": "The airplane flies in the sky."
+      },
+      {
+        "label": "ঘ",
+        "source": "লোকটি কী অসুস্থ?",
+        "target": "Is the man sick?"
+      },
+      {
+        "label": "ঙ",
+        "source": "সে স্কুলে যায়।",
+        "target": "He goes to school."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q06",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "english",
+    "topic": "gender",
+    "qno": 6,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the Gender:",
+    "columns": [
+      "Masculine",
+      "Feminine"
+    ],
+    "rows": [
+      [
+        "Husband",
+        "Wife"
+      ],
+      [
+        "Man",
+        "Woman"
+      ],
+      [
+        "Hero",
+        "Heroine"
+      ],
+      [
+        "King",
+        "Queen"
+      ],
+      [
+        "Ram",
+        "Ewe"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q07",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "english",
+    "topic": "number",
+    "qno": 7,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the Number:",
+    "columns": [
+      "Singular",
+      "Plural"
+    ],
+    "rows": [
+      [
+        "Calf",
+        "Calves"
+      ],
+      [
+        "Horse",
+        "Horses"
+      ],
+      [
+        "Woman",
+        "Women"
+      ],
+      [
+        "Knife",
+        "Knives"
+      ],
+      [
+        "Pen",
+        "Pens"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q08",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "english",
+    "qno": 8,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write the Bangla meaning:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Camel",
+        "meaning": "উট"
+      },
+      {
+        "label": "b",
+        "phrase": "Painter",
+        "meaning": "চিত্রশিল্পী"
+      },
+      {
+        "label": "c",
+        "phrase": "Ocean",
+        "meaning": "মহাসাগর"
+      },
+      {
+        "label": "d",
+        "phrase": "Flower",
+        "meaning": "ফুল"
+      },
+      {
+        "label": "e",
+        "phrase": "Waiter",
+        "meaning": "বেয়ারা/ খাদ্য পরিবেশক"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q09",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 9,
+    "marks": 8,
+    "type": "math",
+    "question": "একটি আয়তাকার ঘরের দৈর্ঘ্য প্রস্থের দ্বিগুণ। প্রস্থ যদি ১০ ফুট হয়, তবে ঘরের ক্ষেত্রফল কত?",
+    "steps": [
+      "দেওয়া আছে, প্রস্থ ১০ ফুট সুতরাং দৈর্ঘ্য ২০ ফুট",
+      "ঘরের ক্ষেত্রফল = ১০ × ২০ = ২০০ বর্গফুট"
+    ],
+    "answer": "২০০ বর্গফুট।"
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q10",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "১ ৩/৮ × ১/২ ÷ ১/৮ = কত?",
+    "steps": [
+      "= ৫/৮ × ২/১ × ৮/১"
+    ],
+    "answer": "৫"
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q11",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 6,
+    "type": "math",
+    "question": "১ মেট্রিক টন চাল ২৫ শ্রমিকের মধ্যে সমান ভাগে ভাগ করে দিলে প্রত্যেকে কি পরিমাণ চাল পাবে?",
+    "steps": [
+      "আমরা জানি, ১ মেট্রিক টন = ১০০০ কেজি",
+      "২৫ জন শ্রমিক পায় ১০০০ কেজি",
+      "১ জন শ্রমিক পায় ১০০০/২৫ = ৪০ কেজি"
+    ],
+    "answer": "৪০ কেজি।"
+  },
+  {
+    "id": "job-2025-air-force-office-sohayok-q12",
+    "examId": "job-2025-air-force-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 12,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাংলাদেশ বিমান বাহিনী কোন সালে প্রতিষ্ঠিত হয়?",
+        "a": "২৮ সেপ্টেম্বর ১৯৭১"
+      },
+      {
+        "label": "খ",
+        "q": "বাংলাদেশ বিমান বাহিনী প্রধানের নাম লিখুন?",
+        "a": "এয়ার ভাইস মার্শাল হাসান মাহমুদ খান"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের কোন জেলায় বেশি বৃষ্টিপাত হয়?",
+        "a": "সিলেট।"
+      },
+      {
+        "label": "ঘ",
+        "q": "কোন তারিখে আন্তর্জাতিক মাতৃভাষা দিবস পালিত হয়?",
+        "a": "২১শে ফেব্রুয়ারি"
+      },
+      {
+        "label": "ঙ",
+        "q": "পদ্মা সেতুর দৈর্ঘ্য কত?",
+        "a": "৬.১৫ কিলোমিটার"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের জেলা কয়টি?",
+        "a": "৬৪টি।"
+      },
+      {
+        "label": "ছ",
+        "q": "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?",
+        "a": "নিউইয়র্ক, যুক্তরাষ্ট্র।"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের পতাকার অনুপাত কত?",
+        "a": "১০:৬ বা ৫:৩।"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশের জাতীয় ফলের নাম কি?",
+        "a": "কাঁঠাল।"
+      },
+      {
+        "label": "ঞ",
+        "q": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র কোন জেলায় অবস্থিত?",
+        "a": "পাবনা।"
+      }
+    ]
+  }
+]

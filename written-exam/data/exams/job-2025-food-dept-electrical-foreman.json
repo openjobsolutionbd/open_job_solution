@@ -1,0 +1,586 @@
+[
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q01",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "লোকমুখে শুনেছি।",
+        "a": "অপাদানে ৭মী"
+      },
+      {
+        "label": "খ",
+        "q": "বিপদে মোরে রক্ষা করো, এ নহে মোর প্রার্থনা।",
+        "a": "অপাদানে ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "আকাশে চাঁদ উঠেছে।",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "প্রভাতে সূর্য উদিত হয়।",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঙ",
+        "q": "গাড়ী স্টেশন ছেড়েছে।",
+        "a": "অপাদানে শূন্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q02",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সকলের দ্বারা অনুষ্ঠিত",
+        "a": "সার্বজনীন"
+      },
+      {
+        "label": "খ",
+        "q": "ঋণ শোধে অসমর্থ",
+        "a": "দেউলিয়া"
+      },
+      {
+        "label": "গ",
+        "q": "যা স্থানান্তর করা যায় না",
+        "a": "স্থাবর"
+      },
+      {
+        "label": "ঘ",
+        "q": "যা অধ্যয়ন করা হয়েছে",
+        "a": "অধীত"
+      },
+      {
+        "label": "ঙ",
+        "q": "পূর্বে ছিল, এখন নেই",
+        "a": "ভূতপূর্ব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q03",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গবাদি",
+        "a": "গো + আদি"
+      },
+      {
+        "label": "খ",
+        "q": "লবণ",
+        "a": "লো + অন"
+      },
+      {
+        "label": "গ",
+        "q": "জনৈক",
+        "a": "জন + এক"
+      },
+      {
+        "label": "ঘ",
+        "q": "ইত্যাদি",
+        "a": "ইতি + আদি"
+      },
+      {
+        "label": "ঙ",
+        "q": "প্রত্যেক",
+        "a": "প্রতি + এক"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q04",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'ত্রিফলা' কোন সমাসের উদাহরণ?",
+        "a": "দ্বিগু সমাস (ত্রিফলা = তিন ফলের সমাহার)"
+      },
+      {
+        "label": "খ",
+        "q": "কোন সমাসে পূর্বপদ ও পরপদ উভয় পদের অর্থের প্রাধান্য থাকে?",
+        "a": "দ্বন্দ্ব সমাস"
+      },
+      {
+        "label": "গ",
+        "q": "বাক্যের মধ্যে পরস্পর সম্পর্কিত একাধিক পদের এক পদে পরিণত হওয়ার নাম কী?",
+        "a": "সমাস"
+      },
+      {
+        "label": "ঘ",
+        "q": "যেসব পদ নিয়ে সমাস হয় তাদেরকে কী বলে?",
+        "a": "সমস্যমান পদ"
+      },
+      {
+        "label": "ঙ",
+        "q": "পরপদের অর্থ প্রাধান্য পায় কোন সমাসে?",
+        "a": "দ্বিগু, কর্মধারয় ও তৎপুরুষ সমাসে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q05",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 5,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কবি 'জীবনানন্দ দাশ' এর জন্ম কোন শহরে?",
+        "a": "বরিশাল"
+      },
+      {
+        "label": "খ",
+        "q": "সিরাজউদ্দৌলা নাটকটির রচয়িতা কে?",
+        "a": "সিকান্দার আবু জাফর"
+      },
+      {
+        "label": "গ",
+        "q": "'বিষাদ সিন্ধু' উপন্যাসের রচয়িতা কে?",
+        "a": "মীর মশাররফ হোসেন"
+      },
+      {
+        "label": "ঘ",
+        "q": "'ময়মনসিংহ গীতিকা'র সংগ্রাহক কে?",
+        "a": "চন্দ্রকুমার দে"
+      },
+      {
+        "label": "ঙ",
+        "q": "সুকান্ত ভট্টাচার্য কত বছর বয়সে মৃত্যুবরণ করেন?",
+        "a": "২১ বছর (২০ বছর ৯ মাস)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q06",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 6,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the following:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "By dint of",
+        "meaning": "বলে/দ্বারা",
+        "example": "I succeeded by dint of hard work."
+      },
+      {
+        "label": "b",
+        "phrase": "Take after",
+        "meaning": "সদৃশ হওয়া",
+        "example": "He takes after his father."
+      },
+      {
+        "label": "c",
+        "phrase": "A crying need",
+        "meaning": "অতি প্রয়োজন",
+        "example": "Mass education is a crying need of Bangladesh."
+      },
+      {
+        "label": "d",
+        "phrase": "At any cost",
+        "meaning": "যেভাবেই হোক",
+        "example": "At any cost I shall help you."
+      },
+      {
+        "label": "e",
+        "phrase": "Look down upon",
+        "meaning": "অবজ্ঞা করা",
+        "example": "Do not look down upon the poor."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q07",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "qno": 7,
+    "marks": 5,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সকাল থেকে গুঁড়ি গুঁড়ি বৃষ্টি হচ্ছে।",
+        "target": "It has been drizzling since morning."
+      },
+      {
+        "label": "খ",
+        "source": "দুয়ে দুয়ে চার হয়।",
+        "target": "Two and two makes four."
+      },
+      {
+        "label": "গ",
+        "source": "বাংলাদেশ একটি ব-দ্বীপ।",
+        "target": "Bangladesh is a delta."
+      },
+      {
+        "label": "ঘ",
+        "source": "আমার ঠান্ডা লেগেছে।",
+        "target": "I have caught cold."
+      },
+      {
+        "label": "ঙ",
+        "source": "আমার বন্ধু নাই বললেই চলে।",
+        "target": "I have few friends."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q08",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "qno": 8,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the voice of the following sentences as indicated in the bracket:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Who will help me? (Passive)",
+        "changed": "By whom will I be helped?"
+      },
+      {
+        "label": "b",
+        "original": "Let the work be done. (Active)",
+        "changed": "Do the work."
+      },
+      {
+        "label": "c",
+        "original": "He did the unnecessary things for me. (Passive)",
+        "changed": "The unnecessary things were done for me by him."
+      },
+      {
+        "label": "d",
+        "original": "Rice is cheap when it is sold. (Active)",
+        "changed": "Rice sells cheap."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q09",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "qno": 9,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the following sentences from direct to indirect speech:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Shimul said to his brother, \"Will you go to school?\"",
+        "changed": "Shimul asked his brother if he would go to school."
+      },
+      {
+        "label": "b",
+        "original": "He said to me, \"You may stay with me\".",
+        "changed": "He told me that I might stay with him."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q10",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "qno": 10,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Write the right form of verbs mentioned in the bracket:",
+    "parts": [
+      {
+        "sentence": "He ran away having (see) the police.",
+        "answer": "seen"
+      },
+      {
+        "sentence": "You would better (take) rest.",
+        "answer": "take"
+      },
+      {
+        "sentence": "I came after he (leave) home.",
+        "answer": "had left"
+      },
+      {
+        "sentence": "No sooner had he (take) the money than he went away.",
+        "answer": "taken"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q11",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "english",
+    "qno": 11,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "One should do...... duty.",
+        "answer": "one's"
+      },
+      {
+        "sentence": "He promised to...... the truth.",
+        "answer": "speak"
+      },
+      {
+        "sentence": "You will fail.... you don't study regularly.",
+        "answer": "if"
+      },
+      {
+        "sentence": "The cat is sleeping.......the table.",
+        "answer": "under"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q12",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 12,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি বর্গাকার ক্ষেত্রের দৈর্ঘ্য ২০০ মিটার এবং এর বাইরে চারদিকে ৪ মিটার চওড়া একটি রাস্তা আছে। রাস্তাটির ক্ষেত্রফল কত?",
+    "steps": [
+      "বর্গাকার ক্ষেত্রের এক বাহুর দৈর্ঘ্য ২০০ মিটার, ∴ ক্ষেত্রফল = ২০০² = ৪০০০০ বর্গমিটার",
+      "রাস্তাসহ বর্গক্ষেত্রের এক বাহুর দৈর্ঘ্য = ২০০+৪×২ = ২০৮ মিটার",
+      "রাস্তাসহ ক্ষেত্রফল = ২০৮² = ৪৩২৬৪ বর্গমিটার",
+      "রাস্তার ক্ষেত্রফল = ৪৩২৬৪ - ৪০০০০ = ৩২৬৪ বর্গমিটার"
+    ],
+    "answer": "৩২৬৪ বর্গমিটার"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q13",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 13,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি মটর সাইকেল ১৮০০ টাকায় বিক্রয় করাতে ১০% ক্ষতি হলো, কত টাকায় বিক্রয় করলে ১২% লাভ হবে?",
+    "steps": [
+      "১০% ক্ষতিতে বিক্রয়মূল্য (১০০-১০)=৯০ টাকা, অর্থাৎ বিক্রয়মূল্য ৯০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "∴ বিক্রয়মূল্য ১৮০০ টাকা হলে ক্রয়মূল্য = (১০০×১৮০০)/৯০ = ২০০০ টাকা",
+      "১২% লাভে, বিক্রয়মূল্য=(১০০+১২)=১১২ টাকা যখন ক্রয়মূল্য ১০০ টাকা",
+      "∴ ক্রয়মূল্য ২০০০ টাকা হলে বিক্রয়মূল্য = (১১২×২০০০)/১০০ = ২২৪০ টাকা"
+    ],
+    "answer": "২২৪০ টাকা"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q14",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 14,
+    "marks": 4,
+    "type": "math",
+    "question": "4x²-23x+33 কে উৎপাদক বিশ্লেষণ করুন।",
+    "steps": [
+      "4x²-23x+33 = 4x²-12x-11x+33",
+      "= 4x(x-3)-11(x-3)",
+      "= (x-3)(4x-11)"
+    ],
+    "answer": "(x-3)(4x-11)"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q15",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি ছাগল ৮% ক্ষতিতে বিক্রয় করা হলো। ছাগলটি আরও ৮০০ টাকা বেশি বিক্রয় করলে ৮% লাভ হতো। ছাগলটির ক্রয়মূল্য কত?",
+    "steps": [
+      "ধরি, ক্রয়মূল্য = x টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য = ০.৯২x টাকা; ৮% লাভে বিক্রয়মূল্য = ১.০৮x টাকা",
+      "প্রশ্নমতে, ০.৯২x + ৮০০ = ১.০৮x",
+      "৮০০ = ০.১৬x ⇒ x = ৫০০০"
+    ],
+    "answer": "৫০০০ টাকা"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q16",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 16,
+    "marks": 6,
+    "type": "math",
+    "question": "বায়ু পানির তুলনায় ০.০০১২৯ গুণ ভারী। যে ঘরের দৈর্ঘ্য, প্রস্থ ও উচ্চতা যথাক্রমে ১৬ মিটার, ১২ মিটার ও ৪ মিটার, তাতে কত কিলোগ্রাম বায়ু আছে?",
+    "steps": [
+      "ঘরের আয়তন = ১৬×১২×৪ = ৭৬৮ ঘনমিটার = ৭৬৮×১০০০০০০ ঘন সে.মি. = ৭৬৮০০০০০০ ঘন সে.মি.",
+      "১ ঘন সে.মি. বায়ুর ওজন = ০.০০১২৯ গ্রাম",
+      "ঘরে বায়ুর পরিমাণ = ৭৬৮০০০০০০ × ০.০০১২৯ = ৯৯০৭২০ গ্রাম = ৯৯০.৭২ কিলোগ্রাম"
+    ],
+    "answer": "৯৯০.৭২ কিলোগ্রাম"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q17",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "math",
+    "qno": 17,
+    "marks": 5,
+    "type": "math",
+    "question": "m = 2 হলে, 27m³ + 54m²+ 36m+3 এর মান নির্ণয় কর।",
+    "steps": [
+      "প্রদত্ত রাশি = 27m³+54m²+36m+3",
+      "= (3m)³ + 3.(3m)².2 + 3.3m.2² + 2³ - 5",
+      "= (3m+2)³ - 5",
+      "= (3.2+2)³ - 5 = 8³-5 = 512-5 = 507"
+    ],
+    "answer": "507"
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q18",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "general-knowledge",
+    "qno": 18,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কোন কমিটি কর্তৃক নোবেল শান্তি পুরস্কার ঘোষণা করা হয়?",
+        "a": "নরওয়েজিয়ান নোবেল কমিটি।"
+      },
+      {
+        "label": "খ",
+        "q": "বিশ্ব খাদ্য দিবস কবে?",
+        "a": "১৬ই অক্টোবর।"
+      },
+      {
+        "label": "গ",
+        "q": "সোয়াচ অব নো গ্রাউন্ড কোথায় অবস্থিত?",
+        "a": "বঙ্গোপসাগর।"
+      },
+      {
+        "label": "ঘ",
+        "q": "জাতিসংঘের কোন সংস্থা ২১শে ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে স্বীকৃতি দিয়েছে?",
+        "a": "ইউনেস্কো"
+      },
+      {
+        "label": "ঙ",
+        "q": "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?",
+        "a": "নিউইয়র্ক, যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "চ",
+        "q": "পারমাণবিক বোমা তৈরির মূল উপাদান কোন ধাতু?",
+        "a": "ইউরেনিয়াম"
+      },
+      {
+        "label": "ছ",
+        "q": "প্রথম বিশ্বযুদ্ধ শুরু হয়েছিল কত সালে?",
+        "a": "১৯১৪ সালে"
+      },
+      {
+        "label": "জ",
+        "q": "আয়োডিনের অভাবে কোন রোগ হয়?",
+        "a": "গলগণ্ড"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশের সবচেয়ে প্রাচীন জনপদের নাম কি?",
+        "a": "পুণ্ড্র"
+      },
+      {
+        "label": "ঞ",
+        "q": "যুক্তরাষ্ট্র কোন তারিখে জাপানের হিরোশিমায় পারমাণবিক বোমা নিক্ষেপ করে?",
+        "a": "০৬ আগস্ট ১৯৪৫"
+      },
+      {
+        "label": "ট",
+        "q": "সিঙ্গাপুরের মুদ্রার নাম কী?",
+        "a": "সিঙ্গাপুর ডলার"
+      },
+      {
+        "label": "ঠ",
+        "q": "বাংলাদেশ সবচেয়ে বেশি বৈদেশিক মুদ্রা আয় করে কোন খাত থেকে?",
+        "a": "তৈরি পোশাক শিল্প"
+      },
+      {
+        "label": "ড",
+        "q": "বাংলাদেশে গভীর সমুদ্রবন্দর নির্মিত হচ্ছে কোথায়?",
+        "a": "কক্সবাজার জেলার মহেশখালী উপজেলার মাতারবাড়ীতে"
+      },
+      {
+        "label": "ঢ",
+        "q": "বাংলাদেশ জলবিদ্যুৎ আমদানি করে কোন দেশ থেকে?",
+        "a": "নেপাল (১৫ জুন, ২০২৫)।"
+      },
+      {
+        "label": "ণ",
+        "q": "বাংলাদেশের অর্থবছর শুরু হয় কত তারিখ থেকে?",
+        "a": "১লা জুলাই।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-food-dept-electrical-foreman-q19",
+    "examId": "job-2025-food-dept-electrical-foreman",
+    "subject": "general-knowledge",
+    "qno": 19,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখুনঃ",
+    "parts": [
+      {
+        "label": "",
+        "q": "RAM",
+        "a": "Random Access Memory"
+      },
+      {
+        "label": "",
+        "q": "WTO",
+        "a": "World Trade Organization"
+      },
+      {
+        "label": "",
+        "q": "BARI",
+        "a": "Bangladesh Agricultural Research Institute"
+      },
+      {
+        "label": "",
+        "q": "UNESCO",
+        "a": "United Nations Educational, Scientific and Culture Organization"
+      },
+      {
+        "label": "",
+        "q": "GDP",
+        "a": "Gross Domestic Product"
+      }
+    ]
+  }
+]

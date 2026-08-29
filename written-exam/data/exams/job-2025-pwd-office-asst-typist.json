@@ -1,0 +1,635 @@
+[
+  {
+    "id": "job-2025-pwd-office-asst-typist-q01",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 1,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা",
+        "a": "কর্মকারকে ২য়া"
+      },
+      {
+        "label": "খ",
+        "q": "সব ঝিনুকে মুক্তা মেলে না",
+        "a": "অপাদান কারকে সপ্তমী বিভক্তি"
+      },
+      {
+        "label": "গ",
+        "q": "তিলে তৈল আছে।",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "অঙ্গজনে দেহ আলো।",
+        "a": "সম্প্রদানে ৭মী"
+      },
+      {
+        "label": "ঙ",
+        "q": "ছাত্ররা বল খেলে",
+        "a": "করণে শূন্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q02",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মনীষা",
+        "a": "মনস্ + ঈষা"
+      },
+      {
+        "label": "খ",
+        "q": "সংস্কার",
+        "a": "সম্ + কার"
+      },
+      {
+        "label": "গ",
+        "q": "কিংবদন্তি",
+        "a": "কিম্ + বদন্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q03",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মরুধান",
+        "মরুদ্যান"
+      ],
+      [
+        "মনকট",
+        "মনঃকষ্ট"
+      ],
+      [
+        "প্রতুপন্নমতি",
+        "প্রত্যুৎপন্নমতি"
+      ],
+      [
+        "কৃতীত্ব",
+        "কৃতিত্ব"
+      ],
+      [
+        "ইতমধ্যে",
+        "ইতোমধ্যে"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q04",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "চালাকচতুর",
+        "a": "যিনিই চালাক তিনিই চতুর - মধ্যপদলোপী কর্মধারয়"
+      },
+      {
+        "label": "খ",
+        "q": "কানাকানি",
+        "a": "কানে কানে যে কথা - ব্যতিহার বহুব্রীহি"
+      },
+      {
+        "label": "গ",
+        "q": "মধুমাখা",
+        "a": "মধু দ্বারা মাখা - ৩য়া তৎপুরুষ"
+      },
+      {
+        "label": "ঘ",
+        "q": "চতুর্ভুজ",
+        "a": "চার ভুজের সমাহার - দ্বিগু সমাস"
+      },
+      {
+        "label": "ঙ",
+        "q": "কাজলকালো",
+        "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q05",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 3,
+    "type": "translate",
+    "question": "বাংলায় অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "No work is superior or inferior in itself.",
+        "target": "কোনো কাজই কাজের দিক থেকে শ্রেষ্ঠ বা নিকৃষ্ট নয়।"
+      },
+      {
+        "label": "খ",
+        "source": "Work is work.",
+        "target": "কাজ মাত্রই কাজ।"
+      },
+      {
+        "label": "গ",
+        "source": "It is absolutely wrong to consider any work as high or low.",
+        "target": "কোনো কাজকে উচ্চ বা নীচু বলে বিবেচনা করা সম্পূর্ণ ভুল।"
+      },
+      {
+        "label": "ঘ",
+        "source": "The work itself is a dignity.",
+        "target": "কাজ মাত্রই সম্মানের।"
+      },
+      {
+        "label": "ঙ",
+        "source": "Every work has some dignity attached to it.",
+        "target": "প্রতিটি কাজের সাথেই কিছু মর্যাদা/সম্মান জড়িত থাকে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q06",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 6,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on any one of the following topics: a) Tree plantation. b) Importance of Physical Exercise.",
+    "answer": "Tree plantation. Tree plantation means planting many trees to improve the environment. Trees give us oxygen and take in harmful gases like carbon dioxide, making the air clean and fresh. They provide fruits, medicine, wood, and shelter for people and animals. Trees also prevent soil erosion and floods."
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q07",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences of the following phrases and idioms.",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A rainy day",
+        "meaning": "দুর্দিন",
+        "example": "We should save something against a rainy day."
+      },
+      {
+        "label": "b",
+        "phrase": "At home",
+        "meaning": "দক্ষ",
+        "example": "He is at home in English"
+      },
+      {
+        "label": "c",
+        "phrase": "Cry in the wilderness",
+        "meaning": "অরণ্যে রোদন",
+        "example": "To want something to a miser is a cry in the wilderness."
+      },
+      {
+        "label": "d",
+        "phrase": "Give a hand",
+        "meaning": "কাউকে সাহায্য করা",
+        "example": "Could you give me a hand?"
+      },
+      {
+        "label": "e",
+        "phrase": "Word for word",
+        "meaning": "হুবহু",
+        "example": "She copied it word for word from my books."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q08",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate prepositions:",
+    "parts": [
+      {
+        "sentence": "Credit 5000 tk...... my account.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Hurry up! We have to go..... five minutes.",
+        "answer": "within/in"
+      },
+      {
+        "sentence": "I finally killed the fly...... a rolled up paper.",
+        "answer": "with"
+      },
+      {
+        "sentence": "I count .......your help.",
+        "answer": "upon"
+      },
+      {
+        "sentence": "Are you doing anything special....... the weekend.",
+        "answer": "on"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q09",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change into passive voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "His behavior worried us.",
+        "changed": "We were worried at his behavior."
+      },
+      {
+        "label": "b",
+        "original": "Some children were helping the sick man.",
+        "changed": "The sick man was being helped by some children."
+      },
+      {
+        "label": "c",
+        "original": "Does he speak English well?",
+        "changed": "Is English spoken well by him?"
+      },
+      {
+        "label": "d",
+        "original": "Don't do it.",
+        "changed": "Let not it be done."
+      },
+      {
+        "label": "e",
+        "original": "Never tell a lie.",
+        "changed": "Let never a lie be told/ Let not a lie ever be told."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q10",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 10,
+    "marks": 5,
+    "type": "table",
+    "question": "Write the correct spelling of the following words:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Sovergnty",
+        "Sovereignty"
+      ],
+      [
+        "Heirarchy",
+        "Hierarchy"
+      ],
+      [
+        "Rennaissance",
+        "Renaissance"
+      ],
+      [
+        "Dillema",
+        "Dilemma"
+      ],
+      [
+        "Bouquete",
+        "Bouquet"
+      ],
+      [
+        "Parallal",
+        "Parallel"
+      ],
+      [
+        "Laberatory",
+        "Laboratory"
+      ],
+      [
+        "Exagerate",
+        "Exaggerate"
+      ],
+      [
+        "Propitor",
+        "Proprietor"
+      ],
+      [
+        "Millanium",
+        "Millennium"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q11",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "উৎপাদকে বিশ্লেষণ",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "27x⁴ + 8xy³ কে উৎপাদকে বিশ্লেষণ কর।",
+    "steps": [
+      "27x⁴ + 8xy³",
+      "= x(27x³ + 8y³)",
+      "= x{(3x)³ + (2y)³}",
+      "= x(3x + 2y) {(3x)² − (3x)×(2y) + (2y)²}",
+      "= x(3x + 2y) (9x² − 6xy + 4y²)"
+    ],
+    "answer": "x(3x + 2y) (9x² − 6xy + 4y²)"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q12",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "উৎপাদকে বিশ্লেষণ",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "সূত্রের সাহায্যে (x²+2) ও (x⁴−2x²+4) এর গুণফল নির্ণয় কর।",
+    "steps": [
+      "(x²+2) × (x⁴−2x²+4)",
+      "= (x²+2) {(x²)² − 2.x² + 2²}",
+      "= (x²)³ + 2³"
+    ],
+    "answer": "x⁶ + 8"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q13",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "5a−6b−7c এর বর্গ নির্ণয় কর।",
+    "steps": [
+      "(5a−6b−7c)²",
+      "= {(5a−6b)−7c}²",
+      "= (5a−6b)² − 2(5a−6b).7c + (7c)²",
+      "= (5a)² − 2.5a.6b + (6b)² − 70ac + 84bc + 49c²"
+    ],
+    "answer": "25a² − 60ab + 36b² − 70ac + 84bc + 49c²"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q14",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "সংখ্যা পদ্ধতি",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার একক স্থানীয় অঙ্কটি দশক স্থানীয় অঙ্ক অপেক্ষা ২ বেশি। অঙ্কদ্বয় স্থান বিনিময় করলে যে সংখ্যা পাওয়া যাবে তা প্রদত্ত সংখ্যার তিনগুণ অপেক্ষা ৬ কম হবে। সংখ্যাটি নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, দশক স্থানীয় অঙ্কটি x; অতএব, একক স্থানীয় অঙ্কটি হবে x + 2",
+      "∴ সংখ্যাটি 10x + (x + 2) বা, 11x + 2",
+      "অঙ্কদ্বয় স্থান বিনিময় করলে পরিবর্তিত সংখ্যাটি হবে 10(x + 2) + x বা, 11x + 20",
+      "প্রশ্নমতে, 11x + 20 = 3(11x + 2) − 6",
+      "বা, 11x + 20 = 33x + 6 − 6",
+      "বা, 20 = 22x",
+      "বা, x = 10/11 (পূর্ণসংখ্যা নয় বিধায় ধরে নেওয়া হলো, সংখ্যাটির পরিবর্তিত রূপ মূল সংখ্যার দ্বিগুণ অপেক্ষা ৬ কম)",
+      "প্রশ্নমতে, 11x + 20 = 2(11x + 2) − 6",
+      "বা, 11x + 20 = 22x + 4 − 6",
+      "বা, 22x − 11x = 20 + 6 − 4 [পক্ষান্তর করে]",
+      "বা, 11x = 22",
+      "বা, x = 2",
+      "∴ সংখ্যাটি 11x + 2 = 11 × 2 + 2 = 24"
+    ],
+    "answer": "সংখ্যাটি ২৪।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q15",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "মুনাফা-আসল",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "বার্ষিক শতকরা ৬ টাকা হার চক্রবৃদ্ধি মুনাফায় ১৫০০০ টাকার ৩ বছরের সবৃদ্ধিমূল ও চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।",
+    "steps": [
+      "আমরা জানি, C = P(১ + r)ⁿ [যেখানে C চক্রবৃদ্ধির ক্ষেত্রে সবৃদ্ধিমূল]",
+      "দেওয়া আছে, P = ১৫০০০ টাকা, r = ৬% = ৬/১০০, n = ৩ বছর",
+      "∴ C = ১৫০০০ (১ + ৬/১০০)³",
+      "= ১৫০০০ (১ + ৩/৫০)³",
+      "= ১৫০০০(৫৩/৫০)³",
+      "= ১৫০০০ × ৫৩/৫০ × ৫৩/৫০ × ৫৩/৫০ = ৪৪৬৬৩১/২৫ = ১৭৮৬৫.২৪"
+    ],
+    "answer": "সবৃদ্ধিমূল ১৭৮৬৫.২৪ টাকা এবং চক্রবৃদ্ধি মুনাফা ২৮৬৫.২৪ টাকা"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q16",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 16,
+    "marks": 5,
+    "type": "math",
+    "question": "৩০টি কমলা তিন ভাইয়ের মধ্যে ৫:৩:২ অনুপাতে ভাগ করলে প্রত্যেকে কতটি করে কমলা পাবে?",
+    "steps": [
+      "মনে করি, তিন ভাই কমলা পাবে যথাক্রমে ৫ক, ৩ক, ২ক",
+      "প্রশ্নমতে, ৫ক + ৩ক + ২ক = ৩০",
+      "বা, ১০ক = ৩০",
+      "∴ ক = ৩",
+      "সুতরাং ১ম ভাই কমলা পাবে (৫ × ৩) = ১৫টি",
+      "২য় ভাই কমলা পাবে (৩ × ৩) = ৯টি",
+      "৩য় ভাই কমলা পাবে (২ × ৩) = ৬টি"
+    ],
+    "answer": "প্রথম ভাই ১৫টি, দ্বিতীয় ভাই ৯টি ও তৃতীয় ভাই ৬টি কমলা পাবে।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q17",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "মুক্তিযুদ্ধ",
+    "qno": 17,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "মুক্তিযুদ্ধের কৃতিত্বপূর্ণ অবদানের খেতাব কি কি?",
+    "answer": "বীরশ্রেষ্ঠ, বীরউত্তম, বীরবিক্রম, বীরপ্রতীক।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q18",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 18,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি? এর আদি নাম কি?",
+    "answer": "সেন্টমার্টিন দ্বীপ। আদি নাম- নারিকেল জিঞ্জিরা।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q19",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "'থ্রি জিরো' বা তিন শূন্য ধারণা কি? এর প্রবর্তক কে?",
+    "answer": "'তিন শূন্য তত্ত্ব' (Three Zero Theory) হলো ড. মুহাম্মদ ইউনূস প্রস্তাবিত একটি সামাজিক ও অর্থনৈতিক রূপরেখা, যার মূল লক্ষ্য হলো শূন্য দারিদ্র্য (Zero Poverty), শূন্য বেকারত্ব (Zero Unemployment) এবং শূন্য নেট কার্বন নিঃসরণ (Zero Net Carbon Emissions) অর্জন করে একটি টেকসই ও সমতাভিত্তিক বিশ্ব গড়ে তোলা।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q20",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 20,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "রাতারগুল কি ও কোথায় অবস্থিত?",
+    "answer": "রাতারগুল হলো বাংলাদেশের সিলেটের গোয়াইনঘাটে অবস্থিত একটি মিঠাপানির জলাবন বা সোয়াম্প ফরেস্ট, যা বাংলাদেশের একমাত্র মিঠা পানির জলাবন হিসেবে পরিচিত। সিলেটের গোয়াইনঘাট উপজেলায় অবস্থিত।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q21",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 21,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "জাতিসংঘের নিরাপত্তা পরিষদের মোট সদস্য কয়টি (স্থায়ী ও অস্থায়ী)?",
+    "answer": "স্থায়ী সদস্য ৫টি এবং অস্থায়ী সদস্য ১০টি; মোট ১৫টি।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q22",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 22,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?",
+    "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q23",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 23,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "হালদা নদী কেন বিখ্যাত?",
+    "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q24",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 24,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?",
+    "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q25",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 25,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?",
+    "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q26",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 26,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?",
+    "answer": "বাউন্ডুলে আত্মকাহিনী।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q27",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 27,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?",
+    "answer": "পূর্ব জার্মানি।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q28",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 28,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "জাতীয় স্মৃতিসৌধের স্থপতি কে?",
+    "answer": "সৈয়দ মাইনুল হোসেন।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q29",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 29,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?",
+    "answer": "সোমপুর বৌদ্ধবিহার।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q30",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 30,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশের সংবিধানের রক্ষক কে?",
+    "answer": "সুপ্রিম কোর্ট।"
+  },
+  {
+    "id": "job-2025-pwd-office-asst-typist-q31",
+    "examId": "job-2025-pwd-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "কম্পিউটার",
+    "qno": 31,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "Wifi এর পূর্ণরূপ কী?",
+    "answer": "Wireless Fidelity"
+  }
+]

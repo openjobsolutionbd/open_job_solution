@@ -1,0 +1,558 @@
+[
+  {
+    "id": "job-2025-tech-edu-driver-q01",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'বিদ্রোহী' কবিতার রচয়িতা কে?",
+    "answer": "কাজী নজরুল ইসলাম।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q02",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "রবীন্দ্রনাথ ঠাকুর কত সালে নোবেল পুরস্কার পান?",
+    "answer": "১৯১৩ সালে।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q03",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা সাহিত্যে সাহিত্য সম্রাট বলা হয় কাকে?",
+    "answer": "বঙ্কিমচন্দ্র চট্টোপাধ্যায়কে।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q04",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা ভাষায় প্রচলিত ২টি চীনা শব্দ লিখুন।",
+    "answer": "চা, চিনি।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q05",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 5,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা ভাষার শব্দসমূহ অর্থ অনুসারে কত প্রকার?",
+    "answer": "৩ প্রকার — যৌগিক, রূঢ়ি ও যোগরূঢ়।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q06",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 6,
+    "marks": 4,
+    "type": "table",
+    "question": "সন্ধি-বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "হিমালয়",
+        "হিম + আলয়"
+      ],
+      [
+        "গবেষণা",
+        "গো + এষণা"
+      ],
+      [
+        "পরীক্ষা",
+        "পরি + ঈক্ষা"
+      ],
+      [
+        "দিগন্ত",
+        "দিক্ + অন্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q07",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 7,
+    "marks": 2,
+    "type": "table",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "columns": [
+      "বাক্য",
+      "কারক ও বিভক্তি"
+    ],
+    "rows": [
+      [
+        "পাখিতে ধান খায়",
+        "কর্তৃকারকে ৭মী"
+      ],
+      [
+        "সরিষাতে তেল হয়",
+        "অপাদানে ৭মী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q08",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 8,
+    "marks": 4,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "অনিষ্ঠ",
+        "অনিষ্ট"
+      ],
+      [
+        "সাক্ষর",
+        "বানানটি শুদ্ধ আছে"
+      ],
+      [
+        "অপক্ষেমান",
+        "অপেক্ষমাণ"
+      ],
+      [
+        "বাকদন্তা",
+        "বাগদত্তা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q09",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 9,
+    "marks": 4,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": [
+      "বাক্য",
+      "এক কথায়"
+    ],
+    "rows": [
+      [
+        "আল্লাহকে বিশ্বাস করে না যে",
+        "নাস্তিক"
+      ],
+      [
+        "চিরকাল ধরিয়া স্থায়ী",
+        "চিরস্থায়ী"
+      ],
+      [
+        "প্রমাণ করা যায় যা",
+        "প্রমাণিত"
+      ],
+      [
+        "বীজ বপনের উপযুক্ত সময়",
+        "জো"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q10",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "bangla",
+    "qno": 10,
+    "marks": 2,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "দুধের মাছি",
+        "meaning": "সুসময়ের বন্ধু"
+      },
+      {
+        "label": "খ",
+        "phrase": "কৈ মাছের প্রাণ",
+        "meaning": "দীর্ঘজীবী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q11",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 11,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে যায়।",
+        "target": "He goes."
+      },
+      {
+        "label": "খ",
+        "source": "এখন সকাল দশটা বেজে পনের মিনিট।",
+        "target": "It is fifteen minutes past ten."
+      },
+      {
+        "label": "গ",
+        "source": "পাখিরা গান গায়।",
+        "target": "Birds sing a song."
+      },
+      {
+        "label": "ঘ",
+        "source": "সে না হেসে পারে না।",
+        "target": "He can not but laugh."
+      },
+      {
+        "label": "ঙ",
+        "source": "আমার বন্ধু ইংরেজিতে ভাল।",
+        "target": "My friend is good at English."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q12",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 12,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a short note (not less than seven sentences): My country.",
+    "answer": "Bangladesh is my country. It is a small but beautiful country in South Asia. It is surrounded by India, Myanmar and the Bay of Bengal. Bangladesh is known for its rivers, green fields and rich culture. Rice and jute are the main crops grown here. The people of Bangladesh are hospitable and hardworking. Dhaka is the capital city of Bangladesh. I love my country very much and I am proud to be a citizen of Bangladesh."
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q13",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 13,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with meaning:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "Black sheep",
+        "meaning": "কুলাঙ্গার",
+        "example": "He is a black sheep."
+      },
+      {
+        "label": "খ",
+        "phrase": "At a glance",
+        "meaning": "এক নজরে",
+        "example": "I read the story at a glance."
+      },
+      {
+        "label": "গ",
+        "phrase": "At first sight",
+        "meaning": "প্রথম দর্শনে",
+        "example": "I liked the book at first sight."
+      },
+      {
+        "label": "ঘ",
+        "phrase": "Addicted to",
+        "meaning": "আসক্ত",
+        "example": "He is addicted to smoking."
+      },
+      {
+        "label": "ঙ",
+        "phrase": "Consist of",
+        "meaning": "গঠিত",
+        "example": "The committee consists of ten members."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q14",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 14,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "The cow lives........ grass.",
+        "answer": "on"
+      },
+      {
+        "sentence": "The students are going....... school.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Divide the mangoes........ two brothers.",
+        "answer": "between"
+      },
+      {
+        "sentence": "Don't lean .......... the wall.",
+        "answer": "against"
+      },
+      {
+        "sentence": "We live......... Bangladesh.",
+        "answer": "in"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q15",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 15,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "স্পার্ক প্লাগ কোন ধরনের ইঞ্জিনে ব্যবহার হয় এবং এর কাজ কি?",
+    "answer": "পেট্রোল বা ডিজেল ইঞ্জিনে ব্যবহৃত হয়। সিলিন্ডারের মধ্যে থাকা বাতাস ও জ্বালানীর মিশ্রণকে প্রজ্বলিত করাই এর কাজ।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q16",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 16,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "সিলিন্ডারের BDC এবং TDC বলতে কি বুঝায়?",
+    "answer": "BDC (Bottom Dead Centre) হলো সিলিন্ডারের ভেতরে পিস্টনের সর্বনিম্ন অবস্থান। TDC (Top Dead Centre) হলো সিলিন্ডারের ভেতরে পিস্টনের সর্বোচ্চ বা শীর্ষ অবস্থান।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q17",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 17,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "ইঞ্জিন ঠান্ডা করার প্রক্রিয়া কত প্রকার ও কি কি?",
+    "answer": "২ প্রকার। যথা: বায়ুপ্রবাহ ও তরলপ্রবাহ।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q18",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 18,
+    "marks": 6,
+    "type": "math",
+    "question": "৩৫ লিটার অকটেন ও পেট্রোল মিশ্রণে পেট্রোল ও অকটেনের অনুপাত ৪:৩। এতে আর কত অকটেন মেশালে পেট্রোল ও অকটেনের অনুপাত ৪:৫ হবে?",
+    "steps": [
+      "পেট্রোলের পরিমাণ = 35 এর 8/9 = 20 লিটার",
+      "অকটেনের পরিমাণ = 35 এর 3/9 = 15 লিটার (মিশ্রণ ৪:৩ অনুপাত মেনে)",
+      "ধরি, x লিটার অকটেন মেশালে অনুপাত ৪:৫ হবে",
+      "শর্তমতে, 20/(15+x) = 8/5",
+      "60 + 8x = 100",
+      "8x = 80",
+      "x = 10"
+    ],
+    "answer": "আরও ১০ লিটার অকটেন মেশাতে হবে।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q19",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 19,
+    "marks": 6,
+    "type": "math",
+    "question": "জ্বালানি তেলের মূল্য ২৫% বৃদ্ধি পাওয়ায় তেলের ব্যবহার এমনভাবে কমানো হলো যেন তেল বাবদ ব্যয় বৃদ্ধি পেল না। গাড়ীর মালিক তেলের ব্যবহার শতকরা কত কমাল?",
+    "steps": [
+      "২৫% বৃদ্ধি পাওয়ায় বর্তমান মূল্য = ১২৫ টাকা (পূর্বমূল্য ১০০ টাকা ধরে)",
+      "বর্তমান মূল্য ১২৫ টাকা হলে পূর্বমূল্য ১০০ টাকা",
+      "বর্তমান ১০০ টাকায় পূর্বের হিসেবে পরিমাণ = (100×100)/125 = 80 টাকা",
+      "তেলের ব্যবহার শতকরা কমালো = (100 - 80)% = 20%"
+    ],
+    "alternative": {
+      "steps": [
+        "মূল্য বৃদ্ধি পায় = (125 - 100) টাকা = 25 টাকা",
+        "১২৫ টাকায় কমাতে হবে ২৫ টাকা",
+        "১০০ টাকায় কমাতে হবে = (25×100)/125 = 20 টাকা"
+      ],
+      "answer": "২০%"
+    },
+    "answer": "২০%।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q20",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 20,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের দীর্ঘতম নদীর নাম কী?",
+    "answer": "পদ্মা।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q21",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "জনসংখ্যা বিবেচনায় মুসলিম বিশ্বে ক্ষুদ্রতম দেশ কোনটি?",
+    "answer": "মালদ্বীপ।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q22",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কোন সুলতান ১৭ বার ভারত আক্রমণ করেন?",
+    "answer": "সুলতান মাহমুদ।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q23",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ষাট গম্বুজ মসজিদ কোন জেলায় অবস্থিত?",
+    "answer": "বাগেরহাট।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q24",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 24,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশ বিমানের স্লোগান কী?",
+    "answer": "আকাশে শান্তির নীড়।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q25",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 25,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "গণচীনের প্রতিষ্ঠাতা কে?",
+    "answer": "মাও সে তুং।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q26",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 26,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "আধুনিক মালয়েশিয়ার প্রতিষ্ঠাতা কে?",
+    "answer": "মাহাথির মুহাম্মদ।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q27",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 27,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "BRTA এর পূর্ণরূপ কী?",
+    "answer": "Bangladesh Road Transport Authority."
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q28",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 28,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "১৫০০ সিসি উর্ধ্ব গাড়ির অগ্রীম বাৎসরিক আয়কর কত?",
+    "answer": "২৫,০০০ টাকা।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q29",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 29,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের চিংড়ি সম্পদকে কি বলা হয়?",
+    "answer": "হোয়াইট গোল্ড (সাদা সোনা)।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q30",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 30,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "নীল নদের দেশ কোনটি?",
+    "answer": "মিশর।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q31",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 31,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "দু'টি ইলেকট্রিক গাড়ির নাম লিখুন।",
+    "answer": "Tesla Model 3; Nissan Leaf."
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q32",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 32,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের রেলওয়ে কয়টি অঞ্চলে বিভক্ত?",
+    "answer": "২টি।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q33",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 33,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "পরীবিবির মাজার কোথায় অবস্থিত?",
+    "answer": "লালবাগ কেল্লা, ঢাকা।"
+  },
+  {
+    "id": "job-2025-tech-edu-driver-q34",
+    "examId": "job-2025-tech-edu-driver",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 34,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "চলনবিল কোন কোন জেলায় অবস্থিত?",
+    "answer": "নাটোর, সিরাজগঞ্জ ও পাবনা।"
+  }
+]

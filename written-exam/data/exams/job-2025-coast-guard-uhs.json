@@ -1,0 +1,377 @@
+[
+  {
+    "id": "job-2025-coast-guard-uhs-q01",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": [
+      "বাক্য",
+      "এক কথায়"
+    ],
+    "rows": [
+      [
+        "ভয় নেই যার",
+        "নির্ভীক"
+      ],
+      [
+        "লাভের ইচ্ছা",
+        "লিপ্সা"
+      ],
+      [
+        "দিবসের শেষ ভাগ",
+        "অপরাহ্ন"
+      ],
+      [
+        "যা অতি দীর্ঘ নয়",
+        "নাতিদীর্ঘ"
+      ],
+      [
+        "চক্ষুর অগোচরে",
+        "পরোক্ষ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q02",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 4,
+    "type": "idiom",
+    "question": "নিচের বাগধারাগুলোর অর্থ লিখুন:",
+    "parts": [
+      {
+        "label": "",
+        "phrase": "লেফাফা দুরস্ত",
+        "meaning": "বাহিরে পরিপাটি"
+      },
+      {
+        "label": "",
+        "phrase": "বর্ণচোরা",
+        "meaning": "কপট ব্যক্তি"
+      },
+      {
+        "label": "",
+        "phrase": "আটকপালে",
+        "meaning": "হতভাগ্য"
+      },
+      {
+        "label": "",
+        "phrase": "কান পাতলা",
+        "meaning": "সহজেই বিশ্বাসপ্রবণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q03",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "marks": 4,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "কথোপকথন",
+        "কথা + উপকথন"
+      ],
+      [
+        "সম্পদ",
+        "সম্ + পদ"
+      ],
+      [
+        "নায়ক",
+        "নৈ + অক"
+      ],
+      [
+        "নাবিক",
+        "নৌ + ইক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q04",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "বানান শুদ্ধ করুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মুহুর্ত",
+        "মুহূর্ত"
+      ],
+      [
+        "ইতমধ্যে",
+        "ইতোমধ্যে"
+      ],
+      [
+        "জীগিশা",
+        "জিগীষা"
+      ],
+      [
+        "নূন্যতম",
+        "ন্যূনতম"
+      ],
+      [
+        "সান্তনা",
+        "সান্ত্বনা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q05",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 5,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "Write a paragraph (10 sentences): 'Bangladesh Coast Guard'",
+    "answer": "Bangladesh Coast Guard (BCG) is a maritime law enforcement agency of Bangladesh. It was established in 1995 to protect the country's maritime interests. The main duties of the Coast Guard include anti-smuggling operations, search and rescue, and prevention of piracy. It also protects fishermen and marine resources along the coastal areas. The Coast Guard works closely with the Bangladesh Navy in times of need. It plays an important role in disaster management during cyclones and natural calamities in coastal regions. It helps prevent illegal fishing and trafficking through the sea routes. The force operates with modern ships and equipment to patrol the coastal waters. Bangladesh Coast Guard also assists in maintaining maritime security in the Bay of Bengal. Overall, it plays a vital role in safeguarding the maritime boundary and economic interests of Bangladesh."
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q06",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 6,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentence with meaning following the Idiom & Phrase:",
+    "parts": [
+      {
+        "label": "",
+        "phrase": "Back and forth",
+        "meaning": "এদিক ওদিক",
+        "example": "The bird flew back and forth."
+      },
+      {
+        "label": "",
+        "phrase": "Once in a blue moon",
+        "meaning": "কালেভদ্রে",
+        "example": "He comes to his village once in a blue moon."
+      },
+      {
+        "label": "",
+        "phrase": "Crocodile tears",
+        "meaning": "মায়া-কান্না",
+        "example": "He shed crocodile tears at his father's death."
+      },
+      {
+        "label": "",
+        "phrase": "Bring to light",
+        "meaning": "প্রকাশ করা",
+        "example": "At last the truth was brought to light."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q07",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "",
+        "source": "দুয়ে দুয়ে চার।",
+        "target": "Two and two makes four."
+      },
+      {
+        "label": "",
+        "source": "নাচতে না জানলে উঠান বাঁকা।",
+        "target": "A bad workman quarrels with his tools."
+      },
+      {
+        "label": "",
+        "source": "চারটা বাজতে দশ মিনিট বাকি।",
+        "target": "It is ten minutes past four."
+      },
+      {
+        "label": "",
+        "source": "স্বদেশপ্রেম মহৎ গুণ।",
+        "target": "Patriotism is a noble/great virtue."
+      },
+      {
+        "label": "",
+        "source": "আমি ইংরেজিতে ভালো।",
+        "target": "I am good at English."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q08",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blank:",
+    "parts": [
+      {
+        "sentence": "I am accustomed....... such a life.",
+        "answer": "to"
+      },
+      {
+        "sentence": "I tried...... avoiding doing the same thing day after day.",
+        "answer": "avoiding"
+      },
+      {
+        "sentence": "You can go......... the highway.",
+        "answer": "along"
+      },
+      {
+        "sentence": "You should do.......... your duties.",
+        "answer": "your"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q09",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "math",
+    "topic": "math-others",
+    "qno": 9,
+    "marks": 6,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রম্বসের ক্ষেত্রফল লিখুন?",
+        "a": "১/২ × কর্ণদ্বয়ের গুণফল"
+      },
+      {
+        "label": "খ",
+        "q": "গ.সা.গু এর পূর্ণরূপ লিখুন?",
+        "a": "গরিষ্ঠ সাধারণ গুণনীয়ক"
+      },
+      {
+        "label": "গ",
+        "q": "বৃত্তের ক্ষেত্রফল লিখুন?",
+        "a": "π × ব্যাসার্ধ² (πr²)"
+      },
+      {
+        "label": "ঘ",
+        "q": "৪ ডিগ্রি সেলসিয়াস তাপমাত্রায় ১ ঘনসেন্টিমিটার বিশুদ্ধ পানির ওজন কত?",
+        "a": "১ গ্রাম"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q10",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 6,
+    "type": "math",
+    "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।",
+    "steps": [
+      "ধরি, x + 6 = a এবং x + 4 = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² − {(a−b)/2}²",
+      "= {(x+6+x+4)/2}² − {(x+6−x−4)/2}²",
+      "= {(2x+10)/2}² − (2/2)²",
+      "= {(x+5)}² − 1²"
+    ],
+    "answer": "(x+5)² − 1²"
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q11",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 11,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি আয়তক্ষেত্রের দৈর্ঘ্য ৪০ মিটার এবং প্রস্থ ৩০ মিটার ৩০ সেন্টিমিটার হলে ক্ষেত্রফল কত?",
+    "steps": [
+      "দৈর্ঘ্য = ৪০ মিটার",
+      "প্রস্থ = ৩০ মিটার ৩০ সেন্টিমিটার = 30.3 মিটার",
+      "ক্ষেত্রফল = (40 × 30.3) বর্গ মিটার = 1212 বর্গ মিটার"
+    ],
+    "answer": "১২১২ বর্গমিটার"
+  },
+  {
+    "id": "job-2025-coast-guard-uhs-q12",
+    "examId": "job-2025-coast-guard-uhs",
+    "subject": "general-knowledge",
+    "qno": 12,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "প্রশ্নের উত্তর লিখুন: (বি.দ্র: সোর্স বইয়ে এই প্রশ্নপত্রের কিছু প্রশ্ন মিসিং ছিল)",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "PLO কত সালে গঠিত হয়?",
+        "a": "২৮ মে, ১৯৬৪ সালে"
+      },
+      {
+        "label": "খ",
+        "q": "নেভাল একাডেমি কোথায় অবস্থিত?",
+        "a": "পতেঙ্গা, চট্টগ্রাম"
+      },
+      {
+        "label": "গ",
+        "q": "২য় বিশ্বযুদ্ধ কত সালে হয়?",
+        "a": "১ সেপ্টেম্বর ১৯৩৯ থেকে ২ সেপ্টেম্বর ১৯৪৫"
+      },
+      {
+        "label": "ঘ",
+        "q": "প্রথম অভিষেক ম্যাচে বাংলাদেশের পক্ষে সেঞ্চুরি করেন কে?",
+        "a": "আমিনুল ইসলাম বুলবুল"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাংলাদেশের নৌবাহিনীর সামরিক অভিযানকে কী বলা হয়?",
+        "a": "নৌ অভিযান"
+      },
+      {
+        "label": "চ",
+        "q": "মোসাদ কোন দেশের গোয়েন্দা সংস্থা?",
+        "a": "ইসরায়েল"
+      },
+      {
+        "label": "ছ",
+        "q": "AI এর পূর্ণরূপ কী?",
+        "a": "Artificial Intelligence"
+      },
+      {
+        "label": "জ",
+        "q": "4IR এর পূর্ণরূপ কী?",
+        "a": "Fourth Industrial Revolution"
+      },
+      {
+        "label": "ঝ",
+        "q": "জাতীয় স্মৃতিসৌধের স্থপতি কে?",
+        "a": "সৈয়দ মাইনুল হোসেন"
+      },
+      {
+        "label": "ঞ",
+        "q": "প্রথম পানি পথের যুদ্ধ কত সালে হয়?",
+        "a": "১৫২৬ খ্রি."
+      }
+    ]
+  }
+]

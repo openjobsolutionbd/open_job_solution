@@ -1,0 +1,478 @@
+[
+  {
+    "id": "job-2025-erd-steno-typist-q01",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিম্নোক্ত প্রশ্নসমূহের উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "\"আমার পিতৃ-পিতামহের চরণধূলি কোথারে? সে আমাদের বাংলাদেশ, আমাদেরই বাংলারে\" — এই পঙ্‌ক্তিটি কার?",
+        "a": "সত্যেন্দ্রনাথ দত্ত"
+      },
+      {
+        "label": "খ",
+        "q": "'লাল নীল দীপাবলি'-এর রচয়িতা কে?",
+        "a": "হুমায়ুন আজাদ"
+      },
+      {
+        "label": "গ",
+        "q": "'ভানুসিংহের পদাবলী' এর রচয়িতা কে?",
+        "a": "রবীন্দ্রনাথ ঠাকুর"
+      },
+      {
+        "label": "ঘ",
+        "q": "'কেবলা হাকিম' বাগধারাটির অর্থ কী?",
+        "a": "অনভিজ্ঞ"
+      },
+      {
+        "label": "ঙ",
+        "q": "'বেগম' পত্রিকাটির সম্পাদক কে ছিলেন?",
+        "a": "নূরজাহান বেগম"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q02",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 2,
+    "marks": 4,
+    "type": "table",
+    "question": "পারিভাষিক অর্থ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "পারিভাষিক অর্থ"
+    ],
+    "rows": [
+      [
+        "Census",
+        "আদমশুমারি"
+      ],
+      [
+        "Article",
+        "আইনের ধারা"
+      ],
+      [
+        "Bear market",
+        "মন্দা বাজার"
+      ],
+      [
+        "Notification",
+        "বিজ্ঞপ্তি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q03",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "দাগচিহ্নিত শব্দসমূহ কোন কারকে কোন বিভক্তি?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আষাঢ়ে বৃষ্টি নামে",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "খ",
+        "q": "গাছ হতে ফলটি পড়ল",
+        "a": "অপাদানে ৫মী"
+      },
+      {
+        "label": "গ",
+        "q": "শিক্ষককে শ্রদ্ধা কর",
+        "a": "সম্প্রদানে ৪র্থী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q04",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জয়ের জন্য যে উৎসব",
+        "a": "জয়ন্তী"
+      },
+      {
+        "label": "খ",
+        "q": "যার উপায় নেই",
+        "a": "নিরুপায়"
+      },
+      {
+        "label": "গ",
+        "q": "যা পূর্বে ছিল এখন নেই",
+        "a": "ভূতপূর্ব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q05",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "ভাবসম্প্রসারণ",
+    "qno": 5,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "ভাবসম্প্রসারণ করুনঃ 'দুর্জন বিদ্বান হলেও পরিত্যাজ্য'",
+    "answer": "নীতিহীনতাই দুর্নীতি। নীতিহীন ব্যক্তি স্বার্থ-অন্ধ। এ ধরনের ব্যক্তি দেশ ও জাতির জন্য ক্ষতিকর। তারা দেশের উন্নয়ন-অগ্রগতির পথে বাধা হয়ে দাঁড়ায়।\n\nনৈতিকভাবে উন্নত, সৎ, বিবেকবান মানুষ যে পদেই থাকুন না কেন, তিনি সমাজ ও দেশের বড় সম্পদ। তাকে দিয়ে উপকার না হলেও অন্তত ক্ষতি হবার সম্ভাবনা থাকে না। অপরদিকে নৈতিকতাবির্জিত ব্যক্তি যতই উচ্চ আসনে অবস্থান করুক না কেন, তিনি মোটেও শ্রদ্ধার পাত্র নন। পদমর্যাদার কারণে তাকে হয়তো মানুষ সামনে কিছু বলে না, কিন্তু পেছনে অন্তর থেকে ঘৃণা করে। তার দ্বারা ক্ষতির আশঙ্কাও বেশি, কারণ তিনি স্বার্থ-অন্ধ, বিবেকবর্জিত — তিনি সবসময় নিজের স্বার্থসিদ্ধির মতলবে থাকেন। সমাজের কল্যাণ, দেশের মঙ্গলের কথা তিনি ভাবেন না।\n\nযে দেশের জনগণ রক্তক্ষয়ী মুক্তিযুদ্ধের মাধ্যমে দেশ স্বাধীন করতে পেরেছে, দুর্নীতির বিরুদ্ধে যুদ্ধ করেও তাদের বিজয়ী হতে হবে। তাহলেই দেশের উন্নতি ও অগ্রগতি সম্ভব হবে। (⚠️ সোর্স বইয়ে এই ভাবসম্প্রসারণের উত্তরস্বরূপ যে অনুচ্ছেদটি ছাপা হয়েছে তার শিরোনাম ছিল 'দুর্নীতি জাতীয় জীবনের সকল উন্নতির অন্তরায়' — মূল প্রশ্নের পঙক্তির সাথে হুবহু না মিললেও, বইয়ে যা ছাপা হয়েছে তা-ই এখানে হুবহু রাখা হলো।)"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q06",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "bangla",
+    "topic": "রচনা",
+    "qno": 6,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "'সম্ভাবনাময় বাংলাদেশ' বিষয়ে ১০টি বাক্য লিখুন।",
+    "answer": "বাংলাদেশ একটি নদীমাতৃক দেশ, যেখানে অসংখ্য নদী বয়ে গেছে, যা দেশের প্রাকৃতিক সৌন্দর্যকে বৃদ্ধি করেছে। দেশটি স্বল্পোন্নত দেশ থেকে উন্নয়নশীল দেশের তালিকায় স্থান করে নিয়েছে, যা বিশ্বব্যাপী প্রশংসিত। তৈরি পোশাক (RMG) রপ্তানিতে বাংলাদেশ বিশ্বে দ্বিতীয় বৃহত্তম, যা দেশের অর্থনীতির মেরুদণ্ড। বাংলাদেশের সমৃদ্ধ সংস্কৃতি ও ঐতিহ্য পহেলা বৈশাখের মতো উৎসবে প্রতিফলিত হয়। সুন্দরবনের মতো প্রাকৃতিক বিস্ময় এবং রয়েল বেঙ্গল টাইগার দেশের পর্যটন শিল্পে বড় সম্ভাবনা সৃষ্টি করেছে। দেশের তরুণ ও বিশাল জনসংখ্যা জনশক্তি হিসেবে একটি বড় সম্পদ, যা অর্থনৈতিক প্রবৃদ্ধিতে সহায়ক। সরকার ও জনগণের সম্মিলিত প্রচেষ্টায় শিক্ষা, স্বাস্থ্য ও প্রযুক্তিতে উল্লেখযোগ্য উন্নতি হয়েছে। দুর্যোগপ্রবণ সত্ত্বেও বাংলাদেশ দুর্যোগ ব্যবস্থাপনায় সক্ষমতা অর্জন করেছে। 'ভিশন ২০৪১'-এর মাধ্যমে বাংলাদেশ ২০৪১ সালের মধ্যে একটি উন্নত দেশে পরিণত হওয়ার লক্ষ্য নিয়ে এগিয়ে যাচ্ছে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q07",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the Blanks:",
+    "parts": [
+      {
+        "sentence": "The thief broke……. the house.",
+        "answer": "into"
+      },
+      {
+        "sentence": "He was confined… bed owing to illness.",
+        "answer": "to"
+      },
+      {
+        "sentence": "They are quite capable…. doing that.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He has been deprived….his paternal property.",
+        "answer": "of"
+      },
+      {
+        "sentence": "The road runs…… hills and plain.",
+        "answer": "through"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q08",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Her circumstance is good.",
+        "changed": "Her circumstances are good."
+      },
+      {
+        "label": "b",
+        "original": "These two boys help one another.",
+        "changed": "These two boys help each other."
+      },
+      {
+        "label": "c",
+        "original": "I, you and he have been rewarded.",
+        "changed": "You, he and I have been rewarded."
+      },
+      {
+        "label": "d",
+        "original": "The meeting will take part soon.",
+        "changed": "The meeting will take place soon."
+      },
+      {
+        "label": "e",
+        "original": "The train is running in time.",
+        "changed": "The train is running on time."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q09",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Transform the following sentences as directed in the bracket:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He who came here is my brother. (Simple)",
+        "changed": "My brother came here."
+      },
+      {
+        "label": "b",
+        "original": "If you do not study well, you cannot pass the exam. (Compound)",
+        "changed": "Study well or you cannot pass the exam."
+      },
+      {
+        "label": "c",
+        "original": "Do or die. (Complex)",
+        "changed": "If you do not do, you will die."
+      },
+      {
+        "label": "d",
+        "original": "He hurt himself. (Passive)",
+        "changed": "He was hurt by himself."
+      },
+      {
+        "label": "e",
+        "original": "I never drink tea. (Interrogative)",
+        "changed": "Do I ever drink tea?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q10",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "english",
+    "topic": "read-and-fill",
+    "qno": 10,
+    "marks": 5,
+    "type": "read-fill",
+    "question": "Read the paragraph below and fill in the blanks:",
+    "passage": "The importance of time management cannot be overstated in any profession. Effective time management allows individuals to prioritize tasks, reduce stress, and achieve both short-term and long-term goals. It enables people to stay organized, meet deadlines, and maintain a work-life balance. By managing time effectively, employees can increase productivity, enhance their focus, and achieve higher levels of job satisfaction. Time management also helps in personal growth, as it allows individuals to make time for self-improvement and relaxation, which are crucial for overall well-being and success.\n\nTime management is crucial for ____ (a) and reducing ____ (b). It helps individuals to stay ____ (c), meet ____ (d), and maintain a healthy ____ (e).",
+    "answers": "a) success/productivity  b) tension/stress  c) focused  d) goals and deadlines  e) balance in life/work-life balance"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q11",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 11,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a short paragraph on 'Climate Change'",
+    "answer": "Climate change is a big problem that affects everyone. It happens because of things like pollution and the Earth getting hotter. This makes bad things like floods and storms happen more often. People in some countries have it harder because they don't have a lot of money to protect themselves. For example, in Bangladesh, floods can ruin homes and make it hard to grow food. We need to stop doing things that make climate change worse, like using too much plastic and cutting down too many trees. Planting more trees and using less energy can help make things better. Even kids can help by learning about climate change and telling others how to help too. We all need to work together to protect our planet."
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q12",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 12,
+    "marks": 4,
+    "type": "math",
+    "question": "একজন ব্যক্তির বেতন ৫% কমেছে। কিন্তু এক বছর পর তা আবার ৫% বেড়েছে। মোটের উপর তার বেতন শতকরা কত বৃদ্ধি বা হ্রাস পেয়েছে?",
+    "steps": [
+      "মনে করি, প্রাথমিক বেতন = ১০০ টাকা",
+      "৫% কমে বেতন হয় = ৯৫ টাকা",
+      "এক বছর পর ৫% বেড়ে বেতন হয় = ৯৫ + (৯৫ এর ৫%) = ৯৯.৭৫ টাকা",
+      "শতকরা বেতন হ্রাস পেল = ১০০ − ৯৯.৭৫ = ০.২৫"
+    ],
+    "answer": "০.২৫% হ্রাস পেয়েছে"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q13",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি ডায়েরি ৩৬ টাকায় বিক্রয় করলে যত ক্ষতি হয়, ৭২ টাকায় বিক্রয় করলে তার দ্বিগুণ লাভ হয়। ডায়েরিটির ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, দ্রব্যটির ক্রয়মূল্য ক টাকা",
+      "৩৬ টাকায় বিক্রয় করলে ক্ষতি হয় = (ক − ৩৬) টাকা",
+      "৭২ টাকায় বিক্রয় করলে লাভ হয় = (৭২ − ক) টাকা",
+      "প্রশ্নমতে, ৭২ − ক = ২(ক − ৩৬)",
+      "বা, ৭২ − ক = ২ক − ৭২",
+      "বা, −৩ক = −১৪৪",
+      "∴ ক = ৪৮"
+    ],
+    "answer": "৪৮ টাকা"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q14",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "math",
+    "topic": "গড়",
+    "qno": 14,
+    "marks": 4,
+    "type": "math",
+    "question": "১০০ জন শিক্ষার্থীর পরিসংখ্যানে গড় নম্বর ৭০। এদের মধ্যে ৬০ জন ছাত্রীর গড় নম্বর ৭৫ হলে, ছাত্রদের গড় নম্বর কত?",
+    "steps": [
+      "সকল শিক্ষার্থীর মোট নম্বর = ১০০ × ৭০ = ৭০০০",
+      "৬০ জন ছাত্রীর মোট নম্বর = ৬০ × ৭৫ = ৪৫০০",
+      "∴ ৪০ জন ছাত্রের মোট নম্বর = ৭০০০ − ৪৫০০ = ২৫০০",
+      "∴ ছাত্রদের গড় নম্বর = ২৫০০/৪০ = ৬২.৫"
+    ],
+    "answer": "৬২.৫"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q15",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "math",
+    "topic": "সূচক",
+    "qno": 15,
+    "marks": 4,
+    "type": "math",
+    "question": "4^(x+1) = 32^(x−2) হলে x এর মান কত?",
+    "steps": [
+      "4^(x+1) = 32^(x−2)",
+      "বা, (2²)^(x+1) = (2⁵)^(x−2)",
+      "বা, 2^(2x+2) = 2^(5x−10)",
+      "বা, 2x + 2 = 5x − 10",
+      "বা, 3x = 12",
+      "∴ x = 4"
+    ],
+    "answer": "x = ৪"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q16",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "math",
+    "topic": "পিথাগোরাসের উপপাদ্য",
+    "qno": 16,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি সমকোণী ত্রিভুজের অতিভুজের দৈর্ঘ্য ১৫ সে.মি. ও অপর বাহুদ্বয়ের দৈর্ঘ্যের অন্তর ৩ সে.মি.। ঐ বাহুদ্বয়ের দৈর্ঘ্য নির্ণয় কর।",
+    "steps": [
+      "মনে করি, সমকোণ সংলগ্ন এক বাহুর দৈর্ঘ্য x সে.মি., অপর বাহুর দৈর্ঘ্য = (x+3) সে.মি.",
+      "পিথাগোরাসের উপপাদ্য অনুযায়ী: x² + (x+3)² = ১৫²",
+      "বা, ２x² + 6x + 9 = 225 ⇒ 2x² + 6x − 216 = 0 ⇒ x² + 3x − 108 = 0",
+      "বা, x² + 12x − 9x − 108 = 0 ⇒ x(x+12) − 9(x+12) = 0 ⇒ (x+12)(x−9) = 0",
+      "x = −12 (গ্রহণযোগ্য নয়, দৈর্ঘ্য ঋণাত্মক হতে পারে না) অথবা x = 9",
+      "∴ ক্ষুদ্রতম বাহুর দৈর্ঘ্য = ৯ সে.মি.; অপর বাহুর দৈর্ঘ্য = ৯+৩ = ১২ সে.মি."
+    ],
+    "answer": "বাহুদ্বয়ের দৈর্ঘ্য ৯ সে.মি. এবং ১২ সে.মি."
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q17",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "গ্লোবাল সাউথ বলতে কী বোঝায়?",
+    "answer": "গ্লোবাল সাউথ (Global South) একটি ভৌগোলিক নয়, বরং রাজনৈতিক ও অর্থনৈতিক ধারণা, যা মূলত উন্নয়নশীল দেশসমূহকে বোঝাতে ব্যবহৃত হয়। এই শব্দগুচ্ছটি বিশেষভাবে এশিয়া, আফ্রিকা, ল্যাটিন আমেরিকা এবং ওশেনিয়ার অনেক দেশকে নির্দেশ করে, যারা ঐতিহাসিকভাবে উপনিবেশবাদের শিকার হয়েছে এবং এখনো তুলনামূলকভাবে অর্থনৈতিক ও প্রযুক্তিগতভাবে পিছিয়ে আছে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q18",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 18,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "প্যারিস অ্যাগ্রিমেন্ট কী?",
+    "answer": "২০১৫ সালে ফ্রান্সের প্যারিস শহরে যে কনফারেন্স অব দ্য পার্টিস (কপ-২১) হয়েছিল, তাতে জলবায়ু পরিবর্তন নিয়ে জাতিসংঘে এক আন্তর্জাতিক চুক্তি সম্পাদিত হয়, যা প্যারিস অ্যাগ্রিমেন্ট বা প্যারিস ক্লাইমেট অ্যাকর্ড নামে পরিচিত।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q19",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'SAARC' এর পূর্ণরূপ কী? এর সদস্য রাষ্ট্র কতটি?",
+    "answer": "South Asian Association for Regional Cooperation; সদস্য রাষ্ট্র ৮টি।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q20",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 20,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "OIC কী? এর হেডকোয়ার্টার কোথায়?",
+    "answer": "Organization of Islamic Cooperation; সদর দপ্তর — জেদ্দা, সৌদি আরব।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q21",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "AI এবং AGI এর পার্থক্য কী?",
+    "answer": "AI (Artificial Intelligence) হলো কৃত্রিম বুদ্ধিমত্তা, যা নির্দিষ্ট কাজের জন্য তৈরি — যেমন ছবি চেনা, ভাষা বোঝা বা চেহারা শনাক্তকরণ সফটওয়্যার; বর্তমানে ব্যবহৃত বেশিরভাগ এআই এ ধরনের। AGI (Artificial General Intelligence) এমন এক কাল্পনিক বুদ্ধিমত্তা, যা মানুষের মতো যেকোনো বুদ্ধিবৃত্তিক কাজ বুঝতে ও শিখতে সক্ষম হবে, মানুষের মস্তিষ্কের চিন্তাশক্তি অনুকরণ করতে পারবে এবং এক জায়গায় শেখা জ্ঞান অন্য জায়গায় প্রয়োগ করে নতুন পরিস্থিতিতে মানিয়ে নিতে পারবে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q22",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "অর্থনৈতিক সম্পর্ক বিভাগের কাজ কী?",
+    "answer": "অর্থনৈতিক সম্পর্ক বিভাগ (ERD) হলো অর্থ মন্ত্রণালয়ের একটি শাখা, যা বিদেশি সাহায্য, ঋণ ও অনুদান সংগ্রহ, উন্নয়ন সহযোগীদের সঙ্গে সমন্বয়, চুক্তি স্বাক্ষর ও বাস্তবায়ন কার্যক্রম তদারকি করে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q23",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "Development Partner বলতে কী বোঝায়?",
+    "answer": "Development Partner বলতে সাধারণত বোঝায় যে ব্যক্তি, প্রতিষ্ঠান বা দেশ কোনো দেশের অর্থনৈতিক, সামাজিক বা অবকাঠামোগত উন্নয়নে সহযোগিতা বা সহায়তা প্রদান করে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q24",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 24,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "নবায়নযোগ্য জ্বালানি কী? এর উৎসসমূহ লিখুন।",
+    "answer": "যেসব জ্বালানি ব্যবহারের পর স্বাভাবিকভাবে পুনরায় সৃষ্টি হয় এবং কখনো শেষ হয়ে যায় না, তাকে নবায়নযোগ্য জ্বালানি বলে। এর উৎস: সূর্যালোক (Solar), বায়ু (Wind), পানি (Hydro), জৈব জ্বালানি (Biomass), ভূ-তাপীয় শক্তি (Geothermal), সমুদ্রের ঢেউ ও জোয়ার-ভাটা।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q25",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 25,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "মাতারবাড়ি গভীর সমুদ্র বন্দরের গুরুত্ব কী?",
+    "answer": "এটি বাংলাদেশের প্রথম গভীর সমুদ্র বন্দর। বড় বড় জাহাজ সরাসরি ভিড়তে পারবে, আমদানি-রপ্তানি খরচ কমবে, আঞ্চলিক বাণিজ্য সম্প্রসারণে ভূমিকা রাখবে এবং কর্মসংস্থান সৃষ্টি ও অর্থনৈতিক প্রবৃদ্ধি ত্বরান্বিত করবে।"
+  },
+  {
+    "id": "job-2025-erd-steno-typist-q26",
+    "examId": "job-2025-erd-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 26,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কার্বন-ক্যাপচার ও কার্বন-ট্রেডিং বলতে কী বোঝায়?",
+    "answer": "কার্বন-ক্যাপচার (Carbon Capture): এমন একটি প্রযুক্তি যার মাধ্যমে বায়ুমণ্ডল বা শিল্পকারখানা থেকে নির্গত কার্বন ডাই-অক্সাইড ও অন্যান্য গ্রিনহাউস গ্যাস শোষণ বা অপসারণ করে নিরাপদ স্থানে সংরক্ষণ করা হয়। কার্বন-ট্রেডিং (Carbon Trading): এটি একটি বাজারভিত্তিক ব্যবস্থা, যেখানে কোম্পানিগুলো নির্দিষ্ট পরিমাণ কার্বন নির্গমনের অনুমতি (Carbon Credits) ক্রয়-বিক্রয় করতে পারে — কম নির্গমনকারী প্রতিষ্ঠান অতিরিক্ত ক্রেডিট বিক্রি করতে পারে, বেশি নির্গমনকারীদের অতিরিক্ত ক্রেডিট কিনতে হয়।"
+  }
+]

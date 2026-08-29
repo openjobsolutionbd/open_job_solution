@@ -1,0 +1,439 @@
+[
+  {
+    "id": "job-2025-prison-teacher-q01",
+    "examId": "job-2025-prison-teacher",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গঙ্গোর্মি",
+        "a": "গঙ্গা + ঊর্মি"
+      },
+      {
+        "label": "খ",
+        "q": "ভূর্ধ্ব",
+        "a": "ভূ + ঊর্ধ্ব"
+      },
+      {
+        "label": "গ",
+        "q": "নিজন্ত",
+        "a": "নিচ + অন্ত"
+      },
+      {
+        "label": "ঘ",
+        "q": "তন্বী",
+        "a": "তনু + ঈ"
+      },
+      {
+        "label": "ঙ",
+        "q": "ষোড়শ",
+        "a": "ষট্ + দশ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q02",
+    "examId": "job-2025-prison-teacher",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "পারিভাষিক শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "অর্থ"
+    ],
+    "rows": [
+      [
+        "Custody",
+        "হেফাজত"
+      ],
+      [
+        "Homicide",
+        "হত্যাকাণ্ড"
+      ],
+      [
+        "Overdue",
+        "মেয়াদ উত্তীর্ণ"
+      ],
+      [
+        "Referendum",
+        "গণভোট"
+      ],
+      [
+        "Specimen",
+        "নমুনা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q03",
+    "examId": "job-2025-prison-teacher",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 3,
+    "marks": 5,
+    "type": "idiom",
+    "question": "নিচের বাগধারাগুলোর অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "উজানের কই",
+        "meaning": "সহজলভ্য"
+      },
+      {
+        "label": "খ",
+        "phrase": "কাকভূষণ্ডি",
+        "meaning": "দীর্ঘজীবী"
+      },
+      {
+        "label": "গ",
+        "phrase": "গোকুলের ষাঁড়",
+        "meaning": "স্বেচ্ছাচারী"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "ঢাকের বাঁয়া",
+        "meaning": "অপ্রয়োজনীয়"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "খণ্ড প্রলয়",
+        "meaning": "তুমুল কাণ্ড"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q04",
+    "examId": "job-2025-prison-teacher",
+    "subject": "bangla",
+    "topic": "ব্যাকরণ",
+    "qno": 4,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাংলা ভাষায় শব্দভাণ্ডারকে কয় ভাগে ভাগ করা হয়েছে?",
+        "a": "৫ ভাগে"
+      },
+      {
+        "label": "খ",
+        "q": "ফণিমনসা কাব্যের রচয়িতা কে?",
+        "a": "কাজী নজরুল ইসলাম"
+      },
+      {
+        "label": "গ",
+        "q": "নাসিক্য বর্ণগুলো কী কী?",
+        "a": "ঙ, ন, ম"
+      },
+      {
+        "label": "ঘ",
+        "q": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ 'স্মৃতিসৌধ'",
+        "a": "স্মৃতি রক্ষার্থে সৌধ - মধ্যপদলোপী কর্মধারয়"
+      },
+      {
+        "label": "ঙ",
+        "q": "'মন দিয়া কর সবে বিদ্যা উপার্জন' — কোন কারকে কোন বিভক্তি?",
+        "a": "করণে ৩য়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q05",
+    "examId": "job-2025-prison-teacher",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps:",
+    "parts": [
+      {
+        "sentence": "The cat is fond….. milk.",
+        "answer": "of"
+      },
+      {
+        "sentence": "Each boy and each girl…. a pen.",
+        "answer": "has/had"
+      },
+      {
+        "sentence": "He worked hard so that he…… shine in life.",
+        "answer": "could/would"
+      },
+      {
+        "sentence": "The duty was imposed….. the guard.",
+        "answer": "on"
+      },
+      {
+        "sentence": "He is……. European.",
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q06",
+    "examId": "job-2025-prison-teacher",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 6,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "ডাক্তার আসার পর রোগীটি মারা গেল।",
+        "target": "The patient died after the doctor had come."
+      },
+      {
+        "label": "খ",
+        "source": "সকাল থেকে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining since morning."
+      },
+      {
+        "label": "গ",
+        "source": "পরিশ্রমই সৌভাগ্যের চাবিকাঠি।",
+        "target": "Industry is the key to success."
+      },
+      {
+        "label": "ঘ",
+        "source": "বাংলাদেশ নদীর দেশ।",
+        "target": "Bangladesh is a riverine country/ a land of rivers."
+      },
+      {
+        "label": "ঙ",
+        "source": "সদা সত্য কথা বলবে।",
+        "target": "Always speak the truth."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q07",
+    "examId": "job-2025-prison-teacher",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write Bengali meaning of the following idioms and phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Apple of discord",
+        "meaning": "বিবাদের বিষয়"
+      },
+      {
+        "label": "b",
+        "phrase": "Horns of a dilemma",
+        "meaning": "উভয় সংকট"
+      },
+      {
+        "label": "c",
+        "phrase": "Cry in the wilderness",
+        "meaning": "অরণ্যে রোদন"
+      },
+      {
+        "label": "d",
+        "phrase": "In black and white",
+        "meaning": "লিখিতভাবে"
+      },
+      {
+        "label": "e",
+        "phrase": "Bring to book",
+        "meaning": "শাস্তি দেওয়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-teacher-q08",
+    "examId": "job-2025-prison-teacher",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 8,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Environment Pollution'",
+    "answer": "Environment pollution means the contamination of air, water, and soil by harmful substances. It is one of the most serious problems of the present world. Industrial waste, vehicle smoke, plastic, and chemical fertilizers are the main causes of pollution. Air pollution causes breathing problems and various diseases. Water pollution destroys aquatic life and makes water unsafe for drinking. Soil pollution reduces the fertility of land and affects crop production. Besides, noise pollution disturbs mental peace. Environment pollution also contributes to climate change and global warming. To reduce pollution, we should plant more trees, use eco-friendly products, and control the use of plastic. Factories should treat their waste before releasing it into rivers. Government and people together should take strict measures to protect the environment. A clean and healthy environment is essential for the survival of every living being on earth."
+  },
+  {
+    "id": "job-2025-prison-teacher-q09",
+    "examId": "job-2025-prison-teacher",
+    "subject": "math",
+    "topic": "ভগ্নাংশ",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "সমাধান করুনঃ ৪ ১/৪ ÷ {৩/৪ − ১/৩(২/৩ + ১/৬)}",
+    "steps": [
+      "৪ ১/৪ = ১৭/৪",
+      "২/৩ + ১/৬ = ৪/৬ + ১/৬ = ৫/৬",
+      "১/৩ × ৫/৬ = ৫/১৮",
+      "৩/৪ − ৫/১৮ = (২৭ − ১০)/৩৬ = ১৭/৩৬",
+      "১৭/৪ ÷ ১৭/৩৬ = ১৭/৪ × ৩৬/১৭ = ৯"
+    ],
+    "answer": "৯"
+  },
+  {
+    "id": "job-2025-prison-teacher-q10",
+    "examId": "job-2025-prison-teacher",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "a = ৫x² + ৭y² + ৯z², b = y² − ৩x² − ৪z², c = z² − ২y² + x² হলে, a + b + c কত?",
+    "steps": [
+      "a + b + c = (৫x² + ৭y² + ৯z²) + (y² − ৩x² − ৪z²) + (z² − ২y² + x²)",
+      "= (৫ − ৩ + ১)x² + (৭ + ১ − ২)y² + (৯ − ৪ + ১)z²",
+      "= ৩x² + ৬y² + ৬z²"
+    ],
+    "answer": "৩x² + ৬y² + ৬z²"
+  },
+  {
+    "id": "job-2025-prison-teacher-q11",
+    "examId": "job-2025-prison-teacher",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি বাঁশের ০.১০ অংশ কাদায়, ০.৭০ অংশ পানিতে এবং পানির উপরে ১২ মিটার আছে। সম্পূর্ণ বাঁশটির দৈর্ঘ্য কত?",
+    "steps": [
+      "পানির উপরে আছে = ১ − (০.১০ + ০.৭০) অংশ = ১ − ০.৮০ অংশ = ০.২০ অংশ",
+      "০.২০ অংশ = ১২ মিটার",
+      "∴ ১ অংশ (সম্পূর্ণ বাঁশ) = ১২ ÷ ০.২ = ৬০ মিটার"
+    ],
+    "answer": "৬০ মিটার"
+  },
+  {
+    "id": "job-2025-prison-teacher-q12",
+    "examId": "job-2025-prison-teacher",
+    "subject": "math",
+    "topic": "গতিবেগ",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "ঘণ্টায় ৭৫ কি.মি. বেগে গমন করলে ১৮০ মিটার দীর্ঘ একটি ট্রেনের ৩২০ মিটার দীর্ঘ একটি প্লাটফর্ম অতিক্রম করতে কত সময় লাগবে?",
+    "steps": [
+      "ট্রেনটিকে তার নিজের দৈর্ঘ্য ও প্লাটফর্মের দৈর্ঘ্য মিলিয়ে মোট (১৮০ + ৩২০) = ৫০০ মিটার অতিক্রম করতে হবে",
+      "৭৫ কি.মি./ঘণ্টা = ৭৫০০০ মিটার/৩৬০০ সেকেন্ড",
+      "৭৫০০০ মিটার যেতে সময় লাগে ৩৬০০ সেকেন্ড",
+      "∴ ৫০০ মিটার যেতে সময় লাগবে = (৩৬০০ × ৫০০) ÷ ৭৫০০০ = ২৪ সেকেন্ড"
+    ],
+    "answer": "২৪ সেকেন্ড (⚠️ সোর্স বইয়ের উপসংহারে ভুলবশত '৫৪ সেকেন্ড' লেখা ছিল, কিন্তু হিসাব অনুযায়ী সঠিক উত্তর ২৪ সেকেন্ড)"
+  },
+  {
+    "id": "job-2025-prison-teacher-q13",
+    "examId": "job-2025-prison-teacher",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "ডিমের দাম ১৪ ২/৭% কমে যাওয়ায় ৪২০ টাকায় পূর্বাপেক্ষা ১০টি ডিম বেশি পাওয়া যায়। ক) প্রতি ডজন ডিমের দাম কত? খ) প্রতি ডজন কত টাকায় বিক্রয় করলে ৩৩ ১/৩% লাভ হবে?",
+    "steps": [
+      "ক) ১৪ ২/৭% = ৯৯/৭%",
+      "১০০ টাকায় দাম কমে ৯৯/৭ টাকা হলে, ৪২০ টাকায় দাম কমে = (৯৯/৭ × ৪২০) ÷ ১০০ = ৫৯.৪ টাকা",
+      "এই ৫৯.৪ টাকাই হলো (বেশি পাওয়া) ১০টি ডিমের দাম",
+      "∴ ১টি ডিমের দাম = ৫৯.৪/১০ টাকা; ১২টি (১ ডজন) ডিমের দাম = (৫৯.৪/১০) × ১২ = ৭১.২৮ টাকা",
+      "খ) ক্রয়মূল্য ৭১.২৮ টাকা, লাভ ৩৩ ১/৩% (= ১০০/৩%)",
+      "বিক্রয়মূল্য = ৭১.২৮ × (১০০ + ১০০/৩)/১০০ = ৭১.২৮ × (৪০০/৩)/১০০ = ৯৫.০৪ টাকা (প্রায়)"
+    ],
+    "answer": "ক) প্রতি ডজন ডিমের দাম ৭১.২৮ টাকা।  খ) ৯৫.০৪ টাকায় বিক্রয় করলে ৩৩ ১/৩% লাভ হবে।"
+  },
+  {
+    "id": "job-2025-prison-teacher-q14",
+    "examId": "job-2025-prison-teacher",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 14,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সর্বশেষ জনশুমারি অনুযায়ী বর্তমানে বাংলাদেশে লোকসংখ্যার ঘনত্ব প্রতি বর্গ কিলোমিটারে কত জন?",
+        "a": "১১১৯ জন"
+      },
+      {
+        "label": "খ",
+        "q": "কৌটিল্য প্রথার প্রবর্তক কে ছিলেন?",
+        "a": "বল্লাল সেন"
+      },
+      {
+        "label": "গ",
+        "q": "'বানভট্ট' কোন রাজার সভাকবি ছিলেন?",
+        "a": "হর্ষবর্ধন"
+      },
+      {
+        "label": "ঘ",
+        "q": "শিহাবউদ্দিন মুহম্মদ ঘুরীর প্রকৃত নাম কী?",
+        "a": "মুইজউদ্দিন মুহাম্মদ বিন সাম"
+      },
+      {
+        "label": "ঙ",
+        "q": "পানিপথের দ্বিতীয় যুদ্ধ কত সালে সংঘটিত হয়?",
+        "a": "১৫৫৬ সালে"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশ কত ডিগ্রি থেকে কত ডিগ্রি ভৌগোলিক অক্ষরেখা ও দ্রাঘিমা রেখার মধ্যে অবস্থিত?",
+        "a": "২০°৩৪' থেকে ২৬°৩৮' উত্তর অক্ষরেখার মধ্যে এবং ৮৮°০১' থেকে ৯২°৪১' দ্রাঘিমারেখার মধ্যবর্তী স্থানে"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশের ক্রীড়া সংগীতের গীতিকার কে?",
+        "a": "সেলিমা রহমান"
+      },
+      {
+        "label": "জ",
+        "q": "পূর্ণরূপ লিখুনঃ SAFTA",
+        "a": "South Asian Free Trade Area"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশের সংবিধানের কত নং অনুচ্ছেদে বার্ষিক আর্থিক বিবৃতি সম্পর্কে বলা হয়েছে?",
+        "a": "৮৭ (১) অনুচ্ছেদ"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশের একমাত্র গন্ধক খনি কোথায় অবস্থিত?",
+        "a": "কুতুবদিয়া"
+      },
+      {
+        "label": "ট",
+        "q": "ভুটান, ভারত ও বাংলাদেশের মধ্য দিয়ে প্রবাহিত আন্তসীমার নদীর নাম কী?",
+        "a": "দুধকুমার নদ"
+      },
+      {
+        "label": "ঠ",
+        "q": "শীতকালীন অলিম্পিক-২০২৬ কোথায় অনুষ্ঠিত হবে?",
+        "a": "ইতালি"
+      },
+      {
+        "label": "ড",
+        "q": "২০২৪ সালে সাহিত্যে নোবেল পুরস্কার কে পান?",
+        "a": "হান কাং"
+      },
+      {
+        "label": "ঢ",
+        "q": "বিখ্যাত ভাস্কর ও চিত্রশিল্পী হামিদুজ্জামান খান মৃত্যুবরণ করেন কত তারিখে?",
+        "a": "২০ জুলাই, ২০২৫"
+      },
+      {
+        "label": "ণ",
+        "q": "মালয়েশিয়া এবং সুমাত্রাকে পৃথক করেছে কোন প্রণালী?",
+        "a": "মালাক্কা প্রণালি"
+      }
+    ]
+  }
+]

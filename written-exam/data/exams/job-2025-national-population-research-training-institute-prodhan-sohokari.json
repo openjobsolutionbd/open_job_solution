@@ -1,0 +1,434 @@
+[
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q01",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "খরচ করে না যে",
+        "a": "কৃপণ"
+      },
+      {
+        "label": "খ",
+        "q": "অনেক দেখেছে যে",
+        "a": "ভূয়োদর্শী"
+      },
+      {
+        "label": "গ",
+        "q": "জানায় যে",
+        "a": "জ্ঞাপক"
+      },
+      {
+        "label": "ঘ",
+        "q": "যার কিছু নেই",
+        "a": "হতসর্বস্ব"
+      },
+      {
+        "label": "ঙ",
+        "q": "হৃদয়ের প্রীতিকর",
+        "a": "হৃদ্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q02",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধ করে লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "তীতীক্ষা",
+        "তিতিক্ষা"
+      ],
+      [
+        "উৎকর্ষতা",
+        "উৎকর্ষ"
+      ],
+      [
+        "অশ্রুজল",
+        "অশ্রু"
+      ],
+      [
+        "মুহঃমুহু",
+        "মুহুর্মুহু"
+      ],
+      [
+        "সমীচিন",
+        "সমীচীন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q03",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য রচনা",
+    "qno": 3,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অতি দর্পে হত লঙ্কা",
+        "a": "অহংকারে পতন"
+      },
+      {
+        "label": "খ",
+        "q": "আঁকু পাঁকু করা",
+        "a": "ছটফট করা"
+      },
+      {
+        "label": "গ",
+        "q": "কচ্ছপের কামড়",
+        "a": "যা সহজে ছাড়ে না"
+      },
+      {
+        "label": "ঘ",
+        "q": "চিনে জোঁক",
+        "a": "নাছোড়বান্দা"
+      },
+      {
+        "label": "ঙ",
+        "q": "ধর্মের ষাঁড়",
+        "a": "যথেচ্ছাচারী/ সেচ্ছাচারী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q04",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "কিরণ",
+        "অন্ধকার"
+      ],
+      [
+        "জরা",
+        "যৌবন"
+      ],
+      [
+        "খিড়কি",
+        "সিংহদ্বার"
+      ],
+      [
+        "চিরায়ত",
+        "সাময়িক"
+      ],
+      [
+        "নশ্বর",
+        "অবিনশ্বর"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q05",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "english",
+    "topic": "fill in the gaps with articles",
+    "qno": 5,
+    "marks": 10,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with articles (a, an, the) and put a cross (×) where no article is needed: \"Although different in length, a short story and a novel have many similarities. Both belong to the category of literature known as fictions, they are fictitious. Both of them have (a).......story outline or plot (b).......short story has (c).......setting, both time and space settings, similarly, a novel also has (d).......time and space settings which contribute to (e).........meaning or theme.\"",
+    "parts": [
+      {
+        "sentence": "gap (a)",
+        "answer": "a"
+      },
+      {
+        "sentence": "gap (b)",
+        "answer": "a"
+      },
+      {
+        "sentence": "gap (c)",
+        "answer": "a"
+      },
+      {
+        "sentence": "gap (d)",
+        "answer": "×"
+      },
+      {
+        "sentence": "gap (e)",
+        "answer": "the"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q06",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "english",
+    "topic": "preposition",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with appropriate prepositions: \"The other sailors were angry (a)..... the old man. They blamed him (b)..... their sufferings and hung the dead albatross (c)....... his neck. Suddenly, they saw a ship coming (d)....... them. They cried aloud (e)...... joy.\"",
+    "parts": [
+      {
+        "sentence": "gap (a)",
+        "answer": "with"
+      },
+      {
+        "sentence": "gap (b)",
+        "answer": "for"
+      },
+      {
+        "sentence": "gap (c)",
+        "answer": "around"
+      },
+      {
+        "sentence": "gap (d)",
+        "answer": "towards"
+      },
+      {
+        "sentence": "gap (e)",
+        "answer": "with"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q07",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "english",
+    "topic": "sentence transformation",
+    "qno": 7,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Change the following sentences as directed in the brackets:",
+    "parts": [
+      {
+        "original": "It is a very beautiful city. (Exclamatory)",
+        "changed": "What a beautiful city it is?"
+      },
+      {
+        "original": "Fahim is one of the tallest boys in the class. (Comparative)",
+        "changed": "Fahim is taller than most other boys in the class."
+      },
+      {
+        "original": "The old man is too weak to move. (Complex)",
+        "changed": "The old man is so weak that he can't move."
+      },
+      {
+        "original": "\"Yes, sir\", she replied, \"I have done my duty.\" (Indirect)",
+        "changed": "She respectfully replied in the affirmative that she had done her duty."
+      },
+      {
+        "original": "The house is building. (Passive)",
+        "changed": "The house is being built."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q08",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "english",
+    "topic": "right form of words",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use right form of the words in the gaps: \"Why are social networks (a).... (expand) so fast? The answer is simple. Most of the social (b).... (service) are cost free. You can make use of them free, (c)....... (pay) a little to your internet service provider. Moreover, you can make your personal profile public before the entire online (d).......(community). You can also look into other people's profile if you are (e)........ (interest).\"",
+    "parts": [
+      {
+        "sentence": "(a) expand",
+        "answer": "expanding"
+      },
+      {
+        "sentence": "(b) service",
+        "answer": "services"
+      },
+      {
+        "sentence": "(c) pay",
+        "answer": "paying"
+      },
+      {
+        "sentence": "(d) community",
+        "answer": "community"
+      },
+      {
+        "sentence": "(e) interest",
+        "answer": "interested"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q09",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "math",
+    "topic": "সমান্তর ধারা",
+    "qno": 9,
+    "marks": 6,
+    "type": "math",
+    "question": "এক ব্যক্তি ২৫০০ টাকার একটি ঋণ কিছুসংখ্যক কিস্তিতে পরিশোধ করতে রাজী হন। প্রত্যেক কিস্তি পূর্ব কিস্তি থেকে ২ টাকা বেশি। যদি প্রথম কিস্তি ১ টাকা হয়, তবে কতগুলো কিস্তিতে ঐ ব্যক্তি তার ঋণ শোধ করতে পারবেন? এবং সর্বশেষ কিস্তির পরিমাণ কত হবে?",
+    "steps": [
+      "মনে করি, কিস্তির সংখ্যা = n",
+      "প্রথম কিস্তি, a = ১; পরপর দুই কিস্তির পার্থক্য, d = ২; মোট ঋণের পরিমাণ, S = ২৫০০।",
+      "সমান্তর ধারার সূত্রমতে, S = (n/2){2a + (n−1)d}",
+      "বা, ২৫০০ = (n/2){2×1 + (n−1)2}",
+      "বা, ২৫০০ = (n/2)(2 + 2n − 2)",
+      "বা, ২৫০০ = (n/2) × 2n",
+      "বা, ২৫০০ = n²",
+      "বা, n = √২৫০০ ∴ n = ±৫০",
+      "কিন্তু কিস্তির সংখ্যা ঋণাত্মক হতে পারে না।",
+      "∴ n = ৫০ ∴ কিস্তির সংখ্যা ৫০টি।",
+      "৫০ তম কিস্তির পরিমাণ হবে = a + (n−1)d = ১ + (৫০−১)২ = ৯৯ টাকা"
+    ],
+    "answer": "উত্তর: কিস্তির সংখ্যা ৫০টি এবং সর্বশেষ কিস্তি হবে ৯৯ টাকা"
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q10",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "math",
+    "topic": "ক্ষেত্রফল",
+    "qno": 10,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি আয়তাকার ঘরের মেঝের ক্ষেত্রফল ১৯২ বর্গমিটার। মেঝের দৈর্ঘ্য ৪ মিটার কমালে ও প্রস্থ ৪ মিটার বাড়ালে ক্ষেত্রফল অপরিবর্তিত থাকে। মেঝের দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, মেঝের দৈর্ঘ্য = x মিটার",
+      "∴ প্রস্থ = ১৯২/x মিটার",
+      "প্রশ্নমতে, (x−৪)(১৯২/x + ৪) = ১৯২",
+      "বা, ১৯২ − ৭৬৮/x + ৪x − ১৬ = ১৯২",
+      "বা, ৪x − ৭৬৮/x = ১৯২ + ১৬ − ১৯২ [পক্ষান্তর করে]",
+      "বা, (4x² − 768)/x = ১৬",
+      "বা, 4x² − 768 = 16x [আড়গুণন করে]",
+      "বা, 4(x² − 192) = 16x",
+      "বা, x² − 192 = 4x [উভয়পক্ষকে ৪ দ্বারা ভাগ করে]",
+      "বা, x² − 4x − 192 = 0 [পক্ষান্তর করে]",
+      "বা, x² − 16x + 12x − 192 = 0",
+      "বা, x(x−16) + 12(x−16) = 0",
+      "∴ (x−16)(x+12) = 0",
+      "হয়, x−16 = 0 অথবা, x+12 = 0",
+      "∴ x = 16 ∴ x = −12",
+      "যেহেতু বাহুর দৈর্ঘ্য কখনই ঋণাত্মক হতে পারে না। সুতরাং x = −12 গ্রহণযোগ্য নয়।",
+      "∴ মেঝের দৈর্ঘ্য ১৬ মি. এবং মেঝের প্রস্থ = ১৯২/১৬ = ১২ মি."
+    ],
+    "answer": "উত্তর: দৈর্ঘ্য ১৬ মিটার এবং প্রস্থ ১২ মিটার।"
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q11",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 6,
+    "type": "math",
+    "question": "2x³ + 5x² − 6x + 4 থেকে কত বিয়োগ করলে রাশিটি (x+2) দ্বারা নিঃশেষে বিভাজ্য হবে?",
+    "steps": [
+      "2x³ + 5x² − 6x + 4 রাশিটিকে (x+2) দ্বারা ভাগ করলে ভাগশেষ পাওয়া যায়",
+      "x = −2 বসিয়ে ভাগশেষ নির্ণয় করি: 2(−2)³ + 5(−2)² − 6(−2) + 4",
+      "= 2(−8) + 5(4) + 12 + 4 = −16 + 20 + 12 + 4 = 20",
+      "∴ রাশিটি থেকে ২০ বিয়োগ করলে তা (x+2) দ্বারা নিঃশেষে বিভাজ্য হবে"
+    ],
+    "answer": "উত্তর: 2x³ + 5x² − 6x + 4 − 20 = 2x³ + 5x² − 6x − 16"
+  },
+  {
+    "id": "job-2025-national-population-research-training-institute-prodhan-sohokari-q12",
+    "examId": "job-2025-national-population-research-training-institute-prodhan-sohokari",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 12,
+    "marks": 18,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আয়তনে উত্তর আমেরিকা পৃথিবীর কততম মহাদেশ?",
+        "a": "তৃতীয় (আয়তন- প্রায় ২৪,৭০৯,০০০ বর্গ কিলোমিটার বা প্রায় ৯,৫৪০,০০০ বর্গ মাইল)।"
+      },
+      {
+        "label": "খ",
+        "q": "ইসলাম খাঁন কর্তৃক রাজমহল থেকে ঢাকায় রাজধানী স্থানান্তর হয় কত সালে?",
+        "a": "১৬১০ সালে।"
+      },
+      {
+        "label": "গ",
+        "q": "দেশের একমাত্র কৃষিভিত্তিক ইপিজেড কোনটি?",
+        "a": "উত্তরা ইপিজেড (অবস্থিত: নীলফামারী জেলার সদর উপজেলার সংগলশী ইউনিয়নে)"
+      },
+      {
+        "label": "ঘ",
+        "q": "WiMAX এর পূর্ণরূপ কী?",
+        "a": "Worldwide Interoperability for Microwave Access"
+      },
+      {
+        "label": "ঙ",
+        "q": "কোন Octal সংখ্যাটি Decimal সংখ্যা ৫৫-এর সমতুল্য?",
+        "a": "৬৭।"
+      },
+      {
+        "label": "চ",
+        "q": "তেজস্ক্রিয়তার একক কী?",
+        "a": "বেকেরেল (Bq)।"
+      },
+      {
+        "label": "ছ",
+        "q": "অতিরিক্ত খাদ্য থেকে লিভারে সঞ্চিত সুগার কোনটি?",
+        "a": "গ্লাইকোজেন।"
+      },
+      {
+        "label": "জ",
+        "q": "'বলিশিরা ভ্যালি' কোন জেলায় অবস্থিত?",
+        "a": "মৌলভীবাজার।"
+      },
+      {
+        "label": "ঝ",
+        "q": "কোন কোন ভিটামিন পানিতে দ্রবণীয়?",
+        "a": "ভিটামিন বি ও ভিটামিন সি।"
+      },
+      {
+        "label": "ঞ",
+        "q": "দাবা খেলার আদি নাম কী?",
+        "a": "চতুরঙ্গ।"
+      },
+      {
+        "label": "ট",
+        "q": "বাংলাদেশে ভ্যাট সিস্টেম চালু হয় কত সালে?",
+        "a": "১ জুলাই ১৯৯১ সালে।"
+      },
+      {
+        "label": "ঠ",
+        "q": "'দি স্পিরিট অব ল' বইটি কার লেখা?",
+        "a": "মন্টেস্কু"
+      },
+      {
+        "label": "ড",
+        "q": "ফিফা বিশ্বকাপ ২০২৬ কোথায় অনুষ্ঠিত হবে?",
+        "a": "যুক্তরাষ্ট্র, কানাডা, মেক্সিকো।"
+      },
+      {
+        "label": "ঢ",
+        "q": "BRICS এর সর্বশেষ সদস্য কোন দেশ?",
+        "a": "ইন্দোনেশিয়া (০৬ জানুয়ারি ২০২৫)।"
+      },
+      {
+        "label": "ণ",
+        "q": "বর্তমানের কোন দেশ সাবেক সোভিয়েত ইউনিয়নের সবচেয়ে জনবল প্রজাতন্ত্র ছিল?",
+        "a": "রাশিয়া"
+      }
+    ]
+  }
+]

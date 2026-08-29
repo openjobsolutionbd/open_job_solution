@@ -1,0 +1,446 @@
+[
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q01",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 3,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "গিতাঞ্জলি",
+        "গীতাঞ্জলি"
+      ],
+      [
+        "বিভিষিকা",
+        "বিভীষিকা"
+      ],
+      [
+        "দোষণীয়",
+        "দূষণীয়"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q02",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 3,
+    "type": "idiom",
+    "question": "বাগধারা সমূহের অর্থসহ বাক্য রচনা করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "চাঁদের হাট",
+        "meaning": "আনন্দের প্রাচুর্য"
+      },
+      {
+        "label": "খ",
+        "phrase": "বসন্তের কোকিল",
+        "meaning": "সুদিনের বন্ধু"
+      },
+      {
+        "label": "গ",
+        "phrase": "আঠার মাসে বছর",
+        "meaning": "দীর্ঘসূত্রতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q03",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "translation",
+    "qno": 3,
+    "marks": 3,
+    "type": "translate",
+    "question": "অনুবাদ করুন (ইংরেজি থেকে বাংলা)",
+    "parts": [
+      {
+        "label": "a",
+        "source": "Switch on the light.",
+        "target": "বাতি জ্বালাও/ লাইটের সুইচ দাও।"
+      },
+      {
+        "label": "b",
+        "source": "A friend in need is a friend indeed",
+        "target": "বিপদে বন্ধুর পরিচয়"
+      },
+      {
+        "label": "c",
+        "source": "It hardly rains in Spain",
+        "target": "স্পেনে কদাচিৎ বৃষ্টি হয়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q04",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অগ্রজ",
+        "a": "অনুজ"
+      },
+      {
+        "label": "খ",
+        "q": "অলীক",
+        "a": "বাস্তব"
+      },
+      {
+        "label": "গ",
+        "q": "আত্মীয়",
+        "a": "অনাত্মীয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q05",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 5,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যা বলা হবে",
+        "a": "বক্তব্য"
+      },
+      {
+        "label": "খ",
+        "q": "আদি নেই যার",
+        "a": "অনাদি"
+      },
+      {
+        "label": "গ",
+        "q": "জলে চরে যে",
+        "a": "জলচর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q06",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "bangla",
+    "topic": "essay",
+    "qno": 6,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "অনুচ্ছেদ লিখুনঃ \\\"অফিস সহকারীর দায়িত্ব ও কর্তব্য\\\"",
+    "answer": "একজন অফিস সহকারী একটি দপ্তর বা প্রতিষ্ঠানের প্রশাসনিক ও দাপ্তরিক কার্যক্রম পরিচালনায় সহায়ক ভূমিকা পালন করে। অফিস সহকারীর প্রধান দায়িত্ব ও কর্তব্যঃ ১. ফাইল ও নথি ব্যবস্থাপনা: বিভিন্ন রেজিস্টার ও নথি সংগ্রহ, সংরক্ষণ ও সঠিকভাবে সাজানো। নথির বিষয়, নম্বর, পূর্ববর্তী নথির সূত্র, নথি খোলা/বন্ধের তারিখ ইত্যাদি বিষয় লিপিবদ্ধকরণ। ২. চিঠি ও ডাক ব্যবস্থাপনা: অফিসে আসা চিঠি, ডাকপত্র, পার্সেল গ্রহণ ও তা রেজিস্টারে লিপিবদ্ধ করে সংশ্লিষ্ট শাখায় বিতরণের ব্যবস্থা করা। ৩. প্রশাসনিক কাজ: আগত চিঠি বিপরীতে নোট লিখন/ ঊর্ধ্বতন কর্মকর্তার নিকট উপস্থাপন, পত্র ড্রাফট, পত্র জারি করা, নোটিশ বোর্ডে বিজ্ঞপ্তি প্রদর্শন করা ইত্যাদি। ৪. সভা সংক্রান্ত: অফিসে বিভিন্ন সময় মিটিং এর নোটিশ, হাজিরা, কার্যপত্র ও কার্যবিবরণী প্রস্তুতকরণ। ৫. শৃঙ্খলা ও ভদ্রতা বজায় রাখা: অফিসে আগত ব্যক্তি বা অতিথিদের সঙ্গে ভদ্র ও সৌজন্যমূলক আচরণ করা। অফিসের পরিবেশ পরিচ্ছন্ন ও সুশৃঙ্খল রাখা। ৬. বিবিধ: ঊর্ধ্বতন কর্তৃপক্ষের যৌক্তিক আদেশ যেমন, কর্তৃপক্ষের ভ্রমণ ব্যয় বিল করা, চেক ইস্যুকরণ, বেতন-ভাতা বিল করা, দপ্তরের জন্য নাস্তা ক্রয়, প্রতিষ্ঠানের বিভিন্ন অনুষ্ঠান বা বিশেষ কার্যক্রমে সহায়তা প্রদান ইত্যাদি।"
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q07",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "পানির অপর নাম জীবন।",
+        "target": "Another name of water is life"
+      },
+      {
+        "label": "খ",
+        "source": "আমাদের দেশের নাম বাংলাদেশ।",
+        "target": "The name of our country is Bangladesh."
+      },
+      {
+        "label": "গ",
+        "source": "তুমি কি কখনো রাঙ্গামাটি গিয়েছে?",
+        "target": "Have you ever been to Rangamati?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q08",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "She has been ill........ Friday last.",
+        "answer": "since"
+      },
+      {
+        "sentence": "I ........ to Dhaka yesterday.",
+        "answer": "went"
+      },
+      {
+        "sentence": "Time and tide......... for none.",
+        "answer": "waits"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q09",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 9,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "Make sentences with each of the following words:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Revolution",
+        "a": "The revolution changed the political system of the country."
+      },
+      {
+        "label": "b",
+        "q": "Honesty",
+        "a": "Honesty is the best policy."
+      },
+      {
+        "label": "c",
+        "q": "Sanitation",
+        "a": "Proper sanitation is necessary to prevent diseases."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q10",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "sentence-rearrange",
+    "qno": 10,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "Rearrange the following words to make meaningful sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "liar a believes nobody.",
+        "a": "Nobody believes a liar."
+      },
+      {
+        "label": "b",
+        "q": "a big Kamafuli is river.",
+        "a": "Karnaphuli is a big river."
+      },
+      {
+        "label": "c",
+        "q": "we parents love our.",
+        "a": "We love our parents."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q11",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 11,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "Correct the following spellings:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Chuttogam",
+        "a": "Chattogram"
+      },
+      {
+        "label": "b",
+        "q": "Neumonia",
+        "a": "Pneumonia"
+      },
+      {
+        "label": "c",
+        "q": "Nacessity",
+        "a": "Necessity"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q12",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 12,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a paragraph about 'Rangamati'.",
+    "answer": "Rangamati is a hill district in the Chattogram Hill Tracts of Bangladesh. It is well known for its scenic beauty, hills, and the vast Kaptai Lake, which was created by damming the Karnaphuli River. The district is home to several indigenous communities, including the Chakma, Marma, and Tanchangya, who add rich cultural diversity to the region. Rangamati was formerly known as Kapash Mahal. The famous hanging bridge over Kaptai Lake is one of the main attractions for tourists. The district is also known for its handicrafts, bamboo and cane products, and traditional textiles. Boating on Kaptai Lake offers visitors a breathtaking view of the surrounding hills and forests. Rangamati plays an important role in Bangladesh's tourism industry due to its natural beauty and unique tribal culture. Every year, thousands of tourists visit Rangamati to enjoy its peaceful environment and scenic landscape. It truly stands as one of the most beautiful districts of Bangladesh."
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q13",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "math",
+    "topic": "গণিত",
+    "qno": 13,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "গণিত অংশ-২০ঃ নিচের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "১৩",
+        "q": "সমাধান করুনঃ ０.১×０.０１×０.００１ = কত?",
+        "a": "０.０００００১"
+      },
+      {
+        "label": "১৪",
+        "q": "৪０ এর ２０% সমান কত?",
+        "a": "৮"
+      },
+      {
+        "label": "১৫",
+        "q": "একটি সংখ্যার ১０ গুণ ２４０ হলে সংখ্যা কত?",
+        "a": "２４"
+      },
+      {
+        "label": "১৬",
+        "q": "১ মেট্রিক টন = কত কিলোগ্রাম?",
+        "a": "１０００ কিলোগ্রাম"
+      },
+      {
+        "label": "১৭",
+        "q": "a+b=৫, ab=৪ হলে (a+b)² =কত?",
+        "a": "２৫"
+      },
+      {
+        "label": "১৮",
+        "q": "একটি আয়তকার জমির ক্ষেত্রফল ４２５０ বর্গ মিটার এবং প্রস্থ ５０ মিটার হলে জমির দৈর্ঘ্য কত?",
+        "a": "৮５ মিটার"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dphe-rangamati-office-asst-typist-q14",
+    "examId": "job-2025-dphe-rangamati-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 14,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-২０ঃ নিচের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "১৯",
+        "q": "কাপ্তাই লেকের মোট আয়তন কত?",
+        "a": "১৭２２ বর্গকিলোমিটার [সূত্র: বাংলাপিডিয়া]"
+      },
+      {
+        "label": "２０",
+        "q": "পার্বত্য চট্টগ্রাম আঞ্চলিক পরিষদের অধীন কতটি জেলা রয়েছে?",
+        "a": "৩টি (রাঙ্গামাটি, খাগড়াছড়ি, বান্দরবান)"
+      },
+      {
+        "label": "２১",
+        "q": "রাঙ্গামাটির পূর্বনাম কি?",
+        "a": "কার্পাস মহল"
+      },
+      {
+        "label": "２２",
+        "q": "'জনস্বাস্থ্য প্রকৌশল' এর ইংরেজি নাম কী?",
+        "a": "Public Health Engineering"
+      },
+      {
+        "label": "２৩",
+        "q": "বিশ্ব হাত ধোয়া দিবস কত তারিখে?",
+        "a": "১৫ অক্টোবর"
+      },
+      {
+        "label": "２৪",
+        "q": "জাতীয় স্যানিটেশন মাস কোনটি?",
+        "a": "অক্টোবর"
+      },
+      {
+        "label": "２৫",
+        "q": "পার্বত্য চুক্তি কত সালে হয়?",
+        "a": "১৯৯৭ সালে"
+      },
+      {
+        "label": "２৬",
+        "q": "কত সাল থেকে ２১ ফেব্রুয়ারি আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে পালিত হচ্ছে?",
+        "a": "２０００ সালে"
+      },
+      {
+        "label": "２৭",
+        "q": "বাংলাদেশের একমাত্র নোবেল পুরস্কার বিজয়ীর নাম কি?",
+        "a": "ড. মুহাম্মদ ইউনূস"
+      },
+      {
+        "label": "２৮",
+        "q": "সংরক্ষিত চকোরিয়া বনাঞ্চল কোন জেলায় অবস্থিত?",
+        "a": "কক্সবাজার"
+      },
+      {
+        "label": "２৯",
+        "q": "বাংলাদেশের অর্থবছর কোন মাস থেকে কোন মাস পর্যন্ত?",
+        "a": "জুলাই-জুন"
+      },
+      {
+        "label": "৩０",
+        "q": "চট্টগ্রাম সমুদ্র বন্দর কোন নদীর তীরে অবস্থিত?",
+        "a": "কর্ণফুলী নদী"
+      },
+      {
+        "label": "৩১",
+        "q": "প্রতি বর্গকিলোমিটারে সবচেয়ে কম লোক বাস করে কোন জেলায়?",
+        "a": "রাঙ্গামাটি (১０৬ জন/বর্গ.মি.) [সূত্র: জনগণনা ও গৃহগণনা ２０２２]"
+      },
+      {
+        "label": "৩２",
+        "q": "বাংলাদেশের দীর্ঘতম নদী কোনটি?",
+        "a": "পদ্মা"
+      },
+      {
+        "label": "৩৩",
+        "q": "বাংলাদেশের প্রধান অর্থকরী ফসল কোনটি?",
+        "a": "পাট"
+      },
+      {
+        "label": "৩৪",
+        "q": "জাতিসংঘ কত সালে প্রতিষ্ঠিত হয়?",
+        "a": "১৯৪৫ সালে"
+      },
+      {
+        "label": "৩৫",
+        "q": "কোন নদীতে বাঁধ দিয়ে কাপ্তাই লেক তৈরি করা হয়?",
+        "a": "কর্ণফুলী নদী"
+      },
+      {
+        "label": "৩৬",
+        "q": "ভুটানের মুদ্রার নাম কী?",
+        "a": "গুলট্রাম (Ngultrum)"
+      },
+      {
+        "label": "৩৭",
+        "q": "বাংলাদেশের কেন্দ্রীয় ব্যাংকের নাম কি?",
+        "a": "বাংলাদেশ ব্যাংক"
+      },
+      {
+        "label": "৩৮",
+        "q": "রাশিয়া বর্তমানে কোন দেশের সাথে যুদ্ধে লিপ্ত রয়েছে?",
+        "a": "ইউক্রেন"
+      }
+    ]
+  }
+]

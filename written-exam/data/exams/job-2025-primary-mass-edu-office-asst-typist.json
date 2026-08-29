@@ -1,0 +1,560 @@
+[
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q01",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অরিকে দমন করে যে",
+        "a": "অরিন্দম"
+      },
+      {
+        "label": "খ",
+        "q": "মন হরণ করে যে",
+        "a": "মনোহর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q02",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "প্রচ্ছন্ন",
+        "ব্যক্ত"
+      ],
+      [
+        "শ্লিষ্ট",
+        "রুক্ষ"
+      ],
+      [
+        "বিনীত",
+        "উদ্ধত/দুর্বিনীত"
+      ],
+      [
+        "কনিষ্ঠ",
+        "জ্যেষ্ঠ"
+      ],
+      [
+        "উপচিকীর্ষা",
+        "অপচিকীর্ষা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q03",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পরীক্ষা",
+        "a": "পরি + ঈক্ষা"
+      },
+      {
+        "label": "খ",
+        "q": "নয়ন",
+        "a": "নে + অন"
+      },
+      {
+        "label": "গ",
+        "q": "নিশ্চয়",
+        "a": "নিঃ + চয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q04",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বাক্য",
+    "qno": 4,
+    "marks": 6,
+    "type": "sub-parts",
+    "question": "শুদ্ধ বাক্যটি লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অন্যায়ের প্রতিফল দুর্নিবার্য",
+        "a": "অন্যায়ের প্রতিফল অনিবার্য"
+      },
+      {
+        "label": "খ",
+        "q": "তারা যাইতে যাইতে এ দৃশ্য দেখিয়া মুগ্ধ ও বিস্মিত হন।",
+        "a": "তারা যেতে যেতে এ দৃশ্য দেখে মুগ্ধ ও বিস্মিত হল।"
+      },
+      {
+        "label": "গ",
+        "q": "ধন ধান্যে পুষ্পে ভরা আমাদের এই বসুন্ধরা।",
+        "a": "ধন ধান্যে পুষ্পে ভরা আমাদের এই বসুন্ধরা।"
+      },
+      {
+        "label": "ঘ",
+        "q": "নিরপরাধী ব্যক্তিকে ক্ষমা কর।",
+        "a": "নিরপরাধ ব্যক্তিকে ক্ষমা কর।"
+      },
+      {
+        "label": "ঙ",
+        "q": "তিনি আসামীর বিরুদ্ধে স্বাক্ষী দিলেন।",
+        "a": "তিনি আসামীর বিরুদ্ধে সাক্ষ্য দিলেন।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q05",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 5,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "হাটে-বাজারে",
+        "a": "হাটে ও বাজারে - দ্বন্দ্ব সমাস"
+      },
+      {
+        "label": "খ",
+        "q": "গুরুভক্তি",
+        "a": "গুরুকে ভক্তি -৪র্থী তৎপুরুষ"
+      },
+      {
+        "label": "গ",
+        "q": "উপকূল",
+        "a": "কূলের সমীপে"
+      },
+      {
+        "label": "ঘ",
+        "q": "সুন্দরলতা",
+        "a": "কূলের সমীপে- অব্যয়ীভাব"
+      },
+      {
+        "label": "ঙ",
+        "q": "হাসিমুখ",
+        "a": "হাসি মাখা মুখ - কর্মধারয় সমাস"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q06",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 6,
+    "marks": 6,
+    "type": "idiom",
+    "question": "নিচের বাগধারাগুলোর অর্থসহ বাক্য রচনা করঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "আক্কেল সেলামী",
+        "meaning": "হতবুদ্ধি, ক্ষতি"
+      },
+      {
+        "label": "খ",
+        "phrase": "ডুমুরের ফুল",
+        "meaning": "দুর্লভ বস্তু/অদৃশ্য বস্তু"
+      },
+      {
+        "label": "গ",
+        "phrase": "ছকড়া-নকড়া",
+        "meaning": "সস্তা দর"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "চোখের মণি",
+        "meaning": "প্রিয়"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "গড্ডলিকা প্রবাহ",
+        "meaning": "অন্ধ ভাবে অনুকরণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q07",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 7,
+    "marks": 6,
+    "type": "paragraph",
+    "question": "Write a passage on \\\"My favorite teacher\\\"",
+    "answer": "A teacher plays a vital role in shaping a student's life, and among all my teachers, one holds a special place in my heart. My favorite teacher is my class teacher, who taught us English in high school. She was not only knowledgeable but also kind, patient, and inspiring. She always encouraged us to ask questions and think critically rather than memorize lessons. Her teaching methods were simple yet effective, making even difficult topics easy to understand. Beyond academics, she taught us the importance of honesty, discipline, and hard work. She always motivated us to pursue our dreams and never give up, no matter how hard the circumstances were. Her guidance helped me build confidence and a positive attitude towards life. I will always remember her for the values and knowledge she gave me. She truly represents what an ideal teacher should be."
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q08",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "He passed ....... last night.",
+        "answer": "away"
+      },
+      {
+        "sentence": "The man died......... over eating.",
+        "answer": "from"
+      },
+      {
+        "sentence": "There is a bank ......... my house.",
+        "answer": "near"
+      },
+      {
+        "sentence": "He needs to abide....... the rules.",
+        "answer": "by"
+      },
+      {
+        "sentence": "The cat jumped..... the wall.",
+        "answer": "over"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q09",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 9,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentence with following words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Give up",
+        "meaning": "ত্যাগ করা",
+        "example": "You should give up smoking."
+      },
+      {
+        "label": "b",
+        "phrase": "Well off",
+        "meaning": "সচ্ছল",
+        "example": "His father is not well off."
+      },
+      {
+        "label": "c",
+        "phrase": "Once in a blue moon",
+        "meaning": "কালেভদ্রে",
+        "example": "He comes to his village one in a blue moon"
+      },
+      {
+        "label": "d",
+        "phrase": "In reference to",
+        "meaning": "প্রত্যুত্তর",
+        "example": "I am writing in reference to your letter."
+      },
+      {
+        "label": "e",
+        "phrase": "Black and White",
+        "meaning": "লিখিত ভাবে",
+        "example": "We charged against him in black and white."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q10",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the sentences as per direction:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I shall always remember you. (Make it negative)",
+        "changed": "I shall never forget you."
+      },
+      {
+        "label": "b",
+        "original": "Unity is strength (Make it complex)",
+        "changed": "It is unity which is strength."
+      },
+      {
+        "label": "c",
+        "original": "Karim is not better than him. (Make it positive)",
+        "changed": "He is as good as Karim."
+      },
+      {
+        "label": "d",
+        "original": "Shut the door. (Make it passive)",
+        "changed": "Let the door be shut."
+      },
+      {
+        "label": "e",
+        "original": "He is poor but happy (Make it complex)",
+        "changed": "Though he is poor, he is happy."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q11",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 11,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "০১",
+        "source": "আমরা সমাজে বাস করি। তাই সমাজে আমাদের শান্তি বজায় রাখতে হবে। সমাজের প্রতি আমাদের অনেক দায়িত্ব ও কর্তব্য আছে। আমরা পরস্পরের ওপর নির্ভর করি। আমাদের উদ্দেশ্য একটি সুখী সমাজ গঠন করা।",
+        "target": "We live in society. So, we have to maintain peace in the society. We have many responsibilities and duties towards the society. We depend on each other. Our aim is to create a happy society."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q12",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করঃ a² − 1 + 2b − b²",
+    "steps": [
+      "a² − 1 + 2b − b²",
+      "= a² − (b² − 2b + 1)",
+      "= a² − (b−1)²",
+      "= {a + (b−1)}{a − (b−1)}",
+      "= (a+b−1)(a−b+1)"
+    ],
+    "answer": "(a+b−1)(a−b+1)"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q13",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "math",
+    "topic": "মুদ্রা",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "১২০ টি পঁচিশ পয়সার মুদ্রা ও পঞ্চাশ পয়সার মুদ্রায় মোট ৩৫ টাকা হলে, কোন প্রকারের মুদ্রার সংখ্যা কয়টি?",
+    "steps": [
+      "মনে করি, পঞ্চাশ পয়সার মুদ্রার সংখ্যা = x টি",
+      "∴ পঁচিশ পয়সার মুদ্রার সংখ্যা = (১২০ − x) টি",
+      "∴ সর্বমোট মুদ্রার মান = 50x + 25(120−x) পয়সা",
+      "= 50x + 3000 − 25x",
+      "= 3000 + 25x",
+      "= (3000+25x)/100 [∵ ১০০ পয়সা = ১ টাকা]",
+      "প্রশ্নমতে, (3000+25x)/100 = 35",
+      "বা, 3000 + 25x = 3500",
+      "বা, 25x = 500",
+      "∴ x = 20",
+      "∴ পঞ্চাশ পয়সার মুদ্রার সংখ্যা 20টি",
+      "পঁচিশ পয়সার মুদ্রার সংখ্যা = 120 − 20 = 100টি"
+    ],
+    "answer": "পঞ্চাশ পয়সার মুদ্রা ২০টি এবং পঁচিশ পয়সার মুদ্রা ১০০টি।"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q14",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "৫ টাকায় ৮ টি আমলকি ক্রয় করে ৫ টাকায় ৬ টি বিক্রয় করলে শতকরা কত লাভ বা ক্ষতি হবে?",
+    "steps": [
+      "৮ টি আমলকির ক্রয়মূল্য ৫ টাকা",
+      "১ টি \" \" ৫/৮ \" = ৫/৮ টাকা",
+      "৬ টি আমলকির বিক্রয়মূল্য ৫ টাকা",
+      "১ টি \" \" ৫/৬ \" = ৫/৬ টাকা",
+      "এখানে, লাভ = ৫/৬ − ৫/৮ টাকা = (৮০−৩০)/৪৮ টাকা [ভুল সরলীকরণ এড়াতে প্রকৃত মান: ৫/৬ টাকায় লাভ হয় ৫/২৮ টাকায়]",
+      "∴ ১ \" \" \" (৫×৮)/(২৮×৫)",
+      "∴ ১০০ \" \" \" (৫×৮×১০০)/(২৮×৫)",
+      "= ৫০০/৩ টাকা",
+      "= ৩৩ ১/৩ টাকা/৩৩.৩৩ টাকা"
+    ],
+    "answer": "লাভ ৩৩ ১/৩% বা ৩৩.৩৩% লাভ।"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q15",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "math",
+    "topic": "বয়স",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "১০ বছর পূর্বে পিতা ও পুত্রের বয়সের অনুপাত ছিল ৪ঃ১। ১০ বছর পরে পিতা ও পুত্রের বয়সের অনুপাত হবে ২ঃ১। পিতা ও পুত্রের বর্তমান বয়স নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, ১০ বছর পূর্বে পিতার বয়স 4x",
+      "১০ বছর পূর্বে পুত্রের বয়স x",
+      "∴ পিতার বর্তমান বয়স = 4x + 10",
+      "পুত্রের বর্তমান বয়স = x + 10",
+      "প্রশ্নমতে, 4x+10+10 : x+10+10 = 2:1",
+      "বা, (4x+20)/(x+20) = 2/1",
+      "বা, 4x+20 = 2x+40",
+      "বা, 4x−2x = 40−20",
+      "বা, 2x = 20",
+      "∴ x = 10",
+      "∴ পিতার বর্তমান বয়স = (4×10+10) = 50 বছর",
+      "এবং পুত্রের বর্তমান বয়স = (10+10) = 20 বছর"
+    ],
+    "answer": "পিতার বয়স ৫০ বছর, পুত্রের বয়স ২০ বছর।"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q16",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 16,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি a + b + c = 0 হয়, তবে দেখাও যে, a³ + b³ + c³ = 3abc",
+    "steps": [
+      "দেওয়া আছে, a + b + c = 0",
+      "বা, a + b = −c",
+      "দেখাতে হবে যে, a³ + b³ + c³ = 3abc",
+      "বামপক্ষ = a³ + b³ + c³",
+      "= (a+b)³ − 3ab(a+b) + c³",
+      "= (−c)³ − 3ab.(−c) + c³ [∵ a+b = −c]",
+      "= −c³ + 3abc + c³",
+      "= 3abc = ডানপক্ষ"
+    ],
+    "answer": "a³ + b³ + c³ = 3abc (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-asst-typist-q17",
+    "examId": "job-2025-primary-mass-edu-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-২০ঃ সংক্ষেপে উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ভাষা আন্দোলনের প্রথম সংগঠন কোনটি?",
+        "a": "তমদ্দুন মজলিস"
+      },
+      {
+        "label": "খ",
+        "q": "বায়ুমণ্ডলে কোন গ্যাসের পরিমাণ সবচেয়ে বেশি?",
+        "a": "নাইট্রোজেন"
+      },
+      {
+        "label": "গ",
+        "q": "ঘোড়াশাল সার কারখানায় উৎপাদিত সারের নাম কি?",
+        "a": "ইউরিয়া সার"
+      },
+      {
+        "label": "ঘ",
+        "q": "সুন্দরবন বাংলাদেশের কয়টি জেলাকে স্পর্শ করেছে?",
+        "a": "৫টি"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাংলাদেশের সবচেয়ে উঁচু বৃক্ষের নাম কি?",
+        "a": "বৈলাম"
+      },
+      {
+        "label": "চ",
+        "q": "আল-আকসা মসজিদ কোথায় অবস্থিত?",
+        "a": "জেরুজালেম, ফিলিস্তিন"
+      },
+      {
+        "label": "ছ",
+        "q": "সোনার তরী কাব্যগ্রন্থের রচয়িতা কে?",
+        "a": "রবীন্দ্রনাথ ঠাকুর"
+      },
+      {
+        "label": "জ",
+        "q": "মায়ানমারের সাথে বাংলাদেশের সীমান্ত কত কিলোমিটার?",
+        "a": "২৭১ কি.মি."
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলা সনেটের জনক কে?",
+        "a": "মাইকেল মধুসূদন দত্ত"
+      },
+      {
+        "label": "ঞ",
+        "q": "অমৃত সাগর কলা বাংলাদেশের কোন জেলায় জি.আই পণ্য হিসেবে স্বীকৃতি পেয়েছে?",
+        "a": "নরসিংদী"
+      },
+      {
+        "label": "ট",
+        "q": "সেন্টমার্টিন দ্বীপের অপর নাম কি?",
+        "a": "নারিকেল জিঞ্জিরা"
+      },
+      {
+        "label": "ঠ",
+        "q": "বার্লিন প্রাচীর কত সালে নির্মিত হয়েছিলো?",
+        "a": "১৯৬১ সালে"
+      },
+      {
+        "label": "ড",
+        "q": "বাংলাদেশ কত সালে টেস্ট স্ট্যাটাস লাভ করে?",
+        "a": "২০০০ সালে"
+      },
+      {
+        "label": "ঢ",
+        "q": "LDC এর পূর্ণরূপ লিখুন।",
+        "a": "Least Developed Countries"
+      },
+      {
+        "label": "ণ",
+        "q": "সূর্যোদয়ের দেশ বলা হয় কোন দেশকে?",
+        "a": "জাপান"
+      },
+      {
+        "label": "ত",
+        "q": "বিশ্ব স্বাস্থ্য সংস্থার সদর দপ্তর কোথায় অবস্থিত?",
+        "a": "জেনেভা, সুইজারল্যান্ড"
+      },
+      {
+        "label": "থ",
+        "q": "মঙ্গোলিয়ার রাজধানীর নাম কি?",
+        "a": "উলানবাটোর"
+      },
+      {
+        "label": "দ",
+        "q": "বাংলাদেশের প্রথম বায়ু বিদ্যুৎ কেন্দ্র কোন জেলায় স্থাপন করা হয়?",
+        "a": "সোনাগাজী, ফেনী"
+      },
+      {
+        "label": "ধ",
+        "q": "এসডিজি-এর লক্ষ্য কতটি?",
+        "a": "১৭টি"
+      },
+      {
+        "label": "ন",
+        "q": "সোনা মসজিদ স্থলবন্দর কোন জেলায় অবস্থিত?",
+        "a": "চাপাইনবাবগঞ্জ"
+      }
+    ]
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "id": "job-2025-hbfc-data-entry-q01",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": [
+      "বাক্য",
+      "এক কথায়"
+    ],
+    "rows": [
+      [
+        "হনন করার ইচ্ছা",
+        "জিঘাংসা"
+      ],
+      [
+        "যিনি বক্তব্য দানে পটু",
+        "বাগ্মী"
+      ],
+      [
+        "পা থেকে মাথা পর্যন্ত",
+        "আপাদমস্তক"
+      ],
+      [
+        "বুকে হেঁটে চলে যে",
+        "সরীসৃপ/উরগ"
+      ],
+      [
+        "যুদ্ধ থেকে যে বীর পালায় না",
+        "সংশপ্তক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q02",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "বানান শুদ্ধ করুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "বনোষধি",
+        "বনৌষধি"
+      ],
+      [
+        "মুমূর্ষূ",
+        "মুমূর্ষু"
+      ],
+      [
+        "ভীবিষীকা",
+        "বিভীষিকা"
+      ],
+      [
+        "আনসাংগিক",
+        "আনুষঙ্গিক"
+      ],
+      [
+        "বিদুসী",
+        "বিদুষী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q03",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "bangla",
+    "topic": "বিপরীত-শব্দ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "হাল",
+        "সাবেক"
+      ],
+      [
+        "খাতক",
+        "মহাজন"
+      ],
+      [
+        "বাচাল",
+        "স্বল্পভাষী"
+      ],
+      [
+        "লিপ্সা",
+        "নির্লিপ্ত"
+      ],
+      [
+        "কনিষ্ঠ",
+        "জ্যেষ্ঠ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q04",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "মনীষা",
+        "মনস্ + ঈষা"
+      ],
+      [
+        "তৎকর",
+        "তৎ + কর"
+      ],
+      [
+        "ষোড়শ",
+        "ষট্ + দশ"
+      ],
+      [
+        "অন্বেষণ",
+        "অনু + এষণ"
+      ],
+      [
+        "উজ্জ্বল",
+        "উৎ + জ্বল"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q05",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "I am going to market...... foot.",
+        "answer": "on"
+      },
+      {
+        "sentence": "Don't smile....... at the poor.",
+        "answer": "at"
+      },
+      {
+        "sentence": "This is ......... unique case.",
+        "answer": "a"
+      },
+      {
+        "sentence": "Who were you talking......?",
+        "answer": "to"
+      },
+      {
+        "sentence": "The more you read, the more you learn.",
+        "answer": "the, the"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q06",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the numbers (plural form লিখুন):",
+    "columns": [
+      "Given number",
+      "Plural/Opposite number"
+    ],
+    "rows": [
+      [
+        "Deer",
+        "Deer"
+      ],
+      [
+        "Loaf",
+        "Loaves"
+      ],
+      [
+        "Louse",
+        "Lice"
+      ],
+      [
+        "Ox",
+        "Oxen"
+      ],
+      [
+        "Alumnus",
+        "Alumni"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q07",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "",
+        "original": "He resigned from the post.",
+        "changed": "He resigned the post."
+      },
+      {
+        "label": "",
+        "original": "You are in wrong.",
+        "changed": "You are in the wrong."
+      },
+      {
+        "label": "",
+        "original": "Let Monir and I go.",
+        "changed": "Let Monir and me go."
+      },
+      {
+        "label": "",
+        "original": "Pen the word.",
+        "changed": "Pen through the word."
+      },
+      {
+        "label": "",
+        "original": "The boy resembles to his father.",
+        "changed": "The boy resembles his father."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q08",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "",
+        "source": "লোকটি যেমন বোকা তেমন গরীব।",
+        "target": "The man is as foolish as he is poor."
+      },
+      {
+        "label": "",
+        "source": "শিশুটি ঘুমাচ্ছে, তাই না?",
+        "target": "The baby is sleeping, isn't it?"
+      },
+      {
+        "label": "",
+        "source": "বেশির ভাগ ছাত্রই ইংরেজিতে দুর্বল।",
+        "target": "Most of the students are weak in English."
+      },
+      {
+        "label": "",
+        "source": "বাংলাদেশ নদীমাতৃক দেশ।",
+        "target": "Bangladesh is a riverine country."
+      },
+      {
+        "label": "",
+        "source": "গতকাল আমার ভাল ঘুম হয়েছে।",
+        "target": "I slept a sound sleep yesterday."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q09",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 9,
+    "marks": 10,
+    "type": "math",
+    "question": "কোন সমকোণী ত্রিভুজের অতিভুজ ১৩ সে.মি এবং পরিসীমা ৩০ সে.মি। ত্রিভুজটির ক্ষেত্রফল কত?",
+    "steps": [
+      "মেনে করি, ভূমি a এবং উচ্চতা b, অতিভুজ c = 13 সেমি",
+      "প্রশ্নমতে, a + b + c = 30 → a + b = 17",
+      "পিথাগোরাসের উপপাদ্য অনুসারে, a² + b² = c² = 169",
+      "আমরা জানি, (a+b)² = a² + b² + 2ab",
+      "(17)² = 169 + 2ab",
+      "289 = 169 + 2ab → 2ab = 120 → ab = 60",
+      "সমকোণী ত্রিভুজের ক্ষেত্রফল = (1/2) × ভূমি × উচ্চতা = (1/2) × ab = (1/2) × 60"
+    ],
+    "answer": "৩০ বর্গ সে.মি"
+  },
+  {
+    "id": "job-2025-hbfc-data-entry-q10",
+    "examId": "job-2025-hbfc-data-entry",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 10,
+    "marks": 10,
+    "type": "math",
+    "question": "কোনো আসল ৩ বছরের মুনাফা-আসলে ১৫৭৮ টাকা এবং ৫ বছরের মুনাফা-আসলে ১৮৩০ টাকা হয়। আসল ও মুনাফার হার নির্ণয় করুন।",
+    "steps": [
+      "আসল + ৫ বছরের মুনাফা = ১৮৩০ টাকা",
+      "আসল + ৩ বছরের মুনাফা = ১৫৭৮ টাকা",
+      "বিয়োগ করে: ২ বছরের মুনাফা = ২৫২ টাকা",
+      "১ বছরের মুনাফা = ২৫২/২ = ১২৬ টাকা",
+      "৩ বছরের মুনাফা = ১২৬ × ৩ = ৩৭৮ টাকা",
+      "আসল = ১৫৭৮ − ৩৭৮ = ১২০০ টাকা",
+      "মুনাফার হার = (১ বছরের মুনাফা × ১০০) / আসল = (১২৬ × ১০০) / ১২০০ = ১০.৫%"
+    ],
+    "answer": "আসল = ১২০০ টাকা এবং মুনাফার হার = ১০.৫% (⚠️ সোর্স বইয়ে সম্পূর্ণ সমাধান পাওয়া যায়নি, এটি গণনাকৃত উত্তর)"
+  }
+]

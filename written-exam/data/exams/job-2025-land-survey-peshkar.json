@@ -1,0 +1,548 @@
+[
+  {
+    "id": "job-2025-land-survey-peshkar-q01",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 6,
+    "type": "idiom",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "যিনি ভবিষ্যৎ না ভেবেই কাজ করেন",
+        "meaning": "অবিমৃষ্যকারী"
+      },
+      {
+        "label": "খ",
+        "phrase": "যিনি ন্যায়শাস্ত্র জানেন",
+        "meaning": "নৈয়ায়িক"
+      },
+      {
+        "label": "গ",
+        "phrase": "মৃত্তিকার দ্বারা নির্মিত",
+        "meaning": "মৃন্ময়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q02",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 2,
+    "marks": 6,
+    "type": "table",
+    "question": "ব্যাসবাক্যসহ সমাস লিখুন:",
+    "columns": [
+      "শব্দ",
+      "ব্যাসবাক্য",
+      "সমাসের নাম"
+    ],
+    "rows": [
+      [
+        "নীলাম্বর",
+        "নীল অম্বর যার",
+        "বহুব্রীহি"
+      ],
+      [
+        "ক্ষীণজীবী",
+        "ক্ষীণভাবে বাঁচে যে",
+        "উপপদ তৎপুরুষ"
+      ],
+      [
+        "শতবার্ষিকি",
+        "শত বর্ষের সমাহার",
+        "দ্বিগু সমাস"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q03",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 6,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "ঘুঘু চরানো",
+        "meaning": "সর্বনাশ করা"
+      },
+      {
+        "label": "খ",
+        "phrase": "হযবরল",
+        "meaning": "বিশৃঙ্খলা"
+      },
+      {
+        "label": "গ",
+        "phrase": "শরতের শিশির",
+        "meaning": "সুসময়ের বন্ধু"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q04",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 6,
+    "type": "sentence-change",
+    "question": "শুদ্ধ করে লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "original": "আকষ্ঠ পর্যন্ত ভোজনে স্বাস্থ্যহানি ঘটে।",
+        "changed": "আকণ্ঠ ভোজনে স্বাস্থ্যহানি ঘটে।"
+      },
+      {
+        "label": "খ",
+        "original": "তার ব্যবহার মাধুর্যতা নেই।",
+        "changed": "তার ব্যবহারে মাধুর্য নেই।"
+      },
+      {
+        "label": "গ",
+        "original": "অনুষ্ঠানে স্বপরিবারে আপনি আমন্ত্রিত।",
+        "changed": "অনুষ্ঠানে সপরিবারে আপনি আমন্ত্রিত।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q05",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "bangla",
+    "qno": 5,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "W.B Yeats এবং রবীন্দ্রনাথ ঠাকুর কত সালে এবং কী কারণে সাহিত্যে নোবেল পুরস্কার পেয়েছিলেন?",
+        "a": "W.B Yeats ১৯২৩ সালে \"তার সর্বদা অনুপ্রাণিত কবিতার জন্য, যা অত্যন্ত শৈল্পিক রূপে একটি সমগ্র জাতির চেতনার প্রকাশ ঘটায়\" এর জন্য সাহিত্যে নোবেল পুরস্কার পান এবং রবীন্দ্রনাথ ঠাকুর তার গীতাঞ্জলি কাব্যের জন্য সাহিত্যে নোবেল পুরস্কার পেয়েছিলেন।"
+      },
+      {
+        "label": "খ",
+        "q": "চর্যাপদ কী? কবে আবিষ্কার হয়?",
+        "a": "বাংলা সাহিত্যে আদি নিদর্শন চর্যাপদ হলো বৌদ্ধ ধর্মের তত্ত্বকথা নিয়ে গানের সংকলন বা সাধন সংগীত যা বৌদ্ধ সহজিয়াগণ রচনা করেন। হরপ্রসাদ শাস্ত্রী ১৯০৭ সালে নেপালের রাজদরবার (রয়েল লাইব্রেরি) থেকে 'চর্যাপদ' আবিষ্কার করেন।"
+      },
+      {
+        "label": "গ",
+        "q": "ক্রীতদাসের হাসি গ্রন্থের লেখক কে? রচনার উদ্দেশ্য কী?",
+        "a": "লেখক শওকত ওসমান। এ প্রতীকাশ্রয়ী উপন্যাস রচনার মূল উদ্দেশ্য হলো বাগদাদের বাদশা হারুন অর রশিদের মাধ্যমে তৎকালীন পশ্চিম পাকিস্তানি শাসকদের বিরূপ শাসনের সমালোচনা করা।"
+      },
+      {
+        "label": "ঘ",
+        "q": "'দুর্গম গিরি কান্তার মরু দুস্তর পারাবার' পঙ্‌ক্তিতে 'কান্তার' শব্দের অর্থ কী? কবিতাটির রচয়িতা কে?",
+        "a": "নিবিড় বন, দুর্গম পথ। কাজী নজরুল ইসলাম এর 'কাণ্ডারী হুঁশিয়ার' কবিতার একটি লাইন।"
+      },
+      {
+        "label": "ঙ",
+        "q": "ভাব-সম্প্রসারণ করুন: বই কিনে কেউ দেউলিয়া হয় না।",
+        "a": "একটি সৃজনশীল বই অপরিসীম জ্ঞানের আধার। এতে যে অল্প অর্থ ব্যয় হয় তা অর্জিত জ্ঞানের তুলনায় খুবই নগণ্য। জগতের শ্রেষ্ঠ মনীষীদের চিন্তা-চেতনা ও সৃষ্টির অন্যতম আধার হলো বই। বই এক যুগের মানুষকে পরবর্তী যুগের মানুষের কাছে নিয়ে যেতে পারে, সুযোগ করে দিতে পারে অতীতের অভিজ্ঞতা আর জ্ঞান-বিজ্ঞানকে জানার। কিন্তু অধিকাংশ সময়ই আমরা এ সত্যটি উপলব্ধি করতে ব্যর্থ হই। যারা কুরুচিপূর্ণ সিনেমা কিংবা স্টেডিয়ামে খেলা দেখার টিকেট কিনতে অকপটে অর্থ ব্যয় করে, তারাই আবার বই কেনার ক্ষেত্রে চূড়ান্ত কৃপণতার পরিচয় দেয়। বই কেনার জন্য অর্থ ব্যয়কে তারা বাহুল্য বলে মনে করে। অনেকে আবার বইয়ের অগ্নিমূল্য বা আর্থিক অসচ্ছলতার অজুহাত দাঁড় করিয়ে বসে। কিন্তু এসব ধারণা অযৌক্তিক নয়, অনাকাঙ্ক্ষিতও বটে। প্রকৃতপক্ষে, এ জাতীয় ধারণা কেবল তারাই প্রচার করে যারা বই পড়ার আদৌ আগ্রহী নয় বা জ্ঞানার্জনের পক্ষপাতি নয়। কিন্তু বই পড়ার মাধ্যমে চিত্তের যে পরম সুখ লাভ সম্ভব তা তারা কখনও অনুভব করতে পারে না। আর পারে না বলেই তারা বেশি দামের অজুহাতে বই কিনতে চায় না। অথচ বই কিনে কেউ দেউলিয়া হয়েছে এমন নজির খুঁজে পাওয়া কঠিন। কেননা, জ্ঞান পিপাসা মিটানোর উপযোগিতার তুলনায় বইয়ের দাম খুবই তুচ্ছ।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q06",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 6,
+    "marks": 10,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তুমি কি কখনও বিদেশ গিয়েছ?",
+        "target": "Have you ever been abroad?"
+      },
+      {
+        "label": "খ",
+        "source": "রিয়াজ দশ বছর ধরে আমেরিকায় বসবাস করছে।",
+        "target": "Riyaz has been living in America for ten years."
+      },
+      {
+        "label": "গ",
+        "source": "তোমার ইংরেজিতে দক্ষ হওয়া উচিত।",
+        "target": "You should be good at English."
+      },
+      {
+        "label": "ঘ",
+        "source": "সে কঠোর পরিশ্রম করে, তাই না?",
+        "target": "He works hard, doesn't he?"
+      },
+      {
+        "label": "ঙ",
+        "source": "নাচতে না জানলে উঠান বাঁকা।",
+        "target": "A bad workman quarrel with his tools."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q07",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "english",
+    "topic": "verb-forms",
+    "qno": 7,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "Use right form of verbs:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Traffic jam (mean) blockade of vehicles.",
+        "a": "means"
+      },
+      {
+        "label": "b",
+        "q": "The increasing number of vehicles (be) creating this problem.",
+        "a": "is"
+      },
+      {
+        "label": "c",
+        "q": "However, this problem can (solve) by taking some steps.",
+        "a": "be solved"
+      },
+      {
+        "label": "d",
+        "q": "The authority (impose) the traffic rules strictly.",
+        "a": "imposes"
+      },
+      {
+        "label": "e",
+        "q": "By (implement) some actions we can reduce the problem.",
+        "a": "implementing"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q08",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "english",
+    "topic": "sentence-change",
+    "qno": 8,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Transform the following sentences as directed:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Give me some water that I may drink. (Simple)",
+        "changed": "Give me some water to drink."
+      },
+      {
+        "label": "b",
+        "original": "When did you write the letter? (Passive)",
+        "changed": "When was the letter written by you?"
+      },
+      {
+        "label": "c",
+        "original": "He was a very cunning man. (Exclamatory)",
+        "changed": "What a cunning man he was!"
+      },
+      {
+        "label": "d",
+        "original": "Every rose has a thorn. (Negative)",
+        "changed": "There is no rose without a thorn."
+      },
+      {
+        "label": "e",
+        "original": "Mamun said, \"What a nice bird it is!\" (Indirect Narration)",
+        "changed": "Mamun exclaimed that it was a very nice bird."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q09",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 9,
+    "marks": 10,
+    "type": "idiom",
+    "question": "Write meaningful sentences with the following idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Take off",
+        "meaning": "উড্ডয়ন করা",
+        "example": "The plane will take off in five minutes."
+      },
+      {
+        "label": "b",
+        "phrase": "Give a hand",
+        "meaning": "সহায়তা করা",
+        "example": "Please give me a hand with this heavy box."
+      },
+      {
+        "label": "c",
+        "phrase": "A castle in the air",
+        "meaning": "আকাশ কুসুম কল্পনা",
+        "example": "His plan to be a millionaire in a week is just a castle in the air."
+      },
+      {
+        "label": "d",
+        "phrase": "Better half",
+        "meaning": "অর্ধাঙ্গী",
+        "example": "He came to the party with his better half."
+      },
+      {
+        "label": "e",
+        "phrase": "Dark horse",
+        "meaning": "অজ্ঞাত ব্যক্তি",
+        "example": "Hasan is a dark horse in the society."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q10",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 10,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a short passage on 'The Moon' (around 70 words)",
+    "answer": "The moon is the only natural satellite of the Earth. It has no light of its own; rather it reflects the light of the sun. The moon takes about 29.5 days to complete one orbit around the Earth, which gives us the different phases of the moon. It has a great influence on the tides of the sea. The moon has always fascinated human beings, and in 1969, humans first landed on the moon."
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q11",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "২৩০ মিটার দীর্ঘ একটি ট্রেন ঘণ্টায় ৪০ কি.মি বেগে চলছে। পিছন থেকে সমান্তরালভাবে ২৭০ মিটার দীর্ঘ একটি ট্রেন ঘণ্টায় ৫০ কি.মি বেগে আসছিল। ২য় ট্রেনটি কত সময়ে প্রথম ট্রেনটিকে অতিক্রম করবে?",
+    "steps": [
+      "ট্রেন দুটির দৈর্ঘ্য = (২৩০ + ২৭০) মি. = ৫০০ মিটার",
+      "যেহেতু গাড়ি দুটি পরস্পর একই দিকে চলে, তাদের আপেক্ষিক বেগ = (৫০ − ৪০) কি.মি./ঘণ্টা = ১০ কি.মি./ঘণ্টা = ১০০০০ মি./ঘণ্টা",
+      "১০০০০ মি. অতিক্রম করে ১ ঘণ্টায়, ৫০০ মি. অতিক্রম করে ৫০০/১০০০০ ঘণ্টা = (৫০০×৬০)/১০০০০ মিনিটে = ৩ মিনিটে"
+    ],
+    "answer": "৩ মিনিট"
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q12",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "কোন মূলধন ৩ বছরে সুদে-মূলে ১১০০০ হয়। সুদ আসলের ৩/৮ অংশ হলে, আসল ও সুদের হার কত?",
+    "steps": [
+      "মনে করি, আসল ৮ টাকা, মুনাফা = ৮ এর ৩/৮ টাকা = ৩ টাকা",
+      "মুনাফা-আসল = (৮+৩) টাকা = ১১ টাকা",
+      "মুনাফা-আসল ১১ টাকা হলে আসল ৮ টাকা; ১১০০০ টাকা হলে আসল = (৮×১১০০০)/১১ = ৮০০০ টাকা",
+      "∴ মুনাফা = (১১০০০−৮০০০) টাকা = ৩০০০ টাকা",
+      "৮০০০ টাকার ৩ বছরের মুনাফা ৩০০০ টাকা হলে, ১০০ টাকার ১ বছরের মুনাফা = (৩০০০×১০০)/(৮০০০×৩) = ১২.৫ টাকা"
+    ],
+    "answer": "আসল ৮০০০ টাকা এবং মুনাফার হার ১২.৫%"
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q13",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুন: a³ − 6a² + 12a − 9",
+    "steps": [
+      "a³ − 6a² + 12a − 9 = a³ − 3.a².2 + 3a.(2)² − (2)³ − 1",
+      "= (a−2)³ − 1",
+      "= (a−2−1){(a−2)² + (a−2).1 + (1)²}",
+      "= (a−3){a² − 4a + 4 + a − 2 + 1}",
+      "= (a−3)(a² − 3a + 3)"
+    ],
+    "answer": "(a−3)(a²−3a+3)"
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q14",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি ত্রিভুজের একটি কোণ যদি দ্বিতীয় কোণের তিনগুণ এবং তৃতীয় কোণ যদি দ্বিতীয় কোণ চেয়ে ২০ ডিগ্রি বড় হয় তবে ২য় কোণটি কত ডিগ্রি?",
+    "steps": [
+      "মনে করি, দ্বিতীয় কোণটি = x; প্রথম কোণ = 3x; তৃতীয় কোণ = x+20°",
+      "প্রশ্নমতে, 3x + x + x + 20° = 180°",
+      "বা, 5x + 20° = 180°",
+      "বা, 5x = 160°",
+      "∴ x = 32°"
+    ],
+    "answer": "দ্বিতীয় কোণ ৩২°"
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q15",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "উপজেলা সেটেলমেন্ট অফিসের পেশকার এর দায়িত্ব ও কর্তব্য সম্পর্কে লিখুন।",
+        "a": "১) জন সাধারণের নিকট হতে অভিযোগের চিঠি গ্রহণ ও নথিতে পেশ করুন। ২) আদালত হইতে ভূমি সংক্রান্ত মামলার সমন গ্রহণ ও নথিপেশ। ৩) আপত্তি, আপীল, চূড়ান্ত প্রকাশনা ক্যাম্পের কার্যক্রম গ্রহণ।"
+      },
+      {
+        "label": "খ",
+        "q": "একটি আয়তকার জমির দৈর্ঘ্য ৬৬০ ফুট এবং প্রস্থ ৬৬ ফুট হলে জমির ক্ষেত্রফল কত একর?",
+        "a": "১ একর"
+      },
+      {
+        "label": "গ",
+        "q": "দাখিলা এবং DCR বলতে কী বুঝায়?",
+        "a": "দাখিলা: ভূমির খাজনা বা ভূমি উন্নয়ন কর পরিশোধের পর সরকার কর্তৃক যে রসিদ প্রদান করা হয় তাকে দাখিলা বলা হয়। এটি ভূমির মালিকানার একটি গুরুত্বপূর্ণ প্রমাণপত্র। DCR: ভূমি কর ব্যতীত অন্যান্য সরকারি পাওনা আদায় করার পর যে নির্ধারিত ফর্মে রশিদ দেওয়া হয় তাকে DCR (Duplicate Carbon Receipt) বলে।"
+      },
+      {
+        "label": "ঘ",
+        "q": "সাফ কবলা দলিল এবং এওয়াজ দলিল বলতে কি বুঝায়?",
+        "a": "সাফ কবলা দলিল: যখন কোন দলিল দ্বারা একজনের স্বত্ব দখলীয় জমির উপর ক্রেতার স্বত্ব জন্মায় তখন তা সাফ কবলা দলিল হিসাবে গণ্য হয়। কবলা দলিল অবশ্যই রেজিস্ট্রি করতে হয়। এওয়াজ দলিল: সম্পত্তির চাষাবাদের সুবিধার জন্য যদি কোন জমির মালিক অন্য কোন মালিকের সঙ্গে তার জমির ভোগদখল হস্তান্তর করে তাহলে তাকে এওয়াজ বদল বলে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "জরিপে ব্যবহৃত চারটি যন্ত্রের নাম লিখুন।",
+        "a": "থিওডোলাইট (Theodolite), ইলেকট্রনিক টোটাল স্টেশন (Electronic Total Station), জিপিএস রিসিভার (GPS Receiver) এবং পরিমাপক টেপ বা শিকল (Measuring Tape/Chain)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q16",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সূর্যগ্রহণ ও চন্দ্রগ্রহণ কখন হয়?",
+        "a": "অমাবস্যা তিথিতে যখন চাঁদ, সূর্য ও পৃথিবীর মাঝখানে আসে তখন সূর্যগ্রহণ হয়। আর পূর্ণিমা তিথিতে যখন পৃথিবী, সূর্য ও চাঁদের মাঝখানে আসে তখন চন্দ্রগ্রহণ হয়।"
+      },
+      {
+        "label": "খ",
+        "q": "কোন দুইটি উৎস থেকে বাংলাদেশ সরকারের সর্বাধিক রাজস্ব আয় হয়?",
+        "a": "মূল্য সংযোজন কর এবং আয়কর।"
+      },
+      {
+        "label": "গ",
+        "q": "হরমুজ প্রণালী কেন গুরুত্বপূর্ণ?",
+        "a": "পারস্য উপসাগরের একমাত্র জলপথ হলো হরমুজ প্রণালী যা ওমান সাগর এবং আরব সাগরের সাথে সংযুক্ত।"
+      },
+      {
+        "label": "ঘ",
+        "q": "আসন্ন জাতীয় সংসদ নির্বাচন কততম এবং কোন তারিখে অনুষ্ঠিত হবে?",
+        "a": "ত্রয়োদশ (১৩তম) এবং ১২ ফেব্রুয়ারি, ২০২৬ সালে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইমেইলের CC এবং ইন্টারনেটের Mbps এর পূর্ণরূপ লিখুন।",
+        "a": "CC = Carbon Copy; Mbps = Megabits Per Second"
+      },
+      {
+        "label": "চ",
+        "q": "বিখ্যাত চিত্রকর্ম 'তিন কন্যা'র চিত্রকর কে?",
+        "a": "কামরুল হাসান"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশে সর্বশেষ জনতমারি হয়েছে কত সালে? এ পর্যন্ত কতবার জনতমারি হয়েছে?",
+        "a": "২০২২ সালে; ৬ বার"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের ২টি সাংবিধানিক প্রতিষ্ঠানের নাম লিখুন।",
+        "a": "নির্বাচন কমিশন ও সরকারি কর্ম কমিশন।"
+      },
+      {
+        "label": "ঝ",
+        "q": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র কোন জেলায় অবস্থিত? এর মূল জ্বালানী কী?",
+        "a": "পাবনা; ইউরেনিয়াম-২৩৫"
+      },
+      {
+        "label": "ঞ",
+        "q": "ইনসুলিন মানবদেহের কোন অঙ্গ থেকে নিঃসৃত হয়? ইনসুলিনের একটি কাজ লিখুন।",
+        "a": "অগ্ন্যাশয়; রক্তের গ্লুকোজ কোষে প্রবেশ করতে সাহায্য করে"
+      },
+      {
+        "label": "ট",
+        "q": "ভূমি জরিপ অনুযায়ী CS ও RS এর পূর্ণরূপ কী?",
+        "a": "CS = Cadastral Survey; RS = Revisional Survey"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-land-survey-peshkar-q17",
+    "examId": "job-2025-land-survey-peshkar",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সূর্যগ্রহণ ও চন্দ্রগ্রহণ কখন হয়?",
+        "a": "অমাবস্যা তিথিতে যখন চাঁদ, সূর্য ও পৃথিবীর মাঝখানে আসে তখন সূর্যগ্রহণ হয়। আর পূর্ণিমা তিথিতে যখন পৃথিবী, সূর্য ও চাঁদের মাঝখানে আসে তখন চন্দ্রগ্রহণ হয়।"
+      },
+      {
+        "label": "খ",
+        "q": "কোন দুইটি উৎস থেকে বাংলাদেশ সরকারের সর্বাধিক রাজস্ব আয় হয়?",
+        "a": "মূল্য সংযোজন কর এবং আয়কর।"
+      },
+      {
+        "label": "গ",
+        "q": "হরমুজ প্রণালী কেন গুরুত্বপূর্ণ?",
+        "a": "পারস্য উপসাগরের একমাত্র জলপথ হলো হরমুজ প্রণালী যা ওমান সাগর এবং আরব সাগরের সাথে সংযুক্ত।"
+      },
+      {
+        "label": "ঘ",
+        "q": "জাতীয় সংসদ নির্বাচন কততম এবং কোন তারিখে অনুষ্ঠিত হয়?",
+        "a": "ত্রয়োদশ (১৩তম); ১২ ফেব্রুয়ারি, ২০২৬ সালে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইমেইলের CC এবং ইন্টারনেটের Mbps এর পূর্ণরূপ লিখুন।",
+        "a": "CC = Carbon Copy; Mbps = Megabits Per Second"
+      },
+      {
+        "label": "চ",
+        "q": "বিখ্যাত চিত্রকর্ম 'তিন কন্যা'র চিত্রকর কে?",
+        "a": "কামরুল হাসান।"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশে সর্বশেষ জনগণনা হয়েছে কত সালে? এ পর্যন্ত কতবার জনগণনা হয়েছে?",
+        "a": "২০২২ সালে; ৬ বার (১৯৭৪, ১৯৮১, ১৯৯১, ২০০১, ২০১১ ও ২০২২ সালে)"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের ২টি সাংবিধানিক প্রতিষ্ঠানের নাম লিখুন।",
+        "a": "নির্বাচন কমিশন ও সরকারি কর্ম কমিশন।"
+      },
+      {
+        "label": "ঝ",
+        "q": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র কোন জেলায় অবস্থিত? এর মূল জ্বালানি কী?",
+        "a": "পাবনা; ইউরেনিয়াম-২৩৫"
+      },
+      {
+        "label": "ঞ",
+        "q": "ইনসুলিন মানবদেহের কোন অঙ্গ থেকে নিঃসৃত হয়? ইনসুলিনের একটি কাজ লিখুন।",
+        "a": "অগ্ন্যাশয়; রক্তের গ্লুকোজ কোষে প্রবেশ করতে সাহায্য করে।"
+      }
+    ]
+  }
+]

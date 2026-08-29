@@ -1,0 +1,305 @@
+[
+  {
+    "id": "job-2025-barc-maintenance-inspector-q01",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 8,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "উপাচার্য",
+        "a": "উপ + আচার্য"
+      },
+      {
+        "label": "খ",
+        "q": "দৃষ্টান্ত",
+        "a": "দৃষ্টি + অন্ত"
+      },
+      {
+        "label": "গ",
+        "q": "গবেষণা",
+        "a": "গো + এষণা"
+      },
+      {
+        "label": "ঘ",
+        "q": "দৃষ্টি",
+        "a": "দৃশ্ + তি"
+      },
+      {
+        "label": "ঙ",
+        "q": "ষড়যন্ত্র",
+        "a": "ষট্ + যন্ত্র"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q02",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 2,
+    "marks": 8,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাঘে-মহিষে এক ঘাটে জল খায়",
+        "a": "কর্তৃকারকে ৭মী"
+      },
+      {
+        "label": "খ",
+        "q": "ঘোড়ায় গাড়ি টানে",
+        "a": "কর্তৃকারকে ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "দেশের জন্য প্রাণ দাও",
+        "a": "সম্প্রদানে ৬ষ্ঠী"
+      },
+      {
+        "label": "ঘ",
+        "q": "আকাশে চাঁদ উঠেছে",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঙ",
+        "q": "দশে মিলে করি কাজ।",
+        "a": "কর্তায় ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q03",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 8,
+    "type": "table",
+    "question": "বানানগুলো শুদ্ধ করুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "সমিচীন",
+        "সমীচীন"
+      ],
+      [
+        "ক্ষীনজিবী",
+        "ক্ষীণজীবী"
+      ],
+      [
+        "স্বরস্বতী",
+        "সরস্বতী"
+      ],
+      [
+        "বিভিসীকা",
+        "বিভীষিকা"
+      ],
+      [
+        "দোষনীয়",
+        "দূষণীয়"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q04",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 4,
+    "marks": 8,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সকলেই মিথ্যাবাদীকে অপছন্দ করে।",
+        "target": "Everybody dislikes a liar."
+      },
+      {
+        "label": "খ",
+        "source": "ডাক্তার আসার পর রোগীটি মারা গিয়েছিল।",
+        "target": "The patient died after the doctor had come."
+      },
+      {
+        "label": "গ",
+        "source": "আমি সকাল থেকে জ্বরে ভুগছি।",
+        "target": "I have been suffering from fever since morning."
+      },
+      {
+        "label": "ঘ",
+        "source": "আমরা বিদ্যালয়ে পৌছার পূর্বে ঘণ্টা বাজলো।",
+        "target": "The bell had rung before we reached the school."
+      },
+      {
+        "label": "ঙ",
+        "source": "আজকাল বিজ্ঞান দ্বারা অসাধ্য সাধিত হচ্ছে।",
+        "target": "Nowadays, the impossible is being achieved by science."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q05",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 8,
+    "type": "fill-gaps",
+    "question": "শূন্যস্থান পূরণ করুনঃ",
+    "parts": [
+      {
+        "sentence": "Please always stay..... my left.",
+        "answer": "at"
+      },
+      {
+        "sentence": "Anne is dull..... English.",
+        "answer": "at"
+      },
+      {
+        "sentence": "He has to desire...... fame.",
+        "answer": "for"
+      },
+      {
+        "sentence": "He is blind ........ his own faults.",
+        "answer": "to"
+      },
+      {
+        "sentence": "There is a coffee shop ...... the street.",
+        "answer": "across/on"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q06",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 8,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "i",
+        "original": "I know that he is a good boy.",
+        "changed": "It is known to me that he is a good boy."
+      },
+      {
+        "label": "ii",
+        "original": "He annoyed me.",
+        "changed": "I was annoyed with him."
+      },
+      {
+        "label": "iii",
+        "original": "Panic seized the writer.",
+        "changed": "The writer was seized with panic."
+      },
+      {
+        "label": "iv",
+        "original": "He decided to sell the house.",
+        "changed": "He decided that the house should be sold."
+      },
+      {
+        "label": "v",
+        "original": "We have warned you.",
+        "changed": "You have been warned by us."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q07",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 7,
+    "marks": 15,
+    "type": "math",
+    "question": "ক) ৫০টি কলা ২২০ টাকায় বিক্রয় করায় ১০% লাভ হলো। ১০০টি কলার ক্রয়মূল্য কত?\nখ) দুইজন শ্রমিকের মাসিক বেতনের যোগফল ২০,০০০ টাকা। একজন শ্রমিকের বেতন ১০% হ্রাস পেলে যত টাকা হয় অপর শ্রমিকের বেতন ১০% বৃদ্ধি পেলে সমপরিমাণ টাকা হয়। শ্রমিক দুজনের বেতন মাসিক কত টাকা তা নির্ণয় করুন।",
+    "steps": [
+      "ক) ১০% লাভে বিক্রয়মূল্য = ১১০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ২২০ টাকা হলে ক্রয়মূল্য = (১০০ × ২২০) ÷ ১১০ = ২০০ টাকা [৫০টি কলার ক্রয়মূল্য]",
+      "৫০টি কলার ক্রয়মূল্য ২০০ টাকা হলে ১টির ক্রয়মূল্য = ২০০/৫০ টাকা",
+      "১০০টি কলার ক্রয়মূল্য = (২০০ × ১০০) ÷ ৫০ = ৪০০ টাকা",
+      "খ) মনে করি, একজন শ্রমিকের মাসিক বেতন = ক টাকা; অপর শ্রমিকের মাসিক বেতন = (২০০০০ − ক) টাকা",
+      "১০% হ্রাসে প্রথম শ্রমিকের বেতন = (ক এর ৯০%) = ৯ক/১০ টাকা",
+      "১০% বৃদ্ধিতে অপর শ্রমিকের বেতন = {(২০০০০−ক) এর ১১০%} = (২০০০০−ক)×১১০/১০০ = (২২০০০০−১১ক)/১০ টাকা",
+      "প্রশ্নমতে, ৯ক/১০ = (২২০০০০−১১ক)/১০",
+      "বা, ৯ক = ২২০০০০ − ১১ক",
+      "বা, ২০ক = ২২০০০০",
+      "∴ ক = ১১০০০",
+      "সুতরাং একজন শ্রমিকের বেতন = ১১০০০ টাকা; অপর শ্রমিকের বেতন = ২০০০০ − ১১০০০ = ৯০০০ টাকা"
+    ],
+    "answer": "ক) ৪০০ টাকা।  খ) শ্রমিক দুজনের বেতন ১১০০০ টাকা ও ৯০০০ টাকা।"
+  },
+  {
+    "id": "job-2025-barc-maintenance-inspector-q08",
+    "examId": "job-2025-barc-maintenance-inspector",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 8,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সংবিধানের কোন অনুচ্ছেদে \"রাষ্ট্র ও গণজীবনের সর্বস্তরে নারী পুরুষের সমান অধিকার লাভ করিবেন\" বলা আছে?",
+        "a": "২৮(২) নং অনুচ্ছেদ"
+      },
+      {
+        "label": "খ",
+        "q": "ইরাটম কী?",
+        "a": "উন্নত জাতের ধান"
+      },
+      {
+        "label": "গ",
+        "q": "\"দ্য গল\" কোন দেশের প্রাচীন নাম?",
+        "a": "ফ্রান্স"
+      },
+      {
+        "label": "ঘ",
+        "q": "\"সুয়েজ খাল\" কোন দেশে অবস্থিত?",
+        "a": "মিশর"
+      },
+      {
+        "label": "ঙ",
+        "q": "\"বাংলাদেশ স্কয়ার\" কোথায় অবস্থিত?",
+        "a": "লাইবেরিয়ায়"
+      },
+      {
+        "label": "চ",
+        "q": "\"আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি\" গানটির রচয়িতা কে?",
+        "a": "আবদুল গাফ্‌ফার চৌধুরী"
+      },
+      {
+        "label": "ছ",
+        "q": "গ্রিনিচের দ্রাঘিমা কত ডিগ্রি?",
+        "a": "০° (শূন্য ডিগ্রি)"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের white gold হিসেবে পরিচিত কোনটি?",
+        "a": "চিংড়ি"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশ রেলওয়ের সর্ববৃহৎ কারখানা কোথায়?",
+        "a": "সৈয়দপুর, নীলফামারী"
+      },
+      {
+        "label": "ঞ",
+        "q": "কুষ্টিয়ার পূর্বনাম কি?",
+        "a": "নদীয়া"
+      }
+    ]
+  }
+]

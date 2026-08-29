@@ -1,0 +1,389 @@
+[
+  {
+    "id": "job-2025-mopa-account-keeper-q01",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "উপসর্গ কাকে বলে? বাংলা ভাষায় উপসর্গ কত প্রকার ও কী কী?",
+    "answer": "শব্দ বা ধাতুর পূর্বে কতিপয় সুনির্দিষ্ট অব্যয় জাতীয় শব্দাংশ যুক্ত হয়ে সাধিত শব্দে অর্থের পরিবর্তন, সম্প্রসারণ বা সংকোচন ঘটিয়ে থাকে। এগুলোকে বলা হয় উপসর্গ (Prefix)। যেমন, প, পরা, পরি, নির ইত্যাদি। বাংলা ভাষায় উপসর্গ ৩ প্রকার। যথা: বাংলা উপসর্গ (অ, অঘা, অজ ইত্যাদি), তৎসম উপসর্গ (প্র, পরা, অপ, সম, নি ইত্যাদি), বিদেশি উপসর্গ (ফুল, নিম, ফি, হা ইত্যাদি)।"
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q02",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "topic": "বাক্য-রচনা",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "অর্থ উল্লেখ করে বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "লেফাফা দুরস্ত",
+        "a": "বাইরে পরিপাটি"
+      },
+      {
+        "label": "খ",
+        "q": "চিনে জোঁক",
+        "a": "নাছোড়বান্দা"
+      },
+      {
+        "label": "গ",
+        "q": "বিনা মেঘে বজ্রপাত",
+        "a": "অপ্রত্যাশিত বিপদ"
+      },
+      {
+        "label": "ঘ",
+        "q": "দুধের মাছি",
+        "a": "সুসময়ের বন্ধু"
+      },
+      {
+        "label": "ঙ",
+        "q": "সপ্তমে চড়া",
+        "a": "প্রচণ্ড উত্তেজনা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q03",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ষড়ানন",
+        "a": "ষট্‌ + আনন"
+      },
+      {
+        "label": "খ",
+        "q": "উল্লিখিত",
+        "a": "উৎ + লিখিত"
+      },
+      {
+        "label": "গ",
+        "q": "লঘুর্মি",
+        "a": "লঘু + ঊর্মি"
+      },
+      {
+        "label": "ঘ",
+        "q": "অস্থিত",
+        "a": "অনু + ইত"
+      },
+      {
+        "label": "ঙ",
+        "q": "যাবজ্জীবন",
+        "a": "যাবৎ + জীবন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q04",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নজরুল কর্তৃক অগ্নিবীণা রচিত হয়েছে।",
+        "a": "কর্তৃকারকে ৩য়া"
+      },
+      {
+        "label": "খ",
+        "q": "ছেলেটি বলের সঙ্গে যুদ্ধ করে।",
+        "a": "কর্মকারকে ৬ষ্ঠী"
+      },
+      {
+        "label": "গ",
+        "q": "আকাশ মেঘে ঢাকা।",
+        "a": "করণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাবাকে বড্ড ভয় পাই।",
+        "a": "অপাদানে ২য়া"
+      },
+      {
+        "label": "ঙ",
+        "q": "এ জমিতে সোনা ফলে।",
+        "a": "অধিকরণে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q05",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "topic": "শুদ্ধ-বানান",
+    "qno": 5,
+    "marks": 5,
+    "type": "table",
+    "question": "নিচের শব্দগুলো শুদ্ধ করে লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "অনুকুল",
+        "অনুকূল"
+      ],
+      [
+        "অন্বেষন",
+        "অন্বেষণ"
+      ],
+      [
+        "ব্যুৎপত্তি",
+        "ব্যুৎপত্তি"
+      ],
+      [
+        "বিহঙ্গনী",
+        "বিহঙ্গী"
+      ],
+      [
+        "অনুর্ধ",
+        "অনুর্ধ্ব"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q06",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "bangla",
+    "qno": 6,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "ভাব-সম্প্রসারণ করুন: ইটের পর ইট মধ্যে মানুষ কীট।",
+    "answer": "মূলভাব: নগরসভ্যতার পীড়নে মানুষের জীবন আজ দুর্বিষহ হয়ে উঠেছে। শহরের কৃত্রিমতায় মানুষ ধীরে ধীরে তার স্বাভাবিক প্রকৃতি হারিয়ে আজ কীটে পরিণত হয়েছে। সম্প্রসারিত ভাব: নদী-নালা-খাল-বিল-পাহাড়-অরণ্য প্রকৃতির স্বতঃস্ফূর্ত দান। কিন্তু মানুষ সব সময়ই আধিপত্যবাদী। সে প্রকৃতির ওপর ক্ষমতা প্রয়োগ করে ইটের পর ইট গেঁথে একটার পর একটা দালান তৈরি করে নগর সৃষ্টি করেছে। ফলে ব্যাহত হচ্ছে প্রকৃতির প্রত্যাশিত বিকাশ। হারিয়ে যাচ্ছে ছায়া-সুনিবিড় শান্তির নীড়, সুমিষ্ট বায়ুপ্রবাহ, নদীর কলধ্বনি। সেই মমতাময় ও স্বাস্থ্যকর পরিস্থিতিকে দখল করে নিয়েছে এখন বড় বড় অট্টালিকা, বায়ু ও শব্দদূষণ, তীব্র যানজট ও কোলাহল। মানুষ এখানে স্বাভাবিকভাবে শ্বাসগ্রহণ করতে পারে না। শহরে গ্রামের সেই মিলনাত্মক সৌহার্দ্যপূর্ণ পরিবেশ নেই, তার বিপরীতে আছে পরস্পরের মধ্যে তীব্র প্রতিযোগিতা ও স্বার্থের দ্বন্দ্ব। এখানে কেউ কারো সুখ-দুঃখের অংশীদার হয় না। প্রত্যেকেই এখানে বিচ্ছিন্ন দ্বীপের মতো বসবাস করে। ফলে আরণ্যক ভূমিকে ধ্বংস করে মানুষ যতই যন্ত্রসভ্যতার বড়াই করুক না কেন, প্রকৃতপক্ষে মানুষ নগরসভ্যতার যাঁতাকলে পড়ে ভেতরে-বাইরে নিঃস্ব হয়ে কীটে পরিণত হচ্ছে। জীবনের স্বাভাবিক স্ফূর্তি বিনষ্ট হয়ে যাচ্ছে। তাই জ্ঞান-বিজ্ঞানের শিখরে উঠেও মানুষ আজ ক্লান্ত, অবসন্ন। প্রকৃতি ধ্বংস করার কারণে মানুষ এখন প্রতিমুহূর্তে প্রাকৃতিক দুর্যোগের ভয়ে শঙ্কিত থাকে। সে আজ একটু নির্মল বাতাস সেবন করতে চায়, বুকভরে নিঃশ্বাস নিতে চায়, প্রাণখুলে কথা বলতে চায়, সহমর্মী হতে চায় একে অন্যের। তাই আবার সে ফিরে পেতে চায় সেই প্রশান্ত, সুন্দর, নিষ্কণ্টক গ্রাম। সিদ্ধান্ত: নগর মানুষের ব্যবহারিক জীবনকে কিছুটা সহজ করলেও তার স্বাচ্ছন্দ্যকে নষ্ট করে দিয়েছে। নগর মানুষের জীবনের স্বাভাবিক বিকাশে অন্তরায় সৃষ্টি করেছে।"
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q07",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "qno": 7,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "কঠিন পরিশ্রমের উপর জীবনের সফলতা নির্ভর করে।",
+        "target": "The success of life depends on hard work."
+      },
+      {
+        "label": "খ",
+        "source": "আমাদের দেশের অধিকাংশ মানুষ গ্রামে বসবাস করে।",
+        "target": "Most of the people of our country live in villages."
+      },
+      {
+        "label": "গ",
+        "source": "এখন সোয়া সাতটা বাজে।",
+        "target": "It is quarter past seven."
+      },
+      {
+        "label": "ঘ",
+        "source": "সে ২০০৫ সালে এসএসসি পরীক্ষায় পাশ করেছে।",
+        "target": "He passed the SSC exam in 2005."
+      },
+      {
+        "label": "ঙ",
+        "source": "দুর্নীতি একটি দেশের জাতীয় উন্নয়নে অন্যতম প্রধান অন্তরায়।",
+        "target": "Corruption is one of the major obstacles to a country's national development."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q08",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use the right forms of verb (am/is/are/was/were/make/makes):",
+    "parts": [
+      {
+        "sentence": "A good number of attendees........ seen in the meeting.",
+        "answer": "are/were"
+      },
+      {
+        "sentence": "The hanana of Narsingdi...... famous.",
+        "answer": "is"
+      },
+      {
+        "sentence": "Five and five...... ten.",
+        "answer": "makes"
+      },
+      {
+        "sentence": "The candidates of this recruitment test...... very disciplined.",
+        "answer": "are"
+      },
+      {
+        "sentence": "If I........ a king, I would help the poor.",
+        "answer": "were"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q09",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "qno": 9,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate prepositions:",
+    "parts": [
+      {
+        "sentence": "There is no remedy....... cancer.",
+        "answer": "for"
+      },
+      {
+        "sentence": "Bangladesh is rich.... natural gas.",
+        "answer": "in"
+      },
+      {
+        "sentence": "Yesterday a storm blew .......Dhaka city.",
+        "answer": "over"
+      },
+      {
+        "sentence": "The boy acted........ my suggestions.",
+        "answer": "on"
+      },
+      {
+        "sentence": "Ignorance is similar...... darkness.",
+        "answer": "to"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q10",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 10,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Frame sentences with meanings:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A slow coach",
+        "meaning": "অলস ব্যক্তি",
+        "example": "He is a slow coach."
+      },
+      {
+        "label": "b",
+        "phrase": "At a deadlock",
+        "meaning": "অচলাবস্থা",
+        "example": "The factory has been at a deadlock."
+      },
+      {
+        "label": "c",
+        "phrase": "Bad book",
+        "meaning": "অনুগ্রহ বঞ্চিত",
+        "example": "He is in the bad book of his boss."
+      },
+      {
+        "label": "d",
+        "phrase": "Pour cold water on",
+        "meaning": "নিরুৎসাহ করা",
+        "example": "He always pours cold water on my plan."
+      },
+      {
+        "label": "e",
+        "phrase": "Spare no pains",
+        "meaning": "চেষ্টার ত্রুটি না করা",
+        "example": "I shall spare no pains to help you."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q11",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "qno": 11,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Identify correct/incorrect sentence:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Bread and butter are my favorite breakfast.",
+        "changed": "Bread and butter is my favorite breakfast."
+      },
+      {
+        "label": "b",
+        "original": "Each boy and each girl have a pen.",
+        "changed": "Each boy and each girl has a pen."
+      },
+      {
+        "label": "c",
+        "original": "The man is mortal.",
+        "changed": "Man is mortal."
+      },
+      {
+        "label": "d",
+        "original": "Rahim is the better of the two boys.",
+        "changed": "Rahim is the better of the two boys."
+      },
+      {
+        "label": "e",
+        "original": "Either the teachers or the headmaster have succeeded in their attempt.",
+        "changed": "Either the teachers or the headmaster has succeeded in their attempt."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q12",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "english",
+    "qno": 12,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a paragraph on \"July Mass Uprising 2024\".",
+    "answer": "The July Revolution of 2024 in Bangladesh marks a turning point in the nation's history. Initially, the students raised their voice against the longstanding unjust quota system. Gradually, this turned into a powerful movement, which soon became a powerful wave against the authoritarian rule and systemic corruption that prevailed over the last 16 years. The government was criticized for its deeply corrupt institutions and lack of accountability. But the government responded with violent repression. In the early stage of the quota reform protests, the government's heavy-handed approach led to multiple student deaths, including those of Abu Sayed and Mugdha, and several others. This brutality ignited widespread protests, and thousands took to the streets, transforming the student protest into a nationwide movement. Throughout the revolution, over a thousand students and common people, including at least 67 children, lost their lives. By August 5, the people of Bangladesh had reached their limit and took to the streets to oust the fascist regime. Being frightened, the fascist Prime Minister, along with family and close party members, fled the country. They sought shelter in a neighboring country, India. Following their departure, Nobel Laureate Dr. Muhammad Yunus answered the call of the people, assuming the role of Chief Advisor to an Interim Government on August 8. This revolution stands as a testament to the power of collective will."
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q13",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "math",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "২০ মিটার দীর্ঘ একটি কামরার মেঝে কার্পেট দিয়ে ঢাকতে ৭৫০০.০০ টাকা খরচ হয়। যদি ঐ কামরাটির প্রস্থ ৪ মিটার কম হতো, তবে ৬০০০.০০ টাকা খরচ হতো। কামরাটির প্রস্থ কত?",
+    "steps": [
+      "কামরার দৈর্ঘ্য ২০ মিটার। প্রস্থ ৪ মিটার কমলে ক্ষেত্রফল কমে (২০ মিটার × ৪ মিটার) = ৮০ বর্গমিটার",
+      "ক্ষেত্রফল ৮০ বর্গমিটার কমার জন্য খরচ কমে (৭৫০০ - ৬০০০) টাকা = ১৫০০ টাকা",
+      "৮০ বর্গমিটারে খরচ কমে ১৫০০ টাকা, সুতরাং ৭৫০০ টাকায় খরচ হয় (৭৫০০×৮০)/১৫০০ = ৪০০ বর্গমিটার",
+      "কামরার প্রস্থ = ক্ষেত্রফল ÷ দৈর্ঘ্য = ৪০০/২০ মিটার = ২০ মিটার"
+    ],
+    "answer": "২০ মিটার"
+  },
+  {
+    "id": "job-2025-mopa-account-keeper-q14",
+    "examId": "job-2025-mopa-account-keeper",
+    "subject": "math",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "x=4, y=–8 এবং z=5 হলে, 25(x+y)² – 20(x+y)(y+z) + 4(y+z)² এর মান কত?",
+    "steps": [
+      "প্রদত্ত রাশি = 25(x+y)² – 20(x+y)(y+z) + 4(y+z)²",
+      "= {5(x+y)}² – 2.5(x+y).2(y+z) + {2(y+z)}²",
+      "= [{5(x+y)} – 2(y+z)]²",
+      "= (5x+5y – 2y – 2z)² = (5x + 3y – 2z)²",
+      "= {5.4 + 3(–8) – 2.5}² = (20 – 24 – 10)²",
+      "= (–14)² = 196"
+    ],
+    "answer": "196"
+  }
+]

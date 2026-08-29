@@ -1,0 +1,279 @@
+[
+  {
+    "id": "job-2025-bof-tech-helper-q01",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "শয়ন",
+        "a": "শে + অন"
+      },
+      {
+        "label": "খ",
+        "q": "ষষ্ঠ",
+        "a": "ষষ্ + থ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q02",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 3,
+    "type": "idiom",
+    "question": "বাগধারাগুলোর অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "ভূষণ্ডির কাক",
+        "meaning": "দীর্ঘায়ু ব্যক্তি"
+      },
+      {
+        "label": "খ",
+        "phrase": "ইঁদুর কপালে",
+        "meaning": "মন্দভাগ্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q03",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যে শুনেই মনে রাখতে পারে",
+        "a": "শ্রুতিধর"
+      },
+      {
+        "label": "খ",
+        "q": "যা বলা হয়নি",
+        "a": "অনুক্ত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q04",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "bangla",
+    "topic": "ব্যাকরণ",
+    "qno": 4,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা ভাষায় ব্যঞ্জনবর্ণ কয়টি?",
+    "answer": "৩৯টি"
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q05",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 5,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'মহারাজ' কোন সমাস?",
+    "answer": "কর্মধারয় সমাস (মহান যে রাজা)"
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q06",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "Correct the sentence:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is sleeping for two hours.",
+        "changed": "He has been sleeping for two hours."
+      },
+      {
+        "label": "b",
+        "original": "We are playing tennis everyday.",
+        "changed": "We play tennis everyday."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q07",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে তিনদিন যাবৎ জ্বরে ভুগছে।",
+        "target": "He has been suffering from fever for three days."
+      },
+      {
+        "label": "খ",
+        "source": "দশটা বাজতে বিশ মিনিট বাকি।",
+        "target": "It is twenty minutes to ten."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q08",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "I am sure……... his success.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He left……. home.",
+        "answer": "for"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q09",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "Change the gender:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Lord",
+        "a": "Lady"
+      },
+      {
+        "label": "b",
+        "q": "Bridegroom",
+        "a": "Bride"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q10",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 10,
+    "marks": 2,
+    "type": "math",
+    "question": "২০০ টাকায় একটি দ্রব্য ক্রয় করে ২৪% ক্ষতিতে বিক্রয় করা হলো। দ্রব্যটির বিক্রয়মূল্য কত?",
+    "steps": [
+      "২৪% ক্ষতিতে বিক্রয়মূল্য = ১০০ − ২৪ = ৭৬ টাকা",
+      "ক্রয়মূল্য ১০০ টাকা হলে বিক্রয়মূল্য ৭৬ টাকা",
+      "ক্রয়মূল্য ২০০ টাকা হলে বিক্রয়মূল্য = ৭৬ × ২০০/১০০ = ১৫২ টাকা"
+    ],
+    "answer": "১৫২ টাকা"
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q11",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 2,
+    "type": "math",
+    "question": "x + y = ৭ এবং xy = ১০ হলে, x² + y² + ৫xy এর মান কত?",
+    "steps": [
+      "প্রদত্ত রাশি = x² + y² + ৫xy",
+      "= (x + y)² − ২xy + ৫xy = (x + y)² + ৩xy",
+      "= (৭)² + ৩ × ১০ [মান বসিয়ে]",
+      "= ৪৯ + ৩০ = ৭৯"
+    ],
+    "answer": "৭৯"
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q12",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 3,
+    "type": "math",
+    "question": "একটি আয়তাকার ঘরের দৈর্ঘ্য প্রস্থের ১.৫ গুণ এবং এর ক্ষেত্রফল ২১৬ বর্গমিটার। তার পরিসীমা কত?",
+    "steps": [
+      "মনে করি, আয়তাকার ক্ষেত্রের প্রস্থ = x মিটার; ∴ দৈর্ঘ্য = ১.৫x মিটার",
+      "∴ ক্ষেত্রফল = ১.৫x × x = ১.৫x² বর্গমিটার",
+      "শর্তমতে, ১.৫x² = ২১৬ ⇒ x² = ২১৬/১.৫ = ১৪৪ ⇒ x = √১৪৪ = ১২",
+      "∴ প্রস্থ = ১২ মিটার; দৈর্ঘ্য = ১.৫ × ১২ = ১৮ মিটার",
+      "∴ পরিসীমা = ২(দৈর্ঘ্য + প্রস্থ) = ২(১৮ + ১২) = ২ × ৩০ = ৬০ মিটার"
+    ],
+    "answer": "৬০ মিটার"
+  },
+  {
+    "id": "job-2025-bof-tech-helper-q13",
+    "examId": "job-2025-bof-tech-helper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 13,
+    "marks": 8,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আন্তর্জাতিক নারী দিবস কবে?",
+        "a": "০৮ মার্চ"
+      },
+      {
+        "label": "খ",
+        "q": "টাঙ্গুয়ার হাওর কোথায় অবস্থিত?",
+        "a": "সুনামগঞ্জ"
+      },
+      {
+        "label": "গ",
+        "q": "'শেষের কবিতা'র লেখক কে?",
+        "a": "রবীন্দ্রনাথ ঠাকুর"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশের সর্বোচ্চ রাষ্ট্রীয় পদক কোনটি?",
+        "a": "স্বাধীনতা পুরস্কার"
+      },
+      {
+        "label": "ঙ",
+        "q": "'সোয়াচ অব নো গ্রাউন্ড' কোথায় অবস্থিত?",
+        "a": "বঙ্গোপসাগরে"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশকে স্বীকৃতিদানকারী প্রথম দেশ কোনটি?",
+        "a": "ভুটান"
+      },
+      {
+        "label": "ছ",
+        "q": "রাশিয়ার রাজধানীর নাম কী?",
+        "a": "মস্কো"
+      },
+      {
+        "label": "জ",
+        "q": "পদ্মা সেতুর দৈর্ঘ্য কত?",
+        "a": "৬.১৫ কিলোমিটার"
+      }
+    ]
+  }
+]

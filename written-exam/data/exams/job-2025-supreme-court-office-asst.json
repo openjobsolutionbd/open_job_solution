@@ -1,0 +1,301 @@
+[
+  {
+    "id": "job-2025-supreme-court-office-asst-q01",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 8,
+    "type": "table",
+    "question": "বাংলা ব্যাকরণ — সন্ধি বিচ্ছেদ ও অন্যান্য:",
+    "columns": [
+      "ক্রম",
+      "প্রশ্ন",
+      "উত্তর"
+    ],
+    "rows": [
+      [
+        "ক",
+        "সন্ধি বিচ্ছেদ করুন: ষড়ানন",
+        "ষট্ + আনন"
+      ],
+      [
+        "খ",
+        "ব্যাসবাক্যসহ সমাস নির্ণয় করুন: উপকথা",
+        "কথার সদৃশ (অব্যয়ীভাব সমাস)"
+      ],
+      [
+        "গ",
+        "এককথায় প্রকাশ করুন: যে পরের গুণেও দোষ ধরে",
+        "অসূয়ক"
+      ],
+      [
+        "ঘ",
+        "বাগধারাটির অর্থ লিখুন: জড়ভরত",
+        "অকর্মণ্য ব্যক্তি"
+      ],
+      [
+        "ঙ",
+        "শুদ্ধ করে লিখুন: ইক্ষুর চারা বপণ করা হলো।",
+        "ইক্ষুর চারা রোপণ করা হলো"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q02",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'মৌরীফুল' গল্পগ্রন্থ কার রচনা?",
+        "a": "বিভূতিভূষণ বন্দ্যোপাধ্যায়"
+      },
+      {
+        "label": "খ",
+        "q": "মনসামঙ্গল কাব্যের আদি কবি কে?",
+        "a": "কানা হরিদত্ত"
+      },
+      {
+        "label": "গ",
+        "q": "'আমি কষ্টহীনদের কষ্টস্বর, আশাহীনদের আশা' উক্তিটি কোন প্রবন্ধের?",
+        "a": "আমার ভাষা (কাজী নজরুল ইসলাম)"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলা সাহিত্যে 'মৌমাছি' ছদ্মনাম কার?",
+        "a": "বিমল ঘোষ"
+      },
+      {
+        "label": "ঙ",
+        "q": "'উমা' ও 'প্যারীমোহন' রবীন্দ্রনাথ ঠাকুরের কোন গল্পের চরিত্র?",
+        "a": "খাতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q03",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 5,
+    "type": "letter",
+    "question": "মনে করুন আপনার নাম 'জাহিদ' এবং বয়স ৩৫ বছর। আপনি হাইকোর্ট বিভাগের একজন অফিস সহকারী। সম্প্রতি হাইকোর্ট বিভাগের 'ব্যক্তিগত কর্মকর্তা' পদে সরাসরি নিয়োগের নিমিত্তে নিয়োগ বিজ্ঞপ্তি প্রকাশিত হয়েছে। আপনি উক্ত পদে পরীক্ষায় অংশগ্রহণের অনুমতি চেয়ে উপযুক্ত কর্তৃপক্ষ বরাবর একটি আবেদনপত্র লিখুন।",
+    "letter": {
+      "to": "উপযুক্ত কর্তৃপক্ষ\nবাংলাদেশ সুপ্রীম কোর্ট\nঢাকা।",
+      "subject": "'ব্যক্তিগত কর্মকর্তা' পদে পরীক্ষায় অংশগ্রহণের অনুমতির জন্য আবেদন।",
+      "body": "সবিনয় নিবেদন এই যে, আমি জাহিদ, বয়স ৩৫ বছর, হাইকোর্ট বিভাগের একজন কর্মরত অফিস সহকারী। সম্প্রতি হাইকোর্ট বিভাগের 'ব্যক্তিগত কর্মকর্তা' পদে সরাসরি নিয়োগের বিজ্ঞপ্তি প্রকাশিত হয়েছে। আমি উক্ত পদের জন্য প্রয়োজনীয় যোগ্যতা সম্পন্ন এবং আগ্রহী।\n\nঅতএব, বিনীত অনুরোধ এই যে, আমাকে উক্ত পদের নিয়োগ পরীক্ষায় অংশগ্রহণের অনুমতি প্রদান করতে আপনার মর্জি হয়।",
+      "closing": "বিনীত নিবেদক,",
+      "sender": "জাহিদ\nঅফিস সহকারী, হাইকোর্ট বিভাগ"
+    }
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q04",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 4,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তিনি সময়মতো কাজটি শেষ করেছেন।",
+        "target": "He has finished the work on time."
+      },
+      {
+        "label": "খ",
+        "source": "তিনি হাইকোর্ট বিভাগের একজন অফিস সহকারী।",
+        "target": "He is an office Assistant in the High Court Department."
+      },
+      {
+        "label": "গ",
+        "source": "কাপড়টির রং পাকা।",
+        "target": "The cloth is color fast."
+      },
+      {
+        "label": "ঘ",
+        "source": "মন্ত্রের সাধন কিংবা শরীর পাতন।",
+        "target": "Do or die."
+      },
+      {
+        "label": "ঙ",
+        "source": "ছেলেটি হাড়ে হাড়ে দুষ্ট।",
+        "target": "The boy is wicked to the backbone."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q05",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 5,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "Grammar and literature:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Write the meaning of the phrase: Bon Voyage.",
+        "a": "যাত্রা শুভ হোক"
+      },
+      {
+        "label": "b",
+        "q": "Correct the sentence: Each of the candidates have submitted their forms.",
+        "a": "Each of the candidates has submitted their forms."
+      },
+      {
+        "label": "c",
+        "q": "Write the verb form of 'Registar'.",
+        "a": "Register"
+      },
+      {
+        "label": "d",
+        "q": "Change the voice: Do it.",
+        "a": "Let it be done."
+      },
+      {
+        "label": "e",
+        "q": "Who wrote 'The Rime of the Ancient Mariner'?",
+        "a": "S.T. Coleridge"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q06",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 6,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Earthquake threat in Dhaka city'",
+    "answer": "Dhaka city faces a serious earthquake threat due to its location near active fault lines and its dense, poorly planned infrastructure. Many old buildings in Dhaka were not constructed following proper building codes, making them highly vulnerable to collapse during a strong earthquake. Experts warn that a major earthquake could cause massive destruction and loss of life in the city because of overcrowding and lack of open spaces for evacuation. To reduce this risk, the government should strictly enforce building codes, conduct regular safety inspections, and raise public awareness about earthquake preparedness."
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q07",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 7,
+    "marks": 10,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুন: a² − b² − 2bc − c² + a − b − c",
+    "steps": [
+      "a² − b² − 2bc − c² + a − b − c",
+      "= a² − (b² + 2bc + c²) + 1(a − b − c)",
+      "= (a)² − (b+c)² + 1(a − b − c)",
+      "= {a + (b+c)}{a − (b+c)} + 1(a − b − c)",
+      "= (a+b+c)(a−b−c) + 1(a−b−c)",
+      "= (a−b−c)(a+b+c+1)"
+    ],
+    "answer": "(a−b−c)(a+b+c+1)"
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q08",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 8,
+    "marks": 10,
+    "type": "math",
+    "question": "কোন একটি পণ্য উৎপাদনকারী ২০% লাভে পুচরা বিক্রেতার নিকট বিক্রয় করেন। খুচরা বিক্রেতা ২০% লাভে ভোক্তার নিকট বিক্রয় করেন। উৎপাদন খরচ ১০০ টাকা হলে ভোক্তা কত টাকায় পণ্যটি কিনতে পারবেন?",
+    "steps": [
+      "২০% লাভে উৎপাদনকারীর বিক্রয়মূল্য = ১২০ টাকা (ক্রয়মূল্য ১০০ টাকা হলে)",
+      "উৎপাদনকারীর বিক্রয়মূল্যই পাইকারি বিক্রেতার ক্রয়মূল্য = ১২০ টাকা",
+      "২০% লাভে খুচরা বিক্রেতার বিক্রয়মূল্য: ক্রয়মূল্য ১০০ টাকা হলে বিক্রয়মূল্য ১২০ টাকা",
+      "ক্রয়মূল্য ১২০ টাকা হলে বিক্রয়মূল্য = (১২০ × ১২০)/১০০ = ১৪৪ টাকা"
+    ],
+    "answer": "ভোক্তা ১৪৪ টাকায় পণ্যটি কিনতে পারবেন।"
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q09",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 9,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "থাইল্যান্ডের মুদ্রার নাম কী?",
+        "a": "বাথ"
+      },
+      {
+        "label": "খ",
+        "q": "'ভবদহ বিল' কোন জেলায় অবস্থিত?",
+        "a": "যশোর"
+      },
+      {
+        "label": "গ",
+        "q": "'ফ্লোটিলা' শব্দের অর্থ কী?",
+        "a": "ছোট ছোট জাহাজের নৌবহর"
+      },
+      {
+        "label": "ঘ",
+        "q": "পৃথিবীর কোন শহর দুটি মহাদেশে অবস্থিত?",
+        "a": "ইস্তাম্বুল"
+      },
+      {
+        "label": "ঙ",
+        "q": "'সলভওয়্যার' কী?",
+        "a": "নারীদের সুরক্ষার ডিভাইস (উদ্ভাবক- শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের শিক্ষার্থীরা)"
+      },
+      {
+        "label": "চ",
+        "q": "নির্বাচন পদ্ধতিতে আলোচিত PR এর পূর্ণরূপ কী?",
+        "a": "Proportional representation"
+      },
+      {
+        "label": "ছ",
+        "q": "সার্ক কত সালে প্রতিষ্ঠিত হয়?",
+        "a": "১৯৮৫ সালে"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশ সুপ্রীম কোর্ট এর কয়টি বিভাগ রয়েছে?",
+        "a": "২টি"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশে স্টারলিংক ইন্টারনেট কত তারিখে পরীক্ষামূলকভাবে যাত্রা শুরু করে?",
+        "a": "৯ এপ্রিল, ২০২৫ সালে (আনুষ্ঠানিক যাত্রা ২০ মে, ২০২৫)"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশের প্রথম এভারেস্টজয়ী নারীর নাম কী?",
+        "a": "নিশাত মজুমদার"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q10",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "সংক্ষেপে উত্তর লিখুন: বাংলাদেশ সুপ্রীম কোর্ট এর কয়টি বিভাগ রয়েছে?",
+    "answer": "২টি।"
+  },
+  {
+    "id": "job-2025-supreme-court-office-asst-q11",
+    "examId": "job-2025-supreme-court-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 11,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "টীকা লিখুন: বিশ্বজুড়ে সংঘাত ও শান্তি প্রক্রিয়া।",
+    "answer": "বিশ্বজুড়ে সংঘাত ও শান্তি প্রক্রিয়া বলতে জাতিগত, রাজনৈতিক ও ধর্মীয় বিভেদ থেকে সৃষ্ট সহিংসতা মোকাবিলা করে আলোচনা, কূটনীতি ও ন্যায়বিচারের মাধ্যমে স্থিতিশীলতা প্রতিষ্ঠার বৈশ্বিক প্রচেষ্টাকে বোঝায়। বর্তমানে অধিকাংশ সংঘাতই রাষ্ট্রের অভ্যন্তরে সংঘটিত হচ্ছে, যার পেছনে দারিদ্র্য, বৈষম্য, মানবাধিকার লঙ্ঘন, দুর্বল শাসনব্যবস্থা, জলবায়ু পরিবর্তন ও সম্পদ নিয়ে প্রতিযোগিতা গুরুত্বপূর্ণ ভূমিকা রাখছে। এসব সংঘাত মানুষের জীবন ও উন্নয়নের জন্য বড় হুমকি সৃষ্টি করেছে। অন্যদিকে, জাতিসংঘ ও বিভিন্ন আন্তর্জাতিক সংস্থা শান্তিরক্ষা মিশন, শান্তি আলোচনা ও শান্তি বিনির্মাণ কার্যক্রমের মাধ্যমে সংঘাত নিরসনের চেষ্টা করছে। তবে শান্তি প্রক্রিয়া প্রায়শই দীর্ঘ, জটিল ও চ্যালেঞ্জিং হয়, তাই টেকসই শান্তি প্রতিষ্ঠার জন্য অন্তর্ভুক্তিমূলক অংশগ্রহণ, ন্যায়বিচার ও সহযোগিতার ওপর বিশেষ গুরুত্ব দেওয়া জরুরি।"
+  }
+]

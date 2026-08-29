@@ -1,0 +1,320 @@
+[
+  {
+    "id": "job-2025-bof-junior-technician-q01",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "বাংলা বর্ণমালায় পরাশ্রয়ী বর্ণ কয়টি?",
+    "parts": [
+      {
+        "label": "",
+        "q": "বাংলা বর্ণমালায় পরাশ্রয়ী বর্ণ কয়টি?",
+        "a": "৩টি (ং, ঃ, ঁ)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q02",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ যথেচ্ছা, প্রতীক্ষা",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যথেচ্ছা",
+        "a": "যথা + ইচ্ছা"
+      },
+      {
+        "label": "খ",
+        "q": "প্রতীক্ষা",
+        "a": "প্রতি + ঈক্ষা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q03",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 3,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "\"তামার বিষ\" ও \"গড্ডলিকা প্রবাহ\" বাগধারা দুইটির অর্থ কী?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তামার বিষ",
+        "a": "অর্থের কুপ্রভাব"
+      },
+      {
+        "label": "খ",
+        "q": "গড্ডলিকা প্রবাহ",
+        "a": "অন্ধ অনুকরণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q04",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সম্মুখে অগ্রসর হয়ে অভ্যর্থনা",
+        "a": "প্রত্যুদগমন"
+      },
+      {
+        "label": "খ",
+        "q": "কূলের সমীপে",
+        "a": "উপকূল"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q05",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "qno": 5,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "বিপরীত শব্দার্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গরিষ্ঠ",
+        "a": "লঘিষ্ঠ"
+      },
+      {
+        "label": "খ",
+        "q": "আরোহণ",
+        "a": "অবরোহণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q06",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "bangla",
+    "qno": 6,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "শিক্ষক বললেন, \"তোমরা কি এখন যেতে চাও?\" এর পরোক্ষ উক্তি লিখুন।",
+    "parts": [
+      {
+        "label": "",
+        "q": "শিক্ষক বললেন, \"তোমরা কি এখন যেতে চাও?\" এর পরোক্ষ উক্তি লিখুন।",
+        "a": "শিক্ষক জিজ্ঞাসা করলেন আমরা তখন যেতে চাই কি না।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q07",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 7,
+    "marks": 2,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "যে মিথ্যা কথা বলে কেউই তাকে বিশ্বাস করে না।",
+        "target": "No one believes a person who lies."
+      },
+      {
+        "label": "খ",
+        "source": "সে নদীর কাছে এক কুটিরে বাস করতো।",
+        "target": "He lived in a cottage near the river."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q08",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 8,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use preposition:",
+    "parts": [
+      {
+        "sentence": "He comes...... a noble family.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He deals...... rice.",
+        "answer": "in"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q09",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 9,
+    "marks": 2,
+    "type": "sentence-change",
+    "question": "Change voice of the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "The stone feels rough.",
+        "changed": "The stone is rough when it is felt."
+      },
+      {
+        "label": "b",
+        "original": "I saw him play.",
+        "changed": "He was seen to play by me."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q10",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 10,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use Article:",
+    "parts": [
+      {
+        "sentence": "....honest man is respected everywhere.",
+        "answer": "an"
+      },
+      {
+        "sentence": "Honesty is .....best policy.",
+        "answer": "the"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q11",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 11,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "He tried his best এর Negative form কী?",
+    "parts": [
+      {
+        "label": "",
+        "q": "He tried his best এর Negative form কী?",
+        "a": "He left no stone unturned."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q12",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 12,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "Write opposite word: Innocent, Calm.",
+    "parts": [
+      {
+        "label": "",
+        "q": "Innocent",
+        "a": "Guilty"
+      },
+      {
+        "label": "",
+        "q": "Calm",
+        "a": "Restless"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q13",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "english",
+    "qno": 13,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "Change the Gender: Author, Nephew.",
+    "parts": [
+      {
+        "label": "",
+        "q": "Author",
+        "a": "Authoress"
+      },
+      {
+        "label": "",
+        "q": "Nephew",
+        "a": "Niece"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q14",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "math",
+    "qno": 14,
+    "marks": 25,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুনঃ (গণিত)",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "উৎপাদকে বিশ্লেষণ করুনঃ x²-7x+6",
+        "a": "x²-7x+6 = x²-6x-x+6 = x(x-6)-1(x-6) = (x-6)(x-1)"
+      },
+      {
+        "label": "খ",
+        "q": "৭:৫ এবং ৮:৯ দুটি অনুপাতকে ধারাবাহিক অনুপাতে প্রকাশ করুন।",
+        "a": "প্রথম অনুপাতকে ৮ দ্বারা গুণ করে পাই = ৫৬:৪০; দ্বিতীয় অনুপাতকে ৫ দ্বারা গুণ করে পাই = ৪০:৪৫; সুতরাং ধারাবাহিক অনুপাত = ৫৬:৪০:৪৫"
+      },
+      {
+        "label": "গ",
+        "q": "(2a²+3ab)/(4a²-9b²) কে লঘিষ্ঠ আকারে প্রকাশ করুন।",
+        "a": "= a(2a+3b)/{(2a)²-(3b)²} = a(2a+3b)/{(2a+3b)(2a-3b)} = a/(2a-3b)"
+      },
+      {
+        "label": "ঘ",
+        "q": "(a-b)² সূত্রটি নির্ণয় করুন।",
+        "a": "(a-b)² = a² - 2ab + b²"
+      },
+      {
+        "label": "ঙ",
+        "q": "সমাধান করুন: 4^(x+1) = 32",
+        "a": "(2²)^(x+1)=32 ⇒ 2^(2x+2)=2⁵ ⇒ 2x+2=5 ⇒ x=3/2"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-junior-technician-q15",
+    "examId": "job-2025-bof-junior-technician",
+    "subject": "math",
+    "qno": 15,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "১ থেকে ৯ পর্যন্ত সংখ্যাগুলোর বর্গের যোগফল কত?",
+        "a": "প্রথম n সংখ্যার বর্গের যোগফল = n(n+1)(2n+1)/6; প্রথম ৯ সংখ্যার বর্গের যোগফল = ৯×১০×১৯/৬ = ২৮৫"
+      },
+      {
+        "label": "খ",
+        "q": "একটি সমবাহু ত্রিভুজের ক্ষেত্রফল 4√3 বর্গমিটার হলে তার বাহুর দৈর্ঘ্য কত মিটার?",
+        "a": "(√3/4)a²=4√3 ⇒ a²=16 ⇒ a=4; বাহুর দৈর্ঘ্য ৪ মিটার"
+      },
+      {
+        "label": "গ",
+        "q": "ক্রয়মূল্য বিক্রয়মূল্যের দ্বিগুণ হলে শতকরা লাভ বা ক্ষতির পরিমাণ কত?",
+        "a": "ধরি বিক্রয়মূল্য ক টাকা, ক্রয়মূল্য ২ক টাকা। ক্ষতি=ক টাকা। ২ক টাকায় ক্ষতি ক টাকা হলে ১০০ টাকায় ক্ষতি=৫০ টাকা; উত্তর ৫০% ক্ষতি"
+      }
+    ]
+  }
+]

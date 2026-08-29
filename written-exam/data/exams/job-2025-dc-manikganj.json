@@ -1,0 +1,479 @@
+[
+  {
+    "id": "job-2025-dc-manikganj-q01",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 1,
+    "marks": 5,
+    "type": "idiom",
+    "question": "নিচের বাগধারাসমূহের অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "ভূষণ্ডির কাক",
+        "meaning": "দীর্ঘায়ু ব্যক্তি"
+      },
+      {
+        "label": "খ",
+        "phrase": "বুদ্ধির ঢেঁকি",
+        "meaning": "নির্বোধ"
+      },
+      {
+        "label": "গ",
+        "phrase": "ইতর বিশেষ",
+        "meaning": "পার্থক্য"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "মণিকাঞ্চন যোগ",
+        "meaning": "উপযুক্ত মিলন"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "সপ্তমে চড়া",
+        "meaning": "প্রচণ্ড উত্তেজনা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-manikganj-q02",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "চলচ্চিত্র",
+        "a": "চলৎ + চিত্র"
+      },
+      {
+        "label": "খ",
+        "q": "বিপজ্জনক",
+        "a": "বিপদ্ + জনক"
+      },
+      {
+        "label": "গ",
+        "q": "সঞ্চয়",
+        "a": "সম্ + চয়"
+      },
+      {
+        "label": "ঘ",
+        "q": "ষষ্ঠ",
+        "a": "ষষ্ + থ"
+      },
+      {
+        "label": "ঙ",
+        "q": "নীরোগ",
+        "a": "নিঃ + রোগ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-manikganj-q03",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "বানান শুদ্ধ করে লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "আকাংখা",
+        "আকাঙ্ক্ষা"
+      ],
+      [
+        "মূমুর্ষু",
+        "মুমূর্ষু"
+      ],
+      [
+        "মুলোৎপাটন",
+        "মূলোৎপাটন"
+      ],
+      [
+        "ভোগলিক",
+        "ভৌগোলিক"
+      ],
+      [
+        "তত্বাবধায়ক",
+        "তত্ত্বাবধায়ক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-manikganj-q04",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "bangla",
+    "topic": "দরখাস্ত",
+    "qno": 4,
+    "marks": 5,
+    "type": "letter",
+    "question": "এস.এস.সি সনদে নামের বানান ভুল সংশোধন করার জন্য শিক্ষা বোর্ডের চেয়ারম্যান বরাবর একটি দরখাস্ত লিখুন।",
+    "letter": {
+      "date": "",
+      "to": "চেয়ারম্যান\nমাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড\nঢাকা।",
+      "subject": "এস.এস.সি সনদে নামের বানান ভুল সংশোধনের জন্য আবেদন।",
+      "body": "মহোদয়,\n\nসবিনয় নিবেদন এই যে, আমি আপনার বোর্ডের অধীনে অনুষ্ঠিত ২০২৩ সালের এস.এস.সি পরীক্ষায় অংশগ্রহণ করি। পরীক্ষায় উত্তীর্ণ হওয়ার পর প্রাপ্ত আমার এস.এস.সি সনদে আমার নামের বানান ভুলভাবে মুদ্রিত হয়েছে। সনদে আমার নাম লেখা হয়েছে \"Mohammad Mostafizur Rahman\", অথচ সঠিক বানান হবে \"Md. Mostafizur Rahman\"। উক্ত ভুলটি অনিচ্ছাকৃত হওয়ায় ভবিষ্যতে উচ্চশিক্ষা ও চাকরির ক্ষেত্রে জটিলতার সৃষ্টি হতে পারে। তাই প্রয়োজনীয় কাগজপত্র সংযুক্ত করে আমার এস.এস.সি সনদে নামের ভুল বানানটি সংশোধনের জন্য বিশেষভাবে অনুরোধ জানাচ্ছি।\n\nঅতএব, মহোদয় আপনার নিকট বিনীত প্রার্থনা এই যে, আমার এস.এস.সি সনদে নামের বানান সংশোধন করার জন্য প্রয়োজনীয় ব্যবস্থা গ্রহণ করে আমাকে বাধিত করবেন।",
+      "closing": "বিনীত নিবেদক",
+      "sender": "নাম: মোঃ মোস্তাফিজুর রহমান\nরোল নং: ২৫৬৫৬৮৭\nরেজিস্ট্রেশন নং: ৯৯৫২০৫৬৪১"
+    }
+  },
+  {
+    "id": "job-2025-dc-manikganj-q05",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "english",
+    "topic": "vocabulary",
+    "qno": 5,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "শব্দার্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Hilarious",
+        "a": "হাস্যকর/মজার"
+      },
+      {
+        "label": "b",
+        "q": "Segregate",
+        "a": "পৃথক করা"
+      },
+      {
+        "label": "c",
+        "q": "Emphasis",
+        "a": "জোর/গুরুত্ব"
+      },
+      {
+        "label": "d",
+        "q": "Inevitable",
+        "a": "অনিবার্য"
+      },
+      {
+        "label": "e",
+        "q": "Disguise",
+        "a": "ছদ্মবেশ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-manikganj-q06",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "english",
+    "topic": "read-and-fill",
+    "qno": 6,
+    "marks": 5,
+    "type": "read-fill",
+    "question": "Fill in the blanks with the words (talking, challenging, visiting, published, to collect):",
+    "passage": "Mr. Kamal is a reporter of a newly a) ____ English newspaper. His job is b) ____ news about various cultural events. Collecting news is sometimes very c) ____ that involves d) ____ spots and e) ____ to people.",
+    "answers": "a) published  b) to collect  c) challenging  d) visiting  e) talking"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q07",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use the right form of prepositions (By, Across, Inside, On, In):",
+    "parts": [
+      {
+        "sentence": "She gave me the letter…... an envelope.",
+        "answer": "in"
+      },
+      {
+        "sentence": "There was dust…..... the floor.",
+        "answer": "on"
+      },
+      {
+        "sentence": "He drove….….. the road.",
+        "answer": "across"
+      },
+      {
+        "sentence": "We went home…… bus.",
+        "answer": "by"
+      },
+      {
+        "sentence": "I could see people ……. it.",
+        "answer": "inside"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-manikganj-q08",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 8,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'World Heritages of Bangladesh'.",
+    "answer": "Bangladesh is rich in natural beauty and historical heritage. There are three UNESCO World Heritage Sites in Bangladesh. The Sundarbans is the largest mangrove forest in the world and is famous for the Royal Bengal Tiger. The Historic Mosque City of Bagerhat is an important example of medieval Islamic architecture. The Ruins of the Buddhist Vihara at Paharpur show the rich Buddhist culture of ancient Bengal. These world heritages reflect the glorious history, culture, and natural wealth of Bangladesh."
+  },
+  {
+    "id": "job-2025-dc-manikganj-q09",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "math",
+    "topic": "বয়স নির্ণয়",
+    "qno": 9,
+    "marks": 4,
+    "type": "math",
+    "question": "পুত্রের বয়স মাতার বয়সের এক-তৃতীয়াংশ। পিতা মাতার চেয়ে ৬ বছরের বড়। তিনজনের বয়সের সমষ্টি ৯০ বছর। পিতার বয়স কত?",
+    "steps": [
+      "মনে করি, মাতার বয়স = ৩ক বছর",
+      "পুত্রের বয়স = ৩ক এর ১/৩ = ক বছর",
+      "পিতার বয়স = (৩ক + ৬) বছর",
+      "প্রশ্নমতে, ৩ক + ক + ৩ক + ৬ = ৯০ ⇒ ৭ক = ৮৪ ⇒ ক = ১২",
+      "সুতরাং পিতার বয়স = ৩ × ১২ + ৬ = ৪২ বছর"
+    ],
+    "answer": "৪২ বছর"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q10",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 4,
+    "type": "math",
+    "question": "সরল করুনঃ a/{(a−b)(a−c)} + b/{(b−c)(b−a)} + c/{(c−a)(c−b)}",
+    "steps": [
+      "= −a/{(a−b)(c−a)} − b/{(b−c)(a−b)} − c/{(c−a)(b−c)}",
+      "= −[a/{(a−b)(c−a)} + b/{(b−c)(a−b)} + c/{(c−a)(b−c)}]",
+      "= −[(ab−ac+bc−ab+ac−bc)/{(a−b)(b−c)(c−a)}]",
+      "= −0/{(a−b)(b−c)(c−a)} = ০"
+    ],
+    "answer": "০"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q11",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "math",
+    "topic": "সূচক",
+    "qno": 11,
+    "marks": 4,
+    "type": "math",
+    "question": "সমাধান করুনঃ 2^(x+7) = 4^(x+2)",
+    "steps": [
+      "2^(x+7) = 4^(x+2)",
+      "বা, 2^(x+7) = 2^(2(x+2)) = 2^(2x+4)",
+      "বা, x + 7 = 2x + 4",
+      "∴ x = 3"
+    ],
+    "answer": "x = ৩"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q12",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 4,
+    "type": "math",
+    "question": "৪০ মিটার দৈর্ঘ্য এবং ৩০ মিটার প্রস্থবিশিষ্ট একটি মাঠের ঠিক মাঝে আড়াআড়িভাবে ১.৫ মিটার প্রশস্ত দুইটি রাস্তা আছে। রাস্তা দুইটির মোট ক্ষেত্রফল কত?",
+    "steps": [
+      "দৈর্ঘ্য বরাবর রাস্তার ক্ষেত্রফল = ৪০ × ১.৫ = ৬০ বর্গমিটার",
+      "প্রস্থ বরাবর রাস্তার ক্ষেত্রফল = (৩০ − ১.৫) × ১.৫ = ২৮.৫ × ১.৫ = ৪২.৭৫ বর্গমিটার",
+      "রাস্তাদ্বয়ের ক্ষেত্রফল = ৬০ + ৪২.৭৫ = ১০২.৭৫ বর্গমিটার"
+    ],
+    "answer": "১০২.৭৫ বর্গমিটার",
+    "alternative": {
+      "steps": [
+        "রাস্তাবাদে মাঠের দৈর্ঘ্য = ৪০ − ১.৫ = ৩৮.৫ মি.; রাস্তাবাদে মাঠের প্রস্থ = ৩০ − ১.৫ = ২৮.৫ মি.",
+        "রাস্তাবাদে মাঠের ক্ষেত্রফল = ৩৮.৫ × ২৮.৫ = ১০৯৭.২৫ বর্গমিটার",
+        "রাস্তাসহ মাঠের ক্ষেত্রফল = ৪০ × ৩০ = ১২০০ বর্গমিটার",
+        "∴ রাস্তাদ্বয়ের মোট ক্ষেত্রফল = ১২০০ − ১০৯৭.২৫ = ১০২.৭৫ বর্গমিটার"
+      ],
+      "answer": "১০২.৭৫ বর্গমিটার"
+    }
+  },
+  {
+    "id": "job-2025-dc-manikganj-q13",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 4,
+    "type": "math",
+    "question": "একজন দোকানদার ৫০ কেজির ১ বস্তা চাল ১৬০০ টাকায় কিনলেন। চালের দাম কমে যাওয়ায় ১৫০০ টাকায় বিক্রয় করেন, তার কত ক্ষতি হলো?",
+    "steps": [
+      "ক্রয়মূল্য ১৬০০ টাকা, বিক্রয়মূল্য ১৫০০ টাকা",
+      "ক্ষতি = ১৬০০ − ১৫০০ = ১০০ টাকা"
+    ],
+    "answer": "১০০ টাকা"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q14",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 14,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বৃহস্পতি গ্রহের উপগ্রহ কয়টি?",
+    "answer": "৬৭টি"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q15",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "সূর্য পৃথিবীর তুলনায় কত গুণ বড়?",
+    "answer": "১৩ লক্ষ গুণ"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q16",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "মাটির pH কত হলে আলু/গম উৎপাদন ভালো হয়?",
+    "answer": "৬.০–৭.০"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q17",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "লোহিত রক্তকণিকার গড় আয়ু কত দিন?",
+    "answer": "১২০ দিন"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q18",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 18,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "২০২৫ সালে জাতিসংঘের কততম সাধারণ অধিবেশন চলছে?",
+    "answer": "৮০তম"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q19",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "২০১৭ সালে বাংলাদেশে যে সাইক্লোন আঘাত করেছিল তার নাম কী?",
+    "answer": "মোরা"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q20",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 20,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "সোডিয়াম গ্লুটামেট কী নামে পরিচিত?",
+    "answer": "টেস্টিং সল্ট"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q21",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 21,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "একজন স্বাভাবিক বয়স্ক লোকের জন্য স্পষ্ট দৃষ্টির ন্যূনতম দূরত্ব কত?",
+    "answer": "২৫ সে.মি."
+  },
+  {
+    "id": "job-2025-dc-manikganj-q22",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 22,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "কোন জাতীয় খাদ্যে বেশি ক্যালরি পাওয়া যায়?",
+    "answer": "চর্বি"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q23",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 23,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাংলাদেশের মাথাপিছু আয় কত মার্কিন ডলার?",
+    "answer": "২৮২০ মার্কিন ডলার"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q24",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 24,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "আইন বলতে সাধারণভাবে কী বোঝায়?",
+    "answer": "সমাজ বা রাষ্ট্র কর্তৃক স্বীকৃত এবং মানুষের সামাজিক কল্যাণের জন্য গৃহীত সুনির্দিষ্ট নিয়মের সমষ্টিকেই আইন বলে।"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q25",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 25,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাণিজ্যের কয়টি দিক ও কী কী?",
+    "answer": "২টি (আমদানি ও রপ্তানি)"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q26",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 26,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাংলাদেশের কত শতাংশ মানুষ দারিদ্র্যসীমার নিচে বসবাস করে?",
+    "answer": "১৯.২% (সূত্র: বাংলাদেশ দারিদ্র্য মানচিত্র ২০২২, রিপোর্ট প্রকাশ ৩০ জানুয়ারি ২০২৫)"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q27",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 27,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "সাধারণত কম্পিউটারের কয় ধরনের ম্যালওয়্যার সবচেয়ে বেশি দেখা যায় এবং তা কী কী?",
+    "answer": "তিন ধরনের; কম্পিউটার ভাইরাস, কম্পিউটার ওয়ার্ম ও ট্রোজান হর্স"
+  },
+  {
+    "id": "job-2025-dc-manikganj-q28",
+    "examId": "job-2025-dc-manikganj",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 28,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "IPS ও UPS এর মানে কী?",
+    "answer": "IPS = Instant Power Supply; UPS = Uninterruptible Power Supply"
+  }
+]

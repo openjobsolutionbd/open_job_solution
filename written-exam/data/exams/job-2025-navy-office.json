@@ -1,0 +1,519 @@
+[
+  {
+    "id": "job-2025-navy-office-q01",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "ভাবসম্প্রসারণ",
+    "qno": 1,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "ভাবসম্প্রসারণ লিখুন: 'অন্যায় যে করে আর অন্যায় যে সহে, তব ঘৃণা তারে যেন তৃণ সম দহে।'",
+    "answer": "যে অন্যায় করে এবং যে সেই অন্যায় সহ্য করে, তারা উভয়ে সমান অপরাধী, উভয়ে সমান ঘৃণার পাত্র।\n\nআইনের দৃষ্টিতে অন্যায়কারীকে অপরাধী মনে করা হয়। তাই তার জন্য শাস্তির বিধান থাকে। আবার অনেক মানুষ আছে যারা সরাসরি অন্যায় করে না, কিন্তু পেছনে থেকে অন্যায়কারীকে সহায়তা করে বা অন্যায় করতে উৎসাহিত করে। আইনের আওতায় এরাও কখনো কখনো অপরাধী হিসেবে গণ্য হয়। আবার এমনও লোক থাকে যারা প্রত্যক্ষ বা পরোক্ষভাবে অন্যায় করে না, অন্যায় ঘটার সময়ে শুধু নীরব দর্শকের ভূমিকা পালন করে। আইনের চোখে তাদের অপরাধী বলা যায় না। কিন্তু বিবেকের চোখে এই নীরব দর্শকেরাও এক অর্থে অন্যায় ঘটাতে সহযোগিতা করে। কেননা অন্যায় সংঘটিত হওয়ার সময়ে তারা যদি সরব প্রতিবাদীর ভূমিকা পালন করত, তাহলে অন্যায় ঘটত না।\n\nসমাজ থেকে অন্যায়কে দূর করতে আইনের শাসন প্রতিষ্ঠার পাশাপাশি বিবেকবান সচেতন মানুষের উপস্থিতিও জরুরি, যারা অন্যায়ের প্রতিবাদে সব সময় সোচ্চার হবে। অন্যায়কারীকে যথাযথভাবে শাস্তি দিলে এবং অন্যায় করতে না দিলে সমাজ থেকে অন্যায় চিরতরে দূর হয়। তাই অন্যায়কারী এবং অন্যায়-সহকারী উভয়ই সমাজে নিন্দনীয়।"
+  },
+  {
+    "id": "job-2025-navy-office-q02",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 3,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "মনন্তর",
+        "মনু + অন্তর"
+      ],
+      [
+        "ষোড়শ",
+        "ষট্ + দশ"
+      ],
+      [
+        "প্রত্যাবর্তন",
+        "প্রতি + আবর্তন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q03",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 3,
+    "marks": 3,
+    "type": "table",
+    "question": "বিভক্তিসহ কারক নির্ণয় করুন।",
+    "columns": [
+      "বাক্য",
+      "কারক ও বিভক্তি"
+    ],
+    "rows": [
+      [
+        "অঞ্জনে দেহ আলো",
+        "সম্প্রদানে ৭মী"
+      ],
+      [
+        "চোরে না শুনে ধর্মের কাহিনী",
+        "কর্তায় ৭মী"
+      ],
+      [
+        "গাছে কাঁঠাল গোঁফে তেল",
+        "অধিকরণে ৭মী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q04",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় ও বাগধারার অর্থ লিখুন:",
+    "parts": [
+      {
+        "label": "ক (সমাস)",
+        "q": "পঙ্কজ",
+        "a": "পঙ্কে জন্মে যা — উপপদ তৎপুরুষ সমাস"
+      },
+      {
+        "label": "খ (বাগধারা)",
+        "q": "বিড়ালের আড়াই পা",
+        "a": "ক্ষণস্থায়ী"
+      },
+      {
+        "label": "গ (বাগধারা)",
+        "q": "নিরানব্বইয়ের ধাক্কা",
+        "a": "সঞ্চয়ের প্রবৃত্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q05",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "ব্যাকরণ-অন্যান্য",
+    "qno": 5,
+    "marks": 3,
+    "type": "table",
+    "question": "বাক্য সংকোচন করুনঃ",
+    "columns": [
+      "বাক্য",
+      "সংকোচন"
+    ],
+    "rows": [
+      [
+        "তালু থেকে উচ্চারিত",
+        "তালব্য"
+      ],
+      [
+        "প্রতিকার করার ইচ্ছা",
+        "প্রতিচিকীর্ষা"
+      ],
+      [
+        "খেয়া পার করে যে",
+        "পাটনী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q06",
+    "examId": "job-2025-navy-office",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 6,
+    "marks": 3,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "বিভিষিকা",
+        "বিভীষিকা"
+      ],
+      [
+        "উপরোক্ত",
+        "উপর্যুক্ত"
+      ],
+      [
+        "অদ্যবধি",
+        "অদ্যাবধি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q07",
+    "examId": "job-2025-navy-office",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 7,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with the following idioms and phrases with appropriate meaning:",
+    "parts": [
+      {
+        "label": "",
+        "phrase": "Sine die",
+        "meaning": "অনির্দিষ্ট কালের জন্য",
+        "example": "He left the village sine die."
+      },
+      {
+        "label": "",
+        "phrase": "Blue blood",
+        "meaning": "অভিজাত বংশীয়",
+        "example": "He is proud of his blue blood."
+      },
+      {
+        "label": "",
+        "phrase": "Run into debt",
+        "meaning": "ঋণগ্রস্ত হওয়া",
+        "example": "He ran into debt."
+      },
+      {
+        "label": "",
+        "phrase": "Hard up",
+        "meaning": "অভাবগ্রস্ত",
+        "example": "Most of our countrymen are hard up nowadays."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q08",
+    "examId": "job-2025-navy-office",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "",
+        "original": "Rich is not always happy.",
+        "changed": "The rich are not always happy."
+      },
+      {
+        "label": "",
+        "original": "I examined his pulse.",
+        "changed": "I felt his pulse."
+      },
+      {
+        "label": "",
+        "original": "It is raining since morning.",
+        "changed": "It has been raining since morning."
+      },
+      {
+        "label": "",
+        "original": "The old man was died yesterday.",
+        "changed": "The old man died yesterday."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q09",
+    "examId": "job-2025-navy-office",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "",
+        "source": "আমি তাকে গান গাইতে শুনলাম।",
+        "target": "I heard him singing a song."
+      },
+      {
+        "label": "",
+        "source": "গত সন্ধ্যা থেকে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining since last evening."
+      },
+      {
+        "label": "",
+        "source": "শিশুটিকে দেখে তার মাতৃত্ব জেগে উঠল।",
+        "target": "The mother in her arose seeing the baby."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q10",
+    "examId": "job-2025-navy-office",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Transform the following sentences as directed:",
+    "parts": [
+      {
+        "label": "",
+        "original": "How nice the scenery is! (Assertive)",
+        "changed": "The scenery is very nice."
+      },
+      {
+        "label": "",
+        "original": "He is poor but honest. (Complex)",
+        "changed": "Though he is poor, he is honest."
+      },
+      {
+        "label": "",
+        "original": "He is so weak that he cannot walk. (Simple)",
+        "changed": "He was too weak to walk."
+      },
+      {
+        "label": "",
+        "original": "Everybody hates a liar. (Interrogative)",
+        "changed": "Who does not hate a liar?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q11",
+    "examId": "job-2025-navy-office",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 11,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Importance of Saving Water' in ten sentences.",
+    "answer": "Water is one of the most essential resources for life. Without water, humans, animals, and plants cannot survive. Saving water helps to ensure that future generations have enough to use. Many areas of the world face water scarcity, making conservation very important. Wasting water can lead to environmental problems and reduce clean water availability. Simple actions like turning off taps and fixing leaks can save a lot of water. Using water wisely in farming and industries also contributes to conservation. Rainwater harvesting is an effective method to collect and store water. Saving water reduces the energy needed for treatment and distribution. Therefore, everyone should take responsibility to save water for a sustainable future."
+  },
+  {
+    "id": "job-2025-navy-office-q12",
+    "examId": "job-2025-navy-office",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "প্রমাণ করুন যে, (a + b)^4 - (a - b)^4 = 8ab(a^2 + b^2)",
+    "steps": [
+      "(a + b)^4 - (a - b)^4",
+      "= {(a+b)^2}^2 - {(a-b)^2}^2",
+      "= {(a+b)^2 + (a-b)^2} × {(a+b)^2 - (a-b)^2}",
+      "= 2(a^2+b^2) × 4ab",
+      "= 8ab(a^2 + b^2)"
+    ],
+    "answer": "(a+b)^4 − (a−b)^4 = 8ab(a²+b²) (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-navy-office-q13",
+    "examId": "job-2025-navy-office",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি a = √3 + √2 হয়, তবে প্রমাণ করুন যে, a^3 + 1/a^3 = 18√3",
+    "steps": [
+      "1/a = 1/(√3+√2) = (√3−√2)/{(√3)²−(√2)²} = (√3−√2)/1 = √3−√2",
+      "a + 1/a = (√3+√2) + (√3−√2) = 2√3",
+      "a^3 + 1/a^3 = (a+1/a)^3 − 3(a)(1/a)(a+1/a)",
+      "= (2√3)^3 − 3(2√3) = 8×3√3 − 6√3 = 24√3 − 6√3"
+    ],
+    "answer": "18√3 (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-navy-office-q14",
+    "examId": "job-2025-navy-office",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার একক স্থানীয় অঙ্কটি দশক স্থানীয় অঙ্ক অপেক্ষা ২ বেশি। অঙ্কদ্বয় স্থান বিনিময় করলে যে সংখ্যা পাওয়া যাবে তা প্রদত্ত সংখ্যার দ্বিগুণ অপেক্ষা ৬ কম হবে। সংখ্যাটি নির্ণয় করুন।",
+    "steps": [
+      "মেনে করি, দশক স্থানীয় অঙ্কটি x, একক স্থানীয় অঙ্কটি x + 2",
+      "সংখ্যাটি = 10x + (x+2) = 11x + 2",
+      "স্থান বিনিময়ের পর সংখ্যা = 10(x+2) + x = 11x + 20",
+      "প্রশ্নমতে, 11x + 20 = 2(11x+2) − 6",
+      "11x + 20 = 22x − 2",
+      "11x = 22 → x = 2",
+      "সংখ্যাটি = 11×2 + 2 = 24"
+    ],
+    "answer": "সংখ্যাটি ২৪।"
+  },
+  {
+    "id": "job-2025-navy-office-q15",
+    "examId": "job-2025-navy-office",
+    "subject": "math",
+    "topic": "সংখ্যাতত্ত্ব",
+    "qno": 15,
+    "marks": 4,
+    "type": "math",
+    "question": "দুইটি সংখ্যার গ.সা.গু ও ল.সা.গু যথাক্রমে ২ এবং ৩৬০। একটি সংখ্যা ৩৬ হলে অপরটি কত?",
+    "steps": [
+      "অপর সংখ্যাটি = (গ.সা.গু × ল.সা.গু) / একটি সংখ্যা",
+      "= (2 × 360) / 36"
+    ],
+    "answer": "২০"
+  },
+  {
+    "id": "job-2025-navy-office-q16",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 16,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের একমাত্র জলবিদ্যুৎ কেন্দ্র কোথায় অবস্থিত?",
+    "answer": "কাপ্তাই, রাঙামাটি।"
+  },
+  {
+    "id": "job-2025-navy-office-q17",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 17,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "সুনীল অর্থনীতি বা ব্লু-ইকোনমি বলতে কী বুঝায়?",
+    "answer": "সমুদ্র সম্পদ নির্ভর পরিচালিত অর্থনীতিই হলো ব্লু/সুনীল/সমুদ্র ইকোনমি।"
+  },
+  {
+    "id": "job-2025-navy-office-q18",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 18,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ব্রিকস জোটের সদস্য সংখ্যা কত?",
+    "answer": "১০টি।"
+  },
+  {
+    "id": "job-2025-navy-office-q19",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'গুগল পে' কী?",
+    "answer": "ডিজিটাল ওয়ালেট।"
+  },
+  {
+    "id": "job-2025-navy-office-q20",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 20,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "AI বলতে কী বুঝায়?",
+    "answer": "Artificial Intelligence (AI) বা কৃত্রিম বুদ্ধিমত্তা হলো একটি কম্পিউটার সফটওয়্যার, যা তথ্য বিশ্লেষণের মাধ্যমে যন্ত্র বা অ্যাপ্লিকেশনকে মানুষের বুদ্ধি ও চিন্তাশক্তির আদলে কাজের উপযোগী করে তোলে।"
+  },
+  {
+    "id": "job-2025-navy-office-q21",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশে মোট সমুদ্র বন্দর কয়টি এবং কী কী?",
+    "answer": "৩টি; চট্টগ্রাম, মোংলা ও পায়রা সমুদ্র বন্দর।"
+  },
+  {
+    "id": "job-2025-navy-office-q22",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের জাতীয় পতাকার দৈর্ঘ্য-প্রস্থের অনুপাত কত?",
+    "answer": "১০ : ৬ (৫ : ৩)।"
+  },
+  {
+    "id": "job-2025-navy-office-q23",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কোন দেশকে ইউরোপের শস্যভাণ্ডার বলা হয়?",
+    "answer": "ইউক্রেন।"
+  },
+  {
+    "id": "job-2025-navy-office-q24",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 24,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ফরায়েজি আন্দোলনের প্রবর্তক কে?",
+    "answer": "হাজী শরীয়তুল্লাহ।"
+  },
+  {
+    "id": "job-2025-navy-office-q25",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 25,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "পদ্মা ও মেঘনা নদীর মিলন স্থানের নাম কী?",
+    "answer": "চাঁদপুর।"
+  },
+  {
+    "id": "job-2025-navy-office-q26",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 26,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখ: FBCCI, ILO, UNESCO",
+    "parts": [
+      {
+        "label": "FBCCI",
+        "q": "",
+        "a": "Federation of Bangladesh Chambers of Commerce and Industry"
+      },
+      {
+        "label": "ILO",
+        "q": "",
+        "a": "International Labour Organization"
+      },
+      {
+        "label": "UNESCO",
+        "q": "",
+        "a": "United Nations Educational, Scientific and Cultural Organization"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-office-q27",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 27,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'ডায়েট' কোন দেশের পার্লামেন্টের নাম?",
+    "answer": "জাপান।"
+  },
+  {
+    "id": "job-2025-navy-office-q28",
+    "examId": "job-2025-navy-office",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 28,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "তিব্বতের রাজধানীর নাম কী?",
+    "answer": "লাসা।"
+  }
+]

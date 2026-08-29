@@ -1,0 +1,603 @@
+[
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q01",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 4,
+    "type": "table",
+    "question": "শব্দগুলোর শুদ্ধরূপ লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "নিশিতিনী",
+        "নিশীথিনী"
+      ],
+      [
+        "দুরাত্য",
+        "দুরাত্মা"
+      ],
+      [
+        "ঐশিক",
+        "ঐষীক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q02",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "পারিভাষিক শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "পারিভাষিক অর্থ"
+    ],
+    "rows": [
+      [
+        "Propaganda",
+        "অপপ্রচার/গুজব"
+      ],
+      [
+        "Book post",
+        "খোলা ডাক"
+      ],
+      [
+        "Ex-officio",
+        "পদসূত্রে/পদাধিকারে"
+      ],
+      [
+        "Good offices",
+        "মধ্যস্থতা"
+      ],
+      [
+        "Scheme",
+        "নকশা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q03",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "শব্দজোড়",
+    "qno": 3,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "শব্দজোড়গুলোর অর্থসহ বাক্য লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তত্ত্ব / তথ্য",
+        "a": "তত্ত্ব = যুক্তিনির্ভর ব্যাখ্যা; তথ্য = খবর"
+      },
+      {
+        "label": "খ",
+        "q": "নভ / নব",
+        "a": "নভ = আকাশ; নব = নতুন"
+      },
+      {
+        "label": "গ",
+        "q": "বোজা / বোঝা",
+        "a": "বোজা = বন্ধ করা/ভরাট করা; বোঝা = ভার"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q04",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মাটিতে গড়াগড়ি দিচ্ছে এমন",
+        "a": "উপাবৃত"
+      },
+      {
+        "label": "খ",
+        "q": "ন্যায় শাস্ত্র জানেন যিনি",
+        "a": "নৈয়ায়িক"
+      },
+      {
+        "label": "গ",
+        "q": "দেখার ইচ্ছা",
+        "a": "দিদৃক্ষা"
+      },
+      {
+        "label": "ঘ",
+        "q": "কর্মে যার ক্লান্তি নেই",
+        "a": "অক্লান্তকর্মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q05",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 5,
+    "marks": 4,
+    "type": "table",
+    "question": "নিচের সাহিত্যকর্মের রচয়িতার নাম লিখুনঃ",
+    "columns": [
+      "সাহিত্যকর্ম",
+      "রচয়িতা"
+    ],
+    "rows": [
+      [
+        "ছায়া হরিণ",
+        "আহসান হাবীব"
+      ],
+      [
+        "হাওয়া বদল",
+        "অচিন্ত্যকুমার সেনগুপ্ত"
+      ],
+      [
+        "স্পেন বিজয় কাব্য",
+        "ইসমাইল হোসেন সিরাজী"
+      ],
+      [
+        "জীবন বিনিময়",
+        "গোলাম মোস্তফা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q06",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "bangla",
+    "topic": "শব্দের উৎস",
+    "qno": 6,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "শব্দগুলো কোন ভাষার?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "হালুয়া",
+        "a": "আরবি"
+      },
+      {
+        "label": "খ",
+        "q": "অধ্যাদেশ",
+        "a": "ইংরেজি"
+      },
+      {
+        "label": "গ",
+        "q": "নগদ",
+        "a": "আরবি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q07",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate preposition:",
+    "parts": [
+      {
+        "sentence": "Man must submit….. his fate.",
+        "answer": "to"
+      },
+      {
+        "sentence": "He mused…… his lot.",
+        "answer": "on"
+      },
+      {
+        "sentence": "Fortune smiles …. the brave.",
+        "answer": "upon"
+      },
+      {
+        "sentence": "Bonus is incentive……. the workers.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Helen is dull……. English.",
+        "answer": "at"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q08",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Use appropriate article where needed.",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is on bank of ruin.",
+        "changed": "He is on the bank of ruin."
+      },
+      {
+        "label": "b",
+        "original": "We made him captain of the team.",
+        "changed": "We made him the captain of the team."
+      },
+      {
+        "label": "c",
+        "original": "Measles has broken out in town.",
+        "changed": "Measles has broken out in the town."
+      },
+      {
+        "label": "d",
+        "original": "Moinul is F.C.P.S.",
+        "changed": "Moinul is an F.C.P.S."
+      },
+      {
+        "label": "e",
+        "original": "King had great deal of money.",
+        "changed": "The king had a great deal of money."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q09",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use right forms of verbs:",
+    "parts": [
+      {
+        "sentence": "To (frank), he is a liar.",
+        "answer": "be frank"
+      },
+      {
+        "sentence": "Would you mind (to have) a cup of tea.",
+        "answer": "having"
+      },
+      {
+        "sentence": "If you would like to come, I (be) wait for you.",
+        "answer": "will"
+      },
+      {
+        "sentence": "It is high time he (change) his health.",
+        "answer": "changed"
+      },
+      {
+        "sentence": "How often (do) the bell ring?",
+        "answer": "does"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q10",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 5,
+    "type": "table",
+    "question": "Write the plural form of the following words:",
+    "columns": [
+      "Given Word",
+      "Plural Form"
+    ],
+    "rows": [
+      [
+        "Criteria (sing: Criterion)",
+        "Criterion"
+      ],
+      [
+        "Innings",
+        "Innings"
+      ],
+      [
+        "Its",
+        "Their"
+      ],
+      [
+        "Genus",
+        "Genera"
+      ],
+      [
+        "Fez",
+        "Fezzes"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q11",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 11,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write the meaning of the following words and make sentences with them:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "At all events",
+        "meaning": "যা কিছু ঘটুক না কেন",
+        "example": "I shall help you at all events."
+      },
+      {
+        "label": "b",
+        "phrase": "Bear a resemblance",
+        "meaning": "সদৃশ্য",
+        "example": "He bears a resemblance to his father."
+      },
+      {
+        "label": "c",
+        "phrase": "Come off",
+        "meaning": "অনুষ্ঠিত হওয়া",
+        "example": "My sister's marriage ceremony comes off tomorrow."
+      },
+      {
+        "label": "d",
+        "phrase": "In hot chase",
+        "meaning": "অভিদ্রুত",
+        "example": "Hearing the news, he left the place in hot chase."
+      },
+      {
+        "label": "e",
+        "phrase": "Long since",
+        "meaning": "অনেক আগে",
+        "example": "I have not heard from him long since."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q12",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "তিনটি সংখ্যার বর্গের যোগফল ৫৩২। প্রথম ও দ্বিতীয় সংখ্যা এবং দ্বিতীয় ও তৃতীয় সংখ্যার উভয়ক্ষেত্রে অনুপাত ৩:২। সংখ্যাগুলো কী কী?",
+    "steps": [
+      "প্রথম সংখ্যা : দ্বিতীয় সংখ্যা = ৩ : ২",
+      "দ্বিতীয় সংখ্যা : তৃতীয় সংখ্যা = ৩ : ২",
+      "∴ প্রথম : দ্বিতীয় : তৃতীয় = ৯ : ৬ : ৪",
+      "ধরি, সংখ্যা তিনটি ৯ক, ৬ক ও ৪ক",
+      "প্রশ্নমতে, (৯ক)² + (৬ক)² + (৪ক)² = ৫৩২",
+      "বা, ৮১ক² + ৩৬ক² + ১৬ক² = ৫৩২ ⇒ ১৩৩ক² = ৫৩২ ⇒ ক² = ৪",
+      "∴ ক = ২",
+      "সুতরাং ১ম সংখ্যা = ৯ × ২ = ১৮; ২য় সংখ্যা = ৬ × ২ = ১২; ৩য় সংখ্যা = ৪ × ২ = ৮"
+    ],
+    "answer": "১৮, ১২ ও ৮"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q13",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি আয়তক্ষেত্রের ভূমি উচ্চতার তিনগুণ এবং পরিসীমা ৬৪ হলে, আয়তক্ষেত্রের ক্ষেত্রফল কত?",
+    "steps": [
+      "মনে করি, উচ্চতা = ক; ভূমি = ৩ক",
+      "প্রশ্নমতে, ২(ক+৩ক) = ৬৪ ⇒ ৮ক = ৬৪ ⇒ ক = ৮",
+      "সুতরাং উচ্চতা ৮; ভূমি = ২৪",
+      "ক্ষেত্রফল = ৮ × ২৪ = ১৯২"
+    ],
+    "answer": "১৯২"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q14",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "p + q + r = ১২, p + q = ৪, p + r = ৭ হলে, p³ + q³ এর মান কত?",
+    "steps": [
+      "p+q+r=১২ এবং p+q=৪ বসিয়ে: ৪+r=১২ ∴ r=৮",
+      "আবার, p+r=৭ ⇒ p+৮=৭ ∴ p=−১",
+      "আবার, p+q=৪ ⇒ −১+q=৪ ∴ q=৫",
+      "প্রদত্ত রাশি = p³ + q³ = (−১)³ + (৫)³ = −১ + ১২৫"
+    ],
+    "answer": "১২৪"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q15",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "৬৭৫ টাকায় একটি বই বিক্রি করায় ক্রয়মূল্যের দুই-নবমাংশের সমপরিমাণ ক্ষতি হয়। ৮১০ টাকায় বিক্রি করলে শতকরা কত লাভ বা ক্ষতি হবে?",
+    "steps": [
+      "মনে করি, ক্রয়মূল্য = ৯ক",
+      "ক্ষতি হয় = ৯ক এর ২/৯ = ২ক",
+      "শর্তমতে, ৯ক − ২ক = ৬৭৫ ⇒ ৭ক = ৬৭৫ ⇒ ক = ৯৬.৪২ (প্রায়)",
+      "সুতরাং ক্রয়মূল্য = ৯ × ৯৬.৪২ = ৮৬৭.৭৮ (প্রায়)",
+      "৮১০ টাকায় বিক্রি করলে ক্ষতি হয় = ৮৬৭.৭৮ − ৮১০ = ৫৭.৭৮ টাকা",
+      "৮৬৭.৭৮ টাকায় ক্ষতি ৫৭.৭৮ টাকা হলে, ১০০ টাকায় ক্ষতি = ৫৭.৭৮ × ১০০ ÷ ৮৬৭.৭৮ = ৬.৬৫ টাকা (প্রায়)"
+    ],
+    "answer": "প্রায় ৬.৬৫% ক্ষতি"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q16",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 16,
+    "marks": 5,
+    "type": "math",
+    "question": "৪০ জন সদস্যবিশিষ্ট একটি ক্লাবের ৯/২০ অংশ প্রকৌশলী এবং ৪/৫ অংশ পুরুষ হলে সম্ভাব্য সর্বনিম্ন পুরুষ প্রকৌশলী কতজন হবে?",
+    "steps": [
+      "প্রকৌশলীর সংখ্যা = ৪০ এর ৯/২০ = ১৮ জন",
+      "পুরুষের সংখ্যা = ৪০ এর ৪/৫ = ৩২ জন",
+      "সর্বনিম্ন পুরুষ প্রকৌশলী = প্রকৌশলী + পুরুষ − মোট সদস্য",
+      "= ১৮ + ৩২ − ৪০"
+    ],
+    "answer": "১০ জন"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q17",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সর্বপ্রথম জাতীয় পতাকার প্রচলন শুরু হয় কোন দেশে?",
+        "a": "ডেনমার্ক (১২১৮ সালে)"
+      },
+      {
+        "label": "খ",
+        "q": "হর্ষবর্ধনের রাজধানী কী ছিল?",
+        "a": "কনৌজ"
+      },
+      {
+        "label": "গ",
+        "q": "'পিস ডিক্রি' প্রস্তাবক কে?",
+        "a": "লেনিন (১৯১৭ সালে লেনিন এক কৃষক সম্মেলনে যুদ্ধ হতে রাশিয়ার নাম প্রত্যাহারের ঘোষণা দেন, যা 'পিস ডিক্রি' নামে পরিচিত)"
+      },
+      {
+        "label": "ঘ",
+        "q": "'ডায়ালগস' কার রচিত গ্রন্থ?",
+        "a": "প্লেটো"
+      },
+      {
+        "label": "ঙ",
+        "q": "ভারতবর্ষে গ্রিক প্রাধান্যের অবসান ঘটে কোন সম্রাটের আমলে?",
+        "a": "চন্দ্রগুপ্ত মৌর্য"
+      },
+      {
+        "label": "চ",
+        "q": "বিশ্ববিদ্যালয় মঞ্জুরি কমিশনের প্রতিষ্ঠাকাল কত সালে?",
+        "a": "১৯৭৩ সালে"
+      },
+      {
+        "label": "ছ",
+        "q": "'ধীবর'-এর দেশ কোনটি?",
+        "a": "নরওয়ে"
+      },
+      {
+        "label": "জ",
+        "q": "মরক্কো কোন দেশের উপনিবেশ ছিল?",
+        "a": "ফ্রান্সের"
+      },
+      {
+        "label": "ঝ",
+        "q": "'New Deal'-এর প্রবর্তক কে?",
+        "a": "ফ্রাঙ্কলিন ডি. রুজভেল্ট (১৯২৯ সালে মার্কিন প্রেসিডেন্ট ফ্রাঙ্কলিন ডি. রুজভেল্ট যুক্তরাষ্ট্রসহ বিশ্বব্যাপী অর্থনৈতিক সংকট মোকাবেলায় যে অর্থনৈতিক ব্যবস্থা পরিবর্তন করেন, তা 'New Deal' বা নয়া নীতি নামে পরিচিত)"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশের হস্তলিখিত সংবিধানের স্বাক্ষরসহ পৃষ্ঠা কয়টি?",
+        "a": "১০৮ পাতা/২১৬ পৃষ্ঠা (স্বাক্ষরছাড়া ৯৩ পৃষ্ঠা/১৮৬ পৃষ্ঠা)"
+      },
+      {
+        "label": "ট",
+        "q": "পৃথিবীর উষ্ণতম স্থান কোনটি?",
+        "a": "ডেথ ভ্যালি, ক্যালিফোর্নিয়া"
+      },
+      {
+        "label": "ঠ",
+        "q": "ICRC এর প্রতিষ্ঠাতা কে?",
+        "a": "হেনরি ডুনান্ট (ICRC = International Committee of the Red Cross)"
+      },
+      {
+        "label": "ড",
+        "q": "ইবনে বতুতা কার সময়ে বাংলায় আগমন করেন?",
+        "a": "ফখরুদ্দিন মুবারক শাহ"
+      },
+      {
+        "label": "ঢ",
+        "q": "NEC এর সাচিবিক সহায়তা প্রদান করে সরকারের কোন বিভাগ?",
+        "a": "পরিকল্পনা বিভাগ, পরিকল্পনা মন্ত্রণালয়"
+      },
+      {
+        "label": "ণ",
+        "q": "বাংলার সৈয়দ আহমদ বলা হয় কাকে?",
+        "a": "নবাব আব্দুল লতিফ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-record-keeper-q18",
+    "examId": "job-2025-div-comm-ctg-record-keeper",
+    "subject": "general-knowledge",
+    "topic": "কম্পিউটার",
+    "qno": 18,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "বেসিক কম্পিউটার ট্রাবলশুটিং — নিম্নলিখিত প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "One Drive কোন কোম্পানির সেবা?",
+        "a": "মাইক্রোসফট"
+      },
+      {
+        "label": "খ",
+        "q": "কম্পিউটারে কী আকারে ডেটা প্রেরণ করা হয়?",
+        "a": "বাইনারি"
+      },
+      {
+        "label": "গ",
+        "q": "সর্বপ্রথম ৬৪ বিট অপারেটিং সিস্টেম চালু করে কোন কোম্পানি?",
+        "a": "লিনাক্স (Linux)"
+      },
+      {
+        "label": "ঘ",
+        "q": "ইমেইল গ্রহণের সময় কোন প্রটোকল ব্যবহার করা হয়?",
+        "a": "POP3"
+      },
+      {
+        "label": "ঙ",
+        "q": "Boot Strapping program সঞ্চিত থাকে কোথায়?",
+        "a": "ROM"
+      },
+      {
+        "label": "চ",
+        "q": "Deep Blue কী?",
+        "a": "দাবা খেলার উপযোগী আইবিএম (IBM) কোম্পানির কম্পিউটার"
+      },
+      {
+        "label": "ছ",
+        "q": "এম এস ওয়ার্ডে Ctrl + E দ্বারা কী বোঝায়?",
+        "a": "সেন্টার এলাইনমেন্ট/টেক্সট"
+      },
+      {
+        "label": "জ",
+        "q": "সর্বপ্রথম সার্চ ইঞ্জিন কোনটি?",
+        "a": "আর্চি (Archie), ১৯৯০"
+      },
+      {
+        "label": "ঝ",
+        "q": "ইউনিকোড মূলত কত বাইটের কোড?",
+        "a": "২ বাইট বা ১৬ বিটের কোড"
+      },
+      {
+        "label": "ঞ",
+        "q": "AI এর জন্য বেশি ব্যবহৃত প্রোগ্রামিং ল্যাংগুয়েজ কী?",
+        "a": "পাইথন"
+      }
+    ]
+  }
+]

@@ -1,0 +1,501 @@
+[
+  {
+    "id": "job-2025-pwd-designer-q01",
+    "examId": "job-2025-pwd-designer",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 1,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বিকেল পাঁচটায় অফিস ছুটি হবে।",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "খ",
+        "q": "গুণহীনে ত্যাগ কর।",
+        "a": "কর্মে ৭মী বিভক্তি"
+      },
+      {
+        "label": "গ",
+        "q": "দেশে মিলে করি কাজ।",
+        "a": "কর্তৃকারকে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "আমারে তুমি করিবে ত্রাণ এ নহে মোর প্রার্থনা",
+        "a": "কর্ম কারকে ২য়া"
+      },
+      {
+        "label": "ঙ",
+        "q": "ছাত্ররা বল খেলে",
+        "a": "করণে শূন্য।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q02",
+    "examId": "job-2025-pwd-designer",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পুরস্কার",
+        "a": "পুরঃ + কার"
+      },
+      {
+        "label": "খ",
+        "q": "মন্বন্তর",
+        "a": "মনু + অন্তর"
+      },
+      {
+        "label": "গ",
+        "q": "উপর্যুক্ত",
+        "a": "উপরি+ উক্ত"
+      },
+      {
+        "label": "ঘ",
+        "q": "মনীষা",
+        "a": "মনস্ + ঈষা"
+      },
+      {
+        "label": "ঙ",
+        "q": "কিংবদন্তি",
+        "a": "কিম্ + বদন্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q03",
+    "examId": "job-2025-pwd-designer",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "অশুদ্ধ বানান শুদ্ধ করে লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মরুধান",
+        "মরুদ্যান"
+      ],
+      [
+        "মরিচিকা",
+        "মরীচিকা"
+      ],
+      [
+        "প্রতুপন্নমতি",
+        "প্রত্যুৎপন্নমতি"
+      ],
+      [
+        "ইতমধ্যে",
+        "ইতোমধ্যে"
+      ],
+      [
+        "দৈন্যতা",
+        "দীনতা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q04",
+    "examId": "job-2025-pwd-designer",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বিজয় পতাকা",
+        "a": "বিজয় নির্দেশক পতাকা - মধ্যপদলোপী কর্মধারয়"
+      },
+      {
+        "label": "খ",
+        "q": "আশীবিষ",
+        "a": "আশীতে (দাঁত) বিষ যার - বহুব্রীহি সমাস"
+      },
+      {
+        "label": "গ",
+        "q": "পঙ্কজ",
+        "a": "পঙ্কে জন্মে যা - উপপদ তৎপুরুষ"
+      },
+      {
+        "label": "ঘ",
+        "q": "চতুর্ভুজ",
+        "a": "চার ভুজের সমাহার - দ্বিগু সমাস"
+      },
+      {
+        "label": "ঙ",
+        "q": "কাজলকালো",
+        "a": "কাজলের ন্যায় কালো - উপমান কর্মধারয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q05",
+    "examId": "job-2025-pwd-designer",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blank with preposition:",
+    "parts": [
+      {
+        "sentence": "The book is composed...... five chapters.",
+        "answer": "of"
+      },
+      {
+        "sentence": "She burst ........tears.",
+        "answer": "into"
+      },
+      {
+        "sentence": "Listen......what I say.",
+        "answer": "to"
+      },
+      {
+        "sentence": "The man died...... Dengue fever.",
+        "answer": "of"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q06",
+    "examId": "job-2025-pwd-designer",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences",
+    "parts": [
+      {
+        "label": "a",
+        "original": "She insisted me to go there.",
+        "changed": "She insisted on my going there."
+      },
+      {
+        "label": "b",
+        "original": "He is superior than me",
+        "changed": "He is superior to me."
+      },
+      {
+        "label": "c",
+        "original": "He was hung for murder.",
+        "changed": "He was hanged for murder."
+      },
+      {
+        "label": "d",
+        "original": "He is very weak to work.",
+        "changed": "He is too weak to work."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q07",
+    "examId": "job-2025-pwd-designer",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the following:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Carry the day",
+        "meaning": "জয়ী হওয়া",
+        "example": "Our team played well and carried the day."
+      },
+      {
+        "label": "b",
+        "phrase": "With one voice",
+        "meaning": "সর্বসম্মতভাবে",
+        "example": "They all shouted with one voice for justice."
+      },
+      {
+        "label": "c",
+        "phrase": "At stake",
+        "meaning": "বিপদাপন্ন",
+        "example": "His life is at stake now."
+      },
+      {
+        "label": "d",
+        "phrase": "In quest of",
+        "meaning": "সন্ধানে",
+        "example": "He went to the forest in quest of honey."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q08",
+    "examId": "job-2025-pwd-designer",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Do not laugh at the poor.",
+        "changed": "Let not the poor be laughed at."
+      },
+      {
+        "label": "b",
+        "original": "Take care of your health.",
+        "changed": "Let your health be taken care of."
+      },
+      {
+        "label": "c",
+        "original": "He killed himself.",
+        "changed": "He was killed by himself."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-pwd-designer-q09",
+    "examId": "job-2025-pwd-designer",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 9,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write 5 sentences on the following topic: July Revolution 2024",
+    "answer": "The July Revolution 2024 was a mass uprising in Bangladesh led primarily by students demanding reform and justice. It began as a protest against discriminatory quota systems in government jobs. The movement quickly grew into a nationwide call for accountability and change. Many people participated across the country, showing widespread public support. The revolution marked a significant turning point in the nation's recent history."
+  },
+  {
+    "id": "job-2025-pwd-designer-q10",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "9.8 মি. ব্যাসের বৃত্তাকার একটি বাগানের ক্ষেত্রফল কত?",
+    "steps": [
+      "বৃত্তাকার বাগানটির ব্যাস, 2r = 9.8 মি.",
+      "বৃত্তাকার বাগানটির ব্যাসার্ধ r = 9.8/2 মি. = 4.9 মি.",
+      "বৃত্তাকার বাগানটির ক্ষেত্রফল = πr²",
+      "= 3.14 × (4.9)² বর্গমিটার",
+      "= 75.39 বর্গমিটার (প্রায়)"
+    ],
+    "answer": "ক্ষেত্রফল 75.39 বর্গমি. (প্রায়)"
+  },
+  {
+    "id": "job-2025-pwd-designer-q11",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "উৎপাদকে বিশ্লেষণ",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "24x³ − 81y³ -কে উৎপাদকে বিশ্লেষণ কর।",
+    "steps": [
+      "24x³ − 81y³ = 3(8x³ − 27y³)",
+      "= 3{(2x)³ − (3y)³}",
+      "= 3(2x − 3y) {(2x)² + (2x) × (3y) + (3y)²}",
+      "= 3(2x − 3y) (4x² + 6xy + 9y²)"
+    ],
+    "answer": "3(2x − 3y) (4x² + 6xy + 9y²)"
+  },
+  {
+    "id": "job-2025-pwd-designer-q12",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?",
+    "steps": [
+      "x³ + y³ + 12xy",
+      "= x³ + y³ + 3 × 4 × xy [মান বসিয়ে]",
+      "= x³ + y³ + 3(x + y) × xy",
+      "= x³ + y³ + 3xy(x + y)",
+      "= (x + y)³",
+      "= (4)³ = 64",
+      "বিকল্প সমাধানঃ x³ + y³ + 12xy",
+      "= (x + y)³ − 3xy(x+y) + 12xy",
+      "= 4³ − 3.4.xy + 12xy",
+      "= 64 − 12xy + 12xy = 64"
+    ],
+    "answer": "64"
+  },
+  {
+    "id": "job-2025-pwd-designer-q13",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি শ্রেণির প্রতিবেঞ্চে ৪ জন করে ছাত্র বসালে ৩টি বেঞ্চ খালি থাকে। আবার, প্রতিবেঞ্চে ৩ জন করে ছাত্র বসালে ৬ জন ছাত্রকে দাঁড়িয়ে থাকতে হয়। ঐ শ্রেণির ছাত্র সংখ্যা কত?",
+    "steps": [
+      "মনে করি, শ্রেণিটির ছাত্র সংখ্যা x",
+      "যেহেতু, প্রতিবেঞ্চে ৪ জন করে বসালে ৩টি বেঞ্চ খালি থাকে, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = x/4 + 3",
+      "আবার, যেহেতু প্রতিবেঞ্চে ৩ জন করে বসালে ৬ জনকে দাঁড়িয়ে থাকতে হয়, সেহেতু ঐ শ্রেণির বেঞ্চের সংখ্যা = (x − 6)/3",
+      "যেহেতু শ্রেণির বেঞ্চের সংখ্যা একই থাকবে,",
+      "সুতরাং x/4 + 3 = (x − 6)/3",
+      "বা, (x + 12)/4 = (x − 6)/3",
+      "বা, 4x − 24 = 3x + 36",
+      "বা, 4x − 3x = 36 + 24",
+      "বা, x = 60",
+      "∴ ঐ শ্রেণির ছাত্র সংখ্যা ৬০ জন।"
+    ],
+    "answer": "৬০ জন।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q14",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি বইয়ের মূল্য ২৪ টাকা। এই মূল্য প্রকৃত মূল্যের ৮০%। বাকি মূল্য সরকার ভর্তুকি দিয়ে থাকেন। সরকার প্রতি বইয়ের কত টাকা ভর্তুকি দেন?",
+    "steps": [
+      "মনে করি, বইটির প্রকৃত মূল্য x টাকা",
+      "প্রশ্নমতে, x এর ৮০% = ২৪",
+      "বা, ৮০x/১০০ = ২৪",
+      "বা, ৮০x = ২৪০০",
+      "বা, x = ২৪০০/৮০",
+      "∴ x = ৩০",
+      "সুতরাং, বই এর প্রকৃত মূল্য ৩০ টাকা",
+      "মূল্য ধরা হয়েছে ২৪ টাকা",
+      "ভর্তুকি দেন = (৩০ − ২৪) = ৬ টাকা"
+    ],
+    "answer": "৬ টাকা।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q15",
+    "examId": "job-2025-pwd-designer",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "এর বর্গ নির্ণয় কর। 4x − 7y",
+    "steps": [
+      "(4x − 7y)²",
+      "= (4x)² − 2.4x. 7y + (7y)²",
+      "= 16x² − 56xy + 49y²"
+    ],
+    "answer": "16x² − 56xy + 49y²"
+  },
+  {
+    "id": "job-2025-pwd-designer-q16",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 16,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি?",
+    "answer": "সেন্টমার্টিন দ্বীপ।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q17",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 17,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "সামুদ্রিক মাছে কোন মিনারেলটি বেশি পাওয়া যায়?",
+    "answer": "আয়োডিন সামুদ্রিক মাছে বেশি পাওয়া যায়।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q18",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 18,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "হালদা নদী কেন বিখ্যাত?",
+    "answer": "বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন ক্ষেত্র হালদা নদী।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q19",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 19,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "কোন শহরকে মুসলমান, খ্রিস্টান ও ইহুদি সকলেই পবিত্র বলে মনে করেন?",
+    "answer": "ফিলিস্তিনের জেরুজালেম শহরকে।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q20",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 20,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "দেশের বৃহত্তম ও ক্ষুদ্রতম হাওড় কোনটি?",
+    "answer": "দেশের বৃহত্তম হাওড় হাকালুকি হাওড়। এবং ক্ষুদ্রতম 'বুরবুক হাওর'।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q21",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 21,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "কাজী নজরুল ইসলামের প্রথম প্রকাশিত লেখা কোনটি?",
+    "answer": "বাউন্ডুলে আত্মকাহিনী।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q22",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 22,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশকে স্বীকৃতি দানকারী প্রথম ইউরোপীয় দেশ কোনটি?",
+    "answer": "পূর্ব জার্মানি।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q23",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 23,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "পাহাড়পুরের বৌদ্ধ বিহারটি কী নামে পরিচিত ছিল?",
+    "answer": "সোমপুর বৌদ্ধবিহার।"
+  },
+  {
+    "id": "job-2025-pwd-designer-q24",
+    "examId": "job-2025-pwd-designer",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 24,
+    "marks": 0.4,
+    "type": "paragraph",
+    "question": "বাংলাদেশের সংবিধানের রক্ষক কে?",
+    "answer": "সুপ্রিম কোর্ট।"
+  }
+]

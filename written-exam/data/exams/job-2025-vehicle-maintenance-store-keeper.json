@@ -1,0 +1,589 @@
+[
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q01",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 4,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "পূর্ণজাগরণ",
+        "পুনর্জাগরণ"
+      ],
+      [
+        "বীভিষিকা",
+        "বিভীষিকা"
+      ],
+      [
+        "রৌদকরজ্জল",
+        "রৌদ্রকরোজ্জল"
+      ],
+      [
+        "উচ্ছৃঙ্খল",
+        "উচ্ছৃঙ্খল"
+      ],
+      [
+        "অংশীদারিত্ব",
+        "অংশীদারি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q02",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "প্রৌঢ়",
+        "a": "প্র + ঊঢ়"
+      },
+      {
+        "label": "খ",
+        "q": "আশ্চর্য",
+        "a": "আ + চর্য"
+      },
+      {
+        "label": "গ",
+        "q": "পরস্পর",
+        "a": "পর + পর"
+      },
+      {
+        "label": "ঘ",
+        "q": "একাদশ",
+        "a": "এক্ + দশ"
+      },
+      {
+        "label": "ঙ",
+        "q": "বিপজ্জনক",
+        "a": "বিপদ্ + জনক"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q03",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কোনোভাবেই যা নিবারণ করা যায় না",
+        "a": "অনিবার্য"
+      },
+      {
+        "label": "খ",
+        "q": "উপকারীর উপকার স্বীকার করে না যে",
+        "a": "অকৃতজ্ঞ"
+      },
+      {
+        "label": "গ",
+        "q": "আচারে নিষ্ঠা আছে যার",
+        "a": "আচারনিষ্ঠ"
+      },
+      {
+        "label": "ঘ",
+        "q": "কর্ম সম্পাদনে পরিশ্রমী",
+        "a": "কর্মঠ"
+      },
+      {
+        "label": "ঙ",
+        "q": "কুমারীর পুত্র",
+        "a": "কানীন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q04",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 4,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "মনীষা",
+        "নির্বোধ"
+      ],
+      [
+        "বিষ",
+        "অমৃত"
+      ],
+      [
+        "খাতক",
+        "মহাজন"
+      ],
+      [
+        "অজ্ঞ",
+        "বিজ্ঞ"
+      ],
+      [
+        "দৃষ্ট",
+        "অদৃষ্ট"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q05",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 5,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "ব্যাসবাক্যসহ সমাসের নাম লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দোভাষী",
+        "a": "দুই ভাষায় পারদর্শী যিনি — বহুব্রীহি সমাস"
+      },
+      {
+        "label": "খ",
+        "q": "প্রাণপ্রিয়",
+        "a": "প্রাণ হতে প্রিয় — পঞ্চমী তৎপুরুষ"
+      },
+      {
+        "label": "গ",
+        "q": "শতাব্দী",
+        "a": "শত অব্দের সমাহার — দ্বিগু সমাস"
+      },
+      {
+        "label": "ঘ",
+        "q": "দুর্ভিক্ষ",
+        "a": "ভিক্ষার অভাব — অব্যয়ীভাব"
+      },
+      {
+        "label": "ঙ",
+        "q": "সাতসতেরো",
+        "a": "সাত ও সতেরো — দ্বন্দ্ব সমাস"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q06",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the following active voices into passive:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "My friend invited me to the party.",
+        "changed": "I was invited to the party by my friend."
+      },
+      {
+        "label": "b",
+        "original": "He has done the work.",
+        "changed": "The work has been done by him."
+      },
+      {
+        "label": "c",
+        "original": "I had written the letter.",
+        "changed": "The letter had been written by me."
+      },
+      {
+        "label": "d",
+        "original": "You must do the work.",
+        "changed": "The work must be done by you."
+      },
+      {
+        "label": "e",
+        "original": "Shut the door.",
+        "changed": "Let the door be shut."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q07",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with preposition.",
+    "parts": [
+      {
+        "sentence": "He came….. road.",
+        "answer": "by"
+      },
+      {
+        "sentence": "You are……. time.",
+        "answer": "on"
+      },
+      {
+        "sentence": "Man aspires……. riches.",
+        "answer": "after"
+      },
+      {
+        "sentence": "Students should abide……. the teacher's advice.",
+        "answer": "by"
+      },
+      {
+        "sentence": "He is dull…… English.",
+        "answer": "at"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q08",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 8,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with meaning:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A bed of roses",
+        "meaning": "পুষ্প শয্যা",
+        "example": "Life is not a bed of roses."
+      },
+      {
+        "label": "b",
+        "phrase": "All in all",
+        "meaning": "সর্বেসর্বা",
+        "example": "He is all in all in the family."
+      },
+      {
+        "label": "c",
+        "phrase": "At the eleventh hour",
+        "meaning": "শেষ মুহূর্তে",
+        "example": "They arrived at the station at the eleventh hour."
+      },
+      {
+        "label": "d",
+        "phrase": "A man of word",
+        "meaning": "এক কথার মানুষ",
+        "example": "He is a man of word."
+      },
+      {
+        "label": "e",
+        "phrase": "Bag and baggage",
+        "meaning": "তল্পিতল্পাসহ",
+        "example": "He left the hotel bag and baggage."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q09",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Complete the following sentences with the right form of verbs.",
+    "parts": [
+      {
+        "sentence": "He (come) home yesterday.",
+        "answer": "came"
+      },
+      {
+        "sentence": "They (not go) to school everyday.",
+        "answer": "do not go"
+      },
+      {
+        "sentence": "The sun (give) us light.",
+        "answer": "gives"
+      },
+      {
+        "sentence": "I (suffer) from fever for a long time.",
+        "answer": "have been suffering"
+      },
+      {
+        "sentence": "The brave never (fear) death.",
+        "answer": "fears"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q10",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with suitable articles.",
+    "parts": [
+      {
+        "sentence": "He plays........ piano.",
+        "answer": "the"
+      },
+      {
+        "sentence": "....... man in white dress is known to me.",
+        "answer": "The"
+      },
+      {
+        "sentence": "He gave me....... one-take.",
+        "answer": "a"
+      },
+      {
+        "sentence": "My father is........ M.A.",
+        "answer": "an"
+      },
+      {
+        "sentence": "Helen was ....... beauty.",
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q11",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "২০ মিটার দীর্ঘ একটি কামরার মেঝে কার্পেট দিয়ে ঢাকতে ৭৫০০ টাকা খরচ হয়। যদি ঐ কামরাটির প্রস্থ ৪ মিটার কম হতো, তবে ৬০০০ টাকা খরচ হতো। কামরাটির প্রস্থ কত?",
+    "steps": [
+      "কামরার দৈর্ঘ্য ২০ মিটার। প্রস্থ ৪ মিটার কমলে ক্ষেত্রফল কমে (২০ × ৪) = ৮০ বর্গমিটার",
+      "ক্ষেত্রফল ৮০ বর্গমিটার কমার জন্য খরচ কমে (৭৫০০ − ৬০০০) = ১৫০০ টাকা",
+      "১৫০০ টাকা খরচ হয় ৮০ বর্গমিটারে ⇒ ৭৫০০ টাকা খরচ হয় (৮০ × ৭৫০০/১৫০০) = ৪০০ বর্গমিটারে",
+      "∴ কামরার ক্ষেত্রফল ৪০০ বর্গমিটার; প্রস্থ = ক্ষেত্রফল/দৈর্ঘ্য = ৪০০/২০ = ২০ মিটার"
+    ],
+    "answer": "২০ মিটার",
+    "alternative": {
+      "steps": [
+        "প্রস্থ ৪ মিটার কম হলে খরচ কম হয় = ৭৫০০ − ৬০০০ = ১৫০০ টাকা",
+        "১৫০০ টাকা খরচ কম হয় ৪ মিটার প্রস্থ কমলে",
+        "৭৫০০ টাকা খরচের ক্ষেত্রে প্রস্থ = ৪ × ৭৫০০/১৫০০ = ২০ মিটার"
+      ],
+      "answer": "প্রস্থ ২০ মিটার"
+    }
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q12",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার অঙ্কদ্বয়ের সমষ্টির সাথে ৭ যোগ করলে যোগফল দশক স্থানীয় অঙ্কটির তিনগুণ হয়। সংখ্যাটি থেকে ১৮ বাদ দিলে অঙ্কদ্বয় স্থান পরিবর্তন করে। সংখ্যাটি নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, সংখ্যাটির একক স্থানীয় অঙ্ক x এবং দশক স্থানীয় অঙ্ক y; সংখ্যাটি = x + 10y",
+      "১ম শর্তানুসারে: x + y + 7 = 3y ⇒ x − 2y = −7 ... (1)",
+      "২য় শর্তানুসারে: x + 10y − 18 = y + 10x ⇒ 9y − 9x = 18 ⇒ y − x = 2 ... (2)",
+      "(1) ও (2) যোগ করে: −y = −5 ⇒ y = 5",
+      "y-এর মান (1)-এ বসিয়ে: x − 10 = −7 ⇒ x = 3",
+      "∴ নির্ণেয় সংখ্যাটি = x + 10y = 3 + 50 = 53"
+    ],
+    "answer": "৫৩"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q13",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "math",
+    "topic": "উৎপাদকে বিশ্লেষণ",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুনঃ x³ + 6x²y + 11xy² + 6y³",
+    "steps": [
+      "x³ + 6x²y + 11xy² + 6y³",
+      "= x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³",
+      "= {x³ + 3.x².2y + 3.x.(2y)² + (2y)³} − xy² − 2y³",
+      "= (x + 2y)³ − y²(x + 2y)",
+      "= (x + 2y){(x + 2y)² − y²}",
+      "= (x + 2y)(x + 2y + y)(x + 2y − y)",
+      "= (x + 2y)(x + 3y)(x + y)"
+    ],
+    "answer": "(x + y)(x + 2y)(x + 3y)"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q14",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 14,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "পার্বত্য চট্টগ্রাম শান্তিচুক্তি কত সালে স্বাক্ষরিত হয়?",
+    "answer": "২ ডিসেম্বর ১৯৯৭"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q15",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'সুনামি' কোন দেশের শব্দ?",
+    "answer": "জাপান"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q16",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "গণপ্রজাতন্ত্রী বাংলাদেশের সর্বোচ্চ আইন কী?",
+    "answer": "সংবিধান"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q17",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "যমুনা সার কারখানায় উৎপাদিত সারের নাম কী?",
+    "answer": "ইউরিয়া"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q18",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 18,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "উত্তরা গণভবন কোথায় অবস্থিত?",
+    "answer": "নাটোর"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q19",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের বর্তমান অন্তর্বর্তীকালীন সরকার গঠিত হয় কত তারিখে?",
+    "answer": "৮ আগস্ট ২০২৪"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q20",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 20,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "এশিয়া মহাদেশের ক্ষুদ্রতম দেশের নাম কী?",
+    "answer": "মালদ্বীপ"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q21",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশকে প্রথম স্বীকৃতিদানকারী দেশ কোনটি?",
+    "answer": "ভুটান"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q22",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশে প্রথম মুদ্রা চালু হয় কত সালে?",
+    "answer": "৪ মার্চ, ১৯৭২"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q23",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'সাগরকন্যা' কোন এলাকার ভৌগোলিক নাম?",
+    "answer": "কুয়াকাটা, পটুয়াখালী"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q24",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 24,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাংলাদেশের জাতীয় সংসদের আসন কয়টি?",
+    "answer": "৩৫০টি"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q25",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 25,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "সুমাত্রা দ্বীপ কোন দেশের অংশ?",
+    "answer": "ইন্দোনেশিয়া"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q26",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 26,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাংলাদেশ ও বার্মার সীমান্ত নদী কোনটি?",
+    "answer": "নাফ"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q27",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 27,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "প্রথম সাফ গেমস কোথায় অনুষ্ঠিত হয়?",
+    "answer": "কাঠমান্ডু, নেপাল (১৯৮৪ সালে)"
+  },
+  {
+    "id": "job-2025-vehicle-maintenance-store-keeper-q28",
+    "examId": "job-2025-vehicle-maintenance-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 28,
+    "marks": 1,
+    "type": "paragraph",
+    "question": "বাংলাদেশের জাতীয় খেলার নাম কোনটি?",
+    "answer": "কাবাডি/হা-ডু-ডু"
+  }
+]

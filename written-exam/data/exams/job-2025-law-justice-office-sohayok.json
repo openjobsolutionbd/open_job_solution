@@ -1,0 +1,359 @@
+[
+  {
+    "id": "job-2025-law-justice-office-sohayok-q01",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 1,
+    "marks": 3,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "প্রাচীন",
+        "অর্বাচীন"
+      ],
+      [
+        "সন্ধি",
+        "বিগ্রহ"
+      ],
+      [
+        "নৈসর্গিক",
+        "কৃত্রিম"
+      ],
+      [
+        "বিরত",
+        "নিরত"
+      ],
+      [
+        "সংশয়",
+        "প্রত্যয়"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q02",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 2,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মৃন্ময়",
+        "a": "মৃৎ + ময়"
+      },
+      {
+        "label": "খ",
+        "q": "ষড়যন্ত্র",
+        "a": "ষট্ + যন্ত্র"
+      },
+      {
+        "label": "গ",
+        "q": "দ্যুলোক",
+        "a": "দিব্ + লোক"
+      },
+      {
+        "label": "ঘ",
+        "q": "সংসার",
+        "a": "সম্ + সার"
+      },
+      {
+        "label": "ঙ",
+        "q": "উপর্যুপরি",
+        "a": "উপরি + উপরি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q03",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 3,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মুমুর্ষু",
+        "মুমূর্ষু"
+      ],
+      [
+        "নিরিহ",
+        "নিরীহ"
+      ],
+      [
+        "নিরোপায়",
+        "নিরুপায়"
+      ],
+      [
+        "অন্যানাপায়",
+        "অন্যোপায়"
+      ],
+      [
+        "জৈষ্ঠ্য",
+        "জ্যৈষ্ঠ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q04",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য রচনা",
+    "qno": 4,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গদাই লঙ্কর চাল",
+        "a": "অতি ধীর গতি, আলসেমি"
+      },
+      {
+        "label": "খ",
+        "q": "পদ্ম পাতার জল",
+        "a": "ক্ষণস্থায়ী"
+      },
+      {
+        "label": "গ",
+        "q": "আটকপালে",
+        "a": "হতভাগ্য"
+      },
+      {
+        "label": "ঘ",
+        "q": "ঊনপঞ্চাশ বায়ু",
+        "a": "পাগলামি"
+      },
+      {
+        "label": "ঙ",
+        "q": "কেতা দুরস্ত",
+        "a": "পরিপাটি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q05",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "english",
+    "topic": "fill-gaps",
+    "qno": 5,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with preposition:",
+    "parts": [
+      {
+        "sentence": "He is good...... Mathematics.",
+        "answer": "at"
+      },
+      {
+        "sentence": "He put his wallet......his pocket.",
+        "answer": "in"
+      },
+      {
+        "sentence": "I was pleased........your answer.",
+        "answer": "at"
+      },
+      {
+        "sentence": "He died......overeating.",
+        "answer": "from"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q06",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 6,
+    "marks": 4,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে সাঁতার কাটতে পারে না।",
+        "target": "He does not know how to swim"
+      },
+      {
+        "label": "খ",
+        "source": "দুইয়ে দুইয়ে চার হয়।",
+        "target": "Two and two makes four"
+      },
+      {
+        "label": "গ",
+        "source": "মানুষ মাত্রই ভুল করে।",
+        "target": "To err is human"
+      },
+      {
+        "label": "ঘ",
+        "source": "স্বদেশপ্রীতি একটি মহৎ গুণ।",
+        "target": "Patriotism is a noble virtue."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q07",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 7,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "Make sentence with each of the following phrases with Bengali meaning:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Take after",
+        "a": "সদৃশ হওয়া — He takes after his father."
+      },
+      {
+        "label": "b",
+        "q": "Bring to light",
+        "a": "প্রকাশ করা — At last the truth was brought to light"
+      },
+      {
+        "label": "c",
+        "q": "Leave no stone unturned",
+        "a": "চেষ্টার ত্রুটি না করা — I left no stone unturned to finish this work in time."
+      },
+      {
+        "label": "d",
+        "q": "Dawn to dusk",
+        "a": "সকাল থেকে সন্ধ্যা — He works from dawn to dusk."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q08",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 8,
+    "marks": 5,
+    "type": "math",
+    "question": "দুইটি সংখ্যার যোগফল ৪৫০। সংখ্যা দুটির অনুপাত ৭:৮ হলে সংখ্যা দুটি নির্ণয় কর।",
+    "steps": [
+      "মনে করি সংখ্যা দুটি যথাক্রমে ৭ক ও ৮ক",
+      "প্রশ্নমতে, ৭ক + ৮ক = ৪৫০",
+      "বা, ১৫ক = ৪৫০",
+      "∴ ক = ৩০",
+      "সুতরাং সংখ্যা দুটি যথাক্রমে ৭ × ৩০ = ২১০ ও ৮ × ৩০ = ২৪০"
+    ],
+    "answer": "উত্তর: ২১০ ও ২৪০"
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q09",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "math",
+    "topic": "নৌকা ও স্রোত",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি নৌকা স্থির পানিতে ঘণ্টায় ৬ কি.মি যেতে পারে। স্রোতের প্রতিকূলে ৬ কি.মি যেতে নৌকাটির ৩ গুণ সময় লাগে। স্রোতের অনুকূলে ৫০ কি.মি যেতে নৌকাটির কত সময় লাগবে?",
+    "steps": [
+      "নৌকাটি স্থির পানিতে ৬ কি.মি যায় ১ ঘণ্টায়",
+      "স্রোতের প্রতিকূলে ৬ কি.মি যায় ১×৩ ঘণ্টা বা ৩ ঘণ্টায়",
+      "প্রশ্নমতে, ৩ ঘণ্টায় যায় ৬ কি.মি ∴ ১ \" \" ৬/৩ \" বা ২ কি.মি",
+      "স্রোতের প্রতিকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ − স্রোতের বেগ",
+      "∴ স্রোতের বেগ = নৌকার প্রকৃত বেগ − নৌকার কার্যকরী বেগ = (৬ − ২) কি.মি = ৪ কি.মি/ঘণ্টায়",
+      "স্রোতের অনুকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ + স্রোতের বেগ = (৬ + ৪) কি.মি = ১০ কি.মি/ঘণ্টায়",
+      "স্রোতের অনুকূলে ১০ কি.মি যায় ১ ঘণ্টায়",
+      "∴ ১ \" \" \" ১/১০ \"",
+      "∴ ৫০ \" \" \" (১×৫০)/১০ ঘণ্টায় বা ৫ ঘণ্টায়"
+    ],
+    "answer": "উত্তর: স্রোতের অনুকূলে যেতে ৫ ঘণ্টা লাগবে।"
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q10",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 4,
+    "type": "math",
+    "question": "x − y = 3 এবং xy = 10 হলে, x³ − y³ এর মান কত?",
+    "steps": [
+      "x³ − y³ = (x−y)³ + 3xy(x−y)",
+      "= (3)³ + 3 × 10 × 3 [মান বসিয়ে]",
+      "= 27 + 90",
+      "= 117 (Answer)"
+    ],
+    "answer": "উত্তর: ১১৭"
+  },
+  {
+    "id": "job-2025-law-justice-office-sohayok-q11",
+    "examId": "job-2025-law-justice-office-sohayok",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 11,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "১১",
+        "q": "বরেন্দ্র অঞ্চল বলতে কি বোঝায়?",
+        "a": "উত্তরবঙ্গ তথা রাজশাহী অঞ্চলকে বুঝায়"
+      },
+      {
+        "label": "১২",
+        "q": "আমার ভাইয়ের রক্তে রাঙানো গানটির রচয়িতা কে?",
+        "a": "আবদুল গাফফার চৌধুরী"
+      },
+      {
+        "label": "১৩",
+        "q": "জাতীয় সংসদ ভবনের নকশা কে করেন?",
+        "a": "লুই আই কান"
+      },
+      {
+        "label": "১৪",
+        "q": "কম্পিউটারে ব্যবহৃত দুটি অংক কি কি?",
+        "a": "০, ১"
+      },
+      {
+        "label": "১৫",
+        "q": "প্লেটোর গৃহশিক্ষক কে ছিলেন?",
+        "a": "সক্রেটিস"
+      },
+      {
+        "label": "১৬",
+        "q": "স্পেশাল অলিম্পিকের সূচনা হয় কবে?",
+        "a": "১৯৬৮ সালে"
+      },
+      {
+        "label": "১৭",
+        "q": "UNHCR এর পূর্ণরূপ কি?",
+        "a": "United Nations High Commissioner for Refugees"
+      },
+      {
+        "label": "১৮",
+        "q": "বাংলাদেশের সবচেয়ে উঁচু পাহাড়ের নাম কি?",
+        "a": "গারো পাহাড়"
+      },
+      {
+        "label": "১৯",
+        "q": "আরব-লীগ কবে গঠিত হয়?",
+        "a": "২২ মার্চ ১৯৪৫"
+      },
+      {
+        "label": "২০",
+        "q": "বাংলাদেশের প্রথম শিক্ষা কমিশনের প্রধান কে ছিলেন?",
+        "a": "ড. কুদরাত-এ-খুদা"
+      }
+    ]
+  }
+]

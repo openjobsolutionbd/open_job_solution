@@ -48,6 +48,15 @@ const EXAM_ARCHIVE = [
     totalQuestions: 6,
   },
   {
+    id: "job-2025-election-commission-rent-house-caretaker",
+    ministry: "নির্বাচন কমিশন সচিবালয়",
+    post: "রেন্ট হাউজ কেয়ারটেকার/নিরাপত্তা প্রহরী",
+    date: "2025-09-05",
+    duration: "৯০ মিনিট",
+    totalMarks: 100,
+    totalQuestions: 14,
+  },
+  {
     id: "job-2025-election-commission-porichonnota-kormi",
     ministry: "নির্বাচন কমিশন সচিবালয়",
     post: "পরিচ্ছন্নতা কর্মী",

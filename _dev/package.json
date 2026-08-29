@@ -6,6 +6,10 @@
     "@cspell/dict-bn": "^1.0.4"
   },
   "scripts": {
-    "spellcheck": "node check-spelling.js"
+    "spellcheck": "node check-spelling.js",
+    "build": "node ../written-exam/build_job_solution.js",
+    "validate": "node validate_data.js",
+    "index": "node ../written-exam/generate_index.js",
+    "check": "npm run build && npm run validate"
   }
 }

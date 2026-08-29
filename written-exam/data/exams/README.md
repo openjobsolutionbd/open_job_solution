@@ -29,19 +29,25 @@
    ]
    ```
 
-2. **`job-solution.js` রিজেনারেট করুন এবং যাচাই করুন** (একসাথে):
+2. **`job-solution.js` রিজেনারেট করুন এবং যাচাই করুন** (একসাথে, `_dev/` ফোল্ডার থেকে):
    ```bash
-   npm run check
+   cd _dev && npm run check
    ```
    অথবা আলাদা আলাদা করে:
    ```bash
+   cd _dev
    npm run build      # job-solution.js রিজেনারেট করে
    npm run validate   # ডেটা যাচাই করে
    ```
-
-3. **EXAM_INDEX.md আপডেট করুন (ঐচ্ছিক):**
+   npm ছাড়া সরাসরি (repo root থেকে):
    ```bash
-   npm run index
+   node written-exam/build_job_solution.js
+   node _dev/validate_data.js
+   ```
+
+3. **EXAM_INDEX.md আপডেট করুন (ঐচ্ছিক, `_dev/` থেকে):**
+   ```bash
+   cd _dev && npm run index
    ```
 
 4. **Commit করুন** (feature branch থেকে, `main`-এ সরাসরি push নয়):

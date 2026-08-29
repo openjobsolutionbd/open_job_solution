@@ -23,10 +23,35 @@ if (files.length === 0) {
 }
 
 let allQuestions = [];
+let hadError = false;
 for (const file of files) {
-  const arr = JSON.parse(fs.readFileSync(path.join(EXAMS_DIR, file), "utf8"));
+  const filePath = path.join(EXAMS_DIR, file);
+  let arr;
+  try {
+    arr = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  } catch (e) {
+    console.error(`❌ ${file}: JSON পড়তে ব্যর্থ — ${e.message}`);
+    hadError = true;
+    continue;
+  }
+  if (!Array.isArray(arr)) {
+    console.error(`❌ ${file}: কনটেন্ট একটা array হওয়া উচিত, কিন্তু তা নয়`);
+    hadError = true;
+    continue;
+  }
+  if (arr.length === 0) {
+    console.error(`❌ ${file}: খালি array — অন্তত একটা প্রশ্ন থাকা উচিত`);
+    hadError = true;
+    continue;
+  }
   allQuestions = allQuestions.concat(arr);
 }
+
+if (hadError) {
+  console.error(`\n❌ উপরের ফাইল(গুলো) ঠিক করুন, তারপর আবার চালান। কোনো ফাইল লেখা হয়নি।`);
+  process.exit(1);
+}
+
 console.log(`✔ ${files.length}টি ফাইল পড়া হয়েছে, মোট ${allQuestions.length}টি প্রশ্ন`);
 
 // ── 2. Serialize each question object to JS (Bengali preserved, no unicode escapes) ──
@@ -95,6 +120,10 @@ const header = `// ============================================================
 
 `;
 
+// এক-লাইন (compact) ফরম্যাট ব্যবহার করা হচ্ছে ইচ্ছাকৃতভাবে — এই ফাইল
+// auto-generated ও এডিট করার জন্য না (এডিট করতে হয় data/exams/*.json-এ),
+// তাই readability-র চেয়ে ছোট ফাইল সাইজ ও দ্রুত browser load বেশি জরুরি।
+// (multi-line ফরম্যাটে ফাইল সাইজ ~970KB থেকে ~1.7MB হয়ে যায়।)
 const questionLines = allQuestions
   .map(q => "  " + toJS(q, null).replace(/\n/g, "\n  "))
   .join(",\n\n");

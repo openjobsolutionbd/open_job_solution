@@ -29,22 +29,22 @@
    ]
    ```
 
-2. **`job-solution.js` রিজেনারেট করুন:**
+2. **`job-solution.js` রিজেনারেট করুন এবং যাচাই করুন** (একসাথে):
    ```bash
-   node written-exam/build_job_solution.js
+   npm run check
+   ```
+   অথবা আলাদা আলাদা করে:
+   ```bash
+   npm run build      # job-solution.js রিজেনারেট করে
+   npm run validate   # ডেটা যাচাই করে
    ```
 
-3. **ডেটা যাচাই করুন:**
+3. **EXAM_INDEX.md আপডেট করুন (ঐচ্ছিক):**
    ```bash
-   node _dev/validate_data.js
+   npm run index
    ```
 
-4. **EXAM_INDEX.md আপডেট করুন (ঐচ্ছিক):**
-   ```bash
-   node written-exam/generate_index.js
-   ```
-
-5. **Commit করুন** (feature branch থেকে, `main`-এ সরাসরি push নয়):
+4. **Commit করুন** (feature branch থেকে, `main`-এ সরাসরি push নয়):
    ```bash
    git add written-exam/data/exams/<examId>.json written-exam/data/job-solution.js
    git commit -m "feat: <examId> এক্সাম যোগ"

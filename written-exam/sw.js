@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'written-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.188';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.189';
 
 const ASSETS = [
   '/written-exam/',

@@ -287,26 +287,5 @@ navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerc
   }
 });
 </script>
-<script src="/_assets/shared/floating-search.js"></script>
-<script>
-  // ভাসমান সার্চ — হোমপেজে স্থানীয় ফলাফল মানে ৪টা নেভিগেশন কার্ড।
-  // এখানে মিল না পেলে (যা প্রায়ই হবে, যেহেতু হোমপেজে বেশি কনটেন্ট নেই)
-  // উইকিপিডিয়া ফলব্যাক দেখাবে।
-  (function () {
-    const NAV_ITEMS = [
-      { label: 'বিসিএস MCQ — বাংলা, ইংরেজি, বিজ্ঞান, গণিত সহ সব বিষয়', href: '/bcs-mcq/' },
-      { label: 'প্রাইমারি MCQ — প্রাথমিক বিদ্যালয় সহকারী শিক্ষক পরীক্ষা', href: '/primary-mcq/' },
-      { label: 'লিখিত পরীক্ষার প্রস্তুতি — ১১-২০তম গ্রেড', href: '/written-exam/' },
-      { label: 'কারেন্ট অ্যাফেয়ার্স — টপিক, ঘটনাপ্রবাহ, টপ নিউজ', href: '/current-affairs/docs/' }
-    ];
-    initFloatingSearch({
-      localSearch: function (q) {
-        return NAV_ITEMS
-          .filter(item => item.label.toLowerCase().includes(q))
-          .map(item => ({ label: item.label, onSelect: () => { window.location.href = item.href; } }));
-      }
-    });
-  })();
-</script>
 </body>
 </html>

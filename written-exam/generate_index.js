@@ -1,5 +1,5 @@
-// generate_index.js — job-solution.js ও exam-archive.js থেকে একটা রিডেবল
-// ইনডেক্স (EXAM_INDEX.md) বানায়। মূল সোর্স ওই দুইটা ফাইলই — নতুন exam
+// generate_index.js — data/exams/*.json ও exam-archive.js থেকে একটা রিডেবল
+// ইনডেক্স (EXAM_INDEX.md) বানায়। মূল সোর্স ওই দুইটাই — নতুন exam
 // যোগ/এডিট করার পর এই স্ক্রিপ্ট চালিয়ে ইনডেক্স রিফ্রেশ করে নিন।
 //
 // Usage: node generate_index.js
@@ -7,6 +7,7 @@
 const fs = require('fs');
 const vm = require('vm');
 const path = require('path');
+const { loadAllQuestions } = require('./load_exams');
 
 const dir = __dirname;
 
@@ -18,7 +19,7 @@ function loadArray(file, varName) {
   return sandbox.__OUT__;
 }
 
-const questions = loadArray('data/job-solution.js', 'JOB_SOLUTIONS');
+const questions = loadAllQuestions();
 const exams = loadArray('exam-archive.js', 'EXAM_ARCHIVE');
 
 const byExam = {};
@@ -28,9 +29,9 @@ const sorted = [...exams].sort((a, b) => (a.date || '').localeCompare(b.date || 
 sorted.reverse(); // নতুন তারিখ আগে
 
 let md = '# Written Exam ইনডেক্স\n\n';
-md += '> এই ফাইলটা `written-exam/data/job-solution.js` ও `written-exam/exam-archive.js`\n';
+md += '> এই ফাইলটা `written-exam/data/exams/*.json` ও `written-exam/exam-archive.js`\n';
 md += '> থেকে `generate_index.js` দিয়ে অটো-জেনারেট করা একটা রিডেবল ইনডেক্স।\n';
-md += '> **মূল সোর্স ওই দুইটা ফাইলই** — এই ইনডেক্স সরাসরি এডিট করবেন না।\n';
+md += '> **মূল সোর্স ওই দুইটাই** — এই ইনডেক্স সরাসরি এডিট করবেন না।\n';
 md += '> নতুন exam যোগ/এডিট করার পর `node generate_index.js` চালিয়ে রিফ্রেশ করুন।\n';
 md += '> তারিখ অনুযায়ী সাজানো (নতুন থেকে পুরোনো)।\n\n';
 md += `মোট exam: **${exams.length}**টা, মোট প্রশ্ন: **${questions.length}**টা\n\n`;

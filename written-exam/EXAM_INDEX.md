@@ -1,8 +1,8 @@
 # Written Exam ইনডেক্স
 
-> এই ফাইলটা `written-exam/data/job-solution.js` ও `written-exam/exam-archive.js`
+> এই ফাইলটা `written-exam/data/exams/*.json` ও `written-exam/exam-archive.js`
 > থেকে `generate_index.js` দিয়ে অটো-জেনারেট করা একটা রিডেবল ইনডেক্স।
-> **মূল সোর্স ওই দুইটা ফাইলই** — এই ইনডেক্স সরাসরি এডিট করবেন না।
+> **মূল সোর্স ওই দুইটাই** — এই ইনডেক্স সরাসরি এডিট করবেন না।
 > নতুন exam যোগ/এডিট করার পর `node generate_index.js` চালিয়ে রিফ্রেশ করুন।
 > তারিখ অনুযায়ী সাজানো (নতুন থেকে পুরোনো)।
 

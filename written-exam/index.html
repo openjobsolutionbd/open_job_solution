@@ -286,7 +286,6 @@
   <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
 
   <!-- Data Files -->
-  <script src="data/job-solution.js"></script>
   <script src="exam-archive.js"></script>
   <script src="renderer.js"></script>
 
@@ -443,10 +442,6 @@
       </div>
     `;
 
-    // সব প্রশ্ন এই exam এর — examId দিয়ে সরাসরি, নিশ্চিত মিল
-    const allQs = (typeof JOB_SOLUTIONS !== 'undefined' ? JOB_SOLUTIONS : [])
-      .filter(q => q.examId === examId);
-
     // Show view
     document.getElementById('homeView').style.display = 'none';
     document.getElementById('examView').style.display = 'block';
@@ -474,17 +469,32 @@
   // Render Questions — বইয়ের ফরম্যাট: subject অনুযায়ী section heading,
   // উত্তর সবসময় সরাসরি দেখা যায় (toggle নেই), badge/tag নেই।
   // ══════════════════════════════════════════
-  function renderQuestions(examId) {
+  async function renderQuestions(examId) {
     const list = document.getElementById('questionsList');
-    list.innerHTML = '';
+    list.innerHTML = '<div class="empty-state"><div class="icon">⏳</div><p>লোড হচ্ছে...</p></div>';
 
-    if (typeof JOB_SOLUTIONS === 'undefined') {
+    // প্রতিটা এক্সামের প্রশ্ন এখন আলাদা JSON ফাইলে — শুধু এই এক্সামটাই fetch করা হয়
+    // (পুরো JOB_SOLUTIONS আর একবারে লোড হয় না)
+    let questions;
+    try {
+      const res = await fetch(`data/exams/${examId}.json`);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      questions = await res.json();
+    } catch (e) {
+      console.warn('exam JSON fetch failed:', examId, e);
       list.innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><p>ডেটা লোড হয়নি।</p></div>';
       return;
     }
 
-    // examId দিয়ে সরাসরি মিল — অনুমান নয়, নিশ্চিত সংযোগ
-    const questions = JOB_SOLUTIONS.filter(q => q.examId === examId);
+    // যে এক্সাম view-টা এখনো খোলা আছে সেটার জন্যই render করা হচ্ছে কিনা — ততক্ষণে
+    // ইউজার অন্য এক্সামে চলে গেলে পুরনো fetch এসে ভুল ডেটা বসিয়ে না দেয়
+    if (currentExamId !== examId) return;
+
+    // নিরাপত্তার জন্য এখনো examId দিয়ে ফিল্টার করা হচ্ছে (ফাইলে ভুলবশত অন্য
+    // এক্সামের প্রশ্ন ঢুকে গেলেও যেন ভুল প্রশ্ন না দেখায়)
+    questions = (Array.isArray(questions) ? questions : []).filter(q => q.examId === examId);
+
+    list.innerHTML = '';
 
     if (questions.length === 0) {
       list.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>এই বিষয়ে কোনো প্রশ্ন যোগ হয়নি।</p></div>';

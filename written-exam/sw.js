@@ -13,10 +13,14 @@ const ASSETS = [
 ];
 
 const OPTIONAL_ASSETS = [
-  '/written-exam/data/job-solution.js',
   '/written-exam/renderer.js',
   '/written-exam/exam-archive.js'
 ];
+
+// এক্সামের প্রশ্ন-ডেটা (data/exams/<examId>.json) আগে থেকে precache হয় না —
+// প্রতিটা এক্সাম প্রথমবার খোলার সময় fetch হয়, এবং নিচের generic fetch
+// handler-ই (isAppFile না হওয়ায় নিচের else শাখায় পড়ে) সেটা runtime-এ
+// cache করে রাখে, ফলে দ্বিতীয়বার থেকে সেই এক্সাম offline-এও পাওয়া যায়।
 
 function isAppFile(url) {
   return (

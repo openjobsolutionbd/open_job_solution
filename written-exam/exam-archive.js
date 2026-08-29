@@ -842,5 +842,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 50,
     totalQuestions: 10,
   },
+  {
+    id: "job-2025-dmch-office-asst-typist",
+    ministry: "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-10-31",
+    duration: "৯০ মিনিট",
+    totalMarks: 70,
+    totalQuestions: 14,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

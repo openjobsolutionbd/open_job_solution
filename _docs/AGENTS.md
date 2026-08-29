@@ -48,7 +48,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 
 1. **branch তৈরির আগে**: `session_status.sh` চালান (উপরে বাধ্যতামূলক ধাপ)।
 2. **push করার ঠিক আগে** (এডিটিং শেষে): `git fetch origin main` চালান। remote এগিয়ে থাকলে push-এর আগেই `git rebase origin/main` করুন — conflict এলে resolve করুন, শুধু এক পক্ষ blindly নেবেন না। **ব্যতিক্রম:** সত্যিকারের বিষয়বস্তু-দ্বন্দ্ব না হয়ে শুধু একই জায়গায় দুই সেশনের ভিন্ন নতুন সংযোজন হলে (যেমন একই exam-archive.js-এ দুই নতুন এন্ট্রি, বা Version History-তে দুই নতুন সারি) — দুটোই রেখে (id/তারিখ অনুযায়ী সাজিয়ে) নিজে মিলিয়ে নেওয়া ঠিক, ব্যবহারকারীকে জিজ্ঞেস করার দরকার নেই। প্রকৃত বিষয়বস্তু-দ্বন্দ্ব হলে (একই লাইন/একই ফিল্ডে দুই ভিন্ন মান) — নিজে অনুমান করে কোনদিক রাখবেন ঠিক করবেন না, conflict ও উভয় পক্ষের পরিবর্তন ব্যবহারকারীকে দেখিয়ে জিজ্ঞেস করুন।
-3. **ডেটা ফাইল (`job-solution.js`, `exam-archive.js`, `PROGRESS.md` ইত্যাদি) সংক্রান্ত rebase-এর পর**: আপনার লেখা কোনো সংখ্যা/count/সারাংশ (যেমন "মোট X এক্সাম, Y প্রশ্ন") থাকলে সেটা **script দিয়ে আবার গণনা করে** নিশ্চিত হন এখনো সঠিক আছে কিনা — rebase-এ অন্য সেশনের যোগ করা ডেটা মিশে গিয়ে সংখ্যা বদলে যেতে পারে (এটা আগে দুইবার ঘটেছে)।
+3. **ডেটা ফাইল (`written-exam/data/exams/*.json`, `exam-archive.js`, `PROGRESS.md` ইত্যাদি) সংক্রান্ত rebase-এর পর**: আপনার লেখা কোনো সংখ্যা/count/সারাংশ (যেমন "মোট X এক্সাম, Y প্রশ্ন") থাকলে সেটা **script দিয়ে আবার গণনা করে** নিশ্চিত হন এখনো সঠিক আছে কিনা — rebase-এ অন্য সেশনের যোগ করা ডেটা মিশে গিয়ে সংখ্যা বদলে যেতে পারে (এটা আগে দুইবার ঘটেছে)।
 4. **PR খোলার পর, merge করার ঠিক আগে**: PR-এর `mergeable_state` আবার চেক করুন। `behind` বা `dirty` দেখালে rebase করে (বা `PUT /pulls/{number}/update-branch`) আবার push করুন, `clean` না হওয়া পর্যন্ত merge করবেন না। merge করার ঠিক আগে required check (`validate`) পাস করেছে কিনা সেটাও শেষবার নিশ্চিত করুন।
 5. rebase-এর পর push করতে **সবসময় `git push --force-with-lease`** ব্যবহার করুন, কখনো `--force` না — অন্য কারো কাজ ভুলবশত overwrite হওয়া এড়াতে।
 
@@ -56,7 +56,7 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 
 ## ⚡ কনটেক্সট-টোকেন সাশ্রয়
 
-বড় ফাইল (`job-solution.js`, `bcs-mcq`/`primary-mcq` ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না।
+বড় ফাইল (`bcs-mcq`/`primary-mcq` ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
 
 - খুঁজতে: `grep -n` → পাওয়া লাইন নম্বর দিয়ে `view_range`
 - এডিটে: `str_replace` (ছোট, ইউনিক `old_str`)

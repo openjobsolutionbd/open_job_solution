@@ -1,9 +1,10 @@
-// check_bugs.js — job-solution.js এর জন্য বাগ-চেকার (v2, renderer.js এর সাথে মিলিয়ে সংশোধিত)
+// check_bugs.js — written-exam ডেটার জন্য বাগ-চেকার (v3, exams/*.json সোর্স)
 // Usage: node check_bugs.js
 
 const fs = require('fs');
 const vm = require('vm');
 const path = require('path');
+const { loadAllQuestions } = require('./load_exams');
 
 const dir = __dirname;
 
@@ -29,9 +30,9 @@ function report(label, items) {
 
 let questions, exams;
 try {
-  questions = loadArray('data/job-solution.js', 'JOB_SOLUTIONS');
+  questions = loadAllQuestions();
 } catch (e) {
-  console.log('❌ job-solution.js failed to parse/execute:', e.message);
+  console.log('❌ data/exams/*.json failed to parse:', e.message);
   process.exit(1);
 }
 try {
@@ -40,7 +41,7 @@ try {
   console.log('❌ exam-archive.js failed to parse/execute:', e.message);
   process.exit(1);
 }
-console.log(`Loaded ${questions.length} questions across job-solution.js, ${exams.length} exams in exam-archive.js\n`);
+console.log(`Loaded ${questions.length} questions across data/exams/*.json, ${exams.length} exams in exam-archive.js\n`);
 
 // ── 1. Duplicate question IDs ────────────────────────────────
 const idCount = {};
@@ -62,7 +63,7 @@ report('Missing required base fields', missingBase);
 // ── 3. examId not found in exam-archive.js ───────────────────
 const examIds = new Set(exams.map(e => e.id));
 const orphanExamIds = [...new Set(questions.filter(q => !examIds.has(q.examId)).map(q => q.examId))];
-report('examId referenced in job-solution.js but missing from exam-archive.js', orphanExamIds);
+report('examId referenced in data/exams/*.json but missing from exam-archive.js', orphanExamIds);
 
 // ── 4. exam-archive.js entries with zero questions ────────────
 const usedExamIds = new Set(questions.map(q => q.examId));

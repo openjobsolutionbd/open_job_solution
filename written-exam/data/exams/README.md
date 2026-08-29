@@ -1,7 +1,7 @@
 # written-exam/data/exams/
 
-এই ফোল্ডারে প্রতিটা পরীক্ষার প্রশ্ন আলাদা JSON ফাইলে রাখা হয়েছে।  
-`written-exam/data/job-solution.js` এখন **auto-generated** — সরাসরি ওই ফাইল এডিট করবেন না।
+এই ফোল্ডারে প্রতিটা পরীক্ষার প্রশ্ন আলাদা JSON ফাইলে রাখা হয়েছে — এটাই একমাত্র সোর্স।  
+`written-exam/index.html` কোনো পরীক্ষা খোলার সময় সরাসরি এখান থেকে সেই একটা ফাইল `fetch()` করে লোড করে (lazy loading) — আর কোনো একটা বড় "সব প্রশ্ন একসাথে" ফাইল (আগেকার `job-solution.js`) নেই, বাদ দেওয়া হয়েছে।
 
 ---
 
@@ -28,20 +28,15 @@
      }
    ]
    ```
+   ফাইলের নামই সরাসরি ব্রাউজার fetch করে, তাই ফাইলের নাম **অবশ্যই** `examId`-এর সাথে হুবহু মিলতে হবে।
 
-2. **`job-solution.js` রিজেনারেট করুন এবং যাচাই করুন** (একসাথে, `_dev/` ফোল্ডার থেকে):
+2. **যাচাই করুন** (`_dev/` ফোল্ডার থেকে):
    ```bash
-   cd _dev && npm run check
+   cd _dev && npm run validate
    ```
-   অথবা আলাদা আলাদা করে:
-   ```bash
-   cd _dev
-   npm run build      # job-solution.js রিজেনারেট করে
-   npm run validate   # ডেটা যাচাই করে
-   ```
+   (বা `npm run check` — এখন এটাই শুধু validate চালায়)
    npm ছাড়া সরাসরি (repo root থেকে):
    ```bash
-   node written-exam/build_job_solution.js
    node _dev/validate_data.js
    ```
 
@@ -52,7 +47,7 @@
 
 4. **Commit করুন** (feature branch থেকে, `main`-এ সরাসরি push নয়):
    ```bash
-   git add written-exam/data/exams/<examId>.json written-exam/data/job-solution.js
+   git add written-exam/data/exams/<examId>.json
    git commit -m "feat: <examId> এক্সাম যোগ"
    ```
 
@@ -60,6 +55,10 @@
 
 ## কেন এই স্ট্রাকচার?
 
-আগে সব পরীক্ষার ডেটা একটাই `job-solution.js`-এ ছিল। একাধিক সেশন সমান্তরালে কাজ করলে  
+আগে সব পরীক্ষার ডেটা একটাই ফাইলে (`job-solution.js`) ছিল। একাধিক সেশন সমান্তরালে কাজ করলে  
 সবাই ফাইলের শেষে যোগ করত — git বারবার merge conflict দেখাত, যদিও আসলে কোনো দ্বন্দ্ব ছিল না।  
 এখন প্রতিটা পরীক্ষা আলাদা ফাইলে — দুটো সেশন কখনো একই ফাইল touch করবে না, তাই conflict structurally অসম্ভব।
+
+এরপর `job-solution.js`-কে **build-time auto-generated** করা হয়েছিল (`exams/*.json` থেকে রিজেনারেট), কিন্তু সেটাও পরে সম্পূর্ণ বাদ দেওয়া হয়েছে — ব্রাউজার এখন সরাসরি প্রয়োজনীয় এক্সামের JSON ফাইলটাই `fetch()` করে (runtime lazy loading), ফলে প্রথমবার সাইট খোলার সময় ~1.4MB ডেটা একসাথে ডাউনলোড হওয়ার বদলে শুধু যে এক্সাম খোলা হচ্ছে তারই ছোট ফাইল লোড হয়।
+
+**Trade-off:** যে এক্সাম আগে একবারও খোলা হয়নি, সেটা offline-এ দেখা যাবে না (Service Worker শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে রাখে)।

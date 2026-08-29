@@ -238,11 +238,13 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │   ├── index.html / style.css / sw.js / renderer.js
 │   ├── exam-archive.js
 │   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
-│   ├── build_job_solution.js    ← exams/*.json থেকে job-solution.js রিজেনারেট করে
+│   ├── load_exams.js            ← exams/*.json লোড+মার্জ করার শেয়ার্ড helper (script-দের জন্য)
+│   ├── check_bugs.js            ← ডেটা বাগ-চেকার (advisory, CI-তে required না)
 │   ├── generate_index.js        ← EXAM_INDEX.md রিজেনারেট করে
 │   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
-│       ├── job-solution.js      ← ★ auto-generated — সরাসরি এডিট করবেন না (নিচে দেখুন)
-│       └── 📁 exams/            ← ★ আসল ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
+│       └── 📁 exams/            ← ★ একমাত্র ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
+│                                  (ব্রাউজার সরাসরি এখান থেকেই fetch() করে, কোনো
+│                                   একত্রিত "সব প্রশ্ন" ফাইল নেই — নিচে Section ৪ দেখুন)
 │
 ├── 📁 current-affairs/          ← সেকশন ৪ (বাংলা কারেন্ট অ্যাফেয়ার্স)
 │   └── 📁 docs/                 ← ⚠️ generated/synced — সরাসরি এডিট করবেন না
@@ -273,9 +275,9 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 
 | ফাইল | কাজ |
 |------|-----|
-| `data/exams/<examId>.json` | **★ আসল ডেটার উৎস।** প্রতিটা পরীক্ষার সব প্রশ্ন এখানে, আলাদা ফাইলে। নতুন প্রশ্ন এখানেই যোগ করুন। |
-| `data/job-solution.js` | **auto-generated** — `build_job_solution.js` সব `exams/*.json` মিলিয়ে এটা রিজেনারেট করে। সরাসরি এডিট করবেন না, git-এ শুধু generated output হিসেবে commit হয়। |
-| `build_job_solution.js` | `exams/*.json` → `job-solution.js` রিজেনারেট করে (`npm run build`) |
+| `data/exams/<examId>.json` | **★ একমাত্র ডেটার উৎস।** প্রতিটা পরীক্ষার সব প্রশ্ন এখানে, আলাদা ফাইলে। নতুন প্রশ্ন এখানেই যোগ করুন। ব্রাউজার runtime-এ সরাসরি এই ফাইলটাই `fetch()` করে (কোনো build/generate ধাপ নেই)। |
+| `load_exams.js` | Node script-দের জন্য শেয়ার্ড helper — সব `exams/*.json` পড়ে একটা array-তে মার্জ করে (`check_bugs.js`, `generate_index.js`, `_dev/validate_data.js` এটা ব্যবহার করে) |
+| `check_bugs.js` | ডেটা বাগ-চেকার (advisory — `node written-exam/check_bugs.js`, CI-তে required check না) |
 | `generate_index.js` | `EXAM_INDEX.md` রিজেনারেট করে (`npm run index`) |
 | `exam-archive.js` | সব পরীক্ষার হেডিং তথ্যের মাস্টার লিস্ট |
 | `PROGRESS.md` | কোন এক্সাম/ক্রম নম্বর ইতিমধ্যে যোগ করা হয়েছে তার ট্র্যাকিং — **নতুন এক্সাম যোগ করার আগে অবশ্যই পড়ুন**, যোগ করার পর অবশ্যই আপডেট করুন (নাহলে অন্য সেশন ডুপ্লিকেট কাজ করবে) |
@@ -285,21 +287,27 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 
 ## ৪. ডেটা আর্কিটেকচার
 
-### exams/*.json হলো একমাত্র সত্য (Single Source of Truth)
+### exams/*.json হলো একমাত্র সত্য (Single Source of Truth) — কোনো একত্রিত build output নেই
 
 ```
-data/exams/job-2025-dc.json          ┐
-data/exams/job-2025-tech-edu.json    ├──→ build_job_solution.js ──→ data/job-solution.js (auto-generated)
-data/exams/... (প্রতিটা পরীক্ষা)      ┘
+হোম পেজ খোলার সময়:   শুধু exam-archive.js লোড হয় (পরীক্ষার তালিকা, ছোট)
+পরীক্ষায় ক্লিক করলে: শুধু সেই একটা data/exams/<examId>.json fetch() হয় (runtime lazy loading)
 ```
 
-`job-solution.js` আর হাতে-লেখা ফাইল না — এটা `exams/*.json`-এর build output। প্রতিটা পরীক্ষা নিজের ফাইলে থাকায় দুটো সেশন একসাথে কাজ করলেও কখনো একই ফাইল touch করে না, তাই merge conflict structurally অসম্ভব (আগে সবাই একই `job-solution.js`-এর শেষে যোগ করত বলে conflict হতো)।
+আগে (v1.185 পর্যন্ত) `exams/*.json` থেকে একটা একত্রিত `job-solution.js` build-time-এ রিজেনারেট হতো এবং ব্রাউজার সেই একটা বড় ফাইল একবারে লোড করত। এখন সেটা সম্পূর্ণ বাদ — `written-exam/index.html` প্রতিটা এক্সাম খোলার সময় সরাসরি সেই একটা `.json` ফাইল `fetch()` করে আনে। কোনো build/generate ধাপ ছাড়াই এই ফাইলগুলো সরাসরি ব্যবহার হয়।
+
+প্রতিটা পরীক্ষা নিজের ফাইলে থাকায় দুটো সেশন একসাথে কাজ করলেও কখনো একই ফাইল touch করে না, তাই merge conflict structurally অসম্ভব (আগে সবাই একই একত্রিত ফাইলের শেষে যোগ করত বলে conflict হতো)।
 
 ### এই সিদ্ধান্তের কারণ
 
-- নতুন প্রশ্ন শুধু নতুন `exams/<examId>.json` ফাইলে যোগ করলেই হবে, বিদ্যমান কোনো ফাইল স্পর্শ করা লাগে না
-- `npm run build` চালালেই `job-solution.js` রিজেনারেট হয়ে যায়
+- নতুন প্রশ্ন শুধু নতুন `exams/<examId>.json` ফাইলে যোগ করলেই হবে, বিদ্যমান কোনো ফাইল স্পর্শ করা লাগে না, কোনো build ধাপও লাগে না
 - সমান্তরাল সেশনগুলোর মধ্যে merge conflict structurally সম্ভব না
+- হোম পেজ প্রথমবার খোলার সময় শুধু ছোট `exam-archive.js` লোড হয় — সব পরীক্ষার সব প্রশ্ন (১৫০০+) একসাথে না
+- **Trade-off:** যে এক্সাম আগে একবারও fetch হয়নি, সেটা offline-এ পাওয়া যাবে না — Service Worker শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে রাখে (`written-exam/sw.js`)
+
+### ফাইলের নাম = examId (গুরুত্বপূর্ণ)
+
+ব্রাউজার সরাসরি `data/exams/${examId}.json` পাথে fetch করে — তাই ফাইলের নাম **অবশ্যই হুবহু** সেই পরীক্ষার `examId`-এর সাথে মিলতে হবে, নাহলে এক্সাম খুললে "ডেটা লোড হয়নি" দেখাবে।
 
 ### নতুন এক্সাম যোগ করার ফরম্যাট
 
@@ -320,7 +328,7 @@ data/exams/... (প্রতিটা পরীক্ষা)      ┘
 ]
 ```
 
-যোগ করার পর: `npm run build && npm run validate` (বা `npm run check`)। বিস্তারিত: `written-exam/data/exams/README.md`।
+যোগ করার পর: `npm run validate` (বা `npm run check`)। বিস্তারিত: `written-exam/data/exams/README.md`।
 
 ---
 
@@ -382,13 +390,13 @@ job-{YYYY}-{exam-slug}
 
 প্রশ্ন আর পরীক্ষা একসাথে যুক্ত হয় `id` এর শুরুর অংশ মিলিয়ে **নয়** — কারণ এতে ভুল মিল হওয়ার ঝুঁকি থাকে (যেমন `tech-edu` আর `tech-edu-driver` কাছাকাছি slug হলে ভুল মিলে যেতে পারে)।
 
-তার বদলে, `job-solution.js`-এর প্রতিটা প্রশ্নে একটা `examId` ফিল্ড **বাধ্যতামূলক** — যার মান হুবহু সেই পরীক্ষার `exam-archive.js`-এর `id` এর সমান হতে হবে।
+তার বদলে, `data/exams/<examId>.json`-এর প্রতিটা প্রশ্নে একটা `examId` ফিল্ড **বাধ্যতামূলক** — যার মান হুবহু সেই পরীক্ষার `exam-archive.js`-এর `id` এর সমান হতে হবে।
 
 ```javascript
 // exam-archive.js
 { id: "job-2025-dc", ... }
 
-// job-solution.js — প্রতিটা প্রশ্নে
+// data/exams/job-2025-dc.json — প্রতিটা প্রশ্নে
 { id: "job-2025-dc-q01", examId: "job-2025-dc", ... }
 { id: "job-2025-dc-q02", examId: "job-2025-dc", ... }
 ```
@@ -441,43 +449,49 @@ bcs-{NN}-{subject-code}-q{NNN}
 
 ---
 
-## ৬. job-solution.js ডেটা ফরম্যাট
+## ৬. প্রশ্নের ডেটা ফরম্যাট (data/exams/*.json)
 
 ### নকশার মূলনীতি
 
 `ministry`, `post`, `date`, `duration`, `totalMarks` — এই তথ্যগুলো **শুধু `exam-archive.js`-এ একবার** থাকে। প্রতিটা প্রশ্নে এগুলো আবার লেখা হয় না — কারণ একটা পরীক্ষায় ১৫-৪০টা প্রশ্ন থাকতে পারে, প্রতিটায় একই তথ্য বারবার লেখা হলে ভুল হওয়ার ঝুঁকি বাড়ে এবং ডেটা অপ্রয়োজনীয়ভাবে বড় হয়।
 
-প্রশ্ন আর পরীক্ষার সংযোগ হয় শুধু `examId` ফিল্ড দিয়ে (Section ৫ দেখুন)।
+প্রশ্ন আর পরীক্ষার সংযোগ হয় শুধু `examId` ফিল্ড দিয়ে (Section ৫ দেখুন)। প্রতিটা পরীক্ষার প্রশ্ন থাকে তার নিজের `data/exams/<examId>.json` ফাইলে — একটা প্লেইন JSON array (JS ভ্যারিয়েবল না, কারণ ব্রাউজার সরাসরি `fetch()` + `res.json()` দিয়ে পড়ে):
 
-```javascript
-const JOB_SOLUTIONS = [
+```json
+[
 
   {
-    id: "job-2025-dc-q01",
-    examId: "job-2025-dc",  // exam-archive.js এর id এর সাথে হুবহু মিলতে হবে
-    subject: "bangla",
-    topic: "পত্রলিখন",                 // ঐচ্ছিক — Section ১৭-এর তালিকা থেকে নিতে হবে
-    qno: 1,                            // সবসময় সংখ্যা (number), string নয়
-    marks: 5,
-    type: "letter",                    // প্রশ্নের ধরন — উপরে "Question Types" তালিকা দেখুন
-    question: "প্রশ্নের টেক্সট...",
-    letter: { /* type অনুযায়ী আলাদা গঠন */ }
+    "id": "job-2025-dc-q01",
+    "examId": "job-2025-dc",
+    "subject": "bangla",
+    "topic": "পত্রলিখন",
+    "qno": 1,
+    "marks": 5,
+    "type": "letter",
+    "question": "প্রশ্নের টেক্সট...",
+    "letter": {
+      "to": "প্রাপক",
+      "subject": "বিষয়",
+      "body": "মূল পত্র",
+      "closing": "ধন্যবাদান্তে",
+      "sender": "প্রেরকের নাম"
+    }
   },
 
   {
-    id: "job-2025-dc-q11",
-    examId: "job-2025-dc",
-    subject: "math",
-    topic: "বীজগণিত",
-    qno: 11,
-    marks: 5,
-    type: "math",
-    question: "$(4x – 5y)$ এর ঘন নির্ণয় করুন।",
-    steps: ["...ধাপ..."],
-    answer: "$64x^3 – 240x^2y + 300xy^2 – 125y^3$"
+    "id": "job-2025-dc-q11",
+    "examId": "job-2025-dc",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "$(4x - 5y)$ এর ঘন নির্ণয় করুন।",
+    "steps": ["...ধাপ..."],
+    "answer": "$64x^3 - 240x^2y + 300xy^2 - 125y^3$"
   }
 
-];
+]
 ```
 
 ### প্রতিটা ফিল্ডের মানে
@@ -516,12 +530,14 @@ const EXAM_ARCHIVE = [
 ];
 ```
 
-### exam-archive.js এবং job-solution.js এর সংযোগ
+### exam-archive.js এবং data/exams/*.json এর সংযোগ
 
 ```
-exam-archive.js  →  id: "job-2025-dc"
-job-solution.js  →  examId: "job-2025-dc"  (প্রতিটা প্রশ্নে — id নয়, examId দিয়ে মিল)
+exam-archive.js              →  id: "job-2025-dc"
+data/exams/job-2025-dc.json  →  examId: "job-2025-dc"  (প্রতিটা প্রশ্নে — id নয়, examId দিয়ে মিল)
 ```
+
+ফাইলের নামও (`job-2025-dc.json`) সেই `id`-এর সাথে হুবহু মিলতে হবে — ব্রাউজার সরাসরি `data/exams/${examId}.json` পাথে fetch করে।
 
 ---
 
@@ -659,13 +675,14 @@ Question Split (প্রশ্নগুলো আলাদা করা)
       ↓
 Subject Classification (বিষয় নির্ধারণ)
       ↓
-job-solution.js আপডেট — প্রতিটা প্রশ্নে examId যোগ করতে হবে
-                         (exam-archive.js এ তৈরি করা id এর সাথে হুবহু মিলিয়ে)
+data/exams/<examId>.json নতুন ফাইল তৈরি — প্রতিটা প্রশ্নে examId যোগ করতে হবে
+                         (exam-archive.js এ তৈরি করা id এর সাথে হুবহু মিলিয়ে,
+                          এবং ফাইলের নামও সেই id-এর সাথে হুবহু মিলতে হবে)
       ↓
 Cloudflare Pages Upload
 ```
 
-> **⚠️ ভুল এড়াতে:** exam-archive.js এর `id` আগে ঠিক করে নিতে হবে, তারপর job-solution.js এর প্রতিটা প্রশ্নে সেই `id`-টাই `examId` হিসেবে বসাতে হবে। দুটো জায়গায় বানান বা অক্ষর এক বিন্দু আলাদা হলে প্রশ্ন পরীক্ষায় দেখাবে না।
+> **⚠️ ভুল এড়াতে:** exam-archive.js এর `id` আগে ঠিক করে নিতে হবে, তারপর `data/exams/<সেই-id>.json` ফাইলের প্রতিটা প্রশ্নে সেই `id`-টাই `examId` হিসেবে বসাতে হবে। দুটো জায়গায় (এবং ফাইলের নামে) বানান বা অক্ষর এক বিন্দু আলাদা হলে প্রশ্ন পরীক্ষায় দেখাবে না।
 
 ---
 
@@ -708,15 +725,16 @@ const APP_METADATA = {
 
 ## ১৪. AI-এর জন্য গুরুত্বপূর্ণ নিয়ম
 
-- **`job-solution.js` একমাত্র ডেটা সোর্স** — বিষয়ভিত্তিক ফাইলে সরাসরি প্রশ্ন যোগ করা যাবে না
+- **`data/exams/<examId>.json` একমাত্র ডেটা সোর্স** — প্রতিটা পরীক্ষা তার নিজের ফাইলে, একটা মনোলিথিক ফাইলে সব প্রশ্ন জড়ো করা যাবে না
+- ফাইলের নাম হুবহু `examId`-এর সাথে মিলতে হবে (ব্রাউজার সরাসরি এই নাম দিয়েই fetch করে)
 - `id` সবসময় unique — সেকশন ৫-এর নিয়ম মেনে বানাতে হবে, কখনো duplicate করা যাবে না
 - প্রতিটা প্রশ্নে `examId` **বাধ্যতামূলক** — সংশ্লিষ্ট `exam-archive.js` entry-র `id` এর সাথে হুবহু মিলতে হবে (Section ৫ দেখুন); না মিললে প্রশ্ন UI তে দেখাবে না
 - `qno` সবসময় সংখ্যা (number) — `"০১"` এর মতো string বা বাংলা সংখ্যা লেখা যাবে না; UI নিজেই বাংলা সংখ্যায় রূপান্তর করে দেখায়
 - `exam-archive.js`-এ `date` সবসময় `YYYY-MM-DD` ফরম্যাটে লিখতে হবে
 - `subject` ফিল্ডে শুধু: `bangla` / `english` / `general-knowledge` / `math`
 - **গণিতের সমীকরণ `$...$` এর ভেতরে MathJax (LaTeX) সিনট্যাক্স দিয়ে লিখতে হবে** — যেমন `$64x^3 - 240x^2y$`। বিয়োগ চিহ্নের জন্য সবসময় সাধারণ হাইফেন (`-`) ব্যবহার করতে হবে, কখনো en-dash (`–`) বা em-dash (`—`) ব্যবহার করা যাবে না — কারণ MathJax এই চিহ্নগুলোকে বিয়োগ চিহ্ন হিসেবে চেনে না
-- `ministry`, `post`, `date`, `duration`, `totalMarks` — এগুলো শুধু `exam-archive.js`-এ থাকবে, `job-solution.js`-এর প্রশ্নে পুনরাবৃত্তি করা যাবে না
-- `written-exam/index.html`-এ `job-solution.js` সবার আগে লোড করতে হবে
+- `ministry`, `post`, `date`, `duration`, `totalMarks` — এগুলো শুধু `exam-archive.js`-এ থাকবে, `data/exams/*.json`-এর প্রশ্নে পুনরাবৃত্তি করা যাবে না
+- `written-exam/index.html`-এ প্রথমে `exam-archive.js` লোড হয়; প্রশ্নের ডেটা (`data/exams/<examId>.json`) exam খোলার সময় on-demand fetch হয়, আগে থেকে script tag দিয়ে লোড করা হয় না
 - `admin/` ফোল্ডার সবসময় `BCS-MCQ-Project`-এর বাইরে রাখতে হবে
 - কোনো প্রকাশক বা বইয়ের নাম রাখা যাবে না
 - নতুন subject category বানানো যাবে না
@@ -739,7 +757,7 @@ const APP_METADATA = {
 **অবস্থা:** পরিকল্পিত, এখনো তৈরি হয়নি
 
 **কাজটা কী:**
-`job-solution.js`-এ নতুন প্রশ্ন যোগ করার আগে যাচাই করবে — ডেটা সঠিক কিনা।
+`data/exams/<examId>.json`-এ নতুন প্রশ্ন যোগ করার আগে যাচাই করবে — ডেটা সঠিক কিনা।
 
 **যা যাচাই করবে:**
 
@@ -777,24 +795,18 @@ const APP_METADATA = {
 
 ---
 
-### ✅ পরীক্ষা-ভিত্তিক ডেটা স্প্লিট — সমাধান হয়ে গেছে (মূল প্ল্যান থেকে ভিন্নভাবে)
+### ✅ পরীক্ষা-ভিত্তিক ডেটা স্প্লিট + Lazy Loading — সম্পূর্ণ সমাধান হয়ে গেছে
 
-**অবস্থা:** সম্পন্ন (PR #204)। এখানে যা লেখা ছিল তা মূলত dynamic runtime lazy-loading প্ল্যান করেছিল, কিন্তু বাস্তবে **build-time static generation** দিয়ে সমাধান হয়েছে — নিচে আসল বাস্তবায়ন।
+**অবস্থা:** সম্পন্ন। এই কাজটা দুই ধাপে হয়েছে:
 
-**যা হয়েছিল:** `job-solution.js`-এ সব পরীক্ষার সব প্রশ্ন এক ফাইলে থাকায় (১৫০০+ প্রশ্ন) একাধিক সেশন সমান্তরালে কাজ করলে বারবার merge conflict হতো।
+1. **প্রথম ধাপ (PR #204):** `job-solution.js`-এ সব পরীক্ষার সব প্রশ্ন এক ফাইলে থাকায় (১৫০০+ প্রশ্ন) একাধিক সেশন সমান্তরালে কাজ করলে বারবার merge conflict হতো — সমাধানে ডেটা `data/exams/<examId>.json`-এ ভাঙা হলো, কিন্তু `job-solution.js`-কে তখন **build-time-এ auto-generate** করে রাখা হয়েছিল (git-conflict সমস্যা সমাধান হলো, browser load-time সমস্যা তখনও থেকে গিয়েছিল)।
+2. **দ্বিতীয় ধাপ:** `job-solution.js` ও তার build script (`build_job_solution.js`) সম্পূর্ণ বাদ দেওয়া হলো। এখন `written-exam/index.html` কোনো এক্সাম খোলার সময় সরাসরি সেই একটা `data/exams/<examId>.json` ফাইল ব্রাউজারে `fetch()` করে — সত্যিকারের runtime lazy loading।
 
-**আসল সমাধান:**
+**চূড়ান্ত আর্কিটেকচার:** বিস্তারিত Section ৪ দেখুন।
 
-```
-data/exams/<examId>.json   ← প্রতিটা পরীক্ষা আলাদা JSON ফাইলে (আসল সোর্স)
-        │  npm run build (build_job_solution.js)
-        ▼
-data/job-solution.js       ← সব মিলিয়ে auto-generated (runtime-এ browser এটাই লোড করে, আগের মতোই)
-```
+**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)।
 
-Runtime-এ `written-exam/index.html` এখনো পুরনো নিয়মেই `job-solution.js` একবারে লোড করে (dynamic per-exam lazy load বাস্তবায়ন হয়নি) — সমস্যাটা সমাধান হয়েছে git-workflow লেভেলে (conflict এড়ানো), browser লোড-টাইম অপ্টিমাইজেশন লেভেলে না। ফাইলের সাইজ (~1.4MB) নিয়ে ভবিষ্যতে সত্যিকারের lazy-loading দরকার হলে তা আলাদা কাজ হিসেবে বিবেচনা করতে হবে।
-
-**বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ) — এগুলো কখনো `written-exam/index.html`-এ ব্যবহৃতই হয়নি (dead code ছিল), তাই এই migration-এ মুছে ফেলা হয়েছে।
+**বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ, কখনো ব্যবহৃতই হয়নি), `build_job_solution.js`, `data/job-solution.js` — সব মুছে ফেলা হয়েছে।
 
 বিস্তারিত নিয়ম: `written-exam/data/exams/README.md`।
 
@@ -830,7 +842,7 @@ Project Owner Cloudflare Pages-এ আপলোড করবেন  ← এক�
 |---------|-----------|-------------|
 | BCS MCQ | প্রশ্ন + ৪টা option + উত্তর extract, `bcs-NN-{subject}-q{NNN}` format | `data/{subject}.js` |
 | Primary MCQ | বিষয় চিনবে, `pb/pm/pe/pg/pc` prefix দিয়ে id বানাবে | `primary-mcq/data.js` |
-| Written Exam | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন extract করবে, `job-{YYYY}-{code}-q{NN}` format | `written-exam/job-solution.js` + `exam-archive.js` |
+| Written Exam | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন extract করবে, `job-{YYYY}-{code}-q{NN}` format | `written-exam/data/exams/<examId>.json` + `exam-archive.js` |
 
 ### AI-এর জন্য নির্দেশ
 

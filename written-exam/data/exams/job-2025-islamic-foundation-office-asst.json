@@ -1,0 +1,459 @@
+[
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q01",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "যুক্তবর্ণ বিশ্লেষণ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত যুক্ত বর্ণগুলি কোন কোন বর্ণ দিয়ে তৈরি:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ক্ষ্ম",
+        "a": "ক + ষ + ম"
+      },
+      {
+        "label": "খ",
+        "q": "হ্ন",
+        "a": "হ + ন"
+      },
+      {
+        "label": "গ",
+        "q": "জ্ঞ",
+        "a": "জ + ঞ"
+      },
+      {
+        "label": "ঘ",
+        "q": "ভ্র",
+        "a": "ভ + ্ + র"
+      },
+      {
+        "label": "ঙ",
+        "q": "থ",
+        "a": "ত + থ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q02",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 2,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "খাসজমি",
+        "a": "খাস যে জমি - কর্মধারয়"
+      },
+      {
+        "label": "খ",
+        "q": "রাজপথ",
+        "a": "পথের রাজা - ষষ্ঠী তৎপুরুষ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q03",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "অনুচ্ছেদ",
+    "qno": 3,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "'কৃত্রিম বুদ্ধিমত্তা' বিষয়ে ১০ (দশ) টি বাক্যের একটি অনুচ্ছেদ লিখুন।",
+    "answer": "কৃত্রিম বুদ্ধিমত্তা\n\nকৃত্রিম বুদ্ধিমত্তা বা আর্টিফিশিয়াল ইন্টেলিজেন্স (AI) হলো এমন এক আধুনিক প্রযুক্তি, যার মাধ্যমে কম্পিউটার বা রোবট মানুষের মতো বুদ্ধিমত্তা প্রদর্শন করতে পারে। এটি এমন সব কাজ সম্পাদন করতে সক্ষম, যেগুলোর জন্য সাধারণত মানুষের চিন্তা, যুক্তি ও অভিজ্ঞতা প্রয়োজন হয়। এআই কাজ করে তথ্য বিশ্লেষণ, শেখা এবং সিদ্ধান্ত গ্রহণের মাধ্যমে। অর্থাৎ, এটি ডেটা থেকে শিক্ষা নেয় এবং সেই অনুযায়ী পরবর্তী পদক্ষেপ নির্ধারণ করে। বর্তমানে কৃত্রিম বুদ্ধিমত্তা স্বাস্থ্যসেবা, শিক্ষা, কৃষি, শিল্প, ব্যবসা, যোগাযোগ ও নিরাপত্তাসহ নানা ক্ষেত্রে ব্যবহৃত হচ্ছে। চিকিৎসা ক্ষেত্রে এটি রোগ নির্ণয়ে সহায়তা করে, কৃষিতে ফসল উৎপাদন বিশ্লেষণ করে, আর শিক্ষায় স্মার্ট টিউটর বা স্বয়ংক্রিয় সহায়ক হিসেবে ব্যবহৃত হয়। এছাড়া ভয়েস অ্যাসিস্ট্যান্ট, সার্চ ইঞ্জিন ও চ্যাটবট প্রযুক্তিতেও এআই গুরুত্বপূর্ণ ভূমিকা রাখছে। এর সুফল হলো কাজের গতি ও দক্ষতা বৃদ্ধি, মানব ভ্রান্তি কমানো এবং সময়ের সাশ্রয়। তবে এর কুফলও রয়েছে—যেমন মানব শ্রমের বিকল্প হয়ে বেকারত্ব সৃষ্টি, ব্যক্তিগত তথ্যের গোপনীয়তা নষ্ট হওয়া এবং প্রযুক্তি নির্ভরতার ঝুঁকি। তাই কৃত্রিম বুদ্ধিমত্তার ব্যবহার অবশ্যই নৈতিকতা, সঠিক নীতি ও নিয়ন্ত্রণের মাধ্যমে করতে হবে, যেন এটি মানুষের কল্যাণ ও টেকসই উন্নয়নে ভূমিকা রাখতে পারে।"
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q04",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "বিরাম চিহ্ন",
+    "qno": 4,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "বিরাম চিহ্ন লিখুনঃ কেননা অন্ন বস্ত্রের অব্যবস্থার মূলে লোভ আর শিক্ষাদীক্ষার ফলে মানুষ উপলব্ধি করতে পারে লোভে পাপ পাপে মৃত্যু কথাটা বুলিমাত্র নয় সত্য।",
+    "parts": [
+      {
+        "label": "",
+        "q": "বিরাম চিহ্ন লিখুনঃ কেননা অন্ন বস্ত্রের অব্যবস্থার মূলে লোভ আর শিক্ষাদীক্ষার ফলে মানুষ উপলব্ধি করতে পারে লোভে পাপ পাপে মৃত্যু কথাটা বুলিমাত্র নয় সত্য।",
+        "a": "কেননা অন্ন বস্ত্রের অব্যবস্থার মূলে লোভ, আর শিক্ষাদীক্ষার ফলে মানুষ উপলব্ধি করতে পারে, 'লোভে পাপ, পাপে মৃত্যু' কথাটা বুলিমাত্র নয়, সত্য।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q05",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "সাহিত্য (নজরুল)",
+    "qno": 5,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "নিম্নোক্ত প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কাজী নজরুল ইসলামের একটি অনুবাদ গ্রন্থের নাম লিখুন?",
+        "a": "রুবাইয়াৎ-ই-ওমর খৈয়াম"
+      },
+      {
+        "label": "খ",
+        "q": "কাজী নজরুল ইসলামের দুটি উপন্যাসের নাম লিখুন।",
+        "a": "মৃত্যুক্ষুধা, কুহেলিকা"
+      },
+      {
+        "label": "গ",
+        "q": "কাজী নজরুল ইসলামের সমাধি কোথায় অবস্থিত?",
+        "a": "ঢাকা বিশ্ববিদ্যালয়ের কেন্দ্রীয় মসজিদের পাশে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q06",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 6,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Gen-z'",
+    "answer": "Gen-z\n\nGeneration Z, or Gen Z, is the generation of people born between 1997 and 2012. Gen Z is the first generation to grow up with the internet as a part of daily life. They are often called \"digital natives\". Gen Z came of age during a time of climate doom, pandemic lockdowns, and fears of economic collapse. They witnessed the rise of China in the global economy and the collapse of communism. Gen Z's parents are protective and teach their children more social and emotional skills than previous generations. Generation Z is part of a generation that is global, social, visual."
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q07",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "bangla",
+    "topic": "অনুবাদ",
+    "qno": 7,
+    "marks": 2,
+    "type": "translate",
+    "question": "বাংলায় অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "a",
+        "source": "Neither of the two pens will do.",
+        "target": "কলম দুটি কোনটিই লিখা হয় না।"
+      },
+      {
+        "label": "b",
+        "source": "I don't bunk off school.",
+        "target": "আমি স্কুল ফাঁকি দেই না।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q08",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "ডাক্তার আসার পর রোগী মারা গেল।",
+        "target": "The patient died after the doctor had come."
+      },
+      {
+        "label": "খ",
+        "source": "ভুল করা মানুষের স্বভাব।",
+        "target": "To err is human."
+      },
+      {
+        "label": "গ",
+        "source": "আয় বুঝে ব্যয় কর।",
+        "target": "Cut your coat according to your cloth."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q09",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "english",
+    "topic": "transformation",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Transform the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Bangladesh is the most beautiful country in the world. (Positive)",
+        "changed": "No other country in the world is as beautiful as Bangladesh."
+      },
+      {
+        "label": "b",
+        "original": "I know her name. (Complex)",
+        "changed": "I know what her name is."
+      },
+      {
+        "label": "c",
+        "original": "Open the door. (Passive)",
+        "changed": "Let the door be opened."
+      },
+      {
+        "label": "d",
+        "original": "He is a rich man. (Negative)",
+        "changed": "He is not a poor man."
+      },
+      {
+        "label": "e",
+        "original": "I gave him a pen. (Passive)",
+        "changed": "He was given a pen by me."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q10",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the following words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "At best",
+        "meaning": "বড় জোর",
+        "example": "I can lend you the book at best for a week."
+      },
+      {
+        "label": "b",
+        "phrase": "Vicious circle",
+        "meaning": "দুষ্ট চক্র",
+        "example": "This is a vicious circle of modern politics."
+      },
+      {
+        "label": "c",
+        "phrase": "Sorts of",
+        "meaning": "প্রকার",
+        "example": "It's a sort of pale orange colour."
+      },
+      {
+        "label": "d",
+        "phrase": "Black Sheep",
+        "meaning": "কুলাঙ্গার",
+        "example": "He is a black sheep of his family."
+      },
+      {
+        "label": "e",
+        "phrase": "Blue blood",
+        "meaning": "অভিজাত বংশীয়",
+        "example": "He is proud of his blue blood."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q11",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি পরিবারে চালের খরচ বাবদ মাসে ৮০০ টাকা প্রয়োজন হয়। চালের মূল্য ২৫% বৃদ্ধি পেলো। ঐ পরিবারে চালের ব্যবহার শতকরা কত কমালে ঐ পরিবারের চাল ক্রয় বাবদ খরচ বৃদ্ধি করতে হবে না।",
+    "steps": [
+      "চালের মূল্য ২৫% বৃদ্ধি পাওয়ায় বর্তমান মূল্য = ১২৫ টাকা",
+      "বর্তমান মূল্য ১২৫ টাকা হলে পূর্বমূল্য ১০০ টাকা",
+      "\" ১ \" \" \" ১০০/১২৫",
+      "\" ১০০ \" \" \" (১০০ × ১০০)/১২৫ = ৮০ টাকা",
+      "∴ চালের ব্যবহার শতকরা কমাতে হবে = (১০০ – ৮০)% = ২০%",
+      "বিকল্প সমাধান: ২৫% বৃদ্ধিতে বর্তমান মূল্য = ১২৫ টাকা; মূল্য বৃদ্ধি পায় = (১২৫–১০০) = ২৫ টাকা",
+      "১২৫ টাকায় কমাতে হবে ২৫ টাকা",
+      "\" ১ \" \" \" ২৫/১২৫",
+      "\" ১০০ \" \" \" (২৫ × ১০০)/১২৫ = ২০ টাকা"
+    ],
+    "answer": "২০%।"
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q12",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "math",
+    "topic": "জ্যামিতিক সংজ্ঞা",
+    "qno": 12,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "সংজ্ঞা লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "স্থূলকোণ",
+        "a": "এক সমকোণ বা ৯০° চেয়ে বড় কিন্তু দুই সমকোণ থেকে ছোট কোণকে স্থূলকোণ বলে।"
+      },
+      {
+        "label": "খ",
+        "q": "বর্গক্ষেত্র",
+        "a": "যে চতুর্ভুজের প্রত্যেকটি বাহু পরস্পর সমান ও সমান্তরাল এবং প্রত্যেকটি কোণ সমকোণ তাকে বর্গক্ষেত্র বলে।"
+      },
+      {
+        "label": "গ",
+        "q": "সামান্তরিক",
+        "a": "যে চতুর্ভুজের বিপরীত বাহুগুলো পরস্পর সমান ও সমান্তরাল কিন্তু কোণগুলো সমকোণ নয় তাকে সামান্তরিক বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q13",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "(2x+3y)(4x – 5y) কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ করুন।",
+    "steps": [
+      "ধরি, 2x+3y = a এবং 4x – 5y = b",
+      "প্রদত্ত রাশি: ab = ((a+b)/2)² – ((a−b)/2)²",
+      "= ((2x+3y + 4x−5y)/2)² – ((2x+3y − 4x+5y)/2)²",
+      "= ((6x−2y)/2)² – ((8y−2x)/2)²",
+      "= [2(3x−y)/2]² – [2(4y−x)/2]²",
+      "= (3x − y)² – (4y − x)²"
+    ],
+    "answer": "(3x − y)² – (4y − x)²"
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q14",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "সংক্ষিপ্তরূপ",
+    "qno": 14,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "OIC এর পূর্ণরূপ লিখুন।",
+    "parts": [
+      {
+        "label": "",
+        "q": "OIC এর পূর্ণরূপ লিখুন।",
+        "a": "Organisation of Islamic Cooperation"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q15",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "ইসলামি জ্ঞান",
+    "qno": 15,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "মোকাব্বের কাকে বলে?",
+    "parts": [
+      {
+        "label": "",
+        "q": "মোকাব্বের কাকে বলে?",
+        "a": "মোকাব্বের (مكبر) হলেন এমন ব্যক্তি যিনি নামাজ বা দোয়ার সময় ইমামের কণ্ঠস্বরকে জোরে পুনরাবৃত্তি করে মুসল্লিদের কাছে পৌঁছে দেন, যাতে তারা ইমামের নির্দেশাবলী শুনতে পায়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q16",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "ইসলামি জ্ঞান",
+    "qno": 16,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "খতীব কে?",
+    "parts": [
+      {
+        "label": "",
+        "q": "খতীব কে?",
+        "a": "খতীব হলেন সেই ব্যক্তি যিনি জুমার নামাজ এবং দুই ঈদের নামাজের সময় খুতবা (ভাষণ) প্রদান করেন। সাধারণত, যিনি ইমামতি করেন, তিনিই খতিবের দায়িত্ব পালন করেন।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q17",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "ইসলামি জ্ঞান",
+    "qno": 17,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "রোজার কাফফারা কী?",
+    "parts": [
+      {
+        "label": "",
+        "q": "রোজার কাফফারা কী?",
+        "a": "রমজান মাসের রোজা ভঙ্গ করলে কাফফারা তিনভাবে আদায় করা যায়: ১. একটি দাসমুক্ত করা ২. আর অক্ষম হলে ৬০ জন মিসকিনকে দুই বেলা ভালোভাবে তৃপ্তিসহ খাবার খাওয়ানো ৩. ধারাবাহিকভাবে ৬০দিন রোজা রাখা।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q18",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "প্রাতিষ্ঠানিক জ্ঞান",
+    "qno": 18,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "ইসলামিক ফাউন্ডেশন কোন মন্ত্রণালয়ের অধীন?",
+    "parts": [
+      {
+        "label": "",
+        "q": "ইসলামিক ফাউন্ডেশন কোন মন্ত্রণালয়ের অধীন?",
+        "a": "ধর্ম বিষয়ক মন্ত্রণালয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q19",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "ভূগোল",
+    "qno": 19,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "দ্রাঘিমাংশ কী?",
+    "parts": [
+      {
+        "label": "",
+        "q": "দ্রাঘিমাংশ কী?",
+        "a": "পৃথিবীপৃষ্ঠে কোনো স্থান যে দ্রাঘিমারেখায় অবস্থিত সেই দ্রাঘিমারেখা ও মূলমধ্যরেখা নিরক্ষীয় তলে পৃথিবীর কেন্দ্রবিন্দুর সাথে যে কোণ উৎপন্ন হয়, তাকে সেই স্থানের দ্রাঘিমাংশ বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q20",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "ক্রীড়া",
+    "qno": 20,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "সুপার ওভার কী?",
+    "parts": [
+      {
+        "label": "",
+        "q": "সুপার ওভার কী?",
+        "a": "একটি ক্রিকেট ম্যাচে দুই দলের ব্যাটিং শেষে যদি দুই দলের রান স্কোর সমান থাকে, তখন বিজয়ী দল নির্বাচন করার জন্য এক ওভারের যে ম্যাচ অনুষ্ঠিত হয় তাকে সুপার ওভার বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-islamic-foundation-office-asst-q21",
+    "examId": "job-2025-islamic-foundation-office-asst",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 21,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "মানব দেহের সবচেয়ে বড় কোষের নাম কী?",
+    "parts": [
+      {
+        "label": "",
+        "q": "মানব দেহের সবচেয়ে বড় কোষের নাম কী?",
+        "a": "স্ত্রী ডিম্বাণু। (প্রাণী জগতের সবচেয়ে বড় কোষ- উটপাখির ডিম; মানব দেহের দীর্ঘতম কোষ- নিউরন/স্নায়ু কোষ)"
+      }
+    ]
+  }
+]

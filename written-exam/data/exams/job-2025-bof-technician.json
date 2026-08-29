@@ -1,0 +1,317 @@
+[
+  {
+    "id": "job-2025-bof-technician-q01",
+    "examId": "job-2025-bof-technician",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 1,
+    "marks": 3,
+    "type": "idiom",
+    "question": "বাগধারার অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "তামার বিষ",
+        "meaning": "অর্থের কুপ্রভাব"
+      },
+      {
+        "label": "খ",
+        "phrase": "এক ঘরের গিন্নি",
+        "meaning": "কর্তৃত্ব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q02",
+    "examId": "job-2025-bof-technician",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পদ্ধতি",
+        "a": "পদ্ + হতি"
+      },
+      {
+        "label": "খ",
+        "q": "যথেষ্ট",
+        "a": "যথা + ইষ্ট"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q03",
+    "examId": "job-2025-bof-technician",
+    "subject": "bangla",
+    "topic": "সমার্থক শব্দ",
+    "qno": 3,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'রবি' এর সমার্থক শব্দ লিখুন।",
+    "answer": "ভানু, রবি, অর্ক"
+  },
+  {
+    "id": "job-2025-bof-technician-q04",
+    "examId": "job-2025-bof-technician",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 4,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কারক ও বিভক্তি নির্ণয় করঃ 'কি করি আজ ভেবে না পাই।'",
+    "answer": "অধিকরণে শূন্য"
+  },
+  {
+    "id": "job-2025-bof-technician-q05",
+    "examId": "job-2025-bof-technician",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "আকাশ মেঘলা।",
+        "target": "The sky is cloudy."
+      },
+      {
+        "label": "খ",
+        "source": "আমি গতকাল এসেছি।",
+        "target": "I came yesterday."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q06",
+    "examId": "job-2025-bof-technician",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "He is suitable….. the post.",
+        "answer": "for"
+      },
+      {
+        "sentence": "He is……university student.",
+        "answer": "a"
+      },
+      {
+        "sentence": "If I were rich I…….. travel.",
+        "answer": "would"
+      },
+      {
+        "sentence": "I wish I…….a child again.",
+        "answer": "could be"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q07",
+    "examId": "job-2025-bof-technician",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "The news will shock you.",
+        "changed": "You will be shocked at the news."
+      },
+      {
+        "label": "b",
+        "original": "Never tell a lie.",
+        "changed": "Let never a lie be told."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q08",
+    "examId": "job-2025-bof-technician",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 8,
+    "marks": 2,
+    "type": "idiom",
+    "question": "Make sentences with idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "To and fro",
+        "meaning": "এদিক সেদিক",
+        "example": "He was running to and fro."
+      },
+      {
+        "label": "b",
+        "phrase": "Out and out",
+        "meaning": "পুরোপুরি",
+        "example": "He is an out and out gentleman."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bof-technician-q09",
+    "examId": "job-2025-bof-technician",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "a + b = ৩, ab = ২ হলে, a³ + b³ এর মান কত?",
+    "steps": [
+      "a³ + b³ = (a+b)³ − ৩ab(a+b)",
+      "= ৩³ − ৩ × ২ × ৩",
+      "= ২৭ − ১৮ = ৯"
+    ],
+    "answer": "৯"
+  },
+  {
+    "id": "job-2025-bof-technician-q10",
+    "examId": "job-2025-bof-technician",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি চৌবাচ্চায় ৮০০০ লিটার পানি ধরে। চৌবাচ্চাটির দৈর্ঘ্য ২.৫৬ মিটার এবং প্রস্থ ১.২৫ মিটার হলে, গভীরতা কত?",
+    "steps": [
+      "চৌবাচ্চাটির তলার ক্ষেত্রফল = ২৫৬ সে.মি. × ১২৫ সে.মি. = ৩২০০০ বর্গ সে.মি.",
+      "৮০০০ লিটার = ৮০০০ × ১০০০ ঘন সে.মি. = ৮০,০০,০০০ ঘন সে.মি. [১০০০ ঘন সে.মি. = ১ লিটার]",
+      "∴ গভীরতা = ৮০,০০,০০০ ÷ ৩২০০০ সে.মি. = ২৫০ সে.মি. = ২.৫ মিটার"
+    ],
+    "answer": "২.৫ মিটার"
+  },
+  {
+    "id": "job-2025-bof-technician-q11",
+    "examId": "job-2025-bof-technician",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি a³ − b³ = ৫১৩ এবং a − b = ৩ হয়, তবে ab এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, a³ − b³ = ৫১৩",
+      "(a−b)³ + ৩ab(a−b) = ৫১৩",
+      "৩³ + ৯ab = ৫১৩ ⇒ ৯ab = ৪৮৬",
+      "∴ ab = ৫৪"
+    ],
+    "answer": "৫৪"
+  },
+  {
+    "id": "job-2025-bof-technician-q12",
+    "examId": "job-2025-bof-technician",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একজন দোকানদার ১২% লাভে একটি জিনিস ৫৬ টাকায় বিক্রয় করেন, জিনিসটির ক্রয়মূল্য কত?",
+    "steps": [
+      "১২% লাভে বিক্রয়মূল্য = ১০০ + ১২ = ১১২ টাকা",
+      "বিক্রয়মূল্য ১১২ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ৫৬ টাকা হলে ক্রয়মূল্য = ১০০ × ৫৬/১১২ = ৫০ টাকা"
+    ],
+    "answer": "৫০ টাকা"
+  },
+  {
+    "id": "job-2025-bof-technician-q13",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 13,
+    "marks": 4,
+    "type": "paragraph",
+    "question": "RAM কী?",
+    "answer": "RAM (Random Access Memory) হচ্ছে একটি অস্থায়ী মেমরি।"
+  },
+  {
+    "id": "job-2025-bof-technician-q14",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "মুক্তিযুদ্ধ",
+    "qno": 14,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "মুক্তিযুদ্ধের সময় নৌ সেক্টর কত নম্বর ছিল?",
+    "answer": "১০ নং সেক্টর"
+  },
+  {
+    "id": "job-2025-bof-technician-q15",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "ভূমিকম্পের তীব্রতা মাপার যন্ত্রের নাম কী?",
+    "answer": "সিসমোগ্রাফ"
+  },
+  {
+    "id": "job-2025-bof-technician-q16",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 4,
+    "type": "paragraph",
+    "question": "AI কী?",
+    "answer": "Artificial Intelligence (কৃত্রিম বুদ্ধিমত্তা)"
+  },
+  {
+    "id": "job-2025-bof-technician-q17",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 17,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "সূর্যোদয়ের দেশ কোনটি?",
+    "answer": "জাপান"
+  },
+  {
+    "id": "job-2025-bof-technician-q18",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 18,
+    "marks": 4,
+    "type": "paragraph",
+    "question": "বাংলাদেশের মোট সীমান্তবর্তী জেলার সংখ্যা কত?",
+    "answer": "৩২টি"
+  },
+  {
+    "id": "job-2025-bof-technician-q19",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 19,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "বাংলাদেশের নিবন্ধিত ভৌগোলিক নির্দেশক (GI) পণ্য কতটি? ২টির নাম লিখুন।",
+    "answer": "মোট জিআই পণ্য ৬০টি। যেমন — জামদানি, টাঙ্গাইল শাড়ি ইত্যাদি।"
+  },
+  {
+    "id": "job-2025-bof-technician-q20",
+    "examId": "job-2025-bof-technician",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 20,
+    "marks": 4,
+    "type": "paragraph",
+    "question": "তুরস্কের মুদ্রার নাম কী?",
+    "answer": "লিরা"
+  }
+]

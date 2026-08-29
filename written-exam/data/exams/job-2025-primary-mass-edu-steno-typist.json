@@ -1,0 +1,521 @@
+[
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q01",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য রচনা করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "চাঁদের হাট",
+        "a": "আনন্দের প্রাচুর্য"
+      },
+      {
+        "label": "খ",
+        "q": "ধামাধরা",
+        "a": "তোষামোদকারী"
+      },
+      {
+        "label": "গ",
+        "q": "হ-য-ব-র-ল",
+        "a": "বিশৃঙ্খলা"
+      },
+      {
+        "label": "ঘ",
+        "q": "চোরা বালি",
+        "a": "অদৃশ্য বিপদাশঙ্কা/প্রচ্ছন্ন আকর্ষণ"
+      },
+      {
+        "label": "ঙ",
+        "q": "এলাহিকাণ্ড",
+        "a": "বিরাট আয়োজন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q02",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "bangla",
+    "topic": "grammar",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "লিঙ্গ পরিবর্তন করুন / চিহ্নিত শব্দগুলির পদ নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তার সাহস আছে।",
+        "a": "বিশেষণ পদ"
+      },
+      {
+        "label": "খ",
+        "q": "ঝিনুক পঞ্চম শ্রেণিতে পড়ে।",
+        "a": "বিশেষণ পদ"
+      },
+      {
+        "label": "গ",
+        "q": "ঝমঝম করে বৃষ্টি পড়ছে",
+        "a": "ক্রিয়া বিশেষণ"
+      },
+      {
+        "label": "ঘ",
+        "q": "আমার সামনে দাঁড়াও",
+        "a": "অব্যয়"
+      },
+      {
+        "label": "ঙ",
+        "q": "তিনি একজন শিক্ষক",
+        "a": "সর্বনাম"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q03",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "bangla",
+    "topic": "লিঙ্গ পরিবর্তন",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "লিঙ্গ পরিবর্তন করুনঃ",
+    "columns": [
+      "পুরুষবাচক",
+      "স্ত্রীবাচক"
+    ],
+    "rows": [
+      [
+        "বিদ্বান",
+        "বিদুষী"
+      ],
+      [
+        "গুরু",
+        "গুর্বী"
+      ],
+      [
+        "দৌহিত্র",
+        "দৌহিত্রী"
+      ],
+      [
+        "মহীয়ান",
+        "মহীয়সী"
+      ],
+      [
+        "জনক",
+        "জননী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q04",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "bangla",
+    "topic": "বিপরীতার্থক শব্দ",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীতার্থক শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "হর্ষ",
+        "বিষাদ"
+      ],
+      [
+        "লয়",
+        "সৃষ্টি"
+      ],
+      [
+        "তিমির",
+        "আলো"
+      ],
+      [
+        "পুরস্কার",
+        "তিরস্কার"
+      ],
+      [
+        "উত্তমর্ণ",
+        "অধমর্ণ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q05",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 5,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যে নারী বীর",
+        "a": "বীরাঙ্গনা"
+      },
+      {
+        "label": "খ",
+        "q": "দেখবার ইচ্ছা",
+        "a": "দিদৃক্ষা"
+      },
+      {
+        "label": "গ",
+        "q": "দান করার যোগ্য",
+        "a": "দেয়/দিয়া"
+      },
+      {
+        "label": "ঘ",
+        "q": "কণ্ঠ পর্যন্ত",
+        "a": "আকণ্ঠ"
+      },
+      {
+        "label": "ঙ",
+        "q": "মাসের শেষ দিন",
+        "a": "সংক্রান্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q06",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 6,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a passage on 'Impact of social media on society'",
+    "answer": "Social media has become an integral part of modern society, transforming the way people communicate, share information, and interact with one another. Platforms like Facebook, Instagram, and YouTube have connected billions of people across the globe, making communication faster and easier than ever before. Social media has brought many positive impacts. It helps people stay connected with friends and family, provides a platform for business promotion, and enables the quick spread of important news and information. It has also given a voice to social movements and raised awareness on various issues. However, social media also has negative effects on society. Excessive use can lead to addiction, reduced face-to-face interaction, and mental health issues such as anxiety and depression. The spread of misinformation and fake news is another serious concern. To make the best use of social media, we must use it responsibly and be aware of both its benefits and drawbacks."
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q07",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Pros and cons",
+        "meaning": "খুঁটিনাটি",
+        "example": "I know the pros and cons of the matter"
+      },
+      {
+        "label": "b",
+        "phrase": "Apple of one's eye",
+        "meaning": "নয়নের মনি",
+        "example": "He is the apple of his mother's eye."
+      },
+      {
+        "label": "c",
+        "phrase": "In a nutshell",
+        "meaning": "সংক্ষেপে",
+        "example": "Tell the story in a nutshell."
+      },
+      {
+        "label": "d",
+        "phrase": "Once in a blue moon",
+        "meaning": "কালেভদ্রে",
+        "example": "He comes to his village one in a blue moon"
+      },
+      {
+        "label": "e",
+        "phrase": "Birds of the same feather",
+        "meaning": "একই স্বভাবের লোক",
+        "example": "Birds of a feather flock together"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q08",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition.",
+    "parts": [
+      {
+        "sentence": "She is good.... English.",
+        "answer": "at"
+      },
+      {
+        "sentence": "We should trust...... God.",
+        "answer": "in"
+      },
+      {
+        "sentence": "The fan is moving...... his head.",
+        "answer": "over"
+      },
+      {
+        "sentence": "He is suitable...... the post.",
+        "answer": "for"
+      },
+      {
+        "sentence": "He has gone...... the book.",
+        "answer": "through"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q09",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the sentences as per direction:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "More you read, more you learn. (Appropriate article)",
+        "changed": "The more you read, the more you learn."
+      },
+      {
+        "label": "b",
+        "original": "Move or die. (complex)",
+        "changed": "If you do not move, you will die."
+      },
+      {
+        "label": "c",
+        "original": "He is healthy but lazy (simple)",
+        "changed": "Inspite of his being healthy he is lazy."
+      },
+      {
+        "label": "d",
+        "original": "Change the voice. (passive)",
+        "changed": "Let the voice be changed."
+      },
+      {
+        "label": "e",
+        "original": "Rice is eaten by him. (active)",
+        "changed": "He eats rice."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q10",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentence with following words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Give up",
+        "meaning": "ত্যাগ করা",
+        "example": "You should give up smoking."
+      },
+      {
+        "label": "b",
+        "phrase": "Well off",
+        "meaning": "সচ্ছল",
+        "example": "His father is not well off."
+      },
+      {
+        "label": "c",
+        "phrase": "Once in a blue moon",
+        "meaning": "কালেভদ্রে",
+        "example": "He comes to his village one in a blue moon"
+      },
+      {
+        "label": "d",
+        "phrase": "In reference to",
+        "meaning": "প্রত্যুত্তর",
+        "example": "I am writing in reference to your letter."
+      },
+      {
+        "label": "e",
+        "phrase": "Black and White",
+        "meaning": "লিখিত ভাবে",
+        "example": "We charged against him in black and white."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q11",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করঃ (x+5)(x+13)−9",
+    "steps": [
+      "(x+5)(x+13)−9",
+      "= (x+5)(x+5+8)−9",
+      "মনে করি, x+5 = a",
+      "প্রদত্ত রাশি = a(a+8) − 9",
+      "= a² + 8a − 9",
+      "= a² + 9a − a − 9",
+      "= a(a+9) − 1(a+9)",
+      "= (a+9)(a−1)",
+      "= (x+5+9)(x+5−1)",
+      "= (x+14)(x+4)"
+    ],
+    "answer": "(x+14)(x+4)"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q12",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর দাওঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পঞ্চভুজের অন্তঃ ০৫ টি কোণের সমষ্টি কত?",
+        "a": "৫৪০°"
+      },
+      {
+        "label": "খ",
+        "q": "৩০ ও ৮০ এর মধ্যে মৌলিক সংখ্যা কতটি?",
+        "a": "৮টি"
+      },
+      {
+        "label": "গ",
+        "q": "রম্বসের কর্ণদ্বয় পরস্পরকে...... সমদ্বিখণ্ডিত করে।",
+        "a": "সমকোণে"
+      },
+      {
+        "label": "ঘ",
+        "q": "ট্রাপিজিয়ামের ক্ষেত্রফল নির্ণয়ের সূত্রটি লিখ।",
+        "a": "১/২ × (সমান্তরাল বাহুদ্বয়ের যোগফল) × উচ্চতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q13",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "৫ টি লিচু যে দরে ক্রয় করা হয় ৮ টি লিচু ঐ দরে বিক্রয় করলে শতকরা কত লাভ বা ক্ষতি হবে?",
+    "steps": [
+      "মনে করি, ক্রয়মূল্য ১ টাকা",
+      "৫টি লিচুর ক্রয়মূল্য ১ টাকা",
+      "১টি \" \" ১/৫ টাকা",
+      "আবার, ৪টি লিচুর বিক্রয় মূল্য ১ টাকা",
+      "১টি \" \" \" ১/৮ টাকা",
+      "সুতরাং লাভ হয় = ১/৫ − ১/৮ = ৩/২০ টাকা",
+      "৩/৮ টাকায় লাভ হয় ৩/২০ টাকা",
+      "১ \" \" \" ৩/(২০×৩/৮)",
+      "১০০ \" \" \" (৩×১০০)/(২০×৩/৮)",
+      "= ২৫ টাকা"
+    ],
+    "answer": "২৫%"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q14",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "√x + 1/√x = a হলে, দেখাও যে, x² + 1/x² এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, √x + 1/√x = a",
+      "বা, (√x + 1/√x)² = a²",
+      "বা, (√x)² + 2.√x.1/√x + (1/√x)² = a²",
+      "বা, x + 2 + 1/x = a²",
+      "বা, x + 1/x = a² − 2",
+      "বা, (x + 1/x)² = (a²−2)²",
+      "বা, x² + 2.x.1/x + (1/x)² = a⁴ − 2a.2 + 4",
+      "বা, x² + 1/x² = a⁴ − 4a + 4 − 2",
+      "∴ x² + 1/x² = a⁴ − 4a + 2"
+    ],
+    "answer": "a⁴ − 4a + 2"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q15",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "a + 1/a = √6 হলে, a³ + 1/a³ = 3√6 প্রমাণ করুন।",
+    "steps": [
+      "L.H.S = a³ + 1/a³",
+      "= a³ + (1/a)³",
+      "= (a + 1/a)³ − 3×a×1/a(a + 1/a)",
+      "= (√6)³ − 3×√6",
+      "= 6√6 − 3√6",
+      "= 3√6",
+      "= R.H.S"
+    ],
+    "answer": "a³ + 1/a³ = 3√6 (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-steno-typist-q16",
+    "examId": "job-2025-primary-mass-edu-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-২০ঃ সংক্ষেপে উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আনতারা কোন দেশের সংবাদ সংস্থা?",
+        "a": "ইন্দোনেশিয়া"
+      },
+      {
+        "label": "খ",
+        "q": "জীব জগতের জন্য সবচেয়ে ক্ষতিকারক রশ্মি কোনটি?",
+        "a": "গামা রশ্মি"
+      },
+      {
+        "label": "গ",
+        "q": "এডেন কোন দেশের সমুদ্রবন্দর?",
+        "a": "ইয়েমেন"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশের সর্বশেষ বিভাগ কোনটি?",
+        "a": "ময়মনসিংহ"
+      },
+      {
+        "label": "ঙ",
+        "q": "রুশ বিপ্লব কত সালে সংঘটিত হয়?",
+        "a": "১৯১৭"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের প্রথম বায়ু বিদ্যুৎ কেন্দ্র কোন জেলায় স্থাপন করা হয়?",
+        "a": "সোনাগাজী, ফেনী"
+      },
+      {
+        "label": "ছ",
+        "q": "জাতিসংঘের বর্তমান মহাসচিব কে?",
+        "a": "আন্তোনিও গুতেরেস"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলা নববর্ষ কে চালু করেন?",
+        "a": "সম্রাট আকবর"
+      }
+    ]
+  }
+]

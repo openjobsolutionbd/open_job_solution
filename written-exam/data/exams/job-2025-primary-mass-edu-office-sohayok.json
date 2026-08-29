@@ -1,0 +1,477 @@
+[
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q01",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য",
+    "qno": 1,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য গঠন করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ঝাঁকের কৈ",
+        "a": "এক দলভুক্ত"
+      },
+      {
+        "label": "খ",
+        "q": "জিলাপীর প্যাঁচ",
+        "a": "কুটিলতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q02",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "গৃহী",
+        "সন্ন্যাসী"
+      ],
+      [
+        "প্রতিযোগী",
+        "সহযোগী"
+      ],
+      [
+        "বন্ধুর",
+        "মসৃণ"
+      ],
+      [
+        "অগ্রজ",
+        "অনুজ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q03",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দিনের প্রথম ভাগ",
+        "a": "পূর্বাহ্ন"
+      },
+      {
+        "label": "খ",
+        "q": "ক্ষণকাল ব্যাপিয়া স্থায়ী",
+        "a": "ক্ষণস্থায়ী"
+      },
+      {
+        "label": "গ",
+        "q": "ময়ূরের ডাক",
+        "a": "কেকা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q04",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 4,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কপোল ভাসিয়া গেল নয়নের জলে",
+        "a": "কর্মে শূন্য"
+      },
+      {
+        "label": "খ",
+        "q": "গাড়ি স্টেশন ছাড়ে",
+        "a": "অপাদানে শূন্য"
+      },
+      {
+        "label": "গ",
+        "q": "রকিব অংকে কাঁচা",
+        "a": "অধিকরণে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q05",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 5,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বিজয় পতাকা",
+        "a": "বিজয়ের পতাকা -৬ষ্ঠী তৎপুরুষ"
+      },
+      {
+        "label": "খ",
+        "q": "সিংহপুরুষ",
+        "a": "পুরুষ সিংহের ন্যায় -উপমিত কর্মধারয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q06",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "short-qa",
+    "qno": 6,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'এক পয়সার বাঁশি' কাব্যগ্রন্থের রচয়িতা কে?",
+    "answer": "জসীমউদ্দীন"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q07",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'বৃষ্টি শেষ হওয়ার আগেই আমরা বাড়ি পৌঁছেছিলাম' বাক্যটি কোন কাল?",
+    "answer": "পুরাঘটিত অতীত কাল"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q08",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "যৌগিক বাক্যে রূপান্তর করুনঃ তুমি চেষ্টা না করায় ব্যর্থ হয়েছো।",
+    "answer": "তুমি চেষ্টা করনি, তাই ব্যর্থ হয়েছো।"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q09",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "বাক্যটি সঠিকভাবে লিখুনঃ তোমায় দেখে সে আশ্চর্য হয়েছে।",
+    "answer": "তোমায় দেখে সে আশ্চর্যান্বিত হয়েছে।"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q10",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "bangla",
+    "topic": "short-qa",
+    "qno": 10,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "সঠিক উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'বুলবুলিস্তান' কার লেখা?",
+        "a": "গোলাম মোস্তফা"
+      },
+      {
+        "label": "খ",
+        "q": "'নৌফেল ও হাতেম' কার লেখা?",
+        "a": "ফররুখ আহমেদ"
+      },
+      {
+        "label": "গ",
+        "q": "চর্যাপদে সবচেয়ে বেশি পদ কার লেখা?",
+        "a": "কাহ্নপা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q11",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 11,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "Correct the spelling:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Griveince",
+        "a": "Grievance"
+      },
+      {
+        "label": "b",
+        "q": "Commity",
+        "a": "Committee"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q12",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "short-qa",
+    "qno": 12,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "What is the noun form of 'Depart'",
+    "answer": "Departure"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q13",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 13,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "I prefer tea from coffee.",
+        "a": "I prefer tea to coffee."
+      },
+      {
+        "label": "b",
+        "q": "I saw a dream last light.",
+        "a": "I saw a dream last night."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q14",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 14,
+    "marks": 6,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "He is senior .....me.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Keep the book..... the table.",
+        "answer": "on"
+      },
+      {
+        "sentence": "He is not capable ....... doing this.",
+        "answer": "of"
+      },
+      {
+        "sentence": "Vegetables are good .....health.",
+        "answer": "for"
+      },
+      {
+        "sentence": "It has been raining.......morning.",
+        "answer": "since"
+      },
+      {
+        "sentence": "Lean the ladder....... the wall.",
+        "answer": "against"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q15",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 15,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "চকচক করলেই সোনা হয় না।",
+        "target": "All that glitters is not gold"
+      },
+      {
+        "label": "খ",
+        "source": "গত তিন দিন যাবৎ মুষলধারে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining cats and dogs for three days last."
+      },
+      {
+        "label": "গ",
+        "source": "গরু ঘাস খেয়ে বাঁচে।",
+        "target": "The cow lives on grass"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q16",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 16,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a passage on \\\"The Winter in Bangladesh\\\"",
+    "answer": "Winter is one of the six seasons in Bangladesh. It usually begins in late November and lasts till February. During this season, the weather becomes cold and dry. The temperature often falls at night and early morning, and thick fog covers roads and fields. Communication sometimes becomes difficult because of dense fog. People wear warm clothes like sweaters, mufflers and shawls to keep themselves safe from cold. Winter is the season of vegetables. Different kinds of fresh vegetables such as cabbage, cauliflower, spinach, beans and carrots are available in this season. Date juice, orange, apples and other winter fruits are also found in the markets. Farmers remain busy harvesting crops and selling vegetables. Though winter is enjoyable for the rich and middle-class people, poor people suffer a lot due to cold. However, most people love winter because it is a pleasant and comfortable season in Bangladesh."
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q17",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "math",
+    "topic": "গ.সা.গু",
+    "qno": 17,
+    "marks": 5,
+    "type": "math",
+    "question": "কোন বৃহত্তম সংখ্যা দ্বারা ১০০ ও ১৮৪ কে ভাগ করলে প্রত্যেকবার ভাগশেষ ৪ থাকবে?",
+    "steps": [
+      "১০০ ও ১৮৪ কে নির্ণেয় বৃহত্তম সংখ্যা দ্বারা ভাগ করলে প্রত্যেক ক্ষেত্রে ভাগশেষ ৪ থাকবে।",
+      "কিন্তু, ১০০ − ৪ = ৯৬ ও ১৮৪ − ৪ = ১৮০ কে ভাগ করলে কোনো ভাগশেষ থাকবে না।",
+      "অতএব, নির্ণেয় সংখ্যাটি হবে ৯৬ এবং ১৮০ এর গ.সা.গু।",
+      "৯৬ ) ১৮০ ( ১",
+      "     ৯৬",
+      "     ৮৪ ) ৯৬ ( ১",
+      "          ৮৪",
+      "          ১২ ) ৮৪ ( ৭",
+      "               ৮৪",
+      "               ০",
+      "এখানে, গ.সা.গু ১২",
+      "সুতরাং, নির্ণেয় বৃহত্তম সংখ্যাটি হবে ১২।"
+    ],
+    "answer": "১২"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q18",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 18,
+    "marks": 5,
+    "type": "math",
+    "question": "x + y = 6 হলে, x³ + y³ + 18xy এর মান কত?",
+    "steps": [
+      "x³ + y³ + 18xy",
+      "= x³ + y³ + 3×6×xy",
+      "= x³ + y³ + 3(x+y)×xy [মান বসিয়ে]",
+      "= (x+y)³",
+      "= (6)³",
+      "= 216"
+    ],
+    "answer": "216"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q19",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 19,
+    "marks": 5,
+    "type": "math",
+    "question": "4x² − 23x + 33 কে উৎপাদকে বিশ্লেষণ করুন।",
+    "steps": [
+      "4x² − 23x + 33",
+      "= 4x² − 12x − 11x + 33",
+      "= 4x(x−3) − 11(x−3)",
+      "= (x−3)(4x−11)"
+    ],
+    "answer": "(x−3)(4x−11)"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q20",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 20,
+    "marks": 5,
+    "type": "math",
+    "question": "দুইটি সংখ্যার যোগফল ১৭ এবং গুণফল ৭২। বড় সংখ্যাটি কত?",
+    "steps": [
+      "মনে করি, ছোট সংখ্যাটি ক, বড় সংখ্যাটি ১৭ − ক",
+      "প্রশ্নমতে, ক(১৭−ক) = ৭২",
+      "বা, ১৭ক − ক² = ৭২",
+      "বা, ক² − ১৭ক + ৭২ = ০",
+      "বা, ক² − ৯ক − ৮ক + ৭২ = ০",
+      "বা, ক(ক−৯) − ৮(ক−৯) = ০",
+      "বা, (ক−৯)(ক−৮) = ০",
+      "∴ ক = ৯ অথবা ৮",
+      "সুতরাং বড় সংখ্যা ৯"
+    ],
+    "answer": "৯"
+  },
+  {
+    "id": "job-2025-primary-mass-edu-office-sohayok-q21",
+    "examId": "job-2025-primary-mass-edu-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 21,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-১০ঃ নিচের প্রশ্ন গুলোর সঠিক উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ধানসিঁড়ি নদী কোন জেলায় অবস্থিত?",
+        "a": "ঝালকাঠি"
+      },
+      {
+        "label": "খ",
+        "q": "বিশ্বের গভীরতম খাল কোনটি?",
+        "a": "পানামা খাল"
+      },
+      {
+        "label": "গ",
+        "q": "জুলাই বিপ্লবের প্রথম শহীদ কে? তিনি কত তারিখ শহীদ হয়েছেন?",
+        "a": "আবু সাঈদ; ১৬ জুলাই ২০২৪"
+      },
+      {
+        "label": "ঘ",
+        "q": "OPEC এর পূর্ণরূপ কি?",
+        "a": "Organization of the Petroleum Exporting Countries"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইবনে বতুতা কোন দেশের নাগরিক?",
+        "a": "মরক্কো"
+      },
+      {
+        "label": "চ",
+        "q": "\\\"সোনালী কাবিন\\\" কাব্যগ্রন্থটির লেখক কে?",
+        "a": "আল মাহমুদ"
+      },
+      {
+        "label": "ছ",
+        "q": "রুশ বিপ্লব কত সালে সংঘঠিত হয়?",
+        "a": "১৯১৭ সালে"
+      },
+      {
+        "label": "জ",
+        "q": "গোলান মালভূমি কোন দেশে অবস্থিত?",
+        "a": "সিরিয়া"
+      },
+      {
+        "label": "ঝ",
+        "q": "জাতিসংঘের বর্তমান মহাসচিব কে?",
+        "a": "আন্তোনিও গুতেরেস"
+      },
+      {
+        "label": "ঞ",
+        "q": "নিশীথ সূর্যের দেশ কোনটি?",
+        "a": "নরওয়ে"
+      }
+    ]
+  }
+]

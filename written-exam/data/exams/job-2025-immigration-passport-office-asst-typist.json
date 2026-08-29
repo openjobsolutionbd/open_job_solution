@@ -1,0 +1,467 @@
+[
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q01",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 1,
+    "marks": 3,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "মুখরতা",
+        "মৌন"
+      ],
+      [
+        "সমবেত",
+        "ছত্রভঙ্গ"
+      ],
+      [
+        "বিজন",
+        "জনবহুল"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q02",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি-বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বিদ্যোৎসাহী",
+        "a": "বিদ্যা+উৎসাহী"
+      },
+      {
+        "label": "খ",
+        "q": "পবিত্র",
+        "a": "পো+ইত্র"
+      },
+      {
+        "label": "গ",
+        "q": "মহেশ",
+        "a": "মহা+ঈশ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q03",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মনিষী",
+        "a": "মনীষী"
+      },
+      {
+        "label": "খ",
+        "q": "ইতিমধ্যে",
+        "a": "ইতোমধ্যে"
+      },
+      {
+        "label": "গ",
+        "q": "পাসান",
+        "a": "পাষাণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q04",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যা উচ্চারণ করা যায় না",
+        "a": "অনুচ্চার্য"
+      },
+      {
+        "label": "খ",
+        "q": "হরিণের চামড়া",
+        "a": "অজিন"
+      },
+      {
+        "label": "গ",
+        "q": "একই সময়ে",
+        "a": "যুগপৎ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q05",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 5,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "বাগধারাগুলোর অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আদার ব্যাপারী",
+        "a": "সামান্য বিষয়ে ব্যক্ত ব্যক্তি"
+      },
+      {
+        "label": "খ",
+        "q": "পর্বতের মূষিক প্রসব",
+        "a": "বিরাট সম্ভাবনার সামান্য প্রাপ্তি"
+      },
+      {
+        "label": "গ",
+        "q": "অগ্রপশ্চাৎ",
+        "a": "ভেবে-চিন্তে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q06",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 6,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "কারক নির্ণয় করঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গাড়ি স্টেশন ছেড়েছে",
+        "a": "অপাদানে শূন্য"
+      },
+      {
+        "label": "খ",
+        "q": "পাছে লোকে কিছু বলে",
+        "a": "কর্তৃকারকে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q07",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 7,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a short paragraph on Metro rail in Bangladesh",
+    "answer": "Metro rail is one of the most significant achievements of modern Bangladesh. It is an electric railway system that runs above the ground on elevated tracks, mainly to reduce traffic congestion in Dhaka city. The construction of Dhaka Metro Rail, also known as MRT Line-6, began under the guidance of Dhaka Mass Transit Company Limited (DMTCL). The metro rail has made commuting faster, safer, and more comfortable for the people of Dhaka. It has significantly reduced travel time and traffic jams on the busy roads of the capital. The government plans to expand the metro rail network further to cover more areas of the city. This modern transportation system is a symbol of Bangladesh's progress towards a developed and smart nation."
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q08",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "ভাবছি আমি যদি রাজা হতাম",
+        "target": "I wish I were a king."
+      },
+      {
+        "label": "খ",
+        "source": "তুমি কি কখনো বিদেশ গিয়েছ?",
+        "target": "Have you ever been abroad?"
+      },
+      {
+        "label": "গ",
+        "source": "দেখতে পেলেই বিশ্বাস হয়।",
+        "target": "Seeing is believing."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q09",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "Change the following sentences as directed:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Post the letter (Passive)",
+        "changed": "Let the letter be posted."
+      },
+      {
+        "label": "b",
+        "original": "I said to her, \\\"He will not come\\\".",
+        "changed": "I told her that he would not go."
+      },
+      {
+        "label": "c",
+        "original": "Only Rahim can do the sum (Negative)",
+        "changed": "None but Rahim can do the sum."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q10",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentence with the following idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Red letter day",
+        "meaning": "স্মরণীয় দিন",
+        "example": "16th December is our red letter day."
+      },
+      {
+        "label": "b",
+        "phrase": "Once in a blue moon",
+        "meaning": "কদাচিৎ",
+        "example": "He comes here once in a blue moon."
+      },
+      {
+        "label": "c",
+        "phrase": "French leave",
+        "meaning": "বিনা অনুমতিতে ছুটি",
+        "example": "No one should enjoy French leave."
+      },
+      {
+        "label": "d",
+        "phrase": "End in smoke",
+        "meaning": "ব্যর্থ হওয়া",
+        "example": "All his plans ended in smoke."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q11",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 11,
+    "marks": 5,
+    "type": "table",
+    "question": "Correct the following words:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Cornel",
+        "Colonel"
+      ],
+      [
+        "Neumonia",
+        "Pneumonia"
+      ],
+      [
+        "Commetti",
+        "Committee"
+      ],
+      [
+        "Sychology",
+        "Psychology"
+      ],
+      [
+        "Pediatric",
+        "Paediatric"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q12",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "চিত্রসহ সংজ্ঞা দাওঃ ক) রম্বস, খ) বিপ্রতীপ কোণ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রম্বস",
+        "a": "যে চতুর্ভুজের প্রতিটি বাহু পরস্পর সমান ও বিপরীত বাহুগুলো সমান্তরাল কিন্তু কোণ গুলো সমকোণ নয় তাকে রম্বস বলে।"
+      },
+      {
+        "label": "খ",
+        "q": "বিপ্রতীপ কোণ",
+        "a": "দুটি কোণের একটির বাহুদ্বয় অপরটির বাহুদ্বয়ের বিপরীত রশ্মি হলে, কোণ দুটিকে বিপ্রতীপ কোণ বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q13",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 4,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করঃ x² − 13x − 48",
+    "steps": [
+      "x² − 13x − 48",
+      "= x² − 16x + 3x − 48",
+      "= x(x−16) + 3(x−16)",
+      "= (x−16)(x+3)"
+    ],
+    "answer": "(x−16)(x+3)"
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q14",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 4,
+    "type": "math",
+    "question": "x − 1/x = 5 হলে, (x⁴+1)/x² এর মান কত?",
+    "steps": [
+      "প্রদত্ত রাশি = (x⁴+1)/x²",
+      "= x²/x² + 1/x²",
+      "= x² + (1/x)²",
+      "= (x − 1/x)² + 2.x.(1/x)",
+      "= 5² + 2 [মান বসিয়ে]",
+      "= 25 + 2",
+      "= 27"
+    ],
+    "answer": "27"
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q15",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 15,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি আয়তক্ষেত্রের ক্ষেত্রফল ১৬০ বর্গমিটার। প্রস্থ দৈর্ঘ্য অপেক্ষা ৬ মিটার কম। আয়তক্ষেত্রটির দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, আয়তক্ষেত্রটির প্রস্থ = ক মিটার",
+      "দৈর্ঘ্য = ক + ৬",
+      "প্রশ্নমতে, ক(ক+৬) = ১৬০",
+      "বা, ক² + ৬ক = ১৬০",
+      "বা, ক² + ৬ক − ১৬০ = ০",
+      "বা, ক² + ১৬ক − ১০ক − ১৬০ = ০",
+      "বা, ক(ক+১৬) − ১০(ক+১৬) = ০",
+      "বা, (ক+১৬)(ক−১০) = ০",
+      "হয়, ক+১৬ = ০ অথবা, ক−১০ = ০",
+      "∴ ক = −১৬ [গ্রহণযোগ্য নয়] অথবা ∴ ক = ১০",
+      "সুতরাং প্রস্থ = ১০ মিটার এবং দৈর্ঘ্য = ১০ + ৬ = ১৬ মিটার"
+    ],
+    "answer": "দৈর্ঘ্য ১৬ মিটার এবং প্রস্থ ১০ মিটার"
+  },
+  {
+    "id": "job-2025-immigration-passport-office-asst-typist-q16",
+    "examId": "job-2025-immigration-passport-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞানঃ নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাংলাদেশের ফুসফুস বলা হয় কোন স্থানকে?",
+        "a": "সুন্দরবন।"
+      },
+      {
+        "label": "খ",
+        "q": "কোন দেশের দ্বিতীয় ভাষা বাংলা?",
+        "a": "সিয়েরালিওন।"
+      },
+      {
+        "label": "গ",
+        "q": "ড্রাইস আইস কি?",
+        "a": "কঠিন অবস্থায় কার্বন-ডাই অক্সাইড"
+      },
+      {
+        "label": "ঘ",
+        "q": "কম্পিউটারের ব্রেইন কোনটি?",
+        "a": "মাইক্রোপ্রসেসর"
+      },
+      {
+        "label": "ঙ",
+        "q": "Three Zero তত্ত্বের প্রবক্তা কে?",
+        "a": "ড. মুহাম্মদ ইউনূস"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের 'হোয়াইট গোল্ড' হিসেবে পরিচিত কোনটি?",
+        "a": "চিংড়ি"
+      },
+      {
+        "label": "ছ",
+        "q": "কম্পিউটারের বহুল ব্যবহৃত ২টি এন্টিভাইরাসের নাম লিখুন।",
+        "a": "AVG, Avast"
+      },
+      {
+        "label": "জ",
+        "q": "২য় বিশ্বযুদ্ধের অক্ষশক্তি কারা?",
+        "a": "জার্মানি, জাপান, ইতালি"
+      },
+      {
+        "label": "ঝ",
+        "q": "এভারেস্ট জয়ী প্রথম বাংলাদেশী নারীর নাম কী?",
+        "a": "নিশাত মজুমদার"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশের সমুদ্র বন্দর কয়টি ও কি কি?",
+        "a": "৩টি। যথা: চট্টগ্রাম, মংলা ও পায়রা সমুদ্র বন্দর।"
+      },
+      {
+        "label": "ট",
+        "q": "বাংলাদেশ কত সালে টেস্ট ক্রিকেট খেলায় মর্যাদা পায়?",
+        "a": "২৬ জুন, ২০০০ সালে।"
+      },
+      {
+        "label": "ঠ",
+        "q": "বাংলাদেশের প্রথম সার্চ ইঞ্জিনের নাম কী?",
+        "a": "পিপীলিকা"
+      },
+      {
+        "label": "ড",
+        "q": "কম্পিউটারের কাজের গতি কি দ্বারা প্রকাশ করা হয়?",
+        "a": "ন্যানো সেকেন্ড।"
+      },
+      {
+        "label": "ঢ",
+        "q": "জাপানের মুদ্রার নাম কি?",
+        "a": "ইয়েন"
+      },
+      {
+        "label": "ণ",
+        "q": "পৃথিবীর দীর্ঘতম নদী কোনটি?",
+        "a": "নীলনদ"
+      }
+    ]
+  }
+]

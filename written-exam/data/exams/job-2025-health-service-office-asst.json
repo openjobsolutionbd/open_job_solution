@@ -1,0 +1,530 @@
+[
+  {
+    "id": "job-2025-health-service-office-asst-q01",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "bangla",
+    "topic": "সমার্থক শব্দ",
+    "qno": 1,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "'ব্যবধান' শব্দের পাঁচটি সমার্থক শব্দ লিখুন।",
+    "answer": "অন্তর, দূরত্ব, আড়াল, ছেদ, ব্যবচ্ছেদ, পার্থক্য"
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q02",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "রগ্‌ণ",
+        "রুগ্‌ণ"
+      ],
+      [
+        "জাজল্যমান",
+        "জাজ্বল্যমান"
+      ],
+      [
+        "নির্বিরোধী",
+        "নির্বিরোধ"
+      ],
+      [
+        "ফটোষ্ট্যাট",
+        "ফটোস্ট্যাট"
+      ],
+      [
+        "নিশিথিনি",
+        "নিশীথিনী"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q03",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "bangla",
+    "topic": "বাক্য সংকোচন",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "বাক্য সংকোচন করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পা ধোয়ার পানি",
+        "a": "পাদ্য"
+      },
+      {
+        "label": "খ",
+        "q": "আকাশ ও পৃথিবী",
+        "a": "রোদসী"
+      },
+      {
+        "label": "গ",
+        "q": "অগ্রসর হয়ে অভ্যর্থনা",
+        "a": "প্রত্যুদ্‌গমন"
+      },
+      {
+        "label": "ঘ",
+        "q": "জয়ের জন্য উৎসব",
+        "a": "জয়ন্তী"
+      },
+      {
+        "label": "ঙ",
+        "q": "কুকুরের ন্যায়",
+        "a": "শ্বাপদ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q04",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 4,
+    "marks": 5,
+    "type": "idiom",
+    "question": "অর্থসহ বাগধারা অবলম্বনে ব্যাখ্যা রচনা করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "চীনা জোঁক",
+        "meaning": "নাছোড়বান্দা"
+      },
+      {
+        "label": "খ",
+        "phrase": "কলির কেষ্ট",
+        "meaning": "লম্পট"
+      },
+      {
+        "label": "গ",
+        "phrase": "অষ্টরম্ভা",
+        "meaning": "ফাঁকি"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "নদীকূলে বাস",
+        "meaning": "দুর্ভাবনা/দুশ্চিন্তা"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "ছক্কা পাঞ্জা",
+        "meaning": "বড় বড় কথা বলা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q05",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "bangla",
+    "topic": "শব্দের উৎস",
+    "qno": 5,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "শব্দগুলোর উৎস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ইস্পাত",
+        "a": "পর্তুগিজ"
+      },
+      {
+        "label": "খ",
+        "q": "খবর",
+        "a": "আরবি"
+      },
+      {
+        "label": "গ",
+        "q": "চাকু",
+        "a": "তুর্কি"
+      },
+      {
+        "label": "ঘ",
+        "q": "ধোলাই",
+        "a": "হিন্দি"
+      },
+      {
+        "label": "ঙ",
+        "q": "কারখানা",
+        "a": "ফারসি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q06",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with preposition:",
+    "parts": [
+      {
+        "sentence": "I assured him ….. my help.",
+        "answer": "of"
+      },
+      {
+        "sentence": "Students are anxious ……. their result.",
+        "answer": "about"
+      },
+      {
+        "sentence": "He assigned the task ……. me.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Nazrul can be compared ….. Shelley.",
+        "answer": "with"
+      },
+      {
+        "sentence": "All are equal irrespective ….caste and creed.",
+        "answer": "of"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q07",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write sentences with the following idioms and phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A gala day",
+        "meaning": "আনন্দের দিন",
+        "example": "16th December is our gala day."
+      },
+      {
+        "label": "b",
+        "phrase": "Blessed with",
+        "meaning": "ঐশ্বরিক উপহার",
+        "example": "Bangladesh is blessed with many natural resources."
+      },
+      {
+        "label": "c",
+        "phrase": "Run a risk",
+        "meaning": "ঝুঁকি নেওয়া",
+        "example": "He ran a risk to save the child from an accident."
+      },
+      {
+        "label": "d",
+        "phrase": "Come short of",
+        "meaning": "কম পড়া",
+        "example": "His profit came short of his expectations."
+      },
+      {
+        "label": "e",
+        "phrase": "Spare no pains",
+        "meaning": "চেষ্টার ত্রুটি না করা",
+        "example": "I shall spare no pains to help you."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q08",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "এখন চারটা বেজে পনেরো মিনিট।",
+        "target": "It is fifteen minutes past four now."
+      },
+      {
+        "label": "খ",
+        "source": "গুড়ি গুড়ি বৃষ্টি হচ্ছে।",
+        "target": "It is drizzling."
+      },
+      {
+        "label": "গ",
+        "source": "আমি বরং মরব, তবু ভিক্ষা করব না।",
+        "target": "I would rather die than beg."
+      },
+      {
+        "label": "ঘ",
+        "source": "মেয়েটি হাসতে হাসতে ঘরে ঢুকলো।",
+        "target": "The girl entered the room laughing."
+      },
+      {
+        "label": "ঙ",
+        "source": "সৎ ব্যক্তি সর্বত্র সম্মানিত।",
+        "target": "An honest person is honoured everywhere."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q09",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "You played football.",
+        "changed": "Football was played by you."
+      },
+      {
+        "label": "b",
+        "original": "Who will help you?",
+        "changed": "By whom will you be helped?"
+      },
+      {
+        "label": "c",
+        "original": "Write the letter without any delay.",
+        "changed": "Let the letter be written without any delay."
+      },
+      {
+        "label": "d",
+        "original": "He called it laurel.",
+        "changed": "It was called laurel by him."
+      },
+      {
+        "label": "e",
+        "original": "I shall do the work.",
+        "changed": "The work will be done by me."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q10",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the sentences as directed:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "They are peace loving. (Complex)",
+        "changed": "They are the people who love peace."
+      },
+      {
+        "label": "b",
+        "original": "Tea is the most popular drink. (Comparative)",
+        "changed": "Tea is more popular than any other drink."
+      },
+      {
+        "label": "c",
+        "original": "We work hard to attain success in our life. (Complex)",
+        "changed": "We work hard so that we attain success in our life."
+      },
+      {
+        "label": "d",
+        "original": "What a pity! (Assertive)",
+        "changed": "It is a great pity."
+      },
+      {
+        "label": "e",
+        "original": "Everybody wants friends. (Negative)",
+        "changed": "Nobody wants foes."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q11",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "math",
+    "topic": "কাজ ও সময়",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি নল ১২ মিনিটে একটি খালি চৌবাচ্চা পূর্ণ করতে পারে। অপর একটি নল প্রতি মিনিটে ১৪ লিটার পানি বের করে দেয়। চৌবাচ্চাটি খালি থাকা অবস্থায় দুইটি নল একসঙ্গে খুলে দেওয়া হয় এবং চৌবাচ্চাটি ১৬ মিনিটে পূর্ণ হয়। চৌবাচ্চাটিতে কত লিটার পানি ধরে?",
+    "steps": [
+      "ধরি, চৌবাচ্চাটিতে পানি ধরে x লিটার",
+      "১২ মিনিটে পূর্ণ করে x লিটার ⇒ ১ মিনিটে পূর্ণ করে x/১২ লিটার",
+      "১৬ মিনিটে পূর্ণ করে x লিটার ⇒ ১ মিনিটে পূর্ণ করে x/১৬ লিটার",
+      "প্রশ্নমতে, x/১২ − x/১৬ = ১৪ ⇒ (4x−3x)/48 = 14 ⇒ x/48 = 14",
+      "∴ x = ৬৭২"
+    ],
+    "answer": "৬৭২ লিটার"
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q12",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি লঞ্চে ডেকের যাত্রী সংখ্যা কেবিনের যাত্রী সংখ্যার চারগুণ অপেক্ষা ২ জন বেশি। মাথাপিছু কেবিনের ভাড়া ডেকের ভাড়ার দ্বিগুণ। ডেকের ভাড়া মাথাপিছু ৩০ টাকা এবং মোট ভাড়া প্রাপ্তি ১৬৮০ টাকা হলে মোট যাত্রী সংখ্যা কত?",
+    "steps": [
+      "মনে করি, কেবিনের যাত্রী সংখ্যা = x জন; ∴ ডেকের যাত্রী সংখ্যা = (4x+2) জন",
+      "ডেকের মাথাপিছু ভাড়া ৩০ টাকা ⇒ কেবিনের মাথাপিছু ভাড়া = ৩০×২ = ৬০ টাকা",
+      "ডেকের মোট ভাড়া = 30(4x+2) টাকা; কেবিনের মোট ভাড়া = 60x টাকা",
+      "প্রশ্নমতে, 60x + 30(4x+2) = 1680 ⇒ 60x + 120x + 60 = 1680 ⇒ 180x = 1620",
+      "∴ x = ৯ (কেবিনের যাত্রী); ডেকের যাত্রী = 4×9+2 = ৩৮",
+      "মোট যাত্রী সংখ্যা = ৩৮ + ৯ = ৪৭"
+    ],
+    "answer": "৪৭ জন"
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q13",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "math",
+    "topic": "উৎপাদকে বিশ্লেষণ",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুনঃ 10x³ − 9x² − 144x − 81",
+    "steps": [
+      "10x³ − 9x² − 144x − 81",
+      "= 10x³ + 30x² − 39x² − 117x − 27x − 81",
+      "= 10x²(x+3) − 39x(x+3) − 27(x+3)",
+      "= (x+3)(10x² − 39x − 27)",
+      "= (x+3)(10x² − 45x + 6x − 27)",
+      "= (x+3){5x(2x−9) + 3(2x−9)}",
+      "= (x+3)(2x−9)(5x+3)"
+    ],
+    "answer": "(x+3)(2x−9)(5x+3)"
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q14",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "x + 1/x = ৫ হলে, x/(x²+x+1) এর মান নির্ণয় করুন।",
+    "steps": [
+      "দেওয়া আছে, x + 1/x = ৫ ⇒ (x²+1)/x = ৫ ⇒ x² + 1 = 5x",
+      "প্রদত্ত রাশি = x/(x²+x+1) = x/{(x²+1)+x} = x/(5x+x) = x/6x",
+      "= ১/৬"
+    ],
+    "answer": "১/৬"
+  },
+  {
+    "id": "job-2025-health-service-office-asst-q15",
+    "examId": "job-2025-health-service-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সুন্দরবনকে World Heritage ঘোষণা করেছে কোন সংস্থা?",
+        "a": "ইউনেস্কো"
+      },
+      {
+        "label": "খ",
+        "q": "মিয়ানমার থেকে বাংলাদেশে কয়টি নদী প্রবেশ করেছে?",
+        "a": "৩টি"
+      },
+      {
+        "label": "গ",
+        "q": "'গ্রান্ড ট্রাঙ্ক রোড' নির্মাণ করেন কোন শাসক?",
+        "a": "শেরশাহ"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশকে প্রথম স্বীকৃতিদানকারী দেশ কোনটি?",
+        "a": "ভুটান"
+      },
+      {
+        "label": "ঙ",
+        "q": "'সোমপুর বিহার' কোন উপজেলায় অবস্থিত?",
+        "a": "বদলগাছি উপজেলা, নওগাঁ"
+      },
+      {
+        "label": "চ",
+        "q": "নিপোর্ট (NIPORT) কী ধরনের গবেষণা প্রতিষ্ঠান?",
+        "a": "জনসংখ্যা বিষয়ক গবেষণা প্রতিষ্ঠান"
+      },
+      {
+        "label": "ছ",
+        "q": "'বলাকা' কোন ফসলের একটি প্রকার?",
+        "a": "গম"
+      },
+      {
+        "label": "জ",
+        "q": "NILG এর পূর্ণরূপ কী?",
+        "a": "National Institute of Local Government"
+      },
+      {
+        "label": "ঝ",
+        "q": "উপমহাদেশের মধ্যে ঢাকা বিশ্ববিদ্যালয়ের প্রথম ভাইস চ্যান্সেলর কে?",
+        "a": "স্যার আহমদ ফজলুর রহমান (এ. এফ. রহমান)"
+      },
+      {
+        "label": "ঞ",
+        "q": "GI পণ্য হিসেবে স্বীকৃত প্রথম বাংলাদেশি পণ্য কোনটি?",
+        "a": "জামদানি"
+      },
+      {
+        "label": "ট",
+        "q": "স্বাধীনতার পূর্বে ব্রাজিল কোন দেশের উপনিবেশ ছিল?",
+        "a": "পর্তুগাল"
+      },
+      {
+        "label": "ঠ",
+        "q": "প্রথম বিশ্বযুদ্ধ ১৯১৪ সালের কত তারিখে শুরু হয়েছিল?",
+        "a": "২৮ জুলাই, ১৯১৪"
+      },
+      {
+        "label": "ড",
+        "q": "আল-আকসা মসজিদ কোথায় অবস্থিত?",
+        "a": "জেরুজালেম"
+      },
+      {
+        "label": "ঢ",
+        "q": "OIC এর প্রধান কার্যালয় কোন দেশে অবস্থিত?",
+        "a": "জেদ্দা, সৌদি আরব"
+      },
+      {
+        "label": "ণ",
+        "q": "স্কাউট আন্দোলনের প্রতিষ্ঠাতা কে?",
+        "a": "লর্ড ব্যাডেন পাওয়েল"
+      },
+      {
+        "label": "ত",
+        "q": "'পুলিৎজার' কোন দেশের সর্বোচ্চ পর্যায়ের পুরস্কার?",
+        "a": "মার্কিন যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "থ",
+        "q": "কোন দেশ থেকে 'আরব বসন্ত'-এর সূচনা হয়?",
+        "a": "তিউনিসিয়া"
+      },
+      {
+        "label": "দ",
+        "q": "সুয়েজ খাল কোন দুটি মহাদেশকে বিভক্ত করেছে?",
+        "a": "এশিয়া ও আফ্রিকা"
+      },
+      {
+        "label": "ধ",
+        "q": "Wimbledon নামটি কোন খেলার সাথে জড়িত?",
+        "a": "টেনিস"
+      },
+      {
+        "label": "ন",
+        "q": "টিটিকাকা কী?",
+        "a": "দক্ষিণ আমেরিকার বৃহত্তম হ্রদ"
+      }
+    ]
+  }
+]

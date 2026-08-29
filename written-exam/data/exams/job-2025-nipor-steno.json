@@ -1,0 +1,429 @@
+[
+  {
+    "id": "job-2025-nipor-steno-q01",
+    "examId": "job-2025-nipor-steno",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 4,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "ধনুষ্টঙ্কার",
+        "ধনুঃ + টঙ্কার"
+      ],
+      [
+        "ক্ষুৎপিপাসা",
+        "ক্ষুধ + পিপাসা"
+      ],
+      [
+        "পতঞ্জলি",
+        "পতৎ + অঞ্জলি"
+      ],
+      [
+        "মস্যাধার",
+        "মসী + আধার"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q02",
+    "examId": "job-2025-nipor-steno",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য রচনা",
+    "qno": 2,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ইতর বিশেষ",
+        "a": "পার্থক্য। বাক্য: দুই ভাইয়ের স্বভাবে ইতর বিশেষ কোনো ফারাক নেই।"
+      },
+      {
+        "label": "খ",
+        "q": "ঠাট বজায় রাখা",
+        "a": "অভাব চাপা রাখা। বাক্য: অভাব থাকলেও তিনি ঠাট বজায় রাখেন।"
+      },
+      {
+        "label": "গ",
+        "q": "ভূষণ্ডির কাক",
+        "a": "দীর্ঘায়ু ব্যক্তি। বাক্য: তিনি এ পাড়ার ভূষণ্ডির কাক, সব খবর জানেন।"
+      },
+      {
+        "label": "ঘ",
+        "q": "নেই আকড়া",
+        "a": "একগুঁয়ে। বাক্য: সে নেই আকড়া স্বভাবের লোক, কারো কথা শোনে না।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q03",
+    "examId": "job-2025-nipor-steno",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "অরণ্য",
+        "প্রান্তর"
+      ],
+      [
+        "ইদানীং",
+        "তদানীং"
+      ],
+      [
+        "অধমর্ণ",
+        "উত্তমর্ণ"
+      ],
+      [
+        "অনুরক্ত",
+        "বিরক্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q04",
+    "examId": "job-2025-nipor-steno",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যে ক্রমাগত রোদন করছে",
+        "a": "রোরুদ্যমান"
+      },
+      {
+        "label": "খ",
+        "q": "যার বংশ পরিচয় এবং স্বভাব কেউ জানে না",
+        "a": "অজ্ঞাতকুলশীল"
+      },
+      {
+        "label": "গ",
+        "q": "যার অন্য উপায় নেই",
+        "a": "অনন্যোপায়"
+      },
+      {
+        "label": "ঘ",
+        "q": "ঈষৎ আমিষ গন্ধ যার",
+        "a": "আঁষটে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q05",
+    "examId": "job-2025-nipor-steno",
+    "subject": "bangla",
+    "topic": "সাহিত্য জ্ঞান",
+    "qno": 5,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নসমূহের উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'১৪০০ সাল', 'স্বর্গ হইতে বিদায়' কবিতা দুটি রবীন্দ্রনাথ ঠাকুরের কোন কাব্যগ্রন্থের অন্তর্ভুক্ত?",
+        "a": "চিত্রা"
+      },
+      {
+        "label": "খ",
+        "q": "বাংলা সাহিত্যের অন্যতম পত্রিকা 'কল্লোল' কত সালে প্রথম প্রকাশিত হয়?",
+        "a": "১৯২৩ সালে"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলা সাহিত্যের প্রাচীনতম কবি কে?",
+        "a": "লুইপা"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলা সাহিত্যে চলিত ভাষায় রচিত প্রথম গ্রন্থ কোনটি?",
+        "a": "বীরবলের হালখাতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q06",
+    "examId": "job-2025-nipor-steno",
+    "subject": "english",
+    "topic": "preposition",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Write the appropriate preposition:",
+    "parts": [
+      {
+        "sentence": "The stars are........ the world.",
+        "answer": "above"
+      },
+      {
+        "sentence": "She cut the mango....... a knife.",
+        "answer": "with"
+      },
+      {
+        "sentence": "April comes..... May.",
+        "answer": "before"
+      },
+      {
+        "sentence": "The cat is fond.... milk.",
+        "answer": "of"
+      },
+      {
+        "sentence": "....... which box did you keep the money?",
+        "answer": "in"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q07",
+    "examId": "job-2025-nipor-steno",
+    "subject": "english",
+    "topic": "voice-change",
+    "qno": 7,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I saw him performing the dance.",
+        "changed": "He was seen performing the dance by me."
+      },
+      {
+        "label": "b",
+        "original": "You must write the letter.",
+        "changed": "The letter must be written by you."
+      },
+      {
+        "label": "c",
+        "original": "Never deceive anyone.",
+        "changed": "Let never anyone be deceived."
+      },
+      {
+        "label": "d",
+        "original": "He wants you to give a speech.",
+        "changed": "He wants a speech to be given by you."
+      },
+      {
+        "label": "e",
+        "original": "He mocked himself.",
+        "changed": "He was mocked by himself."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q08",
+    "examId": "job-2025-nipor-steno",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সকাল থেকে গুড়ি গুড়ি বৃষ্টি হচ্ছে।",
+        "target": "It has been drizzling since morning."
+      },
+      {
+        "label": "খ",
+        "source": "দুই ভাইয়ের মধ্যে আমগুলো ভাগ করে দাও।",
+        "target": "Divide the mangoes between two brothers."
+      },
+      {
+        "label": "গ",
+        "source": "খাবারটি বাসি মনে হয়েছিল।",
+        "target": "The food seemed stale."
+      },
+      {
+        "label": "ঘ",
+        "source": "মাছ উড়তে পারে না, পারে কি?",
+        "target": "Fish can't fly, can it/they?"
+      },
+      {
+        "label": "ঙ",
+        "source": "আমি তাকে দৌড়ে পালিয়ে যেতে দেখলাম।",
+        "target": "I saw him running away."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q09",
+    "examId": "job-2025-nipor-steno",
+    "subject": "english",
+    "topic": "narration-change",
+    "qno": 9,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the narration:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Rahim said to the boy, \"May you pass the test\"",
+        "changed": "Rahim prayed that the boy might pass the test."
+      },
+      {
+        "label": "b",
+        "original": "Aminul said to Karim, \"I help you.\"",
+        "changed": "Aminul told Karim that he (Aminul) helped him (Karim)."
+      },
+      {
+        "label": "c",
+        "original": "He said, \"Akhi, when is the next train?\"",
+        "changed": "He asked Akhi when the next train was."
+      },
+      {
+        "label": "d",
+        "original": "The teacher said to the students, \"Please wait outside.\"",
+        "changed": "The teacher requested the students to wait outside."
+      },
+      {
+        "label": "e",
+        "original": "He said, \"How helpless I am!\"",
+        "changed": "He exclaimed that he was very helpless."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q10",
+    "examId": "job-2025-nipor-steno",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 10,
+    "marks": 14,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "Chat GPT এর পূর্ণরূপ কী?",
+        "a": "Generative Pre-trained Transformer"
+      },
+      {
+        "label": "খ",
+        "q": "'ফিলাটেলি' শব্দ কোন বিষয়ের সাথে জড়িত?",
+        "a": "ডাক বিভাগ"
+      },
+      {
+        "label": "গ",
+        "q": "Amicus Curiae বলতে কী বোঝায়?",
+        "a": "আদালতের বন্ধু"
+      },
+      {
+        "label": "ঘ",
+        "q": "স্বাধীন বাংলার প্রথম মুদ্রা ডিজাইনার কে?",
+        "a": "কে.জি মুস্তাফা"
+      },
+      {
+        "label": "ঙ",
+        "q": "মারমা'দের বর্ষবরণ অনুষ্ঠানকে কী বলে?",
+        "a": "সাংগ্রাই"
+      },
+      {
+        "label": "চ",
+        "q": "'বাংলাদেশ ক্যয়ার' কোথায় অবস্থিত?",
+        "a": "লাইবেরিয়া"
+      },
+      {
+        "label": "ছ",
+        "q": "মঙ্গোলিয়ার মুদ্রার নাম কী?",
+        "a": "তুগরিক"
+      },
+      {
+        "label": "জ",
+        "q": "দক্ষিণ তালপট্টি দ্বীপ কোন নদীর মোহনায় অবস্থিত?",
+        "a": "হাড়িয়াভাঙ্গা নদী"
+      },
+      {
+        "label": "ঝ",
+        "q": "LASER এর পূর্ণরূপ কী?",
+        "a": "Light Amplification by Stimulated Emission of Radiation"
+      },
+      {
+        "label": "ঞ",
+        "q": "পুষ্প রঙিন ও সুন্দর হয় কেন?",
+        "a": "ক্রোমোপ্লাস্টের জন্য"
+      },
+      {
+        "label": "ট",
+        "q": "'ব্লু হাউস' কোন দেশের প্রেসিডেন্ট এর সরকারি বাসভবন?",
+        "a": "দক্ষিণ কোরিয়া"
+      },
+      {
+        "label": "ঠ",
+        "q": "বাংলাদেশ আন্তর্জাতিক ক্রিকেট ওয়ানডে স্ট্যাটাস লাভ করে কত সালে?",
+        "a": "১৫ জুন ১৯৯৭ সালে"
+      },
+      {
+        "label": "ড",
+        "q": "প্রথম নগর রাষ্ট্রের উদ্ভব ঘটে কোন সভ্যতায়?",
+        "a": "গ্রিক সভ্যতা"
+      },
+      {
+        "label": "ঢ",
+        "q": "হাইকমিশনার ও অ্যাম্বাসেডর এর মধ্যে পার্থক্য কী?",
+        "a": "অ্যাম্বাসেডর: জাতিসংঘভুক্ত রাষ্ট্রসমূহের সর্বোচ্চ কূটনীতিকদের অ্যাম্বাসেডর বলে। হাইকমিশনার: কমনওয়েলথভুক্ত দেশসমূহে অন্য কমনওয়েলথভুক্ত দেশের সর্বোচ্চ কূটনীতিককে হাইকমিশনার বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nipor-steno-q11",
+    "examId": "job-2025-nipor-steno",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 8,
+    "type": "math",
+    "question": "দুইটি সংখ্যার বর্গের সমষ্টি ১৩ এবং সংখ্যা দুইটির গুণফল ৬ হলে, সংখ্যা দুইটির বর্গের অন্তর কত?",
+    "steps": [
+      "মনে করি, সংখ্যা দুটি x ও y",
+      "সংখ্যা দুটির বর্গের অন্তর = x² − y² = ?",
+      "১ম শর্তে, x² + y² = ১৩",
+      "২য় শর্তে, xy = ৬",
+      "এখন, (x² − y²)² = (x² + y²)² − 4x².y²",
+      "= (১৩)² − ৪(xy)²",
+      "= ১৬৯ − ৪.৬²",
+      "= ১৬৯ − ১৪৪",
+      "= ২৫"
+    ],
+    "answer": "∴ x² − y² = ৫"
+  },
+  {
+    "id": "job-2025-nipor-steno-q12",
+    "examId": "job-2025-nipor-steno",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 12,
+    "marks": 7,
+    "type": "math",
+    "question": "একটি ঘড়ি ৮% ক্ষতিতে বিক্রয় করা হলো। ঘড়িটি আরও ৮০০ টাকা বেশি মূল্যে বিক্রয় করা হলে ৮% লাভ হতো। ঘড়িটির ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, ঘড়িটির ক্রয়মূল্য ১০০ টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য (১০০ − ৮) = ৯২ টাকা",
+      "৮% লাভে বিক্রয়মূল্য (১০০ + ৮) = ১০৮ টাকা",
+      "বিক্রয়মূল্য বেশি (১০৮ − ৯২) = ১৬ টাকা",
+      "বিক্রয়মূল্য ১৬ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ১ টাকা বেশি হলে ক্রয়মূল্য ১০০/১৬ টাকা",
+      "বিক্রয়মূল্য ৮০০ টাকা বেশি হলে ক্রয়মূল্য (১০০ × ৮০০)/১৬ = ৫০০০ টাকা"
+    ],
+    "answer": "ঘড়িটির ক্রয়মূল্য ৫০০০ টাকা।"
+  }
+]

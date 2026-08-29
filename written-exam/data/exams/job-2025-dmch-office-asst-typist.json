@@ -1,0 +1,435 @@
+[
+  {
+    "id": "job-2025-dmch-office-asst-typist-q01",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 1,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "পারিভাষিক শব্দ লিখুনঃ",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Census",
+        "a": "আদমশুমারি"
+      },
+      {
+        "label": "b",
+        "q": "Pleadings",
+        "a": "মামলার আবেদনপত্র/ নালিশ"
+      },
+      {
+        "label": "c",
+        "q": "Notification",
+        "a": "বিজ্ঞপ্তি"
+      },
+      {
+        "label": "d",
+        "q": "Glossary",
+        "a": "শব্দার্থ তালিকা/ শব্দকোষ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q02",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 8,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দ্যুলোক",
+        "a": "দিব্ + লোক"
+      },
+      {
+        "label": "খ",
+        "q": "বৃহস্পতি",
+        "a": "বৃহৎ + পতি"
+      },
+      {
+        "label": "গ",
+        "q": "ষোড়শ",
+        "a": "ষট্ + দশ"
+      },
+      {
+        "label": "ঘ",
+        "q": "রাজর্ষি",
+        "a": "রাজা + ঋষি"
+      },
+      {
+        "label": "ঙ",
+        "q": "ষড়ানন",
+        "a": "ষট্ + আনন"
+      },
+      {
+        "label": "চ",
+        "q": "গবাক্ষ",
+        "a": "গো + অক্ষ"
+      },
+      {
+        "label": "ছ",
+        "q": "জ্যোতির্ময়",
+        "a": "জ্যোতিঃ + ময়"
+      },
+      {
+        "label": "জ",
+        "q": "শীতার্ত",
+        "a": "শীত + ঋত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q03",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 8,
+    "type": "table",
+    "question": "শুদ্ধ বানান/ শব্দ লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "দ্বায়িত্ব",
+        "দায়িত্ব"
+      ],
+      [
+        "সমীচিন",
+        "সমীচীন"
+      ],
+      [
+        "অদ্যাবধি",
+        "অদ্যাবধি"
+      ],
+      [
+        "গিতাঞ্জলি",
+        "গীতাঞ্জলি"
+      ],
+      [
+        "দারিদ্রতা",
+        "দারিদ্র্য"
+      ],
+      [
+        "লজ্জাস্কর",
+        "লজ্জাকর"
+      ],
+      [
+        "ফটোষ্ট্যাট",
+        "ফটোস্ট্যাট"
+      ],
+      [
+        "ইতিমধ্যে",
+        "ইতোমধ্যে"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q04",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য",
+    "qno": 4,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য গঠন করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ইতর বিশেষ",
+        "a": "পার্থক্য"
+      },
+      {
+        "label": "খ",
+        "q": "ভূষণ্ডির কাক",
+        "a": "দীর্ঘজীবী"
+      },
+      {
+        "label": "গ",
+        "q": "অজগরবৃত্তি",
+        "a": "আলসেমি"
+      },
+      {
+        "label": "ঘ",
+        "q": "গৌরচন্দ্রিকা",
+        "a": "ভূমিকা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q05",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "short-qa",
+    "qno": 5,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সংক্ষিপ্ত প্রশ্নের উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নেমেসিস কোন জাতীয় রচনা?",
+        "a": "নাটক"
+      },
+      {
+        "label": "খ",
+        "q": "'সর্বাঙ্গে ব্যথা ঔষধ দিব কোথা' - এখানে ঔষধ কোন কারকে কোন বিভক্তি?",
+        "a": "কর্মকারকে শূন্য বিভক্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q06",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "bangla",
+    "topic": "essay",
+    "qno": 6,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "স্বাস্থ্যখাতে টেকসই উন্নয়ন লক্ষ্যমাত্রা ও বাংলাদেশ- এ বিষয়ে সর্বোচ্চ ২০০ শব্দের নাতিদীর্ঘ একটি অনুচ্ছেদ লিখুন।",
+    "answer": "টেকসই উন্নয়ন লক্ষ্যমাত্রা (SDG) এর তৃতীয় লক্ষ্য হলো সুস্বাস্থ্য ও কল্যাণ নিশ্চিত করা। বাংলাদেশ ২০৩০ সালের মধ্যে এই লক্ষ্য অর্জনে নিরলসভাবে কাজ করে যাচ্ছে। মাতৃমৃত্যু ও শিশুমৃত্যুর হার কমানো, সংক্রামক ব্যাধি নির্মূল, প্রজনন স্বাস্থ্যসেবা সহজলভ্যকরণ এবং সর্বজনীন স্বাস্থ্যসেবা নিশ্চিতকরণ এই লক্ষ্যের মূল দিক। বাংলাদেশ ইতিমধ্যে শিশুমৃত্যু হার হ্রাসে উল্লেখযোগ্য সাফল্য দেখিয়েছে এবং টিকাদান কর্মসূচি, কমিউনিটি ক্লিনিক স্থাপন ও মা ও শিশু স্বাস্থ্যসেবা কর্মসূচির মাধ্যমে অগ্রগতি অব্যাহত রেখেছে। তবে গ্রামীণ ও প্রত্যন্ত অঞ্চলে স্বাস্থ্যসেবার অপ্রতুলতা, দক্ষ জনবলের ঘাটতি ও অসংক্রামক রোগের ক্রমবর্ধমান প্রকোপ এখনো বড় চ্যালেঞ্জ। এই লক্ষ্য অর্জনে সরকারি-বেসরকারি অংশীদারিত্ব বৃদ্ধি, স্বাস্থ্য বাজেট বৃদ্ধি এবং প্রযুক্তিনির্ভর স্বাস্থ্যসেবা সম্প্রসারণ জরুরি। সবার জন্য সাশ্রয়ী ও মানসম্মত স্বাস্থ্যসেবা নিশ্চিত করতে পারলেই বাংলাদেশ এই লক্ষ্যমাত্রা যথাসময়ে অর্জন করতে সক্ষম হবে।"
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q07",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "She is named ...... a flower.",
+        "answer": "after"
+      },
+      {
+        "sentence": "My father ........ before I came.",
+        "answer": "had gone/left"
+      },
+      {
+        "sentence": "Anger may be compared ....... fire.",
+        "answer": "to"
+      },
+      {
+        "sentence": "She succeeded ...... her rigorous work.",
+        "answer": "in"
+      },
+      {
+        "sentence": "He divided the money........ the two children.",
+        "answer": "between"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q08",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 5,
+    "type": "table",
+    "question": "Mention the correct spelling:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Comitee",
+        "Committee"
+      ],
+      [
+        "Repitetion",
+        "Repetition"
+      ],
+      [
+        "Atticude",
+        "Attitude"
+      ],
+      [
+        "Milenium",
+        "Millennium"
+      ],
+      [
+        "Neumonia",
+        "Pneumonia"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q09",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 5,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "কলম দুইটির একটিতেও চলবে না।",
+        "target": "The pen does not write in either of the two./ Neither of the two pens will do."
+      },
+      {
+        "label": "খ",
+        "source": "আমি কতক্ষণ তার জন্য অপেক্ষা করবো?",
+        "target": "How long will I wait for him?"
+      },
+      {
+        "label": "গ",
+        "source": "সকাল থেকে মুষলধারে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining cats and dogs since morning."
+      },
+      {
+        "label": "ঘ",
+        "source": "অতি ভক্তি চোরের লক্ষণ।",
+        "target": "Too much courtesy, too much craft."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q10",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write five sentences about \"July Mass Uprising, 2024\" in Bangladesh.",
+    "answer": "The July Revolution of 2024 in Bangladesh marks a turning point in the nation's history. Initially, the students raised their voice against the longstanding unjust quota system. Gradually, this turned into a movement, which soon became a powerful wave against the authoritarian rule and systemic corruption that prevailed over the last 16 years. The government was criticized for its deeply corrupt institutions and lack of accountability. But the government responded with violent repression. In the early stage of the quota reform protests, the government's heavy-handed approach led to multiple student deaths, including those of Abu Sayed and Mugdha, and several others. This brutality ignited widespread protests, and thousands took to the streets, transforming the student protest into a nationwide movement. Throughout the revolution, over a thousand students and common people, including at least 67 children, lost their lives. By August 5, the people of Bangladesh had reached their limit and took to the streets to oust the fascist regime. Being frightened, the fascist Prime Minister, along with family and close party members, fled the country. They sought shelter in a neighboring country, India. Following their departure, Nobel Laureate Dr. Muhammad Yunus answered the call of the people, assuming the role of Chief Advisor to an Interim Government on August 8. This revolution stands as a testament to the power of collective will."
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q11",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "math",
+    "topic": "বয়স",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "পিতা ও পুত্রের বর্তমান বয়সের অনুপাত ৭ঃ২ এবং ৫ বছর পরে তাদের বয়সের অনুপাত ৮ঃ৩ হবে। তাদের বর্তমান বয়স কত?",
+    "steps": [
+      "মনে করি, পিতার বর্তমান বয়স ৭x, পুত্রের বর্তমান বয়স ২x",
+      "প্রশ্নমতে, ৭x+৫ : ২x+৫ = ৮ : ৩",
+      "বা, (৭x+৫)/(২x+৫) = ৮/৩",
+      "বা, ২১x + ১৫ = ১৬x + ৪০",
+      "বা, ২১x − ১৬x = ৪০ − ১৫",
+      "বা, ৫x = ২৫",
+      "∴ x = ৫",
+      "∴ পিতার বর্তমান বয়স = ৭ × ৫ = ৩৫ বছর, পুত্রের বর্তমান বয়স = ৫ × ২ = ১০"
+    ],
+    "answer": "পিতার বয়স ৩৫ বছর এবং পুত্রের বয়স ১০ বছর।"
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q12",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ক্ষেত্রফল ৩√৩ বর্গমিটার বেড়ে যায়। ত্রিভুজটির বাহুর দৈর্ঘ্য নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য a মিটার",
+      "∴ ত্রিভুজটির ক্ষেত্রফল = (√৩/৪)a² বর্গমিটার",
+      "ত্রিভুজটির প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ত্রিভুজটির ক্ষেত্রফল (√৩/৪)(a+১)² বর্গমিটার",
+      "প্রশ্নানুসারে, (√৩/৪)(a+১)² − (√৩/৪)a² = ৩√৩",
+      "বা, (a+১)² − a² = ১২",
+      "বা, a² + ২a + ১ − a² = ১২",
+      "বা, ২a = ১১",
+      "∴ a = ৫.৫"
+    ],
+    "answer": "নির্ণেয় বাহুর দৈর্ঘ্য ৫.৫ মিটার"
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q13",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "math",
+    "topic": "ধারা",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "৭ + ১২ + ১৭ +.......... ধারাটির ৩০ টি পদের সমষ্টি কত?",
+    "steps": [
+      "ধারাটির প্রথম পদ a = ৭, সাধারণ অন্তর d = ১২ − ৭ = ৫",
+      "ইহা একটি সমান্তর ধারা। এখানে পদ সংখ্যা n = ৩০",
+      "আমরা জানি, সমান্তর ধারার প্রথম n সংখ্যক পদের সমষ্টি, Sₙ = (n/2){2a + (n−1)d}",
+      "তাহলে, ৩০টি পদের সমষ্টি S₃₀ = (৩০/২){২.৭ + (৩০−১)৫}",
+      "= ১৫(১৪ + ২৯ × ৫)",
+      "= ১৫(১৪ + ১৪৫)",
+      "= ১৫ × ১৫৯",
+      "= ২৩৮৫"
+    ],
+    "answer": "২৩৮৫"
+  },
+  {
+    "id": "job-2025-dmch-office-asst-typist-q14",
+    "examId": "job-2025-dmch-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 14,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "শিখা অনির্বাণ কোথায় অবস্থিত?",
+        "a": "ঢাকা সেনানিবাসে"
+      },
+      {
+        "label": "খ",
+        "q": "বর্তমান অন্তর্বতীকালীন সরকার কবে গঠিত হয়?",
+        "a": "০৮ আগস্ট ২০২৪"
+      },
+      {
+        "label": "গ",
+        "q": "UNICEF ও UNFPA এর পূর্ণরূপ কি?",
+        "a": "UNICEF = United Nations Children's Fund; UNFPA = United Nations Population Fund"
+      },
+      {
+        "label": "ঘ",
+        "q": "চারটি প্রধান অসংক্রামক রোগের নাম লিখ?",
+        "a": "হৃদরোগ, ক্যান্সার, ডায়াবেটিস, শ্বাসতন্ত্রের রোগ"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাংলাদেশের স্বাধীনতা যুদ্ধে বীরত্বপূর্ণ অবদানের জন্য কতজনকে \"বীর উত্তম\" উপাধিতে ভূষিত করা হয়?",
+        "a": "৬৮ জন"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশ রেলওয়ের সর্ববৃহৎ কারখানা কোথায় অবস্থিত?",
+        "a": "সৈয়দপুর, নীলফামারী"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশের পারমানবিক বিদ্যুৎ কেন্দ্র কোন নদীর তীরে অবস্থিত?",
+        "a": "পদ্মা"
+      },
+      {
+        "label": "জ",
+        "q": "\"বাওয়ালী\" কারা?",
+        "a": "সুন্দরবনে গোলপাতা, কাঠ, মধুসহ বনজ সম্পদ সংগ্রহকারী পেশাজীবীদের বাওয়ালী বলা হয়।"
+      },
+      {
+        "label": "ঝ",
+        "q": "সুন্দরবনে বাংলাদেশ ও ভারতের সীমানা নির্ধারণকারী নদী কোনটি?",
+        "a": "হাড়িয়াভাঙ্গা নদী"
+      },
+      {
+        "label": "ঞ",
+        "q": "পূর্ণরূপ লিখুন: CPU, RAM, ROM, WWW, E-mail, AI",
+        "a": "CPU = Central Processing Unit; RAM = Random Access Memory; ROM = Read Only Memory; WWW = World Wide Web; E-mail = Electronic Mail; AI = Artificial Intelligence"
+      }
+    ]
+  }
+]

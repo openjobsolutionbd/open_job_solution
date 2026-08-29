@@ -1,0 +1,458 @@
+[
+  {
+    "id": "job-2025-tech-edu-cashier-q01",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যা দীপ্তি পাচ্ছে",
+        "a": "দেদীপ্যমান"
+      },
+      {
+        "label": "খ",
+        "q": "মুক্তি পেতে ইচ্ছুক",
+        "a": "মুমুক্ষু"
+      },
+      {
+        "label": "গ",
+        "q": "নিন্দা করার ইচ্ছা",
+        "a": "জুগুপ্সা"
+      },
+      {
+        "label": "ঘ",
+        "q": "হাতির শাবক",
+        "a": "করভ"
+      },
+      {
+        "label": "ঙ",
+        "q": "হাতের পাঁচ",
+        "a": "শেষ সম্বল"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q02",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য রচনা",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "লেফাফা দুরস্ত",
+        "a": "বাইরে পরিপাটি"
+      },
+      {
+        "label": "খ",
+        "q": "ঘোড়া বালি",
+        "a": "আশার নৈরাশ্য"
+      },
+      {
+        "label": "গ",
+        "q": "নয় ছয়",
+        "a": "অপচয়"
+      },
+      {
+        "label": "ঘ",
+        "q": "ফপর দালালি",
+        "a": "অতিরিক্ত চালবাজি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q03",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 3,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বনৌষধি",
+        "a": "বন + ওষধি"
+      },
+      {
+        "label": "খ",
+        "q": "মহর্ষি",
+        "a": "মহা + ঋষি"
+      },
+      {
+        "label": "গ",
+        "q": "সঞ্চয়",
+        "a": "সম্ + চয়"
+      },
+      {
+        "label": "ঘ",
+        "q": "ষষ্ঠ",
+        "a": "ষষ্ + থ"
+      },
+      {
+        "label": "ঙ",
+        "q": "গায়ক",
+        "a": "গৈ + অক"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q04",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "bangla",
+    "topic": "প্রতিশব্দ",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "প্রতিশব্দ লিখুন (৫টি করে):",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পৃথিবী",
+        "a": "ভূ, ধরণী, ধরিত্রী, বসুন্ধরা, মেদিনী, পৃথ্বী, ভুবন, জগৎ, অদিতি, ক্ষিতি"
+      },
+      {
+        "label": "খ",
+        "q": "বৃক্ষ",
+        "a": "উদ্ভিদ, বিটপী, পল্লবী, মহীরুহ, অটবী, তরু"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q05",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "fill-gaps",
+    "qno": 5,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the blank with Preposition:",
+    "parts": [
+      {
+        "sentence": "He has none to help him.....you.",
+        "answer": "but"
+      },
+      {
+        "sentence": "He is slow........figures.",
+        "answer": "at"
+      },
+      {
+        "sentence": "He has been ill.....Sunday last.",
+        "answer": "since"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q06",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "sentence transformation",
+    "qno": 6,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "Transformation of sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Was he not a villain to do such a deed? (Assertive)",
+        "changed": "He was a villain to do such a deed."
+      },
+      {
+        "label": "b",
+        "original": "He said, \"I shall go to Delhi tomorrow\". (Indirect)",
+        "changed": "He said that he would go to Delhi the next day."
+      },
+      {
+        "label": "c",
+        "original": "A Child likes only sweets (Negative).",
+        "changed": "A child likes nothing but sweets."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q07",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "লোকটি যেমন বোকা তেমন গরিব।",
+        "target": "This man is as poor as he is stupid."
+      },
+      {
+        "label": "খ",
+        "source": "নিজেকে তুমি কী মনে কর?",
+        "target": "What do you think about yourself?"
+      },
+      {
+        "label": "গ",
+        "source": "আমি একটি ভালো চাকুরি পেতে ইচ্ছুক।",
+        "target": "I want to get a good job."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q08",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 8,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "Make sentences using the following idioms and phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Come into question",
+        "a": "সন্দেহ হওয়া — The results of the study have come into question"
+      },
+      {
+        "label": "b",
+        "q": "At round rate",
+        "a": "নির্ধারিত মূল্য — They sell the book at a round rate."
+      },
+      {
+        "label": "c",
+        "q": "Black and blue",
+        "a": "প্রচণ্ড প্রহার করা — They beat the thief black and blue"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q09",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "verb forms",
+    "qno": 9,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "Use right form of verbs:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "I wish I (be) in the occasion.",
+        "a": "were"
+      },
+      {
+        "label": "b",
+        "q": "Bengali (speak) in Calcutta also.",
+        "a": "is spoken"
+      },
+      {
+        "label": "c",
+        "q": "Two years (pass) since he left home.",
+        "a": "have passed"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q11",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "বনভোজনে যাওয়ার জন্য ৫৭০০ টাকায় একটি বাস ভাড়া করা হলো এবং শর্ত হলো যে, প্রত্যেক যাত্রী সমান ভাড়া বহন করবে। ৫ জন যাত্রী না যাওয়ায় মাথাপিছু ভাড়া ৩ টাকা বৃদ্ধি পেল। বাসে কতজন যাত্রী গিয়েছিল।",
+    "steps": [
+      "মনে করি, মোট যাত্রী সংখ্যা x জন। ৫ জন যাত্রী না যাওয়ায় যাত্রী গিয়েছিল = (x − 5) জন",
+      "প্রশ্নমতে, 5700/x + 3 = 5700/(x−5)",
+      "বা, (5700 + 3x)/x = 5700/(x−5)",
+      "বা, 3(1900 + x)/x = 3×1900/(x−5) [3 দ্বারা ভাগ করে]",
+      "বা, (1900 + x)/x = 1900/(x−5)",
+      "বা, 1900x + x² − 9500 − 5x = 1900x",
+      "বা, x² − 5x − 9500 = 1900x − 1900x",
+      "বা, x² − 100x + 95x − 9500 = 0",
+      "বা, x(x − 100) + 95(x − 100) = 0",
+      "বা, (x − 100)(x + 95) = 0",
+      "বা, x − 100 = 0 অথবা, x + 95 = 0",
+      "∴ x = 100 বা x = −95 [যাত্রী সংখ্যা ঋণাত্মক হতে পারে না]",
+      "∴ মোট যাত্রী সংখ্যা ছিল ১০০ জন। যাত্রী গিয়েছিল = (১০০ − ৫) জন = ৯৫ জন।"
+    ],
+    "answer": "উত্তর: ৯৫ জন।"
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q12",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "math",
+    "topic": "সরল মুনাফা",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একজন ব্যক্তি ব্যাংকে ৪০০০ টাকা রেখে ৪ বছর পর দেখলো মুনাফাসহ ব্যাংকে ৫২৮০ টাকা আছে। আর কত বছর পর সে তার একাউন্টে ৮৮০০ টাকা দেখতে পাবে?",
+    "steps": [
+      "এখানে আসল = ৪০০০",
+      "৪ বছরের মুনাফা = ৫২৮০ − ৪০০০ = ১২৮০ টাকা",
+      "৮৮০০ টাকা জমা হলে সুদ = ৮৮০০ − ৪০০০ = ৪৮০০ টাকা",
+      "১২৮০ টাকা সুদ হয় ৪ বছরে",
+      "১ \" \" \" ৪/১২৮০ বছরে",
+      "∴ ৪৮০০ \" \" \" (৪×৪৮০০)/১২৮০ = ১৫ বছরে",
+      "∴ (১৫ − ৪) = ১১ বছর পর তার একাউন্টে ৮৮০০ টাকা দেখতে পাবে।"
+    ],
+    "answer": "উত্তর: ১১ বছর"
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q13",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "math",
+    "topic": "অনুপাত ও লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "ক, খ ও গ ২৮০০ টাকা নিয়ে ব্যবসা শুরু করল। ক ও খ এর মূলধন সমান কিন্তু 'গ' এর মূলধন ২০০ টাকা কম। মোট ৫৬০ টাকা লাভ হলে 'গ' কত টাকা লাভ পাবে?",
+    "steps": [
+      "মনে করি, ক এর মূলধন p। খ এর মূলধন p। গ এর মূলধন (p − 200) টাকা",
+      "প্রশ্নমতে, p + p + p − 200 = 2800",
+      "বা, 3p = 3000",
+      "∴ p = 1000",
+      "সুতরাং ক এর মূলধন = ১০০০ টাকা, খ এর মূলধন = ১০০০ টাকা, গ এর মূলধন (১০০০ − ২০০) = ৮০০ টাকা",
+      "ক, খ ও গ এর মূলধনের অনুপাত = ১০০০ : ১০০০ : ৮০০ = ১০ : ১০ : ৮",
+      "অনুপাতের যোগফল = ২৮",
+      "'গ' এর লাভ = ৫৬০ টাকার ৮/২৮ = ১৬০ টাকা"
+    ],
+    "answer": "উত্তর: ১৬০ টাকা"
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q14",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "math",
+    "topic": "রম্বস",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি রম্বসের পরিসীমা ১৮০ সে.মি এবং ক্ষুদ্রতম কর্ণ ৫৪ সে.মি। এর অপর কর্ণ এবং ক্ষেত্রফল নির্ণয় করুন।",
+    "steps": [
+      "রম্বসের পরিসীমা = ১৮০ সে.মি",
+      "রম্বসের এক বাহুর দৈর্ঘ্য = ১৮০ ÷ ৪ = ৪৫ সে.মি",
+      "আমরা জানি, রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে।",
+      "সুতরাং রম্বসের অপর কর্ণের অর্ধ দৈর্ঘ্য = √(৪৫² − ২৭²) = √১২৯৬ = ৩৬ সে.মি",
+      "সম্পূর্ণ অপর কর্ণের দৈর্ঘ্য = ৩৬ × ২ = ৭২ সে.মি",
+      "রম্বসের ক্ষেত্রফল = ১/২ × কর্ণদ্বয়ের গুণফল = ১/২ × ৫৪ × ৭২ = ১৯৪৪"
+    ],
+    "answer": "উত্তর: অপর কর্ণ ৭২ সে.মি এবং ক্ষেত্রফল ১৯৪৪ বর্গ সে.মি"
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q15",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "a = √৩ + √২ হলে, a³ + 1/a³ = কত?",
+    "steps": [
+      "দেওয়া আছে, a = √৩ + √২",
+      "∴ ১/a = ১/(√৩+√২) = (√৩−√২)/[(√৩+√২)(√৩−√২)] [লব ও হরকে (√৩−√২) দ্বারা গুণ করে]",
+      "= (√৩−√২)/((√৩)²−(√২)²) = (√৩−√২)/(৩−২) = √৩ − √২",
+      "∴ a + ১/a = (√৩+√২) + (√৩−√২) = ২√৩",
+      "এখন, a³ + ১/a³ = (a+১/a)³ − ৩.a.(১/a)(a+১/a) [∵ a+১/a = ২√৩]",
+      "= (২√৩)³ − ৩(২√৩)",
+      "= ২³.(√৩)³ − ৩×২√৩",
+      "= ৮.৩√৩ − ৬√৩",
+      "= ২৪√৩ − ৬√৩",
+      "= ১৮√৩ (Answer)"
+    ],
+    "answer": "উত্তর: ১৮√৩"
+  },
+  {
+    "id": "job-2025-tech-edu-cashier-q16",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 16,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "১৬",
+        "q": "ট্রেপল ট্রি কি?",
+        "a": "শ্রীলংকার প্রধানমন্ত্রীর সরকারি বাসভবনের নাম"
+      },
+      {
+        "label": "১৭",
+        "q": "পূর্ণরূপ লিখুন: SPARSO, ECNEC",
+        "a": "SPARSO = Bangladesh Space Research and Remote Sensing Organization. ECNEC = Executive Committee of the National Economic Council."
+      },
+      {
+        "label": "১৮",
+        "q": "সুদানের রাজধানীর নাম কি?",
+        "a": "খার্তুম। দক্ষিণ সুদানের রাজধানী জুবা।"
+      },
+      {
+        "label": "১৯",
+        "q": "তাসমানিয়া কোন মহাদেশে অবস্থিত?",
+        "a": "অস্ট্রেলিয়া মহাদেশে"
+      },
+      {
+        "label": "২০",
+        "q": "আয়তনে সবচেয়ে বড় উপজেলার নাম কী?",
+        "a": "শ্যামনগর উপজেলা, সাতক্ষীরা"
+      },
+      {
+        "label": "২১",
+        "q": "বাংলাদেশে মুক্তিযুদ্ধের সময় সাব-সেক্টর কয়টি ছিল?",
+        "a": "৬৪টি"
+      },
+      {
+        "label": "২২",
+        "q": "এসডিজি এর গোল কতটি?",
+        "a": "১৭টি"
+      },
+      {
+        "label": "২৩",
+        "q": "দ্বিতীয় বিশ্বযুদ্ধের সময় বাফার রাষ্ট্র ছিল কোন দেশ?",
+        "a": "বেলজিয়াম"
+      },
+      {
+        "label": "২৪",
+        "q": "কিউবার মুদ্রার নাম কি?",
+        "a": "পেসো"
+      },
+      {
+        "label": "২৫",
+        "q": "ভুটানের মুদ্রার নাম কি?",
+        "a": "গুলট্রাম"
+      },
+      {
+        "label": "২৬",
+        "q": "ব্রাজিলের রাষ্ট্র ভাষার নাম কী?",
+        "a": "পর্তুগীজ।"
+      },
+      {
+        "label": "২৭",
+        "q": "বাংলাদেশের রাষ্ট্রপতি হওয়ার সর্বনিম্ন বয়স কত?",
+        "a": "৩৫ বছর"
+      },
+      {
+        "label": "২৮",
+        "q": "বাংলাদেশের গভীর সমুদ্র বন্দরের নাম কী?",
+        "a": "মাতারবাড়ী গভীর সমুদ্র বন্দর"
+      },
+      {
+        "label": "২৯",
+        "q": "SAARC (সার্ক) এর কৃষি গবেষণা কেন্দ্র কোথায় অবস্থিত?",
+        "a": "খামার বাড়ি রোড, ঢাকায় অবস্থিত।"
+      },
+      {
+        "label": "৩০",
+        "q": "উয়ারী বটেশ্বর কোন জেলায় অবস্থিত?",
+        "a": "নরসিংদী"
+      }
+    ]
+  }
+]

@@ -1,0 +1,541 @@
+[
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q01",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "উপসর্গ",
+    "qno": 1,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "উপসর্গ কাকে বলে? বাংলা ভাষায় উপসর্গ কত প্রকার ও কী কী?",
+    "answer": "শব্দ বা ধাতুর পূর্বে কতিপয় সুনির্দিষ্ট অব্যয় জাতীয় শব্দাংশ যুক্ত হয়ে সাধিত শব্দে অর্থের পরিবর্তন, সম্প্রসারণ বা সংকোচন ঘটিয়ে থাকে। এগুলোকে বলা হয় উপসর্গ (Prefix)। যেমন, প, পরা, পরি, নির ইত্যাদি। বাংলা ভাষায় উপসর্গ ৩ প্রকার। যথা: বাংলা উপসর্গ (অ, অঘা, অজ ইত্যাদি), তৎসম উপসর্গ (প্র, পরা, অপ, সম, নি ইত্যাদি), বিদেশি উপসর্গ (ফুল, নিম, ফি, হা ইত্যাদি)।"
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q02",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "অর্থোল্লেখে বাক্য রচনা",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "অর্থ উল্লেখ করে বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "লেফাফা দুরস্ত",
+        "a": "বাইরে পরিপাটি"
+      },
+      {
+        "label": "খ",
+        "q": "চিনে জোঁক",
+        "a": "নাছোড়বান্দা"
+      },
+      {
+        "label": "গ",
+        "q": "বিনা মেঘে বজ্রপাত",
+        "a": "অপ্রত্যাশিত বিপদ"
+      },
+      {
+        "label": "ঘ",
+        "q": "দুধের মাছি",
+        "a": "সুসময়ের বন্ধু"
+      },
+      {
+        "label": "ঙ",
+        "q": "সপ্তমে চড়া",
+        "a": "প্রচণ্ড উত্তেজনা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q03",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 3,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ষড়ানন",
+        "a": "ষট্ + আনন"
+      },
+      {
+        "label": "খ",
+        "q": "উল্লিখিত",
+        "a": "উৎ + লিখিত"
+      },
+      {
+        "label": "গ",
+        "q": "লঘূর্মি",
+        "a": "লঘু + ঊর্মি"
+      },
+      {
+        "label": "ঘ",
+        "q": "অন্বিত",
+        "a": "অনু + ইত"
+      },
+      {
+        "label": "ঙ",
+        "q": "যাবজ্জীবন",
+        "a": "যাবৎ + জীবন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q04",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নজরুল কর্তৃক অগ্নিবীণা রচিত হয়েছে।",
+        "a": "কর্তৃকারকে ৩য়া"
+      },
+      {
+        "label": "খ",
+        "q": "ছেলেটি বলের সঙ্গে যুদ্ধ করে।",
+        "a": "কর্মকারকে ৬ষ্ঠী"
+      },
+      {
+        "label": "গ",
+        "q": "আকাশ মেঘে ঢাকা।",
+        "a": "করণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাবাকে বড্ড ভয় পাই।",
+        "a": "অপাদানে ২য়া"
+      },
+      {
+        "label": "ঙ",
+        "q": "এ জমিতে সোনা ফলে।",
+        "a": "অধিকরণে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q05",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 5,
+    "marks": 5,
+    "type": "table",
+    "question": "নিচের শব্দগুলো শুদ্ধ করে লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "অনুকুল",
+        "অনুকূল"
+      ],
+      [
+        "অন্বেষন",
+        "অন্বেষণ"
+      ],
+      [
+        "ব্যুতপত্তি",
+        "ব্যুৎপত্তি"
+      ],
+      [
+        "বিহঙ্গনী",
+        "বিহঙ্গী"
+      ],
+      [
+        "অনূর্ধ",
+        "অনূর্ধ্ব"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q06",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "bangla",
+    "topic": "ভাব-সম্প্রসারণ",
+    "qno": 6,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "ভাব-সম্প্রসারণ করুন: ইটের পর ইট মধ্যে মানুষ কীট।",
+    "answer": "মূলভাব: নগরসভ্যতার পীড়নে মানুষের জীবন আজ দুর্বিষহ হয়ে উঠেছে। শহরের কৃত্রিমতায় মানুষ ধীরে ধীরে তার স্বাভাবিক প্রবৃত্তি হারিয়ে আজ কীটে পরিণত হয়েছে।\n\nসম্প্রসারিত ভাব: নদী-নালা-খাল-বিল-পাহাড়-অরণ্য প্রকৃতির স্বতঃস্ফূর্ত দান। কিন্তু মানুষ সব সময়ই আধিপত্যবাদী। সে প্রকৃতির ওপর ক্ষমতা প্রয়োগ করে ইটের পর ইট গেঁথে একটার পর একটা দালান তৈরি করে নগর সৃষ্টি করেছে। ফলে ব্যাহত হচ্ছে প্রকৃতির প্রত্যাশিত বিকাশ। হারিয়ে যাচ্ছে ছায়া-সুনিবিড় শান্তির নীড়, সুমিষ্ট বায়ুপ্রবাহ, নদীর কলধ্বনি। সেই মমতাময় ও স্বাস্থ্যকর পরিস্থিতিকে দখল করে নিয়েছে এখন বড় বড় অট্টালিকা, বায়ু ও শব্দদূষণ, তীব্র যানজট ও কোলাহল। মানুষ এখানে স্বাভাবিকভাবে শ্বাসগ্রহণ করতে পারে না। শহরে গ্রামের সেই মিলনোন্মুখ সৌহার্দ্যপূর্ণ পরিবেশ নেই, তার বিপরীতে আছে পরস্পরের মধ্যে তীব্র প্রতিযোগিতা ও স্বার্থের দ্বন্দ্ব। এখানে কেউ কারো সুখ-দুঃখের অংশীদার হয় না। প্রত্যেকেই এখানে বিচ্ছিন্ন দ্বীপের মতো বসবাস করে। ফলে আরণ্য ভূমিকে ধ্বংস করে মানুষ যতই যন্ত্রসভ্যতার বড়াই করুক না কেন, প্রকৃতপক্ষে মানুষ নগরসভ্যতার যাঁতাকলে পড়ে ভেতরে-বাইরে নিঃস্ব হয়ে কীটে পরিণত হচ্ছে। জীবনের স্বাভাবিক স্ফূর্তি বিনষ্ট হয়ে যাচ্ছে। তাই জ্ঞান-বিজ্ঞানের শিখরে উঠেও মানুষ আজ ক্লান্ত, অবসন্ন। প্রকৃতি ধ্বংস করার কারণে মানুষ এখন প্রতিমুহূর্তে প্রাকৃতিক দুর্যোগের ভয়ে শঙ্কিত থাকে। সে আজ একটু নির্মল বাতাস সেবন করতে চায়, বুকভরে নিঃশ্বাস নিতে চায়, প্রাণখুলে কথা বলতে চায়, সহমর্মী হতে চায় একে অন্যের। তাই আবার সে ফিরে পেতে চায় সেই প্রসন্ন, সুন্দর, স্নিগ্ধ গ্রাম।\n\nসিদ্ধান্ত: নগর মানুষের ব্যবহারিক জীবনকে কিছুটা সহজ করলেও তার স্বাচ্ছন্দ্যকে নষ্ট করে দিয়েছে। নগর মানুষের জীবনের স্বাভাবিক বিকাশে অন্তরায় সৃষ্টি করেছে।"
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q07",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "কঠিন পরিশ্রমের উপর জীবনের সফলতা নির্ভর করে।",
+        "target": "The success of life depends on hard work."
+      },
+      {
+        "label": "খ",
+        "source": "আমাদের দেশের অধিকাংশ মানুষ গ্রামে বসবাস করে।",
+        "target": "Most of the people of our country live in villages."
+      },
+      {
+        "label": "গ",
+        "source": "এখন সোয়া সাতটা বাজে।",
+        "target": "It is quarter past seven"
+      },
+      {
+        "label": "ঘ",
+        "source": "সে ২০০৫ সালে এসএসসি পরীক্ষায় পাশ করেছে।",
+        "target": "He passed the SSC exam in 2005"
+      },
+      {
+        "label": "ঙ",
+        "source": "দুর্নীতি একটি দেশের জাতীয় উন্নয়নে অন্যতম প্রধান অন্তরায়",
+        "target": "Corruption is one of the major obstacles to a country's national development."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q08",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "verb forms",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use the right forms of verb (am/is/are/was/were/make/makes):",
+    "parts": [
+      {
+        "sentence": "A good number of attendees........ seen in the meeting.",
+        "answer": "are/were"
+      },
+      {
+        "sentence": "The hanana of Narsingdi...... famous.",
+        "answer": "is"
+      },
+      {
+        "sentence": "Five and five...... ten.",
+        "answer": "makes"
+      },
+      {
+        "sentence": "The candidates of this recruitment test...... very disciplined.",
+        "answer": "are"
+      },
+      {
+        "sentence": "If I........ a king, I would help the poor.",
+        "answer": "were"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q09",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "preposition",
+    "qno": 9,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate prepositions:",
+    "parts": [
+      {
+        "sentence": "There is no remedy....... cancer.",
+        "answer": "for"
+      },
+      {
+        "sentence": "Bangladesh is rich.... natural gas.",
+        "answer": "in"
+      },
+      {
+        "sentence": "Yesterday a storm blew .......Dhaka city.",
+        "answer": "over"
+      },
+      {
+        "sentence": "The boy acted........ my suggestions.",
+        "answer": "on"
+      },
+      {
+        "sentence": "Ignorance is similar...... darkness.",
+        "answer": "to"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q10",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "frame sentences with idioms",
+    "qno": 10,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "Frame sentences with meanings:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "A slow coach = অলস ব্যক্তি",
+        "a": "He is a slow coach."
+      },
+      {
+        "label": "b",
+        "q": "At a deadlock = অচলাবস্থা",
+        "a": "The factory has been at a deadlock"
+      },
+      {
+        "label": "c",
+        "q": "Bad book = অনুগ্রহ বঞ্চিত",
+        "a": "He is in the bad book of his boss"
+      },
+      {
+        "label": "d",
+        "q": "Pour cold water on = নিরুৎসাহ করা",
+        "a": "He always pours cold water on my plan."
+      },
+      {
+        "label": "e",
+        "q": "Spare no pains = চেষ্টার ত্রুটি না করা",
+        "a": "I shall spare no pains to help you."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q11",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "identify correct/incorrect sentence",
+    "qno": 11,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Identify correct/incorrect sentence:",
+    "parts": [
+      {
+        "original": "Bread and butter are my favorite breakfast.",
+        "changed": "Bread and butter is my favorite breakfast."
+      },
+      {
+        "original": "Each boy and each girl have a pen.",
+        "changed": "Each boy and each girl has a pen."
+      },
+      {
+        "original": "The man is mortal.",
+        "changed": "Man is mortal"
+      },
+      {
+        "original": "Rahim is the better of the two boys.",
+        "changed": "Rahim is the better of the two boys. (Correct)"
+      },
+      {
+        "original": "Either the teachers or the headmaster have succeeded in their attempt.",
+        "changed": "Either the teachers or the headmaster has succeeded in their attempt"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q12",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 12,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a paragraph on \"July Mass Uprising 2024\"",
+    "answer": "The July Revolution of 2024 in Bangladesh marks a turning point in the nation's history. Initially, the students raised their voice against the longstanding unjust quota system. Gradually, this turned into a movement, which soon became a powerful wave against the authoritarian rule and systemic corruption that prevailed over the last 16 years. The government was criticized for its deeply corrupt institutions and lack of accountability. But the government responded with violent repression. In the early stage of the quota reform protests, the government's heavy-handed approach led to multiple student deaths, including those of Abu Sayed and Mugdha, and several others. This brutality ignited widespread protests, and thousands took to the streets, transforming the student protest into a nationwide movement. Throughout the revolution, over a thousand students and common people, including at least 67 children, lost their lives. By August 5, the people of Bangladesh had reached their limit and took to the streets to oust the fascist regime. Being frightened, the fascist Prime Minister, along with family and close party members, fled the country. They sought shelter in a neighboring country, India. Following their departure, Nobel Laureate Dr. Muhammad Yunus answered the call of the people, assuming the role of Chief Advisor to an Interim Government on August 8. This revolution stands as a testament to the power of collective will."
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q13",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "math",
+    "topic": "ক্ষেত্রফল",
+    "qno": 13,
+    "marks": 6,
+    "type": "math",
+    "question": "২০ মিটার দীর্ঘ একটি কামরার মেঝে কার্পেট দিয়ে ঢাকতে ৭৫০০.০০ টাকা খরচ হয়। যদি ঐ কামরাটির প্রস্থ ৮ মিটার কম হতো, তবে ৬০০০.০০ টাকা খরচ হতো। কামরাটির প্রস্থ কত?",
+    "steps": [
+      "কামরার দৈর্ঘ্য ২০ মিটার। প্রস্থ ৮ মিটার কমলে ক্ষেত্রফল কমে (২০ মিটার × ৮ মিটার) = ৮০ বর্গমিটার",
+      "ক্ষেত্রফল ৮০ বর্গমিটার কমার জন্য খরচ কমে (৭৫০০ − ৬০০০) টাকা = ১৫০০ টাকা",
+      "১৫০০ টাকা খরচ কমে ৮০ বর্গমিটারে",
+      "∴ ৭৫০০ টাকা খরচ কমে (৮০ × ৭৫০০)/১৫০০ বর্গমিটার = ৪০০ বর্গমিটার",
+      "অতএব, কামরার ক্ষেত্রফল ৪০০ বর্গমিটার",
+      "∴ কামরাটির প্রস্থ = ক্ষেত্রফল/দৈর্ঘ্য = ৪০০/২০ মিটার = ২০ মিটার"
+    ],
+    "answer": "উত্তর: প্রস্থ ২০ মিটার"
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q14",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 6,
+    "type": "math",
+    "question": "x = ৪, y = −৮ এবং z = ৫ হলে, 25(x+y)² − 20(x+y)(y+z) + 4(y+z)² এর মান কত?",
+    "steps": [
+      "প্রদত্ত রাশি = 25(x+y)² − 20(x+y)(y+z) + 4(y+z)²",
+      "= {5(x+y)}² − 2.5(x+y).2(y+z) + {2(y+z)}²",
+      "= [{5(x+y)} − 2(y+z)]²",
+      "= (5x+5y − 2y − 2z)²",
+      "= (5x + 3y − 2z)²",
+      "= {5.4 + 3(−8) − 2.5}²",
+      "= (20 − 24 − 10)²",
+      "= (−14)² = 196 (Answer)"
+    ],
+    "answer": "উত্তর: ১৯৬"
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q15",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "math",
+    "topic": "ত্রিভুজের ক্ষেত্রফল",
+    "qno": 15,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি সমদ্বিবাহু ত্রিভুজের ভূমির দৈর্ঘ্য ৬০ সে.মি. এর ক্ষেত্রফল ১২০০ বর্গ সে.মি হলে সমান সমান বাহুর দৈর্ঘ্য নির্ণয় কর।",
+    "steps": [
+      "মনে করি, সমদ্বিবাহু ত্রিভুজের ভূমি b = ৬০ সে.মি. এবং সমান সমান বাহুর দৈর্ঘ্য a।",
+      "ত্রিভুজটির ক্ষেত্রফল = (b/4)√(4a² − b²)",
+      "প্রশ্নানুসারে, (৬০/৪)√(4a² − b²) = ১২০০",
+      "বা, ১৫√(4a² − 3600) = ১২০০",
+      "বা, √(4a² − 3600) = ৮০",
+      "বা, 4a² − 3600 = 6400 [বর্গ করে]",
+      "বা, 4a² = 10000",
+      "বা, a² = 2500 ∴ a = 50"
+    ],
+    "answer": "উত্তর: ত্রিভুজটির সমান বাহুর দৈর্ঘ্য 50 সে.মি."
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q16",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "math",
+    "topic": "বিজোড় সংখ্যা",
+    "qno": 16,
+    "marks": 6,
+    "type": "math",
+    "question": "দুইটি ক্রমিক স্বাভাবিক বিজোড় সংখ্যার যোগফল ১৬ হলে, সংখ্যা দুইটি নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, দুটি ক্রমিক স্বাভাবিক বিজোড় সংখ্যা যথাক্রমে ক ও ক + ২",
+      "প্রশ্নমতে, ক + ক + ২ = ১৬",
+      "বা, ২ক = ১৪ ∴ ক = ৭"
+    ],
+    "answer": "উত্তর: সুতরাং একটি সংখ্যা ক = ৭ এবং অপর সংখ্যা ৭ + ২ = ৯"
+  },
+  {
+    "id": "job-2025-janaprashasan-hisab-rakkhok-q17",
+    "examId": "job-2025-janaprashasan-hisab-rakkhok",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 17,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "নিম্নোক্ত প্রশ্নগুলোর সঠিক উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কে বাংলা সাল গণনা শুরু করেন?",
+        "a": "সম্রাট আকবর"
+      },
+      {
+        "label": "খ",
+        "q": "NATO কোন বছর প্রতিষ্ঠিত হয়?",
+        "a": "১৯৪৯"
+      },
+      {
+        "label": "গ",
+        "q": "জাতীয় ঐক্য কমিশনের সভাপতি কে?",
+        "a": "ড. মুহাম্মদ ইউনূস"
+      },
+      {
+        "label": "ঘ",
+        "q": "অলিম্পিক পতাকায় কয়টি রং থাকে?",
+        "a": "৫টি"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাংলাদেশের সংবিধানের ব্যাখ্যা কারক কে?",
+        "a": "সুপ্রীম কোর্ট"
+      },
+      {
+        "label": "চ",
+        "q": "পাহাড়পুর বৌদ্ধ বিহারের নির্মাতা কে ছিলেন?",
+        "a": "ধর্মপাল দেব"
+      },
+      {
+        "label": "ছ",
+        "q": "সুয়েজখাল কোন বছর চালু হয়?",
+        "a": "১৮৬৯"
+      },
+      {
+        "label": "জ",
+        "q": "এরিস্টটলের শিক্ষা কেন্দ্রের নাম কী?",
+        "a": "লাইসিয়াম"
+      },
+      {
+        "label": "ঝ",
+        "q": "মারমাদের সবচেয়ে বড় উৎসবের নাম কী?",
+        "a": "সাংগ্রাই"
+      },
+      {
+        "label": "ঞ",
+        "q": "'আর্টিফিশিয়াল ইন্টেলিজেন্স' ধারণাটির জনক কে?",
+        "a": "এলান টুরিং"
+      },
+      {
+        "label": "ট",
+        "q": "জুলাই গণঅভ্যুথান অধিদপ্তর কোন মন্ত্রণালয়ের অধীন?",
+        "a": "মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়"
+      },
+      {
+        "label": "ঠ",
+        "q": "মানব উন্নয়ন প্রতিবেদন ২০২৫ অনুযায়ী মানব উন্নয়ন সূচকে শীর্ষ দেশ কোনটি?",
+        "a": "আইসল্যান্ড (বাংলাদেশ ১০৩ তম)"
+      },
+      {
+        "label": "ড",
+        "q": "প্রাচীন বাংলার 'সমতট' বর্তমান কোন অঞ্চল নিয়ে গঠিত ছিল?",
+        "a": "কুমিল্লা ও নোয়াখালী"
+      },
+      {
+        "label": "ঢ",
+        "q": "'অ্যামনেস্টি ইন্টারন্যাশনাল' এর সদর দপ্তর কোথায় অবস্থিত?",
+        "a": "লন্ডন, যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "ণ",
+        "q": "'Sunshine Policy' এর সাথে কোন দুই দেশ সম্পৃক্ত?",
+        "a": "উত্তর কোরিয়া ও দক্ষিণ কোরিয়া"
+      },
+      {
+        "label": "ত",
+        "q": "বাংলাদেশের প্রধান আইন কর্মকর্তাকে কী নামে অভিহিত করা হয়?",
+        "a": "অ্যাটর্নি জেনারেল"
+      },
+      {
+        "label": "থ",
+        "q": "বাংলাদেশ কবে স্যাটেলাইট ইন্টারনেটের যুগে প্রবেশ করে?",
+        "a": "২০ মে, ২০২৫"
+      },
+      {
+        "label": "দ",
+        "q": "এশিয়ান মহিলা ফুটবল চ্যাম্পিয়নশীপ ২০২৬ সালে কোথায় অনুষ্ঠিত হবে?",
+        "a": "অস্ট্রেলিয়া"
+      },
+      {
+        "label": "ধ",
+        "q": "বাংলাদেশের সর্বপ্রথম জিওগ্রাফিক্যাল ইন্ডিকেটর (জিআই) পণ্য কোনটি?",
+        "a": "জামদানি শাড়ি"
+      },
+      {
+        "label": "ন",
+        "q": "দেশের ফসল উৎপাদনের জন্য জলবায়ুর ভিত্তিতে সারা বছরকে কোন দুটি মৌসুমে ভাগ করা হয়েছে?",
+        "a": "রবি মৌসুম ও খরিপ মৌসুম"
+      }
+    ]
+  }
+]

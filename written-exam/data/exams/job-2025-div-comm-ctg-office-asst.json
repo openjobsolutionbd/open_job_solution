@@ -1,0 +1,673 @@
+[
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q01",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "শব্দগুলোর শুদ্ধরূপ লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "বিরহীনি",
+        "বিরহিণী"
+      ],
+      [
+        "অট্টোহাসি",
+        "অট্টহাসি"
+      ],
+      [
+        "বিদ্যেপ",
+        "বিদ্রূপ"
+      ],
+      [
+        "সংর্কিণ",
+        "সংকীর্ণ"
+      ],
+      [
+        "পল্যি",
+        "পল্লী"
+      ],
+      [
+        "বৈশিষ্ঠ",
+        "বৈশিষ্ট্য"
+      ],
+      [
+        "প্রণালি",
+        "প্রণালী"
+      ],
+      [
+        "ষ্টিমার",
+        "স্টিমার"
+      ],
+      [
+        "স্পর্দা",
+        "স্পর্ধা"
+      ],
+      [
+        "কনিকা",
+        "কণিকা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q02",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মার্তণ্ড",
+        "a": "মার্ত + অণ্ড"
+      },
+      {
+        "label": "খ",
+        "q": "কুলটা",
+        "a": "কুল + অটা"
+      },
+      {
+        "label": "গ",
+        "q": "বাগেশ্বরী",
+        "a": "বাক্ + ঈশ্বরী"
+      },
+      {
+        "label": "ঘ",
+        "q": "শীতার্ত",
+        "a": "শীত + ঋত"
+      },
+      {
+        "label": "ঙ",
+        "q": "হৃৎকম্প",
+        "a": "হৃদ্ + কম্প"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q03",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "পারিভাষিক শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "পারিভাষিক শব্দ"
+    ],
+    "rows": [
+      [
+        "Anatomy",
+        "শরীরতত্ত্ব"
+      ],
+      [
+        "Assassination",
+        "আততায়ী হত্যা"
+      ],
+      [
+        "Amicus Curiae",
+        "আদালতের বন্ধু"
+      ],
+      [
+        "Excise duty",
+        "আবগারি শুল্ক"
+      ],
+      [
+        "Hydrogen",
+        "উদজান"
+      ],
+      [
+        "Lease",
+        "ইজারা"
+      ],
+      [
+        "Quarterly",
+        "ত্রৈমাসিক"
+      ],
+      [
+        "Radio",
+        "বেতার"
+      ],
+      [
+        "Referendum",
+        "গণভোট"
+      ],
+      [
+        "Surgeon",
+        "শল্যচিকিৎসক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q04",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দুটি ভাষা জানে যে",
+        "a": "দ্বিভাষী"
+      },
+      {
+        "label": "খ",
+        "q": "জয় করার যোগ্য",
+        "a": "জেতব্য/জেয়"
+      },
+      {
+        "label": "গ",
+        "q": "খাওয়ার উপযুক্ত",
+        "a": "খাদ্য"
+      },
+      {
+        "label": "ঘ",
+        "q": "ঘরের অভাব যার",
+        "a": "হাঘরে"
+      },
+      {
+        "label": "ঙ",
+        "q": "পরিমিত ব্যয় করে যে",
+        "a": "মিতব্যয়ী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q05",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 5,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "অভিজ্ঞ",
+        "অনভিজ্ঞ"
+      ],
+      [
+        "অলীক",
+        "বাস্তব"
+      ],
+      [
+        "উষা",
+        "সন্ধ্যা"
+      ],
+      [
+        "ঊর্ধ্ব",
+        "অধঃ"
+      ],
+      [
+        "ক্ষীয়মান",
+        "বর্ধমান"
+      ],
+      [
+        "গৃহীত",
+        "বর্জিত/প্রত্যাখ্যাত"
+      ],
+      [
+        "তীক্ষ্ণ",
+        "ভোঁতা"
+      ],
+      [
+        "প্রসন্ন",
+        "বিষণ্ন"
+      ],
+      [
+        "মন্দা",
+        "তেজি"
+      ],
+      [
+        "বৈরী",
+        "অনুকূল/মিত্র"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q06",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 6,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences of the following phrases and idioms.",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A rainy day",
+        "meaning": "দুর্দিন",
+        "example": "We should save something against a rainy day."
+      },
+      {
+        "label": "b",
+        "phrase": "At home",
+        "meaning": "দক্ষ",
+        "example": "He is at home in English."
+      },
+      {
+        "label": "c",
+        "phrase": "Cry in the wilderness",
+        "meaning": "অরণ্যে রোদন",
+        "example": "To want something from a miser is a cry in the wilderness."
+      },
+      {
+        "label": "d",
+        "phrase": "Give a hand",
+        "meaning": "কাউকে সাহায্য করা",
+        "example": "Could you give me a hand?"
+      },
+      {
+        "label": "e",
+        "phrase": "Word for word",
+        "meaning": "হুবহু",
+        "example": "She copied it word for word from my books."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q07",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate prepositions:",
+    "parts": [
+      {
+        "sentence": "Credit 5000 tk…… my account.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Hurry up! We have to go….. five minutes.",
+        "answer": "within/in"
+      },
+      {
+        "sentence": "I finally killed the fly…… a rolled up paper.",
+        "answer": "with"
+      },
+      {
+        "sentence": "I count …….your help.",
+        "answer": "upon"
+      },
+      {
+        "sentence": "Are you doing anything special……. the weekend.",
+        "answer": "at"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q08",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change into passive voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "His behavior worried us.",
+        "changed": "We were worried at his behavior."
+      },
+      {
+        "label": "b",
+        "original": "Some children were helping the sick man.",
+        "changed": "The sick man was being helped by some children."
+      },
+      {
+        "label": "c",
+        "original": "Does he speak English well?",
+        "changed": "Is English spoken well by him?"
+      },
+      {
+        "label": "d",
+        "original": "Don't do it.",
+        "changed": "Let not it be done."
+      },
+      {
+        "label": "e",
+        "original": "Never tell a lie.",
+        "changed": "Let never a lie be told/ Let not a lie ever be told."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q09",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 9,
+    "marks": 5,
+    "type": "table",
+    "question": "Write the correct spelling of the following words:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Sovorignty",
+        "Sovereignty"
+      ],
+      [
+        "Heirarchy",
+        "Hierarchy"
+      ],
+      [
+        "Rennaissance",
+        "Renaissance"
+      ],
+      [
+        "Dillema",
+        "Dilemma"
+      ],
+      [
+        "Bouquete",
+        "Bouquet"
+      ],
+      [
+        "Parallal",
+        "Parallel"
+      ],
+      [
+        "Laberatory",
+        "Laboratory"
+      ],
+      [
+        "Exagerate",
+        "Exaggerate"
+      ],
+      [
+        "Propitor",
+        "Proprietor"
+      ],
+      [
+        "Millanium",
+        "Millennium"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q10",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on any one of the following topics: a) Tree plantation  b) Importance of Physical Exercise",
+    "answer": "a) Tree plantation.\nTree plantation means planting many trees to improve the environment. Trees give us oxygen and take in harmful gases like carbon dioxide, making the air clean and fresh. They provide fruits, medicine, wood, and shelter for people and animals. Trees also prevent soil erosion and floods by holding the soil firmly with their roots. Nowadays, deforestation causes many problems such as climate change, global warming, and loss of habitats for wildlife. Planting more trees can solve these issues by restoring ecological balance and making nature green. Tree plantation creates shade, beautifies our surroundings, and controls air pollution. Every citizen, especially students, should join tree plantation programs to save our earth. We can plant trees in our schoolyards, villages, and roadsides. Governments and organizations should arrange tree-planting campaigns regularly. Tree plantation is the best way to ensure a healthy and happy life for present and future generations.\n\nb) Importance of Physical Exercise.\nPhysical exercise means any bodily activity that makes our muscles work and burns calories. Common forms include walking, running, swimming, cycling, skipping, and playing outdoor games like football or cricket. Physical exercise makes the body strong and flexible. It also helps improve heart and lung function. Exercise keeps diseases like obesity, diabetes, and high blood pressure at bay. Besides, it refreshes the mind and reduces stress, helping students to concentrate better in their studies. Doing exercise regularly creates discipline and boosts self-confidence. Morning is the ideal time for exercise, but it can be done anytime. Everyone—children, adults, and elderly—should do some form of physical activity daily. Students who exercise tend to have more energy throughout the day. Physical exercise is a natural way to stay healthy, active, and happy. So, we must develop the habit of doing regular physical exercise for a balanced and healthy life."
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q11",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি x² − √৫x − ১ = ০ এবং x > ০ হয়, তবে প্রমাণ করুন যে, x⁴ − 1/x⁴ = ২১√৫",
+    "steps": [
+      "দেওয়া আছে, x² − √৫x − ১ = ০ ⇒ x² − ১ = √৫x ⇒ x/1 − 1/x = √৫ (উভয়পক্ষকে x দ্বারা ভাগ করে)",
+      "∴ x − 1/x = √৫",
+      "এখন, (x + 1/x)² = (x − 1/x)² + ৪.x.(1/x) = (√৫)² + ৪ = ৯ ⇒ x + 1/x = ৩",
+      "প্রদত্ত রাশি = x⁴ − 1/x⁴ = (x²+1/x²)(x²−1/x²) = {(x−1/x)²+২}(x−1/x)(x+1/x)",
+      "= {(√৫)²+২} × √৫ × ৩ = (৫+২) × ৩√৫ = ৭ × ৩√৫",
+      "= ২১√৫ (প্রমাণিত)"
+    ],
+    "answer": "x⁴ − 1/x⁴ = ২১√৫ (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q12",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "math",
+    "topic": "গতিবেগ",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "১৫০ মিটার দীর্ঘ একটি ট্রেন ৪৫০ মিটার দীর্ঘ প্ল্যাটফর্ম ২০ সেকেন্ডে অতিক্রম করে। ট্রেনটির গতিবেগ ঘণ্টায় কত কি.মি.?",
+    "steps": [
+      "ট্রেনটি তার নিজের দৈর্ঘ্য ও প্ল্যাটফর্মের দৈর্ঘ্য মিলিয়ে মোট (১৫০+৪৫০) = ৬০০ মিটার অতিক্রম করবে",
+      "গতিবেগ = দূরত্ব/সময় = ৬০০/২০ = ৩০ মিটার/সেকেন্ড",
+      "১ মিটার/সেকেন্ড = ৩.৬ কি.মি./ঘণ্টা",
+      "৩০ মিটার/সেকেন্ড = ৩.৬ × ৩০ = ১০৮ কি.মি./ঘণ্টা"
+    ],
+    "answer": "১০৮ কি.মি./ঘণ্টা"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q13",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একজন বিক্রেতা ৫৯৪ টাকা দরে দুটি শার্ট বিক্রি করেন। একটিতে লাভ ১০% এবং অপরটিতে ১০% ক্ষতি হলে মোটের উপর তার শতকরা কত লাভ বা ক্ষতি হয়?",
+    "steps": [
+      "১০% লাভে বিক্রয়মূল্য = ১১০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ৫৯৪ টাকা হলে ক্রয়মূল্য = ১০০ × ৫৯৪/১১০ = ৫৪০ টাকা",
+      "১০% ক্ষতিতে বিক্রয়মূল্য = ৯০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ৫৯৪ টাকা হলে ক্রয়মূল্য = ১০০ × ৫৯৪/৯০ = ৬৬০ টাকা",
+      "শার্ট দুটির মোট ক্রয়মূল্য = ৫৪০ + ৬৬০ = ১২০০ টাকা",
+      "শার্ট দুটির মোট বিক্রয়মূল্য = ৫৯৪ + ৫৯৪ = ১১৮৮ টাকা",
+      "∴ ক্ষতি হলো = ১২০০ − ১১৮৮ = ১২ টাকা",
+      "১২০০ টাকায় ক্ষতি হয় ১২ টাকা ⇒ ১০০ টাকায় ক্ষতি হয় = ১২×১০০/১২০০ = ১ টাকা"
+    ],
+    "answer": "১% ক্ষতি"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q14",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি পাত্রে দুধ ও পানি ৫:১ অনুপাতে আছে। যদি দুধের পরিমাণ পানির পরিমাণের চেয়ে ৮ লিটার বেশি হয়, তবে পানির পরিমাণ কত?",
+    "steps": [
+      "মনে করি, দুধের পরিমাণ = ৫x লিটার; পানির পরিমাণ = x লিটার",
+      "প্রশ্নমতে, ৫x − x = ৮ ⇒ ৪x = ৮ ⇒ x = ২"
+    ],
+    "answer": "২ লিটার"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q15",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি বৃত্তাকার বাগান রাস্তা দ্বারা পরিবেষ্টিত আছে। যদি রাস্তাটির বাইরের পরিধি ভেতরের পরিধি হতে ৪৪ মিটার বেশি হয়, তবে রাস্তাটির বিস্তার কত?",
+    "steps": [
+      "মনে করি, বাইরের পরিধির ব্যাসার্ধ = R মিটার; ভেতরের পরিধির ব্যাসার্ধ = r মিটার",
+      "তাহলে রাস্তাটির বিস্তার = (R−r) মিটার",
+      "R ব্যাসার্ধ বিশিষ্ট বৃত্তের পরিধি = ২πR মিটার; r ব্যাসার্ধ বিশিষ্ট বৃত্তের পরিধি = ২πr মিটার",
+      "প্রশ্নমতে, ২πR − ২πr = ৪৪ ⇒ ২π(R−r) = ৪৪",
+      "∴ R−r = ৪৪/২π = ৪৪/(২×৩.১৪১৬) = ৭.০০৩ (প্রায়)"
+    ],
+    "answer": "প্রায় ৭.০০৩ মিটার"
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q16",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "\"সত্যপীরের ভিটা\" কোথায় অবস্থিত?",
+        "a": "বদলগাছি, নওগাঁ"
+      },
+      {
+        "label": "খ",
+        "q": "ঢাকার বিখ্যাত \"তারা মসজিদ\" কে তৈরি করেন?",
+        "a": "মির্জা আহমেদ খান"
+      },
+      {
+        "label": "গ",
+        "q": "\"পানাম\" কোন জেলায় অবস্থিত?",
+        "a": "নারায়ণগঞ্জ"
+      },
+      {
+        "label": "ঘ",
+        "q": "\"মনপুরা-৭০\" চিত্রকর্মের শিল্পী কে?",
+        "a": "জয়নুল আবেদিন"
+      },
+      {
+        "label": "ঙ",
+        "q": "নৌকাবাইচ প্রতিযোগিতার সময় পরিবেশিত গানের নাম কী?",
+        "a": "সারি গান"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ উপজেলা কোনটি?",
+        "a": "মহেশখালী"
+      },
+      {
+        "label": "ছ",
+        "q": "চেঙ্গী নদী কোন জেলায় অবস্থিত?",
+        "a": "খাগড়াছড়ি"
+      },
+      {
+        "label": "জ",
+        "q": "\"কার্টাগেনা প্রটোকল\" চুক্তির বিষয়বস্তু কী?",
+        "a": "জাতিসংঘের জৈব নিরাপত্তা বিষয়ক চুক্তি"
+      },
+      {
+        "label": "ঝ",
+        "q": "War and Peace উপন্যাসের রচয়িতা কে?",
+        "a": "লিও তলস্তয়"
+      },
+      {
+        "label": "ঞ",
+        "q": "মহাশূন্যে উৎক্ষিপ্ত প্রথম কৃত্রিম উপগ্রহের নাম কী?",
+        "a": "স্পুটনিক-১"
+      },
+      {
+        "label": "ট",
+        "q": "পৃথিবীর নিকটতম গ্রহের নাম কি?",
+        "a": "শুক্র"
+      },
+      {
+        "label": "ঠ",
+        "q": "মালয়েশিয়ার মুদ্রার নাম কি?",
+        "a": "রিঙ্গিত"
+      },
+      {
+        "label": "ড",
+        "q": "কমনওয়েলথ এর প্রধান কে?",
+        "a": "ইংল্যান্ডের রাজা/রাণী"
+      },
+      {
+        "label": "ঢ",
+        "q": "কোন বনভূমিকে পৃথিবীর ফুসফুস বলা হয়?",
+        "a": "আমাজন"
+      },
+      {
+        "label": "ণ",
+        "q": "জাতিসংঘে ভেটো ক্ষমতাসম্পন্ন একমাত্র এশীয় দেশ কোনটি?",
+        "a": "চীন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q17",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "general-knowledge",
+    "topic": "কম্পিউটার",
+    "qno": 17,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখুনঃ NASA, BIOS, IP, IC, VIRUS",
+    "parts": [
+      {
+        "label": "NASA",
+        "q": "",
+        "a": "National Aeronautics and Space Administration"
+      },
+      {
+        "label": "BIOS",
+        "q": "",
+        "a": "Basic Input/Output System"
+      },
+      {
+        "label": "IP",
+        "q": "",
+        "a": "Internet Protocol"
+      },
+      {
+        "label": "IC",
+        "q": "",
+        "a": "Integrated Circuit"
+      },
+      {
+        "label": "VIRUS",
+        "q": "",
+        "a": "Vital Information Resources Under Siege"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-div-comm-ctg-office-asst-q18",
+    "examId": "job-2025-div-comm-ctg-office-asst",
+    "subject": "general-knowledge",
+    "topic": "কম্পিউটার",
+    "qno": 18,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "প্রিন্টারের মান পরিমাপক এককের নাম কি?",
+        "a": "DPI (Dots Per Inch)"
+      },
+      {
+        "label": "খ",
+        "q": "মাইক্রোসফট এক্সেল কোন ধরনের প্রোগ্রাম?",
+        "a": "স্প্রেডশীট প্রোগ্রাম"
+      },
+      {
+        "label": "গ",
+        "q": "IoT কি?",
+        "a": "IoT (Internet of Things) হলো এমন একটি ধারণা যেখানে স্মার্ট ইলেকট্রনিক ডিভাইসসমূহ ইন্টারনেটের মাধ্যমে একে-অপরের সাথে সংযুক্ত থেকে স্বয়ংক্রিয়ভাবে নিজেদের মধ্যে যোগাযোগ বা তথ্যের আদান-প্রদান এবং তথ্য বিশ্লেষণ করে সিদ্ধান্ত নিতে পারে।"
+      },
+      {
+        "label": "ঘ",
+        "q": "53D কোন ধরণের সংখ্যা?",
+        "a": "হেক্সাডেসিমেল"
+      },
+      {
+        "label": "ঙ",
+        "q": "MCQ পরীক্ষার উত্তরপত্র মূল্যায়নে কোন পদ্ধতি ব্যবহার করা হয়?",
+        "a": "OMR পদ্ধতি"
+      }
+    ]
+  }
+]

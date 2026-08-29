@@ -1,0 +1,519 @@
+[
+  {
+    "id": "job-2025-textile-office-sohayok-q01",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 3,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "ষষ্ঠ",
+        "ষষ্ + থ"
+      ],
+      [
+        "পরস্পর",
+        "পর + পর"
+      ],
+      [
+        "মনীষা",
+        "মনস্ + ঈষা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q02",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 3,
+    "type": "idiom",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "উপকারীর অপকার করে যে",
+        "meaning": "কৃতঘ্ন"
+      },
+      {
+        "label": "খ",
+        "phrase": "আয় বুঝে ব্যয় করে যে",
+        "meaning": "মিতব্যয়ী"
+      },
+      {
+        "label": "গ",
+        "phrase": "হনন করার ইচ্ছা",
+        "meaning": "জিঘাংসা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q03",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    "columns": [
+      "শব্দ",
+      "ব্যাসবাক্য",
+      "সমাসের নাম"
+    ],
+    "rows": [
+      [
+        "বিষাদ সিন্ধু",
+        "বিষাদ রূপ সিন্ধু",
+        "রূপক কর্মধারয়"
+      ],
+      [
+        "কানাকানি",
+        "কানে কানে যে কথা",
+        "ব্যতিহার বহুব্রীহি"
+      ],
+      [
+        "পিতামাতা",
+        "পিতা ও মাতা",
+        "দ্বন্দ্ব সমাস"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q04",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "শুদ্ধ করে লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "original": "তিনি আরোগ্য হয়েছেন।",
+        "changed": "তিনি আরোগ্য লাভ করেছেন।"
+      },
+      {
+        "label": "খ",
+        "original": "দৈন্যতা প্রশংসনীয় নয়।",
+        "changed": "দৈন্য/দীনতা প্রশংসনীয় নয়।"
+      },
+      {
+        "label": "গ",
+        "original": "মিথ্যা বলা সমিচিন নয়।",
+        "changed": "মিথ্যা বলা সমীচীন নয়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q05",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "qno": 5,
+    "marks": 3,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "মাটির মানুষ",
+        "meaning": "নিরীহ ব্যক্তি"
+      },
+      {
+        "label": "খ",
+        "phrase": "গড্ডলিকা প্রবাহ",
+        "meaning": "অন্ধ অনুকরণ"
+      },
+      {
+        "label": "গ",
+        "phrase": "অরণ্যে রোদন",
+        "meaning": "নিষ্ফল আবেদন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q06",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত-শব্দ",
+    "qno": 6,
+    "marks": 4,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "অমৃত",
+        "গরল"
+      ],
+      [
+        "অলীক",
+        "সত্য"
+      ],
+      [
+        "তক্কর",
+        "সাধু"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q07",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "bangla",
+    "qno": 7,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দাও:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রবীন্দ্রনাথ ঠাকুর কোন কাব্যগ্রন্থের জন্য নোবেল পুরস্কার পান?",
+        "a": "গীতাঞ্জলি"
+      },
+      {
+        "label": "খ",
+        "q": "'মেঘনাদবধ কাব্য' কার লেখা?",
+        "a": "মাইকেল মধুসূদন দত্ত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q08",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 6,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "যেমন কর্ম, তেমন ফল।",
+        "target": "As you sow, so you reap."
+      },
+      {
+        "label": "খ",
+        "source": "আমি তোমার চিঠি পেয়েছি।",
+        "target": "I have received your letter."
+      },
+      {
+        "label": "গ",
+        "source": "তিন দিন ধরে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining for three days."
+      },
+      {
+        "label": "ঘ",
+        "source": "রহিম পরীক্ষায় অংশগ্রহণ করবে।",
+        "target": "Rahim will appear for the examination."
+      },
+      {
+        "label": "ঙ",
+        "source": "তুমি আসবে তো?",
+        "target": "Will you come?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q09",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 9,
+    "marks": 8,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps:",
+    "parts": [
+      {
+        "sentence": "I want to live........ peace with you.",
+        "answer": "in"
+      },
+      {
+        "sentence": "He is...... LLB.",
+        "answer": "an"
+      },
+      {
+        "sentence": "I saw...... one-eyed man.",
+        "answer": "a"
+      },
+      {
+        "sentence": "Ronaldo is....... better of the two footballers.",
+        "answer": "the"
+      },
+      {
+        "sentence": "I went to Dhaka..... train.",
+        "answer": "by"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q10",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "english",
+    "topic": "gender",
+    "qno": 10,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the gender:",
+    "columns": [
+      "Given Gender",
+      "Opposite Gender"
+    ],
+    "rows": [
+      [
+        "Drone",
+        "Bee"
+      ],
+      [
+        "Fox",
+        "Vixen"
+      ],
+      [
+        "Nephew",
+        "Niece"
+      ],
+      [
+        "Dog",
+        "Bitch"
+      ],
+      [
+        "Lord",
+        "Lady"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q11",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 11,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the following idioms & phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "For good",
+        "meaning": "চিরতরে",
+        "example": "He left the country for good."
+      },
+      {
+        "label": "b",
+        "phrase": "Maiden Speech",
+        "meaning": "প্রথম বক্তব্য",
+        "example": "His maiden speech pleased all."
+      },
+      {
+        "label": "c",
+        "phrase": "A slow coach",
+        "meaning": "অলস ব্যক্তি",
+        "example": "A slow coach can't shine in life."
+      },
+      {
+        "label": "d",
+        "phrase": "Crying need",
+        "meaning": "অতি প্রয়োজনীয়",
+        "example": "Mass education is the crying need of Bangladesh."
+      },
+      {
+        "label": "e",
+        "phrase": "Part and parcel",
+        "meaning": "অবিচ্ছেদ্য অংশ",
+        "example": "A library is part and parcel of a school."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q12",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 6,
+    "type": "math",
+    "question": "x² - 8x - 20 কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ করুন।",
+    "steps": [
+      "এখানে, x² - 8x - 20 = x² - 10x + 2x - 20 = x(x-10) + 2(x-10) = (x-10)(x+2)",
+      "ধরি, (x-10) = a, (x+2) = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² - {(a-b)/2}²",
+      "= {(x-10+x+2)/2}² - {(x-10-x-2)/2}²",
+      "= {(2x-8)/2}² - {(-12)/2}²",
+      "= (x-4)² - 6²"
+    ],
+    "answer": "(x-4)² - 6²"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q13",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 13,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি বর্গক্ষেত্রের পরিসীমা একটি আয়তক্ষেত্রের পরিসীমার সমান। আয়তক্ষেত্রটির দৈর্ঘ্য প্রস্থের ৩ গুণ এবং ক্ষেত্রফল ৯৭২ বর্গমিটার। বর্গক্ষেত্রের ক্ষেত্রফল নির্ণয় করুন।",
+    "steps": [
+      "ধরি, আয়তক্ষেত্রের প্রস্থ = x মিটার ও দৈর্ঘ্য = 3x মিটার",
+      "প্রশ্নমতে, 3x² = 972 বা, x² = 324 ∴ x = 18",
+      "∴ প্রস্থ 18 মিটার, দৈর্ঘ্য = 3 × 18 = 54 মিটার",
+      "∴ আয়তক্ষেত্রের পরিসীমা = 2(দৈর্ঘ্য + প্রস্থ) = 2(54+18) মিটার = 144 মিটার",
+      "∴ বর্গের বাহুর দৈর্ঘ্য = 144/4 মিটার = 36 মিটার",
+      "বর্গক্ষেত্রের ক্ষেত্রফল = (36)² = 1296 বর্গ মিটার"
+    ],
+    "answer": "১২৯৬ বর্গ মিটার।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q14",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 14,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি পানির ট্যাংকে দুটি নল আছে। প্রথম নলটি খুলে দিলে ট্যাংকটি ২০ ঘণ্টায় পানিতে পূর্ণ হয়। দ্বিতীয় নল দ্বারা পূর্ণ ট্যাংক ৩০ ঘণ্টায় খালি হয়। দুইটি নল একসঙ্গে খুলে দিলে কত ঘণ্টায় ট্যাংকটি পূর্ণ হবে?",
+    "steps": [
+      "প্রথম নল দ্বারা ২০ ঘণ্টায় পূর্ণ হয় ১ অংশ, সুতরাং ১ ঘণ্টায় পূর্ণ হয় ১/২০ অংশ",
+      "দ্বিতীয় নল দ্বারা ৩০ ঘণ্টায় খালি হয় ১ অংশ, সুতরাং ১ ঘণ্টায় খালি হয় ১/৩০ অংশ",
+      "উভয় নল একত্রে খুললে ১ ঘণ্টায় পূর্ণ হয় (১/২০ - ১/৩০) অংশ = (৩-২)/৬০ অংশ = ১/৬০ অংশ",
+      "১/৬০ অংশ পূর্ণ হয় ১ ঘণ্টায়, সুতরাং ১ অংশ পূর্ণ হয় ৬০ ঘণ্টায়"
+    ],
+    "answer": "৬০ ঘণ্টা।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q15",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 15,
+    "marks": 6,
+    "type": "math",
+    "question": "পিতার বর্তমান বয়স পুত্রের বয়সের ৩ গুণ। ৫ বছর আগে পিতার বয়স পুত্রের বয়সের ৪ গুণ ছিল। পিতা ও পুত্রের বর্তমান বয়স কত?",
+    "steps": [
+      "মনে করি, পুত্রের বর্তমান বয়স x বছর, পিতার বর্তমান বয়স 3x বছর",
+      "প্রশ্নমতে, 4(x-5) = 3x-5",
+      "বা, 4x-20 = 3x-5",
+      "∴ x = 15",
+      "সুতরাং পুত্রের বর্তমান বয়স ১৫ বছর, পিতার বর্তমান বয়স ৩ × ১৫ = ৪৫ বছর"
+    ],
+    "answer": "পিতার বর্তমান বয়স ৪৫ বছর; পুত্রের বয়স ১৫ বছর।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q16",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 16,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ইউক্রেনের রাজধানীর নাম কি?",
+    "answer": "কিয়েভ।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q17",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 17,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ChatGPT কী?",
+    "answer": "OpenAI কোম্পানি কর্তৃক তৈরিকৃত কৃত্রিম বুদ্ধিমত্তাভিত্তিক এক ধরণের চ্যাটবট।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q18",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 18,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের প্রথম ভৌগোলিক নির্দেশক (GI) পণ্য কোনটি?",
+    "answer": "জামদানি শাড়ি।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q19",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 19,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের 'White Gold' হিসেবে পরিচিত কোনটি?",
+    "answer": "চিংড়ি।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q20",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 20,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের কোন জেলায় বেশি রেশম চাষ হয়?",
+    "answer": "রাজশাহী।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q21",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের সাথে কোন দুই দেশের আন্তর্জাতিক সীমানা রয়েছে?",
+    "answer": "ভারত ও মিয়ানমার।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q22",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বিশ্ব মানবাধিকার দিবস কত তারিখে?",
+    "answer": "১০ ডিসেম্বর।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q23",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "OIC এর প্রধান কার্যালয় কোথায় অবস্থিত?",
+    "answer": "জেদ্দা।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q24",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 24,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাষ্পীয় ইঞ্জিনের আবিষ্কারক কে?",
+    "answer": "জেমস ওয়াট।"
+  },
+  {
+    "id": "job-2025-textile-office-sohayok-q25",
+    "examId": "job-2025-textile-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 25,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "RMG এর পূর্ণরূপ কী?",
+    "answer": "Ready Made Garments"
+  }
+]

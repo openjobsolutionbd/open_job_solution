@@ -1,0 +1,440 @@
+[
+  {
+    "id": "job-2025-dmch-computer-operator-q01",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "পারিভাষিক শব্দ",
+    "qno": 1,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "পারিভাষিক শব্দ লিখুনঃ",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Census",
+        "a": "আদমশুমারি"
+      },
+      {
+        "label": "b",
+        "q": "Pleadings",
+        "a": "মামলার আবেদনপত্র/ নালিশ"
+      },
+      {
+        "label": "c",
+        "q": "Notification",
+        "a": "বিজ্ঞপ্তি"
+      },
+      {
+        "label": "d",
+        "q": "Glossary",
+        "a": "শব্দার্থ তালিকা/ শব্দকোষ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q02",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 8,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দ্যুলোক",
+        "a": "দিব্ + লোক"
+      },
+      {
+        "label": "খ",
+        "q": "বৃহস্পতি",
+        "a": "বৃহৎ + পতি"
+      },
+      {
+        "label": "গ",
+        "q": "ষোড়শ",
+        "a": "ষট্ + দশ"
+      },
+      {
+        "label": "ঘ",
+        "q": "রাজর্ষি",
+        "a": "রাজা + ঋষি"
+      },
+      {
+        "label": "ঙ",
+        "q": "ষড়ানন",
+        "a": "ষট্ + আনন"
+      },
+      {
+        "label": "চ",
+        "q": "গবাক্ষ",
+        "a": "গো + অক্ষ"
+      },
+      {
+        "label": "ছ",
+        "q": "জ্যোতির্ময়",
+        "a": "জ্যোতিঃ + ময়"
+      },
+      {
+        "label": "জ",
+        "q": "শীতার্ত",
+        "a": "শীত + ঋত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q03",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 8,
+    "type": "table",
+    "question": "শুদ্ধ বানান/ শব্দ লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "দ্বায়িত্ব",
+        "দায়িত্ব"
+      ],
+      [
+        "সমীচিন",
+        "সমীচীন"
+      ],
+      [
+        "অদ্যাবধি",
+        "অদ্যাবধি"
+      ],
+      [
+        "গিতাঞ্জলি",
+        "গীতাঞ্জলি"
+      ],
+      [
+        "দারিদ্রতা",
+        "দারিদ্র্য"
+      ],
+      [
+        "লজ্জাস্কর",
+        "লজ্জাকর"
+      ],
+      [
+        "ফটোষ্ট্যাট",
+        "ফটোস্ট্যাট"
+      ],
+      [
+        "ইতিমধ্যে",
+        "ইতোমধ্যে"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q04",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য",
+    "qno": 4,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য গঠন করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ইতর বিশেষ",
+        "a": "পার্থক্য"
+      },
+      {
+        "label": "খ",
+        "q": "ভূষণ্ডির কাক",
+        "a": "দীর্ঘজীবী"
+      },
+      {
+        "label": "গ",
+        "q": "অজগরবৃত্তি",
+        "a": "আলসেমি"
+      },
+      {
+        "label": "ঘ",
+        "q": "গৌরচন্দ্রিকা",
+        "a": "ভূমিকা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q05",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "short-qa",
+    "qno": 5,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "সংক্ষিপ্ত প্রশ্নের উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নেমেসিস কোন জাতীয় রচনা?",
+        "a": "নাটক"
+      },
+      {
+        "label": "খ",
+        "q": "'সর্বাঙ্গে ব্যথা ঔষধ দিব কোথা' - এখানে ঔষধ কোন কারকে কোন বিভক্তি?",
+        "a": "কর্মকারকে শূন্য বিভক্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q06",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "bangla",
+    "topic": "essay",
+    "qno": 6,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "স্বাস্থ্যখাতে টেকসই উন্নয়ন লক্ষ্যমাত্রা ও বাংলাদেশ- এ বিষয়ে সর্বোচ্চ ২০০ শব্দের নাতিদীর্ঘ একটি অনুচ্ছেদ লিখুন।",
+    "answer": "টেকসই উন্নয়ন লক্ষ্যমাত্রা (SDG) এর তৃতীয় লক্ষ্য হলো সুস্বাস্থ্য ও কল্যাণ নিশ্চিত করা। বাংলাদেশ ২০৩০ সালের মধ্যে এই লক্ষ্য অর্জনে নিরলসভাবে কাজ করে যাচ্ছে। মাতৃমৃত্যু ও শিশুমৃত্যুর হার কমানো, সংক্রামক ব্যাধি নির্মূল, প্রজনন স্বাস্থ্যসেবা সহজলভ্যকরণ এবং সর্বজনীন স্বাস্থ্যসেবা নিশ্চিতকরণ এই লক্ষ্যের মূল দিক। বাংলাদেশ ইতিমধ্যে শিশুমৃত্যু হার হ্রাসে উল্লেখযোগ্য সাফল্য দেখিয়েছে এবং টিকাদান কর্মসূচি, কমিউনিটি ক্লিনিক স্থাপন ও মা ও শিশু স্বাস্থ্যসেবা কর্মসূচির মাধ্যমে অগ্রগতি অব্যাহত রেখেছে। তবে গ্রামীণ ও প্রত্যন্ত অঞ্চলে স্বাস্থ্যসেবার অপ্রতুলতা, দক্ষ জনবলের ঘাটতি ও অসংক্রামক রোগের ক্রমবর্ধমান প্রকোপ এখনো বড় চ্যালেঞ্জ। এই লক্ষ্য অর্জনে সরকারি-বেসরকারি অংশীদারিত্ব বৃদ্ধি, স্বাস্থ্য বাজেট বৃদ্ধি এবং প্রযুক্তিনির্ভর স্বাস্থ্যসেবা সম্প্রসারণ জরুরি। সবার জন্য সাশ্রয়ী ও মানসম্মত স্বাস্থ্যসেবা নিশ্চিত করতে পারলেই বাংলাদেশ এই লক্ষ্যমাত্রা যথাসময়ে অর্জন করতে সক্ষম হবে।"
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q07",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "She is named ...... a flower.",
+        "answer": "after"
+      },
+      {
+        "sentence": "My father ........ before I came.",
+        "answer": "had gone/left"
+      },
+      {
+        "sentence": "Anger may be compared ....... fire.",
+        "answer": "to"
+      },
+      {
+        "sentence": "She succeeded ...... her rigorous work.",
+        "answer": "in"
+      },
+      {
+        "sentence": "He divided the money........ the two children.",
+        "answer": "between"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q08",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 5,
+    "type": "table",
+    "question": "Mention the correct spelling:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Comitee",
+        "Committee"
+      ],
+      [
+        "Repitetion",
+        "Repetition"
+      ],
+      [
+        "Atticude",
+        "Attitude"
+      ],
+      [
+        "Milenium",
+        "Millennium"
+      ],
+      [
+        "Neumonia",
+        "Pneumonia"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q09",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 5,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "কলম দুইটির একটিতেও চলবে না।",
+        "target": "The pen does not write in either of the two./ Neither of the two pens will do."
+      },
+      {
+        "label": "খ",
+        "source": "আমি কতক্ষণ তার জন্য অপেক্ষা করবো?",
+        "target": "How long will I wait for him?"
+      },
+      {
+        "label": "গ",
+        "source": "সকাল থেকে মুষলধারে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining cats and dogs since morning."
+      },
+      {
+        "label": "ঘ",
+        "source": "অতি ভক্তি চোরের লক্ষণ।",
+        "target": "Too much courtesy, too much craft."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q10",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write five sentences about \\\"July Mass Uprising, 2024\\\" in Bangladesh.",
+    "answer": "The July Revolution of 2024 in Bangladesh marks a turning point in the nation's history. Initially, the students raised their voice against the longstanding unjust quota system. Gradually, this turned into a movement, which soon became a powerful wave against the authoritarian rule and systemic corruption that prevailed over the last 16 years. The government was criticized for its deeply corrupt institutions and lack of accountability. But the government responded with violent repression. In the early stage of the quota reform protests, the government's heavy-handed approach led to multiple student deaths, including those of Abu Sayed and Mugdha, and several others. This brutality ignited widespread protests, and thousands took to the streets, transforming the student protest into a nationwide movement. Throughout the revolution, over a thousand students and common people, including at least 67 children, lost their lives. By August 5, the people of Bangladesh had reached their limit and took to the streets to oust the fascist regime. Being frightened, the fascist Prime Minister, along with family and close party members, fled the country. They sought shelter in a neighboring country, India. Following their departure, Nobel Laureate Dr. Muhammad Yunus answered the call of the people, assuming the role of Chief Advisor to an Interim Government on August 8. This revolution stands as a testament to the power of collective will."
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q11",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "math",
+    "topic": "বয়স",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "পিতা ও পুত্রের বর্তমান বয়সের অনুপাত ৭ঃ২ এবং ৫ বছর পরে তাদের বয়সের অনুপাত ৮ঃ৩ হবে। তাদের বর্তমান বয়স কত?",
+    "steps": [
+      "মনে করি, পিতার বর্তমান বয়স ৭x, পুত্রের বর্তমান বয়স ২x",
+      "প্রশ্নমতে, ৭x+৫ : ২x+৫ = ৮ : ৩",
+      "বা, (৭x+৫)/(২x+৫) = ৮/৩",
+      "বা, ২১x + ১৫ = ১৬x + ৪০",
+      "বা, ২১x − ১৬x = ৪০ − ১৫",
+      "বা, ৫x = ২৫",
+      "∴ x = ৫",
+      "∴ পিতার বর্তমান বয়স = ৭ × ৫ = ৩৫ বছর, পুত্রের বর্তমান বয়স = ৫ × ২ = ১০"
+    ],
+    "answer": "পিতার বয়স ৩৫ বছর এবং পুত্রের বয়স ১০ বছর।"
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q12",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ক্ষেত্রফল ৩√৩ বর্গমিটার বেড়ে যায়। ত্রিভুজটির বাহুর দৈর্ঘ্য নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য a মিটার",
+      "∴ ত্রিভুজটির ক্ষেত্রফল = (√৩/৪)a² বর্গমিটার",
+      "ত্রিভুজটির প্রত্যেক বাহুর দৈর্ঘ্য ১ মিটার বাড়ালে ত্রিভুজটির ক্ষেত্রফল (√৩/৪)(a+১)² বর্গমিটার",
+      "প্রশ্নানুসারে, (√৩/৪)(a+১)² − (√৩/৪)a² = ৩√৩",
+      "বা, (a+১)² − a² = ১২",
+      "বা, a² + ২a + ১ − a² = ১২",
+      "বা, ২a = ১১",
+      "∴ a = ৫.৫"
+    ],
+    "answer": "নির্ণেয় বাহুর দৈর্ঘ্য ৫.৫ মিটার"
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q13",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "math",
+    "topic": "ধারা",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "৭ + ১২ + ১৭ +.......... ধারাটির ৩০ টি পদের সমষ্টি কত?",
+    "steps": [
+      "ধারাটির প্রথম পদ a = ৭, সাধারণ অন্তর d = ১২ − ৭ = ৫",
+      "ইহা একটি সমান্তর ধারা। এখানে পদ সংখ্যা n = ৩০",
+      "আমরা জানি, সমান্তর ধারার প্রথম n সংখ্যক পদের সমষ্টি, Sₙ = (n/2){2a + (n−1)d}",
+      "তাহলে, ৩০টি পদের সমষ্টি S₃₀ = (৩০/২){২.৭ + (৩০−১)৫}",
+      "= ১৫(১৪ + ২৯ × ৫)",
+      "= ১৫(১৪ + ১৪৫)",
+      "= ১৫ × ১৫৯",
+      "= ২৩৮৫"
+    ],
+    "answer": "২৩৮৫"
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q14",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "x³ + 6x²y + 11xy² + 6y³ কে উৎপাদকে বিশ্লেষণ কর।",
+    "steps": [
+      "x³ + 6x²y + 11xy² + 6y³",
+      "= x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³",
+      "= {x³ + 3.x².2y + 3.x.(2y)² + (2y)³} − xy² − 2y³",
+      "= (x+2y)³ − y²(x+2y)",
+      "= (x+2y){(x+2y)² − y²}",
+      "= (x+2y)(x+2y+y)(x+2y−y)",
+      "= (x+2y)(x+3y)(x+y)"
+    ],
+    "answer": "(x+y)(x+2y)(x+3y)"
+  },
+  {
+    "id": "job-2025-dmch-computer-operator-q15",
+    "examId": "job-2025-dmch-computer-operator",
+    "subject": "general-knowledge",
+    "topic": "computer-tech",
+    "qno": 15,
+    "marks": 30,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-৩০ঃ নিচের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "১৫",
+        "q": "কম্পিউটার সিস্টেম ইউনিটে মাইক্রোপ্রসেসর বলতে কী বুঝায়?",
+        "a": "কম্পিউটারের যে অংশে ডেটা প্রক্রিয়াকরণ হয় তাকে মাইক্রোপ্রসেসর বলে। মাইক্রোপ্রসেসরকে কম্পিউটারের ব্রেইন/মস্তিষ্ক বলা হয়। একটি একক সিলিকন চিপের/ ইন্টিগ্রেটেড সার্কিট (IC) মধ্যে এক মিলিয়নের মত বা তার চেয়ে অধিক ট্রানজিস্টর, রেজিস্টার, ক্যাপাসিটর, ডায়োড ইত্যাদি থাকে।"
+      },
+      {
+        "label": "১৬",
+        "q": "কম্পিউটার ভাইরাস কী?",
+        "a": "ক্ষতিকারক প্রোগ্রাম"
+      },
+      {
+        "label": "১৭",
+        "q": "কৃত্রিম বুদ্ধিমত্তা (Artifical Intelligence) বলতে কী বুঝায়? এর ব্যবহারিক প্রয়োগ সম্পর্কে লিখুন।",
+        "a": "মানুষের চিন্তা ভাবনার অথবা বুদ্ধিমত্তার পদ্ধতিকে কৃত্রিম উপায়ে প্রযুক্তি নির্ভর যন্ত্র বা কম্পিউটারের মাধ্যমে বাস্তবায়ন করাই হলো কৃত্রিম বুদ্ধিমত্তা (Artifical Intelligence)। শিক্ষা, স্বাস্থ্য, চিকিৎসা, মেশিন, কৃষি, উদ্ভাবন, আইন-শৃঙ্খলা, রোবোটিক্স, ব্যবসা-বাণিজ্য ইত্যাদি কাজে কৃত্রিম বুদ্ধিমত্তা ব্যবহার হচ্ছে।"
+      },
+      {
+        "label": "১৮",
+        "q": "স্প্যামিং (Spamming) কী?",
+        "a": "স্প্যামিং হল অসংখ্য প্রাপককে অযাচিত, অনাকাঙ্ক্ষিত বা অপ্রাসঙ্গিক বার্তা (স্প্যাম) পাঠানোর একটি প্রক্রিয়া, যা সাধারণত বাণিজ্যিক বিজ্ঞাপন, প্রতারণা, বা ক্ষতিকারক উদ্দেশ্যে করা হয়।"
+      },
+      {
+        "label": "১৯",
+        "q": "ওয়াই-ফাই (Wi-fi) কী?",
+        "a": "ওয়াই-ফাই (Wi-fi) হচ্ছে এমন একটি জনপ্রিয় তারবিহীন প্রযুক্তি যা উচ্চ ফ্রিকুয়েন্সির রেডিও ওয়েভ ব্যবহার করে কোনো ইলেকট্রনিক ডিভাইসকে উচ্চগতি সম্পন্ন ইন্টারনেট সংযোগ কিংবা কম্পিউটার নেটওয়ার্কের মাধ্যমে ডেটা আদান প্রদান করতে পারে। এর জনক ভিক্টর হেয়েস।"
+      },
+      {
+        "label": "২০",
+        "q": "আইএসপি (ISP) কী? ইন্টারনেট ব্যবহারের জনপ্রিয় তিনটি সার্চ ইঞ্জিনের নাম লিখুন।",
+        "a": "আইএসপি (Internet Service Provider) হলো এমন একটি প্রতিষ্ঠান, যা ব্যবহারকারীদের ইন্টারনেট সংযোগ প্রদান করে। তিনটি জনপ্রিয় সার্চ ইঞ্জিন: ১) Google ২) Bing ৩) Yahoo"
+      },
+      {
+        "label": "২১",
+        "q": "পূর্ণরূপ লিখুন: CPU, RAM, ROM, WWW, E-mail, AI",
+        "a": "CPU = Central Processing Unit; RAM = Random Access Memory; ROM = Read Only Memory; WWW = World Wide Web; E-mail = Electronic Mail; AI = Artificial Intelligence"
+      }
+    ]
+  }
+]

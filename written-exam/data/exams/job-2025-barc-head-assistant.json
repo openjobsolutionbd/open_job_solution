@@ -1,0 +1,452 @@
+[
+  {
+    "id": "job-2025-barc-head-assistant-q01",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গবেষণা",
+        "a": "গো + এষণা"
+      },
+      {
+        "label": "খ",
+        "q": "প্রত্যূষ",
+        "a": "প্রতি + ঊষ"
+      },
+      {
+        "label": "গ",
+        "q": "জলৌকা",
+        "a": "জল + ওকা"
+      },
+      {
+        "label": "ঘ",
+        "q": "ধর্মাধর্ম",
+        "a": "ধর্ম + অধর্ম"
+      },
+      {
+        "label": "ঙ",
+        "q": "পরিচ্ছেদ",
+        "a": "পরি + ছেদ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q02",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 5,
+    "type": "idiom",
+    "question": "বাগধারাগুলোর অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "অস্থির পঞ্চক",
+        "meaning": "অপদার্থ"
+      },
+      {
+        "label": "খ",
+        "phrase": "অটক বিটক",
+        "meaning": "ছটফটানি"
+      },
+      {
+        "label": "গ",
+        "phrase": "উজানের কৈ",
+        "meaning": "সহজলভ্য"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "লেফাফা দুরস্ত",
+        "meaning": "পরিপাটি"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "ডুবমারা",
+        "meaning": "অদৃশ্য হওয়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q03",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সমুদ্রের ঢেউয়ের শব্দ",
+        "a": "কল্লোল"
+      },
+      {
+        "label": "খ",
+        "q": "সকলের মধ্যে প্রবীণ বা জ্যেষ্ঠ",
+        "a": "সার্বজনীন"
+      },
+      {
+        "label": "গ",
+        "q": "সাগরে বিচরণ করে যে নারী",
+        "a": "সাগরিকা"
+      },
+      {
+        "label": "ঘ",
+        "q": "মনে জন্ম যার",
+        "a": "মনোজ"
+      },
+      {
+        "label": "ঙ",
+        "q": "নদীভাঙনে সর্বস্বান্ত জনগণ",
+        "a": "নদীসিকস্তি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q04",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'চাচা কাহিনী' গ্রন্থের লেখক কে?",
+        "a": "সৈয়দ মুজতবা আলী"
+      },
+      {
+        "label": "খ",
+        "q": "'তিতাস একটি নদীর নাম' গ্রন্থের লেখক কে?",
+        "a": "অদ্বৈত মল্লবর্মণ"
+      },
+      {
+        "label": "গ",
+        "q": "'ছায়ানট' কোন ধরনের সাহিত্যকর্ম?",
+        "a": "কাব্যগ্রন্থ"
+      },
+      {
+        "label": "ঘ",
+        "q": "চর্যাপদের প্রাপ্তিস্থান কোথায়?",
+        "a": "নেপালের রাজদরবারে"
+      },
+      {
+        "label": "ঙ",
+        "q": "'পল্লীসমাজ' উপন্যাসের রচয়িতা কে?",
+        "a": "শরৎচন্দ্র চট্টোপাধ্যায়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q05",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "এখন বৃষ্টি পড়ছে।",
+        "target": "It is raining now."
+      },
+      {
+        "label": "খ",
+        "source": "কাজটি আমি অবশ্যই করিয়ে নেব।",
+        "target": "I must get/have the work done."
+      },
+      {
+        "label": "গ",
+        "source": "দেশপ্রেম একটি মহৎ গুণ।",
+        "target": "Patriotism is a great virtue."
+      },
+      {
+        "label": "ঘ",
+        "source": "আল্লাহ তোমাকে সুস্থ করুক।",
+        "target": "May Allah heal/cure you."
+      },
+      {
+        "label": "ঙ",
+        "source": "তুমি কি আজ অফিসে যাবে?",
+        "target": "Will you go to the office today?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q06",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps:",
+    "parts": [
+      {
+        "sentence": "I am sorry….. you last night.",
+        "answer": "to have disturbed"
+      },
+      {
+        "sentence": "You should abstain…… smoking.",
+        "answer": "from"
+      },
+      {
+        "sentence": "I like bread……butter.",
+        "answer": "and"
+      },
+      {
+        "sentence": "My birthday is….. 20th January.",
+        "answer": "on"
+      },
+      {
+        "sentence": "He spent…… lot of money.",
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q07",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 7,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Idiom and Phrase:",
+    "parts": [
+      {
+        "label": "i",
+        "phrase": "Maiden speech",
+        "meaning": "প্রথম বক্তৃতা"
+      },
+      {
+        "label": "ii",
+        "phrase": "Cry over spilled milk",
+        "meaning": "তুচ্ছ বিষয়ে আক্ষেপ"
+      },
+      {
+        "label": "iii",
+        "phrase": "Take to task",
+        "meaning": "তিরস্কার করা"
+      },
+      {
+        "label": "iv",
+        "phrase": "Once in a blue moon",
+        "meaning": "কদাচিৎ"
+      },
+      {
+        "label": "v",
+        "phrase": "Fair and square",
+        "meaning": "ন্যায়ভাবে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q08",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "His comment surprised me.",
+        "changed": "I was surprised at his comment."
+      },
+      {
+        "label": "b",
+        "original": "People know that the earth is round.",
+        "changed": "It is known that the earth is round."
+      },
+      {
+        "label": "c",
+        "original": "Do not shut the door.",
+        "changed": "Let not the door be shut."
+      },
+      {
+        "label": "d",
+        "original": "Let him do the work.",
+        "changed": "Let the work be done by him."
+      },
+      {
+        "label": "e",
+        "original": "Honey tastes sweet.",
+        "changed": "Honey is sweet when it is tasted."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q09",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি প্রিন্টার ৮% ক্ষতিতে বিক্রয় করা হলো। প্রিন্টারটি আরও ৪০০ টাকা বেশি মূল্যে বিক্রয় করলে ৮% লাভ হতো। প্রিন্টারটির ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, ক্রয়মূল্য ১০০ টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য = ১০০ − ৮ = ৯২ টাকা",
+      "৮% লাভে বিক্রয়মূল্য = ১০০ + ৮ = ১০৮ টাকা",
+      "বিক্রয়মূল্যের পার্থক্য = ১০৮ − ৯২ = ১৬ টাকা",
+      "বিক্রয়মূল্য ১৬ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা; ৪০০ টাকা বেশি হলে ক্রয়মূল্য = ১০০ × ৪০০/১৬ = ২৫০০ টাকা"
+    ],
+    "answer": "২৫০০ টাকা"
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q10",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "math",
+    "topic": "কাজ ও সময়",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "প্রতিদিন ৯ ঘণ্টা কাজ করে ১০ জন লোক একটি বর্গাকৃতি জমির ধান ২ দিনে কাটতে পারে। উক্ত জমির ধান ১ দিনে ১২ ঘণ্টা কাজ করে শেষ করতে অতিরিক্ত কতজন লোক লাগবে?",
+    "steps": [
+      "৯ ঘণ্টা × ২ দিন = ১৮ ঘণ্টার কাজ ১০ জনে করে",
+      "১ ঘণ্টার কাজ করে = ১০ × ১৮ জন",
+      "১২ ঘণ্টার কাজ করতে লোক লাগবে = ১০ × ১৮/১২ = ১৫ জন",
+      "অতিরিক্ত লোক লাগবে = ১৫ − ১০ = ৫ জন"
+    ],
+    "answer": "৫ জন"
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q11",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "math",
+    "topic": "সরল সুদ",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "জেমি ও সুমি একই ব্যাংক থেকে একই দিনে ১০% সরল সুদে আলাদা আলাদা পরিমাণ অর্থ ঋণ নেয়। জেমি ২ বছর পর সুদে-আসলে যত টাকা শোধ করে, ৩ বছর পর সুমি সুদে-আসলে তত টাকা শোধ করে। তাদের ঋণের অনুপাত নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, জেমি ঋণ নেয় ক টাকা, সুমি ঋণ নেয় খ টাকা",
+      "জেমির ক্ষেত্রে: ২ বছরের সুদ = ১০×২×ক/১০০ = ক/৫ টাকা; সুদে-আসলে = ক + ক/৫ = ৬ক/৫ টাকা",
+      "সুমির ক্ষেত্রে: ৩ বছরের সুদ = ১০×৩×খ/১০০ = ৩খ/১০ টাকা; সুদে-আসলে = খ + ৩খ/১০ = ১৩খ/১০ টাকা",
+      "প্রশ্নমতে, ৬ক/৫ = ১৩খ/১০ ⇒ ৬০ক = ৬৫খ ⇒ ১২ক = ১৩খ ⇒ ক/খ = ১৩/১২",
+      "∴ ক : খ = ১৩ : ১২"
+    ],
+    "answer": "১৩ : ১২"
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q12",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি a⁴ + a²b² + b⁴ = ৩ এবং a² + ab + b² = ৩ হয়, তবে a² + b² এর মান কত?",
+    "steps": [
+      "a⁴ + a²b² + b⁴ = ৩",
+      "বা, (a²)² + 2a²b² + (b²)² − a²b² = ৩ ⇒ (a²+b²)² − (ab)² = ৩",
+      "বা, (a²+b²+ab)(a²+b²−ab) = ৩ ⇒ (a²+ab+b²)(a²−ab+b²) = ৩",
+      "৩(a²−ab+b²) = ৩ [মান বসিয়ে] ⇒ a²−ab+b² = ১",
+      "এখন, a²+ab+b² = ৩ এবং a²−ab+b² = ১; যোগ করে পাই, ２(a²+b²) = ৪",
+      "∴ a² + b² = ২"
+    ],
+    "answer": "২"
+  },
+  {
+    "id": "job-2025-barc-head-assistant-q13",
+    "examId": "job-2025-barc-head-assistant",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 13,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞানঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি' গানটির রচয়িতা কে?",
+        "a": "আবদুল গাফ্‌ফার চৌধুরী"
+      },
+      {
+        "label": "খ",
+        "q": "সুয়েজ খাল কোন দেশে অবস্থিত?",
+        "a": "মিশর"
+      },
+      {
+        "label": "গ",
+        "q": "ক্রিকেটে বাংলাদেশ ওয়ানডে স্ট্যাটাস অর্জন করে কত সালে?",
+        "a": "১৯৯৭ সালে"
+      },
+      {
+        "label": "ঘ",
+        "q": "মুক্তিযুদ্ধের প্রথম উপন্যাস কোনটি?",
+        "a": "রাইফেল রোটি আওরাত"
+      },
+      {
+        "label": "ঙ",
+        "q": "২০২৬ সালে বিশ্বকাপ ফুটবল কোথায় অনুষ্ঠিত হবে?",
+        "a": "মেক্সিকো, কানাডা, যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "চ",
+        "q": "'মনপুরা' কোন জেলায় অবস্থিত?",
+        "a": "ভোলা"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশের বাইরে প্রথম শহীদ মিনার নির্মিত হয় কোথায়?",
+        "a": "যুক্তরাজ্য"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশে প্রথম আদমশুমারি হয় কত সালে?",
+        "a": "১৯৭৪ সালে"
+      },
+      {
+        "label": "ঝ",
+        "q": "জুলাই গণঅভ্যুত্থান দিবস কবে?",
+        "a": "৫ আগস্ট"
+      },
+      {
+        "label": "ঞ",
+        "q": "কোন দেশ ২০৩০ সালের মধ্যে চাঁদে পারমাণবিক চুল্লি স্থাপন করবে?",
+        "a": "যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "ট",
+        "q": "সূর্যের উপরিভাগের উষ্ণতা কত ডিগ্রি সেলসিয়াস?",
+        "a": "৫৫০০ থেকে ৬০০০ ডিগ্রি সেলসিয়াস"
+      },
+      {
+        "label": "ঠ",
+        "q": "বাংলাদেশে বর্তমানে মোট নদ-নদীর সংখ্যা কত?",
+        "a": "১৪১৫টি"
+      },
+      {
+        "label": "ড",
+        "q": "জাতিসংঘের বর্তমান সদস্য সংখ্যা কত?",
+        "a": "১৯৩টি"
+      },
+      {
+        "label": "ঢ",
+        "q": "রিবন রেটিং কী?",
+        "a": "কাঁচা পাটগাছ থেকে ছাল বা বাকল আলাদা করার পর সেই ছাল বা বাকলকে অল্প পানিতে পচানোর পদ্ধতিকে রিবন রেটিং (ribbon retting) বলা হয়।"
+      },
+      {
+        "label": "ণ",
+        "q": "২০২৪-২৫ অর্থবছরের জিডিপিতে কৃষি খাতের প্রবৃদ্ধির হার কত?",
+        "a": "১.৭৯%"
+      }
+    ]
+  }
+]

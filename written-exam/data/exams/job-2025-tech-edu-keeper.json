@@ -1,0 +1,578 @@
+[
+  {
+    "id": "job-2025-tech-edu-keeper-q01",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কবি কাজী নজরুল ইসলামের চারটি কাব্যগ্রন্থের নাম লিখুন।",
+    "answer": "অগ্নিবীণা, বিষের বাঁশি, সাম্যবাদী, ভাঙার গান।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q02",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা অক্ষরের প্রথম মুদ্রিত বইয়ের নাম কী? এবং এর রচয়িতা কে?",
+    "answer": "'রাজা প্রতাপাদিত্য চরিত্র' এবং রচয়িতা রামরাম বসু।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q03",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "মাইকেল মধুসূদন দত্তের প্রথম প্রকাশিত কাব্য কোনটি? কত সালে প্রকাশিত হয়?",
+    "answer": "The Captive Lady; ১৮৪৯ সালে।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q04",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "নীহাররঞ্জন গুপ্ত এর ছদ্ম নাম কী?",
+    "answer": "বানভট্ট।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q05",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 5,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলা ভাষায় প্রচলিত চারটি জাপানি শব্দ লিখুন।",
+    "answer": "রিকশা, সুনামি, কারেট, প্যাগোডা।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q06",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 6,
+    "marks": 4,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "ঈষদুষ্ণ",
+        "ঈষৎ + উষ্ণ"
+      ],
+      [
+        "বিদ্যুদ্বেগ",
+        "বিদ্যুৎ + বেগ"
+      ],
+      [
+        "যশোবন্ত",
+        "যশঃ + বন্ত"
+      ],
+      [
+        "তদনুসারে",
+        "তৎ + অনুসারে"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q07",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 7,
+    "marks": 4,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মানষিক",
+        "মানসিক"
+      ],
+      [
+        "অহোরাত্রি",
+        "অহোরাত্র"
+      ],
+      [
+        "অধ্যাবসায়",
+        "অধ্যবসায়"
+      ],
+      [
+        "স্বতোফূর্ত",
+        "স্বতঃস্ফূর্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q08",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 8,
+    "marks": 4,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": [
+      "বাক্য",
+      "এক কথায়"
+    ],
+    "rows": [
+      [
+        "বাঘের চামড়া",
+        "কৃত্তি"
+      ],
+      [
+        "বন্দনা করার যোগ্য",
+        "বন্দনীয়/পূজনীয়"
+      ],
+      [
+        "ভীষণ কাঁদছে এমন",
+        "রোরুদ্যমান"
+      ],
+      [
+        "জল আর্দ্র যে ভূমি",
+        "জলাভূমি"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q09",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 9,
+    "marks": 4,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "খণ্ড প্রলয়",
+        "meaning": "তুমুল কাণ্ড, ভীষণ ব্যাপার"
+      },
+      {
+        "label": "খ",
+        "phrase": "মন না মতি",
+        "meaning": "অস্থির মানব মন"
+      },
+      {
+        "label": "গ",
+        "phrase": "কানাকড়ি",
+        "meaning": "অতি নগণ্য পরিমাণ"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "একচোখা",
+        "meaning": "পক্ষপাতদুষ্ট"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q10",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "bangla",
+    "qno": 10,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কার সম্পাদনা এবং কোন সংস্থা থেকে চর্যাপদ গ্রন্থাকারে প্রকাশিত হয়?",
+    "answer": "মহামহোপাধ্যায় হরপ্রসাদ শাস্ত্রীর সম্পাদনায় 'বঙ্গীয় সাহিত্য পরিষদ' হতে চর্যাপদ প্রকাশিত হয়।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q11",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি বাঁশের 2/4 অংশ লাল, 1/8 অংশ কালো এবং 2/9 অংশ সবুজ কাগজে আবৃত। অবশিষ্ট অংশ ৬ মিটার হলে, বাঁশটির দৈর্ঘ্য কত?",
+    "steps": [
+      "মেনে করি, মোট বাঁশের দৈর্ঘ্য = 1 অংশ",
+      "কাগজ দ্বারা আবৃত অংশ = (2/4 + 1/8 + 2/9) অংশ = (36+9+16)/72 অংশ = 61/72 অংশ",
+      "সুতরাং, অবশিষ্ট অংশ = (1 - 61/72) = 11/72 অংশ",
+      "প্রশ্নমতে, 11/72 অংশ = 6 মিটার"
+    ],
+    "answer": "বাঁশটির দৈর্ঘ্য ৩৬০ মিটার।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q12",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 12,
+    "marks": 6,
+    "type": "math",
+    "question": "প্রকৃত গতিবেগ ঘণ্টায় ৭ কি.মি। এরূপ নৌকায় স্রোতের অনুকূলে ৩৩ কি.মি পথ যেতে ৩ ঘণ্টা সময় লেগেছে। ফিরে আসার সময় নৌকাটির কত সময় লাগবে?",
+    "steps": [
+      "স্রোতের অনুকূলে, নৌকার গতিবেগ = 33/3 = 11 কিমি/ঘণ্টা",
+      "স্রোতের বেগ = নৌকার কার্যকরী বেগ - প্রকৃত বেগ = 11 - 7 = 4 কিমি/ঘণ্টা",
+      "স্রোতের প্রতিকূলে, নৌকার কার্যকরী বেগ = 7 - 4 = 3 কিমি/ঘণ্টা",
+      "৩ কি.মি. ফিরে আসে ১ ঘণ্টায়, সুতরাং ৩৩ কি.মি. ফিরে আসতে সময় = 33/3 = 11 ঘণ্টা"
+    ],
+    "answer": "১১ ঘণ্টা।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q13",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 13,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি গ্রামের মোট জনসংখ্যার 4/9 ভাগ লোক পুরুষ। যদি পুরুষের ৩০% বিবাহিত হয়, তাহলে মোট জনসংখ্যার শতকরা কতজন মহিলা অবিবাহিত?",
+    "steps": [
+      "মেনে করি, মোট জনসংখ্যা = 9ক জন",
+      "পুরুষের সংখ্যা = 9ক এর 4/9 = 4ক জন",
+      "মহিলার সংখ্যা = 9ক - 4ক = 5ক",
+      "বিবাহিত পুরুষ = 4ক এর 30% = 1.5ক জন, তাই বিবাহিত মহিলাও = 1.5ক জন",
+      "অবিবাহিত মহিলা = 5ক - 1.5ক = 2.5ক জন",
+      "শতকরা হার = (2.5ক × 100)/9ক = 27.78%"
+    ],
+    "answer": "২৭.৭৮%"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q14",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 6,
+    "type": "math",
+    "question": "a + 1/a = √2 হলে, a^4 + 1/a^4 = কত?",
+    "steps": [
+      "প্রদত্ত রাশি = a^4 + 1/a^4 = (a^2)^2 + (1/a^2)^2",
+      "= (a^2 + 1/a^2)^2 - 2",
+      "= {(a + 1/a)^2 - 2}^2 - 2",
+      "= {(√2)^2 - 2}^2 - 2  [মান বসিয়ে]",
+      "= (2 - 2)^2 - 2 = 0 - 2 = -2"
+    ],
+    "answer": "-2"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q15",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 15,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি ত্রিভুজের ভূমি তার উচ্চতার দ্বিগুণ অপেক্ষা ৬ সে.মি. বেশি। ত্রিভুজটির ক্ষেত্রফল ৮১০ বর্গ সে.মি হলে উচ্চতা কত?",
+    "steps": [
+      "মেনে করি, উচ্চতা = ক, তাই ভূমি = 2ক + 6",
+      "প্রশ্নমতে, 1/2 × (ভূমি × উচ্চতা) = 810",
+      "(2ক + 6) × ক = 1620",
+      "ক^2 + 3ক - 810 = 0",
+      "ক(ক + 30) - 27(ক + 30) = 0",
+      "(ক + 30)(ক - 27) = 0",
+      "ক = -30 (গ্রহণযোগ্য নয়) অথবা ক = 27"
+    ],
+    "answer": "উচ্চতা ২৭ সে.মি।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q16",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 16,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a short note (not less than ten sentences): \"Control of corruption in Bangladesh\"",
+    "answer": "Corruption is a big problem in Bangladesh. It slows down the country's development and creates inequality. Many sectors like education, health, and government offices suffer from corruption. To stop it, the government must make all work transparent and fair. The Anti-Corruption Commission (ACC) should take strong action against corrupt people. Using digital services can reduce bribery and make systems cleaner. People should learn to be honest and follow rules. Teachers and parents can help students understand the value of honesty. Strong laws and fair punishment are needed for corrupt persons. If everyone works together, Bangladesh can reduce corruption and move toward progress."
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q17",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 17,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে এতই গর্বিত অনুভব করলো যে, সে কোন কথা বলতে পারলো না।",
+        "target": "He felt so proud that he couldn't say a word."
+      },
+      {
+        "label": "খ",
+        "source": "সে প্রতিজ্ঞা করলো যে, সে আর কখনো বিলম্বে অফিসে আসবে না।",
+        "target": "He vowed that he would never come to the office late again."
+      },
+      {
+        "label": "গ",
+        "source": "ভিক্ষার চাল কাঁড়া আর আকাঁড়া।",
+        "target": "Beggars must not be choosers."
+      },
+      {
+        "label": "ঘ",
+        "source": "পুলিশ আসার আগে চোরটি পালিয়ে গেল।",
+        "target": "The thief had fled before the police arrived."
+      },
+      {
+        "label": "ঙ",
+        "source": "রবিবার হতে মুষলধারে বৃষ্টি হচ্ছিল।",
+        "target": "It had been raining cats and dogs since Sunday."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q18",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 18,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with meaning:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "Through and through",
+        "meaning": "পুরোপুরি",
+        "example": "He is honest through and through."
+      },
+      {
+        "label": "খ",
+        "phrase": "Run short",
+        "meaning": "ঘাটতি/কমতি",
+        "example": "I ran short of money."
+      },
+      {
+        "label": "গ",
+        "phrase": "Stand aside",
+        "meaning": "পাশে দাঁড়ানো",
+        "example": "Please stand aside."
+      },
+      {
+        "label": "ঘ",
+        "phrase": "Point of no return",
+        "meaning": "ফিরে যাওয়ার উপায় নেই",
+        "example": "The climbers passed the point of return before the storm began."
+      },
+      {
+        "label": "ঙ",
+        "phrase": "Read between the lines",
+        "meaning": "তাৎপর্য বোঝা",
+        "example": "Try to read between the lines of the letter."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q19",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 19,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "The principal had an enquiry.... the case.",
+        "answer": "into"
+      },
+      {
+        "sentence": "The leader arrives....... a decision at last.",
+        "answer": "at"
+      },
+      {
+        "sentence": "Feed the baby.......... milk.",
+        "answer": "on"
+      },
+      {
+        "sentence": "He is an antipathy........ smoking.",
+        "answer": "to"
+      },
+      {
+        "sentence": "There is no alternative........ training.",
+        "answer": "to"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q20",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 20,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "BANBEIS",
+        "a": "Bangladesh Bureau of Educational Information and Statistics"
+      },
+      {
+        "label": "খ",
+        "q": "WiMAX",
+        "a": "Worldwide Interoperability for Microwave Access"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q21",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 21,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "এশিয়ার দীর্ঘতম নদীর নাম কী?",
+    "answer": "ইয়াংসিকিয়াং।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q22",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 22,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "স্বাধীন বাংলাদেশের প্রথম ব্যক্তি হিসাবে কে বুটেনের নাইট উপাধি লাভ করেন?",
+    "answer": "স্যার ফজলে হাসান আবেদ।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q23",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 23,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "জনসংখ্যা বিবেচনায় মুসলিম বিশ্বে ক্ষুদ্রতম দেশ কোনটি?",
+    "answer": "মালদ্বীপ।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q24",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 24,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলার কোন সুলতান ১৭ বার ভারত আক্রমণ করেন?",
+    "answer": "সুলতান মাহমুদ গজনবী।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q25",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 25,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "জেরুজালেম কোন কোন ধর্মালম্বীদের জন্য পবিত্র স্থান?",
+    "answer": "ইসলাম, ইহুদি ও খ্রিস্ট ধর্ম।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q26",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 26,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ইংরেজিতে বাংলাদেশের জাতীয় সংসদের নাম লিখুন।",
+    "answer": "House of the Nation."
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q27",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 27,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশ বিমানের লোগো ও স্লোগান লিখুন।",
+    "answer": "বলাকা; আকাশে শান্তির নীড়।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q28",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 28,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কোন বিদেশি রাষ্ট্রপ্রধান সর্ব প্রথম বাংলাদেশের জাতীয় সংসদে ভাষণ দেন?",
+    "answer": "যুগোস্লাভিয়ার রাষ্ট্রপতি মার্শাল জোসেফ টিটো।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q29",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 29,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "আধুনিক তুরস্কের প্রতিষ্ঠাতা কে?",
+    "answer": "মোস্তফা কামাল আতাতুর্ক।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q30",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 30,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশে আর্সেনিকের অনুমোদিত মাত্রা কত?",
+    "answer": "০.০৫ মিলিগ্রাম।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q31",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 31,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশ সরকারের রাজস্ব আয়ের প্রধান উৎস কোনটি?",
+    "answer": "মূল্য সংযোজন কর (ভ্যাট)।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q32",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "আন্তর্জাতিক",
+    "qno": 32,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ফারাওরা কোন দেশের রাজা ছিলেন?",
+    "answer": "মিশর।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q33",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 33,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বাংলাদেশের চিংড়ি সম্পদকে কি বলা হয়?",
+    "answer": "হোয়াইট গোল্ড।"
+  },
+  {
+    "id": "job-2025-tech-edu-keeper-q34",
+    "examId": "job-2025-tech-edu-keeper",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 34,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "কারিগরি ও মাদ্রাসা শিক্ষা বিভাগের ইংরেজি নাম কী?",
+    "answer": "Technical and Madrasah Education Division."
+  }
+]

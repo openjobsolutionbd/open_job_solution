@@ -1,0 +1,450 @@
+[
+  {
+    "id": "job-2025-biddyut-steno-typist-q01",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "আবশ্যিক",
+        "ঐচ্ছিক"
+      ],
+      [
+        "উৎকর্ষ",
+        "অপকর্ষ"
+      ],
+      [
+        "অর্বাচীন",
+        "প্রাচীন"
+      ],
+      [
+        "পটু",
+        "অপটু"
+      ],
+      [
+        "আবির্ভাব",
+        "তিরোভাব"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q02",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "bangla",
+    "topic": "অর্থ লিখুন",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কুয়ার ব্যাঙ",
+        "a": "সংকীর্ণমনা/ সীমাবদ্ধ জ্ঞান"
+      },
+      {
+        "label": "খ",
+        "q": "উজানের কৈ",
+        "a": "সহজলভ্য"
+      },
+      {
+        "label": "গ",
+        "q": "তুলসী বনের বাঘ",
+        "a": "ভণ্ড"
+      },
+      {
+        "label": "ঘ",
+        "q": "ঝড়ো কাক",
+        "a": "বিপদগ্রস্ত ব্যক্তি"
+      },
+      {
+        "label": "ঙ",
+        "q": "বালির বাঁধ",
+        "a": "অস্থায়ী বস্তু"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q03",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যার উপমা নেই",
+        "a": "অনুপম"
+      },
+      {
+        "label": "খ",
+        "q": "জয়ের জন্য উৎসব",
+        "a": "জয়ন্তী"
+      },
+      {
+        "label": "গ",
+        "q": "দমন করা কষ্টকর যা",
+        "a": "দুর্দমনীয়"
+      },
+      {
+        "label": "ঘ",
+        "q": "পূর্বে শোনা যায়নি",
+        "a": "অশ্রুতপূর্ব"
+      },
+      {
+        "label": "ঙ",
+        "q": "যে ভূমিতে ফসল জন্মায় না",
+        "a": "ঊষর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q04",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "bangla",
+    "topic": "essay",
+    "qno": 4,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "নবায়ন জ্বালানি সম্পর্কে সংক্ষেপে লিখুন।",
+    "answer": "নবায়নযোগ্য জ্বালানি হলো এমন শক্তির উৎস যা প্রকৃতিতে পুনরায় সৃষ্টি হয় এবং সহজে ফুরিয়ে যায় না। সূর্যালোক, বায়ু, পানি, জৈববস্তু ও ভূ-তাপীয় শক্তি নবায়নযোগ্য জ্বালানির প্রধান উৎস। জীবাশ্ম জ্বালানির বিপরীতে নবায়নযোগ্য জ্বালানি পরিবেশবান্ধব এবং কার্বন নিঃসরণ কম করে। বাংলাদেশে সৌরবিদ্যুৎ ও বায়ুবিদ্যুৎ উৎপাদনে ক্রমাগত অগ্রগতি হচ্ছে। জ্বালানি নিরাপত্তা নিশ্চিত করতে এবং জলবায়ু পরিবর্তনের ঝুঁকি কমাতে নবায়নযোগ্য জ্বালানির ব্যবহার বৃদ্ধি করা অত্যন্ত জরুরি।"
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q05",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate the following sentences into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তিনি একজন চরিত্রবান মানুষ",
+        "target": "He is a virtuous person."
+      },
+      {
+        "label": "খ",
+        "source": "সে গতকাল স্কুলে যায়নি।",
+        "target": "He didn't go to school yesterday."
+      },
+      {
+        "label": "গ",
+        "source": "রাজশাহী শহর পদ্মা নদীর তীরে অবস্থিত।",
+        "target": "Rajshahi stands/ is situated on the bank of the Padma river"
+      },
+      {
+        "label": "ঘ",
+        "source": "তাকে দেখে ভদ্রলোক মনে হয়।",
+        "target": "He seems to be a gentleman."
+      },
+      {
+        "label": "ঙ",
+        "source": "আমি কমিটিতে নেই।",
+        "target": "I am not on the committee"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q06",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with prepositions:",
+    "parts": [
+      {
+        "sentence": "I am tired........ waiting for you.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He is not good...... mathematics.",
+        "answer": "at"
+      },
+      {
+        "sentence": "It's 10 o'clock....... my watch.",
+        "answer": "by"
+      },
+      {
+        "sentence": "He went abroad...... good.",
+        "answer": "for"
+      },
+      {
+        "sentence": "The children were entrusted....... their uncle.",
+        "answer": "to"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q07",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Transform the sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Shut the door. (Passive)",
+        "changed": "Let the door be shut."
+      },
+      {
+        "label": "b",
+        "original": "Everyone wants to succeed in life. (Interrogative)",
+        "changed": "Who does not want to succeed in life?"
+      },
+      {
+        "label": "c",
+        "original": "As he was ill, he did not go to school. (Compound)",
+        "changed": "He was ill and did not go to school."
+      },
+      {
+        "label": "d",
+        "original": "He said, \\\"Do it\\\" (Indirect)",
+        "changed": "He ordered to do it."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q08",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 3,
+    "type": "table",
+    "question": "Correct the following words:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Disciplin",
+        "Discipline"
+      ],
+      [
+        "Perticipation",
+        "Participation"
+      ],
+      [
+        "Sireous",
+        "Serious"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q09",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 9,
+    "marks": 2,
+    "type": "idiom",
+    "question": "Make sentences with the following idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Break the ice",
+        "meaning": "সংকোচ কাটানো"
+      },
+      {
+        "label": "b",
+        "phrase": "Once in a blue moon",
+        "meaning": "কদাচিৎ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q10",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write five sentences on \\\"Traffic Jam\\\"",
+    "answer": "Traffic jam is a long line of vehicles on a road that can't move or that can't move very slowly. Traffic jam is common affair in the big cities and towns. It is one of the major problems. The causes of traffic jam are many. The increase in the number of buses, trucks, rickshaws, auto rickshaws is also responsible for this problem. The drivers are not willing to obey the traffic rules. Illegal parking of vehicles and overtaking tendency are also responsible for traffic jam. At office time traffic jam is intolerable. It kills our valuable time. Students, patient, workers, employs can't reach their goal in time. This problem can be solved by adopting some measures. Traffic police should be skilled. Traffic rules should impose strictly. Unlicensed vehicles should be removed. Public awareness is also needed in this respect."
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q11",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "math",
+    "topic": "নৌকা ও স্রোত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি নৌকা স্থির পানিতে ঘণ্টায় ৬ কি.মি. যেতে পারে। স্রোতের প্রতিকূলে ৬ কি.মি. যেতে নৌকাটির ৩ গুণ সময় লাগে। স্রোতের অনুকূলে ৫০ কি.মি. যেতে নৌকাটির কত সময় লাগবে?",
+    "steps": [
+      "নৌকাটি স্থির পানিতে ৬ কি.মি. যায় ১ ঘণ্টায়",
+      "স্রোতের প্রতিকূলে ৬ কি.মি. যায় ১×৩ ঘণ্টায় বা ৩ ঘণ্টায়",
+      "প্রশ্নমতে, ৩ ঘণ্টায় যায় ৬ কি.মি.",
+      "∴ ১ ঘণ্টায় যায় ৬/৩ কি.মি. বা ২ কি.মি.",
+      "স্রোতের প্রতিকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ − স্রোতের বেগ",
+      "∴ স্রোতের বেগ = নৌকার প্রকৃত বেগ − নৌকার কার্যকরী বেগ = (৬ − ২) কি.মি. = ৪ কি.মি./ঘণ্টায়",
+      "স্রোতের অনুকূলে, নৌকার কার্যকরী বেগ = নৌকার প্রকৃত বেগ + স্রোতের বেগ = (৬ + ৪) কি.মি = ১০ কি.মি./ঘণ্টায়",
+      "স্রোতের অনুকূলে ১০ কি.মি যায় ১ ঘণ্টায়",
+      "১ \" \" ১/১০ \" \"",
+      "৫০ \" \" (১×৫০)/১০ ঘণ্টায় বা ৫ ঘণ্টায়",
+      "স্রোতের অনুকূলে যেতে ৫ ঘণ্টা লাগবে।"
+    ],
+    "answer": "৫ ঘণ্টা"
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q12",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "দুইটি সংখ্যার যোগফল ৬০ এবং বিয়োগফল ২০ হলে, সংখ্যা দুইটি নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, একটি সংখ্যাটি = ক, অপর সংখ্যাটি = খ",
+      "১ম শর্তে, ক + খ = ৬০ ....... (১)",
+      "২য় শর্তে, ক − খ = ২০ ........... (২)",
+      "(১) নং ও (২) নং সমীকরণ যোগ করে পাই, ২ক = ৮০",
+      "∴ ক = ৪০",
+      "ক এর মান (১) নং সমীকরণে বসাই, ৪০ + খ = ৬০",
+      "∴ খ = ২০",
+      "সুতরাং একটি সংখ্যাটি = ৪০ অপর সংখ্যাটি = ২০"
+    ],
+    "answer": "৪০ ও ২০"
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q13",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "সরল করুনঃ x/(x+y) + y/(x−y) ÷ x/(x−y) + y/(x+y)",
+    "steps": [
+      "{x/(x+y) + y/(x−y)} ÷ {x/(x−y) + y/(x+y)}",
+      "= {(x²−xy+xy+y²)/((x+y)(x−y))} ÷ {(x²+xy−xy+y²)/((x−y)(x+y))}",
+      "= {(x²+y²)/(x²−y²)} ÷ {(x²+y²)/(x²−y²)}",
+      "= (x²+y²)/(x²−y²) × (x²−y²)/(x²+y²)",
+      "= 1"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q14",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "math",
+    "topic": "ত্রিকোণমিতি",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "secA + tanA = ৫/২ হলে, secA − tanA এর মান নির্ণয় করুন।",
+    "steps": [
+      "আমরা জানি, sec²A = 1 + tan²A",
+      "বা, sec²A − tan²A = 1",
+      "বা, (secA + tanA)(secA − tanA) = 1",
+      "বা, (৫/২)(secA − tanA) = 1",
+      "∴ secA − tanA = ২/৫"
+    ],
+    "answer": "২/৫"
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q15",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 15,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সংজ্ঞা লিখুনঃ ক) পূরক কোণ, খ) বৃত্তকলা",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পূরক কোণ",
+        "a": "দুইটি কোণের সমষ্টি ৯০° হলে কোণ দুইটিকে পরস্পর পূরক কোণ বলে।"
+      },
+      {
+        "label": "খ",
+        "q": "বৃত্তকলা",
+        "a": "বৃত্তের দুইটি ব্যাসার্ধ ও একটি চাপ দ্বারা গঠিত অঞ্চলকে বৃত্তকলা বা বৃত্তীয় ক্ষেত্র বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-steno-typist-q16",
+    "examId": "job-2025-biddyut-steno-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞানঃ সংক্ষেপে উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সমুদ্রের গভীরতা মাপার যন্ত্রের নাম কী?",
+        "a": "ফ্যাদোমিটার"
+      },
+      {
+        "label": "খ",
+        "q": "কোন ভিটামিনের অভাবে রাতকানা রোগ হয়?",
+        "a": "ভিটামিন 'এ'"
+      },
+      {
+        "label": "গ",
+        "q": "UNESCO এর সদর দপ্তর কোথায়?",
+        "a": "প্যারিস, ফ্রান্স"
+      },
+      {
+        "label": "ঘ",
+        "q": "পূর্ণরূপ লিখুনঃ ATM, TIN",
+        "a": "ATM = Automated Teller Machine; TIN = Taxpayer's Identification Number"
+      },
+      {
+        "label": "ঙ",
+        "q": "১ নটিক্যাল মাইল সমান কত কিলোমিটার?",
+        "a": "১.৮৫২ কি.মি"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশ কত সালে জাতিসংঘের সদস্যপদ লাভ করে?",
+        "a": "১৯৭৪ সালে"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশের সমুদ্রবন্দর কয়টি ও কি কি?",
+        "a": "৩টি। যথা: চট্টগ্রাম, মংলা ও পায়রা সমুদ্র বন্দর।"
+      },
+      {
+        "label": "জ",
+        "q": "২০২৬ সালের ফুটবল বিশ্বকাপ কোন কোন দেশে অনুষ্ঠিত হবে?",
+        "a": "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো"
+      },
+      {
+        "label": "ঝ",
+        "q": "জাপানের পার্লামেন্টের নাম কী?",
+        "a": "ডায়েট"
+      },
+      {
+        "label": "ঞ",
+        "q": "ইন্টারনেটের মাধ্যমে প্রদত্ত চিকিৎসা পদ্ধতিকে কী বলে?",
+        "a": "টেলিমেডিসিন"
+      }
+    ]
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "id": "job-2025-erd-office-sohayok-q01",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 2,
+    "type": "table",
+    "question": "শব্দগুলোর শুদ্ধ বানান লিখুন।",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "ভ্রাতাপুত্র",
+        "ভ্রাতুষ্পুত্র"
+      ],
+      [
+        "নিস্পাপী",
+        "নিষ্পাপী"
+      ],
+      [
+        "বিভিষীকা",
+        "বিভীষিকা"
+      ],
+      [
+        "প্রত্যাংগমন",
+        "প্রত্যাগমন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q02",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "bangla",
+    "topic": "শব্দের উৎস",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "শব্দগুলো কোন ভাষা থেকে বাংলা ভাষায় এসেছে?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "হেড-মৌলভী",
+        "a": "ইংরেজি ও ফারসি (মিশ্র শব্দ)"
+      },
+      {
+        "label": "খ",
+        "q": "ইংরেজ",
+        "a": "পর্তুগিজ"
+      },
+      {
+        "label": "গ",
+        "q": "টোপর",
+        "a": "দেশি"
+      },
+      {
+        "label": "ঘ",
+        "q": "উজবুক",
+        "a": "তুর্কি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q03",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অন্য দিকে মন যার",
+        "a": "অন্যমনস্ক"
+      },
+      {
+        "label": "খ",
+        "q": "শত্রুকে বধ করে যে",
+        "a": "শত্রুঘ্ন"
+      },
+      {
+        "label": "গ",
+        "q": "দর্শন করা হয়েছে এমন",
+        "a": "প্রেক্ষিত"
+      },
+      {
+        "label": "ঘ",
+        "q": "যা সহজে মরে না",
+        "a": "দুর্মর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q04",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "শব্দসমূহ কোন সমাস?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নীলাকাশ",
+        "a": "নীল যে আকাশ — কর্মধারয়"
+      },
+      {
+        "label": "খ",
+        "q": "নিয়ম-কানুন",
+        "a": "নিয়ম ও কানুন — দ্বন্দ্ব"
+      },
+      {
+        "label": "গ",
+        "q": "নদীমাতৃক",
+        "a": "নদী মাতা যার — বহুব্রীহি"
+      },
+      {
+        "label": "ঘ",
+        "q": "প্রবচন",
+        "a": "প্র (প্রকৃষ্ট) যে বচন — প্রাদি সমাস"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q05",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "bangla",
+    "topic": "রচনা",
+    "qno": 5,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "'জীবনের উদ্দেশ্য' সম্পর্কে ৪টি বাক্য লিখুন।",
+    "answer": "জীবনের উদ্দেশ্য হলো নিজেকে ও সমাজকে কল্যাণের পথে পরিচালিত করা। প্রতিটি মানুষের উচিত শিক্ষা ও কর্মের মাধ্যমে নিজের সামর্থ্যের পূর্ণ বিকাশ ঘটানো। সততা, পরিশ্রম ও মানবসেবার মধ্য দিয়ে জীবনকে অর্থবহ করে তোলাই প্রকৃত লক্ষ্য হওয়া উচিত। একজন মানুষ তখনই সার্থক, যখন সে নিজের পাশাপাশি অন্যের কল্যাণেও অবদান রাখতে পারে।"
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q06",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "I have great confidence…. him.",
+        "answer": "in"
+      },
+      {
+        "sentence": "There is no alternative…… training.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Congratulations……... your success.",
+        "answer": "on"
+      },
+      {
+        "sentence": "…….you ever been to Rome?",
+        "answer": "Have"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q07",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 2,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is working for five hours.",
+        "changed": "He has been working for five hours."
+      },
+      {
+        "label": "b",
+        "original": "You can't make him to understand.",
+        "changed": "You can't make him understand."
+      },
+      {
+        "label": "c",
+        "original": "One should do his duty.",
+        "changed": "One should do one's duty."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q08",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে প্রায়ই অফিসে অনুপস্থিত থাকে।",
+        "target": "He is often absent from the office."
+      },
+      {
+        "label": "খ",
+        "source": "তোমার সেখানে যাওয়া উচিত হয়নি।",
+        "target": "You should not have gone there."
+      },
+      {
+        "label": "গ",
+        "source": "মানুষ মাত্রই ভুল হয়।",
+        "target": "To err is human."
+      },
+      {
+        "label": "ঘ",
+        "source": "মাছ উড়তে পারে না, পারে কি?",
+        "target": "Fish cannot fly, can they?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q09",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 9,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "Write six sentences on 'Honesty'.",
+    "answer": "Honesty means telling the truth and being sincere in words and actions. It is one of the most valuable qualities a person can have. An honest person is trusted and respected by everyone in society. Honesty helps build strong relationships based on trust. Dishonesty may bring short-term benefits, but it destroys reputation in the long run. We should practice honesty in every sphere of our life to build a better society."
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q10",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 10,
+    "marks": 4,
+    "type": "math",
+    "question": "চিনির মূল্য ২০% কমলো, কিন্তু চিনির ব্যবহার ২০% বৃদ্ধি পেল। এতে চিনির ব্যয় শতকরা কত বাড়লো বা কমলো?",
+    "steps": [
+      "মনে করি, পূর্বে চিনির মূল্য ১০০ টাকা ও ব্যবহার ১০০ কেজি",
+      "২০% কমে বর্তমান মূল্য = ৮০ টাকা; ২০% বৃদ্ধিতে বর্তমান ব্যবহার = ১২০ কেজি",
+      "নতুন খরচ = ১২০ × ৮০ = ৯৬০০ টাকা",
+      "পূর্বের খরচ = ১০০ × ১০০ = ১০০০০ টাকা",
+      "ব্যয় কমলো = ১০০০০ − ৯৬০০ = ৪০০ টাকা",
+      "১০০০০ টাকায় ব্যয় কমলো ৪০০ টাকা ⇒ ১০০ টাকায় কমলো = ৪০০ × ১০০/১০০০০ = ৪ টাকা"
+    ],
+    "answer": "৪% ব্যয় কমলো"
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q11",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 11,
+    "marks": 3,
+    "type": "math",
+    "question": "একটি চৌবাচ্চার দৈর্ঘ্য ৫ মিটার, প্রস্থ ৪ মিটার এবং উচ্চতা ৩ মিটার। চৌবাচ্চাটি পানি দ্বারা পূর্ণ করতে কত লিটার পানি প্রয়োজন হবে?",
+    "steps": [
+      "দৈর্ঘ্য = ৫০০ সে.মি., প্রস্থ = ৪০০ সে.মি., উচ্চতা = ৩০০ সে.মি.",
+      "আয়তন = ৫০০ × ৪০০ × ৩০০ = ৬,০০,০০,০০০ ঘন সে.মি.",
+      "১০০০ ঘন সে.মি. = ১ লিটার",
+      "∴ ৬,০০,০০,০০০ ঘন সে.মি. = ৬০,০০,০০,০০০/১০০০ = ৬০,০০০ লিটার"
+    ],
+    "answer": "৬০,০০০ লিটার"
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q12",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 3,
+    "type": "math",
+    "question": "x + y = ১২, x − y = ২ হলে, xy = কত?",
+    "steps": [
+      "xy = {(x+y)/2}² − {(x−y)/2}²",
+      "= (১২/২)² − (২/২)²",
+      "= ৩৬ − ১",
+      "= ৩৫"
+    ],
+    "answer": "৩৫"
+  },
+  {
+    "id": "job-2025-erd-office-sohayok-q13",
+    "examId": "job-2025-erd-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 13,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ERD-এর পূর্ণরূপ কী? এর কাজ কী?",
+        "a": "Economic Relations Division। গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের বৈদেশিক অর্থনৈতিক কার্যক্রম, নীতি প্রণয়ন, সুপারিশ প্রদান এবং দেশের উন্নয়ন কর্মপরিকল্পনায় আর্থিক ঘাটতি পূরণের জন্য বৈদেশিক সহায়তা সংগ্রহের দায়িত্ব অর্থনৈতিক সম্পর্ক বিভাগের উপর ন্যস্ত। এর কার্যাবলির মধ্যে রয়েছে: বার্ষিক উন্নয়ন পরিকল্পনা (এডিপি) ও পঞ্চবার্ষিক পরিকল্পনার ভিত্তিতে দ্বি-পক্ষীয় ও বহু-পক্ষীয় অর্থনৈতিক সাহায্যের পরিমাণ নির্ধারণ ও চুক্তি সম্পাদন; বৈদেশিক সাহায্যের উৎস অনুসন্ধান ও প্রস্তাব পরীক্ষা-বাছাই; খাদ্য ও পণ্য সাহায্য বিষয়ক চুক্তি সম্পাদন ও বরাদ্দ প্রদান; কারিগরি সহায়তা কর্মসূচির অনুমোদন প্রক্রিয়া সমন্বয়; এবং সাহায্যপ্রাপ্ত প্রকল্পে দেশি-বিদেশি বিশেষজ্ঞ নিয়োগ সংক্রান্ত নীতি নির্ধারণ।"
+      },
+      {
+        "label": "খ",
+        "q": "RAM ও ROM এর পার্থক্য কী?",
+        "a": "১. RAM এর পূর্ণরূপ Random Access Memory এবং ROM এর পূর্ণরূপ Read Only Memory। ২. RAM কে ভোলাটাইল মেমরি বলা হয়, ROM কে নন-ভোলাটাইল মেমরি বলা হয়। ৩. RAM হলো প্রাইমারি স্টোরেজ, ROM হলো সেকেন্ডারি স্টোরেজ। ৪. RAM এর ডাটা প্রসেসর সরাসরি এক্সেস করতে পারে, ROM এর ডাটা পারে না। ৫. RAM এ Read ও Write উভয়ই করা যায়, ROM এ শুধু Read করা যায়। ৬. RAM ব্যবহৃত হয় টেম্পোরারি স্টোরেজ হিসেবে, ROM ব্যবহৃত হয় পারমানেন্ট স্টোরেজ হিসেবে।"
+      },
+      {
+        "label": "গ",
+        "q": "'ফিলিস্তিন রাষ্ট্র' নিয়ে চারটি বাক্য লিখুন।",
+        "a": "ইয়াসির আরাফাত ১৯৮৮ সালে ফিলিস্তিনকে স্বাধীন রাষ্ট্র ঘোষণা করেন। স্বাধীন ফিলিস্তিনকে স্বীকৃতিদানকারী প্রথম দেশ আলজেরিয়া। এটি মধ্যপ্রাচ্যে অবস্থিত দুটি ভৌগোলিকভাবে বিচ্ছিন্ন অঞ্চল — পশ্চিম তীর ও গাজা উপত্যকা — নিয়ে গঠিত। পশ্চিম তীরে রয়েছে জেরুজালেম শহর, যেখানে তিনটি ধর্মের পবিত্র স্থান রয়েছে।"
+      },
+      {
+        "label": "ঘ",
+        "q": "ASEAN-এর পূর্ণরূপ কী? এর সদস্য রাষ্ট্রসমূহের নাম লিখুন।",
+        "a": "Association of Southeast Asian Nations। সদস্য রাষ্ট্রসমূহ: ব্রুনাই, কম্বোডিয়া, ইন্দোনেশিয়া, লাওস, মালয়েশিয়া, মিয়ানমার, ফিলিপাইন, সিঙ্গাপুর, থাইল্যান্ড, ভিয়েতনাম এবং পূর্ব তিমুর।"
+      },
+      {
+        "label": "ঙ",
+        "q": "'রোহিঙ্গা সমস্যা' সম্পর্কে চারটি বাক্য লিখুন।",
+        "a": "২০১৭ সালের ২৫ আগস্ট মিয়ানমারের রাখাইন রাজ্যে একটি বিশাল মানবিক সংকট সৃষ্টি হয়। সহিংস হামলার শিকার হয়ে লাখ লাখ রোহিঙ্গা রাখাইন রাজ্য থেকে পালিয়ে আসে, যাদের গ্রামগুলো ধ্বংস করে দেওয়া হয়। এটি সীমান্ত পেরিয়ে প্রতিবেশী বাংলাদেশে প্রবেশ করা মানুষের এক নজিরবিহীন ঢলের সূচনা করে। কয়েক সপ্তাহের মধ্যেই নিরাপত্তা ও আশ্রয়ের খোঁজে পাঁচ লাখেরও বেশি মানুষ বাংলাদেশে প্রবেশ করে।"
+      }
+    ]
+  }
+]

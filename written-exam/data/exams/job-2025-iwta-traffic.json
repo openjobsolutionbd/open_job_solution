@@ -1,0 +1,255 @@
+[
+  {
+    "id": "job-2025-iwta-traffic-q01",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 8,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নের সঠিক উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'সূর্য-দীঘল বাড়ী' উপন্যাসের রচয়িতা কে?",
+        "a": "আবু ইসহাক"
+      },
+      {
+        "label": "খ",
+        "q": "'উন্মূলন' শব্দের অর্থ কী?",
+        "a": "বিনাশ"
+      },
+      {
+        "label": "গ",
+        "q": "মেনাহর- এর স্ত্রীবাচক শব্দ কী?",
+        "a": "মেনোহরা"
+      },
+      {
+        "label": "ঘ",
+        "q": "'উদ্ধার' শব্দের সন্ধি বিচ্ছেদ কী?",
+        "a": "উৎ + হার"
+      },
+      {
+        "label": "ঙ",
+        "q": "সরল বাক্যকে জটিল বাক্যে রূপান্তর করুন: সত্যবাদীকে সবাই শ্রদ্ধা করে।",
+        "a": "যে ব্যক্তি সত্য কথা বলে, তাকে সবাই শ্রদ্ধা করে।"
+      },
+      {
+        "label": "চ",
+        "q": "'চাঁদের হাট' বাগধারাটির অর্থ কী?",
+        "a": "আনন্দের প্রাচুর্য/প্রিয়জনের সমাগম"
+      },
+      {
+        "label": "ছ",
+        "q": "অশুদ্ধি সংশোধন করুন: রেজিস্ট্রাশণ।",
+        "a": "রেজিস্ট্রেশন"
+      },
+      {
+        "label": "জ",
+        "q": "এক কথায় প্রকাশ করুন: যা দণ্ড হয় না।",
+        "a": "অদাহ্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-iwta-traffic-q02",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 7,
+    "type": "letter",
+    "question": "এন.আই.ডি কার্ডে নিজের নামের বানান সংশোধনের জন্য যথাযথ কর্তৃপক্ষ বরাবর একটি আবেদনপত্র লিখুন।",
+    "letter": {
+      "date": "০৫ জুলাই ২০২৫",
+      "to": "নির্বাচন কর্মকর্তা\nফুলপুর উপজেলা নির্বাচন অফিস, ময়মনসিংহ",
+      "subject": "জাতীয় পরিচয়পত্রে নামের বানান সংশোধনের আবেদন।",
+      "body": "বিনীতভাবে জানানো যাচ্ছে যে, আমি মিনহাজ, পিতা: মনিরুল ইসলাম, মাতা: রেহানা বেগম, ঠিকানা: ফুলপুর, ময়মনসিংহ। আমার জাতীয় পরিচয়পত্র (NID) নম্বর: ০৫২৫৮৬২৬৪০। উল্লেখ্য, আমার জাতীয় পরিচয়পত্রে আমার নামের বানান ভুলভাবে \"মনরুল ইসলাম\" উল্লেখ রয়েছে। সঠিক বানান হওয়া উচিত \"মনিরুল ইসলাম\"। একাডেমিক সার্টিফিকেট, জন্মনিবন্ধন এবং অন্যান্য সরকারি কাগজপত্রে আমার নাম এই সঠিক বানানেই লেখা আছে।\n\nঅতএব, মহোদয়ের কাছে বিনীত অনুরোধ, আমার জাতীয় পরিচয়পত্রে আমার নামের সঠিক বানান \"মনিরুল\" হিসেবে সংশোধনের প্রয়োজনীয় ব্যবস্থা গ্রহণ করার জন্য অনুরোধ জানাচ্ছি। আমি প্রয়োজনীয় কাগজপত্র সংযুক্ত করলাম।\n\nসংযুক্তি:\n১। ভুল নামের NID ফটোকপি\n২। শিক্ষাগত সনদের ফটোকপি\n৩। জন্ম সনদের ফটোকপি",
+      "closing": "বিনীত,",
+      "sender": "মনিরুল ইসলাম\nমোবাইল: ০১৭১১৫২৬৬"
+    }
+  },
+  {
+    "id": "job-2025-iwta-traffic-q03",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "english",
+    "qno": 3,
+    "marks": 8,
+    "type": "short-qa",
+    "question": "Write only the correct answer:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Fill in the blank with article: .......earth moves around the sun.",
+        "a": "The"
+      },
+      {
+        "label": "b",
+        "q": "Fill in the blank with preposition: The scientist looked...... the microscope.",
+        "a": "through"
+      },
+      {
+        "label": "c",
+        "q": "Rearrange the sentence: darkness/the inside/due to the van/I/of/couldn't see",
+        "a": "I couldn't see due to the darkness inside of the van."
+      },
+      {
+        "label": "d",
+        "q": "Fill in the blank: I have not seen him ........Thursday last.",
+        "a": "since"
+      },
+      {
+        "label": "e",
+        "q": "Change the sentence to active voice: The policy has been criticized by experts for its lack of clarity.",
+        "a": "Experts have criticized the policy for its lack of clarity."
+      },
+      {
+        "label": "f",
+        "q": "Correct the sentence: Neither manager or his officers were present in the meeting.",
+        "a": "Neither the manager nor his officers were present in the meeting."
+      },
+      {
+        "label": "g",
+        "q": "Write the appropriate verb: I wish I study hard for this recruitment test.",
+        "a": "studied"
+      },
+      {
+        "label": "h",
+        "q": "Translate to English: বিনা মেঘে বজ্রপাত",
+        "a": "A bolt from the blue"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-iwta-traffic-q04",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 4,
+    "marks": 7,
+    "type": "paragraph",
+    "question": "Write an essay on \"River Ports of Bangladesh\"",
+    "answer": "Bangladesh is a riverine country where river ports play a vital role in transportation and trade. Important river ports like Dhaka (Sadarghat), Narayanganj, Khulna, Barisal, Chandpur, and Ashuganj help connect different parts of the country. Sadarghat is one of the busiest river ports in the world, serving thousands of passengers daily. These ports are important for carrying goods like jute, rice, and industrial products. They reduce pressure on roads and are cost-effective. However, many ports face problems like siltation, poor maintenance, and outdated infrastructure. With proper development and management, river ports can boost the economy and improve communication across the country."
+  },
+  {
+    "id": "job-2025-iwta-traffic-q05",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "math",
+    "topic": "math-others",
+    "qno": 5,
+    "marks": 25,
+    "type": "sub-parts",
+    "question": "নিম্নলিখিত গাণিতিক যুক্তির প্রশ্নের সমাধান করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "একটি নৌকা ৮% ক্ষতিতে বিক্রয় করা হলো। নৌকাটি আরো ৮,০০০ টাকা বেশি দামে বিক্রয় করলে ৮% লাভ হতো। নৌকাটির ক্রয়মূল্য কত?",
+        "a": "মেনে করি ক্রয়মূল্য ১০০ টাকা। ৮% ক্ষতিতে বিক্রয়মূল্য ৯২ টাকা, ৮% লাভে বিক্রয়মূল্য ১০৮ টাকা। পার্থক্য ১৬ টাকা = ৮০০০ টাকার সাথে সমানুপাতিক। সুতরাং ক্রয়মূল্য = (100×8000)/16 = ৫০,০০০ টাকা।"
+      },
+      {
+        "label": "খ",
+        "q": "বার্ষিক শতকরা ১০ টাকা মুনাফায় ৫,০০০ টাকার ৩ বছরের সরল মুনাফা এবং চক্রবৃদ্ধি মুনাফার পার্থক্য কত?",
+        "a": "সরল মুনাফা = 5000×(10/100)×3 = ১৫০০ টাকা। চক্রবৃদ্ধি মুনাফা = 5000×(1.1)^3 − 5000 = ১৬৫৫ টাকা। পার্থক্য = (1655−1500) = ১৫৫ টাকা।"
+      },
+      {
+        "label": "গ",
+        "q": "৯ জন ব্যক্তি একটি দোকানে খাবার খেতে গেলো। তাদের মধ্যে ৮ জন প্রত্যেকে ১২ টাকা করে খরচ করল এবং নবম ব্যক্তি গড় খরচের চেয়ে ৮ টাকা বেশি খরচ করলে তারা মোট কত টাকা খরচ করলো?",
+        "a": "মেনে করি গড় খরচ = ক টাকা। 9ক = (8×12) + ক + 8 → 8ক = 104 → ক = 13। মোট খরচ = 9×13 = ১১৭ টাকা।"
+      },
+      {
+        "label": "ঘ",
+        "q": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?",
+        "a": "x³+y³+12xy = (x+y)³ − 3xy(x+y) + 12xy = 4³ − 12xy + 12xy = ৬৪।"
+      },
+      {
+        "label": "ঙ",
+        "q": "a² + b² = c² হলে, দেখাও যে, a⁶ + b⁶ + 3a²b²c² = c⁶",
+        "a": "L.H.S. = (a²)³+(b²)³+3a²b²c² = (a²+b²)³ − 3a²b²(a²+b²) + 3a²b²c² = c⁶ − 3a²b²c² + 3a²b²c² = c⁶ = R.H.S. (প্রমাণিত)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-iwta-traffic-q06",
+    "examId": "job-2025-iwta-traffic",
+    "subject": "general-knowledge",
+    "qno": 6,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নের সঠিক উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক (বাংলাদেশ)",
+        "q": "বাংলাদেশের ২০২৫-২৬ অর্থবছরের মোট বাজেটের পরিমাণ কত?",
+        "a": "৭ লাখ ৯০ হাজার কোটি টাকা"
+      },
+      {
+        "label": "খ (বাংলাদেশ)",
+        "q": "ঢাকা শহরের প্রাচীনতম নাম কী?",
+        "a": "জাহাঙ্গীর নগর"
+      },
+      {
+        "label": "গ (বাংলাদেশ)",
+        "q": "ইংরেজি ক্যালেন্ডার অনুসারে বাংলাদেশের সবচেয়ে শীতলতম মাস কোনটি?",
+        "a": "জানুয়ারি"
+      },
+      {
+        "label": "ঘ (বাংলাদেশ)",
+        "q": "মুক্তিযুদ্ধে বাংলাদেশের প্রথম শত্রুমুক্ত জেলার নাম কী?",
+        "a": "যশোর"
+      },
+      {
+        "label": "ঙ (বাংলাদেশ)",
+        "q": "বাংলাদেশের সবচেয়ে বড় বিলের নাম কী?",
+        "a": "চলন বিল"
+      },
+      {
+        "label": "চ (বাংলাদেশ)",
+        "q": "আয়তনের দিক থেকে এশিয়ার ক্ষুদ্রতম দেশের নাম কী?",
+        "a": "মালদ্বীপ"
+      },
+      {
+        "label": "ছ (বাংলাদেশ)",
+        "q": "এক কাঠায় কত শতাংশ?",
+        "a": "১.৬৫ শতাংশ"
+      },
+      {
+        "label": "জ (বাংলাদেশ)",
+        "q": "বাংলাদেশের একমাত্র পাহাড় বেষ্টিত দ্বীপের নাম কী?",
+        "a": "মহেশখালী"
+      },
+      {
+        "label": "ঝ (বাংলাদেশ)",
+        "q": "বাংলাদেশের সবচেয়ে খরস্রোতা নদীর নাম কী?",
+        "a": "কর্ণফুলী"
+      },
+      {
+        "label": "ঞ (বাংলাদেশ)",
+        "q": "একুশে ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে স্বীকৃতি দিয়েছে কোন সংস্থা?",
+        "a": "ইউনেস্কো"
+      },
+      {
+        "label": "ট (আন্তর্জাতিক)",
+        "q": "পৃথিবীর দীর্ঘতম নদীর নাম কী?",
+        "a": "নীল নদ"
+      },
+      {
+        "label": "ঠ (আন্তর্জাতিক)",
+        "q": "ইউরোপীয় ইউনিয়নের মুদ্রার নাম কী?",
+        "a": "ইউরো"
+      },
+      {
+        "label": "ড (আন্তর্জাতিক)",
+        "q": "আয়তনে উত্তর আমেরিকার সবচেয়ে বড় দেশের নাম কী?",
+        "a": "কানাডা"
+      },
+      {
+        "label": "ঢ (আন্তর্জাতিক)",
+        "q": "২০২৮ সালের গ্রীষ্মকালীন অলিম্পিক কোন দেশে অনুষ্ঠিত হবে?",
+        "a": "যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "ণ (আন্তর্জাতিক)",
+        "q": "সিঙ্গাপুরের রাজধানীর নাম কী?",
+        "a": "সিঙ্গাপুর সিটি"
+      }
+    ]
+  }
+]

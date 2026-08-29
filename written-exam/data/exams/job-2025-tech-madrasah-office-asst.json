@@ -1,0 +1,673 @@
+[
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q01",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "উপসর্গ",
+    "qno": 1,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "শব্দাংশ শব্দমূলের পূর্বে বসে নতুন শব্দ গঠন করলে তাকে কী বলে? একটি উদাহরণসহ লিখুন।",
+    "answer": "উপসর্গ বলে। যেমন, অনা (উপসর্গ) + বৃষ্টি (শব্দমূল) = অনাবৃষ্টি (নতুন শব্দ)"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q02",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 2,
+    "marks": 2,
+    "type": "table",
+    "question": "শব্দগুলোর বিপরীত শব্দ লিখুনঃ",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "অজ্ঞ",
+        "বিজ্ঞ"
+      ],
+      [
+        "ইস্তফা",
+        "যোগদান"
+      ],
+      [
+        "নিদ্রিত",
+        "জাগ্রত"
+      ],
+      [
+        "যুক্ত",
+        "বিযুক্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q03",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "যুক্তবর্ণ",
+    "qno": 3,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "নিচের যুক্তবর্ণগুলো কোন কোন বর্ণ দিয়ে গঠিত?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ঙ্ক",
+        "a": "ঙ + ক"
+      },
+      {
+        "label": "খ",
+        "q": "জ্জ",
+        "a": "জ + জ"
+      },
+      {
+        "label": "গ",
+        "q": "ঞ্জ",
+        "a": "ঞ + জ"
+      },
+      {
+        "label": "ঘ",
+        "q": "ক্ষ",
+        "a": "ক + ষ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q04",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সিংহপুরুষ",
+        "a": "পুরুষ সিংহের ন্যায় — উপমিত কর্মধারয়"
+      },
+      {
+        "label": "খ",
+        "q": "বিষাদসিন্ধু",
+        "a": "বিষাদ রূপ সিন্ধু — রূপক কর্মধারয়"
+      },
+      {
+        "label": "গ",
+        "q": "তেলেভাজা",
+        "a": "তেল দিয়ে ভাজা — তৃতীয়া তৎপুরুষ"
+      },
+      {
+        "label": "ঘ",
+        "q": "কানাকানি",
+        "a": "কানে কানে যে কথা — ব্যতিহার বহুব্রীহি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q05",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 5,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "নায়ক",
+        "a": "নৈ + অক"
+      },
+      {
+        "label": "খ",
+        "q": "গবাদি",
+        "a": "গো + আদি"
+      },
+      {
+        "label": "গ",
+        "q": "পরিচ্ছেদ",
+        "a": "পরি + ছেদ"
+      },
+      {
+        "label": "ঘ",
+        "q": "ষষ্ঠ",
+        "a": "ষষ্ + থ"
+      },
+      {
+        "label": "ঙ",
+        "q": "শয়ন",
+        "a": "শে + অন"
+      },
+      {
+        "label": "চ",
+        "q": "সম্মান",
+        "a": "সম্ + মান"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q06",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 6,
+    "marks": 2,
+    "type": "table",
+    "question": "শব্দগুলোর শুদ্ধরূপ লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "রমনিয়",
+        "রমণীয়"
+      ],
+      [
+        "প্রবাহীনী",
+        "প্রবাহিণী"
+      ],
+      [
+        "লাবন্যময়",
+        "লাবণ্যময়"
+      ],
+      [
+        "মনহোর",
+        "মনোহর"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q07",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "শব্দের উৎস",
+    "qno": 7,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "শব্দগুলো কোন ভাষা থেকে বাংলা ভাষায় এসেছে?",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দোকান",
+        "a": "ফারসি"
+      },
+      {
+        "label": "খ",
+        "q": "ক্রিকেট",
+        "a": "ইংরেজি"
+      },
+      {
+        "label": "গ",
+        "q": "আদালত",
+        "a": "আরবি"
+      },
+      {
+        "label": "ঘ",
+        "q": "টেক্কা",
+        "a": "ওলন্দাজ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q08",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 8,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "মহাকাব্য 'মহাশ্মশান' রচনাকারীর সংক্ষিপ্ত নাম ও প্রকৃত নাম কী?",
+    "answer": "সংক্ষিপ্ত নাম: কায়কোবাদ; প্রকৃত নাম: কাজেম আল কোরেশী"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q09",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "সংখ্যাবাচক শব্দ",
+    "qno": 9,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "১ অঙ্ক বা সংখ্যার পূরণবাচক ও তারিখবাচক সংখ্যা লিখুন।",
+    "answer": "১ এর পূরণবাচক সংখ্যা = প্রথম; ১ এর তারিখবাচক সংখ্যা = ১লা/পহেলা"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q10",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "bangla",
+    "topic": "বচন",
+    "qno": 10,
+    "marks": 2,
+    "type": "table",
+    "question": "শব্দগুলোর বহুবচন শব্দ লিখুনঃ",
+    "columns": [
+      "একবচন",
+      "বহুবচন"
+    ],
+    "rows": [
+      [
+        "পাখি",
+        "পাখিসব"
+      ],
+      [
+        "ভাই",
+        "ভাইসব"
+      ],
+      [
+        "মাতৃ",
+        "মাতৃকুল"
+      ],
+      [
+        "জন",
+        "জনগণ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q11",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 11,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "sentence": "One should be careful about …. duty.",
+        "answer": "one's"
+      },
+      {
+        "sentence": "The plural form of the word 'sheep' is ……",
+        "answer": "sheep"
+      },
+      {
+        "sentence": "The singular form of the word 'bacteria' is…….",
+        "answer": "bacterium"
+      },
+      {
+        "sentence": "I trusted the work……him.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Neither Rini nor Shimi……qualified for the job.",
+        "answer": "is/was"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q12",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 12,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "See the word in the dictionary.",
+        "changed": "Look up the word in the dictionary."
+      },
+      {
+        "label": "b",
+        "original": "The train is running in time.",
+        "changed": "The train is running on time."
+      },
+      {
+        "label": "c",
+        "original": "He learnt the alphabets at the age of four.",
+        "changed": "He learnt the alphabet at the age of four."
+      },
+      {
+        "label": "d",
+        "original": "Stop to writing.",
+        "changed": "Stop writing."
+      },
+      {
+        "label": "e",
+        "original": "It is I who is guilty.",
+        "changed": "It is I who am guilty."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q13",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 13,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the Bangla meaning of the following idioms and phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Die out",
+        "meaning": "অদৃশ্য হওয়া",
+        "example": "It's a custom which is beginning to die out."
+      },
+      {
+        "label": "b",
+        "phrase": "For good",
+        "meaning": "চিরতরে",
+        "example": "She left the country for good."
+      },
+      {
+        "label": "c",
+        "phrase": "Make up",
+        "meaning": "পরিপূর্ণ করা",
+        "example": "It is not possible to make up the loss."
+      },
+      {
+        "label": "d",
+        "phrase": "On the instant",
+        "meaning": "তৎক্ষণাৎ",
+        "example": "The doctor arrived on the instant after getting the call."
+      },
+      {
+        "label": "e",
+        "phrase": "Stone's throw",
+        "meaning": "নিকটে",
+        "example": "Our school is at stone's throw from our house."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q14",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 14,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তুমি আমার ভাইয়ের বন্ধু, নয় কি?",
+        "target": "You are my brother's friend, aren't you?"
+      },
+      {
+        "label": "খ",
+        "source": "গাড়ী আসার পূর্বে আমি আমার টিফিন কিনে ফেলব।",
+        "target": "I will buy my tiffin before the car arrives."
+      },
+      {
+        "label": "গ",
+        "source": "সে হাসতে হাসতে ঘরে ঢুকল।",
+        "target": "He entered the room laughing."
+      },
+      {
+        "label": "ঘ",
+        "source": "সফল না হওয়া পর্যন্ত চেষ্টা করা উচিত।",
+        "target": "You should try until you succeed."
+      },
+      {
+        "label": "ঙ",
+        "source": "ইচ্ছা থাকলে উপায় হয়।",
+        "target": "Where there's a will, there's a way."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q15",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 15,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use the right form of the verb in the following sentences:",
+    "parts": [
+      {
+        "sentence": "They (play) at this moment.",
+        "answer": "are playing"
+      },
+      {
+        "sentence": "I (see) him recently.",
+        "answer": "have seen"
+      },
+      {
+        "sentence": "He made me to (do) the work.",
+        "answer": "do"
+      },
+      {
+        "sentence": "Either he or his brother (be) guilty.",
+        "answer": "is/was"
+      },
+      {
+        "sentence": "A pair of shoes (be) on the table.",
+        "answer": "is/was"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q16",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 16,
+    "marks": 3,
+    "type": "math",
+    "question": "একটি ত্রিভুজের ভূমি তার উচ্চতার দ্বিগুণ অপেক্ষা ৬ সে.মি. বেশি। ত্রিভুজক্ষেত্রের ক্ষেত্রফল ৮১০ বর্গ সে.মি. হলে এর উচ্চতা কত?",
+    "steps": [
+      "মনে করি, ত্রিভুজের উচ্চতা = ক সে.মি; ভূমি = (২ক + ৬) সে.মি",
+      "প্রশ্নমতে, ১/২ × (২ক + ৬) × ক = ৮১০",
+      "বা, ২ক² + ৬ক = ১৬২০",
+      "বা, ক² + ৩ক − ৮১০ = ০",
+      "বা, ক² + ৩০ক − ২৭ক − ৮১০ = ০",
+      "বা, ক(ক + ৩০) − ২৭(ক + ৩০) = ০",
+      "বা, (ক + ৩০)(ক − ২৭) = ০",
+      "ক + ৩০ = ০ ⇒ ক = −৩০ (গ্রহণযোগ্য নয়); অথবা ক − ২৭ = ০ ⇒ ক = ২৭"
+    ],
+    "answer": "২৭ সে.মি"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q17",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "ধারা",
+    "qno": 17,
+    "marks": 3,
+    "type": "math",
+    "question": "১ + ৫ + ৯ + ⋯ + ১৬১ = কত?",
+    "steps": [
+      "ধারাটির প্রথম পদ a = ১, সাধারণ অন্তর d = ৫ − ১ = ৪, শেষ পদ = ১৬১ (সমান্তর ধারা)",
+      "মনে করি, ধারাটির n তম পদ = ১৬১; আমরা জানি, nতম পদ = a + (n−1)d",
+      "১ + (n−1)৪ = ১৬১ ⇒ ৪n − ৩ = ১৬১ ⇒ n = ৪১",
+      "৪১টি পদের সমষ্টি S₄₁ = ৪১/২ × {২×১ + (৪১−১)×৪} = ৪১/২ × (২ + ১৬০) = ৪১ × ৮১",
+      "= ৩৩২১"
+    ],
+    "answer": "৩৩২১"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q18",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "মুনাফা-আসল",
+    "qno": 18,
+    "marks": 3,
+    "type": "math",
+    "question": "শতকরা বার্ষিক যে হারে কোনো মূলধন ৬ বছরে মুনাফা-মূলধনে দ্বিগুণ হয়, সেই হারে কত টাকা ৪ বছরে মুনাফা-মূলধনে ২০৫০ টাকা হবে?",
+    "steps": [
+      "মূলধন ১০০ টাকা ধরলে, মুনাফা-মূলধনে দ্বিগুণ = ২০০ টাকা ⇒ ৬ বছরের মুনাফা = ১০০ টাকা",
+      "∴ ১ বছরের মুনাফা = ১০০/৬ টাকা; ৪ বছরের মুনাফা = ১০০ × ৪/৬ = ২০০/৩ টাকা",
+      "৪ বছরে মুনাফা-মূলধন = ১০০ + ২০০/৩ = ৫০০/৩ টাকা",
+      "মুনাফা-মূলধন ৫০০/৩ টাকা হলে মূলধন ১০০ টাকা",
+      "মুনাফা-মূলধন ২০৫০ টাকা হলে মূলধন = ১০০ × ৩ × ২০৫০ / ৫০০ = ১২৩০ টাকা"
+    ],
+    "answer": "১২৩০ টাকা",
+    "alternative": {
+      "steps": [
+        "প্রথম ক্ষেত্রে, সময় n = ৬ বছর; মূলধন P টাকা, মুনাফার হার r%",
+        "৬ বছরের মুনাফা-মূলধন A = ২P; ∴ মুনাফা I = ২P − P = P",
+        "আমরা জানি, I = Prn ⇒ r = I/Pn = P/(P×৬) = ১/৬ = ৫০/৩ %",
+        "দ্বিতীয় ক্ষেত্রে, মূলধন P টাকা, সময় n = ৪ বছর, মুনাফা-মূলধন A = ২০৫০ টাকা",
+        "মুনাফা I = ২০৫০ − P; I = Prn ⇒ ২০৫০ − P = P × (৫০/৩)/১০০ × ৪ = ২P/৩",
+        "বা, ৬১৫০ − ৩P = ২P ⇒ ৫P = ৬১৫০ ⇒ P = ১২৩০"
+      ],
+      "answer": "১২৩০ টাকা"
+    }
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q19",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 19,
+    "marks": 3,
+    "type": "math",
+    "question": "প্রতিটি ৩৬০০ টাকা করে দুটি চেয়ার বিক্রয় করা হয়েছে। একটিতে ২০% লাভ হয় এবং অন্যটিতে ২০% ক্ষতি হলে মোট লাভ বা ক্ষতি কত?",
+    "steps": [
+      "২০% লাভে বিক্রয়মূল্য = ১২০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ৩৬০০ টাকা হলে ক্রয়মূল্য = ১০০ × ৩৬০০/১২০ = ৩০০০ টাকা",
+      "২০% ক্ষতিতে বিক্রয়মূল্য = ৮০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "বিক্রয়মূল্য ৩৬০০ টাকা হলে ক্রয়মূল্য = ১০০ × ৩৬০০/৮০ = ৪৫০০ টাকা",
+      "চেয়ার দুটির মোট ক্রয়মূল্য = ৩০০০ + ৪৫০০ = ৭৫০০ টাকা",
+      "চেয়ার দুটির মোট বিক্রয়মূল্য = ৩৬০০ + ৩৬০০ = ৭২০০ টাকা",
+      "∴ ক্ষতি = ৭৫০০ − ৭২০০ = ৩০০ টাকা"
+    ],
+    "answer": "৩০০ টাকা ক্ষতি"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q20",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 20,
+    "marks": 3,
+    "type": "math",
+    "question": "৩/x + ৪/(x+1) = ২ হলে x এর মান কত?",
+    "steps": [
+      "৩/x + ৪/(x+1) = ২",
+      "বা, {৩(x+1) + ৪x} / {x(x+1)} = ২",
+      "বা, ৩x + ৩ + ৪x = ২x² + ২x",
+      "বা, ২x² − ৫x − ৩ = ০",
+      "বা, ২x² − ৬x + x − ৩ = ০",
+      "বা, ২x(x−৩) + ১(x−৩) = ০",
+      "বা, (x−৩)(২x+১) = ০",
+      "x − ৩ = ০ ⇒ x = ৩; অথবা ২x + ১ = ০ ⇒ x = −১/২"
+    ],
+    "answer": "x = ৩, অথবা x = −১/২"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q21",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 21,
+    "marks": 3,
+    "type": "math",
+    "question": "মনির সাহেবের মূল বেতন ৪৩১৭০ টাকা। বার্ষিক মোট আয়ের ২৫০০০০ টাকা পর্যন্ত আয়কর মুক্ত। পরবর্তী আয়ের উপর আয়করের হার ১০% হলে মনির সাহেবের বছরে কত টাকা আয়কর দিতে হবে?",
+    "steps": [
+      "১ মাসের মূল বেতন ৪৩১৭০ টাকা ⇒ ১২ মাসের বেতন = ৪৩১৭০ × ১২ = ৫১৮০৪০ টাকা",
+      "করযোগ্য আয় = ৫১৮০৪০ − ২৫০০০০ = ২৬৮০৪০ টাকা",
+      "১০০ টাকায় আয়কর ১০ টাকা হলে, ২৬৮০৪০ টাকায় আয়কর = ১০ × ২৬৮০৪০/১০০ = ২৬৮০৪ টাকা"
+    ],
+    "answer": "২৬৮০৪ টাকা"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q22",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "math",
+    "topic": "বর্গমূল",
+    "qno": 22,
+    "marks": 2,
+    "type": "math",
+    "question": "কোন সংখ্যার বর্গমূলের সাথে ১০ যোগ করলে যোগফল ৪ এর বর্গ হবে?",
+    "steps": [
+      "মনে করি, সংখ্যাটি ক",
+      "প্রশ্নমতে, √ক + ১০ = ৪²",
+      "বা, √ক = ১৬ − ১০ = ৬",
+      "∴ ক = ৬² = ৩৬"
+    ],
+    "answer": "৩৬"
+  },
+  {
+    "id": "job-2025-tech-madrasah-office-asst-q23",
+    "examId": "job-2025-tech-madrasah-office-asst",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 23,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "১",
+        "q": "কম্পিউটার ভাইরাস কী?",
+        "a": "এক ধরনের ক্ষতিকর প্রোগ্রাম"
+      },
+      {
+        "label": "২",
+        "q": "চারটি আউটপুট ডিভাইসের নাম লিখুন।",
+        "a": "মনিটর, প্রিন্টার, স্পিকার, প্রজেক্টর"
+      },
+      {
+        "label": "৩",
+        "q": "দুইটি অপারেটিং সিস্টেমের নাম লিখুন।",
+        "a": "Windows, Linux"
+      },
+      {
+        "label": "৪",
+        "q": "বিজয় লে-আউটে 'জ্ঞ' বর্ণটি লিখতে কীবোর্ডের কোন ইংরেজি বর্ণ চাপতে হবে?",
+        "a": "U + G + Shift + I"
+      },
+      {
+        "label": "৫",
+        "q": "চারটি প্রোগ্রামিং ভাষার নাম লিখুন।",
+        "a": "জাভা, পাইথন, সি++, ফরট্রান"
+      },
+      {
+        "label": "৬",
+        "q": "পানির pH মান বলতে কী বোঝায়?",
+        "a": "পানির অম্ল বা ক্ষার বা নিরপেক্ষ অবস্থার নির্দেশক"
+      },
+      {
+        "label": "৭",
+        "q": "LNG এর পূর্ণরূপ কী?",
+        "a": "Liquefied Natural Gas"
+      },
+      {
+        "label": "৮",
+        "q": "শিক্ষা কী?",
+        "a": "শিক্ষা হলো জ্ঞান, অভিজ্ঞতা, দক্ষতা ও মূল্যবোধ অর্জনের একটি পদ্ধতিগত প্রক্রিয়া, যা একজন ব্যক্তির সম্ভাবনার পূর্ণ বিকাশ ঘটাতে সাহায্য করে ও তাকে সমাজের একজন উৎপাদনশীল ও দায়িত্বশীল সদস্য হিসেবে প্রতিষ্ঠিত করে"
+      },
+      {
+        "label": "৯",
+        "q": "বিনিয়োগ কাকে বলে?",
+        "a": "বর্তমান ভোগ ত্যাগ করে ভবিষ্যতে অধিক মুনাফা বা আয় লাভের জন্য মূলধন ব্যয় করাকে বিনিয়োগ বলে"
+      },
+      {
+        "label": "১০",
+        "q": "জাতিসংঘের সদর দপ্তর কোথায়?",
+        "a": "নিউইয়র্ক, যুক্তরাষ্ট্র"
+      },
+      {
+        "label": "১১",
+        "q": "কোনটির কারণে দিবারাত্রি সংঘটিত হয়?",
+        "a": "আহ্নিক গতি"
+      },
+      {
+        "label": "১২",
+        "q": "বৈদ্যুতিক পাখা ধীরে ধীরে ঘুরলে বিদ্যুৎ খরচের কী পরিবর্তন হয়?",
+        "a": "কোনো পরিবর্তন হয় না"
+      },
+      {
+        "label": "১৩",
+        "q": "আরবি সাহিত্যে একমাত্র নোবেল বিজয়ী মুসলিম কে?",
+        "a": "নাগীব মাহফুজ"
+      },
+      {
+        "label": "১৪",
+        "q": "বাংলাদেশের সাংবিধানিক পদ কয়টি? দুইটি পদের নাম লিখুন।",
+        "a": "বাংলাদেশের সাংবিধানিক পদ ১০টি; যেমন — রাষ্ট্রপতি, প্রধানমন্ত্রী (এছাড়া মন্ত্রী, প্রতিমন্ত্রী, উপমন্ত্রী)"
+      }
+    ]
+  }
+]

@@ -228,10 +228,11 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │   ├── index.html / style.css / sw.js / renderer.js
 │   ├── exam-archive.js
 │   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
+│   ├── build_job_solution.js    ← exams/*.json থেকে job-solution.js রিজেনারেট করে
+│   ├── generate_index.js        ← EXAM_INDEX.md রিজেনারেট করে
 │   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
-│       ├── job-solution.js      ← ★ মূল ডেটার উৎস (সব প্রশ্ন এখানে)
-│       ├── bangla.js / english.js / general-knowledge.js / math.js
-│       │                         (job-solution.js থেকে অটো-ফিল্টার হয়)
+│       ├── job-solution.js      ← ★ auto-generated — সরাসরি এডিট করবেন না (নিচে দেখুন)
+│       └── 📁 exams/            ← ★ আসল ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
 │
 ├── 📁 current-affairs/          ← সেকশন ৪ (বাংলা কারেন্ট অ্যাফেয়ার্স)
 │   └── 📁 docs/                 ← ⚠️ generated/synced — সরাসরি এডিট করবেন না
@@ -262,11 +263,10 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 
 | ফাইল | কাজ |
 |------|-----|
-| `job-solution.js` | **★ মূল ডেটার উৎস।** সব বিষয়ের সব প্রশ্ন এখানে থাকে। |
-| `bangla.js` | `job-solution.js` থেকে `subject: "bangla"` ফিল্টার করা ভিউ |
-| `english.js` | `job-solution.js` থেকে `subject: "english"` ফিল্টার করা ভিউ |
-| `general-knowledge.js` | `job-solution.js` থেকে `subject: "general-knowledge"` ফিল্টার করা ভিউ |
-| `math.js` | `job-solution.js` থেকে `subject: "math"` ফিল্টার করা ভিউ |
+| `data/exams/<examId>.json` | **★ আসল ডেটার উৎস।** প্রতিটা পরীক্ষার সব প্রশ্ন এখানে, আলাদা ফাইলে। নতুন প্রশ্ন এখানেই যোগ করুন। |
+| `data/job-solution.js` | **auto-generated** — `build_job_solution.js` সব `exams/*.json` মিলিয়ে এটা রিজেনারেট করে। সরাসরি এডিট করবেন না, git-এ শুধু generated output হিসেবে commit হয়। |
+| `build_job_solution.js` | `exams/*.json` → `job-solution.js` রিজেনারেট করে (`npm run build`) |
+| `generate_index.js` | `EXAM_INDEX.md` রিজেনারেট করে (`npm run index`) |
 | `exam-archive.js` | সব পরীক্ষার হেডিং তথ্যের মাস্টার লিস্ট |
 | `PROGRESS.md` | কোন এক্সাম/ক্রম নম্বর ইতিমধ্যে যোগ করা হয়েছে তার ট্র্যাকিং — **নতুন এক্সাম যোগ করার আগে অবশ্যই পড়ুন**, যোগ করার পর অবশ্যই আপডেট করুন (নাহলে অন্য সেশন ডুপ্লিকেট কাজ করবে) |
 | `metadata.js` | AI Classification Rules — পাবলিক নয়, `admin/` ফোল্ডারে |
@@ -275,54 +275,42 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 
 ## ৪. ডেটা আর্কিটেকচার
 
-### job-solution.js হলো একমাত্র সত্য (Single Source of Truth)
+### exams/*.json হলো একমাত্র সত্য (Single Source of Truth)
 
 ```
-job-solution.js (সব প্রশ্ন একসাথে)
-        │
-        ├──→ bangla.js            (subject: "bangla")
-        ├──→ english.js           (subject: "english")
-        ├──→ general-knowledge.js (subject: "general-knowledge")
-        ├──→ math.js              (subject: "math")
-        └──→ (ভবিষ্যতে নতুন বিষয় যোগ হলে নতুন ফাইল)
+data/exams/job-2025-dc.json          ┐
+data/exams/job-2025-tech-edu.json    ├──→ build_job_solution.js ──→ data/job-solution.js (auto-generated)
+data/exams/... (প্রতিটা পরীক্ষা)      ┘
 ```
+
+`job-solution.js` আর হাতে-লেখা ফাইল না — এটা `exams/*.json`-এর build output। প্রতিটা পরীক্ষা নিজের ফাইলে থাকায় দুটো সেশন একসাথে কাজ করলেও কখনো একই ফাইল touch করে না, তাই merge conflict structurally অসম্ভব (আগে সবাই একই `job-solution.js`-এর শেষে যোগ করত বলে conflict হতো)।
 
 ### এই সিদ্ধান্তের কারণ
 
-- নতুন প্রশ্ন শুধু `job-solution.js`-এ যোগ করলেই হবে
-- বিষয়ভিত্তিক ফাইলগুলো অটো আপডেট হবে
-- ডেটা duplicate হওয়ার ঝুঁকি নেই
+- নতুন প্রশ্ন শুধু নতুন `exams/<examId>.json` ফাইলে যোগ করলেই হবে, বিদ্যমান কোনো ফাইল স্পর্শ করা লাগে না
+- `npm run build` চালালেই `job-solution.js` রিজেনারেট হয়ে যায়
+- সমান্তরাল সেশনগুলোর মধ্যে merge conflict structurally সম্ভব না
 
-### বিষয়ভিত্তিক ফাইলের ফরম্যাট
+### নতুন এক্সাম যোগ করার ফরম্যাট
 
-`bangla.js` (উদাহরণ) — শুধু ফিল্টার করে রি-এক্সপোর্ট করে:
+`data/exams/<examId>.json` — সেই পরীক্ষার সব প্রশ্নের একটা JSON array:
 
-```javascript
-// bangla.js
-// ⚠️ এই ফাইল সরাসরি এডিট করবেন না।
-// সব প্রশ্ন job-solution.js-এ যোগ করুন।
-
-const BANGLA_QUESTIONS = JOB_SOLUTIONS.filter(q => q.subject === "bangla");
+```json
+[
+  {
+    "id": "job-2025-example-office-asst-q1",
+    "examId": "job-2025-example-office-asst",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "...",
+    "answer": "..."
+  }
+]
 ```
 
-### HTML Script Loading Order (বাধ্যতামূলক)
-
-`written-exam/index.html`-এ script-গুলো অবশ্যই এই ক্রমে লোড করতে হবে।
-`job-solution.js` সবার আগে না থাকলে ফিল্টার ফাইলগুলো কাজ করবে না।
-
-```html
-<!-- written-exam/index.html -->
-
-<!-- ১. আগে মূল ডেটা -->
-<script src="job-solution.js"></script>
-<script src="exam-archive.js"></script>
-
-<!-- ২. তারপর ফিল্টার ভিউ -->
-<script src="bangla.js"></script>
-<script src="english.js"></script>
-<script src="general-knowledge.js"></script>
-<script src="math.js"></script>
-```
+যোগ করার পর: `npm run build && npm run validate` (বা `npm run check`)। বিস্তারিত: `written-exam/data/exams/README.md`।
 
 ---
 
@@ -779,56 +767,26 @@ const APP_METADATA = {
 
 ---
 
-### ⏳ Lazy Loading — ডেটা বড় হলে বাস্তবায়ন করতে হবে
+### ✅ পরীক্ষা-ভিত্তিক ডেটা স্প্লিট — সমাধান হয়ে গেছে (মূল প্ল্যান থেকে ভিন্নভাবে)
 
-**অবস্থা:** পরিকল্পিত, এখনো দরকার নেই (এখন প্রশ্ন সংখ্যা কম)
+**অবস্থা:** সম্পন্ন (PR #204)। এখানে যা লেখা ছিল তা মূলত dynamic runtime lazy-loading প্ল্যান করেছিল, কিন্তু বাস্তবে **build-time static generation** দিয়ে সমাধান হয়েছে — নিচে আসল বাস্তবায়ন।
 
-**সমস্যাটা কী:**
-এখন `written-exam/data/job-solution.js`-এ সব পরীক্ষার সব প্রশ্ন **একটাই ফাইলে** থাকে। যেকোনো পরীক্ষা খুললে পুরো ফাইলটাই লোড হয়, সেই পরীক্ষার প্রশ্ন কম হলেও।
+**যা হয়েছিল:** `job-solution.js`-এ সব পরীক্ষার সব প্রশ্ন এক ফাইলে থাকায় (১৫০০+ প্রশ্ন) একাধিক সেশন সমান্তরালে কাজ করলে বারবার merge conflict হতো।
 
-**কখন এই কাজ শুরু করতে হবে:**
-
-```
-JOB_SOLUTIONS এর মোট প্রশ্ন সংখ্যা ৫০০ ছাড়ালে
-        ↓
-job-solution.js ফাইলের সাইজ আনুমানিক ১-২MB ছাড়িয়ে যাবে
-        ↓
-তখনই Lazy Loading সিস্টেমে যেতে হবে
-```
-
-> **AI-এর জন্য নির্দেশ:** নতুন প্রশ্ন যোগ করার সময়, যদি দেখা যায় `job-solution.js`-এ মোট প্রশ্ন সংখ্যা ৫০০ এর কাছাকাছি বা তার বেশি হয়ে গেছে, তাহলে প্রজেক্ট মালিককে সতর্ক করতে হবে এবং Lazy Loading সিস্টেমে যাওয়ার প্রস্তাব দিতে হবে — চুপচাপ আরো প্রশ্ন যোগ করা চালিয়ে যাওয়া যাবে না।
-
-**সমাধানের নকশা:**
+**আসল সমাধান:**
 
 ```
-এখন (এক ফাইল):
-written-exam/data/job-solution.js   ← সব পরীক্ষার সব প্রশ্ন
-
-তখন (পরীক্ষা-ভিত্তিক আলাদা ফাইল):
-written-exam/data/exams/job-2025-dc.js
-written-exam/data/exams/job-2025-tech-edu.js
-written-exam/data/exams/job-2025-coast-guard.js
-... (প্রতিটা exam-archive.js entry-র জন্য একটা ফাইল, ফাইলের নাম তার id)
+data/exams/<examId>.json   ← প্রতিটা পরীক্ষা আলাদা JSON ফাইলে (আসল সোর্স)
+        │  npm run build (build_job_solution.js)
+        ▼
+data/job-solution.js       ← সব মিলিয়ে auto-generated (runtime-এ browser এটাই লোড করে, আগের মতোই)
 ```
 
-**কীভাবে কাজ করবে:**
+Runtime-এ `written-exam/index.html` এখনো পুরনো নিয়মেই `job-solution.js` একবারে লোড করে (dynamic per-exam lazy load বাস্তবায়ন হয়নি) — সমস্যাটা সমাধান হয়েছে git-workflow লেভেলে (conflict এড়ানো), browser লোড-টাইম অপ্টিমাইজেশন লেভেলে না। ফাইলের সাইজ (~1.4MB) নিয়ে ভবিষ্যতে সত্যিকারের lazy-loading দরকার হলে তা আলাদা কাজ হিসেবে বিবেচনা করতে হবে।
 
-```
-হোম পেজ খোলার সময়     → শুধু exam-archive.js লোড হবে (পরীক্ষার তালিকা, ছোট)
-পরীক্ষায় ক্লিক করলে   → শুধু সেই একটা exam ফাইল (যেমন job-2025-dc.js) লোড হবে
-                         (fetch() দিয়ে dynamic script load বা import)
-```
+**বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ) — এগুলো কখনো `written-exam/index.html`-এ ব্যবহৃতই হয়নি (dead code ছিল), তাই এই migration-এ মুছে ফেলা হয়েছে।
 
-**যা পরিবর্তন করতে হবে তখন:**
-
-| ফাইল | পরিবর্তন |
-|------|----------|
-| `written-exam/index.html` | `openExam()` ফাংশনে `<script src="data/exams/{examId}.js">` dynamic load যোগ করতে হবে |
-| `written-exam/sw.js` | OPTIONAL_ASSETS-এ সব exam ফাইল আলাদাভাবে cache করার নিয়ম |
-| Automation App (Section ১৬) | প্রতিটা নতুন পরীক্ষার প্রশ্ন আলাদা ফাইলে বানাবে, একটা বড় ফাইলে নয় |
-| `bangla.js`, `english.js`, `math.js`, `general-knowledge.js` | এই subject-filter ফাইলগুলোর নকশাও পুনর্বিবেচনা করতে হবে, কারণ এগুলো এখন `JOB_SOLUTIONS` (সব প্রশ্নের একটাই array) থেকে filter করে — সেই array আর একসাথে থাকবে না |
-
-**কখন বানাবে:** যখন মোট প্রশ্ন সংখ্যা ৫০০ ছাড়াবে, অথবা প্রজেক্ট মালিক স্পষ্টভাবে অনুরোধ করলে।
+বিস্তারিত নিয়ম: `written-exam/data/exams/README.md`।
 
 ---
 

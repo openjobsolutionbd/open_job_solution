@@ -1,5 +1,17 @@
 #!/usr/bin/env node
 // migrate_to_per_exam.js
+//
+// ⚠️  এই স্ক্রিপ্ট একবারই চালানো হয়েছে (2026-08-29 তারিখে) —
+//     পুরনো monolithic job-solution.js থেকে written-exam/data/exams/
+//     ফোল্ডারে প্রতিটা পরীক্ষার জন্য আলাদা JSON ফাইল বানাতে।
+//     মাইগ্রেশন সম্পন্ন। এটা আবার চালানোর দরকার নেই।
+//
+//     নতুন এক্সাম যোগ করতে এই স্ক্রিপ্টের বদলে সরাসরি
+//     written-exam/data/exams/<examId>.json ফাইল তৈরি করুন, তারপর
+//     written-exam/build_job_solution.js চালান।
+//
+//     এই ফাইলটা শুধু ইতিহাস/রেফারেন্স হিসেবে রাখা হয়েছে।
+//
 // বর্তমান job-solution.js থেকে প্রতিটা examId-র জন্য আলাদা JSON ফাইল তৈরি করে।
 
 const fs   = require("fs");

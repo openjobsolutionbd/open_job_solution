@@ -1,0 +1,207 @@
+[
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q01",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 1,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": ["বাক্যাংশ", "এক কথায়"],
+    "rows": [
+      ["উপস্থিত বুদ্ধি আছে যার", "প্রত্যুৎপন্নমতি"],
+      ["যা সহজে হজম হয়", "সুপাচ্য"]
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q02",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "বিপরীতার্থক-শব্দ",
+    "qno": 2,
+    "type": "table",
+    "question": "বিপরীতার্থক শব্দ লিখুন:",
+    "columns": ["প্রদত্ত শব্দ", "বিপরীত শব্দ"],
+    "rows": [
+      ["সমস্ত", "অংশ"],
+      ["বিচ্ছেদ", "সন্ধি"],
+      ["ভূত", "ভবিষ্যৎ"],
+      ["প্রত্যক্ষ", "পরোক্ষ"]
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q03",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "অর্থসহ-বাক্য",
+    "qno": 3,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য লিখুন:",
+    "parts": [
+      { "label": "ক", "phrase": "ইতর-বিশেষ", "meaning": "পার্থক্য", "example": "" },
+      { "label": "খ", "phrase": "আ আ ক খ", "meaning": "প্রাথমিক জ্ঞান", "example": "" }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q04",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "শুদ্ধ-বানান",
+    "qno": 4,
+    "type": "table",
+    "question": "বানান শুদ্ধ করে লিখুন:",
+    "columns": ["অশুদ্ধ", "শুদ্ধ"],
+    "rows": [
+      ["নিশিথ", "নিশীথ"],
+      ["শুধুমাত্র", "শুধু/মাত্র"],
+      ["দিবারাত্রি", "দিবারাত্র"],
+      ["সৌজন্যতা", "সৌজন্য"]
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q05",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "বঙ্গানুবাদ",
+    "qno": 5,
+    "type": "translate",
+    "question": "বঙ্গানুবাদ করুন:",
+    "parts": [
+      { "label": "ক", "source": "A friend in need is a friend indeed.", "target": "বিপদের বন্ধুই প্রকৃত বন্ধু।" },
+      { "label": "খ", "source": "What a panoramic view it is!", "target": "কী চমৎকার দৃশ্য ইহা!" }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q06",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "bangla",
+    "topic": "কারক-বিভক্তি",
+    "qno": 6,
+    "type": "short-qa",
+    "question": "বিভক্তিসহ কারক নির্ণয় করুন:",
+    "parts": [
+      { "label": "ক", "q": "আমার ভাত খাওয়া হলো না।", "a": "কর্মে শূন্য" },
+      { "label": "খ", "q": "নতুন ধানে হবে নবান্ন।", "a": "করণে ৭মী" }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q07",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      { "label": "ক", "source": "সকাল হতে বৃষ্টি হচ্ছে।", "target": "It has been raining since morning." },
+      { "label": "খ", "source": "মা শিশুকে ভাত খাওয়াচ্ছেন।", "target": "The mother is feeding rice to the baby." }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q08",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "type": "table",
+    "question": "Write the correct spelling:",
+    "columns": ["Incorrect", "Correct"],
+    "rows": [
+      ["Acomodation", "Accommodation"],
+      ["Resturant", "Restaurant"]
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q09",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "english",
+    "topic": "sentence-transformation",
+    "qno": 9,
+    "type": "sentence-change",
+    "question": "Transform the following sentences as directed:",
+    "parts": [
+      { "label": "a", "original": "Only Allah can help us (negative).", "changed": "None but Allah can help us." },
+      { "label": "b", "original": "Nobody dislikes him (affirmative).", "changed": "Everybody likes him." }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q10",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 10,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks using appropriate preposition:",
+    "parts": [
+      { "sentence": "Open ..... page twelve.", "answer": "at" },
+      { "sentence": "Do not look down ……. the poor.", "answer": "upon" }
+    ]
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q11",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 11,
+    "type": "paragraph",
+    "question": "Write four appropriate sentences about 'The Uses of Internet'.",
+    "answer": "The Internet is one of the most important inventions of modern times. It helps people communicate easily through emails, video calls, and social media. Students use the Internet to attend online classes, collect study materials, and gain knowledge. It also provides quick access to information, news, and research from all over the world. Moreover, the Internet is widely used for online shopping, banking, and many other daily services."
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q12",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 12,
+    "type": "math",
+    "question": "একটি দ্রব্য ৮% ক্ষতিতে বিক্রয় করা হলো। দ্রব্যটি আরও ৮০০ টাকা অধিক মূল্যে বিক্রয় করলে ৮% লাভ হতো। দ্রব্যটির ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, ক্রয়মূল্য ১০০ টাকা",
+      "৮% ক্ষতিতে বিক্রয়মূল্য (১০০−৮) = ৯২ টাকা",
+      "৮% লাভে বিক্রয়মূল্য (১০০+৮) = ১০৮ টাকা",
+      "বিক্রয়মূল্য বেশি (১০৮ − ৯২) = ১৬ টাকা",
+      "বিক্রয়মূল্য ১৬ টাকা বেশি হলে ক্রয়মূল্য ১০০ টাকা",
+      "সুতরাং বিক্রয়মূল্য ৮০০ টাকা বেশি হলে ক্রয়মূল্য = (১০০ × ৮০০) ÷ ১৬ = ৫০০০ টাকা"
+    ],
+    "answer": "৫০০০ টাকা"
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q13",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "type": "math",
+    "question": "a² + 1/a² = 10 হলে, a⁴ + 1/a⁴ এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, a² + 1/a² = 10",
+      "প্রদত্ত রাশি = a⁴ + 1/a⁴ = (a²)² + (1/a²)²",
+      "= (a² + 1/a²)² − 2.a².(1/a²)",
+      "= (10)² − 2",
+      "= 100 − 2",
+      "= 98 (Answer)"
+    ],
+    "answer": "৯৮"
+  },
+  {
+    "id": "job-2025-election-commission-rent-house-caretaker-q14",
+    "examId": "job-2025-election-commission-rent-house-caretaker",
+    "subject": "general-knowledge",
+    "topic": "সাধারণ-জ্ঞান",
+    "qno": 14,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      { "label": "ক", "q": "The concert for Bangladesh অনুষ্ঠানটি কোথায় অনুষ্ঠিত হয়?", "a": "নিউইয়র্ক, যুক্তরাষ্ট্র" },
+      { "label": "খ", "q": "মিয়ানমারের সাথে বাংলাদেশের স্থল সীমান্ত রয়েছে এমন জেলাগুলোর নাম কি?", "a": "বান্দরবান, রাঙ্গামাটি ও কক্সবাজার" },
+      { "label": "গ", "q": "সোশ্যাল নেটওয়ার্কিং প্ল্যাটফর্ম 'X' এক্স এর পূর্ব নাম কি?", "a": "টুইটার" },
+      { "label": "ঘ", "q": "জাতীয় স্মৃতিসৌধ এর স্থপতি কে?", "a": "সৈয়দ মাইনুল হোসেন" },
+      { "label": "ঙ", "q": "বর্তমানে BIMSTEC এর সভাপতির দায়িত্ব পালন করছে কোন দেশ?", "a": "বাংলাদেশ" },
+      { "label": "চ", "q": "বাংলাদেশের একমাত্র পাহাড়ি দ্বীপ কোনটি?", "a": "মহেশখালী" },
+      { "label": "ছ", "q": "কোন মুসলিম দেশ রোহিঙ্গা নিধনের অপরাধে আন্তর্জাতিক অপরাধ আদালতে মিয়ানমারের বিপক্ষে মামলা করেছে?", "a": "গাম্বিয়া" },
+      { "label": "জ", "q": "বঙ্গোপসাগরে আবিষ্কৃত বাংলাদেশের প্রথম এবং একমাত্র গ্যাসক্ষেত্রের নাম কি?", "a": "সাঙ্গু" },
+      { "label": "ঝ", "q": "SDG এর কতটি অভীষ্ট রয়েছে?", "a": "১৭টি" },
+      { "label": "ঞ", "q": "গ্রিনল্যান্ড দ্বীপটি বর্তমানে কোন দেশের মালিকানায় রয়েছে?", "a": "ডেনমার্ক" }
+    ]
+  }
+]

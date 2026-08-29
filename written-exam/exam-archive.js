@@ -48,6 +48,15 @@ const EXAM_ARCHIVE = [
     totalQuestions: 6,
   },
   {
+    id: "job-2025-election-commission-porichonnota-kormi",
+    ministry: "নির্বাচন কমিশন সচিবালয়",
+    post: "পরিচ্ছন্নতা কর্মী",
+    date: "2025-09-05",
+    duration: "৬০ মিনিট",
+    totalMarks: 40,
+    totalQuestions: 10,
+  },
+  {
     id: "job-2025-dc-panchagarh-office-sohayok",
     ministry: "জেলা প্রশাসকের কার্যালয়, পঞ্চগড়",
     post: "অফিস সহায়ক",

@@ -1,5 +1,6 @@
 // exam-archive.js — পরীক্ষার তালিকা
-// প্রতিটা exam-এর id, job-solution.js এর id prefix-এর সাথে মিলতে হবে।
+// প্রতিটা exam-এর id, data/exams/<id>.json ফাইলের নামের সাথে ও প্রশ্নের
+// examId ফিল্ডের সাথে হুবহু মিলতে হবে।
 
 const EXAM_ARCHIVE = [
   {

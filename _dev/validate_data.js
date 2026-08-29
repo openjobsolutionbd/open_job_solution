@@ -148,9 +148,15 @@ function checkDuplicateOptions(loc, options) {
   }
 }
 
-// ── ৩. written-exam/data/job-solution.js ──────────────────
+// ── ৩. written-exam/data/exams/*.json ──────────────────
 {
-  const JOBS = loadJsVar(path.join('written-exam', 'data', 'job-solution.js'), 'JOB_SOLUTIONS');
+  const { loadAllQuestions } = require(path.join(ROOT, 'written-exam', 'load_exams'));
+  let JOBS = null;
+  try {
+    JOBS = loadAllQuestions(path.join(ROOT, 'written-exam', 'data', 'exams'));
+  } catch (e) {
+    issues.push(`[written-exam/data/exams/*.json] পড়তে ব্যর্থ: ${e.message}`);
+  }
   const ARCHIVE = loadJsVar(path.join('written-exam', 'exam-archive.js'), 'EXAM_ARCHIVE');
 
   if (JOBS) {

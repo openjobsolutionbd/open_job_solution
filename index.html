@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Job Solution</title>
-  <meta name="theme-color" content="#1a1814">
+  <meta name="theme-color" content="#f5f1eb">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
   <meta name="mobile-web-app-capable" content="yes">
@@ -26,16 +26,6 @@
       --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
       --radius: 16px;
     }
-    [data-theme="dark"] {
-      --bg: #1a1814;
-      --surface: #24211c;
-      --border: #3a3530;
-      --text-primary: #f0ece4;
-      --text-secondary: #a89e92;
-      --shadow: 0 2px 16px rgba(0,0,0,0.4);
-      --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
-    }
-
     /* ══════════════════════════════════════════════════════════
        ── COMMON (মোবাইল ও ডেস্কটপ উভয়ের বেস স্টাইল) ──
        এই অংশের নিয়ম দুই ভিউতেই প্রযোজ্য।
@@ -73,29 +63,6 @@
       color: var(--text-secondary);
       font-size: 0.95rem;
       margin-top: 6px;
-    }
-
-    /* থিম বাটন normal flow-তে থাকে (fixed/absolute না) —
-       তাই এটা সবসময় হেডার আর কার্ডগুলোর মাঝের জায়গায়, ডান পাশে বসে,
-       viewport-এর আকারের সাথে সম্পর্কহীনভাবে। */
-    .toolbar {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 20px;
-    }
-    .theme-btn {
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow);
-      transition: background 0.3s;
     }
 
     .cards {
@@ -143,9 +110,6 @@
     .bcs  .card-icon { background: #eff6ff; }
     .prim .card-icon { background: #f0fdf4; }
     .writ .card-icon { background: #faf5ff; }
-    [data-theme="dark"] .bcs  .card-icon { background: #1e3a5f; }
-    [data-theme="dark"] .prim .card-icon { background: #14532d; }
-    [data-theme="dark"] .writ .card-icon { background: #3b1f5e; }
 
     .card-text { flex: 1; }
     .card-title {
@@ -188,17 +152,10 @@
        যোগ করা হবে। এই ব্লক মোবাইলকে প্রভাবিত করবে না।
        ══════════════════════════════════════════════════════════ */
     @media (min-width: 769px) {
-      /* বর্তমানে ডেস্কটপের জন্য বাড়তি কোনো ওভাররাইড প্রয়োজন নেই —
-         থিম বাটন ইতিমধ্যে .toolbar এর মাধ্যমে সঠিক অবস্থানে আছে।
+      /* বর্তমানে ডেস্কটপের জন্য বাড়তি কোনো ওভাররাইড প্রয়োজন নেই।
          ভবিষ্যতের ডেস্কটপ-নির্দিষ্ট পরিবর্তন এখানে যোগ হবে। */
     }
   </style>
-  <script>
-    (function() {
-      const t = localStorage.getItem('bcs_theme') || 'light';
-      document.documentElement.setAttribute('data-theme', t);
-    })();
-  </script>
 </head>
 <body>
 
@@ -209,10 +166,6 @@
       <h1>Open Job Solution</h1>
       <p class="subtitle">উন্মুক্ত প্রস্তুতি</p>
     </header>
-
-    <div class="toolbar">
-      <button class="theme-btn" id="themeBtn" title="Dark/Light">🌙</button>
-    </div>
 
     <div class="cards">
       <a class="card bcs" href="/bcs-mcq/">
@@ -257,20 +210,6 @@
   </div>
 
   <script>
-    const btn = document.getElementById('themeBtn');
-    function applyTheme(t) {
-      document.documentElement.setAttribute('data-theme', t);
-      btn.textContent = t === 'dark' ? '☀️' : '🌙';
-      const metaTheme = document.querySelector('meta[name="theme-color"]');
-      if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#1a1814' : '#f5f1eb');
-    }
-    applyTheme(localStorage.getItem('bcs_theme') || 'light');
-    btn.addEventListener('click', () => {
-      const n = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('bcs_theme', n);
-      applyTheme(n);
-    });
-
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').catch(err => {

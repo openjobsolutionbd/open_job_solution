@@ -1,0 +1,475 @@
+[
+  {
+    "id": "job-2025-health-services-office-sohayak-q01",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তৃষ্ণার্ত",
+        "a": "তৃষ্ণা + ঋত"
+      },
+      {
+        "label": "খ",
+        "q": "শিরশ্ছেদ",
+        "a": "শিরঃ + ছেদ"
+      },
+      {
+        "label": "গ",
+        "q": "শশাঙ্ক",
+        "a": "শশ + অঙ্ক"
+      },
+      {
+        "label": "ঘ",
+        "q": "তদ্ধিত",
+        "a": "তদ্ + হিত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q02",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 2,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "parts": [
+      {
+        "label": "",
+        "q": "পুংকানুপংখ",
+        "a": "পুঙ্খানুপুঙ্খ"
+      },
+      {
+        "label": "",
+        "q": "কষ্ঠধনি",
+        "a": "কণ্ঠ্যধ্বনি"
+      },
+      {
+        "label": "",
+        "q": "উলফ্ফন",
+        "a": "উল্লফন"
+      },
+      {
+        "label": "",
+        "q": "প্রতীদ্বন্দীতা",
+        "a": "প্রতিদ্বন্দ্বিতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q03",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 3,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বিপত্নীক",
+        "a": "বি (বিগত) হয়েছে পত্নী যার - বহুব্রীহি"
+      },
+      {
+        "label": "খ",
+        "q": "আয়কর",
+        "a": "আয়ের উপর কর - মধ্যপদলোপী কর্মধারয়"
+      },
+      {
+        "label": "গ",
+        "q": "আমরা",
+        "a": "তুমি, আমি ও সে - নিত্য সমাস"
+      },
+      {
+        "label": "ঘ",
+        "q": "দশানন",
+        "a": "দশ আনন যার - বহুব্রীহি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q04",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 4,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যে নারীর হাসি সুন্দর",
+        "a": "সুস্মিতা"
+      },
+      {
+        "label": "খ",
+        "q": "জীবিত থেকেও যে মৃত",
+        "a": "জীবন্মৃত"
+      },
+      {
+        "label": "গ",
+        "q": "মান-সম্মান প্রাপ্তির যোগ্য",
+        "a": "মাননীয়"
+      },
+      {
+        "label": "ঘ",
+        "q": "কাঁচের তৈরি বাড়ি",
+        "a": "শিশমহল"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q05",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 5,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "parts": [
+      {
+        "label": "",
+        "q": "হর্ষ",
+        "a": "বিষাদ"
+      },
+      {
+        "label": "",
+        "q": "আকুঞ্চন",
+        "a": "প্রসারণ"
+      },
+      {
+        "label": "",
+        "q": "ক্ষীণ",
+        "a": "পুষ্ট"
+      },
+      {
+        "label": "",
+        "q": "বিনীত",
+        "a": "দুর্বিনীত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q06",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "My mother has come yesterday.",
+        "changed": "My mother came yesterday."
+      },
+      {
+        "label": "b",
+        "original": "Tell me how are you?",
+        "changed": "Tell me how you are."
+      },
+      {
+        "label": "c",
+        "original": "Always speak truth.",
+        "changed": "Always speak the truth."
+      },
+      {
+        "label": "d",
+        "original": "Wait here until I don't come.",
+        "changed": "Wait here until I come."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q07",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "english",
+    "topic": "fill-in-the-blank",
+    "qno": 7,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with prepositions:",
+    "parts": [
+      {
+        "sentence": "The girl takes......... her sister.",
+        "answer": "after"
+      },
+      {
+        "sentence": "The man died ......... dengue.",
+        "answer": "of"
+      },
+      {
+        "sentence": "The bananas sell....... the dozen.",
+        "answer": "by"
+      },
+      {
+        "sentence": "He insisted......... his innocence.",
+        "answer": "on"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q08",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Let me buy a plate.",
+        "changed": "Let a plate be bought for me."
+      },
+      {
+        "label": "b",
+        "original": "A storm has uprooted the tree.",
+        "changed": "The tree has been uprooted by a storm."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q09",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 4,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তুমি হাসছো কেন?",
+        "target": "Why are you laughing?"
+      },
+      {
+        "label": "খ",
+        "source": "বৃষ্টি থামার পর আমরা রওয়ানা করেছিলাম।",
+        "target": "We started after the rain had stopped."
+      },
+      {
+        "label": "গ",
+        "source": "আমি এখনো তাকে দেখিনি।",
+        "target": "I have not seen him yet."
+      },
+      {
+        "label": "ঘ",
+        "source": "সে নাচতে নাচতে চলে গেল।",
+        "target": "He went away dancing."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q10",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 3,
+    "type": "idiom",
+    "question": "Write sentences with meaning of the following Idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Blue blood",
+        "meaning": "অভিজাত বংশীয়",
+        "example": "He is proud of his blue blood."
+      },
+      {
+        "label": "b",
+        "phrase": "Null and void",
+        "meaning": "বাতিল",
+        "example": "The deed has been null and void now."
+      },
+      {
+        "label": "c",
+        "phrase": "At daggers drawn",
+        "meaning": "সাপে নেউলে",
+        "example": "At present the two brothers are at daggers drawn."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q11",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "math",
+    "topic": "বয়সের অনুপাত",
+    "qno": 11,
+    "marks": 8,
+    "type": "math",
+    "question": "আট বছর পূর্বে পিতার বয়স পুত্রের বয়সের আটগুণ ছিল। দশ বছর পর পিতার বয়স পুত্রের বয়সের দ্বিগুণ হবে। বর্তমানে কার বয়স কত?",
+    "steps": [
+      "মনে করি, বর্তমানে পিতার বয়স x বছর ও পুত্রের বয়স y বছর।",
+      "১ম শর্তানুসারে, x − 8 = 8(y − 8) ....... (1)",
+      "এবং ২য় শর্তানুসারে, x + 10 = 2(y + 10) ...... (2)",
+      "(1) হতে পাই, x − 8 = 8y − 64",
+      "বা, x = 8y − 64 + 8",
+      "বা, x = 8y − 56 ....... (3)",
+      "(1) হতে পাই, x + 10 = 2y + 20",
+      "(3) হতে x এর মান বসিয়ে, 8y − 56 + 10 = 2y + 20",
+      "বা, 8y − 2y = 20 + 56 − 10",
+      "বা, 6y = 66",
+      "∴ y = 11",
+      "(3) হতে পাই, x = 8 × 11 − 56 = 88 − 56 = 32",
+      "∴ বর্তমানে পিতার বয়স 32 বছর এবং পুত্রের বয়স 11 বছর।",
+      "বিকল্প সমাধান: মনে করি, 8 বছর পূর্বে পুত্রের বয়স x বছর, 8 বছর পূর্বে পিতার বয়স 8x বছর",
+      "পুত্রের বর্তমান বয়স = x + 8",
+      "পিতার বর্তমান বয়স = 8x + 8",
+      "প্রশ্নমতে, 8x + 8 + 10 = 2(x + 8 + 10)",
+      "বা, 8x + 18 = 2x + 36",
+      "বা, 6x = 18",
+      "∴ x = 3",
+      "∴ পুত্রের বর্তমান বয়স = (3 + 8) বছর = 11 বছর",
+      "পিতার বর্তমান বয়স = {(3 × 8) + 8} বছর = 32 বছর"
+    ],
+    "answer": "পিতার বয়স ৩২ বছর এবং পুত্রের বয়স ১১ বছর।"
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q12",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "math",
+    "topic": "ত্রিভুজের কোণ",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি ত্রিভুজের তিনটি কোণের অনুপাত ৩ঃ৪ঃ৫ হলে, কোণ তিনটিকে ডিগ্রিতে প্রকাশ করুন।",
+    "steps": [
+      "অনুপাতটির রাশি গুলোর যোগফল = ৩ + ৪ + ৫ = ১২",
+      "ত্রিভুজের তিনটি কোণের সমষ্টি = ১৮০°",
+      "১ম কোণ = (১৮০ এর ৩/১২)° = ৪৫°",
+      "২য় কোণ = (১৮০ এর ৪/১২)° = ৬০°",
+      "৩য় কোণ = (১৮০ এর ৫/১২)° = ৭৫°"
+    ],
+    "answer": "১ম, ২য় ও ৩য় কোণের মান যথাক্রমে ৪৫°, ৬০°, ৭৫°।"
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q13",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "math",
+    "topic": "আয়তক্ষেত্র",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি আয়তাকার ঘরের প্রস্থ তার দৈর্ঘ্যর তিনগুণ। ঘরটির পরিসীমা ৪০ মিটার। ঘরটির আয়তন কত?",
+    "steps": [
+      "ধরি, ঘরটির দৈর্ঘ্য x মিটার;",
+      "∴ প্রস্থ = ৩x মিটার",
+      "শর্তমতে, ২(৩x + x) = ৪০",
+      "বা, ৮x = ৪০",
+      "∴ x = ৫মিটার",
+      "সুতরাং ঘরটির দৈর্ঘ্য ৫ মিটার এবং প্রস্থ ১৫ মিটার",
+      "∴ ঘরটির ক্ষেত্রফল = ৫ × ১৫ = ৭৫ বর্গমিটার"
+    ],
+    "answer": "৭৫ বর্গমিটার। (মূল বইয়ে প্রশ্নে 'প্রস্থ তার দৈর্ঘ্যর তিনগুণ' এবং সমাধানে 'ক্ষেত্রফল' লেখা হলেও প্রশ্নে 'আয়তন' শব্দ ব্যবহৃত হয়েছে — বই অনুযায়ী হুবহু রাখা হলো)"
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q14",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "x − 1/x = 2 হলে, x⁴ + 1/x⁴ এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, x − 1/x = 2",
+      "বামপক্ষ = x⁴ + 1/x⁴",
+      "= (x²)² + (1/x²)²",
+      "= (x² + 1/x²)² − 2.x².1/x²",
+      "= (x² + 1/x²)² − 2",
+      "= {(x − 1/x)² + 2.x.1/x}² − 2",
+      "= (2² + 2)² − 2",
+      "= (4 + 2)² − 2",
+      "= (6)² − 2",
+      "= 36 − 2 = 34 (Answer)",
+      "বিকল্প সমাধান: দেওয়া আছে, x − 1/x = 2",
+      "বা, (x − 1/x)² = (2)²  [উভয় পক্ষকে বর্গ করে]",
+      "বা, x² − 2.x.1/x + (1/x)² = 4",
+      "বা, x² − 2 + 1/x² = 4",
+      "বা, x² + 1/x² = 4 + 2",
+      "বা, x² + 1/x² = 6",
+      "বা, (x² + 1/x²)² = (6)²  [পুনরায় বর্গ করে]",
+      "বা, (x²)² + 2.x².1/x² + (1/x²)² = 36",
+      "বা, x⁴ + 2 + 1/x⁴ = 36",
+      "বা, x⁴ + 1/x⁴ = 36 − 2",
+      "∴ x⁴ + 1/x⁴ = 34 (Answer)"
+    ],
+    "answer": "৩৪। (লক্ষণীয়: মূল বইয়ের প্রথম সমাধান পদ্ধতির শুরুতে লেখা 'x − 1/x = 4' একটি মুদ্রণ ত্রুটি বলে মনে হয়, কারণ প্রশ্নে ও বিকল্প সমাধানে 'x − 1/x = 2' দেওয়া আছে — বই অনুযায়ী হুবহু রাখা হলো)"
+  },
+  {
+    "id": "job-2025-health-services-office-sohayak-q15",
+    "examId": "job-2025-health-services-office-sohayak",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জাতীয় বাজেট ২০২৫-২৬ এ বার্ষিক উন্নয়ন কর্মসূচিতে বরাদ্দ কত?",
+        "a": "২,৩০,০০০ কোটি টাকা"
+      },
+      {
+        "label": "খ",
+        "q": "জরুরি হটলাইন স্বাস্থ্য বাতায়ন এর নম্বরটি লিখুন।",
+        "a": "১৬২৬৩"
+      },
+      {
+        "label": "গ",
+        "q": "সিরাজউদ্দৌলা এর প্রকৃত নাম কী?",
+        "a": "মির্জা মুহম্মদ সিরাজউদ্দৌলা"
+      },
+      {
+        "label": "ঘ",
+        "q": "NITOR এর পূর্ণরূপ কী?",
+        "a": "National Institute of Traumatology and Orthopaedic Rehabilitation"
+      },
+      {
+        "label": "ঙ",
+        "q": "অপারেশন আয়রন সোর্ড কী?",
+        "a": "অপারেশন আয়রন সোর্ড হলো ২০২৩ সালের ৭ অক্টোবরের হামাসের আকস্মিক হামলার প্রতিক্রিয়ায় ইসরায়েল কর্তৃক পরিচালিত এক সামরিক অভিযান।"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের জাতীয় পতাকার ডিজাইনার কে?",
+        "a": "কামরুল হাসান"
+      },
+      {
+        "label": "ছ",
+        "q": "সেভেন সিস্টার্স কী?",
+        "a": "ভারতের উত্তর-পূর্বাঞ্চলের সাতটি রাজ্যের সমষ্টিগত নাম সেভেন সিস্টার্স। রাজ্যগুলো হলো: আসাম, অরুণাচল প্রদেশ, মণিপুর, মেঘালয়, মিজোরাম, নাগাল্যান্ড ও ত্রিপুরা।"
+      },
+      {
+        "label": "জ",
+        "q": "বর্তমানে LDC ভুক্ত দেশ কয়টি?",
+        "a": "৪৪ টি"
+      },
+      {
+        "label": "ঝ",
+        "q": "ডোভার প্রণালী পৃথক করেছে কোন দুটি দেশকে?",
+        "a": "যুক্তরাজ্য ও ফ্রান্স"
+      },
+      {
+        "label": "ঞ",
+        "q": "পুনর্ভবা, নাগর ও টাঙন কোন নদীর উপনদী?",
+        "a": "মহানন্দা"
+      }
+    ]
+  }
+]

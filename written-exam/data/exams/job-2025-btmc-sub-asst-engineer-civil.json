@@ -1,0 +1,191 @@
+[
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q01",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অগ্র-পশ্চাৎ না ভেবে যে কাজ করে",
+        "a": "অবিমৃষ্যকারী"
+      },
+      {
+        "label": "খ",
+        "q": "অগ্রসর হয়ে অভ্যর্থনা",
+        "a": "প্রত্যুদ্‌গমন"
+      },
+      {
+        "label": "গ",
+        "q": "উভয় হাত সমান চলে যার",
+        "a": "সব্যসাচী"
+      },
+      {
+        "label": "ঘ",
+        "q": "কথায় যা প্রকাশ করা যায় না",
+        "a": "অনির্বচনীয়"
+      },
+      {
+        "label": "ঙ",
+        "q": "ক্ষমা পাওয়ার যোগ্য",
+        "a": "ক্ষমার্হ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q02",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "প্রভাত",
+        "a": "প্র (প্রকৃষ্ট রূপে) ভাত - প্রাদি সমাস"
+      },
+      {
+        "label": "খ",
+        "q": "চিরসুখী",
+        "a": "চিরকাল ব্যাপিয়া সুখী - ২য়া তৎপুরুষ"
+      },
+      {
+        "label": "গ",
+        "q": "সলিলসমাধি",
+        "a": "সলিলে সমাধি - ৭মী তৎপুরুষ"
+      },
+      {
+        "label": "ঘ",
+        "q": "নীলকণ্ঠ",
+        "a": "নীল কণ্ঠ যার - বহুব্রীহি"
+      },
+      {
+        "label": "ঙ",
+        "q": "ঘরজামাই",
+        "a": "ঘরে আশ্রিত জামাই - কর্মধারয়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q03",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "english",
+    "topic": "sentence transformation",
+    "qno": 3,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Transformation of sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is poor but honest. (Complex)",
+        "changed": "Though he is poor, he is honest."
+      },
+      {
+        "label": "b",
+        "original": "How time does fly! (Simple)",
+        "changed": "Time flies very fast."
+      },
+      {
+        "label": "c",
+        "original": "The thief ran away seeing the police. (Complex)",
+        "changed": "The thief ran away when he saw the police."
+      },
+      {
+        "label": "d",
+        "original": "Being poor he leads a simple life. (Compound)",
+        "changed": "He is poor and he leads a simple life."
+      },
+      {
+        "label": "e",
+        "original": "He who came here is my brother. (Compound)",
+        "changed": "He came here and he is my brother."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q04",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 4,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "ডাক্তার আসিবার পূর্বে রোগী মারা গেল।",
+        "target": "The patient had died before the doctor came."
+      },
+      {
+        "label": "খ",
+        "source": "সে কলেরায় মারা গেল।",
+        "target": "He died of cholera."
+      },
+      {
+        "label": "গ",
+        "source": "সকাল হতে মুষলধারে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining cats and dogs since morning."
+      },
+      {
+        "label": "ঘ",
+        "source": "বাবা যত বুদ্ধিমান ছেলে তত বোকা।",
+        "target": "The father is as intelligent as the son is foolish."
+      },
+      {
+        "label": "ঙ",
+        "source": "সে গোল্লায় গেছে।",
+        "target": "He has gone to the dogs."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q05",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 5,
+    "marks": 6,
+    "type": "math",
+    "question": "টাকায় ৩টি এবং টাকায় ৫টি দরে সমান সংখ্যক আমলকী ক্রয় করে এক ব্যক্তি টাকায় ৪টি করে বিক্রি করলেন। ঐ ব্যক্তির শতকরা কত লাভ বা ক্ষতি হবে?",
+    "steps": [
+      "৩টি আমলকীর ক্রয়মূল্য ১ টাকা, ∴ ১টি আমলকীর ক্রয়মূল্য ১/৩ টাকা",
+      "আবার, ৫টি আমলকীর ক্রয়মূল্য ১ টাকা, ∴ ১টি আমলকীর ক্রয়মূল্য ১/৫ টাকা",
+      "২টি (১+১) আমলকীর ক্রয়মূল্য = (১/৩ + ১/৫) টাকা = ৮/১৫ টাকা",
+      "∴ ১টি আমলকীর ক্রয়মূল্য = ৮/(১৫×২) টাকা",
+      "∴ ৪টি আমলকীর ক্রয়মূল্য = (৮×৪)/(১৫×২) = ১৬/১৫ টাকা",
+      "৪টি আমলকীর বিক্রয়মূল্য ১ টাকা",
+      "∴ ক্ষতি হয় = ১৬/১৫ − ১ = ১/১৫ টাকা",
+      "১/১৫ টাকায় ক্ষতি হয় ১/১৬ টাকা [১৬/১৫ টাকার ক্ষতি ১/১৫ টাকা হলে, ১ টাকার ক্ষতি (১/১৫)÷(১৬/১৫) = ১/১৬ টাকা]",
+      "১০০ টাকায় ক্ষতি হয় (১×১৫×১০০)/(১৫×১৬) = ৬.২৫ টাকা"
+    ],
+    "answer": "উত্তর: ৬.২৫% ক্ষতি হবে।"
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q06",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 6,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি সমবাহু ত্রিভুজের বাহুর দৈর্ঘ্য ২ সে.মি এবং উচ্চতা x সে.মি, x এর মান কত?",
+    "steps": [
+      "এখানে ত্রিভুজের দৈর্ঘ্য/ভূমি = ২",
+      "সমবাহু ত্রিভুজের ক্ষেত্রফল = (√৩/৪) a²",
+      "আবার, ত্রিভুজের ক্ষেত্রফল = ১/২ × ভূমি × উচ্চতা",
+      "প্রশ্নমতে, ১/২ × ভূমি × উচ্চতা = (√৩/৪) a²",
+      "বা, ১/২ × ২ × x = (√৩/৪) × ২²",
+      "∴ x = √৩"
+    ],
+    "answer": "উত্তর: x = √৩"
+  }
+]

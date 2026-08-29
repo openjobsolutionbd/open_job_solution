@@ -1,0 +1,562 @@
+[
+  {
+    "id": "job-2025-navy-artificer-q01",
+    "examId": "job-2025-navy-artificer",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কটাক্ষ",
+        "a": "কট + অক্ষ"
+      },
+      {
+        "label": "খ",
+        "q": "অধ্যুষিত",
+        "a": "অধি + উষিত"
+      },
+      {
+        "label": "গ",
+        "q": "ব্যর্থ",
+        "a": "বি + অর্থ"
+      },
+      {
+        "label": "ঘ",
+        "q": "শীতার্ত",
+        "a": "শীত + ঋত"
+      },
+      {
+        "label": "ঙ",
+        "q": "জাত্যভিমান",
+        "a": "জাতি + অভিমান"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q02",
+    "examId": "job-2025-navy-artificer",
+    "subject": "bangla",
+    "topic": "প্রতিশব্দ",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "'অক্ষয়' শব্দের পাঁচটি প্রতিশব্দ লিখুন।",
+    "parts": [
+      {
+        "label": "",
+        "q": "'অক্ষয়' শব্দের পাঁচটি প্রতিশব্দ লিখুন।",
+        "a": "চিরন্তন, চিরস্থায়ী, অনন্ত, অবিনশ্বর, স্থায়ী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q03",
+    "examId": "job-2025-navy-artificer",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য গঠন",
+    "qno": 3,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য গঠন করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "চিনে জোঁক",
+        "a": "নাছোড়বান্দা"
+      },
+      {
+        "label": "খ",
+        "q": "সংঘমে চড়া",
+        "a": "প্রচণ্ড উত্তেজনা"
+      },
+      {
+        "label": "গ",
+        "q": "ভিটায় ঘুঘু চরানো",
+        "a": "সর্বস্বান্ত/সর্বনাশ করা"
+      },
+      {
+        "label": "ঘ",
+        "q": "তালকানা",
+        "a": "বেতাল হওয়া/কাণ্ডজ্ঞানহীন"
+      },
+      {
+        "label": "ঙ",
+        "q": "খেজুরে আলাপ",
+        "a": "অকাজের কথা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q04",
+    "examId": "job-2025-navy-artificer",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "parts": [
+      {
+        "label": "",
+        "q": "অনুরক্ত",
+        "a": "বিরক্ত"
+      },
+      {
+        "label": "",
+        "q": "উদ্দিষ্ট",
+        "a": "নিরুদ্দিষ্ট"
+      },
+      {
+        "label": "",
+        "q": "গৃহী",
+        "a": "সন্ন্যাসী"
+      },
+      {
+        "label": "",
+        "q": "গুপ্ত",
+        "a": "ব্যক্ত"
+      },
+      {
+        "label": "",
+        "q": "জ্বলন",
+        "a": "নির্বাপণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q05",
+    "examId": "job-2025-navy-artificer",
+    "subject": "bangla",
+    "topic": "অনুবাদ",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "অতি লোভে তাঁতী নষ্ট।",
+        "target": "Grasp all, lose all"
+      },
+      {
+        "label": "খ",
+        "source": "অভাবে স্বভাব নষ্ট।",
+        "target": "Necessity knows no law"
+      },
+      {
+        "label": "গ",
+        "source": "নাচতে না জানলে উঠান বাঁকা।",
+        "target": "A bad workman quarrels with his tools"
+      },
+      {
+        "label": "ঘ",
+        "source": "নানা মুনির নানা মত।",
+        "target": "Many men, many minds"
+      },
+      {
+        "label": "ঙ",
+        "source": "পুরানো চাল ভাতে বাড়ে।",
+        "target": "All that is old is not bad"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q06",
+    "examId": "job-2025-navy-artificer",
+    "subject": "english",
+    "topic": "fill-in-the-blank",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Use appropriate word/words:",
+    "parts": [
+      {
+        "sentence": "My friend always goes home........ foot.",
+        "answer": "on"
+      },
+      {
+        "sentence": "At least one of the students...... full marks every time.",
+        "answer": "gets"
+      },
+      {
+        "sentence": "The team is ........ eleven players.",
+        "answer": "made up of"
+      },
+      {
+        "sentence": "The path.......... paved, so we were able to walk through the path.",
+        "answer": "had been"
+      },
+      {
+        "sentence": "To stay healthy, we must plan to have a balanced.......",
+        "answer": "diet"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q07",
+    "examId": "job-2025-navy-artificer",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "আমি, তুমি ও সে স্কুলে যাব।",
+        "target": "You, he and I will go to school."
+      },
+      {
+        "label": "খ",
+        "source": "সে কঠোর পরিশ্রম করে, তাই না?",
+        "target": "He works hard, doesn't he?"
+      },
+      {
+        "label": "গ",
+        "source": "সে এক সপ্তাহ যাবৎ অসুস্থ।",
+        "target": "He has been ill for a week."
+      },
+      {
+        "label": "ঘ",
+        "source": "আমি সেখানে যাব।",
+        "target": "I will go there."
+      },
+      {
+        "label": "ঙ",
+        "source": "তোমরা কি এখানে থাক?",
+        "target": "Do you live here?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q08",
+    "examId": "job-2025-navy-artificer",
+    "subject": "english",
+    "topic": "vocabulary",
+    "qno": 8,
+    "marks": 5,
+    "type": "table",
+    "question": "Write down the synonym:",
+    "columns": [
+      "Given Word",
+      "Synonym"
+    ],
+    "rows": [
+      [
+        "Ability",
+        "Capability"
+      ],
+      [
+        "Flame",
+        "Fire"
+      ],
+      [
+        "Purchase",
+        "Buy"
+      ],
+      [
+        "Bold",
+        "Brave"
+      ],
+      [
+        "Defense",
+        "Protection"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q09",
+    "examId": "job-2025-navy-artificer",
+    "subject": "english",
+    "topic": "vocabulary",
+    "qno": 9,
+    "marks": 5,
+    "type": "table",
+    "question": "Write down the antonyms:",
+    "columns": [
+      "Given Word",
+      "Antonym"
+    ],
+    "rows": [
+      [
+        "Like",
+        "Dislike"
+      ],
+      [
+        "Fire",
+        "Water"
+      ],
+      [
+        "Sense",
+        "Nonsense"
+      ],
+      [
+        "Regular",
+        "Irregular"
+      ],
+      [
+        "Valid",
+        "Invalid"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q10",
+    "examId": "job-2025-navy-artificer",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I shall go to yours.",
+        "changed": "I shall go to you."
+      },
+      {
+        "label": "b",
+        "original": "He has a strong headache.",
+        "changed": "He has a bad headache."
+      },
+      {
+        "label": "c",
+        "original": "It is a true fact.",
+        "changed": "It is true."
+      },
+      {
+        "label": "d",
+        "original": "Open page forty.",
+        "changed": "Open at page forty."
+      },
+      {
+        "label": "e",
+        "original": "He came yesterday night.",
+        "changed": "He came last night."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-navy-artificer-q11",
+    "examId": "job-2025-navy-artificer",
+    "subject": "math",
+    "topic": "চৌবাচ্চা ও নল",
+    "qno": 11,
+    "marks": 10,
+    "type": "math",
+    "question": "একটি নল ১২ মিনিটে একটি খালি চৌবাচ্চা পূর্ণ করতে পারে। অপর একটি নল প্রতি মিনিটে ১৪ লিটার পানি বের করে দেয়। চৌবাচ্চাটি খালি থাকা অবস্থায় দুইটি নল একসঙ্গে খুলে দেয়া হয় এবং চৌবাচ্চাটি ৯৬ মিনিটে পূর্ণ হয়। চৌবাচ্চাটিতে কত লিটার পানি ধরে?",
+    "steps": [
+      "মনে করি, প্রথম নল দ্বারা প্রতি মিনিটে x লিটার পানি প্রবেশ করে এবং চৌবাচ্চাটিকে মোট y লিটার পানি ধরে।",
+      "∴ y = 12x ...... (1)",
+      "আবার, দুইটি নল দ্বারা ৯৬ মিনিটে খালি চৌবাচ্চা পূর্ণ হয়",
+      "∴ y = 96x − 96 × 14 ...... (2)",
+      "সমীকরণ (1) থেকে পাই, x = y/12",
+      "x এর মান সমীকরণ (2) এ বসিয়ে পাই,",
+      "y = 96 × y/12 − 96 × 14",
+      "বা, y = 8y − 96×14",
+      "বা, 7y = 96×14",
+      "বা, y = (96×14)/7 = 192",
+      "উত্তর: চৌবাচ্চাটিতে মোট 192 লিটার পানি ধরে।",
+      "বিকল্প সমাধান: ধরি, চৌবাচ্চাটিতে পানি ধরে x লিটার",
+      "12 মিনিটে পূর্ণ করে x লিটার",
+      "1 \" \" \" x/12 \"",
+      "আবার, 96 মিনিটে পূর্ণ করে x লিটার",
+      "1 \" \" \" x/96 \"",
+      "প্রশ্নমতে, x/12 − x/96 = 14",
+      "বা, (8x−x)/96 = 14",
+      "বা, 7x/96 = 14",
+      "বা, 7x = 1344",
+      "বা, x = 1344/7 = 192",
+      "∴ চৌবাচ্চাটিতে 192 লিটার পানি ধরে।"
+    ],
+    "answer": "১৯২ লিটার।"
+  },
+  {
+    "id": "job-2025-navy-artificer-q12",
+    "examId": "job-2025-navy-artificer",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি (চেইন)",
+    "qno": 12,
+    "marks": 10,
+    "type": "math",
+    "question": "A একটি দ্রব্য ১২০ টাকা খরচে তৈরি করে ২৫% লাভে B এর কাছে বিক্রয় করে। B আবার দ্রব্যটি C এর কাছে বিক্রয় করে যা C ১০% লাভে ১৯৮ টাকায় বিক্রয় করে। B শতকরা কত লাভ করে।",
+    "steps": [
+      "A এর বিক্রয়মূল্য = ১২০+ ১২০ এর ২৫% = ১৫০ টাকা",
+      "A এর বিক্রয়মূল্যই B এর ক্রয়মূল্য বা ১৫০ টাকা",
+      "C এর ১০% লাভে, বিক্রয়মূল্য ১১০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "\" ১ \" \" \" ১০০/১১০",
+      "\" ১৯৮ \" \" \" (১০০×১৯৮)/১১০",
+      "= ১৮০ টাকা",
+      "C এর ক্রয়মূল্যই B এর বিক্রয়মূল্য বা ১৮০ টাকা",
+      "সুতরাং B এর লাভ = ১৮০ − ১৫০ = ৩০ টাকা",
+      "B এর ১৫০ টাকায় লাভ হয় ৩০ টাকা",
+      "১ \" \" \" ৩০/১৫০",
+      "১০০ \" \" \" (৩০×১০০)/১৫০",
+      "= ২০ টাকা"
+    ],
+    "answer": "২০%"
+  },
+  {
+    "id": "job-2025-navy-artificer-q13",
+    "examId": "job-2025-navy-artificer",
+    "subject": "math",
+    "topic": "মুনাফা ও বিনিয়োগ",
+    "qno": 13,
+    "marks": 10,
+    "type": "math",
+    "question": "রাজু সাহেব তার 56000 টাকার কিছু টাকা বার্ষিক 12% মুনাফায় ও বাকি টাকা বার্ষিক 10% মুনাফায় বিনিয়োগ করলেন। এক বছর পর তিনি মোট 6400 টাকা মুনাফা পেলেন। তিনি 12% মুনাফায় কত টাকা বিনিয়োগ করেছেন?",
+    "steps": [
+      "মনে করি, রাজু সাহেব 12% মুনাফায় x টাকা বিনিয়োগ করেছেন।",
+      "∴ তিনি 10% মুনাফায় বিনিয়োগ করেছেন (56000 − x) টাকা।",
+      "100 টাকায় 1 বছরের মুনাফা 12 টাকা",
+      "1 \" 1 \" \" 12/100",
+      "x \" 1 \" \" 12x/100",
+      "আবার, 100 টাকায় 1 বছরের মুনাফা 10 টাকা",
+      "1 \" 1 \" \" 10/100",
+      "(56000−x) \" 1 \" \" 10(56000−x)/100",
+      "প্রশ্নমতে, 12x/100 + 10(56000−x)/100 = 6400",
+      "বা, (12x + 560000 − 10x)/100 = 6400",
+      "বা, 12x + 560000 − 10x = 640000",
+      "বা, 2x = 640000 − 560000",
+      "বা, x = 80000/2 ∴ x = 40000",
+      "∴ রাজু সাহেব 12% মুনাফায় 40000 টাকা বিনিয়োগ করেছেন।"
+    ],
+    "answer": "৪০০০০ টাকা।"
+  },
+  {
+    "id": "job-2025-navy-artificer-q14",
+    "examId": "job-2025-navy-artificer",
+    "subject": "math",
+    "topic": "বীজগণিত (দুই চলক)",
+    "qno": 14,
+    "marks": 10,
+    "type": "math",
+    "question": "বাবু ও তপুর কাছে কিছু মার্বেল আছে। বাবু যদি তপুকে ১০টি মার্বেল দিয়ে দেয় তবে তাদের মার্বেলের সংখ্যা সমান হবে। আবার তপু যদি বাবুকে ২০টি মার্বেল দেয় তবে বাবুর মার্বেলের সংখ্যা দ্বিগুণ হবে। বাবুর কাছে কতটি মার্বেল আছে।",
+    "steps": [
+      "মনে করি, বাবুর আছে = ক টি",
+      "তপুর আছে = খ টি",
+      "প্রশ্নমতে, ক − ১০ = খ + ১০",
+      "ক = খ + ২০ ....... (1)",
+      "আবার, ক + ২০ = 2(খ − ২০)",
+      "বা, ক + ২০ = ২খ − ৪০",
+      "বা, খ + ২০ − ২খ = − ৬০ (ক এর মান বসিয়ে)",
+      "∴ খ = ৮০",
+      "খ এর মান (1) নং সমীকরণে বসিয়ে পাই,",
+      "ক = ৮০ + ২০ = ১০০",
+      "সুতরাং তপুর কাছে মার্বেল আছে ৮০ টি এবং বাবুর কাছে আছে ১০০টি।"
+    ],
+    "answer": "বাবুর কাছে ১০০টি মার্বেল আছে।"
+  },
+  {
+    "id": "job-2025-navy-artificer-q15",
+    "examId": "job-2025-navy-artificer",
+    "subject": "math",
+    "topic": "বীজগাণিতিক সমীকরণ",
+    "qno": 15,
+    "marks": 10,
+    "type": "math",
+    "question": "সমাধান করুন: (6x+1)/15 − (2x−4)/(7x−1) = (2x−1)/5",
+    "steps": [
+      "(6x+1)/15 − (2x−1)/5 = (2x−4)/(7x−1)",
+      "বা, (6x+1−6x+3)/15 = (2x−4)/(7x−1)",
+      "বা, 4/15 = (2x−4)/(7x−1)",
+      "বা, 30x − 60 = 28x − 4",
+      "বা, 2x = 56",
+      "∴ x = 28 (Answer)"
+    ],
+    "answer": "২৮"
+  },
+  {
+    "id": "job-2025-navy-artificer-q16",
+    "examId": "job-2025-navy-artificer",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সর্বস্তরে বাংলা ভাষা প্রচলন আইন কত সালে পাশ হয়?",
+        "a": "১৯৮৭ সালে।"
+      },
+      {
+        "label": "খ",
+        "q": "ঢাকায় কেন্দ্রীয় শহিদ মিনার কে উদ্বোধন করেন?",
+        "a": "শহীদ বরকতের মা"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের সবচেয়ে পূর্বে অবস্থিত উপজেলার নাম কী?",
+        "a": "থানচি"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশের মানচিত্র প্রথম কে আঁকেন?",
+        "a": "জেমস রেনেল"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাংলাদেশের কোন জেলা দুই দেশের সীমানা দ্বারা বেষ্টিত?",
+        "a": "রাঙ্গামাটি"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশ কবে জাতিসংঘের সদস্যপদ লাভ করে?",
+        "a": "১৭ সেপ্টেম্বর, ১৯৭৪"
+      },
+      {
+        "label": "ছ",
+        "q": "ভৌগোলিক নির্দেশক পণ্যের স্বীকৃতি দেয় কোন প্রতিষ্ঠান?",
+        "a": "শিল্প মন্ত্রণালয়ের আওতাধীন পেটেন্ট, ডিজাইন ও ট্রেডমার্কস অধিদপ্তর (DPDT)"
+      },
+      {
+        "label": "জ",
+        "q": "পায়রা বন্দর কোন নদীর মোহনায় অবস্থিত?",
+        "a": "রামনাবাদ চ্যানেল সংলগ্ন আন্ধারমানিক নদী"
+      },
+      {
+        "label": "ঝ",
+        "q": "বিলোনিয়া সীমান্ত কোন জেলার অন্তর্গত?",
+        "a": "ফেনী"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশ বিমানের প্রতীকটি কে ডিজাইন করেন?",
+        "a": "কামরুল হাসান"
+      },
+      {
+        "label": "১৭",
+        "q": "দেশ দুইটির রাজধানীর নাম লিখুন: ডোমিনিকা, হন্ডুরাস",
+        "a": "ডোমিনিকা- রোসেউ। হন্ডুরাস- তেগুসিগালপা"
+      },
+      {
+        "label": "১৮",
+        "q": "সংস্থা দুইটির সদর দপ্তর কোথায়? IMO, UNIDO",
+        "a": "IMO: লন্ডন, যুক্তরাজ্য। UNIDO: ভিয়েনা, অস্ট্রিয়া"
+      },
+      {
+        "label": "১৯",
+        "q": "দেশ দুইটির মুদ্রার নাম লিখুন: হাইতি, প্যারাগুয়ে",
+        "a": "হাইতি- গুরদে। প্যারাগুয়ে- গুয়ারানি"
+      },
+      {
+        "label": "২০",
+        "q": "পূর্ণরূপ লিখুন: WCED, CEDAW",
+        "a": "WCED: World Commission on Environment and Development। CEDAW: Convention on the Elimination of All Forms of Discrimination Against Women"
+      },
+      {
+        "label": "২১",
+        "q": "দেশ দুইটির পূর্ব নাম লিখুন: ঘানা, জিম্বাবুয়ে",
+        "a": "ঘানা- গোল্ড কোস্ট; জিম্বাবুয়ে- দক্ষিণ রোডেশিয়া"
+      }
+    ]
+  }
+]

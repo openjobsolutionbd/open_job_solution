@@ -1,0 +1,513 @@
+[
+  {
+    "id": "job-2025-prison-computer-typist-q01",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "bangla",
+    "topic": "সাহিত্য ও ব্যাকরণ",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বাংলা সাহিত্যে প্রথম মহিলা ঔপন্যাসিকের নাম কী?",
+        "a": "স্বর্ণকুমারী দেবী"
+      },
+      {
+        "label": "খ",
+        "q": "'লাপাত্তা' শব্দের 'লা' উপসর্গটি কোন ভাষা থেকে এসেছে?",
+        "a": "আরবি"
+      },
+      {
+        "label": "গ",
+        "q": "'সকালে উঠিয়া আমি মনে মনে বলি, সারাদিন আমি যেন ভালো হয়ে চলি' — চরণ দুটির রচয়িতা কে?",
+        "a": "মদনমোহন তর্কালঙ্কার"
+      },
+      {
+        "label": "ঘ",
+        "q": "'সাত সাগরের মাঝি' কাব্যগ্রন্থের রচয়িতা কে?",
+        "a": "ফররুখ আহমদ"
+      },
+      {
+        "label": "ঙ",
+        "q": "'অন্নজনে দেহ আলো' — কোন কারকে কোন বিভক্তি?",
+        "a": "সম্প্রদানে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q02",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 5,
+    "type": "idiom",
+    "question": "নিম্নের বাগধারাগুলোর অর্থ লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "শরতের শিশির",
+        "meaning": "সুসময়ের বন্ধু/ক্ষণস্থায়ী"
+      },
+      {
+        "label": "খ",
+        "phrase": "নেই আঁকড়া",
+        "meaning": "একগুঁয়ে"
+      },
+      {
+        "label": "গ",
+        "phrase": "আঠারো আনা",
+        "meaning": "বাড়াবাড়ি"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "মিছরির ছুরি",
+        "meaning": "মুখে মধু অন্তরে বিষ"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "শিরে সংক্রান্তি",
+        "meaning": "সামনেই/আসন্ন বিপদ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q03",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন।",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "দ্বদ",
+        "দ্বন্দ্ব"
+      ],
+      [
+        "মূমূর্ষু",
+        "মুমূর্ষু"
+      ],
+      [
+        "শিরচ্ছেদ",
+        "শিরশ্ছেদ"
+      ],
+      [
+        "বীভিষিকা",
+        "বিভীষিকা"
+      ],
+      [
+        "মূহুর্ম",
+        "মুহুর্মুহু"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q04",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গবাক্ষ",
+        "a": "গো + অক্ষ"
+      },
+      {
+        "label": "খ",
+        "q": "রবীন্দ্র",
+        "a": "রবি + ইন্দ্র"
+      },
+      {
+        "label": "গ",
+        "q": "প্রত্যূষ",
+        "a": "প্রতি + ঊষ"
+      },
+      {
+        "label": "ঘ",
+        "q": "কুজ্ঝটিকা",
+        "a": "কুৎ + ঝটিকা"
+      },
+      {
+        "label": "ঙ",
+        "q": "দুষ্কর",
+        "a": "দুঃ + কর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q05",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English.",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "ঘণ্টা বাজার পূর্বে আমরা ক্লাসে প্রবেশ করলাম।",
+        "target": "We had entered the class before the bell rang."
+      },
+      {
+        "label": "খ",
+        "source": "রোগীটি এখন বিপদমুক্ত।",
+        "target": "The patient is now out of danger."
+      },
+      {
+        "label": "গ",
+        "source": "মেয়েটি যেমন সুন্দরী, তেমনি বুদ্ধিমতী।",
+        "target": "The girl is as beautiful as intelligent."
+      },
+      {
+        "label": "ঘ",
+        "source": "নিরক্ষরতা দূরীকরণে জনসচেতনতা প্রয়োজন।",
+        "target": "Public awareness is necessary to eradicate illiteracy."
+      },
+      {
+        "label": "ঙ",
+        "source": "তাকে নির্দোষ বলে মনে হয়।",
+        "target": "He seems to be innocent."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q06",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with appropriate words.",
+    "parts": [
+      {
+        "sentence": "The teacher dwelled........ the subject.",
+        "answer": "upon"
+      },
+      {
+        "sentence": "Students are concerned…… their result.",
+        "answer": "for"
+      },
+      {
+        "sentence": "One dozen of bananas……. sufficient.",
+        "answer": "is"
+      },
+      {
+        "sentence": "If I had money, I......... buy a shirt.",
+        "answer": "would"
+      },
+      {
+        "sentence": "He does not know how to deal……. a gentleman.",
+        "answer": "with"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q07",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 3,
+    "type": "sentence-change",
+    "question": "Change the voice.",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Never deceive anyone.",
+        "changed": "Let no one ever be deceived."
+      },
+      {
+        "label": "b",
+        "original": "We should help the poor.",
+        "changed": "The poor should be helped by us."
+      },
+      {
+        "label": "c",
+        "original": "We ought to obey our parents.",
+        "changed": "Our parents ought to be obeyed by us."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q08",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 4,
+    "type": "table",
+    "question": "Write the correct spelling.",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Greivaence",
+        "Grievance"
+      ],
+      [
+        "Comision",
+        "Commission"
+      ],
+      [
+        "Contegeous",
+        "Contagious"
+      ],
+      [
+        "Disentary",
+        "Dysentery"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q09",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 9,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Write the Bengali meaning of the following idioms and phrases.",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Bad bargain",
+        "meaning": "বাজে আচরণ",
+        "example": "He made the best of a bad bargain."
+      },
+      {
+        "label": "b",
+        "phrase": "Dead against",
+        "meaning": "ঘোর বিরোধী",
+        "example": "He is dead against me."
+      },
+      {
+        "label": "c",
+        "phrase": "Eye to eye",
+        "meaning": "একমত",
+        "example": "He cannot be eye to eye with me on this matter."
+      },
+      {
+        "label": "d",
+        "phrase": "Body and soul",
+        "meaning": "পরিপূর্ণভাবে",
+        "example": "He engaged himself body and soul in the pursuit of knowledge."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q10",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with the right form of verbs.",
+    "parts": [
+      {
+        "sentence": "The page of the book (be)......... torn.",
+        "answer": "is"
+      },
+      {
+        "sentence": "Had I been a poet, I (write).......... a book of poems.",
+        "answer": "would have written"
+      },
+      {
+        "sentence": "I got the book (print)…….",
+        "answer": "printed"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q11",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "x − 1/x = ৩ হলে, i) (x + 1/x)² এর মান কত? ii) দেখাও যে, x⁴ + 1/x⁴ = ১১৯",
+    "steps": [
+      "i) (x + 1/x)² = (x − 1/x)² + ৪.x.1/x = ৩² + ৪ = ১৩",
+      "ii) দেওয়া আছে, x − 1/x = ৩",
+      "(x − 1/x)² = ৩² ⇒ x² − ২ + 1/x² = ৯ ⇒ x² + 1/x² = ১১",
+      "(x² + 1/x²)² = (১১)² ⇒ x⁴ + ২ + 1/x⁴ = ১২১",
+      "∴ x⁴ + 1/x⁴ = ১২১ − ২ = ১১৯ (প্রমাণিত)"
+    ],
+    "answer": "i) ১৩; ii) x⁴ + 1/x⁴ = ১১৯ (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q12",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি x = ৯ + ৪√৫ হয়, তাহলে (√x − 1/√x)² এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, x = ৯ + ৪√৫",
+      "1/x = (৯ − ৪√৫)/{(৯+৪√৫)(৯−৪√৫)} = (৯−৪√৫)/(৮১−৮০) = ৯ − ৪√৫",
+      "∴ x + 1/x = (৯+৪√৫) + (৯−৪√৫) = ১৮",
+      "প্রদত্ত রাশি: (√x − 1/√x)² = x + 1/x − ২ = ১৮ − ২ = ১৬"
+    ],
+    "answer": "১৬"
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q13",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একজন দোকানদার কিছু ডাল ২৩৭৫ টাকায় বিক্রয় করায় তার ৫% ক্ষতি হলো। ঐ ডাল কত টাকায় বিক্রয় করলে তার ৬% লাভ হবে?",
+    "steps": [
+      "৫% ক্ষতিতে বিক্রয়মূল্য = ১০০ − ৫ = ৯৫ টাকা (ক্রয়মূল্য ১০০ টাকা হলে)",
+      "বিক্রয়মূল্য ৯৫ টাকা হলে ক্রয়মূল্য ১০০ টাকা; বিক্রয়মূল্য ২৩৭৫ টাকা হলে ক্রয়মূল্য = ১০০ × ২৩৭৫/৯৫ = ২৫০০ টাকা",
+      "৬% লাভে বিক্রয়মূল্য = ১০০ + ৬ = ১০৬ টাকা (ক্রয়মূল্য ১০০ টাকা হলে)",
+      "ক্রয়মূল্য ২৫০০ টাকা হলে বিক্রয়মূল্য = ১০৬ × ২৫০০/১০০ = ২৬৫০ টাকা"
+    ],
+    "answer": "২৬৫০ টাকা"
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q14",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি আয়তাকার বাগানের দৈর্ঘ্য প্রস্থের দেড়গুণ। বাগানের ক্ষেত্রফল ৩৭৫০ বর্গমিটার। বাগানটি পরিচর্যা করার জন্য ঠিক মাঝ দিয়ে ৩ মিটার চওড়া দৈর্ঘ্য ও প্রস্থ বরাবর রাস্তা আছে। ক) বাগানের দৈর্ঘ্য ও প্রস্থ নির্ণয় করুন। খ) রাস্তাটি ২ বর্গমিটার পাথর দ্বারা বাঁধাই করতে মোট কতটি পাথর লাগবে?",
+    "steps": [
+      "ক) মনে করি, প্রস্থ = ক, দৈর্ঘ্য = ১.৫ক",
+      "প্রশ্নমতে, ১.৫ক² = ৩৭৫০ ⇒ ক² = ২৫০০ ⇒ ক = ৫০",
+      "∴ প্রস্থ = ৫০ মিটার, দৈর্ঘ্য = ১.৫ × ৫০ = ৭৫ মিটার",
+      "খ) রাস্তাবাদে দৈর্ঘ্য = ৭৫ − ৩ = ৭২ মি.; রাস্তাবাদে প্রস্থ = ৫০ − ৩ = ৪৭ মি.",
+      "রাস্তাবাদে ক্ষেত্রফল = ৭২ × ৪৭ = ৩৩৮৪ বর্গমিটার",
+      "∴ রাস্তার মোট ক্ষেত্রফল = ৩৭৫০ − ৩৩৮৪ = ৩৬৬ বর্গমিটার",
+      "২ বর্গমিটারে ১টি পাথর লাগলে, ৩৬৬ বর্গমিটারে পাথর লাগবে = ৩৬৬ ÷ ২ = ১৮৩টি"
+    ],
+    "answer": "ক) দৈর্ঘ্য ৭৫ মিটার, প্রস্থ ৫০ মিটার।  খ) ১৮৩টি পাথর লাগবে।"
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q15",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "math",
+    "topic": "গতিবেগ",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "১২০ মিটার দীর্ঘ একটি ট্রেন ৩৩০ মিটার দীর্ঘ একটি সেতু অতিক্রম করবে। ট্রেনটির গতিবেগ ঘণ্টায় ৩০ কি.মি. হলে, সেতুটি অতিক্রম করতে ট্রেনটির কত সময় লাগবে?",
+    "steps": [
+      "ট্রেনটিকে তার নিজের দৈর্ঘ্য ও সেতুর দৈর্ঘ্য মিলিয়ে মোট (১২০ + ৩৩০) = ৪৫০ মিটার অতিক্রম করতে হবে",
+      "৩০ কি.মি./ঘণ্টা = ৩০০০০ মিটার/৩৬০০ সেকেন্ড",
+      "৩০০০০ মিটার যেতে সময় লাগে ৩৬০০ সেকেন্ড",
+      "∴ ৪৫০ মিটার যেতে সময় লাগবে = (৩৬০০ × ৪৫০) ÷ ৩০০০০ = ৫৪ সেকেন্ড"
+    ],
+    "answer": "৫৪ সেকেন্ড"
+  },
+  {
+    "id": "job-2025-prison-computer-typist-q16",
+    "examId": "job-2025-prison-computer-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলির উত্তর লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জাতিসংঘের মহাসচিব কোন দেশের অধিবাসী?",
+        "a": "পর্তুগাল"
+      },
+      {
+        "label": "খ",
+        "q": "প্রধান উপদেষ্টা কবে ৩ দিনের জন্য মালয়েশিয়া সফর করেন?",
+        "a": "১১ আগস্ট ২০২৫"
+      },
+      {
+        "label": "গ",
+        "q": "কোন বাংলাদেশি সাঁতারু সর্বপ্রথম ইংলিশ চ্যানেল পাড়ি দেন?",
+        "a": "ব্রজেন দাস (১৯৫৮ সালের ১৮ আগস্ট)"
+      },
+      {
+        "label": "ঘ",
+        "q": "VGF এর পূর্ণরূপ লিখ?",
+        "a": "Vulnerable Group Feeding"
+      },
+      {
+        "label": "ঙ",
+        "q": "মিয়ানমারের সাথে একমাত্র স্থলবন্দর কোথায় অবস্থিত?",
+        "a": "টেকনাফ"
+      },
+      {
+        "label": "চ",
+        "q": "কর্ণফুলী নদীর উৎপত্তিস্থল কোথায়?",
+        "a": "মিজোরাম রাজ্যের লুসাই পাহাড়"
+      },
+      {
+        "label": "ছ",
+        "q": "কাজী নজরুল ইসলামকে কবে জাতীয় কবির মর্যাদা দিয়ে গেজেট প্রকাশিত হয়?",
+        "a": "২৪ ডিসেম্বর ২০২৪"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশে 'ইনভেস্টমেন্ট সামিট ২০২৫' এর আয়োজক কোন প্রতিষ্ঠান ছিল?",
+        "a": "বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (বিডা)"
+      },
+      {
+        "label": "ঝ",
+        "q": "সামরিক ভাষায় WMD এর অর্থ কী?",
+        "a": "Weapons of Mass Destruction (গণবিধ্বংসী মরণাস্ত্র)"
+      },
+      {
+        "label": "ঞ",
+        "q": "FIFA সভাপতির নাম কী?",
+        "a": "জিয়ান্নি ইনফান্তিনো"
+      },
+      {
+        "label": "ট",
+        "q": "'সবকটা জানালা খুলে দাও না' — এই গানটির গায়িকা কে?",
+        "a": "সাবিনা ইয়াসমিন"
+      },
+      {
+        "label": "ঠ",
+        "q": "মুক্তিযুদ্ধে 'ক্র্যাক প্লাটুন' কোন শহরে সক্রিয় ছিল?",
+        "a": "ঢাকা শহরে"
+      },
+      {
+        "label": "ড",
+        "q": "\"Pearls of Africa\" কোন দেশ?",
+        "a": "উগান্ডা"
+      },
+      {
+        "label": "ঢ",
+        "q": "উত্তর গোলার্ধে দীর্ঘতম দিন কবে?",
+        "a": "২১ জুন"
+      },
+      {
+        "label": "ণ",
+        "q": "নেপালের অন্তর্বর্তীকালীন সরকারপ্রধানের নাম কী?",
+        "a": "সুশীলা কারকি"
+      }
+    ]
+  }
+]

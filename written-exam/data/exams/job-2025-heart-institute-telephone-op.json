@@ -1,0 +1,522 @@
+[
+  {
+    "id": "job-2025-heart-institute-telephone-op-q01",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "marks": 6,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "সন্ধি",
+      "বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "বাগদান",
+        "বাক্ + দান"
+      ],
+      [
+        "ষড়ঋতু",
+        "ষট্ + ঋতু"
+      ],
+      [
+        "উদ্যম",
+        "উৎ + যম"
+      ],
+      [
+        "দিগন্ত",
+        "দিক্ + অন্ত"
+      ],
+      [
+        "চিত্রার্কষণ",
+        "চিত্র + আকর্ষণ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q02",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 6,
+    "type": "idiom",
+    "question": "বাগধারার অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "সোনায় সোহাগা",
+        "meaning": "উপযুক্ত মিলন"
+      },
+      {
+        "label": "খ",
+        "phrase": "গোঁফ খেজুরে",
+        "meaning": "অলস ব্যক্তি"
+      },
+      {
+        "label": "গ",
+        "phrase": "উনপাঁজুরে",
+        "meaning": "দুর্বল ব্যক্তি"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "দুধের মাছি",
+        "meaning": "সুসময়ের বন্ধু"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "এলাহি কাণ্ড",
+        "meaning": "বিশাল ব্যাপার/আয়োজন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q03",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 6,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "মরিচীকা",
+        "মরীচিকা"
+      ],
+      [
+        "স্ববিশেষ",
+        "সবিশেষ"
+      ],
+      [
+        "জেষ্ঠা",
+        "জ্যেষ্ঠ"
+      ],
+      [
+        "দৈনতা",
+        "দীনতা/দৈন্য"
+      ],
+      [
+        "জীবীকা",
+        "জীবিকা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q04",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 4,
+    "marks": 6,
+    "type": "table",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "columns": [
+      "বাক্য",
+      "কারক ও বিভক্তি"
+    ],
+    "rows": [
+      [
+        "গৃহহীনে গৃহ দাও",
+        "সম্প্রদানে ৭মী"
+      ],
+      [
+        "সহিদ অঙ্গে কাঁচা",
+        "অধিকরণে ৭মী"
+      ],
+      [
+        "বিপদে মোরে রক্ষা কর",
+        "অপাদানে ৭মী"
+      ],
+      [
+        "প্রাণপণে চেষ্টা কর",
+        "করণে ৭মী"
+      ],
+      [
+        "মাকে বড্ড ভয় পাই",
+        "অপাদানে ২য়া"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q05",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 6,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "এখন চারটা বেজে পনেরো মিনিট।",
+        "target": "It is fifteen minutes past four now."
+      },
+      {
+        "label": "খ",
+        "source": "গুড়ি গুড়ি বৃষ্টি হচ্ছে।",
+        "target": "It is drizzling."
+      },
+      {
+        "label": "গ",
+        "source": "মেয়েটি হাসতে হাসতে ঘরে ঢুকলো।",
+        "target": "The girl entered the room laughing."
+      },
+      {
+        "label": "ঘ",
+        "source": "সৎ ব্যক্তি সর্বত্র সম্মানিত।",
+        "target": "An honest person is honored everywhere"
+      },
+      {
+        "label": "ঙ",
+        "source": "আমাকে এক গ্লাস পানি দাও।",
+        "target": "Give me a glass of water."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q06",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I shall do the work.",
+        "changed": "The work will be done by me."
+      },
+      {
+        "label": "b",
+        "original": "Who will help you?",
+        "changed": "By whom will you be helped?"
+      },
+      {
+        "label": "c",
+        "original": "Write the letter without any delay.",
+        "changed": "Let the letter be written without any delay."
+      },
+      {
+        "label": "d",
+        "original": "He called it laurel.",
+        "changed": "It was called laurel by him."
+      },
+      {
+        "label": "e",
+        "original": "Cricket was played by you.",
+        "changed": "You played cricket."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q07",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with preposition:",
+    "parts": [
+      {
+        "sentence": "Nazrul can be compared.... Shelly.",
+        "answer": "with"
+      },
+      {
+        "sentence": "This is the more in interesting ....... the two.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He married...... money.",
+        "answer": "for"
+      },
+      {
+        "sentence": "He fell ...........the horse.",
+        "answer": "off"
+      },
+      {
+        "sentence": "I am satisfied....... your behavior.",
+        "answer": "with"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q08",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "english",
+    "topic": "sentence-change",
+    "qno": 8,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Change the sentences as direction:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Tea is the most popular drink. (Comparative)",
+        "changed": "Tea is more popular than any other drink."
+      },
+      {
+        "label": "b",
+        "original": "Everybody wants friend. (Negative)",
+        "changed": "There is no body but wants friend."
+      },
+      {
+        "label": "c",
+        "original": "What a pity! You have failed. (Assertive)",
+        "changed": "It is a great pity that you have failed."
+      },
+      {
+        "label": "d",
+        "original": "They are peace loving (Complex)",
+        "changed": "They are the people who are peace loving."
+      },
+      {
+        "label": "e",
+        "original": "Although I was ill, I attended the meeting (Simple)",
+        "changed": "In spite of my illness, I attended the meeting."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q09",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 9,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentence with following words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "All the same",
+        "meaning": "একই",
+        "example": "It is all the same to me whether you come or not."
+      },
+      {
+        "label": "b",
+        "phrase": "Loud and clear",
+        "meaning": "স্পষ্টভাবে",
+        "example": "I heard you loud and clear."
+      },
+      {
+        "label": "c",
+        "phrase": "Take liberties",
+        "meaning": "স্বাধীনতা হরণ করা",
+        "example": "We should not take liberties from anyone."
+      },
+      {
+        "label": "d",
+        "phrase": "Read between the lines",
+        "meaning": "মধ্যবর্তীকে বুঝা",
+        "example": "Try to read between the lines of the letter"
+      },
+      {
+        "label": "e",
+        "phrase": "At most",
+        "meaning": "সর্বাধিক হিসেবে/ বড় জোর",
+        "example": "At most, the work will take a week."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q10",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 10,
+    "marks": 8,
+    "type": "math",
+    "question": "৪০ মিটার দৈর্ঘ্য এবং ৩০ মিটার প্রস্থবিশিষ্ট একটি মাঠের ঠিক মাঝে আড়াআড়িভাবে ১.৫ মিটার প্রশস্ত দুইটি রাস্তা আছে। রাস্তা দুইটির মোট ক্ষেত্রফল কত?",
+    "steps": [
+      "দৈর্ঘ্য বরাবর রাস্তাটির ক্ষেত্রফল = ৪০ × ১.৫ বর্গমিটার = ৬০ বর্গমিটার",
+      "প্রস্থ বরাবর রাস্তাটির ক্ষেত্রফল = (৩০ − ১.৫) × ১.৫ বর্গমিটার = ২৮.৫ × ১.৫ বর্গমিটার = ৪২.৭৫ বর্গমিটার",
+      "অতএব, রাস্তাদ্বয়ের ক্ষেত্রফল = (৬০ + ৪২.৭৫) বর্গমিটার = ১০২.৭৫ বর্গমিটার"
+    ],
+    "answer": "রাস্তাদ্বয়ের মোট ক্ষেত্রফল ১০২.৭৫ বর্গমিটার।"
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q11",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 10,
+    "type": "math",
+    "question": "দুই অঙ্কবিশিষ্ট কোনো সংখ্যার অঙ্কদ্বয়ের সমষ্টির সাথে ৭ যোগ করলে যোগফল দশক স্থানীয় অঙ্কটির তিনগুণ হয়। কিন্তু সংখ্যাটি থেকে ১৮ বাদ দিলে অঙ্কদ্বয় স্থান পরিবর্তন করে। সংখ্যাটি নির্ণয় করুন।",
+    "steps": [
+      "মনে করি, দুই অঙ্কবিশিষ্ট সংখ্যাটির একক স্থানীয় অঙ্ক x এবং দশক স্থানীয় অঙ্ক y।",
+      "∴ সংখ্যাটি = x + 10y",
+      "১ম শর্তানুসারে, x + y + 7 = 3y",
+      "বা, x + y − 3y = −7",
+      "বা, x − 2y = −7 ................. (1)",
+      "অঙ্কদ্বয় স্থান বিনিময় করলে পরিবর্তিত সংখ্যাটি হবে 10x + (y)",
+      "২য় শর্তানুসারে, x + 10y − 18 = y + 10x",
+      "বা, x + 10y − y − 10x = 18",
+      "বা, 9y − 9x = 18",
+      "বা, 9(y − x) = 18",
+      "বা, y − x = 18/9 = 2",
+      "∴ y − x = 2 ................. (2)",
+      "(1) ও (2) যোগ করে পাই, − y = −5",
+      "∴ y = 5",
+      "y-এর মান (1) নং-এ বসিয়ে পাই, x − 2×5 = −7",
+      "∴ x = 3",
+      "∴ নির্ণেয় সংখ্যাটি = x + 10y = 3 + 10×5 = 3 + 50 = 53"
+    ],
+    "answer": "সংখ্যাটি ৫৩।"
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q12",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 12,
+    "marks": 8,
+    "type": "math",
+    "question": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?",
+    "steps": [
+      "x³ + y³ + 12xy",
+      "= x³ + y³ + 3(x+y) × xy   [মান বসিয়ে]",
+      "= x³ + y³ + 3xy(x+y)",
+      "= (x+y)³",
+      "= (4)³",
+      "= 64 (Answer)"
+    ],
+    "alternative": {
+      "steps": [
+        "x³ + y³ + 12xy",
+        "= (x+y)³ − 3xy(x+y) + 12xy",
+        "= 4³ − 3.4.xy + 12xy",
+        "= 64 − 12xy + 12xy",
+        "= 64 (Answer)"
+      ],
+      "answer": "৬৪"
+    },
+    "answer": "৬৪"
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q13",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 10,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুন: x³ + 6x²y + 11xy² + 6y³",
+    "steps": [
+      "x³ + 6x²y + 11xy² + 6y³ = x³ + 6x²y + 12xy² + 8y³ − xy² − 2y³",
+      "= (x + 2y)³ − y²(x + 2y)",
+      "= (x + 2y){(x+2y)² − y²}",
+      "= (x+2y)(x+2y+y)(x+2y−y)",
+      "= (x+2y)(x+3y)(x+y)"
+    ],
+    "answer": "(x+y)(x+2y)(x+3y)"
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q14",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 14,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'পুন্ড্রনগর' কোথায় অবস্থিত?",
+        "a": "বগুড়া"
+      },
+      {
+        "label": "খ",
+        "q": "বাংলাদেশ ও মিয়ানমারকে বিভক্তকারী 'নাফ' নদীর দৈর্ঘ্য কত?",
+        "a": "৫৬ কিলোমিটার"
+      },
+      {
+        "label": "গ",
+        "q": "'ঢাকা গেইট' কে নির্মাণ করেন?",
+        "a": "মীর জুমলা"
+      },
+      {
+        "label": "ঘ",
+        "q": "'অপরাজেয় বাংলা'র ভাস্কর কে?",
+        "a": "সৈয়দ আব্দুল্লাহ খালিদ"
+      },
+      {
+        "label": "ঙ",
+        "q": "টেস্ট ক্রিকেটে প্রথম বাংলাদেশী হিসেবে শততম টেস্ট খেলেন?",
+        "a": "মুশফিকুর রহিম"
+      },
+      {
+        "label": "চ",
+        "q": "'ইরাটম' কি?",
+        "a": "উন্নত জাতের ধান"
+      },
+      {
+        "label": "ছ",
+        "q": "ইনকা সভ্যতা কোন মহাদেশে বিরাজমান ছিল?",
+        "a": "দক্ষিণ আমেরিকা"
+      },
+      {
+        "label": "জ",
+        "q": "জাতিসংঘ বিশ্ববিদ্যালয় কোন দেশে অবস্থিত?",
+        "a": "টোকিও, জাপান"
+      },
+      {
+        "label": "ঝ",
+        "q": "UNHCR এর পূর্ণরূপ কি?",
+        "a": "United Nations Higher Commissioner for Refugees"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-heart-institute-telephone-op-q15",
+    "examId": "job-2025-heart-institute-telephone-op",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
+    "parts": [
+      {
+        "label": "ঞ",
+        "q": "বিশ্বের দীর্ঘতম রেলপথের নাম কি?",
+        "a": "ট্রান্স সাইবেরিয়ান"
+      },
+      {
+        "label": "ট",
+        "q": "দ্বিতীয় বিশ্বযুদ্ধ শুরু হয় কোন সালে কোন তারিখে?",
+        "a": "১লা সেপ্টেম্বর ১৯৩৯"
+      },
+      {
+        "label": "ঠ",
+        "q": "'গ্রাভস্লাম' শব্দটি কোন খেলার ক্ষেত্রে ব্যবহৃত হয়?",
+        "a": "টেনিস"
+      },
+      {
+        "label": "ড",
+        "q": "পানামা খাল কোন কোন মহাসাগরকে যুক্ত করেছে?",
+        "a": "আটলান্টিক ও প্রশান্ত মহাসাগর"
+      },
+      {
+        "label": "ঢ",
+        "q": "পেন্সিল তৈরিতে কোন গাছের কাঠ ব্যবহৃত হয়?",
+        "a": "ধুন্দল"
+      },
+      {
+        "label": "ণ",
+        "q": "বাংলাদেশ ডাক বিভাগের স্লোগান কী?",
+        "a": "সেবাই আদর্শ"
+      }
+    ]
+  }
+]

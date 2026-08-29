@@ -1,0 +1,475 @@
+[
+  {
+    "id": "job-2025-railway-office-asst-typist-q01",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যা ক্রমশ বর্ধিত হচ্ছে",
+        "a": "বর্ধিষ্ণু"
+      },
+      {
+        "label": "খ",
+        "q": "যা দীপ্তি পাচ্ছে",
+        "a": "দেদীপ্যমান"
+      },
+      {
+        "label": "গ",
+        "q": "সম্মুখে অগ্রসর হয়ে অভ্যর্থনা",
+        "a": "প্রত্যুদ্‌গমন"
+      },
+      {
+        "label": "ঘ",
+        "q": "উপকারীর অপকার করে যে",
+        "a": "কৃতঘ্ন"
+      },
+      {
+        "label": "ঙ",
+        "q": "উপস্থিত বুদ্ধি আছে যার",
+        "a": "প্রত্যুৎপন্নমতি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q02",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 5,
+    "type": "idiom",
+    "question": "নিম্নোক্ত বাগধারা নিয়ে অর্থপূর্ণ বাক্য রচনা করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "আক্কেল সেলামি",
+        "meaning": "নির্বুদ্ধিতার দণ্ড"
+      },
+      {
+        "label": "খ",
+        "phrase": "গরজ বড় বালাই",
+        "meaning": "প্রয়োজনে গুরুত্ব"
+      },
+      {
+        "label": "গ",
+        "phrase": "ইঁদুর কপালে",
+        "meaning": "নিতান্ত মন্দ ভাগ্য"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "চোখের সাতার পানি",
+        "meaning": "অতিরিক্ত মায়াকান্না"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "ঢাকের কাঠি",
+        "meaning": "তোষামোদে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q03",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "নিম্নোক্ত শব্দগুলো শুদ্ধ করে লিখুনঃ",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "ত্রিনয়ণ",
+        "ত্রিনয়ন"
+      ],
+      [
+        "বিপনী",
+        "বিপণি"
+      ],
+      [
+        "সুমুগ্ধ",
+        "সুমুগ্ধ"
+      ],
+      [
+        "সূচরীতাসু",
+        "সূচরিতাসু"
+      ],
+      [
+        "ভূমিস্যাত",
+        "ভূমিসাৎ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q04",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মুখচ্ছবি",
+        "a": "মুখ + ছবি"
+      },
+      {
+        "label": "খ",
+        "q": "চলচ্চিত্র",
+        "a": "চলৎ + চিত্র"
+      },
+      {
+        "label": "গ",
+        "q": "উচ্ছৃঙ্খল",
+        "a": "উৎ + শৃঙ্খল"
+      },
+      {
+        "label": "ঘ",
+        "q": "বনস্পতি",
+        "a": "বন + পতি"
+      },
+      {
+        "label": "ঙ",
+        "q": "পরিচ্ছেদ",
+        "a": "পরি + ছেদ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q05",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 5,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "নিম্নোক্ত বাক্যগুলির কারক ও বিভক্তি নির্ণয় করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ঘোড়ায় গাড়ি টানে",
+        "a": "কর্তায় ৭মী"
+      },
+      {
+        "label": "খ",
+        "q": "ছাদে বৃষ্টি পড়ে",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "কৃষক লাঙ্গল চষে",
+        "a": "করণে শূন্য"
+      },
+      {
+        "label": "ঘ",
+        "q": "খোপাকে কাপড় দাও।",
+        "a": "কর্মে ২য়া"
+      },
+      {
+        "label": "ঙ",
+        "q": "দেশের জন্য প্রাণ দাও।",
+        "a": "সম্প্রদানে ৬ষ্ঠী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q06",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is superior than me.",
+        "changed": "He is superior to me."
+      },
+      {
+        "label": "b",
+        "original": "Would you mind to open the gate.",
+        "changed": "Would you mind opening the gate?"
+      },
+      {
+        "label": "c",
+        "original": "I had better attended the meeting.",
+        "changed": "I had better attend the meeting."
+      },
+      {
+        "label": "d",
+        "original": "One should do his duty.",
+        "changed": "One should do one's duty."
+      },
+      {
+        "label": "e",
+        "original": "It is Imran who come here regularly.",
+        "changed": "It is Imran who comes here regularly."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q07",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Transform the sentences.",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Do or die. (complex)",
+        "changed": "If you do not do, you will die."
+      },
+      {
+        "label": "b",
+        "original": "Although he is poor, he is lazy. (simple)",
+        "changed": "In spite of being poor, he is lazy."
+      },
+      {
+        "label": "c",
+        "original": "Mutir Chowdhury is more famous than most other playwrights in Bangladesh. (positive)",
+        "changed": "Very few playwrights in Bangladesh are as famous as Mutir Chowdhury."
+      },
+      {
+        "label": "d",
+        "original": "He said, \\\"You had better see a doctor\\\" (indirect speech)",
+        "changed": "He advised him to see a doctor."
+      },
+      {
+        "label": "e",
+        "original": "Mango tastes sour. (change the voice)",
+        "changed": "Mango is tasted sour."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q08",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with appropriate words.",
+    "parts": [
+      {
+        "sentence": "He was deprived....... all power.",
+        "answer": "of"
+      },
+      {
+        "sentence": "He is eager....... fame.",
+        "answer": "for"
+      },
+      {
+        "sentence": "Either Raju or his brother... responsible.",
+        "answer": "is"
+      },
+      {
+        "sentence": "He does not know...... swim.",
+        "answer": "how"
+      },
+      {
+        "sentence": "He fell...... while he was walking.",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q09",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate the following sentences into English.",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে সাতার কাটা পছন্দ করে।",
+        "target": "He likes swimming."
+      },
+      {
+        "label": "খ",
+        "source": "আকাশে পাখিটি উড়িতেছে।",
+        "target": "The bird is flying in the sky."
+      },
+      {
+        "label": "গ",
+        "source": "সেতু লিখতে ও পড়তে পারে না।",
+        "target": "Setu can neither read nor write."
+      },
+      {
+        "label": "ঘ",
+        "source": "কুকুর হতে সাবধান।",
+        "target": "Beware of the dog."
+      },
+      {
+        "label": "ঙ",
+        "source": "সময় ও স্রোত কাহারো জন্য অপেক্ষা করে না।",
+        "target": "Time and tide wait for none."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q10",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write five sentences on 'Artificial Intelligence'.",
+    "answer": "Artificial Intelligence (AI) is the simulation of human intelligence by machines. It has many benefits, such as saving time, increasing efficiency, reducing human error, and helping in complex decision-making. AI is widely used in various fields. In healthcare, it helps in diagnosing diseases, developing treatments, and managing patient data. In education, AI provides personalized learning and online tutoring. In business, it automates tasks, improves customer service, and analyzes data. It is also used in transportation for self-driving cars and traffic management, and in daily life through smartphones, virtual assistants, and online recommendations. Overall, AI makes work easier, faster, and more effective."
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q11",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "প্রতি বছর কোনো শহরে লোকসংখ্যার ৭% জন্মগ্রহণ করে এবং ৩% মৃত্যুবরণ করে। এক বছরে শহরে ৪০০ লোক বৃদ্ধি পেলে ঐ শহরের লোক সংখ্যা কত?",
+    "steps": [
+      "শতকরা বৃদ্ধি = (৭ − ৩)% = ৮%",
+      "৪০০ জন বৃদ্ধি পায় বৃদ্ধি পেলে লোক সংখ্যা ১০০ জন",
+      "১ \" \" \" \" \" \" ১০০/৮",
+      "৮০০ \" \" \" \" \" \" (১০০×৮০০)/৮",
+      "= ১০০০০ জন"
+    ],
+    "answer": "১০০০০ জন"
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q12",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "দুটি সংখ্যার অনুপাত ৫ঃ৮। উভয়ের সাথে ২ যোগ করলে অনুপাত ২ঃ৩ হয়। সংখ্যা দুটি কত?",
+    "steps": [
+      "মনে করি, সংখ্যা দুটি যথাক্রমে ৫ক ও ৮ক",
+      "প্রশ্নমতে, (৫ক+২)/(৮ক+২) = ২/৩",
+      "বা, ১৫ক + ৬ = ১৬ক + ৮",
+      "∴ ক = −২"
+    ],
+    "answer": "সংখ্যা দুটি যথাক্রমে (৫×২)=১০ ও (৮×২)=১৬"
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q13",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "math",
+    "topic": "চক্রবৃদ্ধি মুনাফা",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "বার্ষিক ১০.৫০% মুনাফায় ৫০০০ টাকার ২ বছরের চক্রবৃদ্ধি মুনাফা নির্ণয় করুন।",
+    "steps": [
+      "চক্রবৃদ্ধি মুনাফা নির্ণয়ের জন্য প্রথমে চক্রবৃদ্ধি মূলধন নির্ণয় করি।",
+      "আমরা জানি, চক্রবৃদ্ধি মূলধন C = P(১+r)ⁿ, যেখানে মূলধন P = ৫০০০ টাকা",
+      "মুনাফার হার, r = ১০.৫০% = ২১/২০০",
+      "সময়, n = ২ বছর",
+      "∴ C = P(১+r)² = ৫০০০ × (১ + ২১/২০০)² = ৫০০০ × (২২১/২০০)² = ৫০০০ × ২২১/২০০ × ২২১/২০০ = ৮৮৮৮১/৮ টাকা = ৬১০৫.১৩ টাকা (প্রায়)",
+      "∴ চক্রবৃদ্ধি মুনাফা = C − P = P(১+r)² − P = (৬১০৫.১৩ − ৫০০০) টাকা = ১১০৫.১৩ টাকা (প্রায়)"
+    ],
+    "answer": "১১০৫.১৩ টাকা (প্রায়)"
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q14",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।",
+    "steps": [
+      "ধরি, x + 6 = a এবং x + 4 = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² − {(a−b)/2}²",
+      "= {(x+6+x+4)/2}² − {(x+6−x−4)/2}²",
+      "= {(2x+10)/2}² − (2/2)²",
+      "= {2(x+5)/2}² − 1²",
+      "= (x+5)² − 1²"
+    ],
+    "answer": "(x+5)² − 1²"
+  },
+  {
+    "id": "job-2025-railway-office-asst-typist-q15",
+    "examId": "job-2025-railway-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞানের প্রশ্নগুলোর উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ম্যাগনাকার্টা কী? এটি কত সালে স্বাক্ষরিত হয়?",
+        "a": "ম্যাগনাকার্টা হলো একটি ঐতিহাসিক দলিল, যা ইংল্যান্ডের রাজা জন ১২১৫ সালে স্বাক্ষর করেন। এটি রাজা ও প্রজাদের মধ্যে এক ধরনের চুক্তি ছিল, যার মাধ্যমে রাজাকে কিছু নির্দিষ্ট সীমার মধ্যে থাকতে বাধ্য করা হয়। স্বাক্ষরিত হয়: ১৫ জুন ১২১৫ সালে"
+      },
+      {
+        "label": "খ",
+        "q": "ডোনাল্ড ট্রাম্প বর্তমান মেয়াদে আমেরিকার কততম প্রেসিডেন্ট এবং তিনি কোন দলের নেতা?",
+        "a": "৪৭তম প্রেসিডেন্ট এবং নেতা- রিপাবলিকান পার্টি"
+      },
+      {
+        "label": "গ",
+        "q": "নিউজিল্যান্ড ও ঘানার রাজধানী শহরের নাম লিখুন।",
+        "a": "ওয়েলিংটন ও আক্রা"
+      },
+      {
+        "label": "ঘ",
+        "q": "বঙ্গভঙ্গ কবে হয় এবং কবে রদ হয়?",
+        "a": "১৯০৫ সালে এবং ১৯১১ সালে"
+      },
+      {
+        "label": "ঙ",
+        "q": "মোনালিসা চিত্রটি কে এঁকেছেন এবং কোন যাদুঘরে রক্ষিত?",
+        "a": "লিওনার্দো দ্যা ভিঞ্চি এবং লুভর যাদুঘরে (প্যারিস, ফ্রান্স)"
+      },
+      {
+        "label": "চ",
+        "q": "জাতিসংঘের দাপ্তরিক ভাষা কয়টি ও কী কী?",
+        "a": "৬টি; যথা- ইংরেজি, ফরাসি, স্প্যানিশ, রুশ, চীনা ও আরবি"
+      },
+      {
+        "label": "ছ",
+        "q": "ব্রেইল পদ্ধতি উদ্ভাবক কে, তিনি কোন দেশের নাগরিক?",
+        "a": "লুই ব্রেইল। ফ্রান্সের নাগরিক"
+      },
+      {
+        "label": "জ",
+        "q": "এক নটিক্যাল মাইল সমান কত মাইল এবং কত কিলোমিটার?",
+        "a": "১.১৫০৮ মাইল এবং ১.৮৫২ কিলোমিটার"
+      },
+      {
+        "label": "ঝ",
+        "q": "প্রথম বিশ্বযুদ্ধের অক্ষশক্তি ও মিত্রশক্তিগুলির নাম লিখুন।",
+        "a": "অক্ষশক্তি: জার্মানি, অস্ট্রিয়া, হাঙ্গেরি, বুলগেরিয়া, তুরস্ক এবং মিত্রশক্তি: রাশিয়া, ইতালি, যুক্তরাষ্ট্র, ফ্রান্স, চীন, জাপান"
+      },
+      {
+        "label": "ঞ",
+        "q": "ভাটিয়ালী ও গম্ভীরা কোন কোন অঞ্চলের গান?",
+        "a": "ভাটিয়ালী-ময়মনসিংহ ও সিলেট; গম্ভীরা-চাপাইনবাবগঞ্জ ও রাজশাহী অঞ্চলের"
+      }
+    ]
+  }
+]

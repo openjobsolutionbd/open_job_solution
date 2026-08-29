@@ -1,0 +1,515 @@
+[
+  {
+    "id": "job-2025-dc-lalmonirhat-q01",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 5,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "কান পাতলা",
+        "meaning": "সহজেই বিশ্বাসপ্রবণ"
+      },
+      {
+        "label": "খ",
+        "phrase": "বালির বাঁধ",
+        "meaning": "ক্ষণস্থায়ী বস্তু"
+      },
+      {
+        "label": "গ",
+        "phrase": "কানে তুলো দেওয়া",
+        "meaning": "ক্ষেপক্ষেপ না করা"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "শাপে বর",
+        "meaning": "অনিষ্টেই ইষ্ট লাভ"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "সোনার পাথর বাটি",
+        "meaning": "অলীক বস্তু"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q02",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 5,
+    "type": "idiom",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "ঘোড়ার ডাক",
+        "meaning": "হ্রেষা"
+      },
+      {
+        "label": "খ",
+        "phrase": "যার স্ত্রী মারা গিয়েছে",
+        "meaning": "বিপত্নীক"
+      },
+      {
+        "label": "গ",
+        "phrase": "যে নারীর এখনো বিয়ে হয়নি",
+        "meaning": "কুমারী"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "বনের আগুন",
+        "meaning": "দাবানল"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "জলে ও স্থলে চরে যে",
+        "meaning": "উভচর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q03",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "columns": [
+      "বাক্য",
+      "কারক ও বিভক্তি"
+    ],
+    "rows": [
+      [
+        "জল পড়ে পাতা নড়ে",
+        "কর্তায় শূন্য"
+      ],
+      [
+        "আকাশে আজ অনেক তারা উঠেছে",
+        "অধিকরণে ৭মী"
+      ],
+      [
+        "তারা সবাই মিলে গল্প করছে",
+        "কর্মকারকে শূন্য"
+      ],
+      [
+        "এ কলমে ভাল লেখা যায় না",
+        "করণে ৭মী"
+      ],
+      [
+        "ভিক্ষা দাও দুয়ারে ভিক্ষুক",
+        "সম্প্রদানে শূন্য"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q04",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "একটি অনুচ্ছেদ লিখুন: উত্তরবঙ্গের কৃষিতে লালমনিরহাটের অবদান।",
+    "answer": "লালমনিরহাট জেলা উত্তরবঙ্গের একটি গুরুত্বপূর্ণ কৃষিপ্রধান জেলা। তিস্তা নদীবিধৌত এই জেলার উর্বর পলিমাটিতে ধান, পাট, তামাক, ভুট্টা ও বিভিন্ন সবজি ব্যাপকভাবে উৎপাদিত হয়। এখানকার কৃষকরা আধুনিক কৃষিপ্রযুক্তি ব্যবহার করে ফসলের উৎপাদন বৃদ্ধি করে চলেছেন। তিস্তা সেচ প্রকল্পের মাধ্যমে সেচ ব্যবস্থার উন্নতি হওয়ায় ফসল উৎপাদন আরও বৃদ্ধি পেয়েছে। এছাড়া এই জেলার তামাক চাষ সারাদেশে সুপরিচিত।"
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q05",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "english",
+    "topic": "sentence-correction",
+    "qno": 5,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Time and tide waits for none.",
+        "changed": "Time and tide wait for none."
+      },
+      {
+        "label": "b",
+        "original": "Masuma sing well always.",
+        "changed": "Masuma always sings well."
+      },
+      {
+        "label": "c",
+        "original": "He is addicted with gambling.",
+        "changed": "He is addicted to gambling."
+      },
+      {
+        "label": "d",
+        "original": "English is a famous nation.",
+        "changed": "The English are a famous nation."
+      },
+      {
+        "label": "e",
+        "original": "The boy was sunk.",
+        "changed": "The boy was drowned."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q06",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 6,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make Sentences with following words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Run away",
+        "meaning": "পালিয়ে যাওয়া",
+        "example": "He ran away seeing me."
+      },
+      {
+        "label": "b",
+        "phrase": "Do or die",
+        "meaning": "প্রাণপণ চেষ্টা করা",
+        "example": "Do or die, you have to win."
+      },
+      {
+        "label": "c",
+        "phrase": "In a nutshell",
+        "meaning": "সংক্ষেপে",
+        "example": "Tell the story in a nutshell."
+      },
+      {
+        "label": "d",
+        "phrase": "To and fro",
+        "meaning": "এদিক-ওদিক",
+        "example": "Do not walk to and fro"
+      },
+      {
+        "label": "e",
+        "phrase": "Fresh blood",
+        "meaning": "নতুন সদস্য",
+        "example": "The Company needs fresh blood."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q07",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 10,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "They are playing football in the field.",
+        "changed": "Football is being played by them in the field."
+      },
+      {
+        "label": "b",
+        "original": "Test the data.",
+        "changed": "Let the data be tested."
+      },
+      {
+        "label": "c",
+        "original": "We are taught English by Rahim.",
+        "changed": "Rahim teaches us English."
+      },
+      {
+        "label": "d",
+        "original": "It was informed by the media men.",
+        "changed": "The media men informed it."
+      },
+      {
+        "label": "e",
+        "original": "You will do the work within two days.",
+        "changed": "The work will be done by you within two days."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q08",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 8,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write a paragraph on \"Unemployment\"",
+    "answer": "Unemployment is a serious social and economic problem that occurs when people who are able and willing to work cannot find suitable jobs. It affects not only individuals but also families and the overall development of a country. Unemployment leads to poverty, frustration, and sometimes crime, as people struggle to meet their basic needs. Rapid population growth, lack of education, and limited job opportunities are some of the main causes of unemployment. To reduce unemployment, the government should create more job opportunities, promote skill-based education and encourage industrial and self-employment activities."
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q09",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 9,
+    "marks": 6,
+    "type": "math",
+    "question": "সরল করুন: (৫+৩)৪ × ৪ ÷ ২(২+২)",
+    "steps": [
+      "(৫+৩)৪ × ৪ ÷ ২(২+২)",
+      "= ৮৪ × ৪ ÷ ২(৪)",
+      "= ৮ × ৮ × ৪ ÷ ৮",
+      "= ১০২৪"
+    ],
+    "answer": "১০২৪"
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q10",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "marks": 6,
+    "type": "math",
+    "question": "উৎপাদকে বিশ্লেষণ করুন: ক) a⁴ − b² + 2b − 1  খ) 9a² + 9ab + 2b²",
+    "steps": [
+      "ক) a⁴ − b² + 2b − 1 = a⁴ − (b² − 2b + 1) = (a²)² − (b−1)² = {a²+(b−1)}{a²−(b−1)} = (a²+b−1)(a²−b+1)",
+      "খ) 9a² + 9ab + 2b² = 9a² + 6ab + 3ab + 2b² = 3a(3a+b) + b(3a+2b) = (3a+2b)(3a+b)"
+    ],
+    "answer": "ক) (a²+b−1)(a²−b+1)   খ) (3a+2b)(3a+b)"
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q11",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 8,
+    "type": "math",
+    "question": "একটি চৌবাচ্চায় তিনটি নল আছে। প্রথম ও দ্বিতীয় নল দ্বারা যথাক্রমে ৩০ মিনিট ও ৪০ মিনিটে চৌবাচ্চাটি পূর্ণ হয়। তৃতীয় নল দ্বারা পূর্ণ চৌবাচ্চাটি ২০ মিনিটে খালি হয়। তিনটি নল একসাথে চালু করলে চৌবাচ্চাটি পূর্ণ হতে কত সময় লাগবে?",
+    "steps": [
+      "১ম নল দ্বারা, ৩০ মিনিটে পূর্ণ হয় ১ অংশ, সুতরাং ১ মিনিটে পূর্ণ হয় ১/৩০ অংশ",
+      "২য় নল দ্বারা, ৪০ মিনিটে পূর্ণ হয় ১ অংশ, সুতরাং ১ মিনিটে পূর্ণ হয় ১/৪০ অংশ",
+      "৩য় নল দ্বারা, ২০ মিনিটে খালি হয় ১ অংশ, সুতরাং ১ মিনিটে খালি হয় ১/২০ অংশ",
+      "তিনটি নল একসঙ্গে খুলে দিলে, ১ মিনিটে পূর্ণ হয় (১/৩০ + ১/৪০ − ১/২০) অংশ = ১/১২০ অংশ",
+      "১/১২০ অংশ পূর্ণ হয় ১ মিনিটে, সুতরাং ১ অংশ পূর্ণ হয় ১২০ মিনিটে"
+    ],
+    "answer": "১২০ মিনিট।"
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q12",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "bangla",
+    "qno": 12,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সংজ্ঞা লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সন্নিহিত কোণ কাকে বলে?",
+        "a": "দুটি কোণের একটি সাধারণ বাহু ও একই শীর্ষ বিন্দু থাকলে তাদের পরস্পরকে সন্নিহিত কোণ বলে।"
+      },
+      {
+        "label": "খ",
+        "q": "বিপ্রতীপ কোণ কাকে বলে?",
+        "a": "দুটি কোণের একটির বাহুদ্বয় অপরটির বাহুদ্বয়ের বিপরীত রশ্মি হলে, কোণ দুটিকে বিপ্রতীপ কোণ বলে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q13",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "পিথাগোরাসের সূত্রটি চিত্রসহ বর্ণনা করুন।",
+    "answer": "কোনো একটি সমকোণী ত্রিভুজের অতিভুজের উপর অঙ্কিত বর্গক্ষেত্রের ক্ষেত্রফল ঐ ত্রিভুজের অপর দুই বাহুর উপর অঙ্কিত বর্গক্ষেত্রদ্বয়ের ক্ষেত্রফলের সমষ্টির সমান। চিত্র অনুসারে, অতিভুজ a এবং অপর দুই বাহু b ও c এক্ষেত্রে পিথাগোরাসের সূত্র: a² = b² + c²"
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q14",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 14,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "নিম্নের প্রশ্নের উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রংপুর বিভাগে সংসদীয় আসন কয়টি?",
+        "a": "৩৩টি"
+      },
+      {
+        "label": "খ",
+        "q": "কোন বস্তুকে সাদা দেখি কেন?",
+        "a": "সাদা বস্তু সব রং কে প্রতিফলিত করে।"
+      },
+      {
+        "label": "গ",
+        "q": "বাতাসে অক্সিজেনের পরিমাণ শতকরা কত ভাগ?",
+        "a": "২০.৭১%"
+      },
+      {
+        "label": "ঘ",
+        "q": "ইউরিয়া সার তৈরির কাঁচামাল কী?",
+        "a": "প্রাকৃতিক গ্যাস"
+      },
+      {
+        "label": "ঙ",
+        "q": "উড়োজাহাজ কোন সংকর ধাতুর তৈরি?",
+        "a": "অ্যালুমিনিয়াম"
+      },
+      {
+        "label": "চ",
+        "q": "এভিয়েশন বিশ্ববিদ্যালয় কোন জেলায়?",
+        "a": "লালমনিরহাট"
+      },
+      {
+        "label": "ছ",
+        "q": "গাজী মিয়ার বস্তানি'র লেখক কে?",
+        "a": "মীর মশাররফ হোসেন"
+      },
+      {
+        "label": "জ",
+        "q": "কালকূট কোন লেখকের ছদ্মনাম?",
+        "a": "সমরেশ বসু"
+      },
+      {
+        "label": "ঝ",
+        "q": "উত্তরবঙ্গের গান কি নামে পরিচিত?",
+        "a": "ভাওয়াইয়া"
+      },
+      {
+        "label": "ঞ",
+        "q": "আয়োডিনের অভাবে কোন রোগ হয়?",
+        "a": "গলগণ্ড"
+      },
+      {
+        "label": "ট",
+        "q": "রাতকানা রোগ হয় কোন ভিটামিনের অভাবে?",
+        "a": "ভিটামিন 'এ'"
+      },
+      {
+        "label": "ঠ",
+        "q": "বিশ্বের কোন শহরে জনসংখ্যা সবচেয়ে বেশি?",
+        "a": "জাকার্তা, ইন্দোনেশিয়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q15",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 15,
+    "marks": 8,
+    "type": "short-qa",
+    "question": "কম্পিউটার সংক্রান্ত নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "Save- এর জন্য সংক্ষিপ্ত Key কোনটি?",
+        "a": "Ctrl + S"
+      },
+      {
+        "label": "খ",
+        "q": "ফাংশন 'কী' তে মোট কতটি কী আছে?",
+        "a": "১২টি (F1-F12)"
+      },
+      {
+        "label": "গ",
+        "q": "LAN শব্দের পূর্ণরূপ কোনটি?",
+        "a": "Local Area Network"
+      },
+      {
+        "label": "ঘ",
+        "q": "Page Break করার কী-বোর্ড কমান্ড কোনটি?",
+        "a": "Ctrl + Enter"
+      },
+      {
+        "label": "ঙ",
+        "q": "এক স্থানের লেখা মুছে অন্য স্থানে নিতে হলে কী করতে হবে?",
+        "a": "Cut (Ctrl+X) করে Paste (Ctrl+V)"
+      },
+      {
+        "label": "চ",
+        "q": "OMR এর পূর্ণরূপ কী?",
+        "a": "Optical Mark Recognition/Reader"
+      },
+      {
+        "label": "ছ",
+        "q": "CPU এর পূর্ণরূপ কী?",
+        "a": "Central Processing Unit"
+      },
+      {
+        "label": "জ",
+        "q": "মনিটর কোন ধরনের ডিভাইস?",
+        "a": "Output Device"
+      },
+      {
+        "label": "ঝ",
+        "q": "USB এর পূর্ণরূপ কী?",
+        "a": "Universal Serial Bus"
+      },
+      {
+        "label": "ঞ",
+        "q": "ইন্টারনেটের মাধ্যমে প্রদত্ত চিকিৎসা পদ্ধতিকে কি বলে?",
+        "a": "টেলিমেডিসিন (Telemedicine)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-lalmonirhat-q16",
+    "examId": "job-2025-dc-lalmonirhat",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 16,
+    "marks": 8,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রংপুর বিভাগে সংসদীয় আসন কয়টি?",
+        "a": "৩৩টি"
+      },
+      {
+        "label": "খ",
+        "q": "উত্তরবঙ্গের গান কি নামে পরিচিত?",
+        "a": "ভাওয়াইয়া"
+      },
+      {
+        "label": "গ",
+        "q": "আয়োডিনের অভাবে কোন রোগ হয়?",
+        "a": "গলগণ্ড"
+      },
+      {
+        "label": "ঘ",
+        "q": "রাতকানা রোগ হয় কোন ভিটামিনের অভাবে?",
+        "a": "ভিটামিন 'এ'"
+      },
+      {
+        "label": "ঙ",
+        "q": "বিশ্বের কোন শহরে জনসংখ্যা সবচেয়ে বেশি?",
+        "a": "জাকার্তা, ইন্দোনেশিয়া"
+      },
+      {
+        "label": "চ",
+        "q": "ঢাকা শহরের বর্তমান জনসংখ্যা কত?",
+        "a": "৩ কোটি ৬৬ লাখ"
+      },
+      {
+        "label": "ছ",
+        "q": "উত্তরা ইপিজেড কোন জেলায়?",
+        "a": "নীলফামারী"
+      },
+      {
+        "label": "জ",
+        "q": "ডালিয়া রেস্ট হাউজ কোন উপজেলায়?",
+        "a": "হাতীবান্ধা, লালমনিরহাট"
+      }
+    ]
+  }
+]

@@ -1,0 +1,406 @@
+[
+  {
+    "id": "job-2025-niport-office-sohayok-q01",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যে ভবিষ্যৎ না ভেবেই কাজ করে",
+        "a": "অবিমৃষ্যকারী"
+      },
+      {
+        "label": "খ",
+        "q": "আপনাকে যে পণ্ডিত মনে করে",
+        "a": "পণ্ডিতম্মন্য"
+      },
+      {
+        "label": "গ",
+        "q": "ফল পাকলে যে গাছ মরে যায়",
+        "a": "ওষধি"
+      },
+      {
+        "label": "ঘ",
+        "q": "নদী যে দেশের মেখলাস্বরূপ",
+        "a": "নদীমেখলা"
+      },
+      {
+        "label": "ঙ",
+        "q": "আদি থেকে অন্ত পর্যন্ত",
+        "a": "আদ্যন্ত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q02",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অহর্নিশ",
+        "a": "অহঃ + নিশা"
+      },
+      {
+        "label": "খ",
+        "q": "সাদৃশ",
+        "a": "সদৃশ + য"
+      },
+      {
+        "label": "গ",
+        "q": "দুশ্ছাই",
+        "a": "দুর + ছাই"
+      },
+      {
+        "label": "ঘ",
+        "q": "বনৌষধি",
+        "a": "বন + ওষধি"
+      },
+      {
+        "label": "ঙ",
+        "q": "অন্যান্য",
+        "a": "অন্য + অন্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q03",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 3,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "দাগাঙ্কিত শব্দের কারকের নাম লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বোঁটা-আলগা ফল গাছে থাকে না।",
+        "a": "অপাদানে শূন্য"
+      },
+      {
+        "label": "খ",
+        "q": "আমাদের সেনারা সাহসে দুর্জয়, যুদ্ধে অপরাজেয়।",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "জগতে কীর্তিমান হয় সাধনায়।",
+        "a": "করণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "লোকমুখে শুনেছি।",
+        "a": "অপাদানে ৭মী"
+      },
+      {
+        "label": "ঙ",
+        "q": "গায়ে মানেনা, আপনি মোড়ল।",
+        "a": "কর্তায় ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q04",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ-বানান",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধরূপ লিখুন:",
+    "columns": [
+      "অশুদ্ধ",
+      "শুদ্ধ"
+    ],
+    "rows": [
+      [
+        "চাতকিনী",
+        "চাতকী"
+      ],
+      [
+        "মনঃক্ষুন্ন",
+        "মনঃক্ষুণ্ণ"
+      ],
+      [
+        "ভবিষ্যৎবানী",
+        "ভবিষ্যদ্বাণী"
+      ],
+      [
+        "শিরচ্ছেদ",
+        "শিরশ্ছেদ"
+      ],
+      [
+        "এতদ্বারা",
+        "এতদ্দ্বারা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q05",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 5,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Write the meaning of the idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "A bone of contention",
+        "meaning": "বিবাদের বিষয়"
+      },
+      {
+        "label": "b",
+        "phrase": "Maiden speech",
+        "meaning": "প্রথম বক্তৃতা"
+      },
+      {
+        "label": "c",
+        "phrase": "Eat a humble pie",
+        "meaning": "অপমান হজম করে ক্ষমা চাওয়া"
+      },
+      {
+        "label": "d",
+        "phrase": "Below the belt",
+        "meaning": "চোরা আঘাত"
+      },
+      {
+        "label": "e",
+        "phrase": "Draw the line",
+        "meaning": "সীমারেখা নির্ধারণ করা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q06",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "english",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with appropriate prepositions/articles/words:",
+    "parts": [
+      {
+        "sentence": "Had I known her, I...... her.",
+        "answer": "would have helped"
+      },
+      {
+        "sentence": "Students should attend.... their lessons.",
+        "answer": "to"
+      },
+      {
+        "sentence": "I don't like.... cats, but I like my brother's cat.",
+        "answer": "×"
+      },
+      {
+        "sentence": "He is popular..... all for his goodness.",
+        "answer": "with"
+      },
+      {
+        "sentence": "One should do ...... duty.",
+        "answer": "one's"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q07",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "english",
+    "qno": 7,
+    "marks": 5,
+    "type": "table",
+    "question": "Write the opposite number of given words:",
+    "columns": [
+      "Given Number",
+      "Opposite Number"
+    ],
+    "rows": [
+      [
+        "Alumnus",
+        "Alumni"
+      ],
+      [
+        "Errata",
+        "Erratum"
+      ],
+      [
+        "Magi",
+        "Magus"
+      ],
+      [
+        "Singular",
+        "Singulars"
+      ],
+      [
+        "Poverty",
+        "(uncountable — no plural form)"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q08",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "english",
+    "qno": 8,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "এটা একটা কথার কথা।",
+        "target": "It is a matter of a joke."
+      },
+      {
+        "label": "খ",
+        "source": "বাংলাদেশ একটি ব-দ্বীপ।",
+        "target": "Bangladesh is a delta."
+      },
+      {
+        "label": "গ",
+        "source": "আসবে তো?",
+        "target": "Will you come?"
+      },
+      {
+        "label": "ঘ",
+        "source": "তার ইংরেজিতে অগাধ জ্ঞান।",
+        "target": "He has a vast knowledge of English."
+      },
+      {
+        "label": "ঙ",
+        "source": "জলদি কিছু হয়না।",
+        "target": "Nothing happens quickly."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q09",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "math",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "একজন দোকানদার প্রতি হালি ডিম ২৫ টাকা দরে ক্রয় করে প্রতি দুই হালি ডিম ৫৬ টাকায় বিক্রি করলে তার শতকরা কত লাভ বা ক্ষতি হবে।",
+    "steps": [
+      "১ হালি ডিমের ক্রয়মূল্য ২৫ টাকা, ২ হালির ক্রয়মূল্য = ২৫×২ = ৫০ টাকা",
+      "লাভ হয় = (৫৬-৫০) = ৬ টাকা",
+      "৫০ টাকায় লাভ হয় ৬ টাকা, ∴১০০ টাকায় লাভ হয় (৬×১০০)/৫০ = ১২ টাকা"
+    ],
+    "answer": "১২% লাভ"
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q10",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "math",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।",
+    "steps": [
+      "ধরি, x+6=a এবং x+4=b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² - {(a-b)/2}²",
+      "= {(x+6+x+4)/2}² - {(x+6-x-4)/2}²",
+      "= {(2x+10)/2}² - (2/2)²",
+      "= (x+5)² - 1²"
+    ],
+    "answer": "(x+5)² - 1²"
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q11",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "math",
+    "qno": 11,
+    "marks": 4,
+    "type": "math",
+    "question": "x²+2x-15 কে উৎপাদকে বিশ্লেষণ করুন।",
+    "steps": [
+      "x²+2x-15 = x²+5x-3x-15",
+      "= x(x+5)-3(x+5)",
+      "= (x+5)(x-3)"
+    ],
+    "answer": "(x+5)(x-3)"
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q12",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "math",
+    "qno": 12,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "শূন্যস্থান পূরণ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "১ মাইল = ....... গজ",
+        "a": "১৭৬০ গজ"
+      },
+      {
+        "label": "খ",
+        "q": "১ মিটার = ....... ইঞ্চি",
+        "a": "৩৯.৩৭ ইঞ্চি"
+      },
+      {
+        "label": "গ",
+        "q": "১ কুইন্টাল = .......... কেজি",
+        "a": "১০০ কেজি"
+      },
+      {
+        "label": "ঘ",
+        "q": "১ হেক্টর = ....... একর",
+        "a": "২.৪৭১ একর"
+      },
+      {
+        "label": "ঙ",
+        "q": "১ একর = ..... শতক (ডেসিমেল)",
+        "a": "১০০ শতক"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-niport-office-sohayok-q13",
+    "examId": "job-2025-niport-office-sohayok",
+    "subject": "math",
+    "qno": 13,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সংক্ষেপে উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "৩০° কোণের সম্পূরক কোণের মান কত?",
+        "a": "১৫০°"
+      },
+      {
+        "label": "খ",
+        "q": "আয়তাকার ঘনবস্তু কাকে বলে?",
+        "a": "যে বহুতলক পরস্পর লম্ব ছয়টি আয়তাকার তল দ্বারা গঠিত তাকে আয়তাকার ঘনবস্তু বলে।"
+      },
+      {
+        "label": "গ",
+        "q": "প্রবৃদ্ধ কোণ কাকে বলে?",
+        "a": "দুই সমকোণ অপেক্ষা বড় কিন্তু চার সমকোণ অপেক্ষা ছোট কোণকে প্রবৃদ্ধ কোণ বলে।"
+      },
+      {
+        "label": "ঘ",
+        "q": "বৃত্তের জ্যা কী?",
+        "a": "বৃত্তের যেকোন দুইটি বিন্দুর সংযোজক রেখাংশকে বৃত্তের জ্যা বলে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "রম্বসের ক্ষেত্রফল নির্ণয়ের সূত্রটি লিখুন।",
+        "a": "১/২ × কর্ণদ্বয়ের গুণফল"
+      }
+    ]
+  }
+]

@@ -1,0 +1,495 @@
+[
+  {
+    "id": "job-2025-dpe-store-keeper-q01",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "রাম কর্তৃক রাবন নিহত হয়েছিল।",
+        "a": "কর্তৃকারকে ৩য়া"
+      },
+      {
+        "label": "খ",
+        "q": "আমার যাওয়া হয়নি।",
+        "a": "কর্তায় ৬ষ্ঠী"
+      },
+      {
+        "label": "গ",
+        "q": "তোমার পূজার ছলে তোমায় ভুলে থাকি।",
+        "a": "সম্প্রদানে ৬ষ্ঠী"
+      },
+      {
+        "label": "ঘ",
+        "q": "তুমি সন্ধ্যাকাশের তারার মতো।",
+        "a": "অধিকরণে ৬ষ্ঠী"
+      },
+      {
+        "label": "ঙ",
+        "q": "কী হচ্ছে বাইরে?",
+        "a": "অধিকরণে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q02",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "বাগধারা- অর্থসহ বাক্য রচনা করুন-",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অক্ষরে অক্ষরে",
+        "a": "যথাযথ"
+      },
+      {
+        "label": "খ",
+        "q": "অকালে বাদলা",
+        "a": "অপ্রত্যাশিত বাধা"
+      },
+      {
+        "label": "ক",
+        "q": "কচ্ছে পাওয়া",
+        "a": "পাত্তা পাওয়া"
+      },
+      {
+        "label": "খ",
+        "q": "ইন্দ্রপতন",
+        "a": "বিখ্যাত ব্যক্তির মৃত্যু"
+      },
+      {
+        "label": "গ",
+        "q": "ঘোড়ার কামড়",
+        "a": "দৃঢ় পণ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q03",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 3,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সৎকুলে জাত",
+        "a": "কুলীন"
+      },
+      {
+        "label": "খ",
+        "q": "স্ত্রীর সংগে বর্তমান",
+        "a": "সস্ত্রীক"
+      },
+      {
+        "label": "গ",
+        "q": "মাছের মতো অক্ষি যার",
+        "a": "মীনাক্ষী"
+      },
+      {
+        "label": "ঘ",
+        "q": "তৃণাচ্ছাদিত ভূমি",
+        "a": "শাদ্বল"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইরাবতে জাত",
+        "a": "ঐরাবত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q04",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "সন্ধি বিচ্ছেদ করুন-",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দাবানল",
+        "a": "দাব + অনল"
+      },
+      {
+        "label": "খ",
+        "q": "অধমর্ণ",
+        "a": "অধম + ঋণ"
+      },
+      {
+        "label": "গ",
+        "q": "দুগ্ধ",
+        "a": "দুহ্ + ত"
+      },
+      {
+        "label": "ঘ",
+        "q": "ষষ্ঠ",
+        "a": "ষষ্ + থ"
+      },
+      {
+        "label": "ঙ",
+        "q": "সরোজ",
+        "a": "সরঃ + জ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q05",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "রচনামূলক",
+    "qno": 5,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "'বাঙ্গালী একটি ক্রীড়াপ্রেমী জাতি'- এ বিষয়ে ৫টি অর্থপূর্ণ বাক্য লিখুন।",
+    "answer": "১. বাঙালি জাতি চিরকালই খেলাধুলার প্রতি গভীর অনুরাগী। ২. ফুটবল ও ক্রিকেট বাংলাদেশের সবচেয়ে জনপ্রিয় খেলা। ৩. গ্রামবাংলায় হাডুডু, কাবাডি, নৌকাবাইচের মতো ঐতিহ্যবাহী খেলাও জনপ্রিয়। ৪. জাতীয় দলের সাফল্যে সারা দেশের মানুষ একসাথে উল্লাস প্রকাশ করে। ৫. খেলাধুলা বাঙালির সামাজিক ও সাংস্কৃতিক জীবনের একটি অবিচ্ছেদ্য অংশ।"
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q06",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 6,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "How many parts are there in a letter?",
+    "parts": [
+      {
+        "label": "",
+        "q": "How many parts are there in a letter?",
+        "a": "Six (6)"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q07",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "bangla",
+    "topic": "অনুবাদ",
+    "qno": 7,
+    "marks": 4,
+    "type": "translate",
+    "question": "ইংরেজিতে অনুবাদ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে ডায়রিয়ায় মারা গিয়েছে।",
+        "target": "He/She died of diarrhea."
+      },
+      {
+        "label": "খ",
+        "source": "শিশুটি কাঁদতে কাঁদতে আমার কাছে এল।",
+        "target": "The child came to me crying."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q08",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "What kind parts of speech is 'Beauty'",
+    "parts": [
+      {
+        "label": "",
+        "q": "What kind parts of speech is 'Beauty'",
+        "a": "Noun"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q09",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "fill-in-the-blank",
+    "qno": 9,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blank:",
+    "parts": [
+      {
+        "sentence": "Early rising is beneficial…… health.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Slow and…… wins the race.",
+        "answer": "steady"
+      },
+      {
+        "sentence": "He prefers tea…….coffee.",
+        "answer": "to"
+      },
+      {
+        "sentence": "Justice delayed is justice denied - was stated by?",
+        "answer": "Gladstone"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q10",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "What is the meaning of the phrase 'out of the wood'",
+    "parts": [
+      {
+        "label": "",
+        "q": "What is the meaning of the phrase 'out of the wood'",
+        "a": "বিপদমুক্ত"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q11",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 11,
+    "marks": 2,
+    "type": "sentence-change",
+    "question": "What is the passive form of 'Who will do the work?'",
+    "parts": [
+      {
+        "label": "",
+        "original": "Who will do the work?",
+        "changed": "By whom will the work be done?"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q12",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 12,
+    "marks": 2,
+    "type": "sentence-change",
+    "question": "Make the sentence negative without changing meaning: I must go there.",
+    "parts": [
+      {
+        "label": "",
+        "original": "I must go there.",
+        "changed": "I can not but go there."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q13",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "literature",
+    "qno": 13,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "Who wrote 'Julius Caesar'?",
+    "parts": [
+      {
+        "label": "",
+        "q": "Who wrote 'Julius Caesar'?",
+        "a": "William Shakespeare"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q14",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 14,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph about 'Primary Education in Bangladesh' in 5 Sentences.",
+    "answer": "Primary education is the first stage of formal education in Bangladesh, usually starting at the age of six. It aims to provide basic literacy, numeracy, and moral values to children. The government has made primary education free and compulsory for all children. Millions of students are enrolled in government and non-government primary schools across the country. Improving the quality of primary education is essential for the overall development of the nation."
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q15",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "math",
+    "topic": "শতকরা ও ভ্যাট",
+    "qno": 15,
+    "marks": 5,
+    "type": "math",
+    "question": "৪০০ টাকা দরে ৩ কেজি মিষ্টি কিনে শতকরা ৫ টাকা হারে ভ্যাট দিলে মোট খরচ কত টাকা তা নির্ণয় করুন।",
+    "steps": [
+      "৩ কেজি মিষ্টির মূল্য = ৪০০ × ৩ = ১২০০ টাকা",
+      "৫ টাকা হারে ভ্যাট এর পরিমাণ = ১২০০ × ৫% = ৬০ টাকা",
+      "মোট খরচ = ১২০০ + ৬০ = ১২৬০ টাকা"
+    ],
+    "answer": "১২৬০ টাকা।"
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q16",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 16,
+    "marks": 5,
+    "type": "math",
+    "question": "১ ডজন কলা ১২০ টাকায় ক্রয় করে হালি কত টাকায় বিক্রয় করলে ১০% লাভ হবে তা নির্ণয় করুন।",
+    "steps": [
+      "১ ডজন = ৩ হালি",
+      "৩ হালি কলার দাম ১২০ টাকা",
+      "১ \" \" \" ১২০/৩",
+      "= ৪০ টাকা",
+      "১০% লাভে বিক্রয়মূল্য = ১১০ টাকা",
+      "ক্রয়মূল্য ১০০ টাকা হলে বিক্রয়মূল্য ১১০ টাকা",
+      "\" ১ \" \" \" ১১০/১০০",
+      "\" ৪০ \" \" \" (১১০×৪০)/১০০",
+      "= ৪৪ টাকা"
+    ],
+    "answer": "৪৪ টাকা।"
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q17",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 17,
+    "marks": 5,
+    "type": "math",
+    "question": "x + y + 4 = x − y − 12 = 0 হয়, 2x+y এর মান কত?",
+    "steps": [
+      "x + y + 4 = x − y − 12 = 0",
+      "অর্থাৎ, x + y + 4 = 0",
+      "বা, x + y = −4 ....(i)",
+      "এবং x − y = 12 ......(ii)",
+      "(i) ও (ii) যোগ করে,",
+      "2x = 8",
+      "∴ x = 4",
+      "(i) নং-এ x এর মান বসিয়ে -",
+      "4 + y = −4",
+      "বা, y = −4 − 4",
+      "∴ y = −8",
+      "এখন, 2x + y = 2 × 4 + (−8)",
+      "= 8 − 8 = 0 (Answer)"
+    ],
+    "answer": "০ (শূন্য)"
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q18",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 18,
+    "marks": 5,
+    "type": "math",
+    "question": "সমকোণী ত্রিভুজের সমকোণ সংলগ্ন বাহুদ্বয় যথাক্রমে ৩ ও ৪ সেন্টিমিটার হলে এর অতিভুজের মান বের করুন।",
+    "steps": [
+      "দেওয়া আছে, সমকোণী ত্রিভুজের সমকোণ সংলগ্ন বাহুদ্বয় যথাক্রমে ৩ সে.মি ও ৪ সে.মি",
+      "∴ সমকোণী ত্রিভুজের ক্ষেত্রে,",
+      "অতিভুজ² = লম্ব² + ভূমি²",
+      "বা, অতিভুজ² = ৩² + ৪²",
+      "বা, অতিভুজ² = ৯ + ১৬",
+      "বা, অতিভুজ² = ২৫",
+      "∴ অতিভুজ = ৫"
+    ],
+    "answer": "৫ সে.মি"
+  },
+  {
+    "id": "job-2025-dpe-store-keeper-q19",
+    "examId": "job-2025-dpe-store-keeper",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 19,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন-",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জুলাই অনিবার্য কী?",
+        "a": "২০২৪ সালে ছাত্র-জনতার অভ্যুত্থান ও আত্মত্যাগ নিয়ে নির্মিত ভিডিওচিত্র। ২১ নভেম্বর, ২০২৪ ভিডিওচিত্রটি প্রকাশ করা হয়।"
+      },
+      {
+        "label": "গ",
+        "q": "আইন-ই-আকবরী গ্রন্থের রচয়িতা কে?",
+        "a": "আবুল ফজল"
+      },
+      {
+        "label": "গ",
+        "q": "ইংরেজ ইস্ট ইন্ডিয়া কোম্পানী কখন বাংলা, বিহার ও উড়িয়্যার দেওয়ানি লাভ করে?",
+        "a": "১৭৬৫ সালে"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশের কোন জেলাকে \"হিমালয়ের কন্যা\" বলা হয়?",
+        "a": "পঞ্চগড়"
+      },
+      {
+        "label": "ঙ",
+        "q": "\"শাহবাজপুর\" কোন জেলার পূর্বনাম?",
+        "a": "ভোলা"
+      },
+      {
+        "label": "চ",
+        "q": "রেমিটেন্স কী?",
+        "a": "বিদেশে কর্মরত ব্যক্তিদের দেশে প্রেরিত বৈদেশিক মুদ্রাকে রেমিটেন্স বলে।"
+      },
+      {
+        "label": "ছ",
+        "q": "প্রফেসর ড. মুহাম্মদ ইউনূস কত সালে নোবেল পুরস্কার লাভ করেন?",
+        "a": "২০০৬ সালে"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের সমুদ্র বন্দর কয়টি?",
+        "a": "তিনটি – চট্টগ্রাম, মংলা ও পায়রা সমুদ্র বন্দর।"
+      },
+      {
+        "label": "ঝ",
+        "q": "চিলির রাজধানীর নাম কী?",
+        "a": "সান্টিয়াগো"
+      },
+      {
+        "label": "ঞ",
+        "q": "When is the next US Presidential election?",
+        "a": "২০২৮ সালে"
+      },
+      {
+        "label": "ট",
+        "q": "পোর্ট অব স্পেন কোন দেশের রাজধানী?",
+        "a": "ত্রিনিদাদ অ্যান্ড টোবাগো"
+      },
+      {
+        "label": "ঠ",
+        "q": "কোন শহরকে \"পৃথিবীর কসাইখানা\" বলা হয়?",
+        "a": "শিকাগো"
+      },
+      {
+        "label": "ড",
+        "q": "বিশ্বের দীর্ঘতম খালের নাম কী?",
+        "a": "গ্রান্ড খাল"
+      },
+      {
+        "label": "ঢ",
+        "q": "ভিক্টোরিয়া ক্রস কোন দেশের সর্বোচ্চ খেতাব?",
+        "a": "যুক্তরাজ্য"
+      },
+      {
+        "label": "ণ",
+        "q": "\"ফিরিঙ্গি\" কাদের বলা হয়?",
+        "a": "পর্তুগিজদের"
+      }
+    ]
+  }
+]

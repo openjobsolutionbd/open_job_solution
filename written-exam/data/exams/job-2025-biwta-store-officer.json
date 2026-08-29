@@ -1,0 +1,172 @@
+[
+  {
+    "id": "job-2025-biwta-store-officer-q01",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "bangla",
+    "topic": "শব্দার্থ ও বাগধারা",
+    "qno": 1,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নের উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি আমি কি ভুলিতে পারি'-একুশের গান এর রচয়িতা কে?",
+        "a": "আবদুল গাফফার চৌধুরী"
+      },
+      {
+        "label": "খ",
+        "q": "'গা ঢাকা দেওয়া' বাগধারাটির অর্থ কী?",
+        "a": "আত্মগোপন"
+      },
+      {
+        "label": "গ",
+        "q": "'আহার' শব্দে বিপরীতার্থক শব্দ কী?",
+        "a": "অনাহার"
+      },
+      {
+        "label": "ঘ",
+        "q": "সমোচ্চারিত শব্দ 'অন্য' ও 'অন্ন'-এর অর্থ কী?",
+        "a": "অন্য = পৃথক, ভিন্ন; অন্ন = ভাত, খাদ্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biwta-store-officer-q02",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "bangla",
+    "topic": "অনুচ্ছেদ",
+    "qno": 2,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "অনুচ্ছেদ লিখুন- 'রান্নাঘরের পরিচ্ছন্নতার প্রয়োজনীয়তা'",
+    "answer": "রান্নাঘরের পরিচ্ছন্নতার প্রয়োজনীয়তা\n\nরান্নাঘর হলো পরিবারের সুস্থতার একটি গুরুত্বপূর্ণ কেন্দ্র। রান্নাঘর অপরিচ্ছন্ন থাকলে সেখান থেকে বিভিন্ন রোগজীবাণু ছড়িয়ে পড়ার আশঙ্কা থাকে। খাদ্য প্রস্তুতির স্থান নোংরা হলে খাবারে জীবাণু সংক্রমণ ঘটে, যা পেটের পীড়া, ডায়রিয়াসহ নানা রোগের কারণ হতে পারে। তাই রান্নার আগে ও পরে হাত ধোয়া, বাসনপত্র পরিষ্কার রাখা এবং রান্নাঘরের মেঝে ও তাক নিয়মিত মোছা জরুরি। উচ্ছিষ্ট খাবার ও ময়লা সঠিকভাবে অপসারণ না করলে পোকামাকড় ও ইঁদুরের উপদ্রব বাড়ে। পরিষ্কার-পরিচ্ছন্ন রান্নাঘর শুধু স্বাস্থ্যের জন্যই নয়, বরং মানসিক প্রশান্তির জন্যও গুরুত্বপূর্ণ। তাই প্রতিটি পরিবারের উচিত রান্নাঘরের পরিচ্ছন্নতা বজায় রাখা।"
+  },
+  {
+    "id": "job-2025-biwta-store-officer-q03",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 3,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "Write the correct answer:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Fill in the blank with appropriate article (a/an/the):........ moon looks beautiful tonight.",
+        "a": "The"
+      },
+      {
+        "label": "b",
+        "q": "Write the appropriate preposition (in/to/by): The chef went...... the market to buy some vegetables.",
+        "a": "to"
+      },
+      {
+        "label": "c",
+        "q": "Write the correct form of the verb: The man is (cook/cooking/cooked) a delicious dish.",
+        "a": "cooking"
+      },
+      {
+        "label": "d",
+        "q": "Translate into Bangla: She is a good cook.",
+        "a": "সে একজন ভালো রাঁধুনি।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biwta-store-officer-q04",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 4,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'My Home District'",
+    "answer": "My Home District\n\nI was born and brought up in my home district, which holds a special place in my heart. It is well known for its natural beauty, rich culture, and hospitable people. The district has fertile land, and agriculture is the main occupation of most people here. There are several historical places and rivers that add to its charm. People of my district are simple, hardworking, and united. Every year, various fairs and festivals are celebrated with great enthusiasm. I feel proud to belong to this district and always cherish the memories of my childhood spent here."
+  },
+  {
+    "id": "job-2025-biwta-store-officer-q05",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "math",
+    "topic": "গণিত সমস্যা",
+    "qno": 5,
+    "marks": 12,
+    "type": "math",
+    "question": "নিম্নলিখিত প্রশ্নের উত্তর দিন:\nক) একজন শ্রমিক প্রতিদিন প্রথম ৬ ঘণ্টা কাজের জন্য ঘণ্টায় ১২ টাকা করে এবং পরবর্তী সময়ে ঘণ্টায় ১৫ টাকা করে মজুরী পায়। দৈনিক ১০ ঘণ্টা কাজ করলে সে দিনে কত টাকা মজুরী পাবে?\nখ) a = 1, b = -1, c = 2, d = -2 হলে, a + b - c + d এর মান কত হবে?\nগ) ১ থেকে ৪৯ পর্যন্ত ক্রমিক সংখ্যাগুলোর যোগফল কত?\nঘ) একটি বর্গাকার রান্না ঘরের দৈর্ঘ্য ২০ ফুট। রান্না ঘরটির ক্ষেত্রফল কত?",
+    "steps": [
+      "ক) প্রথম ৬ ঘণ্টার জন্য মজুরি = ঘণ্টায় ১২ টাকা",
+      "পরবর্তী সময়ের জন্য (অতিরিক্ত সময়) = ঘণ্টায় ১৫ টাকা",
+      "মোট কাজের সময় = ১০ ঘণ্টা",
+      "প্রথম ৬ ঘণ্টার মজুরি = ৬ × ১২ = ৭২ টাকা",
+      "পরবর্তী ৪ ঘণ্টার মজুরি = ৪ × ১৫ = ৬০ টাকা",
+      "মোট মজুরি = ৭২ + ৬০ = ১৩২ টাকা",
+      "খ) a+b−c+d = ১+(−১)−২+(−২) = ১−১−২−২ = −৪ (Answer)",
+      "গ) যোগফল = ৪৯×(৪৯+১)/২ = ৪৯×৫০/২ = ১২২৫",
+      "ঘ) ক্ষেত্রফল = (২০)² = ৪০০ বর্গফুট"
+    ],
+    "answer": "ক) ১৩২ টাকা। খ) −৪। গ) ১২২৫। ঘ) ৪০০ বর্গফুট।"
+  },
+  {
+    "id": "job-2025-biwta-store-officer-q06",
+    "examId": "job-2025-biwta-store-officer",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 6,
+    "marks": 20,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নের উত্তর লিখুনঃ",
+    "parts": [
+      {
+        "label": "বিষয় ভিত্তিক প্রসঙ্গ - ক",
+        "q": "খাবার রান্না ও পরিবেশনের আগে হাত ধুতে হয় কেন?",
+        "a": "জীবাণু ও ময়লা হাত থেকে খাবারে ছড়িয়ে রোগ ছড়াতে পারে, তাই পরিষ্কার-পরিচ্ছন্ন থাকার জন্য রান্না ও পরিবেশনের আগে হাত ধোয়া প্রয়োজন।"
+      },
+      {
+        "label": "খ",
+        "q": "লবণ বেশি পড়ে গেলে খাবারের লবণাক্ততা কমানোর সহজ উপায় কী?",
+        "a": "খাবারে কিছুটা আলু, টমেটো বা ময়দার গোলা দিয়ে ফুটালে অতিরিক্ত লবণ শোষিত হয়ে লবণাক্ততা কমে যায়।"
+      },
+      {
+        "label": "গ",
+        "q": "পেঁয়াজ কাটার সময় চোখে পানি কেন আসে?",
+        "a": "পেঁয়াজ কাটার সময় এতে থাকা সালফারযুক্ত গ্যাস বাতাসে ছড়িয়ে চোখে গিয়ে জ্বালা সৃষ্টি করে, ফলে চোখে পানি আসে।"
+      },
+      {
+        "label": "ঘ",
+        "q": "রান্নায় 'গ্রেভি' বলতে কী বোঝায়?",
+        "a": "রান্না করা তরকারির মশলা, তেল ও ঝোলের মিশ্র ঘন তরল অংশকে 'গ্রেভি' বলে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "রান্নার সময় কোন রঙের আগুন সবচেয়ে বেশি তাপ দেয়?",
+        "a": "নীল রঙের আগুন সবচেয়ে বেশি তাপ দেয়।"
+      },
+      {
+        "label": "বাংলাদেশ ও আন্তর্জাতিক প্রসঙ্গ - চ",
+        "q": "কোন ভিটামিনের অভাবে বাংলাদেশের শিশুদের দৃষ্টিশক্তি কমে যায়?",
+        "a": "ভিটামিন 'এ' (A)"
+      },
+      {
+        "label": "ছ",
+        "q": "পার্বত্য চট্টগ্রামে কয়টি জেলা আছে?",
+        "a": "৩টি"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের প্রধান কৃষিপণ্য কী?",
+        "a": "ধান"
+      },
+      {
+        "label": "ঝ",
+        "q": "আয়তনের দিক থেকে পৃথিবীর সবচেয়ে বড় দেশ কোনটি?",
+        "a": "রাশিয়া"
+      },
+      {
+        "label": "ঞ",
+        "q": "শ্রীলংকার রাজধানীর নাম কী?",
+        "a": "শ্রী জয়বর্ধনপুর কোট্টে"
+      }
+    ]
+  }
+]

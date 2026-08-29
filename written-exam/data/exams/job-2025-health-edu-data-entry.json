@@ -1,0 +1,392 @@
+[
+  {
+    "id": "job-2025-health-edu-data-entry-q01",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "bangla",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "জনবহুল স্থান",
+        "a": "জনাকীর্ণ"
+      },
+      {
+        "label": "খ",
+        "q": "ঝন ঝন শব্দ",
+        "a": "ঝঞ্ঝনৎকার"
+      },
+      {
+        "label": "গ",
+        "q": "ঘাম ঝরে পড়ছে এমন",
+        "a": "গলদঘর্ম"
+      },
+      {
+        "label": "ঘ",
+        "q": "গবাদি পশুর পাল",
+        "a": "বাথান"
+      },
+      {
+        "label": "ঙ",
+        "q": "ঔষধ সংযোগে রক্ষিত মৃতদেহ",
+        "a": "মমি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q02",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "bangla",
+    "qno": 2,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য গঠন করুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "হরিঘোষের গোয়াল",
+        "a": "বহু অপদার্থ ব্যক্তির সমাবেশ"
+      },
+      {
+        "label": "খ",
+        "q": "বিন্দু বিসর্গ",
+        "a": "সামান্য সম্পদ"
+      },
+      {
+        "label": "গ",
+        "q": "টীকা ভাষ্য",
+        "a": "দীর্ঘ আলোচনা"
+      },
+      {
+        "label": "ঘ",
+        "q": "জুতো সেলাই থেকে চণ্ডি পাঠ",
+        "a": "ছোটবড় সব কাজ"
+      },
+      {
+        "label": "ঙ",
+        "q": "ফতো নবাব",
+        "a": "সবহারানো নিঃস্বলোকের বড়লোকি ভাব"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q03",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "bangla",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "রচয়িতার নাম লিখুনঃ",
+    "columns": [
+      "রচনা",
+      "রচয়িতা"
+    ],
+    "rows": [
+      [
+        "ক্রীতদাসের হাসি",
+        "শওকত ওসমান"
+      ],
+      [
+        "বিধ্বস্ত নীলিমা",
+        "শামসুর রাহমান"
+      ],
+      [
+        "লোক লোকান্তর",
+        "আল মাহমুদ"
+      ],
+      [
+        "জাহানারা",
+        "হুমায়ূন আহমেদ"
+      ],
+      [
+        "সিন্দাবাদ",
+        "ফররুখ আহমদ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q04",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "bangla",
+    "qno": 4,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "শব্দের অর্থ লিখুনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "Lingua Franca",
+        "a": "আন্তর্জাতিক মিশ্রিত ভাষা"
+      },
+      {
+        "label": "খ",
+        "q": "Rehearsal",
+        "a": "নাটকের মহড়া/পুনরাবৃত্তি"
+      },
+      {
+        "label": "গ",
+        "q": "Surgeon",
+        "a": "অস্ত্রচিকিৎসক"
+      },
+      {
+        "label": "ঘ",
+        "q": "Tribunal",
+        "a": "জনতার আদালত"
+      },
+      {
+        "label": "ঙ",
+        "q": "Etiquette",
+        "a": "শিষ্টাচার"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q05",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "english",
+    "qno": 5,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English: সুষম জীবনের জন্য সুষম খাবারের প্রয়োজন। সুষম খাদ্যের জন্য প্রচুর অর্থবিত্তের প্রয়োজন পড়ে না। সুস্থতার জন্য যে খাদ্য প্রয়োজন সেই খাবারকে বোঝায়। যেমন কচুশাক চোখ ভালো রাখে। লালশাক রক্তে হিমোগ্লোবিন বাড়ায়। পেঁপে লিভার ভালো রাখে। আমড়া, কামরাঙা রোগ প্রতিরোধ বাড়ায়।",
+    "parts": [
+      {
+        "label": "",
+        "source": "সুষম জীবনের জন্য সুষম খাবারের প্রয়োজন। সুষম খাদ্যের জন্য প্রচুর অর্থবিত্তের প্রয়োজন পড়ে না। সুস্থতার জন্য যে খাদ্য প্রয়োজন সেই খাবারকে বোঝায়। যেমন কচুশাক চোখ ভালো রাখে। লালশাক রক্তে হিমোগ্লোবিন বাড়ায়। পেঁপে লিভার ভালো রাখে। আমড়া, কামরাঙা রোগ প্রতিরোধ বাড়ায়।",
+        "target": "A balanced diet is essential for a healthy life. It does not require a lot of money. A balanced diet refers to the food needed to keep the body's various organs functioning properly. Taro leaves help keep the eyes healthy, red amaranth increases hemoglobin in the blood, papaya keeps the liver healthy, and fruits like hog plums and star fruits help boost immunity."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q06",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "english",
+    "topic": "idioms-and-phrases",
+    "qno": 6,
+    "marks": 5,
+    "type": "idiom",
+    "question": "Make sentences with the following:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "French leave",
+        "meaning": "বিনা অনুমতিতে প্রস্থান",
+        "example": "One should not enjoy French leave."
+      },
+      {
+        "label": "b",
+        "phrase": "Even though",
+        "meaning": "যদিও",
+        "example": "Even though he is poor he is honest."
+      },
+      {
+        "label": "c",
+        "phrase": "See to",
+        "meaning": "বিবেচনা করা",
+        "example": "I requested him to see to my case."
+      },
+      {
+        "label": "d",
+        "phrase": "Olive branch",
+        "meaning": "শান্তির বার্তা/প্রতীক",
+        "example": "He gave an olive branch to say sorry."
+      },
+      {
+        "label": "e",
+        "phrase": "True to word",
+        "meaning": "কথা রাখা",
+        "example": "He is always true to his word."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q07",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "english",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with prepositions:",
+    "parts": [
+      {
+        "sentence": "He is blind.......one eye.",
+        "answer": "of"
+      },
+      {
+        "sentence": "Food is essential......health.",
+        "answer": "to"
+      },
+      {
+        "sentence": "I am tired ......hearing the same old story.",
+        "answer": "of"
+      },
+      {
+        "sentence": "There is no remedy......this disease.",
+        "answer": "for"
+      },
+      {
+        "sentence": "I was born......1999.",
+        "answer": "in"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q08",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "english",
+    "qno": 8,
+    "marks": 5,
+    "type": "table",
+    "question": "Write the author name:",
+    "columns": [
+      "Works",
+      "Author"
+    ],
+    "rows": [
+      [
+        "Animal Farm",
+        "George Orwell"
+      ],
+      [
+        "A Farewell to Arms",
+        "Ernest Hemingway"
+      ],
+      [
+        "Caesar and Cleopatra",
+        "George Bernard Shaw"
+      ],
+      [
+        "Hard Times",
+        "Charles Dickens"
+      ],
+      [
+        "Pride & Prejudice",
+        "Jane Austen"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q09",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "math",
+    "qno": 9,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি চৌবাচ্চার দৈর্ঘ্য ৩ মিটার, প্রস্থ ২ মিটার ও উচ্চতা ৪ মিটার। এতে কত লিটার বিশুদ্ধ পানি ধরবে?",
+    "steps": [
+      "চৌবাচ্চাটির আয়তন = ৩×২×৪ = ২৪ ঘনমিটার",
+      "আমরা জানি, ১ ঘনমিটারে পানি ধরে ১০০০ লিটার",
+      "২৪ ঘনমিটারে পানি ধরবে = ২৪০০০ লিটার"
+    ],
+    "answer": "২৪০০০ লিটার"
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q10",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "math",
+    "qno": 10,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি হোস্টেলে ২০ জনের জন্য ৩০ দিনের খাবার মজুত ছিলো। ১০ দিন পর ঐ হোস্টেল থেকে ৮ জন চলে গেল। তার ১০ দিন পর নতুন ২৩ জন যুক্ত হলে অবশিষ্ট খাবারে তাদের আর কত দিন চলবে?",
+    "steps": [
+      "অবশিষ্ট লোক (২০-৮)=১২ জন, অবশিষ্ট দিন (৩০-১০)=২০ দিন",
+      "২০ জনের খাবার মজুদ আছে ২০ দিনের, ∴১২ জনের জন্য তা চলবে (২০×২০)/১২ = ৫০০/৩ দিন",
+      "১০ দিন পার হওয়ার পর বাকি থাকে = ৫০০/৩ - ১০ = ৪৭০/৩ দিন এর খাবার (১২ জনের হিসেবে)",
+      "নতুন লোক = ১২+২৩ = ৩৫ জন",
+      "১২ জনের খাবার ৪৭০/৩ দিনের, ৩৫ জনের জন্য তা চলবে (৪৭০×১২)/(৩×৩৫) = ৮ দিন"
+    ],
+    "answer": "৮ দিন"
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q11",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "math",
+    "qno": 11,
+    "marks": 4,
+    "type": "math",
+    "question": "১৬-৮+৪-২+...... ধারাটির ৭ম পদ কত?",
+    "steps": [
+      "এটি একটি গুণোত্তর ধারা যার প্রথম পদ, a=১৬ এবং সাধারণ অনুপাত, r = -৮/১৬ = -১/২",
+      "n তম পদ = ar^(n-1)",
+      "৭ম পদ = ১৬.(-১/২)^(7-1) = ১৬ × ১/৬৪ = ১/৪"
+    ],
+    "answer": "১/৪"
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q12",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "math",
+    "qno": 12,
+    "marks": 4,
+    "type": "math",
+    "question": "৬ মিটার বাহুবিশিষ্ট সমবাহু ত্রিভুজের ক্ষেত্রফল কত?",
+    "steps": [
+      "সমবাহু ত্রিভুজের ক্ষেত্রফল = (√৩/৪)a²",
+      "= (√৩/৪)×৬² = (√৩/৪)×৩৬ = ৯√৩",
+      "= ১৫.৫৯ বর্গ মি. (প্রায়)"
+    ],
+    "answer": "১৫.৫৯ বর্গ মিটার (প্রায়)"
+  },
+  {
+    "id": "job-2025-health-edu-data-entry-q13",
+    "examId": "job-2025-health-edu-data-entry",
+    "subject": "general-knowledge",
+    "qno": 13,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্তকারে উত্তর দিনঃ (সাধারণ জ্ঞান, কম্পিউটার ও বিজ্ঞান)",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ইনসুলিন কি?",
+        "a": "ইনসুলিন হল একটি হরমোন যা অগ্ন্যাশয় থেকে নিঃসৃত হয় এবং রক্তে শর্করার মাত্রা নিয়ন্ত্রণে গুরুত্বপূর্ণ ভূমিকা পালন করে।"
+      },
+      {
+        "label": "খ",
+        "q": "ডাবের পানিতে মূল্যবান কী উপাদান থাকে?",
+        "a": "পটাশিয়াম, ক্যালসিয়াম, ম্যাগনেসিয়াম ইত্যাদি।"
+      },
+      {
+        "label": "গ",
+        "q": "খাবার স্যালাইন উদ্ভাবক প্রতিষ্ঠানের নাম কি?",
+        "a": "আইসিডিডিআরবি (ICDDR,B)"
+      },
+      {
+        "label": "ঘ",
+        "q": "'সূর্যের হাসি' কিসের প্রতীক?",
+        "a": "মা ও শিশু স্বাস্থ্য সেবার প্রতীক"
+      },
+      {
+        "label": "ঙ",
+        "q": "কোন রোগে শরীরের রোগ প্রতিরোধ ক্ষমতা লোপ পায়?",
+        "a": "এইডস"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের সর্ব দক্ষিণের জেলার নাম কী?",
+        "a": "কক্সবাজার"
+      },
+      {
+        "label": "ছ",
+        "q": "কোন ভিটামিনের অভাবে রাতকানা রোগ হয়?",
+        "a": "ভিটামিন 'এ'"
+      },
+      {
+        "label": "জ",
+        "q": "HFC এর পূর্ণরূপ কি?",
+        "a": "Hydrofluorocarbon"
+      },
+      {
+        "label": "ঝ",
+        "q": "মানবদেহে হাড় ও জিনের সংখ্যা কত?",
+        "a": "হাড় ২০৬টি; জিন ২০ হাজার থেকে ৩০ হাজার"
+      },
+      {
+        "label": "ঞ",
+        "q": "জুলাই গণঅভ্যুত্থানে 'আবু সাঈদ' কত তারিখে শহীদ হন?",
+        "a": "১৬ জুলাই, ২০২৪"
+      }
+    ]
+  }
+]

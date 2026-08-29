@@ -1,0 +1,415 @@
+[
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q01",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আমার যাওয়া হয়নি।",
+        "a": "কর্তৃকারকে ৬ষ্ঠী"
+      },
+      {
+        "label": "খ",
+        "q": "বুলবুলিতে ধান খেয়েছে।",
+        "a": "কর্তায় ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "চেষ্টায় সব হয়।",
+        "a": "করণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "সারারাত বৃষ্টি হয়েছে।",
+        "a": "অধিকরণে শূন্য"
+      },
+      {
+        "label": "ঙ",
+        "q": "বাবাকে বড্ড ভয় করে।",
+        "a": "অপাদানে ২য়া"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q02",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "bangla",
+    "topic": "বাক্য সংক্ষেপণ",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "বাক্য সংক্ষেপণ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আপনাকে যে পণ্ডিত মনে করে",
+        "a": "পণ্ডিতম্মন্য"
+      },
+      {
+        "label": "খ",
+        "q": "ইতিহাস রচনা করেন যিনি",
+        "a": "ঐতিহাসিক"
+      },
+      {
+        "label": "গ",
+        "q": "যার বংশ পরিচয় কেউই জানে না",
+        "a": "অজ্ঞাতকুলশীল"
+      },
+      {
+        "label": "ঘ",
+        "q": "যে বিষয়ে কোন বিতর্ক নেই",
+        "a": "অবিসংবাদিত"
+      },
+      {
+        "label": "ঙ",
+        "q": "যে সকল অত্যাচারই সয়ে যায়",
+        "a": "সর্বংসহা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q03",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 3,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "গোঁফ খেজুরে",
+        "a": "নিতান্ত অলস"
+      },
+      {
+        "label": "খ",
+        "q": "ব্যাঙের সর্দি",
+        "a": "অসম্ভব ঘটনা"
+      },
+      {
+        "label": "গ",
+        "q": "ঢাকের কাঠি",
+        "a": "তোষামদে"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q04",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমার্থক শব্দ",
+    "qno": 4,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "'২টি করে সমার্থক শব্দ লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "দিন",
+        "a": "দিবস, বার, রোজ"
+      },
+      {
+        "label": "খ",
+        "q": "অন্ধকার",
+        "a": "আঁধার, তিমির"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q05",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "bangla",
+    "topic": "সংক্ষিপ্ত প্রবন্ধ রচনা",
+    "qno": 5,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "'প্রবাস আয় বৃদ্ধিতে করণীয়' বিষয়ে সংক্ষিপ্ত প্রবন্ধ রচনা করুন।",
+    "answer": "প্রবাস আয় বাংলাদেশের অর্থনীতির একটি গুরুত্বপূর্ণ স্তম্ভ। এই আয় বৃদ্ধির জন্য বৈধ চ্যানেলে রেমিট্যান্স প্রেরণে প্রবাসীদের উৎসাহিত করা, ব্যাংকিং সেবা সহজলভ্য করা, বিদেশগামী কর্মীদের দক্ষতা প্রশিক্ষণ প্রদান, শ্রমবাজার সম্প্রসারণ এবং প্রবাসী কল্যাণে সরকারি নীতি সহায়তা জোরদার করা প্রয়োজন। পাশাপাশি হুন্ডির মতো অবৈধ মাধ্যম নিরুৎসাহিত করে বৈধ পথে রেমিট্যান্স প্রেরণে প্রণোদনা দেওয়া হলে প্রবাস আয় আরও বৃদ্ধি পাবে, যা দেশের বৈদেশিক মুদ্রার রিজার্ভ ও সার্বিক অর্থনৈতিক উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখবে।"
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q06",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "english",
+    "topic": "সংক্ষিপ্ত উত্তর",
+    "qno": 6,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "i",
+        "q": "referendum এর plural form কি?",
+        "a": "Referenda"
+      },
+      {
+        "label": "ii",
+        "q": "'Laugh' শব্দটির Noun কি?",
+        "a": "Laughter"
+      },
+      {
+        "label": "iii",
+        "q": "Habit শব্দটির verb form কি?",
+        "a": "Habituate"
+      },
+      {
+        "label": "iv",
+        "q": "Cattle কোন ধরণের Noun?",
+        "a": "Collective Noun"
+      },
+      {
+        "label": "v",
+        "q": "Out and out means?",
+        "a": "পুরোপুরি/হাড়ে হাড়ে"
+      },
+      {
+        "label": "vi",
+        "q": "Who is calling me? বাক্যটির passive form লিখুন।",
+        "a": "By whom am I being called?"
+      },
+      {
+        "label": "vii",
+        "q": "NB এর পূর্ণরূপ কি?",
+        "a": "Nota Bene"
+      },
+      {
+        "label": "viii",
+        "q": "Write the correct meaning of 'a man of letter'",
+        "a": "পণ্ডিত ব্যক্তি"
+      },
+      {
+        "label": "ix",
+        "q": "Who is called the Poet of Nature' in English literature?",
+        "a": "William Wordsworth"
+      },
+      {
+        "label": "x",
+        "q": "Who is the author of 'A Farewell to Arms'?",
+        "a": "Ernest Hemingway"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q07",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "english",
+    "topic": "fill in the blanks",
+    "qno": 7,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with appropriate preposition:",
+    "parts": [
+      {
+        "sentence": "I am accustomed........such a life.",
+        "answer": "to"
+      },
+      {
+        "sentence": "He burst.......laughing at my jokes.",
+        "answer": "out"
+      },
+      {
+        "sentence": "He is looking.......the newspaper.",
+        "answer": "at"
+      },
+      {
+        "sentence": "He persisted.......disturbing me.",
+        "answer": "in"
+      },
+      {
+        "sentence": "Can you guess......her age?",
+        "answer": "at"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q08",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "english",
+    "topic": "word meaning pairs",
+    "qno": 8,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "Write the meaning of following pairs:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "Affect / Effect",
+        "a": "প্রভাবিত / প্রভাব-ফলাফল"
+      },
+      {
+        "label": "b",
+        "q": "Crops / Corps",
+        "a": "শস্য / বাহিনী-সেনাদল"
+      },
+      {
+        "label": "c",
+        "q": "Moral / Morale",
+        "a": "নৈতিক / মনোবল"
+      },
+      {
+        "label": "d",
+        "q": "Quiet / Quite",
+        "a": "শান্ত / পুরোপুরি"
+      },
+      {
+        "label": "e",
+        "q": "Tamper / Temper",
+        "a": "অনধিকার হস্তক্ষেপ করা / রাগ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q09",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "english",
+    "topic": "essay",
+    "qno": 9,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "Write five sentences on 'Climate Change'.",
+    "answer": "Climate change is the change in the weather and temperature of the Earth over a long time. Human activities like cutting trees and using fuels make it worse. Because of climate change, ice is melting, the sea is rising, and storms are becoming stronger. It also harms plants, animals, and farming. We must take action by planting trees and using clean energy to protect our planet."
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q10",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "math",
+    "topic": "গতিবেগ",
+    "qno": 10,
+    "marks": 6,
+    "type": "math",
+    "question": "৫০০ মিটার লম্বা একটি ট্রেন ৩০ কি.মি/ঘন্টা গতিতে চলছে। ২৫০ মিটার লম্বা একটি স্টেশন অতিক্রম করতে ট্রেনটির কত সময় লাগবে?",
+    "steps": [
+      "ট্রেনটি তার নিজের দৈর্ঘ্য ও স্টেশন দৈর্ঘ্য অতিক্রম করবে।",
+      "সুতরাং, ট্রেনটি মোট অতিক্রম করবে (৫০০ + ২৫০) মিটার বা ৭৫০ মিটার",
+      "১ ঘণ্টা = ৩৬০০ সেকেন্ড, ৩০ কি.মি. = ৩০০০০ মিটার",
+      "ট্রেনটি ৩০০০০ মিটার যায় ৩৬০০ সেকেন্ডে",
+      "∴ ৭৫০ মিটার যায় (৩৬০০ × ৭৫০)/৩০০০০ সেকেন্ডে = ৯০ সেকেন্ড"
+    ],
+    "answer": "উত্তর: স্টেশন অতিক্রম করতে ট্রেনটির সময় লাগবে ৯০ সেকেন্ড বা ১ মিনিট ৩০ সেকেন্ড"
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q11",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 6,
+    "type": "math",
+    "question": "x − ১/x = ৩ হলে, x⁴ + ১/x⁴ = কত?",
+    "steps": [
+      "দেওয়া আছে, x − ১/x = ৩",
+      "প্রদত্ত রাশি = x⁴ + ১/x⁴ = (x²)² + (১/x²)²",
+      "= (x² + ১/x²)² − ২.x².১/x²",
+      "= {(x − ১/x)² + ২.x.১/x}² − ২",
+      "= (৩² + ২)² − ২ = (৯+২)² − ২ = (১১)² − ২ = ১২১ − ২"
+    ],
+    "answer": "উত্তর: = ১১৯"
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q12",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 12,
+    "marks": 6,
+    "type": "math",
+    "question": "একটি দ্রব্য ৩৭৮ টাকায় বিক্রয় করলে যত ক্ষতি হয়, ৪৫০ টাকায় বিক্রয় করলে তার তিনগুণ লাভ হয়। দ্রব্যটির ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, দ্রব্যটির ক্রয়মূল্য ক টাকা",
+      "৩৭৮ টাকায় বিক্রয় করলে ক্ষতি = (ক − ৩৭৮) টাকা",
+      "আবার, ৪৫০ টাকায় বিক্রয় করলে লাভ = (৪৫০−ক) টাকা",
+      "প্রশ্নমতে, ৪৫০ − ক = ৩ × (ক − ৩৭৮)",
+      "বা, ৪৫০ − ক = ৩ক − ১১৩৪",
+      "বা, −ক − ৩ক = −১১৩৪ − ৪৫০",
+      "বা, −৪ক = −১৫৮৪",
+      "বা, ক = ১৫৮৪/৪ = ৩৯৬"
+    ],
+    "answer": "উত্তর: ৩৯৬ টাকা"
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q13",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি শ্রেণিতে যতজন ছাত্র আছে প্রত্যেকে তত টাকা করে দিলে মোট ৬,৫৬১ টাকা হয়। ছাত্র সংখ্যা কত?",
+    "steps": [
+      "ধরি, শ্রেণির ছাত্র সংখ্যা = x জন",
+      "∴ প্রত্যেকে চাঁদা দেয় = x টাকা।",
+      "প্রশ্নমতে, x² = ৬৫৬১",
+      "বা, √x² = √৬৫৬১",
+      "∴ x = ৮১"
+    ],
+    "answer": "উত্তর: শ্রেণির ছাত্র সংখ্যা ৮১ জন"
+  },
+  {
+    "id": "job-2025-probashi-kollan-office-sohayok-q14",
+    "examId": "job-2025-probashi-kollan-office-sohayok",
+    "subject": "gk",
+    "topic": "সাধারণ জ্ঞান",
+    "qno": 14,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ATM এবং TIN-এর পূর্ণরূপ লিখুন।",
+        "a": "ATM = Automated Teller Machine; TIN = Taxpayer's Identification Number"
+      },
+      {
+        "label": "খ",
+        "q": "জাতিসংঘের নামকরণ করেন কে? জাতিসংঘ সনদ কবে কার্যকর হয়?",
+        "a": "ফ্রাঙ্কলিন ডি রুজভেল্ট; ২৪ অক্টোবর ১৯৪৫"
+      },
+      {
+        "label": "গ",
+        "q": "কোন অক্ষাংশকে মকরক্রান্তি এবং কোন অক্ষাংশকে কর্কটক্রান্তি বলা হয়?",
+        "a": "২৩.৫ ডিগ্রি দক্ষিণ অক্ষাংশকে মকরক্রান্তি রেখা এবং ২৩.৫ ডিগ্রি উত্তর অক্ষাংশকে কর্কটক্রান্তি রেখা বলা হয়।"
+      },
+      {
+        "label": "ঘ",
+        "q": "২০২৫-২০২৬ অর্থবছরের প্রস্তাবিত বাজেট কত? বর্তমানে বাংলাদেশের মানুষের মাথাপিছু আয় কত?",
+        "a": "৭ লাখ ৯০ হাজার কোটি টাকা। ২৮২০ মার্কিন ডলার"
+      },
+      {
+        "label": "ঙ",
+        "q": "আয়তনে বাংলাদেশের সবচেয়ে বড় জেলা এবং সবচেয়ে ছোট জেলার নাম লিখুন।",
+        "a": "রাঙ্গামাটি; নারায়ণগঞ্জ"
+      },
+      {
+        "label": "চ",
+        "q": "জাতীয় স্মৃতিসৌধ ও কেন্দ্রীয় শহিদ মিনারের স্থপতি কে?",
+        "a": "জাতীয় স্মৃতিসৌধ- সৈয়দ মাইনুল হোসেন; শহিদ মিনার- হামিদুর রহমান"
+      },
+      {
+        "label": "ছ",
+        "q": "পদ্মা নদী বাংলাদেশের কোন জেলা দিয়ে প্রবেশ করেছে? বাংলাদেশ ও মায়ানমারকে বিভক্তকারী নদীর নাম কি?",
+        "a": "চাপাইনবাবগঞ্জ; নাফ"
+      },
+      {
+        "label": "জ",
+        "q": "আইসিসি এবং ফিফা-এর সদর দপ্তর কোথায় অবস্থিত লিখুন?",
+        "a": "আইসিসি এর সদর দপ্তর দুবাই, সংযুক্ত আরব আমিরাত; ফিফা-এর সদর দপ্তর জুরিখ, সুইজারল্যান্ড"
+      },
+      {
+        "label": "ঝ",
+        "q": "২০২৪ সালে শান্তিতে নোবেল পুরস্কার পেয়েছেন কে? তিনি কোন দেশের নাগরিক?",
+        "a": "নিহন হিদানকিয়ো (জাপানের পারমাণবিক অস্ত্রবিরোধী প্রতিষ্ঠান)"
+      },
+      {
+        "label": "ঞ",
+        "q": "বাংলাদেশের জাতীয় পতাকার ডিজাইনার কে? জাতীয় পতাকার দৈর্ঘ্য ও প্রস্থের অনুপাত কত?",
+        "a": "কামরুল হাসান; ১০:৬"
+      }
+    ]
+  }
+]

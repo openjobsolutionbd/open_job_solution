@@ -1,0 +1,289 @@
+[
+  {
+    "id": "job-2025-biddyut-office-sohayok-q01",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অন্য উপায় নেই যার",
+        "a": "অনন্যোপায়"
+      },
+      {
+        "label": "খ",
+        "q": "অর্থহীন উক্তি",
+        "a": "প্রলাপ"
+      },
+      {
+        "label": "গ",
+        "q": "জলে জন্মে যা",
+        "a": "জলজ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q02",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "bangla",
+    "topic": "অর্থসহ বাক্য",
+    "qno": 2,
+    "marks": 2,
+    "type": "sub-parts",
+    "question": "অর্থসহ বাক্য লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "শিরে সংক্রান্তি",
+        "a": "আসন্ন বিপদ"
+      },
+      {
+        "label": "খ",
+        "q": "কাছা টিলা",
+        "a": "অসাবধানতা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q03",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি-বিচ্ছেদ করুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তন্বী",
+        "a": "তনু + ঈ"
+      },
+      {
+        "label": "খ",
+        "q": "ষোড়শ",
+        "a": "ষট্ + দশ"
+      },
+      {
+        "label": "গ",
+        "q": "সংবাদ",
+        "a": "সম্ + বাদ"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q04",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 4,
+    "marks": 3,
+    "type": "translate",
+    "question": "Translate into English.",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "তোমার বাড়ি যাওয়াই ভালা।",
+        "target": "You had better go home."
+      },
+      {
+        "label": "খ",
+        "source": "ত্রিশ দিনে এক মাস।",
+        "target": "Thirty days makes a month."
+      },
+      {
+        "label": "গ",
+        "source": "আমি তোমাকে ভাত খাওয়াবো।",
+        "target": "I will feed you rice."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q05",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 5,
+    "marks": 2,
+    "type": "idiom",
+    "question": "Make sentence with the following idioms:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Round the clock",
+        "meaning": "সারাদিন",
+        "example": "He works round the clock."
+      },
+      {
+        "label": "b",
+        "phrase": "Bread and butter",
+        "meaning": "জীবিকা",
+        "example": "He earns bread and butter by means of honest labour."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q06",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate word/preposition.",
+    "question_extra": "The main cause ..... road accidents ......Bangladesh.... the violation of traffic rules ......the drivers ...... do not care .......human lives.",
+    "parts": [
+      {
+        "sentence": "The main cause ..... road accidents ......Bangladesh.... the violation of traffic rules ......the drivers ...... do not care .......human lives.",
+        "answer": "of, in, is, by, who, for"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q07",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 7,
+    "marks": 5,
+    "type": "table",
+    "question": "Correct the spelling of the following words:",
+    "columns": [
+      "Incorrect",
+      "Correct"
+    ],
+    "rows": [
+      [
+        "Diciplin",
+        "Discipline"
+      ],
+      [
+        "Exersice",
+        "Exercise"
+      ],
+      [
+        "Embition",
+        "Ambition"
+      ],
+      [
+        "Honasty",
+        "Honesty"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q08",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 8,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি চৌবাচ্চায় ৮০০০ লিটার পানি ধরে। চৌবাচ্চাটির দৈর্ঘ্য ২.৫৬ মিটার এবং প্রস্থ ১.২৫ মিটার হলে, গভীরতা কত?",
+    "steps": [
+      "চৌবাচ্চাটির তলার ক্ষেত্রফল = ২.৫৬ মিটার × ১.২৫ মিটার",
+      "= ২৫৬ সে.মি. × ১২৫ সে.মি.",
+      "= ৩২০০০ বর্গ সে.মি.",
+      "চৌবাচ্চায় ৮০০০ লিটার বা ৮০০০ × ১০০০ ঘন সে.মি. পানি ধরে। [১০০০ ঘন সে.মি. = ১ লিটার]",
+      "অতএব, চৌবাচ্চাটির আয়তন ৮০০০০০০ ঘন সে.মি.",
+      "∴ চৌবাচ্চাটির গভীরতা = ৮০০০০০০/৩২০০০ সে.মি. = ২৫০ সে.মি. = ২.৫ মিটার"
+    ],
+    "answer": "২.৫ মিটার"
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q09",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "(x+6)(x+4) কে দুটি রাশির বর্গের অন্তররূপে প্রকাশ করুন।",
+    "steps": [
+      "ধরি, x + 6 = a এবং x + 4 = b",
+      "প্রদত্ত রাশি: ab = {(a+b)/2}² − {(a−b)/2}²",
+      "= {(x+6+x+4)/2}² − {(x+6−x−4)/2}²",
+      "= {(2x+10)/2}² − (2/2)²",
+      "= {2(x+5)/2}² − 1²",
+      "= (x+5)² − 1²"
+    ],
+    "answer": "(x+5)² − 1²"
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q10",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "সংজ্ঞা লিখুনঃ সন্নিহিত কোণ, ট্রাপিজিয়াম, জ্যা",
+    "answer": "সন্নিহিত কোণ: দুটি কোণের একটি সাধারণ বাহু ও একই শীর্ষ বিন্দু থাকলে তাদের পরস্পরকে সন্নিহিত কোণ বলে। ট্রাপিজিয়াম: যে চতুর্ভুজের এক জোড়া বিপরীত বাহু সমান্তরাল, একে ট্রাপিজিয়াম বলে। জ্যা: বৃত্তের যেকোন দুইটি বিন্দুর সংযোজক রেখাংশকে বৃত্তের জ্যা বলে।"
+  },
+  {
+    "id": "job-2025-biddyut-office-sohayok-q11",
+    "examId": "job-2025-biddyut-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 11,
+    "marks": 12,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান-১০ঃ এক কথায় উত্তর দিনঃ",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "টাঙ্গুয়ার হাওড় কোন জেলায় অবস্থিত?",
+        "a": "সুনামগঞ্জ"
+      },
+      {
+        "label": "খ",
+        "q": "জাতিসংঘর শরণার্থী বিষয়ক সংস্থার নাম কি?",
+        "a": "UNHCR"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের সবচেয়ে উষ্ণ স্থানের নাম কি?",
+        "a": "নাটোরের লালপুর।"
+      },
+      {
+        "label": "ঘ",
+        "q": "এপিকালচার কি?",
+        "a": "মৌমাছি চাষ"
+      },
+      {
+        "label": "ঙ",
+        "q": "কম্পিউটারের ব্রেইন কাকে বলা হয়?",
+        "a": "মাইক্রোপ্রসেসর"
+      },
+      {
+        "label": "চ",
+        "q": "বাংলাদেশের মুক্তিযুদ্ধের প্রথম শত্রুমুক্ত জেলা কোনটি?",
+        "a": "যশোর"
+      },
+      {
+        "label": "ছ",
+        "q": "ড্রাই আইস কি?",
+        "a": "কার্বন ড্রাই অক্সাইডের কঠিন রূপ"
+      },
+      {
+        "label": "জ",
+        "q": "কেন্দ্রীয় শহীদ মিনারের স্থপতি কে?",
+        "a": "হামিদুর রহমান"
+      },
+      {
+        "label": "ঝ",
+        "q": "আয়তনে এশিয়ার সবচেয়ে ছোট দেশ কোনটি?",
+        "a": "মালদ্বীপ"
+      },
+      {
+        "label": "ঞ",
+        "q": "\\\"অগ্নিবীণা\\\" কাব্যগ্রন্থের রচয়িতা কে?",
+        "a": "কাজী নজরুল ইসলাম"
+      }
+    ]
+  }
+]

@@ -117,7 +117,7 @@ function renderAnswer(q) {
           <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
             <span class="part-q">${escHtml(p.q)}</span>
-            <div class="short-answer">উত্তর: ${escHtml(p.a)}</div>
+            <span class="short-answer">— উত্তর: ${escHtml(p.a)}</span>
           </div>
         </div>`).join('')}</div>`;
 

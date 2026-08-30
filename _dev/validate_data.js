@@ -62,6 +62,28 @@ function checkDuplicateIds(entries, label) {
   });
 }
 
+// একই ব্যাখ্যা (explanation) কপি-পেস্ট করে একাধিক প্রশ্নে বসিয়ে
+// দেওয়া হলে ধরার জন্য। এটা শুধু নিজের ডেটাবেসের মধ্যেই ডুপ্লিকেট
+// ধরে — অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা এই স্ক্রিপ্ট বলতে
+// পারবে না, সেটা নতুন ব্যাখ্যা লেখার সময় নিজেকেই যাচাই করতে হবে
+// (দেখুন CONTENT_GUIDELINES.md)।
+function checkDuplicateExplanation(entries, label) {
+  const seen = {};
+  const MIN_LEN = 25; // খুব ছোট/সাধারণ ব্যাখ্যা (যেমন "সংজ্ঞা অনুযায়ী") ইচ্ছাকৃতভাবে বাদ, false-positive কমাতে
+  entries.forEach(({ explanation, where }) => {
+    if (!explanation) return;
+    const norm = String(explanation).trim();
+    if (norm.length < MIN_LEN) return;
+    (seen[norm] = seen[norm] || []).push(where);
+  });
+  Object.entries(seen).forEach(([text, wheres]) => {
+    if (wheres.length > 1) {
+      const preview = text.length > 40 ? text.slice(0, 40) + '…' : text;
+      issues.push(`[${label}] হুবহু একই ব্যাখ্যা একাধিক প্রশ্নে বসানো আছে ("${preview}") — ${wheres.join(', ')}`);
+    }
+  });
+}
+
 // কপি-পেস্ট করে নতুন প্রশ্ন বানানোর সময় প্রশ্নের লেখা বদলাতে ভুলে
 // গেলে ধরার জন্য — প্রশ্ন ও option দুটোই হুবহু মিলে গেলে তবেই জানাবে।
 // (শুধু প্রশ্নের লেখা মিলিয়ে দেখলে ভুল ধরা পড়ে যেত — "নিচের কোনটি
@@ -105,6 +127,7 @@ function checkDuplicateOptions(loc, options) {
   const files = fs.readdirSync(dir).filter(f => f.endsWith('.js'));
   const idEntries = [];
   const textEntries = [];
+  const explEntries = [];
   files.forEach(f => {
     const code = fs.readFileSync(path.join(dir, f), 'utf8');
     const varMatch = code.match(/var\s+(data_\w+)/);
@@ -119,10 +142,12 @@ function checkDuplicateOptions(loc, options) {
       checkDuplicateOptions(loc, q.options);
       idEntries.push({ id: q.id, where: `bcs-mcq/data/${f}` });
       textEntries.push({ text: q.question, options: q.options, where: `bcs-mcq/data/${f}#${idx}` });
+      explEntries.push({ explanation: q.explanation, where: `bcs-mcq/data/${f}#${idx}` });
     });
   });
   checkDuplicateIds(idEntries, 'bcs-mcq (সব subject মিলিয়ে)');
   checkDuplicateQuestionText(textEntries, 'bcs-mcq (সব subject মিলিয়ে)');
+  checkDuplicateExplanation(explEntries, 'bcs-mcq (সব subject মিলিয়ে)');
 }
 
 // ── ২. primary-mcq/data/data.js ───────────────────────────

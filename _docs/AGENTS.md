@@ -92,11 +92,23 @@ repo-তে একটা **pin করা GitHub Issue** আছে (label: `activ
 | `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
 | `_staging/bcs-mcq-staging/` | ৫০তম BCS প্রশ্নব্যাংক প্রসেসিংয়ের raw স্টেজিং এলাকা (README + STATUS.md) |
 | `_staging/books-staging/` | বই-সংক্রান্ত কনটেন্ট প্রসেসিংয়ের স্টেজিং এলাকা |
-| `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
+| `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check। ডুপ্লিকেট id, ডুপ্লিকেট প্রশ্ন+option, ডুপ্লিকেট ব্যাখ্যা (নিজের ডেটাবেসের মধ্যে) — এসব ধরে, কিন্তু **অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা ধরতে পারে না** (নিচের সেকশন দেখুন) |
 | `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট (`job-app-MD.md`) যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — ডুপ্লিকেট মাস্টার-ডক ফাইল ও অনুল্লেখিত root ফোল্ডার ধরে। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift ধরে, prose-এর সঠিকতা না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
 | `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
+
+## 📝 নতুন MCQ/ব্যাখ্যা যোগ করার সময় — duplicate-content ঝুঁকি
+
+সাইটটি Google-এ ইনডেক্স হয় এবং AdSense-এর মতো মনিটাইজেশনের জন্য ব্যবহৃত হয়। তাই "duplicate/thin content" নিছক code-quality ইস্যু না — সরাসরি সাইটের আয়ের ঝুঁকি।
+
+**সমস্যা যেটা ঘটেছিল (রেফারেন্সের জন্য):** ২৮তম BCS-এর নতুন প্রশ্নের ব্যাখ্যা সাধারণ জ্ঞান থেকে লেখার পর দেখা যায় sattacademy.com, myexaminer.net-এর মতো জনপ্রিয় সাইটের সাথে বাক্যগঠনে উল্লেখযোগ্য মিল হয়ে গেছে — কারণ সবাই একই সাধারণ ঐতিহাসিক/পাঠ্যতথ্য প্রায় একই ভাষায় বর্ণনা করে। এটা এই niche-এ (BCS/সরকারি চাকরির MCQ) সাধারণ ঝুঁকি।
+
+**নতুন প্রশ্ন/ব্যাখ্যা যোগ করার সময় যা করতে হবে:**
+
+1. **ব্যাখ্যা লেখার স্টাইল বদলে দিন** — শুধু "সঠিক উত্তর X, কারণ Y" ফরম্যাটে না লিখে, reasoning/elimination-style লিখুন: কেন সঠিক অপশন সঠিক, এবং কেন অন্য ১-২টা অপশন ভুল/বিভ্রান্তিকর মনে হতে পারে। এটা structurally আলাদা করে দেয় সাধারণ fact-dump স্টাইলের সাইট থেকে, আর একই সাথে শিক্ষার্থীর জন্য বেশি উপকারীও হয়।
+2. **সন্দেহ হলে স্পট-চেক সার্চ করুন** — নতুন ব্যাখ্যার কিছু অংশ (৮-১২ শব্দের নির্দিষ্ট বাক্যাংশ) quote করে ওয়েব সার্চ করে দেখুন অন্য সাইটে হুবহু/কাছাকাছি টেক্সট আছে কিনা। সব প্রশ্ন এক এক করে সার্চ করার দরকার নেই — প্রতি বিষয় থেকে কয়েকটা নমুনা যথেষ্ট প্যাটার্ন বুঝতে।
+3. **push করার আগে `node _dev/validate_data.js` চালান** — এটা নিজের ডেটাবেসের মধ্যে ডুপ্লিকেট id/প্রশ্ন/ব্যাখ্যা ধরবে (এটা `validate-data.yml` workflow-এও PR-এর required check হিসেবে চলে)। কিন্তু মনে রাখবেন এই স্ক্রিপ্ট **external সাইটের সাথে মিল ধরতে পারে না** — সেটা মানুষ/AI-কেই স্পট-চেক করে দেখতে হবে (ধাপ ২)।
 
 ## বর্তমান অবস্থা
 

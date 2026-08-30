@@ -16,6 +16,18 @@ git clone https://github.com/openjobsolutionbd/open_job_solution.git
 cd open_job_solution && bash _dev/scripts/session_status.sh
 ```
 
+**`session_status.sh` চালানোর আগে `GH_TOKEN` environment variable সেট করুন** (`export GH_TOKEN="<PAT>"`) — না করলে GitHub API কলগুলো unauthenticated হয়ে rate-limit-এ আটকে ব্যর্থ হবে।
+
+## 🟢 লাইভ অ্যাক্টিভিটি ফিড (near-real-time coordination)
+
+repo-তে একটা **pin করা GitHub Issue** আছে (label: `activity-feed`, বর্তমানে [#244](https://github.com/openjobsolutionbd/open_job_solution/issues/244)) যেটা `main`-এ যেকোনো push হওয়ার কয়েক সেকেন্ডের মধ্যেই `.github/workflows/activity-feed.yml` workflow স্বয়ংক্রিয়ভাবে আপডেট করে দেয় — একটা নতুন লাইন (timestamp, কমিট লিংক, মেসেজ, লেখক) যোগ হয় ইস্যুর উপরে। রুটিন `chore: bump version` কমিট ফিডে দেখানো হয় না (নয়েজ কমাতে)।
+
+- `session_status.sh` চালালে এই ফিডের সর্বশেষ অংশ স্বয়ংক্রিয়ভাবে দেখায় — আলাদা করে ইস্যু খুলে দেখার দরকার নেই।
+- এটা Git-push-based, তাই সত্যিকারের push-notification না (কোনো Claude সেশন সক্রিয়ভাবে "শুনছে" না) — কিন্তু যেকোনো সেশন যখনই কাজ শুরু করে (`session_status.sh` চালিয়ে), সে সাথে সাথে সবচেয়ে সাম্প্রতিক অবস্থা পেয়ে যায়, কোনো manual git log খোঁড়াখুঁড়ি ছাড়াই।
+- ইস্যু নিজে থেকেই সর্বশেষ ৪০টা এন্ট্রি রাখে (script পুরনোগুলো ছেঁটে ফেলে) — ইস্যু-বডি অতিরিক্ত বড় হয় না।
+- Workflow-এর মূল লজিক `.github/workflows/scripts/update_activity_feed.py`-তে (Python) — শেল স্ট্রিং-ইন্টারপোলেশন এড়িয়ে environment variable দিয়ে ইনপুট নেয়, যাতে কমিট মেসেজে বিশেষ ক্যারেক্টার থাকলেও workflow না ভাঙে।
+- ফিড ইস্যু কখনো ভুলবশত close/মুছে গেলে: নতুন issue বানিয়ে `activity-feed` label লাগান এবং body-তে `<!-- FEED-START -->` ও `<!-- FEED-END -->` মার্কার দুটো রাখুন (workflow এই মার্কারের মাঝে এন্ট্রি বসায়) — workflow label দিয়ে ইস্যু খোঁজে, ইস্যু-নম্বর হার্ডকোড করা নেই।
+
 ## 🔒 কাজের রেঞ্জ ক্লেইম করা (একাধিক Claude সমান্তরালে কাজ করলে)
 
 যখন একটা নির্দিষ্ট অংশ (যেমন বইয়ের ১০টা অধ্যায়, বা exam ক্রম ৫১৩–৫২২) নিয়ে একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে সমান্তরালে কাজ হতে পারে, শুধু branch/PR তালিকা যথেষ্ট না — কেউ branch এখনো push না করেই কাজ শুরু করে থাকতে পারে। তাই একটা হালকা "claim" (দখল-ঘোষণা) সিস্টেম ব্যবহার করা হয়, GitHub Issue দিয়ে (branch/PR-এর মতো `main` protection-এর আওতায় না বলে সাথে সাথে খোলা/বন্ধ করা যায়):
@@ -83,7 +95,8 @@ cd open_job_solution && bash _dev/scripts/session_status.sh
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check |
 | `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট (`job-app-MD.md`) যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — ডুপ্লিকেট মাস্টার-ডক ফাইল ও অনুল্লেখিত root ফোল্ডার ধরে। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift ধরে, prose-এর সঠিকতা না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
 | `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
-| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
+| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
+| `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
 
 ## বর্তমান অবস্থা
 

@@ -230,7 +230,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .idiom-example { color: var(--text); font-style: italic; }
 
 /* Short QA */
-.short-answer { font-weight: 600; color: var(--text); margin-top: 3px; }
+.short-answer { font-weight: 600; color: var(--text); margin-left: 4px; }
 
 /* Letter */
 .ans-letter { line-height: 2; font-size: 0.9rem; }

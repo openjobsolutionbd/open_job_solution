@@ -49,6 +49,15 @@ const EXAM_ARCHIVE = [
     totalQuestions: 6,
   },
   {
+    id: "job-2025-defense-ministry-office-sohayok",
+    ministry: "প্রতিরক্ষা মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2025-09-05",
+    duration: "৬০ মিনিট",
+    totalMarks: 40,
+    totalQuestions: 11,
+  },
+  {
     id: "job-2025-election-commission-office-assistant-computer-operator",
     ministry: "নির্বাচন কমিশন সচিবালয়",
     post: "অফিস সহকারী কাম কম্পিউটার অপারেটর",

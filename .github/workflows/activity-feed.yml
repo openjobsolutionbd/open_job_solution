@@ -1,0 +1,32 @@
+name: Live Activity Feed
+
+# main-এ যেকোনো push (সাধারণত squash-merge) হওয়ার পরপরই এই workflow চলে
+# এবং pin করা "🟢 লাইভ অ্যাক্টিভিটি ফিড" ইস্যুতে (label: activity-feed) একটা
+# নতুন লাইন যোগ করে দেয় — যাতে অন্য যেকোনো Claude সেশন/অ্যাকাউন্ট সেই একটা
+# ইস্যু দেখেই কয়েক সেকেন্ড আগে কী পরিবর্তন হয়েছে জানতে পারে, git log ঘাঁটা
+# ছাড়াই। রুটিন "chore: bump version" কমিট বাদ দেওয়া হয় (শুধু auto-bump-version.yml
+# generate করে, real কাজ না) যাতে ফিড দরকারি সিগন্যাল দিয়ে ভরা থাকে, নয়েজ দিয়ে না।
+#
+# বাস্তবায়ন নোট: কমিট মেসেজ/ইস্যু-বডি সরাসরি শেল স্ট্রিং-এ বসানো হয় না
+# (বিশেষ ক্যারেক্টার/কোটেশনে ভেঙে যেতে পারে) — সবকিছু environment variable
+# দিয়ে পাইথনে পাঠানো হয়, পাইথন os.environ দিয়ে পড়ে।
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  update-feed:
+    if: "!contains(github.event.head_commit.message, 'chore: bump version to')"
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: ফিড ইস্যু আপডেট করুন
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          COMMIT_SHA: ${{ github.sha }}
+          COMMIT_AUTHOR: ${{ github.event.head_commit.author.name }}
+        run: python3 .github/workflows/scripts/update_activity_feed.py

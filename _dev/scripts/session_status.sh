@@ -56,17 +56,47 @@ echo ""
 echo "সর্বশেষ ৩টা কমিট:"
 git log --oneline -3
 
+REPO="openjobsolutionbd/open_job_solution"
+AUTH_HEADER=()
+if [ -n "${GH_TOKEN:-}" ]; then
+  AUTH_HEADER=(-H "Authorization: Bearer ${GH_TOKEN}")
+else
+  echo ""
+  echo "⚠️  GH_TOKEN environment variable সেট নেই — নিচের GitHub API কলগুলো"
+  echo "    unauthenticated হবে এবং rate-limit-এ আটকে ব্যর্থ হতে পারে।"
+  echo "    চালানোর আগে করুন: export GH_TOKEN=\"<আপনার PAT>\""
+fi
+
+echo ""
+echo "== 🟢 লাইভ অ্যাক্টিভিটি ফিড (pin করা Issue, প্রতি push-এ স্বয়ংক্রিয় আপডেট) =="
+curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/${REPO}/issues?state=open&labels=activity-feed&per_page=1" \
+  | python3 -c "
+import json, sys
+try:
+    data = json.load(sys.stdin)
+    if not data or not isinstance(data, list):
+        print('  ✗ ফিড ইস্যু পাওয়া যায়নি।')
+    else:
+        body = data[0].get('body') or ''
+        start = body.find('<!-- FEED-START -->')
+        end = body.find('<!-- FEED-END -->')
+        if start == -1 or end == -1:
+            print('  ✗ ফিড ফরম্যাট অপ্রত্যাশিত।')
+        else:
+            entries = body[start + len('<!-- FEED-START -->'):end].strip()
+            print(f\"  (সম্পূর্ণ ইতিহাস: https://github.com/${REPO}/issues/{data[0]['number']})\")
+            print('')
+            print(entries if entries else '  (এখনো কোনো এন্ট্রি নেই)')
+except Exception as e:
+    print(f'  ✗ পড়া যায়নি: {e}')
+"
+
 echo ""
 echo "== অন্য সেশন/অ্যাকাউন্ট ইতিমধ্যে কোন কাজ করে রেখেছে কিনা (GitHub-এর লাইভ অবস্থা) =="
 echo "কোনো নতুন কাজ শুরুর আগে নিচের তালিকায় মিলিয়ে দেখুন — একই বিষয়ে branch/PR"
 echo "আগে থেকে থাকলে বা merge হয়ে গিয়ে থাকলে পুনরাবৃত্তি করবেন না।"
 echo ""
-
-REPO="openjobsolutionbd/open_job_solution"
-AUTH_HEADER=()
-if [ -n "${GH_TOKEN:-}" ]; then
-  AUTH_HEADER=(-H "Authorization: Bearer ${GH_TOKEN}")
-fi
 
 echo "--- খোলা branch (main বাদে) ---"
 curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \

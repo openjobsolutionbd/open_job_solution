@@ -220,7 +220,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 
 /* Sentence change */
 .sent-original { color: var(--text-2); text-decoration: line-through; text-decoration-color: var(--border); }
-.sent-arrow { color: var(--text-3); font-size: 0.85rem; margin: 2px 0; }
+.sent-arrow { color: var(--text-3); font-size: 0.85rem; }
 .sent-changed { font-weight: 600; color: var(--text); }
 
 /* Idiom */

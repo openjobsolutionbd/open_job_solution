@@ -1,0 +1,161 @@
+[
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q01",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 1,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": ["সন্ধি", "বিচ্ছেদ"],
+    "rows": [
+      ["পুরস্কার", "পুরঃ + কার"],
+      ["সংস্কৃতি", "সম্ + কৃতি"]
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q02",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "bangla",
+    "topic": "শুদ্ধ-বানান",
+    "qno": 2,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": ["অশুদ্ধ", "শুদ্ধ"],
+    "rows": [
+      ["সুশ্শসা", "শুশ্রূষা"],
+      ["ক্ষীনজিবি", "ক্ষীণজীবী"]
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q03",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 3,
+    "type": "table",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "columns": ["বাক্যাংশ", "এক কথায়"],
+    "rows": [
+      ["যে পুরুষ স্ত্রীর বশীভূত", "স্ত্রৈণ"],
+      ["পঞ্চাশ বছর পূর্ণ হওয়ার উৎসব", "সুবর্ণজয়ন্তী"]
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q04",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "bangla",
+    "topic": "বিপরীত-শব্দ",
+    "qno": 4,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": ["শব্দ", "বিপরীত শব্দ"],
+    "rows": [
+      ["আগমন", "প্রত্যাগমন"],
+      ["নীরব", "সরব"]
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q05",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 5,
+    "type": "short-qa",
+    "question": "ব্যাস বাক্যসহ সমাস নির্ণয় করুন:",
+    "parts": [
+      { "label": "ক", "q": "নিরুৎসাহ", "a": "উৎসাহের অভাব — অব্যয়ীভাব" },
+      { "label": "খ", "q": "প্রাণপ্রিয়", "a": "প্রাণ হতে প্রিয় — ৫মী তৎপুরুষ" }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q06",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "english",
+    "topic": "verb-forms",
+    "qno": 6,
+    "type": "fill-gaps",
+    "question": "Put the correct form of verb in the following sentences.",
+    "parts": [
+      { "sentence": "I am thinking of ……away next week (go)", "answer": "going" },
+      { "sentence": "He failed…….the problem (solve)", "answer": "to solve" },
+      { "sentence": "His friends were not……by his sorrow (move)", "answer": "moved" },
+      { "sentence": "I never thought I …..you again. (see)", "answer": "would see" }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q07",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 7,
+    "type": "fill-gaps",
+    "question": "Put the correct form of preposition.",
+    "parts": [
+      { "sentence": "She explained the matter …..me.", "answer": "to" },
+      { "sentence": "Think……a number and then double it.", "answer": "of" },
+      { "sentence": "My friend shared his book…..me.", "answer": "with" },
+      { "sentence": "He pointed …….the map on the wall.", "answer": "at" }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q08",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 8,
+    "type": "idiom",
+    "question": "Make sentences with the following idioms.",
+    "parts": [
+      { "label": "a", "phrase": "Spare no pains", "meaning": "চেষ্টার ত্রুটি না করা", "example": "I shall spare no pains to help you." },
+      { "label": "b", "phrase": "Run short of", "meaning": "ঘাটতি/কমতি", "example": "I ran short of money." }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q09",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "সাধারণ-জ্ঞান",
+    "qno": 9,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন।",
+    "parts": [
+      { "label": "ক", "q": "সুয়েজ খাল খনন করেন কে?", "a": "ফার্দিনান্দ ডি লেসেপস" },
+      { "label": "খ", "q": "বিশ্বের বৃহত্তম হ্রদের নাম কী?", "a": "কাস্পিয়ান সাগর" },
+      { "label": "গ", "q": "বাংলাদেশ কবে জাতিসংঘের সদস্য পদ লাভ করে?", "a": "১৭ সেপ্টেম্বর ১৯৭৪ সালে" },
+      { "label": "ঘ", "q": "এশিয়ার প্রথম নোবেল বিজয়ীর নাম কী?", "a": "রবীন্দ্রনাথ ঠাকুর" },
+      { "label": "ঙ", "q": "মার্টিন লুথার কিং কে ছিলেন?", "a": "আফ্রিকান-আমেরিকান মানবাধিকারকর্মী" }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q10",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "সাধারণ-জ্ঞান",
+    "qno": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন।",
+    "parts": [
+      { "label": "ক", "q": "সিন্ধু অভিযানে মুসলিম সেনাপতি কে ছিলেন?", "a": "মুহাম্মদ বিন কাসিম" },
+      { "label": "খ", "q": "বাংলাদেশে জনসংখ্যায় ক্ষুদ্রতম উপজেলা কোনটি?", "a": "থানচি, বান্দরবান" },
+      { "label": "গ", "q": "ভোমরা স্থলবন্দরটি কোথায় অবস্থিত?", "a": "সাতক্ষীরা" },
+      { "label": "ঘ", "q": "কর্ণফুলী নদীর উৎপত্তিস্থল কোথায়?", "a": "মিজোরামের লুসাই পাহাড়" },
+      { "label": "ঙ", "q": "বর্তমান অন্তর্বর্তীকালীন সরকার গঠিত হয় কবে?", "a": "০৮ আগস্ট ২০২৪" }
+    ]
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q11",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 11,
+    "type": "math",
+    "question": "১০% কমিশনে একটি বই ক্রয় করে ১৮০ টাকা পরিশোধ করলে, বইটির প্রকৃত ক্রয়মূল্য কত টাকা?",
+    "steps": [
+      "১০% কমিশনে বই এর মূল্য = ১০০ − ১০ = ৯০ টাকা",
+      "কমিশনে মূল্য ৯০ টাকা হলে প্রকৃত ক্রয়মূল্য ১০০ টাকা",
+      "কমিশনে মূল্য ১৮০ টাকা হলে প্রকৃত ক্রয়মূল্য = (১০০ × ১৮০) ÷ ৯০ = ২০০ টাকা"
+    ],
+    "answer": "২০০ টাকা"
+  }
+]

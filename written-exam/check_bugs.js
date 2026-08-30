@@ -49,7 +49,9 @@ questions.forEach(q => { idCount[q.id] = (idCount[q.id] || 0) + 1; });
 report('Duplicate question IDs', Object.entries(idCount).filter(([,c]) => c > 1).map(([id,c]) => `${id} (${c}x)`));
 
 // ── 2. Missing required base fields (topic excluded — unused by app, optional) ─
-const baseRequired = ['id', 'examId', 'subject', 'qno', 'marks', 'type', 'question'];
+// ভিত্তি ফিল্ড: id, examId, subject, qno, type, question — এগুলো বাধ্যতামূলক।
+// marks বাধ্যতামূলক না (ভিত্তি ফিল্ড না) — নিচে আলাদাভাবে শুধু "থাকলে" ঠিক আছে কিনা চেক হয়।
+const baseRequired = ['id', 'examId', 'subject', 'qno', 'type', 'question'];
 const missingBase = [];
 questions.forEach(q => {
   baseRequired.forEach(f => {
@@ -179,8 +181,9 @@ questions.forEach(q => {
 report('Type-specific schema violations', typeErrors);
 
 // ── 9. marks not a positive number ────────────────────────────
-const badMarks = questions.filter(q => typeof q.marks !== 'number' || q.marks <= 0).map(q => `${q.id}: marks=${JSON.stringify(q.marks)}`);
-report('Non-positive or non-numeric "marks"', badMarks);
+// marks ঐচ্ছিক — থাকলে অবশ্যই positive number হতে হবে, না থাকলে (undefined) সমস্যা না
+const badMarks = questions.filter(q => q.marks !== undefined && (typeof q.marks !== 'number' || q.marks <= 0)).map(q => `${q.id}: marks=${JSON.stringify(q.marks)}`);
+report('Non-positive or non-numeric "marks" (থাকলে)', badMarks);
 
 // ── 10. qno gaps per exam (may mean missing/un-entered questions) ─
 const qnoGaps = [];

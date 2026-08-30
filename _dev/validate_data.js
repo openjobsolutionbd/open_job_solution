@@ -173,6 +173,8 @@ function checkDuplicateOptions(loc, options) {
       if (!q.id) issues.push(`[${loc}] id নেই`);
       if (!q.question) issues.push(`[${loc}] question নেই`);
       if (!q.examId) issues.push(`[${loc}] examId নেই`);
+      if (q.qno === undefined || q.qno === null || q.qno === '') issues.push(`[${loc}] প্রশ্ন নং (qno) নেই — ভিত্তি ফিল্ড, বাধ্যতামূলক`);
+      else if (typeof q.qno !== 'number') issues.push(`[${loc}] qno সংখ্যা (number) হতে হবে, string না — এখন: ${JSON.stringify(q.qno)}`);
       idEntries.push({ id: q.id, where: 'written-exam' });
 
       switch (q.type) {
@@ -233,8 +235,8 @@ function checkDuplicateOptions(loc, options) {
         if (!ex.post) issues.push(`[${loc}] post খালি`);
         if (!ex.date) issues.push(`[${loc}] date খালি`);
         else if (!/^\d{4}-\d{2}-\d{2}$/.test(ex.date)) issues.push(`[${loc}] date "${ex.date}" ঠিক ফরম্যাটে না (YYYY-MM-DD হওয়া উচিত)`);
-        if (!ex.duration) issues.push(`[${loc}] duration খালি`);
-        if (typeof ex.totalMarks !== 'number') issues.push(`[${loc}] totalMarks সংখ্যা না`);
+        if (!ex.duration) { /* সময় — বাধ্যতামূলক না, ভিত্তি ফিল্ড না */ }
+        if (typeof ex.totalMarks !== 'number') { /* পূর্ণমান — বাধ্যতামূলক না, ভিত্তি ফিল্ড না */ }
         if (typeof ex.totalQuestions !== 'number') issues.push(`[${loc}] totalQuestions সংখ্যা না`);
         archiveIdEntries.push({ id: ex.id, where: 'exam-archive.js' });
       });

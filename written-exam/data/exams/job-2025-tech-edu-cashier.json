@@ -260,17 +260,6 @@
     ]
   },
   {
-    "id": "job-2025-tech-edu-cashier-q10",
-    "examId": "job-2025-tech-edu-cashier",
-    "subject": "english",
-    "topic": "paragraph",
-    "qno": 10,
-    "marks": 5,
-    "type": "paragraph",
-    "question": "Write a Paragraph on Fourth Industrial Revolution",
-    "answer": "The Fourth Industrial Revolution refers to the fusion of digital, physical and biological technologies that is reshaping the way people live and work. It is driven by innovations such as artificial intelligence, robotics, the Internet of Things and big data. Unlike earlier industrial revolutions, this one blurs the boundaries between machines and humans through automation and connectivity. It brings both opportunities and challenges, including higher productivity as well as concerns over job losses and data privacy. Bangladesh, like many other nations, is trying to prepare its workforce with the necessary skills to adapt to this new era."
-  },
-  {
     "id": "job-2025-tech-edu-cashier-q11",
     "examId": "job-2025-tech-edu-cashier",
     "subject": "math",

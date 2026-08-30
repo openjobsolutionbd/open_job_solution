@@ -93,9 +93,9 @@ function renderAnswer(q) {
         <div class="ans-part">
           <span class="part-label">${escHtml(partLabel(p, i))})</span>
           <div class="part-body">
-            <div class="sent-original">${escHtml(p.original)}</div>
-            <div class="sent-arrow">➜</div>
-            <div class="sent-changed">${escHtml(p.changed)}</div>
+            <span class="sent-original">${escHtml(p.original)}</span>
+            <span class="sent-arrow"> ➜ </span>
+            <span class="sent-changed">${escHtml(p.changed)}</span>
           </div>
         </div>`).join('')}</div>`;
 

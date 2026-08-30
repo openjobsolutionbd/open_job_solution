@@ -834,7 +834,7 @@ const APP_METADATA = {
 
 **চূড়ান্ত আর্কিটেকচার:** বিস্তারিত Section ৪ দেখুন।
 
-**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)।
+**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)। **owner-এর সিদ্ধান্ত (২০২৬-০৮-৩০):** এই ট্রেড-অফ গ্রহণযোগ্য, বাংলাদেশে নেট-কানেকশন যথেষ্ট ভালো — "অফলাইনের জন্য ডাউনলোড" জাতীয় ফিচার প্রস্তাব করার দরকার নেই, এটা pending কাজ না।
 
 **বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ, কখনো ব্যবহৃতই হয়নি), `build_job_solution.js`, `data/job-solution.js` — সব মুছে ফেলা হয়েছে।
 

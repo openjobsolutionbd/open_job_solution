@@ -598,9 +598,11 @@
         .catch(err => console.warn('SW:', err));
     });
   }
-  navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!window.__swReloaded) { window.__swReloaded = true; window.location.reload(); }
-  });
+  // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,
+  // যা নতুন SW activate হওয়ার কিছুক্ষণ পর পেজকে হঠাৎ রিলোড করে ফেলত
+  // (ব্যবহারকারীর কাছে একটা অপ্রত্যাশিত "ঝাঁকি" হিসেবে অনুভূত হতো)।
+  // এখন নতুন SW নিঃশব্দে claim করে নেয়, পরবর্তী ফেচ/নেভিগেশন থেকে
+  // স্বয়ংক্রিয়ভাবে কার্যকর হয় — চলমান পেজ জোর করে রিলোড হয় না।
   </script>
   <script src="/_assets/shared/floating-search.js"></script>
   <script>

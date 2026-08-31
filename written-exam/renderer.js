@@ -33,12 +33,16 @@ function hasRedundantQNo(q) {
   return !!(first && first.label && first.label === toBnDigits(q.qno));
 }
 
-// প্রাপকের (to) টেক্সট দেখে salutation ঠিক করে — ভাষা (বাংলা/ইংরেজি) ও
-// লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) দুটোই বিবেচনা করে।
-function letterSalutation(to) {
+// চিঠির ভাষা (বাংলা/ইংরেজি) প্রশ্নের নিজের "subject" ফিল্ড থেকে নেওয়া হয়
+// (এটা সবসময় নির্ভরযোগ্য) — প্রাপকের (to) লাইনে "Sir/Madam/Mayor" এই
+// নির্দিষ্ট শব্দ খুঁজে ভাষা আন্দাজ করা হতো আগে, যেটা "The Supervisor",
+// "The Deputy Commissioner" এই ধরনের পদবিতে ভুল ফল দিত (বাংলা সম্বোধন
+// দেখাতো ইংরেজি চিঠিতেও)। লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) এখনও
+// to লাইন থেকেই আন্দাজ করা হয় — এর জন্য আলাদা কোনো নির্ভরযোগ্য ফিল্ড নেই।
+function letterSalutation(to, subject) {
   const t = to || '';
   const isFemale = /\bMadam\b|\bMs\.|\bMrs\./i.test(t) || /মহোদয়া/.test(t);
-  const isEnglish = /\bMayor\b|\bSir\b|\bMadam\b|\bMs\.|\bMrs\./i.test(t);
+  const isEnglish = subject === 'english';
   if (isEnglish) return isFemale ? 'Madam,' : 'Sir,';
   return isFemale ? 'মহোদয়া,' : 'মহোদয়,';
 }
@@ -144,7 +148,7 @@ function renderAnswer(q) {
         ${l.date ? `<div class="letter-date">${escHtml(l.date)}</div>` : ''}
         <div class="letter-to">${escHtml(l.to || '').replace(/\n/g, '<br>')}</div>
         ${l.subject ? `<div class="letter-subject"><strong>${q.subject === 'english' ? 'Subject:' : 'বিষয়:'}</strong> ${escHtml(l.subject)}</div>` : ''}
-        <div class="letter-salutation">${letterSalutation(l.to)}</div>
+        <div class="letter-salutation">${letterSalutation(l.to, q.subject)}</div>
         <div class="letter-body">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
         <div class="letter-closing">${escHtml(l.closing || '')}</div>
         <div class="letter-sender">${escHtml(l.sender || '').replace(/\n/g, '<br>')}</div>

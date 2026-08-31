@@ -519,7 +519,7 @@
       card.className = 'question-card';
       card.innerHTML = `
         <div class="question-body">
-          <span class="q-num">${q.qno ? toBn(q.qno) : ''}.</span>
+          <span class="q-num">${(q.qno && !hasRedundantQNo(q)) ? toBn(q.qno) + '.' : ''}</span>
           <div class="q-text-wrap">
             <div class="q-text">${escText(q.question || '')}</div>
           </div>

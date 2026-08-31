@@ -285,13 +285,13 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │
 ├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
 ├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
-└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (bcs-mcq-staging, books-staging) — deploy হয় না
+└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging; bcs-mcq-staging ২০২৬-০৮-৩০ তারিখে মুছে ফেলা হয়েছে, সব কনটেন্ট verified হয়ে final ডেটায় আছে) — deploy হয় না
 
 📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
     └── metadata.js           ← কখনো Cloudflare-এ যাবে না
 ```
 
-> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`, `_staging/bcs-mcq-staging/STATUS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
+> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
 
 প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/primary-mcq/`, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
 

@@ -19,14 +19,18 @@ function toBnDigits(num) {
 function partLabel(p, i) {
   return p.label || BN_PART_LABELS[i] || String(i + 1);
 }
-// প্রথম সাব-প্রশ্নের label যদি প্রশ্নের নিজের নম্বরের (qno) সাথে মিলে যায়
-// (যেমন প্রশ্ন ১৮-এর প্রথম sub-part-এর label-ও "১৮"), তাহলে উপরে কার্ডের
-// "১৮." আর নিচে "১৮)" — দুইবার একই নম্বর দেখানো এড়াতে সেক্ষেত্রে
-// লেবেলটা বাদ দিয়ে শুধু "—" দিয়ে শুরু হবে।
-function partLabelHtml(p, i, qno) {
-  const label = partLabel(p, i);
-  if (i === 0 && qno != null && label === toBnDigits(qno)) return '';
-  return `<span class="part-label">${escHtml(label)})</span>`;
+function partLabelHtml(p, i) {
+  return `<span class="part-label">${escHtml(partLabel(p, i))})</span>`;
+}
+// যে প্রশ্নগুলোর parts আসলে মূল পরীক্ষার ধারাবাহিক নম্বরই টেনে আনে
+// (যেমন প্রশ্ন ১৮-এর ভেতরের প্রথম sub-part-ও লেবেল "১৮"), সেখানে কার্ডের
+// উপরের "১৮." badge-টা আলাদা কিছু বোঝায় না — ভেতরের নম্বরই আসল।
+// তাই সেই badge দেখানোর দরকার নেই।
+function hasRedundantQNo(q) {
+  const parts = q.parts;
+  if (!Array.isArray(parts) || !parts.length || q.qno == null) return false;
+  const first = parts[0];
+  return !!(first && first.label && first.label === toBnDigits(q.qno));
 }
 
 // প্রাপকের (to) টেক্সট দেখে salutation ঠিক করে — ভাষা (বাংলা/ইংরেজি) ও
@@ -50,7 +54,7 @@ function renderAnswer(q) {
     case 'sub-parts':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          ${partLabelHtml(p, i, q.qno)}
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             ${p.q ? `<span class="part-q">${escHtml(p.q)}</span> <span class="part-eq">=</span> ` : ''}
             <span class="part-a">${escHtml(p.a)}</span>
@@ -83,7 +87,7 @@ function renderAnswer(q) {
     case 'translate':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          ${partLabelHtml(p, i, q.qno)}
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="trans-source">${escHtml(p.source)}</span>
             <span class="trans-arrow"> ➜ </span>
@@ -104,7 +108,7 @@ function renderAnswer(q) {
     case 'sentence-change':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          ${partLabelHtml(p, i, q.qno)}
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="sent-original">${escHtml(p.original)}</span>
             <span class="sent-arrow"> ➜ </span>
@@ -115,7 +119,7 @@ function renderAnswer(q) {
     case 'idiom':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          ${partLabelHtml(p, i, q.qno)}
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="idiom-phrase">${escHtml(p.phrase)}</span>
             <span class="idiom-eq"> = </span>
@@ -127,7 +131,7 @@ function renderAnswer(q) {
     case 'short-qa':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          ${partLabelHtml(p, i, q.qno)}
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="part-q">${escHtml(p.q)}</span>
             <span class="short-answer">— ${escHtml(p.a)}</span>

@@ -195,4 +195,32 @@ Object.entries(byExam).forEach(([examId, qs]) => {
 });
 report('qno gaps within an exam (likely un-entered questions, not auto-fixable)', qnoGaps);
 
+// ── 11. ফাইলের নাম ভিতরের examId ও exam-archive.js-এর সাথে মিলছে কিনা ─
+// index.html ব্রাউজারে সরাসরি ফাইলের নাম দিয়ে fetch(`data/exams/${examId}.json`)
+// করে — তাই এখানে অমিল থাকলে সেই এক্সাম সাইটে চুপচাপ লোডই হবে না,
+// অথচ উপরের কোনো চেকই এটা ধরে না (ওগুলো সব ফাইলের কনটেন্ট একসাথে
+// করে দেখে, আলাদা ফাইলের নাম দেখে না)।
+const examsDirForNameCheck = path.join(dir, 'data', 'exams');
+const fileNameIssues = [];
+fs.readdirSync(examsDirForNameCheck).filter(f => f.endsWith('.json')).forEach(f => {
+  const fileId = f.replace(/\.json$/, '');
+  let arr;
+  try {
+    arr = JSON.parse(fs.readFileSync(path.join(examsDirForNameCheck, f), 'utf8'));
+  } catch (e) {
+    fileNameIssues.push(`${f}: JSON পার্স ব্যর্থ (${e.message})`);
+    return;
+  }
+  const idsInFile = new Set((Array.isArray(arr) ? arr : []).map(q => q.examId));
+  if (idsInFile.size > 1) {
+    fileNameIssues.push(`${f}: একই ফাইলে একাধিক ভিন্ন examId আছে (${[...idsInFile].join(', ')})`);
+  } else if (idsInFile.size === 1 && !idsInFile.has(fileId)) {
+    fileNameIssues.push(`${f}: ফাইলের নাম ≠ ভিতরের examId ("${[...idsInFile][0]}")`);
+  }
+  if (!examIds.has(fileId)) {
+    fileNameIssues.push(`${f}: exam-archive.js-এ এই নামের এন্ট্রি নেই`);
+  }
+});
+report('Exam JSON filename not matching internal examId / exam-archive.js', fileNameIssues);
+
 console.log('\n' + (hadError ? '⚠️  Issues found — see above.' : '🎉 No issues found.'));

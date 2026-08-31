@@ -223,7 +223,7 @@
   <div class="app-header" id="appHeader">
     <div class="header-inner">
       <a href="/" style="text-decoration:none">
-        <span class="app-title">✍️ লিখিত পরীক্ষা <span class="app-version" id="appVersion"></span></span>
+        <span class="app-title">✍️ লিখিত পরীক্ষা</span>
       </a>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
@@ -295,8 +295,6 @@
   // ══════════════════════════════════════════
   // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
   const APP_VERSION = 'v1.222';
-  const versionEl = document.getElementById('appVersion');
-  if (versionEl) versionEl.textContent = APP_VERSION;
 
   // ══════════════════════════════════════════
   // Theme
@@ -401,7 +399,7 @@
     }
 
     empty.style.display = 'none';
-    countEl.textContent = `${toBn(filtered.length)}টি পরীক্ষা পাওয়া গেছে`;
+    countEl.textContent = '';
 
     filtered.forEach(ex => {
       const card = document.createElement('div');

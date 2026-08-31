@@ -225,7 +225,7 @@
   <div class="app-header" id="appHeader">
     <div class="header-inner">
       <a href="/" style="text-decoration:none">
-        <span class="app-title">✍️ লিখিত পরীক্ষা <span class="app-version" id="appVersion"></span></span>
+        <span class="app-title">✍️ লিখিত পরীক্ষা</span>
       </a>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
@@ -403,7 +403,7 @@
     }
 
     empty.style.display = 'none';
-    countEl.textContent = `${toBn(filtered.length)}টি পরীক্ষা পাওয়া গেছে`;
+    countEl.textContent = '';
 
     filtered.forEach(ex => {
       const card = document.createElement('div');

@@ -62,11 +62,24 @@ function partLooksLikeCorrectionPrompt(qText) {
 function stringsForItem(item, skipKeys) {
   const strs = [];
   const looksLikeCorrection = isCorrectionTopic(item.topic) || isCorrectionColumns(item.columns);
+  // 'sentence-change' টাইপে "Correct the (following) sentences" জাতীয় প্রশ্নের
+  // 'original' পাশটা ইচ্ছাকৃত ভুল বাক্য — শুধু 'changed' পাশ চেক হবে। কিন্তু
+  // "Change the sentences as per direction" (active/passive, simple/complex...)
+  // টাইপে 'original' একটা বৈধ বাক্য, দুটো পাশই চেক হওয়া উচিত।
+  const isSentenceCorrection =
+    item.type === 'sentence-change' && /correct/i.test(item.question || '');
   if (looksLikeCorrection && item.type === 'table' && Array.isArray(item.rows)) {
     const { rows, ...rest } = item;
     collectStrings(rest, strs, skipKeys);
     for (const row of rows) {
       if (Array.isArray(row) && row.length >= 2) strs.push(row[row.length - 1]);
+    }
+  } else if (isSentenceCorrection && Array.isArray(item.parts)) {
+    const { parts, ...rest } = item;
+    collectStrings(rest, strs, skipKeys);
+    for (const p of parts) {
+      if (p && typeof p === 'object' && 'changed' in p) strs.push(p.changed);
+      else collectStrings(p, strs, skipKeys);
     }
   } else if (
     looksLikeCorrection &&

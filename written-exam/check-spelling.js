@@ -37,24 +37,59 @@ function collectStrings(node, out, skipKeys) {
 // id, subject, topic, label, type — এগুলো slug/মেটাডেটা, বানান-চেকের দরকার নেই
 const SKIP_KEYS = new Set(['id', 'examId', 'subject', 'topic', 'label', 'type', 'qno', 'marks']);
 
-// topic: "spelling" প্রশ্নে ভুল বানানটা (Incorrect/parts[].q) ইচ্ছাকৃত —
-// স্পেলচেক করার দরকার নেই, শুধু সঠিক বানানটা (Correct/parts[].a) চেক হবে।
-// দুটো shape দেখা গেছে: type:"table" (rows: [incorrect, correct][])
-// এবং type:"sub-parts" (parts: [{label, q: incorrect, a: correct}])
+// 'ভুল/অশুদ্ধ ঠিক করুন' জাতীয় প্রশ্নের ভুল-পাশটা (rows[][0] / parts[].q)
+// ইচ্ছাকৃত ভুল — স্পেলচেক করার দরকার নেই, শুধু সঠিক পাশটা (rows[][1] / parts[].a)
+// চেক হবে। topic-এর নাম অনেক variant-এ আছে (spelling, শুদ্ধ বানান,
+// প্রমিত বানানরূপ, বাক্য শুদ্ধিকরণ...) তাই কীওয়ার্ড দিয়ে মেলানো হচ্ছে,
+// আর table-type-এ columns হেডার ('Incorrect'/'অশুদ্ধ') দিয়েও শনাক্ত করা হচ্ছে।
+function isCorrectionTopic(topic) {
+  if (!topic) return false;
+  return /spelling|শুদ্ধ|শুদ্ধি|correct/i.test(topic);
+}
+function isCorrectionColumns(columns) {
+  if (!Array.isArray(columns) || columns.length < 2) return false;
+  const first = columns[0];
+  return first === 'Incorrect' || first === 'অশুদ্ধ';
+}
+// একটা মিশ্র-বিষয়ের প্রশ্নের মধ্যে একটা sub-part একা 'ভুল বানান/অশুদ্ধি সংশোধন
+// করুন' জাতীয় হতে পারে (parent topic পুরোপুরি spelling না) — সেই part-এর q
+// টেক্সটেই সনাক্ত করা হচ্ছে
+function partLooksLikeCorrectionPrompt(qText) {
+  if (typeof qText !== 'string') return false;
+  return /অশুদ্ধি সংশোধন|ভুল বানান|শুদ্ধ (করে )?লিখ/u.test(qText);
+}
+
 function stringsForItem(item, skipKeys) {
   const strs = [];
-  if (item.topic === 'spelling' && item.type === 'table' && Array.isArray(item.rows)) {
+  const looksLikeCorrection = isCorrectionTopic(item.topic) || isCorrectionColumns(item.columns);
+  if (looksLikeCorrection && item.type === 'table' && Array.isArray(item.rows)) {
     const { rows, ...rest } = item;
     collectStrings(rest, strs, skipKeys);
     for (const row of rows) {
-      if (Array.isArray(row) && row.length >= 2) strs.push(row[1]);
+      if (Array.isArray(row) && row.length >= 2) strs.push(row[row.length - 1]);
     }
-  } else if (item.topic === 'spelling' && item.type === 'sub-parts' && Array.isArray(item.parts)) {
+  } else if (
+    looksLikeCorrection &&
+    (item.type === 'sub-parts' || item.type === 'short-qa') &&
+    Array.isArray(item.parts)
+  ) {
     const { parts, ...rest } = item;
     collectStrings(rest, strs, skipKeys);
     for (const p of parts) {
       if (p && typeof p === 'object' && 'a' in p) strs.push(p.a);
       else collectStrings(p, strs, skipKeys);
+    }
+  } else if (item.type === 'short-qa' && Array.isArray(item.parts)) {
+    // পুরো প্রশ্নটা spelling-বিষয়ক না, কিন্তু কোনো একটা sub-part হতে পারে
+    const { parts, ...rest } = item;
+    collectStrings(rest, strs, skipKeys);
+    for (const p of parts) {
+      if (p && typeof p === 'object' && partLooksLikeCorrectionPrompt(p.q)) {
+        if ('a' in p) strs.push(p.a);
+        if (p.label) strs.push(p.label);
+      } else {
+        collectStrings(p, strs, skipKeys);
+      }
     }
   } else {
     collectStrings(item, strs, skipKeys);

@@ -289,7 +289,7 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │
 ├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
 ├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
-└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging; bcs-mcq-staging ২০২৬-০৮-৩০ তারিখে মুছে ফেলা হয়েছে, সব কনটেন্ট verified হয়ে final ডেটায় আছে) — deploy হয় না
+└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging) — deploy হয় না
 
 📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
     └── metadata.js           ← কখনো Cloudflare-এ যাবে না

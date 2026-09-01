@@ -7,9 +7,6 @@ const CACHE_NAME = "oca-cache-1.8.0";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png",
   "./vendor/marked.min.js",
   "./vendor/purify.min.js",
   // TASK 4: ইনডেক্স ফাইলগুলোও ইনস্টল-টাইমে ক্যাশ করা হয়, যাতে প্রথমবার

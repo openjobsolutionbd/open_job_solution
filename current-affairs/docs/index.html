@@ -7,8 +7,9 @@
 <meta name="description" content="টপিক-ভিত্তিক বাংলা কারেন্ট অ্যাফেয়ার্স নলেজ-বেস, রিয়েল-টাইম সার্চ সহ — প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতির জন্য বিসিএসসহ সব ধরনের চাকরির পরীক্ষায় কাজে লাগবে এমন হালনাগাদ তথ্য।">
 <link rel="canonical" href="/current-affairs/docs/">
 <meta name="theme-color" content="#004d2c">
-<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
-<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="/_assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
 <script>
   /* থিম flash এড়াতে head-এই localStorage থেকে পড়া হচ্ছে */
   (function(){
@@ -1849,6 +1850,35 @@ setInterval(() => {
     return state.elapsedMs;
   }
 
+  // BUG-22 fix: ট্যাব hidden/বন্ধ থাকা অবস্থার সময়টুকু যেন "পড়াশোনার
+  // সময়" হিসেবে যোগ না হয় — visibilitychange-এ hidden হলে elapsed
+  // ফ্রিজ করে দেওয়া হয় (startedAt=null, কিন্তু running=true-ই থাকে),
+  // আবার visible হলে সেখান থেকেই ফের গোনা শুরু হয়। unload/beforeunload-এর
+  // বদলে visibilitychange ব্যবহার করা হয়েছে কারণ ট্যাব বন্ধ হওয়ার আগেও এটা
+  // নির্ভরযোগ্যভাবে fire করে (mobile/bfcache-এও), আর explicit
+  // pause/resume-এর মতোই state.startedAt===null invariant পুনর্ব্যবহার
+  // করায় নতুন কোনো state-field লাগেনি।
+  document.addEventListener('visibilitychange', () => {
+    if(document.hidden){
+      if(state.running && state.startedAt){
+        state.elapsedMs = currentElapsedMs();
+        state.startedAt = null;
+        persist();
+      }
+    } else if(state.running && !state.startedAt){
+      state.startedAt = Date.now();
+      persist();
+    }
+  });
+  // পেজ লোডের সময় ট্যাব ইতিমধ্যে visible থাকলে (স্বাভাবিক ক্ষেত্র),
+  // visibilitychange ইভেন্ট fire হবে না — তাই আগের সেশনে hidden অবস্থায়
+  // ফ্রিজ হয়ে থাকা running টাইমার এখানেই আবার শুরু করা হয়, নাহলে UI
+  // "চলছে" দেখালেও সংখ্যাটা স্থবির থেকে যেত যতক্ষণ না ইউজার নিজে
+  // টগল করেন।
+  if(state.running && !state.startedAt && !document.hidden){
+    state.startedAt = Date.now();
+  }
+
   function toBengaliDigits(str){
     return str.replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[d]);
   }
@@ -2323,7 +2353,15 @@ function renderMcqView(){
     set.sections.forEach(section => {
       html += `<div class="mcq-section-heading">${escapeHtml(section.name)}</div>`;
       section.questions.forEach(q => {
-        const mcqKey = `${set.label}||${q.number}`; // Bug 14: MCQ_ANSWERED-এ লুকআপের জন্য ইউনিক key
+        // BUG-24 fix: আগে mcqKey-তে শুধু set.label + q.number থাকত, section
+        // বাদ ছিল। বর্তমান ডেটায় প্রশ্ন-নম্বর পুরো সেট জুড়ে ধারাবাহিক থাকায়
+        // এখনো সংঘর্ষ হয়নি, কিন্তু ম্যাগাজিনে সেকশন-ভিত্তিক নম্বরিং (প্রতি
+        // বিভাগে আবার ১ থেকে শুরু) এলে দুটো ভিন্ন প্রশ্ন একই key পেয়ে যেত —
+        // একটাতে উত্তর দিলে অন্যটা না-ছুঁয়েই ভুল ইনডেক্স নিয়ে "answered"
+        // দেখাত (MCQ_ANSWERED cross-contamination)। section.name যোগ করায়
+        // (ensure_section()-এর কারণে একটা সেটের ভেতর এমনিতেই ইউনিক) key
+        // এখন সবসময় ইউনিক নিশ্চিত।
+        const mcqKey = `${set.label}||${section.name}||${q.number}`;
         html += `<div class="mcq-question" data-answered="0" data-correct-idx="${q.answer_index}" data-mcq-key="${escapeHtml(mcqKey)}">`;
         html += `<div class="mcq-question-text"><span class="mcq-question-number">${escapeHtml(q.number)}.</span>${escapeHtml(q.text)}</div>`;
         html += `<div class="mcq-options">`;

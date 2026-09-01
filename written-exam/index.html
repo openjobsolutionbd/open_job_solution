@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>লিখিত পরীক্ষা — Open Job Solution</title>
   <meta name="theme-color" content="#1a1814">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/_assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
   <meta name="mobile-web-app-capable" content="yes">
   <link href="/_assets/fonts/noto-bengali.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -223,7 +225,7 @@
   <div class="app-header" id="appHeader">
     <div class="header-inner">
       <a href="/" style="text-decoration:none">
-        <span class="app-title">✍️ লিখিত পরীক্ষা <span class="app-version" id="appVersion"></span></span>
+        <span class="app-title">✍️ লিখিত পরীক্ষা</span>
       </a>
       <div class="search-wrap" id="searchWrap">
         <span class="search-icon">🔍</span>
@@ -294,7 +296,7 @@
   // Version
   // ══════════════════════════════════════════
   // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-  const APP_VERSION = 'v1.211';
+  const APP_VERSION = 'v1.232';
   const versionEl = document.getElementById('appVersion');
   if (versionEl) versionEl.textContent = APP_VERSION;
 
@@ -401,7 +403,7 @@
     }
 
     empty.style.display = 'none';
-    countEl.textContent = `${toBn(filtered.length)}টি পরীক্ষা পাওয়া গেছে`;
+    countEl.textContent = '';
 
     filtered.forEach(ex => {
       const card = document.createElement('div');
@@ -519,7 +521,7 @@
       card.className = 'question-card';
       card.innerHTML = `
         <div class="question-body">
-          <span class="q-num">${q.qno ? toBn(q.qno) : ''}.</span>
+          <span class="q-num">${(q.qno && !hasRedundantQNo(q)) ? toBn(q.qno) + '.' : ''}</span>
           <div class="q-text-wrap">
             <div class="q-text">${escText(q.question || '')}</div>
           </div>
@@ -598,9 +600,11 @@
         .catch(err => console.warn('SW:', err));
     });
   }
-  navigator.serviceWorker && navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!window.__swReloaded) { window.__swReloaded = true; window.location.reload(); }
-  });
+  // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,
+  // যা নতুন SW activate হওয়ার কিছুক্ষণ পর পেজকে হঠাৎ রিলোড করে ফেলত
+  // (ব্যবহারকারীর কাছে একটা অপ্রত্যাশিত "ঝাঁকি" হিসেবে অনুভূত হতো)।
+  // এখন নতুন SW নিঃশব্দে claim করে নেয়, পরবর্তী ফেচ/নেভিগেশন থেকে
+  // স্বয়ংক্রিয়ভাবে কার্যকর হয় — চলমান পেজ জোর করে রিলোড হয় না।
   </script>
   <script src="/_assets/shared/floating-search.js"></script>
   <script>

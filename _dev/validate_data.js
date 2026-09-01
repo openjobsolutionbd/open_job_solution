@@ -284,6 +284,35 @@ function checkDuplicateOptions(loc, options) {
       orphanIds.forEach(id => issues.push(`[written-exam] examId "${id}"-এর কোনো প্রশ্নের জন্য exam-archive.js-এ কোনো এন্ট্রি নেই`));
     }
   }
+
+  // ফাইলের নাম তার ভিতরের examId-এর সাথে হুবহু মিলছে কিনা — browser
+  // সরাসরি fetch(`data/exams/${examId}.json`) করে (written-exam/index.html
+  // দেখুন), তাই নাম না মিললে সেই এক্সাম সাইটে চুপচাপ লোডই হবে না।
+  // উপরের কোনো চেকই এটা ধরে না (ওগুলো সব ফাইলের কনটেন্ট একসাথে করে
+  // দেখে, আলাদা ফাইলের নাম দেখে না)।
+  {
+    const examsDir = path.join(ROOT, 'written-exam', 'data', 'exams');
+    const archiveIdSet = new Set((ARCHIVE || []).map(ex => ex.id));
+    fs.readdirSync(examsDir).filter(f => f.endsWith('.json')).forEach(f => {
+      const fileId = f.replace(/\.json$/, '');
+      let arr;
+      try {
+        arr = JSON.parse(fs.readFileSync(path.join(examsDir, f), 'utf8'));
+      } catch (e) {
+        issues.push(`[written-exam/data/exams/${f}] JSON পার্স করতে ব্যর্থ: ${e.message}`);
+        return;
+      }
+      const idsInFile = new Set((Array.isArray(arr) ? arr : []).map(q => q.examId));
+      if (idsInFile.size > 1) {
+        issues.push(`[written-exam/data/exams/${f}] একই ফাইলে একাধিক ভিন্ন examId আছে: ${[...idsInFile].join(', ')}`);
+      } else if (idsInFile.size === 1 && !idsInFile.has(fileId)) {
+        issues.push(`[written-exam/data/exams/${f}] ফাইলের নাম "${fileId}" কিন্তু ভিতরের প্রশ্নে examId="${[...idsInFile][0]}" — দুইটা হুবহু মেলা উচিত`);
+      }
+      if (ARCHIVE && !archiveIdSet.has(fileId)) {
+        issues.push(`[written-exam/data/exams/${f}] এই নামের কোনো এন্ট্রি exam-archive.js-এ নেই`);
+      }
+    });
+  }
 }
 
 // ── ফলাফল ─────────────────────────────────────────────────

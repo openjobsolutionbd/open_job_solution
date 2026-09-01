@@ -91,6 +91,27 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.232 | ১ সেপ্টেম্বর ২০২৬ | Version v1.232-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.231 | ১ সেপ্টেম্বর ২০২৬ | Version v1.231-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.230 | ১ সেপ্টেম্বর ২০২৬ | Version v1.230-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.229 | ১ সেপ্টেম্বর ২০২৬ | Version v1.229-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.228 | ১ সেপ্টেম্বর ২০২৬ | Version v1.228-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.227 | ১ সেপ্টেম্বর ২০২৬ | Version v1.227-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.226 | ১ সেপ্টেম্বর ২০২৬ | Version v1.226-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.225 | ৩১ আগস্ট ২০২৬ | Version v1.225-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.224 | ৩১ আগস্ট ২০২৬ | Version v1.224-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.223 | ৩১ আগস্ট ২০২৬ | Version v1.223-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.222 | ৩১ আগস্ট ২০২৬ | Version v1.222-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.221 | ৩১ আগস্ট ২০২৬ | Version v1.221-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.220 | ৩১ আগস্ট ২০২৬ | Version v1.220-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.219 | ৩০ আগস্ট ২০২৬ | Version v1.219-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.218 | ৩০ আগস্ট ২০২৬ | Version v1.218-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.217 | ৩০ আগস্ট ২০২৬ | Version v1.217-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.216 | ৩০ আগস্ট ২০২৬ | Version v1.216-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.215 | ৩০ আগস্ট ২০২৬ | Version v1.215-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.214 | ৩০ আগস্ট ২০২৬ | Version v1.214-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.213 | ৩০ আগস্ট ২০২৬ | Version v1.213-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.212 | ৩০ আগস্ট ২০২৬ | Version v1.212-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.211 | ৩০ আগস্ট ২০২৬ | Version v1.211-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.210 | ৩০ আগস্ট ২০২৬ | Version v1.210-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.209 | ৩০ আগস্ট ২০২৬ | Version v1.209-এ আপগ্রেড। Cache সব module-এ update। |
@@ -275,13 +296,13 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │
 ├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
 ├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
-└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (bcs-mcq-staging, books-staging) — deploy হয় না
+└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging) — deploy হয় না
 
 📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
     └── metadata.js           ← কখনো Cloudflare-এ যাবে না
 ```
 
-> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`, `_staging/bcs-mcq-staging/STATUS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
+> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
 
 প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/primary-mcq/`, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
 
@@ -833,7 +854,7 @@ const APP_METADATA = {
 
 **চূড়ান্ত আর্কিটেকচার:** বিস্তারিত Section ৪ দেখুন।
 
-**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)।
+**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)। **owner-এর সিদ্ধান্ত (২০২৬-০৮-৩০):** এই ট্রেড-অফ গ্রহণযোগ্য, বাংলাদেশে নেট-কানেকশন যথেষ্ট ভালো — "অফলাইনের জন্য ডাউনলোড" জাতীয় ফিচার প্রস্তাব করার দরকার নেই, এটা pending কাজ না।
 
 **বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ, কখনো ব্যবহৃতই হয়নি), `build_job_solution.js`, `data/job-solution.js` — সব মুছে ফেলা হয়েছে।
 

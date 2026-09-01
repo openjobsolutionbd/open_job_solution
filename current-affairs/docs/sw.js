@@ -2,14 +2,11 @@
 // CACHE_NAME নিচে বিল্ড-স্ক্রিপ্ট স্বয়ংক্রিয়ভাবে VERSION ফাইল থেকে বসিয়ে দেয়।
 // তাই VERSION বাড়লেই পুরনো ক্যাশ বাতিল হয়ে সবার জন্য নতুন ভার্সন লোড হয় —
 // এই ফাইলে হাতে কিছু বদলানোর দরকার নেই।
-const CACHE_NAME = "oca-cache-1.7.5";
+const CACHE_NAME = "oca-cache-1.8.0";
 
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png",
   "./vendor/marked.min.js",
   "./vendor/purify.min.js",
   // TASK 4: ইনডেক্স ফাইলগুলোও ইনস্টল-টাইমে ক্যাশ করা হয়, যাতে প্রথমবার

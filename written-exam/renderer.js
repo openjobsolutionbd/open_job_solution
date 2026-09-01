@@ -12,16 +12,37 @@ function escHtml(str) {
 // একাধিক অংশের উত্তরে (idiom/translate/sentence-change/short-qa) ডেটায়
 // label ফাঁকা থাকলে এখান থেকে ক্রমানুসারে (ক, খ, গ, ঘ...) বসে।
 const BN_PART_LABELS = ['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ','ট','ঠ','ড','ঢ','ণ'];
+function toBnDigits(num) {
+  const bnDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+  return String(num).replace(/[0-9]/g, d => bnDigits[d]);
+}
 function partLabel(p, i) {
   return p.label || BN_PART_LABELS[i] || String(i + 1);
 }
+function partLabelHtml(p, i) {
+  return `<span class="part-label">${escHtml(partLabel(p, i))})</span>`;
+}
+// যে প্রশ্নগুলোর parts আসলে মূল পরীক্ষার ধারাবাহিক নম্বরই টেনে আনে
+// (যেমন প্রশ্ন ১৮-এর ভেতরের প্রথম sub-part-ও লেবেল "১৮"), সেখানে কার্ডের
+// উপরের "১৮." badge-টা আলাদা কিছু বোঝায় না — ভেতরের নম্বরই আসল।
+// তাই সেই badge দেখানোর দরকার নেই।
+function hasRedundantQNo(q) {
+  const parts = q.parts;
+  if (!Array.isArray(parts) || !parts.length || q.qno == null) return false;
+  const first = parts[0];
+  return !!(first && first.label && first.label === toBnDigits(q.qno));
+}
 
-// প্রাপকের (to) টেক্সট দেখে salutation ঠিক করে — ভাষা (বাংলা/ইংরেজি) ও
-// লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) দুটোই বিবেচনা করে।
-function letterSalutation(to) {
+// চিঠির ভাষা (বাংলা/ইংরেজি) প্রশ্নের নিজের "subject" ফিল্ড থেকে নেওয়া হয়
+// (এটা সবসময় নির্ভরযোগ্য) — প্রাপকের (to) লাইনে "Sir/Madam/Mayor" এই
+// নির্দিষ্ট শব্দ খুঁজে ভাষা আন্দাজ করা হতো আগে, যেটা "The Supervisor",
+// "The Deputy Commissioner" এই ধরনের পদবিতে ভুল ফল দিত (বাংলা সম্বোধন
+// দেখাতো ইংরেজি চিঠিতেও)। লিঙ্গ (Madam/Ms./Mrs./মহোদয়া হলে নারী) এখনও
+// to লাইন থেকেই আন্দাজ করা হয় — এর জন্য আলাদা কোনো নির্ভরযোগ্য ফিল্ড নেই।
+function letterSalutation(to, subject) {
   const t = to || '';
   const isFemale = /\bMadam\b|\bMs\.|\bMrs\./i.test(t) || /মহোদয়া/.test(t);
-  const isEnglish = /\bMayor\b|\bSir\b|\bMadam\b|\bMs\.|\bMrs\./i.test(t);
+  const isEnglish = subject === 'english';
   if (isEnglish) return isFemale ? 'Madam,' : 'Sir,';
   return isFemale ? 'মহোদয়া,' : 'মহোদয়,';
 }
@@ -37,7 +58,7 @@ function renderAnswer(q) {
     case 'sub-parts':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(partLabel(p, i))})</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             ${p.q ? `<span class="part-q">${escHtml(p.q)}</span> <span class="part-eq">=</span> ` : ''}
             <span class="part-a">${escHtml(p.a)}</span>
@@ -70,7 +91,7 @@ function renderAnswer(q) {
     case 'translate':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(partLabel(p, i))})</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="trans-source">${escHtml(p.source)}</span>
             <span class="trans-arrow"> ➜ </span>
@@ -91,18 +112,18 @@ function renderAnswer(q) {
     case 'sentence-change':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(partLabel(p, i))})</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
-            <div class="sent-original">${escHtml(p.original)}</div>
-            <div class="sent-arrow">➜</div>
-            <div class="sent-changed">${escHtml(p.changed)}</div>
+            <span class="sent-original">${escHtml(p.original)}</span>
+            <span class="sent-arrow"> ➜ </span>
+            <span class="sent-changed">${escHtml(p.changed)}</span>
           </div>
         </div>`).join('')}</div>`;
 
     case 'idiom':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(partLabel(p, i))})</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="idiom-phrase">${escHtml(p.phrase)}</span>
             <span class="idiom-eq"> = </span>
@@ -114,10 +135,10 @@ function renderAnswer(q) {
     case 'short-qa':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${escHtml(partLabel(p, i))})</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="part-q">${escHtml(p.q)}</span>
-            <div class="short-answer">উত্তর: ${escHtml(p.a)}</div>
+            <span class="short-answer">— ${escHtml(p.a)}</span>
           </div>
         </div>`).join('')}</div>`;
 
@@ -127,7 +148,7 @@ function renderAnswer(q) {
         ${l.date ? `<div class="letter-date">${escHtml(l.date)}</div>` : ''}
         <div class="letter-to">${escHtml(l.to || '').replace(/\n/g, '<br>')}</div>
         ${l.subject ? `<div class="letter-subject"><strong>${q.subject === 'english' ? 'Subject:' : 'বিষয়:'}</strong> ${escHtml(l.subject)}</div>` : ''}
-        <div class="letter-salutation">${letterSalutation(l.to)}</div>
+        <div class="letter-salutation">${letterSalutation(l.to, q.subject)}</div>
         <div class="letter-body">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
         <div class="letter-closing">${escHtml(l.closing || '')}</div>
         <div class="letter-sender">${escHtml(l.sender || '').replace(/\n/g, '<br>')}</div>

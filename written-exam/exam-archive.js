@@ -9,7 +9,7 @@ const EXAM_ARCHIVE = [
     post: "নাজির কাম ক্যাশিয়ার / সার্টিফিকেট পেশকার",
     date: "2025-06-27",
     duration: "৯০ মিনিট",
-    totalMarks: 105,
+    totalMarks: 100,
     totalQuestions: 18,
   },
   {

@@ -279,6 +279,7 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
 │   ├── load_exams.js            ← exams/*.json লোড+মার্জ করার শেয়ার্ড helper (script-দের জন্য)
 │   ├── check_bugs.js            ← ডেটা বাগ-চেকার (advisory, CI-তে required না)
+│   ├── check-spelling.js        ← বাংলা spellcheck (advisory, CI-তে required না)
 │   ├── generate_index.js        ← EXAM_INDEX.md রিজেনারেট করে
 │   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
 │       └── 📁 exams/            ← ★ একমাত্র ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
@@ -317,6 +318,7 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 | `data/exams/<examId>.json` | **★ একমাত্র ডেটার উৎস।** প্রতিটা পরীক্ষার সব প্রশ্ন এখানে, আলাদা ফাইলে। নতুন প্রশ্ন এখানেই যোগ করুন। ব্রাউজার runtime-এ সরাসরি এই ফাইলটাই `fetch()` করে (কোনো build/generate ধাপ নেই)। |
 | `load_exams.js` | Node script-দের জন্য শেয়ার্ড helper — সব `exams/*.json` পড়ে একটা array-তে মার্জ করে (`check_bugs.js`, `generate_index.js`, `_dev/validate_data.js` এটা ব্যবহার করে) |
 | `check_bugs.js` | ডেটা বাগ-চেকার (advisory — `node written-exam/check_bugs.js`, CI-তে required check না) |
+| `check-spelling.js` | বাংলা spellcheck (advisory — `_dev/check-spelling.js`-এর মতোই কিন্তু `data/exams/*.json`-এর জন্য, CI-তে required check না) |
 | `generate_index.js` | `EXAM_INDEX.md` রিজেনারেট করে (`npm run index`) |
 | `exam-archive.js` | সব পরীক্ষার হেডিং তথ্যের মাস্টার লিস্ট |
 | `PROGRESS.md` | কোন এক্সাম/ক্রম নম্বর ইতিমধ্যে যোগ করা হয়েছে তার ট্র্যাকিং — **নতুন এক্সাম যোগ করার আগে অবশ্যই পড়ুন**, যোগ করার পর অবশ্যই আপডেট করুন (নাহলে অন্য সেশন ডুপ্লিকেট কাজ করবে) |

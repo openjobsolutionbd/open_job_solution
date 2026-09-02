@@ -17,8 +17,8 @@
  *      যেন AGENTS.md-এ অন্তত ফাইলনাম হিসেবে উল্লেখ থাকে — নতুন workflow
  *      যোগ করে ডকুমেন্টে লিখতে ভুলে যাওয়াটা একটা বারবার ঘটা ভুল, তাই এটা
  *      এখন স্বয়ংক্রিয়ভাবে আটকানো হয়
- *   ৪. প্রতিটা helper script (_dev/scripts/ ও .github/workflows/scripts/
- *      -এর ভেতরের ফাইল) যেন AGENTS.md-এ অন্তত ফাইলনাম হিসেবে উল্লেখ থাকে
+ *   ৪. প্রতিটা helper script (_dev/-এর টপ-লেভেল ফাইল, _dev/scripts/, ও
+ *      .github/workflows/scripts/-এর ভেতরের .js/.py/.sh ফাইল) যেন AGENTS.md-এ অন্তত ফাইলনাম হিসেবে উল্লেখ থাকে
  *
  * exit code 0 = ঠিক আছে, 1 = সমস্যা পাওয়া গেছে (CI fail করবে)।
  */
@@ -89,16 +89,22 @@ if (fs.existsSync(AGENTS_DOC)) {
   }
 
   const SCRIPT_DIRS = [
-    path.join(ROOT, "_dev", "scripts"),
-    path.join(ROOT, ".github", "workflows", "scripts"),
+    { dir: path.join(ROOT, "_dev"), recursive: false }, // top-level dev-tooling (validate_data.js, update_version.py, ইত্যাদি)
+    { dir: path.join(ROOT, "_dev", "scripts"), recursive: false },
+    { dir: path.join(ROOT, ".github", "workflows", "scripts"), recursive: false },
   ];
+  const SCRIPT_EXTENSIONS = [".js", ".py", ".sh"];
   let scriptFiles = [];
-  for (const dir of SCRIPT_DIRS) {
+  for (const { dir } of SCRIPT_DIRS) {
     if (fs.existsSync(dir)) {
       scriptFiles = scriptFiles.concat(
         fs
           .readdirSync(dir, { withFileTypes: true })
-          .filter((f) => f.isFile())
+          .filter(
+            (f) =>
+              f.isFile() &&
+              SCRIPT_EXTENSIONS.includes(path.extname(f.name))
+          )
           .map((f) => f.name)
       );
     }

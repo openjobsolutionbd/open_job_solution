@@ -62,7 +62,9 @@ repo-তে একটা **pin করা GitHub Issue** আছে (label: `activ
 - একাধিক `job-app-MD*.md` ফাইল তৈরি হয়ে গেলে
 - root-level কোনো ফোল্ডার `job-app-MD.md`-এ উল্লেখহীন থাকলে
 - কোনো নতুন `.github/workflows/*.yml` ফাইল `AGENTS.md`-এ উল্লেখহীন থাকলে
-- কোনো নতুন হেল্পার script (`_dev/scripts/`, `.github/workflows/scripts/`) `AGENTS.md`-এ উল্লেখহীন থাকলে
+- কোনো নতুন হেল্পার script (`_dev/`-এর টপ-লেভেল, `_dev/scripts/`, `.github/workflows/scripts/`) `AGENTS.md`-এ উল্লেখহীন থাকলে
+
+**সীমাবদ্ধতা:** এই script-চেক শুধু উপরের তিনটা কেন্দ্রীয় dev-tooling ফোল্ডার স্ক্যান করে। `written-exam/check_bugs.js`, `written-exam/generate_index.js`, `written-exam/check-spelling.js`-এর মতো **মডিউলের নিজস্ব ফোল্ডারে (written-exam/, bcs-mcq/ ইত্যাদি) মিশে-থাকা dev-tool script automated চেক কভার করে না** — কারণ ঐসব ফোল্ডারে প্রোডাক্ট সোর্স কোডও (renderer.js, sw.js ইত্যাদি) থাকে, যেগুলো ডকুমেন্ট করার বাধ্যবাধকতা নেই; সব ফাইল স্বয়ংক্রিয়ভাবে স্ক্যান করলে false-positive তৈরি হতো। তাই কোনো মডিউল-ফোল্ডারে নতুন dev-tool script (বাগ-চেকার, স্পেলচেক, ইনডেক্স-জেনারেটর ইত্যাদি) যোগ করলে সেটা `job-app-MD.md`-এর সংশ্লিষ্ট সেকশনের ফাইল-টেবিলে ম্যানুয়ালি যোগ করতে ভুলবেন না — এটা automated চেক ধরবে না।
 
 **কিন্তু এই automated চেক শুধু "একদম কোনো উল্লেখ নেই" ধরনের সম্পূর্ণ বাদ পড়া ধরে — একটা ফাইলের নাম উল্লেখ থাকলেই এটা পাস করে যাবে, বর্ণনা পুরনো/ভুল হলেও।** তাই feature-এর *আচরণ* বদলালে (যেমন কোনো button নতুন কিছু করছে, কোনো workflow-এর trigger শর্ত বদলেছে, কোনো ফোল্ডারের উদ্দেশ্য পুরোপুরি বদলে গেছে) — সেটা automated চেক ধরবে না, নিজেকেই মনে করে আপডেট করতে হবে:
 
@@ -110,8 +112,10 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 | `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
 | `_staging/books-staging/` | "বই সমূহ" ফিচারের পরিকল্পনা/ডিজাইন-নোট (README + BOOKS_NOTES.md) |
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check। ডুপ্লিকেট id, ডুপ্লিকেট প্রশ্ন+option, ডুপ্লিকেট ব্যাখ্যা (নিজের ডেটাবেসের মধ্যে) — এসব ধরে, কিন্তু **অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা ধরতে পারে না** (নিচের সেকশন দেখুন) |
-| `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট (`job-app-MD.md`) যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — ডুপ্লিকেট মাস্টার-ডক ফাইল ও অনুল্লেখিত root ফোল্ডার ধরে। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift ধরে, prose-এর সঠিকতা না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
-| `_dev/check-spelling.js` | বাংলা spellcheck (advisory, ব্যর্থ হলেও PR আটকায় না) |
+| `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — চারটা স্ট্রাকচারাল চেক করে: ডুপ্লিকেট মাস্টার-ডক ফাইল, অনুল্লেখিত root ফোল্ডার, অনুল্লেখিত `.github/workflows/*.yml`, অনুল্লেখিত `_dev/` + `.github/workflows/scripts/`-এর script। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift (নাম উল্লেখ আছে কি নেই) ধরে, prose-এর সঠিকতা/আচরণ-পরিবর্তন না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
+| `_dev/check-spelling.js` | বাংলা spellcheck bcs-mcq/data/*.js-এর জন্য (advisory, ব্যর্থ হলেও PR আটকায় না) |
+| `_dev/update_version.py` | `auto-bump-version.yml`-এর হেল্পার — প্রতি merge-এর পর ভার্সন নম্বর বাড়ায় |
+| `written-exam/check-spelling.js` | বাংলা spellcheck written-exam/data/exams/*.json-এর জন্য (advisory, `_dev/check-spelling.js`-এর মতোই কিন্তু আলাদা মডিউলের জন্য) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
 

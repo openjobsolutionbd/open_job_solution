@@ -768,8 +768,8 @@ const EXAM_ARCHIVE = [
     post: "শুল্ক আদায়কারী",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 45,
-    totalQuestions: 4,
+    totalMarks: 70,
+    totalQuestions: 5,
   },
   {
     id: "job-2025-archives-library-office-shohayok",

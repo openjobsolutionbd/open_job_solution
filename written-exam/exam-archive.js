@@ -741,7 +741,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 94,
     totalQuestions: 15,
   },
   {
@@ -759,8 +759,8 @@ const EXAM_ARCHIVE = [
     post: "উপ সহকারী প্রকৌশলী (পুর)",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 32,
-    totalQuestions: 6,
+    totalMarks: 70,
+    totalQuestions: 13,
   },
   {
     id: "job-2025-biwta-shulko-adaykari",

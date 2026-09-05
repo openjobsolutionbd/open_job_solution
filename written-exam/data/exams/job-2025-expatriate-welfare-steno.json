@@ -161,7 +161,7 @@
     "subject": "english",
     "topic": "preposition",
     "qno": 6,
-    "marks": 2,
+    "marks": 5,
     "type": "fill-gaps",
     "question": "Write the appropriate preposition:",
     "parts": [
@@ -172,6 +172,18 @@
       {
         "sentence": "He died...... over eating.",
         "answer": "from"
+      },
+      {
+        "sentence": "He is proficient....... music.",
+        "answer": "in"
+      },
+      {
+        "sentence": "He has been ill ....... Sunday last.",
+        "answer": "since"
+      },
+      {
+        "sentence": "I am looking...... a job.",
+        "answer": "for"
       }
     ]
   },
@@ -254,7 +266,7 @@
     "subject": "english",
     "topic": "voice-change",
     "qno": 9,
-    "marks": 4,
+    "marks": 5,
     "type": "sentence-change",
     "question": "Change the voice:",
     "parts": [
@@ -277,6 +289,11 @@
         "label": "d",
         "original": "We ought to love our country.",
         "changed": "Our country ought to be loved by us."
+      },
+      {
+        "label": "e",
+        "original": "He annoyed me.",
+        "changed": "I was annoyed with him."
       }
     ]
   },

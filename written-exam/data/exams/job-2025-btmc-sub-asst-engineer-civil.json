@@ -76,9 +76,31 @@
   {
     "id": "job-2025-btmc-sub-asst-engineer-civil-q03",
     "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "bangla",
+    "topic": "অনুচ্ছেদ রচনা",
+    "qno": 3,
+    "marks": 6,
+    "type": "paragraph",
+    "question": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র সম্পর্কে ১০টি বাক্য লিখুন।",
+    "answer": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র বাংলাদেশের প্রথম পারমাণবিক বিদ্যুৎ কেন্দ্র। এটি পাবনা জেলার ঈশ্বরদী উপজেলার রূপপুরে পদ্মা নদীর তীরে অবস্থিত। ২০১৩ সালে এই প্রকল্প নির্মাণে রাশিয়ার সঙ্গে চুক্তি স্বাক্ষরিত হয়। রাশিয়ার রাষ্ট্রীয় পারমাণবিক সংস্থা রোসাটম এই কেন্দ্র নির্মাণ করছে। এতে দুইটি ইউনিট থাকবে, প্রতিটির উৎপাদন ক্ষমতা ১২০০ মেগাওয়াট করে, অর্থাৎ সর্বমোট ২৪০০ মেগাওয়াট। এই প্রকল্পের ব্যয়ের প্রায় ৯০ শতাংশ রাশিয়ার ঋণের মাধ্যমে সংকুলান করা হয়েছে। বিদ্যুৎ কেন্দ্রটি চালু হলে দেশের বিদ্যুৎ উৎপাদন সক্ষমতা উল্লেখযোগ্যভাবে বৃদ্ধি পাবে। এটি দেশের জ্বালানি নিরাপত্তা নিশ্চিত করতে গুরুত্বপূর্ণ ভূমিকা রাখবে। প্রকল্পটি বাস্তবায়নের ফলে উত্তরাঞ্চলের অর্থনৈতিক উন্নয়নও ত্বরান্বিত হবে। তবে নিরাপদ পরিচালনা ও তেজস্ক্রিয় বর্জ্য ব্যবস্থাপনা এই প্রকল্পের সফলতার জন্য অত্যন্ত গুরুত্বপূর্ণ।"
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q04",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "english",
+    "topic": "paragraph writing",
+    "qno": 4,
+    "marks": 6,
+    "type": "paragraph",
+    "question": "Write paragraph: Police reform in Bangladesh",
+    "answer": "Police Reform in Bangladesh\n\nPolice reform means changing and improving the police system so that it can serve people better. In Bangladesh, the police force sometimes faces criticism for corruption, delay in investigation, and misuse of power. Reform is needed to make the police more accountable, transparent, and people-friendly. Proper training, better salary, and modern equipment can help officers perform their duties efficiently. An independent complaint system can reduce abuse of power and build public trust. Community policing, where police work closely with local people, can also improve law and order. Using technology such as CCTV and digital case-tracking can reduce delays in investigation. Strict monitoring and punishment for misconduct are necessary to ensure discipline. If reforms are implemented properly, people will feel safer and more confident in the justice system. Therefore, continuous and honest efforts toward police reform are essential for a better Bangladesh."
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q05",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
     "subject": "english",
     "topic": "sentence transformation",
-    "qno": 3,
+    "qno": 5,
     "marks": 5,
     "type": "sentence-change",
     "question": "Transformation of sentences:",
@@ -111,11 +133,11 @@
     ]
   },
   {
-    "id": "job-2025-btmc-sub-asst-engineer-civil-q04",
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q06",
     "examId": "job-2025-btmc-sub-asst-engineer-civil",
     "subject": "english",
     "topic": "translation",
-    "qno": 4,
+    "qno": 6,
     "marks": 5,
     "type": "translate",
     "question": "Translate into English:",
@@ -148,11 +170,11 @@
     ]
   },
   {
-    "id": "job-2025-btmc-sub-asst-engineer-civil-q05",
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q07",
     "examId": "job-2025-btmc-sub-asst-engineer-civil",
     "subject": "math",
     "topic": "লাভ-ক্ষতি",
-    "qno": 5,
+    "qno": 7,
     "marks": 6,
     "type": "math",
     "question": "টাকায় ৩টি এবং টাকায় ৫টি দরে সমান সংখ্যক আমলকী ক্রয় করে এক ব্যক্তি টাকায় ৪টি করে বিক্রি করলেন। ঐ ব্যক্তির শতকরা কত লাভ বা ক্ষতি হবে?",
@@ -170,11 +192,32 @@
     "answer": "উত্তর: ৬.২৫% ক্ষতি হবে।"
   },
   {
-    "id": "job-2025-btmc-sub-asst-engineer-civil-q06",
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q08",
     "examId": "job-2025-btmc-sub-asst-engineer-civil",
     "subject": "math",
     "topic": "বীজগণিত",
-    "qno": 6,
+    "qno": 8,
+    "marks": 6,
+    "type": "math",
+    "question": "যদি a = √৩ + √২ হয়, তবে প্রমাণ করুন যে, a³ + ১/a³ = ১৮√৩",
+    "steps": [
+      "দেওয়া আছে, a = √৩ + √২",
+      "∴ ১/a = ১/(√৩+√২) = (√৩−√২)/{(√৩+√২)(√৩−√২)} [লব ও হরকে (√৩−√২) দ্বারা গুণ করে]",
+      "= (√৩−√২)/{(√৩)²−(√২)²} = (√৩−√২)/(৩−২) = √৩−√২",
+      "∴ a + ১/a = (√৩+√২)+(√৩−√২) = ২√৩",
+      "এখন, a³ + ১/a³ = (a+১/a)³ − ৩.a.(১/a)(a+১/a)",
+      "= (২√৩)³ − ৩(২√৩) [∵ a+১/a = ২√৩]",
+      "= ২³.(√৩)³ − ৩×২√৩ = ৮.৩√৩ − ৬√৩",
+      "= ২৪√৩ − ৬√৩ = ১৮√৩ (প্রমাণিত)"
+    ],
+    "answer": "১৮√৩ (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q09",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 9,
     "marks": 6,
     "type": "math",
     "question": "একটি সমবাহু ত্রিভুজের বাহুর দৈর্ঘ্য ২ সে.মি এবং উচ্চতা x সে.মি, x এর মান কত?",
@@ -187,5 +230,142 @@
       "∴ x = √৩"
     ],
     "answer": "উত্তর: x = √৩"
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q10",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 10,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "বিটিএমসি'র চ্যালেঞ্জ সমূহ কী কী?",
+    "answer": "বাংলাদেশ টেক্সটাইল মিলস কর্পোরেশন (বিটিএমসি)-এর প্রধান চ্যালেঞ্জগুলোর মধ্যে রয়েছে অধিকাংশ মিলের পুরনো ও অকেজো যন্ত্রপাতি, দীর্ঘমেয়াদী আর্থিক লোকসান, বহু মিল বন্ধ থাকা, বেসরকারিকরণ বা পিপিপি ভিত্তিতে পরিচালনায় বিনিয়োগকারীদের সীমিত আগ্রহ, গ্যাস-বিদ্যুৎ সরবরাহের অনিয়মিততা এবং দক্ষ জনবল ও আধুনিকায়নের অভাব।"
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q11",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 11,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত প্রশ্নের উত্তর লিখুন।",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ঢাকা স্বাধীনতা যুদ্ধে কোন সেক্টরের অন্তর্ভুক্ত ছিল?",
+        "a": "২ নং"
+      },
+      {
+        "label": "খ",
+        "q": "২১ শে জুলাই মাইলস্টোন স্কুলের বিধ্বস্ত যুদ্ধ বিমানের পাইলটের নাম কী?",
+        "a": "তৌকির ইসলাম"
+      },
+      {
+        "label": "গ",
+        "q": "২০২৫ সালে ভারত-পাকিস্তান যুদ্ধে পাকিস্তানের অপারেশনের নাম কী?",
+        "a": "বুনিইয়ান-উন-মারসুস"
+      },
+      {
+        "label": "ঘ",
+        "q": "বাংলাদেশী বংশোদ্ভূত ব্রিটিশ ফুটবলারের নাম কী?",
+        "a": "হামজা চৌধুরী"
+      },
+      {
+        "label": "ঙ",
+        "q": "ইরানের সুপারসনিক মিসাইলের নাম কী?",
+        "a": "সিজ্জিল"
+      },
+      {
+        "label": "চ",
+        "q": "বর্তমান সেনজেনভুক্ত দেশ কয়টি?",
+        "a": "২৯টি"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশ কোন সালে মধ্যম আয়ের দেশ হিসাবে গ্রাজুয়েশন পাবে?",
+        "a": "২০২৬ সালে"
+      },
+      {
+        "label": "জ",
+        "q": "ইলন মাস্কের স্যাটেলাইটের মাধ্যমে ইন্টারনেট সেবাদানকারী প্রতিষ্ঠানের নাম কী?",
+        "a": "স্টারলিংক"
+      },
+      {
+        "label": "ঝ",
+        "q": "ইসরায়েল-ফিলিস্তিনের সাম্প্রতিক সময়ের সংঘাত শুরুর তারিখ ও সাল উল্লেখ করুন?",
+        "a": "৭ অক্টোবর ২০২৩"
+      },
+      {
+        "label": "ঞ",
+        "q": "ফিফা বিশ্বকাপ ২০২৬ সালে কোথায় অনুষ্ঠিত হবে?",
+        "a": "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q12",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "math",
+    "topic": "প্রকৌশল সংশ্লিষ্ট সূত্র",
+    "qno": 12,
+    "marks": 6,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "প্রতি ফুট রডের ওজন বের করার সূত্র লিখুন।",
+        "a": "রডের ওজন (কেজি/ফুট) = d² ÷ ৫৩২.২ (এখানে d = রডের ব্যাস মিলিমিটারে)"
+      },
+      {
+        "label": "খ",
+        "q": "ত্রিভুজের ক্ষেত্রফল = ?",
+        "a": "১/২ × ভূমি × উচ্চতা"
+      },
+      {
+        "label": "গ",
+        "q": "বৃত্তের ক্ষেত্রফল = ?",
+        "a": "πr²"
+      },
+      {
+        "label": "ঘ",
+        "q": "পিরামিডের আয়তন = ?",
+        "a": "১/৩ × ভূমির ক্ষেত্রফল × উচ্চতা"
+      },
+      {
+        "label": "ঙ",
+        "q": "এক হেক্টর = কত বর্গ মিটার?",
+        "a": "১০০০০ বর্গ মিটার"
+      },
+      {
+        "label": "চ",
+        "q": "এক মিটার = কত ইঞ্চি?",
+        "a": "৩৯.৩৭ ইঞ্চি"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-btmc-sub-asst-engineer-civil-q13",
+    "examId": "job-2025-btmc-sub-asst-engineer-civil",
+    "subject": "general-knowledge",
+    "topic": "সিভিল ইঞ্জিনিয়ারিং",
+    "qno": 13,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "'বিল্ডিং কোড' অনুসরণ করা আমাদের প্রয়োজন কেন?",
+        "a": "নিরাপদ, টেকসই ও মানসম্মত ভবন নির্মাণ নিশ্চিত করতে এবং ভূমিকম্প, ঝড়সহ প্রাকৃতিক দুর্যোগে কাঠামোগত ক্ষয়ক্ষতি ও প্রাণহানি কমাতে বিল্ডিং কোড অনুসরণ করা প্রয়োজন।"
+      },
+      {
+        "label": "খ",
+        "q": "কলামকে বিল্ডিং এর মেরুদণ্ড বলা হয় কেন?",
+        "a": "কলাম ভবনের ছাদ, বিম ও উপরের সব তলার ভার বহন করে তা ভিত্তির (ফাউন্ডেশন) মাধ্যমে মাটিতে স্থানান্তর করে বলে একে ভবনের মেরুদণ্ড বলা হয়।"
+      }
+    ]
   }
 ]

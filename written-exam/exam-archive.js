@@ -813,8 +813,8 @@ const EXAM_ARCHIVE = [
     post: "সাঁটলিপিকার (ব্যক্তিগত সহকারী)",
     date: "2025-07-25",
     duration: "১২০ মিনিট",
-    totalMarks: 77,
-    totalQuestions: 8,
+    totalMarks: 95,
+    totalQuestions: 10,
   },
   {
     id: "job-2025-sparrso-office-sohayok",

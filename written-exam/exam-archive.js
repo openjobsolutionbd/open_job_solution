@@ -126,7 +126,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-07-12",
     duration: "৬০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 70,
     totalQuestions: 13,
   },
   {

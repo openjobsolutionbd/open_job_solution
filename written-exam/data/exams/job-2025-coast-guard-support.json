@@ -83,15 +83,15 @@
       ],
       [
         "ভ্রমর",
-        "ভোমরা, অলি"
+        "ভোমরা, অলি, শিলীমুখ"
       ],
       [
         "আনন্দ",
-        "হর্ষ, পুলক"
+        "হর্ষ, পুলক, আহ্লাদ, সুখ"
       ],
       [
         "আঁধার",
-        "অন্ধকার, তিমির"
+        "অন্ধকার, তিমির, শর্বর"
       ]
     ]
   },
@@ -261,7 +261,7 @@
       {
         "label": "",
         "source": "সদা সত্য কথা বলব।",
-        "target": "I will always speak the truth."
+        "target": "Always speak the truth."
       }
     ]
   },
@@ -332,7 +332,7 @@
     "examId": "job-2025-coast-guard-support",
     "subject": "general-knowledge",
     "qno": 13,
-    "marks": 14,
+    "marks": 15,
     "type": "short-qa",
     "question": "নিচের প্রশ্নগুলোর উত্তর করুন:",
     "parts": [

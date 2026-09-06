@@ -102,7 +102,7 @@ function renderAnswer(q) {
     case 'fill-gaps':
       return `<div class="ans-parts">${(q.parts || []).map((p, i) => `
         <div class="ans-part">
-          <span class="part-label">${i + 1}.</span>
+          ${partLabelHtml(p, i)}
           <div class="part-body">
             <span class="part-q">${escHtml(p.sentence)}</span>
             <span class="fill-answer">→ <strong>${escHtml(p.answer)}</strong></span>

@@ -621,17 +621,12 @@
           return items.map(ex => ({
             label: ex.ministry + ' — ' + ex.post,
             onSelect: function () {
-              const mf = document.getElementById('ministryFilter');
-              const yf = document.getElementById('yearFilter');
-              const box = document.getElementById('searchInput');
-              if (mf) mf.value = '';
-              if (yf) yf.value = '';
-              if (box) {
-                box.value = ex.post;
-                box.dispatchEvent(new Event('input'));
-              }
-              const grid = document.getElementById('examGrid');
-              if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+              // আগে এখানে শুধু ex.post সার্চ বক্সে বসিয়ে টেক্সট-ফিল্টার
+              // চালানো হতো — কিন্তু 'অফিস সহায়ক'-এর মতো পদের নাম একাই
+              // ২১টা ভিন্ন মন্ত্রণালয়ে থাকায় (ministry বাদ পড়ে যাওয়ায়)
+              // ইউজার একটা নির্দিষ্ট এক্সাম বেছে নিলেও অনেকগুলো কার্ড
+              // দেখাত। এখন সরাসরি সেই নির্দিষ্ট এক্সামটাই খোলা হয়।
+              openExam(ex.id);
             }
           }));
         }

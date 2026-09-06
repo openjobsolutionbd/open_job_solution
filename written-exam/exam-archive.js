@@ -750,7 +750,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 71,
     totalQuestions: 12,
   },
   {

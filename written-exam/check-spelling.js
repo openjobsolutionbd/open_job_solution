@@ -67,7 +67,7 @@ function stringsForItem(item, skipKeys) {
   // "Change the sentences as per direction" (active/passive, simple/complex...)
   // টাইপে 'original' একটা বৈধ বাক্য, দুটো পাশই চেক হওয়া উচিত।
   const isSentenceCorrection =
-    item.type === 'sentence-change' && /correct/i.test(item.question || '');
+    item.type === 'sentence-change' && /correct|সংশোধন|শুদ্ধ/i.test(item.question || '');
   if (looksLikeCorrection && item.type === 'table' && Array.isArray(item.rows)) {
     const { rows, ...rest } = item;
     collectStrings(rest, strs, skipKeys);

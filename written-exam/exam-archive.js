@@ -126,7 +126,7 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহায়ক",
     date: "2025-07-12",
     duration: "৬০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 70,
     totalQuestions: 13,
   },
   {
@@ -741,7 +741,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 94,
     totalQuestions: 15,
   },
   {
@@ -750,7 +750,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 71,
     totalQuestions: 12,
   },
   {
@@ -759,8 +759,8 @@ const EXAM_ARCHIVE = [
     post: "উপ সহকারী প্রকৌশলী (পুর)",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 32,
-    totalQuestions: 6,
+    totalMarks: 70,
+    totalQuestions: 13,
   },
   {
     id: "job-2025-biwta-shulko-adaykari",
@@ -768,8 +768,8 @@ const EXAM_ARCHIVE = [
     post: "শুল্ক আদায়কারী",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 45,
-    totalQuestions: 4,
+    totalMarks: 70,
+    totalQuestions: 5,
   },
   {
     id: "job-2025-archives-library-office-shohayok",
@@ -813,8 +813,8 @@ const EXAM_ARCHIVE = [
     post: "সাঁটলিপিকার (ব্যক্তিগত সহকারী)",
     date: "2025-07-25",
     duration: "১২০ মিনিট",
-    totalMarks: 77,
-    totalQuestions: 8,
+    totalMarks: 95,
+    totalQuestions: 10,
   },
   {
     id: "job-2025-sparrso-office-sohayok",

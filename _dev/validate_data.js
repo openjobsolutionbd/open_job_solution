@@ -238,7 +238,7 @@ function checkDuplicateOptions(loc, options) {
           break;
         case 'letter':
           if (!q.letter) issues.push(`[${loc}] letter object নেই`);
-          else ['to', 'body'].forEach(f => { if (!q.letter[f]) issues.push(`[${loc}] letter.${f} খালি`); });
+          else ['to', 'subject', 'body', 'closing', 'sender'].forEach(f => { if (!q.letter[f]) issues.push(`[${loc}] letter.${f} খালি`); });
           break;
         case 'read-fill':
           if (!q.passage) issues.push(`[${loc}] passage নেই`);

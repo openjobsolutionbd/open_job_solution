@@ -91,6 +91,18 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.248 | ৭ সেপ্টেম্বর ২০২৬ | Version v1.248-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.247 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.247-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.246 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.246-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.245 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.245-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.244 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.244-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.243 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.243-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.242 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.242-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.241 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.241-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.240 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.240-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.239 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.239-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.238 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.238-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.237 | ৪ সেপ্টেম্বর ২০২৬ | Version v1.237-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.236 | ২ সেপ্টেম্বর ২০২৬ | Version v1.236-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.235 | ২ সেপ্টেম্বর ২০২৬ | Version v1.235-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.234 | ১ সেপ্টেম্বর ২০২৬ | Version v1.234-এ আপগ্রেড। Cache সব module-এ update। |

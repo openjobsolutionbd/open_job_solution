@@ -2738,10 +2738,12 @@ function visibleTopics(q){
   return list;
 }
 
+let mainSearchDebounce;
 document.getElementById('search').addEventListener('input', (e)=>{
+  clearTimeout(mainSearchDebounce);
   const q = e.target.value.trim().toLowerCase();
-  renderList(visibleTopics(q), q);
   document.getElementById('browse-layout').classList.remove('showing-article');
+  mainSearchDebounce = setTimeout(() => renderList(visibleTopics(q), q), 300);
 });
 
 document.getElementById('bookmark-filter-toggle').addEventListener('click', (e) => {
@@ -2801,6 +2803,7 @@ const floatPill = document.getElementById('floating-search-pill');
 const floatInput = document.getElementById('floating-search-input');
 const floatResults = document.getElementById('floating-search-results');
 const floatClose = document.getElementById('floating-search-close');
+let floatSearchDebounce;
 const topicModalOverlay = document.getElementById('topic-modal-overlay');
 const topicModalClose = document.getElementById('topic-modal-close');
 
@@ -2815,6 +2818,7 @@ function openFloatingSearch(){
 }
 
 function closeFloatingSearch(){
+  clearTimeout(floatSearchDebounce);
   floatPill.classList.remove('open');
   floatInput.value = '';
   floatResults.classList.remove('visible');
@@ -2877,8 +2881,9 @@ floatClose.addEventListener('click', (e)=>{
 floatInput.addEventListener('click', (e)=> e.stopPropagation());
 
 floatInput.addEventListener('input', (e)=>{
+  clearTimeout(floatSearchDebounce);
   const q = e.target.value.trim().toLowerCase();
-  renderFloatingResults(q);
+  floatSearchDebounce = setTimeout(() => renderFloatingResults(q), 300);
 });
 
 floatInput.addEventListener('keydown', (e)=>{

@@ -56,7 +56,7 @@ function isCorrectionColumns(columns) {
 // টেক্সটেই সনাক্ত করা হচ্ছে
 function partLooksLikeCorrectionPrompt(qText) {
   if (typeof qText !== 'string') return false;
-  return /অশুদ্ধি সংশোধন|ভুল বানান|শুদ্ধ (করে )?লিখ/u.test(qText);
+  return /অশুদ্ধি সংশোধন|ভুল বানান|শুদ্ধ (করে )?লিখ|ভুল শুদ্ধ করুন|শুদ্ধ করুন/u.test(qText);
 }
 
 function stringsForItem(item, skipKeys) {
@@ -80,6 +80,19 @@ function stringsForItem(item, skipKeys) {
     for (const p of parts) {
       if (p && typeof p === 'object' && 'changed' in p) strs.push(p.changed);
       else collectStrings(p, strs, skipKeys);
+    }
+  } else if (item.type === 'sentence-change' && Array.isArray(item.parts)) {
+    // পুরো প্রশ্নটা correction-বিষয়ক না (মিশ্র transformation: active/passive,
+    // direct/indirect...), কিন্তু কোনো sub-part একা '(ভুল শুদ্ধ করুন)' হতে পারে
+    const { parts, ...rest } = item;
+    collectStrings(rest, strs, skipKeys);
+    for (const p of parts) {
+      if (p && typeof p === 'object' && partLooksLikeCorrectionPrompt(p.original)) {
+        if ('changed' in p) strs.push(p.changed);
+        if (p.label) strs.push(p.label);
+      } else {
+        collectStrings(p, strs, skipKeys);
+      }
     }
   } else if (
     looksLikeCorrection &&

@@ -250,12 +250,14 @@
     const closeBtn = document.getElementById('fs-close');
     const icon = document.getElementById('fs-icon');
     const face = document.getElementById('fs-face');
+    let searchDebounce;
 
     function openSearch() {
       pill.classList.add('open');
       input.focus();
     }
     function closeSearch() {
+      clearTimeout(searchDebounce);
       pill.classList.remove('open');
       input.value = '';
       results.classList.remove('visible');
@@ -316,7 +318,11 @@
     pill.addEventListener('click', () => { if (!pill.classList.contains('open')) openSearch(); });
     closeBtn.addEventListener('click', (e) => { e.stopPropagation(); closeSearch(); });
     input.addEventListener('click', (e) => e.stopPropagation());
-    input.addEventListener('input', (e) => renderResults(e.target.value.trim().toLowerCase()));
+    input.addEventListener('input', (e) => {
+      clearTimeout(searchDebounce);
+      const val = e.target.value.trim().toLowerCase();
+      searchDebounce = setTimeout(() => renderResults(val), 300);
+    });
     input.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSearch(); });
 
     // ─── Drag (মাউস/টাচ) ───

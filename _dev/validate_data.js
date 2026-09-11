@@ -138,6 +138,7 @@ function checkDuplicateOptions(loc, options) {
       const loc = `bcs-mcq/data/${f}#${idx} (id=${q.id})`;
       if (!q.id) issues.push(`[${loc}] id নেই`);
       if (!q.question) issues.push(`[${loc}] question নেই`);
+      if (!q.explanation) issues.push(`[${loc}] ব্যাখ্যা (explanation) নেই`);
       checkOptionsBased(loc, q, 'options', 'correctIndex', 4);
       checkDuplicateOptions(loc, q.options);
       idEntries.push({ id: q.id, where: `bcs-mcq/data/${f}` });

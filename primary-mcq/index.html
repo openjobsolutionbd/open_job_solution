@@ -120,9 +120,9 @@ function getYears(){
   return [...new Set(qs.map(q=>q.year))].sort();
 }
 function getStats(){
-  const all=allQ(); let c=0,w=0;
-  all.forEach(q=>{ const a=S.answered[q.id]; if(a){ a.correct?c++:w++; } });
-  return {total:all.length, correct:c, incorrect:w, pending:all.length-c-w};
+  const qs=filteredQ(); let c=0,w=0;
+  qs.forEach(q=>{ const a=S.answered[q.id]; if(a){ a.correct?c++:w++; } });
+  return {total:qs.length, correct:c, incorrect:w, pending:qs.length-c-w};
 }
 
 function renderTabs(){

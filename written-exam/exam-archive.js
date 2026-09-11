@@ -823,7 +823,7 @@ const EXAM_ARCHIVE = [
     date: "2025-08-09",
     duration: "৬০ মিনিট",
     totalMarks: 44,
-    totalQuestions: 12,
+    totalQuestions: 14,
   },
   {
     id: "job-2025-national-population-research-training-institute-prodhan-sohokari",

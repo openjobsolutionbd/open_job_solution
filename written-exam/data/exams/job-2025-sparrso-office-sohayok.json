@@ -66,6 +66,17 @@
     "answer": "সমকালীন"
   },
   {
+    "id": "job-2025-sparrso-office-sohayok-q07",
+    "examId": "job-2025-sparrso-office-sohayok",
+    "subject": "bangla",
+    "topic": "ভাবসম্প্রসারণ",
+    "qno": 7,
+    "marks": 2,
+    "type": "paragraph",
+    "question": "ভাব সম্প্রসারণ লিখুন: শিক্ষাই জাতির মেরুদণ্ড",
+    "answer": "মূলভাব: শিক্ষা একটি জাতির অস্তিত্ব ও উন্নয়নের মূল স্তম্ভ। মেরুদণ্ড যেমন মানবদেহকে সোজা রাখে ও শক্তি জোগায়, শিক্ষাও তেমনি একটি জাতিকে দৃঢ়তা ও দিকনির্দেশনা দেয়।\n\nসম্প্রসারিত ভাব: একটি জাতির প্রকৃত উন্নতি নির্ভর করে তার জনগণের শিক্ষার মানের উপর। শিক্ষিত জাতি অজ্ঞতা, কুসংস্কার ও দারিদ্র্যের বিরুদ্ধে লড়াই করতে সক্ষম হয়। শিক্ষার মাধ্যমেই মানুষ যুক্তিবাদী চিন্তা, বিজ্ঞানমনস্কতা ও সুনাগরিকত্বের গুণাবলি অর্জন করে। যে জাতি শিক্ষায় পিছিয়ে থাকে, সে জাতি অর্থনৈতিক, সামাজিক ও রাজনৈতিক সব ক্ষেত্রেই পিছিয়ে পড়ে। বিপরীতে, শিক্ষিত জনগোষ্ঠী দেশের গবেষণা, উদ্ভাবন ও প্রশাসনিক কাঠামোকে শক্তিশালী করে। তাই আধুনিক বিশ্বে যেসব জাতি শিক্ষাকে সর্বোচ্চ অগ্রাধিকার দিয়েছে, তারাই আজ উন্নত ও সমৃদ্ধ। সুতরাং, একটি জাতির প্রকৃত মেরুদণ্ড হলো তার শিক্ষাব্যবস্থা, যা ছাড়া কোনো জাতি দীর্ঘমেয়াদে টিকে থাকতে পারে না।"
+  },
+  {
     "id": "job-2025-sparrso-office-sohayok-q08",
     "examId": "job-2025-sparrso-office-sohayok",
     "subject": "english",
@@ -118,6 +129,17 @@
         "target": "Do the work quickly."
       }
     ]
+  },
+  {
+    "id": "job-2025-sparrso-office-sohayok-q10",
+    "examId": "job-2025-sparrso-office-sohayok",
+    "subject": "english",
+    "topic": "paragraph writing",
+    "qno": 10,
+    "marks": 4,
+    "type": "paragraph",
+    "question": "Write a paragraph on \"My School\"",
+    "answer": "My School\n\nMy school is one of the best schools in my area. It was established many years ago and has a long tradition of quality education. The school building is large and surrounded by trees and open fields, which make the environment pleasant for learning. It has well-equipped classrooms, a library, and a science laboratory. My teachers are kind, qualified, and always ready to help students understand their lessons. Besides studies, the school also arranges sports, cultural programs, and debate competitions to develop the overall personality of the students. Discipline is strictly maintained, and students are taught to be honest, punctual, and respectful. I feel proud to be a student of this school, and I will always cherish the memories I have made here."
   },
   {
     "id": "job-2025-sparrso-office-sohayok-q11",

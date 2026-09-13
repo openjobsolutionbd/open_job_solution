@@ -23,6 +23,8 @@
       --accent-bcs: #2563eb;
       --accent-primary: #16a34a;
       --accent-written: #9333ea;
+      --accent-ca: #0e7c66;
+      --accent-books: #d97706;
       --shadow: 0 2px 16px rgba(0,0,0,0.08);
       --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
       --radius: 16px;
@@ -96,7 +98,8 @@
     .card.bcs:hover  { border-color: var(--accent-bcs); }
     .card.prim:hover { border-color: var(--accent-primary); }
     .card.writ:hover { border-color: var(--accent-written); }
-    .card.ca:hover   { border-color: var(--accent-ca, #0e7c66); }
+    .card.ca:hover   { border-color: var(--accent-ca); }
+    .card.books:hover { border-color: var(--accent-books); }
 
     .card-icon {
       font-size: 2.2rem;
@@ -111,6 +114,8 @@
     .bcs  .card-icon { background: #eff6ff; }
     .prim .card-icon { background: #f0fdf4; }
     .writ .card-icon { background: #faf5ff; }
+    .ca   .card-icon { background: #ecfeff; }
+    .books .card-icon { background: #fffbeb; }
 
     .card-text { flex: 1; }
     .card-title {
@@ -201,6 +206,15 @@
         <div class="card-text">
           <div class="card-title">কারেন্ট অ্যাফেয়ার্স</div>
           <div class="card-desc">টপিক-ভিত্তিক কারেন্ট অ্যাফেয়ার্স, ঘটনাপ্রবাহ ও টপ নিউজ</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card books" href="/books/">
+        <div class="card-icon">📖</div>
+        <div class="card-text">
+          <div class="card-title">বই সমূহ</div>
+          <div class="card-desc">বিষয়ভিত্তিক বই ও রেফারেন্স উপকরণ</div>
         </div>
         <span class="arrow">›</span>
       </a>

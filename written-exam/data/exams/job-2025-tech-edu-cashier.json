@@ -260,6 +260,17 @@
     ]
   },
   {
+    "id": "job-2025-tech-edu-cashier-q10",
+    "examId": "job-2025-tech-edu-cashier",
+    "subject": "english",
+    "topic": "paragraph writing",
+    "qno": 10,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "Write a Paragraph: Fourth Industrial Revolution",
+    "answer": "Fourth Industrial Revolution\n\nThe Fourth Industrial Revolution, also known as Industry 4.0, refers to the current age of rapid technological change that is transforming the way we live and work. It is characterized by the fusion of technologies such as artificial intelligence, robotics, the Internet of Things, big data, and automation. Unlike earlier industrial revolutions that relied on steam power, electricity, and computers, this revolution blends the physical, digital, and biological worlds together. It is changing industries like manufacturing, healthcare, education, and finance by making processes faster, smarter, and more efficient. Many traditional jobs are being replaced by automated systems, which creates both opportunities and challenges for the workforce. Countries and individuals who adapt to new skills such as coding, data analysis, and digital literacy will benefit the most. However, this revolution also raises concerns about job loss, privacy, and cybersecurity. Therefore, proper policies and continuous learning are essential to make the most of the opportunities offered by the Fourth Industrial Revolution."
+  },
+  {
     "id": "job-2025-tech-edu-cashier-q11",
     "examId": "job-2025-tech-edu-cashier",
     "subject": "math",

@@ -26,7 +26,8 @@ const SECTION_PREFIXES = [
   '/bcs-mcq/',
   '/primary-mcq/',
   '/written-exam/',
-  '/current-affairs/'
+  '/current-affairs/',
+  '/books/'
 ];
 
 function isAppFile(url) {

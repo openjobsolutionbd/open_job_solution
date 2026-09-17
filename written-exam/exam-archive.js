@@ -897,5 +897,12 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 14,
   },
+  {
+    id: "job-2026-air-force-office-asst-typist",
+    ministry: "বিমান বাহিনী",
+    post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2026-09-11",
+    totalQuestions: 13,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

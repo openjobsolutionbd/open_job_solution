@@ -1,0 +1,222 @@
+[
+  {
+    "id": "job-2026-air-force-office-asst-typist-q01",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 1,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুনঃ",
+    "parts": [
+      { "label": "ক", "q": "অন্য কোনো উপায় নেই যার", "a": "অনন্যোপায়" },
+      { "label": "খ", "q": "হনন করার ইচ্ছা", "a": "জিঘাংসা" },
+      { "label": "গ", "q": "এক থেকে আরম্ভ করে", "a": "একাদিক্রমে" },
+      { "label": "ঘ", "q": "অতি দীর্ঘ নয় যা", "a": "নাতিদীর্ঘ" },
+      { "label": "ঙ", "q": "বুকে হেঁটে গমন করে যে", "a": "উরগ" }
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q02",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "type": "idiom",
+    "question": "বাগধারাগুলোর অর্থসহ বাক্য লিখুনঃ",
+    "parts": [
+      { "label": "ক", "phrase": "কেউকেটা", "meaning": "সামান্য", "example": "জাফর তো কেউকেটা স্বভাবের মাত্তান, পিছনে আরও রাঘব বোয়াল আছে।" },
+      { "label": "খ", "phrase": "উড়নচণ্ডী", "meaning": "অমিতব্যয়ী", "example": "উড়নচণ্ডী মানুষ কখনো সম্পদশালী হতে পারে না।" },
+      { "label": "গ", "phrase": "সোনার পাথর বাটি", "meaning": "অলীক বস্তু", "example": "পড়ালেখা না করে চাকরি পাওয়ার কল্পনা করা আর সোনার পাথর বাটি পাওয়া একই কথা।" },
+      { "label": "ঘ", "phrase": "খণ্ড প্রলয়", "meaning": "ভীষণ ব্যাপার/তুমুল কাণ্ড", "example": "জমি নিয়ে দুই প্রতিবেশীর মধ্যে খণ্ড প্রলয় ঘটে গেল।" },
+      { "label": "ঙ", "phrase": "রথ দেখা আর কলা বেচা", "meaning": "উভয়কর্ম সাধন", "example": "মেয়ের বাড়ি আর তীর্থস্থান একই জায়গায়, এবার গেলে রথ দেখাও হবে কলা বেচাও হবে।" }
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q03",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি",
+    "qno": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি বিচ্ছেদ করুনঃ",
+    "parts": [
+      { "label": "ক", "q": "তন্মধ্যে", "a": "তৎ + মধ্য" },
+      { "label": "খ", "q": "দ্যুলোক", "a": "দিব্ + লোক" },
+      { "label": "গ", "q": "পঙ্‌ক্তি", "a": "পদ + হতি" },
+      { "label": "ঘ", "q": "প্রত্যুষ", "a": "প্রতি + ঊষ" },
+      { "label": "ঙ", "q": "শ্রেষ্ঠ", "a": "প্র + এষ্ঠ" }
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q04",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 4,
+    "type": "table",
+    "question": "বানান শুদ্ধ করুনঃ",
+    "columns": ["অশুদ্ধ", "শুদ্ধ"],
+    "rows": [
+      ["শারীরীক", "শারীরিক"],
+      ["সমিচীন", "সমীচীন"],
+      ["দিবারাত্রি", "দিবারাত্র"],
+      ["ইতঃমধ্যে", "ইতোমধ্যে"]
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q05",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on: \"Your College Campus\"",
+    "answer": "My college campus is a beautiful and peaceful place. It is situated in a pleasant environment away from the noise and pollution of the city. The campus is spacious, clean, and well-decorated. There are several academic buildings, a library, a laboratory, a canteen, and a playground on the campus. There are also many trees, flower gardens, and green spaces that make the campus attractive. The classrooms are airy, bright, and equipped with necessary facilities. Students can study in the library and take part in various sports and cultural activities. The teachers are friendly, sincere, and helpful to the students. The campus provides a suitable environment for both academic and extracurricular activities. I love my college campus very much because it is a place where I learn, make friends, and develop myself."
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q06",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "type": "fill-gaps",
+    "question": "Fill in the gap with appropriate preposition/verb/word:",
+    "parts": [
+      { "sentence": "I shall look...... the matter.", "answer": "into" },
+      { "sentence": "Rice sells... .tk 20 per kg.", "answer": "at" },
+      { "sentence": "Cruelty towards animals is........ the law.", "answer": "against" },
+      { "sentence": "At last, the truth dawned........ him.", "answer": "on" },
+      { "sentence": "The shirt is.......... my choice.", "answer": "after" }
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q07",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "english",
+    "qno": 7,
+    "type": "table",
+    "question": "Change gender:",
+    "columns": ["Given gender", "Opposite gender"],
+    "rows": [
+      ["Ram", "Ewe"],
+      ["Hero", "Heroine"],
+      ["Gander", "Goose"],
+      ["Nephew", "Niece"],
+      ["Hunter", "Huntress"]
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q08",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 8,
+    "type": "idiom",
+    "question": "Make sentence with following:",
+    "parts": [
+      { "label": "a", "phrase": "Fresh blood", "meaning": "নতুন উদ্যমী ব্যক্তি", "example": "We need some fresh blood in our office." },
+      { "label": "b", "phrase": "All in all", "meaning": "সর্বেসর্বা", "example": "Prime minister is considered as all in all of the cabinet." },
+      { "label": "c", "phrase": "In a Fix", "meaning": "মুশকিলে পড়া", "example": "He is in a fix and does not know what to do." },
+      { "label": "d", "phrase": "By and by", "meaning": "শীঘ্রই", "example": "He will finish the work by and by." },
+      { "label": "e", "phrase": "Full-fledged", "meaning": "পূর্ণাঙ্গভাবে বিকশিত/নিয়োজিত", "example": "He is now a full-fledged teacher." }
+    ]
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q09",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 9,
+    "type": "math",
+    "question": "x + y = 4 হলে, x³ + y³ + 12xy এর মান কত?",
+    "steps": [
+      "x³ + y³ + 12xy",
+      "= x³ + y³ + 3×4xy",
+      "= x³ + y³ + 3(x+y)×xy [মান বসিয়ে]",
+      "= (x+y)³",
+      "= 4³",
+      "= 64"
+    ],
+    "answer": "৬৪"
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q10",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 10,
+    "type": "math",
+    "question": "x³ + 6x²y + 11xy² + 6y³ এর মান কত? উৎপাদকে বিশ্লেষণ করুন।",
+    "steps": [
+      "x³ + 6x²y + 11xy² + 6y³",
+      "= x³ + 3.x².2y + 3.x.(2y)² + (2y)³ − xy² − 2y³",
+      "= (x+2y)³ − y²(x+2y)",
+      "= (x+2y){(x+2y)² − y²}",
+      "= (x+2y)(x+2y+y)(x+2y−y)",
+      "= (x+2y)(x+3y)(x+y)"
+    ],
+    "answer": "(x+y)(x+2y)(x+3y)"
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q11",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "type": "math",
+    "question": "একটি প্যান্ট ও শার্টের মূল্য একত্রে ২৫২৫ টাকা। যদি শার্টের মূল্য ১০% বাড়ে এবং প্যান্টের মূল্য ৫% কমে তাহলে শার্ট ও প্যান্টের মূল্য একত্রে একই থাকে। শার্ট ও প্যান্টের প্রতিটির মূল্য কত?",
+    "steps": [
+      "মনে করি, প্রতিটি শার্টের মূল্য x টাকা এবং প্যান্টের মূল্য 2525 − x টাকা",
+      "প্রশ্নমতে, 1.10x + 0.95(2525 − x) = 2525",
+      "বা, 1.10x + 2398.75 − 0.95x = 2525",
+      "বা, 0.15x = 126.25",
+      "বা, x = 126.25/0.15",
+      "বা, x = 841.67"
+    ],
+    "answer": "প্রতিটি শার্টের মূল্য ৮৪১.৬৭ টাকা এবং একটি প্যান্টের মূল্য ২৫২৫ − ৮৪১.৬৭ = ১৬৮৩.৩৩ টাকা"
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q12",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 12,
+    "type": "math",
+    "question": "৫টি লেবুর ক্রয় মূল্য ৪টি লেবুর বিক্রয় মূল্যের সমান হলে শতকরা লাভ বা ক্ষতি কত?",
+    "steps": [
+      "মনে করি, প্রতিটি লেবুর ক্রয়মূল্য ১ টাকা",
+      "৫টি লেবুর ক্রয়মূল্য ৫ টাকা",
+      "৪টি লেবুর বিক্রয় মূল্য ৫ টাকা",
+      "৪টি লেবুর ক্রয় মূল্য ৪ টাকা",
+      "লাভ (৫−৪) = ১ টাকা",
+      "শতকরা লাভ = (১/৪)×১০০"
+    ],
+    "answer": "২৫% লাভ"
+  },
+  {
+    "id": "job-2026-air-force-office-asst-typist-q13",
+    "examId": "job-2026-air-force-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 13,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দাওঃ",
+    "parts": [
+      { "label": "ক", "q": "সবুজপত্র পত্রিকার সম্পাদক কে ছিলেন?", "a": "প্রমথ চৌধুরী।" },
+      { "label": "খ", "q": "বাংলাদেশের সর্ব উত্তরের জেলা থেকে হিমালয়ের কোন শৃঙ্গ দেখা যায়?", "a": "কাঞ্চনজঙ্ঘা" },
+      { "label": "গ", "q": "ADB এর পূর্ণরূপ লিখুন।", "a": "Asian Development Bank" },
+      { "label": "ঘ", "q": "চ্যাটজিপিটির উদ্ভাবক কে?", "a": "স্যাম অল্টম্যান" },
+      { "label": "ঙ", "q": "এভিয়েশন বিশ্ববিদ্যালয় কোন জেলায় অবস্থিত?", "a": "লালমনিরহাট।" },
+      { "label": "চ", "q": "বাংলাদেশের White Gold কি?", "a": "চিংড়ি।" },
+      { "label": "ছ", "q": "বাংলাদেশের বৃহত্তম হাওড় কোনটি?", "a": "হাকালুকি হাওড়" },
+      { "label": "জ", "q": "'বিদ্রোহী' কবিতা কোন কাব্যগ্রন্থের অন্তর্গত?", "a": "'অগ্নিবীণা' কাব্যগ্রন্থ।" },
+      { "label": "ঝ", "q": "বাংলাদেশের একমাত্র প্রবাল দ্বীপের নাম কি?", "a": "সেন্টমার্টিন।" },
+      { "label": "ঞ", "q": "মিয়ানমারের সাথে বাংলাদেশের সীমান্ত জেলা কয়টি?", "a": "৩টি (রাঙ্গামাটি, বান্দরবান ও কক্সবাজার)।" },
+      { "label": "ট", "q": "EPI এর পূর্ণরূপ কি?", "a": "Expanded Programme on Immunization" },
+      { "label": "ঠ", "q": "PDF এর পূর্ণরূপ কি?", "a": "Portable Document Format" },
+      { "label": "ড", "q": "বিশ্ব খাদ্য সংস্থার সদর দপ্তর কোথায়?", "a": "রোম, ইতালি।" },
+      { "label": "ঢ", "q": "তিতুমীরের প্রকৃত নাম কি?", "a": "সৈয়দ মীর নিসার আলী।" },
+      { "label": "ণ", "q": "বৈদেশিক আয়ের প্রধান উৎস কী?", "a": "তৈরি পোশাক শিল্প" }
+    ]
+  }
+]

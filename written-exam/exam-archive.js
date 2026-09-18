@@ -136,7 +136,7 @@ const EXAM_ARCHIVE = [
     date: "2025-07-18",
     duration: "৬০ মিনিট",
     totalMarks: 90,
-    totalQuestions: 10,
+    totalQuestions: 18,
   },
   // ══════════════════════════════════════════════════════════
   // সোর্স: self_job_solution_330-370_page (পৃষ্ঠা ৩৩০-৩৭০)

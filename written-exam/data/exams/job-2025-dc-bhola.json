@@ -4,7 +4,7 @@
     "examId": "job-2025-dc-bhola",
     "subject": "bangla",
     "qno": 1,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "অসমাপিকা ক্রিয়া কাকে বলে? উদাহরণসহ উল্লেখ করুন।",
     "answer": "যে ক্রিয়া দ্বারা বাক্যের পরিসমাপ্তি ঘটে না অর্থাৎ বক্তার কথা অসম্পূর্ণ থেকে যায় তাকে অসমাপিকা ক্রিয়া বলে। যেমন, 'আমি ভাত খেয়ে স্কুলে যাবো।' — এখানে 'খেয়ে' অসমাপিকা ক্রিয়া।"
@@ -15,7 +15,7 @@
     "subject": "bangla",
     "topic": "সন্ধি",
     "qno": 2,
-    "marks": 4,
+    "marks": 2,
     "type": "table",
     "question": "সন্ধি বিচ্ছেদ করুন:",
     "columns": [
@@ -39,7 +39,7 @@
     "subject": "bangla",
     "topic": "বিপরীত-শব্দ",
     "qno": 3,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "'পরলোক' এর বিপরীত শব্দ কোনটি?",
     "answer": "ইহলোক।"
@@ -50,7 +50,7 @@
     "subject": "bangla",
     "topic": "বাগধারা",
     "qno": 4,
-    "marks": 4,
+    "marks": 2,
     "type": "idiom",
     "question": "অর্থসহ বাক্য রচনা করুন:",
     "parts": [
@@ -68,7 +68,7 @@
     "subject": "english",
     "topic": "grammar",
     "qno": 5,
-    "marks": 4,
+    "marks": 2,
     "type": "sentence-change",
     "question": "Passive করুন:",
     "parts": [
@@ -85,7 +85,7 @@
     "subject": "english",
     "topic": "translation",
     "qno": 6,
-    "marks": 4,
+    "marks": 2,
     "type": "translate",
     "question": "ইংরেজিতে অনুবাদ করুন:",
     "parts": [
@@ -102,7 +102,7 @@
     "subject": "english",
     "topic": "grammar",
     "qno": 7,
-    "marks": 4,
+    "marks": 2,
     "type": "short-qa",
     "question": "Masculine/Feminine Gender:",
     "parts": [
@@ -119,7 +119,7 @@
     "subject": "english",
     "topic": "grammar",
     "qno": 8,
-    "marks": 4,
+    "marks": 2,
     "type": "sentence-change",
     "question": "বাক্যটি সংশোধন করুন:",
     "parts": [
@@ -136,7 +136,7 @@
     "subject": "english",
     "topic": "fill-in-the-blanks",
     "qno": 9,
-    "marks": 4,
+    "marks": 2,
     "type": "fill-gaps",
     "question": "শূন্যস্থান পূরণ করুন:",
     "parts": [
@@ -152,7 +152,7 @@
     "subject": "math",
     "topic": "পাটিগণিত",
     "qno": 10,
-    "marks": 4,
+    "marks": 2,
     "type": "math",
     "question": "0.01 + 0.0001 = ?",
     "steps": [
@@ -167,7 +167,7 @@
     "subject": "math",
     "topic": "math-others",
     "qno": 11,
-    "marks": 4,
+    "marks": 2,
     "type": "math",
     "question": "সবচেয়ে সরল গঠনের এককোষী প্রাণী আমিবা। সংখ্যা ও আয়তন প্রতিদিন জ্যামিতিক হারে (সাধারণ অনুপাত-২) বৃদ্ধি পায়। যদি একটি গবেষণাধীন গ্লাস বীকারে রাখা একটি আমিবা বংশবৃদ্ধি করে ১৫ দিনে ঐ বীকারের পূর্ণ করতে পারে তবে ঐ বীকারের অর্ধেক আমিবা দ্বারা পূর্ণ হতে কতদিন লাগবে?",
     "steps": [
@@ -183,7 +183,7 @@
     "subject": "math",
     "topic": "math-others",
     "qno": 12,
-    "marks": 4,
+    "marks": 2,
     "type": "math",
     "question": "একটি পুকুরে ৫০টি ব্যাঙের মধ্যে ১০টি ব্যাঙ মারা গিয়ে পানিতে ভেসে উঠল। ঐ পুকুরে মোট আর কয়টি ব্যাঙ থাকবে?",
     "steps": [
@@ -197,7 +197,7 @@
     "subject": "math",
     "topic": "math-others",
     "qno": 13,
-    "marks": 4,
+    "marks": 2,
     "type": "math",
     "question": "৩০ মাইল/ঘন্টা বেগে প্রবাহমান বাতাসের অনুকূলে একটি ট্রেন চলমান আছে। ইঞ্জিনের ধোঁয়া খাড়া উপরের দিকে নির্গত হচ্ছে। ট্রেনের গতিবেগ কত?",
     "steps": [
@@ -212,7 +212,7 @@
     "subject": "math",
     "topic": "পাটিগণিত",
     "qno": 14,
-    "marks": 4,
+    "marks": 2,
     "type": "math",
     "question": "একটি দুর্গে ৩০ জন সৈন্যের ৩৫ দিনের খাবার আছে। দুর্গে আরও ৫ জন সৈন্য যোগ হলে সেই খাবারে কতদিন চলবে?",
     "steps": [
@@ -229,7 +229,7 @@
     "subject": "general-knowledge",
     "topic": "বাংলাদেশ",
     "qno": 15,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "কোন জেলাকে হিমালয় কন্যা বলা হয়?",
     "answer": "পঞ্চগড়।"
@@ -240,7 +240,7 @@
     "subject": "general-knowledge",
     "topic": "বাংলাদেশ",
     "qno": 16,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "বাংলাদেশের প্রবাল দ্বীপ কোনটি?",
     "answer": "সেন্টমার্টিন।"
@@ -251,7 +251,7 @@
     "subject": "general-knowledge",
     "topic": "আন্তর্জাতিক",
     "qno": 17,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "ইরানে ইসলামী বিপ্লব কবে হয়েছিল?",
     "answer": "১৯৭৯ সালে।"
@@ -262,7 +262,7 @@
     "subject": "general-knowledge",
     "topic": "সাম্প্রতিক",
     "qno": 18,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "আমেরিকা ইরানে কখন আক্রমণ করেছিল?",
     "answer": "২২ জুন ২০২৫।"
@@ -273,7 +273,7 @@
     "subject": "general-knowledge",
     "topic": "বাংলাদেশ",
     "qno": 19,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "বরিশাল প্রশাসনিক বিভাগ কবে কার্যক্রম শুরু করে?",
     "answer": "১ জানুয়ারি ১৯৯৩।"
@@ -284,7 +284,7 @@
     "subject": "general-knowledge",
     "topic": "বাংলাদেশ",
     "qno": 20,
-    "marks": 4,
+    "marks": 2,
     "type": "paragraph",
     "question": "ভোলা জেলা প্রশাসনের প্রধান কর্মকর্তার পদবী ও নাম কী?",
     "answer": "জেলা প্রশাসক; জনাব মো. আজাদ।"

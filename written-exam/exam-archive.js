@@ -82,7 +82,7 @@ const EXAM_ARCHIVE = [
     date: "2025-09-05",
     duration: "৬০ মিনিট",
     totalMarks: 40,
-    totalQuestions: 10,
+    totalQuestions: 12,
   },
   {
     id: "job-2025-dc-panchagarh-office-sohayok",

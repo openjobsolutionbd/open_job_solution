@@ -55,7 +55,7 @@ const EXAM_ARCHIVE = [
     date: "2025-09-05",
     duration: "৬০ মিনিট",
     totalMarks: 40,
-    totalQuestions: 11,
+    totalQuestions: 14,
   },
   {
     id: "job-2025-election-commission-office-assistant-computer-operator",

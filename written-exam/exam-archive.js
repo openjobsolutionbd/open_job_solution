@@ -98,8 +98,8 @@ const EXAM_ARCHIVE = [
     ministry: "জেলা প্রশাসকের কার্যালয়, ভোলা",
     post: "অফিস সহায়ক/নিরাপত্তা প্রহরী",
     date: "2025-07-05",
-    duration: "৮০ মিনিট",
-    totalMarks: 80,
+    duration: "৪০ মিনিট",
+    totalMarks: 40,
     totalQuestions: 20,
   },
   {

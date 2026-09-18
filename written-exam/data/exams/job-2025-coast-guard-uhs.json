@@ -30,7 +30,7 @@
         "নাতিদীর্ঘ"
       ],
       [
-        "চক্ষুর অগোচরে",
+        "অক্ষির অগোচরে",
         "পরোক্ষ"
       ]
     ]
@@ -234,15 +234,15 @@
         "answer": "to"
       },
       {
-        "sentence": "I tried...... avoiding doing the same thing day after day.",
-        "answer": "avoiding"
+        "sentence": "I tried...... doing the same thing day after day.",
+        "answer": "avoid"
       },
       {
         "sentence": "You can go......... the highway.",
         "answer": "along"
       },
       {
-        "sentence": "You should do.......... your duties.",
+        "sentence": "You should do.......... duties.",
         "answer": "your"
       }
     ]

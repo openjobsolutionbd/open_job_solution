@@ -157,5 +157,61 @@
       "কমিশনে মূল্য ১৮০ টাকা হলে প্রকৃত ক্রয়মূল্য = (১০০ × ১৮০) ÷ ৯০ = ২০০ টাকা"
     ],
     "answer": "২০০ টাকা"
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q12",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "math",
+    "topic": "বয়সের অনুপাত",
+    "qno": 12,
+    "type": "math",
+    "question": "পিতা ও পুত্রের বর্তমান বয়সের অনুপাত ৭:২ এবং ৫ বছর পরে তাদের বয়সের অনুপাত ৮:৩ হবে। তাদের বর্তমান বয়স কত?",
+    "steps": [
+      "মনে করি, পিতার বর্তমান বয়স ৭x, পুত্রের বর্তমান বয়স ২x",
+      "প্রশ্নমতে, ৭x + ৫ : ২x + ৫ = ৮ : ৩",
+      "বা, (৭x + ৫)/(২x + ৫) = ৮/৩",
+      "বা, ২১x + ১৫ = ১৬x + ৪০",
+      "বা, ২১x − ১৬x = ৪০ − ১৫",
+      "বা, ৫x = ২৫",
+      "∴ x = ৫",
+      "∴ পিতার বর্তমান বয়স = ৭ × ৫ = ৩৫ বছর",
+      "∴ পুত্রের বর্তমান বয়স = ২ × ৫ = ১০ বছর"
+    ],
+    "answer": "উত্তর: পিতার বয়স ৩৫ বছর এবং পুত্রের বয়স ১০ বছর।"
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q13",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "type": "math",
+    "question": "x² − x − 20 কে উৎপাদকে বিশ্লেষণ করুন।",
+    "steps": [
+      "x² − x − 20",
+      "= x² − 5x + 4x − 20",
+      "= x(x − 5) + 4(x − 5)",
+      "= (x − 5)(x + 4) (Answer)"
+    ],
+    "answer": "উত্তর: (x − 5)(x + 4)"
+  },
+  {
+    "id": "job-2025-defense-ministry-office-sohayok-q14",
+    "examId": "job-2025-defense-ministry-office-sohayok",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "type": "math",
+    "question": "x + 1/x = 2 হলে x এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, x + 1/x = 2",
+      "বা, (x² + 1)/x = 2",
+      "বা, x² + 1 = 2x",
+      "বা, x² − 2x + 1 = 0",
+      "বা, (x − 1)² = 0",
+      "বা, x − 1 = 0",
+      "∴ x = 1 (Answer)"
+    ],
+    "answer": "উত্তর: x = ১"
   }
 ]

@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .DS_Store
 node_modules/
+
+# Internal tool runtime state/logs — should not be tracked
+_dev/_system/logs.json
+_dev/_system/rules.json

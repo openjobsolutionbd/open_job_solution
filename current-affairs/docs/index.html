@@ -3077,20 +3077,16 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
     html = html.replace(/<table(\s[^>]*)?>/g, (m, attrs) => `<div class="table-scroll"><table${attrs||''}>`);
     html = html.replace(/<\/table>/g, '</table></div>');
 
-    const alreadyRead = isRead(topic.slug);
     const alreadyBookmarked = isBookmarked(topic.slug);
     const related = getRelatedTopics(topic);
     container.innerHTML = `
       ${backBtnId ? `<button class="mobile-back-btn" id="${backBtnId}">← তালিকায় ফিরুন</button>` : ''}
       <div class="seal">সর্বশেষ<br>${escapeHtml(topic.last_updated || '—')}</div>
       <div class="card-actions">
-        <button class="print-topic-btn" id="print-topic-btn-${topic.slug}">🖨️ প্রিন্ট / PDF</button>
-        <button class="mark-read-btn ${alreadyRead?'done':''}" id="mark-read-btn-${topic.slug}">${alreadyRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?'}</button>
         <button class="bookmark-btn ${alreadyBookmarked?'active':''}" id="bookmark-btn-${topic.slug}">${alreadyBookmarked ? '⭐ প্রিয়' : '☆ প্রিয়'}</button>
         <button class="copy-link" id="copy-link-btn-${topic.slug}" title="এই টপিকের লিংক কপি করো">🔗 লিংক কপি</button>
       </div>
       <h2>${escapeHtml(topic.title)}</h2>
-      <div class="tags-row">${(topic.tags||[]).map(t=>`<span class="pill" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}</div>
       <div class="card-body">${html}</div>
       ${related.length ? `
         <div class="related-topics">
@@ -3113,10 +3109,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
     // বাঁধা পড়ে না, ক্লিক করলে কিছুই হয় না। container.querySelector() দিয়ে
     // ঠিক এই renderTopicContent()-কলের container-এর ভেতরের এলিমেন্টটাই
     // নিশ্চিতভাবে বাছাই করা হচ্ছে।
-    container.querySelector(`#print-topic-btn-${topic.slug}`).addEventListener('click', () => {
-      window.print();
-    });
-
     container.querySelector(`#copy-link-btn-${topic.slug}`).addEventListener('click', async (e) => {
       const url = window.location.origin + window.location.pathname + '#' + topic.slug;
       try{
@@ -3128,14 +3120,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       setTimeout(()=>{ e.target.textContent = '🔗 লিংক কপি'; }, 1800);
     });
 
-    container.querySelector(`#mark-read-btn-${topic.slug}`).addEventListener('click', (e) => {
-      const nowRead = toggleRead(topic.slug);
-      e.target.classList.toggle('done', nowRead);
-      e.target.textContent = nowRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?';
-      const qNow = document.getElementById('search').value.trim().toLowerCase();
-      renderList(visibleTopics(qNow), qNow);
-    });
-
     container.querySelector(`#bookmark-btn-${topic.slug}`).addEventListener('click', (e) => {
       const nowBookmarked = toggleBookmark(topic.slug);
       e.target.classList.toggle('active', nowBookmarked);
@@ -3144,9 +3128,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       renderList(visibleTopics(qNow), qNow);
     });
 
-    container.querySelectorAll('.pill').forEach(pill => {
-      pill.addEventListener('click', () => filterByTag(pill.dataset.tag));
-    });
     container.querySelectorAll('.related-chip').forEach(chip => {
       chip.addEventListener('click', () => {
         if(onRelatedClick) onRelatedClick(chip.dataset.slug);

@@ -75,6 +75,11 @@ BENGALI_MONTHS = {
 }
 
 
+def _norm_text(text):
+    """বুলেট-টেক্সট তুলনার জন্য: বাড়তি স্পেস/লাইন-ব্রেক সমান করে (ডুপ্লিকেট ধরতে)।"""
+    return " ".join(text.split())
+
+
 def bengali_date_sort_key(date_str):
     """'২৫ এপ্রিল ২০২৬'-এর মতো লেখাকে (year, month_number, day)-এ রূপান্তর করে,
     যাতে সময়ানুক্রমে (নতুন থেকে পুরনো) সাজানো যায়। বুঝতে না পারলে সবচেয়ে
@@ -224,20 +229,63 @@ def compile_ghotonaprobaho(valid_slugs):
         print("তথ্য: ghotonaprobaho/ ফোল্ডার নেই, এই ফিচার বাদ দিয়ে বিল্ড চলবে।")
         return
 
-    all_days = []
-    seen_dates = {}  # তারিখ-টেক্সট -> কোন ফাইলে প্রথম দেখা গেছে (ডুপ্লিকেট ধরার জন্য)
+    # একাধিক সেশন একসাথে কাজ করলে সংঘর্ষ এড়াতে প্রতিটা সেশন নিজের আলাদা ফাইল বানায়
+    # (AGENTS.md দেখুন) — তাই একই তারিখ একাধিক ফাইলে থাকতেই পারে। এখানে সেগুলো একটা
+    # দিনে জোড়া লাগে: একই নামের ক্যাটাগরির বুলেট একত্র, ফাইলের নামক্রমে; '০১ আগস্ট' ও
+    # '১ আগস্ট' একই দিন ধরা হয়।
+    # কঠোরতা: একই ফাইলের ভেতরে একই তারিখ-হেডিং দুইবার থাকলে সেটা সম্পাদনার ভুল, তাই
+    # তা এখনও বিল্ড-এরর। কিন্তু দুই ফাইলে হুবহু একই বুলেট পাওয়া গেলে বিল্ড থামে না —
+    # একটা রেখে stderr-এ সতর্কতা দেয়। কারণ দুটো আলাদা PR আলাদাভাবে পাস করে merge হওয়ার
+    # পর জোড়া লাগলে এই ডুপ্লিকেট তৈরি হতে পারে, যা কোনো একক PR-চেকে ধরার নয়; তখন
+    # বিল্ড ভাঙলে bot generated ফাইল আপডেট করতে পারত না আর লাইভ সাইট stale থাকত।
+    merged = {}  # merge_key -> {"day": দিন, "texts": {নরমালাইজড বুলেট: ফাইল}}
+    order = []
     for path in sorted(GHOTONAPROBAHO_DIR.glob("*.md")):
+        seen_in_file = set()
         for d in parse_ghotonaprobaho_file(path, valid_slugs):
             date_key = d["date"].strip()
-            if date_key in seen_dates:
+            merge_key = d["_sort"] if d["_sort"] != (0, 0, 0) else date_key
+            if merge_key in seen_in_file:
                 raise BuildError(
-                    f"'{date_key}' তারিখটা একাধিক ফাইলে পাওয়া গেছে "
-                    f"({seen_dates[date_key]} এবং {path.name}) — একটা ফাইল থেকে বাদ দিন।"
+                    f"'{date_key}' তারিখটা একই ফাইলে ({path.name}) একাধিকবার আছে — "
+                    "একটা হেডিংয়ের নিচে মিলিয়ে দিন।"
                 )
-            else:
-                seen_dates[date_key] = path.name
-            all_days.append(d)
+            seen_in_file.add(merge_key)
+            if merge_key not in merged:
+                slot = {"day": d, "texts": {}}
+                for cat in d["categories"]:
+                    for it in cat["items"]:
+                        slot["texts"].setdefault(_norm_text(it["text"]), path.name)
+                merged[merge_key] = slot
+                order.append(merge_key)
+                continue
+            slot = merged[merge_key]
+            base = slot["day"]
+            for cat in d["categories"]:
+                fresh = []
+                for it in cat["items"]:
+                    key = _norm_text(it["text"])
+                    if key in slot["texts"]:
+                        print(
+                            f"সতর্কতা: '{date_key}'-এর একই বুলেট দুই ফাইলে আছে "
+                            f"({slot['texts'][key]} ও {path.name}) — একটা রাখা হলো: "
+                            f"'{it['text'][:50]}…'",
+                            file=sys.stderr,
+                        )
+                        continue
+                    slot["texts"][key] = path.name
+                    fresh.append(it)
+                if not fresh:
+                    continue
+                target = next(
+                    (c for c in base["categories"] if c["category"] == cat["category"]), None
+                )
+                if target is None:
+                    base["categories"].append({"category": cat["category"], "items": fresh})
+                else:
+                    target["items"].extend(fresh)
 
+    all_days = [merged[k]["day"] for k in order]
     all_days.sort(key=lambda d: d["_sort"], reverse=True)
 
     by_month = {}
@@ -315,8 +363,19 @@ def compile_top_news(valid_slugs):
         return
 
     all_items = []
+    seen = {}  # (তারিখ, নরমালাইজড টেক্সট) -> ফাইল — ঘটনাপ্রবাহের মতোই একাধিক সেশনের ফাইল জোড়া লাগে
     for path in sorted(TOP_NEWS_DIR.glob("*.md")):
-        all_items.extend(parse_top_news_file(path, valid_slugs))
+        for it in parse_top_news_file(path, valid_slugs):
+            key = (it["_sort"] if it["_sort"] != (0, 0, 0) else it["date"], _norm_text(it["text"]))
+            if key in seen:
+                print(
+                    f"সতর্কতা: টপ নিউজে '{it['date']}'-এর একই হাইলাইট দুইবার আছে "
+                    f"({seen[key]} ও {path.name}) — একটা রাখা হলো।",
+                    file=sys.stderr,
+                )
+                continue
+            seen[key] = path.name
+            all_items.append(it)
 
     all_items.sort(key=lambda it: it["_sort"], reverse=True)
     for it in all_items:
@@ -332,6 +391,9 @@ def compile_top_news(valid_slugs):
 BN_LETTER_TO_INDEX = {"ক": 0, "খ": 1, "গ": 2, "ঘ": 3}
 
 MCQ_SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
+# '2026-09-p10-11'-এর মতো সেশন-ফাইল (মাস + '-' + অঙ্ক-নয় এমন স্কোপ) একই মাসের একটা সেটে
+# জোড়া লাগে; '2026-07' বা রেঞ্জ-নাম ('2026-07-15_2026-08-14') আগের মতোই আলাদা সেট।
+MCQ_SESSION_FILE_RE = re.compile(r"^(\d{4}-\d{2})-(?=\D)")
 MCQ_QUESTION_RE = re.compile(r"^([০-৯]+)\.\s*(.+?)\s*$")
 MCQ_OPTION_TOKEN_RE = re.compile(r"([কখগঘ])\)\s*(.+?)(?=\s+[কখগঘ]\)|$)")
 MCQ_ANSWER_PAIR_RE = re.compile(r"([০-৯]+)\.([কখগঘ])")
@@ -442,17 +504,19 @@ def compile_mcq():
         print("তথ্য: docs/mcq/ ফোল্ডার নেই, এই ফিচার বাদ দিয়ে বিল্ড চলবে।")
         return
 
-    quiz_sets = []  # প্রতিটা ফাইল একটা আলাদা "সেট" (সাধারণত এক সংখ্যার MCQ)
+    by_id = {}  # সেট-আইডি -> সেট (সাধারণত এক সংখ্যার MCQ; একাধিক সেশন-ফাইল থাকলে জোড়া লাগে)
     for path in sorted(MCQ_DIR.glob("*.md")):
         sections = parse_mcq_file(path)
-        if sections:
-            total_q = sum(len(s["questions"]) for s in sections)
-            quiz_sets.append({
-                "id": path.stem,
-                "label": path.stem,
-                "sections": sections,
-                "question_count": total_q,
-            })
+        if not sections:
+            continue
+        m = MCQ_SESSION_FILE_RE.match(path.stem)
+        set_id = m.group(1) if m else path.stem
+        slot = by_id.setdefault(
+            set_id, {"id": set_id, "label": set_id, "sections": [], "question_count": 0}
+        )
+        slot["sections"].extend(sections)
+        slot["question_count"] += sum(len(s["questions"]) for s in sections)
+    quiz_sets = list(by_id.values())
 
     quiz_sets.sort(key=lambda s: s["id"], reverse=True)
 

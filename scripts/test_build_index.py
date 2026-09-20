@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_index import strip_markdown  # noqa: E402
 from build_index import parse_mcq_file  # noqa: E402
+import build_index as _bi  # noqa: E402
 
 tests = []
 
@@ -155,6 +156,122 @@ def _():
     finally:
         if tmp_path.exists():
             tmp_path.rename(index_html)
+
+
+# ---------------------------------------------------------------------------
+# একাধিক সেশন একসাথে কাজ (২০২৬-০৯-২০): প্রতিটা সেশন নিজের আলাদা ফাইল বানায়, তাই
+# ঘটনাপ্রবাহ/টপ নিউজ/MCQ-তে একই তারিখ/মাস একাধিক ফাইলে থাকতে পারে — build সেগুলো
+# জোড়া লাগায়। এই টেস্টগুলো সেই আচরণ পাহারা দেয় (দেখুন AGENTS.md, PR_GUIDE.md)।
+# ---------------------------------------------------------------------------
+import contextlib  # noqa: E402
+import io  # noqa: E402
+import json  # noqa: E402
+import tempfile  # noqa: E402
+
+
+@contextlib.contextmanager
+def _patched(**attrs):
+    old = {k: getattr(_bi, k) for k in attrs}
+    for k, v in attrs.items():
+        setattr(_bi, k, v)
+    try:
+        yield
+    finally:
+        for k, v in old.items():
+            setattr(_bi, k, v)
+
+
+def _compile(kind, files):
+    """kind: 'gh' | 'tn' | 'mcq'। files: {ফাইলনাম: টেক্সট}। ফেরত: (আউটপুট-JSON, stderr)।"""
+    cfg = {
+        "gh": ("GHOTONAPROBAHO_DIR", "GHOTONAPROBAHO_OUTPUT_FILE", lambda: _bi.compile_ghotonaprobaho(set())),
+        "tn": ("TOP_NEWS_DIR", "TOP_NEWS_OUTPUT_FILE", lambda: _bi.compile_top_news(set())),
+        "mcq": ("MCQ_DIR", "MCQ_OUTPUT_FILE", lambda: _bi.compile_mcq()),
+    }[kind]
+    with tempfile.TemporaryDirectory() as td:
+        d = Path(td) / "src"
+        d.mkdir()
+        for name, text in files.items():
+            (d / name).write_text(text, encoding="utf-8")
+        out = Path(td) / "out.json"
+        err = io.StringIO()
+        with _patched(**{cfg[0]: d, cfg[1]: out}), \
+                contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(err):
+            cfg[2]()
+        return json.loads(out.read_text(encoding="utf-8")), err.getvalue()
+
+
+def _gh_days(data):
+    return [d for m in data["months"] for d in m["days"]]
+
+
+@test("compile_ghotonaprobaho — একই তারিখ দুই সেশন-ফাইলে থাকলে বিল্ড ভাঙে না; একটা দিনে জোড়া লাগে, একই নামের ক্যাটাগরির বুলেট একত্র")
+def _():
+    a = "## ২০ আগস্ট ২০২৬\n\n\n**বাংলাদেশ**\n\n- ক-বুলেট\n"
+    b = "## ২০ আগস্ট ২০২৬\n\n\n**বাংলাদেশ**\n\n- খ-বুলেট\n\n**আন্তর্জাতিক**\n\n- গ-বুলেট\n"
+    data, _err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    days = _gh_days(data)
+    assert len(days) == 1, f"একই তারিখ একটাই দিন হওয়া উচিত, পাওয়া গেছে {len(days)}টা"
+    cats = {c["category"]: [i["text"] for i in c["items"]] for c in days[0]["categories"]}
+    assert cats.get("বাংলাদেশ") == ["ক-বুলেট", "খ-বুলেট"], f"বাংলাদেশ-এর বুলেট ঠিক জোড়া লাগেনি: {cats}"
+    assert cats.get("আন্তর্জাতিক") == ["গ-বুলেট"], f"আন্তর্জাতিক বিভাগ হারিয়েছে: {cats}"
+
+
+@test("compile_ghotonaprobaho — '০১ আগস্ট' ও '১ আগস্ট' একই দিন ধরা হয় (দুই সেশনের লেখার ধরন আলাদা হলেও)")
+def _():
+    a = "## ০১ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- এক\n"
+    b = "## ১ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- দুই\n"
+    data, _err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    assert len(_gh_days(data)) == 1, "'০১ আগস্ট' আর '১ আগস্ট' আলাদা দিন হয়ে গেছে"
+
+
+@test("compile_ghotonaprobaho — একই ফাইলের ভেতরে একই তারিখ-হেডিং দুইবার থাকলে এখনও বিল্ড-এরর (সম্পাদনার ভুল ধরতে)")
+def _():
+    dup = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- এক\n\n## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- দুই\n"
+    try:
+        _compile("gh", {"x.md": dup})
+    except _bi.BuildError as e:
+        assert "একই ফাইলে" in str(e), f"এরর-বার্তা প্রত্যাশিত নয়: {e}"
+        return
+    assert False, "একই ফাইলে ডুপ্লিকেট তারিখ-হেডিং থাকা সত্ত্বেও BuildError ওঠেনি"
+
+
+@test("compile_ghotonaprobaho — হুবহু একই বুলেট দুই ফাইলে থাকলে বিল্ড থামে না (নইলে bot generated ফাইল আপডেট করতে পারত না); একটা রেখে stderr-এ সতর্কতা")
+def _():
+    a = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- একই ঘটনা\n"
+    b = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- একই   ঘটনা\n- আলাদা ঘটনা\n"
+    data, err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    items = [i["text"] for c in _gh_days(data)[0]["categories"] for i in c["items"]]
+    assert items.count("একই ঘটনা") == 1 and "আলাদা ঘটনা" in items, f"ডুপ্লিকেট বাদ/নতুন রাখা ঠিক হয়নি: {items}"
+    assert "সতর্কতা" in err, f"ডুপ্লিকেট নিয়ে stderr-এ সতর্কতা আসেনি: {err!r}"
+
+
+@test("compile_top_news — দুই সেশন-ফাইলের একই তারিখ জোড়া লাগে; হুবহু একই হাইলাইট একবার থাকে")
+def _():
+    a = "## ২১ আগস্ট ২০২৬\n- হাইলাইট এক\n"
+    b = "## ২১ আগস্ট ২০২৬\n- হাইলাইট এক\n- হাইলাইট দুই\n"
+    data, err = _compile("tn", {"2026-09-a.md": a, "2026-09-b.md": b})
+    texts = [i["text"] for i in data["items"]]
+    assert texts.count("হাইলাইট এক") == 1 and "হাইলাইট দুই" in texts, f"টপ নিউজ জোড়া/ডুপ্লিকেট ঠিক নয়: {texts}"
+    assert "সতর্কতা" in err, "ডুপ্লিকেট হাইলাইটে stderr সতর্কতা আসেনি"
+
+
+@test("compile_mcq — '2026-09-<স্কোপ>.md' সেশন-ফাইলগুলো একই মাসের একটা সেটে জোড়া লাগে; মাস-নাম/রেঞ্জ-নাম আগের মতোই আলাদা সেট")
+def _():
+    def sec(name, ans):
+        return f"## {name}\n১. প্রশ্ন?\nক) ক খ) খ গ) গ ঘ) ঘ\n\n**উত্তর:** ১.{ans}\n"
+    files = {
+        "2026-09-p10.md": sec("বিভাগ এ", "ক"),
+        "2026-09-p11.md": sec("বিভাগ বি", "খ"),
+        "2026-08.md": sec("আগস্ট", "গ"),
+        "2026-07-15_2026-08-14.md": sec("রেঞ্জ", "ঘ"),
+    }
+    data, _err = _compile("mcq", files)
+    sets = {s["id"]: s for s in data["sets"]}
+    assert set(sets) == {"2026-09", "2026-08", "2026-07-15_2026-08-14"}, f"সেট-আইডি ভুল: {sorted(sets)}"
+    assert sets["2026-09"]["question_count"] == 2 and len(sets["2026-09"]["sections"]) == 2, (
+        f"2026-09 সেটে দুই ফাইলের দুই সেকশন/২ প্রশ্ন থাকা উচিত: {sets['2026-09']['question_count']}"
+    )
 
 
 def main():

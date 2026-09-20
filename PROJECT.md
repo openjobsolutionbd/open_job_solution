@@ -92,7 +92,7 @@ Cloudflare Pages-এর output directory `docs`। তাই `docs/` path বদ
 2. Claude OCR করে/পড়ে, নিজে আরেকবার জুম করে রিচেক করে।
 3. অনিশ্চিত কিছু থাকলে (অস্পষ্ট নাম, সংখ্যা, তারিখ) অনুমান না করে ব্যবহারকারীকে জিজ্ঞেস করে, প্রয়োজনে ওয়েব সার্চে যাচাই করে।
 4. `bash scripts/check_topic.sh "কীওয়ার্ড"` দিয়ে ডুপ্লিকেট-চেক — বিদ্যমান টপিক থাকলে সেখানে merge, না থাকলে নতুন ফাইল।
-5. কনফার্মেশনের পর **সরাসরি** সঠিক গন্তব্যে বসানো হয় — `docs/topics/*.md` (স্থায়ী বিষয়), `docs/ghotonaprobaho/*.md` (তারিখ-ভিত্তিক ঘটনা), `docs/top-news/*.md` (হাইলাইট), বা `docs/mcq/*.md` (MCQ আর্কাইভ) — কোনো intermediate staging ফাইল ছাড়াই।
+5. কনফার্মেশনের পর **সরাসরি** সঠিক গন্তব্যে বসানো হয় — `docs/topics/*.md` (স্থায়ী বিষয়), `docs/ghotonaprobaho/*.md` (তারিখ-ভিত্তিক ঘটনা; প্রতি সেশন নিজের নতুন ফাইলে — `PR_GUIDE.md` "একাধিক সেশন"), `docs/top-news/*.md` (হাইলাইট), বা `docs/mcq/*.md` (MCQ আর্কাইভ) — কোনো intermediate staging ফাইল ছাড়াই।
 6. `python3 scripts/build_index.py` + `scripts/verify_site.py` (বা একসাথে `preflight.sh`) দিয়ে validate।
 7. Commit + push।
 

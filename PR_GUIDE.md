@@ -88,7 +88,7 @@ merge ব্যর্থ হলে (checks এখনো শেষ হয়ন�
 curl -s -X DELETE -H "Authorization: Bearer $PAT" \
   https://api.github.com/repos/openjobsolutionbd/open_current_affairs/git/refs/heads/work/2026-08-11-...
 ```
-merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` নিজে থেকেই generated output রিবিল্ড করার চেষ্টা করবে — কিন্তু branch protection-এর কারণে সরাসরি push না করে `auto/rebuild-output` নামে একটা আলাদা PR খুলবে/আপডেট করবে; **সেই PR-ও merge করতে হবে** (স্বয়ংক্রিয়ভাবে merge হয় না), নাহলে লাইভ সাইটে generated output stale থেকে যাবে।
+merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` নিজে থেকেই generated output রিবিল্ড করে **সরাসরি `main`-এ commit করে দেয়** (২০২৬-০৯-২০ থেকে) — আলাদা কোনো rebuild PR খোলে না, তাই merge করার মতো বাড়তি কিছু নেই। ১–২ মিনিট পর `main`-এ `github-actions[bot]`-এর `chore: rebuild generated site output + bump version to …` commit দেখা গেলে বুঝবেন লাইভ সাইট হালনাগাদ হয়েছে; না দেখা গেলে Actions-এ `Update wiki index` run দেখুন।
 
 **যদি PR-এ real git conflict দেখায়** (দুইটা branch একই লাইনে ভিন্ন পরিবর্তন করেছে — GitHub-এর `mergeable: false`): নিজে অনুমান করে কোনটা রাখবেন ঠিক করবেন না, `AGENTS.md`-এর "rebase-conflict নিয়ম"-এর ব্যতিক্রম-নিয়ম মেনে চলুন। Auto-generated ফাইলে conflict কখনো হাতে মার্জ করবেন না — merge-এর পর `main`-এ `build_index.py` এমনিতেই আবার চালাবে।
 
@@ -104,6 +104,6 @@ curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json"
 ```
 - `merged_at` থাকলে (সত্যিই merge হয়েছে) → branch মুছে ফেলুন (আইটেম ৭-এর DELETE কমান্ড)।
 - `merged_at` null থাকলে (PR বন্ধ হয়েছে কিন্তু merge হয়নি) → মুছবেন না, ব্যবহারকারীকে জানিয়ে জিজ্ঞেস করুন কী করতে চান।
-- `auto/rebuild-output` কখনো এই সুইপে মুছবেন না — এটা bot-এর repeatedly-ব্যবহৃত রিবিল্ড branch, merged হওয়া সত্ত্বেও ভবিষ্যতে আবার ব্যবহার হবে।
+- `auto/rebuild-output` কখনো এই সুইপে মুছবেন না — এটা পুরনো নকশার (২০২৬-০৯-২০-এর আগের) rebuild-PR branch; এখন আর ব্যবহার হয় না, তবে কোথাও থেকে গেলে না ঘেঁটে যেমন আছে তেমন রাখুন।
 - মুছার পর প্রতিবার leak-check চালান: `grep -i "ghp_\|Authorization" .git/config`।
 

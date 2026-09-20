@@ -31,6 +31,12 @@ verify_site.py শুধু build_index.py-এর generated output (docs/) য�
   ৫. docs/ ফোল্ডারের generated output-এ পুরনো standalone ডোমেইন
      (open-current-affairs.pages.dev)-এর কোনো অবশিষ্ট চিহ্ন নেই
      (BUG: টপিক স্টাব পেজ ভিজিটরকে ভুল পুরনো সাইটে redirect করত)
+  ৬. update-wiki.yml-এ push-URL-এ PAT (x-access-token:) বসানো থাকলে
+     checkout-এ `persist-credentials: false` আছে
+     (BUG-26: এটা না থাকলে checkout-এর সংরক্ষিত GITHUB_TOKEN PAT-কে ছাপিয়ে যায়,
+     push সবসময় github-actions[bot] নামে হয়, আর PR-চেক action_required-এ আটকায়)
+  ৭. update-wiki.yml-এর কোডে (মন্তব্য বাদে) skip-ci ট্যাগ নেই
+     (BUG: skip-ci commit-এ workflow/deploy বাদ পড়ে, সাইট stale থাকে)
 
 exit code 0 = নিরাপদ, 1 = কোনো প্যাটার্ন হারিয়ে গেছে (রিগ্রেশন)।
 """
@@ -40,6 +46,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SYNC_WORKFLOW = ROOT / ".github" / "workflows" / "sync-to-job-solution.yml"
+UPDATE_WIKI_WORKFLOW = ROOT / ".github" / "workflows" / "update-wiki.yml"
 SW_TEMPLATE = ROOT / "scripts" / "sw_template.js"
 INDEX_HTML = ROOT / "docs" / "index.html"
 DOCS_DIR = ROOT / "docs"
@@ -123,6 +130,37 @@ def main():
                 f"docs/-এর নিচে {len(offenders)}টা ফাইলে এখনো পুরনো ডোমেইন '{OLD_DOMAIN}' "
                 f"পাওয়া যাচ্ছে: {sample}{more}"
             )
+
+    # ৬-৭. update-wiki.yml — bot-এর `git push` আসলে কোন টোকেনে যায়, আর skip-ci নেই
+    if UPDATE_WIKI_WORKFLOW.exists():
+        wiki_text = UPDATE_WIKI_WORKFLOW.read_text(encoding="utf-8")
+        # মন্তব্য-লাইন (# দিয়ে শুরু) বাদ — মন্তব্যে এই প্যাটার্নগুলোর ব্যাখ্যা থাকতেই পারে
+        wiki_code = "\n".join(
+            line for line in wiki_text.splitlines() if not line.lstrip().startswith("#")
+        )
+        # YAML-কী হিসেবেই খুঁজি (লাইনের শুরুতে) — নইলে ::error:: বার্তা বা অন্য কোনো
+        # স্ট্রিংয়ের ভেতরের একই লেখা ভুলবশত আসল সেটিং ধরে নেওয়া হবে
+        has_persist_false = re.search(
+            r"^\s*persist-credentials:\s*false\s*$", wiki_code, re.MULTILINE
+        )
+        if "x-access-token:" in wiki_code and not has_persist_false:
+            errors.append(
+                f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)}-এ push-URL-এ PAT (x-access-token:) আছে, "
+                "কিন্তু checkout-এ 'persist-credentials: false' নেই — checkout-এর সংরক্ষিত "
+                "GITHUB_TOKEN PAT-কে ছাপিয়ে যায়, ফলে push আবার github-actions[bot] নামে হবে "
+                "(BUG-26, BUGFIX.md দেখুন)"
+            )
+        if re.search(
+            r"\[\s*(skip ci|ci skip|no ci|skip actions|actions skip)\s*\]",
+            wiki_code,
+            re.IGNORECASE,
+        ):
+            errors.append(
+                f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)}-এর কোডে skip-ci ট্যাগ পাওয়া গেছে — "
+                "এতে workflow/deploy বাদ পড়ে সাইট stale থাকতে পারে"
+            )
+    else:
+        errors.append(f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)} ফাইলই খুঁজে পাওয়া যায়নি")
 
     if errors:
         fail(errors)

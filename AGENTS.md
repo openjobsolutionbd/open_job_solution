@@ -45,7 +45,7 @@ cd open_current_affairs && bash scripts/session_status.sh
 | `scripts/test_build_index.py` | `build_index.py`-র regression টেস্ট (BUGFIX.md-এর bug লক করে) — `preflight.sh` সবসময় চালায় |
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
-| `.github/workflows/update-wiki.yml` | main-push হলে build+verify চালিয়ে `auto/rebuild-output` branch-এ PR (branch protection-এর কারণে bot সরাসরি push পারে না)। preflight+PR-চেক ক্লিন হলে auto-merge, নাহলে output stale থাকবে। `secrets.BOT_PAT` ব্যবহার করে; মেয়াদ ফুরোলে Settings-এ আপডেট |
+| `.github/workflows/update-wiki.yml` | main-push হলে build+verify চালিয়ে generated output (`topics-index.json`, `sw.js`, `version.json`, `topic/` ইত্যাদি) **সরাসরি `main`-এ commit** করে, PR খোলে না (২০২৬-০৯-২০ থেকে; Cloudflare Pages সেই commit-ই deploy করে)। `GITHUB_TOKEN` দিয়ে push হয়, কোনো PAT লাগে না — তাই `main`-এ branch protection/ruleset চালু করলে এই push ভাঙবে (তখন github-actions-কে bypass দিতে হবে)। commit message-এ `[skip ci]` দেবেন না |
 | `.github/workflows/pr-check.yml` | PR খুললে/আপডেট হলে: generated-ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক + build+verify |
 | `scripts/pr_checks.py` | `pr-check.yml`-এর ভেতরে চলে, হাতে চালানোর দরকার নেই |
 | `BUGFIX.md` | ধরা পড়া bug-এর স্থায়ী লগ — প্রতিটার matching regression test থাকা উচিত |

@@ -505,3 +505,25 @@ check ৯-এর `if`-ব্লক শুরুর আগেই `print_block = N
 **যাচাই:** `scripts/test_build_index.py`-এ regression test যোগ করা হয়েছে — `docs/index.html` সাময়িকভাবে সরিয়ে (rename করে) `verify_site.main()` কল করা হয়, নিশ্চিত করা হয় এটা `SystemExit(1)`-এ থামে (কোনো অপ্রত্যাশিত exception না) এবং stdout-এ স্পষ্ট "index.html ... পাওয়া যায়নি" বার্তা প্রিন্ট হয় — `finally`-তে ফাইল সবসময় ফিরিয়ে আনা হয় (টেস্ট fail করলেও)। ফিক্স সাময়িকভাবে উল্টিয়ে নিশ্চিত করা হয়েছে টেস্টটা তখন সত্যিই fail করে ("UnboundLocalError... ক্র্যাশ করছে" বার্তা দিয়ে), ফিরিয়ে আনলে ৫/৫ pass করে। ম্যানুয়ালিও (`docs/index.html` সরিয়ে সরাসরি `python3 scripts/verify_site.py` চালিয়ে) নিশ্চিত করা হয়েছে — আগে stderr-এ Python traceback আসত, এখন শুধু exit code ১ ও স্পষ্ট বাংলা বার্তা।
 
 ---
+
+---
+
+## ব্যাচ ৪ — ২০২৬-০৯-২০ (CI/ডিপ্লয় পাইপলাইন)
+
+### BUG-26 🔴 — `update-wiki.yml`-এর `git push` কখনোই PAT দিয়ে হতো না; rebuild-PR-এর চেক আটকে যেত আর লাইভ সাইট সপ্তাহের পর সপ্তাহ stale থাকত
+
+**ফাইল:** `.github/workflows/update-wiki.yml` (checkout + rebuild-push ধাপ)
+
+**সমস্যা:**
+main-এ কনটেন্ট merge হলেও নতুন তথ্য লাইভ সাইটে (`open-current-affairs.pages.dev`) পৌঁছাচ্ছিল না। কারণ সাইট `docs/topics-index.json`, `sw.js`, `version.json`, `docs/topic/` ইত্যাদি generated ফাইল থেকে চলে, আর সেগুলো শুধু `update-wiki.yml` বানায়। branch protection-এর কারণে bot সরাসরি main-এ push করতে পারত না, তাই `auto/rebuild-output` branch-এ PR খুলত — যেটা কাউকে হাতে merge করতে হতো। সেই PR-এর `pr-check` প্রতিবার `action_required`-এ আটকে যেত, ফলে PR অমার্জিত পড়ে থাকত (PR #64: ৬ দিন, ১৫টা টপিক অদৃশ্য; PR #137: ২০২৬-০৮-৩০ থেকে ০৯-১৯, ~২০ দিন)।
+
+আসল রুট-কজ শুরুতে ভুল ধরা হয়েছিল ("`BOT_PAT`-এর মান ভেঙে গেছে", তাই `WORKFLOW_PAT`-এ বদল — PR #151)। সেটা ঘটনার সাথে মেলে না: ২০২৬-০৮-১৪ থেকে ০৯-১৯-এর মধ্যে ৯টা auto PR-ই আপনার ইউজার-নামে *তৈরি* হয়েছে (মানে PAT ঠিকই কাজ করছিল), অথচ সেগুলোর ৬৭টা force-push-এর সবক'টাই হয়েছে `github-actions[bot]` নামে। কারণ: `actions/checkout` ডিফল্টে (`persist-credentials: true`) `GITHUB_TOKEN`-কে git-এর `http.extraheader`-এ বসিয়ে রাখে, আর সেই header push-URL-এ বসানো `x-access-token:<PAT>`-এর চেয়ে অগ্রাধিকার পায়। তাই PAT শুধু API-কলে (PR খোলা/খোঁজা) কাজ করত, `git push` চলত `GITHUB_TOKEN` দিয়ে — bot-নামের push থেকে হওয়া `pull_request` ইভেন্টের চেক approval-এর অপেক্ষায় (`action_required`) থাকত। secret-এর নাম বদলালে এটা ঠিক হয় না।
+
+**সমাধান:**
+PR-ধাপটাই বাদ। bot এখন build+verify-এর পর generated output সরাসরি `main`-এ commit+push করে (`GITHUB_TOKEN`, `permissions: contents: write`) — কোনো PR, approval বা মানুষের merge-ধাপ নেই; Cloudflare Pages সেই commit-ই deploy করে। push-এর আগে `origin/main` আবার fetch করে দেখা হয় — এই run চলার সময় main এগিয়ে গেলে (সমান্তরাল merge) push বাদ দেওয়া হয়, কারণ ওই নতুন commit-এর নিজস্ব run সব নতুন করে বানাবে; main না এগিয়েও push ব্যর্থ হলে (যেমন protection চালু) `::error::` দিয়ে স্পষ্টভাবে fail করে। commit message-এ skip-ci ট্যাগ দেওয়া নেই।
+সীমাবদ্ধতা: এটা কাজ করে কেবল `main`-এ branch protection/ruleset না থাকলে (২০২৬-০৯-২০-এ GitHub API-তে কোনোটাই ছিল না)। পরে protection চালু করলে github-actions-কে bypass দিতে হবে।
+
+**যাচাই:**
+- workflow থেকে push-ধাপের স্ক্রিপ্ট হুবহু বের করে স্থানীয় bare-repo-তে চার পরিস্থিতিতে চালানো হয়েছে: (ক) স্বাভাবিক → push, exit 0; (খ) main আগেই এগিয়ে গেছে → push বাদ, নতুন commit অক্ষত, exit 0; (গ) protection-এর মতো প্রত্যাখ্যান, main এগোয়নি → স্পষ্ট `::error::`, exit 1; (ঘ) push-এর ঠিক মুহূর্তে main এগিয়ে গেছে → কিছু overwrite না করে exit 0।
+- `scripts/verify_integration_bugs.py`-এ দুটো নতুন regression guard (৬, ৭) যোগ হয়েছে: push-URL-এ `x-access-token:` থাকলে checkout-এ YAML-কী হিসেবে `persist-credentials: false` বাধ্যতামূলক; আর কোডে (মন্তব্য বাদে) skip-ci ট্যাগ থাকা যাবে না। guard-এর প্রথম সংস্করণে একটা false-negative ধরা পড়েছিল (`::error::` বার্তার ভেতরের একই লেখাকে আসল সেটিং ধরে নিচ্ছিল) — negative test-এ ধরা পড়ে ঠিক করা হয়েছে (লাইনের শুরুতে YAML-কী হিসেবে match)। এখন: ঠিক workflow → পাস; PAT-URL আছে অথচ `persist-credentials: false` নেই → fail; দুটোই আছে → পাস; কোডে `[skip ci]` → fail।
+- GitHub Actions runner-এ নতুন push-ধাপের আসল রান এই PR merge হওয়ার পর প্রথম চলবে (VERSION বাড়ানোয় merge-commit-এই `changed=true` হবে) — ফলাফল CHANGELOG-এর ১.৯.০ এন্ট্রির পরে যাচাই করা হবে।

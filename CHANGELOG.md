@@ -8,6 +8,20 @@
 
 ---
 
+## [1.9.0] — ২০২৬-০৯-২০
+
+**যা করা হয়েছে: `update-wiki.yml` আর rebuild-PR খোলে না — generated output সরাসরি `main`-এ commit করে**
+
+কনটেন্ট merge হওয়ার পর লাইভ সাইটে নতুন তথ্য না পৌঁছানোর আসল কারণ ছিল generated ফাইলের (`topics-index.json`, `sw.js`, `version.json`, `docs/topic/` …) হালনাগাদ একটা bot-PR-এ (`auto/rebuild-output`) আটকে থাকা — সেটা হাতে merge না হওয়া পর্যন্ত সাইট stale থাকত (PR #137: ~২০ দিন)। PR-এর `pr-check` `action_required`-এ আটকাত কারণ bot-এর প্রতিটা push হতো `github-actions[bot]` নামে (`actions/checkout`-এর সংরক্ষিত `GITHUB_TOKEN` push-URL-এর PAT-কে ছাপিয়ে যেত) — `BOT_PAT`/`WORKFLOW_PAT` কখনো `git push`-এ ব্যবহারই হয়নি, শুধু API-কলে। বিস্তারিত: `BUGFIX.md` BUG-26।
+
+**যা করা হয়েছে:**
+- `.github/workflows/update-wiki.yml`: PR তৈরি/আপডেটের ধাপ বাদ; নতুন ধাপ generated output `GITHUB_TOKEN` দিয়ে সরাসরি `main`-এ commit+push করে। সমান্তরাল merge-এ main এগিয়ে গেলে নিরাপদে push বাদ দেয় (নতুন commit-এর run বানায়); অন্য কারণে ব্যর্থ হলে স্পষ্ট `::error::`। `permissions` থেকে `pull-requests: write` সরানো হয়েছে।
+- `scripts/verify_integration_bugs.py`: দুটো নতুন regression guard — (৬) push-URL-এ PAT থাকলে checkout-এ `persist-credentials: false` বাধ্যতামূলক, (৭) workflow-কোডে skip-ci ট্যাগ নিষিদ্ধ।
+- `AGENTS.md`, `PR_GUIDE.md`, `PROJECT.md`: "rebuild PR-ও merge করতে হবে" নির্দেশ সরিয়ে নতুন প্রবাহ লেখা; `scripts/session_status.sh`-এর ভুল কারণ-ব্যাখ্যা সংশোধন; `pr_checks.py`/`safe_add.sh`-এর মন্তব্য হালনাগাদ।
+- `BOT_PAT`/`WORKFLOW_PAT` secret এই workflow-এ আর ব্যবহৃত হয় না।
+
+**মনে রাখার বিষয়:** সরাসরি push কাজ করে কেবল `main`-এ branch protection/ruleset না থাকলে (২০২৬-০৯-২০-এ GitHub API-তে কোনোটাই ছিল না)। protection চালু করলে আগে github-actions-কে bypass দিন, নইলে workflow ব্যর্থ হবে ও সাইট আবার stale থাকবে। কনটেন্ট/কোড বদলের branch+PR-নিয়ম অপরিবর্তিত।
+
 ## [1.8.0] — ২০২৬-০৮-২৯
 
 **যা করা হয়েছে: ৩-ধাপ `archive-staging/` সিস্টেম সম্পূর্ণ বাদ, এক-ধাপ সরাসরি-প্রসেসিং ওয়ার্কফ্লো চালু**

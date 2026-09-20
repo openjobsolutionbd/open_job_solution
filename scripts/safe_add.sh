@@ -6,7 +6,7 @@
 # docs/sitemap.xml, docs/topic/*/index.html ইত্যাদি working tree-তে
 # পরিবর্তিত/নতুন হয়ে যায় — `git add -A` করলে এগুলো ভুলবশত স্টেজড হয়ে
 # যেতে পারে, যেটা pr_checks.py PR-এ থাকতে দেয় না (main-এ merge হওয়ার
-# পর auto/rebuild-output bot-ই এগুলো regenerate করে)।
+# পর update-wiki.yml-এর bot-ই এগুলো regenerate করে সরাসরি main-এ commit করে)।
 #
 # ব্যবহার: commit করার ঠিক আগে `git add -A`-এর বদলে এটা চালান:
 #   bash scripts/safe_add.sh

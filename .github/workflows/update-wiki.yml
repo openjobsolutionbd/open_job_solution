@@ -1,12 +1,17 @@
 name: Update wiki index
 
+# main-এ push হলে generated output (topics-index.json, per-topic HTML, sitemap,
+# sw.js, version.json ইত্যাদি) নতুন করে বানিয়ে সরাসরি main-এ commit করে।
+# Cloudflare Pages main-এর প্রতিটা push deploy করে, তাই এই commit-ই লাইভ সাইটে
+# নতুন তথ্য পৌঁছে দেয়। (২০২৬-০৯-২০ থেকে। আগে এটা auto/rebuild-output নামে
+# একটা PR খুলত — কেন সেটা বাদ গেল তা নিচের শেষ ধাপের মন্তব্যে আছে।)
+
 on:
   push:
     branches: [main]
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   build:
@@ -44,11 +49,11 @@ jobs:
           fi
 
       # সত্যিকারের কনটেন্ট পরিবর্তন হলেই (changed==true) কেবল ভার্সন বাড়ানো হয় —
-      # নাহলে প্রতিটা push-এই ভার্সন বাড়তে থাকত, আর এই ওয়ার্কফ্লোর নিজের
-      # rebuild-PR merge-ও তো main-এ একটা push, ফলে অসীম লুপ তৈরি হতো।
-      # যেহেতু "Build index" ধাপ আগেই পুরোনো VERSION দিয়ে চলেছে, তাই এই
-      # diff-check নিজেই ভার্সন-নিরপেক্ষভাবে প্রকৃত কনটেন্ট পরিবর্তন ধরে —
-      # merge-এর পরের রানে নতুন কিছু না পেলে changed=false হবে, লুপ থামবে।
+      # নাহলে প্রতিটা push-এই ভার্সন বাড়ত। যেহেতু "Build index" ধাপ আগেই পুরোনো
+      # VERSION দিয়ে চলেছে, এই diff-check নিজেই ভার্সন-নিরপেক্ষভাবে প্রকৃত
+      # পরিবর্তন ধরে। bot-এর নিজের commit-ও main-এ যায়; GITHUB_TOKEN-এর push নতুন
+      # workflow ট্রিগার করে না তাই লুপ হয় না, আর কেউ পরে PAT-এ বদলালেও এই
+      # diff-check (পরের রানে changed=false) লুপ ঠেকাবে।
       - name: ভার্সন বাড়ানো (শুধু প্রকৃত কনটেন্ট পরিবর্তন থাকলে)
         if: steps.changes.outputs.changed == 'true'
         id: bump
@@ -68,69 +73,59 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: git add VERSION docs/topics-index.json docs/mcq-index.json docs/sw.js docs/version.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/topic/ docs/sitemap.xml docs/robots.txt
 
-      # branch protection চালু থাকায় bot সরাসরি main-এ push করতে পারে না,
-      # তাই একটা নির্দিষ্ট auto/ branch-এ push করে PR খোলে/আপডেট করে —
-      # scripts/pr_checks.py এই branch-কে generated-ফাইল guard থেকে exempt করে।
+      # generated output সরাসরি main-এ commit + push — PR ছাড়া।
       #
-      # গুরুত্বপূর্ণ: GITHUB_TOKEN দিয়ে করা push/PR-create কখনোই downstream
-      # workflow (pr-check.yml) ট্রিগার করে না — এটা GitHub-এর ইচ্ছাকৃত
-      # recursive-loop-প্রতিরোধ নিয়ম, branch নতুন না পুরনো তাতে কিছু যায়-আসে
-      # না (পরীক্ষায় প্রমাণিত — "fresh branch" পদ্ধতিও কাজ করেনি, PR #37)।
-      # তাই এখানে একটা real personal access token (repo secret) ব্যবহার
-      # করা হয় — human-token-চালিত push/PR ইভেন্ট নির্ভরযোগ্যভাবে check
-      # ট্রিগার করে।
+      # কেন PR নয়: আগের নকশায় bot auto/rebuild-output branch-এ PR খুলত, যা
+      # কাউকে হাতে merge করতে হতো। ২০২৬-০৮-১৪ থেকে ০৯-১৯-এর মধ্যে ৯টা এমন
+      # PR-এ ৬৭টা force-push হয়েছে, আর প্রতিটা push-ই হয়েছে github-actions[bot]
+      # নামে (PAT দিয়ে একবারও নয়)। ফলে pr-check "action_required"-এ আটকে যেত,
+      # PR অমার্জিত পড়ে থাকত, আর লাইভ সাইট সপ্তাহের পর সপ্তাহ stale থাকত
+      # (PR #64: ৬ দিন; PR #137: ৩০ আগস্ট থেকে ১৯ সেপ্টেম্বর)।
       #
-      # ⚠️ সতর্কতা (রুট-কজ, ২০২৬-০৮-২১-এ ধরা পড়েছে, PR #64 ৬ দিন আটকে ছিল):
-      # commit message-এ "[skip ci]" (বা যেকোনো skip-ci ভ্যারিয়েন্ট) কখনো
-      # যোগ করবেন না — এতে শুধু push-ট্রিগার্ড এই workflow না, একই commit-এর
-      # pull_request (synchronize) ইভেন্টও স্কিপ হয়ে যায়, ফলে pr-check.yml
-      # কখনো চলে না আর auto/rebuild-output PR চিরস্থায়ীভাবে
-      # mergeable_state: blocked থেকে যায় (এটা GitHub-এর নিজস্ব skip-ci
-      # আচরণ, যা push ও pull_request উভয় ইভেন্টেই প্রযোজ্য)। recursion-guard-এর
-      # জন্য [skip ci] দরকারও নেই — নিচের diff-check (changed==false পরের
-      # রানে) নিজেই infinite-loop ঠেকায়।
+      # রুট-কজ (ভুলবেন না): actions/checkout ডিফল্টে (persist-credentials: true)
+      # GITHUB_TOKEN-কে git-এর http.extraheader-এ বসিয়ে রাখে, আর সেটা push-URL-এ
+      # বসানো PAT-এর চেয়ে অগ্রাধিকার পায়। তাই `git push https://x-access-token:
+      # <PAT>@...` লিখলেও push আসলে GITHUB_TOKEN দিয়েই যেত — PAT শুধু API-কলে
+      # (PR খোলা/খোঁজা) কাজ করত। secret-এর নাম বদলালে (BOT_PAT → WORKFLOW_PAT)
+      # এটা ঠিক হয় না। PAT দিয়ে push করতে হলে checkout-এ
+      # `persist-credentials: false` বাধ্যতামূলক — scripts/verify_integration_bugs.py
+      # এটা পাহারা দেয়।
       #
-      # ⚠️ দ্বিতীয় রুট-কজ (২০২৬-০৯-১৯-এ ধরা পড়েছে, PR #137 আটকে ছিল):
-      # secret-এর নাম আর তার ভেতরের ভ্যালু আসল personal token কিনা — দুইটা
-      # আলাদা জিনিস। তখনকার BOT_PAT secret দিয়ে push/PR-create ধাপ প্রতিবারই
-      # "success" দেখাচ্ছিল, কিন্তু resulting pull_request ইভেন্টের actor
-      # তারপরও "github-actions[bot]" (Bot) হয়ে যাচ্ছিল, ফলে downstream
-      # pr-check.yml "action_required"-এ আটকে থাকছিল — অর্থাৎ BOT_PAT-এ
-      # তখন যা ছিল তা transport-level auth-এ পাস করলেও identity-resolution-এ
-      # আসল ইউজার-টোকেন হিসেবে গণ্য হচ্ছিল না (সম্ভবত টোকেনটা কোনোভাবে
-      # GITHUB_TOKEN-এর সমতুল্য হয়ে গিয়েছিল বা রিভোক/মিসকনফিগার হয়েছিল)।
-      # WORKFLOW_PAT (নতুন fine-grained PAT, ২০২৬-০৯-১৯) দিয়ে সরাসরি টেস্ট
-      # করে actor সঠিকভাবে real user account দেখানো নিশ্চিত করা হয়েছে,
-      # তারপর এটাতে সুইচ করা হলো। ভবিষ্যতে যদি আবার "action_required" ফিরে
-      # আসে, প্রথমেই সন্দেহ করুন যে এই secret-এর ভ্যালুটা আসলেই এখনো একটা
-      # বৈধ, non-expired, real-user PAT আছে কিনা — শুধু push "success" দেখানো
-      # যথেষ্ট প্রমাণ না (উপরের ঘটনায় এটাও বিভ্রান্তিকরভাবে সফল দেখাচ্ছিল)।
-      - name: Rebuild branch push + PR তৈরি/আপডেট
+      # এখন: GITHUB_TOKEN (permissions: contents: write) দিয়ে সরাসরি main-এ push।
+      # এটা কাজ করে শুধু তখনই যখন main-এ branch protection/ruleset নেই। পরে
+      # protection চালু করলে এই ধাপ নিচের স্পষ্ট এরর দিয়ে fail করবে — তখন
+      # github-actions-কে bypass দিতে হবে।
+      #
+      # সমান্তরাল merge: এই run চলার সময় main এগিয়ে গেলে এর output নতুন কনটেন্ট
+      # ধরে না, তাই push না করে থামা নিরাপদ — ওই নতুন commit-এর নিজস্ব run সব
+      # (এই কনটেন্টসহ) নতুন করে বানিয়ে push করবে।
+      #
+      # ⚠️ commit message-এ "[skip ci]" (বা অন্য skip-ci ট্যাগ) যোগ করবেন না — এতে
+      # Actions এবং সম্ভবত Cloudflare Pages-এর deploy-ও বাদ পড়তে পারে, ফলে সাইট
+      # stale থাকবে। লুপ ঠেকাতে এটা দরকারও নেই (উপরের diff-check আছে)।
+      - name: generated output সরাসরি main-এ commit + push
         if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.WORKFLOW_PAT }}
         run: |
-          BRANCH="auto/rebuild-output"
-          git checkout -B "$BRANCH"
           NEW_VERSION="${{ steps.bump.outputs.new_version }}"
-          if [ -n "$NEW_VERSION" ]; then
-            git commit -m "chore: rebuild generated site output + bump version to $NEW_VERSION"
-          else
-            git commit -m "chore: rebuild generated site output"
-          fi
-          git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "$BRANCH" --force
+          BASE_SHA="$GITHUB_SHA"
+          git commit -m "chore: rebuild generated site output + bump version to $NEW_VERSION"
 
-          EXISTING=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.repository }}/pulls?state=open&per_page=100" \
-            | python3 -c "import sys, json; prs = json.load(sys.stdin); match = [p['number'] for p in prs if p['head']['ref'] == 'auto/rebuild-output']; print(match[0] if match else '')")
-
-          if [ -z "$EXISTING" ]; then
-            curl -s -X POST \
-              -H "Authorization: Bearer $GH_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/${{ github.repository }}/pulls" \
-              -d '{"title":"chore: generated site output re-sync (auto)","head":"'"$BRANCH"'","base":"main","body":"main-এ push হওয়া সোর্স পরিবর্তনের সাথে generated output (topics-index.json, per-topic HTML, sitemap ইত্যাদি) sync করতে স্বয়ংক্রিয়ভাবে তৈরি হয়েছে। branch protection-এর কারণে bot সরাসরি main-এ push করতে পারে না, তাই এই PR — merge করার আগে চেক পাস করা নিশ্চিত করুন।"}'
-          else
-            echo "ইতিমধ্যে PR #$EXISTING খোলা আছে — নতুন commit push হয়ে গেছে (WORKFLOW_PAT দিয়ে, তাই synchronize check ঠিকমতো ট্রিগার হবে)।"
+          git fetch --quiet origin main
+          if [ "$(git rev-parse origin/main)" != "$BASE_SHA" ]; then
+            echo "::notice::এই run শুরুর পর main এগিয়ে গেছে — push বাদ; নতুন commit-এর run generated output বানাবে।"
+            exit 0
           fi
+
+          if git push origin HEAD:main; then
+            echo "✓ generated output main-এ push হয়েছে (ভার্সন $NEW_VERSION) — Cloudflare Pages deploy শুরু হবে।"
+            exit 0
+          fi
+
+          # push ব্যর্থ: শেষ মুহূর্তে main এগিয়েছে (রেস), নাকি অন্য কারণ?
+          git fetch --quiet origin main
+          if [ "$(git rev-parse origin/main)" != "$BASE_SHA" ]; then
+            echo "::notice::push-এর মুহূর্তে main এগিয়ে গেছে — নতুন commit-এর run এটা সামলাবে।"
+            exit 0
+          fi
+          echo "::error::main-এ push ব্যর্থ, অথচ main এগোয়নি — সম্ভবত main-এ branch protection/ruleset চালু হয়েছে। সমাধান: Settings → Rules-এ github-actions-কে bypass দিন (অথবা PAT দিয়ে push করুন — তখন checkout-এ persist-credentials: false লাগবে)।"
+          exit 1

@@ -85,9 +85,9 @@ def post_comment(body):
 
 def main():
     pr = gh(f"/repos/{REPO}/pulls/{PR_NUMBER}")
-    # update-wiki.yml-এর স্বয়ংক্রিয় rebuild-PR এখান থেকে আসে (branch protection-এর
-    # কারণে bot সরাসরি main-এ push করতে পারে না) — এই PR-এর জন্য generated-ফাইল
-    # ছোঁয়াটাই স্বাভাবিক ও প্রত্যাশিত, তাই সেই guard থেকে exempt করা হয়।
+    # পুরনো নকশার অবশিষ্ট: ২০২৬-০৯-২০-এর আগে update-wiki.yml এই branch থেকে rebuild-PR
+    # খুলত (এখন আর খোলে না — সরাসরি main-এ push করে)। কেউ ভবিষ্যতে PR-ফ্লো ফিরিয়ে
+    # আনলে generated-ফাইল ছোঁয়াটাই স্বাভাবিক, তাই এই branch guard থেকে exempt থাকল।
     is_bot_rebuild = pr["head"]["ref"] == "auto/rebuild-output"
 
     my_files = gh_files(PR_NUMBER)

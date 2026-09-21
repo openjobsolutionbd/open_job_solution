@@ -7,6 +7,7 @@
 প্রতিটা পুশের পর এটা চালিয়ে দেয়।
 """
 import datetime
+import difflib
 import html
 import json
 import re
@@ -78,6 +79,66 @@ BENGALI_MONTHS = {
 def _norm_text(text):
     """বুলেট-টেক্সট তুলনার জন্য: বাড়তি স্পেস/লাইন-ব্রেক সমান করে (ডুপ্লিকেট ধরতে)।"""
     return " ".join(text.split())
+
+
+# একাধিক সেশনের ফাইল জোড়া লাগলে বিভাগের ক্রম ঠিক রাখতে (বাংলাদেশ আগে, আন্তর্জাতিক পরে)।
+# শুধু একাধিক-ফাইলের দিনে প্রযোজ্য — একক ফাইলের দিন ফাইলে যে ক্রমে লেখা সে ক্রমেই থাকে।
+_CATEGORY_PRIORITY = {"বাংলাদেশ": 0, "আন্তর্জাতিক": 1}
+# আলাদা শব্দে লেখা একই ঘটনা ধরতে সমানতার সীমা — শুধু সতর্কতা দেয়, কিছু বাদ দেয় না।
+_NEAR_DUP_RATIO = 0.85
+_NEAR_DUP_MIN_LEN = 15
+
+
+def _merge_key(sort_key, date_text):
+    """একই দিন চেনার কী। মাস চেনা গেলে (বছর, মাস, দিন) — '০১ আগস্ট' ও '১ আগস্ট' এক।
+    মাস/ফরম্যাট না চিনলে হেডিংয়ের হুবহু লেখা (স্পেস সমান করে) — নইলে দুই ফাইলের
+    ভিন্ন টাইপো-হেডিং (যেমন 'আগষ্ট' ও 'সেপ্টেবর') ভুলে এক দিন হয়ে একটা হেডিং গিলে ফেলত।"""
+    if sort_key[1] != 0:
+        return sort_key
+    return ("raw", _norm_text(date_text))
+
+
+def _merge_terms(kept_item, dup_item):
+    """ডুপ্লিকেট বাদ দেওয়ার সময় বাদ-পড়া বুলেটের টপিক-লিংক (terms) হারিয়ে না ফেলতে:
+    রাখা বুলেটে যে (phrase, slug) নেই সেগুলো যোগ করে। তবে বাক্যাংশ রাখা বুলেটের টেক্সটে না
+    থাকলে, বা অন্য বাক্যাংশের সাবস্ট্রিং হলে যোগ করে না (parse_item_terms-এর একই শর্ত —
+    নইলে ক্লায়েন্ট-সাইড হাইলাইটিং ভাঙে)। ফেরত: যেসব term যোগ হলো তার তালিকা।"""
+    have = kept_item.setdefault("terms", [])
+    added = []
+    for t in dup_item.get("terms", []):
+        if any(t["slug"] == h["slug"] and t["phrase"] == h["phrase"] for h in have):
+            continue
+        if t["phrase"] not in kept_item["text"]:
+            continue
+        if any(
+            t["phrase"] != h["phrase"] and (t["phrase"] in h["phrase"] or h["phrase"] in t["phrase"])
+            for h in have
+        ):
+            continue
+        have.append(t)
+        added.append(t)
+    return added
+
+
+def _warn_near_duplicates(entries, date_text, what):
+    """entries: একই দিনের [(ফাইলনাম, আইটেম)], একাধিক ফাইল থেকে। ভিন্ন ফাইলের এমন দুটো বুলেট
+    যাদের টেক্সট প্রায় এক (আলাদা শব্দে লেখা একই ঘটনা?) — শুধু stderr-এ সতর্কতা, দুটোই থাকে।"""
+    for i in range(len(entries)):
+        for j in range(i + 1, len(entries)):
+            fa, ia = entries[i]
+            fb, ib = entries[j]
+            if fa == fb:
+                continue
+            ta, tb = _norm_text(ia["text"]), _norm_text(ib["text"])
+            if ta == tb or min(len(ta), len(tb)) < _NEAR_DUP_MIN_LEN:
+                continue
+            ratio = difflib.SequenceMatcher(None, ta, tb).ratio()
+            if ratio >= _NEAR_DUP_RATIO:
+                print(
+                    f"সতর্কতা: {what} '{date_text}'-এ দুই ফাইলে প্রায় একই ঘটনা (আলাদা শব্দে?) — "
+                    f"দুটোই রাখা হলো: ({fa}) '{ta[:40]}…' ↔ ({fb}) '{tb[:40]}…' [সমানতা {ratio:.0%}]",
+                    file=sys.stderr,
+                )
 
 
 def bengali_date_sort_key(date_str):
@@ -238,13 +299,13 @@ def compile_ghotonaprobaho(valid_slugs):
     # একটা রেখে stderr-এ সতর্কতা দেয়। কারণ দুটো আলাদা PR আলাদাভাবে পাস করে merge হওয়ার
     # পর জোড়া লাগলে এই ডুপ্লিকেট তৈরি হতে পারে, যা কোনো একক PR-চেকে ধরার নয়; তখন
     # বিল্ড ভাঙলে bot generated ফাইল আপডেট করতে পারত না আর লাইভ সাইট stale থাকত।
-    merged = {}  # merge_key -> {"day": দিন, "texts": {নরমালাইজড বুলেট: ফাইল}}
+    merged = {}  # merge_key -> {"day", "items": {নরম-টেক্সট: (ফাইল, আইটেম)}, "entries": [(ফাইল, আইটেম)], "multi"}
     order = []
     for path in sorted(GHOTONAPROBAHO_DIR.glob("*.md")):
         seen_in_file = set()
         for d in parse_ghotonaprobaho_file(path, valid_slugs):
             date_key = d["date"].strip()
-            merge_key = d["_sort"] if d["_sort"] != (0, 0, 0) else date_key
+            merge_key = _merge_key(d["_sort"], date_key)
             if merge_key in seen_in_file:
                 raise BuildError(
                     f"'{date_key}' তারিখটা একই ফাইলে ({path.name}) একাধিকবার আছে — "
@@ -252,28 +313,36 @@ def compile_ghotonaprobaho(valid_slugs):
                 )
             seen_in_file.add(merge_key)
             if merge_key not in merged:
-                slot = {"day": d, "texts": {}}
+                slot = {"day": d, "items": {}, "entries": [], "multi": False}
                 for cat in d["categories"]:
                     for it in cat["items"]:
-                        slot["texts"].setdefault(_norm_text(it["text"]), path.name)
+                        slot["items"].setdefault(_norm_text(it["text"]), (path.name, it))
+                        slot["entries"].append((path.name, it))
                 merged[merge_key] = slot
                 order.append(merge_key)
                 continue
             slot = merged[merge_key]
+            slot["multi"] = True
             base = slot["day"]
             for cat in d["categories"]:
                 fresh = []
                 for it in cat["items"]:
                     key = _norm_text(it["text"])
-                    if key in slot["texts"]:
+                    if key in slot["items"]:
+                        kfile, kitem = slot["items"][key]
+                        added = _merge_terms(kitem, it)
+                        extra = (
+                            " — টপিক-লিংক রাখা বুলেটে যোগ হলো: "
+                            + ", ".join(f"[[{t['phrase']}|{t['slug']}]]" for t in added)
+                        ) if added else ""
                         print(
                             f"সতর্কতা: '{date_key}'-এর একই বুলেট দুই ফাইলে আছে "
-                            f"({slot['texts'][key]} ও {path.name}) — একটা রাখা হলো: "
-                            f"'{it['text'][:50]}…'",
+                            f"({kfile} ও {path.name}) — একটা রাখা হলো: '{it['text'][:50]}…'{extra}",
                             file=sys.stderr,
                         )
                         continue
-                    slot["texts"][key] = path.name
+                    slot["items"][key] = (path.name, it)
+                    slot["entries"].append((path.name, it))
                     fresh.append(it)
                 if not fresh:
                     continue
@@ -284,6 +353,13 @@ def compile_ghotonaprobaho(valid_slugs):
                     base["categories"].append({"category": cat["category"], "items": fresh})
                 else:
                     target["items"].extend(fresh)
+
+    for k in order:
+        slot = merged[k]
+        if slot["multi"]:
+            # ফাইলের নামক্রমে আন্তর্জাতিক আগে এসে গেলেও সাইটের সব দিনের মতো বাংলাদেশ আগে
+            slot["day"]["categories"].sort(key=lambda c: _CATEGORY_PRIORITY.get(c["category"], 99))
+            _warn_near_duplicates(slot["entries"], slot["day"]["date"].strip(), "ঘটনাপ্রবাহের")
 
     all_days = [merged[k]["day"] for k in order]
     all_days.sort(key=lambda d: d["_sort"], reverse=True)
@@ -363,19 +439,31 @@ def compile_top_news(valid_slugs):
         return
 
     all_items = []
-    seen = {}  # (তারিখ, নরমালাইজড টেক্সট) -> ফাইল — ঘটনাপ্রবাহের মতোই একাধিক সেশনের ফাইল জোড়া লাগে
+    seen = {}     # (merge_key, নরম-টেক্সট) -> (ফাইল, আইটেম) — একাধিক সেশনের ফাইল ঘটনাপ্রবাহের মতোই জোড়া লাগে
+    by_date = {}  # merge_key -> [(ফাইল, আইটেম)]
     for path in sorted(TOP_NEWS_DIR.glob("*.md")):
         for it in parse_top_news_file(path, valid_slugs):
-            key = (it["_sort"] if it["_sort"] != (0, 0, 0) else it["date"], _norm_text(it["text"]))
+            mk = _merge_key(it["_sort"], it["date"].strip())
+            key = (mk, _norm_text(it["text"]))
             if key in seen:
+                kfile, kitem = seen[key]
+                added = _merge_terms(kitem, it)
+                extra = (
+                    " — টপিক-লিংক রাখা হাইলাইটে যোগ হলো: "
+                    + ", ".join(f"[[{x['phrase']}|{x['slug']}]]" for x in added)
+                ) if added else ""
                 print(
                     f"সতর্কতা: টপ নিউজে '{it['date']}'-এর একই হাইলাইট দুইবার আছে "
-                    f"({seen[key]} ও {path.name}) — একটা রাখা হলো।",
+                    f"({kfile} ও {path.name}) — একটা রাখা হলো{extra}।",
                     file=sys.stderr,
                 )
                 continue
-            seen[key] = path.name
+            seen[key] = (path.name, it)
+            by_date.setdefault(mk, []).append((path.name, it))
             all_items.append(it)
+    for entries in by_date.values():
+        if len({f for f, _ in entries}) > 1:
+            _warn_near_duplicates(entries, entries[0][1]["date"].strip(), "টপ নিউজের")
 
     all_items.sort(key=lambda it: it["_sort"], reverse=True)
     for it in all_items:
@@ -394,6 +482,12 @@ MCQ_SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
 # '2026-09-p10-11'-এর মতো সেশন-ফাইল (মাস + '-' + অঙ্ক-নয় এমন স্কোপ) একই মাসের একটা সেটে
 # জোড়া লাগে; '2026-07' বা রেঞ্জ-নাম ('2026-07-15_2026-08-14') আগের মতোই আলাদা সেট।
 MCQ_SESSION_FILE_RE = re.compile(r"^(\d{4}-\d{2})-(?=\D)")
+MCQ_RANGE_FILE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}$")
+
+
+def _mcq_set_id(stem):
+    m = MCQ_SESSION_FILE_RE.match(stem)
+    return m.group(1) if m else stem
 MCQ_QUESTION_RE = re.compile(r"^([০-৯]+)\.\s*(.+?)\s*$")
 MCQ_OPTION_TOKEN_RE = re.compile(r"([কখগঘ])\)\s*(.+?)(?=\s+[কখগঘ]\)|$)")
 MCQ_ANSWER_PAIR_RE = re.compile(r"([০-৯]+)\.([কখগঘ])")
@@ -505,12 +599,27 @@ def compile_mcq():
         return
 
     by_id = {}  # সেট-আইডি -> সেট (সাধারণত এক সংখ্যার MCQ; একাধিক সেশন-ফাইল থাকলে জোড়া লাগে)
-    for path in sorted(MCQ_DIR.glob("*.md")):
+    # একই মাসে মূল মাসিক ফাইল ('2026-08.md') আগে, সেশন-ফাইল ('2026-08-p12.md') পরে —
+    # নইলে ফাইলনামের ASCII ক্রমে ('-' < '.') সেশন-ফাইলের সেকশন মূল ফাইলের আগে বসত।
+    mcq_paths = sorted(
+        MCQ_DIR.glob("*.md"),
+        key=lambda p: (_mcq_set_id(p.stem), 0 if p.stem == _mcq_set_id(p.stem) else 1, p.stem),
+    )
+    for path in mcq_paths:
         sections = parse_mcq_file(path)
         if not sections:
             continue
-        m = MCQ_SESSION_FILE_RE.match(path.stem)
-        set_id = m.group(1) if m else path.stem
+        set_id = _mcq_set_id(path.stem)
+        if (
+            set_id == path.stem
+            and re.match(r"^\d{4}-\d{2}-\d", path.stem)
+            and not MCQ_RANGE_FILE_RE.match(path.stem)
+        ):
+            print(
+                f"সতর্কতা: MCQ ফাইল '{path.name}'-এর স্কোপ অঙ্ক দিয়ে শুরু — এটা মাসের সেটের সাথে "
+                "জোড়া না লেগে আলাদা সেট হবে; স্কোপ অক্ষর দিয়ে শুরু করুন (যেমন 2026-09-p12.md)।",
+                file=sys.stderr,
+            )
         slot = by_id.setdefault(
             set_id, {"id": set_id, "label": set_id, "sections": [], "question_count": 0}
         )

@@ -33,6 +33,7 @@ cd open_current_affairs && bash scripts/session_status.sh
 | পাথ | কী |
 |---|---|
 | `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — remote/local + সব branch/PR-এর অবস্থা |
+| `scripts/claim_check.sh` | কাজ শুরুর আগে: অন্য কোনো খোলা PR/branch ওই টপিক/ফাইল ছুঁয়ে আছে কি না (একাধিক সেশনের সংঘর্ষ এড়াতে) |
 | `docs/topics/*.md` | মূল কনটেন্ট — টপিক পেজ (frontmatter + "বর্তমান তথ্য" + "পরিবর্তনের ইতিহাস") |
 | `docs/ghotonaprobaho/*.md` | তারিখ-ভিত্তিক দৈনিক ঘটনাপ্রবাহ |
 | `docs/top-news/*.md` | "টপ নিউজ" ট্যাব — প্রতি তারিখে সাধারণত একটাই হাইলাইট লাইন |
@@ -43,6 +44,7 @@ cd open_current_affairs && bash scripts/session_status.sh
 | `scripts/preflight.sh` | push-এর আগে একটাই কল — fetch+তুলনা+build+verify সব একসাথে |
 | `scripts/check_topic.sh "কীওয়ার্ড"` | নতুন টপিকের আগে দ্রুত ডুপ্লিকেট-চেক (`topics-index.json` গ্রেপ করে) |
 | `scripts/test_build_index.py` | `build_index.py`-র regression টেস্ট (BUGFIX.md-এর bug লক করে) — `preflight.sh` সবসময় চালায় |
+| `scripts/consolidate_month.py` | (ঐচ্ছিক) মাসশেষে ঘটনাপ্রবাহ/টপ নিউজের সেশন-ফাইল একত্র — build আগে-পরে হুবহু মিলিয়ে দেখে, না মিললে নিজে রোলব্যাক করে |
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
 | `.github/workflows/update-wiki.yml` | main-push হলে build+verify চালিয়ে generated output (`topics-index.json`, `sw.js`, `version.json`, `topic/` ইত্যাদি) **সরাসরি `main`-এ commit** করে, PR খোলে না (২০২৬-০৯-২০ থেকে; Cloudflare Pages সেই commit-ই deploy করে)। `GITHUB_TOKEN` দিয়ে push হয়, কোনো PAT লাগে না — তাই `main`-এ branch protection/ruleset চালু করলে এই push ভাঙবে (তখন github-actions-কে bypass দিতে হবে)। commit message-এ `[skip ci]` দেবেন না |

@@ -23,6 +23,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from build_index import strip_markdown  # noqa: E402
 from build_index import parse_mcq_file  # noqa: E402
 import build_index as _bi  # noqa: E402
+import consolidate_month as _cm  # noqa: E402
 
 tests = []
 
@@ -181,11 +182,11 @@ def _patched(**attrs):
             setattr(_bi, k, v)
 
 
-def _compile(kind, files):
-    """kind: 'gh' | 'tn' | 'mcq'। files: {ফাইলনাম: টেক্সট}। ফেরত: (আউটপুট-JSON, stderr)।"""
+def _compile(kind, files, slugs=()):
+    """kind: 'gh' | 'tn' | 'mcq'। files: {ফাইলনাম: টেক্সট}। slugs: বৈধ টপিক-slug। ফেরত: (আউটপুট-JSON, stderr)।"""
     cfg = {
-        "gh": ("GHOTONAPROBAHO_DIR", "GHOTONAPROBAHO_OUTPUT_FILE", lambda: _bi.compile_ghotonaprobaho(set())),
-        "tn": ("TOP_NEWS_DIR", "TOP_NEWS_OUTPUT_FILE", lambda: _bi.compile_top_news(set())),
+        "gh": ("GHOTONAPROBAHO_DIR", "GHOTONAPROBAHO_OUTPUT_FILE", lambda: _bi.compile_ghotonaprobaho(set(slugs))),
+        "tn": ("TOP_NEWS_DIR", "TOP_NEWS_OUTPUT_FILE", lambda: _bi.compile_top_news(set(slugs))),
         "mcq": ("MCQ_DIR", "MCQ_OUTPUT_FILE", lambda: _bi.compile_mcq()),
     }[kind]
     with tempfile.TemporaryDirectory() as td:
@@ -272,6 +273,130 @@ def _():
     assert sets["2026-09"]["question_count"] == 2 and len(sets["2026-09"]["sections"]) == 2, (
         f"2026-09 সেটে দুই ফাইলের দুই সেকশন/২ প্রশ্ন থাকা উচিত: {sets['2026-09']['question_count']}"
     )
+
+
+def _gh_items(data):
+    return [i for d in _gh_days(data) for c in d["categories"] for i in c["items"]]
+
+
+@test("ডুপ্লিকেট বাদ দেওয়ার সময় টপিক-লিংক হারায় না — লিংক-বিহীন ফাইল আগে পড়া হোক বা পরে (ফাইলনামের ক্রম যা-ই হোক)")
+def _():
+    plain = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- রাষ্ট্রপতি নির্বাচিত হন ফখরুল।\n"
+    linked = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- রাষ্ট্রপতি নির্বাচিত হন [[ফখরুল|my-topic]]।\n"
+    for a, b in [(plain, linked), (linked, plain)]:
+        data, err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b}, slugs=["my-topic"])
+        items = _gh_items(data)
+        assert len(items) == 1, f"একটাই বুলেট থাকা উচিত: {items}"
+        assert items[0]["terms"] == [{"phrase": "ফখরুল", "slug": "my-topic"}], (
+            f"টপিক-লিংক হারিয়ে গেছে (ফাইল-ক্রম অনুযায়ী): {items[0].get('terms')}"
+        )
+    # শুধু লিংক-বিহীনটা আগে পড়া অবস্থায় stderr-এ লিংক-যোগের কথা থাকে
+    _d, err = _compile("gh", {"2026-09-a.md": plain, "2026-09-b.md": linked}, slugs=["my-topic"])
+    assert "টপিক-লিংক" in err, f"stderr-এ লিংক যোগ হওয়ার কথা নেই: {err!r}"
+
+
+@test("compile_top_news — ডুপ্লিকেট হাইলাইটেও টপিক-লিংক হারায় না")
+def _():
+    plain = "## ২১ আগস্ট ২০২৬\n- নতুন রাষ্ট্রপতি শপথ নেন ফখরুল।\n"
+    linked = "## ২১ আগস্ট ২০২৬\n- নতুন রাষ্ট্রপতি শপথ নেন [[ফখরুল|my-topic]]।\n"
+    data, _err = _compile("tn", {"2026-09-a.md": plain, "2026-09-b.md": linked}, slugs=["my-topic"])
+    assert len(data["items"]) == 1 and data["items"][0]["terms"] == [{"phrase": "ফখরুল", "slug": "my-topic"}], (
+        f"টপ নিউজে টপিক-লিংক হারিয়েছে: {data['items']}"
+    )
+
+
+@test("compile_ghotonaprobaho — মাস-চেনা-যায়-না এমন ভিন্ন টাইপো-হেডিং দুই ফাইলে থাকলে ভুলে এক দিন হয়ে একটা হেডিং গিলে ফেলে না; একই টাইপো-হেডিং হলে জোড়া লাগে")
+def _():
+    a = "## ১৫ আগষ্ট ২০২৬\n\n**বাংলাদেশ**\n\n- টাইপো-এক\n"
+    b = "## ১৫ সেপ্টেবর ২০২৬\n\n**বাংলাদেশ**\n\n- টাইপো-দুই\n"
+    data, _err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    assert len(_gh_days(data)) == 2, f"ভিন্ন টাইপো-হেডিং এক দিন হয়ে গেছে: {[d['date'] for d in _gh_days(data)]}"
+    c = "## ১৫ আগষ্ট ২০২৬\n\n**বাংলাদেশ**\n\n- টাইপো-তিন\n"
+    data, _err = _compile("gh", {"2026-09-a.md": a, "2026-09-c.md": c})
+    assert len(_gh_days(data)) == 1, "হুবহু একই (টাইপো) হেডিং দুই ফাইলে জোড়া লাগা উচিত"
+
+
+@test("compile_ghotonaprobaho — একাধিক ফাইল জোড়া লাগলে বিভাগের ক্রম বাংলাদেশ→আন্তর্জাতিক; একক ফাইলের দিনে ফাইলের নিজের ক্রমই থাকে")
+def _():
+    a = "## ২০ আগস্ট ২০২৬\n\n**আন্তর্জাতিক**\n\n- আ১\n"
+    b = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- বা১\n"
+    data, _err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    assert [c["category"] for c in _gh_days(data)[0]["categories"]] == ["বাংলাদেশ", "আন্তর্জাতিক"], "জোড়া-লাগা দিনে বিভাগের ক্রম ঠিক নয়"
+    only_intl_first = "## ২১ আগস্ট ২০২৬\n\n**আন্তর্জাতিক**\n\n- আ২\n\n**বাংলাদেশ**\n\n- বা২\n"
+    data, _err = _compile("gh", {"2026-09-x.md": only_intl_first})
+    assert [c["category"] for c in _gh_days(data)[0]["categories"]] == ["আন্তর্জাতিক", "বাংলাদেশ"], "একক ফাইলের দিনের ক্রম বদলে গেছে"
+
+
+@test("compile_ghotonaprobaho — দুই ফাইলে আলাদা শব্দে লেখা প্রায়-একই ঘটনায় সতর্কতা (দুটোই থাকে); সম্পর্কহীন বুলেটে সতর্কতা নেই")
+def _():
+    a = "## ১০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- প্রধানমন্ত্রী তারেক রহমান প্রথমবারের মতো চট্টগ্রাম সফরে যান।\n"
+    b = "## ১০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- প্রধানমন্ত্রী তারেক রহমান প্রথমবারের মতো চট্টগ্রাম সফর করেন।\n"
+    data, err = _compile("gh", {"2026-09-a.md": a, "2026-09-b.md": b})
+    assert len(_gh_items(data)) == 2, "প্রায়-ডুপ্লিকেট বাদ পড়া উচিত না (শুধু সতর্কতা)"
+    assert "প্রায় একই ঘটনা" in err, f"প্রায়-ডুপ্লিকেট সতর্কতা আসেনি: {err!r}"
+    c = "## ১০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- জাপানের দক্ষিণ-পশ্চিমাঞ্চলে ৭.১ মাত্রার শক্তিশালী ভূমিকম্প আঘাত হানে।\n"
+    _d, err2 = _compile("gh", {"2026-09-a.md": a, "2026-09-c.md": c})
+    assert "প্রায় একই ঘটনা" not in err2, f"সম্পর্কহীন বুলেটে ভুল সতর্কতা: {err2!r}"
+
+
+@test("compile_mcq — একই মাসে মূল মাসিক ফাইল আগে, সেশন-ফাইল পরে; অঙ্ক-দিয়ে-শুরু স্কোপে সতর্কতা (রেঞ্জ-নামে নেই)")
+def _():
+    def sec(n):
+        return f"## {n}\n১. প্রশ্ন?\nক) ক খ) খ গ) গ ঘ) ঘ\n\n**উত্তর:** ১.ক\n"
+    data, _err = _compile("mcq", {"2026-08.md": sec("মূল"), "2026-08-p12.md": sec("সেশন")})
+    assert [s["name"] for s in data["sets"][0]["sections"]] == ["মূল", "সেশন"], "মূল মাসিক ফাইলের সেকশন আগে আসা উচিত"
+    data, err = _compile("mcq", {"2026-09-p10.md": sec("এ"), "2026-09-12-15.md": sec("বি")})
+    assert "স্কোপ অঙ্ক দিয়ে শুরু" in err, f"অঙ্ক-শুরু স্কোপে সতর্কতা আসেনি: {err!r}"
+    _d, err = _compile("mcq", {"2026-07-15_2026-08-14.md": sec("রেঞ্জ")})
+    assert "স্কোপ" not in err, f"বৈধ রেঞ্জ-নামে ভুল সতর্কতা: {err!r}"
+
+
+@test("consolidate_month — একত্র করা ফাইল দিয়ে build করলে ইনডেক্স মূল সেশন-ফাইলগুলোর হুবহু একই (ঘটনাপ্রবাহ): জোড়া-দিন, বিভাগ-ক্রম, ডুপ্লিকেট, টপিক-লিংক")
+def _():
+    a = ("# একটা শিরোনাম\n\n## ২০ আগস্ট ২০২৬\n\n\n**আন্তর্জাতিক**\n\n- আ১\n- একই ঘটনা [[ফখরুল|my-topic]]\n\n"
+         "## ২১ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- বা২১\n")
+    b = ("## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- বা১\n\n**আন্তর্জাতিক**\n\n- একই   ঘটনা [[ফখরুল|my-topic]]\n- আ২\n\n"
+         "## ০১ সেপ্টেম্বর ২০২৬\n\n**বাংলাদেশ**\n\n- বা০১\n")
+    c = "## ১ সেপ্টেম্বর ২০২৬\n\n**আন্তর্জাতিক**\n\n- আ০১\n"
+    files = {"2026-09-a.md": a, "2026-09-b.md": b, "2026-09-c.md": c}
+    before, _e = _compile("gh", files, slugs=["my-topic"])
+    merged = _cm.merge_days(sorted(files.items()))
+    after, _e = _compile("gh", {"2026-09-consolidated.md": merged}, slugs=["my-topic"])
+    assert json.dumps(before, ensure_ascii=False, sort_keys=True) == json.dumps(after, ensure_ascii=False, sort_keys=True), (
+        "একত্র করার পর ইনডেক্স বদলে গেছে:\n" + json.dumps(before, ensure_ascii=False) + "\n" + json.dumps(after, ensure_ascii=False)
+    )
+
+
+@test("consolidate_month — টপ নিউজে একত্র করার পর ইনডেক্স হুবহু একই (একই তারিখের একাধিক হাইলাইট, ডুপ্লিকেট, টপিক-লিংক)")
+def _():
+    a = "## ২১ আগস্ট ২০২৬\n- হাইলাইট এক\n- নতুন রাষ্ট্রপতি [[ফখরুল|my-topic]]\n\n## ২০ আগস্ট ২০২৬\n- বিশ\n"
+    b = "## ২১ আগস্ট ২০২৬\n- নতুন   রাষ্ট্রপতি [[ফখরুল|my-topic]]\n- হাইলাইট দুই\n"
+    files = {"2026-09-a.md": a, "2026-09-b.md": b}
+    before, _e = _compile("tn", files, slugs=["my-topic"])
+    merged = _cm.merge_top(sorted(files.items()))
+    after, _e = _compile("tn", {"2026-09-consolidated.md": merged}, slugs=["my-topic"])
+    assert json.dumps(before, ensure_ascii=False) == json.dumps(after, ensure_ascii=False), (
+        "টপ নিউজ একত্র করার পর বদলে গেছে:\n" + json.dumps(before, ensure_ascii=False) + "\n" + json.dumps(after, ensure_ascii=False)
+    )
+
+
+@test("consolidate_month — একই ঘটনা ভিন্ন লিংক-মার্কআপে থাকলে বা বহু-লাইনের বুলেট পেলে থামে (ভুল মেলানোর চেয়ে হাতে ঠিক করা ভালো)")
+def _():
+    a = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- একই ঘটনা।\n"
+    b = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- একই [[ঘটনা|my-topic]]।\n"
+    try:
+        _cm.merge_days([("a.md", a), ("b.md", b)])
+    except _cm.ConsolidateError as e:
+        assert "ভিন্ন লিংক" in str(e), f"এরর-বার্তা প্রত্যাশিত নয়: {e}"
+    else:
+        assert False, "ভিন্ন লিংক-মার্কআপে ডুপ্লিকেট থাকা সত্ত্বেও থামেনি"
+    multi = "## ২০ আগস্ট ২০২৬\n\n**বাংলাদেশ**\n\n- প্রথম লাইন\n  দ্বিতীয় লাইন\n"
+    try:
+        _cm.merge_days([("m.md", multi)])
+    except _cm.ConsolidateError as e:
+        assert "অপ্রত্যাশিত লাইন" in str(e)
+    else:
+        assert False, "বহু-লাইনের বুলেটে থামেনি"
 
 
 def main():

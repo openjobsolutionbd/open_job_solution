@@ -1731,7 +1731,16 @@ let MCQ_SETS_PROMISE = null; // concurrent call guard
 // key: `${set.label}||${q.number}` (একই সেটের ভেতর number ইউনিক, একাধিক সেট এলে
 // আলাদা সেট-লেবেল দিয়ে সংঘর্ষ এড়ানো হয়)। value: ক্লিক করা option-এর index।
 let MCQ_ANSWERED = {};
-let RENDER_TOPIC_SEQ = 0; // Bug 1: race condition guard — প্রতিটা renderTopicContent কলে বাড়ে
+// Bug 1 guard ছিল একটামাত্র গ্লোবাল কাউন্টার — কিন্তু renderTopicContent()
+// দুইটা আলাদা container-এর জন্য কল হয় (openTopic()-এর #card ও
+// openTopicInModal()-এর #topic-modal-body, দেখুন নিচের কমেন্ট)। একটামাত্র
+// শেয়ার্ড কাউন্টার দিয়ে এই দুইটা container একে অপরের রেন্ডার ভুলভাবে বাতিল
+// করে ফেলত: main panel-এ একটা টপিক লোড হতে থাকা অবস্থায় ভাসমান সার্চ
+// দিয়ে অন্য টপিক modal-এ খুললে (দুটোই এই একই ফাংশন ব্যবহার করে), main
+// panel-এর fetch পরে সফল হলেও mySeq আর মিলত না, ফলে সেটা চিরকাল
+// "লোড হচ্ছে…" দেখিয়ে আটকে থাকত। এখন প্রতিটা container নিজের সিকোয়েন্স
+// আলাদাভাবে ট্র্যাক করে (WeakMap), তাই দুই container একে অপরকে প্রভাবিত করে না।
+const RENDER_TOPIC_SEQ_BY_CONTAINER = new WeakMap();
 
 // ══════════════════════════════════════════════════════
 // বাংলাদেশ সময় (Asia/Dhaka, UTC+6) — ভিজিটরের ব্রাউজার/ডিভাইস যে
@@ -3068,17 +3077,18 @@ function showPlaceholder(){
 async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} = {}){
   // প্রতিটা কলে seq বাড়ে। fetch শেষে seq মিলিয়ে দেখা হয় — এর মধ্যে নতুন
   // কল এলে পুরনোটার ফলাফল container-এ বসানো হয় না (race condition fix)।
-  const mySeq = ++RENDER_TOPIC_SEQ;
+  const mySeq = (RENDER_TOPIC_SEQ_BY_CONTAINER.get(container) || 0) + 1;
+  RENDER_TOPIC_SEQ_BY_CONTAINER.set(container, mySeq);
   container.innerHTML = '<div class="card-placeholder">লোড হচ্ছে…</div>';
   try{
     const res = await fetch('./' + topic.file);
-    if(mySeq !== RENDER_TOPIC_SEQ) return; // নতুন কল এসে গেছে, এটা বাতিল
+    if(mySeq !== RENDER_TOPIC_SEQ_BY_CONTAINER.get(container)) return; // এই container-এই নতুন কল এসে গেছে, এটা বাতিল
     if(!res.ok){
       container.innerHTML = '<div class="card-placeholder">এই টপিক পেজ লোড করা যাচ্ছে না (ফাইল খুঁজে পাওয়া যায়নি)।</div>';
       return;
     }
     const raw = (await res.text()).replace(/^\uFEFF/, '');
-    if(mySeq !== RENDER_TOPIC_SEQ) return; // Bug-ফিক্স: res.text() পড়ার সময়ও
+    if(mySeq !== RENDER_TOPIC_SEQ_BY_CONTAINER.get(container)) return; // Bug-ফিক্স: res.text() পড়ার সময়ও
                                             // নতুন কল আসতে পারে, তাই এখানেও আবার চেক
     const body = raw.replace(/^---[\s\S]*?---\s*/, '');
     let html = marked.parse(body);

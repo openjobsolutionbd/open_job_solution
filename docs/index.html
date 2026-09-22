@@ -476,6 +476,15 @@
     transform-origin:50% 50%;
   }
   .fsi-svg{ width:100%; height:100%; overflow:visible; }
+  @media (max-width:700px){
+    /* মোবাইলে ভাসমান সার্চ বক্সটা (গোল আইকন) ছোট করা হলো — কনটেন্টের
+       ওপর কম জায়গা ঢাকবে। কম্পিউটারে (700px-এর বেশি) আগের আকার অপরিবর্তিত। */
+    .floating-search-pill,
+    .floating-search-icon{
+      width:36px;
+      height:36px;
+    }
+  }
   @keyframes fsiBreathe{
     0%, 100%{ transform:scale(1) rotate(0deg); }
     50%{ transform:scale(1.035) rotate(-1.5deg); }
@@ -1250,6 +1259,21 @@
     line-height:1.65;
     color:var(--ink);
     margin-bottom:6px;
+  }
+  @media (max-width:700px){
+    /* মোবাইলে স্ক্রিনে একসাথে কম কনটেন্ট দেখা যায়, তাই দৈনিক ঘটনাপ্রবাহের
+       লাইন-স্পেসিং/মার্জিন কমিয়ে বেশি এন্ট্রি একসাথে দেখানো হচ্ছে —
+       কম্পিউটারে (700px-এর বেশি) আগের প্রশস্ত স্পেসিং অপরিবর্তিত থাকে। */
+    .ghotonaprobaho-day{
+      margin-bottom:14px;
+      padding-bottom:12px;
+    }
+    .ghotonaprobaho-date{ margin-bottom:6px; }
+    .ghotonaprobaho-category{ margin:6px 0 4px; }
+    .ghotonaprobaho-items li{
+      line-height:1.4;
+      margin-bottom:4px;
+    }
   }
 
   /* "টপ নিউজ" ট্যাব — এক পলকে দেখার জন্য একটা সাধারণ তারিখ-ভিত্তিক তালিকা,

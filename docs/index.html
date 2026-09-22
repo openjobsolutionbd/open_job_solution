@@ -749,9 +749,10 @@
     .card h2{ margin-left:66px; font-size:20.16px; }
     .card .tags-row{ margin-left:66px; }
     .seal{ width:48px; height:48px; font-size:10.8px; top:18px; left:16px; }
-    .search-bar-wrap{ justify-content:center; }
-    .search-slot{ flex-basis:100%; }
-    .toolbar{ justify-content:center; flex-basis:100%; }
+    .search-bar-wrap{ flex-wrap:nowrap; gap:8px; }
+    .search-slot{ flex:1 1 0; min-width:0; }
+    .toolbar{ flex:0 0 auto; gap:8px; }
+    .theme-toggle{ padding:6px 10px; font-size:14.4px; }
   }
 
   .drawer{

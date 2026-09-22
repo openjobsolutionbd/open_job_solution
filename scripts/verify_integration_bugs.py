@@ -37,6 +37,12 @@ verify_site.py শুধু build_index.py-এর generated output (docs/) য�
      push সবসময় github-actions[bot] নামে হয়, আর PR-চেক action_required-এ আটকায়)
   ৭. update-wiki.yml-এর কোডে (মন্তব্য বাদে) skip-ci ট্যাগ নেই
      (BUG: skip-ci commit-এ workflow/deploy বাদ পড়ে, সাইট stale থাকে)
+  ৮. pr_checks.py-এর SOURCE_PREFIXES-এ "archive/" আছে
+     (BUG: আর্কাইভ-ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না; PR_GUIDE-এর দাবির সাথে কোড মিলছিল না)
+  ৯. update-wiki.yml-এ ব্যর্থতা-সতর্কতা আছে: `if: failure()` ধাপ, site-build-failed লেবেল,
+     `issues: write` permission
+     (BUG: দুটো PR আলাদাভাবে পাস করে একসাথে merge হয়ে build ভাঙলে bot কিছু push করে না —
+     সাইট নীরবে stale থাকত, কেউ জানত না)
 
 exit code 0 = নিরাপদ, 1 = কোনো প্যাটার্ন হারিয়ে গেছে (রিগ্রেশন)।
 """
@@ -159,8 +165,32 @@ def main():
                 f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)}-এর কোডে skip-ci ট্যাগ পাওয়া গেছে — "
                 "এতে workflow/deploy বাদ পড়ে সাইট stale থাকতে পারে"
             )
+        # ৯. ব্যর্থতা-সতর্কতা — নীরব-stale ঠেকাতে
+        wiki_rel = UPDATE_WIKI_WORKFLOW.relative_to(ROOT)
+        if not re.search(r"^\s*if:\s*failure\(\)\s*$", wiki_code, re.MULTILINE) or "site-build-failed" not in wiki_code:
+            errors.append(
+                f"{wiki_rel}-এ ব্যর্থতা-সতর্কতা (`if: failure()` ধাপ + site-build-failed Issue) নেই — "
+                "build ভাঙলে সাইট নীরবে stale থাকবে, কেউ জানবে না"
+            )
+        if not re.search(r"^\s*issues:\s*write\s*(#.*)?$", wiki_code, re.MULTILINE):
+            errors.append(f"{wiki_rel}-এ `issues: write` permission নেই — সতর্কতা-Issue খোলা/বন্ধ করা যাবে না")
     else:
         errors.append(f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)} ফাইলই খুঁজে পাওয়া যায়নি")
+
+    # ৮. pr_checks.py — archive/ সংঘর্ষ-চেকের আওতায়
+    pr_checks_path = ROOT / "scripts" / "pr_checks.py"
+    if pr_checks_path.exists():
+        pc_text = pr_checks_path.read_text(encoding="utf-8")
+        m = re.search(r"SOURCE_PREFIXES\s*=\s*\[(.*?)\]", pc_text, re.DOTALL)
+        # মন্তব্য (# …) বাদ দিয়ে দেখি — নইলে কমেন্ট-আউট করা "archive/"-ও আসল উপাদান ধরা পড়ত
+        prefixes_code = "\n".join(ln.split("#", 1)[0] for ln in m.group(1).splitlines()) if m else ""
+        if not m or '"archive/"' not in prefixes_code:
+            errors.append(
+                'scripts/pr_checks.py-এর SOURCE_PREFIXES-এ "archive/" নেই — আর্কাইভ-ফাইলের সমান্তরাল-সেশন '
+                "সংঘর্ষ ধরা পড়বে না (অথচ PR_GUIDE.md ধরা পড়ার দাবি করে)"
+            )
+    else:
+        errors.append("scripts/pr_checks.py ফাইলই খুঁজে পাওয়া যায়নি")
 
     if errors:
         fail(errors)

@@ -48,7 +48,20 @@ jobs:
       - name: কনটেন্ট বিল্ড ভ্যালিডেশন
         id: build
         continue-on-error: true
-        run: python3 scripts/build_index.py
+        run: |
+          set -o pipefail
+          python3 scripts/build_index.py 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      # build-এর 'সতর্কতা:' (ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম) PR-কমেন্টে দেখানো — ব্লক করে না।
+      # শুধু CI-লগে থাকলে কেউ দেখে না; PR-লেখক সেশন কমেন্ট পড়ে ও merge-এর আগে ঠিক করতে পারে।
+      - name: build সতর্কতা → PR-কমেন্ট (ব্যর্থ করে না)
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/pr_build_warnings.py "$RUNNER_TEMP/build.log"
 
       - name: সাইট-জুড়ে ভেরিফাই
         id: verify
@@ -77,8 +90,13 @@ jobs:
         continue-on-error: true
         run: python3 scripts/test_build_index.py
 
+      - name: pr_checks.py regression suite
+        id: py_pr_tests
+        continue-on-error: true
+        run: python3 scripts/test_pr_checks.py
+
       - name: চূড়ান্ত ফলাফল
-        if: steps.prechecks.outcome != 'success' || steps.build.outcome != 'success' || steps.verify.outcome != 'success' || steps.integration_guard.outcome != 'success' || steps.js_tests.outcome != 'success' || steps.py_build_tests.outcome != 'success'
+        if: steps.prechecks.outcome != 'success' || steps.build.outcome != 'success' || steps.verify.outcome != 'success' || steps.integration_guard.outcome != 'success' || steps.js_tests.outcome != 'success' || steps.py_build_tests.outcome != 'success' || steps.py_pr_tests.outcome != 'success'
         run: |
           echo "এক বা একাধিক চেক ব্যর্থ হয়েছে — PR-এর কমেন্টে বিস্তারিত দেখুন।"
           exit 1

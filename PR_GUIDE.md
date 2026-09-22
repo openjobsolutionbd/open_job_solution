@@ -10,6 +10,7 @@
   1. `preflight.sh` ক্লিন পাস করেছে (build+verify+py-test)।
   2. GitHub-এর স্বয়ংক্রিয় PR-চেক (`pr-check.yml`) কোনো সমস্যা/কমেন্ট দেয়নি এবং `mergeable: true` / `mergeable_state: clean`।
   3. কোনো rebase-conflict থাকলে তা `AGENTS.md`-এর "গুরুত্বপূর্ণ সতর্কতা"-র "rebase-conflict নিয়ম" অনুযায়ী মীমাংসিত (নিজে অনুমান করে না, বা তার ব্যতিক্রম-শর্তে)।
+  4. `bash scripts/premerge_check.sh` ✓ (আপনার branch + এই মুহূর্তের `main` মিলিয়ে build/verify/টেস্ট পাস — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ঠেকাতে; দেখুন নিচে "একাধিক সেশন" ধাপ ৯)।
 
   এটা `AGENTS.md`/`scripts/*`/`.github/workflows/*`-এ বদল, existing কনটেন্ট মোছা/replace করা, এবং content-সংযোজন — সব ধরনের PR-এর জন্যই প্রযোজ্য। "নতুন সংযোজন" বনাম "existing কনটেন্ট বদল" — এই পার্থক্যটা এখন merge-অনুমোদনের ক্ষেত্রে আর প্রাসঙ্গিক না (commit message-এ স্পষ্ট বিবরণ থাকা এখনো জরুরি, যাতে PR history থেকে বোঝা যায় কী বদলেছে)।
 
@@ -74,7 +75,7 @@ curl -s -X PUT \
 # কয়েক সেকেন্ড পর আবার mergeable_state চেক করুন, 'clean' না হওয়া পর্যন্ত দরকার হলে পুনরাবৃত্তি করুন
 ```
 
-`clean` হলে তবেই merge করুন:
+`clean` হলে, এবং `bash scripts/premerge_check.sh` ✓ দেখালে (✗ হলে merge করবেন না — কারণ সদ্য অন্য PR merge হওয়ায় সমন্বয়ে build ভাঙছে) তবেই merge করুন:
 ```bash
 curl -s -X PUT \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
@@ -88,6 +89,8 @@ merge ব্যর্থ হলে (checks এখনো শেষ হয়ন�
 curl -s -X DELETE -H "Authorization: Bearer $PAT" \
   https://api.github.com/repos/openjobsolutionbd/open_current_affairs/git/refs/heads/work/2026-08-11-...
 ```
+`claim_check.sh --claim` দিয়ে দখল নিয়ে থাকলে এখন ছেড়ে দিন: `bash scripts/claim_check.sh --release <নাম>`।
+
 merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` নিজে থেকেই generated output রিবিল্ড করে **সরাসরি `main`-এ commit করে দেয়** (২০২৬-০৯-২০ থেকে) — আলাদা কোনো rebuild PR খোলে না, তাই merge করার মতো বাড়তি কিছু নেই। ১–২ মিনিট পর `main`-এ `github-actions[bot]`-এর `chore: rebuild generated site output + bump version to …` commit দেখা গেলে বুঝবেন লাইভ সাইট হালনাগাদ হয়েছে; না দেখা গেলে Actions-এ `Update wiki index` run দেখুন।
 
 **যদি PR-এ real git conflict দেখায়** (দুইটা branch একই লাইনে ভিন্ন পরিবর্তন করেছে — GitHub-এর `mergeable: false`): নিজে অনুমান করে কোনটা রাখবেন ঠিক করবেন না, `AGENTS.md`-এর "rebase-conflict নিয়ম"-এর ব্যতিক্রম-নিয়ম মেনে চলুন। Auto-generated ফাইলে conflict কখনো হাতে মার্জ করবেন না — merge-এর পর `main`-এ `build_index.py` এমনিতেই আবার চালাবে।
@@ -113,7 +116,7 @@ curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json"
 
 লক্ষ্য: কয়েকটা সেশন একই সময়ে কাজ করলেও কোনো ফাইলে সংঘর্ষ না হওয়া। নীতি: **একটা টপিক = একটা সেশন = একটা PR = শুধু নিজের নতুন ফাইল।** একটা টপিক কখনো দুই সেশনে ভাগ হয় না।
 
-1. **শুরুর আগে:** `bash scripts/session_status.sh` (সবার খোলা branch/PR), তারপর `bash scripts/claim_check.sh <টপিক-slug>` — অন্য কেউ ওই টপিক/ফাইল ছুঁয়ে থাকলে থামুন বা আলাদা টপিক নিন। প্রথম commit-এর পরেই branch push করুন, যাতে অন্যরা আপনার দখল দেখতে পায়।
+1. **শুরুর আগে:** `bash scripts/session_status.sh` (সাইট-build অবস্থা + সবার খোলা branch/PR), তারপর দখল নিন: `CLAIM_OWNER=<আপনার-সেশন-নাম> bash scripts/claim_check.sh --claim <টপিক-slug>`। এটা পারমাণবিক তালা — দুই সেশন একসাথে চেষ্টা করলে ঠিক একজন পায়, অন্যজন ⛔ পেয়ে আলাদা টপিক নেয়। (`--claim` ছাড়া চালালে শুধু দেখা — তালা নয়; দুজন একসাথে দেখলে দুজনেই 'ফাঁকা' দেখবে।) কাজ merge হলে বা ছাড়লে `--release <নাম>`; ৩ দিনের বেশি পুরনো দখল 'সম্ভবত পরিত্যক্ত' চিহ্নিত হয়। প্রথম commit-এর পরেই branch push করুন।
 2. **নিজের নতুন ফাইল, অন্যের ফাইল নয়।** আপনার সেশন-স্কোপ = branch-এর slug (যেমন `work/2026-09-20-tothyo-probaho-p12` → স্কোপ `tothyo-probaho-p12`); `<YYYY-MM>` = ম্যাগাজিন-সংখ্যার মাস:
 
    | কনটেন্ট | আপনার ফাইল |
@@ -128,7 +131,8 @@ curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json"
 3. **একই তারিখ অন্য সেশনের ফাইলে থাকলেও সমস্যা নেই** — build জোড়া লাগায় (বিভাগের ক্রম সবসময় বাংলাদেশ→আন্তর্জাতিক)। হুবহু একই বুলেট দুই ফাইলে থাকলে একটা রাখে (আর বাদ-পড়াটার টপিক-লিংক রাখাটায় যোগ করে), আলাদা শব্দে লেখা প্রায়-একই ঘটনায় সতর্কতা দেয় (দুটোই থাকে) — তবু লেখার আগে তারিখ grep করে ডুপ্লিকেট-চেক করুন। মাস-চেনা-যায়-না তারিখ-হেডিং (টাইপো) হুবহু একই লেখা হলেই কেবল জোড়া লাগে। MCQ-র স্কোপ অক্ষর দিয়ে শুরু না হলে (যেমন `2026-09-12-15.md`) সেটা মাসের সেটে জোড়া লাগে না — build সতর্কতা দেয়।
 4. **শেয়ার্ড ফাইলে হাত দেবেন না:** generated ফাইল (bot বানায়) আর `VERSION`। শুধু-যোগ-হওয়া `CHANGELOG.md`-এর জন্য `.gitattributes`-এ union merge আছে (লোকাল merge-এ দুই পক্ষের যোগই থাকে; GitHub-এর Merge বোতাম এটা মানে না)।
 5. **বিদ্যমান টপিকে তথ্য merge:** ওই টপিক-ফাইল একজন সেশনই বদলাবে; `claim_check.sh` অন্য কারও দখল দেখালে অপেক্ষা করুন।
-6. **তবুও সংঘর্ষ হলে** (PR `mergeable: false`): `git fetch origin && git merge origin/main`, সংঘর্ষ হাতে মিলিয়ে, `preflight.sh` চালিয়ে আবার push। `pr_checks.py` অন্য খোলা PR-এর সাথে একই ফাইল বদলালে আগেই ব্যর্থ হয়ে জানায়।
-7. **build-সতর্কতা কোথায় দেখবেন:** ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম সংক্রান্ত সতর্কতা build-এর stderr-এ যায় (`সতর্কতা:` দিয়ে শুরু) — `preflight.sh`-এর আউটপুটে আর CI-র build-লগে দেখা যায়। নিজের কাজ push করার আগে সেগুলো পড়ুন।
+6. **তবুও সংঘর্ষ হলে** (PR `mergeable: false`): `git fetch origin && git merge origin/main`, সংঘর্ষ হাতে মিলিয়ে, `preflight.sh` চালিয়ে আবার push। `pr_checks.py` অন্য খোলা PR-এর সাথে একই ফাইল বদলালে PR ব্যর্থ করে জানায় — **শুধু** `docs/topics`, `docs/ghotonaprobaho`, `docs/top-news`, `docs/mcq`, `docs/proshnottor` ও `archive/`-এ। `CHANGELOG.md`, `BUGFIX.md`, `EDITORIAL_MEMORY.md`, `AGENTS.md`, `PR_GUIDE.md`, `PROJECT.md`, `README.md`, `MCQ_GUIDE.md`-এ ওভারল্যাপ শুধু ℹ️ তথ্য-নোট (ব্যর্থ করে না); `scripts/`, `.github/` ও অন্য ফাইল ধরে না। নতুন ফাইলের নাম নিয়ম না মানলে (যেমন `2026-09-12-15.md`, পুরনো রেঞ্জ-নাম) PR ব্যর্থ হয়।
+7. **build-সতর্কতা কোথায় দেখবেন:** ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম সংক্রান্ত সতর্কতা build-এর stderr-এ যায় (`সতর্কতা:` দিয়ে শুরু)। তিন জায়গায় দেখা যায়: (ক) `preflight.sh`-এর আউটপুটে (⚠️ ব্লক), (খ) PR খোলার পর CI একটা কমেন্টে দেখায় (ব্যর্থ করে না, প্রতি push-এ আপডেট হয়; সতর্কতা না থাকলে কমেন্ট মুছে যায়), (গ) merge-এর পর `update-wiki` run-এর সারাংশে। merge-এর আগেই ঠিক করুন।
 8. **মাসশেষের গোছানো (ঐচ্ছিক):** ফোল্ডারে ছোট ফাইল বেশি জমলে `python3 scripts/consolidate_month.py <ghotonaprobaho|top-news> <YYYY-MM>` (শুধু পরিকল্পনা) ও `--apply` — সাইটের ইনডেক্স হুবহু আগের মতো থাকা যাচাই করে, না মিললে নিজে রোলব্যাক করে। চালানোর আগে `claim_check.sh` দিয়ে নিশ্চিত হোন অন্য কোনো খোলা PR ওই ফাইলগুলো ছোঁয়নি। MCQ ও আর্কাইভ এই টুলের বাইরে।
-
+9. **সাইট build ব্যর্থ হলে (নীরবে stale হওয়া ঠেকাতে):** দুটো PR আলাদাভাবে পাস করেও একসাথে merge হয়ে build ভাঙতে পারে (একটা টপিক সরাল, আরেকটা তার `[[লিংক]]` দিল); তখন bot কিছু push করে না, কারও কনটেন্ট লাইভ হয় না। ঠেকাতে: (ক) merge-এর ঠিক আগে `bash scripts/premerge_check.sh` (আপনার branch + এই মুহূর্তের main মিলিয়ে চেক); (খ) merge-এর পর `update-wiki` ব্যর্থ হলে GitHub-এ `site-build-failed` লেবেলে একটা Issue নিজে খোলে বা হালনাগাদ হয় (লগের শেষ লাইনসহ), পরের run সফল হলে নিজে বন্ধ হয়; (গ) `session_status.sh` প্রতি সেশনের শুরুতে সর্বশেষ run-এর অবস্থা ও খোলা Issue দেখায় (🚨)। ব্যর্থ দেখলে নতুন কাজের আগে সেটা ঠিক করুন — কারণ সাধারণত সদ্য merge-হওয়া দুই কাজের সমন্বয়। ঠিক করে যেকোনো কমিট push করলেই পরের run চলে; জরুরি হলে Actions → `Update wiki index` → Run workflow।
+10. **পরীক্ষা:** Actions → `Update wiki index` → Run workflow-এ `simulate_failure` টিক দিয়ে চালালে ইচ্ছাকৃত ব্যর্থ হয়ে উপরের সতর্কতা-Issue-র পথ যাচাই করা যায় (কিছু build/commit/push হয় না, সাইট অক্ষত)।

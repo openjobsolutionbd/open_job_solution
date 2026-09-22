@@ -33,7 +33,10 @@ cd open_current_affairs && bash scripts/session_status.sh
 | পাথ | কী |
 |---|---|
 | `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — remote/local + সব branch/PR-এর অবস্থা |
-| `scripts/claim_check.sh` | কাজ শুরুর আগে: অন্য কোনো খোলা PR/branch ওই টপিক/ফাইল ছুঁয়ে আছে কি না (একাধিক সেশনের সংঘর্ষ এড়াতে) |
+| `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশন একসাথে চাইলে ঠিক একজন পায়), শুধু-দেখা, `--release`; শব্দ-সীমা মিলানো, ৩ দিনের বেশি পুরনো দখল 'পরিত্যক্ত' চিহ্নিত |
+| `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
+| `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায় |
+| `scripts/pr_build_warnings.py` | CI-তে build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
 | `docs/topics/*.md` | মূল কনটেন্ট — টপিক পেজ (frontmatter + "বর্তমান তথ্য" + "পরিবর্তনের ইতিহাস") |
 | `docs/ghotonaprobaho/*.md` | তারিখ-ভিত্তিক দৈনিক ঘটনাপ্রবাহ |
 | `docs/top-news/*.md` | "টপ নিউজ" ট্যাব — প্রতি তারিখে সাধারণত একটাই হাইলাইট লাইন |

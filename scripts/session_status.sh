@@ -66,7 +66,7 @@ echo ""
 echo "== অন্য সেশন/অ্যাকাউন্ট ইতিমধ্যে কোন কাজ করে রেখেছে কিনা (GitHub-এর লাইভ অবস্থা) =="
 echo "কোনো নতুন কাজ শুরুর আগে নিচের তালিকায় মিলিয়ে দেখুন — একই বিষয়ে branch/PR"
 echo "আগে থেকে থাকলে বা merge হয়ে গিয়ে থাকলে পুনরাবৃত্তি করবেন না।"
-echo "নির্দিষ্ট টপিক/ফাইলে হাত দেওয়ার আগে: bash scripts/claim_check.sh <টপিক-slug | ফাইলপাথ> (অন্য কেউ ছুঁয়ে আছে কিনা)।"
+echo "নির্দিষ্ট টপিক/ফাইলে হাত দেওয়ার আগে: bash scripts/claim_check.sh --claim <টপিক-slug> (দেখে ফাঁকা হলে পারমাণবিক দখল); শেষে --release।"
 echo ""
 
 REPO="openjobsolutionbd/open_current_affairs"
@@ -74,6 +74,10 @@ AUTH_HEADER=()
 if [ -n "${GH_TOKEN:-}" ]; then
   AUTH_HEADER=(-H "Authorization: Bearer ${GH_TOKEN}")
 fi
+
+echo "--- সাইট build-এর অবস্থা (update-wiki, main) ---"
+python3 scripts/site_status.py
+echo ""
 
 echo "--- খোলা branch (main বাদে) ---"
 curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \

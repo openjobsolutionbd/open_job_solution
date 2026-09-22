@@ -50,6 +50,13 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# build-এর সতর্কতা (ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/MCQ স্কোপ-নাম) ব্যর্থ করে না, কিন্তু নিজের কাজ
+# push করার আগে দেখে নেওয়া দরকার — নইলে শুধু লগে থেকে যায় (PR_GUIDE.md → একাধিক সেশন)।
+if grep -q 'সতর্কতা' /tmp/preflight_build.log; then
+  echo "⚠️  build সতর্কতা (ব্যর্থ নয়, কিন্তু push-এর আগে দেখুন):"
+  grep 'সতর্কতা' /tmp/preflight_build.log | sed 's/^/    /'
+fi
+
 python3 scripts/verify_site.py > /tmp/preflight_verify.log 2>&1
 if [ $? -ne 0 ]; then
   echo "✗ verify_site.py ব্যর্থ:"
@@ -61,6 +68,13 @@ python3 scripts/test_build_index.py > /tmp/preflight_pytest.log 2>&1
 if [ $? -ne 0 ]; then
   echo "✗ test_build_index.py ব্যর্থ:"
   cat /tmp/preflight_pytest.log
+  exit 1
+fi
+
+python3 scripts/test_pr_checks.py > /tmp/preflight_prtest.log 2>&1
+if [ $? -ne 0 ]; then
+  echo "✗ test_pr_checks.py ব্যর্থ:"
+  cat /tmp/preflight_prtest.log
   exit 1
 fi
 

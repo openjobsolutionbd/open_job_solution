@@ -7,9 +7,8 @@
 <meta name="description" content="টপিক-ভিত্তিক বাংলা কারেন্ট অ্যাফেয়ার্স নলেজ-বেস, রিয়েল-টাইম সার্চ সহ — প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতির জন্য বিসিএসসহ সব ধরনের চাকরির পরীক্ষায় কাজে লাগবে এমন হালনাগাদ তথ্য।">
 <link rel="canonical" href="/current-affairs/docs/">
 <meta name="theme-color" content="#004d2c">
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" type="image/png" sizes="192x192" href="/_assets/icons/icon-192.png">
-<link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
 <script>
   /* থিম flash এড়াতে head-এই localStorage থেকে পড়া হচ্ছে */
   (function(){
@@ -182,7 +181,7 @@
   .masthead h1{
     font-family:'Kalpurush', sans-serif;
     font-weight:700;
-    font-size:clamp(24px,3.84vw,33.6px);
+    font-size:clamp(19.2px,3.072vw,26.88px);
     margin:0;
   }
   .masthead .sub{
@@ -750,7 +749,7 @@
     #browse-layout:not(.showing-article) .card{ display:none; }
     .mobile-back-btn{ display:inline-block; }
     .card{ padding:20px 16px 24px; }
-    .card h2{ margin-left:66px; font-size:25.2px; }
+    .card h2{ margin-left:66px; font-size:20.16px; }
     .card .tags-row{ margin-left:66px; }
     .seal{ width:48px; height:48px; font-size:10.8px; top:18px; left:16px; }
     .search-bar-wrap{ justify-content:center; }
@@ -947,7 +946,7 @@
     font-family:'Hind Siliguri',sans-serif;
     font-weight:600;
     color:var(--heading);
-    font-size:31.2px;
+    font-size:24.96px;
     margin:0 0 4px 90px;
     border-bottom:2px solid var(--heading-border);
     padding-bottom:10px;
@@ -981,7 +980,7 @@
   .card-body h2{
     font-family:'Hind Siliguri',sans-serif;
     font-weight:600;
-    font-size:20.5px;
+    font-size:16.4px;
     color:var(--heading);
     margin:22px 0 10px;
     padding-bottom:6px;
@@ -1034,7 +1033,7 @@
   .card-body h2.history-heading{
     font-family:'Kalpurush',sans-serif !important;
     color:var(--heading);
-    font-size:19.4px;
+    font-size:15.52px;
     border-top:2px solid var(--line);
     padding-top:18px;
     margin-top:26px !important;
@@ -1173,7 +1172,7 @@
   }
   .ghotonaprobaho-month-heading{
     font-family:'Kalpurush',sans-serif;
-    font-size:22.8px;
+    font-size:18.24px;
     font-weight:700;
     color:var(--heading);
   }
@@ -1300,7 +1299,7 @@
      একবার উত্তর দিলে সেই প্রশ্নের বাটনগুলো আর ক্লিকযোগ্য থাকে না। */
   .mcq-section-heading{
     font-family:'Kalpurush',sans-serif;
-    font-size:20px;
+    font-size:16px;
     font-weight:700;
     color:var(--accent);
     margin:28px 0 14px;
@@ -1448,7 +1447,7 @@
   }
   .topic-preview-header h3{
     font-family:'Kalpurush',sans-serif;
-    font-size:19.2px; font-weight:700;
+    font-size:15.36px; font-weight:700;
     color:var(--heading);
     margin:0;
     line-height:1.4;
@@ -2160,13 +2159,13 @@ function renderGhotonaprobahoView(){
   });
 }
 
-// "১৪ মে ২০২৬"-এর মতো টপ-নিউজ তারিখকে "2026-05" ফরম্যাটে রূপান্তর
-// করে, যাতে ঘটনাপ্রবাহের month.month_key-এর সাথে মেলানো যায়।
-// top-news-index.json-এ প্রতিটা আইটেমের সাথে আলাদা month_key
-// সংরক্ষিত নেই (শুধু তারিখের টেক্সট), তাই ক্লায়েন্ট-সাইডেই পার্স
-// করতে হচ্ছে। নোট: এই ম্যাপিং কোথাও অন্য কোনো বিল্ড-স্ক্রিপ্টে
-// ডুপ্লিকেট করা নেই (এই রিপোতে ওরকম কোনো স্ক্রিপ্ট নেই) — মাসের
-// বাংলা নাম বদলালে শুধু এখানেই হালনাগাদ করলেই চলবে।
+// "১৪ মে ২০২৬"-এর মতো টপ-নিউজ তারিখকে "２０２৬-０５" (month.month_key) এর
+// সাথে মেলানোর জন্য "2026-05" ফরম্যাটে রূপান্তর করে। এটা
+// scripts/build_index.py-এর BENGALI_MONTHS/bengali_date_sort_key-এর
+// JS-সংস্করণ — top-news-index.json-এ প্রতিটা আইটেমের সাথে আলাদা
+// month_key সংরক্ষিত নেই (শুধু তারিখের টেক্সট), তাই ক্লায়েন্ট-সাইডেই
+// পার্স করতে হচ্ছে। মাসের বাংলা নাম কখনো বদলালে দুই জায়গাতেই (এখানে ও
+// build_index.py-তে) হালনাগাদ করা লাগবে।
 const BENGALI_MONTHS_JS = {
   'জানুয়ারি':1,'ফেব্রুয়ারি':2,'মার্চ':3,'এপ্রিল':4,'মে':5,'জুন':6,
   'জুলাই':7,'আগস্ট':8,'সেপ্টেম্বর':9,'অক্টোবর':10,'নভেম্বর':11,'ডিসেম্বর':12,
@@ -2349,7 +2348,7 @@ function renderMcqView(){
 
   let html = `<h2 style="margin-left:0;">📝 সাম্প্রতিক বিষয়ের MCQ</h2>`;
   MCQ_SETS.forEach(set => {
-    html += `<div class="mcq-set-heading"><span style="font-family:'Kalpurush',sans-serif;font-weight:700;font-size:16px;">${escapeHtml(set.label)}</span><span class="mcq-set-progress">${set.question_count} টা প্রশ্ন</span></div>`;
+    html += `<div class="mcq-set-heading"><span style="font-family:'Kalpurush',sans-serif;font-weight:700;font-size:12.8px;">${escapeHtml(set.label)}</span><span class="mcq-set-progress">${set.question_count} টা প্রশ্ন</span></div>`;
     set.sections.forEach(section => {
       html += `<div class="mcq-section-heading">${escapeHtml(section.name)}</div>`;
       section.questions.forEach(q => {
@@ -2738,16 +2737,10 @@ function visibleTopics(q){
   return list;
 }
 
-let mainSearchDebounce;
-function runMainSearch(q){
-  document.getElementById('browse-layout').classList.remove('showing-article');
-  renderList(visibleTopics(q), q);
-}
 document.getElementById('search').addEventListener('input', (e)=>{
-  clearTimeout(mainSearchDebounce);
   const q = e.target.value.trim().toLowerCase();
+  renderList(visibleTopics(q), q);
   document.getElementById('browse-layout').classList.remove('showing-article');
-  mainSearchDebounce = setTimeout(() => renderList(visibleTopics(q), q), 300);
 });
 
 document.getElementById('bookmark-filter-toggle').addEventListener('click', (e) => {
@@ -2807,7 +2800,6 @@ const floatPill = document.getElementById('floating-search-pill');
 const floatInput = document.getElementById('floating-search-input');
 const floatResults = document.getElementById('floating-search-results');
 const floatClose = document.getElementById('floating-search-close');
-let floatSearchDebounce;
 const topicModalOverlay = document.getElementById('topic-modal-overlay');
 const topicModalClose = document.getElementById('topic-modal-close');
 
@@ -2822,7 +2814,6 @@ function openFloatingSearch(){
 }
 
 function closeFloatingSearch(){
-  clearTimeout(floatSearchDebounce);
   floatPill.classList.remove('open');
   floatInput.value = '';
   floatResults.classList.remove('visible');
@@ -2885,9 +2876,8 @@ floatClose.addEventListener('click', (e)=>{
 floatInput.addEventListener('click', (e)=> e.stopPropagation());
 
 floatInput.addEventListener('input', (e)=>{
-  clearTimeout(floatSearchDebounce);
   const q = e.target.value.trim().toLowerCase();
-  floatSearchDebounce = setTimeout(() => renderFloatingResults(q), 300);
+  renderFloatingResults(q);
 });
 
 floatInput.addEventListener('keydown', (e)=>{
@@ -3087,20 +3077,16 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
     html = html.replace(/<table(\s[^>]*)?>/g, (m, attrs) => `<div class="table-scroll"><table${attrs||''}>`);
     html = html.replace(/<\/table>/g, '</table></div>');
 
-    const alreadyRead = isRead(topic.slug);
     const alreadyBookmarked = isBookmarked(topic.slug);
     const related = getRelatedTopics(topic);
     container.innerHTML = `
       ${backBtnId ? `<button class="mobile-back-btn" id="${backBtnId}">← তালিকায় ফিরুন</button>` : ''}
       <div class="seal">সর্বশেষ<br>${escapeHtml(topic.last_updated || '—')}</div>
       <div class="card-actions">
-        <button class="print-topic-btn" id="print-topic-btn-${topic.slug}">🖨️ প্রিন্ট / PDF</button>
-        <button class="mark-read-btn ${alreadyRead?'done':''}" id="mark-read-btn-${topic.slug}">${alreadyRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?'}</button>
         <button class="bookmark-btn ${alreadyBookmarked?'active':''}" id="bookmark-btn-${topic.slug}">${alreadyBookmarked ? '⭐ প্রিয়' : '☆ প্রিয়'}</button>
         <button class="copy-link" id="copy-link-btn-${topic.slug}" title="এই টপিকের লিংক কপি করো">🔗 লিংক কপি</button>
       </div>
       <h2>${escapeHtml(topic.title)}</h2>
-      <div class="tags-row">${(topic.tags||[]).map(t=>`<span class="pill" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}</div>
       <div class="card-body">${html}</div>
       ${related.length ? `
         <div class="related-topics">
@@ -3123,10 +3109,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
     // বাঁধা পড়ে না, ক্লিক করলে কিছুই হয় না। container.querySelector() দিয়ে
     // ঠিক এই renderTopicContent()-কলের container-এর ভেতরের এলিমেন্টটাই
     // নিশ্চিতভাবে বাছাই করা হচ্ছে।
-    container.querySelector(`#print-topic-btn-${topic.slug}`).addEventListener('click', () => {
-      window.print();
-    });
-
     container.querySelector(`#copy-link-btn-${topic.slug}`).addEventListener('click', async (e) => {
       const url = window.location.origin + window.location.pathname + '#' + topic.slug;
       try{
@@ -3138,14 +3120,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       setTimeout(()=>{ e.target.textContent = '🔗 লিংক কপি'; }, 1800);
     });
 
-    container.querySelector(`#mark-read-btn-${topic.slug}`).addEventListener('click', (e) => {
-      const nowRead = toggleRead(topic.slug);
-      e.target.classList.toggle('done', nowRead);
-      e.target.textContent = nowRead ? '✓ পড়া হয়েছে' : '⬜ পড়া হয়েছে?';
-      const qNow = document.getElementById('search').value.trim().toLowerCase();
-      renderList(visibleTopics(qNow), qNow);
-    });
-
     container.querySelector(`#bookmark-btn-${topic.slug}`).addEventListener('click', (e) => {
       const nowBookmarked = toggleBookmark(topic.slug);
       e.target.classList.toggle('active', nowBookmarked);
@@ -3154,9 +3128,6 @@ async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} 
       renderList(visibleTopics(qNow), qNow);
     });
 
-    container.querySelectorAll('.pill').forEach(pill => {
-      pill.addEventListener('click', () => filterByTag(pill.dataset.tag));
-    });
     container.querySelectorAll('.related-chip').forEach(chip => {
       chip.addEventListener('click', () => {
         if(onRelatedClick) onRelatedClick(chip.dataset.slug);
@@ -3262,8 +3233,7 @@ function filterByTag(tag){
   setMode('browse');
   const input = document.getElementById('search');
   input.value = tag;
-  clearTimeout(mainSearchDebounce);
-  runMainSearch(tag.trim().toLowerCase());
+  input.dispatchEvent(new Event('input'));
   input.scrollIntoView({ behavior:'smooth', block:'start' });
 }
 
@@ -3337,11 +3307,13 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("./sw.js").catch(() => {});
   });
-  // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,
-  // যা নতুন SW activate হওয়ার কিছুক্ষণ পর পেজকে হঠাৎ রিলোড করে ফেলত
-  // (ব্যবহারকারীর কাছে একটা অপ্রত্যাশিত "ঝাঁকি" হিসেবে অনুভূত হতো)।
-  // এখন নতুন SW নিঃশব্দে claim করে নেয়, পরবর্তী ফেচ/নেভিগেশন থেকে
-  // স্বয়ংক্রিয়ভাবে কার্যকর হয় — চলমান পেজ জোর করে রিলোড হয় না।
+
+  let refreshedOnce = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshedOnce) return;
+    refreshedOnce = true;
+    window.location.reload();
+  });
 }
 
 // VERSION বাড়লে sw.js নিজে থেকেই পুরনো ক্যাশ ফেলে দেয় (অটো ক্যাশ-ক্লিনার,

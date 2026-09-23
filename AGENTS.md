@@ -35,6 +35,7 @@ cd open_current_affairs && bash scripts/session_status.sh
 | `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — remote/local + সব branch/PR-এর অবস্থা |
 | `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশন একসাথে চাইলে ঠিক একজন পায়), শুধু-দেখা, `--release`; শব্দ-সীমা মিলানো, ৩ দিনের বেশি পুরনো দখল 'পরিত্যক্ত' চিহ্নিত |
 | `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
+| `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge করে (হাতে অপেক্ষার ফাঁক কমাতে) — `bash scripts/safe_merge.sh <PR_NUMBER>` |
 | `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায় |
 | `scripts/pr_build_warnings.py` | CI-তে build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
 | `docs/topics/*.md` | মূল কনটেন্ট — টপিক পেজ (frontmatter + "বর্তমান তথ্য" + "পরিবর্তনের ইতিহাস") |

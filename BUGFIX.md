@@ -557,3 +557,15 @@ PR-ধাপটাই বাদ। bot এখন build+verify-এর পর gene
 **সমাধান:** `--claim` = GitHub-এ `claim/<নাম>` ref তৈরি (একই নামে দুটো ref হয় না, তাই পারমাণবিক); `--release`; শব্দ-সীমা মেলানো; পুরনো (৩+ দিন) দখল চিহ্নিত। `pr_checks.py`: `archive/` যুক্ত, শেয়ার্ড নথির ওভারল্যাপ তথ্য-নোট, নতুন ফাইলের নাম যাচাই (রেঞ্জ-নাম/অঙ্ক-শুরু স্কোপ ব্যর্থ)। `preflight.sh` এখন সতর্কতা দেখায়। `PR_GUIDE.md` দাবিগুলো কোডের সাথে মিলিয়ে সংশোধিত।
 
 **যাচাই:** আসল repo-তে দুই প্রসেসের একসাথে `--claim` — ঠিক একজন সফল ([0, 1]), অন্যজন ⛔; নিজের-দখল বাধা নয়; পুরনো-দখল চিহ্ন; `--release`; `test_pr_checks.py` (১১টা টেস্ট); guard ৮ (কমেন্ট-আউট করা `"archive/"`-ও ধরে — negative-test-এ প্রথম সংস্করণের ফাঁক ধরা পড়ে ঠিক করা)।
+
+### BUG-30 🟠 — `main` লিখিতভাবে "protected" বলা হলেও প্রযুক্তিগতভাবে কোনো বাধা ছিল না; আসল protection চালু করলে bot-এর সরাসরি push ভেঙে যাওয়ার ঝুঁকি ছিল
+
+**ফাইল:** `.github/workflows/update-wiki.yml` (branch protection সেটিং repo-তে, কোডে নয়)
+
+**সমস্যা:** `PROJECT.md`/`AGENTS.md` বলত `main` protected ও PR বাধ্যতামূলক, কিন্তু GitHub API-তে ২০২৬-০৯-২০ পর্যন্ত `main`-এ কোনো protection/ruleset ছিলই না (আগের সেশনগুলোর নথি-লেখা আর repo-র বাস্তব অবস্থা আলাদা হয়ে গিয়েছিল)। protection চালু করা জটিল ছিল কারণ `update-wiki.yml`-এর bot ডিফল্ট `GITHUB_TOKEN` দিয়ে সরাসরি `main`-এ push করে (v1.9.0-এর নকশা) — সেই bot-identity কোনো ruleset bypass list-এ যোগ করা যায় না (research-এ নিশ্চিত হওয়া: শুধু GitHub App বা প্রকৃত user/team bypass কাজ করে, ডিফল্ট Actions bot নয়)।
+
+**সমাধান:** classic branch protection চালু (`required_pull_request_reviews` সেট, `required_approving_review_count: 0`, `enforce_admins: false`, `allow_force_pushes: false`)। bot-এর push এখন `WORKFLOW_PAT` (repo-admin `openjobsolutionbd`-এর PAT) দিয়ে, checkout-এ `persist-credentials: false` সহ — admin হওয়ায় `enforce_admins: false`-এর কারণে "require pull request" bypass করে (GitHub-এর ডকুমেন্টেড admin-bypass আচরণ)।
+
+**যাচাই (লাইভ repo-তে, isolate করে):** (১) `enforce_admins: true` অবস্থায় admin-token দিয়ে সরাসরি `main`-এ push করে দেখা হয়েছে — GitHub প্রত্যাখ্যান করেছে ("Changes must be made through a pull request", exit non-zero)। (২) শুধু `enforce_admins: false`-এ বদলে ঠিক একই push আবার চেষ্টা — সফল হয়েছে, GitHub-এর প্রতিক্রিয়ায় স্পষ্ট "Bypassed rule violations" বার্তা এসেছে। (৩) test-commit সাথে সাথে `git revert` করে push করে `main`-কে হুবহু আগের বিষয়বস্তুতে ফেরানো হয়েছে (diff-hash মিলিয়ে যাচাই)। (৪) `verify_integration_bugs.py`-এ guard ১০ (negative-test করা)।
+
+**সীমাবদ্ধতা (গুরুত্বপূর্ণ):** bypass identity-ভিত্তিক — admin-অ্যাকাউন্ট `openjobsolutionbd`-এর *যেকোনো* টোকেন (এই কাজে ব্যবহৃত ব্যবহারকারীর সেশন-টোকেনসহ) সরাসরি push করেও protection এড়াতে পারবে। তাই protection মূলত অন্য কম-অনুমতির টোকেন বা কলাবরেটরের ভুল-push ঠেকায়; এই admin-অ্যাকাউন্টের জন্য branch+PR নিয়ম এখনো আচরণগত, প্রযুক্তিগত বাধ্যবাধকতা নয়। এটা `main` protected রাখার সাথে bot-এর সরাসরি-push নকশা একসাথে রাখার প্রয়োজনীয় trade-off।

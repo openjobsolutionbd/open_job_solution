@@ -8,6 +8,28 @@
 
 ---
 
+## [1.13.0] — ২০২৬-০৯-২১
+
+**যা করা হয়েছে: `main`-এ আসল branch protection চালু + `safe_merge.sh` + real end-to-end যাচাই**
+
+ব্যবহারকারীর নির্দেশে ১.১১.০/১.১২.০-এর পরও বাকি থাকা তিনটা জিনিস: `main`-এর protection শুধু লিখিত ছিল, merge-এর সময়ের ফাঁক, আর দুই-সেশনের pipeline বাস্তবে (লোকাল সিমুলেশনের বাইরে) কখনো পরীক্ষা হয়নি। বিস্তারিত: BUGFIX.md BUG-30।
+
+**যা করা হয়েছে:**
+- `main`-এ classic branch protection সত্যিই চালু: `required_pull_request_reviews` (approving count 0), `enforce_admins: false`, `allow_force_pushes: false`।
+- `.github/workflows/update-wiki.yml`: push এখন `WORKFLOW_PAT` (repo-admin-এর PAT) দিয়ে, checkout-এ `persist-credentials: false` — admin-bypass কাজে লাগিয়ে protection সত্ত্বেও bot-এর সরাসরি push অক্ষত রাখা।
+- `scripts/safe_merge.sh` (নতুন): `premerge_check.sh`-এর ফল আসার সাথে সাথে সেই sha merge করে — হাতে অপেক্ষার ফাঁক কমায় (পুরোপুরি বন্ধ করে না, তাই ব্যর্থতা-Issue এখনও দরকার)।
+- `verify_integration_bugs.py`-তে guard ১০ (WORKFLOW_PAT + persist-credentials, negative-test করা)।
+- `PROJECT.md`, `AGENTS.md`, `PR_GUIDE.md` হালনাগাদ — bypass-এর সীমাবদ্ধতা স্পষ্টভাবে লেখা, যাতে ভবিষ্যতের সেশন ভুল ধারণা না করে (আগেরটাই এই বাগের কারণ ছিল)।
+
+**বাস্তবে যাচাই করা (শুধু কোড পড়ে নয়):**
+- admin-bypass মেকানিজম আসল repo-তে isolate করে পরীক্ষা: `enforce_admins: true` → push প্রত্যাখ্যাত; `false` → push সফল ("Bypassed rule violations")। test-commit সাথে সাথে revert করে `main` আগের অবস্থায় ফেরানো হয়েছে।
+- দুই real branch/PR (archive/ ফাইলে ইচ্ছাকৃত ওভারল্যাপ + একটাতে অবৈধ MCQ-নাম) খুলে CI-তে সংঘর্ষ-সতর্কতা ও নাম-যাচাই দুটোই বাস্তবে ধরা পড়তে দেখা হয়েছে (আগে শুধু pure-function ইউনিট-টেস্টে যাচাই ছিল) — তারপর merge না করে দুটোই বন্ধ ও মুছে ফেলা হয়েছে, সাইটে কোনো প্রভাব পড়েনি।
+- এই PR নিজেই merge হওয়ার পর `update-wiki` run-এ `WORKFLOW_PAT`-ভিত্তিক push প্রথমবার আসল Actions-এ প্রমাণিত হবে (VERSION বাম্পের কারণে `changed=true` হয়ে push ধাপ বাস্তবে চলবে) — ফল এই এন্ট্রির ঠিক নিচে confirm করা না থাকলে merge-লগে দেখুন।
+
+**সীমাবদ্ধতা:** bypass identity-ভিত্তিক — admin-অ্যাকাউন্ট `openjobsolutionbd`-এর যেকোনো টোকেন সরাসরি push করেও protection এড়াতে পারে (এই কাজে ব্যবহৃত সেশন-টোকেনসহ)। `safe_merge.sh` ফাঁক কমায়, শূন্য করে না। MCQ ও আর্কাইভ এখনও `consolidate_month.py`-র বাইরে।
+
+---
+
 ## [1.12.0] — ২০২৬-০৯-২১
 
 **যা করা হয়েছে: একাধিক-সেশন ব্যবস্থার দুর্বলতা ঠিক (খ: প্রক্রিয়া-নিরাপত্তা) — নীরব-stale, আসল তালা, পরীক্ষা-চেকের পরিধি**

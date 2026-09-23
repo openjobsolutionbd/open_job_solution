@@ -337,7 +337,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-04",
     duration: "৯০ মিনিট",
     totalMarks: 100,
-    totalQuestions: 16,
+    totalQuestions: 15,
   },
   {
     id: "job-2025-air-force-office-sohayok",

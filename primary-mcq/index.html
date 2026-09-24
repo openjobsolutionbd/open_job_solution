@@ -14,7 +14,12 @@
 
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
   <meta name="theme-color" content="#1a1814">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Primary MCQ">
   <link href="/_assets/fonts/noto-bengali.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
@@ -293,6 +298,9 @@ document.getElementById('resetBtnBottom').addEventListener('click',doReset);
       navigator.serviceWorker.register('/primary-mcq/sw.js').catch(err => {
         console.warn('[SW] Registration failed:', err);
       });
+      // পুরো অ্যাপ এক PWA — manifest-এর start_url ("/") এখান থেকেও
+      // covered থাকতে হবে (দেখুন bcs-mcq/index.html-এর একই কমেন্ট)।
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
     });
   }
   // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,

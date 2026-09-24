@@ -9,6 +9,9 @@
   <link rel="icon" href="/_assets/icons/icon-192.png">
   <link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="লিখিত পরীক্ষা">
   <link href="/_assets/fonts/noto-bengali.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>
@@ -598,6 +601,9 @@
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/written-exam/sw.js', { scope: '/written-exam/' })
         .catch(err => console.warn('SW:', err));
+      // পুরো অ্যাপ এক PWA — manifest-এর start_url ("/") এখান থেকেও
+      // covered থাকতে হবে (দেখুন bcs-mcq/index.html-এর একই কমেন্ট)।
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
     });
   }
   // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,

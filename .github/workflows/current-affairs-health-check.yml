@@ -1,9 +1,9 @@
 name: Current Affairs Health Check (scheduled)
 
-# উদ্দেশ্য: current-affairs/docs/ (open_current_affairs থেকে সিঙ্ক হওয়া
-# generated output) নিয়মিত স্বয়ংক্রিয়ভাবে পরীক্ষা করে — যাতে কোনো
-# রিগ্রেশন (পুরনো ডোমেইন ফিরে আসা, ভাঙা JSON, cache-scope বাগ, বা
-# সিঙ্ক অনেকদিন না চলা) কারো ম্যানুয়াল অডিট সেশন ছাড়াই ধরা পড়ে।
+# উদ্দেশ্য: current-affairs/docs/ (২০২৬-০৯ থেকে open_current_affairs থেকে
+# git subtree দিয়ে merge হয়ে সরাসরি এই রিপোতেই এডিট হয়) নিয়মিত
+# স্বয়ংক্রিয়ভাবে পরীক্ষা করে — যাতে কোনো রিগ্রেশন (পুরনো ডোমেইন ফিরে আসা,
+# ভাঙা JSON, cache-scope বাগ) কারো ম্যানুয়াল অডিট সেশন ছাড়াই ধরা পড়ে।
 #
 # এই workflow নিজে থেকে কিছু ফিক্স করে না, শুধু GitHub Issue বানিয়ে
 # জানায় — কারণ non-technical owner-এর পক্ষে auto-generated ফিক্স-PR
@@ -11,9 +11,8 @@ name: Current Affairs Health Check (scheduled)
 
 on:
   schedule:
-    # প্রতিদিন বাংলাদেশ সময় সকাল ৯টায় (UTC ০৩:০০) — sync workflow
-    # প্রতি ৩ দিনে চলে, কিন্তু bit-rot (cache, ম্যানুয়াল এডিট) যেকোনো
-    # দিন হতে পারে বলে এটা আলাদাভাবে প্রতিদিন চলে
+    # প্রতিদিন বাংলাদেশ সময় সকাল ৯টায় (UTC ০৩:০০) — bit-rot (cache,
+    # ম্যানুয়াল এডিট) যেকোনো দিন হতে পারে বলে প্রতিদিন চলে
     - cron: "0 3 * * *"
   workflow_dispatch: {}
 

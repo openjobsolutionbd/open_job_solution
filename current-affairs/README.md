@@ -1,5 +1,12 @@
 # Open Current Affairs
 
+> **নোট (migration):** এই কনটেন্ট এখন `open_job_solution`-এর একটা সরাসরি
+> সেকশন (`current-affairs/`, পুরো commit history সহ git subtree দিয়ে
+> মার্জ করা হয়েছে)। ভবিষ্যতে এডিটিং সরাসরি `open_job_solution` রিপোতেই
+> হবে। স্বতন্ত্র `open_current_affairs` রিপো ও তার `pages.dev` সাইট
+> আপাতত deprecated অবস্থায় থেকে যাবে (রেফারেন্সের জন্য), নতুন কনটেন্ট
+> সিঙ্ক হবে না।
+
 টপিক-ভিত্তিক কারেন্ট অ্যাফেয়ার্স knowledge-base। প্রতি মাসে নতুন তথ্য `docs/topics/`-এর টপিক পেজে যোগ হয় এবং প্রতিটি পেজে পরিবর্তনের ইতিহাস থাকে।
 
 ## এই রিপোতে কী কী আছে

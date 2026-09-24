@@ -1,0 +1,139 @@
+# PR_GUIDE.md
+
+**কবে পড়বেন:** নিজের branch তৈরি → push → PR খোলা → merge → branch-cleanup — এই ধাপগুলোর ঠিক আগে/সময়। কনটেন্ট এডিট করার সময় এই ফাইল পড়ার দরকার নেই, শুধু push-এর ধাপে আসলেই পড়ুন। মূল নিয়মের জন্য আগে `AGENTS.md` পড়া থাকা আবশ্যক (বিশেষত "🔒 সর্বোচ্চ-অগ্রাধিকার নীতি" ও "গুরুত্বপূর্ণ সতর্কতা" সেকশন — "rebase-conflict নিয়ম" এখানে বারবার রেফার করা হয়েছে)।
+
+ব্যবহারকারী একই সাথে একাধিক Claude account/চ্যাট থেকে এই রিপোতে কাজ করান। তাই `main`-এ সরাসরি push না করে, প্রতিটা সেশন নিজের branch-এ কাজ শেষ করে PR খোলে; GitHub স্বয়ংক্রিয়ভাবে গঠন ও সংঘর্ষ চেক করে; সেই PR-এর পরিবর্তন যে সেশনেই জিজ্ঞেস করা হোক না কেন Claude নিজে পড়ে সহজ বাংলায় ব্যাখ্যা করে। নিচে ধাপে ধাপে কমান্ড।
+
+**merge-অনুমোদনের অপেক্ষা এখন নেই (২০২৬-০৮-১৫ থেকে)।** এটা কোড-লেভেলে জোর করা যায় না (GitHub-এর "approve" ফিচার ব্যবহার করতে দ্বিতীয় অ্যাকাউন্ট লাগত), তাই লিখিত নিয়মের ওপরই নির্ভরশীল — কিন্তু মূল সংঘর্ষ-প্রতিরোধ ব্যবস্থা (branch protection, বাধ্যতামূলক PR) এতে অপরিবর্তিত, সেটা প্রযুক্তিগতভাবেই বাধ্যতামূলক। বর্তমান নিয়ম:
+
+- **নিচের সবগুলো শর্ত সত্যি হলে সরাসরি merge করুন, অনুমতি চাইবেন না — শুধু ফলাফল জানিয়ে দিন:**
+  1. `preflight.sh` ক্লিন পাস করেছে (build+verify+py-test)।
+  2. GitHub-এর স্বয়ংক্রিয় PR-চেক (`pr-check.yml`) কোনো সমস্যা/কমেন্ট দেয়নি এবং `mergeable: true` / `mergeable_state: clean`।
+  3. কোনো rebase-conflict থাকলে তা `AGENTS.md`-এর "গুরুত্বপূর্ণ সতর্কতা"-র "rebase-conflict নিয়ম" অনুযায়ী মীমাংসিত (নিজে অনুমান করে না, বা তার ব্যতিক্রম-শর্তে)।
+  4. `bash scripts/premerge_check.sh` ✓ (আপনার branch + এই মুহূর্তের `main` মিলিয়ে build/verify/টেস্ট পাস — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ঠেকাতে; দেখুন নিচে "একাধিক সেশন" ধাপ ৯)।
+
+  এটা `AGENTS.md`/`scripts/*`/`.github/workflows/*`-এ বদল, existing কনটেন্ট মোছা/replace করা, এবং content-সংযোজন — সব ধরনের PR-এর জন্যই প্রযোজ্য। "নতুন সংযোজন" বনাম "existing কনটেন্ট বদল" — এই পার্থক্যটা এখন merge-অনুমোদনের ক্ষেত্রে আর প্রাসঙ্গিক না (commit message-এ স্পষ্ট বিবরণ থাকা এখনো জরুরি, যাতে PR history থেকে বোঝা যায় কী বদলেছে)।
+
+- **ব্যতিক্রম — এখনো স্পষ্ট অনুমতি লাগবে:**
+  1. `preflight.sh` ব্যর্থ হলে, বা স্বয়ংক্রিয় চেক কোনো সমস্যা/কমেন্ট দিলে, বা `mergeable` `true`/`clean` না হলে — এসব ক্ষেত্রে সমস্যাটা আগে ঠিক করুন বা ব্যবহারকারীকে জানান।
+  2. rebase-conflict-এ `AGENTS.md`-এর "rebase-conflict নিয়ম" অনুযায়ী যেসব ক্ষেত্রে স্পষ্ট নির্দেশনা লাগে (প্রকৃত বিষয়বস্তু-দ্বন্দ্ব)।
+  3. যেকোনো সন্দেহ/দ্বিধা থাকলে — নিরাপদ দিকে থেকে অনুমতি চাওয়াই সঠিক পথ (`AGENTS.md`-এর "🔒 সর্বোচ্চ-অগ্রাধিকার নীতি" অনুযায়ী)।
+
+**টোকেন-ব্যবহারের নিয়ম অপরিবর্তিত:** ব্যবহারকারীর দেওয়া অস্থায়ী PAT `http.extraheader`-এ শুধু চলতি কমান্ডের জন্য বসান (কখনো `git remote set-url`-এ না, `.git/config`-এ যেন থেকে না যায় তা প্রতিটা push/API-কলের পর `grep -i authorization .git/config` বা সমতুল্য দিয়ে যাচাই করুন)। এবারের PAT-এ শুধু "Contents" না, **"Pull requests" স্কোপও লাগবে** (branch push, PR তৈরি/লিস্ট/মার্জ — চারটাই)।
+
+**১. নিজের branch বানানো ও কাজ করা**
+```bash
+git checkout -b work/2026-08-11-short-topic-slug   # তারিখ + সংক্ষিপ্ত-বিষয়
+# ... এডিট ...
+bash scripts/preflight.sh   # build+verify পাস কিনা লোকালি নিশ্চিত করুন
+bash scripts/safe_add.sh    # git add -A + auto-generated ফাইল (GENERATED_PREFIXES) স্বয়ংক্রিয়ভাবে বাদ — খালি "git add -A" ব্যবহার করবেন না
+git commit -m "বাংলায় স্পষ্ট বার্তা"
+```
+
+**২. branch পুশ করা (main না, নিজের branch) — Basic auth ব্যবহার করুন, Bearer token দিয়ে push কাজ করে না**
+```bash
+B64=$(printf "x-access-token:%s" "$PAT" | base64 -w0)
+git -c http.extraHeader="Authorization: Basic $B64" push origin work/2026-08-11-...
+```
+
+**৩. PR খোলা**
+```bash
+curl -s -X POST \
+  -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls \
+  -d '{"title":"সংক্ষিপ্ত বাংলা শিরোনাম","head":"work/2026-08-11-...","base":"main","body":"কী বদলেছে — বাংলায় ২-৩ লাইন"}'
+```
+রেসপন্সের `"number"` ফিল্ডটাই PR নম্বর — ব্যবহারকারীকে সেটা জানান।
+
+**৪. ব্যবহারকারীকে জানানো (এই ধাপেই preflight-এর মতো টেকনিক্যাল আউটপুট কপি করবেন না)** — "PR #N খোলা হয়েছে — [সহজ ভাষায় কী বদলেছে]। স্বয়ংক্রিয় চেক শেষ হতে ~১ মিনিট লাগবে।" চেক পাস হওয়ার পর (auto-merge শর্ত পূরণ হলে) সরাসরি merge করে শুধু জানিয়ে দিন কী merge হলো — অনুমতি চাইবেন না।
+
+**৫. যেকোনো সেশনে "কী কাজ পেন্ডিং আছে" জিজ্ঞেস করলে — সব খোলা PR দেখানো**
+```bash
+curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=open"
+```
+প্রতিটার আসল পরিবর্তন দেখতে (raw diff পাওয়া যায়, `.diff` ফরম্যাটে):
+```bash
+curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github.v3.diff" \
+  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>"
+```
+স্বয়ংক্রিয় চেক কোনো সমস্যা পেলে সেটা কমেন্ট আকারে থাকে (দেখুন `pr_checks.py`):
+```bash
+curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/issues/<PR_NUMBER>/comments"
+```
+diff নিজে পড়ে ব্যবহারকারীকে সহজ বাংলায় জানান (কোন টপিকে কী যোগ/বদল হলো) — raw diff/JSON কখনো সরাসরি দেখাবেন না।
+
+**৬. auto-merge শর্ত (preflight ক্লিন + PR-চেক ক্লিন + mergeable) পূরণ হলে সরাসরি merge**
+
+merge করার ঠিক আগে `mergeable_state` চেক করুন। `behind` দেখালে (main এগিয়ে গেছে, যেমন এই ফাঁকে অন্য একটা PR merge হয়েছে) — নিজে `git merge origin/main` করে আবার push করার বদলে GitHub-এর নিজস্ব API ব্যবহার করুন (এটাই `sync-to-job-solution.yml`-এ ব্যবহৃত, ব্যাটল-টেস্টেড পদ্ধতি — কম ধাপে, কম ভুলের সুযোগ):
+
+```bash
+curl -s -X PUT \
+  -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/update-branch"
+# কয়েক সেকেন্ড পর আবার mergeable_state চেক করুন, 'clean' না হওয়া পর্যন্ত দরকার হলে পুনরাবৃত্তি করুন
+```
+
+`clean` হলে, এবং `bash scripts/premerge_check.sh` ✓ দেখালে (✗ হলে merge করবেন না — কারণ সদ্য অন্য PR merge হওয়ায় সমন্বয়ে build ভাঙছে) তবেই merge করুন — অথবা দুই ধাপ একসাথে ও দ্রুত করতে `bash scripts/safe_merge.sh <PR_NUMBER>`:
+```bash
+curl -s -X PUT \
+  -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/merge \
+  -d '{"merge_method":"squash"}'
+```
+merge ব্যর্থ হলে (checks এখনো শেষ হয়নি, বা conflict) response-এর `"message"` পড়ে ব্যবহারকারীকে সহজ ভাষায় জানান, নিজে থেকে force করার চেষ্টা করবেন না। **সত্যিকারের git conflict** (`update-branch` ব্যর্থ হয়ে "merge conflict" জাতীয় বার্তা দিলে) — সেক্ষেত্রেই শুধু নিজে `git fetch`+`git merge origin/main` করে conflict resolve করতে হবে, নিচের নিয়ম অনুযায়ী।
+
+**৭. merge সফল হলে branch মুছে ফেলুন (পরিষ্কার রাখতে)**
+```bash
+curl -s -X DELETE -H "Authorization: Bearer $PAT" \
+  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/git/refs/heads/work/2026-08-11-...
+```
+`claim_check.sh --claim` দিয়ে দখল নিয়ে থাকলে এখন ছেড়ে দিন: `bash scripts/claim_check.sh --release <নাম>`।
+
+merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` নিজে থেকেই generated output রিবিল্ড করে **সরাসরি `main`-এ commit করে দেয়** (২০২৬-০৯-২০ থেকে) — আলাদা কোনো rebuild PR খোলে না, তাই merge করার মতো বাড়তি কিছু নেই। ১–২ মিনিট পর `main`-এ `github-actions[bot]`-এর `chore: rebuild generated site output + bump version to …` commit দেখা গেলে বুঝবেন লাইভ সাইট হালনাগাদ হয়েছে; না দেখা গেলে Actions-এ `Update wiki index` run দেখুন।
+
+**যদি PR-এ real git conflict দেখায়** (দুইটা branch একই লাইনে ভিন্ন পরিবর্তন করেছে — GitHub-এর `mergeable: false`): নিজে অনুমান করে কোনটা রাখবেন ঠিক করবেন না, `AGENTS.md`-এর "rebase-conflict নিয়ম"-এর ব্যতিক্রম-নিয়ম মেনে চলুন। Auto-generated ফাইলে conflict কখনো হাতে মার্জ করবেন না — merge-এর পর `main`-এ `build_index.py` এমনিতেই আবার চালাবে।
+
+**৮. পুরনো/জমে-থাকা branch পর্যায়ক্রমিক পরিষ্কার (session_status.sh-এর পাশাপাশি, নিয়মিত করণীয়):** আইটেম ৭-এ প্রতিটা merge-এর পরপরই branch মুছার কথা থাকলেও, ব্যস্ত সময়ে বা একাধিক সমান্তরাল সেশনে এই ধাপ মিস হয়ে যেতে পারে, ফলে merged হয়ে যাওয়া অনেক branch remote-এ জমে থাকতে পারে। তাই মাঝেমধ্যে (ব্যবহারকারী নিজে জিজ্ঞেস করলে, বা `git branch -r`-এ বেশ কিছু অপ্রত্যাশিত branch দেখলে) এই সুইপ চালান:
+```bash
+git fetch --all --prune
+git branch -r | grep -v "HEAD\|main\|auto/rebuild-output"
+```
+প্রতিটা বাকি branch-এর জন্য GitHub API দিয়ে সংশ্লিষ্ট PR-এর `merged_at` সত্যিই পূরণ (null না) কিনা যাচাই করে তবেই মুছুন:
+```bash
+curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=closed&per_page=50"
+```
+- `merged_at` থাকলে (সত্যিই merge হয়েছে) → branch মুছে ফেলুন (আইটেম ৭-এর DELETE কমান্ড)।
+- `merged_at` null থাকলে (PR বন্ধ হয়েছে কিন্তু merge হয়নি) → মুছবেন না, ব্যবহারকারীকে জানিয়ে জিজ্ঞেস করুন কী করতে চান।
+- `auto/rebuild-output` কখনো এই সুইপে মুছবেন না — এটা পুরনো নকশার (২০২৬-০৯-২০-এর আগের) rebuild-PR branch; এখন আর ব্যবহার হয় না, তবে কোথাও থেকে গেলে না ঘেঁটে যেমন আছে তেমন রাখুন।
+- মুছার পর প্রতিবার leak-check চালান: `grep -i "ghp_\|Authorization" .git/config`।
+
+---
+
+## একাধিক সেশন একসাথে কাজ (২০২৬-০৯-২০ থেকে)
+
+লক্ষ্য: কয়েকটা সেশন একই সময়ে কাজ করলেও কোনো ফাইলে সংঘর্ষ না হওয়া। নীতি: **একটা টপিক = একটা সেশন = একটা PR = শুধু নিজের নতুন ফাইল।** একটা টপিক কখনো দুই সেশনে ভাগ হয় না।
+
+1. **শুরুর আগে:** `bash scripts/session_status.sh` (সাইট-build অবস্থা + সবার খোলা branch/PR), তারপর দখল নিন: `CLAIM_OWNER=<আপনার-সেশন-নাম> bash scripts/claim_check.sh --claim <টপিক-slug>`। এটা পারমাণবিক তালা — দুই সেশন একসাথে চেষ্টা করলে ঠিক একজন পায়, অন্যজন ⛔ পেয়ে আলাদা টপিক নেয়। (`--claim` ছাড়া চালালে শুধু দেখা — তালা নয়; দুজন একসাথে দেখলে দুজনেই 'ফাঁকা' দেখবে।) কাজ merge হলে বা ছাড়লে `--release <নাম>`; ৩ দিনের বেশি পুরনো দখল 'সম্ভবত পরিত্যক্ত' চিহ্নিত হয়। প্রথম commit-এর পরেই branch push করুন।
+2. **নিজের নতুন ফাইল, অন্যের ফাইল নয়।** আপনার সেশন-স্কোপ = branch-এর slug (যেমন `work/2026-09-20-tothyo-probaho-p12` → স্কোপ `tothyo-probaho-p12`); `<YYYY-MM>` = ম্যাগাজিন-সংখ্যার মাস:
+
+   | কনটেন্ট | আপনার ফাইল |
+   |---|---|
+   | টপিক | `docs/topics/<slug>.md` |
+   | দৈনিক ঘটনাপ্রবাহ | `docs/ghotonaprobaho/<YYYY-MM>-<স্কোপ>.md` |
+   | টপ নিউজ | `docs/top-news/<YYYY-MM>-<স্কোপ>.md` |
+   | MCQ | `docs/mcq/<YYYY-MM>-<স্কোপ>.md` (স্কোপ অক্ষর দিয়ে শুরু) |
+   | আর্কাইভ (সোর্স) | `archive/<YYYY-MM>-<স্কোপ>.md` |
+
+   বিদ্যমান মাসিক ফাইল (`docs/ghotonaprobaho/2026-04-25_2026-08-27.md`, `docs/top-news/2026-04-25_2026-08-27.md`, `archive/2026-09.md`) আর বদলাবেন না/rename করবেন না — শুধু ভুল-সংশোধন।
+3. **একই তারিখ অন্য সেশনের ফাইলে থাকলেও সমস্যা নেই** — build জোড়া লাগায় (বিভাগের ক্রম সবসময় বাংলাদেশ→আন্তর্জাতিক)। হুবহু একই বুলেট দুই ফাইলে থাকলে একটা রাখে (আর বাদ-পড়াটার টপিক-লিংক রাখাটায় যোগ করে), আলাদা শব্দে লেখা প্রায়-একই ঘটনায় সতর্কতা দেয় (দুটোই থাকে) — তবু লেখার আগে তারিখ grep করে ডুপ্লিকেট-চেক করুন। মাস-চেনা-যায়-না তারিখ-হেডিং (টাইপো) হুবহু একই লেখা হলেই কেবল জোড়া লাগে। MCQ-র স্কোপ অক্ষর দিয়ে শুরু না হলে (যেমন `2026-09-12-15.md`) সেটা মাসের সেটে জোড়া লাগে না — build সতর্কতা দেয়।
+4. **শেয়ার্ড ফাইলে হাত দেবেন না:** generated ফাইল (bot বানায়) আর `VERSION`। শুধু-যোগ-হওয়া `CHANGELOG.md`-এর জন্য `.gitattributes`-এ union merge আছে (লোকাল merge-এ দুই পক্ষের যোগই থাকে; GitHub-এর Merge বোতাম এটা মানে না)।
+5. **বিদ্যমান টপিকে তথ্য merge:** ওই টপিক-ফাইল একজন সেশনই বদলাবে; `claim_check.sh` অন্য কারও দখল দেখালে অপেক্ষা করুন।
+6. **তবুও সংঘর্ষ হলে** (PR `mergeable: false`): `git fetch origin && git merge origin/main`, সংঘর্ষ হাতে মিলিয়ে, `preflight.sh` চালিয়ে আবার push। `pr_checks.py` অন্য খোলা PR-এর সাথে একই ফাইল বদলালে PR ব্যর্থ করে জানায় — **শুধু** `docs/topics`, `docs/ghotonaprobaho`, `docs/top-news`, `docs/mcq`, `docs/proshnottor` ও `archive/`-এ। `CHANGELOG.md`, `BUGFIX.md`, `EDITORIAL_MEMORY.md`, `AGENTS.md`, `PR_GUIDE.md`, `PROJECT.md`, `README.md`, `MCQ_GUIDE.md`-এ ওভারল্যাপ শুধু ℹ️ তথ্য-নোট (ব্যর্থ করে না); `scripts/`, `.github/` ও অন্য ফাইল ধরে না। নতুন ফাইলের নাম নিয়ম না মানলে (যেমন `2026-09-12-15.md`, পুরনো রেঞ্জ-নাম) PR ব্যর্থ হয়।
+7. **build-সতর্কতা কোথায় দেখবেন:** ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম সংক্রান্ত সতর্কতা build-এর stderr-এ যায় (`সতর্কতা:` দিয়ে শুরু)। তিন জায়গায় দেখা যায়: (ক) `preflight.sh`-এর আউটপুটে (⚠️ ব্লক), (খ) PR খোলার পর CI একটা কমেন্টে দেখায় (ব্যর্থ করে না, প্রতি push-এ আপডেট হয়; সতর্কতা না থাকলে কমেন্ট মুছে যায়), (গ) merge-এর পর `update-wiki` run-এর সারাংশে। merge-এর আগেই ঠিক করুন।
+8. **মাসশেষের গোছানো (ঐচ্ছিক):** ফোল্ডারে ছোট ফাইল বেশি জমলে `python3 scripts/consolidate_month.py <ghotonaprobaho|top-news> <YYYY-MM>` (শুধু পরিকল্পনা) ও `--apply` — সাইটের ইনডেক্স হুবহু আগের মতো থাকা যাচাই করে, না মিললে নিজে রোলব্যাক করে। চালানোর আগে `claim_check.sh` দিয়ে নিশ্চিত হোন অন্য কোনো খোলা PR ওই ফাইলগুলো ছোঁয়নি। MCQ ও আর্কাইভ এই টুলের বাইরে।
+9. **সাইট build ব্যর্থ হলে (নীরবে stale হওয়া ঠেকাতে):** দুটো PR আলাদাভাবে পাস করেও একসাথে merge হয়ে build ভাঙতে পারে (একটা টপিক সরাল, আরেকটা তার `[[লিংক]]` দিল); তখন bot কিছু push করে না, কারও কনটেন্ট লাইভ হয় না। ঠেকাতে: (ক) merge-এর ঠিক আগে `bash scripts/premerge_check.sh` (আপনার branch + এই মুহূর্তের main মিলিয়ে চেক); (খ) merge-এর পর `update-wiki` ব্যর্থ হলে GitHub-এ `site-build-failed` লেবেলে একটা Issue নিজে খোলে বা হালনাগাদ হয় (লগের শেষ লাইনসহ), পরের run সফল হলে নিজে বন্ধ হয়; (গ) `session_status.sh` প্রতি সেশনের শুরুতে সর্বশেষ run-এর অবস্থা ও খোলা Issue দেখায় (🚨)। ব্যর্থ দেখলে নতুন কাজের আগে সেটা ঠিক করুন — কারণ সাধারণত সদ্য merge-হওয়া দুই কাজের সমন্বয়। ঠিক করে যেকোনো কমিট push করলেই পরের run চলে; জরুরি হলে Actions → `Update wiki index` → Run workflow।
+10. **পরীক্ষা:** Actions → `Update wiki index` → Run workflow-এ `simulate_failure` টিক দিয়ে চালালে ইচ্ছাকৃত ব্যর্থ হয়ে উপরের সতর্কতা-Issue-র পথ যাচাই করা যায় (কিছু build/commit/push হয় না, সাইট অক্ষত)।
+11. **`main`-এর protection ও তার সীমা:** ২০২৬-০৯-২১ থেকে `main` সত্যিই protected (`required_pull_request_reviews` চালু, `enforce_admins: false`) — সরাসরি push এখন GitHub-ই আটকায় (বাস্তবে যাচাই করা: `enforce_admins: true` অবস্থায় admin-push-ও ব্যর্থ হয়েছিল, `false`-এ সফল)। bot এখন `WORKFLOW_PAT` (repo-admin-এর টোকেন) দিয়ে push করে, admin হওয়ায় bypass পায়। **সীমা:** bypass identity-ভিত্তিক, তাই এই admin-অ্যাকাউন্টের যেকোনো টোকেন (এই কাজে ব্যবহৃত সেশন-টোকেনসহ) সরাসরি push করেও protection এড়াতে পারে — protection মূলত অন্য কম-অনুমতির টোকেন/কলাবরেটরের ভুল-push ঠেকায়, এই admin-অ্যাকাউন্টকে নয়; branch+PR নিয়ম তখনও তাদের জন্য আচরণগত। `enforce_admins` ভুলে `true` হলে bot-এর push আটকাবে (তখন BUG-28-এর ব্যর্থতা-Issue সতর্ক করবে)।

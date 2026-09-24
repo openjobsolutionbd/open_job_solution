@@ -205,15 +205,11 @@
   }
   @media (max-width:640px){
     .header-widgets{
-      position:static;
-      justify-content:center;
-      margin-top:10px;
+      display:none;
     }
-    /* মোবাইলে .header-widgets আর মাসথেডের ডান কোণে fixed/absolute থাকে
-       না (ওপরে static করে দেওয়া হয়েছে), তাই সংঘর্ষ এড়াতে স্ক্রল-পিন
-       করা সার্চ বক্সের top অফসেট এখানে কমানো যেত, কিন্তু মাসথেডের
-       টাইটেল/সাবটাইটেল লেখার সাথে না মেশার জন্য একই 88px রাখা হলো —
-       ছোট স্ক্রিনেও এটা টাইটেলের নিচে, ফাঁকা জায়গায় বসে। */
+    /* মোবাইলে হেডারের ঘড়ি ও স্টাডি-টাইমার সম্পূর্ণ লুকানো থাকে — শুধু
+       কম্পিউটারে (640px-এর বেশি প্রস্থে) দেখা যায়। ছোট স্ক্রিনে হেডার
+       আরও কমপ্যাক্ট রাখতে এবং টাইটেল/সাবটাইটেলের সাথে না মেশার জন্য। */
   }
 
   /* ── Windows 7-স্টাইল ৩-কাঁটা অ্যানালগ ঘড়ি ── */
@@ -479,6 +475,15 @@
     transform-origin:50% 50%;
   }
   .fsi-svg{ width:100%; height:100%; overflow:visible; }
+  @media (max-width:700px){
+    /* মোবাইলে ভাসমান সার্চ বক্সটা (গোল আইকন) ছোট করা হলো — কনটেন্টের
+       ওপর কম জায়গা ঢাকবে। কম্পিউটারে (700px-এর বেশি) আগের আকার অপরিবর্তিত। */
+    .floating-search-pill,
+    .floating-search-icon{
+      width:36px;
+      height:36px;
+    }
+  }
   @keyframes fsiBreathe{
     0%, 100%{ transform:scale(1) rotate(0deg); }
     50%{ transform:scale(1.035) rotate(-1.5deg); }
@@ -752,9 +757,10 @@
     .card h2{ margin-left:66px; font-size:20.16px; }
     .card .tags-row{ margin-left:66px; }
     .seal{ width:48px; height:48px; font-size:10.8px; top:18px; left:16px; }
-    .search-bar-wrap{ justify-content:center; }
-    .search-slot{ flex-basis:100%; }
-    .toolbar{ justify-content:center; flex-basis:100%; }
+    .search-bar-wrap{ flex-wrap:nowrap; gap:8px; }
+    .search-slot{ flex:1 1 0; min-width:0; }
+    .toolbar{ flex:0 0 auto; gap:8px; }
+    .theme-toggle{ padding:6px 10px; font-size:14.4px; }
   }
 
   .drawer{
@@ -1253,6 +1259,21 @@
     color:var(--ink);
     margin-bottom:6px;
   }
+  @media (max-width:700px){
+    /* মোবাইলে স্ক্রিনে একসাথে কম কনটেন্ট দেখা যায়, তাই দৈনিক ঘটনাপ্রবাহের
+       লাইন-স্পেসিং/মার্জিন কমিয়ে বেশি এন্ট্রি একসাথে দেখানো হচ্ছে —
+       কম্পিউটারে (700px-এর বেশি) আগের প্রশস্ত স্পেসিং অপরিবর্তিত থাকে। */
+    .ghotonaprobaho-day{
+      margin-bottom:14px;
+      padding-bottom:12px;
+    }
+    .ghotonaprobaho-date{ margin-bottom:6px; }
+    .ghotonaprobaho-category{ margin:6px 0 4px; }
+    .ghotonaprobaho-items li{
+      line-height:1.4;
+      margin-bottom:4px;
+    }
+  }
 
   /* "টপ নিউজ" ট্যাব — এক পলকে দেখার জন্য একটা সাধারণ তারিখ-ভিত্তিক তালিকা,
      ঘটনাপ্রবাহের মাস-ব্লক/পেজিনেশনের বদলে হালকা ও সংক্ষিপ্ত রাখা হয়েছে। */
@@ -1659,10 +1680,10 @@
 </div>
 
 <div class="mode-tabs-row" id="mode-tabs-row">
-  <button id="browse-toggle-btn" class="mode-tab">📋 সকল টপিক</button>
-  <button id="ghotonaprobaho-toggle-btn" class="mode-tab">🗓️ দৈনিক ঘটনাপ্রবাহ</button>
-  <button id="top-news-toggle-btn" class="mode-tab">⭐ টপ নিউজ</button>
-  <button id="mcq-toggle-btn" class="mode-tab">📝 MCQ</button>
+  <button id="browse-toggle-btn" class="mode-tab">টপিক</button>
+  <button id="ghotonaprobaho-toggle-btn" class="mode-tab">ঘটনাপ্রবাহ</button>
+  <button id="top-news-toggle-btn" class="mode-tab">টপ নিউজ</button>
+  <button id="mcq-toggle-btn" class="mode-tab">MCQ</button>
 </div>
 
 <div class="layout" id="browse-layout">
@@ -1730,7 +1751,22 @@ let MCQ_SETS_PROMISE = null; // concurrent call guard
 // key: `${set.label}||${q.number}` (একই সেটের ভেতর number ইউনিক, একাধিক সেট এলে
 // আলাদা সেট-লেবেল দিয়ে সংঘর্ষ এড়ানো হয়)। value: ক্লিক করা option-এর index।
 let MCQ_ANSWERED = {};
-let RENDER_TOPIC_SEQ = 0; // Bug 1: race condition guard — প্রতিটা renderTopicContent কলে বাড়ে
+// Bug 1 guard ছিল একটামাত্র গ্লোবাল কাউন্টার — কিন্তু renderTopicContent()
+// দুইটা আলাদা container-এর জন্য কল হয় (openTopic()-এর #card ও
+// openTopicInModal()-এর #topic-modal-body, দেখুন নিচের কমেন্ট)। একটামাত্র
+// শেয়ার্ড কাউন্টার দিয়ে এই দুইটা container একে অপরের রেন্ডার ভুলভাবে বাতিল
+// করে ফেলত: main panel-এ একটা টপিক লোড হতে থাকা অবস্থায় ভাসমান সার্চ
+// দিয়ে অন্য টপিক modal-এ খুললে (দুটোই এই একই ফাংশন ব্যবহার করে), main
+// panel-এর fetch পরে সফল হলেও mySeq আর মিলত না, ফলে সেটা চিরকাল
+// "লোড হচ্ছে…" দেখিয়ে আটকে থাকত। এখন প্রতিটা container নিজের সিকোয়েন্স
+// আলাদাভাবে ট্র্যাক করে (WeakMap), তাই দুই container একে অপরকে প্রভাবিত করে না।
+//
+// (এই ফিক্সটা আগে একবার open_job_solution-এর mirror-এ সরাসরি করা হয়েছিল
+// (PR #399), কিন্তু current-affairs subtree-migration (PR #403) সেই
+// mirror পুরোপুরি open_current_affairs-এর raw কন্টেন্ট দিয়ে replace করে
+// দেওয়ায় ফিক্সটা হারিয়ে যায় — এখন সেই একই জায়গায় (canonical source)
+// পুনরায় প্রয়োগ করা হলো।)
+const RENDER_TOPIC_SEQ_BY_CONTAINER = new WeakMap();
 
 // ══════════════════════════════════════════════════════
 // বাংলাদেশ সময় (Asia/Dhaka, UTC+6) — ভিজিটরের ব্রাউজার/ডিভাইস যে
@@ -3058,17 +3094,18 @@ function showPlaceholder(){
 async function renderTopicContent(topic, container, {backBtnId, onRelatedClick} = {}){
   // প্রতিটা কলে seq বাড়ে। fetch শেষে seq মিলিয়ে দেখা হয় — এর মধ্যে নতুন
   // কল এলে পুরনোটার ফলাফল container-এ বসানো হয় না (race condition fix)।
-  const mySeq = ++RENDER_TOPIC_SEQ;
+  const mySeq = (RENDER_TOPIC_SEQ_BY_CONTAINER.get(container) || 0) + 1;
+  RENDER_TOPIC_SEQ_BY_CONTAINER.set(container, mySeq);
   container.innerHTML = '<div class="card-placeholder">লোড হচ্ছে…</div>';
   try{
     const res = await fetch('./' + topic.file);
-    if(mySeq !== RENDER_TOPIC_SEQ) return; // নতুন কল এসে গেছে, এটা বাতিল
+    if(mySeq !== RENDER_TOPIC_SEQ_BY_CONTAINER.get(container)) return; // এই container-এই নতুন কল এসে গেছে, এটা বাতিল
     if(!res.ok){
       container.innerHTML = '<div class="card-placeholder">এই টপিক পেজ লোড করা যাচ্ছে না (ফাইল খুঁজে পাওয়া যায়নি)।</div>';
       return;
     }
     const raw = (await res.text()).replace(/^\uFEFF/, '');
-    if(mySeq !== RENDER_TOPIC_SEQ) return; // Bug-ফিক্স: res.text() পড়ার সময়ও
+    if(mySeq !== RENDER_TOPIC_SEQ_BY_CONTAINER.get(container)) return; // Bug-ফিক্স: res.text() পড়ার সময়ও
                                             // নতুন কল আসতে পারে, তাই এখানেও আবার চেক
     const body = raw.replace(/^---[\s\S]*?---\s*/, '');
     let html = marked.parse(body);

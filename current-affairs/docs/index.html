@@ -7,8 +7,13 @@
 <meta name="description" content="টপিক-ভিত্তিক বাংলা কারেন্ট অ্যাফেয়ার্স নলেজ-বেস, রিয়েল-টাইম সার্চ সহ — প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতির জন্য বিসিএসসহ সব ধরনের চাকরির পরীক্ষায় কাজে লাগবে এমন হালনাগাদ তথ্য।">
 <link rel="canonical" href="/current-affairs/docs/">
 <meta name="theme-color" content="#004d2c">
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="কারেন্ট অ্যাফেয়ার্স">
 <script>
   /* থিম flash এড়াতে head-এই localStorage থেকে পড়া হচ্ছে */
   (function(){
@@ -3343,6 +3348,9 @@ loadIndex().then(() => {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("./sw.js").catch(() => {});
+    // পুরো অ্যাপ এক PWA — manifest-এর start_url ("/") এখান থেকেও
+    // covered থাকতে হবে (দেখুন bcs-mcq/index.html-এর একই কমেন্ট)।
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
   });
 
   let refreshedOnce = false;

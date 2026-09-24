@@ -1,0 +1,102 @@
+name: PR চেক (validate + সংঘর্ষ)
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python সেটআপ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: dependencies ইনস্টল
+        run: pip install pyyaml
+
+      - name: Node সেটআপ
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: npm dependencies ইনস্টল
+        run: npm ci
+
+      - name: generated ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক
+        id: prechecks
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/pr_checks.py
+
+      - name: কনটেন্ট বিল্ড ভ্যালিডেশন
+        id: build
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python3 scripts/build_index.py 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      # build-এর 'সতর্কতা:' (ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম) PR-কমেন্টে দেখানো — ব্লক করে না।
+      # শুধু CI-লগে থাকলে কেউ দেখে না; PR-লেখক সেশন কমেন্ট পড়ে ও merge-এর আগে ঠিক করতে পারে।
+      - name: build সতর্কতা → PR-কমেন্ট (ব্যর্থ করে না)
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/pr_build_warnings.py "$RUNNER_TEMP/build.log"
+
+      - name: সাইট-জুড়ে ভেরিফাই
+        id: verify
+        continue-on-error: true
+        if: steps.build.outcome == 'success'
+        run: python3 scripts/verify_site.py
+
+      - name: sync/cache-scope/domain রিগ্রেশন-গার্ড
+        id: integration_guard
+        continue-on-error: true
+        if: steps.build.outcome == 'success'
+        run: python3 scripts/verify_integration_bugs.py
+
+      # নোট: নিচের দুইটা regression suite আগে থেকেই রিপোতে ছিল
+      # (BUGFIX.md ব্যাচ ২, ২০২৬-০৮-১০) কিন্তু এই workflow-এ কখনো যুক্ত
+      # করা হয়নি — এই PR-এর নিজের CI-রানেই (দেখুন PR বর্ণনা) দুটোই
+      # পরিষ্কার পাস করেছে বলে যাচাই হয়ে গেছে, তাই এখন সরাসরি blocking
+      # শর্তে যুক্ত করা হলো।
+      - name: JS regression suite (jsdom)
+        id: js_tests
+        continue-on-error: true
+        run: npm run test:js
+
+      - name: build_index.py regression suite
+        id: py_build_tests
+        continue-on-error: true
+        run: python3 scripts/test_build_index.py
+
+      - name: pr_checks.py regression suite
+        id: py_pr_tests
+        continue-on-error: true
+        run: python3 scripts/test_pr_checks.py
+
+      - name: চূড়ান্ত ফলাফল
+        if: steps.prechecks.outcome != 'success' || steps.build.outcome != 'success' || steps.verify.outcome != 'success' || steps.integration_guard.outcome != 'success' || steps.js_tests.outcome != 'success' || steps.py_build_tests.outcome != 'success' || steps.py_pr_tests.outcome != 'success'
+        run: |
+          echo "এক বা একাধিক চেক ব্যর্থ হয়েছে — PR-এর কমেন্টে বিস্তারিত দেখুন।"
+          exit 1

@@ -187,6 +187,21 @@
     }
     .back-btn:hover { border-color: var(--primary); color: var(--primary); }
 
+    /* ── হেডারের ভেতরের "ফিরে যান" বাটন (শুধু পরীক্ষার বিস্তারিত পেজে) ── */
+    .header-back { display: none; margin-bottom: 0; flex-shrink: 0; }
+    .app-header.exam-mode .header-inner { position: relative; justify-content: center; flex-wrap: nowrap; }
+    .app-header.exam-mode .header-back {
+      display: inline-flex;
+      position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+    }
+    .app-header.exam-mode .header-actions { width: auto; }
+    /* খুব ছোট স্ক্রিনে ওভারল্যাপ এড়াতে: বাটন বামে, টাইটেল+🌙 বাকি জায়গার মাঝে */
+    @media (max-width: 480px) {
+      .app-header.exam-mode .header-back { position: static; transform: none; }
+      .app-header.exam-mode .title-link { margin-left: auto; }
+      .app-header.exam-mode .header-actions { margin-right: auto; }
+    }
+
     /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */
     .answer-body {
       display: block;
@@ -227,7 +242,8 @@
   <!-- Header -->
   <div class="app-header" id="appHeader">
     <div class="header-inner">
-      <a href="/" style="text-decoration:none">
+      <button class="back-btn header-back" id="backBtn" type="button">← ফিরে যান</button>
+      <a href="/" class="title-link" style="text-decoration:none">
         <span class="app-title">✍️ লিখিত পরীক্ষা</span>
       </a>
       <div class="search-wrap" id="searchWrap">
@@ -274,8 +290,6 @@
 
     <!-- ══ EXAM DETAIL VIEW ══ -->
     <div id="examView">
-
-      <button class="back-btn" id="backBtn">← ফিরে যান</button>
 
       <!-- Exam Info -->
       <div class="exam-header-detail" id="examHeaderDetail"></div>
@@ -451,6 +465,7 @@
     document.getElementById('homeView').style.display = 'none';
     document.getElementById('examView').style.display = 'block';
     document.getElementById('searchWrap').style.display = 'none';
+    document.getElementById('appHeader').classList.add('exam-mode');
 
     // ভাসমান সার্চ (fs-widget) শুধু হোমপেজে থাকবে — exam detail-এ লুকিয়ে ফেলা হলো
     const fsWidget = document.getElementById('fs-widget-root');
@@ -565,6 +580,7 @@
     document.getElementById('examView').style.display = 'none';
     document.getElementById('homeView').style.display = 'block';
     document.getElementById('searchWrap').style.display = '';
+    document.getElementById('appHeader').classList.remove('exam-mode');
     currentExamId = null;
 
     // হোমপেজে ফিরলে ভাসমান সার্চ আবার দেখানো হলো

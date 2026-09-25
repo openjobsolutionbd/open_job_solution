@@ -13,7 +13,7 @@ import os
 import sys
 import urllib.request
 
-REPO = "openjobsolutionbd/open_current_affairs"
+REPO = "openjobsolutionbd/open_job_solution"
 
 
 def summarize(runs, issues):

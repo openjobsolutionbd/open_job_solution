@@ -23,7 +23,7 @@ ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || { echo "✗ git রিপ�
 cd "$ROOT" || exit 2
 : "${GH_TOKEN:?GH_TOKEN সেট করুন (repo write অনুমতি সহ)}"
 
-REPO="openjobsolutionbd/open_current_affairs"
+REPO="openjobsolutionbd/open_job_solution"
 API="https://api.github.com/repos/$REPO"
 
 pr_json=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$API/pulls/$PR")

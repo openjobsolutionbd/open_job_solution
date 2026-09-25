@@ -27,41 +27,50 @@ import re
 import sys
 import urllib.request
 
+# ২০২৬-০৯ subtree migration-এর পর এই প্রজেক্ট আর repo-র রুটে নেই —
+# openjobsolutionbd/open_job_solution-এর ভেতরে current-affairs/ সাবফোল্ডারে থাকে।
+# GitHub PR files API রিপো-রুট-থেকে-আপেক্ষিক পাথ দেয় (যেমন
+# "current-affairs/docs/topics/2026-09-x.md"), তাই সব প্রিফিক্সে এই সাবফোল্ডার
+# জোড়া লাগানো হলো — নইলে এই গার্ডগুলো নিঃশব্দে কিছুই ধরবে না।
+SUBTREE_PREFIX = "current-affairs/"
+
 GENERATED_PREFIXES = [
-    "docs/topics-index.json",
-    "docs/ghotonaprobaho-index.json",
-    "docs/top-news-index.json",
-    "docs/sw.js",
-    "docs/version.json",
-    "docs/sitemap.xml",
-    "docs/robots.txt",
-    "docs/topic/",  # প্রতিটা টপিকের auto-generated SEO পাতা
-    "docs/mcq-index.json",  # docs/mcq/*.md থেকে compile_mcq() যা বানায় — আগে এখানে বাদ পড়েছিল
+    SUBTREE_PREFIX + "docs/topics-index.json",
+    SUBTREE_PREFIX + "docs/ghotonaprobaho-index.json",
+    SUBTREE_PREFIX + "docs/top-news-index.json",
+    SUBTREE_PREFIX + "docs/sw.js",
+    SUBTREE_PREFIX + "docs/version.json",
+    SUBTREE_PREFIX + "docs/sitemap.xml",
+    SUBTREE_PREFIX + "docs/robots.txt",
+    SUBTREE_PREFIX + "docs/topic/",  # প্রতিটা টপিকের auto-generated SEO পাতা
+    SUBTREE_PREFIX + "docs/mcq-index.json",  # docs/mcq/*.md থেকে compile_mcq() যা বানায় — আগে এখানে বাদ পড়েছিল
 ]
 
 SOURCE_PREFIXES = [
-    "docs/topics/",
-    "docs/ghotonaprobaho/",
-    "docs/top-news/",
-    "docs/mcq/",  # আগে এখানে বাদ পড়েছিল — MCQ ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না
-    "docs/proshnottor/",  # সাইটে wire করা না হলেও এটা আসল সোর্স/আর্কাইভ কনটেন্ট, তাই একই কারণে দরকার
-    "archive/",  # আগে বাদ ছিল — আর্কাইভ-ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না (২০২৬-০৯-২১)
+    SUBTREE_PREFIX + "docs/topics/",
+    SUBTREE_PREFIX + "docs/ghotonaprobaho/",
+    SUBTREE_PREFIX + "docs/top-news/",
+    SUBTREE_PREFIX + "docs/mcq/",  # আগে এখানে বাদ পড়েছিল — MCQ ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না
+    SUBTREE_PREFIX + "docs/proshnottor/",  # সাইটে wire করা না হলেও এটা আসল সোর্স/আর্কাইভ কনটেন্ট, তাই একই কারণে দরকার
+    SUBTREE_PREFIX + "archive/",  # আগে বাদ ছিল — আর্কাইভ-ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না (২০২৬-০৯-২১)
 ]
 
-# শেয়ার্ড নথি: ওভারল্যাপ হলে শুধু তথ্য-নোট (ব্যর্থ করে না)।
+# শেয়ার্ড নথি: ওভারল্যাপ হলে শুধু তথ্য-নোট (ব্যর্থ করে না)। এগুলোও subtree-এর ভেতরেই থাকে।
 SHARED_FILES = {
-    "CHANGELOG.md", "BUGFIX.md", "EDITORIAL_MEMORY.md", "AGENTS.md",
-    "PR_GUIDE.md", "PROJECT.md", "README.md", "MCQ_GUIDE.md",
+    SUBTREE_PREFIX + f for f in (
+        "CHANGELOG.md", "BUGFIX.md", "EDITORIAL_MEMORY.md", "AGENTS.md",
+        "PR_GUIDE.md", "PROJECT.md", "README.md", "MCQ_GUIDE.md",
+    )
 }
 
 # নতুন ফাইলের নামের নিয়ম (একাধিক-সেশন ব্যবস্থা): মাস + '-' + ইংরেজি-অক্ষরে-শুরু স্কোপ।
 SESSION_NAME_RE = re.compile(r"^\d{4}-\d{2}-[a-z][a-z0-9-]*\.md$")
 MONTH_OR_SESSION_RE = re.compile(r"^\d{4}-\d{2}(-[a-z][a-z0-9-]*)?\.md$")
 NAME_RULES = [
-    ("docs/ghotonaprobaho/", SESSION_NAME_RE, "`docs/ghotonaprobaho/<YYYY-MM>-<স্কোপ>.md`"),
-    ("docs/top-news/", SESSION_NAME_RE, "`docs/top-news/<YYYY-MM>-<স্কোপ>.md`"),
-    ("docs/mcq/", MONTH_OR_SESSION_RE, "`docs/mcq/<YYYY-MM>-<স্কোপ>.md` (বা পুরো মাস একজনের হলে `<YYYY-MM>.md`)"),
-    ("archive/", MONTH_OR_SESSION_RE, "`archive/<YYYY-MM>-<স্কোপ>.md` (বা `<YYYY-MM>.md`)"),
+    (SUBTREE_PREFIX + "docs/ghotonaprobaho/", SESSION_NAME_RE, "`docs/ghotonaprobaho/<YYYY-MM>-<স্কোপ>.md`"),
+    (SUBTREE_PREFIX + "docs/top-news/", SESSION_NAME_RE, "`docs/top-news/<YYYY-MM>-<স্কোপ>.md`"),
+    (SUBTREE_PREFIX + "docs/mcq/", MONTH_OR_SESSION_RE, "`docs/mcq/<YYYY-MM>-<স্কোপ>.md` (বা পুরো মাস একজনের হলে `<YYYY-MM>.md`)"),
+    (SUBTREE_PREFIX + "archive/", MONTH_OR_SESSION_RE, "`archive/<YYYY-MM>-<স্কোপ>.md` (বা `<YYYY-MM>.md`)"),
 ]
 
 # import-এ ভাঙে না (scripts/test_pr_checks.py এটা import করে); আসল চালানোয় main() চেক করে।
@@ -151,28 +160,22 @@ def main():
     if not (TOKEN and REPO and PR_NUMBER):
         print("GITHUB_TOKEN/REPO/PR_NUMBER env সেট নেই — এটা GitHub Actions-এ চালানোর কথা।", file=sys.stderr)
         sys.exit(2)
-    pr = gh(f"/repos/{REPO}/pulls/{PR_NUMBER}")
-    # পুরনো নকশার অবশিষ্ট: ২০২৬-০৯-২০-এর আগে update-wiki.yml এই branch থেকে rebuild-PR
-    # খুলত (এখন আর খোলে না — সরাসরি main-এ push করে)। কেউ ভবিষ্যতে PR-ফ্লো ফিরিয়ে
-    # আনলে generated-ফাইল ছোঁয়াটাই স্বাভাবিক, তাই এই branch guard থেকে exempt থাকল।
-    is_bot_rebuild = pr["head"]["ref"] == "auto/rebuild-output"
-
     my_status = gh_files_status(PR_NUMBER)
     my_files = [n for n, _ in my_status]
     problems, notes = [], []
 
-    # ১. generated ফাইল guard (bot rebuild PR ছাড়া)
-    if not is_bot_rebuild:
-        touched_generated = find_generated(my_files)
-        if touched_generated:
-            problems.append(
-                "### ⚠️ auto-generated ফাইল সরাসরি বদলানো হয়েছে\n"
-                "এই ফাইলগুলো হাতে edit করা উচিত না — `build_index.py` main-এ merge "
-                "হওয়ার পর নিজে থেকে বানায়:\n"
-                + "\n".join(f"- `{f}`" for f in touched_generated)
-                + "\n\nএগুলো এই PR থেকে বাদ দিন (শুধু `docs/topics/`, "
-                "`docs/ghotonaprobaho/`, `docs/top-news/`-এর মূল ফাইল বদলান)।"
-            )
+    # ১. generated ফাইল guard — এখন main-এর branch protection-এর কারণে কোনো bot
+    # সরাসরি push করে না; PR-লেখককেই build_index.py চালিয়ে generated ফাইলসহ
+    # commit করতে হয়, তাই সেগুলো এখানে বাদ দেওয়ার দরকার নেই — উল্টো generated
+    # আউটপুট বাসি (stale) কিনা সেটা validate ধাপে (rebuild + diff) যাচাই হয়।
+    touched_generated = find_generated(my_files)
+    if touched_generated:
+        problems.append(
+            "### ⚠️ auto-generated ফাইল সরাসরি বদলানো হয়েছে (হাতে না, build দিয়ে বানান)\n"
+            "নিচের ফাইলগুলো হাতে-এডিট না করে PR-এর build/verify ধাপ নিজে থেকে "
+            "`build_index.py` চালিয়ে regenerate করবে — লোকালি চালিয়ে diff commit করুন:\n"
+            + "\n".join(f"- `{f}`" for f in touched_generated)
+        )
 
     # ২. অন্য খোলা PR-এর সাথে ফাইল-সংঘর্ষ (+ শেয়ার্ড নথির তথ্য-নোট)
     if source_files(my_files) or (set(my_files) & SHARED_FILES):

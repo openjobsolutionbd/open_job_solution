@@ -69,7 +69,7 @@ echo "আগে থেকে থাকলে বা merge হয়ে গিয
 echo "নির্দিষ্ট টপিক/ফাইলে হাত দেওয়ার আগে: bash scripts/claim_check.sh --claim <টপিক-slug> (দেখে ফাঁকা হলে পারমাণবিক দখল); শেষে --release।"
 echo ""
 
-REPO="openjobsolutionbd/open_current_affairs"
+REPO="openjobsolutionbd/open_job_solution"
 AUTH_HEADER=()
 if [ -n "${GH_TOKEN:-}" ]; then
   AUTH_HEADER=(-H "Authorization: Bearer ${GH_TOKEN}")

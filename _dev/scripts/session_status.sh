@@ -1,182 +1,58 @@
 #!/usr/bin/env bash
-# যেকোনো নতুন টাস্ক শুরু করার আগে এটা চালান — বিশেষ করে যদি:
-#   - এটা একটা নতুন চ্যাট/সেশন হয়
-#   - এই একই চ্যাটে আগের কোনো মেসেজ edit করে আবার শুরু করা হয়
-#   - অন্য কোনো Claude অ্যাকাউন্ট/চ্যাট থেকে একই রিপোতে কাজ হয়ে থাকতে পারে
+# যেকোনো নতুন টাস্কের আগে চালান:   bash _dev/scripts/session_status.sh [স্কোপ]
+#   স্কোপ (ঐচ্ছিক) = কীওয়ার্ড, যেমন current-affairs / written-exam / 523 — মিললে সেই কাজ
+#   আগে থেকে চলছে কিনা আলাদা করে দেখায়।
 #
-# কারণ: local sandbox-এর অবস্থা কথোপকথনের সাথে সবসময় মেলে না —
-# একমাত্র জিনিস যেটা সবসময় নির্ভরযোগ্য তা হলো GitHub-এর remote অবস্থা।
-# main branch এখন protected (branch+PR+check বাধ্যতামূলক), তাই
-# open_current_affairs-এর মতোই এখানেও একই সতর্কতা দরকার।
-#
-# এটা কিছু ব্লক করে না — শুধু বর্তমান বাস্তব অবস্থা এক নজরে দেখায়,
-# যাতে নতুন কাজ শুরুর আগে ভুল ধারণা নিয়ে এগোনো না হয়।
+# কারণ: local sandbox কথোপকথনের সাথে মেলে না; একমাত্র নির্ভরযোগ্য সোর্স GitHub remote।
+# এই স্ক্রিপ্ট কিছু ব্লক করে না — শুধু বাস্তব অবস্থা ও ঝুঁকি (সংঘর্ষ, পরিত্যক্ত claim,
+# PR-হীন branch) এক নজরে দেখায়। বিশ্লেষণ: _dev/scripts/session_status_report.py
 set -uo pipefail
 cd "$(dirname "$0")/../.."
 
 echo "== রিপোর বর্তমান অবস্থা =="
 
-git fetch origin main --quiet 2>/tmp/session_fetch.log
-if [ $? -ne 0 ]; then
-  echo "✗ git fetch ব্যর্থ — নেটওয়ার্ক সমস্যা হতে পারে:"
-  cat /tmp/session_fetch.log
-  exit 1
+# সব remote branch একবারে আনা (ahead/behind ও সংঘর্ষ-বিশ্লেষণের জন্য), মুছে ফেলা branch ছাঁটাই
+if [ "$(git rev-parse --is-shallow-repository 2>/dev/null)" = "true" ]; then
+  git fetch --unshallow --quiet 2>/dev/null || true
+fi
+if ! git fetch origin '+refs/heads/*:refs/remotes/origin/*' --prune --quiet 2>/tmp/session_fetch.log; then
+  echo "✗ git fetch ব্যর্থ — নেটওয়ার্ক সমস্যা হতে পারে:"; cat /tmp/session_fetch.log; exit 1
 fi
 
 LOCAL=$(git rev-parse HEAD 2>/dev/null)
 REMOTE=$(git rev-parse origin/main 2>/dev/null)
-AHEAD=$(git rev-list --count HEAD..origin/main 2>/dev/null || echo "?")
-BEHIND=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo "?")
+AHEAD=$(git rev-list --count HEAD..origin/main 2>/dev/null || echo "?")    # remote-এ যা আছে, local-এ নেই
+BEHIND=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo "?")   # local-এ যা আছে, push হয়নি
+BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+LW=""
 
-echo "local HEAD:  $LOCAL"
+echo "local HEAD:  $LOCAL  ($BRANCH)"
 echo "remote HEAD: $REMOTE"
-
 if [ "$LOCAL" = "$REMOTE" ]; then
   echo "✓ local ও remote সমান।"
-elif [ "$AHEAD" != "0" ] && [ "$AHEAD" != "?" ]; then
-  echo "⚠️  remote-এ $AHEAD টা কমিট আছে যা local-এ নেই — সম্ভবত অন্য কোনো অ্যাকাউন্ট/চ্যাট থেকে push হয়েছে।"
-  echo "    নতুন কাজ শুরুর আগে 'git rebase origin/main' করে নিন।"
-fi
-if [ "$BEHIND" != "0" ] && [ "$BEHIND" != "?" ]; then
-  echo "ℹ️  local-এ $BEHIND টা কমিট আছে যা এখনো push হয়নি (আগের কোনো session-এর অসম্পূর্ণ কাজ হতে পারে)।"
+else
+  if [ "$AHEAD" != "0" ] && [ "$AHEAD" != "?" ]; then
+    echo "⚠️  remote-এ $AHEAD টা নতুন কমিট আছে যা local-এ নেই — অন্য অ্যাকাউন্ট/চ্যাট থেকে push হয়েছে।"
+    LW+="local main-এর পেছনে $AHEAD কমিট — কাজ শুরুর আগে 'git rebase origin/main'"$'\n'
+  fi
+  if [ "$BEHIND" != "0" ] && [ "$BEHIND" != "?" ]; then
+    echo "ℹ️  local-এ $BEHIND টা কমিট আছে যা এখনো push হয়নি।"
+    LW+="local-এ $BEHIND টা unpushed কমিট — আগের সেশনের অসম্পূর্ণ কাজ হতে পারে"$'\n'
+  fi
 fi
 
 echo ""
 echo "== uncommitted পরিবর্তন (working directory) =="
 CHANGES=$(git status --short)
 if [ -z "$CHANGES" ]; then
-  echo "✓ working directory পরিষ্কার — কোনো stray/অসম্পূর্ণ পরিবর্তন নেই।"
+  echo "✓ working directory পরিষ্কার।"
 else
-  echo "⚠️  নিচের পরিবর্তনগুলো আছে কিন্তু কমিট হয়নি — এগুলো এই সেশনের নতুন কাজ নাকি"
-  echo "    আগের কোনো abandoned branch-এর অবশিষ্টাংশ, তা নিশ্চিত না হয়ে এগোবেন না:"
+  echo "⚠️  নিচের পরিবর্তন কমিট হয়নি — এই সেশনের নতুন কাজ নাকি পুরনো branch-এর অবশিষ্টাংশ, নিশ্চিত না হয়ে এগোবেন না:"
   echo "$CHANGES"
+  LW+="uncommitted পরিবর্তন আছে"$'\n'
 fi
 
 echo ""
-echo "সর্বশেষ ৩টা কমিট:"
-git log --oneline -3
+echo "সর্বশেষ ৩টা কমিট:"; git log --oneline -3
 
-REPO="openjobsolutionbd/open_job_solution"
-AUTH_HEADER=()
-if [ -n "${GH_TOKEN:-}" ]; then
-  AUTH_HEADER=(-H "Authorization: Bearer ${GH_TOKEN}")
-else
-  echo ""
-  echo "⚠️  GH_TOKEN environment variable সেট নেই — নিচের GitHub API কলগুলো"
-  echo "    unauthenticated হবে এবং rate-limit-এ আটকে ব্যর্থ হতে পারে।"
-  echo "    চালানোর আগে করুন: export GH_TOKEN=\"<আপনার PAT>\""
-fi
-
-echo ""
-echo "== 🟢 লাইভ অ্যাক্টিভিটি ফিড (pin করা Issue, প্রতি push-এ স্বয়ংক্রিয় আপডেট) =="
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/issues?state=open&labels=activity-feed&per_page=1" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    if not data or not isinstance(data, list):
-        print('  ✗ ফিড ইস্যু পাওয়া যায়নি।')
-    else:
-        body = data[0].get('body') or ''
-        start = body.find('<!-- FEED-START -->')
-        end = body.find('<!-- FEED-END -->')
-        if start == -1 or end == -1:
-            print('  ✗ ফিড ফরম্যাট অপ্রত্যাশিত।')
-        else:
-            entries = body[start + len('<!-- FEED-START -->'):end].strip()
-            print(f\"  (সম্পূর্ণ ইতিহাস: https://github.com/${REPO}/issues/{data[0]['number']})\")
-            print('')
-            print(entries if entries else '  (এখনো কোনো এন্ট্রি নেই)')
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
-
-echo ""
-echo "== অন্য সেশন/অ্যাকাউন্ট ইতিমধ্যে কোন কাজ করে রেখেছে কিনা (GitHub-এর লাইভ অবস্থা) =="
-echo "কোনো নতুন কাজ শুরুর আগে নিচের তালিকায় মিলিয়ে দেখুন — একই বিষয়ে branch/PR"
-echo "আগে থেকে থাকলে বা merge হয়ে গিয়ে থাকলে পুনরাবৃত্তি করবেন না।"
-echo ""
-
-echo "--- খোলা branch (main বাদে) ---"
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/branches?per_page=100" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    branches = [b['name'] for b in data if b.get('name') != 'main']
-    if not branches:
-        print('  (main ছাড়া কোনো branch নেই)')
-    for b in branches:
-        print(f'  - {b}')
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
-
-echo ""
-echo "--- খোলা Pull Request ---"
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/pulls?state=open&per_page=30" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    if not data:
-        print('  (কোনো খোলা PR নেই)')
-    for pr in data:
-        print(f\"  #{pr['number']} [{pr['head']['ref']}] {pr['title']}  (খোলা হয়েছে: {pr['created_at'][:10]})\")
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
-
-echo ""
-echo "--- 🔒 সক্রিয় কাজের ক্লেইম (label: claim) ---"
-echo "একই রেঞ্জ/অধ্যায়ে অন্য Claude সেশন ইতিমধ্যে কাজ করছে কিনা এখানে দেখুন।"
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/issues?state=open&labels=claim&per_page=30" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    if not data:
-        print('  (কোনো সক্রিয় claim নেই)')
-    for i in data:
-        print(f\"  #{i['number']} {i['title']}  (খোলা হয়েছে: {i['created_at'][:10]})\")
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
-
-echo ""
-echo "--- সর্বশেষ ১০টা merge হওয়া PR (সম্পন্ন কাজ) ---"
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/pulls?state=closed&sort=updated&direction=desc&per_page=15" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    merged = [pr for pr in data if pr.get('merged_at')][:10]
-    if not merged:
-        print('  (তথ্য নেই)')
-    for pr in merged:
-        print(f\"  #{pr['number']} {pr['title']}  (merge: {pr['merged_at'][:10]})\")
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
-
-echo ""
-echo "--- সাম্প্রতিক বাতিল/abandoned PR (merge হয়নি) ---"
-curl -s "${AUTH_HEADER[@]}" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/${REPO}/pulls?state=closed&sort=updated&direction=desc&per_page=15" \
-  | python3 -c "
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    closed_unmerged = [pr for pr in data if not pr.get('merged_at')][:5]
-    if not closed_unmerged:
-        print('  (কোনো abandoned PR নেই)')
-    for pr in closed_unmerged:
-        print(f\"  #{pr['number']} [{pr['head']['ref']}] {pr['title']}  (বন্ধ: {pr['closed_at'][:10]})\")
-except Exception as e:
-    print(f'  ✗ পড়া যায়নি: {e}')
-"
+SS_LOCAL_WARNINGS="$LW" python3 "$(dirname "$0")/session_status_report.py" "$@"

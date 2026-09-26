@@ -1,0 +1,223 @@
+name: Update wiki index (current-affairs)
+
+# current-affairs/-এ push হলে generated output (topics-index.json, per-topic HTML,
+# sitemap, sw.js, version.json ইত্যাদি) নতুন করে বানিয়ে main-এ merge করে।
+# Cloudflare Pages main-এর প্রতিটা push deploy করে, তাই এই commit-ই লাইভ সাইটে
+# নতুন তথ্য পৌঁছে দেয়।
+#
+# ২০২৬-০৯: open_current_affairs → open_job_solution মনোরেপো-migration-এর পর
+# এই workflow-টা (আগে current-affairs/.github/workflows/-এ, যেখানে GitHub এটা
+# আদৌ পড়ে না — নেস্টেড .github/ নিষ্ক্রিয়) রুটে ফিরিয়ে আনা হলো এবং দুটো
+# জিনিস আপডেট করা হলো:
+#   ১. current-affairs/-এর ভেতরের সব পাথ/কমান্ড এখন working-directory হিসেবে
+#      current-affairs ব্যবহার করে (মনোরেপোতে toplevel আর current-affairs না)।
+#   ২. main এখন branch-protected (auto-bump-version.yml-এ ২০২৬-০৯-এ প্রথম ধরা
+#      পড়েছিল) — তাই সরাসরি push আর কাজ করে না। এখন branch → PR (OJS_BOT_TOKEN
+#      দিয়ে, যাতে 'validate' check ঠিকভাবে ট্রিগার হয়) → checks পাস → merge,
+#      ঠিক auto-bump-version.yml-এর প্যাটার্ন অনুসরণ করে। OJS_BOT_TOKEN সরাসরি
+#      checkout-এ ব্যবহার করা হয় (persist-credentials ডিফল্ট true রেখে) — তাই
+#      পুরনো নকশার BUG-26 (push-URL-এ PAT বসানো, যা GITHUB_TOKEN-এর persisted
+#      credential-কে ছাপিয়ে যেতে পারত না) এখানে ঘটার সুযোগই নেই।
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "current-affairs/**"
+  # হাতে চালানো (Actions ট্যাব → Run workflow): জরুরি rebuild, বা ব্যর্থতা-সতর্কতার পথ পরীক্ষা।
+  workflow_dispatch:
+    inputs:
+      simulate_failure:
+        description: "পরীক্ষা: ইচ্ছে করে ব্যর্থ হয়ে সতর্কতা-Issue-র পথ যাচাই (সাইটে কিছু যায় না)"
+        type: boolean
+        default: false
+
+defaults:
+  run:
+    working-directory: current-affairs
+
+permissions:
+  contents: read   # push/PR/merge OJS_BOT_TOKEN দিয়ে হয়, GITHUB_TOKEN দিয়ে না
+  issues: write    # ব্যর্থ হলে সতর্কতা-Issue খুলতে/বন্ধ করতে (নিচের শেষ ধাপগুলো)
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, 'chore: bump version to') && !contains(github.event.head_commit.message, 'chore: rebuild generated site output')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.OJS_BOT_TOKEN }}
+
+      # শুধু পরীক্ষার জন্য (workflow_dispatch + simulate_failure): build-এর আগেই ব্যর্থ হয়ে
+      # নিচের সতর্কতা-Issue-র পথ যাচাই করে। কিছু build/commit/push হয় না — সাইট অক্ষত।
+      - name: (পরীক্ষা) ইচ্ছাকৃত ব্যর্থতা
+        if: github.event_name == 'workflow_dispatch' && inputs.simulate_failure
+        run: |
+          echo "সতর্কতা-পথ পরীক্ষার জন্য ইচ্ছাকৃত ব্যর্থতা (simulate_failure=true) — আসল build ব্যর্থ নয়।" | tee "$RUNNER_TEMP/build.log"
+          exit 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Build index
+        run: |
+          set -o pipefail
+          python3 scripts/build_index.py 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      - name: Verify site consistency
+        run: |
+          set -o pipefail
+          python3 scripts/verify_site.py 2>&1 | tee "$RUNNER_TEMP/verify.log"
+
+      - name: পরিবর্তন আছে কিনা যাচাই
+        id: changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/topics-index.json docs/mcq-index.json docs/sw.js docs/version.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/topic/ docs/sitemap.xml docs/robots.txt
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # সত্যিকারের কনটেন্ট পরিবর্তন হলেই (changed==true) কেবল ভার্সন বাড়ানো হয় —
+      # নাহলে প্রতিটা push-এই ভার্সন বাড়ত।
+      - name: ভার্সন বাড়ানো (শুধু প্রকৃত কনটেন্ট পরিবর্তন থাকলে)
+        if: steps.changes.outputs.changed == 'true'
+        id: bump
+        run: |
+          CURRENT=$(cat VERSION)
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+          NEW_VERSION="$MAJOR.$MINOR.$((PATCH + 1))"
+          echo "$NEW_VERSION" > VERSION
+          echo "ভার্সন বাড়ানো হলো: $CURRENT → $NEW_VERSION"
+          echo "new_version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: নতুন ভার্সন দিয়ে আবার বিল্ড (sw.js/version.json স্ট্যাম্প করতে)
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          set -o pipefail
+          python3 scripts/build_index.py 2>&1 | tee -a "$RUNNER_TEMP/build.log"
+
+      - name: বাম্প হওয়া ফাইল আবার stage করা
+        if: steps.changes.outputs.changed == 'true'
+        run: git add VERSION docs/topics-index.json docs/mcq-index.json docs/sw.js docs/version.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/topic/ docs/sitemap.xml docs/robots.txt
+
+      # generated output branch → PR → merge (main protected, সরাসরি push অসম্ভব)।
+      # auto-bump-version.yml-এর প্যাটার্ন অনুসরণ করে — polling সহ update-branch/merge।
+      - name: branch + PR দিয়ে main-এ merge করা
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.OJS_BOT_TOKEN }}
+          NEW_VERSION: ${{ steps.bump.outputs.new_version }}
+        run: |
+          set -e
+          COMMIT_MSG="chore: rebuild generated site output + bump version to $NEW_VERSION"
+          git commit -m "$COMMIT_MSG"
+
+          BRANCH="bot/update-wiki-index"
+          git push origin "HEAD:refs/heads/${BRANCH}" --force
+
+          API="https://api.github.com/repos/openjobsolutionbd/open_job_solution"
+
+          EXISTING_PR=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/pulls?head=openjobsolutionbd:${BRANCH}&state=open" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print(d[0]['number'] if d else '')")
+
+          if [ -n "$EXISTING_PR" ]; then
+            PR_NUMBER="$EXISTING_PR"
+            echo "বিদ্যমান PR পুনর্ব্যবহার করা হচ্ছে: #$PR_NUMBER"
+          else
+            PR_NUMBER=$(curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "$API/pulls" \
+              -d "{\"title\":\"${COMMIT_MSG}\",\"head\":\"${BRANCH}\",\"base\":\"main\",\"body\":\"update-wiki.yml দ্বারা স্বয়ংক্রিয়ভাবে তৈরি — শুধু generated output, কোনো কনটেন্ট বদল নেই।\"}" \
+              | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['number'])")
+            echo "নতুন PR খোলা হলো: #$PR_NUMBER"
+          fi
+
+          MERGEABLE_STATE=""
+          for i in $(seq 1 20); do
+            sleep 15
+            MERGEABLE_STATE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "$API/pulls/$PR_NUMBER" | python3 -c "import json,sys; print(json.load(sys.stdin).get('mergeable_state'))")
+            echo "চেষ্টা $i — mergeable_state: $MERGEABLE_STATE"
+            if [ "$MERGEABLE_STATE" = "clean" ]; then
+              break
+            fi
+            if [ "$MERGEABLE_STATE" = "behind" ]; then
+              curl -s -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                "$API/pulls/$PR_NUMBER/update-branch" > /dev/null
+            fi
+          done
+
+          if [ "$MERGEABLE_STATE" != "clean" ]; then
+            echo "::error::PR #$PR_NUMBER ৫ মিনিটেও merge-উপযোগী হয়নি — শেষ অবস্থা: $MERGEABLE_STATE। ম্যানুয়ালি চেক করা দরকার: https://github.com/openjobsolutionbd/open_job_solution/pull/$PR_NUMBER"
+            exit 1
+          fi
+
+          MERGE_RESULT=$(curl -s -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "$API/pulls/$PR_NUMBER/merge" \
+            -d "{\"merge_method\":\"squash\",\"commit_title\":\"${COMMIT_MSG}\"}")
+          MERGED=$(echo "$MERGE_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin).get('merged', False))")
+          if [ "$MERGED" != "True" ]; then
+            echo "::error::PR #$PR_NUMBER merge ব্যর্থ হয়েছে — ম্যানুয়ালি চেক করা দরকার: https://github.com/openjobsolutionbd/open_job_solution/pull/$PR_NUMBER"
+            exit 1
+          fi
+          echo "✅ PR #$PR_NUMBER সফলভাবে merge হয়েছে (ভার্সন $NEW_VERSION)।"
+
+      # ---- ব্যর্থতা/সতর্কতা: সাইট নীরবে stale থাকতে দেওয়া যাবে না ----
+      - name: build সতর্কতার সারাংশ (Actions run-পাতায়)
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/build.log" ] && grep -q 'সতর্কতা' "$RUNNER_TEMP/build.log"; then
+            { echo '### ⚠️ build সতর্কতা'; echo; echo '```'; grep 'সতর্কতা' "$RUNNER_TEMP/build.log"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: ব্যর্থ হলে Issue খুলুন/হালনাগাদ করুন (নইলে সাইট নীরবে stale থাকে)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SHA: ${{ github.sha }}
+        run: |
+          gh label create site-build-failed -R "$GITHUB_REPOSITORY" --color B60205 --description "update-wiki build/verify/push ব্যর্থ — সাইট stale" >/dev/null 2>&1 || true
+          {
+            echo "**কমিট:** \`${SHA:0:7}\` — এর পর \`update-wiki\` ব্যর্থ, তাই এরপরের current-affairs কনটেন্ট **লাইভ সাইটে যাচ্ছে না**।"
+            echo
+            echo "**run:** $RUN_URL"
+            echo
+            echo "**লগের শেষ লাইনগুলো:**"
+            echo '```'
+            for f in verify.log build.log; do
+              if [ -f "$RUNNER_TEMP/$f" ]; then tail -n 12 "$RUNNER_TEMP/$f"; fi
+            done
+            echo '```'
+            echo
+            echo "সম্ভাব্য কারণ: (১) দুটো আলাদা PR আলাদাভাবে পাস করেও একসাথে merge হয়ে build ভাঙছে; (২) OJS_BOT_TOKEN মেয়াদোত্তীর্ণ/অকার্যকর হয়ে গেছে; (৩) main-এর branch protection/ruleset বদলেছে। ঠিক করে যেকোনো কমিট push করুন — পরের run সফল হলে এই Issue নিজে বন্ধ হবে।"
+          } > "$RUNNER_TEMP/issue.md"
+          NUM=$(gh issue list -R "$GITHUB_REPOSITORY" --label site-build-failed --state open --json number --jq '.[0].number // empty' || true)
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" -R "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/issue.md"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --label site-build-failed --title "🚨 current-affairs সাইট build ব্যর্থ — নতুন কনটেন্ট লাইভ হচ্ছে না" --body-file "$RUNNER_TEMP/issue.md"
+          fi
+
+      - name: আগের ব্যর্থতার Issue বন্ধ (এই run সফল)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          NUMS=$(gh issue list -R "$GITHUB_REPOSITORY" --label site-build-failed --state open --json number --jq '.[].number' || true)
+          for n in $NUMS; do
+            gh issue close "$n" -R "$GITHUB_REPOSITORY" --comment "✓ \`update-wiki\` আবার সফল ($RUN_URL) — সাইট হালনাগাদ হচ্ছে।"
+          done

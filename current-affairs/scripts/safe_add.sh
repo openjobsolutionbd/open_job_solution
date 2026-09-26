@@ -17,6 +17,12 @@
 set -e
 cd "$(git rev-parse --show-toplevel)"
 
+# open_current_affairs → open_job_solution মনোরেপো-migration-এর (২০২৬-০৯) পর
+# git toplevel এখন open_job_solution রিপোর মূল, current-affairs তার একটা
+# সাব-ডিরেক্টরি মাত্র। তাই scripts/pr_checks.py-এর পাথ ও staged ফাইলের
+# prefix-matching দুটোই এই সাব-ডিরেক্টরি হিসাব করে করতে হবে।
+SUBDIR="current-affairs"
+
 # নিরাপত্তা-জাল: এই স্ক্রিপ্টের যেকোনো ধাপ ব্যর্থ হলে (যেমন pr_checks.py-এর
 # ফরম্যাট বদলে গিয়ে regex-parsing ভেঙে গেলে) — git add -A দিয়ে ততক্ষণে
 # staged হয়ে যাওয়া সব পরিবর্তন (generated ফাইল-সহ) স্বয়ংক্রিয়ভাবে unstage
@@ -27,11 +33,17 @@ git add -A
 
 EXCLUDED=$(python3 -c "
 import re, ast, subprocess
-src = open('scripts/pr_checks.py', encoding='utf-8').read()
+subdir = '$SUBDIR'
+src = open(subdir + '/scripts/pr_checks.py', encoding='utf-8').read()
 m = re.search(r'GENERATED_PREFIXES\s*=\s*(\[[^\]]*\])', src, re.S)
 GENERATED_PREFIXES = ast.literal_eval(re.sub(r'#.*', '', m.group(1)))
+# git diff --cached সবসময় আসল রিপো-toplevel-এর সাপেক্ষে পাথ দেয় (যেমন
+# 'current-affairs/docs/topics-index.json'), কিন্তু GENERATED_PREFIXES লেখা
+# আছে current-affairs-এর নিজের সাপেক্ষে ('docs/...') — তাই মেলানোর আগে
+# subdir-প্রিফিক্স বাদ দিতে হবে।
 staged = subprocess.run(['git','diff','--cached','--no-renames','--name-only'], capture_output=True, text=True).stdout.splitlines()
-excluded = [f for f in staged if any(f.startswith(p) for p in GENERATED_PREFIXES)]
+prefix = subdir + '/'
+excluded = [f for f in staged if f.startswith(prefix) and any(f[len(prefix):].startswith(p) for p in GENERATED_PREFIXES)]
 print('\n'.join(excluded))
 ")
 

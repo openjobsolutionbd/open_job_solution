@@ -168,10 +168,12 @@ def main():
         print("GITHUB_TOKEN/REPO/PR_NUMBER env সেট নেই — এটা GitHub Actions-এ চালানোর কথা।", file=sys.stderr)
         sys.exit(2)
     pr = gh(f"/repos/{REPO}/pulls/{PR_NUMBER}")
-    # পুরনো নকশার অবশিষ্ট: ২০২৬-০৯-২০-এর আগে update-wiki.yml এই branch থেকে rebuild-PR
-    # খুলত (এখন আর খোলে না — সরাসরি main-এ push করে)। কেউ ভবিষ্যতে PR-ফ্লো ফিরিয়ে
-    # আনলে generated-ফাইল ছোঁয়াটাই স্বাভাবিক, তাই এই branch guard থেকে exempt থাকল।
-    is_bot_rebuild = pr["head"]["ref"] == "auto/rebuild-output"
+    # update-wiki.yml (root, ২০২৬-০৯ migration-পরবর্তী) main-এ push হলে
+    # branch "bot/update-wiki-index"-এ generated ফাইল commit করে PR খোলে,
+    # তারপর auto-merge করে — এটাই একমাত্র বৈধ কারণ generated ফাইল সরাসরি
+    # এডিট করে PR-এ থাকার। এই branch guard থেকে তাই exempt রাখা হলো; নইলে
+    # বটের নিজের PR নিজের-ই তৈরি করা generated ফাইলের জন্য ব্যর্থ হয়।
+    is_bot_rebuild = pr["head"]["ref"] == "bot/update-wiki-index"
 
     my_status = gh_files_status(PR_NUMBER)
     my_files = [n for n, _ in my_status]

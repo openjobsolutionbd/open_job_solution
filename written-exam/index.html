@@ -429,12 +429,6 @@
       card.innerHTML = `
         <div class="exam-ministry">${escText(ex.ministry)}</div>
         <div class="exam-post">${escText(ex.post)}</div>
-        <div class="exam-meta-row">
-          <span class="exam-tag date">📅 ${formatDate(ex.date)}</span>
-          <span class="exam-tag">⏱ ${ex.duration || '—'}</span>
-          <span class="exam-tag">📝 ${ex.totalMarks ? toBn(ex.totalMarks) : '—'} নম্বর</span>
-          <span class="exam-tag">${ex.totalQuestions ? toBn(ex.totalQuestions) : '—'}টি প্রশ্ন</span>
-        </div>
       `;
       card.addEventListener('click', () => openExam(ex.id));
       grid.appendChild(card);

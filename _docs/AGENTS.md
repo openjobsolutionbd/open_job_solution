@@ -107,16 +107,19 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 
 | পাথ | কী |
 |---|---|
-| `_dev/scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, সব branch/PR-এর লাইভ তালিকা, এবং খোলা `claim` issue-এর তালিকা দেখায় |
-| `_dev/scripts/current_affairs_health_check.py` | current-affairs সিঙ্ক করা কনটেন্টের দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা |
-| `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
+| `_dev/scripts/session_status.sh [স্কোপ]` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, branch-ভিত্তিক সংঘর্ষ-ঝুঁকি (API ছাড়াই), PR/`claim`/ফিড (API থাকলে), স্কোপ-মিল ও শেষে 🚦 সারসংক্ষেপ। বিশ্লেষণ: `session_status_report.py` |
+| `_dev/scripts/current_affairs_health_check.py` | current-affairs-এর `docs/` (build output)-এর দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) |
+| `_dev/scripts/doc_staleness_check.py` | `current-affairs/AGENTS.md` ও `EDITORIAL_MEMORY.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/undocumented script/আকার-সীমা সাপ্তাহিক স্বয়ংক্রিয় চেক — prose নিজে মোছে না, শুধু Issue-এ জানায় |
+| `current-affairs/docs/` | build output (`build_index.py` থেকে জেনারেট)। ২০২৬-০৯ থেকে `open_current_affairs` স্ট্যান্ডঅ্যালোন রিপো subtree merge দিয়ে এই monorepo-তে চলে এসেছে ও সরাসরি এখানেই এডিট হয় — পুরনো `sync-to-job-solution.yml` workflow বাতিল, আলাদা সোর্স-রিপোতে ফিক্স করার দরকার নেই |
 | `_staging/books-staging/` | "বই সমূহ" ফিচারের পরিকল্পনা/ডিজাইন-নোট (README + BOOKS_NOTES.md) |
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check। ডুপ্লিকেট id, ডুপ্লিকেট প্রশ্ন+option, ডুপ্লিকেট ব্যাখ্যা (নিজের ডেটাবেসের মধ্যে) — এসব ধরে, কিন্তু **অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা ধরতে পারে না** (নিচের সেকশন দেখুন) |
 | `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — চারটা স্ট্রাকচারাল চেক করে: ডুপ্লিকেট মাস্টার-ডক ফাইল, অনুল্লেখিত root ফোল্ডার, অনুল্লেখিত `.github/workflows/*.yml`, অনুল্লেখিত `_dev/` + `.github/workflows/scripts/`-এর script। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift (নাম উল্লেখ আছে কি নেই) ধরে, prose-এর সঠিকতা/আচরণ-পরিবর্তন না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
 | `_dev/check-spelling.js` | বাংলা spellcheck bcs-mcq/data/*.js-এর জন্য (advisory, ব্যর্থ হলেও PR আটকায় না) |
 | `_dev/update_version.py` | `auto-bump-version.yml`-এর হেল্পার — প্রতি merge-এর পর ভার্সন নম্বর বাড়ায় |
 | `written-exam/check-spelling.js` | বাংলা spellcheck written-exam/data/exams/*.json-এর জন্য (advisory, `_dev/check-spelling.js`-এর মতোই কিন্তু আলাদা মডিউলের জন্য) |
-| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
+| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite। ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`) পড়ে থাকায় কখনো চলেনি — এই migration-বাগ ঠিক করে রুটে ফেরানো হয়েছে |
+| `.github/workflows/update-wiki.yml` | current-affairs-এ push হলে generated output (topics-index.json, sw.js, version.json ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্ন অনুসরণ করে যেহেতু main branch-protected)→merge করে। এটাও একই migration-বাগে ভুল পাথে পড়ে ছিল, রুটে ফেরানো হয়েছে |
+| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
 
 ## 📝 নতুন MCQ/ব্যাখ্যা যোগ করার সময় — duplicate-content ঝুঁকি

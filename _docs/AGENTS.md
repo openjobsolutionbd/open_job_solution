@@ -107,7 +107,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 
 | পাথ | কী |
 |---|---|
-| `_dev/scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, সব branch/PR-এর লাইভ তালিকা, এবং খোলা `claim` issue-এর তালিকা দেখায় |
+| `_dev/scripts/session_status.sh [স্কোপ]` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, branch-ভিত্তিক সংঘর্ষ-ঝুঁকি (API ছাড়াই), PR/`claim`/ফিড (API থাকলে), স্কোপ-মিল ও শেষে 🚦 সারসংক্ষেপ। বিশ্লেষণ: `session_status_report.py` |
 | `_dev/scripts/current_affairs_health_check.py` | current-affairs সিঙ্ক করা কনটেন্টের দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা |
 | `current-affairs/docs/` | **generated/synced** — `open_current_affairs` রিপো থেকে `sync-to-job-solution.yml` workflow-এর মাধ্যমে আসে। **এখানে সরাসরি এডিট করবেন না** — মূল ফিক্স `open_current_affairs`-এর সোর্স ফাইলে করতে হবে, তারপর sync workflow চালাতে হবে |
 | `_staging/books-staging/` | "বই সমূহ" ফিচারের পরিকল্পনা/ডিজাইন-নোট (README + BOOKS_NOTES.md) |

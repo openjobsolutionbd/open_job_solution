@@ -339,6 +339,23 @@
     gap:14px;
     flex-wrap:wrap;
   }
+  .home-back-btn{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    padding:8px 14px;
+    border:1.5px solid var(--heading);
+    border-radius:4px;
+    background:var(--paper-raised);
+    color:var(--heading);
+    font-family:'Kalpurush',sans-serif;
+    font-size:15px;
+    text-decoration:none;
+    white-space:nowrap;
+    box-shadow:var(--shadow);
+  }
+  .home-back-btn:hover{background:var(--accent-light);}
   .search-slot{
     position:relative;
     background:var(--paper-raised);
@@ -763,6 +780,8 @@
     .card .tags-row{ margin-left:66px; }
     .seal{ width:48px; height:48px; font-size:10.8px; top:18px; left:16px; }
     .search-bar-wrap{ flex-wrap:nowrap; gap:8px; }
+    .home-back-btn{ padding:6px 10px; }
+    .home-back-label{ display:none; }
     .search-slot{ flex:1 1 0; min-width:0; }
     .toolbar{ flex:0 0 auto; gap:8px; }
     .theme-toggle{ padding:6px 10px; font-size:14.4px; }
@@ -1602,8 +1621,6 @@
 </style>
 </head>
 <body>
-<a href="/" style="display:inline-block;margin:10px 16px 0;font-size:14px;text-decoration:none;color:inherit;opacity:0.75;">⬅️ হোমে ফিরুন</a>
-
 <div class="masthead">
   <h1>কারেন্ট অ্যাফেয়ার্স রেজিস্টার</h1>
   <div class="sub">টপিক অনুযায়ী সাজানো, প্রতি মাসে হালনাগাদ</div>
@@ -1644,6 +1661,7 @@
 </div>
 
 <div class="search-bar-wrap">
+  <a href="/" class="home-back-btn" aria-label="হোমে ফিরুন">⬅️ <span class="home-back-label">হোমে ফিরুন</span></a>
   <div class="search-slot">
     <input id="search" type="text" placeholder="যে বিষয়ে জানতে চাও লেখো..." autocomplete="off">
   </div>

@@ -98,8 +98,8 @@ const EXAM_ARCHIVE = [
     ministry: "জেলা প্রশাসকের কার্যালয়, ভোলা",
     post: "অফিস সহায়ক/নিরাপত্তা প্রহরী",
     date: "2025-07-05",
-    duration: "৪০ মিনিট",
-    totalMarks: 40,
+    duration: "৮০ মিনিট",
+    totalMarks: 80,
     totalQuestions: 20,
   },
   {
@@ -724,7 +724,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-22",
     duration: "৯০ মিনিট",
     totalMarks: 70,
-    totalQuestions: 20,
+    totalQuestions: 30,
   },
   {
     id: "job-2025-agri-info-office-asst",
@@ -741,7 +741,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 90,
+    totalMarks: 94,
     totalQuestions: 15,
   },
   {
@@ -750,7 +750,7 @@ const EXAM_ARCHIVE = [
     post: "সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
     date: "2025-07-25",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
+    totalMarks: 71,
     totalQuestions: 12,
   },
   {
@@ -903,6 +903,30 @@ const EXAM_ARCHIVE = [
     post: "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
     date: "2026-09-11",
     totalQuestions: 13,
+  },
+  {
+    id: "uttara-bank-plc-2026-ao",
+    ministry: "উত্তরা ব্যাংক পিএলসি",
+    post: "সহকারী কর্মকর্তা (জেনারেল) — Assistant Officer (General)",
+    date: "2026-07-24",
+    totalMarks: 74,
+    totalQuestions: 74,
+  },
+  {
+    id: "health-ministry-2026-sub-engineer-civil",
+    ministry: "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়",
+    post: "সহকারী প্রকৌশলী (সিভিল)",
+    date: "2026-08-04",
+    totalMarks: 60,
+    totalQuestions: 60,
+  },
+  {
+    id: "bd-navy-2026-storeman",
+    ministry: "বাংলাদেশ নৌবাহিনী",
+    post: "স্টোরম্যান",
+    date: "2026-08-07",
+    totalMarks: 80,
+    totalQuestions: 80,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

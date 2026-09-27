@@ -48,6 +48,19 @@ SOURCE_PREFIXES = [
     "archive/",  # আগে বাদ ছিল — আর্কাইভ-ফাইলে সমান্তরাল-সেশন সংঘর্ষ ধরা পড়ত না (২০২৬-০৯-২১)
 ]
 
+# open_current_affairs → open_job_solution মনোরেপো-migration-এর (২০২৬-০৯) পর
+# GitHub-এর PR-files API সবসময় আসল রিপো-toplevel-এর সাপেক্ষে পাথ দেয় (যেমন
+# 'current-affairs/docs/topics-index.json'), কিন্তু উপরের তালিকাগুলো লেখা
+# আছে current-affairs-এর নিজের সাপেক্ষে ('docs/...')। মেলানোর আগে এই প্রিফিক্স
+# বাদ দিতে হয় — নইলে (নিরাপত্তা-নেট চুপচাপ কিছুই ধরবে না, ব্যর্থ পর্যন্ত হবে না)।
+# প্রিফিক্স না থাকলে (যেমন এই ফাইলের নিজস্ব ইউনিট-টেস্টে বেয়ার "docs/..." পাথ
+# ব্যবহার হয়) নাম যেমন আছে তেমনই ব্যবহার হয়, তাই পুরোনো টেস্ট অক্ষত থাকে।
+SUBDIR_PREFIX = "current-affairs/"
+
+
+def _strip_subdir(f):
+    return f[len(SUBDIR_PREFIX):] if f.startswith(SUBDIR_PREFIX) else f
+
 # শেয়ার্ড নথি: ওভারল্যাপ হলে শুধু তথ্য-নোট (ব্যর্থ করে না)।
 SHARED_FILES = {
     "CHANGELOG.md", "BUGFIX.md", "EDITORIAL_MEMORY.md", "AGENTS.md",
@@ -103,11 +116,11 @@ def gh_files(pr_number):
 # ---- বিশুদ্ধ (pure) ফাংশন: নেটওয়ার্ক ছাড়া টেস্ট করা যায় ----
 
 def find_generated(files):
-    return [f for f in files if any(f.startswith(p) for p in GENERATED_PREFIXES)]
+    return [f for f in files if any(_strip_subdir(f).startswith(p) for p in GENERATED_PREFIXES)]
 
 
 def source_files(files):
-    return {f for f in files if any(f.startswith(p) for p in SOURCE_PREFIXES)}
+    return {f for f in files if any(_strip_subdir(f).startswith(p) for p in SOURCE_PREFIXES)}
 
 
 def find_source_overlap(my_files, other_files):
@@ -115,7 +128,9 @@ def find_source_overlap(my_files, other_files):
 
 
 def find_shared_overlap(my_files, other_files):
-    return sorted((set(my_files) & SHARED_FILES) & set(other_files))
+    my_shared = {f for f in my_files if _strip_subdir(f) in SHARED_FILES}
+    other_shared_stripped = {_strip_subdir(f) for f in other_files if _strip_subdir(f) in SHARED_FILES}
+    return sorted(f for f in my_shared if _strip_subdir(f) in other_shared_stripped)
 
 
 def bad_new_filenames(files_with_status):
@@ -125,9 +140,10 @@ def bad_new_filenames(files_with_status):
     for name, status in files_with_status:
         if status not in ("added", "renamed"):
             continue
+        stripped = _strip_subdir(name)
         for prefix, rx, human in NAME_RULES:
-            if name.startswith(prefix) and "/" not in name[len(prefix):]:
-                if not rx.match(name[len(prefix):]):
+            if stripped.startswith(prefix) and "/" not in stripped[len(prefix):]:
+                if not rx.match(stripped[len(prefix):]):
                     bad.append((name, human))
                 break
     return bad
@@ -152,10 +168,12 @@ def main():
         print("GITHUB_TOKEN/REPO/PR_NUMBER env সেট নেই — এটা GitHub Actions-এ চালানোর কথা।", file=sys.stderr)
         sys.exit(2)
     pr = gh(f"/repos/{REPO}/pulls/{PR_NUMBER}")
-    # পুরনো নকশার অবশিষ্ট: ২০২৬-০৯-২০-এর আগে update-wiki.yml এই branch থেকে rebuild-PR
-    # খুলত (এখন আর খোলে না — সরাসরি main-এ push করে)। কেউ ভবিষ্যতে PR-ফ্লো ফিরিয়ে
-    # আনলে generated-ফাইল ছোঁয়াটাই স্বাভাবিক, তাই এই branch guard থেকে exempt থাকল।
-    is_bot_rebuild = pr["head"]["ref"] == "auto/rebuild-output"
+    # update-wiki.yml (root, ২০২৬-০৯ migration-পরবর্তী) main-এ push হলে
+    # branch "bot/update-wiki-index"-এ generated ফাইল commit করে PR খোলে,
+    # তারপর auto-merge করে — এটাই একমাত্র বৈধ কারণ generated ফাইল সরাসরি
+    # এডিট করে PR-এ থাকার। এই branch guard থেকে তাই exempt রাখা হলো; নইলে
+    # বটের নিজের PR নিজের-ই তৈরি করা generated ফাইলের জন্য ব্যর্থ হয়।
+    is_bot_rebuild = pr["head"]["ref"] == "bot/update-wiki-index"
 
     my_status = gh_files_status(PR_NUMBER)
     my_files = [n for n, _ in my_status]

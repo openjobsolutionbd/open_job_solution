@@ -40,7 +40,7 @@ git -c http.extraHeader="Authorization: Basic $B64" push origin work/2026-08-11-
 ```bash
 curl -s -X POST \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls \
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls \
   -d '{"title":"সংক্ষিপ্ত বাংলা শিরোনাম","head":"work/2026-08-11-...","base":"main","body":"কী বদলেছে — বাংলায় ২-৩ লাইন"}'
 ```
 রেসপন্সের `"number"` ফিল্ডটাই PR নম্বর — ব্যবহারকারীকে সেটা জানান।
@@ -50,17 +50,17 @@ curl -s -X POST \
 **৫. যেকোনো সেশনে "কী কাজ পেন্ডিং আছে" জিজ্ঞেস করলে — সব খোলা PR দেখানো**
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=open"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls?state=open"
 ```
 প্রতিটার আসল পরিবর্তন দেখতে (raw diff পাওয়া যায়, `.diff` ফরম্যাটে):
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github.v3.diff" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>"
 ```
 স্বয়ংক্রিয় চেক কোনো সমস্যা পেলে সেটা কমেন্ট আকারে থাকে (দেখুন `pr_checks.py`):
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/issues/<PR_NUMBER>/comments"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/issues/<PR_NUMBER>/comments"
 ```
 diff নিজে পড়ে ব্যবহারকারীকে সহজ বাংলায় জানান (কোন টপিকে কী যোগ/বদল হলো) — raw diff/JSON কখনো সরাসরি দেখাবেন না।
 
@@ -71,7 +71,7 @@ merge করার ঠিক আগে `mergeable_state` চেক করুন�
 ```bash
 curl -s -X PUT \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/update-branch"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>/update-branch"
 # কয়েক সেকেন্ড পর আবার mergeable_state চেক করুন, 'clean' না হওয়া পর্যন্ত দরকার হলে পুনরাবৃত্তি করুন
 ```
 
@@ -79,7 +79,7 @@ curl -s -X PUT \
 ```bash
 curl -s -X PUT \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/merge \
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>/merge \
   -d '{"merge_method":"squash"}'
 ```
 merge ব্যর্থ হলে (checks এখনো শেষ হয়নি, বা conflict) response-এর `"message"` পড়ে ব্যবহারকারীকে সহজ ভাষায় জানান, নিজে থেকে force করার চেষ্টা করবেন না। **সত্যিকারের git conflict** (`update-branch` ব্যর্থ হয়ে "merge conflict" জাতীয় বার্তা দিলে) — সেক্ষেত্রেই শুধু নিজে `git fetch`+`git merge origin/main` করে conflict resolve করতে হবে, নিচের নিয়ম অনুযায়ী।
@@ -87,7 +87,7 @@ merge ব্যর্থ হলে (checks এখনো শেষ হয়ন�
 **৭. merge সফল হলে branch মুছে ফেলুন (পরিষ্কার রাখতে)**
 ```bash
 curl -s -X DELETE -H "Authorization: Bearer $PAT" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/git/refs/heads/work/2026-08-11-...
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/git/refs/heads/work/2026-08-11-...
 ```
 `claim_check.sh --claim` দিয়ে দখল নিয়ে থাকলে এখন ছেড়ে দিন: `bash scripts/claim_check.sh --release <নাম>`।
 
@@ -103,7 +103,7 @@ git branch -r | grep -v "HEAD\|main\|auto/rebuild-output"
 প্রতিটা বাকি branch-এর জন্য GitHub API দিয়ে সংশ্লিষ্ট PR-এর `merged_at` সত্যিই পূরণ (null না) কিনা যাচাই করে তবেই মুছুন:
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=closed&per_page=50"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls?state=closed&per_page=50"
 ```
 - `merged_at` থাকলে (সত্যিই merge হয়েছে) → branch মুছে ফেলুন (আইটেম ৭-এর DELETE কমান্ড)।
 - `merged_at` null থাকলে (PR বন্ধ হয়েছে কিন্তু merge হয়নি) → মুছবেন না, ব্যবহারকারীকে জানিয়ে জিজ্ঞেস করুন কী করতে চান।

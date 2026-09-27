@@ -920,5 +920,13 @@ const EXAM_ARCHIVE = [
     totalMarks: 60,
     totalQuestions: 60,
   },
+  {
+    id: "bd-navy-2026-storeman",
+    ministry: "বাংলাদেশ নৌবাহিনী",
+    post: "স্টোরম্যান",
+    date: "2026-08-07",
+    totalMarks: 80,
+    totalQuestions: 80,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -392,5 +392,115 @@
     "type": "paragraph",
     "question": "২০২৬ সালের জলবায়ু সম্মেলন (COP-৩১) কোথায় অনুষ্ঠিত হবে?",
     "answer": "আনতালিয়া, তুরস্ক।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q21",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Brick)",
+    "qno": 21,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "Brick এর ৩টি Field test লিখুন।",
+    "answer": "১) পানি শোষণ পরীক্ষা (Water Absorption Test): ইট ২৪ ঘণ্টা পানিতে ডুবিয়ে রেখে ওজনের পার্থক্য বের করে শোষণ হার নির্ণয় করা হয় (মানসম্মত ইটের জন্য সাধারণত ২০%-এর কম হওয়া উচিত)। ২) কঠোরতা পরীক্ষা (Hardness Test): ইটের গায়ে নখ দিয়ে আঁচড় দিয়ে দেখা হয়, ভালো ইটে কোনো দাগ পড়ে না। ৩) শব্দ পরীক্ষা (Sound/Ringing Test): দুটি ইট পরস্পরের সাথে আঘাত করলে ভালো ইট থেকে স্পষ্ট ধাতব রিনরিনে শব্দ (clear ringing sound) আসে এবং ইট ভেঙে যায় না।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q22",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Cement)",
+    "qno": 22,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "Cement এর ৩টি Field test লিখুন।",
+    "answer": "১) রঙ পরীক্ষা (Colour Test): ভালো সিমেন্টের রঙ ইউনিফর্ম গ্রে (ধূসর) রঙের সাথে সামান্য সবুজাভ আভাযুক্ত হয়। ২) হাত দিয়ে স্পর্শ পরীক্ষা (Touch/Feel Test): হাতে নিলে ভালো সিমেন্ট মসৃণ (smooth) অনুভূত হয়, খসখসে (rough/gritty) মনে হলে বুঝতে হবে ভেজাল বা জমাটবদ্ধ হয়ে গেছে। ৩) পানিতে ভাসমান পরীক্ষা (Float Test): সিমেন্টের একমুঠো পানিতে আলতোভাবে ছেড়ে দিলে ভালো সিমেন্ট কিছুক্ষণ পানির উপরে ভেসে থেকে তারপর ডুবে যায়।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q23",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Sand)",
+    "qno": 23,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "আদর্শ sand এর ৩টি গুনাবলী লিখুন।",
+    "answer": "১) বালি খরযুক্ত (sharp), কোণাকার (angular) দানার হতে হবে এবং কর্দম, জৈব পদার্থ বা লবণাক্ততা মুক্ত হতে হবে। ২) বালির দানাগুলোর আকার বিভিন্ন মাপের (well-graded) হতে হবে, যাতে শূন্যস্থান কম থাকে এবং কংক্রিটের ঘনত্ব বেশি হয়। ৩) বালিতে সিল্ট বা কাদার পরিমাণ ৩-৪%-এর বেশি থাকা যাবে না এবং এটি পরিষ্কার (clean) ও শক্তিশালী (durable) হতে হবে।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q24",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Brick)",
+    "qno": 24,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "একটি standard Brick এর size লিখুন ও Brick এর Frog mark কি?",
+    "answer": "বাংলাদেশে প্রচলিত স্ট্যান্ডার্ড ইটের সাইজ সাধারণত ৯.৫\" × ৪.৫\" × ২.৭৫\" (২৪০মিমি × ১১৫মিমি × ৭০মিমি) হয়ে থাকে। Frog mark হলো ইটের উপরের তলে তৈরি একটি অগভীর খাঁজ বা প্যাটার্ন (সাধারণত আয়তাকার বা ট্র্যাপিজিয়াম আকৃতির), যা মর্টার/গাঁথুনির সাথে ইটের বন্ধন (bond) মজবুত করতে সাহায্য করে এবং প্রায়ই এতে প্রস্তুতকারকের নাম বা ব্র্যান্ড খোদাই করা থাকে।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q25",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (ACI Code)",
+    "qno": 25,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "ACI code অনুযায়ী Factor of safety flexural design হতে shear design এ বেশী কেন?",
+    "answer": "কারণ shear failure (কর্তন ব্যর্থতা) সাধারণত আকস্মিক (sudden), ভঙ্গুর (brittle) প্রকৃতির এবং কোনো পূর্ব সতর্কসংকেত (warning) ছাড়াই ঘটে, যেখানে flexural failure (নমন ব্যর্থতা) সাধারণত ধীরে ধীরে, নমনীয় (ductile) প্রকৃতির হয় এবং ফাটল ধরার মাধ্যমে আগে থেকে সংকেত দেয়। যেহেতু shear failure অনেক বেশি বিপজ্জনক ও অনিয়ন্ত্রিত, তাই নিরাপত্তার জন্য ACI code shear design-এ তুলনামূলক বেশি Factor of Safety আরোপ করে, যাতে কাঠামো shear failure-এর আগে flexural failure-এর মাধ্যমে ব্যর্থ হয় (Strong Shear-Weak Flexure নীতি)।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q26",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Concrete)",
+    "qno": 26,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "Concrete এর strength নির্ভর করে এরকম ৫টি factor লিখুন।",
+    "answer": "১) পানি-সিমেন্ট অনুপাত (Water-Cement Ratio) ২) সিমেন্টের গ্রেড ও মান (Quality & Grade of Cement) ৩) এগ্রিগেটের গ্রেডেশন, আকৃতি ও পরিচ্ছন্নতা (Aggregate Grading, Shape and Cleanliness) ৪) কিউরিং পদ্ধতি ও সময়কাল (Curing Method and Duration) ৫) মিশ্রণ অনুপাত ও কম্প্যাকশনের মান (Mix Proportion and Degree of Compaction)।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q27",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Concrete Mixing)",
+    "qno": 27,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "Concrete mixing এ water/cement ratio 0.4 হলে পানির পরিমান কত kg লাগবে?",
+    "answer": "Water/Cement ratio = পানির ওজন ÷ সিমেন্টের ওজন। সুতরাং, W/C = 0.4 হলে, ১ ব্যাগ সিমেন্ট (৫০ kg) ব্যবহার করলে প্রয়োজনীয় পানির পরিমাণ = 0.4 × 50 kg = 20 kg। অর্থাৎ প্রতি ৫০ kg (১ ব্যাগ) সিমেন্টের জন্য ২০ kg পানি লাগবে।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q28",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (ACI Code - Column)",
+    "qno": 28,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "ACI code অনুযায়ী Building এর Column এর সর্বোচ্চ ও সর্বনিম্ন Rebar এর percentage কত?",
+    "answer": "ACI 318 কোড অনুযায়ী কলামের মোট গ্রস ক্রস-সেকশনাল এরিয়ার তুলনায় লম্বালম্বি (longitudinal) রিবারের পরিমাণ সর্বনিম্ন ১% এবং সর্বোচ্চ ৮% হতে হবে (ব্যবহারিক ক্ষেত্রে সাধারণত ৪%-৬%-এর মধ্যে রাখা হয় ল্যাপ স্প্লাইসের সুবিধার জন্য)।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q29",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (Cement/Bentonite)",
+    "qno": 29,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "১ ব্যাগ cement এ কত ঘনফুট cement থাকে? এবং bentonite powder কোথায় ব্যবহৃত হয়?",
+    "answer": "১ ব্যাগ সিমেন্টের ওজন সাধারণত ৫০ kg হয় এবং এর আয়তন প্রায় ১.২৫ ঘনফুট (cubic feet)। Bentonite powder সাধারণত পাইল ফাউন্ডেশন (bored pile) খননের সময় বোরহোল বা গর্তের দেয়াল ধসে পড়া রোধ করতে (drilling mud/slurry হিসেবে), মাটির চাপ ভারসাম্য রক্ষা করতে এবং ডায়াফ্রাম ওয়াল নির্মাণে ব্যবহৃত হয়।"
+  },
+  {
+    "id": "job-2025-ncc-sub-asst-engineer-civil-q30",
+    "examId": "job-2025-ncc-sub-asst-engineer-civil",
+    "subject": "civil-engineering",
+    "topic": "বিষয়ভিত্তিক (ACI Code - Slab)",
+    "qno": 30,
+    "marks": 8,
+    "type": "paragraph",
+    "question": "ACI কোড অনুযায়ী cantilever slab ও one way slab এর সর্বনিম্ন thickness কত?",
+    "answer": "ACI 318 কোড অনুযায়ী সাধারণ (normal weight concrete, Grade 60 rebar) কন্ডিশনে সাপোর্ট ছাড়া deflection চেক না করার জন্য ন্যূনতম পুরুত্ব: One-way slab (simply supported)-এর জন্য L/20 এবং Cantilever slab-এর জন্য L/10 (যেখানে L হলো স্প্যানের দৈর্ঘ্য)।"
   }
 ]

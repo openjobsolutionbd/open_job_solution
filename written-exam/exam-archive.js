@@ -723,8 +723,8 @@ const EXAM_ARCHIVE = [
     post: "উপ সহকারী প্রকৌশলী (সিভিল)",
     date: "2025-12-22",
     duration: "৯০ মিনিট",
-    totalMarks: 70,
-    totalQuestions: 20,
+    totalMarks: 150,
+    totalQuestions: 30,
   },
   {
     id: "job-2025-agri-info-office-asst",

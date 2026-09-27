@@ -23,6 +23,11 @@ ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || { echo "✗ git রিপ�
 cd "$ROOT" || exit 2
 : "${GH_TOKEN:?GH_TOKEN সেট করুন (repo write অনুমতি সহ)}"
 
+# open_current_affairs → open_job_solution মনোরেপো-migration-এর (২০২৬-০৯) পর
+# git toplevel এখন open_job_solution রিপোর মূল, premerge_check.sh তার একটা
+# সাব-ডিরেক্টরিতে (current-affairs/scripts/) থাকে।
+SUBDIR="current-affairs"
+
 REPO="openjobsolutionbd/open_job_solution"
 API="https://api.github.com/repos/$REPO"
 
@@ -41,7 +46,7 @@ git fetch -q origin "$head_ref" || { echo "✗ origin থেকে '$head_ref' f
 git checkout -q -B "_safe_merge_tmp_$PR" "origin/$head_ref"
 
 echo "== premerge_check.sh চালানো হচ্ছে =="
-if ! bash scripts/premerge_check.sh; then
+if ! bash "$SUBDIR/scripts/premerge_check.sh"; then
   echo "✗ premerge_check ব্যর্থ — merge করা হলো না। উপরের ব্যর্থতা আগে ঠিক করুন।"
   git checkout -q "$CUR"
   git branch -q -D "_safe_merge_tmp_$PR" 2>/dev/null

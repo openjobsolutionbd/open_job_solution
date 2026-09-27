@@ -17,11 +17,13 @@ verify_site.py শুধু build_index.py-এর generated output (docs/) য�
 রিগ্রেশন আটকায়।
 
 চেক করা হয় যেগুলো:
-  ১. sync-to-job-solution.yml-এ concurrency ব্লক আছে কিনা
-     (BUG: সমান্তরাল sync রান একে অপরের পুশের সাথে রেস করত)
-  ২. sync-to-job-solution.yml-এর safety-check ধাপ `git ls-files` দিয়ে
-     ট্র্যাকড ফাইল গোনে, ডিস্কের raw ফাইল-কাউন্ট (find/ls) দিয়ে না
-     (BUG: .gitignore করা বা untracked ফাইলও গুনে ফেলত)
+  ১-২. [অবসৃত, ২০২৬-০৯] sync-to-job-solution.yml-এর concurrency ব্লক ও
+     `git ls-files`-ভিত্তিক safety-check — এই workflow-টা শুধু
+     open_current_affairs (স্বতন্ত্র রিপো) → open_job_solution সিঙ্ক
+     করার জন্য ছিল। মনোরেপো-migration-এর পর কনটেন্ট সরাসরি
+     open_job_solution-এই এডিট হয়, তাই এই workflow ইচ্ছাকৃতভাবেই আর
+     নেই — ফাইল-অনুপস্থিতি এখন প্রত্যাশিত, রিগ্রেশন না। ফাইলটা যদি
+     (কোনো কারণে) আবার যোগ হয়, তাহলেই শুধু এই দুটো প্যাটার্ন-চেক চলে।
   ৩. scripts/sw_template.js-এর activate handler শুধু "oca-cache-"
      প্রিফিক্সের cache মোছে, পুরো origin-এর সব cache না
      (BUG: প্রতি ভার্সন বাম্পে অন্য অ্যাপের cache-ও মুছে যেত)
@@ -72,7 +74,10 @@ def fail(errors):
 def main():
     errors = []
 
-    # ১. concurrency guard
+    # ১-২. [অবসৃত, ২০২৬-০৯] sync-to-job-solution.yml — মনোরেপো-migration-এর
+    # পর এই workflow ইচ্ছাকৃতভাবে অনুপস্থিত (দ্রষ্টব্য উপরের docstring)।
+    # ফাইলটা না থাকা এখন স্বাভাবিক; থাকলে তবেই পুরনো প্যাটার্ন-চেক চালানো হয়,
+    # যাতে কেউ ভবিষ্যতে ফিরিয়ে আনলে তার মধ্যে পুরনো বাগ না থাকে তা ধরা পড়ে।
     if SYNC_WORKFLOW.exists():
         sync_text = SYNC_WORKFLOW.read_text(encoding="utf-8")
         if not re.search(r"^concurrency:", sync_text, re.MULTILINE):
@@ -81,14 +86,12 @@ def main():
                 "সমান্তরাল sync রান আবার একে অপরের পুশের সাথে রেস করতে পারে"
             )
 
-        # ২. safety-check: git ls-files ব্যবহার হচ্ছে কিনা (raw file-count না)
+        # safety-check: git ls-files ব্যবহার হচ্ছে কিনা (raw file-count না)
         if "git" not in sync_text or "ls-files" not in sync_text:
             errors.append(
                 f"{SYNC_WORKFLOW.relative_to(ROOT)}-এ 'git ls-files' দিয়ে ফাইল-গণনা পাওয়া যায়নি — "
                 "safety check হয়তো আবার raw ডিস্ক ফাইল-কাউন্ট (untracked ফাইলসহ) ব্যবহার করছে"
             )
-    else:
-        errors.append(f"{SYNC_WORKFLOW.relative_to(ROOT)} ফাইলই খুঁজে পাওয়া যায়নি")
 
     # ৩. sw_template.js activate handler — শুধু oca-cache- প্রিফিক্স মোছে
     if SW_TEMPLATE.exists():

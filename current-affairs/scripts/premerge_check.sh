@@ -16,6 +16,13 @@
 # ফল দেখুন; ব্যর্থ হলে update-wiki নিজে GitHub Issue (site-build-failed) খোলে।
 set -uo pipefail
 
+# open_current_affairs → open_job_solution মনোরেপো-migration-এর (২০২৬-০৯) পর
+# git toplevel এখন open_job_solution রিপোর মূল, current-affairs তার একটা
+# সাব-ডিরেক্টরি মাত্র — build_index.py ইত্যাদি স্ক্রিপ্ট cwd=current-affairs
+# ধরে নিয়ে relative পাথ (docs/...) ব্যবহার করে, তাই worktree-র ভেতরেও এই
+# সাব-ডিরেক্টরিতে গিয়েই সেগুলো চালাতে হবে।
+SUBDIR="current-affairs"
+
 ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || { echo "✗ git রিপোর ভেতরে চালান"; exit 2; }
 cd "$ROOT" || exit 2
 
@@ -30,7 +37,7 @@ WT=$(mktemp -d)
 cleanup() { git worktree remove --force "$WT" >/dev/null 2>&1; rm -rf "$WT"; }
 trap cleanup EXIT
 git worktree add -q --detach "$WT" origin/main || { echo "✗ অস্থায়ী worktree বানানো গেল না"; exit 2; }
-cd "$WT" || exit 2
+cd "$WT/$SUBDIR" || exit 2
 
 echo "== $(git -C "$ROOT" rev-parse --abbrev-ref HEAD) (${BRANCH_SHA:0:7}) + origin/main ($BASE) মিলিয়ে চেক =="
 if ! git -c user.name=premerge -c user.email=premerge@local merge --no-commit --no-ff "$BRANCH_SHA" >/tmp/premerge_merge.log 2>&1; then

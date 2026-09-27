@@ -136,7 +136,7 @@ const EXAM_ARCHIVE = [
     date: "2025-07-18",
     duration: "৬০ মিনিট",
     totalMarks: 90,
-    totalQuestions: 10,
+    totalQuestions: 18,
   },
   // ══════════════════════════════════════════════════════════
   // সোর্স: self_job_solution_330-370_page (পৃষ্ঠা ৩৩০-৩৭০)
@@ -337,7 +337,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-04",
     duration: "৯০ মিনিট",
     totalMarks: 100,
-    totalQuestions: 16,
+    totalQuestions: 15,
   },
   {
     id: "job-2025-air-force-office-sohayok",
@@ -661,7 +661,7 @@ const EXAM_ARCHIVE = [
     date: "2025-11-21",
     duration: "৬০ মিনিট",
     totalMarks: 40,
-    totalQuestions: 21,
+    totalQuestions: 12,
   },
   {
     id: "job-2025-pwd-office-asst-typist",
@@ -724,7 +724,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-22",
     duration: "৯০ মিনিট",
     totalMarks: 70,
-    totalQuestions: 20,
+    totalQuestions: 30,
   },
   {
     id: "job-2025-agri-info-office-asst",

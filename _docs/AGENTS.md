@@ -118,6 +118,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 | `_dev/update_version.py` | `auto-bump-version.yml`-এর হেল্পার — প্রতি merge-এর পর ভার্সন নম্বর বাড়ায় |
 | `written-exam/check-spelling.js` | বাংলা spellcheck written-exam/data/exams/*.json-এর জন্য (advisory, `_dev/check-spelling.js`-এর মতোই কিন্তু আলাদা মডিউলের জন্য) |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
+| `.github/workflows/current-affairs-check.yml` | `current-affairs/**` টাচ করা PR-এ চলে: `build_index.py`/`verify_site.py`/`verify_integration_bugs.py` + JS/Python regression suite চালায়, generated আউটপুট বাসি (stale) কিনা diff করে দেখে, আর `pr_checks.py` দিয়ে অন্য খোলা PR-এর সাথে ফাইল-সংঘর্ষ চেক করে। পুরনো `current-affairs/.github/workflows/update-wiki.yml` ও `pr-check.yml`-এর বদলি — ওই দুইটা সাবফোল্ডার-পাথে থাকায় GitHub Actions কখনো পড়েইনি (root-এর বাইরে workflow চলে না), তাই মুছে ফেলা হয়েছে |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
 
 ## 📝 নতুন MCQ/ব্যাখ্যা যোগ করার সময় — duplicate-content ঝুঁকি

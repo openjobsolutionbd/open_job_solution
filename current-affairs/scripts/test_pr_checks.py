@@ -48,6 +48,30 @@ def _():
         "docs/topics-index.json", "docs/topic/x/index.html"]
 
 
+@test("মনোরেপো-প্রিফিক্স (current-affairs/) থাকলেও সব চেক ঠিকভাবে মেলে (২০২৬-০৯ migration)")
+def _():
+    # generated ফাইল guard
+    assert pc.find_generated(["current-affairs/docs/topics-index.json", "current-affairs/docs/topics/a.md"]) == [
+        "current-affairs/docs/topics-index.json"]
+    # সোর্স-ওভারল্যাপ
+    assert pc.find_source_overlap(
+        ["current-affairs/docs/topics/a.md"], ["current-affairs/docs/topics/a.md", "x"]
+    ) == ["current-affairs/docs/topics/a.md"]
+    # শেয়ার্ড-নথি ওভারল্যাপ
+    assert pc.find_shared_overlap(
+        ["current-affairs/CHANGELOG.md"], ["current-affairs/CHANGELOG.md"]
+    ) == ["current-affairs/CHANGELOG.md"]
+    # নতুন ফাইলের নামের নিয়ম
+    bad = pc.bad_new_filenames([("current-affairs/docs/ghotonaprobaho/BadName.md", "added")])
+    assert bad == [("current-affairs/docs/ghotonaprobaho/BadName.md",
+                     "`docs/ghotonaprobaho/<YYYY-MM>-<স্কোপ>.md`")]
+    ok = pc.bad_new_filenames([("current-affairs/docs/ghotonaprobaho/2026-09-x.md", "added")])
+    assert ok == []
+    # current-affairs-এর বাইরের ফাইল কোনো চেকেই ধরা পড়ে না (মিথ্যা-পজিটিভ নয়)
+    assert pc.find_generated(["_dev/scripts/session_status.sh"]) == []
+    assert pc.find_source_overlap(["_dev/scripts/session_status.sh"], ["_dev/scripts/session_status.sh"]) == []
+
+
 @test("নতুন ফাইলের নাম: বৈধ সেশন/মাস-নাম পাস")
 def _():
     ok = [

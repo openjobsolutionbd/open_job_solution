@@ -53,14 +53,14 @@
     /* ── Filter Bar ── */
     .filter-bar {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 8px;
       margin-bottom: 16px;
       align-items: center;
     }
     .filter-select {
       flex: 1;
-      min-width: 140px;
+      min-width: 0;
       padding: 7px 10px;
       border: 1px solid var(--border);
       border-radius: 20px;
@@ -79,6 +79,7 @@
     }
     .filter-select:focus { border-color: var(--primary); }
     .filter-reset {
+      flex-shrink: 0;
       padding: 7px 14px;
       border: 1px solid var(--border);
       border-radius: 20px;

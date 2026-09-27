@@ -37,7 +37,7 @@ import sys
 import urllib.error
 import urllib.request
 
-REPO = "openjobsolutionbd/open_current_affairs"
+REPO = "openjobsolutionbd/open_job_solution"
 STALE_DAYS = float(os.environ.get("CLAIM_STALE_DAYS", "3"))
 OWNER = os.environ.get("CLAIM_OWNER", "").strip()
 NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,60}$")

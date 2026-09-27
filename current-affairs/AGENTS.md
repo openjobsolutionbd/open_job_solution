@@ -8,10 +8,12 @@
 
 কারণ: একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে একই সময়ে এই রিপোতে কাজ হয়, এবং প্রায়ই আগের মেসেজে ফিরে গিয়ে নতুন কাজ শুরু হয় — তাই local sandbox বা কথোপকথনের স্মৃতি ভরসাযোগ্য না। **একমাত্র নির্ভরযোগ্য সোর্স GitHub-এর remote অবস্থা।** `session_status.sh` remote fetch করে local-remote তুলনা করে, stray uncommitted পরিবর্তন দেখায়, এবং সব খোলা branch + খোলা/merged/abandoned PR-এর লাইভ তালিকা দেখায় (কাজের পুনরাবৃত্তি এড়াতে)। সমস্যা দেখলে আগে ব্যবহারকারীকে জানিয়ে সমাধান করে তারপর কাজ শুরু করুন।
 
-প্রথমবার clone করতে:
+প্রথমবার clone করতে (২০২৬-০৯ থেকে এটা স্বতন্ত্র রিপো না, `open_job_solution`
+monorepo-র `current-affairs/` সাবফোল্ডার — পুরনো `open_current_affairs`
+রিপো subtree merge দিয়ে এখানে চলে এসেছে, আলাদা clone/sync লাগে না):
 ```bash
-git clone https://github.com/openjobsolutionbd/open_current_affairs.git
-cd open_current_affairs && bash scripts/session_status.sh
+git clone https://github.com/openjobsolutionbd/open_job_solution.git
+cd open_job_solution/current-affairs && bash scripts/session_status.sh
 ```
 
 ## এজেন্ট-নির্দেশনা কয়েকটা ফাইলে ভাগ করা (টোকেন-সাশ্রয়)
@@ -37,7 +39,12 @@ cd open_current_affairs && bash scripts/session_status.sh
 | `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
 | `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge করে (হাতে অপেক্ষার ফাঁক কমাতে) — `bash scripts/safe_merge.sh <PR_NUMBER>` |
 | `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায় |
-| `scripts/pr_build_warnings.py` | CI-তে build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
+| `scripts/pr_build_warnings.py` | `pr-check.yml`-এ build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
+| `scripts/pr_checks.py` | `pr-check.yml`-এর ভেতরে চলে generated-ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক; `safe_add.sh` ও `test_pr_checks.py`-ও এর prefix-তালিকা (`GENERATED_PREFIXES`/`SOURCE_PREFIXES`) import করে |
+| `scripts/safe_add.sh` | generated ফাইল বাদ দিয়ে `git add -A`-এর নিরাপদ বিকল্প — commit-এর ঠিক আগে এটা ব্যবহার করুন |
+| `scripts/test_pr_checks.py` | `pr_checks.py`-র regression টেস্ট — `preflight.sh`/`premerge_check.sh` সবসময় চালায় |
+| `scripts/verify_integration_bugs.py` | ২০২৬-০৮ বাগ-অডিটে ধরা পড়া ৪ ধরনের bug-প্যাটার্ন ফিরে আসেনি তা স্ট্যাটিক-চেক করে |
+| `scripts/sw_template.js` | service worker সোর্স টেমপ্লেট — `build_index.py` এখান থেকে VERSION বসিয়ে `docs/sw.js` জেনারেট করে; `docs/sw.js` সরাসরি এডিট না |
 | `docs/topics/*.md` | মূল কনটেন্ট — টপিক পেজ (frontmatter + "বর্তমান তথ্য" + "পরিবর্তনের ইতিহাস") |
 | `docs/ghotonaprobaho/*.md` | তারিখ-ভিত্তিক দৈনিক ঘটনাপ্রবাহ |
 | `docs/top-news/*.md` | "টপ নিউজ" ট্যাব — প্রতি তারিখে সাধারণত একটাই হাইলাইট লাইন |
@@ -50,14 +57,18 @@ cd open_current_affairs && bash scripts/session_status.sh
 | `scripts/test_build_index.py` | `build_index.py`-র regression টেস্ট (BUGFIX.md-এর bug লক করে) — `preflight.sh` সবসময় চালায় |
 | `scripts/consolidate_month.py` | (ঐচ্ছিক) মাসশেষে ঘটনাপ্রবাহ/টপ নিউজের সেশন-ফাইল একত্র — build আগে-পরে হুবহু মিলিয়ে দেখে, না মিললে নিজে রোলব্যাক করে |
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
+| `scripts/js_tests/dom_harness.mjs` | `docs/index.html`-এর real production JS ফাংশন (`renderTopicContent` ইত্যাদি) বের করে fresh jsdom window-এ চালায় — copy-paste সংস্করণ টেস্ট হয় না |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
-| `.github/workflows/update-wiki.yml` | main-push হলে build+verify চালিয়ে generated output (`topics-index.json`, `sw.js`, `version.json`, `topic/` ইত্যাদি) **সরাসরি `main`-এ commit** করে, PR খোলে না (২০২৬-০৯-২০ থেকে; Cloudflare Pages সেই commit-ই deploy করে)। `GITHUB_TOKEN` দিয়ে push হয়, কোনো PAT লাগে না — তাই `main`-এ branch protection/ruleset চালু করলে এই push ভাঙবে (তখন github-actions-কে bypass দিতে হবে)। commit message-এ `[skip ci]` দেবেন না |
-| `.github/workflows/pr-check.yml` | PR খুললে/আপডেট হলে: generated-ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক + build+verify |
-| `scripts/pr_checks.py` | `pr-check.yml`-এর ভেতরে চলে, হাতে চালানোর দরকার নেই |
+| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite (`scripts/pr_checks.py`, `verify_site.py`, `verify_integration_bugs.py`, `js_tests/`, `test_build_index.py`, `test_pr_checks.py`) — কোনো ধাপ fail করলে PR ব্লক হয় |
+| `.github/workflows/update-wiki.yml` | main-এ push হলে generated output (`topics-index.json`, `sw.js`, `version.json` ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্নে যেহেতু main branch-protected)→merge করে; ব্যর্থ হলে `site-build-failed` Issue |
+| `.github/workflows/current-affairs-health-check.yml` | প্রতিদিন schedule-এ `docs/` আউটপুটে রিগ্রেশন (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) চেক করে, সমস্যা পেলে Issue খোলে — `pr-check.yml`/`update-wiki.yml`-এর সাথে ওভারল্যাপ না (ওগুলো PR/push-time, এটা লাইভ output-এর দৈনিক নজরদারি) |
+| `.github/workflows/current-affairs-docs-staleness.yml` | সপ্তাহে একবার এই `AGENTS.md` ও `EDITORIAL_MEMORY.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/আকার-সীমা চেক করে (`_dev/scripts/doc_staleness_check.py`), সমস্যা পেলে Issue খোলে — prose নিজে থেকে মোছে না, রিভিউ করে ঠিক করতে হয় |
 | `BUGFIX.md` | ধরা পড়া bug-এর স্থায়ী লগ — প্রতিটার matching regression test থাকা উচিত |
 | `TEST_CHECKLIST.md` | বড় ফিচার/কোড পরিবর্তনের পর ম্যানুয়াল যাচাই (automated suite যা ছুঁতে পারে না) |
 | `CHANGELOG.md` | শুধু সিস্টেম/কাঠামো পরিবর্তন — মাসিক কনটেন্ট আপডেট এখানে না |
 | `PR_GUIDE.md`, `MCQ_GUIDE.md` | প্রসঙ্গ-ভিত্তিক এজেন্ট-নির্দেশনা — কখন পড়বেন উপরের টেবিলে |
+
+> **২০২৬-০৯-২৭ থেকে:** `pr-check.yml`/`update-wiki.yml` ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`, যা GitHub পড়ে না) পড়ে থাকায় সাইলেন্টলি কখনো চলেনি — এটা migration-বাগ ছিল, ইচ্ছাকৃত বাতিল না। রুটে সরিয়ে, `pr_checks.py`-র subtree-path বাগ (GitHub PR-files API `current-affairs/docs/...`-এর মতো পাথ দেয়, আগের prefix-তালিকা বেয়ার `docs/...` ধরে নিত) ঠিক করে, ও branch-protection-সামলে-চলা branch→PR ফ্লোতে (`OJS_BOT_TOKEN`) restore করা হয়েছে।
 
 ## টোকেন-সাশ্রয়ী অভ্যাস
 
@@ -108,7 +119,7 @@ python3 scripts/build_index.py
 python3 scripts/verify_site.py
 ```
 
-`build_index.py` ইনডেক্স/sw.js/version.json রিজেনারেট করে, ভ্যালিডেশন-এরর থাকলে non-zero exit। `verify_site.py` তার পরে পুরো সাইট ক্রস-চেক করে। **দুটোই push-এর আগে লোকালি বাধ্যতামূলক** — GitHub push-এ `update-wiki.yml` এগুলো আবার চালায় ও fail করলে output commit হয় না, কিন্তু লোকাল চেক বাদ দিলে ব্যবহারকারীকে ভাঙা diff দেখানোর ঝুঁকি থাকে।
+`build_index.py` ইনডেক্স/sw.js/version.json রিজেনারেট করে, ভ্যালিডেশন-এরর থাকলে non-zero exit। `verify_site.py` তার পরে পুরো সাইট ক্রস-চেক করে। **দুটোই push-এর আগে লোকালি চালানো ভালো অভ্যাস** — `pr-check.yml` PR-টাইমে এগুলো (ও আরও কিছু: integration-guard, test suite) ফের চালায় ও fail করলে PR ব্লক করে, কিন্তু লোকাল চেক বাদ দিলে অপ্রয়োজনীয় red-CI-চক্র আর অন্য সেশনের PR-কমেন্টে নিজের ভুল দেখানোর ঝুঁকি থাকে।
 
 ## উচ্চ-সংবেদনশীল / ঘন-পরিবর্তনশীল টপিক
 
@@ -136,7 +147,7 @@ python3 scripts/verify_site.py
 6. **একাধিক সেশন/অ্যাকাউন্ট একসাথে কাজ করা স্বাভাবিক** — তাই সরাসরি main-push বাদ, branch+PR বাধ্যতামূলক (`PR_GUIDE.md`)।
    - কাজ শুরুতে: `session_status.sh` (ব্লক করে না, শুধু re-orient)।
    - push-এর আগে: `preflight.sh` — fail করলে ঠিক না করে push না।
-   - branch+PR-এর পর বাকি সংঘর্ষ-শনাক্তকরণ `pr-check.yml` স্বয়ংক্রিয় করে — নিজে rebase/force-push করার দরকার নেই।
+   - branch+PR-এর পর `pr-check.yml` অন্য খোলা PR-এর সাথে ফাইল-সংঘর্ষ (একই সোর্স-ফাইল ছুঁয়েছে কিনা) স্বয়ংক্রিয়ভাবে PR-কমেন্টে জানায় — কিন্তু এটা git-স্তরের rebase/merge-conflict-এর বিকল্প না, তাই merge-এর ঠিক আগে PR-এর `mergeable_state` নিজে চেক করুন (`behind` হলে GitHub API-র `pulls/<PR>/update-branch` কল করে `clean` না হওয়া পর্যন্ত অপেক্ষা করুন, তারপর merge)।
    - নিজের branch-এ (main-এ কখনো না) সাধারণ push; `--force-with-lease` শুধু তখনই যদি branch-এ শুধু নিজের কমিট থাকে। branch protection চালু থাকলে main-এ সরাসরি push এমনিতেই প্রত্যাখ্যাত হবে।
    - **main protection সাময়িক বন্ধ থাকা অবস্থায় ভুলবশত সরাসরি push হয়ে গেলে:** নিজের branch-এ `git rebase origin/main`, conflict এলে নিয়ম ৭ অনুযায়ী।
 7. **rebase-conflict নিয়ম:** নিজে অনুমান করে কোনদিক রাখবেন ঠিক করবেন না — conflict ও উভয় পক্ষের পরিবর্তন ব্যবহারকারীকে দেখিয়ে জিজ্ঞেস করুন। **ব্যতিক্রম:** সত্যিকারের বিষয়বস্তু-দ্বন্দ্ব না হয়ে শুধু একই জায়গায় দুই সেশনের ভিন্ন নতুন সংযোজন হলে (যেমন একই টেবিলে দুই নতুন row, CHANGELOG-এ দুই নতুন এন্ট্রি) — দুটোই রেখে (তারিখ/ভার্সন অনুযায়ী সাজিয়ে) নিজে মিলিয়ে নেওয়া ঠিক, জিজ্ঞেস করার দরকার নেই। Auto-generated ফাইলে conflict এলে হাতে এডিট না করে rebase-এর পর `build_index.py` ফের চালান।
@@ -146,6 +157,18 @@ python3 scripts/verify_site.py
 
 এখানে হাতে-লেখা কমিট/PR-স্ট্যাটাস রাখা হয় না (দ্রুত stale হয়) — সবসময় `bash scripts/session_status.sh` দিয়ে যাচাই করুন (local/remote/uncommitted + সব branch/PR-এর লাইভ তালিকা, টোকেন ছাড়াও কাজ করে, `GH_TOKEN` থাকলে rate-limit বেশি)। নতুন কাজ শুরুর আগে মিলিয়ে দেখুন — একই বিষয়ে branch/PR (বিশেষত merged) থাকলে আবার শুরু করবেন না।
 
-### সর্বশেষ প্রসেস হওয়া সংখ্যা: মার্চ ২০২৬
+### সর্বশেষ প্রসেস হওয়া সংখ্যা
 
-২০২৬-০৮-২৯ পর্যন্ত মার্চ ২০২৬ সংখ্যার সব প্রাপ্ত পেজ প্রসেস সম্পন্ন (সংসদ নির্বাচন-ফলাফল ব্লক ও পরীক্ষা-প্রস্তুতিমূলক MCQ/সমাধান সেকশন ব্যবহারকারীর নির্দেশে ইচ্ছাকৃতভাবে বাদ)। স্ক্যানে পেজ ৮৮ (ঈদুল ফিতর ও শবে কদর) ও ৯৫ (বিচিত্র বিশ্ব) অনুপস্থিত ছিল — পরে স্পষ্ট ছবি পেলে যোগ করা যাবে। নতুন সংখ্যা শুরুর আগে এই সেকশন আপডেট করুন বা `check_topic.sh`/`session_status.sh` দিয়ে সরাসরি বর্তমান অবস্থা যাচাই করুন (এই হাতে-লেখা নোট দ্রুত stale হয়ে যায়, চূড়ান্ত সত্যের উৎস না)।
+এখানে নির্দিষ্ট মাস/বছর হার্ডকোড করা হয় না (দ্রুত stale হয়ে যায় — root
+`_docs/AGENTS.md` একই কারণে নিজের "বর্তমান অবস্থা" সেকশনে এই প্যাটার্ন বাদ
+দিয়েছে)। নতুন সংখ্যা শুরুর আগে সরাসরি যাচাই করুন:
+
+```bash
+ls -1 archive/*.md | tail -3          # সাম্প্রতিকতম আর্কাইভ করা মাস
+git log -3 --oneline -- archive/      # কবে/কোন branch থেকে যোগ হয়েছে
+bash scripts/session_status.sh current-affairs   # সংশ্লিষ্ট খোলা branch/PR
+```
+
+কোনো পেজ ইচ্ছাকৃতভাবে বাদ পড়ে থাকলে (অস্পষ্ট স্ক্যান, ব্যবহারকারীর নির্দেশে
+বাদ) সেটা প্রাসঙ্গিক `archive/<YYYY-MM>*.md` ফাইলের শুরুতে এক লাইনে লিখে
+রাখুন, এখানে না — তাহলে সেই মাসের প্রকৃত সোর্স-ফাইলের সাথেই তথ্যটা থাকে।

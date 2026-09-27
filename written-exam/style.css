@@ -173,9 +173,9 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
   .question-card{padding:15px 12px}
   .q-text{font-size:0.95rem}
   .option-btn{font-size:0.88rem;padding:9px 10px}
-  .header-inner{gap:8px}
+  .header-inner{gap:8px;flex-wrap:nowrap}
   .app-title{font-size:0.9rem}
-  .header-actions{width:100%;justify-content:center}
+  .header-actions{width:auto;justify-content:flex-end}
 }
 
 /* Version badge */

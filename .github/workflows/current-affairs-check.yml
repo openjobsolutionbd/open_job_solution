@@ -77,9 +77,12 @@ jobs:
         continue-on-error: true
         if: steps.build.outcome == 'success'
         run: |
-          if ! git diff --quiet -- docs/topics-index.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/mcq-index.json docs/sitemap.xml docs/topic/; then
+          # sitemap.xml ইচ্ছাকৃতভাবে বাদ: এর <lastmod> সবসময় build-এর দিনের
+          # তারিখ ধরে, তাই কনটেন্ট না বদলালেও রোজ ভিন্ন — এটা diff-guard-এ রাখলে
+          # প্রতিদিনই মিথ্যা "stale" ধরা পড়বে।
+          if ! git diff --quiet -- docs/topics-index.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/mcq-index.json docs/topic/; then
             echo "নিচের generated ফাইল বাসি — লোকালি 'python3 scripts/build_index.py' চালিয়ে diff commit করুন:"
-            git diff --stat -- docs/topics-index.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/mcq-index.json docs/sitemap.xml docs/topic/
+            git diff --stat -- docs/topics-index.json docs/ghotonaprobaho-index.json docs/top-news-index.json docs/mcq-index.json docs/topic/
             exit 1
           fi
 

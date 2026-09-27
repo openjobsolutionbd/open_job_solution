@@ -53,8 +53,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+MONOREPO_ROOT = ROOT.parent  # ২০২৬-০৯ migration-এর পর .github/workflows/ এখানে, current-affairs-এর ভেতরে না
 SYNC_WORKFLOW = ROOT / ".github" / "workflows" / "sync-to-job-solution.yml"
-UPDATE_WIKI_WORKFLOW = ROOT / ".github" / "workflows" / "update-wiki.yml"
+UPDATE_WIKI_WORKFLOW = MONOREPO_ROOT / ".github" / "workflows" / "update-wiki.yml"
+UPDATE_WIKI_WORKFLOW_DISPLAY = ".github/workflows/update-wiki.yml"
 SW_TEMPLATE = ROOT / "scripts" / "sw_template.js"
 INDEX_HTML = ROOT / "docs" / "index.html"
 DOCS_DIR = ROOT / "docs"
@@ -154,7 +156,7 @@ def main():
         )
         if "x-access-token:" in wiki_code and not has_persist_false:
             errors.append(
-                f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)}-এ push-URL-এ PAT (x-access-token:) আছে, "
+                f"{UPDATE_WIKI_WORKFLOW_DISPLAY}-এ push-URL-এ PAT (x-access-token:) আছে, "
                 "কিন্তু checkout-এ 'persist-credentials: false' নেই — checkout-এর সংরক্ষিত "
                 "GITHUB_TOKEN PAT-কে ছাপিয়ে যায়, ফলে push আবার github-actions[bot] নামে হবে "
                 "(BUG-26, BUGFIX.md দেখুন)"
@@ -165,11 +167,11 @@ def main():
             re.IGNORECASE,
         ):
             errors.append(
-                f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)}-এর কোডে skip-ci ট্যাগ পাওয়া গেছে — "
+                f"{UPDATE_WIKI_WORKFLOW_DISPLAY}-এর কোডে skip-ci ট্যাগ পাওয়া গেছে — "
                 "এতে workflow/deploy বাদ পড়ে সাইট stale থাকতে পারে"
             )
         # ৯. ব্যর্থতা-সতর্কতা — নীরব-stale ঠেকাতে
-        wiki_rel = UPDATE_WIKI_WORKFLOW.relative_to(ROOT)
+        wiki_rel = UPDATE_WIKI_WORKFLOW_DISPLAY
         if not re.search(r"^\s*if:\s*failure\(\)\s*$", wiki_code, re.MULTILINE) or "site-build-failed" not in wiki_code:
             errors.append(
                 f"{wiki_rel}-এ ব্যর্থতা-সতর্কতা (`if: failure()` ধাপ + site-build-failed Issue) নেই — "
@@ -178,7 +180,7 @@ def main():
         if not re.search(r"^\s*issues:\s*write\s*(#.*)?$", wiki_code, re.MULTILINE):
             errors.append(f"{wiki_rel}-এ `issues: write` permission নেই — সতর্কতা-Issue খোলা/বন্ধ করা যাবে না")
     else:
-        errors.append(f"{UPDATE_WIKI_WORKFLOW.relative_to(ROOT)} ফাইলই খুঁজে পাওয়া যায়নি")
+        errors.append(f"{UPDATE_WIKI_WORKFLOW_DISPLAY} ফাইলই খুঁজে পাওয়া যায়নি")
 
     # ৮. pr_checks.py — archive/ সংঘর্ষ-চেকের আওতায়
     pr_checks_path = ROOT / "scripts" / "pr_checks.py"

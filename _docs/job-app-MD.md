@@ -91,6 +91,7 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.317 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.317-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.316 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.316-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.315 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.315-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.314 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.314-এ আপগ্রেড। Cache সব module-এ update। |

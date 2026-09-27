@@ -38,9 +38,9 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশন একসাথে চাইলে ঠিক একজন পায়), শুধু-দেখা, `--release`; শব্দ-সীমা মিলানো, ৩ দিনের বেশি পুরনো দখল 'পরিত্যক্ত' চিহ্নিত |
 | `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
 | `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge করে (হাতে অপেক্ষার ফাঁক কমাতে) — `bash scripts/safe_merge.sh <PR_NUMBER>` |
-| `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায়। ⚠️ এর ভেতরের `REPO` কনস্ট্যান্ট এখনো retired `open_current_affairs` রিপো ধরে রেখেছে (monorepo migration-এ আপডেট হয়নি) — ফিক্স না হওয়া পর্যন্ত এর আউটপুট বিশ্বাস না করে সন্দেহ করুন (#423/#443 দেখুন) |
-| `scripts/pr_build_warnings.py` | CI-তে build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না); মূলত পুরনো `pr-check.yml`-এর জন্য লেখা, এখন কোথাও invoke হয় না (#423/#443 দেখুন) |
-| `scripts/pr_checks.py` | generated-ফাইল/সংঘর্ষ-চেকের prefix-তালিকা (`GENERATED_PREFIXES`/`SOURCE_PREFIXES`) — আগে retired `pr-check.yml`-এর ভেতরে সরাসরি চলত, এখন `safe_add.sh` ও `test_pr_checks.py` এই তালিকা import করে ব্যবহার করে |
+| `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায় |
+| `scripts/pr_build_warnings.py` | `pr-check.yml`-এ build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
+| `scripts/pr_checks.py` | `pr-check.yml`-এর ভেতরে চলে generated-ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক; `safe_add.sh` ও `test_pr_checks.py`-ও এর prefix-তালিকা (`GENERATED_PREFIXES`/`SOURCE_PREFIXES`) import করে |
 | `scripts/safe_add.sh` | generated ফাইল বাদ দিয়ে `git add -A`-এর নিরাপদ বিকল্প — commit-এর ঠিক আগে এটা ব্যবহার করুন |
 | `scripts/test_pr_checks.py` | `pr_checks.py`-র regression টেস্ট — `preflight.sh`/`premerge_check.sh` সবসময় চালায় |
 | `scripts/verify_integration_bugs.py` | ২০২৬-০৮ বাগ-অডিটে ধরা পড়া ৪ ধরনের bug-প্যাটার্ন ফিরে আসেনি তা স্ট্যাটিক-চেক করে |
@@ -59,14 +59,16 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
 | `scripts/js_tests/dom_harness.mjs` | `docs/index.html`-এর real production JS ফাংশন (`renderTopicContent` ইত্যাদি) বের করে fresh jsdom window-এ চালায় — copy-paste সংস্করণ টেস্ট হয় না |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
-| `.github/workflows/current-affairs-health-check.yml` | প্রতিদিন schedule-এ `docs/` আউটপুটে রিগ্রেশন (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) চেক করে, সমস্যা পেলে Issue খোলে। এটা PR-time build/verify না — তাই কনটেন্ট এডিটের পর push-এর আগে `preflight.sh` নিজে চালানো বাধ্যতামূলক (নিচে দেখুন) |
+| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite (`scripts/pr_checks.py`, `verify_site.py`, `verify_integration_bugs.py`, `js_tests/`, `test_build_index.py`, `test_pr_checks.py`) — কোনো ধাপ fail করলে PR ব্লক হয় |
+| `.github/workflows/update-wiki.yml` | main-এ push হলে generated output (`topics-index.json`, `sw.js`, `version.json` ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্নে যেহেতু main branch-protected)→merge করে; ব্যর্থ হলে `site-build-failed` Issue |
+| `.github/workflows/current-affairs-health-check.yml` | প্রতিদিন schedule-এ `docs/` আউটপুটে রিগ্রেশন (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) চেক করে, সমস্যা পেলে Issue খোলে — `pr-check.yml`/`update-wiki.yml`-এর সাথে ওভারল্যাপ না (ওগুলো PR/push-time, এটা লাইভ output-এর দৈনিক নজরদারি) |
 | `.github/workflows/current-affairs-docs-staleness.yml` | সপ্তাহে একবার এই `AGENTS.md` ও `EDITORIAL_MEMORY.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/আকার-সীমা চেক করে (`_dev/scripts/doc_staleness_check.py`), সমস্যা পেলে Issue খোলে — prose নিজে থেকে মোছে না, রিভিউ করে ঠিক করতে হয় |
 | `BUGFIX.md` | ধরা পড়া bug-এর স্থায়ী লগ — প্রতিটার matching regression test থাকা উচিত |
 | `TEST_CHECKLIST.md` | বড় ফিচার/কোড পরিবর্তনের পর ম্যানুয়াল যাচাই (automated suite যা ছুঁতে পারে না) |
 | `CHANGELOG.md` | শুধু সিস্টেম/কাঠামো পরিবর্তন — মাসিক কনটেন্ট আপডেট এখানে না |
 | `PR_GUIDE.md`, `MCQ_GUIDE.md` | প্রসঙ্গ-ভিত্তিক এজেন্ট-নির্দেশনা — কখন পড়বেন উপরের টেবিলে |
 
-> ⚠️ **২০২৬-০৯-২৬ পর্যন্ত অবস্থা, শীঘ্রই বদলাবে:** `update-wiki.yml`/`pr-check.yml` (#423/#443) subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`) পড়ে ছিল বলে GitHub কখনোই সেগুলো চালায়নি — এটা একটা সাইলেন্ট migration-বাগ, ইচ্ছাকৃত বাতিল না। এখন এটা ঠিক করতে **দুটো প্রতিযোগী PR** খোলা আছে যেগুলো একে অপরের সাথে সাংঘর্ষিক: **PR #423** (`current-affairs-check.yml` নামে একটা নতুন সম্মিলিত workflow) ও **PR #443** (মূল `pr-check.yml`+`update-wiki.yml` নাম পুনরুদ্ধার) — কোনোটাই এই মুহূর্তে mergeable না (#423: main-এর সাথে conflict, stale; #443: `validate` check fail করছে)। যেটাই merge হোক না কেন, তখন উপরের টেবিলের `site_status.py`/`pr_build_warnings.py`/`pr_checks.py` সারি, "কনটেন্ট এডিট করার পর" সেকশন, ও নিয়ম ৬-এর সংঘর্ষ-শনাক্তকরণ অংশ রিভিউ করে আপডেট করা দরকার।
+> **২০২৬-০৯-২৭ থেকে:** `pr-check.yml`/`update-wiki.yml` ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`, যা GitHub পড়ে না) পড়ে থাকায় সাইলেন্টলি কখনো চলেনি — এটা migration-বাগ ছিল, ইচ্ছাকৃত বাতিল না। রুটে সরিয়ে, `pr_checks.py`-র subtree-path বাগ (GitHub PR-files API `current-affairs/docs/...`-এর মতো পাথ দেয়, আগের prefix-তালিকা বেয়ার `docs/...` ধরে নিত) ঠিক করে, ও branch-protection-সামলে-চলা branch→PR ফ্লোতে (`OJS_BOT_TOKEN`) restore করা হয়েছে।
 
 ## টোকেন-সাশ্রয়ী অভ্যাস
 
@@ -117,7 +119,7 @@ python3 scripts/build_index.py
 python3 scripts/verify_site.py
 ```
 
-`build_index.py` ইনডেক্স/sw.js/version.json রিজেনারেট করে, ভ্যালিডেশন-এরর থাকলে non-zero exit। `verify_site.py` তার পরে পুরো সাইট ক্রস-চেক করে। **দুটোই push-এর আগে লোকালি বাধ্যতামূলক** — monorepo-তে current-affairs-এর জন্য PR-time build/verify করে এমন কোনো CI নেই (`current-affairs-health-check.yml` শুধু দৈনিক schedule-এ `docs/`-এর regression দেখে, PR-এ চলে না), তাই লোকাল চেক বাদ দিলে ভাঙা output সরাসরি PR-এ চলে যাওয়ার ঝুঁকি থাকে — এখানে কোনো নিরাপত্তা-জাল নেই (#423/#443 merge হলে বদলাতে পারে)।
+`build_index.py` ইনডেক্স/sw.js/version.json রিজেনারেট করে, ভ্যালিডেশন-এরর থাকলে non-zero exit। `verify_site.py` তার পরে পুরো সাইট ক্রস-চেক করে। **দুটোই push-এর আগে লোকালি চালানো ভালো অভ্যাস** — `pr-check.yml` PR-টাইমে এগুলো (ও আরও কিছু: integration-guard, test suite) ফের চালায় ও fail করলে PR ব্লক করে, কিন্তু লোকাল চেক বাদ দিলে অপ্রয়োজনীয় red-CI-চক্র আর অন্য সেশনের PR-কমেন্টে নিজের ভুল দেখানোর ঝুঁকি থাকে।
 
 ## উচ্চ-সংবেদনশীল / ঘন-পরিবর্তনশীল টপিক
 
@@ -145,7 +147,7 @@ python3 scripts/verify_site.py
 6. **একাধিক সেশন/অ্যাকাউন্ট একসাথে কাজ করা স্বাভাবিক** — তাই সরাসরি main-push বাদ, branch+PR বাধ্যতামূলক (`PR_GUIDE.md`)।
    - কাজ শুরুতে: `session_status.sh` (ব্লক করে না, শুধু re-orient)।
    - push-এর আগে: `preflight.sh` — fail করলে ঠিক না করে push না।
-   - branch+PR-এর পর কোনো স্বয়ংক্রিয় সংঘর্ষ-শনাক্তকরণ CI নেই (পুরনো standalone রিপোর `pr-check.yml` এই কাজ করত, monorepo-তে সমতুল্য কিছু নেই; #423/#443 এটা ঠিক করার চেষ্টা করছে) — তাই merge-এর ঠিক আগে PR-এর `mergeable_state` নিজে চেক করুন (`behind` হলে GitHub API-র `pulls/<PR>/update-branch` কল করে `clean` না হওয়া পর্যন্ত অপেক্ষা করুন, তারপর merge)।
+   - branch+PR-এর পর `pr-check.yml` অন্য খোলা PR-এর সাথে ফাইল-সংঘর্ষ (একই সোর্স-ফাইল ছুঁয়েছে কিনা) স্বয়ংক্রিয়ভাবে PR-কমেন্টে জানায় — কিন্তু এটা git-স্তরের rebase/merge-conflict-এর বিকল্প না, তাই merge-এর ঠিক আগে PR-এর `mergeable_state` নিজে চেক করুন (`behind` হলে GitHub API-র `pulls/<PR>/update-branch` কল করে `clean` না হওয়া পর্যন্ত অপেক্ষা করুন, তারপর merge)।
    - নিজের branch-এ (main-এ কখনো না) সাধারণ push; `--force-with-lease` শুধু তখনই যদি branch-এ শুধু নিজের কমিট থাকে। branch protection চালু থাকলে main-এ সরাসরি push এমনিতেই প্রত্যাখ্যাত হবে।
    - **main protection সাময়িক বন্ধ থাকা অবস্থায় ভুলবশত সরাসরি push হয়ে গেলে:** নিজের branch-এ `git rebase origin/main`, conflict এলে নিয়ম ৭ অনুযায়ী।
 7. **rebase-conflict নিয়ম:** নিজে অনুমান করে কোনদিক রাখবেন ঠিক করবেন না — conflict ও উভয় পক্ষের পরিবর্তন ব্যবহারকারীকে দেখিয়ে জিজ্ঞেস করুন। **ব্যতিক্রম:** সত্যিকারের বিষয়বস্তু-দ্বন্দ্ব না হয়ে শুধু একই জায়গায় দুই সেশনের ভিন্ন নতুন সংযোজন হলে (যেমন একই টেবিলে দুই নতুন row, CHANGELOG-এ দুই নতুন এন্ট্রি) — দুটোই রেখে (তারিখ/ভার্সন অনুযায়ী সাজিয়ে) নিজে মিলিয়ে নেওয়া ঠিক, জিজ্ঞেস করার দরকার নেই। Auto-generated ফাইলে conflict এলে হাতে এডিট না করে rebase-এর পর `build_index.py` ফের চালান।

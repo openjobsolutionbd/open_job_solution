@@ -123,6 +123,8 @@ def check_broken_file_refs(rel, text):
             continue
         if c.startswith("/home/") or c.startswith("/tmp/"):
             continue  # sandbox স্ক্র্যাচ পাথ, রিপো ফাইল না
+        if c.endswith("/") or "..." in c:
+            continue  # পাথ-প্যাটার্ন/প্রিফিক্স ইলাস্ট্রেশন (যেমন 'docs/...'), নির্দিষ্ট ফাইল-রেফারেন্স না
         if not re.search(r"[./]", c):
             continue
         if any(ch in c for ch in "<>*"):

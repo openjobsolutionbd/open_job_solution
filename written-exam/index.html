@@ -126,6 +126,10 @@
       color: var(--text-2);
       margin-bottom: 8px;
     }
+    .exam-date-row {
+      font-size: 0.78rem;
+      color: var(--text-3);
+    }
     .exam-meta-row {
       display: flex;
       gap: 8px;
@@ -423,12 +427,13 @@
     empty.style.display = 'none';
     countEl.textContent = '';
 
-    filtered.forEach(ex => {
+    filtered.forEach((ex, idx) => {
       const card = document.createElement('div');
       card.className = 'exam-card';
       card.innerHTML = `
-        <div class="exam-ministry">${escText(ex.ministry)}</div>
+        <div class="exam-ministry">${toBn(idx + 1)}. ${escText(ex.ministry)}</div>
         <div class="exam-post">${escText(ex.post)}</div>
+        <div class="exam-date-row">তারিখ: ${formatDate(ex.date)}</div>
       `;
       card.addEventListener('click', () => openExam(ex.id));
       grid.appendChild(card);

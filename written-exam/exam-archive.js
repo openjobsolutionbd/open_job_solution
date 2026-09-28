@@ -904,29 +904,5 @@ const EXAM_ARCHIVE = [
     date: "2026-09-11",
     totalQuestions: 13,
   },
-  {
-    id: "uttara-bank-plc-2026-ao",
-    ministry: "উত্তরা ব্যাংক পিএলসি",
-    post: "সহকারী কর্মকর্তা (জেনারেল) — Assistant Officer (General)",
-    date: "2026-07-24",
-    totalMarks: 74,
-    totalQuestions: 74,
-  },
-  {
-    id: "health-ministry-2026-sub-engineer-civil",
-    ministry: "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়",
-    post: "সহকারী প্রকৌশলী (সিভিল)",
-    date: "2026-08-04",
-    totalMarks: 60,
-    totalQuestions: 60,
-  },
-  {
-    id: "bd-navy-2026-storeman",
-    ministry: "বাংলাদেশ নৌবাহিনী",
-    post: "স্টোরম্যান",
-    date: "2026-08-07",
-    totalMarks: 80,
-    totalQuestions: 80,
-  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

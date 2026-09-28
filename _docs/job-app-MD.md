@@ -91,6 +91,34 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.330 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.330-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.329 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.329-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.328 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.328-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.327 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.327-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.326 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.326-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.325 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.325-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.324 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.324-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.323 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.323-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.322 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.322-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.321 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.321-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.320 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.320-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.319 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.319-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.318 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.318-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.317 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.317-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.316 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.316-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.315 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.315-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.314 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.314-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.313 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.313-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.312 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.312-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.311 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.311-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.310 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.310-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.309 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.309-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.308 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.308-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.307 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.307-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.306 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.306-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.305 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.305-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.304 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.304-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.303 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.303-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.302 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.302-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.301 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.301-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.300 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.300-এ আপগ্রেড। Cache সব module-এ update। |

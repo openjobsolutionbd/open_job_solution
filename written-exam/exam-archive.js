@@ -904,13 +904,5 @@ const EXAM_ARCHIVE = [
     date: "2026-09-11",
     totalQuestions: 13,
   },
-  {
-    id: "uttara-bank-plc-2026-ao",
-    ministry: "উত্তরা ব্যাংক পিএলসি",
-    post: "সহকারী কর্মকর্তা (জেনারেল) — Assistant Officer (General)",
-    date: "2026-07-24",
-    totalMarks: 74,
-    totalQuestions: 74,
-  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

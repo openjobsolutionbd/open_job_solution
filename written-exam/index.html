@@ -464,9 +464,9 @@
     document.getElementById('searchWrap').style.display = 'none';
     document.getElementById('appHeader').classList.add('exam-mode');
 
-    // ভাসমান সার্চ (fs-widget) শুধু হোমপেজে থাকবে — exam detail-এ লুকিয়ে ফেলা হলো
+    // ভাসমান সার্চ (fs-widget) শুধু exam detail-এ থাকবে — হোমপেজে লুকানো
     const fsWidget = document.getElementById('fs-widget-root');
-    if (fsWidget) fsWidget.style.display = 'none';
+    if (fsWidget) fsWidget.style.display = '';
 
     renderQuestions(examId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -580,9 +580,9 @@
     document.getElementById('appHeader').classList.remove('exam-mode');
     currentExamId = null;
 
-    // হোমপেজে ফিরলে ভাসমান সার্চ আবার দেখানো হলো
+    // হোমপেজে ফিরলে ভাসমান সার্চ লুকিয়ে ফেলা হলো
     const fsWidget = document.getElementById('fs-widget-root');
-    if (fsWidget) fsWidget.style.display = '';
+    if (fsWidget) fsWidget.style.display = 'none';
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
@@ -650,6 +650,11 @@
           }));
         }
       });
+
+      // পেজ লোডেই হোমভিউতে থাকি — ভাসমান সার্চ শুরুতে লুকানো থাকবে,
+      // exam detail খুললে দেখানো হবে (দেখুন openExam/backBtn হ্যান্ডলার)
+      const fsWidget = document.getElementById('fs-widget-root');
+      if (fsWidget) fsWidget.style.display = 'none';
     })();
   </script>
 

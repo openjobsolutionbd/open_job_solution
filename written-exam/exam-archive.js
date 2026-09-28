@@ -912,5 +912,21 @@ const EXAM_ARCHIVE = [
     totalMarks: 74,
     totalQuestions: 74,
   },
+  {
+    id: "health-ministry-2026-sub-engineer-civil",
+    ministry: "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়",
+    post: "সহকারী প্রকৌশলী (সিভিল)",
+    date: "2026-08-04",
+    totalMarks: 60,
+    totalQuestions: 60,
+  },
+  {
+    id: "bd-navy-2026-storeman",
+    ministry: "বাংলাদেশ নৌবাহিনী",
+    post: "স্টোরম্যান",
+    date: "2026-08-07",
+    totalMarks: 80,
+    totalQuestions: 80,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

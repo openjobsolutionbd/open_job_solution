@@ -261,7 +261,7 @@
       padding: 12px 15px;
       font-size: 0.88rem;
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.6;
     }
 
     /* ── Subject Heading (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান section) ── */
@@ -275,6 +275,13 @@
       border-bottom: 2px solid var(--border);
     }
     .subject-heading:first-child { margin-top: 6px; }
+
+    @media (max-width: 600px) {
+      .answer-body { margin-top: 6px; padding: 8px 9px; }
+      .subject-heading { margin: 16px 0 10px; }
+      .exam-header-detail { padding: 14px 12px 12px; margin-bottom: 10px; }
+      .exam-header-detail .post-name { margin-bottom: 10px; padding-bottom: 10px; }
+    }
 
     /* ── Empty state ── */
     .empty-state {
@@ -374,7 +381,7 @@
     document.documentElement.setAttribute('data-theme', t);
     themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
     const metaTheme = document.querySelector('meta[name="theme-color"]');
-    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f7f5f2');
+    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f1ebde');
   }
   applyTheme(localStorage.getItem('bcs_theme') || 'light');
   themeBtn.addEventListener('click', () => {

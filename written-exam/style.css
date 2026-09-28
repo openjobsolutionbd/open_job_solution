@@ -122,7 +122,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .question-body{display:flex;gap:10px;margin-bottom:7px;align-items:flex-start}
 .q-num{font-weight:700;font-size:0.95rem;color:var(--text-3);flex-shrink:0;min-width:28px;padding-top:2px}
 .q-text-wrap{flex:1}
-.q-text{font-size:1rem;font-weight:600;color:var(--text);line-height:1.7}
+.q-text{font-size:1rem;font-weight:600;color:var(--text);line-height:1.55}
 .q-exam{font-size:0.75rem;color:var(--text-3);font-weight:400;margin-left:6px;white-space:nowrap}
 
 .options-list{display:flex;flex-direction:column;gap:7px}
@@ -141,7 +141,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 
 .explanation-wrap{max-height:0;overflow:hidden;transition:max-height 0.35s ease,margin 0.3s ease;margin-top:0}
 .explanation-wrap.visible{max-height:5000px;margin-top:12px}
-.explanation-box{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 15px;font-size:0.88rem;color:var(--text);line-height:1.75}
+.explanation-box{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 15px;font-size:0.88rem;color:var(--text);line-height:1.6}
 .explanation-box strong{color:var(--text)}
 
 .coming-soon-banner{text-align:center;padding:60px 20px;color:var(--text-3)}
@@ -170,7 +170,15 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .no-results{text-align:center;padding:48px 20px;color:var(--text-3)}
 
 @media(max-width:600px){
-  .question-card{padding:15px 12px}
+  /* ── মোবাইলে বেশি লেখা ধরানোর জন্য ঘন লেআউট (কম স্ক্রল) ── */
+  .container{padding:12px 8px 72px}
+  .question-card{padding:10px 8px;margin-bottom:8px}
+  .question-body{gap:6px;margin-bottom:4px}
+  .q-num{min-width:20px;font-size:0.9rem;padding-top:1px}
+  .ans-parts{gap:6px}
+  .ans-part{gap:6px}
+  .part-label{min-width:18px}
+  .ans-table th,.ans-table td{padding:6px 8px}
   .q-text{font-size:0.95rem}
   .option-btn{font-size:0.88rem;padding:9px 10px}
   .header-inner{gap:8px;flex-wrap:nowrap}
@@ -184,13 +192,13 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 [data-theme="dark"] .app-version{background:rgba(255,255,255,0.05)}
 
 /* ── Type-specific answer styles ── */
-.ans-paragraph p { margin-bottom: 10px; line-height: 2; }
-.ans-paragraph { line-height: 2; }
+.ans-paragraph p { margin-bottom: 8px; line-height: 1.65; }
+.ans-paragraph { line-height: 1.65; }
 
-.ans-parts { display: flex; flex-direction: column; gap: 10px; }
+.ans-parts { display: flex; flex-direction: column; gap: 8px; }
 .ans-part { display: flex; gap: 10px; align-items: flex-start; }
 .part-label { font-weight: 700; color: var(--text); flex-shrink: 0; min-width: 24px; }
-.part-body { flex: 1; line-height: 1.8; }
+.part-body { flex: 1; line-height: 1.6; }
 .part-q { color: var(--text); }
 .part-eq { color: var(--text-3); margin: 0 4px; }
 .part-a { font-weight: 600; color: var(--text); }
@@ -204,7 +212,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .ans-table tr:nth-child(even) td { background: var(--surface-2); }
 
 /* Math */
-.ans-math { line-height: 2.6; }
+.ans-math { line-height: 2; }
 .math-step { padding: 4px 0; }
 .math-answer { font-weight: 700; color: var(--primary); margin-top: 10px; padding: 8px 12px; background: var(--primary-bg); border-radius: 8px; border-left: 3px solid var(--primary); }
 .alt-solution { margin-top: 16px; padding: 12px; background: var(--surface-2); border-radius: 8px; border: 1px dashed var(--border); }
@@ -233,7 +241,7 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .short-answer { font-weight: 600; color: var(--text); margin-left: 4px; }
 
 /* Letter */
-.ans-letter { line-height: 2; font-size: 0.9rem; }
+.ans-letter { line-height: 1.65; font-size: 0.9rem; }
 .letter-date { text-align: right; margin-bottom: 12px; color: var(--text-2); }
 .letter-to { margin-bottom: 12px; font-weight: 600; }
 .letter-subject { margin-bottom: 12px; color: var(--text-2); }
@@ -244,6 +252,6 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .letter-sender { font-weight: 600; }
 
 /* Read fill */
-.passage { background: var(--surface-2); padding: 12px 14px; border-radius: 8px; line-height: 2; margin-bottom: 10px; font-size: 0.9rem; border: 1px solid var(--border-light); }
+.passage { background: var(--surface-2); padding: 12px 14px; border-radius: 8px; line-height: 1.65; margin-bottom: 10px; font-size: 0.9rem; border: 1px solid var(--border-light); }
 .passage-answers { font-weight: 600; color: var(--primary); }
-.ans-read-fill { line-height: 2; }
+.ans-read-fill { line-height: 1.65; }

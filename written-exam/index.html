@@ -223,17 +223,32 @@
 
     /* ── হেডারের ভেতরের "ফিরে যান" বাটন (শুধু পরীক্ষার বিস্তারিত পেজে) ── */
     .header-back { display: none; margin-bottom: 0; flex-shrink: 0; }
-    .app-header.exam-mode .header-inner { position: relative; justify-content: center; flex-wrap: nowrap; }
+    /* তিন কলামের grid: বামে ফিরে যান | মাঝে টাইটেল | ডানে থিম বাটন।
+       দুই পাশের কলাম সমান (1fr) বলে টাইটেল সবসময় পেজের ঠিক মাঝখানে থাকে। */
+    .app-header.exam-mode .header-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      column-gap: 8px;
+    }
     .app-header.exam-mode .header-back {
       display: inline-flex;
-      position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      justify-self: start;
+      white-space: nowrap;
+      margin: 0;
     }
-    .app-header.exam-mode .header-actions { width: auto; }
-    /* খুব ছোট স্ক্রিনে ওভারল্যাপ এড়াতে: বাটন বামে, টাইটেল+🌙 বাকি জায়গার মাঝে */
-    @media (max-width: 480px) {
-      .app-header.exam-mode .header-back { position: static; transform: none; }
-      .app-header.exam-mode .title-link { margin-left: auto; }
-      .app-header.exam-mode .header-actions { margin-right: auto; }
+    .app-header.exam-mode .title-link { justify-self: center; margin: 0; }
+    .app-header.exam-mode .app-title { white-space: nowrap; }
+    .app-header.exam-mode .header-actions {
+      width: auto;
+      justify-self: end;
+      justify-content: flex-end;
+      margin: 0;
+    }
+    /* খুব ছোট স্ক্রিনে বাটনের প্যাডিং কমিয়ে টাইটেলের জায়গা নিশ্চিত করা */
+    @media (max-width: 380px) {
+      .app-header.exam-mode .header-back { padding: 6px 10px; font-size: 0.78rem; }
+      .app-header.exam-mode .app-title { font-size: 0.85rem; }
     }
 
     /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */

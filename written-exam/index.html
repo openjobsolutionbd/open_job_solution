@@ -366,7 +366,7 @@
     document.documentElement.setAttribute('data-theme', t);
     themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
     const metaTheme = document.querySelector('meta[name="theme-color"]');
-    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f7f5f2');
+    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f1ebde');
   }
   applyTheme(localStorage.getItem('bcs_theme') || 'light');
   themeBtn.addEventListener('click', () => {

@@ -147,32 +147,61 @@
     .exam-tag.date { background: var(--primary-bg); color: var(--primary); border-color: transparent; }
 
     /* ── Exam Detail View ── */
-    #examView { display: none; }
+    #examView { display: none; overflow-anchor: none; }
 
     .exam-header-detail {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 16px 18px;
+      padding: 18px 18px 16px;
       margin-bottom: 14px;
       box-shadow: var(--shadow);
+      text-align: center;
+      overflow: hidden;
+      max-height: 320px;
+      transition: max-height .35s ease, opacity .25s ease,
+                  padding .35s ease, margin .35s ease, border-width .35s ease;
     }
     .exam-header-detail h2 {
-      font-size: 1.05rem;
+      font-size: 1.12rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 4px;
-      line-height: 1.4;
+      margin: 0 0 6px;
+      line-height: 1.45;
     }
     .exam-header-detail .post-name {
-      font-size: 0.85rem;
+      font-size: 0.86rem;
       color: var(--text-2);
-      margin-bottom: 10px;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
     }
     .exam-info-row {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
+    }
+    .exam-info-row .exam-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      line-height: 1.4;
+    }
+    .exam-info-row .exam-tag.date { color: var(--text); }
+
+    /* স্ক্রলে নিচে নামলে হেডার কার্ড মসৃণভাবে গুটিয়ে যায় — পড়ার জায়গা বাড়ে */
+    .exam-header-detail.collapsed {
+      max-height: 0;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-width: 0;
+      box-shadow: none;
     }
 
     .back-btn {
@@ -343,8 +372,15 @@
   // Scroll Top
   // ══════════════════════════════════════════
   const scrollTopBtn = document.getElementById('scrollTopBtn');
+  const examHeaderEl = document.getElementById('examHeaderDetail');
+  let hdrCollapsed = false;
   window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+    const y = window.scrollY;
+    scrollTopBtn.classList.toggle('visible', y > 300);
+    // hysteresis: ১২০px-এর নিচে গেলে গুটাবে, ২০px-এর মধ্যে ফিরলে আবার খুলবে
+    // (না হলে কার্ড গুটালে পেজের উচ্চতা বদলে ঝিলিমিলি/লুপ হতে পারে)
+    if (!hdrCollapsed && y > 120) { hdrCollapsed = true; examHeaderEl.classList.add('collapsed'); }
+    else if (hdrCollapsed && y < 20) { hdrCollapsed = false; examHeaderEl.classList.remove('collapsed'); }
   }, { passive: true });
   scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
@@ -452,15 +488,17 @@
       <h2>${escText(exam.ministry)}</h2>
       <div class="post-name">${escText(exam.post)}</div>
       <div class="exam-info-row">
-        <span class="exam-tag date">📅 ${formatDate(exam.date)}</span>
-        <span class="exam-tag">⏱ ${exam.duration || '—'}</span>
-        <span class="exam-tag">📝 ${exam.totalMarks ? toBn(exam.totalMarks) : '—'} নম্বর</span>
+        <span class="exam-tag date">${formatDate(exam.date)}</span>
+        <span class="exam-tag">${exam.duration || '—'}</span>
+        <span class="exam-tag">${exam.totalMarks ? toBn(exam.totalMarks) : '—'} নম্বর</span>
       </div>
     `;
 
     // Show view
     document.getElementById('homeView').style.display = 'none';
     document.getElementById('examView').style.display = 'block';
+    hdrCollapsed = false;
+    examHeaderEl.classList.remove('collapsed');
     document.getElementById('searchWrap').style.display = 'none';
     document.getElementById('appHeader').classList.add('exam-mode');
 

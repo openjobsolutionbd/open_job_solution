@@ -25,16 +25,16 @@
 - **`docs/vendor/`** — offline rendering-এর জন্য local Markdown renderer (`marked.min.js`) ও sanitizer (`purify.min.js`)।
 - **`scripts/build_index.py`** — topic validate করে website-এর generated data তৈরি করে।
 - **`scripts/sw_template.js`** — service worker-এর template।
-- **`.github/workflows/update-wiki.yml`** — push-এর পর build চালিয়ে generated output আপডেট করে।
+- **রুটের `.github/workflows/update-wiki.yml` ও `pr-check.yml`** — (`open_job_solution`-এর রুটে, এই ফোল্ডারের ভেতরে না; GitHub শুধু রুটের workflow পড়ে) `update-wiki.yml` main-এ push-এর পর build চালিয়ে generated output আপডেট করে, `pr-check.yml` PR-এ build/verify/সংঘর্ষ চেক করে।
 - **`PROJECT.md`** — সিস্টেম কীভাবে বানানো/গঠিত তার ডকুমেন্টেশন।
 - **`EDITORIAL_MEMORY.md`** — কনটেন্ট আপডেটের সময়কার স্থায়ী সম্পাদকীয় সিদ্ধান্তের নিয়ম-খাতা।
-- **`CHANGELOG.md`**, **`VERSION`** (বর্তমানে `1.6.0`) — ভার্সন হিস্ট্রি।
+- **`CHANGELOG.md`**, **`VERSION`** — ভার্সন হিস্ট্রি।
 - **`TEST_CHECKLIST.md`** — রিলিজের আগে যাচাইয়ের চেকলিস্ট।
 - **`wrangler.toml`** — Cloudflare Pages/Wrangler ডিপ্লয় কনফিগ।
 
 ## Cloudflare Pages-এ চালু করা
 
-1. পুরো repo GitHub-এ push করো।
+1. `open_job_solution` repo GitHub-এ push করো (এই ফোল্ডার সেটার অংশ)।
 2. Cloudflare Dashboard → Workers & Pages → Create → Pages → Connect to Git-এ যাও।
 3. repo নির্বাচন করো।
 4. Framework preset `None`, Build command খালি, Build output directory `docs` রাখো।

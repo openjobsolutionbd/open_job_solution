@@ -254,15 +254,32 @@
     /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */
     .answer-body {
       display: block;
-      margin-top: 10px;
-      background: var(--surface-2);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-sm);
-      padding: 12px 15px;
+      margin-top: 8px;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
       font-size: 0.88rem;
       color: var(--text);
       line-height: 1.6;
     }
+
+    /* ── সমতল লেআউট (শুধু পরীক্ষার বিস্তারিত পেজ) ──
+       কার্ডের ভেতর বক্স, তার ভেতর টেবিল — এই ধাপে ধাপে বাক্স বাদ।
+       প্রশ্নগুলো আলাদা হবে হালকা রেখা দিয়ে, লেখা পাবে পুরো চওড়া। */
+    #examView { padding: 0 4px; }
+    #examView .question-card {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--border-light);
+      border-radius: 0;
+      box-shadow: none;
+      padding: 14px 2px;
+      margin: 0;
+    }
+    /* বিষয়ের হেডিংয়ের আগের প্রশ্নে আলাদা রেখা নয় (হেডিংয়ের নিজের রেখা আছে) */
+    #examView .question-card:has(+ .subject-heading),
+    #examView .question-card:last-child { border-bottom: 0; }
 
     /* ── Subject Heading (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান section) ── */
     .subject-heading {
@@ -277,7 +294,7 @@
     .subject-heading:first-child { margin-top: 6px; }
 
     @media (max-width: 600px) {
-      .answer-body { margin-top: 6px; padding: 8px 9px; }
+      .answer-body { margin-top: 6px; }
       .subject-heading { margin: 16px 0 10px; }
       .exam-header-detail { padding: 14px 12px 12px; margin-bottom: 10px; }
       .exam-header-detail .post-name { margin-bottom: 10px; padding-bottom: 10px; }

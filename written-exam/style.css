@@ -178,7 +178,6 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
   .ans-parts{gap:6px}
   .ans-part{gap:6px}
   .part-label{min-width:18px}
-  .ans-table th,.ans-table td{padding:6px 8px}
   .q-text{font-size:0.95rem}
   .option-btn{font-size:0.88rem;padding:9px 10px}
   .header-inner{gap:8px;flex-wrap:nowrap}
@@ -206,10 +205,9 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 /* Table */
 .ans-table-wrap { overflow-x: auto; }
 .ans-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
-.ans-table th { background: var(--surface-2); color: var(--text); font-weight: 700; padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--border); }
-.ans-table td { padding: 7px 12px; border-bottom: 1px solid var(--border-light); }
+.ans-table th { background: none; color: var(--text); font-weight: 700; padding: 6px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+.ans-table td { padding: 6px 8px; border-bottom: 1px solid var(--border-light); }
 .ans-table tr:last-child td { border-bottom: none; }
-.ans-table tr:nth-child(even) td { background: var(--surface-2); }
 
 /* Math */
 .ans-math { line-height: 2; }

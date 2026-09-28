@@ -191,6 +191,8 @@
       padding: 4px 12px;
       line-height: 1.4;
     }
+    .exam-info-row .exam-tag.date { color: var(--text); }
+
     /* স্ক্রলে নিচে নামলে হেডার কার্ড মসৃণভাবে গুটিয়ে যায় — পড়ার জায়গা বাড়ে */
     .exam-header-detail.collapsed {
       max-height: 0;
@@ -486,9 +488,9 @@
       <h2>${escText(exam.ministry)}</h2>
       <div class="post-name">${escText(exam.post)}</div>
       <div class="exam-info-row">
-        <span class="exam-tag date">📅 ${formatDate(exam.date)}</span>
-        <span class="exam-tag">⏱ ${exam.duration || '—'}</span>
-        <span class="exam-tag">📝 ${exam.totalMarks ? toBn(exam.totalMarks) : '—'} নম্বর</span>
+        <span class="exam-tag date">${formatDate(exam.date)}</span>
+        <span class="exam-tag">${exam.duration || '—'}</span>
+        <span class="exam-tag">${exam.totalMarks ? toBn(exam.totalMarks) : '—'} নম্বর</span>
       </div>
     `;
 

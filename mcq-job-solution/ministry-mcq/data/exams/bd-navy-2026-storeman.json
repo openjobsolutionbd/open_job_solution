@@ -5,7 +5,14 @@
     "subject": "bangla",
     "qno": 1,
     "q": "বাংলা ভাষার প্রাচীন নমুনা পাওয়া যায় —",
-    "answer": "চর্যাপদে"
+    "answer": "চর্যাপদে",
+    "options": [
+      "মঙ্গলকাব্যে",
+      "শ্রীকৃষ্ণকীর্তনে",
+      "চর্যাপদে",
+      "ময়মনসিংহ গীতিকায়"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q02",
@@ -13,7 +20,14 @@
     "subject": "bangla",
     "qno": 2,
     "q": "বর্ণের সঙ্গে কোন ইন্দ্রিয়ের সরাসরি সম্পর্ক আছে?",
-    "answer": "চোখ"
+    "answer": "চোখ",
+    "options": [
+      "নাক",
+      "কান",
+      "চোখ",
+      "ত্বক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q03",
@@ -21,7 +35,14 @@
     "subject": "bangla",
     "qno": 3,
     "q": "কোনটি সাধু ভাষার বৈশিষ্ট্য?",
-    "answer": "গুরুগম্ভীর"
+    "answer": "গুরুগম্ভীর",
+    "options": [
+      "গুরুগম্ভীর",
+      "আঞ্চলিক শব্দের প্রাধান্য",
+      "ক্রিয়াপদের সংক্ষিপ্ত রূপ",
+      "সহজ ও সাবলীলতা"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q04",
@@ -29,7 +50,14 @@
     "subject": "bangla",
     "qno": 4,
     "q": "ভাষার ক্ষুদ্রতম উপাদান কোনটি?",
-    "answer": "ধ্বনি"
+    "answer": "ধ্বনি",
+    "options": [
+      "ধ্বনি",
+      "বাক্য",
+      "বর্ণ",
+      "শব্দ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q05",
@@ -37,15 +65,29 @@
     "subject": "bangla",
     "qno": 5,
     "q": "বাংলা বর্ণমালায় ব্যঞ্জনবর্ণের সংখ্যা কয়টি?",
-    "answer": "৩৯"
+    "answer": "৩৯",
+    "options": [
+      "৩৯",
+      "৪১",
+      "৩৫",
+      "৩৭"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q06",
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 6,
-    "q": "'সঙ্ঘ' শব্দের যুক্তবর্ণের বর্ণগুলো কী কী?",
-    "answer": "ঞ, চ"
+    "q": "'সঞ্চয়' শব্দের যুক্তবর্ণের বর্ণগুলো কী কী?",
+    "answer": "ঞ, চ",
+    "options": [
+      "ঞ, চ",
+      "ঙ, চ",
+      "ঞ, ছ",
+      "ন, চ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q07",
@@ -53,7 +95,14 @@
     "subject": "bangla",
     "qno": 7,
     "q": "মহাপ্রাণ ধ্বনি কোনটি?",
-    "answer": "খ, ঘ"
+    "answer": "খ, ঘ",
+    "options": [
+      "ট, ড",
+      "ক, গ",
+      "খ, ঘ",
+      "চ, জ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q08",
@@ -61,7 +110,14 @@
     "subject": "bangla",
     "qno": 8,
     "q": "শব্দ বা ক্রিয়ার মূলকে কী বলে?",
-    "answer": "প্রকৃতি"
+    "answer": "প্রকৃতি",
+    "options": [
+      "উপসর্গ",
+      "বিভক্তি",
+      "প্রত্যয়",
+      "প্রকৃতি"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q09",
@@ -69,15 +125,29 @@
     "subject": "bangla",
     "qno": 9,
     "q": "বিভক্তিহীন নাম শব্দকে কী বলে?",
-    "answer": "প্রাতিপদিক"
+    "answer": "প্রাতিপদিক",
+    "options": [
+      "ধাতু",
+      "প্রাতিপদিক",
+      "সর্বনাম",
+      "অনুসর্গ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q10",
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 10,
-    "q": "সমাবদ্ধ পদকে বলে —",
-    "answer": "সমস্ত পদ"
+    "q": "সমাসবদ্ধ পদকে বলে —",
+    "answer": "সমস্তপদ",
+    "options": [
+      "সমস্তপদ",
+      "সন্ধিপদ",
+      "যৌগিক পদ",
+      "ব্যাসবাক্য"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q11",
@@ -85,7 +155,14 @@
     "subject": "bangla",
     "qno": 11,
     "q": "নিচের কোনটি কর্মধারয় সমাসের উদাহরণ?",
-    "answer": "হাতঘড়ি"
+    "answer": "হাতঘড়ি",
+    "options": [
+      "হাতঘড়ি",
+      "মাতাপিতা",
+      "দিনরাত",
+      "রাজপুত্র"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q12",
@@ -93,7 +170,14 @@
     "subject": "bangla",
     "qno": 12,
     "q": "'হাটবাজার' কোন অর্থে দ্বন্দ্ব সমাস?",
-    "answer": "সমার্থক"
+    "answer": "সমার্থক",
+    "options": [
+      "ক্রমার্থক",
+      "সমার্থক",
+      "বিপরীতার্থক",
+      "বিরোধার্থক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q13",
@@ -101,7 +185,14 @@
     "subject": "bangla",
     "qno": 13,
     "q": "'সঞ্চয়' শব্দের সঠিক সন্ধি বিচ্ছেদ কোনটি?",
-    "answer": "সম্ + চয়"
+    "answer": "সম্ + চয়",
+    "options": [
+      "সং + চয়",
+      "সম্ + চয়",
+      "সম + চয়ন",
+      "সন্ + চয়"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q14",
@@ -109,7 +200,14 @@
     "subject": "bangla",
     "qno": 14,
     "q": "'নাবিক'-এর সন্ধি বিচ্ছেদ কোনটি?",
-    "answer": "নৌ + ইক"
+    "answer": "নৌ + ইক",
+    "options": [
+      "নৌ + অক",
+      "নাউ + ইক",
+      "নৌ + ইক",
+      "নব + ইক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q15",
@@ -117,7 +215,14 @@
     "subject": "bangla",
     "qno": 15,
     "q": "কোনটি দেশি শব্দ?",
-    "answer": "ঢেঁকি"
+    "answer": "ঢেঁকি",
+    "options": [
+      "কলম",
+      "সূর্য",
+      "ঢেঁকি",
+      "পিতা"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q16",
@@ -125,15 +230,29 @@
     "subject": "bangla",
     "qno": 16,
     "q": "'পুকুরে মাছ আছে।' কোন কারক?",
-    "answer": "অধিকরণ"
+    "answer": "অধিকরণ",
+    "options": [
+      "করণ",
+      "কর্ম",
+      "অধিকরণ",
+      "অপাদান"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q17",
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 17,
-    "q": "'চৈত্রায় সব হয়।' 'চৈত্রায়' কোন কারক?",
-    "answer": "করণ"
+    "q": "'চেষ্টায় সব হয়।' — 'চেষ্টায়' কোন কারক?",
+    "answer": "করণ",
+    "options": [
+      "কর্তা",
+      "করণ",
+      "অধিকরণ",
+      "অপাদান"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q18",
@@ -141,7 +260,14 @@
     "subject": "bangla",
     "qno": 18,
     "q": "'মাথা দেওয়া' বলতে কী বোঝায়?",
-    "answer": "দায়িত্ব গ্রহণ"
+    "answer": "দায়িত্ব গ্রহণ",
+    "options": [
+      "দায়িত্ব গ্রহণ",
+      "ক্ষমা চাওয়া",
+      "অহংকার করা",
+      "অনুমতি দেওয়া"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q19",
@@ -149,7 +275,14 @@
     "subject": "bangla",
     "qno": 19,
     "q": "'বর্ধমান'-এর বিপরীত শব্দ কী?",
-    "answer": "ক্ষীয়মাণ"
+    "answer": "ক্ষীয়মাণ",
+    "options": [
+      "ক্ষীয়মাণ",
+      "প্রবর্ধমান",
+      "সমৃদ্ধ",
+      "বর্ধিষ্ণু"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q20",
@@ -157,7 +290,14 @@
     "subject": "bangla",
     "qno": 20,
     "q": "'গোবর গণেশ' বাগধারাটির অর্থ কী?",
-    "answer": "মূর্খ"
+    "answer": "মূর্খ",
+    "options": [
+      "মূর্খ",
+      "বিদ্বান",
+      "ধনী",
+      "সাহসী"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q21",
@@ -165,7 +305,14 @@
     "subject": "english",
     "qno": 21,
     "q": "'A rolling stone gathers no moss.' Here 'rolling' is —",
-    "answer": "Participle"
+    "answer": "Participle",
+    "options": [
+      "Verb",
+      "Participle",
+      "Gerund",
+      "Noun"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q22",
@@ -173,7 +320,14 @@
     "subject": "english",
     "qno": 22,
     "q": "'Man cannot live alone.' The word 'alone' used here as —",
-    "answer": "Adverb"
+    "answer": "Adverb",
+    "options": [
+      "Conjunction",
+      "Noun",
+      "Adjective",
+      "Adverb"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q23",
@@ -181,7 +335,14 @@
     "subject": "english",
     "qno": 23,
     "q": "The plural number of 'Bureau' —",
-    "answer": "Bureaux"
+    "answer": "Bureaux",
+    "options": [
+      "Bureaues",
+      "Bureauxs",
+      "Bureaux",
+      "Bureau's"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q24",
@@ -189,7 +350,14 @@
     "subject": "english",
     "qno": 24,
     "q": "Which of the following is the correct feminine gender of 'Nephew'?",
-    "answer": "Niece"
+    "answer": "Niece",
+    "options": [
+      "Aunt",
+      "Niece",
+      "Nephewess",
+      "Cousin"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q25",
@@ -197,7 +365,14 @@
     "subject": "english",
     "qno": 25,
     "q": "Which of the following word is spelled correctly?",
-    "answer": "Lieutenant"
+    "answer": "Lieutenant",
+    "options": [
+      "Leiutenant",
+      "Leutenant",
+      "Lieutenent",
+      "Lieutenant"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q26",
@@ -205,7 +380,14 @@
     "subject": "english",
     "qno": 26,
     "q": "'The man died — over eating.'",
-    "answer": "from"
+    "answer": "from",
+    "options": [
+      "of",
+      "by",
+      "with",
+      "from"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q27",
@@ -213,7 +395,14 @@
     "subject": "english",
     "qno": 27,
     "q": "'Nasim arrived while I — the dinner.'",
-    "answer": "was cooking"
+    "answer": "was cooking",
+    "options": [
+      "cook",
+      "am cooking",
+      "have cooked",
+      "was cooking"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q28",
@@ -221,7 +410,14 @@
     "subject": "english",
     "qno": 28,
     "q": "'Karim went to bed after he — his lesson.'",
-    "answer": "had learnt"
+    "answer": "had learnt",
+    "options": [
+      "had learnt",
+      "learns",
+      "have learnt",
+      "has learnt"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q29",
@@ -229,7 +425,14 @@
     "subject": "english",
     "qno": 29,
     "q": "'She couldn't stop — .'",
-    "answer": "laughing"
+    "answer": "laughing",
+    "options": [
+      "laughing",
+      "laugh",
+      "to laughing",
+      "laughed"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q30",
@@ -237,7 +440,14 @@
     "subject": "english",
     "qno": 30,
     "q": "'The patient died — the doctor had come.'",
-    "answer": "after"
+    "answer": "after",
+    "options": [
+      "since",
+      "while",
+      "after",
+      "because"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q31",
@@ -245,7 +455,14 @@
     "subject": "english",
     "qno": 31,
     "q": "Which one is the correct sentence?",
-    "answer": "I felt his pulse."
+    "answer": "I felt his pulse.",
+    "options": [
+      "I feeled his pulse.",
+      "I felt his pulses.",
+      "I felt his pulse.",
+      "I felt him pulse."
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q32",
@@ -253,7 +470,14 @@
     "subject": "english",
     "qno": 32,
     "q": "Which of the following word is spelled correctly?",
-    "answer": "Renaissance"
+    "answer": "Renaissance",
+    "options": [
+      "Renaissence",
+      "Renaissance",
+      "Renaisance",
+      "Renassance"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q33",
@@ -261,7 +485,14 @@
     "subject": "english",
     "qno": 33,
     "q": "What is the synonym of 'Obdurate'?",
-    "answer": "Stubborn"
+    "answer": "Stubborn",
+    "options": [
+      "Gentle",
+      "Flexible",
+      "Obedient",
+      "Stubborn"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q34",
@@ -269,7 +500,14 @@
     "subject": "english",
     "qno": 34,
     "q": "What type of pronoun is 'each other'?",
-    "answer": "Reciprocal"
+    "answer": "Reciprocal",
+    "options": [
+      "Reciprocal",
+      "Relative",
+      "Demonstrative",
+      "Reflexive"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q35",
@@ -277,7 +515,14 @@
     "subject": "english",
     "qno": 35,
     "q": "The antonym of 'Inimical' is —",
-    "answer": "Friendly"
+    "answer": "Friendly",
+    "options": [
+      "Hostile",
+      "Harmful",
+      "Adverse",
+      "Friendly"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q36",
@@ -285,7 +530,14 @@
     "subject": "english",
     "qno": 36,
     "q": "'Three-fourths of our work — finished.'",
-    "answer": "has been"
+    "answer": "has been",
+    "options": [
+      "were",
+      "are",
+      "has been",
+      "have been"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q37",
@@ -293,7 +545,14 @@
     "subject": "english",
     "qno": 37,
     "q": "'Apple of one's eye' means —",
-    "answer": "Extremely favourite"
+    "answer": "Extremely favourite",
+    "options": [
+      "Extremely favourite",
+      "A dangerous person",
+      "Very expensive",
+      "Completely useless"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q38",
@@ -301,7 +560,14 @@
     "subject": "english",
     "qno": 38,
     "q": "The phrase 'Pass the buck' means —",
-    "answer": "to pass the blame to someone else"
+    "answer": "to pass the blame to someone else",
+    "options": [
+      "to pay a bill",
+      "to take responsibility",
+      "to hide money",
+      "to pass the blame to someone else"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q39",
@@ -309,7 +575,14 @@
     "subject": "english",
     "qno": 39,
     "q": "Who is not a romantic poet?",
-    "answer": "T. S. Eliot"
+    "answer": "T. S. Eliot",
+    "options": [
+      "William Wordsworth",
+      "T. S. Eliot",
+      "John Keats",
+      "P. B. Shelley"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q40",
@@ -317,7 +590,14 @@
     "subject": "english",
     "qno": 40,
     "q": "The word 'nuptial' is related to —",
-    "answer": "marriage"
+    "answer": "marriage",
+    "options": [
+      "voyage",
+      "birth",
+      "marriage",
+      "death"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q41",
@@ -325,7 +605,14 @@
     "subject": "math",
     "qno": 41,
     "q": "0.0005 ÷ 0.008 = কত?",
-    "answer": "0.0625"
+    "answer": "0.0625",
+    "options": [
+      "0.00625",
+      "6.25",
+      "0.625",
+      "0.0625"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q42",
@@ -333,7 +620,14 @@
     "subject": "math",
     "qno": 42,
     "q": "৬০ লিটার মিশ্রণে এসিড ও পানির অনুপাত ৭ : ৩। ঐ মিশ্রণে পানির পরিমাণ কত?",
-    "answer": "১৮ লিটার"
+    "answer": "১৮ লিটার",
+    "options": [
+      "১২ লিটার",
+      "৪২ লিটার",
+      "২১ লিটার",
+      "১৮ লিটার"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q43",
@@ -341,7 +635,14 @@
     "subject": "math",
     "qno": 43,
     "q": "একজন কর্মচারীর বেতন ১৫% বৃদ্ধি পেয়ে ১৭,২৫০ টাকা হলে, কর্মচারীর পূর্বের বেতন কত?",
-    "answer": "১৫,০০০ টাকা"
+    "answer": "১৫,০০০ টাকা",
+    "options": [
+      "১৫,০০০ টাকা",
+      "১৩,০০০ টাকা",
+      "১৪,৫০০ টাকা",
+      "১৬,০০০ টাকা"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q44",
@@ -349,7 +650,14 @@
     "subject": "math",
     "qno": 44,
     "q": "সরল সুদের হার কত হলে যেকোনো মূলধন ৮ বছরে সুদে-আসলে তিনগুণ হবে?",
-    "answer": "২৫.০০%"
+    "answer": "২৫.০০%",
+    "options": [
+      "২০.০০%",
+      "১২.৫০%",
+      "৩৩.৩৩%",
+      "২৫.০০%"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q45",
@@ -357,7 +665,14 @@
     "subject": "math",
     "qno": 45,
     "q": "০.০০১ ÷ ০.০১ × ০.১ = কত?",
-    "answer": "০.০১"
+    "answer": "০.০১",
+    "options": [
+      "১",
+      "০.০০১",
+      "০.১",
+      "০.০১"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q46",
@@ -365,7 +680,14 @@
     "subject": "math",
     "qno": 46,
     "q": "(a+b) = ৭ এবং a² + b² = ২৫ হলে ab এর মান কোনটি?",
-    "answer": "১২"
+    "answer": "১২",
+    "options": [
+      "১৩",
+      "২৪",
+      "১২",
+      "১৪"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q47",
@@ -373,7 +695,14 @@
     "subject": "math",
     "qno": 47,
     "q": "1 − a² + 2ab − b² এর উৎপাদক কোনটি?",
-    "answer": "(1 + a − b)(1 − a + b)"
+    "answer": "(1 + a − b)(1 − a + b)",
+    "options": [
+      "(a + b + 1)(a − b − 1)",
+      "(1 + a − b)(1 − a + b)",
+      "(1 + a + b)(1 − a − b)",
+      "(1 − a − b)(1 − a + b)"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q48",
@@ -381,7 +710,14 @@
     "subject": "math",
     "qno": 48,
     "q": "০ হতে ৯৯ পর্যন্ত সংখ্যাসমূহের যোগফল কত?",
-    "answer": "৪৯৫০"
+    "answer": "৪৯৫০",
+    "options": [
+      "৪৯০০",
+      "৪৯৫০",
+      "৪৮৫০",
+      "৫০৫০"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q49",
@@ -389,7 +725,14 @@
     "subject": "math",
     "qno": 49,
     "q": "২, ৩, ৫, ৯, ১৭ এর পরবর্তী সংখ্যাটি কত?",
-    "answer": "৩৩"
+    "answer": "৩৩",
+    "options": [
+      "২৫",
+      "৩৩",
+      "৩১",
+      "৩৫"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q50",
@@ -397,7 +740,14 @@
     "subject": "math",
     "qno": 50,
     "q": "একটি সরলরেখার উপরে লম্ব অঙ্কন করলে কয়টি সমকোণ পাওয়া যায়?",
-    "answer": "২টি"
+    "answer": "২টি",
+    "options": [
+      "৩টি",
+      "১টি",
+      "০টি",
+      "২টি"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q51",
@@ -405,7 +755,14 @@
     "subject": "general-knowledge",
     "qno": 51,
     "q": "স্বর্ণের খাদ দূর করতে কোন এসিড ব্যবহার করা হয়?",
-    "answer": "নাইট্রিক এসিড"
+    "answer": "নাইট্রিক এসিড",
+    "options": [
+      "নাইট্রিক এসিড",
+      "সালফিউরিক এসিড",
+      "অ্যাসিটিক এসিড",
+      "ফরমিক এসিড"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q52",
@@ -413,7 +770,14 @@
     "subject": "general-knowledge",
     "qno": 52,
     "q": "আয়নার পেছনে কোন ধাতু ব্যবহার করা হয়?",
-    "answer": "এলুমিনিয়াম"
+    "answer": "এলুমিনিয়াম",
+    "options": [
+      "এলুমিনিয়াম",
+      "লোহা",
+      "সিসা",
+      "তামা"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q53",
@@ -421,7 +785,14 @@
     "subject": "general-knowledge",
     "qno": 53,
     "q": "মানবদেহে জিন কোথায় সংরক্ষিত থাকে?",
-    "answer": "DNA"
+    "answer": "DNA",
+    "options": [
+      "DNA",
+      "ATP",
+      "প্রোটিন",
+      "RNA"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q54",
@@ -429,7 +800,14 @@
     "subject": "general-knowledge",
     "qno": 54,
     "q": "পৃথিবীর কোন দেশে বেশি বেশি ভূমিকম্প হয়?",
-    "answer": "জাপান"
+    "answer": "জাপান",
+    "options": [
+      "অস্ট্রেলিয়া",
+      "জাপান",
+      "ব্রাজিল",
+      "নরওয়ে"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q55",
@@ -437,7 +815,14 @@
     "subject": "general-knowledge",
     "qno": 55,
     "q": "'SPARRSO' কোন ধরনের প্রতিষ্ঠান?",
-    "answer": "মহাকাশ গবেষণা বিষয়ক"
+    "answer": "মহাকাশ গবেষণা বিষয়ক",
+    "options": [
+      "জলবায়ু গবেষণা বিষয়ক",
+      "চিকিৎসা গবেষণা বিষয়ক",
+      "মহাকাশ গবেষণা বিষয়ক",
+      "কৃষি গবেষণা বিষয়ক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q56",
@@ -445,7 +830,14 @@
     "subject": "math",
     "qno": 56,
     "q": "কোনো সামান্তরিকের একটি কোণ সমকোণ হলে, তা একটি —",
-    "answer": "আয়তক্ষেত্র"
+    "answer": "আয়তক্ষেত্র",
+    "options": [
+      "আয়তক্ষেত্র",
+      "ত্রিভুজ",
+      "ট্রাপিজিয়াম",
+      "রম্বস"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q57",
@@ -453,15 +845,30 @@
     "subject": "math",
     "qno": 57,
     "q": "বৃত্তের কেন্দ্র ছেদকারী জ্যা-কে কী বলা হয়?",
-    "answer": "ব্যাস"
+    "answer": "ব্যাস",
+    "options": [
+      "স্পর্শক",
+      "পরিধি",
+      "ব্যাসার্ধ",
+      "ব্যাস"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q58",
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 58,
-    "q": "নিচের কোনটি সবচেয়ে ভারি ধাতু? (ক-লোহা, খ-পারদ, গ-মার্কারি, ঘ-জিংক)",
-    "answer": "পারদ / মার্কারি (উৎস নোট: 'খ' ও 'গ' উভয়ই সঠিক ধরা হয়েছে, যেহেতু দুটোই একই ধাতু)"
+    "q": "নিচের কোনটি সবচেয়ে ভারি ধাতু?",
+    "answer": "পারদ",
+    "explanation": "ম্যাগাজিনের নোট: 'পারদ' ও 'মার্কারি' একই ধাতু, তাই ছাপা অপশনে দুটোকেই সঠিক ধরা হয়েছিল।",
+    "options": [
+      "পারদ",
+      "তামা",
+      "জিংক",
+      "লোহা"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q59",
@@ -469,7 +876,14 @@
     "subject": "general-knowledge",
     "qno": 59,
     "q": "মৌমাছির হুলে কোন এসিড থাকে?",
-    "answer": "ফরমিক এসিড"
+    "answer": "ফরমিক এসিড",
+    "options": [
+      "ল্যাকটিক এসিড",
+      "ট্যানিক এসিড",
+      "সাইট্রিক এসিড",
+      "ফরমিক এসিড"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q60",
@@ -477,7 +891,14 @@
     "subject": "general-knowledge",
     "qno": 60,
     "q": "বিশ্বের প্রথম কম্পিউটারের নাম কোনটি?",
-    "answer": "ENIAC"
+    "answer": "ENIAC",
+    "options": [
+      "ENIAC",
+      "IBM 360",
+      "UNIVAC",
+      "Apple I"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q61",
@@ -485,7 +906,14 @@
     "subject": "general-knowledge",
     "qno": 61,
     "q": "বাংলাদেশের চা গবেষণা ইনস্টিটিউট কোথায় অবস্থিত?",
-    "answer": "শ্রীমঙ্গল"
+    "answer": "শ্রীমঙ্গল",
+    "options": [
+      "পঞ্চগড়",
+      "রাঙ্গামাটি",
+      "সিলেট",
+      "শ্রীমঙ্গল"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q62",
@@ -493,7 +921,14 @@
     "subject": "general-knowledge",
     "qno": 62,
     "q": "ভাস্কো-দা-গামা কত সালে ভারতবর্ষে আসেন?",
-    "answer": "১৪৯৮"
+    "answer": "১৪৯৮",
+    "options": [
+      "১৪৯২",
+      "১৪৯৮",
+      "১৫২৬",
+      "১৬০০"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q63",
@@ -501,7 +936,14 @@
     "subject": "general-knowledge",
     "qno": 63,
     "q": "'সোয়াচ অব নো গ্রাউন্ড' কোথায় অবস্থিত?",
-    "answer": "বঙ্গোপসাগরে"
+    "answer": "বঙ্গোপসাগরে",
+    "options": [
+      "কাস্পিয়ান সাগরে",
+      "ভূমধ্যসাগরে",
+      "আরব সাগরে",
+      "বঙ্গোপসাগরে"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q64",
@@ -509,7 +951,14 @@
     "subject": "general-knowledge",
     "qno": 64,
     "q": "বাংলাদেশের বৃহত্তম দ্বীপ কোনটি?",
-    "answer": "ভোলা"
+    "answer": "ভোলা",
+    "options": [
+      "সন্দ্বীপ",
+      "হাতিয়া",
+      "ভোলা",
+      "মহেশখালী"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q65",
@@ -517,7 +966,14 @@
     "subject": "general-knowledge",
     "qno": 65,
     "q": "'Friday For Future' কোন ধরনের আন্দোলন?",
-    "answer": "পরিবেশবাদী আন্দোলন"
+    "answer": "পরিবেশবাদী আন্দোলন",
+    "options": [
+      "পরিবেশবাদী আন্দোলন",
+      "নারী আন্দোলন",
+      "শ্রমিক আন্দোলন",
+      "স্বাধীনতা আন্দোলন"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q66",
@@ -525,7 +981,14 @@
     "subject": "general-knowledge",
     "qno": 66,
     "q": "বাংলাদেশের সংসদ ভবনের স্থপতির নাম কী?",
-    "answer": "লুই আই কান"
+    "answer": "লুই আই কান",
+    "options": [
+      "মাজহারুল ইসলাম",
+      "লে করবুসিয়ে",
+      "লুই আই কান",
+      "ওয়াল্টার গ্রোপিয়াস"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q67",
@@ -533,7 +996,14 @@
     "subject": "bangla",
     "qno": 67,
     "q": "'কবর' নাটকটির রচয়িতা কে?",
-    "answer": "মুনীর চৌধুরী"
+    "answer": "মুনীর চৌধুরী",
+    "options": [
+      "জসীম উদদীন",
+      "শওকত ওসমান",
+      "মুনীর চৌধুরী",
+      "সৈয়দ ওয়ালীউল্লাহ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q68",
@@ -541,7 +1011,14 @@
     "subject": "general-knowledge",
     "qno": 68,
     "q": "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?",
-    "answer": "নিউইয়র্ক"
+    "answer": "নিউইয়র্ক",
+    "options": [
+      "জেনেভা",
+      "প্যারিস",
+      "ওয়াশিংটন ডি.সি.",
+      "নিউইয়র্ক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q69",
@@ -549,7 +1026,14 @@
     "subject": "general-knowledge",
     "qno": 69,
     "q": "প্রথম বিশ্বকাপ ফুটবল অনুষ্ঠিত হয় কোন সালে?",
-    "answer": "১৯৩০"
+    "answer": "১৯৩০",
+    "options": [
+      "১৯৫০",
+      "১৯৩৪",
+      "১৯২৬",
+      "১৯৩০"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q70",
@@ -557,7 +1041,14 @@
     "subject": "general-knowledge",
     "qno": 70,
     "q": "২০২৬ সালের ফুটবল বিশ্বকাপের সর্বোচ্চ গোলদাতা কে?",
-    "answer": "ক্রিশ্চিয়ান এমবাপে"
+    "answer": "কিলিয়ান এমবাপ্পে",
+    "options": [
+      "আরলিং হালান্ড",
+      "লিওনেল মেসি",
+      "হ্যারি কেন",
+      "কিলিয়ান এমবাপ্পে"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q71",
@@ -565,7 +1056,14 @@
     "subject": "general-knowledge",
     "qno": 71,
     "q": "বাংলাদেশের কোন জেলার সাথে ভারত ও মিয়ানমার উভয় দেশের সীমান্ত আছে?",
-    "answer": "রাঙ্গামাটি"
+    "answer": "রাঙ্গামাটি",
+    "options": [
+      "দিনাজপুর",
+      "কক্সবাজার",
+      "রাঙ্গামাটি",
+      "সিলেট"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q72",
@@ -573,15 +1071,29 @@
     "subject": "general-knowledge",
     "qno": 72,
     "q": "মিয়ানমারের মুদ্রার নাম কী?",
-    "answer": "কিয়াত"
+    "answer": "কিয়াত",
+    "options": [
+      "রিংগিত",
+      "রুপিয়াহ",
+      "বাথ",
+      "কিয়াত"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q73",
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 73,
-    "q": "ল্যাটিন আমেরিকার সরকারি/সাধারণ ভাষার উৎস কোনটি?",
-    "answer": "ল্যাটিন"
+    "q": "ভ্যাটিকান সিটির ভাষা কোনটি?",
+    "answer": "ল্যাটিন",
+    "options": [
+      "আরবি",
+      "ল্যাটিন",
+      "হিব্রু",
+      "গ্রিক"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q74",
@@ -589,7 +1101,14 @@
     "subject": "general-knowledge",
     "qno": 74,
     "q": "আন্তর্জাতিক অপরাধ আদালত কোথায় অবস্থিত?",
-    "answer": "দ্য হেগ"
+    "answer": "দ্য হেগ",
+    "options": [
+      "জেনেভা",
+      "নিউইয়র্ক",
+      "ভিয়েনা",
+      "দ্য হেগ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q75",
@@ -597,7 +1116,14 @@
     "subject": "general-knowledge",
     "qno": 75,
     "q": "জাতিসংঘের কার্যকরী ভাষা কোন দুটি?",
-    "answer": "ইংরেজি ও ফরাসি"
+    "answer": "ইংরেজি ও ফরাসি",
+    "options": [
+      "ইংরেজি ও ফরাসি",
+      "ফরাসি ও আরবি",
+      "ইংরেজি ও স্প্যানিশ",
+      "ইংরেজি ও রুশ"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q76",
@@ -605,7 +1131,14 @@
     "subject": "general-knowledge",
     "qno": 76,
     "q": "সার্ক (SAARC) প্রতিষ্ঠিত হয় কত সালে?",
-    "answer": "১৯৮৫"
+    "answer": "১৯৮৫",
+    "options": [
+      "১৯৭১",
+      "১৯৮৫",
+      "১৯৯০",
+      "১৯৮০"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q77",
@@ -613,7 +1146,14 @@
     "subject": "general-knowledge",
     "qno": 77,
     "q": "'ভ্যালি অব কিংস' কোন দেশে অবস্থিত?",
-    "answer": "মিশর"
+    "answer": "মিশর",
+    "options": [
+      "তুরস্ক",
+      "ইরাক",
+      "মিশর",
+      "গ্রিস"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q78",
@@ -621,7 +1161,14 @@
     "subject": "general-knowledge",
     "qno": 78,
     "q": "কোন সংস্থা 'বিশ্ব ঐতিহ্য এলাকা' ঘোষণা করে?",
-    "answer": "ইউনেস্কো"
+    "answer": "ইউনেস্কো",
+    "options": [
+      "WHO",
+      "WTO",
+      "ইউনিসেফ",
+      "ইউনেস্কো"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q79",
@@ -629,7 +1176,14 @@
     "subject": "general-knowledge",
     "qno": 79,
     "q": "'কালাপানি' কোন দুই রাষ্ট্রের মধ্যে অমীমাংসিত ভূখণ্ড?",
-    "answer": "ভারত ও নেপাল"
+    "answer": "ভারত ও নেপাল",
+    "options": [
+      "ভারত ও পাকিস্তান",
+      "নেপাল ও চীন",
+      "ভারত ও ভুটান",
+      "ভারত ও নেপাল"
+    ],
+    "optionsGenerated": true
   },
   {
     "id": "bd-navy-2026-storeman-q80",
@@ -637,6 +1191,13 @@
     "subject": "general-knowledge",
     "qno": 80,
     "q": "বাংলাদেশের কোন অঞ্চলে কাঁচবালির সর্বোচ্চ মজুত রয়েছে?",
-    "answer": "সিলেট"
+    "answer": "সিলেট",
+    "options": [
+      "বরিশাল",
+      "খুলনা",
+      "রাজশাহী",
+      "সিলেট"
+    ],
+    "optionsGenerated": true
   }
 ]

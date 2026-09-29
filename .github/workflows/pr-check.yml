@@ -1,0 +1,115 @@
+name: PR চেক (current-affairs — validate + সংঘর্ষ)
+
+# ২০২৬-০৯: open_current_affairs → open_job_solution মনোরেপো-migration-এর পর
+# এই workflow (আগে current-affairs/.github/workflows/-এ, যেখানে GitHub এটা
+# আদৌ পড়ে না — নেস্টেড .github/ নিষ্ক্রিয়) রুটে ফিরিয়ে আনা হলো, এবং:
+#   ১. current-affairs/-এর ভেতরের সব কমান্ড এখন working-directory হিসেবে
+#      current-affairs ব্যবহার করে।
+#   ২. শুধু current-affairs/**-এ পরিবর্তন থাকলেই চলে (paths filter) — মনোরেপোর
+#      অন্য অংশে (bcs-mcq, primary-mcq, written-exam ইত্যাদি) PR-এ অপ্রয়োজনীয়
+#      চলবে না।
+#   ৩. scripts/pr_checks.py-কে আলাদাভাবে আপডেট করা হয়েছে (SUBDIR_PREFIX)
+#      যাতে GitHub-এর PR-files API-র থেকে পাওয়া "current-affairs/docs/..."
+#      পাথ ঠিকভাবে মেলে — নইলে এই নিরাপত্তা-নেট চুপচাপ কিছুই ধরত না।
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths:
+      - "current-affairs/**"
+
+defaults:
+  run:
+    working-directory: current-affairs
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python সেটআপ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: dependencies ইনস্টল
+        run: pip install pyyaml
+
+      - name: Node সেটআপ
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: current-affairs/package-lock.json
+
+      - name: npm dependencies ইনস্টল
+        run: npm ci
+
+      - name: generated ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক
+        id: prechecks
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/pr_checks.py
+
+      - name: কনটেন্ট বিল্ড ভ্যালিডেশন
+        id: build
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python3 scripts/build_index.py 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      # build-এর 'সতর্কতা:' (ডুপ্লিকেট/প্রায়-ডুপ্লিকেট/স্কোপ-নাম) PR-কমেন্টে দেখানো — ব্লক করে না।
+      - name: build সতর্কতা → PR-কমেন্ট (ব্যর্থ করে না)
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/pr_build_warnings.py "$RUNNER_TEMP/build.log"
+
+      - name: সাইট-জুড়ে ভেরিফাই
+        id: verify
+        continue-on-error: true
+        if: steps.build.outcome == 'success'
+        run: python3 scripts/verify_site.py
+
+      - name: sync/cache-scope/domain রিগ্রেশন-গার্ড
+        id: integration_guard
+        continue-on-error: true
+        if: steps.build.outcome == 'success'
+        run: python3 scripts/verify_integration_bugs.py
+
+      - name: JS regression suite (jsdom)
+        id: js_tests
+        continue-on-error: true
+        run: npm run test:js
+
+      - name: build_index.py regression suite
+        id: py_build_tests
+        continue-on-error: true
+        run: python3 scripts/test_build_index.py
+
+      - name: pr_checks.py regression suite
+        id: py_pr_tests
+        continue-on-error: true
+        run: python3 scripts/test_pr_checks.py
+
+      - name: চূড়ান্ত ফলাফল
+        if: steps.prechecks.outcome != 'success' || steps.build.outcome != 'success' || steps.verify.outcome != 'success' || steps.integration_guard.outcome != 'success' || steps.js_tests.outcome != 'success' || steps.py_build_tests.outcome != 'success' || steps.py_pr_tests.outcome != 'success'
+        run: |
+          echo "এক বা একাধিক চেক ব্যর্থ হয়েছে — PR-এর কমেন্টে বিস্তারিত দেখুন।"
+          exit 1

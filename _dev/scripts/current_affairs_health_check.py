@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-open_job_solution-এর current-affairs/docs/ (open_current_affairs থেকে
-sync হওয়া লাইভ output) নিয়মিত স্বয়ংক্রিয়ভাবে পরীক্ষা করে।
+open_job_solution-এর current-affairs/docs/ (আগে open_current_affairs
+থেকে sync হতো; ২০২৬-০৯ থেকে git subtree দিয়ে merge হয়ে সরাসরি এই
+রিপোতেই এডিট হয়) নিয়মিত স্বয়ংক্রিয়ভাবে পরীক্ষা করে।
 
 এটা repo-র নিজের ফাইল সরাসরি পড়ে, লাইভ ওয়েবসাইটে HTTP fetch করে না —
 কারণ:
@@ -90,61 +91,10 @@ def check_cache_scope():
             )
 
 
-def check_sync_freshness():
-    """
-    version.json-এ কোনো timestamp নেই (শুধু {"version": "x.y.z"}), তাই
-    git history থেকে current-affairs/docs/topics-index.json সর্বশেষ কবে
-    বদলেছে তা দেখা হচ্ছে। এর জন্য workflow-এ 'fetch-depth: 0' (পূর্ণ
-    history) থাকতে হবে — shallow clone-এ এই চেক ভুল ফলাফল দিতে পারে,
-    তাই shallow হলে চেক স্কিপ করে সতর্ক করা হচ্ছে (silent no-op না)।
-    """
-    import subprocess
-
-    try:
-        is_shallow = subprocess.run(
-            ["git", "rev-parse", "--is-shallow-repository"],
-            cwd=ROOT, capture_output=True, text=True, check=True,
-        ).stdout.strip()
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        return
-
-    if is_shallow == "true":
-        problems.append(
-            "**সিঙ্ক-ফ্রেশনেস চেক স্কিপড:** shallow clone-এ git history অসম্পূর্ণ, তাই সর্বশেষ "
-            "সিঙ্কের তারিখ নির্ভরযোগ্যভাবে বের করা যায়নি — workflow checkout-এ `fetch-depth: 0` আছে কিনা দেখুন।"
-        )
-        return
-
-    marker = CA_DOCS / "topics-index.json"
-    if not marker.exists():
-        return
-    try:
-        last_touch = subprocess.run(
-            ["git", "log", "-1", "--format=%cI", "--", str(marker.relative_to(ROOT))],
-            cwd=ROOT, capture_output=True, text=True, check=True,
-        ).stdout.strip()
-    except subprocess.CalledProcessError:
-        return
-    if not last_touch:
-        return
-    try:
-        last_time = datetime.fromisoformat(last_touch)
-    except ValueError:
-        return
-    age_days = (datetime.now(timezone.utc) - last_time.astimezone(timezone.utc)).days
-    if age_days > 7:
-        problems.append(
-            f"**সিঙ্ক পুরনো:** `topics-index.json` সর্বশেষ বদলেছে {age_days} দিন আগে "
-            f"({last_touch}) — sync workflow (প্রতি ৩ দিনে চলার কথা) সম্ভবত আটকে আছে বা "
-            f"ব্যর্থ হচ্ছে। `open_current_affairs`-এর Actions ট্যাব চেক করুন।"
-        )
-
-
 def main():
     check_old_domain()
     check_json_validity()
     check_cache_scope()
-    check_sync_freshness()
 
     if problems:
         report_lines = [
@@ -162,7 +112,7 @@ def main():
             print(f"  - {p.splitlines()[0]}")
         sys.exit(1)
 
-    print("✓ স্বাস্থ্য-পরীক্ষা পাস — পুরনো ডোমেইন নেই, JSON ঠিক আছে, cache-scope ঠিক আছে, সিঙ্ক সাম্প্রতিক।")
+    print("✓ স্বাস্থ্য-পরীক্ষা পাস — পুরনো ডোমেইন নেই, JSON ঠিক আছে, cache-scope ঠিক আছে।")
 
 
 if __name__ == "__main__":

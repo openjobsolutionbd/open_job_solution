@@ -114,8 +114,19 @@
     "id": "job-2025-nbr-steno-typist-q07",
     "examId": "job-2025-nbr-steno-typist",
     "subject": "english",
-    "topic": "grammar",
+    "topic": "paragraph",
     "qno": 7,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "Write a short note on 'The Falcon Hypersonic Technology Vehicle-2' within ten sentences.",
+    "answer": "The Falcon Hypersonic Technology Vehicle-2 (HTV-2) is an experimental aircraft developed by the United States military. It was designed to fly at extremely high speeds, faster than the speed of sound many times over. The main goal of the project was to test hypersonic flight technology for future defense and space applications. HTV-2 was designed to travel at speeds up to Mach 20, which is about 20 times the speed of sound. It was launched using a rocket and then released to glide unpowered through the atmosphere. The vehicle was built to withstand extreme heat generated during hypersonic flight. Although the test flights faced technical challenges, they provided valuable data for future research. This technology could be used for rapid global strike capability and advanced space vehicles. Hypersonic vehicles like HTV-2 represent a major step in aerospace engineering. Such research continues to shape the future of high-speed flight and defense technology."
+  },
+  {
+    "id": "job-2025-nbr-steno-typist-q08",
+    "examId": "job-2025-nbr-steno-typist",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 8,
     "marks": 4,
     "type": "sentence-change",
     "question": "Re-write the following passage changing the form of speech.",
@@ -126,17 +137,6 @@
         "changed": "The Prince wondered at the unusual feature of the night because he felt warm even at that time of the cold night. He remarked that it (unusual behavior of the night) happens when he does something good to help someone. The Queen smiled to look at his son and wished him good night. The Princes also smiled at her mom as he said her good night."
       }
     ]
-  },
-  {
-    "id": "job-2025-nbr-steno-typist-q08",
-    "examId": "job-2025-nbr-steno-typist",
-    "subject": "english",
-    "topic": "paragraph",
-    "qno": 8,
-    "marks": 3,
-    "type": "paragraph",
-    "question": "Write a short note on 'The Falcon Hypersonic Technology Vehicle-2' within ten sentences.",
-    "answer": "The Falcon Hypersonic Technology Vehicle-2 (HTV-2) is an experimental aircraft developed by the United States military. It was designed to fly at extremely high speeds, faster than the speed of sound many times over. The main goal of the project was to test hypersonic flight technology for future defense and space applications. HTV-2 was designed to travel at speeds up to Mach 20, which is about 20 times the speed of sound. It was launched using a rocket and then released to glide unpowered through the atmosphere. The vehicle was built to withstand extreme heat generated during hypersonic flight. Although the test flights faced technical challenges, they provided valuable data for future research. This technology could be used for rapid global strike capability and advanced space vehicles. Hypersonic vehicles like HTV-2 represent a major step in aerospace engineering. Such research continues to shape the future of high-speed flight and defense technology."
   },
   {
     "id": "job-2025-nbr-steno-typist-q09",

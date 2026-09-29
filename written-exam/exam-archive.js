@@ -98,8 +98,8 @@ const EXAM_ARCHIVE = [
     ministry: "জেলা প্রশাসকের কার্যালয়, ভোলা",
     post: "অফিস সহায়ক/নিরাপত্তা প্রহরী",
     date: "2025-07-05",
-    duration: "৪০ মিনিট",
-    totalMarks: 40,
+    duration: "৮০ মিনিট",
+    totalMarks: 80,
     totalQuestions: 20,
   },
   {
@@ -337,7 +337,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-04",
     duration: "৯০ মিনিট",
     totalMarks: 100,
-    totalQuestions: 16,
+    totalQuestions: 15,
   },
   {
     id: "job-2025-air-force-office-sohayok",
@@ -661,7 +661,7 @@ const EXAM_ARCHIVE = [
     date: "2025-11-21",
     duration: "৬০ মিনিট",
     totalMarks: 40,
-    totalQuestions: 21,
+    totalQuestions: 12,
   },
   {
     id: "job-2025-pwd-office-asst-typist",
@@ -724,7 +724,7 @@ const EXAM_ARCHIVE = [
     date: "2025-12-22",
     duration: "৯০ মিনিট",
     totalMarks: 70,
-    totalQuestions: 20,
+    totalQuestions: 30,
   },
   {
     id: "job-2025-agri-info-office-asst",

@@ -1,0 +1,117 @@
+name: Written Exam Currency Watch
+
+# উদ্দেশ্য: written-exam-এর সময়-সংবেদনশীল প্রশ্নগুলো (data/current-status.json)
+# স্বয়ংক্রিয়ভাবে নজরে রাখা — কারো ম্যানুয়াল খোঁজাখুঁজি ছাড়াই।
+#
+#  • pull_request: current-status.json-এর কাঠামো ভুল হলে (প্রশ্ন/অংশ হারিয়ে গেছে,
+#    topic পাতা নেই, তারিখ ভুল...) PR লাল হবে।
+#  • schedule + push (topics বদলালে): কারেন্ট অ্যাফেয়ার্স পাতার "## বর্তমান তথ্য"
+#    অংশ বদলেছে বা রিভিউয়ের তারিখ পেরিয়েছে কিনা দেখে GitHub Issue খোলে/আপডেট করে।
+#
+# এই workflow উত্তর বা নোট নিজে বদলায় না — শুধু জানায়। কারণ সূত্রে বিরোধ থাকতে
+# পারে (যেমন ব্রিকসে সৌদি আরব), তাই লেখার সিদ্ধান্ত রিভিউয়ের পর।
+
+on:
+  schedule:
+    # সপ্তাহে একবার, রবিবার বাংলাদেশ সময় সকাল ৯টা (UTC ০৩:০০)
+    - cron: "0 3 * * 0"
+  push:
+    branches: [main]
+    paths:
+      - "current-affairs/docs/topics/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "written-exam/data/current-status.json"
+      - "written-exam/data/exams/**"
+      - "written-exam/check_currency.js"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-structure:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: current-status.json-এর কাঠামো যাচাই
+        run: node written-exam/check_currency.js --validate-only
+      - name: check_currency.js-এর টেস্ট
+        run: node --test written-exam/check_currency.test.js
+
+  currency-watch:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: নজরদারি চালানো (advisory — কখনো কিছু ব্লক করে না)
+        id: check
+        continue-on-error: true
+        run: node written-exam/check_currency.js --report /tmp/currency_report.md
+
+      - name: নজর দেওয়ার মতো কিছু পেলে Issue বানানো/আপডেট করা
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/currency_report.md', 'utf8');
+            const label = 'written-exam-currency';
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: label,
+            });
+            if (existing.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing[0].number,
+                body: report,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🕒 written-exam: বর্তমান অবস্থা রিভিউ দরকার — ${new Date().toISOString().slice(0, 10)}`,
+                body: report,
+                labels: [label],
+              });
+            }
+
+      - name: সব ঠিক থাকলে পুরনো Issue বন্ধ করা
+        if: steps.check.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'written-exam-currency',
+            });
+            for (const issue of existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: 'পরবর্তী স্বয়ংক্রিয় পরীক্ষায় কিছু বাকি পাওয়া যায়নি — এই Issue বন্ধ করা হলো।',
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+              });
+            }

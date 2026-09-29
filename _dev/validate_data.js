@@ -151,9 +151,9 @@ function checkDuplicateOptions(loc, options) {
   checkDuplicateExplanation(explEntries, 'bcs-mcq (সব subject মিলিয়ে)');
 }
 
-// ── ২. primary-mcq/data/data.js ───────────────────────────
+// ── ২. mcq-job-solution/primary-mcq/data/data.js ───────────────────────────
 {
-  const DATA = loadJsVar(path.join('primary-mcq', 'data', 'data.js'), 'PRIMARY_DATA');
+  const DATA = loadJsVar(path.join('mcq-job-solution', 'primary-mcq', 'data', 'data.js'), 'PRIMARY_DATA');
   if (DATA) {
     const idEntries = [];
     const textEntries = [];
@@ -313,6 +313,76 @@ function checkDuplicateOptions(loc, options) {
         issues.push(`[written-exam/data/exams/${f}] এই নামের কোনো এন্ট্রি exam-archive.js-এ নেই`);
       }
     });
+  }
+}
+
+// ── ৪. mcq-job-solution/ministry-mcq/data/exams/*.json ─────────
+// ফরম্যাট: q + answer আবশ্যক; options ও explanation ঐচ্ছিক (পরে যোগ হবে)।
+// options থাকলে ২–৬টা, খালি নয়, ডুপ্লিকেট নয়, এবং answer-এর সাথে হুবহু একটাই মিলবে।
+{
+  const MDIR = path.join('mcq-job-solution', 'ministry-mcq');
+  const examsDir = path.join(ROOT, MDIR, 'data', 'exams');
+  const ARCHIVE = loadJsVar(path.join(MDIR, 'exam-archive.js'), 'EXAM_ARCHIVE');
+  const archiveIds = new Set();
+
+  if (ARCHIVE) {
+    ARCHIVE.forEach((ex, idx) => {
+      const loc = `ministry-mcq/exam-archive.js#${idx} (id=${ex.id})`;
+      if (!ex.id) issues.push(`[${loc}] id নেই`);
+      else if (archiveIds.has(ex.id)) issues.push(`[${loc}] ডুপ্লিকেট id`);
+      else archiveIds.add(ex.id);
+      if (!ex.ministry) issues.push(`[${loc}] ministry খালি`);
+      if (!ex.post) issues.push(`[${loc}] post খালি`);
+      if (!ex.date || !/^\d{4}-\d{2}-\d{2}$/.test(ex.date)) issues.push(`[${loc}] date ফরম্যাট YYYY-MM-DD হতে হবে (এখন: ${JSON.stringify(ex.date)})`);
+      if (typeof ex.totalQuestions !== 'number') issues.push(`[${loc}] totalQuestions সংখ্যা হতে হবে`);
+    });
+  }
+
+  if (fs.existsSync(examsDir)) {
+    const seenIds = [];
+    const fileIds = new Set();
+    fs.readdirSync(examsDir).filter(f => f.endsWith('.json')).forEach(f => {
+      const fileId = f.replace(/\.json$/, '');
+      fileIds.add(fileId);
+      let arr;
+      try {
+        arr = JSON.parse(fs.readFileSync(path.join(examsDir, f), 'utf8'));
+      } catch (e) {
+        issues.push(`[ministry-mcq/data/exams/${f}] JSON পার্স করতে ব্যর্থ: ${e.message}`);
+        return;
+      }
+      if (!Array.isArray(arr)) { issues.push(`[ministry-mcq/data/exams/${f}] array না`); return; }
+
+      arr.forEach((q, idx) => {
+        const loc = `ministry-mcq/${f}#${idx} (id=${q.id})`;
+        if (!q.id) issues.push(`[${loc}] id নেই`);
+        if (!q.q) issues.push(`[${loc}] প্রশ্নের লেখা (q) নেই`);
+        if (!q.answer) issues.push(`[${loc}] answer নেই`);
+        if (q.examId !== fileId) issues.push(`[${loc}] examId="${q.examId}" কিন্তু ফাইলের নাম "${fileId}" — হুবহু মেলা উচিত`);
+        if (typeof q.qno !== 'number') issues.push(`[${loc}] qno সংখ্যা (number) হতে হবে`);
+        if (!q.subject) issues.push(`[${loc}] subject নেই`);
+        seenIds.push({ id: q.id, where: `ministry-mcq/${f}` });
+
+        if (q.options !== undefined) {
+          if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6) {
+            issues.push(`[${loc}] options ২–৬টা item-এর array হতে হবে`);
+          } else {
+            q.options.forEach((o, oi) => { if (!o) issues.push(`[${loc}] options[${oi}] খালি`); });
+            if (new Set(q.options).size !== q.options.length) issues.push(`[${loc}] options-এ ডুপ্লিকেট আছে`);
+            const hits = q.options.filter(o => o === q.answer).length;
+            if (hits !== 1) issues.push(`[${loc}] answer অবশ্যই options-এর ঠিক একটার সাথে হুবহু মিলতে হবে (মিলেছে ${hits}টার সাথে)`);
+          }
+        }
+      });
+
+      if (ARCHIVE) {
+        const ex = ARCHIVE.find(e => e.id === fileId);
+        if (!ex) issues.push(`[ministry-mcq/data/exams/${f}] এই নামের কোনো এন্ট্রি exam-archive.js-এ নেই`);
+        else if (ex.totalQuestions !== arr.length) issues.push(`[ministry-mcq/exam-archive.js: ${fileId}] totalQuestions লেখা আছে ${ex.totalQuestions}, আসলে প্রশ্ন আছে ${arr.length}টা`);
+      }
+    });
+    checkDuplicateIds(seenIds, 'ministry-mcq (সব পরীক্ষা মিলিয়ে)');
+    archiveIds.forEach(id => { if (!fileIds.has(id)) issues.push(`[ministry-mcq/exam-archive.js: ${id}] data/exams/${id}.json ফাইল নেই`); });
   }
 }
 

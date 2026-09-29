@@ -12,9 +12,17 @@
   Cache-Control: no-cache
   Service-Worker-Allowed: /bcs-mcq/
 
-/primary-mcq/sw.js
+/mcq-job-solution/sw.js
   Cache-Control: no-cache
-  Service-Worker-Allowed: /primary-mcq/
+  Service-Worker-Allowed: /mcq-job-solution/
+
+/mcq-job-solution/primary-mcq/sw.js
+  Cache-Control: no-cache
+  Service-Worker-Allowed: /mcq-job-solution/primary-mcq/
+
+/mcq-job-solution/ministry-mcq/sw.js
+  Cache-Control: no-cache
+  Service-Worker-Allowed: /mcq-job-solution/ministry-mcq/
 
 /written-exam/sw.js
   Cache-Control: no-cache

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>বিভিন্ন মন্ত্রণালয়ের MCQ — Open Job Solution</title>
+  <meta name="theme-color" content="#1a1814">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/_assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/_assets/icons/icon-192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="মন্ত্রণালয়ের MCQ">
+  <link href="/_assets/fonts/noto-bengali.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      const t = localStorage.getItem('bcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+
+  <style>
+    /* ── Filter Bar ── */
+    .filter-bar {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+    .filter-select {
+      flex: 1;
+      min-width: 0;
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.83rem;
+      outline: none;
+      cursor: pointer;
+      transition: border-color var(--transition);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+    }
+    .filter-select:focus { border-color: var(--primary); }
+    .filter-reset {
+      flex-shrink: 0;
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text-3);
+      font-family: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .filter-reset:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ── Exam Cards (Home View) ── */
+    .exam-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .exam-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    }
+    .exam-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .exam-card:active { transform: translateY(0); }
+    .exam-ministry {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .exam-post {
+      font-size: 0.82rem;
+      color: var(--text-2);
+      margin-bottom: 8px;
+    }
+    .exam-date-row {
+      font-size: 0.78rem;
+      color: var(--text-3);
+    }
+    .exam-meta-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .exam-tag {
+      font-size: 0.72rem;
+      padding: 2px 9px;
+      border-radius: 12px;
+      background: var(--surface-2);
+      color: var(--text-3);
+      border: 1px solid var(--border-light);
+    }
+    .exam-tag.date { background: var(--primary-bg); color: var(--primary); border-color: transparent; }
+
+    /* ── Exam Detail View ── */
+    #examView { display: none; overflow-anchor: none; }
+
+    .exam-header-detail {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      overflow: hidden;
+      max-height: 320px;
+      transition: max-height .35s ease, opacity .25s ease,
+                  padding .35s ease, margin .35s ease, border-width .35s ease;
+    }
+    .exam-header-detail h2 {
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 6px;
+      line-height: 1.45;
+    }
+    .exam-header-detail .post-name {
+      font-size: 0.86rem;
+      color: var(--text-2);
+      line-height: 1.6;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .exam-info-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .exam-info-row .exam-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      line-height: 1.4;
+    }
+    .exam-info-row .exam-tag.date { color: var(--text); }
+
+    /* স্ক্রলে নিচে নামলে হেডার কার্ড মসৃণভাবে গুটিয়ে যায় — পড়ার জায়গা বাড়ে */
+    .exam-header-detail.collapsed {
+      max-height: 0;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-width: 0;
+      box-shadow: none;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface-2);
+      color: var(--text-2);
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      margin-bottom: 14px;
+      transition: all var(--transition);
+    }
+    .back-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ── হেডারের ভেতরের "ফিরে যান" বাটন (শুধু পরীক্ষার বিস্তারিত পেজে) ── */
+    .header-back { display: none; margin-bottom: 0; flex-shrink: 0; }
+    /* তিন কলামের grid: বামে ফিরে যান | মাঝে টাইটেল | ডানে থিম বাটন।
+       দুই পাশের কলাম সমান (1fr) বলে টাইটেল সবসময় পেজের ঠিক মাঝখানে থাকে। */
+    .app-header.exam-mode .header-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      column-gap: 8px;
+    }
+    .app-header.exam-mode .header-back {
+      display: inline-flex;
+      justify-self: start;
+      white-space: nowrap;
+      margin: 0;
+    }
+    .app-header.exam-mode .title-link { justify-self: center; margin: 0; }
+    .app-header.exam-mode .app-title { white-space: nowrap; }
+    .app-header.exam-mode .header-actions {
+      width: auto;
+      justify-self: end;
+      justify-content: flex-end;
+      margin: 0;
+    }
+    /* খুব ছোট স্ক্রিনে বাটনের প্যাডিং কমিয়ে টাইটেলের জায়গা নিশ্চিত করা */
+    @media (max-width: 380px) {
+      .app-header.exam-mode .header-back { padding: 6px 10px; font-size: 0.78rem; }
+      .app-header.exam-mode .app-title { font-size: 0.85rem; }
+    }
+
+    /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */
+    .answer-body {
+      display: block;
+      margin-top: 8px;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── সমতল লেআউট (শুধু পরীক্ষার বিস্তারিত পেজ) ──
+       কার্ডের ভেতর বক্স, তার ভেতর টেবিল — এই ধাপে ধাপে বাক্স বাদ।
+       প্রশ্নগুলো আলাদা হবে হালকা রেখা দিয়ে, লেখা পাবে পুরো চওড়া। */
+    #examView { padding: 0 4px; }
+    #examView .question-card {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--border-light);
+      border-radius: 0;
+      box-shadow: none;
+      padding: 14px 2px;
+      margin: 0;
+    }
+    /* বিষয়ের হেডিংয়ের আগের প্রশ্নে আলাদা রেখা নয় (হেডিংয়ের নিজের রেখা আছে) */
+    #examView .question-card:has(+ .subject-heading),
+    #examView .question-card:last-child { border-bottom: 0; }
+
+    /* ── Subject Heading (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান section) ── */
+    .subject-heading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-align: center;
+      margin: 26px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+    .subject-heading:first-child { margin-top: 6px; }
+
+    @media (max-width: 600px) {
+      .answer-body { margin-top: 6px; }
+      .subject-heading { margin: 16px 0 10px; }
+      .exam-header-detail { padding: 14px 12px 12px; margin-bottom: 10px; }
+      .exam-header-detail .post-name { margin-bottom: 10px; padding-bottom: 10px; }
+    }
+
+    /* ── Empty state ── */
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--text-3);
+    }
+    .empty-state .icon { font-size: 2.5rem; margin-bottom: 10px; }
+    .empty-state p { font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="app-header" id="appHeader">
+    <div class="header-inner">
+      <button class="back-btn header-back" id="backBtn" type="button" aria-label="ফিরে যান">← Back</button>
+      <a href="/mcq-job-solution/" class="title-link" style="text-decoration:none">
+        <span class="app-title">🏛️ মন্ত্রণালয়ের MCQ</span>
+      </a>
+      <div class="search-wrap" id="searchWrap">
+        <span class="search-icon">🔍</span>
+        <input type="search" class="search-input" id="searchInput"
+               placeholder="মন্ত্রণালয় বা পদ খুঁজুন..." autocomplete="off">
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeBtn" title="Dark/Light">🌙</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- ══ HOME VIEW ══ -->
+    <div id="homeView">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <select class="filter-select" id="ministryFilter">
+          <option value="">সব মন্ত্রণালয়</option>
+        </select>
+        <select class="filter-select" id="yearFilter">
+          <option value="">সব বছর</option>
+        </select>
+        <button class="filter-reset" id="filterReset">↺ রিসেট</button>
+      </div>
+
+      <!-- Result Count -->
+      <div class="result-count" id="resultCount"></div>
+
+      <!-- Exam List -->
+      <div class="exam-grid" id="examGrid"></div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display:none">
+        <div class="icon">🔍</div>
+        <p>কোনো পরীক্ষা পাওয়া যায়নি।<br>ফিল্টার বা সার্চ পরিবর্তন করুন।</p>
+      </div>
+
+    </div>
+
+    <!-- ══ EXAM DETAIL VIEW ══ -->
+    <div id="examView">
+
+      <!-- Exam Info -->
+      <div class="exam-header-detail" id="examHeaderDetail"></div>
+
+      <!-- Questions List -->
+      <div id="questionsList"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+  <!-- Data Files -->
+  <script src="exam-archive.js"></script>
+  <script src="mcq-renderer.js"></script>
+
+  <script>
+  // ══════════════════════════════════════════
+  // Version
+  // ══════════════════════════════════════════
+  // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
+  const APP_VERSION = 'v1.330';
+  const versionEl = document.getElementById('appVersion');
+  if (versionEl) versionEl.textContent = APP_VERSION;
+
+  // ══════════════════════════════════════════
+  // Theme
+  // ══════════════════════════════════════════
+  const themeBtn = document.getElementById('themeBtn');
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#0f0e0d' : '#f9f8f4');
+  }
+  applyTheme(localStorage.getItem('bcs_theme') || 'light');
+  themeBtn.addEventListener('click', () => {
+    const n = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('bcs_theme', n);
+    applyTheme(n);
+  });
+
+  // ══════════════════════════════════════════
+  // Scroll Top
+  // ══════════════════════════════════════════
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  const examHeaderEl = document.getElementById('examHeaderDetail');
+  let hdrCollapsed = false;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    scrollTopBtn.classList.toggle('visible', y > 300);
+    // hysteresis: ১২০px-এর নিচে গেলে গুটাবে, ২০px-এর মধ্যে ফিরলে আবার খুলবে
+    // (না হলে কার্ড গুটালে পেজের উচ্চতা বদলে ঝিলিমিলি/লুপ হতে পারে)
+    if (!hdrCollapsed && y > 120) { hdrCollapsed = true; examHeaderEl.classList.add('collapsed'); }
+    else if (hdrCollapsed && y < 20) { hdrCollapsed = false; examHeaderEl.classList.remove('collapsed'); }
+  }, { passive: true });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ══════════════════════════════════════════
+  // State
+  // ══════════════════════════════════════════
+  let currentExamId = null;
+
+  // ══════════════════════════════════════════
+  // Build Dropdowns from EXAM_ARCHIVE
+  // ══════════════════════════════════════════
+  const ministrySet = new Set();
+  const yearSet = new Set();
+
+  EXAM_ARCHIVE.forEach(ex => {
+    ministrySet.add(ex.ministry);
+    if (ex.date) yearSet.add(ex.date.substring(0, 4));
+  });
+
+  const ministryFilter = document.getElementById('ministryFilter');
+  const yearFilter = document.getElementById('yearFilter');
+
+  // মন্ত্রণালয় — sorted alphabetically
+  [...ministrySet].sort().forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m;
+    opt.textContent = m;
+    ministryFilter.appendChild(opt);
+  });
+
+  // বছর — sorted descending (নতুন আগে)
+  [...yearSet].sort((a, b) => b - a).forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearFilter.appendChild(opt);
+  });
+
+  // ══════════════════════════════════════════
+  // Render Exam Cards
+  // ══════════════════════════════════════════
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const [y, m, d] = dateStr.split('-');
+    return `${toBn(d)}-${toBn(m)}-${toBn(y)}`;
+  }
+
+  function renderExamCards() {
+    const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+    const ministryVal = ministryFilter.value;
+    const yearVal = yearFilter.value;
+
+    const filtered = EXAM_ARCHIVE.filter(ex => {
+      // মন্ত্রণালয় ফিল্টার
+      if (ministryVal && ex.ministry !== ministryVal) return false;
+      // বছর ফিল্টার
+      if (yearVal && !(ex.date && ex.date.startsWith(yearVal))) return false;
+      // সার্চ — আংশিক মিল, ছোট হাতে
+      if (searchVal) {
+        const haystack = (ex.ministry + ' ' + ex.post).toLowerCase();
+        if (!haystack.includes(searchVal)) return false;
+      }
+      return true;
+    }).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    const grid = document.getElementById('examGrid');
+    const empty = document.getElementById('emptyState');
+    const countEl = document.getElementById('resultCount');
+
+    grid.innerHTML = '';
+
+    if (filtered.length === 0) {
+      empty.style.display = 'block';
+      countEl.textContent = '';
+      return;
+    }
+
+    empty.style.display = 'none';
+    countEl.textContent = '';
+
+    filtered.forEach((ex, idx) => {
+      const card = document.createElement('div');
+      card.className = 'exam-card';
+      card.innerHTML = `
+        <div class="exam-ministry">${toBn(idx + 1)}. ${escText(ex.ministry)}</div>
+        <div class="exam-post">${escText(ex.post)}</div>
+        <div class="exam-date-row">তারিখ: ${formatDate(ex.date)}</div>
+      `;
+      card.addEventListener('click', () => openExam(ex.id));
+      grid.appendChild(card);
+    });
+  }
+
+  // ══════════════════════════════════════════
+  // Open Exam Detail View
+  // ══════════════════════════════════════════
+  function openExam(examId) {
+    currentExamId = examId;
+
+    const exam = EXAM_ARCHIVE.find(e => e.id === examId);
+    if (!exam) return;
+
+    // Header
+    document.getElementById('examHeaderDetail').innerHTML = `
+      <h2>${escText(exam.ministry)}</h2>
+      <div class="post-name">${escText(exam.post)}</div>
+      <div class="exam-info-row">
+        <span class="exam-tag date">${formatDate(exam.date)}</span>
+        <span class="exam-tag">${exam.totalQuestions ? toBn(exam.totalQuestions) : '—'} টি প্রশ্ন</span>
+      </div>
+    `;
+
+    // Show view
+    document.getElementById('homeView').style.display = 'none';
+    document.getElementById('examView').style.display = 'block';
+    hdrCollapsed = false;
+    examHeaderEl.classList.remove('collapsed');
+    document.getElementById('searchWrap').style.display = 'none';
+    document.getElementById('appHeader').classList.add('exam-mode');
+
+    // ভাসমান সার্চ (fs-widget) শুধু exam detail-এ থাকবে — হোমপেজে লুকানো
+    const fsWidget = document.getElementById('fs-widget-root');
+    if (fsWidget) fsWidget.style.display = '';
+
+    renderQuestions(examId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ══════════════════════════════════════════
+  // Subject labels (section heading-এর জন্য)
+  // ══════════════════════════════════════════
+  const SUBJECT_LABELS = {
+    'bangla':            'বাংলা',
+    'english':           'ইংরেজি',
+    'math':              'গণিত',
+    'general-knowledge': 'সাধারণ জ্ঞান',
+  };
+
+  // ══════════════════════════════════════════
+  // Render Questions — বইয়ের ফরম্যাট: subject অনুযায়ী section heading,
+  // উত্তর সবসময় সরাসরি দেখা যায় (toggle নেই), badge/tag নেই।
+  // ══════════════════════════════════════════
+  async function renderQuestions(examId) {
+    const list = document.getElementById('questionsList');
+    list.innerHTML = '<div class="empty-state"><div class="icon">⏳</div><p>লোড হচ্ছে...</p></div>';
+
+    // প্রতিটা এক্সামের প্রশ্ন এখন আলাদা JSON ফাইলে — শুধু এই এক্সামটাই fetch করা হয়
+    // (পুরো JOB_SOLUTIONS আর একবারে লোড হয় না)
+    let questions;
+    try {
+      const res = await fetch(`data/exams/${examId}.json`);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      questions = await res.json();
+    } catch (e) {
+      console.warn('exam JSON fetch failed:', examId, e);
+      list.innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><p>ডেটা লোড হয়নি।</p></div>';
+      return;
+    }
+
+    // যে এক্সাম view-টা এখনো খোলা আছে সেটার জন্যই render করা হচ্ছে কিনা — ততক্ষণে
+    // ইউজার অন্য এক্সামে চলে গেলে পুরনো fetch এসে ভুল ডেটা বসিয়ে না দেয়
+    if (currentExamId !== examId) return;
+
+    // নিরাপত্তার জন্য এখনো examId দিয়ে ফিল্টার করা হচ্ছে (ফাইলে ভুলবশত অন্য
+    // এক্সামের প্রশ্ন ঢুকে গেলেও যেন ভুল প্রশ্ন না দেখায়)
+    questions = (Array.isArray(questions) ? questions : []).filter(q => q.examId === examId);
+
+    list.innerHTML = '';
+
+    if (questions.length === 0) {
+      list.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>এই বিষয়ে কোনো প্রশ্ন যোগ হয়নি।</p></div>';
+      return;
+    }
+
+    // qno অনুযায়ী সাজানো (qno সবসময় সংখ্যা হিসেবে রাখা হয়)
+    questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
+
+    let lastSubject = null;
+    questions.forEach(q => {
+      // subject বদলালে একটা section heading বসাও (বইয়ে যেমন বাংলা/ইংরেজি/গণিত)
+      if (q.subject !== lastSubject) {
+        lastSubject = q.subject;
+        const heading = document.createElement('div');
+        heading.className = 'subject-heading';
+        heading.textContent = SUBJECT_LABELS[q.subject] || escText(q.subject || '');
+        list.appendChild(heading);
+      }
+
+      const card = document.createElement('div');
+      card.className = 'question-card';
+      card.innerHTML = renderMcqCard(q);
+      list.appendChild(card);
+    });
+
+  }
+
+  function escText(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function toBn(num) {
+    const bnDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    return String(num).replace(/[0-9]/g, d => bnDigits[d]);
+  }
+
+  // ══════════════════════════════════════════
+  // Back Button
+  // ══════════════════════════════════════════
+  document.getElementById('backBtn').addEventListener('click', () => {
+    document.getElementById('examView').style.display = 'none';
+    document.getElementById('homeView').style.display = 'block';
+    document.getElementById('searchWrap').style.display = '';
+    document.getElementById('appHeader').classList.remove('exam-mode');
+    currentExamId = null;
+
+    // হোমপেজে ফিরলে ভাসমান সার্চ লুকিয়ে ফেলা হলো
+    const fsWidget = document.getElementById('fs-widget-root');
+    if (fsWidget) fsWidget.style.display = 'none';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ══════════════════════════════════════════
+  // Filter & Search Events
+  // ══════════════════════════════════════════
+  let searchTimer;
+  document.getElementById('searchInput').addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(renderExamCards, 200);
+  });
+  ministryFilter.addEventListener('change', renderExamCards);
+  yearFilter.addEventListener('change', renderExamCards);
+  document.getElementById('filterReset').addEventListener('click', () => {
+    document.getElementById('searchInput').value = '';
+    ministryFilter.value = '';
+    yearFilter.value = '';
+    renderExamCards();
+  });
+
+  // ══════════════════════════════════════════
+  // Init
+  // ══════════════════════════════════════════
+  renderExamCards();
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/mcq-job-solution/ministry-mcq/sw.js', { scope: '/mcq-job-solution/ministry-mcq/' })
+        .catch(err => console.warn('SW:', err));
+      // পুরো অ্যাপ এক PWA — manifest-এর start_url ("/") এখান থেকেও
+      // covered থাকতে হবে (দেখুন bcs-mcq/index.html-এর একই কমেন্ট)।
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
+  // নোট: আগে এখানে controllerchange-এ window.location.reload() করা হতো,
+  // যা নতুন SW activate হওয়ার কিছুক্ষণ পর পেজকে হঠাৎ রিলোড করে ফেলত
+  // (ব্যবহারকারীর কাছে একটা অপ্রত্যাশিত "ঝাঁকি" হিসেবে অনুভূত হতো)।
+  // এখন নতুন SW নিঃশব্দে claim করে নেয়, পরবর্তী ফেচ/নেভিগেশন থেকে
+  // স্বয়ংক্রিয়ভাবে কার্যকর হয় — চলমান পেজ জোর করে রিলোড হয় না।
+  </script>
+  <script src="/_assets/shared/floating-search.js"></script>
+  <script>
+    // ভাসমান সার্চ — EXAM_ARCHIVE-এর মন্ত্রণালয়/পদের নামে খুঁজবে (বিদ্যমান
+    // সার্চ বক্স যেভাবে খোঁজে, একই যুক্তি)। ক্লিক করলে ফিল্টার রিসেট করে
+    // বিদ্যমান সার্চ বক্সে বসিয়ে renderExamCards() নিজে থেকেই চলবে
+    // (input ইভেন্ট ডিসপ্যাচ করার মাধ্যমে)।
+    (function () {
+      initFloatingSearch({
+        localSearch: function (q) {
+          const items = EXAM_ARCHIVE.filter(ex =>
+            (ex.ministry + ' ' + ex.post).toLowerCase().includes(q)
+          );
+          return items.map(ex => ({
+            label: ex.ministry + ' — ' + ex.post,
+            onSelect: function () {
+              // আগে এখানে শুধু ex.post সার্চ বক্সে বসিয়ে টেক্সট-ফিল্টার
+              // চালানো হতো — কিন্তু 'অফিস সহায়ক'-এর মতো পদের নাম একাই
+              // ২১টা ভিন্ন মন্ত্রণালয়ে থাকায় (ministry বাদ পড়ে যাওয়ায়)
+              // ইউজার একটা নির্দিষ্ট এক্সাম বেছে নিলেও অনেকগুলো কার্ড
+              // দেখাত। এখন সরাসরি সেই নির্দিষ্ট এক্সামটাই খোলা হয়।
+              openExam(ex.id);
+            }
+          }));
+        }
+      });
+
+      // পেজ লোডেই হোমভিউতে থাকি — ভাসমান সার্চ শুরুতে লুকানো থাকবে,
+      // exam detail খুললে দেখানো হবে (দেখুন openExam/backBtn হ্যান্ডলার)
+      const fsWidget = document.getElementById('fs-widget-root');
+      if (fsWidget) fsWidget.style.display = 'none';
+    })();
+  </script>
+
+</body>
+</html>

@@ -97,7 +97,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 
 ## ⚡ কনটেক্সট-টোকেন সাশ্রয়
 
-বড় ফাইল (`bcs-mcq`/`primary-mcq` ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
+বড় ফাইল (`bcs-mcq`/`mcq-job-solution` (primary-mcq, ministry-mcq) ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
 
 - খুঁজতে: `grep -n` → পাওয়া লাইন নম্বর দিয়ে `view_range`
 - এডিটে: `str_replace` (ছোট, ইউনিক `old_str`)

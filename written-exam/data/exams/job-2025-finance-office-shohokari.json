@@ -1,0 +1,366 @@
+[
+  {
+    "id": "job-2025-finance-office-shohokari-q01",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    "columns": ["প্রদত্ত শব্দ", "ব্যাসবাক্যসহ সমাসের নাম"],
+    "rows": [
+      ["উপকূল", "কূলের সমীপে (অব্যয়ীভাব)"],
+      ["ক্রোধানল", "ক্রোধ রূপ অনল (রূপক কর্মধারয়)"],
+      ["অন্তরীপ", "অন্তর্গত অপ যার (বহুব্রীহি)"],
+      ["চৌরাস্তা", "চার রাস্তার সমাহার (দ্বিগু)"],
+      ["কদাচার", "কু যে আচার (কর্মধারয়)"]
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q02",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 2,
+    "marks": 5,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": ["প্রদত্ত শব্দ", "সন্ধি বিচ্ছেদ"],
+    "rows": [
+      ["বৃহস্পতি", "বৃহৎ + পতি"],
+      ["কুজ্ঝটিকা", "কুৎ + ঝটিকা"],
+      ["উপর্যুপরি", "উপরি + উপরি"],
+      ["পবিত্র", "পো + ইত্র"],
+      ["জ্যোতির্ময়", "জ্যোতিঃ + ময়"]
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q03",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধ করে লিখুন:",
+    "columns": ["প্রদত্ত শব্দ", "শুদ্ধ বানান"],
+    "rows": [
+      ["মরুউদ্যান", "মরূদ্যান"],
+      ["ইতঃমধ্যে", "ইতোমধ্যে"],
+      ["সাপদসংকুল", "শ্বাপদসংকুল"],
+      ["আদোক্ষর", "আদ্যক্ষর"],
+      ["বৃতপতি", "বৃৎপতি"]
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q08",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 4,
+    "marks": 5,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      { "phrase": "গড্ডলিকা প্রবাহ (অন্ধ অনুকরণ)", "meaning": "গড্ডলিকা প্রবাহে গা ভাসিয়ে দেয়, আমি তাদের দলে নেই।" },
+      { "phrase": "বিড়ালের আড়াই পা (অল্পক্ষণের মান-অভিমান)", "meaning": "জামাই বাবুর রাগ আর কতক্ষণ থাকে, সে তো বিড়ালের আড়াই পা।" },
+      { "phrase": "চর্বিত চর্বণ (পুনরাবৃত্তি)", "meaning": "তিনি একই বিষয় নিয়ে বার বার চর্বিত চর্বণ করেছেন যা শ্রোতাদের নিকট অপ্রাসঙ্গিক মনে হচ্ছে।" },
+      { "phrase": "মিছরির ছুরি (মধুর অথচ তীক্ষ্ণ)", "meaning": "রত্নার হাসি যেন মিছরির ছুরি।" },
+      { "phrase": "গৌরচন্দ্রিকা (ভণিতা)", "meaning": "আর গৌরচন্দ্রিকা করে লাভ নেই, আসল কথা বলো।" }
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q05",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "bangla",
+    "topic": "রচনামূলক",
+    "qno": 5,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "অনুচ্ছেদ লিখুন: 'বাংলাদেশের অর্থনীতিতে প্রবাসী আয়ের ভূমিকা'",
+    "answer": "বাংলাদেশের অর্থনীতিতে প্রবাসী আয়ের অবদান অত্যন্ত গুরুত্বপূর্ণ ও অপরিসীম। বিশ্বের বিভিন্ন দেশে কর্মরত লক্ষ লক্ষ বাংলাদেশি শ্রমিক ও পেশাজীবী দেশে যে অর্থ পাঠান, তাকে রেমিট্যান্স বলা হয়। এই রেমিট্যান্স দেশের জাতীয় অর্থনীতির অন্যতম চালিকাশক্তি হিসেবে কাজ করেছে। বৈদেশিক মুদ্রার রিজার্ভ বৃদ্ধি, বাণিজ্য ঘাটতি কমানো, দারিদ্র্য হ্রাস, কর্মসংস্থান সৃষ্টি এবং জীবনমান উন্নয়নে প্রবাসী আয়ের ভূমিকা অগ্রগণ্য। প্রবাসী আয়ের মাধ্যমে দেশের বৈদেশিক মুদ্রার রিজার্ভ শক্তিশালী হয়, যা আমদানি ব্যয় মেটাতে ও বৈদেশিক দেনা পরিশোধে সহায়তা করে। বৈদেশিক বিনিয়োগ বাড়ানো ও জাতীয় উন্নয়ন প্রকল্পে অর্থায়নের ক্ষেত্রেও এই আয় গুরুত্বপূর্ণ ভূমিকা পালন করে। প্রবাসী আয়ের ফলে দেশের মুদ্রার মান স্থিতিশীল থাকে, যা সামগ্রিক অর্থনীতিকে সুদৃঢ় করে। গ্রামীণ অর্থনীতির বিকাশেও রেমিট্যান্স বিশেষ ভূমিকা রাখছে। গ্রামের মানুষ এই অর্থ দিয়ে নতুন ঘর নির্মাণ, ব্যবসা তরক, শিক্ষা ও চিকিৎসা ব্যয় নির্বাহসহ জীবনের মানোন্নয়ন ঘটাতে সক্ষম হচ্ছে। এতে কর্মসংস্থানের সুযোগ তৈরি হচ্ছে, দারিদ্র্যের হার উল্লেখযোগ্যভাবে কমছে। ফলে প্রবাসী আয় শুধু ব্যক্তি বা পরিবার নয়, বরং পুরো দেশের উন্নয়নের জন্য একটি বড় সহায়ক শক্তি হিসেবে কাজ করছে। বিশেষ করে বৈশ্বিক মহামারি কোভিড-১৯ এর সময় যখন দেশের অর্থনীতি চাপে পড়েছিল, তখনও প্রবাসী আয় অব্যাহত থাকায় দেশের অর্থনৈতিক স্থিতিশীলতা বজায় ছিল। ২০২৩ সালের তথ্য অনুযায়ী, তৈরি পোশাক শিল্পের পরেই রেমিট্যান্স বাংলাদেশের দ্বিতীয় বৃহত্তম বৈদেশিক আয়ের উৎস। সরকার প্রবাসী আয়ের প্রবাহ টেকসই রাখতে নানা উদ্যোগ গ্রহণ করেছে, যেমন ব্যাংকিং চ্যানেলের মাধ্যমে অর্থ পাঠানোকে উৎসাহিত করা, প্রণোদনা প্রদান ইত্যাদি। ভবিষ্যতে দক্ষ শ্রমশক্তি উন্নয়ন এবং নতুন শ্রমবাজার খোঁজার মাধ্যমে রেমিট্যান্স প্রবাহ আরও বাড়ানো সম্ভব। সবশেষে বলা যায়, বাংলাদেশের অর্থনৈতিক উন্নয়ন, সামাজিক অগ্রগতি এবং ভবিষ্যৎ সম্ভাবনায় প্রবাসী আয়ের অবদান অবিস্মরণীয়। তাই এই আয়ের ধারাবাহিকতা বজায় রাখা এবং এর সুফল আরও সম্প্রসারণ করা জরুরি।"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q06",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "english",
+    "qno": 6,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Write down the right form of verb:",
+    "parts": [
+      { "original": "A fire (break) out in the slum last night.", "changed": "A fire broke out in the slum last night." },
+      { "original": "That room (use) for a meeting today.", "changed": "That room is used for a meeting today." },
+      { "original": "Internet connectivity (be) addressed in a half a dozen different ways.", "changed": "Internet connectivity is addressed in a half a dozen different ways." },
+      { "original": "Ancient Greek (teach) still in some school.", "changed": "Ancient Greek is being taught still in some school." },
+      { "original": "I would rather (have) coffee than tea.", "changed": "I would rather have coffee than tea." }
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q07",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "english",
+    "qno": 7,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the Gender:",
+    "columns": ["Given words", "Opposite gender"],
+    "rows": [
+      ["Don", "Donna"],
+      ["Hero", "Heroine"],
+      ["Tiger", "Tigress"],
+      ["Monk", "Nun"],
+      ["Colt", "Filly"]
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q08b",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "english",
+    "qno": 8,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate preposition:",
+    "parts": [
+      { "sentence": "I acceded ...... his request.", "answer": "to" },
+      { "sentence": "The new rule is advantageous ...... us.", "answer": "to" },
+      { "sentence": "I cannot conceive ...... such cruelty.", "answer": "of" },
+      { "sentence": "His words conform ...... his work.", "answer": "with" },
+      { "sentence": "The parliament invested the new organization ...... judicial authority.", "answer": "with" }
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q09",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      { "source": "সে গতকাল বাজারে গিয়েছিল।", "target": "He went to market yesterday." },
+      { "source": "সে সাঁতার কাটতে জানে না।", "target": "He does not know how to swim." },
+      { "source": "আমি আজ জ্বর জ্বর বোধ করছি।", "target": "I feel feverish today." },
+      { "source": "যত গর্জে তত বর্ষে না।", "target": "Barking dogs seldom bite." },
+      { "source": "ট্রেনটি ঢাকা যাবে।", "target": "The train is bound for Dhaka." }
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q10",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "english",
+    "topic": "paragraph writing",
+    "qno": 10,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a short Paragraph on 'The Contribution of RMG Sector in Bangladesh Economy'.",
+    "answer": "The Ready-Made Garment sector is one of the most important pillar's of Bangladesh' economy. It accounts for about 80% of the country's total export earnings and employs million of people, especially women. This sector has played a vital role in reducing poverty, empowering women and improving the standard of living for many families. The RMG industry has also helped to strengthen the country's foreign currency reserves and increase economic growth. By exporting garments to international markets, Bangladesh has earned a strong reputation globally. Although the sector faces challenges such as labor rights issues and competition, its contribution to the overall development of the country is undeniable."
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q11",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "topic": "চক্রবৃদ্ধি মুনাফা",
+    "qno": 11,
+    "marks": 1.25,
+    "type": "math",
+    "question": "৮৮ এর ১২.৫ শতাংশ কত?",
+    "steps": [
+      "৮৮ এর ১২.৫ শতাংশ = ৮৮ × ১২৫ / (১০০ × ১০) = ১১০০০ / ১০০০ = ১১"
+    ],
+    "answer": "১১"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q12",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "topic": "সরল সুদ",
+    "qno": 12,
+    "marks": 1.25,
+    "type": "math",
+    "question": "শতকরা বার্ষিক ৪ টাকা হার সরল সুদে ২০০ টাকার ২ বছর ৯ মাসের সুদ কত?",
+    "steps": [
+      "১০০ টাকার ১ বছরের মুনাফা ৪ টাকা",
+      "∴ ১ টাকার ১ বছরের মুনাফা ৪/১০০ টাকা",
+      "∴ ২০০ টাকার ২.৭৫ বছরের মুনাফা = (৮ × ২০০ × ২.৭৫) / ১০০ = ২২ টাকা"
+    ],
+    "answer": "২২ টাকা"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q13",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "qno": 13,
+    "marks": 1.25,
+    "type": "math",
+    "question": "9x² − 36 এর উৎপাদক কত?",
+    "steps": [
+      "9x² − 36",
+      "= 9(x² − 4)",
+      "= 9(x² − 2²)",
+      "= 9(x + 2)(x − 2)"
+    ],
+    "answer": "9(x + 2)(x − 2)"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q14",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "qno": 14,
+    "marks": 1.25,
+    "type": "math",
+    "question": "একটি আয়তাকার মাঠের দৈর্ঘ্য ২৫০ মিটার এবং প্রস্থ ১০০ মিটার হলে উক্ত মাঠের ক্ষেত্রফল কত হেক্টর?",
+    "steps": [
+      "মাঠের ক্ষেত্রফল = ২৫০ × ১০০ = ২৫০০০ বর্গমিটার",
+      "আমরা জানি, ১০০০০ বর্গমিটার = ১ হেক্টর",
+      "∴ ১ '' = ১/১০০০০ ''",
+      "∴ ২৫০০০ '' = (১ × ২৫০০০) / ১০০০০ = ২.৫ হেক্টর"
+    ],
+    "answer": "২.৫ হেক্টর"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q15",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "general-knowledge",
+    "qno": 15,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      { "q": "ইনসুলিন কি ও এর কাজ কি?", "a": "ইনসুলিন হলো একটি প্রোটিনধর্মী হরমোন। এই হরমোন দেহে গ্লুকোজের পরিপাক নিয়ন্ত্রণ করে সঠিক পরিমাণের গ্লুকোজ সরবরাহে সাহায্য করে।" },
+      { "q": "NATO কি? এর সদরদপ্তর কোথায়?", "a": "NATO (North Atlantic Treaty Organization) একটি সামরিক জোট। এর সদরদপ্তর ব্রাসেলস, বেলজিয়াম।" },
+      { "q": "ভিটামিন ডি এর অভাবে কি কি রোগ হয়?", "a": "ভিটামিন ডি এর অভাবে রিকেটস, অস্টিওম্যালেশিয়া, অস্টিওপোরোসিস প্রভৃতি রোগ হয়।" },
+      { "q": "শব্দের তীব্রতা নির্ণায়ক যন্ত্রের নাম কি?", "a": "শব্দের তীব্রতা নির্ণায়ক যন্ত্রের নাম অডিওমিটার।" },
+      { "q": "ভূমিকম্প নির্ণায়ক অন্ত্রের নাম কী?", "a": "ভূমিকম্প নির্ণায়ক অন্ত্রের নাম সিসমোগ্রাফ।" },
+      { "q": "ফরমালিন কি?", "a": "ফরমালিন একটি রাসায়নিক দ্রব্য, যার মূল উপাদান হলো ফরম্যালডিহাইড (Formaldehyde) যার ৩৭% পানিতে মিশিয়ে ফরমালিন তৈরি করা হয়।" },
+      { "q": "ডায়াবেটিস রোগের কারণ কি?", "a": "ডায়াবেটিস হলো এমন একটি রোগ যেখানে শরীরে রক্তে শর্করার (গ্লুকোজ) মাত্রা স্বাভাবিকের চেয়ে অনেক বেড়ে যায়। এর প্রধান কারণ শরীর যথেষ্ট ইনসুলিন তৈরি করতে পারে না বা তৈরি করা ইনসুলিন সঠিকভাবে কাজ করে না।" },
+      { "q": "মানবদেহের সর্ববৃহৎ অঙ্গের নাম কি?", "a": "মানবদেহের সর্ববৃহৎ অঙ্গের নাম ত্বক।" },
+      { "q": "গ্রীনিচ সময়ের সাথে বাংলাদেশের সময়ের পার্থক্য কত ঘণ্টা?", "a": "গ্রীনিচ সময়ের সাথে বাংলাদেশের সময়ের পার্থক্য +৬ ঘণ্টা।" },
+      { "q": "অপটিক্যাল ফাইবার কি?", "a": "অপটিক্যাল ফাইবার খুব সরু ও নমনীয় কাঁচ তন্তু, আলোর পূর্ণ অভ্যন্তরীণ প্রতিফলন ধর্মকে কাজে লাগিয়ে এর মাধ্যমে তথ্য আদান-প্রদান করা হয়।" }
+    ]
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q16",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "topic": "চক্রবৃদ্ধি মুনাফা",
+    "qno": 16,
+    "marks": 5,
+    "type": "math",
+    "question": "বার্ষিক ১০% মুনাফায় ৮০০০ টাকার ৩ বছরের চক্রবৃদ্ধি মূলধন নির্ণয় কর?",
+    "steps": [
+      "সুদাসল, C = p(1 + r)ⁿ",
+      "= ৮০০০ (১ + ১০/১০০)³",
+      "= ৮০০০ × ১১০/১০০ × ১১০/১০০ × ১১০/১০০",
+      "= ১০৬৪৮ টাকা"
+    ],
+    "answer": "১০৬৪৮ টাকা"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q17",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "topic": "ভর্তুকি",
+    "qno": 17,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি বইয়ের দাম ২৪০ টাকা এবং এই দাম প্রকৃত দামের ৮০%। বাকি দাম সরকার ভর্তুকি দিলে বই প্রতি কত টাকা ভর্তুকি দেওয়া হয়?",
+    "steps": [
+      "প্রশ্নমতে, ৮০% = ২৪০ টাকা",
+      "∴ ১% = ২৪০/৮০",
+      "∴ ১০০% = (২৪০ × ১০০) / ৮০ = ৩০০ টাকা",
+      "∴ সরকার কর্তৃক ভর্তুকি = ৩০০ − ২৪০ = ৬০ টাকা"
+    ],
+    "answer": "৬০ টাকা"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q18",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 18,
+    "marks": 5,
+    "type": "math",
+    "question": "রহিম ও করিমের আয়ের অনুপাত ৭ : ৯। করিম ও পনিরের আয়ের অনুপাত ৬ : ৭। রহিমের আয় ২৫২ টাকা হলে পনিরের আয় কত?",
+    "steps": [
+      "রহিম : করিম = (৭ × ৯) × ৬ = ৪২ : ৫৪",
+      "করিম : পনির = (৬ : ৭) × ৯ = ৫৪ : ৬৩",
+      "∴ রহিম : করিম : পনির = ৪২ : ৫৪ : ৬৩",
+      "মনে করি, রহিম, করিম ও পনিরের আয় যথাক্রমে ৪২x, ৫৪x ও ৬৩x",
+      "শর্তমতে, ৪২x = ২৫২",
+      "বা, x = ২৫২/৪২",
+      "∴ x = ৬",
+      "∴ পনিরের আয় (৬৩ × ৬) = ৩৭৮ টাকা"
+    ],
+    "answer": "৩৭৮ টাকা"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q19",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "qno": 19,
+    "marks": 2.5,
+    "type": "math",
+    "question": "x² + 5x + 6 কে উৎপাদকে বিশ্লেষণ কর।",
+    "steps": [
+      "x² + 5x + 6",
+      "= x² + 3x + 2x + 6",
+      "= x(x + 3) + 2(x + 3)",
+      "= (x + 3)(x + 2)"
+    ],
+    "answer": "(x + 3)(x + 2)"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q20",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "math",
+    "qno": 20,
+    "marks": 2.5,
+    "type": "math",
+    "question": "x = 7 এবং y = 6 হলে 16x² − 40xy + 25y² এর মান নির্ণয় কর।",
+    "steps": [
+      "দেওয়া আছে, x = ৭ এবং y = ৬",
+      "প্রদত্ত রাশি, 16x² − 40xy + 25y²",
+      "= (4x)² − 2 · 4x · 5y + (5y)²",
+      "= (4x − 5y)²",
+      "= (4 · 7 − 5 · 6)²",
+      "= (28 − 30)²",
+      "= (−2)²",
+      "= 4"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": "job-2025-finance-office-shohokari-q21",
+    "examId": "job-2025-finance-office-shohokari",
+    "subject": "general-knowledge",
+    "qno": 21,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      { "q": "জাতীয় সংসদ ভবনের স্থপতির নাম কি?", "a": "জাতীয় সংসদ ভবনের স্থপতির নাম লুই আই. কান।" },
+      { "q": "বাংলাদেশে মোট বিভাগ কয়টি?", "a": "বাংলাদেশে মোট বিভাগ ৮টি।" },
+      { "q": "বিশ্বকাপ ক্রিকেটে বাংলাদেশের প্রথম অধিনায়কের নাম লিখুন।", "a": "বিশ্বকাপ ক্রিকেটে বাংলাদেশের প্রথম অধিনায়কের নাম আমিনুল ইসলাম বুলবুল।" },
+      { "q": "OIC এর সদর দফতর কোথায়?", "a": "OIC এর সদর দফতর জেদ্দা, সৌদি আরব।" },
+      { "q": "বাংলাদেশের জাতীয় পতাকার দৈর্ঘ্য ও প্রস্থের অনুপাত কত?", "a": "বাংলাদেশের জাতীয় পতাকার দৈর্ঘ্য ও প্রস্থের অনুপাত ১০ : ৬।" },
+      { "q": "আয়তনে বাংলাদেশের সবচেয়ে ছোট জেলার নাম লিখুন।", "a": "আয়তনে বাংলাদেশের সবচেয়ে ছোট জেলা নারায়ণগঞ্জ।" },
+      { "q": "স্বাধীন বাংলাদেশকে প্রথম স্বীকৃতি দানকারী দেশের নাম লিখুন।", "a": "স্বাধীন বাংলাদেশকে প্রথম স্বীকৃতি দানকারী দেশ ভুটান।" },
+      { "q": "বাংলাদেশের জাতীয় পতাকা প্রথম উত্তোলনকারীর নাম লিখুন।", "a": "বাংলাদেশের জাতীয় পতাকা প্রথম উত্তোলনকারী আ. স. ম. আবদুর রব।" },
+      { "q": "বাংলাদেশের বর্তমান অর্থ উপদেষ্টার নাম লিখুন।", "a": "বাংলাদেশের বর্তমান অর্থ উপদেষ্টা ড. সালেহউদ্দিন আহমেদ।" },
+      { "q": "জাতিসংঘের স্থায়ী সদস্য সংখ্যা কত?", "a": "জাতিসংঘের স্থায়ী সদস্য সংখ্যা ৫টি।" },
+      { "q": "বাংলাদেশের দক্ষিণের সীমানা কী?", "a": "বাংলাদেশের দক্ষিণের সীমানা বঙ্গোপসাগর।" },
+      { "q": "দক্ষিণ এশিয়ার আয়তনে বাংলাদেশ কততম?", "a": "দক্ষিণ এশিয়ার আয়তনে বাংলাদেশ চতুর্থ।" },
+      { "q": "কুহেলিকা উপন্যাসের রচয়িতা কে?", "a": "কুহেলিকা উপন্যাসের রচয়িতা কাজী নজরুল ইসলাম।" },
+      { "q": "বাংলাদেশের জাতীয় পতাকার ডিজাইনার কে?", "a": "বাংলাদেশের জাতীয় পতাকার ডিজাইনার কামরুল হাসান।" },
+      { "q": "GDP এর পূর্ণরূপ কী?", "a": "GDP এর পূর্ণরূপ Gross Domestic Product." },
+      { "q": "তুরস্কের রাজধানীর নাম কী?", "a": "তুরস্কের রাজধানীর নাম আঙ্কারা।" },
+      { "q": "উত্তরের ভেনিস কী?", "a": "উত্তরের ভেনিস স্টকহোম শহর।" },
+      { "q": "নিউইয়র্ক কোন নদীর তীরে অবস্থিত?", "a": "নিউইয়র্ক হাডসন নদীর তীরে অবস্থিত।" },
+      { "q": "২ ও ৫ টাকার নোটে কার স্বাক্ষর থাকে?", "a": "২ ও ৫ টাকার নোটে অর্থ সচিবের স্বাক্ষর থাকে।" },
+      { "q": "বাংলাদেশের প্রধান সংবাদ সংস্থার নাম লিখুন।", "a": "বাংলাদেশের প্রধান সংবাদ সংস্থা বাসস।" }
+    ]
+  }
+]

@@ -8,8 +8,8 @@
       "topics": [
         "gdp-bangladesh"
       ],
-      "status": "BBS-এর চূড়ান্ত হিসাবে ২০২৪-২৫ অর্থবছরে কৃষি খাতের প্রবৃদ্ধি ০.২১% (মোট জিডিপি প্রবৃদ্ধি ৫.০০%)।",
-      "asOf": "2026-09-28",
+      "status": "BBS-এর চূড়ান্ত হিসাবে (ফেব্রুয়ারি ২০২৬) ২০২৪-২৫ অর্থবছরে কৃষি খাতের প্রবৃদ্ধি ২.৪২% (প্রাক্কলিত ১.৭৯% থেকে সংশোধিত); মোট জিডিপি প্রবৃদ্ধি ৩.৪৯% (প্রাক্কলিত ৩.৯৭%)।",
+      "asOf": "2026-09-29",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -24,7 +24,7 @@
       "source": [
         "current-affairs:gdp-bangladesh"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-biddyut-office-asst-typist-q16-p7",
@@ -48,7 +48,7 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-biwta-shulko-adaykari-q05-p10",
@@ -86,8 +86,8 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "১৫ জুন ২০২৬ পর্যন্ত বাংলাদেশের নিবন্ধিত GI পণ্য মোট ৬৪টি (সর্বশেষ: মানিকগঞ্জের হাজারী গুড়)।",
-      "asOf": "2026-09-28",
+      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
+      "asOf": "2026-09-29",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -102,7 +102,7 @@
       "source": [
         "current-affairs:gi-ponno-bangladesh"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-dc-bhola-q20",
@@ -125,9 +125,8 @@
       "topics": [
         "gdp-bangladesh"
       ],
-      "status": "BBS-এর চূড়ান্ত হিসাব (২০২৪-২৫ অর্থবছর): মাথাপিছু আয় ২,৭৯৩ মার্কিন ডলার (সংশোধিত)।",
-      "asOf": "2026-09-28",
-      "reviewAfter": "2026-11-12",
+      "status": "",
+      "reviewAfter": "2026-10-13",
       "targets": [
         {
           "id": "job-2025-dc-manikganj-q23",
@@ -166,7 +165,7 @@
         "web:bdservicerules.com/attorney-general-of-bangladesh-2026 (২৫ মার্চ ২০২৬)",
         "web:lawyersclubbangladesh.com (২৩ সেপ্টেম্বর ২০২৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p11",
@@ -174,8 +173,7 @@
       "topics": [
         "mantrisova"
       ],
-      "status": "২৪ মার্চ ২০২৬ থেকে অ্যাটর্নি জেনারেল ব্যারিস্টার রুহুল কুদ্দুস কাজল (দেশের ১৮তম অ্যাটর্নি জেনারেল)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -224,8 +222,7 @@
       "topics": [
         "bangladesh-usa-art-chukti"
       ],
-      "status": "৯ ফেব্রুয়ারি ২০২৬ স্বাক্ষরিত ART চুক্তিতে যুক্তরাষ্ট্রে বাংলাদেশি পণ্যের পাল্টা শুল্ক ২০% থেকে কমিয়ে ১৯% করা হয়।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -284,7 +281,7 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-expatriate-welfare-steno-q15-p7",
@@ -323,7 +320,7 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-iwta-traffic-q06-p1",
@@ -347,7 +344,7 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-nlasp-bench-asst-q08-p6",
@@ -355,8 +352,8 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "১৫ জুন ২০২৬ পর্যন্ত বাংলাদেশের নিবন্ধিত GI পণ্য মোট ৬৪টি (সর্বশেষ: মানিকগঞ্জের হাজারী গুড়)।",
-      "asOf": "2026-09-28",
+      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
+      "asOf": "2026-09-29",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -371,7 +368,7 @@
       "source": [
         "current-affairs:gi-ponno-bangladesh"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-nlasp-bench-asst-q08-p7",
@@ -410,7 +407,7 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-agri-info-office-asst-q13-p11",
@@ -468,7 +465,7 @@
         "web:prothomalo.com (২১ আগস্ট ২০২৬)",
         "web:itvbd.com (২১ আগস্ট ২০২৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-air-force-office-sohayok-q12-p6",
@@ -737,7 +734,7 @@
         "current-affairs:bortoman-sorkarer-180-din",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-div-comm-ctg-office-sohayok-q17-p10",
@@ -784,7 +781,7 @@
         "current-affairs:bortoman-sorkarer-180-din",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-dphe-rangamati-office-asst-typist-q14-p13",
@@ -1076,7 +1073,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের প্রথম অধিবেশন বসে ১২ মার্চ ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
+      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
       "asOf": "2026-09-28",
       "reviewAfter": "2027-03-27",
       "targets": [
@@ -1093,7 +1090,7 @@
         "current-affairs:sangsad-troyodosh",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-land-survey-peshkar-q16-p7",
@@ -1116,7 +1113,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের প্রথম অধিবেশন বসে ১২ মার্চ ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
+      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
       "asOf": "2026-09-28",
       "reviewAfter": "2027-03-27",
       "targets": [
@@ -1133,7 +1130,7 @@
         "current-affairs:sangsad-troyodosh",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-land-survey-peshkar-q17-p7",
@@ -1190,7 +1187,7 @@
         "current-affairs:bortoman-sorkarer-180-din",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p14",
@@ -1336,7 +1333,7 @@
       "topics": [
         "eki-poribare-rashtroneta"
       ],
-      "status": "সুশীলা কারকি ছিলেন অন্তর্বর্তী সরকারপ্রধান। ৫ মার্চ ২০২৬ নেপালে সাধারণ নির্বাচনে RSP (রাষ্ট্রীয় প্রজাতন্ত্র পার্টি) জয়ী হয় এবং বালেন শাহ নতুন প্রধানমন্ত্রী নির্বাচিত হন।",
+      "status": "সুশীলা কারকি ছিলেন অন্তর্বর্তী সরকারপ্রধান। ৫ মার্চ ২০২৬ নেপালে সাধারণ নির্বাচনে RSP (রাষ্ট্রীয় স্বতন্ত্র পার্টি) জয়ী হয় এবং বালেন শাহ ২৭ মার্চ ২০২৬ প্রধানমন্ত্রী হিসেবে শপথ নেন।",
       "asOf": "2026-09-28",
       "reviewAfter": "2027-03-27",
       "targets": [
@@ -1352,7 +1349,7 @@
       "source": [
         "current-affairs:eki-poribare-rashtroneta"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-prison-teacher-q14-p1",
@@ -1429,7 +1426,7 @@
         "current-affairs:bortoman-sorkarer-180-din",
         "current-affairs:mantrisova"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-barc-head-assistant-q13-p5",
@@ -1453,7 +1450,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-biddyut-office-asst-typist-q16-p8",
@@ -1487,7 +1484,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-btmc-sub-asst-engineer-civil-q11-p10",
@@ -1511,7 +1508,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-coast-guard-support-sep-q13-p11",
@@ -1540,7 +1537,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p6",
@@ -1569,7 +1566,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p13",
@@ -1598,7 +1595,7 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-prison-teacher-q14-p12",
@@ -1622,7 +1619,7 @@
       "source": [
         "current-affairs:sheetkalin-olympic-2026"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-iwta-traffic-q06-p14",

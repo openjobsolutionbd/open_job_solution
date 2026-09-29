@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-current-affairs/AGENTS.md ও current-affairs/EDITORIAL_MEMORY.md-এ পুরনো/ভাঙা/
+current-affairs/AGENTS.md, EDITORIAL_MEMORY.md ও PR_GUIDE.md-এ পুরনো/ভাঙা/
 stale কনটেন্ট স্বয়ংক্রিয়ভাবে ধরে — যাতে migration/rename/rewrite-এর পর হাতে
 মনে করে না ঘেঁটে দেখলেও ভুল নির্দেশনা রিপোতে পড়ে না থাকে।
 
@@ -48,6 +48,7 @@ STALE_SNAPSHOT_DAYS = 60
 SIZE_BUDGET_BYTES = {
     "current-affairs/AGENTS.md": 35_000,
     "current-affairs/EDITORIAL_MEMORY.md": 20_000,
+    "current-affairs/PR_GUIDE.md": 30_000,
 }
 TARGET_FILES = [ROOT / p for p in SIZE_BUDGET_BYTES]
 
@@ -117,8 +118,12 @@ def check_broken_file_refs(rel, text):
         following = text[start + len(c) + 2:start + len(c) + 42]
         if any(w in preceding for w in ("যেমন", "উদাহরণ")):
             continue  # উদাহরণ-স্বরূপ ফাইলনাম (নামকরণ-কনভেনশন বোঝাতে), আসল রেফারেন্স না
+        if "branch" in preceding or "branch" in following:
+            continue  # git branch-নাম (যেমন work/..., bot/...), ফাইলসিস্টেম পাথ না
         if re.search(r"#\d{2,5}", preceding) or re.search(r"#\d{2,5}", following):
             continue  # নির্দিষ্ট PR/Issue-এর প্রস্তাব/আলোচনার প্রসঙ্গে উল্লেখ, বর্তমান-অবস্থার দাবি না
+        if any(w in following for w in ("পুরনো", "retired", "বাতিল")):
+            continue  # ঠিক পরেই 'পুরনো/বাতিল' বলে চিহ্নিত ঐতিহাসিক উল্লেখ (যেমন আর-ব্যবহৃত-না-হওয়া branch-নাম)
         if "://" in c or c.startswith("<") or ">" in c or c.startswith("http"):
             continue
         if c.startswith("/home/") or c.startswith("/tmp/"):

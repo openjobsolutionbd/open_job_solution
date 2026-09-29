@@ -118,7 +118,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 |---|---|
 | `_dev/scripts/session_status.sh [স্কোপ]` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, branch-ভিত্তিক সংঘর্ষ-ঝুঁকি (API ছাড়াই), PR/`claim`/ফিড (API থাকলে), স্কোপ-মিল ও শেষে 🚦 সারসংক্ষেপ। বিশ্লেষণ: `session_status_report.py` |
 | `_dev/scripts/current_affairs_health_check.py` | current-affairs-এর `docs/` (build output)-এর দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) |
-| `_dev/scripts/doc_staleness_check.py` | `current-affairs/AGENTS.md` ও `EDITORIAL_MEMORY.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/undocumented script/আকার-সীমা সাপ্তাহিক স্বয়ংক্রিয় চেক — prose নিজে মোছে না, শুধু Issue-এ জানায় |
+| `_dev/scripts/doc_staleness_check.py` | `current-affairs/`-এর `AGENTS.md`, `EDITORIAL_MEMORY.md` ও `PR_GUIDE.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/undocumented script/আকার-সীমা সাপ্তাহিক স্বয়ংক্রিয় চেক — prose নিজে মোছে না, শুধু Issue-এ জানায় |
 | `current-affairs/docs/` | build output (`build_index.py` থেকে জেনারেট)। ২০২৬-০৯ থেকে `open_current_affairs` স্ট্যান্ডঅ্যালোন রিপো subtree merge দিয়ে এই monorepo-তে চলে এসেছে ও সরাসরি এখানেই এডিট হয় — পুরনো `sync-to-job-solution.yml` workflow বাতিল, আলাদা সোর্স-রিপোতে ফিক্স করার দরকার নেই |
 | `_staging/books-staging/` | "বই সমূহ" ফিচারের পরিকল্পনা/ডিজাইন-নোট (README + BOOKS_NOTES.md) |
 | `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check। ডুপ্লিকেট id, ডুপ্লিকেট প্রশ্ন+option, ডুপ্লিকেট ব্যাখ্যা (নিজের ডেটাবেসের মধ্যে) — এসব ধরে, কিন্তু **অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা ধরতে পারে না** (নিচের সেকশন দেখুন) |

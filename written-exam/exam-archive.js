@@ -904,5 +904,23 @@ const EXAM_ARCHIVE = [
     date: "2026-09-11",
     totalQuestions: 13,
   },
+  {
+    id: "job-2025-social-welfare-steno",
+    ministry: "সমাজকল্যাণ মন্ত্রণালয়",
+    post: "সাঁট মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+    date: "2025-04-26",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 18,
+  },
+  {
+    id: "job-2025-social-welfare-office-sohayok",
+    ministry: "সমাজকল্যাণ মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2025-04-26",
+    duration: "১ ঘণ্টা",
+    totalMarks: 40,
+    totalQuestions: 10,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

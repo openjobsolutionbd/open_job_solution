@@ -1,14 +1,13 @@
-const CACHE_PREFIX = 'home-';
+const CACHE_PREFIX = 'mcqhub-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1.336';
 
-// এই sw.js শুধু হোম পেজ (root) cache করে — bcs-mcq/mcq-job-solution/written-exam/
-// current-affairs প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
+// এই sw.js শুধু MCQ Job Solution হাবের নিজের পেজ (ও nctb-mcq/ প্লেসহোল্ডার) cache করে —
+// primary-mcq/ ও ministry-mcq/ প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
+  '/mcq-job-solution/',
+  '/mcq-job-solution/index.html',
+  '/mcq-job-solution/nctb-mcq/',
   '/_assets/icons/icon-192.png',
-  '/_assets/icons/icon-512.png',
   '/_assets/fonts/noto-bengali.css',
   '/_assets/fonts/noto-serif-bengali-400.woff2',
   '/_assets/fonts/noto-serif-bengali-500.woff2',
@@ -23,15 +22,13 @@ const ASSETS = [
 // সমস্যা হলে) ভুল/ভাঙা কনটেন্ট দেখানোর ঝুঁকি ছিল। তাই এই পাথগুলো রুট
 // sw.js এখন সম্পূর্ণ ছেড়ে দেয় — নিজস্ব sw.js (বা ব্রাউজার সরাসরি) সামলাবে।
 const SECTION_PREFIXES = [
-  '/bcs-mcq/',
-  '/mcq-job-solution/',
-  '/written-exam/',
-  '/current-affairs/',
-  '/books/'
+  '/mcq-job-solution/primary-mcq/',
+  '/mcq-job-solution/ministry-mcq/'
 ];
 
 function isAppFile(url) {
-  return url.pathname === '/' || url.pathname === '/index.html';
+  return url.pathname === '/mcq-job-solution/' || url.pathname === '/mcq-job-solution/index.html' ||
+    url.pathname === '/mcq-job-solution/nctb-mcq/' || url.pathname === '/mcq-job-solution/nctb-mcq/index.html';
 }
 
 function isSectionOwned(url) {
@@ -47,7 +44,7 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', e => {
-  // শুধু নিজের prefix ('home-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
+  // শুধু নিজের prefix ('mcqhub-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
   // অন্য সেকশনের cache স্পর্শ করবে না।
   e.waitUntil(caches.keys().then(keys =>
     Promise.all(
@@ -81,7 +78,7 @@ self.addEventListener('fetch', e => {
             // বাগ-ফিক্স: শুধু navigation (পেজ-লোড) রিকোয়েস্টের জন্যই app-shell
             // ফলব্যাক দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
             if (e.request.mode === 'navigate') {
-              return caches.match('/index.html');
+              return caches.match('/mcq-job-solution/index.html');
             }
             return undefined;
           });
@@ -102,7 +99,7 @@ self.addEventListener('fetch', e => {
         // বাগ-ফিক্স: manifest/আইকন/ফন্ট অফলাইনে cache-এ না থাকলে HTML
         // app-shell ফেরত না দিয়ে স্বাভাবিক network error propagate হচ্ছে।
         if (e.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match('/mcq-job-solution/index.html');
         }
         return undefined;
       });

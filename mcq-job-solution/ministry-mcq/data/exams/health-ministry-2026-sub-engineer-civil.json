@@ -4,9 +4,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 1,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের কোন এলাকাকে Marine Protected Area (MPA) ঘোষণা করা হয়েছে?",
+    "q": "বাংলাদেশের কোন এলাকাকে Marine Protected Area (MPA) ঘোষণা করা হয়েছে?",
     "answer": "সেন্টমার্টিন ও আশেপাশের এলাকা (উৎস নোট: 'ক' ও 'খ' উভয়ই সঠিক উত্তর হিসেবে গণ্য)"
   },
   {
@@ -14,9 +12,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 2,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'I would rather starve — beg — ___.'",
+    "q": "'I would rather starve — beg — ___.'",
     "answer": "than"
   },
   {
@@ -24,9 +20,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 3,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "What is the meaning of 'dead tired'?",
+    "q": "What is the meaning of 'dead tired'?",
     "answer": "Very tired"
   },
   {
@@ -34,9 +28,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 7,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোন সভ্যতার লোকজন সর্বপ্রথম চাকা (Wheel) আবিষ্কার করেন?",
+    "q": "কোন সভ্যতার লোকজন সর্বপ্রথম চাকা (Wheel) আবিষ্কার করেন?",
     "answer": "সুমেরীয়"
   },
   {
@@ -44,9 +36,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 8,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা ভাষায় ছন্দ কত প্রকার?",
+    "q": "বাংলা ভাষায় ছন্দ কত প্রকার?",
     "answer": "৩ প্রকার"
   },
   {
@@ -54,9 +44,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 11,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'সিংহ' কোন ভাষার শব্দ?",
+    "q": "'সিংহ' কোন ভাষার শব্দ?",
     "answer": "সিংহলি"
   },
   {
@@ -64,9 +52,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 12,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'মানুষ হও' বাক্যটিতে কোন ধরনের অনুজ্ঞা প্রকাশ পেয়েছে?",
+    "q": "'মানুষ হও' বাক্যটিতে কোন ধরনের অনুজ্ঞা প্রকাশ পেয়েছে?",
     "answer": "উপদেশ"
   },
   {
@@ -74,9 +60,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 14,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'COP 30' সম্মেলনে জলবায়ু সংকট মোকাবিলায় উন্নয়নশীল দেশগুলোর জন্য আর্থিক সহায়তা কতগুণ বাড়াতে বলা হয়েছে?",
+    "q": "'COP 30' সম্মেলনে জলবায়ু সংকট মোকাবিলায় উন্নয়নশীল দেশগুলোর জন্য আর্থিক সহায়তা কতগুণ বাড়াতে বলা হয়েছে?",
     "answer": "তিনগুণ"
   },
   {
@@ -84,9 +68,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 16,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The door is wide open.' Here 'wide' is used as —",
+    "q": "'The door is wide open.' Here 'wide' is used as —",
     "answer": "Adverb"
   },
   {
@@ -94,9 +76,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 17,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা ভাষার মূল উৎস কী?",
+    "q": "বাংলা ভাষার মূল উৎস কী?",
     "answer": "প্রাচীন ভারতীয় প্রাকৃত ভাষা (আনুমানিক এক হাজার বছর আগে পূর্ব ভারতীয় প্রাকৃত ভাষা থেকে বাংলা ভাষার জন্ম হয়েছে)"
   },
   {
@@ -104,9 +84,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 20,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'অরণ্য'-এর লিঙ্গান্তর কী?",
+    "q": "'অরণ্য'-এর লিঙ্গান্তর কী?",
     "answer": "অরণ্যানী"
   },
   {
@@ -114,9 +92,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 22,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ব্যাকরণের মূল ভিত্তি কী?",
+    "q": "ব্যাকরণের মূল ভিত্তি কী?",
     "answer": "ভাষা"
   },
   {
@@ -124,9 +100,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 23,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'ই.পি.আই' কর্মসূচিতে প্রতিষেধক টিকা কয়টি?",
+    "q": "'ই.পি.আই' কর্মসূচিতে প্রতিষেধক টিকা কয়টি?",
     "answer": "৭ (বর্তমানে ১৩টি রোগের জন্য ১১টি টিকা দেওয়া হয়)"
   },
   {
@@ -134,9 +108,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 24,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The teacher said, the truth will always prevail.' Which sentence below is a correct conversion?",
+    "q": "'The teacher said, the truth will always prevail.' Which sentence below is a correct conversion?",
     "answer": "The teacher said that the truth will always prevail."
   },
   {
@@ -144,9 +116,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 26,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'They are building the house.' Which one is correct in passive voice form?",
+    "q": "'They are building the house.' Which one is correct in passive voice form?",
     "answer": "The house is being built by them."
   },
   {
@@ -154,9 +124,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 29,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'ব্রজবুলি' ভাষার প্রবর্তক কে?",
+    "q": "'ব্রজবুলি' ভাষার প্রবর্তক কে?",
     "answer": "বিদ্যাপতি"
   },
   {
@@ -164,9 +132,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 31,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which is the incorrect sentence?",
+    "q": "Which is the incorrect sentence?",
     "answer": "They hurt themselves."
   },
   {
@@ -174,9 +140,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 32,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'পথের পাঁচালী' একটি —",
+    "q": "'পথের পাঁচালী' একটি —",
     "answer": "উপন্যাস"
   },
   {
@@ -184,9 +148,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 33,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Things fall apart, the centre cannot hold.' This expression is coined by —",
+    "q": "'Things fall apart, the centre cannot hold.' This expression is coined by —",
     "answer": "W. B. Yeats"
   },
   {
@@ -194,9 +156,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 34,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "উপকূল থেকে বাংলাদেশের অর্থনৈতিক সমুদ্রসীমা কত?",
+    "q": "উপকূল থেকে বাংলাদেশের অর্থনৈতিক সমুদ্রসীমা কত?",
     "answer": "২০০ নটিক্যাল মাইল"
   },
   {
@@ -204,9 +164,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 37,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'বলাকা' বাংলাদেশের কোন ফসলের একটি প্রকার?",
+    "q": "'বলাকা' বাংলাদেশের কোন ফসলের একটি প্রকার?",
     "answer": "গম"
   },
   {
@@ -214,9 +172,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 38,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'লাঙ্গল যার জমি তার' — স্লোগানটি কে দিয়েছিলেন?",
+    "q": "'লাঙ্গল যার জমি তার' — স্লোগানটি কে দিয়েছিলেন?",
     "answer": "এ কে ফজলুল হক"
   },
   {
@@ -224,9 +180,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 39,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'He said that he was innocent.' Which one is correct in the form of simple sentence?",
+    "q": "'He said that he was innocent.' Which one is correct in the form of simple sentence?",
     "answer": "He declared his innocence."
   },
   {
@@ -234,9 +188,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 44,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা ভাষায় প্রথম সংবাদপত্র কোনটি?",
+    "q": "বাংলা ভাষায় প্রথম সংবাদপত্র কোনটি?",
     "answer": "সমাচার দর্পণ"
   },
   {
@@ -244,9 +196,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 46,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "সভ্যতায় রোমানদের অবদান কোনটি?",
+    "q": "সভ্যতায় রোমানদের অবদান কোনটি?",
     "answer": "আইন প্রণয়ন"
   },
   {
@@ -254,9 +204,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 48,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'You do look nice today.' Here 'do' is used for —",
+    "q": "'You do look nice today.' Here 'do' is used for —",
     "answer": "emphasis"
   },
   {
@@ -264,9 +212,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 50,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which sentence is incorrect?",
+    "q": "Which sentence is incorrect?",
     "answer": "Oil have nearly double the price."
   },
   {
@@ -274,9 +220,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 52,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোনটি বাল্টিক রাষ্ট্র নয়?",
+    "q": "কোনটি বাল্টিক রাষ্ট্র নয়?",
     "answer": "রোমানিয়া"
   },
   {
@@ -284,9 +228,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 53,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'She can speak six languages.' Here 'can' stands for —",
+    "q": "'She can speak six languages.' Here 'can' stands for —",
     "answer": "ability"
   },
   {
@@ -294,9 +236,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 54,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "প্রাচীন গৌড় নগরীর অংশবিশেষ বাংলাদেশের কোন জেলায় অবস্থিত?",
+    "q": "প্রাচীন গৌড় নগরীর অংশবিশেষ বাংলাদেশের কোন জেলায় অবস্থিত?",
     "answer": "চাঁপাইনবাবগঞ্জ"
   },
   {
@@ -304,9 +244,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 55,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোনটি অঘোষ অল্পপ্রাণ ধ্বনি?",
+    "q": "কোনটি অঘোষ অল্পপ্রাণ ধ্বনি?",
     "answer": "চ"
   },
   {
@@ -314,9 +252,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 56,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "খনার বচনে প্রাধান্য পেয়েছে —",
+    "q": "খনার বচনে প্রাধান্য পেয়েছে —",
     "answer": "কৃষি"
   },
   {
@@ -324,9 +260,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 57,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ফ্যাসিজমের প্রবর্তক কে ছিলেন?",
+    "q": "ফ্যাসিজমের প্রবর্তক কে ছিলেন?",
     "answer": "মুসোলিনি"
   },
   {
@@ -334,9 +268,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 58,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'ইনকা সভ্যতা' কোন অঞ্চলে বিরাজমান ছিল?",
+    "q": "'ইনকা সভ্যতা' কোন অঞ্চলে বিরাজমান ছিল?",
     "answer": "দক্ষিণ আমেরিকা"
   },
   {
@@ -344,9 +276,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 59,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "The idiom 'call it a day' means —",
+    "q": "The idiom 'call it a day' means —",
     "answer": "Stop working for now."
   },
   {
@@ -354,9 +284,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 60,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা সাহিত্যের আদি কবি কে?",
+    "q": "বাংলা সাহিত্যের আদি কবি কে?",
     "answer": "লুইপা"
   },
   {
@@ -364,9 +292,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 62,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'There are many — in the Sundarbans.'",
+    "q": "'There are many — in the Sundarbans.'",
     "answer": "Deer"
   },
   {
@@ -374,9 +300,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 63,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "যুক্তরাষ্ট্রের প্রেসিডেন্ট নির্বাচনে ইলেকটোরাল কলেজের মোট ভোট সংখ্যা কত?",
+    "q": "যুক্তরাষ্ট্রের প্রেসিডেন্ট নির্বাচনে ইলেকটোরাল কলেজের মোট ভোট সংখ্যা কত?",
     "answer": "৫৩৮"
   },
   {
@@ -384,9 +308,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 65,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'বন্য' শব্দের চলিত রূপ কোনটি?",
+    "q": "'বন্য' শব্দের চলিত রূপ কোনটি?",
     "answer": "বুনো"
   },
   {
@@ -394,9 +316,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 68,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "জাতিসংঘের দাপ্তরিক (Official) ভাষা নয় কোনটি?",
+    "q": "জাতিসংঘের দাপ্তরিক (Official) ভাষা নয় কোনটি?",
     "answer": "জার্মান"
   },
   {
@@ -404,9 +324,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 69,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ব্যঞ্জনসন্ধির উদাহরণ কোনটি?",
+    "q": "ব্যঞ্জনসন্ধির উদাহরণ কোনটি?",
     "answer": "সদুপদেশ"
   },
   {
@@ -414,9 +332,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 72,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'He is — weak to walk.'",
+    "q": "'He is — weak to walk.'",
     "answer": "too"
   },
   {
@@ -424,9 +340,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 75,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "আরাকান রাজসভার শ্রেষ্ঠ কবি কে?",
+    "q": "আরাকান রাজসভার শ্রেষ্ঠ কবি কে?",
     "answer": "আলাওল"
   },
   {
@@ -434,9 +348,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 76,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Fill in the blank with correct preposition: 'He is addicted — gambling.'",
+    "q": "Fill in the blank with correct preposition: 'He is addicted — gambling.'",
     "answer": "to"
   },
   {
@@ -444,9 +356,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 77,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'I have a dream' শিরোনামের ভাষণটি কে প্রদান করেছিলেন?",
+    "q": "'I have a dream' শিরোনামের ভাষণটি কে প্রদান করেছিলেন?",
     "answer": "মার্টিন লুথার কিং"
   },
   {
@@ -454,9 +364,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 79,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোন বানানটি শুদ্ধ?",
+    "q": "কোন বানানটি শুদ্ধ?",
     "answer": "স্বায়ত্তশাসন"
   },
   {
@@ -464,9 +372,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 80,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "শুদ্ধ বানান কোনটি?",
+    "q": "শুদ্ধ বানান কোনটি?",
     "answer": "আকুণ্ঠ"
   },
   {
@@ -474,9 +380,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 81,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'থ্রি জিরো' তত্ত্বে অন্তর্ভুক্ত নয় কোনটি?",
+    "q": "'থ্রি জিরো' তত্ত্বে অন্তর্ভুক্ত নয় কোনটি?",
     "answer": "শূন্য ক্ষুধা"
   },
   {
@@ -484,9 +388,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 82,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The newly appointed officer is found of reading books, learning new things and — new people.'",
+    "q": "'The newly appointed officer is found of reading books, learning new things and — new people.'",
     "answer": "knowing"
   },
   {
@@ -494,9 +396,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 83,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Reading books is a good habit.' Here 'reading' is in the form of —",
+    "q": "'Reading books is a good habit.' Here 'reading' is in the form of —",
     "answer": "Gerund"
   },
   {
@@ -504,9 +404,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 84,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Find the correct spelling —",
+    "q": "Find the correct spelling —",
     "answer": "Diarrhoea"
   },
   {
@@ -514,9 +412,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 85,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'নরমসরম' কোন সমাস?",
+    "q": "'নরমসরম' কোন সমাস?",
     "answer": "দ্বন্দ্ব সমাস"
   },
   {
@@ -524,9 +420,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 89,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'War and Peace' উপন্যাসের রচয়িতা কে?",
+    "q": "'War and Peace' উপন্যাসের রচয়িতা কে?",
     "answer": "লিও তলস্তয়"
   },
   {
@@ -534,9 +428,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 90,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশ-মিয়ানমারের সমুদ্রসীমা বিরোধের নিষ্পত্তি হয় কোথায়?",
+    "q": "বাংলাদেশ-মিয়ানমারের সমুদ্রসীমা বিরোধের নিষ্পত্তি হয় কোথায়?",
     "answer": "ITLOS"
   },
   {
@@ -544,9 +436,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 91,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'গবাদি'-র সন্ধি বিচ্ছেদ কোনটি?",
+    "q": "'গবাদি'-র সন্ধি বিচ্ছেদ কোনটি?",
     "answer": "গো + আদি"
   },
   {
@@ -554,9 +444,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 93,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'অপারেশন ডেজার্ট স্টর্ম' পরিচালিত হয় কোন যুদ্ধের সময়?",
+    "q": "'অপারেশন ডেজার্ট স্টর্ম' পরিচালিত হয় কোন যুদ্ধের সময়?",
     "answer": "প্রথম উপসাগরীয় যুদ্ধ"
   },
   {
@@ -564,9 +452,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 94,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "নিউইয়র্ক সিটির বর্তমান নির্বাচিত মুসলিম মেয়র জোহরান মামদানি কোন দেশে জন্মগ্রহণ করেন?",
+    "q": "নিউইয়র্ক সিটির বর্তমান নির্বাচিত মুসলিম মেয়র জোহরান মামদানি কোন দেশে জন্মগ্রহণ করেন?",
     "answer": "উগান্ডা"
   },
   {
@@ -574,9 +460,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "general-knowledge",
     "qno": 96,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "দ্বিজেন্দ্রলাল রায় কোন ধরনের লেখক ছিলেন?",
+    "q": "দ্বিজেন্দ্রলাল রায় কোন ধরনের লেখক ছিলেন?",
     "answer": "ঐতিহাসিক"
   },
   {
@@ -584,9 +468,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 97,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The person — is honest is trusted.'",
+    "q": "'The person — is honest is trusted.'",
     "answer": "who"
   },
   {
@@ -594,9 +476,7 @@
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 99,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The book will be invaluable for students in higher education.' In the sentence, the word 'invaluable' stands for —",
+    "q": "'The book will be invaluable for students in higher education.' In the sentence, the word 'invaluable' stands for —",
     "answer": "Extremely useful"
   }
 ]

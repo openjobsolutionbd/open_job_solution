@@ -47,12 +47,58 @@ function letterSalutation(to, subject) {
   return isFemale ? 'মহোদয়া,' : 'মহোদয়,';
 }
 
+// ══════════════════════════════════════════
+// বর্তমান অবস্থা (data/current-status.json)
+// আসল উত্তর অপরিবর্তিত থাকে; সময়ের সাথে বদলানো প্রশ্নের নিচে আলাদা নোট বসে।
+// ডেটা লোড না হলে বা status ফাঁকা থাকলে কিছুই দেখায় না।
+// ══════════════════════════════════════════
+const BN_MONTHS = ['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+function formatBnDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!m) return '';
+  return `${toBnDigits(parseInt(m[3], 10))} ${BN_MONTHS[parseInt(m[2], 10) - 1] || ''} ${toBnDigits(m[1])}`;
+}
+function currentStatusHtml(cs) {
+  if (!cs || !cs.text) return '';
+  const when = formatBnDate(cs.asOf);
+  return `<div class="current-status" role="note">
+    <span class="cs-label">📌 বর্তমান অবস্থা${when ? ` (${escHtml(when)})` : ''}:</span>
+    ${escHtml(cs.text).replace(/\n/g, '<br>')}
+  </div>`;
+}
+let _currentStatusPromise = null;
+function loadCurrentStatus() {
+  if (!_currentStatusPromise) {
+    _currentStatusPromise = fetch('data/current-status.json', { cache: 'no-cache' })
+      .then(r => (r.ok ? r.json() : null))
+      .then(d => (d && Array.isArray(d.items) ? d.items : []))
+      .catch(() => []);
+  }
+  return _currentStatusPromise;
+}
+// প্রশ্ন/অংশের ভেতরে in-memory বসায় (ফাইলের ডেটা বদলায় না)
+async function applyCurrentStatus(questions) {
+  const items = await loadCurrentStatus();
+  if (!items.length) return;
+  const byId = new Map(questions.map(q => [q.id, q]));
+  for (const it of items) {
+    if (!it.status) continue;
+    const cs = { text: it.status, asOf: it.asOf };
+    for (const tg of it.targets || []) {
+      const q = byId.get(tg.id);
+      if (!q) continue;
+      if (tg.part == null) q.currentStatus = cs;
+      else if (Array.isArray(q.parts) && q.parts[tg.part]) q.parts[tg.part].currentStatus = cs;
+    }
+  }
+}
+
 function renderAnswer(q) {
   switch (q.type) {
 
     case 'paragraph': {
       const paragraphs = escHtml(q.answer).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
-      return `<div class="ans-paragraph">${paragraphs}</div>`;
+      return `<div class="ans-paragraph">${paragraphs}${currentStatusHtml(q.currentStatus)}</div>`;
     }
 
     case 'sub-parts':
@@ -62,6 +108,7 @@ function renderAnswer(q) {
           <div class="part-body">
             ${p.q ? `<span class="part-q">${escHtml(p.q)}</span> <span class="part-eq">=</span> ` : ''}
             <span class="part-a">${escHtml(p.a)}</span>
+            ${currentStatusHtml(p.currentStatus)}
           </div>
         </div>`).join('')}</div>`;
 
@@ -139,6 +186,7 @@ function renderAnswer(q) {
           <div class="part-body">
             <span class="part-q">${escHtml(p.q)}</span>
             <span class="short-answer">— ${escHtml(p.a)}</span>
+            ${currentStatusHtml(p.currentStatus)}
           </div>
         </div>`).join('')}</div>`;
 
@@ -161,6 +209,6 @@ function renderAnswer(q) {
       </div>`;
 
     default:
-      return `<div class="ans-paragraph">${escHtml(q.answer || '')}</div>`;
+      return `<div class="ans-paragraph">${escHtml(q.answer || '')}${currentStatusHtml(q.currentStatus)}</div>`;
   }
 }

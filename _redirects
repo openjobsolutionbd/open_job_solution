@@ -1,3 +1,5 @@
 /bcs-mcq/*      /bcs-mcq/index.html      200
-/primary-mcq/*  /primary-mcq/index.html  200
+/primary-mcq/*  /mcq-job-solution/primary-mcq/:splat  301
+/mcq-job-solution/primary-mcq/*  /mcq-job-solution/primary-mcq/index.html  200
+/mcq-job-solution/ministry-mcq/*  /mcq-job-solution/ministry-mcq/index.html  200
 /written-exam/* /written-exam/index.html 200

@@ -1,11 +1,10 @@
-const CACHE_PREFIX = 'bcs-';
+const CACHE_PREFIX = 'ministry-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1.336';
 
 const ASSETS = [
-  '/bcs-mcq/',
-  '/bcs-mcq/index.html',
-  '/bcs-mcq/style.css',
-  '/bcs-mcq/app.js',
+  '/mcq-job-solution/ministry-mcq/',
+  '/mcq-job-solution/ministry-mcq/style.css',
+  '/mcq-job-solution/ministry-mcq/index.html',
   '/_assets/fonts/noto-bengali.css',
   '/_assets/fonts/noto-serif-bengali-400.woff2',
   '/_assets/fonts/noto-serif-bengali-500.woff2',
@@ -14,22 +13,19 @@ const ASSETS = [
 ];
 
 const OPTIONAL_ASSETS = [
-  '/bcs-mcq/data/science.js',
-  '/bcs-mcq/data/computer.js',
-  '/bcs-mcq/data/geography.js',
-  '/bcs-mcq/data/bangla.js',
-  '/bcs-mcq/data/english.js',
-  '/bcs-mcq/data/bangladesh.js',
-  '/bcs-mcq/data/international.js',
-  '/bcs-mcq/data/math.js',
-  '/bcs-mcq/data/mental.js',
-  '/bcs-mcq/data/ethics.js'
+  '/mcq-job-solution/ministry-mcq/mcq-renderer.js',
+  '/mcq-job-solution/ministry-mcq/exam-archive.js'
 ];
+
+// এক্সামের প্রশ্ন-ডেটা (data/exams/<examId>.json) আগে থেকে precache হয় না —
+// প্রতিটা এক্সাম প্রথমবার খোলার সময় fetch হয়, এবং নিচের generic fetch
+// handler-ই (isAppFile না হওয়ায় নিচের else শাখায় পড়ে) সেটা runtime-এ
+// cache করে রাখে, ফলে দ্বিতীয়বার থেকে সেই এক্সাম offline-এও পাওয়া যায়।
 
 function isAppFile(url) {
   return (
-    url.pathname === '/bcs-mcq/' ||
-    url.pathname.startsWith('/bcs-mcq/') && (
+    url.pathname === '/mcq-job-solution/ministry-mcq/' ||
+    url.pathname.startsWith('/mcq-job-solution/ministry-mcq/') && (
       url.pathname.endsWith('.html') ||
       url.pathname.endsWith('.css') ||
       url.pathname.endsWith('.js')
@@ -53,7 +49,7 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', e => {
-  // শুধু নিজের prefix ('bcs-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
+  // শুধু নিজের prefix ('ministry-') দিয়ে শুরু হওয়া পুরনো cache মুছবে।
   // অন্য সেকশনের cache স্পর্শ করবে না।
   e.waitUntil(caches.keys().then(keys =>
     Promise.all(
@@ -86,7 +82,7 @@ self.addEventListener('fetch', e => {
             // ভুল কনটেন্ট-টাইপ (HTML) ফেরত না দিয়ে স্বাভাবিক network error
             // propagate করতে দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
             if (e.request.mode === 'navigate') {
-              return caches.match('/bcs-mcq/index.html');
+              return caches.match('/mcq-job-solution/ministry-mcq/index.html');
             }
             return undefined;
           });
@@ -107,7 +103,7 @@ self.addEventListener('fetch', e => {
         // বাগ-ফিক্স: fonts/ডেটা ফাইল অফলাইনে cache-এ না থাকলে HTML app-shell
         // ফেরত না দিয়ে স্বাভাবিক network error propagate করতে দেওয়া হচ্ছে।
         if (e.request.mode === 'navigate') {
-          return caches.match('/bcs-mcq/index.html');
+          return caches.match('/mcq-job-solution/ministry-mcq/index.html');
         }
         return undefined;
       });

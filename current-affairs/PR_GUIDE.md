@@ -40,7 +40,7 @@ git -c http.extraHeader="Authorization: Basic $B64" push origin work/2026-08-11-
 ```bash
 curl -s -X POST \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls \
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls \
   -d '{"title":"সংক্ষিপ্ত বাংলা শিরোনাম","head":"work/2026-08-11-...","base":"main","body":"কী বদলেছে — বাংলায় ২-৩ লাইন"}'
 ```
 রেসপন্সের `"number"` ফিল্ডটাই PR নম্বর — ব্যবহারকারীকে সেটা জানান।
@@ -50,28 +50,28 @@ curl -s -X POST \
 **৫. যেকোনো সেশনে "কী কাজ পেন্ডিং আছে" জিজ্ঞেস করলে — সব খোলা PR দেখানো**
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=open"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls?state=open"
 ```
 প্রতিটার আসল পরিবর্তন দেখতে (raw diff পাওয়া যায়, `.diff` ফরম্যাটে):
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github.v3.diff" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>"
 ```
 স্বয়ংক্রিয় চেক কোনো সমস্যা পেলে সেটা কমেন্ট আকারে থাকে (দেখুন `pr_checks.py`):
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/issues/<PR_NUMBER>/comments"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/issues/<PR_NUMBER>/comments"
 ```
 diff নিজে পড়ে ব্যবহারকারীকে সহজ বাংলায় জানান (কোন টপিকে কী যোগ/বদল হলো) — raw diff/JSON কখনো সরাসরি দেখাবেন না।
 
 **৬. auto-merge শর্ত (preflight ক্লিন + PR-চেক ক্লিন + mergeable) পূরণ হলে সরাসরি merge**
 
-merge করার ঠিক আগে `mergeable_state` চেক করুন। `behind` দেখালে (main এগিয়ে গেছে, যেমন এই ফাঁকে অন্য একটা PR merge হয়েছে) — নিজে `git merge origin/main` করে আবার push করার বদলে GitHub-এর নিজস্ব API ব্যবহার করুন (এটাই `sync-to-job-solution.yml`-এ ব্যবহৃত, ব্যাটল-টেস্টেড পদ্ধতি — কম ধাপে, কম ভুলের সুযোগ):
+merge করার ঠিক আগে `mergeable_state` চেক করুন। `behind` দেখালে (main এগিয়ে গেছে, যেমন এই ফাঁকে অন্য একটা PR merge হয়েছে) — নিজে `git merge origin/main` করে আবার push করার বদলে GitHub-এর নিজস্ব API ব্যবহার করুন (এটাই `update-wiki.yml`/`auto-bump-version.yml`-এ ব্যবহৃত পদ্ধতি — কম ধাপে, কম ভুলের সুযোগ):
 
 ```bash
 curl -s -X PUT \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/update-branch"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>/update-branch"
 # কয়েক সেকেন্ড পর আবার mergeable_state চেক করুন, 'clean' না হওয়া পর্যন্ত দরকার হলে পুনরাবৃত্তি করুন
 ```
 
@@ -79,7 +79,7 @@ curl -s -X PUT \
 ```bash
 curl -s -X PUT \
   -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls/<PR_NUMBER>/merge \
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls/<PR_NUMBER>/merge \
   -d '{"merge_method":"squash"}'
 ```
 merge ব্যর্থ হলে (checks এখনো শেষ হয়নি, বা conflict) response-এর `"message"` পড়ে ব্যবহারকারীকে সহজ ভাষায় জানান, নিজে থেকে force করার চেষ্টা করবেন না। **সত্যিকারের git conflict** (`update-branch` ব্যর্থ হয়ে "merge conflict" জাতীয় বার্তা দিলে) — সেক্ষেত্রেই শুধু নিজে `git fetch`+`git merge origin/main` করে conflict resolve করতে হবে, নিচের নিয়ম অনুযায়ী।
@@ -87,11 +87,11 @@ merge ব্যর্থ হলে (checks এখনো শেষ হয়ন�
 **৭. merge সফল হলে branch মুছে ফেলুন (পরিষ্কার রাখতে)**
 ```bash
 curl -s -X DELETE -H "Authorization: Bearer $PAT" \
-  https://api.github.com/repos/openjobsolutionbd/open_current_affairs/git/refs/heads/work/2026-08-11-...
+  https://api.github.com/repos/openjobsolutionbd/open_job_solution/git/refs/heads/work/2026-08-11-...
 ```
 `claim_check.sh --claim` দিয়ে দখল নিয়ে থাকলে এখন ছেড়ে দিন: `bash scripts/claim_check.sh --release <নাম>`।
 
-merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` নিজে থেকেই generated output রিবিল্ড করে **সরাসরি `main`-এ commit করে দেয়** (২০২৬-০৯-২০ থেকে) — আলাদা কোনো rebuild PR খোলে না, তাই merge করার মতো বাড়তি কিছু নেই। ১–২ মিনিট পর `main`-এ `github-actions[bot]`-এর `chore: rebuild generated site output + bump version to …` commit দেখা গেলে বুঝবেন লাইভ সাইট হালনাগাদ হয়েছে; না দেখা গেলে Actions-এ `Update wiki index` run দেখুন।
+merge-এর পর `main`-এ push হওয়ার কারণে `.github/workflows/update-wiki.yml` ট্রিগার হয়ে generated output রিবিল্ড করে, `bot/update-wiki-index` নামের branch-এ commit করে, `OJS_BOT_TOKEN` দিয়ে PR খোলে, ঠিক `auto-bump-version.yml`-এর প্যাটার্নে — কারণ `main` সত্যিই branch-protected (`enforce_admins: true` সহ, নিচের ১১নং দ্রষ্টব্য), তাই কোনো টোকেনেই সরাসরি push সম্ভব না, বটকেও এই একই PR+checks+merge ফ্লো দিয়েই যেতে হয়। এই বট-PR-এর `pr-check.yml`-এ `pr_checks.py`-র generated-file guard থেকে exempt থাকার কথা (branch-নাম মিলিয়ে) — না মিললে বটের নিজের PR-ই আটকে যাবে (২০২৬-০৯-এ ঠিক এই বাগ একবার হয়েছিল)। ১–২ মিনিট পর `main`-এ `chore: rebuild generated site output + bump version to …` কমিট (merge commit হিসেবে) দেখা গেলে বুঝবেন লাইভ সাইট হালনাগাদ হয়েছে; না দেখা গেলে Actions-এ `Update wiki index` ও তার পরের bot PR-এর `pr-check.yml` run দেখুন।
 
 **যদি PR-এ real git conflict দেখায়** (দুইটা branch একই লাইনে ভিন্ন পরিবর্তন করেছে — GitHub-এর `mergeable: false`): নিজে অনুমান করে কোনটা রাখবেন ঠিক করবেন না, `AGENTS.md`-এর "rebase-conflict নিয়ম"-এর ব্যতিক্রম-নিয়ম মেনে চলুন। Auto-generated ফাইলে conflict কখনো হাতে মার্জ করবেন না — merge-এর পর `main`-এ `build_index.py` এমনিতেই আবার চালাবে।
 
@@ -103,11 +103,11 @@ git branch -r | grep -v "HEAD\|main\|auto/rebuild-output"
 প্রতিটা বাকি branch-এর জন্য GitHub API দিয়ে সংশ্লিষ্ট PR-এর `merged_at` সত্যিই পূরণ (null না) কিনা যাচাই করে তবেই মুছুন:
 ```bash
 curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/openjobsolutionbd/open_current_affairs/pulls?state=closed&per_page=50"
+  "https://api.github.com/repos/openjobsolutionbd/open_job_solution/pulls?state=closed&per_page=50"
 ```
 - `merged_at` থাকলে (সত্যিই merge হয়েছে) → branch মুছে ফেলুন (আইটেম ৭-এর DELETE কমান্ড)।
 - `merged_at` null থাকলে (PR বন্ধ হয়েছে কিন্তু merge হয়নি) → মুছবেন না, ব্যবহারকারীকে জানিয়ে জিজ্ঞেস করুন কী করতে চান।
-- `auto/rebuild-output` কখনো এই সুইপে মুছবেন না — এটা পুরনো নকশার (২০২৬-০৯-২০-এর আগের) rebuild-PR branch; এখন আর ব্যবহার হয় না, তবে কোথাও থেকে গেলে না ঘেঁটে যেমন আছে তেমন রাখুন।
+- `auto/rebuild-output` (পুরনো নকশা, ব্যবহার হয় না) ও `bot/update-wiki-index` (বর্তমান `update-wiki.yml`-এর bot-PR branch, প্রতি push-এ নতুন করে ব্যবহৃত/মুছে যায়) — এই দুটো কখনো এই সুইপে মুছবেন না; ঘটনাচক্রে থেকে গেলে না ঘেঁটে যেমন আছে তেমন রাখুন।
 - মুছার পর প্রতিবার leak-check চালান: `grep -i "ghp_\|Authorization" .git/config`।
 
 ---
@@ -136,4 +136,4 @@ curl -s -H "Authorization: Bearer $PAT" -H "Accept: application/vnd.github+json"
 8. **মাসশেষের গোছানো (ঐচ্ছিক):** ফোল্ডারে ছোট ফাইল বেশি জমলে `python3 scripts/consolidate_month.py <ghotonaprobaho|top-news> <YYYY-MM>` (শুধু পরিকল্পনা) ও `--apply` — সাইটের ইনডেক্স হুবহু আগের মতো থাকা যাচাই করে, না মিললে নিজে রোলব্যাক করে। চালানোর আগে `claim_check.sh` দিয়ে নিশ্চিত হোন অন্য কোনো খোলা PR ওই ফাইলগুলো ছোঁয়নি। MCQ ও আর্কাইভ এই টুলের বাইরে।
 9. **সাইট build ব্যর্থ হলে (নীরবে stale হওয়া ঠেকাতে):** দুটো PR আলাদাভাবে পাস করেও একসাথে merge হয়ে build ভাঙতে পারে (একটা টপিক সরাল, আরেকটা তার `[[লিংক]]` দিল); তখন bot কিছু push করে না, কারও কনটেন্ট লাইভ হয় না। ঠেকাতে: (ক) merge-এর ঠিক আগে `bash scripts/premerge_check.sh` (আপনার branch + এই মুহূর্তের main মিলিয়ে চেক); (খ) merge-এর পর `update-wiki` ব্যর্থ হলে GitHub-এ `site-build-failed` লেবেলে একটা Issue নিজে খোলে বা হালনাগাদ হয় (লগের শেষ লাইনসহ), পরের run সফল হলে নিজে বন্ধ হয়; (গ) `session_status.sh` প্রতি সেশনের শুরুতে সর্বশেষ run-এর অবস্থা ও খোলা Issue দেখায় (🚨)। ব্যর্থ দেখলে নতুন কাজের আগে সেটা ঠিক করুন — কারণ সাধারণত সদ্য merge-হওয়া দুই কাজের সমন্বয়। ঠিক করে যেকোনো কমিট push করলেই পরের run চলে; জরুরি হলে Actions → `Update wiki index` → Run workflow।
 10. **পরীক্ষা:** Actions → `Update wiki index` → Run workflow-এ `simulate_failure` টিক দিয়ে চালালে ইচ্ছাকৃত ব্যর্থ হয়ে উপরের সতর্কতা-Issue-র পথ যাচাই করা যায় (কিছু build/commit/push হয় না, সাইট অক্ষত)।
-11. **`main`-এর protection ও তার সীমা:** ২০২৬-০৯-২১ থেকে `main` সত্যিই protected (`required_pull_request_reviews` চালু, `enforce_admins: false`) — সরাসরি push এখন GitHub-ই আটকায় (বাস্তবে যাচাই করা: `enforce_admins: true` অবস্থায় admin-push-ও ব্যর্থ হয়েছিল, `false`-এ সফল)। bot এখন `WORKFLOW_PAT` (repo-admin-এর টোকেন) দিয়ে push করে, admin হওয়ায় bypass পায়। **সীমা:** bypass identity-ভিত্তিক, তাই এই admin-অ্যাকাউন্টের যেকোনো টোকেন (এই কাজে ব্যবহৃত সেশন-টোকেনসহ) সরাসরি push করেও protection এড়াতে পারে — protection মূলত অন্য কম-অনুমতির টোকেন/কলাবরেটরের ভুল-push ঠেকায়, এই admin-অ্যাকাউন্টকে নয়; branch+PR নিয়ম তখনও তাদের জন্য আচরণগত। `enforce_admins` ভুলে `true` হলে bot-এর push আটকাবে (তখন BUG-28-এর ব্যর্থতা-Issue সতর্ক করবে)।
+11. **`main`-এর protection ও তার সীমা:** `main` সত্যিই protected — `required_status_checks` (`validate` বাধ্যতামূলক, strict/up-to-date), `enforce_admins: true` (কোনো admin/owner-অ্যাকাউন্টের টোকেনও bypass পায় না — সরাসরি push সবসময়ই প্রত্যাখ্যাত), PR বাধ্যতামূলক। তাই `update-wiki.yml` বটও **কোনো bypass ছাড়াই** সবার মতো branch→PR→checks pass→merge ফ্লো দিয়ে যায় (`OJS_BOT_TOKEN` শুধু git push/PR-API-র জন্য একটা সাধারণ টোকেন, বিশেষ কোনো admin-permission না)। এর মানে বটের নিজের PR-ও `pr-check.yml`-এর মধ্য দিয়েই পাস করতে হয় — তাই `pr_checks.py`-র generated-file guard-এ বটের branch-নামের (`bot/update-wiki-index`) সঠিক exemption থাকা জরুরি, নইলে বট নিজের PR-এই আটকে যায়।

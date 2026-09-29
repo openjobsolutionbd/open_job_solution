@@ -91,6 +91,34 @@ Project Owner দেখে অনুমোদন দেয়
 
 | Version | তারিখ | পরিবর্তন |
 |---------|-------|----------|
+| v1.336 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.336-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.335 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.335-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.334 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.334-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.333 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.333-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.332 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.332-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.331 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.331-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.330 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.330-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.329 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.329-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.328 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.328-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.327 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.327-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.326 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.326-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.325 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.325-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.324 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.324-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.323 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.323-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.322 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.322-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.321 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.321-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.320 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.320-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.319 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.319-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.318 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.318-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.317 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.317-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.316 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.316-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.315 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.315-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.314 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.314-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.313 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.313-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.312 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.312-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.311 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.311-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.310 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.310-এ আপগ্রেড। Cache সব module-এ update। |
+| v1.309 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.309-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.308 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.308-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.307 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.307-এ আপগ্রেড। Cache সব module-এ update। |
 | v1.306 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.306-এ আপগ্রেড। Cache সব module-এ update। |
@@ -298,7 +326,10 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 | অ্যাপ | ফোল্ডার | কাজ |
 |-------|---------|-----|
 | BCS MCQ | `/bcs-mcq/` | MCQ প্র্যাকটিস |
-| Primary MCQ | `/primary-mcq/` | প্রাথমিক পরীক্ষার MCQ |
+| MCQ Job Solution (হাব) | `/mcq-job-solution/` | তিনটা সাব-সেকশনের প্রবেশদ্বার (নিচের তিনটা) |
+| ↳ Primary MCQ | `/mcq-job-solution/primary-mcq/` | প্রাথমিক পরীক্ষার MCQ |
+| ↳ NCTB MCQ | `/mcq-job-solution/nctb-mcq/` | NCTB পাঠ্যবইভিত্তিক MCQ (আপাতত "শীঘ্রই আসছে" পেজ) |
+| ↳ বিভিন্ন মন্ত্রণালয়ের MCQ | `/mcq-job-solution/ministry-mcq/` | মন্ত্রণালয়/বছর ফিল্টারসহ নিয়োগ পরীক্ষার MCQ সমাধান |
 | Written Exam | `/written-exam/` | লিখিত পরীক্ষার প্রশ্নব্যাংক |
 
 ### 🔒 মূল নিয়ম — সেকশন স্বাধীনতা (Section Independence)
@@ -342,10 +373,17 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 │                                  english.js, bangladesh.js, international.js,
 │                                  math.js, mental.js, ethics.js)
 │
-├── 📁 primary-mcq/              ← সেকশন ২
-│   ├── index.html / style.css / sw.js
-│   └── 📁 data/
-│       └── data.js              ← ⚠️ root-এ সরাসরি data.js না, data/ সাবফোল্ডারে
+├── 📁 mcq-job-solution/         ← সেকশন ২ (হাব — ভেতরে তিনটা সাব-সেকশন)
+│   ├── index.html / sw.js       (হাব পেজ; sw.js হাব ও nctb-mcq/ পেজ cache করে)
+│   ├── 📁 primary-mcq/          ← আগে root-এর primary-mcq/ ছিল; পুরোপুরি এখানে ঢুকে গেছে
+│   │   ├── index.html / style.css / sw.js
+│   │   └── 📁 data/
+│   │       └── data.js          ← ⚠️ root-এ সরাসরি data.js না, data/ সাবফোল্ডারে
+│   ├── 📁 nctb-mcq/             (আপাতত শুধু "শীঘ্রই আসছে" index.html)
+│   └── 📁 ministry-mcq/         ← "বিভিন্ন মন্ত্রণালয়ের MCQ" (written-exam-এর মতো তালিকা + ফিল্টার)
+│       ├── index.html / style.css / sw.js / mcq-renderer.js
+│       ├── exam-archive.js      ← পরীক্ষার তালিকা (ministry/post/date/totalQuestions)
+│       └── 📁 data/exams/<examId>.json
 │
 ├── 📁 written-exam/             ← সেকশন ৩
 │   ├── index.html / style.css / sw.js / renderer.js
@@ -381,7 +419,7 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 
 > নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
 
-প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/primary-mcq/`, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
+প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/mcq-job-solution/` (হাব) ও তার ভেতরে `primary-mcq/`, `ministry-mcq/` প্রতিটার নিজস্ব sw.js, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
 
 ---
 
@@ -719,7 +757,7 @@ const SCIENCE_QUESTIONS = [
 
 ## ৯. Primary MCQ ডেটা ফরম্যাট
 
-`primary-mcq/data.js` ফাইলে বিষয় অনুযায়ী আলাদা array-তে প্রশ্ন থাকে:
+`mcq-job-solution/primary-mcq/data/data.js` ফাইলে বিষয় অনুযায়ী আলাদা array-তে প্রশ্ন থাকে:
 
 ```javascript
 const PRIMARY_DATA = {
@@ -765,6 +803,14 @@ const PRIMARY_DATA = {
 | `child` | শিশু বিকাশ |
 
 ---
+
+## ৯-ক. মন্ত্রণালয়ের MCQ (`mcq-job-solution/ministry-mcq/`) ডেটা ফরম্যাট
+
+- `exam-archive.js` → `EXAM_ARCHIVE` array: `id`, `ministry`, `post`, `date` (`YYYY-MM-DD`), `totalQuestions` (ঠিক ওই JSON-এর প্রশ্নসংখ্যা)
+- `data/exams/<id>.json` → array; প্রতিটা প্রশ্ন: `id`, `examId` (= ফাইলের নাম), `subject` (`bangla`/`english`/`math`/`general-knowledge`), `qno` (number), `q`, `answer` — সব আবশ্যক
+- **`options`** (২–৬টা string, তার ঠিক একটা `answer`-এর সাথে হুবহু মিলবে) ও **`explanation`** — ঐচ্ছিক। ম্যাগাজিন-সমাধানে শুধু সঠিক উত্তর ছাপা থাকে, তাই আপাতত "প্রশ্ন + উত্তর" আকারে দেখায়; পরে options/ব্যাখ্যা যোগ করলে কার্ড নিজে থেকেই MCQ আকারে দেখাবে (কোড বদলাতে হবে না)
+- UI: written-exam-এর মতো "সব মন্ত্রণালয় / সব বছর / রিসেট" ফিল্টার ও সার্চ; `_dev/validate_data.js` এই ফরম্যাট CI-তে যাচাই করে
+- এখানকার প্রশ্ন **MCQ-উৎসের** — লিখিত পরীক্ষার প্রশ্ন `written-exam/`-এই থাকবে, এখানে মেশানো যাবে না
 
 ## ১০. admin/ ফোল্ডার সুরক্ষা
 
@@ -868,7 +914,7 @@ const APP_METADATA = {
 - নতুন subject category বানানো যাবে না
 - `topic` ফিল্ড **ঐচ্ছিক** — নিশ্চিত না হলে বাদ দেওয়া যাবে, কিন্তু ভুল topic দেওয়া যাবে না
 - `topic` এর মান শুধু Section ১৭-এর অনুমোদিত তালিকা থেকে নিতে হবে — নিজে থেকে নতুন topic বানানো যাবে না
-- **সেকশন স্বাধীনতা ভাঙা যাবে না** — `bcs-mcq/`, `primary-mcq/`, `written-exam/` একে অন্যের `style.css`, `sw.js`, বা ডেটা ফরম্যাট ব্যবহার করবে না (সেকশন ১ দেখুন)
+- **সেকশন স্বাধীনতা ভাঙা যাবে না** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` একে অন্যের `style.css`, `sw.js`, বা ডেটা ফরম্যাট ব্যবহার করবে না (সেকশন ১ দেখুন)
 - **`manifest.json` শুধু root-এ থাকবে** — কোনো সেকশনের `index.html`-এ `<link rel="manifest">` যোগ করা যাবে না (অ্যাপ একটাই PWA — "Open Job Solution")
 - প্রতিটা সেকশনের নিজস্ব `index.html`-এ `⬅️ হোমে ফিরুন` link থাকা বাধ্যতামূলক
 - **`<script src="...">` এর path আর আসল ফাইলের লোকেশন হুবহু মিলতে হবে** — কোনো ফাইল `data/` সাবফোল্ডারে থাকলে `src="data/filename.js"` লিখতে হবে, শুধু `src="filename.js"` লিখলে ব্রাউজার ভুল জায়গায় খুঁজবে এবং পুরো সেকশন ভেঙে যাবে (v1.15-এ এই কারণে Primary MCQ ভাঙা ছিল)
@@ -969,7 +1015,8 @@ Project Owner Cloudflare Pages-এ আপলোড করবেন  ← এক�
 | Section | AI কী করবে | Output ফাইল |
 |---------|-----------|-------------|
 | BCS MCQ | প্রশ্ন + ৪টা option + উত্তর extract, `bcs-NN-{subject}-q{NNN}` format | `data/{subject}.js` |
-| Primary MCQ | বিষয় চিনবে, `pb/pm/pe/pg/pc` prefix দিয়ে id বানাবে | `primary-mcq/data.js` |
+| Primary MCQ | বিষয় চিনবে, `pb/pm/pe/pg/pc` prefix দিয়ে id বানাবে | `mcq-job-solution/primary-mcq/data/data.js` |
+| মন্ত্রণালয়ের MCQ | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন + সঠিক উত্তর extract করবে (অপশন/ব্যাখ্যা পরে), `<examId>-qNN` format | `mcq-job-solution/ministry-mcq/data/exams/<examId>.json` + `exam-archive.js` |
 | Written Exam | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন extract করবে, `job-{YYYY}-{code}-q{NN}` format | `written-exam/data/exams/<examId>.json` + `exam-archive.js` |
 
 ### AI-এর জন্য নির্দেশ

@@ -4,6 +4,15 @@
 
 **এই ফাইল শুধু git/push/PR/merge ওয়ার্কফ্লো নিয়ম নিয়ে।** প্রজেক্টের আর্কিটেকচার, ফোল্ডার স্ট্রাকচার, ডেটা ফরম্যাট নিয়মের জন্য `_docs/job-app-MD.md` দেখুন — দুটো ডকুমেন্ট একে অপরের পরিপূরক, কোনোটাই অন্যটার বিকল্প না।
 
+## 🗣️ এই ব্যবহারকারীর সাথে যোগাযোগ — টেকনিক্যাল জার্গন নিষেধ
+
+এই রিপোর একজন ব্যবহারকারী চান কথোপকথনে **commit, push, PR, merge, branch** — এই ধরনের গিট/গিটহাব টেকনিক্যাল শব্দ যেন তাকে বলা না হয়। তার বদলে শুধু সাধারণ ভাষায় দুইটা জিনিস জানান:
+
+1. **তার পাঠানো ডেটা/পরিবর্তন রিপোতে পৌঁছেছে কিনা** (অর্থাৎ GitHub-এ সংরক্ষিত হয়েছে কিনা)
+2. **সেটা লাইভ/সাইটে দেখা যাচ্ছে কিনা** (অর্থাৎ `main`-এ চূড়ান্তভাবে মার্জ হয়ে ওয়েবসাইটে প্রতিফলিত হয়েছে কিনা)
+
+ভেতরের কাজ (branch বানানো, PR খোলা, validate check, merge করা ইত্যাদি) স্বাভাবিকভাবেই চলবে — শুধু সেগুলোর নাম বা প্রক্রিয়া ব্যবহারকারীকে বলা যাবে না। যেমন "আপনার পরীক্ষার ডেটা রিপোতে জমা হয়েছে, এখনো রিভিউ হচ্ছে — লাইভ হয়নি" অথবা "ডেটা রিপোতে গেছে এবং এখন সাইটে লাইভ" — এভাবে বলা উচিত, "branch push করেছি" বা "PR merge হয়েছে" এভাবে না।
+
 ## ⚠️ প্রথম ধাপ — যেকোনো কাজ শুরুর আগে বাধ্যতামূলক
 
 **`bash _dev/scripts/session_status.sh` চালান — এটাই সবার আগে করুন, অন্য যেকোনো কিছুর আগে।**
@@ -88,7 +97,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 
 ## ⚡ কনটেক্সট-টোকেন সাশ্রয়
 
-বড় ফাইল (`bcs-mcq`/`primary-mcq` ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
+বড় ফাইল (`bcs-mcq`/`mcq-job-solution` (primary-mcq, ministry-mcq) ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
 
 - খুঁজতে: `grep -n` → পাওয়া লাইন নম্বর দিয়ে `view_range`
 - এডিটে: `str_replace` (ছোট, ইউনিক `old_str`)
@@ -121,6 +130,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 | `.github/workflows/update-wiki.yml` | current-affairs-এ push হলে generated output (topics-index.json, sw.js, version.json ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্ন অনুসরণ করে যেহেতু main branch-protected)→merge করে। এটাও একই migration-বাগে ভুল পাথে পড়ে ছিল, রুটে ফেরানো হয়েছে |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
+| `.github/workflows/written-exam-currency.yml` | সাপ্তাহিক + topics বদলালে written-exam-এর `data/current-status.json` নজরে রাখে (`written-exam/check_currency.js`); কারেন্ট অ্যাফেয়ার্সের "বর্তমান তথ্য" বদলালে বা রিভিউ-তারিখ পেরোলে Issue খোলে, PR-এ শুধু কাঠামো যাচাই করে; উত্তর নিজে বদলায় না |
 
 ## 📝 নতুন MCQ/ব্যাখ্যা যোগ করার সময় — duplicate-content ঝুঁকি
 

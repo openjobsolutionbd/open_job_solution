@@ -58,7 +58,7 @@
 </header>
 
 <main class="container">
-  <a class="back-link" href="../">⬅️ হোমে ফিরুন</a>
+  <a class="back-link" href="../">⬅️ MCQ Job Solution</a>
 
   <div class="subject-tabs" id="subjectTabs"></div>
   <div class="year-filter" id="yearFilter"></div>
@@ -99,7 +99,7 @@ const SUBJECTS = [
 ];
 
 // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-const APP_VERSION = 'v1.308';
+const APP_VERSION = 'v1.336';
 
 let S = { answered:{}, bookmarks:{}, subject:'all', year:'all', page:1, mode:'normal', search:'' };
 
@@ -295,7 +295,7 @@ document.getElementById('resetBtnBottom').addEventListener('click',doReset);
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/primary-mcq/sw.js').catch(err => {
+      navigator.serviceWorker.register('/mcq-job-solution/primary-mcq/sw.js').catch(err => {
         console.warn('[SW] Registration failed:', err);
       });
       // পুরো অ্যাপ এক PWA — manifest-এর start_url ("/") এখান থেকেও

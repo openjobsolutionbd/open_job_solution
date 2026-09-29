@@ -4,9 +4,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 1,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা ভাষার প্রাচীন নমুনা পাওয়া যায় —",
+    "q": "বাংলা ভাষার প্রাচীন নমুনা পাওয়া যায় —",
     "answer": "চর্যাপদে"
   },
   {
@@ -14,9 +12,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 2,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বর্ণের সঙ্গে কোন ইন্দ্রিয়ের সরাসরি সম্পর্ক আছে?",
+    "q": "বর্ণের সঙ্গে কোন ইন্দ্রিয়ের সরাসরি সম্পর্ক আছে?",
     "answer": "চোখ"
   },
   {
@@ -24,9 +20,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 3,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোনটি সাধু ভাষার বৈশিষ্ট্য?",
+    "q": "কোনটি সাধু ভাষার বৈশিষ্ট্য?",
     "answer": "গুরুগম্ভীর"
   },
   {
@@ -34,9 +28,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 4,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ভাষার ক্ষুদ্রতম উপাদান কোনটি?",
+    "q": "ভাষার ক্ষুদ্রতম উপাদান কোনটি?",
     "answer": "ধ্বনি"
   },
   {
@@ -44,9 +36,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 5,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলা বর্ণমালায় ব্যঞ্জনবর্ণের সংখ্যা কয়টি?",
+    "q": "বাংলা বর্ণমালায় ব্যঞ্জনবর্ণের সংখ্যা কয়টি?",
     "answer": "৩৯"
   },
   {
@@ -54,9 +44,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 6,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'সঙ্ঘ' শব্দের যুক্তবর্ণের বর্ণগুলো কী কী?",
+    "q": "'সঙ্ঘ' শব্দের যুক্তবর্ণের বর্ণগুলো কী কী?",
     "answer": "ঞ, চ"
   },
   {
@@ -64,9 +52,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 7,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "মহাপ্রাণ ধ্বনি কোনটি?",
+    "q": "মহাপ্রাণ ধ্বনি কোনটি?",
     "answer": "খ, ঘ"
   },
   {
@@ -74,9 +60,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 8,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "শব্দ বা ক্রিয়ার মূলকে কী বলে?",
+    "q": "শব্দ বা ক্রিয়ার মূলকে কী বলে?",
     "answer": "প্রকৃতি"
   },
   {
@@ -84,9 +68,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 9,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বিভক্তিহীন নাম শব্দকে কী বলে?",
+    "q": "বিভক্তিহীন নাম শব্দকে কী বলে?",
     "answer": "প্রাতিপদিক"
   },
   {
@@ -94,9 +76,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 10,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "সমাবদ্ধ পদকে বলে —",
+    "q": "সমাবদ্ধ পদকে বলে —",
     "answer": "সমস্ত পদ"
   },
   {
@@ -104,9 +84,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 11,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "নিচের কোনটি কর্মধারয় সমাসের উদাহরণ?",
+    "q": "নিচের কোনটি কর্মধারয় সমাসের উদাহরণ?",
     "answer": "হাতঘড়ি"
   },
   {
@@ -114,9 +92,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 12,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'হাটবাজার' কোন অর্থে দ্বন্দ্ব সমাস?",
+    "q": "'হাটবাজার' কোন অর্থে দ্বন্দ্ব সমাস?",
     "answer": "সমার্থক"
   },
   {
@@ -124,9 +100,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 13,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'সঞ্চয়' শব্দের সঠিক সন্ধি বিচ্ছেদ কোনটি?",
+    "q": "'সঞ্চয়' শব্দের সঠিক সন্ধি বিচ্ছেদ কোনটি?",
     "answer": "সম্ + চয়"
   },
   {
@@ -134,9 +108,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 14,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'নাবিক'-এর সন্ধি বিচ্ছেদ কোনটি?",
+    "q": "'নাবিক'-এর সন্ধি বিচ্ছেদ কোনটি?",
     "answer": "নৌ + ইক"
   },
   {
@@ -144,9 +116,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 15,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোনটি দেশি শব্দ?",
+    "q": "কোনটি দেশি শব্দ?",
     "answer": "ঢেঁকি"
   },
   {
@@ -154,9 +124,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 16,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'পুকুরে মাছ আছে।' কোন কারক?",
+    "q": "'পুকুরে মাছ আছে।' কোন কারক?",
     "answer": "অধিকরণ"
   },
   {
@@ -164,9 +132,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 17,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'চৈত্রায় সব হয়।' 'চৈত্রায়' কোন কারক?",
+    "q": "'চৈত্রায় সব হয়।' 'চৈত্রায়' কোন কারক?",
     "answer": "করণ"
   },
   {
@@ -174,9 +140,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 18,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'মাথা দেওয়া' বলতে কী বোঝায়?",
+    "q": "'মাথা দেওয়া' বলতে কী বোঝায়?",
     "answer": "দায়িত্ব গ্রহণ"
   },
   {
@@ -184,9 +148,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 19,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'বর্ধমান'-এর বিপরীত শব্দ কী?",
+    "q": "'বর্ধমান'-এর বিপরীত শব্দ কী?",
     "answer": "ক্ষীয়মাণ"
   },
   {
@@ -194,9 +156,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 20,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'গোবর গণেশ' বাগধারাটির অর্থ কী?",
+    "q": "'গোবর গণেশ' বাগধারাটির অর্থ কী?",
     "answer": "মূর্খ"
   },
   {
@@ -204,9 +164,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 21,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'A rolling stone gathers no moss.' Here 'rolling' is —",
+    "q": "'A rolling stone gathers no moss.' Here 'rolling' is —",
     "answer": "Participle"
   },
   {
@@ -214,9 +172,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 22,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Man cannot live alone.' The word 'alone' used here as —",
+    "q": "'Man cannot live alone.' The word 'alone' used here as —",
     "answer": "Adverb"
   },
   {
@@ -224,9 +180,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 23,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "The plural number of 'Bureau' —",
+    "q": "The plural number of 'Bureau' —",
     "answer": "Bureaux"
   },
   {
@@ -234,9 +188,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 24,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which of the following is the correct feminine gender of 'Nephew'?",
+    "q": "Which of the following is the correct feminine gender of 'Nephew'?",
     "answer": "Niece"
   },
   {
@@ -244,9 +196,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 25,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which of the following word is spelled correctly?",
+    "q": "Which of the following word is spelled correctly?",
     "answer": "Lieutenant"
   },
   {
@@ -254,9 +204,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 26,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The man died — over eating.'",
+    "q": "'The man died — over eating.'",
     "answer": "from"
   },
   {
@@ -264,9 +212,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 27,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Nasim arrived while I — the dinner.'",
+    "q": "'Nasim arrived while I — the dinner.'",
     "answer": "was cooking"
   },
   {
@@ -274,9 +220,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 28,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Karim went to bed after he — his lesson.'",
+    "q": "'Karim went to bed after he — his lesson.'",
     "answer": "had learnt"
   },
   {
@@ -284,9 +228,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 29,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'She couldn't stop — .'",
+    "q": "'She couldn't stop — .'",
     "answer": "laughing"
   },
   {
@@ -294,9 +236,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 30,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'The patient died — the doctor had come.'",
+    "q": "'The patient died — the doctor had come.'",
     "answer": "after"
   },
   {
@@ -304,9 +244,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 31,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which one is the correct sentence?",
+    "q": "Which one is the correct sentence?",
     "answer": "I felt his pulse."
   },
   {
@@ -314,9 +252,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 32,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Which of the following word is spelled correctly?",
+    "q": "Which of the following word is spelled correctly?",
     "answer": "Renaissance"
   },
   {
@@ -324,9 +260,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 33,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "What is the synonym of 'Obdurate'?",
+    "q": "What is the synonym of 'Obdurate'?",
     "answer": "Stubborn"
   },
   {
@@ -334,9 +268,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 34,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "What type of pronoun is 'each other'?",
+    "q": "What type of pronoun is 'each other'?",
     "answer": "Reciprocal"
   },
   {
@@ -344,9 +276,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 35,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "The antonym of 'Inimical' is —",
+    "q": "The antonym of 'Inimical' is —",
     "answer": "Friendly"
   },
   {
@@ -354,9 +284,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 36,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Three-fourths of our work — finished.'",
+    "q": "'Three-fourths of our work — finished.'",
     "answer": "has been"
   },
   {
@@ -364,9 +292,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 37,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Apple of one's eye' means —",
+    "q": "'Apple of one's eye' means —",
     "answer": "Extremely favourite"
   },
   {
@@ -374,9 +300,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 38,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "The phrase 'Pass the buck' means —",
+    "q": "The phrase 'Pass the buck' means —",
     "answer": "to pass the blame to someone else"
   },
   {
@@ -384,9 +308,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 39,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "Who is not a romantic poet?",
+    "q": "Who is not a romantic poet?",
     "answer": "T. S. Eliot"
   },
   {
@@ -394,9 +316,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "english",
     "qno": 40,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "The word 'nuptial' is related to —",
+    "q": "The word 'nuptial' is related to —",
     "answer": "marriage"
   },
   {
@@ -404,9 +324,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 41,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "0.0005 ÷ 0.008 = কত?",
+    "q": "0.0005 ÷ 0.008 = কত?",
     "answer": "0.0625"
   },
   {
@@ -414,9 +332,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 42,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "৬০ লিটার মিশ্রণে এসিড ও পানির অনুপাত ৭ : ৩। ঐ মিশ্রণে পানির পরিমাণ কত?",
+    "q": "৬০ লিটার মিশ্রণে এসিড ও পানির অনুপাত ৭ : ৩। ঐ মিশ্রণে পানির পরিমাণ কত?",
     "answer": "১৮ লিটার"
   },
   {
@@ -424,9 +340,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 43,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "একজন কর্মচারীর বেতন ১৫% বৃদ্ধি পেয়ে ১৭,২৫০ টাকা হলে, কর্মচারীর পূর্বের বেতন কত?",
+    "q": "একজন কর্মচারীর বেতন ১৫% বৃদ্ধি পেয়ে ১৭,২৫০ টাকা হলে, কর্মচারীর পূর্বের বেতন কত?",
     "answer": "১৫,০০০ টাকা"
   },
   {
@@ -434,9 +348,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 44,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "সরল সুদের হার কত হলে যেকোনো মূলধন ৮ বছরে সুদে-আসলে তিনগুণ হবে?",
+    "q": "সরল সুদের হার কত হলে যেকোনো মূলধন ৮ বছরে সুদে-আসলে তিনগুণ হবে?",
     "answer": "২৫.০০%"
   },
   {
@@ -444,9 +356,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 45,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "০.০০১ ÷ ০.০১ × ০.১ = কত?",
+    "q": "০.০০১ ÷ ০.০১ × ০.১ = কত?",
     "answer": "০.০১"
   },
   {
@@ -454,9 +364,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 46,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "(a+b) = ৭ এবং a² + b² = ২৫ হলে ab এর মান কোনটি?",
+    "q": "(a+b) = ৭ এবং a² + b² = ২৫ হলে ab এর মান কোনটি?",
     "answer": "১২"
   },
   {
@@ -464,9 +372,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 47,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "1 − a² + 2ab − b² এর উৎপাদক কোনটি?",
+    "q": "1 − a² + 2ab − b² এর উৎপাদক কোনটি?",
     "answer": "(1 + a − b)(1 − a + b)"
   },
   {
@@ -474,9 +380,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 48,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "০ হতে ৯৯ পর্যন্ত সংখ্যাসমূহের যোগফল কত?",
+    "q": "০ হতে ৯৯ পর্যন্ত সংখ্যাসমূহের যোগফল কত?",
     "answer": "৪৯৫০"
   },
   {
@@ -484,9 +388,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 49,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "২, ৩, ৫, ৯, ১৭ এর পরবর্তী সংখ্যাটি কত?",
+    "q": "২, ৩, ৫, ৯, ১৭ এর পরবর্তী সংখ্যাটি কত?",
     "answer": "৩৩"
   },
   {
@@ -494,9 +396,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 50,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "একটি সরলরেখার উপরে লম্ব অঙ্কন করলে কয়টি সমকোণ পাওয়া যায়?",
+    "q": "একটি সরলরেখার উপরে লম্ব অঙ্কন করলে কয়টি সমকোণ পাওয়া যায়?",
     "answer": "২টি"
   },
   {
@@ -504,9 +404,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 51,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "স্বর্ণের খাদ দূর করতে কোন এসিড ব্যবহার করা হয়?",
+    "q": "স্বর্ণের খাদ দূর করতে কোন এসিড ব্যবহার করা হয়?",
     "answer": "নাইট্রিক এসিড"
   },
   {
@@ -514,9 +412,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 52,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "আয়নার পেছনে কোন ধাতু ব্যবহার করা হয়?",
+    "q": "আয়নার পেছনে কোন ধাতু ব্যবহার করা হয়?",
     "answer": "এলুমিনিয়াম"
   },
   {
@@ -524,9 +420,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 53,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "মানবদেহে জিন কোথায় সংরক্ষিত থাকে?",
+    "q": "মানবদেহে জিন কোথায় সংরক্ষিত থাকে?",
     "answer": "DNA"
   },
   {
@@ -534,9 +428,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 54,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "পৃথিবীর কোন দেশে বেশি বেশি ভূমিকম্প হয়?",
+    "q": "পৃথিবীর কোন দেশে বেশি বেশি ভূমিকম্প হয়?",
     "answer": "জাপান"
   },
   {
@@ -544,9 +436,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 55,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'SPARRSO' কোন ধরনের প্রতিষ্ঠান?",
+    "q": "'SPARRSO' কোন ধরনের প্রতিষ্ঠান?",
     "answer": "মহাকাশ গবেষণা বিষয়ক"
   },
   {
@@ -554,9 +444,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 56,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোনো সামান্তরিকের একটি কোণ সমকোণ হলে, তা একটি —",
+    "q": "কোনো সামান্তরিকের একটি কোণ সমকোণ হলে, তা একটি —",
     "answer": "আয়তক্ষেত্র"
   },
   {
@@ -564,9 +452,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "math",
     "qno": 57,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বৃত্তের কেন্দ্র ছেদকারী জ্যা-কে কী বলা হয়?",
+    "q": "বৃত্তের কেন্দ্র ছেদকারী জ্যা-কে কী বলা হয়?",
     "answer": "ব্যাস"
   },
   {
@@ -574,9 +460,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 58,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "নিচের কোনটি সবচেয়ে ভারি ধাতু? (ক-লোহা, খ-পারদ, গ-মার্কারি, ঘ-জিংক)",
+    "q": "নিচের কোনটি সবচেয়ে ভারি ধাতু? (ক-লোহা, খ-পারদ, গ-মার্কারি, ঘ-জিংক)",
     "answer": "পারদ / মার্কারি (উৎস নোট: 'খ' ও 'গ' উভয়ই সঠিক ধরা হয়েছে, যেহেতু দুটোই একই ধাতু)"
   },
   {
@@ -584,9 +468,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 59,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "মৌমাছির হুলে কোন এসিড থাকে?",
+    "q": "মৌমাছির হুলে কোন এসিড থাকে?",
     "answer": "ফরমিক এসিড"
   },
   {
@@ -594,9 +476,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 60,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বিশ্বের প্রথম কম্পিউটারের নাম কোনটি?",
+    "q": "বিশ্বের প্রথম কম্পিউটারের নাম কোনটি?",
     "answer": "ENIAC"
   },
   {
@@ -604,9 +484,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 61,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের চা গবেষণা ইনস্টিটিউট কোথায় অবস্থিত?",
+    "q": "বাংলাদেশের চা গবেষণা ইনস্টিটিউট কোথায় অবস্থিত?",
     "answer": "শ্রীমঙ্গল"
   },
   {
@@ -614,9 +492,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 62,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ভাস্কো-দা-গামা কত সালে ভারতবর্ষে আসেন?",
+    "q": "ভাস্কো-দা-গামা কত সালে ভারতবর্ষে আসেন?",
     "answer": "১৪৯৮"
   },
   {
@@ -624,9 +500,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 63,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'সোয়াচ অব নো গ্রাউন্ড' কোথায় অবস্থিত?",
+    "q": "'সোয়াচ অব নো গ্রাউন্ড' কোথায় অবস্থিত?",
     "answer": "বঙ্গোপসাগরে"
   },
   {
@@ -634,9 +508,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 64,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের বৃহত্তম দ্বীপ কোনটি?",
+    "q": "বাংলাদেশের বৃহত্তম দ্বীপ কোনটি?",
     "answer": "ভোলা"
   },
   {
@@ -644,9 +516,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 65,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'Friday For Future' কোন ধরনের আন্দোলন?",
+    "q": "'Friday For Future' কোন ধরনের আন্দোলন?",
     "answer": "পরিবেশবাদী আন্দোলন"
   },
   {
@@ -654,9 +524,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 66,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের সংসদ ভবনের স্থপতির নাম কী?",
+    "q": "বাংলাদেশের সংসদ ভবনের স্থপতির নাম কী?",
     "answer": "লুই আই কান"
   },
   {
@@ -664,9 +532,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "bangla",
     "qno": 67,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'কবর' নাটকটির রচয়িতা কে?",
+    "q": "'কবর' নাটকটির রচয়িতা কে?",
     "answer": "মুনীর চৌধুরী"
   },
   {
@@ -674,9 +540,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 68,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?",
+    "q": "জাতিসংঘের সদর দপ্তর কোথায় অবস্থিত?",
     "answer": "নিউইয়র্ক"
   },
   {
@@ -684,9 +548,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 69,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "প্রথম বিশ্বকাপ ফুটবল অনুষ্ঠিত হয় কোন সালে?",
+    "q": "প্রথম বিশ্বকাপ ফুটবল অনুষ্ঠিত হয় কোন সালে?",
     "answer": "১৯৩০"
   },
   {
@@ -694,9 +556,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 70,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "২০২৬ সালের ফুটবল বিশ্বকাপের সর্বোচ্চ গোলদাতা কে?",
+    "q": "২০২৬ সালের ফুটবল বিশ্বকাপের সর্বোচ্চ গোলদাতা কে?",
     "answer": "ক্রিশ্চিয়ান এমবাপে"
   },
   {
@@ -704,9 +564,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 71,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের কোন জেলার সাথে ভারত ও মিয়ানমার উভয় দেশের সীমান্ত আছে?",
+    "q": "বাংলাদেশের কোন জেলার সাথে ভারত ও মিয়ানমার উভয় দেশের সীমান্ত আছে?",
     "answer": "রাঙ্গামাটি"
   },
   {
@@ -714,9 +572,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 72,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "মিয়ানমারের মুদ্রার নাম কী?",
+    "q": "মিয়ানমারের মুদ্রার নাম কী?",
     "answer": "কিয়াত"
   },
   {
@@ -724,9 +580,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 73,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "ল্যাটিন আমেরিকার সরকারি/সাধারণ ভাষার উৎস কোনটি?",
+    "q": "ল্যাটিন আমেরিকার সরকারি/সাধারণ ভাষার উৎস কোনটি?",
     "answer": "ল্যাটিন"
   },
   {
@@ -734,9 +588,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 74,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "আন্তর্জাতিক অপরাধ আদালত কোথায় অবস্থিত?",
+    "q": "আন্তর্জাতিক অপরাধ আদালত কোথায় অবস্থিত?",
     "answer": "দ্য হেগ"
   },
   {
@@ -744,9 +596,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 75,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "জাতিসংঘের কার্যকরী ভাষা কোন দুটি?",
+    "q": "জাতিসংঘের কার্যকরী ভাষা কোন দুটি?",
     "answer": "ইংরেজি ও ফরাসি"
   },
   {
@@ -754,9 +604,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 76,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "সার্ক (SAARC) প্রতিষ্ঠিত হয় কত সালে?",
+    "q": "সার্ক (SAARC) প্রতিষ্ঠিত হয় কত সালে?",
     "answer": "১৯৮৫"
   },
   {
@@ -764,9 +612,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 77,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'ভ্যালি অব কিংস' কোন দেশে অবস্থিত?",
+    "q": "'ভ্যালি অব কিংস' কোন দেশে অবস্থিত?",
     "answer": "মিশর"
   },
   {
@@ -774,9 +620,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 78,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "কোন সংস্থা 'বিশ্ব ঐতিহ্য এলাকা' ঘোষণা করে?",
+    "q": "কোন সংস্থা 'বিশ্ব ঐতিহ্য এলাকা' ঘোষণা করে?",
     "answer": "ইউনেস্কো"
   },
   {
@@ -784,9 +628,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 79,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "'কালাপানি' কোন দুই রাষ্ট্রের মধ্যে অমীমাংসিত ভূখণ্ড?",
+    "q": "'কালাপানি' কোন দুই রাষ্ট্রের মধ্যে অমীমাংসিত ভূখণ্ড?",
     "answer": "ভারত ও নেপাল"
   },
   {
@@ -794,9 +636,7 @@
     "examId": "bd-navy-2026-storeman",
     "subject": "general-knowledge",
     "qno": 80,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "বাংলাদেশের কোন অঞ্চলে কাঁচবালির সর্বোচ্চ মজুত রয়েছে?",
+    "q": "বাংলাদেশের কোন অঞ্চলে কাঁচবালির সর্বোচ্চ মজুত রয়েছে?",
     "answer": "সিলেট"
   }
 ]

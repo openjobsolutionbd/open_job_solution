@@ -588,6 +588,11 @@
     // এক্সামের প্রশ্ন ঢুকে গেলেও যেন ভুল প্রশ্ন না দেখায়)
     questions = (Array.isArray(questions) ? questions : []).filter(q => q.examId === examId);
 
+    // "বর্তমান অবস্থা" নোট (data/current-status.json) — আসল উত্তর না বদলে নিচে বসে।
+    // লোড ব্যর্থ হলে চুপচাপ বাদ যায়, প্রশ্ন দেখানো আটকায় না।
+    await applyCurrentStatus(questions);
+    if (currentExamId !== examId) return;
+
     list.innerHTML = '';
 
     if (questions.length === 0) {

@@ -1,0 +1,29 @@
+// মন্ত্রণালয়ের MCQ — পরীক্ষার তালিকা (মেটাডেটা)
+// প্রতিটা এন্ট্রির id-র সাথে data/exams/<id>.json ফাইলের নাম হুবহু মিলতে হবে।
+// totalQuestions অবশ্যই ওই JSON ফাইলের প্রশ্নসংখ্যার সমান হতে হবে (CI চেক করে)।
+// date ফরম্যাট: YYYY-MM-DD
+
+const EXAM_ARCHIVE = [
+  {
+    id: "uttara-bank-plc-2026-ao",
+    ministry: "উত্তরা ব্যাংক পিএলসি",
+    post: "সহকারী কর্মকর্তা (জেনারেল)",
+    date: "2026-07-24",
+    totalQuestions: 74,
+  },
+  {
+    id: "health-ministry-2026-sub-engineer-civil",
+    ministry: "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়",
+    post: "সহকারী প্রকৌশলী (সিভিল)",
+    date: "2026-08-04",
+    totalQuestions: 60,
+  },
+  {
+    id: "bd-navy-2026-storeman",
+    ministry: "বাংলাদেশ নৌবাহিনী",
+    post: "স্টোরম্যান",
+    date: "2026-08-07",
+    totalQuestions: 80,
+  },
+  // পরবর্তী পরীক্ষা এখানে যোগ করুন
+];

@@ -2,9 +2,9 @@ const CACHE_PREFIX = 'primary-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1.334';
 
 const ASSETS = [
-  '/primary-mcq/',
-  '/primary-mcq/style.css',
-  '/primary-mcq/index.html',
+  '/mcq-job-solution/primary-mcq/',
+  '/mcq-job-solution/primary-mcq/style.css',
+  '/mcq-job-solution/primary-mcq/index.html',
   '/_assets/fonts/noto-bengali.css',
   '/_assets/fonts/noto-serif-bengali-400.woff2',
   '/_assets/fonts/noto-serif-bengali-500.woff2',
@@ -13,13 +13,13 @@ const ASSETS = [
 ];
 
 const OPTIONAL_ASSETS = [
-  '/primary-mcq/data/data.js'
+  '/mcq-job-solution/primary-mcq/data/data.js'
 ];
 
 function isAppFile(url) {
   return (
-    url.pathname === '/primary-mcq/' ||
-    url.pathname.startsWith('/primary-mcq/') && (
+    url.pathname === '/mcq-job-solution/primary-mcq/' ||
+    url.pathname.startsWith('/mcq-job-solution/primary-mcq/') && (
       url.pathname.endsWith('.html') ||
       url.pathname.endsWith('.css') ||
       url.pathname.endsWith('.js')
@@ -76,7 +76,7 @@ self.addEventListener('fetch', e => {
             // ভুল কনটেন্ট-টাইপ (HTML) ফেরত না দিয়ে স্বাভাবিক network error
             // propagate করতে দেওয়া হচ্ছে — open_current_affairs-এর প্যাটার্ন অনুসরণে।
             if (e.request.mode === 'navigate') {
-              return caches.match('/primary-mcq/index.html');
+              return caches.match('/mcq-job-solution/primary-mcq/index.html');
             }
             return undefined;
           });
@@ -97,7 +97,7 @@ self.addEventListener('fetch', e => {
         // বাগ-ফিক্স: fonts/ডেটা ফাইল অফলাইনে cache-এ না থাকলে HTML app-shell
         // ফেরত না দিয়ে স্বাভাবিক network error propagate করতে দেওয়া হচ্ছে।
         if (e.request.mode === 'navigate') {
-          return caches.match('/primary-mcq/index.html');
+          return caches.match('/mcq-job-solution/primary-mcq/index.html');
         }
         return undefined;
       });

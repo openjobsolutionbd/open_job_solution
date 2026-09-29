@@ -46,8 +46,8 @@
       "icons": [{ "src": "/_assets/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "প্রাইমারি MCQ",
-      "url": "/primary-mcq/",
+      "name": "MCQ Job Solution",
+      "url": "/mcq-job-solution/",
       "icons": [{ "src": "/_assets/icons/icon-192.png", "sizes": "192x192" }]
     },
     {

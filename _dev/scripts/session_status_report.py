@@ -156,7 +156,7 @@ def where(b):
     dirs = {}
     for f in b["files"]:
         if not GENERATED.search(f):
-            k = "/".join(f.split("/")[:2]) if f.startswith(("current-affairs/", "written-exam/", "bcs-mcq/", "primary-mcq/")) else f.split("/")[0]
+            k = "/".join(f.split("/")[:2]) if f.startswith(("current-affairs/", "written-exam/", "bcs-mcq/", "mcq-job-solution/")) else f.split("/")[0]
             dirs[k] = dirs.get(k, 0) + 1
     return ", ".join(f"{k}({v})" for k, v in sorted(dirs.items(), key=lambda x: -x[1])[:3])
 

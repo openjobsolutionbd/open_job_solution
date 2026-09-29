@@ -1,0 +1,80 @@
+{
+  "entries": {
+    "afterfoodhasbeendriedorcannedforlaterconsumption": {
+      "question": "After food has been dried or canned ____ for later consumption.",
+      "answer": "it should be stored",
+      "explanation": "After food has been dried or canned একটি সময়বাচক অধীন খণ্ডবাক্য (subordinate clause); এর পরে মূল বাক্যাংশের নিজস্ব কর্তা (subject) লাগে, তাই 'it should be stored' সঠিক। 'should be stored' একা হলে কর্তা থাকে না; 'That it should be stored' ও 'which should be stored' বসালে বাক্যটি অসম্পূর্ণ খণ্ডে পরিণত হয়।",
+      "verified": false,
+      "note": "ব্যাকরণ-যুক্তি নিজে লেখা, সোর্স-যাচাই হয়নি"
+    },
+    "choosethepairofwordsthatexpressesarelationshipsimilartothatofthegivenpairwordswriter": {
+      "question": "Choose the pair of words that expresses a relationship similar to that of the given pair: Words:writer",
+      "answer": "Butter : baker",
+      "explanation": "প্রশ্নটি কিছুটা অস্পষ্ট, তাই উত্তর সোর্সের উত্তর-সূত্র অনুযায়ী। সম্ভাব্য সম্পর্ক: পেশাজীবী ও তার কাজের উপকরণ — লেখকের উপকরণ শব্দ (Words : writer), বেকারের উপকরণ মাখন (Butter : baker)। Chalk : black board উপকরণ ও পৃষ্ঠের সম্পর্ক, Joy : emotion উপশ্রেণি ও শ্রেণির, আর Laws : policeman-এ পুলিশ আইন প্রয়োগ করে, তৈরি বা ব্যবহার করে না।",
+      "verified": false,
+      "note": "প্রশ্নটি অস্পষ্ট (Words:writer ↔ Butter:baker); উত্তর সোর্সের উত্তর-সূত্র থেকে"
+    },
+    "identifytheincorrectword/phraseindicatedby123or4inthefollowingsentenceadoctormaybeabletodiagnoseaproblemprefectbuthemaynotabletofindadrugtowhichthepatientwillrespond": {
+      "question": "Identify the incorrect word/phrase indicated by (1), (2), (3) or (4) in the following sentence: A doctor may be able \"to diagnose\" a problem \"prefect\" but he may not able to find a drug \"to which\" the patient \"will respond\".",
+      "answer": "perfect (2)",
+      "explanation": "বাক্যে 'prefect' (স্কুলের শৃঙ্খলা-দায়িত্বপ্রাপ্ত শিক্ষার্থী, বিশেষ্য) অর্থ ও ব্যাকরণ—দুদিক থেকেই বেমানান। 'diagnose' ক্রিয়াকে বিশেষিত করতে ক্রিয়াবিশেষণ 'perfectly' দরকার, তাই (2) ভুল। 'to diagnose' (able to-এর পর infinitive), 'to which' ও 'will respond' বাক্যে চলে।",
+      "verified": false,
+      "note": "ব্যাকরণ-যুক্তি নিজে লেখা, সোর্স-যাচাই হয়নি"
+    },
+    "x²8x8y+16+y²এরসাথেকতযোগকরলেযোগফলএকটিপূর্ণবর্গহবে": {
+      "question": "x²-8x-8y+16+y² এর সাথে কত যোগ করলে যোগফল একটি পূর্ণ বর্গ হবে?",
+      "answer": "2xy",
+      "explanation": "রাশিটি x²+y²-8x-8y+16। এর সাথে 2xy যোগ করলে হয় x²+2xy+y²-8x-8y+16 = (x+y)²-8(x+y)+16 = (x+y-4)², যা একটি পূর্ণ বর্গ। 4xy, 6xy বা 8xy যোগ করলে (x+y)² গঠনই মেলে না, তাই ওই যোগফল পূর্ণ বর্গ হয় না।",
+      "verified": true,
+      "note": "বীজগণিতিক গুণনীয়কীকরণে যাচাইকৃত: (x+y-4)²"
+    },
+    "xএবংyউভয়ইবিজোড়সংখ্যাহলেকোনটিজোড়সংখ্যাহবে": {
+      "question": "x এবং y উভয়ই বিজোড় সংখ্যা হলে কোনটি জোড় সংখ্যা হবে?",
+      "answer": "x+y",
+      "explanation": "x ও y দুটোই বিজোড় হলে x+y = বিজোড়+বিজোড় = জোড়; যেমন ৩+৫=৮। বাকি অপশনগুলো জোড় হয় না: x+y+1 = জোড়+১ = বিজোড়; xy = বিজোড়×বিজোড় = বিজোড় (৩×৫=১৫); xy+2 = বিজোড়+২ = বিজোড়।",
+      "verified": true,
+      "note": "গাণিতিক হিসেবে যাচাইকৃত (জোড়-বিজোড় নিয়ম)"
+    },
+    "আমেরিকারচালকবিহীনগোয়েন্দাবিমানস্টিলথড্রোনটিকী": {
+      "question": "আমেরিকার চালকবিহীন গোয়েন্দা বিমান 'স্টিলথ ড্রোন'টি কী?",
+      "answer": "বোমারু বিমান চালিত",
+      "explanation": "প্রশ্নের উত্তর-সূত্র অনুযায়ী সঠিক অপশন 'বোমারু বিমান চালিত', তবে এটি স্বাধীন সূত্রে যাচাই করা যায়নি। আলোচিত মার্কিন স্টিলথ ড্রোন সম্ভবত লকহিড মার্টিনের RQ-170 সেন্টিনেল — রাডার এড়ানোর ক্ষমতাসম্পন্ন নিরস্ত্র নজরদারি ড্রোন, যেটি ২০১১ সালের ডিসেম্বরে ইরানে বিধ্বস্ত হয় বলে জানা যায়।",
+      "verified": false,
+      "note": "উত্তর-সূত্র স্বাধীনভাবে যাচাই হয়নি; RQ-170 তথ্য voanews.com ও news.usni.org থেকে"
+    },
+    "আলোকিতমানুষচাইএটিকোনপ্রতিষ্ঠানেরস্লোগান": {
+      "question": "'আলোকিত মানুষ চাই' - এটি কোন প্রতিষ্ঠানের স্লোগান?",
+      "answer": "বিশ্বসাহিত্য কেন্দ্র",
+      "explanation": "বিশ্বসাহিত্য কেন্দ্র ১৯৭৮ সালে অধ্যাপক আবদুল্লাহ আবু সায়ীদ প্রতিষ্ঠা করেন; বইপড়া আন্দোলনের মাধ্যমে মানুষ গড়ে তোলাই এর কাজ, আর 'আলোকিত মানুষ চাই' এ সংগঠনের পরিচিত স্লোগান। জাতীয় গ্রন্থ কেন্দ্র ও পাবলিক লাইব্রেরি সরকারি প্রতিষ্ঠান, আর 'সুশাসনের জন্য নাগরিক' (সুজন) সুশাসন-বিষয়ক নাগরিক সংগঠন।",
+      "verified": true,
+      "sources": [
+        "https://www.prothomalo.com/bangladesh/capital/ygubeguo6n"
+      ],
+      "note": "প্রতিষ্ঠাতা ও ১৯৭৮ সাল যাচাইকৃত; স্লোগান প্রশ্ন অনুযায়ী"
+    },
+    "কাজীনজরুলইসলামরচিতগল্পকোনটি": {
+      "question": "কাজী নজরুল ইসলাম রচিত গল্প কোনটি?",
+      "answer": "পদ্মগোখরা",
+      "explanation": "'পদ্মগোখরা' কাজী নজরুল ইসলামের 'শিউলিমালা' (১৯৩১) গল্পগ্রন্থের প্রথম গল্প; ওই গ্রন্থের অন্য গল্পগুলো জিনের বাদশা, অগ্নিগিরি ও শিউলিমালা। 'পদ্মরাগ' নজরুলের নয়, বেগম রোকেয়ার উপন্যাস; 'পদ্মাবতী' মধ্যযুগের কবি আলাওলের কাব্য; 'পদ্মাপুরাণ' মধ্যযুগের মনসামঙ্গল-ধারার রচনা।",
+      "verified": true,
+      "sources": [
+        "https://www.ebanglalibrary.com/books/%E0%A6%B6%E0%A6%BF%E0%A6%89%E0%A6%B2%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE-%E0%A6%95%E0%A6%BE%E0%A6%9C%E0%A7%80-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%87%E0%A6%B8%E0%A6%B2/",
+        "https://hello.bdnews24.com/onyachokhe/2a215bc18517"
+      ]
+    },
+    "কোনটিইংরেজিশব্দ": {
+      "question": "কোনটি ইংরেজি শব্দ?",
+      "answer": "কমা",
+      "explanation": "সোর্সের উত্তর-সূত্র অনুযায়ী 'কমা' (Comma) ইংরেজি শব্দ, যা বাংলায় বিরামচিহ্ন অর্থে ব্যবহৃত হয়। বাকি অপশনগুলোও ইউরোপীয় ভাষা থেকে আসা বিদেশি শব্দ (যেমন আলমারি পর্তুগিজ থেকে), তাই প্রশ্নটির বিভাজন পুরোপুরি স্পষ্ট নয়।",
+      "verified": false,
+      "note": "প্রশ্নের বিভাজন অস্পষ্ট; উত্তর সোর্সের উত্তর-সূত্র থেকে"
+    },
+    "বাংলাদেশেরকোনজেলাটিবাংলাদেশভারতসীমান্তেরমধ্যেনয়": {
+      "question": "বাংলাদেশের কোন জেলাটি বাংলাদেশ-ভারত সীমান্তের মধ্যে নয়?",
+      "answer": "কক্সবাজার",
+      "explanation": "কক্সবাজারের স্থলসীমান্ত মিয়ানমারের সাথে, ভারতের সাথে নয়। পঞ্চগড়, সাতক্ষীরা ও হবিগঞ্জ—তিনটি জেলারই সীমান্ত ভারতের সাথে সংযুক্ত।",
+      "verified": false,
+      "note": "ভৌগোলিক তথ্য স্মৃতি থেকে, সোর্স-যাচাই হয়নি"
+    }
+  }
+}

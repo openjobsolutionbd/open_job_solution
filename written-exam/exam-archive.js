@@ -920,7 +920,7 @@ const EXAM_ARCHIVE = [
     date: "2025-04-26",
     duration: "১ ঘণ্টা",
     totalMarks: 40,
-    totalQuestions: 10,
+    totalQuestions: 12,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

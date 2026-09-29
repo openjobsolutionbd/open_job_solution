@@ -25,6 +25,8 @@ const OPTIONAL_ASSETS = [
 function isAppFile(url) {
   return (
     url.pathname === '/written-exam/' ||
+    // বর্তমান-অবস্থার ডেটা নিয়মিত বদলায় — cache-first হলে পুরনো নোটই দেখাত
+    url.pathname === '/written-exam/data/current-status.json' ||
     url.pathname.startsWith('/written-exam/') && (
       url.pathname.endsWith('.html') ||
       url.pathname.endsWith('.css') ||

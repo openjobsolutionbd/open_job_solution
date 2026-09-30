@@ -248,7 +248,6 @@
     /* খুব ছোট স্ক্রিনে বাটনের প্যাডিং কমিয়ে টাইটেলের জায়গা নিশ্চিত করা */
     @media (max-width: 380px) {
       .app-header.exam-mode .header-back { padding: 6px 10px; font-size: 0.78rem; }
-      .app-header.exam-mode .app-title { font-size: 0.85rem; }
     }
 
     /* ── Answer Box (বইয়ের ফরম্যাট — সবসময় সরাসরি দেখা যায়) ── */
@@ -281,11 +280,16 @@
     #examView .question-card:has(+ .subject-heading),
     #examView .question-card:last-child { border-bottom: 0; }
 
+    /* ── ভাসমান সার্চ বাটন ৩০% ছোট (৪৮px → ৩৪px) ──
+       floating-search.js চারটি সেকশনে shared, তাই সাইজ শুধু এখানে override */
+    #fs-widget-root .fs-pill:not(.open) { width: 34px; height: 34px; }
+    #fs-widget-root .fs-pill:not(.open) .fs-icon { width: 34px; height: 34px; }
+
     /* ── Subject Heading (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান section) ── */
     .subject-heading {
-      font-size: 1.05rem;
+      font-size: var(--sec-head-size);
       font-weight: 700;
-      color: var(--primary);
+      color: var(--title-color);
       text-align: center;
       margin: 26px 0 14px;
       padding-bottom: 6px;
@@ -411,6 +415,20 @@
   // Scroll Top
   // ══════════════════════════════════════════
   const scrollTopBtn = document.getElementById('scrollTopBtn');
+  // ── হেডার অটো-হাইড: নিচে স্ক্রলে লুকায়, উপরে স্ক্রলে আবার আসে ──
+  const appHeaderEl = document.querySelector('.app-header');
+  const searchInputEl = document.getElementById('searchInput');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    const d = y - lastScrollY;
+    if (Math.abs(d) < 6) return;              // ছোট নড়াচড়ায় ঝিলিমিলি নয়
+    const typing = searchInputEl && document.activeElement === searchInputEl;
+    if (d > 0 && y > 80 && !typing) appHeaderEl.classList.add('header-hidden');
+    else if (d < 0 || y <= 80) appHeaderEl.classList.remove('header-hidden');
+    lastScrollY = y;
+  }, { passive: true });
+
   const examHeaderEl = document.getElementById('examHeaderDetail');
   let hdrCollapsed = false;
   window.addEventListener('scroll', () => {
@@ -536,6 +554,7 @@
     // Show view
     document.getElementById('homeView').style.display = 'none';
     document.getElementById('examView').style.display = 'block';
+    appHeaderEl.classList.remove('header-hidden');
     hdrCollapsed = false;
     examHeaderEl.classList.remove('collapsed');
     document.getElementById('searchWrap').style.display = 'none';
@@ -659,6 +678,7 @@
     document.getElementById('examView').style.display = 'none';
     document.getElementById('homeView').style.display = 'block';
     document.getElementById('searchWrap').style.display = '';
+    appHeaderEl.classList.remove('header-hidden');
     document.getElementById('appHeader').classList.remove('exam-mode');
     currentExamId = null;
 

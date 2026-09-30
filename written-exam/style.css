@@ -64,7 +64,8 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .app-header{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:var(--shadow);transition:transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.6s ease}
 .app-header.header-hidden{transform:translateY(-100%);box-shadow:none}
 .header-inner{max-width:760px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.app-title{font-size:1rem;font-weight:700;color:var(--title-color);flex-shrink:0}
+:root{--sec-head-size:1.08rem}
+.app-title{font-size:var(--sec-head-size);font-weight:700;color:var(--title-color);flex-shrink:0}
 .bm-svg{display:block;pointer-events:none}
 .icon-btn.active .bm-svg{fill:currentColor}
 .search-wrap{flex:1;min-width:160px;position:relative}
@@ -181,7 +182,8 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
   .q-text{font-size:0.95rem}
   .option-btn{font-size:0.88rem;padding:9px 10px}
   .header-inner{gap:8px;flex-wrap:nowrap}
-  .app-title{font-size:0.9rem}
+  .search-wrap{min-width:110px}
+  .search-input{text-overflow:ellipsis}
   .header-actions{width:auto;justify-content:flex-end}
 }
 
@@ -192,6 +194,14 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 
 /* ── Type-specific answer styles ── */
 .ans-paragraph p { margin-bottom: 8px; line-height: 1.65; }
+/* ইংরেজি প্যারাগ্রাফ/চিঠি/অনুচ্ছেদ: justify + ইংরেজি হাইফেনেশন (ফাঁক কম দেখায়) */
+.ans-en, .ans-en p {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
 .ans-paragraph { line-height: 1.65; }
 
 .ans-parts { display: flex; flex-direction: column; gap: 8px; }

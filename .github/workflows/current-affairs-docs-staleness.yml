@@ -1,12 +1,12 @@
 name: Current Affairs Docs Staleness Check (scheduled)
 
-# উদ্দেশ্য: current-affairs/AGENTS.md ও current-affairs/EDITORIAL_MEMORY.md-এ
+# উদ্দেশ্য: current-affairs/AGENTS.md, EDITORIAL_MEMORY.md ও PR_GUIDE.md-এ
 # migration/rename/rewrite-এর পর পুরনো/ভাঙা রেফারেন্স, নিজেই-stale-হয়ে-যাওয়া
 # হাতে-লেখা স্ন্যাপশট, undocumented script, বা অতিরিক্ত আকার — এগুলো কারো
 # ম্যানুয়াল অডিট সেশন ছাড়াই স্বয়ংক্রিয়ভাবে ধরা।
 #
 # current-affairs-health-check.yml-এর সাথে পার্থক্য: ওটা docs/ (generated
-# build output)-এর রিগ্রেশন ধরে, এটা AGENTS.md/EDITORIAL_MEMORY.md
+# build output)-এর রিগ্রেশন ধরে, এটা AGENTS.md/EDITORIAL_MEMORY.md/PR_GUIDE.md
 # (এজেন্ট-নির্দেশনা প্রোজ) নিজেই বাস্তবতা থেকে সরে গেছে কিনা ধরে।
 #
 # এই workflow নিজে থেকে prose মুছে/ঠিক করে না, শুধু GitHub Issue বানিয়ে
@@ -24,6 +24,7 @@ on:
     paths:
       - "current-affairs/AGENTS.md"
       - "current-affairs/EDITORIAL_MEMORY.md"
+      - "current-affairs/PR_GUIDE.md"
       - "_dev/scripts/doc_staleness_check.py"
 
 permissions:

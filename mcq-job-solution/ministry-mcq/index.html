@@ -359,7 +359,7 @@
   // Version
   // ══════════════════════════════════════════
   // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-  const APP_VERSION = 'v1.338';
+  const APP_VERSION = 'v1.339';
   const versionEl = document.getElementById('appVersion');
   if (versionEl) versionEl.textContent = APP_VERSION;
 
@@ -569,6 +569,15 @@
 
     // qno অনুযায়ী সাজানো (qno সবসময় সংখ্যা হিসেবে রাখা হয়)
     questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
+
+    // অপশন যদি আমরা নিজেরা বানিয়ে থাকি (আসল পরীক্ষার অপশন না), সেটা পরিষ্কার জানিয়ে দাও
+    if (questions.some(q => q.optionsGenerated)) {
+      const note = document.createElement('div');
+      note.className = 'answer-body';
+      note.style.margin = '0 0 12px';
+      note.textContent = 'ℹ️ এই পরীক্ষার প্রশ্ন ও সঠিক উত্তর ম্যাগাজিন থেকে নেওয়া। অপশনগুলো শেখার সুবিধার জন্য সংযোজিত — আসল পরীক্ষার অপশন নয়।';
+      list.appendChild(note);
+    }
 
     let lastSubject = null;
     questions.forEach(q => {

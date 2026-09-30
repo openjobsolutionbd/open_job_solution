@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write   # ব্যর্থ হলে মালিককে জানাতে Issue খোলা/বন্ধ করার জন্য
 
     steps:
       - name: Checkout
@@ -111,3 +112,44 @@ jobs:
             exit 1
           fi
           echo "✅ PR #$PR_NUMBER সফলভাবে merge হয়েছে (commit title রিকার্সন-গার্ডের জন্য সংরক্ষিত)।"
+
+      # ── নজরদারি: এই workflow চুপচাপ ভাঙলে যেন কেউ না কেউ সঙ্গে সঙ্গে জানে ──
+      # (২০২৬-০৯-৩০: OJS_BOT_TOKEN-এর মেয়াদ/বাতিল হওয়ায় টানা ১২ বার ব্যর্থ হয়েছিল, কেউ টের পায়নি —
+      # ক্যাশ-ভার্সন না বাড়ায় পুরনো ব্যবহারকারীরা পুরনো প্রশ্ন-উত্তর ডেটা দেখতে পারত।)
+      # এখানে github.token ব্যবহার হয় — শুধু Issue খোলা/বন্ধের জন্য, PAT-এর ওপর নির্ভর করে না,
+      # তাই Checkout-এ PAT ব্যর্থ হলেও এই ধাপ কাজ করে। -R দেওয়া আছে কারণ Checkout ব্যর্থ হলে
+      # ওয়ার্কস্পেসে কোনো repo থাকে না।
+      - name: ব্যর্থ হলে Issue খুলে জানানো
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="⚠️ ক্যাশ-ভার্সন স্বয়ংক্রিয়ভাবে বাড়ছে না (auto-bump ব্যর্থ)"
+          EXISTING=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title \
+            --jq "[.[] | select(.title == \"$TITLE\")] | .[0].number // empty")
+          BODY="সর্বশেষ ব্যর্থ run: $RUN_URL
+
+          **কী হচ্ছে:** সাইটে নতুন কাজ যাওয়ার পর ক্যাশ-ভার্সন আর নিজে থেকে বাড়ছে না।
+          **ফল:** ভার্সন না বাড়লে ব্রাউজার/অ্যাপে আগে-ক্যাশ-হওয়া প্রশ্ন-উত্তরের ডেটা (json) পুরনোই থেকে যায় — নতুন ঠিক-করা উত্তর কিছু ব্যবহারকারী দেখবে না।
+          **সবচেয়ে সম্ভাব্য কারণ:** \`OJS_BOT_TOKEN\` গোপন চাবির মেয়াদ শেষ বা বাতিল। (Settings → Secrets and variables → Actions)
+          **এখনই সমাধান:** নতুন চাবি বসান, অথবা Claude-কে বলুন হাতে ভার্সন বাড়িয়ে দিতে।
+
+          সমস্যা ঠিক হয়ে পরের bump সফল হলে এই Issue নিজে থেকে বন্ধ হবে।"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" -R "$GITHUB_REPOSITORY" --body "আবার ব্যর্থ হয়েছে: $RUN_URL"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "$TITLE" --body "$BODY"
+          fi
+
+      - name: আবার ঠিক হলে Issue বন্ধ করা
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="⚠️ ক্যাশ-ভার্সন স্বয়ংক্রিয়ভাবে বাড়ছে না (auto-bump ব্যর্থ)"
+          for N in $(gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$TITLE\") | .number"); do
+            gh issue close "$N" -R "$GITHUB_REPOSITORY" --comment "✅ auto-bump আবার সফল হয়েছে ($RUN_URL) — নিজে থেকে বন্ধ করা হলো।"
+          done

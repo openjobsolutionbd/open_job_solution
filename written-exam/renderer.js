@@ -93,12 +93,21 @@ async function applyCurrentStatus(questions) {
   }
 }
 
+// লেখা মূলত ইংরেজি (ল্যাটিন) হলে true — এগুলো justify হবে, বাংলা আগের মতোই
+function isLatinText(str) {
+  const t = String(str || '');
+  const latin = (t.match(/[A-Za-z]/g) || []).length;
+  const bn = (t.match(/[\u0980-\u09FF]/g) || []).length;
+  return latin > 0 && latin >= bn * 2;
+}
+function enAttr(str) { return isLatinText(str) ? ' ans-en" lang="en' : ''; }
+
 function renderAnswer(q) {
   switch (q.type) {
 
     case 'paragraph': {
       const paragraphs = escHtml(q.answer).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
-      return `<div class="ans-paragraph">${paragraphs}${currentStatusHtml(q.currentStatus)}</div>`;
+      return `<div class="ans-paragraph${enAttr(q.answer)}">${paragraphs}${currentStatusHtml(q.currentStatus)}</div>`;
     }
 
     case 'sub-parts':
@@ -197,18 +206,18 @@ function renderAnswer(q) {
         <div class="letter-to">${escHtml(l.to || '').replace(/\n/g, '<br>')}</div>
         ${l.subject ? `<div class="letter-subject"><strong>${q.subject === 'english' ? 'Subject:' : 'বিষয়:'}</strong> ${escHtml(l.subject)}</div>` : ''}
         <div class="letter-salutation">${letterSalutation(l.to, q.subject)}</div>
-        <div class="letter-body">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
+        <div class="letter-body${enAttr(l.body)}">${(l.body || '').length ? escHtml(l.body).split(/\n\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : ''}</div>
         <div class="letter-closing">${escHtml(l.closing || '')}</div>
         <div class="letter-sender">${escHtml(l.sender || '').replace(/\n/g, '<br>')}</div>
       </div>`;
 
     case 'read-fill':
       return `<div class="ans-read-fill">
-        <div class="passage">${escHtml(q.passage || '')}</div>
+        <div class="passage${enAttr(q.passage)}">${escHtml(q.passage || '')}</div>
         <div class="passage-answers"><strong>উত্তর:</strong> ${escHtml(q.answers || '')}</div>
       </div>`;
 
     default:
-      return `<div class="ans-paragraph">${escHtml(q.answer || '')}${currentStatusHtml(q.currentStatus)}</div>`;
+      return `<div class="ans-paragraph${enAttr(q.answer)}">${escHtml(q.answer || '')}${currentStatusHtml(q.currentStatus)}</div>`;
   }
 }

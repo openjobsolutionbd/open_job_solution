@@ -125,8 +125,8 @@
       "topics": [
         "gdp-bangladesh"
       ],
-      "status": "",
-      "reviewAfter": "2026-10-13",
+      "status": "বিবিএস-এর হিসাবে ২০২৪-২৫ অর্থবছরের চূড়ান্ত মাথাপিছু আয় $২,৭৬৯ (৩,৩৪,৫১১ টাকা); ২০২৫-২৬ অর্থবছরের সাময়িক হিসাবে $৩,০২০ (৩,৬৮,৮৭৩ টাকা), প্রথমবার $৩,০০০ ছাড়িয়েছে (জিডিপি প্রবৃদ্ধি ৪.১৪%)।",
+      "reviewAfter": "2027-05-30",
       "targets": [
         {
           "id": "job-2025-dc-manikganj-q23",
@@ -138,9 +138,11 @@
         "gdp-bangladesh": "0d19fbc71b55"
       },
       "source": [
-        "current-affairs:gdp-bangladesh"
+        "current-affairs:gdp-bangladesh",
+        "web: প্রথম আলো, বণিক বার্তা (২০২৬-০৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-30",
+      "asOf": "2026-09-30"
     },
     {
       "key": "2025-dc-narayanganj-nazir-cashier-q16-p8",
@@ -415,8 +417,8 @@
       "topics": [
         "sommelon-boithok"
       ],
-      "status": "",
-      "asOf": null,
+      "status": "বাংলাদেশ ৪ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য BIMSTEC-এর সভাপতি (থাইল্যান্ডের কাছ থেকে দায়িত্ব নেয়); মেয়াদ ২০২৭ সালে শেষ। সদস্য রাষ্ট্র ৭টি।",
+      "asOf": "2026-09-30",
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -433,10 +435,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -802,15 +805,19 @@
       "key": "2025-dphe-rangamati-office-asst-typist-q14-p20",
       "class": "slow",
       "topics": [],
-      "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "status": "যুদ্ধ এখনো চলছে (সেপ্টেম্বর ২০২৬ পর্যন্ত)। স্থায়ী যুদ্ধবিরতি হয়নি; শুধু স্বল্পমেয়াদি অস্থায়ী বিরতি (মে ও সেপ্টেম্বর ২০২৬) হয়েছে।",
+      "asOf": "2026-09-30",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dphe-rangamati-office-asst-typist-q14",
           "part": 19,
           "qMatch": "রাশিয়া বর্তমানে কোন দেশ"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: রয়টার্স/অ্যাজারনিউজ প্রতিবেদন (২০২৬-০৫, ০৯)"
       ]
     },
     {
@@ -834,8 +841,8 @@
       "topics": [
         "sommelon-boithok"
       ],
-      "status": "",
-      "asOf": null,
+      "status": "বাংলাদেশ ৪ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য BIMSTEC-এর সভাপতি (থাইল্যান্ডের কাছ থেকে দায়িত্ব নেয়); মেয়াদ ২০২৭ সালে শেষ। সদস্য রাষ্ট্র ৭টি।",
+      "asOf": "2026-09-30",
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -852,10 +859,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -929,9 +937,9 @@
       "topics": [
         "ldc-uttoron"
       ],
-      "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "status": "জাতিসংঘের তালিকায় (ডিসেম্বর ২০২৪) এলডিসি দেশ ৪৪টি। বাংলাদেশ, লাওস ও নেপালের উত্তরণ ২৪ নভেম্বর ২০২৬-এ নির্ধারিত; কার্যকর হলে সংখ্যা কমবে।",
+      "asOf": "2026-09-30",
+      "reviewAfter": "2026-12-01",
       "targets": [
         {
           "id": "job-2025-health-services-office-sohayak-q15",
@@ -941,7 +949,11 @@
       ],
       "topicHashes": {
         "ldc-uttoron": "7abd4b6d2d0e"
-      }
+      },
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: UN DESA LDC list; UN OHRLLS"
+      ]
     },
     {
       "key": "2025-janaprashasan-hisab-rakkhok-q17-p3",
@@ -969,8 +981,8 @@
       "topics": [
         "julai-jadughar"
       ],
-      "status": "",
-      "asOf": null,
+      "status": "গণভবন এখন 'জুলাই গণঅভ্যুত্থান স্মৃতি জাদুঘর'; ৫ আগস্ট ২০২৬ প্রধানমন্ত্রী তারেক রহমান আনুষ্ঠানিকভাবে উদ্বোধন করেন, দর্শনার্থীদের জন্য উন্মুক্ত।",
+      "asOf": "2026-09-30",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -982,9 +994,10 @@
       "topicHashes": {
         "julai-jadughar": "acd31b70b216"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
-        "current-affairs:julai-jadughar"
+        "current-affairs:julai-jadughar",
+        "web: প্রথম আলো, ঢাকা ট্রিবিউন (২০২৬-০৮-০৫)"
       ]
     },
     {

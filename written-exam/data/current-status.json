@@ -8,8 +8,7 @@
       "topics": [
         "gdp-bangladesh"
       ],
-      "status": "BBS-এর চূড়ান্ত হিসাবে (ফেব্রুয়ারি ২০২৬) ২০২৪-২৫ অর্থবছরে কৃষি খাতের প্রবৃদ্ধি ২.৪২% (প্রাক্কলিত ১.৭৯% থেকে সংশোধিত); মোট জিডিপি প্রবৃদ্ধি ৩.৪৯% (প্রাক্কলিত ৩.৯৭%)।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -32,8 +31,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -55,14 +53,17 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-01-30",
       "targets": [
         {
           "id": "job-2025-biwta-shulko-adaykari-q05",
           "part": 9,
           "qMatch": "বর্তমানে বাংলাদেশের জাতী"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: দ্য ডেইলি স্টার, ঢাকা ট্রিবিউন (২০২৬-০৫-২৫)"
       ]
     },
     {
@@ -70,14 +71,17 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-01-30",
       "targets": [
         {
           "id": "job-2025-biwta-stenographer-pa-q10",
           "part": 5,
           "qMatch": "বাংলাদেশের জাতীয় ফুটবল "
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: দ্য ডেইলি স্টার, ঢাকা ট্রিবিউন (২০২৬-০৫-২৫)"
       ]
     },
     {
@@ -86,8 +90,7 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -109,14 +112,17 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dc-bhola-q20",
           "part": null,
           "qMatch": "ভোলা জেলা প্রশাসনের প্রধ"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: টিবিএস (২০২৫-১১-০৯), বিডিনিউজ২৪ (২০২৬-০৯)"
       ]
     },
     {
@@ -126,7 +132,7 @@
         "gdp-bangladesh"
       ],
       "status": "",
-      "reviewAfter": "2026-10-13",
+      "reviewAfter": "2027-05-30",
       "targets": [
         {
           "id": "job-2025-dc-manikganj-q23",
@@ -138,9 +144,10 @@
         "gdp-bangladesh": "0d19fbc71b55"
       },
       "source": [
-        "current-affairs:gdp-bangladesh"
+        "current-affairs:gdp-bangladesh",
+        "web: প্রথম আলো, বণিক বার্তা (২০২৬-০৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-30"
     },
     {
       "key": "2025-dc-narayanganj-nazir-cashier-q16-p8",
@@ -148,8 +155,7 @@
       "topics": [
         "mantrisova"
       ],
-      "status": "২৪ মার্চ ২০২৬ থেকে অ্যাটর্নি জেনারেল ব্যারিস্টার রুহুল কুদ্দুস কাজল (দেশের ১৮তম অ্যাটর্নি জেনারেল)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -201,8 +207,7 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-06-07",
       "targets": [
         {
           "id": "job-2025-dc-office-sunamganj-hisab-sohokari-q12",
@@ -214,6 +219,10 @@
           "part": 12,
           "qMatch": "বাংলাদেশ ক্রিকেট বোর্ডের"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: ইত্তেফাক, ঢাকা ট্রিবিউন, বিএসএস (২০২৬-০৬-০৭)"
       ]
     },
     {
@@ -265,8 +274,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -304,8 +312,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -328,8 +335,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -352,8 +358,7 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -391,8 +396,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -416,7 +420,6 @@
         "sommelon-boithok"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -433,10 +436,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -446,8 +450,7 @@
         "tattwaboyoka-gonoporibohan",
         "rashtropoti-podtyag"
       ],
-      "status": "পদত্যাগের নিয়ম (স্পিকারের কাছে স্বাক্ষরযুক্ত পত্র) এখনো প্রযোজ্য। ২৪ জুলাই ২০২৬ রাষ্ট্রপতি মো. সাহাবুদ্দিন এই নিয়মেই পদত্যাগ করেন। ২১ আগস্ট ২০২৬ মির্জা ফখরুল ইসলাম আলমগীর দেশের ২৩তম রাষ্ট্রপতি হিসেবে শপথ নেন।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -660,8 +663,7 @@
         "rashtropoti-podtyag"
       ],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dc-netrokona-q30",
@@ -672,7 +674,11 @@
       "topicHashes": {
         "tattwaboyoka-gonoporibohan": "8ad007049ce1",
         "rashtropoti-podtyag": "5ea3378b7c45"
-      }
+      },
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: প্রথম আলো (২০২৬-০৬-৩০), অবজার্ভার (২০২৬-০৮-০৩)"
+      ]
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p12",
@@ -716,8 +722,7 @@
         "bortoman-sorkarer-180-din",
         "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -758,8 +763,7 @@
         "bortoman-sorkarer-180-din",
         "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -803,14 +807,17 @@
       "class": "slow",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dphe-rangamati-office-asst-typist-q14",
           "part": 19,
           "qMatch": "রাশিয়া বর্তমানে কোন দেশ"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: রয়টার্স/অ্যাজারনিউজ প্রতিবেদন (২০২৬-০৫, ০৯)"
       ]
     },
     {
@@ -835,7 +842,6 @@
         "sommelon-boithok"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -852,10 +858,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -930,8 +937,7 @@
         "ldc-uttoron"
       ],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-01",
       "targets": [
         {
           "id": "job-2025-health-services-office-sohayak-q15",
@@ -941,7 +947,11 @@
       ],
       "topicHashes": {
         "ldc-uttoron": "7abd4b6d2d0e"
-      }
+      },
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: UN DESA LDC list; UN OHRLLS"
+      ]
     },
     {
       "key": "2025-janaprashasan-hisab-rakkhok-q17-p3",
@@ -970,7 +980,6 @@
         "julai-jadughar"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -982,9 +991,10 @@
       "topicHashes": {
         "julai-jadughar": "acd31b70b216"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
-        "current-affairs:julai-jadughar"
+        "current-affairs:julai-jadughar",
+        "web: প্রথম আলো, ঢাকা ট্রিবিউন (২০২৬-০৮-০৫)"
       ]
     },
     {
@@ -1073,8 +1083,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1113,8 +1122,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1169,8 +1177,7 @@
         "bortoman-sorkarer-180-din",
         "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1333,8 +1340,7 @@
       "topics": [
         "eki-poribare-rashtroneta"
       ],
-      "status": "সুশীলা কারকি ছিলেন অন্তর্বর্তী সরকারপ্রধান। ৫ মার্চ ২০২৬ নেপালে সাধারণ নির্বাচনে RSP (রাষ্ট্রীয় স্বতন্ত্র পার্টি) জয়ী হয় এবং বালেন শাহ ২৭ মার্চ ২০২৬ প্রধানমন্ত্রী হিসেবে শপথ নেন।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1408,8 +1414,7 @@
         "bortoman-sorkarer-180-din",
         "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1434,8 +1439,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1458,8 +1462,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1492,8 +1495,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1516,8 +1518,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1545,8 +1546,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1574,8 +1574,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1603,8 +1602,7 @@
       "topics": [
         "sheetkalin-olympic-2026"
       ],
-      "status": "অনুষ্ঠিত হয়ে গেছে (৬–২২ ফেব্রুয়ারি ২০২৬, মিলান–কোর্তিনা, ইতালি)। পদক তালিকায় শীর্ষে নরওয়ে (১৮ স্বর্ণ)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {

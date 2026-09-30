@@ -386,6 +386,15 @@ function checkDuplicateOptions(loc, options) {
   }
 }
 
+// ── ব্যাখ্যা-ডেটাবেসের উত্তর ডেটা ফাইলের সাথে মিলছে কি ──────────────
+// (_dev/explanations.json-এর যাচাইকৃত উত্তরের সাথে bcs-mcq-এর correctIndex না মিললে fail)
+{
+  const r = require('child_process').spawnSync(process.execPath, [path.join(__dirname, 'explanations.js'), 'check'], { encoding: 'utf8' });
+  if (r.status !== 0) {
+    issues.push('[_dev/explanations.json] ব্যাখ্যা-ডেটাবেসের উত্তর ডেটা ফাইলের সাথে মিলছে না — বিস্তারিত: node _dev/explanations.js check\n' + (r.stdout || '').trim().split('\n').map(l => '     ' + l).join('\n'));
+  }
+}
+
 // ── ফলাফল ─────────────────────────────────────────────────
 if (issues.length) {
   console.log(`❌ ডেটাতে ${issues.length}টা সমস্যা পাওয়া গেছে:\n`);

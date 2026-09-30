@@ -233,6 +233,53 @@ test('--find টপিক, ঘটনাপ্রবাহ ও টপ-নিউ�
   assert.match(r.stdout, /top-news:২৬ আগস্ট ২০২৬/);
 });
 
+function watchFixture(files, watch) {
+  const f = fixture({ doc: { version: 1, items: [
+    { key: 'ukr', class: 'slow', topics: [], watch,
+      status: '', asOf: null, reviewAfter: '2027-03-27',
+      targets: [{ id: 'job-e1-q1', part: null, qMatch: 'ব্রিকসের সদস্য' }] },
+  ] } });
+  withLogs(f, files);
+  return f;
+}
+const WLOGS = {
+  'ghotonaprobaho/a.md': '## ০১ জুলাই ২০২৬\n- ইউক্রেন যুদ্ধ চলছে।\n- অন্য খবর।\n',
+  'top-news/a.md': '## ০১ জুলাই ২০২৬\n- আসিয়ান সম্মেলন।\n',
+};
+
+test('শব্দ-নজর: নতুন তারিখে শব্দ এলে WATCH_NEW (exit 2), আগের বুলেটে নয়', () => {
+  const f = watchFixture(WLOGS, ['ইউক্রেন']);
+  f.run(['--init']);
+  assert.deepStrictEqual(f.read().items[0].watchSeen.length, 1);
+  assert.strictEqual(f.run().status, 0);
+  withLogs(f, { 'ghotonaprobaho/b.md': '## ১৫ জুলাই ২০২৬\n- ইউক্রেনে যুদ্ধবিরতি ঘোষণা।\n' });
+  const r = f.run();
+  assert.strictEqual(r.status, 2);
+  assert.match(r.stdout, /নজরে-রাখা শব্দে নতুন খবর/);
+  assert.match(r.stdout, /যুদ্ধবিরতি/);
+});
+
+test('শব্দ-নজর: শব্দ নেই এমন নতুন বুলেটে সতর্কতা নয়', () => {
+  const f = watchFixture(WLOGS, ['ইউক্রেন']);
+  f.run(['--init']);
+  withLogs(f, { 'ghotonaprobaho/b.md': '## ১৫ জুলাই ২০২৬\n- সম্পর্কহীন খবর।\n' });
+  assert.strictEqual(f.run().status, 0);
+});
+
+test('শব্দ-নজর: --accept-এর পর পরিষ্কার', () => {
+  const f = watchFixture(WLOGS, ['ইউক্রেন']);
+  f.run(['--init']);
+  withLogs(f, { 'ghotonaprobaho/b.md': '## ১৫ জুলাই ২০২৬\n- ইউক্রেনে যুদ্ধবিরতি।\n' });
+  assert.strictEqual(f.run().status, 2);
+  assert.strictEqual(f.run(['--accept', 'ukr']).status, 0);
+  assert.strictEqual(f.run().status, 0);
+});
+
+test('শব্দ-নজর: watch ফাঁকা বা ভুল হলে ERROR (exit 1)', () => {
+  const f = watchFixture(WLOGS, []);
+  assert.strictEqual(f.run(['--validate-only']).status, 1);
+});
+
 test('আসল current-status.json কাঠামোগতভাবে ঠিক আছে', () => {
   const r = spawnSync('node', [SCRIPT, '--validate-only'], { encoding: 'utf8', env: { ...process.env, CURRENCY_STATUS_FILE: '', CURRENCY_TOPICS_DIR: '', CURRENCY_EXAMS_DIR: '' } });
   assert.strictEqual(r.status, 0, r.stderr);

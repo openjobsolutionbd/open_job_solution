@@ -14,6 +14,8 @@
 //      "## বর্তমান তথ্য" অংশ বদলেছে কিনা (হ্যাশ মিলিয়ে)।
 //   ২খ) LOG_CHANGED (নজর): item-এর "logs" রেফ (ঘটনাপ্রবাহ/টপ-নিউজের নির্দিষ্ট তারিখ)-এর
 //      বুলেট বদলেছে/বেড়েছে কিনা।
+//   ২গ) WATCH_NEW (নজর): item-এর "watch" শব্দ ঘটনাপ্রবাহ/টপ-নিউজের নতুন/বদলানো বুলেটে
+//      এসেছে কিনা (তারিখ আগে থেকে জানা না থাকলেও ধরে)।
 //   ৩) REVIEW_DUE (নজর): reviewAfter তারিখ পেরিয়ে গেছে কিনা।
 //
 // এই স্ক্রিপ্ট উত্তর নিজে বদলায় না — শুধু জানায়। সিদ্ধান্ত রিভিউয়ের পর।
@@ -131,6 +133,26 @@ function logHashes(refs) {
   return out;
 }
 
+// শব্দ-নজর ("watch"): item-এ কয়েকটা নির্দিষ্ট শব্দ দেওয়া থাকে (যেমন "ইউক্রেন", "আসিয়ান")।
+// ঘটনাপ্রবাহ/টপ-নিউজের যে বুলেটে ওই শব্দ আছে সেগুলোর ছাপ (হ্যাশ) accept-এর সময় জমা থাকে।
+// পরে নতুন বা বদলানো বুলেট এলে WATCH_NEW ধরে — নির্দিষ্ট তারিখ আগে থেকে জানা না থাকলেও চলে।
+function watchLines(words) {
+  const out = new Map(); // হ্যাশ → "kind:তারিখ  বুলেট"
+  const logs = loadLogs();
+  for (const kind of LOG_KINDS) {
+    for (const [date, set] of logs[kind]) {
+      for (const line of set) {
+        if ((words || []).some(w => line.includes(w))) out.set(hashOf(kind + '|' + date + '|' + line), `${kind}:${date}  ${line}`);
+      }
+    }
+  }
+  return out;
+}
+
+function watchSeen(words) {
+  return [...watchLines(words).keys()].sort();
+}
+
 function topicHashes(topics) {
   const out = {};
   for (const t of topics) {
@@ -176,6 +198,11 @@ function validate(doc, qIndex) {
     else {
       for (const t of it.topics) {
         if (!fs.existsSync(path.join(TOPICS_DIR, t + '.md'))) errors.push(`${where} topic পাতা নেই: ${t}`);
+      }
+    }
+    if (it.watch != null) {
+      if (!Array.isArray(it.watch) || it.watch.length === 0 || it.watch.some(w => typeof w !== 'string' || !w.trim())) {
+        errors.push(`${where} "watch" ফাঁকা-নয় শব্দের array হতে হবে`);
       }
     }
     if (it.logs != null) {
@@ -238,6 +265,11 @@ function findings(doc) {
       }
       if (changedLogs.length) out.push({ type: 'LOG_CHANGED', item: it, detail: changedLogs });
     }
+    if (it.watch && it.watchSeen) {
+      const seen = new Set(it.watchSeen);
+      const fresh = [...watchLines(it.watch)].filter(([h]) => !seen.has(h)).map(([, txt]) => txt);
+      if (fresh.length) out.push({ type: 'WATCH_NEW', item: it, detail: fresh });
+    }
     if (it.reviewAfter && it.reviewAfter <= now) {
       out.push({ type: 'REVIEW_DUE', item: it, detail: it.reviewAfter });
     }
@@ -254,6 +286,7 @@ function buildReport(doc, found, withoutStatus) {
   const L = [];
   const changed = found.filter(f => f.type === 'TOPIC_CHANGED');
   const logChanged = found.filter(f => f.type === 'LOG_CHANGED');
+  const watchNew = found.filter(f => f.type === 'WATCH_NEW');
   const due = found.filter(f => f.type === 'REVIEW_DUE');
   L.push(`## written-exam — বর্তমান-অবস্থা নজরদারি (${today()})`);
   L.push('');
@@ -277,15 +310,26 @@ function buildReport(doc, found, withoutStatus) {
     }
     L.push('');
   }
+  if (watchNew.length) {
+    L.push(`### নজরে-রাখা শব্দে নতুন খবর এসেছে (${watchNew.length}টা প্রশ্ন)`);
+    L.push('প্রশ্নের সাথে যুক্ত শব্দটা ঘটনাপ্রবাহ/টপ-নিউজে নতুন বা বদলানো বুলেটে এসেছে — উত্তর এখনো ঠিক কিনা দেখা দরকার।');
+    L.push('');
+    for (const f of watchNew) {
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — ${targetsLabel(f.item)}`);
+      for (const t of f.detail.slice(0, 5)) L.push(`  - ${t.slice(0, 140)}`);
+      if (f.detail.length > 5) L.push(`  - …আরও ${f.detail.length - 5}টা`);
+    }
+    L.push('');
+  }
   if (due.length) {
     L.push(`### রিভিউয়ের সময় হয়েছে (${due.length}টা প্রশ্ন)`);
     L.push('');
     for (const f of due) {
-      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${(f.item.topics.length || (f.item.logs || []).length) ? '' : ' — কারেন্ট অ্যাফেয়ার্সে সংযোগ নেই, ওয়েবে যাচাই লাগবে'}`);
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${(f.item.topics.length || (f.item.logs || []).length || (f.item.watch || []).length) ? '' : ' — কারেন্ট অ্যাফেয়ার্সে সংযোগ নেই, ওয়েবে যাচাই লাগবে'}`);
     }
     L.push('');
   }
-  if (!changed.length && !logChanged.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
+  if (!changed.length && !logChanged.length && !watchNew.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
   L.push('');
   L.push('রিভিউ শেষে: `node written-exam/check_currency.js --accept <key>` (সব একসাথে: `--accept all`)।');
   return L.join('\n');
@@ -335,6 +379,7 @@ function main() {
     for (const it of doc.items) {
       if (!it.topicHashes && it.topics.length) { it.topicHashes = topicHashes(it.topics); n++; }
       if (!it.logHashes && (it.logs || []).length) { it.logHashes = logHashes(it.logs); n++; }
+      if (it.watch && !it.watchSeen) { it.watchSeen = watchSeen(it.watch); n++; }
     }
     writeStatusFile(doc);
     console.log(`✅ ${n}টা item-এ topicHashes বসানো হলো`);
@@ -356,6 +401,7 @@ function main() {
       it.verifiedOn = today();
       if (it.topics.length) it.topicHashes = topicHashes(it.topics);
       if ((it.logs || []).length) it.logHashes = logHashes(it.logs);
+      if ((it.watch || []).length) it.watchSeen = watchSeen(it.watch);
       const days = extra != null ? Number(extra) : REVIEW_DAYS[it.class];
       if (days) it.reviewAfter = addDays(today(), days);
     }

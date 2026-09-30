@@ -9,8 +9,8 @@ Open Job Solution — Root Version Manager
 এই script একসাথে করে:
     1. সব sw.js + app.js-এ version update
     2. version.txt update
-    3. job-app-MD-*.md-এ changelog entry
-    4. git init (না থাকলে), তারপর auto commit
+    3. git init (না থাকলে), তারপর auto commit
+(job-app-MD.md-এ আর কোনো changelog রো যোগ হয় না — routine bump-এর ইতিহাস git log ও version.txt-এ)
 """
 
 import re, sys, os, subprocess
@@ -18,17 +18,6 @@ from pathlib import Path
 from datetime import datetime
 
 ROOT = Path(__file__).parent.parent
-
-# ── Bengali helpers ────────────────────────────────────────────
-BN_MONTHS = [
-    "", "জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন",
-    "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"
-]
-BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
-
-def bn_date(dt):
-    day = str(dt.day).translate(BN_DIGITS)
-    return f"{day} {BN_MONTHS[dt.month]} {str(dt.year).translate(BN_DIGITS)}"
 
 # ── Git helpers ────────────────────────────────────────────────
 def run_git(*args):
@@ -70,16 +59,6 @@ def ensure_git():
             return False
     return True
 
-def get_changed_files():
-    """git diff HEAD দিয়ে changed files list করে"""
-    changed = []
-    # staged + unstaged
-    for cmd in [["diff", "--name-only", "HEAD"], ["diff", "--name-only"]]:
-        code, out, _ = run_git(*cmd)
-        if code == 0 and out:
-            changed += [f.strip() for f in out.splitlines() if f.strip()]
-    return list(dict.fromkeys(changed))  # deduplicate
-
 def git_stage_and_commit(new_tag):
     """সব পরিবর্তন stage করে commit করে"""
     run_git("add", "-A")
@@ -106,11 +85,8 @@ else:
 new_tag = f"v{new_ver}"
 print(f"\n🔖  Version: {current}  →  {new_ver}\n")
 
-# ── Ensure git exists BEFORE patching (so diff is accurate) ───
+# ── Ensure git exists ──────────────────────────────────────────
 git_ok = ensure_git()
-
-# ── Detect changed files BEFORE we overwrite anything ─────────
-changed_files = get_changed_files() if git_ok else []
 
 # ── Patch all version strings ──────────────────────────────────
 PATCHES = [
@@ -173,102 +149,6 @@ for filepath, pattern, replacement in PATCHES:
 
 VERSION_FILE.write_text(new_ver)
 print(f"  ✅  version.txt")
-
-# ── Build changelog summary ────────────────────────────────────
-FILE_LABELS = {
-    "bcs-mcq/app.js":             "BCS MCQ লজিক",
-    "bcs-mcq/style.css":          "BCS MCQ স্টাইল",
-    "bcs-mcq/index.html":         "BCS MCQ UI",
-    "mcq-job-solution/index.html":                "MCQ Job Solution হাব",
-    "mcq-job-solution/primary-mcq/index.html":    "Primary MCQ UI",
-    "mcq-job-solution/primary-mcq/style.css":     "Primary MCQ স্টাইল",
-    "mcq-job-solution/ministry-mcq/index.html":   "মন্ত্রণালয়ের MCQ UI",
-    "mcq-job-solution/ministry-mcq/style.css":    "মন্ত্রণালয়ের MCQ স্টাইল",
-    "mcq-job-solution/ministry-mcq/mcq-renderer.js": "মন্ত্রণালয়ের MCQ renderer",
-    "written-exam/index.html":    "লিখিত পরীক্ষা UI",
-    "written-exam/style.css":     "লিখিত পরীক্ষা স্টাইল",
-    "written-exam/renderer.js":   "লিখিত পরীক্ষা renderer",
-    "index.html":                 "হোম পেজ",
-    "manifest.json":              "PWA manifest",
-    "_redirects":                 "Cloudflare routing",
-    "_headers":                   "HTTP headers",
-}
-DATA_LABELS = {
-    "bangla": "বাংলা", "english": "English", "math": "গণিত",
-    "science": "বিজ্ঞান", "computer": "কম্পিউটার", "geography": "ভূগোল",
-    "bangladesh": "বাংলাদেশ", "international": "আন্তর্জাতিক",
-    "mental": "মানসিক", "ethics": "নৈতিকতা", "data": "ডেটা",
-    "general-knowledge": "সাধারণ জ্ঞান", "job-solution": "প্রশ্নব্যাংক",
-    "exam-archive": "পরীক্ষা আর্কাইভ",
-}
-SKIP = {"version.txt", "update_version.py"}
-
-def build_summary(files):
-    if not files:
-        return f"Version {new_tag}-এ আপগ্রেড। Cache সব module-এ update।"
-
-    parts = []
-    data_subjects = set()
-    labeled = []
-
-    for f in files:
-        fname = Path(f).name
-        if any(s in f for s in SKIP): continue
-        if "job-app-MD" in f: continue
-        if any(s in f for s in ["sw.js", "update_version"]): continue
-
-        if "/data/" in f:
-            stem = Path(f).stem
-            data_subjects.add(DATA_LABELS.get(stem, stem))
-        elif f in FILE_LABELS:
-            labeled.append(FILE_LABELS[f])
-        else:
-            labeled.append(fname)
-
-    if data_subjects:
-        parts.append(f"ডেটা আপডেট ({', '.join(sorted(data_subjects))})")
-    if labeled:
-        parts.append(f"{', '.join(dict.fromkeys(labeled))} পরিবর্তন")
-    if not parts:
-        parts.append(f"Cache সব module-এ {new_tag}-এ আপডেট")
-
-    return ". ".join(parts) + "."
-
-summary = build_summary(changed_files)
-
-# ── Update MD changelog ────────────────────────────────────────
-# শুধু job-app-MD.md-এই changelog entry যোগ হবে (একমাত্র "live" reference
-# doc)। আগে এখানে _docs/*.md এর সব ফাইলে (glob) blindly যোগ হতো, ফলে পুরনো
-# version-snapshot ফাইলে (যেমন job-app-MD-v1.22.md) অনন্তকাল ধরে নতুন রো
-# যোগ হয়ে যেত অথচ বাকি কনটেন্ট sync হতো না — সেই ফাইলটাই পরে delete করা
-# হয়েছে। নতুন কোনো MD "master doc" দরকার হলে এখানে নাম explicit যোগ করুন,
-# আবার glob দিয়ে সব ফাইল ধরাবেন না।
-md_files = [ROOT / "_docs" / "job-app-MD.md"]
-md_updated = False
-
-for md_path in md_files:
-    content = md_path.read_text(encoding="utf-8")
-    if "## Version History" not in content:
-        continue
-    if f"| {new_tag} |" in content:
-        print(f"  ⏭️  {md_path.name} — {new_tag} already logged")
-        md_updated = True
-        continue
-
-    new_row = f"| {new_tag} | {bn_date(datetime.now())} | {summary} |"
-    pattern = r"(## Version History\s*\n\s*\|[^\n]+\|\s*\n\s*\|[-| ]+\|\s*\n)"
-    new_content, count = re.subn(pattern, r"\g<1>" + new_row + "\n", content)
-
-    if count == 0:
-        errors.append(f"  ⚠️  Version History table not found in {md_path.name}")
-        continue
-
-    md_path.write_text(new_content, encoding="utf-8")
-    print(f"  ✅  {md_path.name}  →  \"{summary[:70]}\"")
-    md_updated = True
-
-if not md_updated:
-    errors.append("  ⚠️  কোনো MD file-এ Version History section পাওয়া যায়নি")
 
 # ── Git commit ─────────────────────────────────────────────────
 if git_ok:

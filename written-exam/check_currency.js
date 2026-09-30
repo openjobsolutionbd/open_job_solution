@@ -12,6 +12,10 @@
 //      topic ফাইল আছে কিনা, class/তারিখ ঠিক কিনা।
 //   ২) TOPIC_CHANGED (নজর): item-এর কারেন্ট অ্যাফেয়ার্স পাতার
 //      "## বর্তমান তথ্য" অংশ বদলেছে কিনা (হ্যাশ মিলিয়ে)।
+//   ২খ) LOG_CHANGED (নজর): item-এর "logs" রেফ (ঘটনাপ্রবাহ/টপ-নিউজের নির্দিষ্ট তারিখ)-এর
+//      বুলেট বদলেছে/বেড়েছে কিনা।
+//   ২গ) WATCH_NEW (নজর): item-এর "watch" শব্দ ঘটনাপ্রবাহ/টপ-নিউজের নতুন/বদলানো বুলেটে
+//      এসেছে কিনা (তারিখ আগে থেকে জানা না থাকলেও ধরে)।
 //   ৩) REVIEW_DUE (নজর): reviewAfter তারিখ পেরিয়ে গেছে কিনা।
 //
 // এই স্ক্রিপ্ট উত্তর নিজে বদলায় না — শুধু জানায়। সিদ্ধান্ত রিভিউয়ের পর।
@@ -20,6 +24,7 @@
 //   node check_currency.js                    # পরীক্ষা + রিপোর্ট প্রিন্ট
 //   node check_currency.js --report out.md    # রিপোর্ট ফাইলেও লেখে
 //   node check_currency.js --validate-only    # শুধু কাঠামো (PR ব্লক করার জন্য)
+//   node check_currency.js --find "শব্দ"     # টপিক/ঘটনাপ্রবাহ/টপ-নিউজ সবখানে খুঁজে রেফ দেখায়
 //   node check_currency.js --init             # যেসব item-এ হ্যাশ নেই সেগুলোতে বসায়
 //   node check_currency.js --accept <key|all> [--review-in-days N] [--status "নোট"]
 //                                             # রিভিউ শেষ: হ্যাশ হালনাগাদ, verifiedOn বসানো,
@@ -37,6 +42,8 @@ const { loadAllQuestions } = require('./load_exams');
 // পথগুলো env দিয়ে বদলানো যায় — শুধু check_currency.test.js-এর জন্য (আলাদা নমুনা ডেটায় চালাতে)
 const STATUS_FILE = process.env.CURRENCY_STATUS_FILE || path.join(__dirname, 'data', 'current-status.json');
 const TOPICS_DIR = process.env.CURRENCY_TOPICS_DIR || path.join(__dirname, '..', 'current-affairs', 'docs', 'topics');
+const DOCS_DIR = process.env.CURRENCY_DOCS_DIR || path.dirname(TOPICS_DIR); // ঘটনাপ্রবাহ/টপ-নিউজ এখানকার সাবফোল্ডারে
+const LOG_KINDS = ['ghotonaprobaho', 'top-news']; // তারিখ-ভিত্তিক লগ (## <তারিখ> হেডিং)
 const EXAMS_DIR = process.env.CURRENCY_EXAMS_DIR || undefined; // ফাঁকা হলে load_exams-এর ডিফল্ট
 const CLASSES = ['fast', 'slow', 'past', 'future'];
 const REVIEW_DAYS = { fast: 45, slow: 180 };
@@ -71,6 +78,79 @@ function currentSection(slug) {
 
 function hashOf(text) {
   return crypto.createHash('sha1').update(text, 'utf8').digest('hex').slice(0, 12);
+}
+
+// তারিখ-ভিত্তিক লগ (ঘটনাপ্রবাহ / টপ-নিউজ): সব ফাইল পড়ে একই তারিখের বুলেট জোড়া লাগায়।
+// build_index.py-ও একই তারিখ জোড়া লাগায়, তাই নতুন সেশনের আলাদা ফাইল হলেও হ্যাশ ঠিক থাকে।
+// বুলেটগুলো সাজিয়ে নেওয়া হয় — ফাইলের ক্রম বা লাইনের ক্রম বদলালে সতর্কতা আসে না।
+let _logCache = null;
+function loadLogs() {
+  if (_logCache) return _logCache;
+  const out = {};
+  for (const kind of LOG_KINDS) {
+    const dir = path.join(DOCS_DIR, kind);
+    const days = new Map();
+    if (fs.existsSync(dir)) {
+      for (const f of fs.readdirSync(dir).filter(n => n.endsWith('.md')).sort()) {
+        const md = fs.readFileSync(path.join(dir, f), 'utf8').replace(/\r\n/g, '\n');
+        let cur = null;
+        for (const line of md.split('\n')) {
+          const m = line.match(/^##\s+(.+?)\s*$/);
+          if (m) { cur = m[1]; if (!days.has(cur)) days.set(cur, new Set()); continue; }
+          const t = line.replace(/\s+/g, ' ').trim();
+          if (cur && t) days.get(cur).add(t);
+        }
+      }
+    }
+    out[kind] = days;
+  }
+  _logCache = out;
+  return out;
+}
+
+// রেফ ফরম্যাট: "ghotonaprobaho:২৬ আগস্ট ২০২৬" বা "top-news:২৬ আগস্ট ২০২৬"
+function parseLogRef(ref) {
+  const i = typeof ref === 'string' ? ref.indexOf(':') : -1;
+  if (i < 0) return null;
+  const kind = ref.slice(0, i);
+  if (!LOG_KINDS.includes(kind)) return null;
+  return { kind, date: ref.slice(i + 1).trim() };
+}
+
+function logSection(ref) {
+  const r = parseLogRef(ref);
+  if (!r) return null;
+  const day = loadLogs()[r.kind].get(r.date);
+  return day ? [...day].sort().join('\n') : null;
+}
+
+function logHashes(refs) {
+  const out = {};
+  for (const r of refs || []) {
+    const sec = logSection(r);
+    if (sec !== null) out[r] = hashOf(sec);
+  }
+  return out;
+}
+
+// শব্দ-নজর ("watch"): item-এ কয়েকটা নির্দিষ্ট শব্দ দেওয়া থাকে (যেমন "ইউক্রেন", "আসিয়ান")।
+// ঘটনাপ্রবাহ/টপ-নিউজের যে বুলেটে ওই শব্দ আছে সেগুলোর ছাপ (হ্যাশ) accept-এর সময় জমা থাকে।
+// পরে নতুন বা বদলানো বুলেট এলে WATCH_NEW ধরে — নির্দিষ্ট তারিখ আগে থেকে জানা না থাকলেও চলে।
+function watchLines(words) {
+  const out = new Map(); // হ্যাশ → "kind:তারিখ  বুলেট"
+  const logs = loadLogs();
+  for (const kind of LOG_KINDS) {
+    for (const [date, set] of logs[kind]) {
+      for (const line of set) {
+        if ((words || []).some(w => line.includes(w))) out.set(hashOf(kind + '|' + date + '|' + line), `${kind}:${date}  ${line}`);
+      }
+    }
+  }
+  return out;
+}
+
+function watchSeen(words) {
+  return [...watchLines(words).keys()].sort();
 }
 
 function topicHashes(topics) {
@@ -120,6 +200,20 @@ function validate(doc, qIndex) {
         if (!fs.existsSync(path.join(TOPICS_DIR, t + '.md'))) errors.push(`${where} topic পাতা নেই: ${t}`);
       }
     }
+    if (it.watch != null) {
+      if (!Array.isArray(it.watch) || it.watch.length === 0 || it.watch.some(w => typeof w !== 'string' || !w.trim())) {
+        errors.push(`${where} "watch" ফাঁকা-নয় শব্দের array হতে হবে`);
+      }
+    }
+    if (it.logs != null) {
+      if (!Array.isArray(it.logs)) errors.push(`${where} "logs" array হতে হবে`);
+      else {
+        for (const r of it.logs) {
+          if (!parseLogRef(r)) errors.push(`${where} logs-এর রেফ ভুল (ফরম্যাট "ghotonaprobaho:<তারিখ>" বা "top-news:<তারিখ>"): ${JSON.stringify(r)}`);
+          else if (logSection(r) === null) errors.push(`${where} লগে এই তারিখ নেই: ${r}`);
+        }
+      }
+    }
     if (!Array.isArray(it.targets) || it.targets.length === 0) {
       errors.push(`${where} "targets" ফাঁকা`);
       continue;
@@ -162,6 +256,20 @@ function findings(doc) {
       }
       if (changed.length) out.push({ type: 'TOPIC_CHANGED', item: it, detail: changed });
     }
+    if (it.logHashes) {
+      const changedLogs = [];
+      for (const r of it.logs || []) {
+        const sec = logSection(r);
+        if (sec === null) continue;
+        if (it.logHashes[r] && it.logHashes[r] !== hashOf(sec)) changedLogs.push(r);
+      }
+      if (changedLogs.length) out.push({ type: 'LOG_CHANGED', item: it, detail: changedLogs });
+    }
+    if (it.watch && it.watchSeen) {
+      const seen = new Set(it.watchSeen);
+      const fresh = [...watchLines(it.watch)].filter(([h]) => !seen.has(h)).map(([, txt]) => txt);
+      if (fresh.length) out.push({ type: 'WATCH_NEW', item: it, detail: fresh });
+    }
     if (it.reviewAfter && it.reviewAfter <= now) {
       out.push({ type: 'REVIEW_DUE', item: it, detail: it.reviewAfter });
     }
@@ -177,6 +285,8 @@ function targetsLabel(it) {
 function buildReport(doc, found, withoutStatus) {
   const L = [];
   const changed = found.filter(f => f.type === 'TOPIC_CHANGED');
+  const logChanged = found.filter(f => f.type === 'LOG_CHANGED');
+  const watchNew = found.filter(f => f.type === 'WATCH_NEW');
   const due = found.filter(f => f.type === 'REVIEW_DUE');
   L.push(`## written-exam — বর্তমান-অবস্থা নজরদারি (${today()})`);
   L.push('');
@@ -191,24 +301,67 @@ function buildReport(doc, found, withoutStatus) {
     }
     L.push('');
   }
+  if (logChanged.length) {
+    L.push(`### ঘটনাপ্রবাহ/টপ-নিউজের তারিখ বদলেছে (${logChanged.length}টা প্রশ্ন)`);
+    L.push('যে তারিখের এন্ট্রির সাথে প্রশ্ন যুক্ত, সেখানে বুলেট যোগ/বদল হয়েছে — উত্তর এখনো ঠিক কিনা দেখা দরকার।');
+    L.push('');
+    for (const f of logChanged) {
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — তারিখ: ${f.detail.join(', ')} — ${targetsLabel(f.item)}`);
+    }
+    L.push('');
+  }
+  if (watchNew.length) {
+    L.push(`### নজরে-রাখা শব্দে নতুন খবর এসেছে (${watchNew.length}টা প্রশ্ন)`);
+    L.push('প্রশ্নের সাথে যুক্ত শব্দটা ঘটনাপ্রবাহ/টপ-নিউজে নতুন বা বদলানো বুলেটে এসেছে — উত্তর এখনো ঠিক কিনা দেখা দরকার।');
+    L.push('');
+    for (const f of watchNew) {
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — ${targetsLabel(f.item)}`);
+      for (const t of f.detail.slice(0, 5)) L.push(`  - ${t.slice(0, 140)}`);
+      if (f.detail.length > 5) L.push(`  - …আরও ${f.detail.length - 5}টা`);
+    }
+    L.push('');
+  }
   if (due.length) {
     L.push(`### রিভিউয়ের সময় হয়েছে (${due.length}টা প্রশ্ন)`);
     L.push('');
     for (const f of due) {
-      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${f.item.topics.length ? '' : ' — কারেন্ট অ্যাফেয়ার্স পাতা নেই, ওয়েবে যাচাই লাগবে'}`);
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${(f.item.topics.length || (f.item.logs || []).length || (f.item.watch || []).length) ? '' : ' — কারেন্ট অ্যাফেয়ার্সে সংযোগ নেই, ওয়েবে যাচাই লাগবে'}`);
     }
     L.push('');
   }
-  if (!changed.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
+  if (!changed.length && !logChanged.length && !watchNew.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
   L.push('');
   L.push('রিভিউ শেষে: `node written-exam/check_currency.js --accept <key>` (সব একসাথে: `--accept all`)।');
   return L.join('\n');
+}
+
+function findRefs(term) {
+  const needle = term.replace(/\s+/g, ' ').trim();
+  let n = 0;
+  if (fs.existsSync(TOPICS_DIR)) {
+    for (const f of fs.readdirSync(TOPICS_DIR).filter(x => x.endsWith('.md')).sort()) {
+      const md = fs.readFileSync(path.join(TOPICS_DIR, f), 'utf8').replace(/\s+/g, ' ');
+      if (md.includes(needle)) { console.log(`topic: ${f.replace(/\.md$/, '')}`); n++; }
+    }
+  }
+  const logs = loadLogs();
+  for (const kind of LOG_KINDS) {
+    for (const [date, set] of logs[kind]) {
+      for (const line of set) {
+        if (line.includes(needle)) { console.log(`${kind}:${date}  → ${line.slice(0, 90)}`); n++; }
+      }
+    }
+  }
+  if (!n) console.log('কোথাও মেলেনি');
 }
 
 function main() {
   const args = process.argv.slice(2);
   const flag = n => args.includes(n);
   const val = n => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
+
+  // সংযোগ খোঁজার সাহায্যকারী: পুরো কারেন্ট অ্যাফেয়ার্সে (টপিক + ঘটনাপ্রবাহ + টপ-নিউজ) শব্দ খুঁজে রেফ দেখায়
+  if (val('--find')) { findRefs(val('--find')); return; }
 
   const doc = readStatusFile();
   const qIndex = buildQuestionIndex();
@@ -225,6 +378,8 @@ function main() {
     let n = 0;
     for (const it of doc.items) {
       if (!it.topicHashes && it.topics.length) { it.topicHashes = topicHashes(it.topics); n++; }
+      if (!it.logHashes && (it.logs || []).length) { it.logHashes = logHashes(it.logs); n++; }
+      if (it.watch && !it.watchSeen) { it.watchSeen = watchSeen(it.watch); n++; }
     }
     writeStatusFile(doc);
     console.log(`✅ ${n}টা item-এ topicHashes বসানো হলো`);
@@ -245,6 +400,8 @@ function main() {
       if (newStatus != null) { it.status = newStatus; it.asOf = today(); }
       it.verifiedOn = today();
       if (it.topics.length) it.topicHashes = topicHashes(it.topics);
+      if ((it.logs || []).length) it.logHashes = logHashes(it.logs);
+      if ((it.watch || []).length) it.watchSeen = watchSeen(it.watch);
       const days = extra != null ? Number(extra) : REVIEW_DAYS[it.class];
       if (days) it.reviewAfter = addDays(today(), days);
     }

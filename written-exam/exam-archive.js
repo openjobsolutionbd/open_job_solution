@@ -920,7 +920,25 @@ const EXAM_ARCHIVE = [
     date: "2025-04-26",
     duration: "১ ঘণ্টা",
     totalMarks: 40,
-    totalQuestions: 10,
+    totalQuestions: 12,
+  },
+  {
+    id: "job-2025-bpatc-support-staff",
+    ministry: "বাংলাদেশ লোক প্রশাসন প্রশিক্ষণ কেন্দ্র",
+    post: "ফিস সহায়ক/মালী/নিরাপত্তা প্রহরী/ক্রীড়া পিয়ন/বার্তাবাহক/কক্ষ বেয়ারার/ক্রমবয়/ক্লাসকম এটেনডেন্ট/লাইব্রেরি এটেনডেন্ট/ক্লাব এটেনডেন্ট",
+    date: "2025-04-26",
+    duration: "১ ঘণ্টা",
+    totalMarks: 40,
+    totalQuestions: 8,
+  },
+  {
+    id: "job-2025-finance-office-shohokari",
+    ministry: "অর্থ মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-04-25",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 21,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

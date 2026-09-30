@@ -143,10 +143,56 @@
     "answer": "Honesty means being truthful, sincere and free from deceit. It is one of the most important virtues in a person's character. An honest person always speaks the truth and gains the trust and respect of others. Honesty brings peace of mind and builds a strong foundation for success in life. In contrast, dishonesty may bring temporary benefits but ultimately leads to loss of reputation and trust. In every aspect of life whether at home, school or the work place honesty helps in creating better relationship and a more peaceful society. Therefore, it is rightly said that honesty is the best policy and everyone should practice it in their daily lives."
   },
   {
-    "id": "job-2025-social-welfare-office-sohayok-q09",
+    "id": "job-2025-social-welfare-office-sohayok-q10",
+    "examId": "job-2025-social-welfare-office-sohayok",
+    "subject": "math",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি x⁴ − x² + 1 = 0 হয় তবে, x³ + 1/x³ = কত?",
+    "steps": [
+      "x⁴ − x² + 1 = 0",
+      "বা, x² − 1 + 1/x² = 0  [x² দ্বারা ভাগ করে]",
+      "বা, x² + 1/x² = 1",
+      "বা, (x + 1/x)² − 2 = 1",
+      "বা, (x + 1/x)² = 1 + 2 = 3",
+      "∴ x + 1/x = √3",
+      "এখন, x³ + 1/x³ = (x + 1/x)³ − 3 · x · 1/x · (x + 1/x)",
+      "= (√3)³ − 3 · √3",
+      "= √3 × √3 × √3 − 3√3",
+      "= 3√3 − 3√3 = 0"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": "job-2025-social-welfare-office-sohayok-q11",
+    "examId": "job-2025-social-welfare-office-sohayok",
+    "subject": "math",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি আয়তক্ষেত্রের ক্ষেত্রফল ২০০০ বর্গমিটার। যদি এর দৈর্ঘ্য ১০ মিটার কম হতো, তাহলে একটি বর্গক্ষেত্র হতো। আয়তক্ষেত্রটির দৈর্ঘ্য কত মিটার?",
+    "steps": [
+      "মনে করি, আয়তক্ষেত্রটির দৈর্ঘ্য x মিটার এবং প্রস্থ y মিটার",
+      "∴ আয়তক্ষেত্রটির ক্ষেত্রফল = xy বর্গমিটার",
+      "প্রশ্নানুসারে, xy = ২০০০ ......... (i)",
+      "এবং সমীকরণ (i) এ y = x − ১০ বসিয়ে পাই,",
+      "x(x − ১০) = ২০০০",
+      "বা, x² − ১০x − ২০০০ = ০",
+      "বা, x² − ৫০x + ৪০x − ২০০০ = ০",
+      "বা, x(x − ৫০) + ৪০(x − ৫০) = ০",
+      "বা, (x − ৫০)(x + ৪০) = ০",
+      "হয় x − ৫০ = ০ অথবা, x + ৪০ = ০",
+      "বা, x = ৫০ বা, x = −৪০",
+      "কিন্তু দৈর্ঘ্য ঋণাত্মক হতে পারে না।"
+    ],
+    "answer": "দৈর্ঘ্য ৫০ মিটার।"
+  },
+  {
+    "id": "job-2025-social-welfare-office-sohayok-q12",
     "examId": "job-2025-social-welfare-office-sohayok",
     "subject": "general-knowledge",
-    "qno": 9,
+    "qno": 12,
     "marks": 5,
     "type": "short-qa",
     "question": "পূর্ণরূপ লিখুন:",
@@ -174,10 +220,10 @@
     ]
   },
   {
-    "id": "job-2025-social-welfare-office-sohayok-q10",
+    "id": "job-2025-social-welfare-office-sohayok-q13",
     "examId": "job-2025-social-welfare-office-sohayok",
     "subject": "general-knowledge",
-    "qno": 10,
+    "qno": 13,
     "marks": 15,
     "type": "short-qa",
     "question": "নিচের প্রশ্নগুলোর উত্তর দিন:",

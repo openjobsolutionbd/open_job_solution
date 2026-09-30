@@ -41,6 +41,9 @@ TOP_NEWS_OUTPUT_FILE = DOCS_DIR / "top-news-index.json"
 MCQ_DIR = DOCS_DIR / "mcq"
 MCQ_OUTPUT_FILE = DOCS_DIR / "mcq-index.json"
 
+NTRCA_DIR = DOCS_DIR / "ntrca"
+NTRCA_OUTPUT_FILE = DOCS_DIR / "ntrca-index.json"
+
 # TASK: প্রতিটা টপিকের জন্য আলাদা, সার্চ-ইঞ্জিন-বান্ধব একটা স্ট্যাটিক HTML
 # পাতা তৈরি হয় docs/topic/<slug>/index.html-এ। কারণ: মূল সাইট একটা single
 # page app (সব কিছু hash-এ, যেমন /#slug) — সার্চ ইঞ্জিন সাধারণত hash-এর
@@ -637,6 +640,104 @@ def compile_mcq():
     print(f"তৈরি হলো: {MCQ_OUTPUT_FILE} ({len(quiz_sets)} সেট, {total} প্রশ্ন)")
 
 
+NTRCA_SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
+NTRCA_Q_RE = re.compile(r"^প্র\.\s*(.+?)\s*$")
+NTRCA_A_RE = re.compile(r"^উ\.\s*(.+?)\s*$")
+
+
+def parse_ntrca_file(path):
+    """docs/ntrca/*.md (NTRCA বিষয়ভিত্তিক প্রশ্ন-উত্তর, প্রতি বিষয়ের একটা ফাইল)
+    থেকে ফ্রন্টম্যাটার + পর্ব-ভিত্তিক প্রশ্ন-উত্তরের তালিকা বের করে।
+
+    প্রত্যাশিত ফরম্যাট:
+      ---
+      title: দর্শন
+      last_updated: 2026-09
+      ---
+
+      ## পর্ব-৫ (সেপ্টেম্বর ২০২৬)
+
+      প্র. প্রশ্নের টেক্সট...
+      উ. উত্তরের টেক্সট...
+
+    docs/topics/-এর মতো কড়া ভ্যালিডেশনের আওতায় পড়ে না (MCQ আর্কাইভের
+    মতো নরম-ব্যর্থতা-সহনশীল) — প্যাটার্নে না মেলা লাইন নীরবে উপেক্ষা হয়,
+    বিল্ড থামে না।
+    """
+    text = path.read_text(encoding="utf-8").lstrip("\ufeff")
+    match = FRONTMATTER_RE.match(text)
+    if not match:
+        print(f"সতর্কতা: NTRCA ফাইল '{path.name}'-এ frontmatter পাওয়া যায়নি, বাদ দেওয়া হলো।", file=sys.stderr)
+        return None
+    try:
+        meta = parse_frontmatter_yaml(match.group(1), path)
+    except BuildError as e:
+        print(f"সতর্কতা: {e}", file=sys.stderr)
+        return None
+
+    body = match.group(2)
+    parts = []  # [{part_label, questions:[{q, a}]}]
+    current_part = None
+    pending_q = None
+
+    for raw_line in body.splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        m = NTRCA_SECTION_RE.match(line)
+        if m:
+            current_part = {"part_label": m.group(1).strip(), "questions": []}
+            parts.append(current_part)
+            pending_q = None
+            continue
+        m = NTRCA_Q_RE.match(line)
+        if m and current_part is not None:
+            pending_q = m.group(1)
+            continue
+        m = NTRCA_A_RE.match(line)
+        if m and current_part is not None and pending_q is not None:
+            current_part["questions"].append({"q": pending_q, "a": m.group(1)})
+            pending_q = None
+            continue
+
+    parts = [p for p in parts if p["questions"]]
+    if not parts:
+        return None
+
+    question_count = sum(len(p["questions"]) for p in parts)
+    return {
+        "slug": path.stem,
+        "title": meta.get("title", path.stem),
+        "last_updated": meta.get("last_updated", ""),
+        "parts": parts,
+        "question_count": question_count,
+    }
+
+
+def compile_ntrca():
+    """docs/ntrca/ ফোল্ডারের প্রতি-বিষয় .md ফাইল থেকে docs/ntrca-index.json
+    বানায় ("NTRCA শিক্ষক নিয়োগ (লিখিত) — বিষয়ভিত্তিক প্রশ্নপত্র" ট্যাবের
+    ডেটা-সোর্স)। MCQ আর্কাইভের মতোই নরম-ব্যর্থতা-সহনশীল — কোনো ফাইলে
+    সমস্যা হলে গোটা বিল্ড থামে না, শুধু সেই ফাইল/প্রশ্ন বাদ পড়ে।
+    """
+    if not NTRCA_DIR.exists():
+        print("তথ্য: docs/ntrca/ ফোল্ডার নেই, এই ফিচার বাদ দিয়ে বিল্ড চলবে।")
+        return
+
+    subjects = []
+    for path in sorted(NTRCA_DIR.glob("*.md")):
+        entry = parse_ntrca_file(path)
+        if entry:
+            subjects.append(entry)
+
+    NTRCA_OUTPUT_FILE.write_text(
+        json.dumps({"subjects": subjects}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    total = sum(s["question_count"] for s in subjects)
+    print(f"তৈরি হলো: {NTRCA_OUTPUT_FILE} ({len(subjects)} টি বিষয়, {total} প্রশ্ন)")
+
+
 def parse_frontmatter_yaml(block, path):
     """ফ্রন্টম্যাটার ব্লক real YAML দিয়ে পার্স করে (pyyaml আবশ্যক)।
     এতে ব্র্যাকেট-স্টাইল (tags: [a, b]) আর ব্লক-লিস্ট (tags:\n  - a\n  - b)
@@ -944,6 +1045,7 @@ def _main():
         sys.exit(1)
 
     compile_mcq()
+    compile_ntrca()
 
     stamp_service_worker()
     write_version_json()

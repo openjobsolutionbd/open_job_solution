@@ -5,6 +5,8 @@ Open Job Solution — Root Version Manager
 যেকোনো module থেকে নয়, ROOT folder থেকে চালান:
     python3 update_version.py           # auto patch increment (1.7.1 → 1.7.2)
     python3 update_version.py 1.8.0     # নির্দিষ্ট version set করুন
+    python3 update_version.py --check   # কিছু না বদলে শুধু যাচাই: সব জায়গায় version.txt-এর ভার্সনই আছে কিনা
+                                        # (অমিল/প্যাটার্ন-না-মেলা থাকলে exit 1 — CI-র validate জব এটা চালায়)
 
 এই script একসাথে করে:
     1. সব sw.js + app.js-এ version update
@@ -74,9 +76,69 @@ def git_stage_and_commit(new_tag):
 VERSION_FILE = ROOT / "_docs" / "version.txt"
 current = VERSION_FILE.read_text().strip() if VERSION_FILE.exists() else "1.7.1"
 
+CHECK_ONLY = "--check" in sys.argv
+args = [a for a in sys.argv[1:] if a != "--check"]
+
+# ── কোন ফাইলে কোন প্যাটার্নে ভার্সন লেখা আছে (একমাত্র তালিকা) ──
+# {tag} জায়গায় "v1.2.3" বসে। bump ও --check দুটোই এই একই তালিকা ব্যবহার করে,
+# তাই নতুন ফাইল যোগ করলে শুধু এখানে একটা লাইন যোগ করলেই দুই জায়গায় কাজ করবে।
+SW_PATTERN = (r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
+              "const CACHE_VERSION = CACHE_PREFIX + '{tag}'")
+APP_PATTERN = (r"const APP_VERSION = 'v[\d.]+'", "const APP_VERSION = '{tag}'")
+
+PATCH_SPECS = [
+    ("sw.js", *SW_PATTERN),
+    ("bcs-mcq/sw.js", *SW_PATTERN),
+    ("bcs-mcq/app.js", *APP_PATTERN),
+    ("mcq-job-solution/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/index.html", r"MCQ Job Solution · v[\d.]+", "MCQ Job Solution · {tag}"),
+    ("mcq-job-solution/nctb-mcq/index.html", r"NCTB MCQ · v[\d.]+", "NCTB MCQ · {tag}"),
+    ("mcq-job-solution/primary-mcq/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/primary-mcq/index.html", *APP_PATTERN),
+    ("mcq-job-solution/ministry-mcq/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/ministry-mcq/index.html", *APP_PATTERN),
+    ("written-exam/sw.js", *SW_PATTERN),
+    ("written-exam/index.html", *APP_PATTERN),
+    ("books/sw.js", *SW_PATTERN),
+    ("index.html", r"Open Job Solution · v[\d.]+", "Open Job Solution · {tag}"),
+]
+
+def plan_patches(tag):
+    """
+    সব ফাইলে আগে মেমোরিতে প্যাটার্ন বসিয়ে দেখে — এখনও ডিস্কে কিছু লেখে না।
+    return: (পরিকল্পনা [(path, নতুন_কনটেন্ট, বদলেছে_কিনা)], সমস্যার তালিকা)
+    """
+    plan, problems = [], []
+    for rel, pattern, template in PATCH_SPECS:
+        path = ROOT / rel
+        if not path.exists():
+            problems.append(f"  ❌  ফাইল পাওয়া যায়নি: {rel}")
+            continue
+        content = path.read_text(encoding="utf-8")
+        new_content, count = re.subn(pattern, template.replace("{tag}", tag), content)
+        if count == 0:
+            problems.append(f"  ❌  প্যাটার্ন মেলেনি: {rel}")
+            continue
+        plan.append((path, new_content, new_content != content))
+    return plan, problems
+
+# ── --check মোড: কিছু না বদলে শুধু যাচাই ─────────────────────────
+if CHECK_ONLY:
+    plan, problems = plan_patches(f"v{current}")
+    for path, _, changed in plan:
+        if changed:
+            problems.append(f"  ❌  ভার্সন অমিল (version.txt = {current}): {path.relative_to(ROOT)}")
+    if problems:
+        print(f"\n❌  ভার্সন সিঙ্ক যাচাই ব্যর্থ (version.txt = {current}):")
+        print("\n".join(problems))
+        print("\n    ঠিক করতে: python3 _dev/update_version.py " + current + "  (একই ভার্সন আবার সব জায়গায় বসাবে)")
+        sys.exit(1)
+    print(f"✅  সব {len(PATCH_SPECS)}টা জায়গায় ভার্সন v{current} — মিল আছে")
+    sys.exit(0)
+
 # ── Determine new version ──────────────────────────────────────
-if len(sys.argv) > 1:
-    new_ver = sys.argv[1].lstrip("v")
+if args:
+    new_ver = args[0].lstrip("v")
 else:
     parts = current.split(".")
     parts[-1] = str(int(parts[-1]) + 1)
@@ -85,67 +147,21 @@ else:
 new_tag = f"v{new_ver}"
 print(f"\n🔖  Version: {current}  →  {new_ver}\n")
 
+# ── আগে সব ফাইল যাচাই — একটাও সমস্যা থাকলে কিছুই না লিখে থামা ──
+# (আগে: সমস্যা থাকলেও বাকি ফাইল বদলে "Done" বলত, ফলে আধা-আধি ভার্সন তৈরি হতো)
+plan, problems = plan_patches(new_tag)
+if problems:
+    print("❌  কোনো ফাইল বদলানো হয়নি, কারণ নিচের সমস্যা আছে:")
+    print("\n".join(problems))
+    sys.exit(1)
+
 # ── Ensure git exists ──────────────────────────────────────────
 git_ok = ensure_git()
 
-# ── Patch all version strings ──────────────────────────────────
-PATCHES = [
-    (ROOT / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "bcs-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "bcs-mcq" / "app.js",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "index.html",
-     r"MCQ Job Solution · v[\d.]+",
-     f"MCQ Job Solution · {new_tag}"),
-    (ROOT / "mcq-job-solution" / "nctb-mcq" / "index.html",
-     r"NCTB MCQ · v[\d.]+",
-     f"NCTB MCQ · {new_tag}"),
-    (ROOT / "mcq-job-solution" / "primary-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "primary-mcq" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "ministry-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "ministry-mcq" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "written-exam" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "written-exam" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "books" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "index.html",
-     r"Open Job Solution · v[\d.]+",
-     f"Open Job Solution · {new_tag}"),
-]
-
-errors = []
-for filepath, pattern, replacement in PATCHES:
-    if not filepath.exists():
-        errors.append(f"  ⚠️  File not found: {filepath.relative_to(ROOT)}")
-        continue
-    content = filepath.read_text(encoding="utf-8")
-    new_content, count = re.subn(pattern, replacement, content)
-    if count == 0:
-        errors.append(f"  ⚠️  Pattern not matched: {filepath.relative_to(ROOT)}")
-        continue
-    filepath.write_text(new_content, encoding="utf-8")
-    print(f"  ✅  {filepath.relative_to(ROOT)}")
+# ── সব ঠিক থাকলে তবেই লেখা ─────────────────────────────────────
+for path, new_content, _ in plan:
+    path.write_text(new_content, encoding="utf-8")
+    print(f"  ✅  {path.relative_to(ROOT)}")
 
 VERSION_FILE.write_text(new_ver)
 print(f"  ✅  version.txt")
@@ -156,9 +172,5 @@ if git_ok:
 
 # ── Final summary ──────────────────────────────────────────────
 print()
-if errors:
-    print("⚠️  কিছু সমস্যা:")
-    for e in errors: print(e)
-else:
-    print(f"🎉  Done! সব file এখন {new_tag}")
-    print(f"     ZIP করুন: Open_Job_Solution-{new_tag}.zip")
+print(f"🎉  Done! সব file এখন {new_tag}")
+print(f"     ZIP করুন: Open_Job_Solution-{new_tag}.zip")

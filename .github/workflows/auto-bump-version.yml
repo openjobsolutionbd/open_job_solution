@@ -4,6 +4,13 @@ on:
   push:
     branches: [main]
 
+# অল্প সময়ে পরপর কয়েকটা কাজ গেলে একাধিক bump একই অস্থায়ী branch (bot/auto-bump-version)
+# নিয়ে ঝগড়া করত। এখন একবারে একটাই চলবে; অপেক্ষায় থাকা অনেকগুলোর মধ্যে শুধু সর্বশেষটা
+# টিকে থাকে — তাতে ক্ষতি নেই, কারণ প্রতিটা run সর্বশেষ main থেকেই ভার্সন বাড়ায়।
+concurrency:
+  group: auto-bump-version
+  cancel-in-progress: false
+
 jobs:
   bump-version:
     if: "!contains(github.event.head_commit.message, 'chore: bump version to')"

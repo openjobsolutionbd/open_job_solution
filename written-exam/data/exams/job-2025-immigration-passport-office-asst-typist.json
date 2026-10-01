@@ -213,7 +213,7 @@
       {
         "label": "b",
         "original": "I said to her, \\\"He will not come\\\".",
-        "changed": "I told her that he would not go."
+        "changed": "I told her that he would not come."
       },
       {
         "label": "c",
@@ -287,10 +287,6 @@
       [
         "Sychology",
         "Psychology"
-      ],
-      [
-        "Pediatric",
-        "Paediatric"
       ]
     ]
   },

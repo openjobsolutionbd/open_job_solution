@@ -940,5 +940,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 21,
   },
+  {
+    id: "job-2025-supreme-court-data-entry",
+    ministry: "বাংলাদেশ সুপ্রীম কোর্ট",
+    post: "ডাটা এন্ট্রি কন্ট্রোল অপারেটর",
+    date: "2025-04-19",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 15,
+  },
+  {
+    id: "job-2025-tea-board-office-shohokari",
+    ministry: "বাংলাদেশ চা বোর্ড",
+    post: "অফিস সহকারী কাম-কম্পিউটার অপারেটর",
+    date: "2025-04-18",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 70,
+    totalQuestions: 15,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

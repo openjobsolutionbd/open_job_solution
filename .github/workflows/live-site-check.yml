@@ -1,0 +1,82 @@
+name: Live Site Version Check
+
+# উদ্দেশ্য: রিপোতে ক্যাশ-ভার্সন ঠিক থাকলেও Cloudflare deploy আটকে/ব্যর্থ হলে লাইভ সাইট পুরনো ফাইল
+# (এবং cache-first প্রশ্ন-উত্তরের পুরনো ডেটা) দেখাতে থাকে — এটা কেউ টের পায় না। এই workflow
+# লাইভ সাইট থেকে সব ভার্সন-ফাইল এনে রিপোর _docs/version.txt-এর সাথে মেলায়; না মিললে Issue খোলে,
+# মিললে (আগে খোলা থাকলে) নিজে বন্ধ করে।
+#
+# কোনো গোপন চাবি লাগে না — শুধু সাধারণ ওয়েব-অনুরোধ + github.token (Issue খোলা/বন্ধ)।
+# current-affairs-health-check.yml-এর সাথে পার্থক্য: ওটা current-affairs/docs-এর তৈরি-করা ফাইলের
+# রিগ্রেশন দেখে; এটা লাইভ সাইটের ভার্সন রিপোর সাথে মেলে কিনা দেখে।
+
+on:
+  schedule:
+    # প্রতি ৩ ঘণ্টায় একবার (UTC ০০/০৩/০৬/…)
+    - cron: "17 */3 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: live-site-check
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  LIVE_URL: https://ojsapp.pages.dev   # রিপোর homepage-এ থাকা লাইভ ঠিকানা; বদলালে শুধু এখানে বদলান
+
+jobs:
+  live-version:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # সদ্য merge হওয়া কাজের deploy হতে কয়েক মিনিট লাগে — প্রথমবার না মিললে ভুল সতর্কবার্তা এড়াতে
+      # ৩ মিনিট অন্তর মোট ৪ বার (প্রায় ৯ মিনিট) চেষ্টা করে, তারপরই ব্যর্থ ধরে।
+      - name: লাইভ সাইটের ভার্সন রিপোর সাথে মেলানো
+        id: check
+        run: |
+          for attempt in 1 2 3 4; do
+            echo "── চেষ্টা $attempt/4 ──"
+            if python3 _dev/update_version.py --check-live "$LIVE_URL" | tee /tmp/live_report.txt; then
+              exit 0
+            fi
+            [ "$attempt" -lt 4 ] && sleep 180
+          done
+          exit 1
+
+      - name: না মিললে Issue খোলা (আগে খোলা থাকলে শুধু কমেন্ট)
+        if: failure() && steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="🌐 লাইভ সাইট রিপোর ভার্সনের সাথে মেলে না (deploy আটকে থাকতে পারে)"
+          REPORT=$(cat /tmp/live_report.txt 2>/dev/null | head -30)
+          EXISTING=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title \
+            --jq "[.[] | select(.title == \"$TITLE\")] | .[0].number // empty")
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" -R "$GITHUB_REPOSITORY" --body "$(printf 'আবার একই সমস্যা পাওয়া গেছে: %s\n\n```\n%s\n```' "$RUN_URL" "$REPORT")"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "$TITLE" --body "$(printf 'রিপোতে নতুন ভার্সন থাকলেও লাইভ সাইটে (%s) পুরনো ভার্সন চলছে, বা কিছু ফাইল আনা যায়নি। ৯ মিনিট অপেক্ষা করে ৪ বার চেষ্টার পরও একই।\n\n**ফল:** ব্যবহারকারীরা পুরনো ফাইল ও পুরনো প্রশ্ন-উত্তর ডেটা দেখতে পারে।\n**সম্ভাব্য কারণ:** Cloudflare Pages-এর deploy ব্যর্থ বা আটকে আছে — Cloudflare dashboard → Pages → ojsapp → Deployments দেখুন।\n\nসর্বশেষ run: %s\n\n```\n%s\n```\n\nঠিক হয়ে পরের পরীক্ষা সফল হলে এই Issue নিজে থেকে বন্ধ হবে।' "$LIVE_URL" "$RUN_URL" "$REPORT")"
+          fi
+
+      - name: মিলে গেলে পুরনো Issue বন্ধ করা
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="🌐 লাইভ সাইট রিপোর ভার্সনের সাথে মেলে না (deploy আটকে থাকতে পারে)"
+          for N in $(gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$TITLE\") | .number"); do
+            gh issue close "$N" -R "$GITHUB_REPOSITORY" --comment "✅ লাইভ সাইট আবার রিপোর ভার্সনের সাথে মিলেছে ($RUN_URL) — নিজে থেকে বন্ধ করা হলো।"
+          done

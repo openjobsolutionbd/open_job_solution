@@ -121,6 +121,34 @@ function checkDuplicateOptions(loc, options) {
   });
 }
 
+// ── লেখার "স্বাস্থ্য" যাচাই: কপি-পেস্টে ঢোকা অদৃশ্য/ভাঙা অক্ষর ও ভুলে-থাকা-টেক্সট ──
+// কেন: PDF/Word/ওয়েব থেকে কপি করলে চোখে-না-পড়া অক্ষর (zero-width space, NBSP) ঢুকে যায়;
+// তখন হুবহু-মেলানোর যাচাই (ডুপ্লিকেট, answer==option) ফাঁকি খায় আর পর্দায় অদ্ভুত ফাঁক/ভাঙা দেখায়।
+// ZWJ/ZWNJ (U+200D/U+200C) ইচ্ছে করে বাদ — বাংলা যুক্তাক্ষর/র‍্য-এ এগুলো বৈধ।
+// ডুপ্লিকেট-প্রশ্নের লেখা নিয়ে আলাদা যাচাই বসানো হয়নি: "নিম্নলিখিত প্রশ্নের উত্তর লিখুন" জাতীয়
+// শিরোনাম একই পরীক্ষায় বৈধভাবে একাধিকবার আসে, তাই ভুল সতর্কবার্তা আসত।
+const HYGIENE_RULES = [
+  [/[\u200B\uFEFF]/, 'অদৃশ্য zero-width অক্ষর (U+200B/U+FEFF) আছে — কপি-পেস্টে ঢুকেছে'],
+  [/\u00A0/, 'non-breaking space (U+00A0) আছে — সাধারণ ফাঁকা দিন'],
+  [/[\u202A-\u202E\u2066-\u2069\u2028\u2029]/, 'লেখার দিক-নিয়ন্ত্রণ/লাইন-বিভাজক অক্ষর আছে'],
+  [/\uFFFD/, 'ভাঙা অক্ষর (�) আছে — এনকোডিং নষ্ট হয়েছে'],
+  [/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/, 'নিয়ন্ত্রণ-অক্ষর (control character) আছে'],
+  [/\b(?:TODO|FIXME|XXX)\b|lorem ipsum|\?\?\?|\bundefined\b|\[object Object\]|\bNaN\b/i, 'ভুলে-থাকা placeholder/ডিবাগ লেখা আছে (TODO, ???, undefined ইত্যাদি)'],
+  [/<br\s*\/?>|&nbsp;|&amp;|&lt;|&gt;/i, 'HTML-এর টুকরো (<br>, &nbsp; ইত্যাদি) লেখায় ঢুকে গেছে'],
+  [/\\n/, 'লেখার ভেতরে আক্ষরিক "\\n" আছে (আসল লাইন-ভাঙা হওয়ার কথা ছিল)'],
+];
+function checkTextHygiene(loc, value, key = '') {
+  if (typeof value === 'string') {
+    for (const [re, msg] of HYGIENE_RULES) {
+      if (re.test(value)) issues.push(`[${loc}] "${key}" — ${msg}`);
+    }
+  } else if (Array.isArray(value)) {
+    value.forEach((v, i) => checkTextHygiene(loc, v, `${key}[${i}]`));
+  } else if (value && typeof value === 'object') {
+    Object.entries(value).forEach(([k, v]) => checkTextHygiene(loc, v, key ? `${key}.${k}` : k));
+  }
+}
+
 // ── ১. bcs-mcq/data/*.js ──────────────────────────────────
 {
   const dir = path.join(ROOT, 'bcs-mcq', 'data');
@@ -136,6 +164,7 @@ function checkDuplicateOptions(loc, options) {
     if (!Array.isArray(arr)) return;
     arr.forEach((q, idx) => {
       const loc = `bcs-mcq/data/${f}#${idx} (id=${q.id})`;
+      checkTextHygiene(loc, q);
       if (!q.id) issues.push(`[${loc}] id নেই`);
       if (!q.question) issues.push(`[${loc}] question নেই`);
       if (!q.explanation) issues.push(`[${loc}] ব্যাখ্যা (explanation) নেই`);
@@ -160,6 +189,7 @@ function checkDuplicateOptions(loc, options) {
     Object.entries(DATA).forEach(([subj, arr]) => {
       arr.forEach((q, idx) => {
         const loc = `primary-mcq/${subj}#${idx} (id=${q.id})`;
+        checkTextHygiene(loc, q);
         if (!q.id) issues.push(`[${loc}] id নেই`);
         if (!q.q) issues.push(`[${loc}] প্রশ্নের লেখা (q) নেই`);
         checkOptionsBased(loc, q, 'options', 'answer', 4);
@@ -196,6 +226,7 @@ function checkDuplicateOptions(loc, options) {
 
     JOBS.forEach((q, idx) => {
       const loc = `written-exam#${idx} (id=${q.id}, type=${q.type})`;
+      checkTextHygiene(loc, q);
       if (!q.id) issues.push(`[${loc}] id নেই`);
       if (!q.question) issues.push(`[${loc}] question নেই`);
       if (!q.examId) issues.push(`[${loc}] examId নেই`);
@@ -355,6 +386,7 @@ function checkDuplicateOptions(loc, options) {
 
       arr.forEach((q, idx) => {
         const loc = `ministry-mcq/${f}#${idx} (id=${q.id})`;
+        checkTextHygiene(loc, q);
         if (!q.id) issues.push(`[${loc}] id নেই`);
         if (!q.q) issues.push(`[${loc}] প্রশ্নের লেখা (q) নেই`);
         if (!q.answer) issues.push(`[${loc}] answer নেই`);

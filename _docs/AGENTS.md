@@ -131,6 +131,7 @@ PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস 
 | `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite। ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`) পড়ে থাকায় কখনো চলেনি — এই migration-বাগ ঠিক করে রুটে ফেরানো হয়েছে |
 | `.github/workflows/update-wiki.yml` | current-affairs-এ push হলে generated output (topics-index.json, sw.js, version.json ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্ন অনুসরণ করে যেহেতু main branch-protected)→merge করে। এটাও একই migration-বাগে ভুল পাথে পড়ে ছিল, রুটে ফেরানো হয়েছে |
 | `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
+| `.github/workflows/live-site-check.yml` | প্রতি ৩ ঘণ্টায় লাইভ সাইট (`ojsapp.pages.dev`) থেকে সব ভার্সন-ফাইল এনে `_docs/version.txt`-এর সাথে মেলায় (`update_version.py --check-live`); deploy আটকালে Issue খোলে, ঠিক হলে নিজে বন্ধ করে। কোনো গোপন চাবি লাগে না |
 | `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
 | `.github/workflows/written-exam-currency.yml` | সাপ্তাহিক + topics বদলালে written-exam-এর `data/current-status.json` নজরে রাখে (`written-exam/check_currency.js`); কারেন্ট অ্যাফেয়ার্সের "বর্তমান তথ্য" বদলালে বা রিভিউ-তারিখ পেরোলে Issue খোলে, PR-এ শুধু কাঠামো যাচাই করে; উত্তর নিজে বদলায় না |
 

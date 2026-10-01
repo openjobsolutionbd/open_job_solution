@@ -7,6 +7,9 @@ Open Job Solution — Root Version Manager
     python3 update_version.py 1.8.0     # নির্দিষ্ট version set করুন
     python3 update_version.py --check   # কিছু না বদলে শুধু যাচাই: সব জায়গায় version.txt-এর ভার্সনই আছে কিনা
                                         # (অমিল/প্যাটার্ন-না-মেলা থাকলে exit 1 — CI-র validate জব এটা চালায়)
+    python3 update_version.py --check-live https://ojsapp.pages.dev
+                                        # লাইভ সাইট থেকে একই ফাইলগুলো এনে দেখে সেখানে version.txt-এর ভার্সনই
+                                        # চলছে কিনা (deploy আটকালে/ব্যর্থ হলে ধরা পড়ে; live-site-check.yml চালায়)
 
 এই script একসাথে করে:
     1. সব sw.js + app.js-এ version update
@@ -15,7 +18,9 @@ Open Job Solution — Root Version Manager
 (job-app-MD.md-এ আর কোনো changelog রো যোগ হয় না — routine bump-এর ইতিহাস git log ও version.txt-এ)
 """
 
-import re, sys, os, subprocess
+import re, sys, os, subprocess, time
+import urllib.error
+import urllib.request
 from pathlib import Path
 from datetime import datetime
 
@@ -77,7 +82,7 @@ VERSION_FILE = ROOT / "_docs" / "version.txt"
 current = VERSION_FILE.read_text().strip() if VERSION_FILE.exists() else "1.7.1"
 
 CHECK_ONLY = "--check" in sys.argv
-args = [a for a in sys.argv[1:] if a != "--check"]
+args = [a for a in sys.argv[1:] if a not in ("--check", "--check-live")]
 
 # ── কোন ফাইলে কোন প্যাটার্নে ভার্সন লেখা আছে (একমাত্র তালিকা) ──
 # {tag} জায়গায় "v1.2.3" বসে। bump ও --check দুটোই এই একই তালিকা ব্যবহার করে,
@@ -121,6 +126,45 @@ def plan_patches(tag):
             continue
         plan.append((path, new_content, new_content != content))
     return plan, problems
+
+# ── --check-live মোড: লাইভ সাইটে আসলে কোন ভার্সন চলছে তা যাচাই ─────
+# রিপোতে ভার্সন ঠিক থাকলেও Cloudflare deploy আটকে/ব্যর্থ হলে ব্যবহারকারীরা পুরনো ফাইল ও পুরনো ডেটা পায়।
+# এই মোড একই PATCH_SPECS-এর ফাইলগুলো লাইভ থেকে এনে সেখানকার ভার্সন version.txt-এর সাথে মেলায়।
+LIVE_ARGS = [a for a in sys.argv[1:] if a == "--check-live"]
+if LIVE_ARGS:
+    rest = args[:]  # --check ছাড়া বাকি আর্গুমেন্ট
+    if not rest or not rest[0].startswith("http"):
+        print("ব্যবহার: python3 _dev/update_version.py --check-live https://<সাইটের-ঠিকানা>")
+        sys.exit(2)
+    base = rest[0].rstrip("/") + "/"
+    expected = f"v{current}"
+    stamp = int(time.time())
+    problems, ok = [], 0
+    for rel, pattern, _tmpl in PATCH_SPECS:
+        url = f"{base}{rel}?_={stamp}"   # unique query: Cloudflare/ব্রাউজারের ক্যাশ এড়াতে
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (OJS live-version check)", "Cache-Control": "no-cache"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                body = resp.read().decode("utf-8", errors="replace")
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            problems.append(f"  ❌  লাইভ থেকে আনা যায়নি: {rel} ({e})")
+            continue
+        m = re.search(pattern, body)
+        if not m:
+            problems.append(f"  ❌  লাইভ ফাইলে ভার্সন-প্যাটার্ন পাওয়া যায়নি: {rel}")
+            continue
+        found = re.search(r"v[\d.]+", m.group(0))
+        found = found.group(0) if found else "?"
+        if found != expected:
+            problems.append(f"  ❌  লাইভে {found}, রিপোতে {expected}: {rel}")
+        else:
+            ok += 1
+    if problems:
+        print(f"\n❌  লাইভ সাইট ({base}) রিপোর সাথে মেলে না — রিপোতে {expected}, ঠিক {ok}/{len(PATCH_SPECS)}:")
+        print("\n".join(problems))
+        sys.exit(1)
+    print(f"✅  লাইভ সাইটের সব {len(PATCH_SPECS)}টা জায়গায় ভার্সন {expected} — রিপোর সাথে মিল আছে")
+    sys.exit(0)
 
 # ── --check মোড: কিছু না বদলে শুধু যাচাই ─────────────────────────
 if CHECK_ONLY:

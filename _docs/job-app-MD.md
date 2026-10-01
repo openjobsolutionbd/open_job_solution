@@ -1,9 +1,9 @@
 # BCS-MCQ-Project — Master Reference Document
 
-> **আর্কিটেকচার/কনটেন্ট ভার্সন:** v1.22 (সর্বশেষ অর্থপূর্ণ পরিবর্তন — Current Affairs সেকশন যোগ)
-> **সর্বশেষ যাচাই/সম্পাদনা:** ৩০ সেপ্টেম্বর ২০২৬
-> **উদ্দেশ্য:** এই ডকুমেন্ট যেকোনো AI-কে দিলে সে প্রজেক্টের সম্পূর্ণ কাঠামো বুঝতে পারবে।
-> **নোট:** এই ডকুমেন্ট ৫টা ফাইলে ভাগ করা — এই মূল ফাইলে সবসময়-পড়ার-মতো অংশ (নিষেধাজ্ঞা, চেকলিস্ট, পরিচিতি, ফোল্ডার স্ট্রাকচার, সাধারণ নিয়ম), বাকি অংশ `_docs/job-app/`-এ। **কোন কাজে কোন ফাইল পড়তে হবে তা নিচের সূচিতে।** Version History আলাদা ফাইলে (`job-app/version-history.md`); routine cache/version bump সেখানে লেখা হয় না (`git log` ও `_docs/version.txt`-এ)। প্রজেক্টের গিট/পুশ/মার্জ ওয়ার্কফ্লো নিয়মের জন্য `_docs/AGENTS.md` দেখুন — এই দুই ডকুমেন্ট একে অপরের পরিপূরক।
+> **Architecture/content version:** v1.22 (last meaningful change — Current Affairs section added)
+> **Last verified/edited:** 2026-10-01
+> **Purpose:** give this document to any AI and it can understand the project's complete structure.
+> **Note:** this document is split into 5 files — this main file holds the always-read parts (prohibitions, checklist, overview, folder structure, general rules); the rest lives in `_docs/job-app/`. **The index below says which file to read for which task.** Version History is in its own file (`job-app/version-history.md`); routine cache/version bumps are not recorded there (they are in `git log` and `_docs/version.txt`). For the git/push/merge workflow rules see `_docs/AGENTS.md` — the two documents complement each other. **Language:** this main file is in English to save tokens; the prohibition block, the checklist and the `_docs/job-app/` parts stay in Bengali. Literal Bengali data values/UI strings (subject names, `⬅️ হোমে ফিরুন`, etc.) must stay Bengali.
 
 ---
 
@@ -41,6 +41,8 @@ Project Owner দেখে অনুমোদন দেয়
         ↓
 পুরানো version আর্কাইভ হয়
 ```
+
+> ✏️ **মালিক-অনুমোদিত সম্পাদনা (১ অক্টোবর ২০২৬ যোগ করা):** Project Owner যদি চ্যাটে স্পষ্টভাবে নির্দেশ দেন (যেমন "এই ডকুমেন্ট সম্পাদনা/অনুবাদ করো"), তাহলে AI সরাসরি এই ফাইলেই সেই নির্দিষ্ট পরিবর্তন করতে পারবে এবং `job-app/version-history.md`-এ সারি যোগ করতে পারবে। **এই repo-তে `job-app-MD*.md` নামে একটাই ফাইল থাকে** (একাধিক হলে CI আটকায়; ইতিহাস git-এ), তাই উপরের "নতুন ফাইলে/পুরানো version আর্কাইভ" ধাপ এবং নিচের চেকলিস্টের `job-app-vX.X.md` নাম-নিয়ম এখন প্রযোজ্য নয় — সেটা সরাসরি এই ফাইলে সম্পাদনা দিয়ে হয়। তবে নিজের উদ্যোগে, "উন্নতির নামে" বা মালিকের নির্দেশের বাইরে কোনো নিয়ম যোগ/বদল/মোছা তখনও নিষিদ্ধ।
 
 > 🔒 **এই নিষেধাজ্ঞা ব্লকটি কখনো সরানো যাবে না বা পরিবর্তন করা যাবে না।**
 > যেকোনো AI যদি এই নিয়ম লঙ্ঘন করে, সেটি Project Owner-এর বিশ্বাসঘাতকতা।
@@ -87,151 +89,151 @@ Project Owner দেখে অনুমোদন দেয়
 
 ---
 
-## 📑 ডকুমেন্ট-সূচি — কোন কাজে কোন ফাইল পড়বেন (বাধ্যতামূলক)
+## 📑 Document index — which file to read for which task (mandatory)
 
-এই মূল ফাইলের সব অংশ (নিষেধাজ্ঞা, চেকলিস্ট, §১, §২, §১০–§১৪) **সব কাজেই** পড়তে হবে। নিচের ফাইলগুলো **কাজ অনুযায়ী** পড়ুন — সংশ্লিষ্ট ফাইল না পড়ে সেই ধরনের কাজ শুরু করা যাবে না। সেকশন নম্বর সব ফাইলে অভিন্ন, তাই "Section ৬ দেখুন" লেখা থাকলে নিচের টেবিল থেকে ফাইল খুঁজে নিন।
+Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — do not start that kind of task without reading the matching file. Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
 
-| ফাইল | কোন সেকশন | কখন পড়বেন |
-|------|-----------|-------------|
-| `_docs/job-app-MD.md` (এই ফাইল) | নিষেধাজ্ঞা, চেকলিস্ট, §১, §২, §১০, §১১, §১২, §১৩, §১৪ | **সবসময়** |
-| [`job-app/written-exam-data.md`](./job-app/written-exam-data.md) | §৩, §৪, §৫, §৬, §৭ | `written-exam/`-এ এক্সাম/প্রশ্ন যোগ বা সংশোধন; id বা `examId` নিয়ে যেকোনো কাজ |
-| [`job-app/mcq-sections.md`](./job-app/mcq-sections.md) | §৫-ক, §৮, §৯, §৯-ক | `bcs-mcq/`, `primary-mcq/`, `ministry-mcq/`-এ প্রশ্ন যোগ বা সংশোধন |
-| [`job-app/topics-and-roadmap.md`](./job-app/topics-and-roadmap.md) | §১৫, §১৬, §১৭ | প্রশ্নে `topic` দেওয়ার সময়; `validateQuestion()` বা Automation App নিয়ে কাজ |
-| [`job-app/version-history.md`](./job-app/version-history.md) | Version History | শুধু নতুন অর্থপূর্ণ পরিবর্তনের রো যোগ করার সময় |
+| File | Sections | Read when |
+|------|----------|-----------|
+| `_docs/job-app-MD.md` (this file) | prohibitions, checklist, §১, §২, §১০, §১১, §১২, §১৩, §১৪ | **always** |
+| [`job-app/written-exam-data.md`](./job-app/written-exam-data.md) | §৩, §৪, §৫, §৬, §৭ | adding or fixing exams/questions in `written-exam/`; any work involving ids or `examId` |
+| [`job-app/mcq-sections.md`](./job-app/mcq-sections.md) | §৫-ক, §৮, §৯, §৯-ক | adding or fixing questions in `bcs-mcq/`, `primary-mcq/`, `ministry-mcq/` |
+| [`job-app/topics-and-roadmap.md`](./job-app/topics-and-roadmap.md) | §১৫, §১৬, §১৭ | giving a question a `topic`; working on `validateQuestion()` or the Automation App |
+| [`job-app/version-history.md`](./job-app/version-history.md) | Version History | only when adding a row for a meaningful change |
 
-> **ভাগ করা ফাইল বদলালে:** `_dev/check_docs_consistency.js` (CI-র required check) নিশ্চিত করে — `_docs/job-app/`-এ ঠিক উপরের ৪টা ফাইলই আছে, প্রতিটা সেকশন-শিরোনাম মোট ঠিক একবার আছে (কোনোটা হারায়নি/ডুপ্লিকেট হয়নি), এবং প্রতিটা ফাইল এই সূচিতে উল্লিখিত। নতুন অংশ-ফাইল বানাতে হলে স্ক্রিপ্টের `PARTS` তালিকা ও এই সূচি একসাথে আপডেট করুন।
-
----
-
-## ১. প্রজেক্ট পরিচিতি
-
-**অ্যাপের নাম: Open Job Solution**
-
-এটি বাংলাদেশের চাকরি পরীক্ষার প্রস্তুতির একটি ওয়েব অ্যাপ।
-Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency নেই।
-
-রুটে (`/`) একটা হোম পেজ থাকে — সেখান থেকে তিনটা সেকশনে যাওয়া যায়:
-
-| অ্যাপ | ফোল্ডার | কাজ |
-|-------|---------|-----|
-| BCS MCQ | `/bcs-mcq/` | MCQ প্র্যাকটিস |
-| MCQ Job Solution (হাব) | `/mcq-job-solution/` | তিনটা সাব-সেকশনের প্রবেশদ্বার (নিচের তিনটা) |
-| ↳ Primary MCQ | `/mcq-job-solution/primary-mcq/` | প্রাথমিক পরীক্ষার MCQ |
-| ↳ NCTB MCQ | `/mcq-job-solution/nctb-mcq/` | NCTB পাঠ্যবইভিত্তিক MCQ (আপাতত "শীঘ্রই আসছে" পেজ) |
-| ↳ বিভিন্ন মন্ত্রণালয়ের MCQ | `/mcq-job-solution/ministry-mcq/` | মন্ত্রণালয়/বছর ফিল্টারসহ নিয়োগ পরীক্ষার MCQ সমাধান |
-| Written Exam | `/written-exam/` | লিখিত পরীক্ষার প্রশ্নব্যাংক |
-
-### 🔒 মূল নিয়ম — সেকশন স্বাধীনতা (Section Independence)
-
-তিনটা সেকশন **সম্পূর্ণ স্বাধীন**। একটা সেকশন আরেকটার উপর নির্ভর করবে না।
-
-- প্রতিটা সেকশনের **নিজস্ব** `style.css`, `sw.js` থাকবে — কোনো ফাইল শেয়ার হবে না
-- প্রতিটা সেকশন নিজের ডিজাইন, রং, layout, ও নিয়মে চলবে — অন্য সেকশনের সাথে মেলাতে হবে না
-- প্রতিটা সেকশনের ডেটা ফরম্যাট আলাদা হতে পারে (সেকশন ৮ ও ৯ দেখুন) — এটা bug নয়, ইচ্ছাকৃত সিদ্ধান্ত
-- একটা সেকশন এডিট করার সময় AI অন্য সেকশনের ফাইল ছোঁবে না, এবং অন্য সেকশনের convention অনুমান করে বসাবে না
-- শুধু **হোম পেজে ফেরার link** (`⬅️ হোমে ফিরুন` প্যাটার্ন) প্রতিটা সেকশনে বাধ্যতামূলক — এটাই একমাত্র common জিনিস
-
-### 📲 PWA নিয়ম — একটাই PWA
-
-সেকশন স্বাধীন হলেও, **পুরো অ্যাপ মিলে একটাই PWA** — নাম "Open Job Solution"। তিনটা আলাদা PWA না।
-
-| ফাইল | কোথায় | কাজ |
-|------|--------|-----|
-| `manifest.json` | **শুধু root-এ** (`/manifest.json`) | App name, icon, install prompt — একমাত্র উৎস |
-| `sw.js` (root) | `/sw.js` | শুধু হোম পেজ cache করে, scope `/` |
-| `sw.js` (প্রতি সেকশনে) | `/bcs-mcq/sw.js` ইত্যাদি | নিজের ফোল্ডারের জন্য আলাদা scope — অফলাইন কাজ চালায়, কিন্তু কোনো manifest.json নেই, তাই আলাদা install prompt আসবে না |
-
-কোনো সেকশনের `index.html`-এ `<link rel="manifest">` থাকবে না — শুধু root `index.html`-এ থাকবে।
+> **When you change the split files:** `_dev/check_docs_consistency.js` (a required CI check) verifies that `_docs/job-app/` contains exactly the 4 files above, that every section heading appears exactly once overall (nothing lost, nothing duplicated), and that every file is mentioned in this index. To add a new part file, update the script's `PARTS` list and this index together.
 
 ---
 
-## ২. সম্পূর্ণ ফোল্ডার স্ট্রাকচার
+## ১. Project overview
+
+**App name: Open Job Solution**
+
+A web app for preparing for Bangladesh job exams.
+Hosted on Cloudflare Pages. No GitHub dependency.
+
+The root (`/`) has a home page — from it you can reach these sections:
+
+| App | Folder | Purpose |
+|-----|--------|---------|
+| BCS MCQ | `/bcs-mcq/` | MCQ practice |
+| MCQ Job Solution (hub) | `/mcq-job-solution/` | Entry point to three sub-sections (the next three rows) |
+| ↳ Primary MCQ | `/mcq-job-solution/primary-mcq/` | Primary-exam MCQs |
+| ↳ NCTB MCQ | `/mcq-job-solution/nctb-mcq/` | MCQs based on NCTB textbooks (for now just a "শীঘ্রই আসছে" / coming-soon page) |
+| ↳ বিভিন্ন মন্ত্রণালয়ের MCQ (MCQs of various ministries) | `/mcq-job-solution/ministry-mcq/` | Recruitment-exam MCQ solutions with ministry/year filters |
+| Written Exam | `/written-exam/` | Written-exam question bank |
+
+### 🔒 Core rule — Section Independence
+
+The three sections are **completely independent**. One section must not depend on another.
+
+- Each section has **its own** `style.css` and `sw.js` — no file is shared
+- Each section follows its own design, colors, layout and rules — they need not match other sections
+- Each section's data format may differ (see sections ৮ and ৯) — this is not a bug, it is a deliberate decision
+- When editing one section, the AI must not touch another section's files, and must not guess another section's conventions
+- Only the **link back to the home page** (the `⬅️ হোমে ফিরুন` pattern) is mandatory in every section — it is the one common thing
+
+### 📲 PWA rule — a single PWA
+
+Although the sections are independent, **the whole app is one single PWA** — named "Open Job Solution". Not three separate PWAs.
+
+| File | Where | Purpose |
+|------|-------|---------|
+| `manifest.json` | **root only** (`/manifest.json`) | App name, icon, install prompt — the only source |
+| `sw.js` (root) | `/sw.js` | Caches only the home page, scope `/` |
+| `sw.js` (in each section) | `/bcs-mcq/sw.js` etc. | A separate scope for its own folder — runs offline, but there is no manifest.json there, so no separate install prompt appears |
+
+No section's `index.html` may contain `<link rel="manifest">` — only the root `index.html` has it.
+
+---
+
+## ২. Complete folder structure
 
 ```
-📂 BCS-MCQ-Project              ← শুধু এই ফোল্ডার Cloudflare-এ আপলোড হয়
+📂 BCS-MCQ-Project              ← only this folder is uploaded to Cloudflare
 │
-├── 📄 index.html               ← হোম পেজ (সেকশন বাছাই)
-├── 📄 manifest.json            ← ★ একমাত্র manifest — "Open Job Solution" PWA
-├── 📄 sw.js                    ← root SW, শুধু হোম পেজ cache করে (scope: /)
+├── 📄 index.html               ← home page (section chooser)
+├── 📄 manifest.json            ← ★ the only manifest — the "Open Job Solution" PWA
+├── 📄 sw.js                    ← root SW, caches only the home page (scope: /)
 ├── 📄 _headers
 ├── 📄 _redirects
 │
-├── 📁 bcs-mcq/                  ← সেকশন ১
+├── 📁 bcs-mcq/                  ← section 1
 │   ├── index.html / app.js / style.css / sw.js / version.txt
 │   └── 📁 data/                 (science.js, computer.js, geography.js, bangla.js,
 │                                  english.js, bangladesh.js, international.js,
 │                                  math.js, mental.js, ethics.js)
 │
-├── 📁 mcq-job-solution/         ← সেকশন ২ (হাব — ভেতরে তিনটা সাব-সেকশন)
-│   ├── index.html / sw.js       (হাব পেজ; sw.js হাব ও nctb-mcq/ পেজ cache করে)
-│   ├── 📁 primary-mcq/          ← আগে root-এর primary-mcq/ ছিল; পুরোপুরি এখানে ঢুকে গেছে
+├── 📁 mcq-job-solution/         ← section 2 (hub — three sub-sections inside)
+│   ├── index.html / sw.js       (hub page; sw.js caches the hub and the nctb-mcq/ page)
+│   ├── 📁 primary-mcq/          ← used to be primary-mcq/ at the root; now fully moved in here
 │   │   ├── index.html / style.css / sw.js
 │   │   └── 📁 data/
-│   │       └── data.js          ← ⚠️ root-এ সরাসরি data.js না, data/ সাবফোল্ডারে
-│   ├── 📁 nctb-mcq/             (আপাতত শুধু "শীঘ্রই আসছে" index.html)
-│   └── 📁 ministry-mcq/         ← "বিভিন্ন মন্ত্রণালয়ের MCQ" (written-exam-এর মতো তালিকা + ফিল্টার)
+│   │       └── data.js          ← ⚠️ not data.js directly at the root, but in the data/ subfolder
+│   ├── 📁 nctb-mcq/             (for now just a "শীঘ্রই আসছে" / coming-soon index.html)
+│   └── 📁 ministry-mcq/         ← "বিভিন্ন মন্ত্রণালয়ের MCQ" (a list + filters, like written-exam)
 │       ├── index.html / style.css / sw.js / mcq-renderer.js
-│       ├── exam-archive.js      ← পরীক্ষার তালিকা (ministry/post/date/totalQuestions)
+│       ├── exam-archive.js      ← exam list (ministry/post/date/totalQuestions)
 │       └── 📁 data/exams/<examId>.json
 │
-├── 📁 written-exam/             ← সেকশন ৩
+├── 📁 written-exam/             ← section 3
 │   ├── index.html / style.css / sw.js / renderer.js
 │   ├── exam-archive.js
-│   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
-│   ├── load_exams.js            ← exams/*.json লোড+মার্জ করার শেয়ার্ড helper (script-দের জন্য)
-│   ├── check_bugs.js            ← ডেটা বাগ-চেকার (advisory, CI-তে required না)
-│   ├── check-spelling.js        ← বাংলা spellcheck (advisory, CI-তে required না)
-│   ├── generate_index.js        ← EXAM_INDEX.md রিজেনারেট করে
-│   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
-│       └── 📁 exams/            ← ★ একমাত্র ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
-│                                  (ব্রাউজার সরাসরি এখান থেকেই fetch() করে, কোনো
-│                                   একত্রিত "সব প্রশ্ন" ফাইল নেই — নিচে Section ৪ দেখুন)
+│   ├── PROGRESS.md              ← data-entry tracking; must be read before starting work
+│   ├── load_exams.js            ← shared helper that loads+merges exams/*.json (for scripts)
+│   ├── check_bugs.js            ← data bug checker (advisory, not required in CI)
+│   ├── check-spelling.js        ← Bengali spellcheck (advisory, not required in CI)
+│   ├── generate_index.js        ← regenerates EXAM_INDEX.md
+│   └── 📁 data/                 ← ⚠️ not directly at the root, but in the data/ subfolder
+│       └── 📁 exams/            ← ★ the only data source — each exam in its own .json file
+│                                  (the browser fetch()es directly from here; there is no
+│                                   combined "all questions" file — see Section ৪)
 │
-├── 📁 current-affairs/          ← সেকশন ৪ (বাংলা কারেন্ট অ্যাফেয়ার্স)
-│   └── 📁 docs/                 ← ⚠️ generated/synced — সরাসরি এডিট করবেন না
-│       (mcq/, topics/, top-news/, ghotonaprobaho/ ইত্যাদি সাবফোল্ডার)
+├── 📁 current-affairs/          ← section 4 (Bengali current affairs)
+│   └── 📁 docs/                 ← ⚠️ generated/synced — do not edit directly
+│       (subfolders mcq/, topics/, top-news/, ghotonaprobaho/, etc.)
 │
-├── 📁 books/                    ← সেকশন ৫ (বই রিডার)
+├── 📁 books/                    ← section 5 (book reader)
 │   ├── index.html / book.html / style.css / sw.js
 │   └── 📁 data/
 │       └── manifest.js
 │
 ├── 📁 _assets/                  ← shared static (fonts, icons, floating-search.js)
 │
-├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
-│   └── 📁 job-app/              ← এই ফাইলের ভাগ-করা অংশ (written-exam-data, mcq-sections, topics-and-roadmap, version-history)
-├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
-└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging) — deploy হয় না
+├── 📁 _docs/                    ← governance/reference documents (this file, AGENTS.md, etc.) — not deployed
+│   └── 📁 job-app/              ← the split-out parts of this file (written-exam-data, mcq-sections, topics-and-roadmap, version-history)
+├── 📁 _dev/                     ← scripts (validate_data.js, session_status.sh, update_version.py) — not deployed
+└── 📁 _staging/                 ← temporary data-entry work (books-staging) — not deployed
 
-📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
-    └── metadata.js           ← কখনো Cloudflare-এ যাবে না
+📁 admin/                       ← ⚠️ must be kept OUTSIDE the BCS-MCQ-Project folder
+    └── metadata.js           ← never goes to Cloudflare
 ```
 
-> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
+> Rule: the git/push/merge workflow is in `_docs/AGENTS.md`; data-entry progress is in each section's own PROGRESS.md/STATUS.md (e.g. `written-exam/PROGRESS.md`) — they are not duplicated in this file, so always look at those files for the latest state.
 
-প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/mcq-job-solution/` (হাব) ও তার ভেতরে `primary-mcq/`, `ministry-mcq/` প্রতিটার নিজস্ব sw.js, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
+Each section's `sw.js` works in its own folder with its own scope (`/bcs-mcq/`, `/mcq-job-solution/` (hub) and inside it `primary-mcq/`, `ministry-mcq/` each with its own sw.js, `/written-exam/`) — for offline caching. Although the root `sw.js` has scope `/`, it handles only the home page; since the sections have more specific scopes, the browser gives priority to those. The `_headers` file must declare `Service-Worker-Allowed` separately for each scope.
 
 ---
 
-## ১০. admin/ ফোল্ডার সুরক্ষা
+## ১০. Protecting the admin/ folder
 
-`admin/` ফোল্ডার **কখনো** Cloudflare Pages-এ যাবে না।
+The `admin/` folder must **never** go to Cloudflare Pages.
 
-### সঠিক ফোল্ডার কাঠামো
+### Correct folder structure
 
 ```
-📂 আমার-কম্পিউটার/
+📂 my-computer/
 │
-├── 📁 BCS-MCQ-Project/    ← এটাই Cloudflare-এ আপলোড হয়
+├── 📁 BCS-MCQ-Project/    ← this is what is uploaded to Cloudflare
 │   ├── index.html
 │   ├── written-exam/
 │   └── ...
 │
-└── 📁 admin/              ← BCS-MCQ-Project-এর বাইরে, কখনো আপলোড হয় না
+└── 📁 admin/              ← outside BCS-MCQ-Project, never uploaded
     └── metadata.js
 ```
 
-> **নিয়ম:** `admin/` ফোল্ডারটি সবসময় `BCS-MCQ-Project` ফোল্ডারের **বাইরে** রাখতে হবে। ভেতরে রাখলে ভুলে আপলোড হয়ে যাওয়ার ঝুঁকি আছে।
+> **Rule:** the `admin/` folder must always be kept **outside** the `BCS-MCQ-Project` folder. Inside it, there is a risk of it being uploaded by mistake.
 
 ---
 
@@ -240,46 +242,46 @@ Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency
 ```
 Exam Image / PDF
       ↓
-OCR (ছবি থেকে লেখা বের করা)
+OCR (extract text from the image)
       ↓
-Metadata Extract (মন্ত্রণালয়, পদ, তারিখ, সময়, পূর্ণমান)
+Metadata Extract (ministry, post, date, time, total marks)
       ↓
-exam-archive.js এ নতুন entry তৈরি (id ঠিক করা — Section ৫)
+Create a new entry in exam-archive.js (decide the id — Section ৫)
       ↓
-Question Split (প্রশ্নগুলো আলাদা করা)
+Question Split (separate the questions)
       ↓
-Subject Classification (বিষয় নির্ধারণ)
+Subject Classification (decide the subject)
       ↓
-data/exams/<examId>.json নতুন ফাইল তৈরি — প্রতিটা প্রশ্নে examId যোগ করতে হবে
-                         (exam-archive.js এ তৈরি করা id এর সাথে হুবহু মিলিয়ে,
-                          এবং ফাইলের নামও সেই id-এর সাথে হুবহু মিলতে হবে)
+Create a new file data/exams/<examId>.json — add examId to every question
+                         (matching exactly the id created in exam-archive.js,
+                          and the file name must also match that id exactly)
       ↓
 Cloudflare Pages Upload
 ```
 
-> **⚠️ ভুল এড়াতে:** exam-archive.js এর `id` আগে ঠিক করে নিতে হবে, তারপর `data/exams/<সেই-id>.json` ফাইলের প্রতিটা প্রশ্নে সেই `id`-টাই `examId` হিসেবে বসাতে হবে। দুটো জায়গায় (এবং ফাইলের নামে) বানান বা অক্ষর এক বিন্দু আলাদা হলে প্রশ্ন পরীক্ষায় দেখাবে না।
+> **⚠️ To avoid mistakes:** decide the `id` in exam-archive.js first, then put that same `id` as `examId` in every question of the `data/exams/<that-id>.json` file. If even one character differs between the two places (and the file name), the questions will not show up in the exam.
 
 ---
 
-## ১২. Subject Classification নিয়ম
+## ১২. Subject Classification rules
 
-AI শুধু এই ৪টি subject ব্যবহার করবে — নতুন কোনো subject বানাবে না:
+The AI uses only these 4 subjects — it must not invent any new subject:
 
-| subject value | কোন ধরনের প্রশ্ন |
-|---------------|-----------------|
-| `bangla` | বাংলা ব্যাকরণ, সাহিত্য, ভাষা |
+| subject value | Kind of question |
+|---------------|------------------|
+| `bangla` | Bengali grammar, literature, language |
 | `english` | English grammar, literature, vocabulary |
-| `general-knowledge` | সাধারণ জ্ঞান, বাংলাদেশ, আন্তর্জাতিক, বিজ্ঞান |
-| `math` | গণিত, সমীকরণ, পরিসংখ্যান |
+| `general-knowledge` | General knowledge, Bangladesh, international, science |
+| `math` | Mathematics, equations, statistics |
 
-subject নির্ধারণের পর, সম্ভব হলে Section ১৭-এর তালিকা থেকে সঠিক `topic` যোগ করতে হবে।
-topic নিশ্চিত না হলে বাদ দেওয়া যাবে — ভুল topic দেওয়া যাবে না।
+After deciding the subject, if possible add the right `topic` from the list in Section ১৭.
+If you are not sure of the topic it may be omitted — a wrong topic must not be given.
 
 ---
 
-## ১৩. metadata.js — শুধু লোকাল
+## ১৩. metadata.js — local only
 
-এই ফাইল `admin/` ফোল্ডারে থাকবে — Cloudflare-এ আপলোড হবে না।
+This file stays in the `admin/` folder — it is not uploaded to Cloudflare.
 
 ```javascript
 const APP_METADATA = {
@@ -298,32 +300,32 @@ const APP_METADATA = {
 
 ---
 
-## ১৪. AI-এর জন্য গুরুত্বপূর্ণ নিয়ম
+## ১৪. Important rules for the AI
 
-- **`data/exams/<examId>.json` একমাত্র ডেটা সোর্স** — প্রতিটা পরীক্ষা তার নিজের ফাইলে, একটা মনোলিথিক ফাইলে সব প্রশ্ন জড়ো করা যাবে না
-- ফাইলের নাম হুবহু `examId`-এর সাথে মিলতে হবে (ব্রাউজার সরাসরি এই নাম দিয়েই fetch করে)
-- `id` সবসময় unique — সেকশন ৫-এর নিয়ম মেনে বানাতে হবে, কখনো duplicate করা যাবে না
-- প্রতিটা প্রশ্নে `examId` **বাধ্যতামূলক** — সংশ্লিষ্ট `exam-archive.js` entry-র `id` এর সাথে হুবহু মিলতে হবে (Section ৫ দেখুন); না মিললে প্রশ্ন UI তে দেখাবে না
-- `qno` সবসময় সংখ্যা (number) — `"০১"` এর মতো string বা বাংলা সংখ্যা লেখা যাবে না; UI নিজেই বাংলা সংখ্যায় রূপান্তর করে দেখায়
-- `exam-archive.js`-এ `date` সবসময় `YYYY-MM-DD` ফরম্যাটে লিখতে হবে
-- `subject` ফিল্ডে শুধু: `bangla` / `english` / `general-knowledge` / `math`
-- **গণিতের সমীকরণ `$...$` এর ভেতরে MathJax (LaTeX) সিনট্যাক্স দিয়ে লিখতে হবে** — যেমন `$64x^3 - 240x^2y$`। বিয়োগ চিহ্নের জন্য সবসময় সাধারণ হাইফেন (`-`) ব্যবহার করতে হবে, কখনো en-dash (`–`) বা em-dash (`—`) ব্যবহার করা যাবে না — কারণ MathJax এই চিহ্নগুলোকে বিয়োগ চিহ্ন হিসেবে চেনে না
-- `ministry`, `post`, `date`, `duration`, `totalMarks` — এগুলো শুধু `exam-archive.js`-এ থাকবে, `data/exams/*.json`-এর প্রশ্নে পুনরাবৃত্তি করা যাবে না
-- `written-exam/index.html`-এ প্রথমে `exam-archive.js` লোড হয়; প্রশ্নের ডেটা (`data/exams/<examId>.json`) exam খোলার সময় on-demand fetch হয়, আগে থেকে script tag দিয়ে লোড করা হয় না
-- `admin/` ফোল্ডার সবসময় `BCS-MCQ-Project`-এর বাইরে রাখতে হবে
-- কোনো প্রকাশক বা বইয়ের নাম রাখা যাবে না
-- নতুন subject category বানানো যাবে না
-- `topic` ফিল্ড **ঐচ্ছিক** — নিশ্চিত না হলে বাদ দেওয়া যাবে, কিন্তু ভুল topic দেওয়া যাবে না
-- `topic` এর মান শুধু Section ১৭-এর অনুমোদিত তালিকা থেকে নিতে হবে — নিজে থেকে নতুন topic বানানো যাবে না
-- **সেকশন স্বাধীনতা ভাঙা যাবে না** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` একে অন্যের `style.css`, `sw.js`, বা ডেটা ফরম্যাট ব্যবহার করবে না (সেকশন ১ দেখুন)
-- **`manifest.json` শুধু root-এ থাকবে** — কোনো সেকশনের `index.html`-এ `<link rel="manifest">` যোগ করা যাবে না (অ্যাপ একটাই PWA — "Open Job Solution")
-- প্রতিটা সেকশনের নিজস্ব `index.html`-এ `⬅️ হোমে ফিরুন` link থাকা বাধ্যতামূলক
-- **`<script src="...">` এর path আর আসল ফাইলের লোকেশন হুবহু মিলতে হবে** — কোনো ফাইল `data/` সাবফোল্ডারে থাকলে `src="data/filename.js"` লিখতে হবে, শুধু `src="filename.js"` লিখলে ব্রাউজার ভুল জায়গায় খুঁজবে এবং পুরো সেকশন ভেঙে যাবে (v1.15-এ এই কারণে Primary MCQ ভাঙা ছিল)
-- **HTML-এর `class="..."` আর CSS-এর সিলেক্টর নাম অক্ষরে-অক্ষরে এক হতে হবে** — একবচন/বহুবচন (`tag` বনাম `tags`) ভুল হলে স্টাইল প্রয়োগ হবে না, কোনো error ছাড়াই চুপচাপ ভেঙে থাকবে (v1.15-এ এই কারণে error badge স্টাইলহীন ছিল)
-- **কোনো SVG ইনলাইন বসালে হয় SVG-তে `width`/`height` দিতে হবে, নয়তো তাকে ধরে রাখা wrapper-এ CSS দিয়ে সাইজ বেঁধে দিতে হবে** — নাহলে ব্রাউজার ডিফল্ট ৩০০×১৫০px সাইজ নেয় (v1.15-এ এই কারণে ট্যাব আইকন বিশাল দেখাত)
-- নতুন কোনো `index.html`/`app.js`/`style.css` জমা দেওয়ার আগে নিচের ক্রস-চেক করতে হবে: (১) যত `<script src>` আছে সব আসল ফাইলের সাথে মেলে কিনা, (২) JS-এ ব্যবহৃত প্রতিটা `class="..."` নাম CSS ফাইলে হুবহু সংজ্ঞায়িত আছে কিনা
+- **`data/exams/<examId>.json` is the only data source** — each exam in its own file; all questions must not be gathered into one monolithic file
+- The file name must match the `examId` exactly (the browser fetches by exactly this name)
+- `id` is always unique — build it following the rules of Section ৫, and never duplicate it
+- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (see Section ৫); if it doesn't match, the question will not show in the UI
+- `qno` is always a number — do not write a string like `"০১"` or Bengali digits; the UI converts to Bengali digits itself when displaying
+- `date` in `exam-archive.js` must always be written in `YYYY-MM-DD` format
+- the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math`
+- **Math equations must be written inside `$...$` using MathJax (LaTeX) syntax** — e.g. `$64x^3 - 240x^2y$`. Always use the plain hyphen (`-`) for the minus sign, never an en-dash (`–`) or em-dash (`—`) — because MathJax does not recognize those characters as a minus sign
+- `ministry`, `post`, `date`, `duration`, `totalMarks` — these live only in `exam-archive.js` and must not be repeated in the questions of `data/exams/*.json`
+- `written-exam/index.html` loads `exam-archive.js` first; the question data (`data/exams/<examId>.json`) is fetched on demand when an exam is opened, not preloaded with a script tag
+- the `admin/` folder must always be kept outside `BCS-MCQ-Project`
+- no publisher or book name may be included
+- no new subject category may be created
+- the `topic` field is **optional** — if you are not sure it may be omitted, but a wrong topic must not be given
+- a `topic` value must be taken only from the approved list in Section ১৭ — never invent a new topic yourself
+- **Section independence must not be broken** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` must not use each other's `style.css`, `sw.js`, or data format (see Section ১)
+- **`manifest.json` lives only at the root** — no section's `index.html` may add `<link rel="manifest">` (the app is a single PWA — "Open Job Solution")
+- every section's own `index.html` must have the `⬅️ হোমে ফিরুন` link
+- **The path in `<script src="...">` must match the real file location exactly** — if a file is in the `data/` subfolder you must write `src="data/filename.js"`; writing just `src="filename.js"` makes the browser look in the wrong place and the whole section breaks (Primary MCQ was broken for this reason in v1.15)
+- **The `class="..."` names in HTML and the selector names in CSS must be identical character for character** — a singular/plural mistake (`tag` vs `tags`) means the style is not applied and it silently stays broken without any error (the error badge was unstyled for this reason in v1.15)
+- **When inlining any SVG, either give the SVG `width`/`height`, or fix its size with CSS on the wrapper holding it** — otherwise the browser takes the default 300×150px size (the tab icon looked huge for this reason in v1.15)
+- Before submitting any new `index.html`/`app.js`/`style.css`, do these cross-checks: (1) every `<script src>` matches an actual file, (2) every `class="..."` name used in JS is defined exactly in the CSS file
 
 ---
 
-> **নোট:** এই ডকুমেন্ট BCS-MCQ-Project এর চূড়ান্ত রেফারেন্স।
-> নতুন সিদ্ধান্ত হলে version বাড়িয়ে নতুন ফাইল তৈরি করুন।
+> **Note:** this document is the final reference for BCS-MCQ-Project.
+> When a new decision is made, bump the version by editing this file in place (see the owner-approved-edit note in the prohibition block — do not create a second `job-app-MD*.md`; CI forbids it).

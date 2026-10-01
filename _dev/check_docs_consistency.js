@@ -126,7 +126,7 @@ if (fs.existsSync(AGENTS_DOC)) {
 
 // ── চেক ৫: ভাগ-করা job-app-MD কাঠামো অক্ষত আছে তো? ─────────────
 // মূল ফাইল: _docs/job-app-MD.md; অংশ-ফাইল: _docs/job-app/*.md (নিচের PARTS তালিকা)।
-// নতুন অংশ-ফাইল বানালে PARTS তালিকা ও job-app-MD.md-এর "ডকুমেন্ট-সূচি" টেবিল একসাথে আপডেট করুন।
+// নতুন অংশ-ফাইল বানালে PARTS তালিকা ও job-app-MD.md-এর "Document index" টেবিল একসাথে আপডেট করুন।
 const PARTS_DIR = path.join(DOCS_DIR, "job-app");
 const PARTS = [
   "version-history.md",
@@ -162,7 +162,7 @@ if (mdCandidates.length >= 1) {
     if (extraParts.length > 0) {
       errors.push(
         `❌ _docs/job-app/-এ অনাথ/অনিবন্ধিত ফাইল: ${extraParts.join(", ")}। ` +
-          `নতুন অংশ-ফাইল বানালে _dev/check_docs_consistency.js-এর PARTS তালিকায় ও job-app-MD.md-এর "ডকুমেন্ট-সূচি" টেবিলে যোগ করুন; ` +
+          `নতুন অংশ-ফাইল বানালে _dev/check_docs_consistency.js-এর PARTS তালিকায় ও job-app-MD.md-এর "Document index" টেবিলে যোগ করুন; ` +
           `অনাথ ডুপ্লিকেট (আগে job-app-MD-v1.22.md-এর মতো) এখানেও বিভ্রান্তি তৈরি করবে।`
       );
     }
@@ -170,7 +170,7 @@ if (mdCandidates.length >= 1) {
     // সূচিতে প্রতিটা অংশ-ফাইল উল্লিখিত? + প্রতিটা অংশ-ফাইল মূল ফাইলে ফিরে লিংক করে? (নিষেধাজ্ঞা-ব্যানার)
     const notIndexed = PARTS.filter((f) => !masterText.includes(f));
     if (notIndexed.length > 0) {
-      errors.push(`❌ job-app-MD.md-এর ডকুমেন্ট-সূচিতে এই অংশ-ফাইল(গুলো) উল্লেখ নেই: ${notIndexed.join(", ")}।`);
+      errors.push(`❌ job-app-MD.md-এর "Document index" সেকশনে এই অংশ-ফাইল(গুলো) উল্লেখ নেই: ${notIndexed.join(", ")}।`);
     }
     const noBackLink = PARTS.filter(
       (f) => fs.existsSync(path.join(PARTS_DIR, f)) && !fs.readFileSync(path.join(PARTS_DIR, f), "utf8").includes("job-app-MD.md")

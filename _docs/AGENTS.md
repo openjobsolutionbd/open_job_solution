@@ -1,174 +1,174 @@
 # AGENTS.md
 
-এই ফাইলটা যেকোনো AI এজেন্ট/টুলের জন্য (Claude, ChatGPT/Codex, Cursor, Copilot ইত্যাদি) — এই রিপোতে কাজ করার আগে এটা পড়ে নিন।
+This file is for any AI agent/tool (Claude, ChatGPT/Codex, Cursor, Copilot, etc.) — read it before working in this repo.
 
-**এই ফাইল শুধু git/push/PR/merge ওয়ার্কফ্লো নিয়ম নিয়ে।** প্রজেক্টের আর্কিটেকচার, ফোল্ডার স্ট্রাকচার, ডেটা ফরম্যাট নিয়মের জন্য `_docs/job-app-MD.md` দেখুন — দুটো ডকুমেন্ট একে অপরের পরিপূরক, কোনোটাই অন্যটার বিকল্প না। **`job-app-MD.md` এখন ৫টা ফাইলে ভাগ করা** (টোকেন বাঁচাতে): মূল ফাইল সবসময় পড়বেন, আর তার "ডকুমেন্ট-সূচি" টেবিল দেখে কাজ অনুযায়ী `_docs/job-app/`-এর সংশ্লিষ্ট ফাইল পড়বেন (যেমন written-exam-এর কাজে `written-exam-data.md`, MCQ-এর কাজে `mcq-sections.md`) — সংশ্লিষ্ট অংশ না পড়ে সেই ধরনের কাজ শুরু করবেন না।
+> **Language note:** this file is written in English on purpose. It is agent-facing only (the project owner does not read it), and English costs far fewer tokens than Bengali. Keep it in English when editing. **Conversations with the user are a different matter — reply in the language the user writes in (currently Bengali), in plain wording (see the next section).**
 
-## 🗣️ এই ব্যবহারকারীর সাথে যোগাযোগ — টেকনিক্যাল জার্গন নিষেধ
+**This file covers only the git/push/PR/merge workflow rules.** For project architecture, folder structure and data-format rules, see `_docs/job-app-MD.md` — the two documents complement each other; neither replaces the other. **`job-app-MD.md` is now split into 5 files** (to save tokens): always read the main file, then use its "ডকুমেন্ট-সূচি" (document index) table to read the matching file in `_docs/job-app/` for the task at hand (e.g. `written-exam-data.md` for written-exam work, `mcq-sections.md` for MCQ work) — do not start that kind of task without reading the matching part.
 
-এই রিপোর একজন ব্যবহারকারী চান কথোপকথনে **commit, push, PR, merge, branch** — এই ধরনের গিট/গিটহাব টেকনিক্যাল শব্দ যেন তাকে বলা না হয়। তার বদলে শুধু সাধারণ ভাষায় দুইটা জিনিস জানান:
+## 🗣️ Talking to this user — no technical jargon
 
-1. **তার পাঠানো ডেটা/পরিবর্তন রিপোতে পৌঁছেছে কিনা** (অর্থাৎ GitHub-এ সংরক্ষিত হয়েছে কিনা)
-2. **সেটা লাইভ/সাইটে দেখা যাচ্ছে কিনা** (অর্থাৎ `main`-এ চূড়ান্তভাবে মার্জ হয়ে ওয়েবসাইটে প্রতিফলিত হয়েছে কিনা)
+One user of this repo wants the git/GitHub technical words — **commit, push, PR, merge, branch** — kept out of the conversation. Instead, tell them in plain language just two things:
 
-ভেতরের কাজ (branch বানানো, PR খোলা, validate check, merge করা ইত্যাদি) স্বাভাবিকভাবেই চলবে — শুধু সেগুলোর নাম বা প্রক্রিয়া ব্যবহারকারীকে বলা যাবে না। যেমন "আপনার পরীক্ষার ডেটা রিপোতে জমা হয়েছে, এখনো রিভিউ হচ্ছে — লাইভ হয়নি" অথবা "ডেটা রিপোতে গেছে এবং এখন সাইটে লাইভ" — এভাবে বলা উচিত, "branch push করেছি" বা "PR merge হয়েছে" এভাবে না।
+1. **Whether the data/changes they sent have reached the repo** (i.e. been saved on GitHub)
+2. **Whether it is live on the site** (i.e. finally merged into `main` and reflected on the website)
 
-## ⚠️ প্রথম ধাপ — যেকোনো কাজ শুরুর আগে বাধ্যতামূলক
+The internal work (creating branches, opening PRs, validate checks, merging, etc.) goes on as usual — only the names/mechanics of those steps must not be told to the user. For example, say "আপনার পরীক্ষার ডেটা রিপোতে জমা হয়েছে, এখনো রিভিউ হচ্ছে — লাইভ হয়নি" ("your exam data has been saved to the repo, still under review — not live yet") or "ডেটা রিপোতে গেছে এবং এখন সাইটে লাইভ" ("the data is in the repo and now live on the site") — not "I pushed the branch" or "the PR was merged". Say it in Bengali, like those examples.
 
-**`bash _dev/scripts/session_status.sh` চালান — এটাই সবার আগে করুন, অন্য যেকোনো কিছুর আগে।**
+## ⚠️ First step — mandatory before any task
 
-কারণ: ব্যবহারকারী নিয়মিত **একাধিক Claude অ্যাকাউন্ট এবং একাধিক চ্যাট থেকে একই সময়ে এই রিপোতে কাজ করান**। local sandbox-এর অবস্থা কথোপকথনের এই মুহূর্তের সাথে নাও মিলতে পারে — একমাত্র জিনিস যেটা সবসময় নির্ভরযোগ্য তা হলো GitHub-এর remote অবস্থা। `session_status.sh` remote ফেচ করে, local-remote তুলনা করে, working directory-তে stray/অসম্পূর্ণ পরিবর্তন আছে কিনা দেখায়, এবং **সব খোলা branch + খোলা/merge/abandoned PR-এর লাইভ তালিকাও** দেখায় — যাতে কোনো টাস্ক অন্য সেশন থেকে ইতিমধ্যে শুরু বা শেষ হয়ে গিয়ে থাকলে সেটা সাথে সাথে ধরা পড়ে, পুনরাবৃত্তি না ঘটে।
+**Run `bash _dev/scripts/session_status.sh` — do this first, before anything else.**
 
-repo এখনো ক্লোন করা না থাকলে (প্রথমবার এই sandbox-এ):
+Why: the user regularly has **several Claude accounts and several chats working in this repo at the same time**. The local sandbox state may not match the conversation's current moment — the only thing that is always reliable is the remote state on GitHub. `session_status.sh` fetches the remote, compares local vs remote, shows stray/incomplete changes in the working directory, and also shows **a live list of all open branches + open/merged/abandoned PRs** — so if a task was already started or finished by another session you notice immediately and avoid duplicating it.
+
+If the repo is not cloned yet (first time in this sandbox):
 ```bash
 git clone https://github.com/openjobsolutionbd/open_job_solution.git
 cd open_job_solution && bash _dev/scripts/session_status.sh
 ```
 
-**`session_status.sh` চালানোর আগে `GH_TOKEN` environment variable সেট করুন** (`export GH_TOKEN="<PAT>"`) — না করলে GitHub API কলগুলো unauthenticated হয়ে rate-limit-এ আটকে ব্যর্থ হবে।
+**Set the `GH_TOKEN` environment variable before running `session_status.sh`** (`export GH_TOKEN="<PAT>"`) — without it the GitHub API calls are unauthenticated and fail on rate limits.
 
-## 🟢 লাইভ অ্যাক্টিভিটি ফিড (near-real-time coordination)
+## 🟢 Live activity feed (near-real-time coordination)
 
-repo-তে একটা **pin করা GitHub Issue** আছে (label: `activity-feed`, বর্তমানে [#244](https://github.com/openjobsolutionbd/open_job_solution/issues/244)) যেটা `main`-এ যেকোনো push হওয়ার কয়েক সেকেন্ডের মধ্যেই `.github/workflows/activity-feed.yml` workflow স্বয়ংক্রিয়ভাবে আপডেট করে দেয় — একটা নতুন লাইন (timestamp, কমিট লিংক, মেসেজ, লেখক) যোগ হয় ইস্যুর উপরে। রুটিন `chore: bump version` কমিট ফিডে দেখানো হয় না (নয়েজ কমাতে)।
+The repo has a **pinned GitHub Issue** (label: `activity-feed`, currently [#244](https://github.com/openjobsolutionbd/open_job_solution/issues/244)) that the `.github/workflows/activity-feed.yml` workflow updates automatically within seconds of any push to `main` — a new line (timestamp, commit link, message, author) is added at the top of the issue. Routine `chore: bump version` commits are not shown in the feed (to reduce noise).
 
-- `session_status.sh` চালালে এই ফিডের সর্বশেষ অংশ স্বয়ংক্রিয়ভাবে দেখায় — আলাদা করে ইস্যু খুলে দেখার দরকার নেই।
-- এটা Git-push-based, তাই সত্যিকারের push-notification না (কোনো Claude সেশন সক্রিয়ভাবে "শুনছে" না) — কিন্তু যেকোনো সেশন যখনই কাজ শুরু করে (`session_status.sh` চালিয়ে), সে সাথে সাথে সবচেয়ে সাম্প্রতিক অবস্থা পেয়ে যায়, কোনো manual git log খোঁড়াখুঁড়ি ছাড়াই।
-- ইস্যু নিজে থেকেই সর্বশেষ ৪০টা এন্ট্রি রাখে (script পুরনোগুলো ছেঁটে ফেলে) — ইস্যু-বডি অতিরিক্ত বড় হয় না।
-- Workflow-এর মূল লজিক `.github/workflows/scripts/update_activity_feed.py`-তে (Python) — শেল স্ট্রিং-ইন্টারপোলেশন এড়িয়ে environment variable দিয়ে ইনপুট নেয়, যাতে কমিট মেসেজে বিশেষ ক্যারেক্টার থাকলেও workflow না ভাঙে।
-- ফিড ইস্যু কখনো ভুলবশত close/মুছে গেলে: নতুন issue বানিয়ে `activity-feed` label লাগান এবং body-তে `<!-- FEED-START -->` ও `<!-- FEED-END -->` মার্কার দুটো রাখুন (workflow এই মার্কারের মাঝে এন্ট্রি বসায়) — workflow label দিয়ে ইস্যু খোঁজে, ইস্যু-নম্বর হার্ডকোড করা নেই।
+- Running `session_status.sh` automatically shows the latest part of this feed — no need to open the issue separately.
+- This is Git-push-based, so it is not a true push notification (no Claude session is actively "listening") — but any session that starts work (by running `session_status.sh`) immediately gets the most recent state, with no manual git-log digging.
+- The issue keeps only the latest 40 entries on its own (the script trims older ones) — the issue body does not grow too large.
+- The workflow's core logic is in `.github/workflows/scripts/update_activity_feed.py` (Python) — it takes input through environment variables instead of shell string interpolation, so the workflow doesn't break even if a commit message contains special characters.
+- If the feed issue is ever accidentally closed/deleted: create a new issue, give it the `activity-feed` label, and keep the two markers `<!-- FEED-START -->` and `<!-- FEED-END -->` in the body (the workflow inserts entries between these markers) — the workflow finds the issue by label; the issue number is not hardcoded.
 
-## 🔒 কাজের রেঞ্জ ক্লেইম করা (একাধিক Claude সমান্তরালে কাজ করলে)
+## 🔒 Claiming a work range (when several Claudes work in parallel)
 
-যখন একটা নির্দিষ্ট অংশ (যেমন বইয়ের ১০টা অধ্যায়, বা exam ক্রম ৫১৩–৫২২) নিয়ে একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে সমান্তরালে কাজ হতে পারে, শুধু branch/PR তালিকা যথেষ্ট না — কেউ branch এখনো push না করেই কাজ শুরু করে থাকতে পারে। তাই একটা হালকা "claim" (দখল-ঘোষণা) সিস্টেম ব্যবহার করা হয়, GitHub Issue দিয়ে (branch/PR-এর মতো `main` protection-এর আওতায় না বলে সাথে সাথে খোলা/বন্ধ করা যায়):
+When a specific part (e.g. 10 chapters of a book, or exam sequence 513–522) could be worked on in parallel from several Claude accounts/chats, the branch/PR list alone is not enough — someone may have started work without having pushed a branch yet. So a lightweight "claim" system is used, built on GitHub Issues (which, unlike branches/PRs, are not under `main` protection and can be opened/closed instantly):
 
-1. **কাজ শুরুর আগে**: `label=claim` দিয়ে খোলা issue-গুলো চেক করুন (`session_status.sh`-এর আউটপুটে এখন এটাও দেখায়)। আপনার নেওয়া রেঞ্জ/অধ্যায়ের সাথে ওভারল্যাপ থাকলে সেই অংশ এড়িয়ে অন্য অংশ ধরুন, বা ব্যবহারকারীকে জানান।
-2. **কাজ শুরু করার সাথে সাথে** (কোড লেখার আগেই): একটা নতুন issue খুলুন —
-   - টাইটেল: `🔒 claim: <সংক্ষিপ্ত স্কোপ>` (যেমন `🔒 claim: written-exam ক্রম ৫১৩–৫২২`, `🔒 claim: ৫০তম BCS পেজ ৩৬–৪৫`)
-   - body-তে: ঠিক কোন রেঞ্জ/ফাইল/এক্সাম নিয়ে কাজ হচ্ছে, তারিখ-সময়
-   - label: `claim`
-3. **কাজ শেষ হলে (merge হোক বা abandon)**: সাথে সাথে issue close করুন — খোলা claim পরে অন্য সেশনকে বিভ্রান্ত করবে।
-4. একটা claim অনেকক্ষণ (কয়েক ঘণ্টার বেশি) খোলা থাকলে সেটা stale/abandoned হতে পারে — নিজে অনুমান করে ওভাররাইট না করে ব্যবহারকারীকে জিজ্ঞেস করুন।
+1. **Before starting work**: check open issues with `label=claim` (`session_status.sh` output now shows these too). If your intended range/chapter overlaps one, skip that part and take a different one, or tell the user.
+2. **Immediately when you start work** (before writing any code): open a new issue —
+   - Title: `🔒 claim: <short scope>` (e.g. `🔒 claim: written-exam ক্রম ৫১৩–৫২২`, `🔒 claim: ৫০তম BCS পেজ ৩৬–৪৫`)
+   - Body: exactly which range/file/exam is being worked on, plus date and time
+   - Label: `claim`
+3. **When the work is finished (merged or abandoned)**: close the issue right away — a stale open claim will confuse other sessions later.
+4. If a claim has been open for a long time (more than a few hours) it may be stale/abandoned — don't overwrite it on your own guess; ask the user.
 
-এই সিস্টেম কিছু জোর করে block করে না (GitHub-এ automatic enforcement নেই) — এটা শুধু coordination signal, তাই প্রতিটা Claude সেশনের সততার উপর নির্ভর করে এটা মেনে চলা।
+This system blocks nothing by force (GitHub has no automatic enforcement for it) — it is only a coordination signal, so it depends on every Claude session honestly following it.
 
-## main branch protected — সরাসরি push করা যায় না
+## main branch is protected — no direct pushes
 
-**২০২৬-০৮-২০ থেকে `main` branch protected** (আগে সরাসরি push করা যেত, এখন যায় না)। প্রতিটা পরিবর্তনের জন্য:
-1. নতুন branch বানান (`git checkout -b <type>/<slug>` — যেমন `add/50th-bcs-pages-90-95`, `fix/spellcheck-bug`)
-2. পরিবর্তন কমিট করে সেই branch push করুন
-3. GitHub API দিয়ে PR খুলুন (`base: main`)
-4. **`validate`** নামের required status check পাস হওয়ার অপেক্ষা করুন (`.github/workflows/validate-data.yml` — `validate_data.js` + বাংলা spellcheck চালায়)
-5. PR-এর `mergeable_state` চেক করুন — `behind` দেখালে merge করার আগে `PUT /pulls/{number}/update-branch` দিয়ে ব্রাঞ্চ main-এর সাথে আপডেট করুন (required check `strict` মোডে আছে, তাই ব্রাঞ্চ আপ-টু-ডেট না থাকলে merge আটকাবে)
-6. squash merge করুন
+**`main` has been protected since 2026-08-20** (direct pushes used to work, now they don't). For every change:
+1. Create a new branch (`git checkout -b <type>/<slug>` — e.g. `add/50th-bcs-pages-90-95`, `fix/spellcheck-bug`)
+2. Commit the change and push that branch
+3. Open a PR via the GitHub API (`base: main`)
+4. Wait for the required status check named **`validate`** to pass (`.github/workflows/validate-data.yml` — runs `validate_data.js` + the Bengali spellcheck)
+5. Check the PR's `mergeable_state` — if it shows `behind`, update the branch with `main` using `PUT /pulls/{number}/update-branch` before merging (the required check is in `strict` mode, so merging is blocked if the branch isn't up to date)
+6. Squash merge
 
-`enforce_admins: true` করা আছে — admin/owner token দিয়েও এই নিয়ম bypass করা যায় না, কেউ ভুলবশত সরাসরি push করলেও GitHub সেটা প্রত্যাখ্যান করবে।
+`enforce_admins: true` is set — even an admin/owner token cannot bypass these rules; GitHub rejects it even if someone accidentally pushes directly.
 
-## 📚 কোনো ফিচার/ফোল্ডার/workflow/script যোগ, বাদ, বা পরিবর্তন করলে — ডকুমেন্টও একই PR-এ আপডেট করুন
+## 📚 When you add, remove or change a feature/folder/workflow/script — update the docs in the same PR
 
-**এটা ঐচ্ছিক ধাপ না — বাধ্যতামূলক অংশ, কোড পরিবর্তনের মতোই।** আগে বারবার এমন হয়েছে যে একটা ফিচার যোগ/বাদ/পরিবর্তন হয়ে merge হয়ে গেছে, কিন্তু কোনো ডকুমেন্টে তার ছাপ পড়েনি — ফলে পরের সেশন (বা ব্যবহারকারী নিজেও) বুঝতে পারেনি ঠিক কী বদলেছে।
+**This is not an optional step — it is a mandatory part of the change, just like the code.** It has happened repeatedly that a feature was added/removed/changed and merged, but no document reflected it — so the next session (or even the user) could not tell what exactly had changed.
 
-`check_docs_consistency.js` (`validate` required check-এর অংশ) স্বয়ংক্রিয়ভাবে ধরে:
-- একাধিক `job-app-MD*.md` ফাইল তৈরি হয়ে গেলে
-- root-level কোনো ফোল্ডার `job-app-MD.md`-এ উল্লেখহীন থাকলে
-- `job-app-MD.md`-এর ভাগ-করা কাঠামো ভেঙে গেলে: `_docs/job-app/`-এর ৪টা অংশ-ফাইলের কোনোটা মিসিং/বাড়তি থাকলে, কোনো সেকশন-শিরোনাম (§১–§১৭, §৫-ক, §৯-ক, Version History, নিষেধাজ্ঞা, চেকলিস্ট, সূচি) হারিয়ে গেলে বা একাধিক ফাইলে থাকলে, সূচিতে কোনো অংশ-ফাইল উল্লেখহীন থাকলে, বা "⛔ কঠোর নিষেধাজ্ঞা" ব্লক মূল ফাইল থেকে সরে গেলে (আকার বেশি হলে শুধু সতর্কবার্তা, ব্যর্থ করে না)
-- কোনো নতুন `.github/workflows/*.yml` ফাইল `AGENTS.md`-এ উল্লেখহীন থাকলে
-- কোনো নতুন হেল্পার script (`_dev/`-এর টপ-লেভেল, `_dev/scripts/`, `.github/workflows/scripts/`) `AGENTS.md`-এ উল্লেখহীন থাকলে
+`check_docs_consistency.js` (part of the `validate` required check) automatically catches:
+- more than one `job-app-MD*.md` file being created
+- a root-level folder not mentioned in `job-app-MD.md`
+- the split structure of `job-app-MD.md` breaking: any of the 4 part files in `_docs/job-app/` missing/extra, any section heading (§1–§17, §5-ক, §9-ক, Version History, prohibition block, checklist, index) lost or present in more than one file, a part file not mentioned in the index, or the "⛔ কঠোর নিষেধাজ্ঞা" (strict prohibitions) block moved out of the main file (an oversized file only produces a warning, it does not fail)
+- a new `.github/workflows/*.yml` file not mentioned in `AGENTS.md`
+- a new helper script (top level of `_dev/`, `_dev/scripts/`, `.github/workflows/scripts/`) not mentioned in `AGENTS.md`
 
-**সীমাবদ্ধতা:** এই script-চেক শুধু উপরের তিনটা কেন্দ্রীয় dev-tooling ফোল্ডার স্ক্যান করে। `written-exam/check_bugs.js`, `written-exam/generate_index.js`, `written-exam/check-spelling.js`-এর মতো **মডিউলের নিজস্ব ফোল্ডারে (written-exam/, bcs-mcq/ ইত্যাদি) মিশে-থাকা dev-tool script automated চেক কভার করে না** — কারণ ঐসব ফোল্ডারে প্রোডাক্ট সোর্স কোডও (renderer.js, sw.js ইত্যাদি) থাকে, যেগুলো ডকুমেন্ট করার বাধ্যবাধকতা নেই; সব ফাইল স্বয়ংক্রিয়ভাবে স্ক্যান করলে false-positive তৈরি হতো। তাই কোনো মডিউল-ফোল্ডারে নতুন dev-tool script (বাগ-চেকার, স্পেলচেক, ইনডেক্স-জেনারেটর ইত্যাদি) যোগ করলে সেটা `job-app-MD.md`-এর সংশ্লিষ্ট সেকশনের ফাইল-টেবিলে ম্যানুয়ালি যোগ করতে ভুলবেন না — এটা automated চেক ধরবে না।
+**Limitation:** this script check scans only the three central dev-tooling folders above. Dev-tool scripts that live mixed inside a module's own folder (written-exam/, bcs-mcq/, etc.), such as `written-exam/check_bugs.js`, `written-exam/generate_index.js`, `written-exam/check-spelling.js`, **are not covered by the automated check** — those folders also contain product source code (renderer.js, sw.js, etc.) that need not be documented, and scanning every file automatically would produce false positives. So when you add a new dev-tool script (bug checker, spellcheck, index generator, etc.) to a module folder, remember to add it manually to the file table of the relevant section in `job-app-MD.md` — the automated check will not catch it.
 
-**কিন্তু এই automated চেক শুধু "একদম কোনো উল্লেখ নেই" ধরনের সম্পূর্ণ বাদ পড়া ধরে — একটা ফাইলের নাম উল্লেখ থাকলেই এটা পাস করে যাবে, বর্ণনা পুরনো/ভুল হলেও।** তাই feature-এর *আচরণ* বদলালে (যেমন কোনো button নতুন কিছু করছে, কোনো workflow-এর trigger শর্ত বদলেছে, কোনো ফোল্ডারের উদ্দেশ্য পুরোপুরি বদলে গেছে) — সেটা automated চেক ধরবে না, নিজেকেই মনে করে আপডেট করতে হবে:
+**But this automated check only catches "no mention at all" — if a file's name is mentioned, it passes even if the description is outdated or wrong.** So when a feature's *behavior* changes (e.g. a button now does something new, a workflow's trigger condition changed, a folder's purpose changed completely), the automated check will not catch it — you must remember to update the docs yourself:
 
-1. নতুন/পরিবর্তিত/বাদ-দেওয়া কিছু কি root-level ফোল্ডার, workflow, বা script? → `AGENTS.md`-এর ফাইল-কাঠামো টেবিলে (নিচে) ও/অথবা `job-app-MD.md`-এ যোগ/আপডেট/অপসারণ করুন।
-2. কোনো ফিচারের আচরণ (behavior) বদলেছে, নাম না বদলে? → সংশ্লিষ্ট ডকুমেন্টের prose অংশ আপডেট করুন — ফাইলের অস্তিত্ব-চেক এটা ধরবে না।
-3. কোনো ফিচার/সিস্টেম পুরোপুরি বাদ দেওয়া হলে → শুধু কোড/ডেটা মুছলেই হবে না, তার ডকুমেন্টেশন-উল্লেখও (এমনকি "এটা আগে ছিল, মুছে ফেলা হয়েছে" টাইপ হিস্টোরিক্যাল নোটও, যদি ব্যবহারকারী স্পষ্টভাবে সেটা না চান) একই PR-এ সরান — না হলে পরের সেশন বিভ্রান্ত হবে ভেবে এটা এখনো আছে বা থাকা উচিত।
+1. Is anything a new/changed/removed root-level folder, workflow, or script? → add/update/remove it in the file-structure table of `AGENTS.md` (below) and/or in `job-app-MD.md`.
+2. Did a feature's behavior change without its name changing? → update the prose of the relevant document — an existence check will not catch this.
+3. If a feature/system is removed entirely → don't just delete the code/data; also remove its documentation mentions (even "this used to exist, it was deleted" historical notes, unless the user explicitly wants them) in the same PR — otherwise the next session will be confused into thinking it still exists or should exist.
 
-PR খোলার ঠিক আগে নিজেকে জিজ্ঞেস করুন: *"এই পরিবর্তনের পর `AGENTS.md` বা `job-app-MD.md` পড়ে কেউ কি এখনো বাস্তব অবস্থাটা সঠিকভাবে বুঝতে পারবে?"* — উত্তর "না" হলে, ডকুমেন্ট আপডেট না করে PR merge করবেন না।
+Right before opening a PR, ask yourself: *"After this change, can someone reading `AGENTS.md` or `job-app-MD.md` still understand the real state correctly?"* — if the answer is "no", do not merge the PR without updating the docs.
 
-## 🔄 রিপো ঘনঘন আপডেট হয় — push-এর ঠিক আগে অবশ্যই re-check করুন
+## 🔄 The repo updates often — re-check right before every push
 
-একাধিক সেশন/অ্যাকাউন্ট সমান্তরালে কাজ করায়, branch তৈরির পর কাজ শেষ হতে হতে `main` এগিয়ে যেতে পারে — এমনকি একই টাস্কের মাঝেও একাধিকবার এটা ঘটতে পারে। তাই শুধু কাজ শুরুর আগে একবার চেক করাই যথেষ্ট নয়; **push/merge করার প্রতিটা ধাপে** আবার যাচাই করুন:
+Because several sessions/accounts work in parallel, `main` can move ahead between creating a branch and finishing the work — even several times within a single task. So checking once at the start is not enough; verify again **at every push/merge step**:
 
-1. **branch তৈরির আগে**: `session_status.sh` চালান (উপরে বাধ্যতামূলক ধাপ)।
-2. **push করার ঠিক আগে** (এডিটিং শেষে): `git fetch origin main` চালান। remote এগিয়ে থাকলে push-এর আগেই `git rebase origin/main` করুন — conflict এলে resolve করুন, শুধু এক পক্ষ blindly নেবেন না। **ব্যতিক্রম:** সত্যিকারের বিষয়বস্তু-দ্বন্দ্ব না হয়ে শুধু একই জায়গায় দুই সেশনের ভিন্ন নতুন সংযোজন হলে (যেমন একই exam-archive.js-এ দুই নতুন এন্ট্রি) — দুটোই রেখে (id/তারিখ অনুযায়ী সাজিয়ে) নিজে মিলিয়ে নেওয়া ঠিক, ব্যবহারকারীকে জিজ্ঞেস করার দরকার নেই। প্রকৃত বিষয়বস্তু-দ্বন্দ্ব হলে (একই লাইন/একই ফিল্ডে দুই ভিন্ন মান) — নিজে অনুমান করে কোনদিক রাখবেন ঠিক করবেন না, conflict ও উভয় পক্ষের পরিবর্তন ব্যবহারকারীকে দেখিয়ে জিজ্ঞেস করুন।
-3. **ডেটা ফাইল (`written-exam/data/exams/*.json`, `exam-archive.js`, `PROGRESS.md` ইত্যাদি) সংক্রান্ত rebase-এর পর**: আপনার লেখা কোনো সংখ্যা/count/সারাংশ (যেমন "মোট X এক্সাম, Y প্রশ্ন") থাকলে সেটা **script দিয়ে আবার গণনা করে** নিশ্চিত হন এখনো সঠিক আছে কিনা — rebase-এ অন্য সেশনের যোগ করা ডেটা মিশে গিয়ে সংখ্যা বদলে যেতে পারে (এটা আগে দুইবার ঘটেছে)।
-4. **PR খোলার পর, merge করার ঠিক আগে**: PR-এর `mergeable_state` আবার চেক করুন। `behind` বা `dirty` দেখালে rebase করে (বা `PUT /pulls/{number}/update-branch`) আবার push করুন, `clean` না হওয়া পর্যন্ত merge করবেন না। merge করার ঠিক আগে required check (`validate`) পাস করেছে কিনা সেটাও শেষবার নিশ্চিত করুন।
-5. rebase-এর পর push করতে **সবসময় `git push --force-with-lease`** ব্যবহার করুন, কখনো `--force` না — অন্য কারো কাজ ভুলবশত overwrite হওয়া এড়াতে।
+1. **Before creating a branch**: run `session_status.sh` (the mandatory step above).
+2. **Right before pushing** (after editing is done): run `git fetch origin main`. If the remote is ahead, run `git rebase origin/main` before pushing — resolve any conflicts; don't blindly take one side. **Exception:** if it is not a true content conflict but just two sessions adding different new items in the same place (e.g. two new entries in the same exam-archive.js), it is fine to merge them yourself by keeping both (sorted by id/date) — no need to ask the user. For a true content conflict (two different values on the same line/field), don't guess which side to keep — show the user the conflict and both sides' changes and ask.
+3. **After a rebase involving data files (`written-exam/data/exams/*.json`, `exam-archive.js`, `PROGRESS.md`, etc.)**: if you wrote any number/count/summary (e.g. "X exams total, Y questions"), **recount it with a script** to confirm it is still correct — data added by another session can get merged in by the rebase and change the numbers (this has happened twice before).
+4. **After opening the PR, right before merging**: re-check the PR's `mergeable_state`. If it shows `behind` or `dirty`, rebase (or `PUT /pulls/{number}/update-branch`) and push again; do not merge until it is `clean`. Also confirm one last time, right before merging, that the required check (`validate`) has passed.
+5. After a rebase, **always push with `git push --force-with-lease`**, never `--force` — to avoid accidentally overwriting someone else's work.
 
-সংক্ষেপে: "চেক করেছিলাম তো একটু আগে" — যথেষ্ট না। রিপো এত ঘনঘন বদলায় যে প্রতিটা push/merge-এর ঠিক আগমুহূর্তেই freshly যাচাই করা লাগবে।
+In short: "I did check a moment ago" is not enough. The repo changes so often that it must be verified freshly at the very moment before each push/merge.
 
-## ⚡ কনটেক্সট-টোকেন সাশ্রয়
+## ⚡ Saving context tokens
 
-বড় ফাইল (`bcs-mcq`/`mcq-job-solution` (primary-mcq, ministry-mcq) ডেটা, `PROGRESS.md`) কখনো পুরো `view`/`cat` করবেন না। (`written-exam/data/exams/*.json` এখন প্রতিটা এক্সাম আলাদা ছোট ফাইলে, তাই এগুলো পুরোপুরি `view` করা ঠিক আছে — একত্রিত বড় `job-solution.js` ফাইলটা বাদ দেওয়া হয়েছে।)
+Never `view`/`cat` big files in full (`bcs-mcq`/`mcq-job-solution` (primary-mcq, ministry-mcq) data, `PROGRESS.md`). (`written-exam/data/exams/*.json` is now one small file per exam, so a full `view` of those is fine — the single large combined `job-solution.js` file was removed.)
 
-- খুঁজতে: `grep -n` → পাওয়া লাইন নম্বর দিয়ে `view_range`
-- এডিটে: `str_replace` (ছোট, ইউনিক `old_str`)
-- যোগ করতে: `tail -N` দিয়ে শেষ দেখে, bash append (`cat >>`/heredoc) — পুরো ফাইল না পড়ে
-- গণনায়: `grep -c` / `grep -n`, কখনো পুরো `view` না
-- একাধিক জায়গায় কাজ থাকলে: আগে সব `grep` চালিয়ে রেঞ্জ বের করুন, পরে টার্গেটেড `view` কল করুন
+- To find things: `grep -n` → then `view_range` using the line numbers found
+- To edit: `str_replace` (short, unique `old_str`)
+- To add: check the end with `tail -N`, then append with bash (`cat >>`/heredoc) — without reading the whole file
+- To count: `grep -c` / `grep -n`, never a full `view`
+- When there is work in several places: run all the `grep`s first to find the ranges, then make targeted `view` calls
 
-## টোকেন (GitHub Personal Access Token)
+## Token (GitHub Personal Access Token)
 
-- সরাসরি push-এর কোনো সুবিধা নেই এখন (protection চালুর পর) — তবু PR তৈরি/merge করতে **Contents: Read & Write** ও **Pull requests: Read & Write** পারমিশনসহ টোকেন লাগবে
-- Fine-grained PAT ব্যবহার করার চেষ্টা করুন এবং **Contents ও Pull requests উভয় পারমিশনই "Read and write"** আছে কিনা টোকেন বানানোর সময় নিশ্চিত করুন — শুধু repo-level "push: true" API রেসপন্স দেখে ভরসা করবেন না, একটা ছোট write টেস্ট (যেমন dummy branch তৈরির চেষ্টা) করে যাচাই করে নিন
-- কাজ শেষ হলে ব্যবহারকারীকে টোকেন মুছে ফেলার কথা মনে করিয়ে দিন
-- চ্যাটে একবার টোকেন দেওয়া হলে পুরো সেশন জুড়ে সেটা ব্যবহার করুন — বারবার টোকেন চাইবেন না; expire/auth error হলেই শুধু জানান
+- There is no direct-push shortcut now (since protection was enabled) — a token with **Contents: Read & Write** and **Pull requests: Read & Write** permissions is still needed to create/merge PRs
+- Try to use a fine-grained PAT and, when creating the token, make sure **both Contents and Pull requests are "Read and write"** — don't trust only the repo-level `"push": true` in the API response; verify with a small write test (e.g. try creating a dummy branch)
+- When the work is done, remind the user to delete the token
+- Once a token is given in chat, use it for the whole session — don't ask for it repeatedly; only tell the user when it expires or there is an auth error
 
-## ফাইল-কাঠামো (সংক্ষেপে)
+## File structure (summary)
 
-| পাথ | কী |
+| Path | What |
 |---|---|
-| `_dev/scripts/session_status.sh [স্কোপ]` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — local/remote/uncommitted অবস্থা, branch-ভিত্তিক সংঘর্ষ-ঝুঁকি (API ছাড়াই), PR/`claim`/ফিড (API থাকলে), স্কোপ-মিল ও শেষে 🚦 সারসংক্ষেপ। বিশ্লেষণ: `session_status_report.py` |
-| `_dev/scripts/current_affairs_health_check.py` | current-affairs-এর `docs/` (build output)-এর দৈনিক স্বয়ংক্রিয় স্বাস্থ্য-পরীক্ষা (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) |
-| `_dev/scripts/doc_staleness_check.py` | `current-affairs/`-এর `AGENTS.md`, `EDITORIAL_MEMORY.md` ও `PR_GUIDE.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/undocumented script/আকার-সীমা সাপ্তাহিক স্বয়ংক্রিয় চেক — prose নিজে মোছে না, শুধু Issue-এ জানায় |
-| `current-affairs/docs/` | build output (`build_index.py` থেকে জেনারেট)। ২০২৬-০৯ থেকে `open_current_affairs` স্ট্যান্ডঅ্যালোন রিপো subtree merge দিয়ে এই monorepo-তে চলে এসেছে ও সরাসরি এখানেই এডিট হয় — পুরনো `sync-to-job-solution.yml` workflow বাতিল, আলাদা সোর্স-রিপোতে ফিক্স করার দরকার নেই |
-| `_staging/books-staging/` | "বই সমূহ" ফিচারের পরিকল্পনা/ডিজাইন-নোট (README + BOOKS_NOTES.md) |
-| `_dev/validate_data.js` | প্রশ্ন-ডেটা ভ্যালিডেশন — `.github/workflows/validate-data.yml`-এর `validate` জব এটা চালায়, PR-এর required check। ডুপ্লিকেট id, ডুপ্লিকেট প্রশ্ন+option, ডুপ্লিকেট ব্যাখ্যা (নিজের ডেটাবেসের মধ্যে) — এসব ধরে, কিন্তু **অন্য ওয়েবসাইটের সাথে মিল আছে কিনা তা ধরতে পারে না** (নিচের সেকশন দেখুন) |
-| `_dev/check_docs_consistency.js` | গভর্নেন্স-ডকুমেন্ট যেন repo-র বাস্তব অবস্থা থেকে সরে না যায় — পাঁচটা স্ট্রাকচারাল চেক করে: ডুপ্লিকেট মাস্টার-ডক ফাইল, অনুল্লেখিত root ফোল্ডার, অনুল্লেখিত `.github/workflows/*.yml`, অনুল্লেখিত `_dev/` + `.github/workflows/scripts/`-এর script, এবং `job-app-MD.md`-এর ভাগ-করা কাঠামো (`_docs/job-app/`) অক্ষত আছে কিনা। একই `validate` জবের অংশ, PR-এর required check। এটা শুধু structural drift (নাম উল্লেখ আছে কি নেই) ধরে, prose-এর সঠিকতা/আচরণ-পরিবর্তন না — সেটা এখনো মানুষ/AI-কে মাঝেমধ্যে re-verify করতে হবে |
-| `_dev/explanations.js` + `_dev/explanations.json` | bcs-mcq ব্যাখ্যার ডেটাবেস। `lookup` নতুন প্রশ্নের জন্য আগে থেকে যাচাইকৃত/বিদ্যমান ব্যাখ্যা খোঁজে ও উত্তর-অমিল ধরে; `check` DB বনাম ডেটা ফাইলের উত্তর মেলায়; `add <id> [--verified --source URL]` সোর্সে যাচাই করা ব্যাখ্যা DB-তে তোলে। `verified:true` শুধু সোর্স/গাণিতিক যাচাই শেষে — আন্দাজে লেখা ব্যাখ্যা `false`। বিদ্যমান ব্যাখ্যা DB-তে কপি করা হয় না (ডেটা ফাইলই মূল উৎস) |
-| `_dev/check-spelling.js` | বাংলা spellcheck bcs-mcq/data/*.js-এর জন্য (advisory, ব্যর্থ হলেও PR আটকায় না) |
-| `_dev/update_version.py` | `auto-bump-version.yml`-এর হেল্পার — প্রতি merge-এর পর ভার্সন নম্বর বাড়ায়। কোনো ফাইলে প্যাটার্ন না মিললে কিছু না লিখে ব্যর্থ হয়। `--check` দিয়ে চালালে শুধু যাচাই করে সব জায়গায় ভার্সন একই কিনা — `validate-data.yml`-এর `validate` জব (required check) এটা চালায় |
-| `written-exam/check-spelling.js` | বাংলা spellcheck written-exam/data/exams/*.json-এর জন্য (advisory, `_dev/check-spelling.js`-এর মতোই কিন্তু আলাদা মডিউলের জন্য) |
-| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite। ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`) পড়ে থাকায় কখনো চলেনি — এই migration-বাগ ঠিক করে রুটে ফেরানো হয়েছে |
-| `.github/workflows/update-wiki.yml` | current-affairs-এ push হলে generated output (topics-index.json, sw.js, version.json ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্ন অনুসরণ করে যেহেতু main branch-protected)→merge করে। এটাও একই migration-বাগে ভুল পাথে পড়ে ছিল, রুটে ফেরানো হয়েছে |
-| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | বিদ্যমান স্বয়ংক্রিয় workflow |
-| `.github/workflows/live-site-check.yml` | প্রতি ৩ ঘণ্টায় লাইভ সাইট (`ojsapp.pages.dev`) থেকে সব ভার্সন-ফাইল এনে `_docs/version.txt`-এর সাথে মেলায় (`update_version.py --check-live`); deploy আটকালে Issue খোলে, ঠিক হলে নিজে বন্ধ করে। কোনো গোপন চাবি লাগে না |
-| `.github/workflows/scripts/update_activity_feed.py` | `activity-feed.yml`-এর হেল্পার — pin করা লাইভ অ্যাক্টিভিটি ফিড ইস্যু আপডেট করে |
-| `.github/workflows/written-exam-currency.yml` | সাপ্তাহিক + topics বদলালে written-exam-এর `data/current-status.json` নজরে রাখে (`written-exam/check_currency.js`); কারেন্ট অ্যাফেয়ার্সের "বর্তমান তথ্য" বদলালে বা রিভিউ-তারিখ পেরোলে Issue খোলে, PR-এ শুধু কাঠামো যাচাই করে; উত্তর নিজে বদলায় না |
+| `_dev/scripts/session_status.sh [scope]` | First command of every new task — local/remote/uncommitted state, branch-based conflict risk (works without the API), PRs/`claim`s/feed (when the API is available), scope matching and a 🚦 summary at the end. Analysis: `session_status_report.py` |
+| `_dev/scripts/current_affairs_health_check.py` | Daily automated health check of current-affairs' `docs/` (build output): stale domains, broken JSON, cache-scope bugs |
+| `_dev/scripts/doc_staleness_check.py` | Weekly automated check of `current-affairs/`'s `AGENTS.md`, `EDITORIAL_MEMORY.md` and `PR_GUIDE.md` for broken references/stale snapshots/undocumented scripts/size limits — it never deletes prose itself, only reports in an Issue |
+| `current-affairs/docs/` | Build output (generated by `build_index.py`). Since 2026-09 the standalone `open_current_affairs` repo has been brought into this monorepo via a subtree merge and is edited directly here — the old `sync-to-job-solution.yml` workflow is retired; there is no need to fix things in a separate source repo |
+| `_staging/books-staging/` | Planning/design notes for the "বই সমূহ" (Books) feature (README + BOOKS_NOTES.md) |
+| `_dev/validate_data.js` | Question-data validation — the `validate` job of `.github/workflows/validate-data.yml` runs it; a required PR check. It catches duplicate ids, duplicate question+options, duplicate explanations (within our own database) — but **cannot detect matches with other websites** (see the section below) |
+| `_dev/check_docs_consistency.js` | Keeps the governance docs from drifting away from the repo's real state — runs five structural checks: duplicate master-doc files, unmentioned root folders, unmentioned `.github/workflows/*.yml`, unmentioned scripts in `_dev/` + `.github/workflows/scripts/`, and whether the split structure of `job-app-MD.md` (`_docs/job-app/`) is intact. Part of the same `validate` job, a required PR check. It only catches structural drift (a name is mentioned or not), not the correctness of prose or behavior changes — humans/AI still have to re-verify those from time to time |
+| `_dev/explanations.js` + `_dev/explanations.json` | The bcs-mcq explanation database. `lookup` finds already-verified/existing explanations for new questions and catches answer mismatches; `check` compares the DB's answers against the data files; `add <id> [--verified --source URL]` puts a source-verified explanation into the DB. `verified:true` only after source/mathematical verification — explanations written from a guess are `false`. Existing explanations are not copied into the DB (the data files remain the original source) |
+| `_dev/check-spelling.js` | Bengali spellcheck for bcs-mcq/data/*.js (advisory — failing does not block the PR) |
+| `_dev/update_version.py` | Helper for `auto-bump-version.yml` — increments the version number after each merge. If a pattern doesn't match in a file it fails without writing anything. Run with `--check` it only verifies that the version is the same everywhere — the `validate` job of `validate-data.yml` (a required check) runs this |
+| `written-exam/check-spelling.js` | Bengali spellcheck for written-exam/data/exams/*.json (advisory, same as `_dev/check-spelling.js` but for a different module) |
+| `.github/workflows/pr-check.yml` | When a PR is opened/updated for current-affairs (paths filter): generated-file guard + conflict check + build+verify+integration-guard+test suite. After the 2026-09 subtree merge it sat in a wrong path (`current-affairs/.github/workflows/`) and never ran — this migration bug has been fixed by moving it back to the root |
+| `.github/workflows/update-wiki.yml` | On a push to current-affairs, regenerates the generated output (topics-index.json, sw.js, version.json, etc.) and goes branch→PR (using `OJS_BOT_TOKEN`, following the `auto-bump-version.yml` pattern since main is branch-protected)→merge. It too had been stuck in the wrong path from the same migration bug; moved back to the root |
+| `.github/workflows/auto-bump-version.yml`, `current-affairs-health-check.yml`, `current-affairs-docs-staleness.yml`, `validate-data.yml`, `activity-feed.yml` | Existing automated workflows |
+| `.github/workflows/live-site-check.yml` | Every 3 hours, fetches all version files from the live site (`ojsapp.pages.dev`) and compares them with `_docs/version.txt` (`update_version.py --check-live`); opens an Issue if the deploy is stuck and closes it by itself once fixed. Needs no secret keys |
+| `.github/workflows/scripts/update_activity_feed.py` | Helper for `activity-feed.yml` — updates the pinned live activity-feed issue |
+| `.github/workflows/written-exam-currency.yml` | Weekly, and whenever topics change, watches written-exam's `data/current-status.json` (`written-exam/check_currency.js`); opens an Issue when the "current facts" of current affairs change or a review date passes; on PRs it only checks structure; it never changes answers by itself |
 
-## 📝 নতুন MCQ/ব্যাখ্যা যোগ করার সময় — duplicate-content ঝুঁকি
+## 📝 When adding new MCQs/explanations — duplicate-content risk
 
-সাইটটি Google-এ ইনডেক্স হয় এবং AdSense-এর মতো মনিটাইজেশনের জন্য ব্যবহৃত হয়। তাই "duplicate/thin content" নিছক code-quality ইস্যু না — সরাসরি সাইটের আয়ের ঝুঁকি।
+The site is indexed by Google and monetized (AdSense-style), so "duplicate/thin content" is not just a code-quality matter — it is a direct risk to the site's revenue.
 
-**সমস্যা যেটা ঘটেছিল (রেফারেন্সের জন্য):** ২৮তম BCS-এর নতুন প্রশ্নের ব্যাখ্যা সাধারণ জ্ঞান থেকে লেখার পর দেখা যায় sattacademy.com, myexaminer.net-এর মতো জনপ্রিয় সাইটের সাথে বাক্যগঠনে উল্লেখযোগ্য মিল হয়ে গেছে — কারণ সবাই একই সাধারণ ঐতিহাসিক/পাঠ্যতথ্য প্রায় একই ভাষায় বর্ণনা করে। এটা এই niche-এ (BCS/সরকারি চাকরির MCQ) সাধারণ ঝুঁকি।
+**What happened (for reference):** after explanations for new 28th BCS questions were written from general knowledge, they turned out to have significant sentence-level similarity with popular sites such as sattacademy.com and myexaminer.net — because everyone describes the same common historical/textbook facts in nearly the same words. This is a general risk in this niche (BCS/government-job MCQs).
 
-**নতুন প্রশ্ন/ব্যাখ্যা যোগ করার সময় যা করতে হবে:**
+**What to do when adding new questions/explanations:**
 
-0. **আগে ব্যাখ্যা-DB দেখুন** — নতুন প্রশ্নগুলো `[{question, options, correctIndex}]` JSON করে `node _dev/explanations.js lookup <file.json>` চালান। ✅ যাচাইকৃত ব্যাখ্যা থাকলে সেটাই নিন; 🟡 অযাচাইকৃত হলে পুনর্ব্যবহার করার আগে তথ্য মিলিয়ে নিন; ⚠️ উত্তর-অমিল মানে বিদ্যমান এন্ট্রিতে ভুল থাকতে পারে (আগে এভাবেই একটা ভুল correctIndex ধরা পড়েছে) — সোর্স দেখে ঠিক করুন; ❌ হলে নিচের নিয়মে নিজে লিখুন। সোর্সে যাচাই করা ব্যাখ্যা `node _dev/explanations.js add <id> --verified --source <URL>` দিয়ে DB-তে তুলুন, আর push-এর আগে `node _dev/explanations.js check` চালান।
-1. **ব্যাখ্যা লেখার স্টাইল বদলে দিন** — শুধু "সঠিক উত্তর X, কারণ Y" ফরম্যাটে না লিখে, reasoning/elimination-style লিখুন: কেন সঠিক অপশন সঠিক, এবং কেন অন্য ১-২টা অপশন ভুল/বিভ্রান্তিকর মনে হতে পারে। এটা structurally আলাদা করে দেয় সাধারণ fact-dump স্টাইলের সাইট থেকে, আর একই সাথে শিক্ষার্থীর জন্য বেশি উপকারীও হয়।
-2. **সন্দেহ হলে স্পট-চেক সার্চ করুন** — নতুন ব্যাখ্যার কিছু অংশ (৮-১২ শব্দের নির্দিষ্ট বাক্যাংশ) quote করে ওয়েব সার্চ করে দেখুন অন্য সাইটে হুবহু/কাছাকাছি টেক্সট আছে কিনা। সব প্রশ্ন এক এক করে সার্চ করার দরকার নেই — প্রতি বিষয় থেকে কয়েকটা নমুনা যথেষ্ট প্যাটার্ন বুঝতে।
-3. **push করার আগে `node _dev/validate_data.js` চালান** — এটা নিজের ডেটাবেসের মধ্যে ডুপ্লিকেট id/প্রশ্ন/ব্যাখ্যা ধরবে (এটা `validate-data.yml` workflow-এও PR-এর required check হিসেবে চলে)। কিন্তু মনে রাখবেন এই স্ক্রিপ্ট **external সাইটের সাথে মিল ধরতে পারে না** — সেটা মানুষ/AI-কেই স্পট-চেক করে দেখতে হবে (ধাপ ২)।
+0. **Check the explanation DB first** — put the new questions into a JSON file of `[{question, options, correctIndex}]` and run `node _dev/explanations.js lookup <file.json>`. ✅ verified explanation exists → use it; 🟡 unverified → check the facts before reusing; ⚠️ answer mismatch → the existing entry may be wrong (a wrong correctIndex was caught this way before) — fix it from the source; ❌ → write it yourself following the rules below. Put source-verified explanations into the DB with `node _dev/explanations.js add <id> --verified --source <URL>`, and run `node _dev/explanations.js check` before pushing.
+1. **Change the explanation-writing style** — don't write only in the "correct answer is X, because Y" format; write in a reasoning/elimination style: why the correct option is correct, and why 1-2 of the other options may look wrong/misleading. This makes it structurally different from fact-dump-style sites, and is also more useful to the learner.
+2. **Spot-check by searching when in doubt** — quote a part of the new explanation (a specific phrase of 8-12 words) in a web search and see whether identical/near-identical text exists on other sites. You don't need to search every question one by one — a few samples per subject are enough to see the pattern.
+3. **Run `node _dev/validate_data.js` before pushing** — it catches duplicate ids/questions/explanations within our own database (it also runs as a required PR check in the `validate-data.yml` workflow). But remember this script **cannot detect matches with external sites** — humans/AI must spot-check that (step 2).
 
-## ✍️ উৎসে না-থাকা তথ্য পূরণ করার নিয়ম — কখন লেখা যাবে, কখন না
+## ✍️ Filling in information that is not in the source — when you may write it and when not
 
-**সমস্যা যেটা ঘটেছিল (রেফারেন্সের জন্য):** `tech-edu-cashier` এক্সামের qno ১০-এ (paragraph লেখার প্রশ্ন) মূল বইয়ে কোনো মডেল উত্তর ছিল না, কিন্তু একটা সেশন নিজে থেকে একটা উত্তর লিখে বসিয়ে দিয়েছিল। পরে ধরা পড়ে revert করা হয় (#238), এবং "মডেল উত্তর নেই" হিসেবে সেটেল করা হয় (#240, বিস্তারিত `written-exam/PROGRESS.md`-এ)।
+**What happened (for reference):** for the `tech-edu-cashier` exam, qno 10 (a paragraph-writing question), the original book had no model answer, but a session wrote an answer on its own. It was caught later and reverted (#238), and settled as "no model answer" (#240, details in `written-exam/PROGRESS.md`).
 
-**নিয়ম — উৎসে (প্রশ্নপত্র/বই) কোনো তথ্য না থাকলে:**
+**Rule — when the source (question paper/book) lacks some information:**
 
-1. **বস্তুনিষ্ঠভাবে derivable হলে (একটাই সঠিক উত্তর বের করা সম্ভব)** — যেমন গণিতের সমস্যা সমাধান, অনুবাদ, ব্যাকরণ সংশোধন, তারিখ/সংজ্ঞা-জাতীয় factual প্রশ্ন — নিজে সঠিকভাবে সমাধান করে/হিসেব করে উত্তর লেখা ঠিক আছে। এটা fabrication না, কারণ verifiable।
-2. **Subjective/open-ended হলে (কোনো একক "সঠিক" উত্তর নেই)** — যেমন paragraph/essay লেখা, letter-writing-এর মডেল উত্তর, মতামতভিত্তিক প্রশ্ন — উৎসে মডেল উত্তর না থাকলে **নিজে থেকে একটা লিখে "এটাই সঠিক উত্তর" হিসেবে বসানো যাবে না।** এটা fabrication — পরীক্ষার্থী ভুলভাবে বিশ্বাস করে ফেলতে পারে যে এটা আসল বইয়ের উত্তর।
-3. **সংখ্যাগত মেটাডেটা (marks) অস্পষ্ট হলে** — **ফাঁকা রাখুন, অনুমান করবেন না, এটা নিয়ে প্রজেক্ট মালিককে জিজ্ঞেসও করবেন না।** এটা ভিত্তি ফিল্ড না (`_docs/job-app/written-exam-data.md` Section ৬ দেখুন — ভিত্তি শুধু ministry/post/date/qno), তাই totalMarks/marks অনুপস্থিত থাকা owner-এর কোনো বিবেচ্য বিষয়ই না। এটা owner-এর স্পষ্ট, চূড়ান্ত সিদ্ধান্ত (২০২৬-০৮-৩০, `written-exam/PROGRESS.md`-এ নথিভুক্ত) — বারবার তুলে বিরক্ত করবেন না।
-4. **যেকোনো ক্ষেত্রেই সন্দেহ থাকলে (marks ছাড়া অন্য কিছু নিয়ে):** ফাঁকা/অনুপস্থিত রাখুন এবং প্রজেক্ট মালিককে জানান — অনুমান করে কিছু বসিয়ে "সমাধান করে ফেলা"-র চেয়ে খোলাখুলি না-জানা ভালো।
+1. **If it is objectively derivable (exactly one correct answer can be worked out)** — e.g. solving a math problem, translation, grammar correction, factual questions like dates/definitions — it is fine to solve/compute it correctly yourself and write the answer. This is not fabrication, because it is verifiable.
+2. **If it is subjective/open-ended (no single "correct" answer)** — e.g. writing a paragraph/essay, a model answer for letter-writing, opinion-based questions — and the source has no model answer, **you must not write one yourself and present it as "the correct answer".** That is fabrication — an examinee may wrongly believe it is the original book's answer.
+3. **If numeric metadata (marks) is unclear** — **leave it blank, do not guess, and do not even ask the project owner about it.** It is not a foundational field (see `_docs/job-app/written-exam-data.md` Section ৬ — the foundational fields are only ministry/post/date/qno), so totalMarks/marks being absent is no concern of the owner's at all. This is the owner's explicit, final decision (2026-08-30, recorded in `written-exam/PROGRESS.md`) — don't annoy them by bringing it up again.
+4. **In any case of doubt (about anything other than marks):** leave it blank/absent and tell the project owner — being openly "don't know" is better than "solving" it by putting in a guess.
 
+## 🔎 Before and after searching time-sensitive facts — `_docs/verified-facts.md`
 
+Current office-holders, numbers, rankings, recent events — these must be verified by web search, and re-searching the same fact again and again wastes time. So the repo has a ledger of verified facts: [`_docs/verified-facts.md`](./verified-facts.md).
 
-## 🔎 সময়-সংবেদনশীল তথ্য সার্চ করার আগে ও পরে — `_docs/verified-facts.md`
+1. **Before searching**, check this file. If the fact is there and its "পুনর্যাচাই" (re-verify) date has not passed — no new search is needed.
+2. **When you verify something by search**, add or update that row (don't keep two rows for the same topic — change the earlier one). Each row has the fact, the date, the source and the re-verify date.
+3. **If it could not be verified**, write the fact in the "অযাচাই" (unverified) section; don't put a guess into a row.
+4. When putting a ledger fact into a question's answer, match the question's year/context — a year-specific question's answer must carry that year's fact.
+5. No separate "current status" note is kept below a question; there is a single answer, directly in `data/exams/*.json` (decision 2026-09-30, `written-exam/data/TIME_SENSITIVE_TRACKER.md`).
 
-বর্তমান পদধারী, সংখ্যা, র‍্যাংকিং, সাম্প্রতিক ঘটনা — এগুলো ওয়েবে সার্চ করে যাচাই করতে হয়, আর একই তথ্য বারবার খুঁজে সময় নষ্ট হয়। তাই রিপোতে একটা যাচাই-খাতা আছে: [`_docs/verified-facts.md`](./verified-facts.md)।
-
-1. **সার্চের আগে** এই ফাইল দেখুন। তথ্য আছে আর "পুনর্যাচাই" তারিখ পেরোয়নি — নতুন সার্চ লাগবে না।
-2. **সার্চ করে যাচাই করলে** সেই সারি যোগ বা হালনাগাদ করুন (একই বিষয়ে দুটো সারি রাখবেন না, আগেরটা বদলান)। প্রতি সারিতে তথ্য, তারিখ, সূত্র ও পুনর্যাচাইয়ের তারিখ থাকবে।
-3. **যাচাই করা না গেলে** তথ্যটা "অযাচাই" অংশে লিখুন, অনুমান করে সারিতে বসাবেন না।
-4. খাতার তথ্য প্রশ্নের উত্তরে বসানোর সময় প্রশ্নের বছর/প্রেক্ষাপট মিলিয়ে নিন — বছর-নির্দিষ্ট প্রশ্নের উত্তর সেই বছরের তথ্যই থাকবে।
-5. প্রশ্নের নিচে আলাদা "বর্তমান অবস্থা" নোট রাখা হয় না; একটাই উত্তর, সরাসরি `data/exams/*.json`-এ (সিদ্ধান্ত ২০২৬-০৯-৩০, `written-exam/data/TIME_SENSITIVE_TRACKER.md`)।
-
-এই ফাইলে হাতে-লেখা কমিট/PR-স্ট্যাটাস রাখা হয় না — দ্রুত stale হয়ে ভুল তথ্য ছড়ায়। বাস্তব অবস্থা সবসময় `bash _dev/scripts/session_status.sh` থেকে যাচাই করুন।
+No hand-written commit/PR status is kept in this file — it goes stale quickly and spreads wrong information. Always verify the real state from `bash _dev/scripts/session_status.sh`.

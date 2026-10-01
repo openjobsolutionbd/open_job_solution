@@ -249,8 +249,8 @@
       },
       {
         "label": "b",
-        "original": "I saw a dream last light.",
-        "changed": "I dreamt a dream last light."
+        "original": "I saw a dream last night.",
+        "changed": "I dreamt a dream last night."
       }
     ]
   },
@@ -307,7 +307,7 @@
       },
       {
         "sentence": "We have to go there.......... five minutes.",
-        "answer": "by"
+        "answer": "within"
       },
       {
         "sentence": "He died....... overeating.",
@@ -323,7 +323,7 @@
       },
       {
         "sentence": "\"The old man and the sea\" is written by.......",
-        "answer": "Earnest Hemingway"
+        "answer": "Ernest Hemingway"
       }
     ]
   },

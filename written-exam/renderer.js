@@ -16,6 +16,14 @@ function toBnDigits(num) {
   const bnDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
   return String(num).replace(/[0-9]/g, d => bnDigits[d]);
 }
+// $...$ সমীকরণের ভেতরের অঙ্ক MathJax-এর জন্য ইংরেজিই থাকে (STIX ফন্টে বাংলা অঙ্ক নেই);
+// তার বাইরের সব অঙ্ক বাংলা হয়
+function toBnDigitsOutsideTex(str) {
+  return String(str == null ? '' : str)
+    .split(/(\$[^$]*\$)/)
+    .map((part, i) => i % 2 === 1 ? part : toBnDigits(part))
+    .join('');
+}
 function partLabel(p, i) {
   return p.label || BN_PART_LABELS[i] || String(i + 1);
 }
@@ -129,18 +137,20 @@ function renderAnswer(q) {
         <tbody>${rows.map(r => `<tr>${r.map(c => `<td>${escHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody>
       </table></div>`;
 
+    // গণিতের ধাপ/উত্তরে সব ইংরেজি অঙ্ক (1.10x, 2525 − x) বাংলা অঙ্কে (১.১০x, ২৫২৫ − x) দেখানো হয়;
+    // ডেটা ফাইল অপরিবর্তিত — শুধু দেখানোর সময় রূপান্তর
     case 'math':
       const stepsHtml = (q.steps || []).map(s =>
-        `<div class="math-step">${escHtml(s)}</div>`).join('');
+        `<div class="math-step">${escHtml(toBnDigitsOutsideTex(s))}</div>`).join('');
       const altHtml = q.alternative ? `
         <div class="alt-solution">
           <div class="alt-label">বিকল্প সমাধান:</div>
-          ${(q.alternative.steps || []).map(s => `<div class="math-step">${escHtml(s)}</div>`).join('')}
-          <div class="math-answer">উত্তর: ${escHtml(q.alternative.answer)}</div>
+          ${(q.alternative.steps || []).map(s => `<div class="math-step">${escHtml(toBnDigitsOutsideTex(s))}</div>`).join('')}
+          <div class="math-answer">উত্তর: ${escHtml(toBnDigitsOutsideTex(q.alternative.answer))}</div>
         </div>` : '';
       return `<div class="ans-math">
         ${stepsHtml}
-        <div class="math-answer">∴ উত্তর: ${escHtml(q.answer)}</div>
+        <div class="math-answer">∴ উত্তর: ${escHtml(toBnDigitsOutsideTex(q.answer))}</div>
         ${altHtml}
       </div>`;
 

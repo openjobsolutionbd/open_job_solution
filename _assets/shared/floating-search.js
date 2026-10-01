@@ -325,6 +325,36 @@
     });
     input.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSearch(); });
 
+    // ─── মোবাইলে স্থির পজিশন ───
+    // মোবাইলে (≤৬০০px) বাটন টানা যায় না; পেজের "↑" (#scrollTopBtn) বাটনের ঠিক ওপরে,
+    // ডান পাশে, ৬px ফাঁক রেখে বসে। "↑"-এর অবস্থান প্রতিটা পেজে আলাদা হওয়ায় সেটার
+    // CSS থেকেই মাপ নেওয়া হয় (পেজ বদলালে নিজে থেকে মিলে যায়)। ডেস্কটপে আগের মতোই টানা যায়।
+    const mobileMQ = window.matchMedia('(max-width: 600px)');
+    function isMobile() { return mobileMQ.matches; }
+    function applyFixedPosition() {
+      if (!isMobile()) { if (wrap.dataset.fsMobilePos) { wrap.style.right = wrap.style.bottom = wrap.style.left = wrap.style.top = ''; delete wrap.dataset.fsMobilePos; } return; }
+      let right = 17, bottom = 116; // "↑" বাটন না থাকলে ডিফল্ট
+      const up = document.getElementById('scrollTopBtn');
+      if (up) {
+        const cs = getComputedStyle(up);
+        const upRight = parseFloat(cs.right), upBottom = parseFloat(cs.bottom);
+        const upW = parseFloat(cs.width), upH = parseFloat(cs.height);
+        if (!isNaN(upRight) && !isNaN(upBottom) && upW && upH) {
+          // বাটন লুকানো (display:none) থাকলেও pill-এর CSS-এ দেওয়া মাপ পাওয়া যায়
+          const w = parseFloat(getComputedStyle(pill).width) || 48;
+          right = upRight + (upW - w) / 2;   // "↑"-এর সাথে একই কেন্দ্র-রেখায়
+          bottom = upBottom + upH + 6;
+        }
+      }
+      wrap.style.left = 'auto'; wrap.style.top = 'auto';
+      wrap.style.right = right + 'px'; wrap.style.bottom = bottom + 'px';
+      wrap.dataset.fsMobilePos = '1';
+    }
+    applyFixedPosition();
+    window.addEventListener('resize', applyFixedPosition);
+    window.addEventListener('orientationchange', applyFixedPosition);
+    window.addEventListener('load', applyFixedPosition);
+
     // ─── Drag (মাউস/টাচ) ───
     (function enableDrag() {
       let dragging = false, moved = false;
@@ -335,6 +365,7 @@
         return { x: e.clientX, y: e.clientY };
       }
       function dragStart(e) {
+        if (isMobile()) return; // মোবাইলে বাটন স্থির — টানা যায় না
         if (e.target === input || e.target === closeBtn) return;
         const { x, y } = getXY(e);
         const rect = wrap.getBoundingClientRect();

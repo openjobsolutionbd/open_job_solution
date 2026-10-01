@@ -201,8 +201,8 @@ const EXAM_ARCHIVE = [
     post: "স্টোর কিপার",
     date: "2025-09-20",
     duration: "৯০ মিনিট",
-    totalMarks: 80,
-    totalQuestions: 28,
+    totalMarks: 78,
+    totalQuestions: 27,
   },
   {
     id: "job-2025-dc-manikganj",

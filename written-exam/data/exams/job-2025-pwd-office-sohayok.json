@@ -219,8 +219,8 @@
       {
         "label": "a",
         "phrase": "Call on",
-        "meaning": "ডাকা",
-        "example": "He called me yesterday."
+        "meaning": "দেখা করতে যাওয়া",
+        "example": "He called on me yesterday."
       },
       {
         "label": "b",
@@ -230,9 +230,9 @@
       },
       {
         "label": "c",
-        "phrase": "On the behalf of",
+        "phrase": "On behalf of",
         "meaning": "পক্ষে",
-        "example": "I thank you on behalf of the them."
+        "example": "I thank you on behalf of them."
       },
       {
         "label": "d",

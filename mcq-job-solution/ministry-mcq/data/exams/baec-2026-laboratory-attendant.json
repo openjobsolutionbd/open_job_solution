@@ -1,0 +1,558 @@
+[
+  {
+    "id": "baec-2026-laboratory-attendant-q01",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 1,
+    "q": "'জলে-স্থলে', 'দেশে-বিদেশে', 'হাটে-বাজারে' — এগুলো কোন সমাসের অন্তর্গত?",
+    "answer": "অলুক দ্বন্দ্ব সমাস",
+    "options": [
+      "অলুক দ্বন্দ্ব সমাস",
+      "বহুব্রীহি সমাস",
+      "নিত্য সমাস",
+      "উপপদ তৎপুরুষ সমাস"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q02",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 2,
+    "q": "রবীন্দ্রনাথ ঠাকুরকে 'গুরুদেব' উপাধিতে ভূষিত করেন কে?",
+    "answer": "মহাত্মা গান্ধী",
+    "options": [
+      "মহাত্মা গান্ধী",
+      "জওহরলাল নেহেরু",
+      "সুভাষচন্দ্র বসু",
+      "স্বামী বিবেকানন্দ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q03",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 3,
+    "q": "বাংলা সাহিত্যের প্রথম শোককাব্য (Elegy) 'অশ্রুমালা' (১৮৯৫)-র রচয়িতা কে?",
+    "answer": "কায়কোবাদ",
+    "options": [
+      "কায়কোবাদ",
+      "মাইকেল মধুসূদন দত্ত",
+      "মীর মশাররফ হোসেন",
+      "নবীনচন্দ্র সেন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q04",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 4,
+    "q": "বাংলা সাহিত্যের ইতিহাসবিষয়ক প্রথম পূর্ণাঙ্গ গ্রন্থ 'বঙ্গভাষা ও সাহিত্য' (১৮৯৬) কার রচিত?",
+    "answer": "দীনেশচন্দ্র সেন",
+    "options": [
+      "মুহম্মদ শহীদুল্লাহ",
+      "আহমদ শরীফ",
+      "দীনেশচন্দ্র সেন",
+      "সুকুমার সেন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q05",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 5,
+    "q": "মাইকেল মধুসূদন দত্তের বিখ্যাত মহাকাব্য 'মেঘনাদবধ কাব্য' কত সালে প্রকাশিত হয় এবং এতে কয়টি সর্গ রয়েছে?",
+    "answer": "১৮৬১ সালে; ৯টি",
+    "options": [
+      "১৮৬১ সালে; ৭টি",
+      "১৮৬২ সালে; ৮টি",
+      "১৮৬০ সালে; ৯টি",
+      "১৮৬১ সালে; ৯টি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q06",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 6,
+    "q": "'সমোচ্চারিত ভিন্নার্থবোধক শব্দ' হিসেবে 'কুজন' এবং 'কূজন' শব্দ দুটির অর্থ যথাক্রমে কী?",
+    "answer": "খারাপ লোক এবং পাখির ডাক",
+    "options": [
+      "খারাপ লোক এবং পাখির ডাক",
+      "খারাপ লোক এবং ফুলের গন্ধ",
+      "পাখির ডাক এবং খারাপ লোক",
+      "ভালো লোক এবং পাখির ডাক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q07",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 7,
+    "q": "বাংলা সাহিত্যের প্রাচীনতম নিদর্শন 'চর্যাপদ' কত সালে এবং কোথা থেকে আবিষ্কৃত হয়?",
+    "answer": "১৯০৭ সালে; নেপালের রাজ দরবারের রয়্যাল লাইব্রেরি থেকে",
+    "options": [
+      "১৯০৭ সালে; কলকাতার এশিয়াটিক সোসাইটি থেকে",
+      "১৮৯৯ সালে; ঢাকা বিশ্ববিদ্যালয় থেকে",
+      "১৯১৬ সালে; নেপালের রাজ দরবারের রয়্যাল লাইব্রেরি থেকে",
+      "১৯০৭ সালে; নেপালের রাজ দরবারের রয়্যাল লাইব্রেরি থেকে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q08",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "bangla",
+    "qno": 8,
+    "q": "'আরণ্যক' উপন্যাসের রচয়িতা বিভূতিভূষণ বন্দ্যোপাধ্যায়ের বিখ্যাত চরিত্র 'সত্যচরণ' ও 'যুগলপ্রসাদ' মূলত কীসের প্রতীক?",
+    "answer": "নগরায়ন বনাম প্রকৃতি প্রেমের দ্বন্দ্ব ও প্রকৃতি সুরক্ষার প্রতীক",
+    "options": [
+      "জমিদারি প্রথার শোষণের প্রতীক",
+      "নগরায়ন বনাম প্রকৃতি প্রেমের দ্বন্দ্ব ও প্রকৃতি সুরক্ষার প্রতীক",
+      "শহুরে জীবনের সাফল্যের প্রতীক",
+      "ধর্মীয় বিশ্বাসের দ্বন্দ্বের প্রতীক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q10",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 10,
+    "q": "What is the meaning of the Latin expression 'DE FACTO'?",
+    "answer": "Existing in fact",
+    "options": [
+      "Out of court",
+      "Existing by law",
+      "In good faith",
+      "Existing in fact"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q11",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 11,
+    "q": "'He came off with flying colours.'-এর সঠিক বাংলা অনুবাদ কোনটি?",
+    "answer": "সে গৌরবময় সাফল্য অর্জন করল",
+    "options": [
+      "সে লজ্জায় মুখ লুকাল",
+      "সে গৌরবময় সাফল্য অর্জন করল",
+      "সে রঙিন কাপড় পরে বের হল",
+      "সে উড়ন্ত পতাকা নিয়ে ফিরল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q12",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 12,
+    "q": "Choose the correct translation of 'মেয়েটি হাসতে হাসতে ঘরে ঢুকল।'",
+    "answer": "The girl entered the room laughing.",
+    "options": [
+      "The girl enter the room laughing.",
+      "The girl laughed while entering to the room.",
+      "The girl entered the room laughing.",
+      "The girl entering the room laughs."
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q13",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 13,
+    "q": "'বিনা মেঘে বজ্রপাত'-এর সঠিক ইংরেজি অনুবাদ কোনটি?",
+    "answer": "A bolt from the blue.",
+    "options": [
+      "Thunder in the dark.",
+      "A bolt from the blue.",
+      "A cloud without rain.",
+      "A storm in a teacup."
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q14",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 14,
+    "q": "Who is known as the 'Poet of Beauty' in English literature?",
+    "answer": "John Keats",
+    "options": [
+      "William Wordsworth",
+      "John Keats",
+      "P. B. Shelley",
+      "Lord Byron"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q15",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 15,
+    "q": "Which poetic period in English literature is known as the 'Age of Reason'?",
+    "answer": "The Neoclassical Period",
+    "options": [
+      "The Neoclassical Period",
+      "The Elizabethan Period",
+      "The Romantic Period",
+      "The Victorian Period"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q16",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 16,
+    "q": "What is the passive form of 'Who wrote Hamlet?'",
+    "answer": "By whom was Hamlet written?",
+    "options": [
+      "By whom Hamlet was written?",
+      "By whom was Hamlet written?",
+      "Whom was Hamlet written by?",
+      "Who was Hamlet written?"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q17",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 17,
+    "q": "Choose the correct spelling.",
+    "answer": "Bureaucracy",
+    "options": [
+      "Beauracracy",
+      "Bureaucracy",
+      "Buraucracy",
+      "Bureacracy"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q18",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "english",
+    "qno": 18,
+    "q": "Which of the following words is a verb?",
+    "answer": "interest",
+    "options": [
+      "careful",
+      "beautiful",
+      "quickly",
+      "interest"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q19",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 19,
+    "q": "x + 1/x = 2 হলে, x³ + 1/x³ এর মান কত?",
+    "answer": "2",
+    "options": [
+      "0",
+      "8",
+      "4",
+      "2"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q20",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 20,
+    "q": "log_a 1 এর মান কত?",
+    "answer": "0",
+    "options": [
+      "1",
+      "a",
+      "অসংজ্ঞায়িত",
+      "0"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q21",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 21,
+    "q": "O কেন্দ্রবিশিষ্ট ABC বৃত্তে AB ব্যাস ভিন্ন জ্যা, M, AB এর মধ্যবিন্দু। ∠AOM = 40° হলে ∠OBM = কত?",
+    "answer": "50°",
+    "options": [
+      "90°",
+      "80°",
+      "40°",
+      "50°"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q22",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 22,
+    "q": "২০৫৭৩.৪ মিলিগ্রাম কত কিলোগ্রাম?",
+    "answer": "০.০২০৫৭৩৪",
+    "options": [
+      "০.২০৫৭৩৪",
+      "০.০০২০৫৭৩৪",
+      "০.০২০৫৭৩৪",
+      "২০.৫৭৩৪"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q23",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 23,
+    "q": "কোনো বর্গের এক বাহুর দৈর্ঘ্য a হলে, এর কর্ণের দৈর্ঘ্য কত?",
+    "answer": "√2a",
+    "options": [
+      "√3a",
+      "√2a",
+      "a²",
+      "2a"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q24",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 24,
+    "q": "log₂ 8 এর মান কত?",
+    "answer": "3",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "8"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q25",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 25,
+    "q": "f(x) = x² − 4x + 3 হলে, x এর কোন মানের জন্য f(x) = 0 হবে?",
+    "answer": "1, 3",
+    "options": [
+      "1, −3",
+      "1, 3",
+      "2, 3",
+      "−1, −3"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q28",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 28,
+    "q": "১৩ সেমি ব্যাসার্ধের বৃত্তের কেন্দ্র হতে ৫ সেমি দূরত্বে অবস্থিত জ্যা এর দৈর্ঘ্য কত সেমি?",
+    "answer": "২৪",
+    "options": [
+      "১৮",
+      "২৪",
+      "২৬",
+      "১২"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q29",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 29,
+    "q": "বৃত্তের কেন্দ্র থেকে ব্যাস ভিন্ন অন্য কোনো জ্যা-এর ওপর অঙ্কিত লম্ব জ্যা-কে কী করে?",
+    "answer": "সমদ্বিখণ্ডিত করে",
+    "options": [
+      "সমদ্বিখণ্ডিত করে",
+      "সমান তিন ভাগে ভাগ করে",
+      "অসমভাবে ভাগ করে",
+      "দ্বিগুণ করে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q30",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 30,
+    "q": "একটি বেলন বা সিলিন্ডারের ভূমির ব্যাসার্ধ r এবং উচ্চতা h হলে, এর বক্রপৃষ্ঠের ক্ষেত্রফল কত?",
+    "answer": "2πrh",
+    "options": [
+      "2πrh",
+      "πrh",
+      "2πr(r + h)",
+      "πr²h"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q31",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 31,
+    "q": "একটি বর্গক্ষেত্রের পরিসীমা একটি আয়তক্ষেত্রের পরিসীমার সমান। আয়তক্ষেত্রটির দৈর্ঘ্য, এর প্রস্থের ৩ গুণ এবং ক্ষেত্রফল ৭৬৮ বর্গমিটার। বর্গক্ষেত্রের এক বাহুর দৈর্ঘ্য কত?",
+    "answer": "৩২ মিটার",
+    "options": [
+      "২৪ মিটার",
+      "৩২ মিটার",
+      "৪৮ মিটার",
+      "১৬ মিটার"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q32",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 32,
+    "q": "ক ঘণ্টায় ১০ কিমি এবং খ ঘণ্টায় ১৫ কিমি বেগে একই স্থান থেকে রাজশাহীর পথে রওনা হলো। ক ১০.৫০ মিনিটের সময় এবং খ ৯.২০ মিনিটের সময় রাজশাহী পৌঁছাল। রওনা হওয়ার স্থান থেকে রাজশাহীর দূরত্ব কত কি.মি.?",
+    "answer": "৪৫ কিমি",
+    "options": [
+      "৩০ কিমি",
+      "৭৫ কিমি",
+      "৪৫ কিমি",
+      "৬০ কিমি"
+    ],
+    "optionsGenerated": true,
+    "explanation": "হিসাব: d/10 − d/15 = ১.৫ ঘণ্টা (১০:৫০ − ৯:২০) ⇒ d = ৪৫। (প্রশ্নের শব্দবিন্যাস ম্যাগাজিনের মতোই রাখা হয়েছে।)"
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q33",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 33,
+    "q": "tan θ = 4/3 হলে, sin θ এর মান কত?",
+    "answer": "4/5",
+    "options": [
+      "3/5",
+      "4/5",
+      "5/4",
+      "3/4"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q34",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "math",
+    "qno": 34,
+    "q": "একটি বৃত্তের পরিধি ও ব্যাসের অনুপাত কত?",
+    "answer": "π : 1",
+    "options": [
+      "π : 2",
+      "1 : π",
+      "2π : 1",
+      "π : 1"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q35",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 35,
+    "q": "পারমাণবিক অস্ত্র প্রসার রোধ চুক্তি (NPT) কত সালে স্বাক্ষর হয়?",
+    "answer": "১৯৬৮ সালে",
+    "options": [
+      "১৯৯৬ সালে",
+      "১৯৬৮ সালে",
+      "১৯৬৩ সালে",
+      "১৯৭২ সালে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q36",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 36,
+    "q": "বাংলাদেশ সংবিধানের কোন অনুচ্ছেদে 'জাতীয় সংস্কৃতির সমৃদ্ধি ও বিকাশ' সংক্রান্ত নির্দেশক নীতির কথা বলা হয়েছে?",
+    "answer": "অনুচ্ছেদ ২৩",
+    "options": [
+      "অনুচ্ছেদ ২৫",
+      "অনুচ্ছেদ ২৩",
+      "অনুচ্ছেদ ১৯",
+      "অনুচ্ছেদ ২৮"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q37",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 37,
+    "q": "অ্যান্টার্কটিকা মহাদেশের একমাত্র সক্রিয় আগ্নেয়গিরির নাম কী?",
+    "answer": "মাউন্ট এরেবাস",
+    "options": [
+      "মাউন্ট এরেবাস",
+      "মাউন্ট ভিসুভিয়াস",
+      "মাউন্ট কিলিমাঞ্জারো",
+      "মাউন্ট ফুজি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q38",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 38,
+    "q": "বিশ্বের একমাত্র দেশ কোনটি যার জাতীয় পতাকা কোনো চতুর্ভুজ (আয়তক্ষেত্র বা বর্গক্ষেত্র) আকৃতির নয়?",
+    "answer": "নেপাল",
+    "options": [
+      "ভুটান",
+      "নেপাল",
+      "মালদ্বীপ",
+      "শ্রীলংকা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q39",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 39,
+    "q": "আয়তনের দিক থেকে বিশ্বের বৃহত্তম ভূ-বেষ্টিত (Landlocked) দেশ কোনটি?",
+    "answer": "কাজাখস্তান",
+    "options": [
+      "ইথিওপিয়া",
+      "বলিভিয়া",
+      "কাজাখস্তান",
+      "মঙ্গোলিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q40",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 40,
+    "q": "বাংলাদেশে প্রথম আনুষ্ঠানিকভাবে 'ডাক টিকেট' উদ্বোধন করা হয় কবে?",
+    "answer": "২৯ জুলাই ১৯৭১",
+    "options": [
+      "১৬ ডিসেম্বর ১৯৭১",
+      "২৬ মার্চ ১৯৭১",
+      "২৯ জুলাই ১৯৭১",
+      "১৭ এপ্রিল ১৯৭১"
+    ],
+    "optionsGenerated": true
+  }
+]

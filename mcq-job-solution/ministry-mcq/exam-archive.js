@@ -32,5 +32,12 @@ const EXAM_ARCHIVE = [
     date: "2026-08-03",
     totalQuestions: 58,
   },
+  {
+    id: "baec-2026-laboratory-attendant",
+    ministry: "বাংলাদেশ পরমাণু শক্তি কমিশন",
+    post: "ল্যাবরেটরি এ্যাটেনডেন্ট",
+    date: "2026-07-31",
+    totalQuestions: 37,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

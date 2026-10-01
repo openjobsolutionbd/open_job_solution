@@ -7,8 +7,8 @@
     "q": "নিচের কোনটি অর্ধ-তৎসম শব্দের উদাহরণ?",
     "answer": "গিন্নি",
     "options": [
-      "গিন্নি",
       "সূর্য",
+      "গিন্নি",
       "চরম",
       "ডাব"
     ],
@@ -22,8 +22,8 @@
     "q": "'হ' কোন ধরনের ধ্বনি?",
     "answer": "ঘোষ মহাপ্রাণ",
     "options": [
-      "অঘোষ অল্পপ্রাণ",
       "ঘোষ মহাপ্রাণ",
+      "অঘোষ অল্পপ্রাণ",
       "ঘোষ অল্পপ্রাণ",
       "অঘোষ মহাপ্রাণ"
     ],
@@ -37,10 +37,10 @@
     "q": "নির্দোষ শব্দের সন্ধি-বিচ্ছেদ কোনটি?",
     "answer": "নিঃ + দোষ",
     "options": [
-      "নিব + দোস",
+      "নির + দোষ",
       "নিঃ + দোষ",
-      "নিরা + দোস",
-      "নির + দোষ"
+      "নিব + দোস",
+      "নিরা + দোস"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -52,10 +52,10 @@
     "q": "কোনটি ভাষার মৌলিক অংশ নয়?",
     "answer": "বর্ণ",
     "options": [
-      "বাক্য",
       "ধ্বনি",
-      "বর্ণ",
-      "শব্দ"
+      "শব্দ",
+      "বাক্য",
+      "বর্ণ"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -67,9 +67,9 @@
     "q": "Overrule-এর বাংলা প্রতিশব্দ হলো —",
     "answer": "বাতিল করা",
     "options": [
-      "বাতিল করা",
       "আমলে আনা",
       "মুলতবি করা",
+      "বাতিল করা",
       "কার্যকর করা"
     ],
     "optionsSource": "myexaminer.net"
@@ -82,10 +82,10 @@
     "q": "অগ্রপশ্চাৎ বিবেচনা না করে কাজ করে যে, একককথায় কী হবে?",
     "answer": "অবিমৃষ্যকারী",
     "options": [
-      "অবিমৃষ্যকারী",
       "অবাচীন",
-      "অতৎকারী",
-      "অবিবেচক"
+      "অবিমৃষ্যকারী",
+      "অবিবেচক",
+      "অতৎকারী"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -97,10 +97,10 @@
     "q": "নিচের কোন বাক্যটি শুদ্ধ?",
     "answer": "তাহার জীবন সংশয়াপন্ন।",
     "options": [
+      "তাহার জীবন সংশয়ময়।",
       "তাহার জীবন সংশয়াপন্ন।",
-      "তাহার জীবন সংশয়ান্বিত।",
       "তাহার জীবন সংশয়পূর্ণ।",
-      "তাহার জীবন সংশয়ময়।"
+      "তাহার জীবন সংশয়ান্বিত।"
     ],
     "optionsSource": "myexaminer.net",
     "optionsGenerated": true,
@@ -114,10 +114,10 @@
     "q": "'নিশীথ রাতে বাজছে বাঁশি।' এখানে 'নিশীথ' কোন পদ?",
     "answer": "বিশেষণ",
     "options": [
-      "অব্যয়",
-      "ক্রিয়া",
+      "বিশেষ্য",
       "বিশেষণ",
-      "বিশেষ্য"
+      "অব্যয়",
+      "ক্রিয়া"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -129,10 +129,10 @@
     "q": "'পাউরুটি' শব্দটি কোন ভাষা থেকে বাংলা ভাষায় এসেছে?",
     "answer": "পর্তুগিজ",
     "options": [
-      "ফরাসি",
-      "তুর্কি",
       "পর্তুগিজ",
-      "ওলন্দাজ"
+      "ফরাসি",
+      "ওলন্দাজ",
+      "তুর্কি"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -144,9 +144,9 @@
     "q": "'নিষ্কর' কোন সমাসের উদাহরণ?",
     "answer": "বহুব্রীহি সমাস",
     "options": [
-      "বহুব্রীহি সমাস",
       "অব্যয়ীভাব সমাস",
       "তৎপুরুষ সমাস",
+      "বহুব্রীহি সমাস",
       "কর্মধারয় সমাস"
     ],
     "optionsSource": "myexaminer.net"
@@ -159,10 +159,10 @@
     "q": "'ব্যায়ামে শরীর ভালো থাকে' বাক্যে 'ব্যায়ামে' শব্দটি কোন কারকে কোন বিভক্তি?",
     "answer": "করণে সপ্তমী",
     "options": [
+      "কর্মে সপ্তমী",
       "অপাদানে সপ্তমী",
-      "করণে সপ্তমী",
       "অধিকরণে সপ্তমী",
-      "কর্মে সপ্তমী"
+      "করণে সপ্তমী"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -189,10 +189,10 @@
     "q": "'কপোত' শব্দের সমার্থক শব্দ কোনটি?",
     "answer": "কবুতর",
     "options": [
-      "কোকিল",
       "কবুতর",
-      "ময়ূর",
-      "কাক"
+      "কাক",
+      "কোকিল",
+      "ময়ূর"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -204,10 +204,10 @@
     "q": "'তামার বিষ' বাগধারাটির সঠিক অর্থ কী?",
     "answer": "অর্থের কুপ্রভাব",
     "options": [
+      "তীব্র রাগ",
       "বিষাক্ত বস্তু",
-      "অর্থের কুপ্রভাব",
       "কৃপণতা",
-      "তীব্র রাগ"
+      "অর্থের কুপ্রভাব"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -219,10 +219,10 @@
     "q": "'আকুঞ্চন'-এর বিপরীতার্থক শব্দ কোনটি?",
     "answer": "প্রসারণ",
     "options": [
-      "বিশাল",
-      "বিকাশ",
+      "সংকোচন",
       "প্রসারণ",
-      "সংকোচন"
+      "বিশাল",
+      "বিকাশ"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -234,10 +234,10 @@
     "q": "যে ব্যক্তি বিনা বিচারে অন্যের অনুকরণ করে —",
     "answer": "অন্ধানুকারী",
     "options": [
+      "অন্ধানুকারী",
       "অন্ধ",
       "অনুগামী",
-      "অনুরাগী",
-      "অন্ধানুকারী"
+      "অনুরাগী"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -249,10 +249,10 @@
     "q": "'He is very hard up now.' বাক্যটির যথাযথ অনুবাদ কোনটি?",
     "answer": "সে খুব কষ্টে দিনাতিপাত করছে।",
     "options": [
-      "সে খুব কষ্টে দিনাতিপাত করছে।",
-      "তাকে ইদানিং অসহ্য লাগে।",
       "সে খুব শক্ত মনের মানুষ।",
-      "তার দিন আর চলে না।"
+      "তাকে ইদানিং অসহ্য লাগে।",
+      "তার দিন আর চলে না।",
+      "সে খুব কষ্টে দিনাতিপাত করছে।"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ম্যাগাজিনে উত্তর ছাপা 'সে এখন খুবই অভাবগ্রস্ত'; ওয়েবের অপশনে সেই বাক্যটা নেই, সমার্থক অপশনটা ধরা হয়েছে।"
@@ -266,9 +266,9 @@
     "answer": "কাব্য",
     "options": [
       "প্রবন্ধ",
-      "ছোট গল্প",
+      "কাব্য",
       "নাটক",
-      "কাব্য"
+      "ছোট গল্প"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "নোট: ওয়েবের প্রশ্নপত্রে এই প্রশ্নে 'অগ্নিবীণা'র জায়গায় 'রুদ্র-মঙ্গল' লেখা (তার উত্তর হতো প্রবন্ধ)। এখানে ম্যাগাজিনের প্রশ্ন ও উত্তর রাখা হয়েছে — যাচাই করে নিন।"
@@ -281,10 +281,10 @@
     "q": "কেউ কিছু বলছে না — এই বাক্যটির অস্তিবাচক রূপ কোনটি?",
     "answer": "সবাই চুপচাপ।",
     "options": [
-      "কেউ কিছু বলবে।",
-      "সবাই চুপচাপ।",
+      "কেউ কিন্তু বলছে।",
       "কেউ কিন্তু না বলে বলছে না।",
-      "কেউ কিন্তু বলছে।"
+      "সবাই চুপচাপ।",
+      "কেউ কিছু বলবে।"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ম্যাগাজিনে উত্তর ছাপা 'সবাই নীরব'; ওয়েবের অপশনে লেখা 'সবাই চুপচাপ' — একই অর্থ।"
@@ -297,10 +297,10 @@
     "q": "'ডালভাত' কোন অর্থে শব্দযোগে দ্বিরুক্তি?",
     "answer": "ভিন্নার্থক",
     "options": [
-      "বিপরীতার্থক",
       "সমার্থক",
-      "ভিন্নার্থক",
-      "মিলনার্থক"
+      "মিলনার্থক",
+      "বিপরীতার্থক",
+      "ভিন্নার্থক"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -312,10 +312,10 @@
     "q": "What issues does Martin Luther King's speech address?",
     "answer": "End to racism and civil and economic rights",
     "options": [
-      "Civil War",
-      "End to racism and civil and economic rights",
       "Continuation of racism",
-      "Civil rights"
+      "Civil rights",
+      "End to racism and civil and economic rights",
+      "Civil War"
     ],
     "optionsSource": "myexaminer.net",
     "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
@@ -328,10 +328,10 @@
     "q": "What pushes King to speak: 'I have a dream'?",
     "answer": "He is prompted by Mahalia Jackson",
     "options": [
-      "He is prompted by Mahalia Jackson",
-      "Lincoln had asked him to give the speech",
       "He reads out the Emancipation Proclamation",
-      "He is overwhelmed by the crowd"
+      "He is prompted by Mahalia Jackson",
+      "He is overwhelmed by the crowd",
+      "Lincoln had asked him to give the speech"
     ],
     "optionsSource": "myexaminer.net",
     "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
@@ -344,10 +344,10 @@
     "q": "From the last paragraph, give one word for 'to leave'.",
     "answer": "Departed",
     "options": [
-      "Address",
       "Departed",
+      "Proclamation",
       "Improvised",
-      "Proclamation"
+      "Address"
     ],
     "optionsSource": "myexaminer.net",
     "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
@@ -361,8 +361,8 @@
     "answer": "I have a Dream",
     "options": [
       "I have a Dream",
-      "A Peroration",
       "An Improvisation",
+      "A Peroration",
       "The Emancipation Proclamation"
     ],
     "optionsSource": "myexaminer.net",
@@ -376,10 +376,10 @@
     "q": "In front of whom does King speak?",
     "answer": "The civil rights supporters",
     "options": [
-      "The civil rights supporters",
-      "The Negroes",
+      "Lincoln",
       "His friends",
-      "Lincoln"
+      "The civil rights supporters",
+      "The Negroes"
     ],
     "optionsSource": "myexaminer.net",
     "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
@@ -392,10 +392,10 @@
     "q": "Error identification — 'Although a kangaroo (a) normally uses (b) its large feet and strong legs (c) for hopping (d) but it can also swim.' Which underlined part must be changed?",
     "answer": "(d) but it can",
     "options": [
-      "(b) its large feet",
       "(a) normally",
-      "(d) but it can",
-      "(c) for"
+      "(b) its large feet",
+      "(c) for",
+      "(d) but it can"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ভুল অংশ 'but it can' — হবে 'and it can'।"
@@ -408,10 +408,10 @@
     "q": "Error identification — 'Canals are (a) artificial waterways, often constructed (b) either to transport heavy loads or to (c) delivering water (d) to cities and farms.' Which underlined part must be changed?",
     "answer": "(c) delivering water",
     "options": [
-      "(c) delivering water",
+      "(a) artificial waterways",
       "(b) either to transport heavy loads or to",
-      "(d) to cities and farms",
-      "(a) artificial waterways"
+      "(c) delivering water",
+      "(d) to cities and farms"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ভুল অংশ 'delivering water' — হবে 'deliver water'।"
@@ -424,10 +424,10 @@
     "q": "Error identification — 'Anne Elizabeth McDowell is (a) best (b) remembered for a (c) weekly journal, Woman's Advocate, (d) who she launched in January 1855.' Which underlined part must be changed?",
     "answer": "(d) who",
     "options": [
-      "(c) weekly",
-      "(d) who",
+      "(a) best",
       "(b) remembered",
-      "(a) best"
+      "(c) weekly",
+      "(d) who"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ভুল অংশ 'who' — হবে 'which'।"
@@ -440,10 +440,10 @@
     "q": "Error identification — 'A ray of light passing (a) through (b) the center of a thin lens (c) keep its (d) original direction.' Which underlined part must be changed?",
     "answer": "(c) keep",
     "options": [
-      "(d) original",
       "(a) through",
       "(b) the center",
-      "(c) keep"
+      "(c) keep",
+      "(d) original"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "ভুল অংশ 'keep' — হবে 'keeps'।"
@@ -456,13 +456,13 @@
     "q": "Error identification — 'The customer hardly had (a) / no money to (b) / pay for (c) / the drinks (d).' Which part must be changed?",
     "answer": "(b) no money to",
     "options": [
-      "(b) no money to",
-      "(d) the drinks",
       "(a) hardly had",
-      "(c) pay for"
+      "(b) no money to",
+      "(c) pay for",
+      "(d) the drinks"
     ],
     "optionsSource": "myexaminer.net",
-    "explanation": "ভুল অংশ 'no money to' — 'hardly' নিজেই না-বোধক, তার সাথে 'no' বসলে দুইবার না-বোধক হয়ে যায়; হবে 'any money to'।"
+    "explanation": "ভুল অংশ 'no money to' — 'hardly'-র সাথে 'no' বসলে না-বোধক দ্বিগুণ হয়; হবে 'any money to'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q31",
@@ -473,9 +473,9 @@
     "answer": "despotic",
     "options": [
       "devalued",
-      "demeaning",
+      "swindling",
       "despotic",
-      "swindling"
+      "demeaning"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -487,9 +487,9 @@
     "q": "Fill in the blank with the most effective word: 'I have a profound respect for his political —.'",
     "answer": "sagacity",
     "options": [
-      "temperament",
-      "ambition",
       "personality",
+      "ambition",
+      "temperament",
       "sagacity"
     ],
     "optionsSource": "myexaminer.net"
@@ -502,9 +502,9 @@
     "q": "Fill in the blank with the most effective word: 'Two of the fugitives managed to remain free by adeptly avoiding the — of the police.'",
     "answer": "pursuit",
     "options": [
+      "torture",
       "pursuit",
       "discovery",
-      "torture",
       "following"
     ],
     "optionsSource": "myexaminer.net"
@@ -517,10 +517,10 @@
     "q": "Fill in the blank with the most effective word: 'Experts fail to understand the — behind the decision to move coal by road when there is enough rail capacity in this sector.'",
     "answer": "rationale",
     "options": [
-      "politics",
+      "ideology",
       "judgment",
       "rationale",
-      "ideology"
+      "politics"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -547,9 +547,9 @@
     "q": "Choose the word which is opposite to the given word: 'Feral'",
     "answer": "Tame",
     "options": [
+      "Tame",
       "Unyielding",
       "Natural",
-      "Tame",
       "Grim"
     ],
     "optionsSource": "myexaminer.net"
@@ -562,8 +562,8 @@
     "q": "Choose the word which is opposite to the given word: 'Dilettante'",
     "answer": "Professional",
     "options": [
-      "Tidy",
       "Professional",
+      "Tidy",
       "Rapid",
       "Stupid"
     ],
@@ -577,10 +577,10 @@
     "q": "Choose the word which is opposite to the given word: 'Kith'",
     "answer": "Strangers",
     "options": [
-      "Relative",
-      "Son",
       "Strangers",
-      "Outfit"
+      "Outfit",
+      "Son",
+      "Relative"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -592,10 +592,10 @@
     "q": "Choose the word which is opposite to the given word: 'Transmit'",
     "answer": "Withhold",
     "options": [
-      "Show",
       "Televise",
+      "Withhold",
       "Reply",
-      "Withhold"
+      "Show"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -607,9 +607,9 @@
     "q": "Choose the word which is opposite to the given word: 'Stagnant'",
     "answer": "Mobile",
     "options": [
+      "Inertia",
       "Mobile",
       "Progress",
-      "Inertia",
       "Effervescence"
     ],
     "optionsSource": "myexaminer.net"
@@ -622,10 +622,10 @@
     "q": "যদি ∛32 (cube root of 32) = 2^x হয়, তবে x এর মান কত?",
     "answer": "5/3",
     "options": [
-      "5/3",
       "3",
-      "5",
-      "3/5"
+      "5/3",
+      "3/5",
+      "5"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -637,9 +637,9 @@
     "q": "9^3 × 81^2 ÷ 27^3 = 3^x হলে, x এর মান কত?",
     "answer": "5",
     "options": [
+      "5",
       "4",
       "6",
-      "5",
       "3"
     ],
     "optionsSource": "myexaminer.net"
@@ -652,10 +652,10 @@
     "q": "৩টি পাম্প প্রতিদিন ৮ ঘণ্টা করে একসাথে কাজ করলে ২ দিনে একটি ট্যাংক খালি করতে পারে। ১ দিনে ট্যাংক খালি করতে ৪টি পাম্পকে প্রতিদিন কত ঘণ্টা কাজ করতে হবে?",
     "answer": "12",
     "options": [
-      "15",
       "10",
+      "12",
       "9",
-      "12"
+      "15"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -669,8 +669,8 @@
     "options": [
       "36",
       "48",
-      "52",
-      "56"
+      "56",
+      "52"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -682,10 +682,10 @@
     "q": "যদি p একটি জোড় পূর্ণ সংখ্যা এবং q একটি বিজোড় পূর্ণ সংখ্যা হয়, তবে নিচের কোনটি অবশ্যই একটি বিজোড় পূর্ণ সংখ্যা হবে?",
     "answer": "2p + q",
     "options": [
-      "pq",
       "2p + q",
-      "q",
-      "2(p + q)"
+      "pq",
+      "2(p + q)",
+      "q"
     ],
     "optionsSource": "myexaminer.net",
     "explanation": "নোট: অপশন 'q'-ও বিজোড় (প্রশ্নেই q বিজোড় ধরা আছে); ম্যাগাজিনের সঠিক উত্তর 2p + q।"
@@ -699,9 +699,9 @@
     "answer": "25",
     "options": [
       "22",
-      "40",
+      "25",
       "30",
-      "25"
+      "40"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -713,10 +713,10 @@
     "q": "৭৮ জন শিক্ষার্থীর একটি শ্রেণিতে ৪১ জন ফরাসি এবং ২২ জন জার্মান ভাষা পড়ে। ফরাসি বা জার্মান পড়া শিক্ষার্থীদের মধ্যে ৯ জন উভয় বিষয়ই পড়ে। কোনো বিষয়েই ভর্তি নয় এমন শিক্ষার্থীর সংখ্যা কত?",
     "answer": "24",
     "options": [
-      "16",
-      "24",
       "28",
-      "20"
+      "16",
+      "20",
+      "24"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -728,10 +728,10 @@
     "q": "১১, ৯, ৭ ও ৪ বছর বয়সি চারজন শিক্ষার্থী তাদের বয়সের অনুপাতে কিছু টাকা ভাগ করে। সর্বকনিষ্ঠ শিক্ষার্থী ১২০০ টাকা পেলে মোট টাকার পরিমাণ কত?",
     "answer": "9300",
     "options": [
+      "8500",
       "9000",
-      "9300",
       "9500",
-      "8500"
+      "9300"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -743,10 +743,10 @@
     "q": "তিনটি সংখ্যার মধ্যে প্রথম ও দ্বিতীয় সংখ্যার গড়, দ্বিতীয় ও তৃতীয় সংখ্যার গড়ের চেয়ে ১৫ বেশি। প্রথম ও তৃতীয় সংখ্যার পার্থক্য কত?",
     "answer": "30",
     "options": [
-      "30",
-      "32",
       "18",
-      "25"
+      "30",
+      "25",
+      "32"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -758,10 +758,10 @@
     "q": "কোনো নির্দিষ্ট টাকার পরপর দুই বছরের চক্রবৃদ্ধি সুদ যথাক্রমে ২২৫ টাকা এবং ২৩৮.৫ টাকা হলে, বার্ষিক সুদের হার কত?",
     "answer": "6%",
     "options": [
+      "10%",
       "8%",
       "6%",
-      "5%",
-      "10%"
+      "5%"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -774,9 +774,9 @@
     "answer": "40 min",
     "options": [
       "40 min",
-      "50 min",
+      "35 min",
       "45 min",
-      "35 min"
+      "50 min"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -788,10 +788,10 @@
     "q": "যদি A এর আয় B এর আয়ের চেয়ে ২৫% কম হয়, তবে B এর আয় A এর আয়ের চেয়ে কত শতাংশ বেশি?",
     "answer": "33.33",
     "options": [
-      "33.33",
-      "30",
+      "35.33",
       "35",
-      "35.33"
+      "30",
+      "33.33"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -804,9 +804,9 @@
     "answer": "Tk. 500",
     "options": [
       "Tk. 400",
-      "Tk. 550",
+      "Tk. 500",
       "Tk. 450",
-      "Tk. 500"
+      "Tk. 550"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -820,8 +820,8 @@
     "options": [
       "Tk. 1040",
       "Tk. 1000",
-      "Tk. 950",
-      "Tk. 1100"
+      "Tk. 1100",
+      "Tk. 950"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -833,10 +833,10 @@
     "q": "Which economist developed the concept of National Income Measurement and its significance in Economic Development?",
     "answer": "Simon Kuznets",
     "options": [
-      "John Maynard Keynes",
+      "Ragnar Nurkse",
       "Amartya Sen",
       "Simon Kuznets",
-      "Ragnar Nurkse"
+      "John Maynard Keynes"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -864,9 +864,9 @@
     "answer": "Pisciculture",
     "options": [
       "Aquaculture",
-      "Pisciculture",
       "Fishing",
-      "Apiculture"
+      "Apiculture",
+      "Pisciculture"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -878,10 +878,10 @@
     "q": "Bangladesh's first Export Processing Zone (EPZ) was established in —",
     "answer": "Chattogram",
     "options": [
-      "Chattogram",
-      "Cumilla",
       "Dhaka",
-      "Khulna"
+      "Chattogram",
+      "Khulna",
+      "Cumilla"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -893,9 +893,9 @@
     "q": "The authority responsible for regulating the capital market in Bangladesh is —",
     "answer": "BSEC",
     "options": [
-      "BBS",
-      "BSEC",
       "Bangladesh Bank",
+      "BSEC",
+      "BBS",
       "IDRA"
     ],
     "optionsSource": "myexaminer.net"
@@ -908,10 +908,10 @@
     "q": "Polythene is industrially prepared by the polymerization of —",
     "answer": "Ethylene",
     "options": [
-      "Acetylene",
-      "Ethylene",
       "Methane",
-      "Styrene"
+      "Styrene",
+      "Acetylene",
+      "Ethylene"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -924,9 +924,9 @@
     "answer": "India and China",
     "options": [
       "India and Pakistan",
+      "India and Tibet",
       "India and China",
-      "India and Bangladesh",
-      "India and Tibet"
+      "India and Bangladesh"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -939,9 +939,9 @@
     "answer": "China",
     "options": [
       "Switzerland",
+      "Japan",
       "China",
-      "India",
-      "Japan"
+      "India"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -953,10 +953,10 @@
     "q": "The largest oil-exporting country in the world is —",
     "answer": "Saudi Arabia",
     "options": [
-      "Iraq",
+      "Saudi Arabia",
       "Russia",
       "United States",
-      "Saudi Arabia"
+      "Iraq"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -968,10 +968,10 @@
     "q": "Thalassemia is a hereditary disease affecting —",
     "answer": "Blood",
     "options": [
+      "Blood",
       "Lungs",
       "Heart",
-      "Kidney",
-      "Blood"
+      "Kidney"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -983,10 +983,10 @@
     "q": "Who scored the only goal in the 2026 FIFA World Cup Final?",
     "answer": "Ferran Torres",
     "options": [
-      "Lamine Yamal",
+      "Ferran Torres",
       "Lionel Messi",
-      "Pedri",
-      "Ferran Torres"
+      "Lamine Yamal",
+      "Pedri"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -998,10 +998,10 @@
     "q": "Euro was introduced in —",
     "answer": "1999",
     "options": [
-      "1999",
-      "1993",
       "1990",
-      "1996"
+      "1993",
+      "1996",
+      "1999"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1013,10 +1013,10 @@
     "q": "Which organization publishes the World Economic Outlook?",
     "answer": "IMF",
     "options": [
-      "IMF",
-      "ADB",
       "World Bank",
-      "WTO"
+      "IMF",
+      "WTO",
+      "ADB"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1028,10 +1028,10 @@
     "q": "Which attack encrypts bank data and demands payment for decryption?",
     "answer": "Ransomware",
     "options": [
-      "Sniffing",
       "SQL Injection",
       "Ransomware",
-      "Spoofing"
+      "Spoofing",
+      "Sniffing"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1043,10 +1043,10 @@
     "q": "Which payment system is primarily used for high-value, real-time interbank fund transfers?",
     "answer": "RTGS",
     "options": [
-      "NPSB",
-      "RTGS",
       "BEFTN",
-      "BACPS"
+      "BACPS",
+      "RTGS",
+      "NPSB"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1059,9 +1059,9 @@
     "answer": "Uttara Bank",
     "options": [
       "bKash",
+      "SSL Commerce",
       "ShurjoPay",
-      "Uttara Bank",
-      "SSL Commerce"
+      "Uttara Bank"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1073,10 +1073,10 @@
     "q": "Which technology is the foundation of Open Banking?",
     "answer": "Secure APIs",
     "options": [
-      "Secure Bluetooth",
-      "NFC only",
+      "FTP Secure",
       "Secure APIs",
-      "FTP Secure"
+      "Secure Bluetooth",
+      "NFC only"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1088,10 +1088,10 @@
     "q": "Which storage device generally provides the fastest performance?",
     "answer": "SSD",
     "options": [
-      "SSD",
+      "HDD",
       "DVD",
-      "CD-ROM",
-      "HDD"
+      "SSD",
+      "CD-ROM"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1103,10 +1103,10 @@
     "q": "Which country is the largest producer of natural rubber?",
     "answer": "Thailand",
     "options": [
-      "Brazil",
-      "Malaysia",
+      "India",
       "Thailand",
-      "India"
+      "Brazil",
+      "Malaysia"
     ],
     "optionsSource": "myexaminer.net"
   },
@@ -1119,9 +1119,9 @@
     "answer": "Vitamin A",
     "options": [
       "Vitamin A",
-      "Vitamin E",
       "Vitamin B",
-      "Vitamin C"
+      "Vitamin C",
+      "Vitamin E"
     ],
     "optionsSource": "myexaminer.net"
   }

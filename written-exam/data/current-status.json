@@ -8,8 +8,7 @@
       "topics": [
         "gdp-bangladesh"
       ],
-      "status": "BBS-এর চূড়ান্ত হিসাবে (ফেব্রুয়ারি ২০২৬) ২০২৪-২৫ অর্থবছরে কৃষি খাতের প্রবৃদ্ধি ২.৪২% (প্রাক্কলিত ১.৭৯% থেকে সংশোধিত); মোট জিডিপি প্রবৃদ্ধি ৩.৪৯% (প্রাক্কলিত ৩.৯৭%)।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -32,8 +31,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -55,30 +53,48 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-01-30",
       "targets": [
         {
           "id": "job-2025-biwta-shulko-adaykari-q05",
           "part": 9,
           "qMatch": "বর্তমানে বাংলাদেশের জাতী"
         }
-      ]
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: দ্য ডেইলি স্টার, ঢাকা ট্রিবিউন (২০২৬-০৫-২৫)"
+      ],
+      "watch": [
+        "জামাল ভূঁইয়া",
+        "ফুটবল দলের অধিনায়ক",
+        "জাতীয় ফুটবল দল"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-biwta-stenographer-pa-q10-p6",
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-01-30",
       "targets": [
         {
           "id": "job-2025-biwta-stenographer-pa-q10",
           "part": 5,
           "qMatch": "বাংলাদেশের জাতীয় ফুটবল "
         }
-      ]
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: দ্য ডেইলি স্টার, ঢাকা ট্রিবিউন (২০২৬-০৫-২৫)"
+      ],
+      "watch": [
+        "জামাল ভূঁইয়া",
+        "ফুটবল দলের অধিনায়ক",
+        "জাতীয় ফুটবল দল"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-bof-technician-q19",
@@ -86,8 +102,7 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -109,14 +124,17 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dc-bhola-q20",
           "part": null,
           "qMatch": "ভোলা জেলা প্রশাসনের প্রধ"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: টিবিএস (২০২৫-১১-০৯), বিডিনিউজ২৪ (২০২৬-০৯)"
       ]
     },
     {
@@ -126,7 +144,7 @@
         "gdp-bangladesh"
       ],
       "status": "",
-      "reviewAfter": "2026-10-13",
+      "reviewAfter": "2027-05-30",
       "targets": [
         {
           "id": "job-2025-dc-manikganj-q23",
@@ -138,9 +156,10 @@
         "gdp-bangladesh": "0d19fbc71b55"
       },
       "source": [
-        "current-affairs:gdp-bangladesh"
+        "current-affairs:gdp-bangladesh",
+        "web: প্রথম আলো, বণিক বার্তা (২০২৬-০৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-30"
     },
     {
       "key": "2025-dc-narayanganj-nazir-cashier-q16-p8",
@@ -148,8 +167,7 @@
       "topics": [
         "mantrisova"
       ],
-      "status": "২৪ মার্চ ২০২৬ থেকে অ্যাটর্নি জেনারেল ব্যারিস্টার রুহুল কুদ্দুস কাজল (দেশের ১৮তম অ্যাটর্নি জেনারেল)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -201,8 +219,7 @@
       "class": "fast",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2026-11-12",
+      "reviewAfter": "2027-06-07",
       "targets": [
         {
           "id": "job-2025-dc-office-sunamganj-hisab-sohokari-q12",
@@ -214,7 +231,17 @@
           "part": 12,
           "qMatch": "বাংলাদেশ ক্রিকেট বোর্ডের"
         }
-      ]
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: ইত্তেফাক, ঢাকা ট্রিবিউন, বিএসএস (২০২৬-০৬-০৭)"
+      ],
+      "watch": [
+        "ক্রিকেট বোর্ড",
+        "বিসিবি",
+        "তামিম ইকবাল"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p9",
@@ -257,7 +284,11 @@
           "part": 3,
           "qMatch": "বিশ্বের ব্যস্ততম বন্দরের"
         }
-      ]
+      ],
+      "watch": [
+        "চট্টগ্রাম বন্দর"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dpe-accountant-q21-p2",
@@ -265,8 +296,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -296,7 +326,12 @@
           "part": 6,
           "qMatch": "বাংলাদেশে সর্বোচ্চ রেমিট"
         }
-      ]
+      ],
+      "watch": [
+        "রেমিট্যান্স",
+        "প্রবাসী আয়"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-health-services-office-sohayak-q15-p1",
@@ -304,8 +339,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -328,8 +362,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -352,8 +385,7 @@
       "topics": [
         "gi-ponno-bangladesh"
       ],
-      "status": "শিল্পমন্ত্রীর তথ্য অনুযায়ী বাংলাদেশে নিবন্ধিত GI পণ্য মোট ৬৪টি; মানিকগঞ্জের হাজারী গুড়ও সম্প্রতি GI সনদ পেয়েছে। সংখ্যা বাড়তে পারে।",
-      "asOf": "2026-09-29",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -391,8 +423,7 @@
       "topics": [
         "jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "status": "এটি ২০২৫-২৬ অর্থবছরের তথ্য। বর্তমান ২০২৬-২৭ অর্থবছরের বাজেট: মোট ব্যয় ৯,৩৮,০০০ কোটি টাকা (১১ জুন ২০২৬ ঘোষিত, কার্যকর ১ জুলাই ২০২৬)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2026-11-12",
       "targets": [
         {
@@ -416,7 +447,6 @@
         "sommelon-boithok"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -433,10 +463,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -446,8 +477,7 @@
         "tattwaboyoka-gonoporibohan",
         "rashtropoti-podtyag"
       ],
-      "status": "পদত্যাগের নিয়ম (স্পিকারের কাছে স্বাক্ষরযুক্ত পত্র) এখনো প্রযোজ্য। ২৪ জুলাই ২০২৬ রাষ্ট্রপতি মো. সাহাবুদ্দিন এই নিয়মেই পদত্যাগ করেন। ২১ আগস্ট ২০২৬ মির্জা ফখরুল ইসলাম আলমগীর দেশের ২৩তম রাষ্ট্রপতি হিসেবে শপথ নেন।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -500,7 +530,13 @@
           "part": 12,
           "qMatch": "জাতিসংঘের বর্তমান সদস্য "
         }
-      ]
+      ],
+      "watch": [
+        "জাতিসংঘের সদস্য",
+        "জাতিসংঘের নতুন সদস্য",
+        "জাতিসংঘের ১৯৪"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-biwta-shulko-adaykari-q05-p13",
@@ -520,7 +556,12 @@
           "part": 10,
           "qMatch": "বর্তমান বিশ্বের জনসংখ্যা"
         }
-      ]
+      ],
+      "watch": [
+        "বিশ্ব জনসংখ্যা",
+        "বিশ্বের জনসংখ্যা"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-biwta-shulko-adaykari-q05-p2",
@@ -555,7 +596,11 @@
           "part": 2,
           "qMatch": "বাংলাদেশে বর্তমানে পুরুষ"
         }
-      ]
+      ],
+      "watch": [
+        "গড় আয়ু"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-btmc-sub-asst-engineer-civil-q11-p6",
@@ -570,6 +615,14 @@
           "part": 5,
           "qMatch": "বর্তমান সেনজেনভুক্ত দেশ "
         }
+      ],
+      "watch": [
+        "শেনজেন",
+        "সেনজেন",
+        "Schengen"
+      ],
+      "watchSeen": [
+        "8d49f78fc72f"
       ]
     },
     {
@@ -605,7 +658,11 @@
           "part": 11,
           "qMatch": "বিশ্বের কোন শহরে জনসংখ্য"
         }
-      ]
+      ],
+      "watch": [
+        "বিশ্বের সবচেয়ে জনবহুল শহর"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dc-lalmonirhat-q14-p13",
@@ -620,7 +677,11 @@
           "part": 12,
           "qMatch": "ঢাকা শহরের বর্তমান জনসংখ"
         }
-      ]
+      ],
+      "watch": [
+        "ঢাকা শহরের জনসংখ্যা"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dc-manikganj-q17",
@@ -650,7 +711,13 @@
           "part": null,
           "qMatch": "বাংলাদেশের কত শতাংশ মানু"
         }
-      ]
+      ],
+      "watch": [
+        "দারিদ্র্যসীমা",
+        "দারিদ্র্যের হার",
+        "দারিদ্র্য মানচিত্র"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dc-netrokona-q30",
@@ -660,8 +727,7 @@
         "rashtropoti-podtyag"
       ],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dc-netrokona-q30",
@@ -672,7 +738,11 @@
       "topicHashes": {
         "tattwaboyoka-gonoporibohan": "8ad007049ce1",
         "rashtropoti-podtyag": "5ea3378b7c45"
-      }
+      },
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: প্রথম আলো (২০২৬-০৬-৩০), অবজার্ভার (২০২৬-০৮-০৩)"
+      ]
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p12",
@@ -692,6 +762,14 @@
           "part": 11,
           "qMatch": "বর্তমানে সার্কভুক্ত দেশ "
         }
+      ],
+      "watch": [
+        "সার্ক",
+        "SAARC"
+      ],
+      "watchSeen": [
+        "37ef124a3500",
+        "4d9851d0fd43"
       ]
     },
     {
@@ -710,33 +788,6 @@
       ]
     },
     {
-      "key": "2025-defense-ministry-office-sohayok-q10-p5",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-defense-ministry-office-sohayok-q10",
-          "part": 4,
-          "qMatch": "বর্তমান অন্তর্বর্তীকালীন"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
-    },
-    {
       "key": "2025-div-comm-ctg-office-sohayok-q17-p10",
       "class": "slow",
       "topics": [],
@@ -749,7 +800,14 @@
           "part": 9,
           "qMatch": "আসিয়ানভুক্ত দেশের সংখ্য"
         }
-      ]
+      ],
+      "watch": [
+        "আসিয়ান",
+        "আসেয়ান",
+        "ASEAN",
+        "পূর্ব তিমুর"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-dmch-office-asst-typist-q14-p2",
@@ -758,8 +816,7 @@
         "bortoman-sorkarer-180-din",
         "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -803,14 +860,28 @@
       "class": "slow",
       "topics": [],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-30",
       "targets": [
         {
           "id": "job-2025-dphe-rangamati-office-asst-typist-q14",
           "part": 19,
           "qMatch": "রাশিয়া বর্তমানে কোন দেশ"
         }
+      ],
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: রয়টার্স/অ্যাজারনিউজ প্রতিবেদন (২০২৬-০৫, ০৯)"
+      ],
+      "watch": [
+        "ইউক্রেন",
+        "রাশিয়া-ইউক্রেন"
+      ],
+      "watchSeen": [
+        "1bbfdc8eddde",
+        "304c239fc04d",
+        "85f52800f88d",
+        "b83044c52ae9",
+        "cd1f2618a4db"
       ]
     },
     {
@@ -826,7 +897,14 @@
           "part": 0,
           "qMatch": "বাংলাদেশের প্রধান নির্বা"
         }
-      ]
+      ],
+      "watch": [
+        "প্রধান নির্বাচন কমিশনার",
+        "সিইসি",
+        "নাসির উদ্দীন",
+        "নাসির উদ্দিন"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-election-commission-porichonnota-kormi-q12-p5",
@@ -835,7 +913,6 @@
         "sommelon-boithok"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-04-15",
       "targets": [
         {
@@ -852,10 +929,11 @@
       "topicHashes": {
         "sommelon-boithok": "b0bfd6148c7a"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
-        "web:mofa.gov.np"
+        "web:mofa.gov.np",
+        "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
       ]
     },
     {
@@ -891,7 +969,11 @@
           "part": 9,
           "qMatch": "গ্রিনল্যান্ড দ্বীপটি বর্"
         }
-      ]
+      ],
+      "watch": [
+        "গ্রিনল্যান্ড"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-health-nimu-tc-uccho-man-sohokari-q12-p2",
@@ -906,7 +988,13 @@
           "part": 1,
           "qMatch": "জাতিসংঘের সর্বশেষ সদস্য "
         }
-      ]
+      ],
+      "watch": [
+        "জাতিসংঘের সদস্য",
+        "জাতিসংঘের নতুন সদস্য",
+        "জাতিসংঘের ১৯৪"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-health-nimu-tc-uccho-man-sohokari-q12-p4",
@@ -921,7 +1009,14 @@
           "part": 3,
           "qMatch": "ASEAN এর সদস্য রাষ্ট্র ক"
         }
-      ]
+      ],
+      "watch": [
+        "আসিয়ান",
+        "আসেয়ান",
+        "ASEAN",
+        "পূর্ব তিমুর"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-health-services-office-sohayak-q15-p8",
@@ -930,8 +1025,7 @@
         "ldc-uttoron"
       ],
       "status": "",
-      "asOf": null,
-      "reviewAfter": "2027-03-27",
+      "reviewAfter": "2026-12-01",
       "targets": [
         {
           "id": "job-2025-health-services-office-sohayak-q15",
@@ -941,7 +1035,11 @@
       ],
       "topicHashes": {
         "ldc-uttoron": "7abd4b6d2d0e"
-      }
+      },
+      "verifiedOn": "2026-09-30",
+      "source": [
+        "web: UN DESA LDC list; UN OHRLLS"
+      ]
     },
     {
       "key": "2025-janaprashasan-hisab-rakkhok-q17-p3",
@@ -961,7 +1059,12 @@
           "part": 2,
           "qMatch": "জাতীয় ঐক্য কমিশনের সভাপ"
         }
-      ]
+      ],
+      "watch": [
+        "ঐক্য কমিশন",
+        "জাতীয় ঐক্য"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-judicial-service-office-sohayok-q08-p2",
@@ -970,7 +1073,6 @@
         "julai-jadughar"
       ],
       "status": "",
-      "asOf": null,
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -982,15 +1084,18 @@
       "topicHashes": {
         "julai-jadughar": "acd31b70b216"
       },
-      "verifiedOn": "2026-09-28",
+      "verifiedOn": "2026-09-30",
       "source": [
-        "current-affairs:julai-jadughar"
+        "current-affairs:julai-jadughar",
+        "web: প্রথম আলো, ঢাকা ট্রিবিউন (২০২৬-০৮-০৫)"
       ]
     },
     {
       "key": "2025-judicial-service-office-sohayok-q08-p21",
       "class": "slow",
-      "topics": [],
+      "topics": [
+        "jukterashtrer-sadhinota-250-bochor"
+      ],
       "status": "",
       "asOf": null,
       "reviewAfter": "2027-03-27",
@@ -1000,7 +1105,14 @@
           "part": 20,
           "qMatch": "জোহরান মামদানি কে?"
         }
-      ]
+      ],
+      "watch": [
+        "মামদানি"
+      ],
+      "watchSeen": [],
+      "topicHashes": {
+        "jukterashtrer-sadhinota-250-bochor": "aa7c032c82d9"
+      }
     },
     {
       "key": "2025-judicial-service-office-sohayok-q08-p7",
@@ -1015,7 +1127,11 @@
           "part": 6,
           "qMatch": "জনসংখ্যা অনুযায়ী ঢাকা শ"
         }
-      ]
+      ],
+      "watch": [
+        "ঢাকা শহরের জনসংখ্যা"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-judicial-service-steno-q08-p12",
@@ -1030,7 +1146,13 @@
           "part": 11,
           "qMatch": "সম্প্রতি মালয়েশিয়ায় ক"
         }
-      ]
+      ],
+      "watch": [
+        "আসিয়ান",
+        "আসেয়ান",
+        "ASEAN"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-judicial-service-steno-q08-p4",
@@ -1045,7 +1167,11 @@
           "part": 3,
           "qMatch": "বাংলাদেশের সাথে বর্তমানে"
         }
-      ]
+      ],
+      "watch": [
+        "প্রত্যর্পণ"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-land-appeal-board-office-sohayok-q19-p1",
@@ -1073,8 +1199,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1105,6 +1230,14 @@
           "part": 6,
           "qMatch": "বাংলাদেশে সর্বশেষ জনতমার"
         }
+      ],
+      "watch": [
+        "জনশুমারি",
+        "জনগণনা",
+        "শুমারি"
+      ],
+      "watchSeen": [
+        "342f866cf762"
       ]
     },
     {
@@ -1113,8 +1246,7 @@
       "topics": [
         "sangsad-troyodosh"
       ],
-      "status": "নির্বাচন অনুষ্ঠিত হয়ে গেছে (১২ ফেব্রুয়ারি ২০২৬)। ত্রয়োদশ জাতীয় সংসদের সংসদ সদস্যদের শপথ ১৭ ফেব্রুয়ারি ২০২৬; প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1145,6 +1277,14 @@
           "part": 6,
           "qMatch": "বাংলাদেশে সর্বশেষ জনগণনা"
         }
+      ],
+      "watch": [
+        "জনশুমারি",
+        "জনগণনা",
+        "শুমারি"
+      ],
+      "watchSeen": [
+        "342f866cf762"
       ]
     },
     {
@@ -1160,34 +1300,12 @@
           "part": 5,
           "qMatch": "COP এর পূর্ণরূপ কী? সর্ব"
         }
-      ]
-    },
-    {
-      "key": "2025-mopa-office-sohayok-q10-p8",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
       ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-mopa-office-sohayok-q10",
-          "part": 7,
-          "qMatch": "বাংলাদেশের বর্তমান অন্তর"
-        }
+      "watch": [
+        "COP",
+        "কপ-"
       ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
+      "watchSeen": []
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p14",
@@ -1255,7 +1373,12 @@
           "part": null,
           "qMatch": "২০২৬ সালের জলবায়ু সম্মে"
         }
-      ]
+      ],
+      "watch": [
+        "COP",
+        "কপ-"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-nlasp-office-asst-typist-q08-p5",
@@ -1290,7 +1413,13 @@
           "part": 6,
           "qMatch": "জাতিসংঘের বর্তমান মহাসচি"
         }
-      ]
+      ],
+      "watch": [
+        "জাতিসংঘের মহাসচিব",
+        "গুতেরেস",
+        "গুতেরেজ"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-primary-mass-edu-steno-typist-q16-p4",
@@ -1315,7 +1444,9 @@
     {
       "key": "2025-prison-computer-typist-q16-p10",
       "class": "slow",
-      "topics": [],
+      "topics": [
+        "football-biswakap-2026"
+      ],
       "status": "",
       "asOf": null,
       "reviewAfter": "2027-03-27",
@@ -1325,7 +1456,15 @@
           "part": 9,
           "qMatch": "FIFA সভাপতির নাম কী?"
         }
-      ]
+      ],
+      "watch": [
+        "ফিফা সভাপতি",
+        "ইনফান্তিনো"
+      ],
+      "watchSeen": [],
+      "topicHashes": {
+        "football-biswakap-2026": "a0cfb6a361ed"
+      }
     },
     {
       "key": "2025-prison-computer-typist-q16-p15",
@@ -1333,8 +1472,7 @@
       "topics": [
         "eki-poribare-rashtroneta"
       ],
-      "status": "সুশীলা কারকি ছিলেন অন্তর্বর্তী সরকারপ্রধান। ৫ মার্চ ২০২৬ নেপালে সাধারণ নির্বাচনে RSP (রাষ্ট্রীয় স্বতন্ত্র পার্টি) জয়ী হয় এবং বালেন শাহ ২৭ মার্চ ২০২৬ প্রধানমন্ত্রী হিসেবে শপথ নেন।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": "2027-03-27",
       "targets": [
         {
@@ -1364,6 +1502,15 @@
           "part": 0,
           "qMatch": "সর্বশেষ জনশুমারি অনুযায়"
         }
+      ],
+      "watch": [
+        "জনশুমারি",
+        "জনগণনা",
+        "শুমারি",
+        "জনসংখ্যার ঘনত্ব"
+      ],
+      "watchSeen": [
+        "342f866cf762"
       ]
     },
     {
@@ -1402,40 +1549,12 @@
       ]
     },
     {
-      "key": "2025-vehicle-maintenance-store-keeper-q19",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "০৮ আগস্ট ২০২৪ তারিখটি ঐতিহাসিকভাবে ঠিক। তবে অন্তর্বর্তী সরকারের মেয়াদ শেষ; ২০২৬ সালের ফেব্রুয়ারির নির্বাচনের পর ১৭ ফেব্রুয়ারি ২০২৬ থেকে নির্বাচিত সরকার দায়িত্বে আছে, প্রধানমন্ত্রী তারেক রহমান।",
-      "asOf": "2026-09-28",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-vehicle-maintenance-store-keeper-q19",
-          "part": null,
-          "qMatch": "বাংলাদেশের বর্তমান অন্তর"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
-    },
-    {
       "key": "2025-barc-head-assistant-q13-p5",
       "class": "past",
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1458,8 +1577,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1492,8 +1610,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1516,8 +1633,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1545,8 +1661,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1574,8 +1689,7 @@
       "topics": [
         "football-biswakap-2026"
       ],
-      "status": "বিশ্বকাপ অনুষ্ঠিত হয়ে গেছে (১১ জুন – ১৯ জুলাই ২০২৬; স্বাগতিক যুক্তরাষ্ট্র, মেক্সিকো ও কানাডা; ৪৮ দল)। চ্যাম্পিয়ন স্পেন, রানার্সআপ আর্জেন্টিনা।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1603,8 +1717,7 @@
       "topics": [
         "sheetkalin-olympic-2026"
       ],
-      "status": "অনুষ্ঠিত হয়ে গেছে (৬–২২ ফেব্রুয়ারি ২০২৬, মিলান–কোর্তিনা, ইতালি)। পদক তালিকায় শীর্ষে নরওয়ে (১৮ স্বর্ণ)।",
-      "asOf": "2026-09-28",
+      "status": "",
       "reviewAfter": null,
       "targets": [
         {
@@ -1634,7 +1747,13 @@
           "part": 13,
           "qMatch": "২০২৮ সালের গ্রীষ্মকালীন "
         }
-      ]
+      ],
+      "watch": [
+        "২০২৮ অলিম্পিক",
+        "লস অ্যাঞ্জেলেস অলিম্পিক",
+        "অলিম্পিক ২০২৮"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-ncc-sub-asst-engineer-civil-q12",
@@ -1649,7 +1768,13 @@
           "part": null,
           "qMatch": "২০২৮ সালের বিশ্ব অলিম্পি"
         }
-      ]
+      ],
+      "watch": [
+        "২০২৮ অলিম্পিক",
+        "লস অ্যাঞ্জেলেস অলিম্পিক",
+        "অলিম্পিক ২০২৮"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-erd-office-sohayok-q13-p4",
@@ -1668,7 +1793,14 @@
       ],
       "source": [
         "উত্তরে ১১তম সদস্য পূর্ব তিমুর আগে থেকেই আছে"
-      ]
+      ],
+      "watch": [
+        "আসিয়ান",
+        "আসেয়ান",
+        "ASEAN",
+        "পূর্ব তিমুর"
+      ],
+      "watchSeen": []
     },
     {
       "key": "2025-erd-steno-typist-q19",
@@ -1684,6 +1816,14 @@
           "part": null,
           "qMatch": "'SAARC' এর পূর্ণরূপ কী? "
         }
+      ],
+      "watch": [
+        "সার্ক",
+        "SAARC"
+      ],
+      "watchSeen": [
+        "37ef124a3500",
+        "4d9851d0fd43"
       ]
     }
   ]

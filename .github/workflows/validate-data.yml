@@ -24,6 +24,9 @@ jobs:
       - name: Check governance-doc consistency
         run: node _dev/check_docs_consistency.js
 
+      - name: Check cache-version sync (সব sw.js/index.html-এ একই ভার্সন আছে কিনা)
+        run: python3 _dev/update_version.py --check
+
       - name: Install spellcheck dependencies
         run: npm install --prefix _dev
 

@@ -359,7 +359,7 @@
   // Version
   // ══════════════════════════════════════════
   // APP_VERSION — sw.js এর CACHE_VERSION এর সাথে sync রাখুন
-  const APP_VERSION = 'v1.339';
+  const APP_VERSION = 'v1.346';
   const versionEl = document.getElementById('appVersion');
   if (versionEl) versionEl.textContent = APP_VERSION;
 
@@ -569,6 +569,24 @@
 
     // qno অনুযায়ী সাজানো (qno সবসময় সংখ্যা হিসেবে রাখা হয়)
     questions.sort((a, b) => (a.qno || 0) - (b.qno || 0));
+
+    // অপশনের উৎস সম্পর্কে পরিষ্কার নোটিশ: ওয়েব থেকে / সংযোজিত / মিশ্র
+    const nGen = questions.filter(q => q.optionsGenerated).length;
+    const srcName = (questions.find(q => q.optionsSource) || {}).optionsSource;
+    window.MCQ_MIXED = !!srcName && nGen > 0;
+    if (nGen > 0 || srcName) {
+      const note = document.createElement('div');
+      note.className = 'answer-body';
+      note.style.margin = '0 0 12px';
+      if (!srcName) {
+        note.textContent = 'ℹ️ এই পরীক্ষার প্রশ্ন ও সঠিক উত্তর ম্যাগাজিন থেকে নেওয়া। অপশনগুলো শেখার সুবিধার জন্য সংযোজিত — আসল পরীক্ষার অপশন নয়।';
+      } else if (nGen === 0) {
+        note.textContent = 'ℹ️ সঠিক উত্তর ম্যাগাজিন অনুযায়ী; অপশনগুলো ওয়েবে (' + srcName + ') প্রকাশিত প্রশ্নপত্র থেকে নেওয়া।';
+      } else {
+        note.textContent = 'ℹ️ সঠিক উত্তর ম্যাগাজিন অনুযায়ী; বেশিরভাগ প্রশ্নের অপশন ওয়েবে (' + srcName + ') প্রকাশিত প্রশ্নপত্র থেকে নেওয়া। 🔸 চিহ্নিত প্রশ্নের অপশন সংযোজিত।';
+      }
+      list.appendChild(note);
+    }
 
     let lastSubject = null;
     questions.forEach(q => {

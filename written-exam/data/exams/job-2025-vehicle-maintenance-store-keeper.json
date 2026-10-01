@@ -484,8 +484,8 @@
     "qno": 19,
     "marks": 2,
     "type": "paragraph",
-    "question": "বাংলাদেশের বর্তমান অন্তর্বর্তীকালীন সরকার গঠিত হয় কত তারিখে?",
-    "answer": "৮ আগস্ট ২০২৪"
+    "question": "এশিয়া মহাদেশের ক্ষুদ্রতম দেশের নাম কী?",
+    "answer": "মালদ্বীপ"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q20",
@@ -495,8 +495,8 @@
     "qno": 20,
     "marks": 2,
     "type": "paragraph",
-    "question": "এশিয়া মহাদেশের ক্ষুদ্রতম দেশের নাম কী?",
-    "answer": "মালদ্বীপ"
+    "question": "বাংলাদেশকে প্রথম স্বীকৃতিদানকারী দেশ কোনটি?",
+    "answer": "ভুটান"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q21",
@@ -506,8 +506,8 @@
     "qno": 21,
     "marks": 2,
     "type": "paragraph",
-    "question": "বাংলাদেশকে প্রথম স্বীকৃতিদানকারী দেশ কোনটি?",
-    "answer": "ভুটান"
+    "question": "বাংলাদেশে প্রথম মুদ্রা চালু হয় কত সালে?",
+    "answer": "৪ মার্চ, ১৯৭২"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q22",
@@ -517,8 +517,8 @@
     "qno": 22,
     "marks": 2,
     "type": "paragraph",
-    "question": "বাংলাদেশে প্রথম মুদ্রা চালু হয় কত সালে?",
-    "answer": "৪ মার্চ, ১৯৭২"
+    "question": "'সাগরকন্যা' কোন এলাকার ভৌগোলিক নাম?",
+    "answer": "কুয়াকাটা, পটুয়াখালী"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q23",
@@ -526,10 +526,10 @@
     "subject": "general-knowledge",
     "topic": "gk-others",
     "qno": 23,
-    "marks": 2,
+    "marks": 1,
     "type": "paragraph",
-    "question": "'সাগরকন্যা' কোন এলাকার ভৌগোলিক নাম?",
-    "answer": "কুয়াকাটা, পটুয়াখালী"
+    "question": "বাংলাদেশের জাতীয় সংসদের আসন কয়টি?",
+    "answer": "৩৫০টি"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q24",
@@ -539,8 +539,8 @@
     "qno": 24,
     "marks": 1,
     "type": "paragraph",
-    "question": "বাংলাদেশের জাতীয় সংসদের আসন কয়টি?",
-    "answer": "৩৫০টি"
+    "question": "সুমাত্রা দ্বীপ কোন দেশের অংশ?",
+    "answer": "ইন্দোনেশিয়া"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q25",
@@ -550,8 +550,8 @@
     "qno": 25,
     "marks": 1,
     "type": "paragraph",
-    "question": "সুমাত্রা দ্বীপ কোন দেশের অংশ?",
-    "answer": "ইন্দোনেশিয়া"
+    "question": "বাংলাদেশ ও বার্মার সীমান্ত নদী কোনটি?",
+    "answer": "নাফ"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q26",
@@ -561,8 +561,8 @@
     "qno": 26,
     "marks": 1,
     "type": "paragraph",
-    "question": "বাংলাদেশ ও বার্মার সীমান্ত নদী কোনটি?",
-    "answer": "নাফ"
+    "question": "প্রথম সাফ গেমস কোথায় অনুষ্ঠিত হয়?",
+    "answer": "কাঠমান্ডু, নেপাল (১৯৮৪ সালে)"
   },
   {
     "id": "job-2025-vehicle-maintenance-store-keeper-q27",
@@ -570,17 +570,6 @@
     "subject": "general-knowledge",
     "topic": "gk-others",
     "qno": 27,
-    "marks": 1,
-    "type": "paragraph",
-    "question": "প্রথম সাফ গেমস কোথায় অনুষ্ঠিত হয়?",
-    "answer": "কাঠমান্ডু, নেপাল (১৯৮৪ সালে)"
-  },
-  {
-    "id": "job-2025-vehicle-maintenance-store-keeper-q28",
-    "examId": "job-2025-vehicle-maintenance-store-keeper",
-    "subject": "general-knowledge",
-    "topic": "gk-others",
-    "qno": 28,
     "marks": 1,
     "type": "paragraph",
     "question": "বাংলাদেশের জাতীয় খেলার নাম কোনটি?",

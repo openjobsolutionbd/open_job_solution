@@ -1,0 +1,202 @@
+[
+  {
+    "id": "job-2025-bpatc-support-staff-q01",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 1,
+    "marks": 2,
+    "type": "table",
+    "question": "বানান অশুদ্ধি সংশোধন করে লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "শুদ্ধ বানান"
+    ],
+    "rows": [
+      [
+        "কিষ্মত",
+        "কিংবা"
+      ],
+      [
+        "দরিদ্র",
+        "দরিদ্রতা/দারিদ্র্য"
+      ],
+      [
+        "নিরপরাধী",
+        "নিরপরাধ"
+      ],
+      [
+        "সখ্যতা",
+        "সখ্য"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q02",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 2,
+    "marks": 2,
+    "type": "table",
+    "question": "বিপরীত শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "অতিকায়",
+        "ক্ষুদ্রকায়"
+      ],
+      [
+        "দ্যালোক",
+        "ভূলোক"
+      ],
+      [
+        "গৌণ",
+        "মুখ্য"
+      ],
+      [
+        "ভূস্বামী",
+        "ভূমিহীন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q03",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 3,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "কারকসহ বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "q": "আলোয় আঁধার কাটে।",
+        "a": "করণে ৭মী বিভক্তি।"
+      },
+      {
+        "q": "গুরুবার স্কুল বন্ধ।",
+        "a": "কর্মে শূন্য বিভক্তি।"
+      },
+      {
+        "q": "কাননে কুসুমকলি সকলি ফুটিল।",
+        "a": "অধিকরণে ৭মী বিভক্তি।"
+      },
+      {
+        "q": "আমার যাওয়া হয়নি।",
+        "a": "কর্তৃকারকে ৬ষ্ঠী বিভক্তি।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q04",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "bangla",
+    "topic": "দরখাস্ত",
+    "qno": 4,
+    "marks": 8,
+    "type": "letter",
+    "question": "দুই দিনের নৈমিত্তিক ছুটি চেয়ে পরিচালক (প্রশাসন), বিপিএটিসির নিকট একটি দরখাস্ত লিখুন।",
+    "letter": {
+      "date": "২৪ এপ্রিল, ২০২৫",
+      "to": "পরিচালক (প্রশাসন)\nবিপিএটিসি",
+      "subject": "নৈমিত্তিক ছুটির জন্য আবেদন।",
+      "body": "জনাব,\n\nসবিনয় নিবেদন এই যে, আগামী ২৬ এপ্রিল, ২০২৫ তারিখে বাংলাদেশ ব্যাংকের পরিচালক পদের পরীক্ষা অনুষ্ঠিত হবে। আমি উক্ত পদের একজন পরীক্ষার্থী। পরীক্ষার জন্য ভালোভাবে প্রস্তুতি নেওয়া এবং যাতায়াত বাবদ আমার ২৫ ও ২৬ এপ্রিল, ২০২৫ তারিখ পর্যন্ত মোট দুই দিনের ছুটি প্রয়োজন।\n\nঅতএব, জনাবের নিকট আমার আকুল আবেদন উপর্যুক্ত বিষয় বিবেচনা করে আমাকে দুই দিনের ছুটি মঞ্জুর করতে যেন আপনার একান্ত মর্জি হয়।",
+      "closing": "বিনীত নিবেদক\nআপনার অনুগত",
+      "sender": "মো. আলী হাসান\nঅফিস সহায়ক"
+    }
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q05",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 2,
+    "type": "translate",
+    "question": "Translate the following sentences into English:",
+    "parts": [
+      {
+        "source": "তেল পানিতে ভাসে।",
+        "target": "Oil floats on water."
+      },
+      {
+        "source": "পুষ্টিকর খাদ্য স্বাস্থ্যের জন্য ভালো।",
+        "target": "Nutritious food is good for health."
+      },
+      {
+        "source": "সূর্য উঠেছে।",
+        "target": "The sun is up."
+      },
+      {
+        "source": "আমি তাকে বুঝাতে চেষ্টা করবো।",
+        "target": "I will try make him understand."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q06",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 6,
+    "marks": 3,
+    "type": "idiom",
+    "question": "Write Bangla meaning of the following idioms and make sentences in English.",
+    "parts": [
+      {
+        "phrase": "Dead letter (অকার্যকর)",
+        "meaning": "This law is dead letter now."
+      },
+      {
+        "phrase": "Snake under the grass (গোপন শত্রু)",
+        "meaning": "Look before you leap, there is a shake under the grass."
+      },
+      {
+        "phrase": "Head in the cloud (আকাশ কুসুম কল্পনা)",
+        "meaning": "You should not have your head in the cloud about your result."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q07",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "english",
+    "qno": 7,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate preposition:",
+    "parts": [
+      {
+        "sentence": "I strongly object ...... your approach.",
+        "answer": "to"
+      },
+      {
+        "sentence": "The master dispensed ...... the services of his servant.",
+        "answer": "with"
+      },
+      {
+        "sentence": "I do not have any prejudice ...... poetry.",
+        "answer": "against"
+      },
+      {
+        "sentence": "Please leave our key ...... the reception.",
+        "answer": "at"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-bpatc-support-staff-q08",
+    "examId": "job-2025-bpatc-support-staff",
+    "subject": "english",
+    "topic": "paragraph writing",
+    "qno": 8,
+    "marks": 3,
+    "type": "paragraph",
+    "question": "Write 6 (six) sentences on 'the person I like most'.",
+    "answer": "The person I like most is my mother. She is very kind, caring and hardworking. She always supports me in everything I do. Her honesty and patience inspire me a lot. I love spending time with her and learning from her. I hope to be like her when I grow up."
+  }
+]

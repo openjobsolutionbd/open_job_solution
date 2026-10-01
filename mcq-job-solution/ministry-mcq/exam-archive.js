@@ -25,5 +25,12 @@ const EXAM_ARCHIVE = [
     date: "2026-08-07",
     totalQuestions: 80,
   },
+  {
+    id: "govt-employee-hospital-2026-senior-staff-nurse",
+    ministry: "সরকারি কর্মচারী হাসপাতাল",
+    post: "সিনিয়র স্টাফ নার্স",
+    date: "2026-08-03",
+    totalQuestions: 58,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

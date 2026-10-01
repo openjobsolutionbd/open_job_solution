@@ -788,32 +788,6 @@
       ]
     },
     {
-      "key": "2025-defense-ministry-office-sohayok-q10-p5",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-defense-ministry-office-sohayok-q10",
-          "part": 4,
-          "qMatch": "বর্তমান অন্তর্বর্তীকালীন"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
-    },
-    {
       "key": "2025-div-comm-ctg-office-sohayok-q17-p10",
       "class": "slow",
       "topics": [],
@@ -1334,32 +1308,6 @@
       "watchSeen": []
     },
     {
-      "key": "2025-mopa-office-sohayok-q10-p8",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-mopa-office-sohayok-q10",
-          "part": 7,
-          "qMatch": "বাংলাদেশের বর্তমান অন্তর"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
-    },
-    {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p14",
       "class": "slow",
       "topics": [
@@ -1599,32 +1547,6 @@
           "qMatch": "জনসংখ্যা বিবেচনায় মুসলি"
         }
       ]
-    },
-    {
-      "key": "2025-vehicle-maintenance-store-keeper-q19",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-vehicle-maintenance-store-keeper-q19",
-          "part": null,
-          "qMatch": "বাংলাদেশের বর্তমান অন্তর"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
     },
     {
       "key": "2025-barc-head-assistant-q13-p5",

@@ -1,0 +1,438 @@
+[
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q01",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 1,
+    "marks": 4,
+    "type": "math",
+    "question": "টেলিফোনের কলের সংখ্যা ৫টি, প্রতি কলের মূল্য ৬.০০ টাকা, এর ভাড়া ২২০ টাকা এবং ভ্যাট ১০% হলে (ক) ভ্যাটের পরিমাণ কত? (খ) প্রতিদিন গড়ে ২টি কল করলে ২০০৯ সালের ফেব্রুয়ারি মাসের টেলিফোনের বিল বাবদ কত খরচ হবে?",
+    "steps": [
+      "(ক) ১টি টেলিফোন কলের মূল্য ৬ টাকা ∴ ৫টি কলের মূল্য (৬ × ৫) = ৩০ টাকা",
+      "ভাড়াসহ মোট বিল (২২০ + ৩০) = ২৫০ টাকা",
+      "১০% ভ্যাট হলে, ভ্যাটের পরিমাণ (২৫০ × ১০/১০০) = ২৫ টাকা",
+      "(খ) ২০০৯ সালের ফেব্রুয়ারি মাস ২৮ দিনে ফেব্রুয়ারি মাসের মোট কল (২৮ × ২) = ৫৬টি",
+      "১টি টেলিফোন কলের মূল্য ৬ টাকা ∴ ৫৬টি কলের মূল্য (৫৬ × ৬) = ৩৩৬ টাকা",
+      "ভাড়াসহ মোট বিল (৩৩৬ + ২২০) = ৫৫৬ টাকা",
+      "১০% ভ্যাটসহ মোট বিল {৫৫৬ + (৫৫৬ × ১০/১০০)} টাকা = (৫৫৬ + ৫৫.৬) = ৬১১.৬ টাকা"
+    ],
+    "answer": "(ক) ২৫ টাকা; (খ) ৬১১.৬ টাকা"
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q02",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 2,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি ঘরের মেঝে কার্পেট দিয়ে ঢাকতে মোট ৭২০০ টাকা ব্যয় হয়। ঘরটির প্রস্থ ৩ মিটার কম হলে ৫৭৬ টাকা কম খরচ হতো। ঘরটির প্রস্থ কত?",
+    "steps": [
+      "মনে করি, ঘরটির দৈর্ঘ্য x মিটার",
+      "প্রস্থ ৩ মিটার কমলে ক্ষেত্রফল কমে (x × ৩) = ৩x বর্গমিটার",
+      "৫৭৬ টাকা খরচ হয় ৩x বর্গমিটারে",
+      "∴ ১ টাকা খরচ হয় ৩x/৫৭৬ বর্গমিটারে",
+      "∴ ৭২০০ টাকা খরচ হয় (৩x × ৭২০০)/৫৭৬ = ৭৫x/২ বর্গমিটারে",
+      "∴ মেঝের ক্ষেত্রফল ৭৫x/২ বর্গমিটার",
+      "∴ ঘরটির প্রস্থ = ক্ষেত্রফল/দৈর্ঘ্য = (৭৫x/২) × (১/x) = ৩৭.৫ মিটার"
+    ],
+    "answer": "৩৭.৫ মিটার"
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q03",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 3,
+    "marks": 4,
+    "type": "math",
+    "question": "$x^2 = 5 + 2\\sqrt{6}$ হলে $\\frac{x^6+1}{x^3} - \\sqrt{2}\\left(\\frac{x^4+1}{x^2}\\right)$ এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, $x^2 = 5 + 2\\sqrt{6}$",
+      "$\\therefore \\frac{1}{x^2} = \\frac{1}{5+2\\sqrt{6}} = \\frac{5-2\\sqrt{6}}{(5+2\\sqrt{6})(5-2\\sqrt{6})} = \\frac{5-2\\sqrt{6}}{25-24} = 5 - 2\\sqrt{6}$",
+      "$\\therefore x^2 + \\frac{1}{x^2} = 5 + 2\\sqrt{6} + 5 - 2\\sqrt{6} = 10$",
+      "বা, $\\left(x+\\frac{1}{x}\\right)^2 - 2 \\cdot x \\cdot \\frac{1}{x} = 10$, বা, $\\left(x+\\frac{1}{x}\\right)^2 = 12$, বা, $x + \\frac{1}{x} = \\sqrt{12} = 2\\sqrt{3}$",
+      "এখন, $\\frac{x^6+1}{x^3} - \\sqrt{2}\\left(\\frac{x^4+1}{x^2}\\right) = x^3 + \\frac{1}{x^3} - \\sqrt{2}\\left(x^2 + \\frac{1}{x^2}\\right)$",
+      "$= \\left(x+\\frac{1}{x}\\right)^3 - 3 \\cdot x \\cdot \\frac{1}{x}\\left(x+\\frac{1}{x}\\right) - \\sqrt{2} \\times 10$",
+      "$= (2\\sqrt{3})^3 - 3 \\cdot 2\\sqrt{3} - 10\\sqrt{2} = 24\\sqrt{3} - 6\\sqrt{3} - 10\\sqrt{2}$",
+      "$= 18\\sqrt{3} - 10\\sqrt{2}$"
+    ],
+    "answer": "$18\\sqrt{3} - 10\\sqrt{2}$"
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q04",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "bangla",
+    "topic": "ব্যাকরণ",
+    "qno": 4,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কোন কারণে সাধু ও চলিত ভাষার মধ্যে পার্থক্য ঘটে?",
+        "a": "সর্বনাম ও ক্রিয়াপদের ব্যবহারে সাধু ও চলিত ভাষার মধ্যে পার্থক্য ঘটে।"
+      },
+      {
+        "label": "খ",
+        "q": "কোন বর্ণের নিজস্ব কোন ধ্বনি নেই?",
+        "a": "ঞ বর্ণের নিজস্ব কোনো ধ্বনি নেই।"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলা সাহিত্যের প্রথম ব্যাকরণ গ্রন্থের রচয়িতা কে?",
+        "a": "বাংলা সাহিত্যের প্রথম ব্যাকরণ গ্রন্থের রচয়িতা মানোএল দা অসসুম্পসাঁউ।"
+      },
+      {
+        "label": "ঘ",
+        "q": "কোন বিরাম চিহ্নে বিরাম নিতে হয় না?",
+        "a": "সাধারণত হাইফেন (-) এবং ইলেক বা লোপচিহ্ন (...) ব্যবহারে কোনো বিরাম নিতে হয় না।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q05",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 5,
+    "marks": 4,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "গরজ বড় বালাই (প্রয়োজন বড় বাধ্যবাধকতা)",
+        "meaning": "পরীক্ষার আগে বই কেনার জন্য আসাদের প্রিয় ফোনটা বিক্রি করে দিতে হলো একেই বলে গরজ বড় বালাই।"
+      },
+      {
+        "label": "খ",
+        "phrase": "ভেজা চুলে খোঁপা বাঁধা (বৃথা চেষ্টা)",
+        "meaning": "প্রস্তুতি ছাড়া পরীক্ষায় বসা ভেজা চুলে খোঁপা বাঁধা ছাড়া আর কিছুই না।"
+      },
+      {
+        "label": "গ",
+        "phrase": "উজানের কৈ (সহজলভ্য)",
+        "meaning": "বাংলাদেশে দুর্নীতি এখন উজানের কৈ এর মতো।"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "টুপভুজঙ্গ (নেশাগ্রস্ত)",
+        "meaning": "রফিকের মতো টুপভুজঙ্গ লোককে এতো বড় কাজের দায়িত্ব দেয়া উচিত হবে না।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q06",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 6,
+    "marks": 4,
+    "type": "table",
+    "question": "ব্যাসবাক্যসহ সমাসের নাম লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "ব্যাসবাক্যসহ সমাসের নাম"
+    ],
+    "rows": [
+      [
+        "ঘরজামাই",
+        "ঘরে আশ্রিত জামাই (মধ্যপদলোপী কর্মধারয়)"
+      ],
+      [
+        "মাথায় পাগড়ি",
+        "মাথায় পাগড়ি যার (অলুক বহুব্রীহি)"
+      ],
+      [
+        "পরোক্ষ",
+        "অক্ষির অগোচরে (অব্যয়ীভাব)"
+      ],
+      [
+        "দর্শনমাত্র",
+        "কেবল দর্শন (নিত্য সমাস)"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q07",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 7,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "বাক্য সংকোচন করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অন্যের শ্রী দেখলে যে কাতর",
+        "a": "পরশ্রীকাতর"
+      },
+      {
+        "label": "খ",
+        "q": "ঘর্ষণজাত সুগন্ধ",
+        "a": "ঘ্রাণ"
+      },
+      {
+        "label": "গ",
+        "q": "ক্রীড়াশীল তরঙ্গ",
+        "a": "চলোর্মি"
+      },
+      {
+        "label": "ঘ",
+        "q": "গাছ ভেঙ্গে পড়ার শব্দ",
+        "a": "মরমর"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q08",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "bangla",
+    "topic": "প্রতিশব্দ",
+    "qno": 8,
+    "marks": 4,
+    "type": "table",
+    "question": "'সদন' শব্দের ৪টি সমার্থক শব্দ লিখুন।",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সমার্থক শব্দ"
+    ],
+    "rows": [
+      [
+        "সদন",
+        "গৃহ, আলয়, নিলয়, নিকেতন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q09",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 9,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blank with appropriate preposition:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "Lots of people are allergic ...... prawn.",
+        "answer": "to"
+      },
+      {
+        "label": "b",
+        "sentence": "The lights have been blown ...... by the strong wind.",
+        "answer": "out"
+      },
+      {
+        "label": "c",
+        "sentence": "He is afflicted ...... gout.",
+        "answer": "with"
+      },
+      {
+        "label": "d",
+        "sentence": "I have no bias ...... late marriage.",
+        "answer": "against"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q10",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 10,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Put the correct form of verb in the brackets:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "The innings just ...... (begin).",
+        "changed": "The innings has just begun."
+      },
+      {
+        "label": "b",
+        "original": "Your bicycle needs (repair).",
+        "changed": "Your bicycle needs to be repaired."
+      },
+      {
+        "label": "c",
+        "original": "Where you (go) yesterday?",
+        "changed": "Where did you go yesterday?"
+      },
+      {
+        "label": "d",
+        "original": "A lot of sugar from the sack ...... (steal).",
+        "changed": "A lot of sugar from the sack was stolen."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q11",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 11,
+    "marks": 8,
+    "type": "idiom",
+    "question": "Make sentences with meaning.",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Hard and fast (নির্ধারিত, বাঁধা-ধরা)",
+        "meaning": "There is no hard and fast rule in this respect."
+      },
+      {
+        "label": "b",
+        "phrase": "To pay lip service to someone (কাউকে মুখে মুখে সম্মান দেখানো, কাজে নয়)",
+        "meaning": "Many policians pay lip service to environmental issues."
+      },
+      {
+        "label": "c",
+        "phrase": "Raised one's eyebrow (বিস্মিত হওয়া, চোখ কপালে তোলা)",
+        "meaning": "He raised his eyebrow at my explanation."
+      },
+      {
+        "label": "d",
+        "phrase": "With flying colours (বিজয় গৌরবে)",
+        "meaning": "He came out with flying colours."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q12",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 12,
+    "marks": 4,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "রাস্তায় অসচেতনভাবে হেঁটো না।",
+        "target": "Don't walk carelessly on the road."
+      },
+      {
+        "label": "খ",
+        "source": "গাইতে গাইতে গায়েন, বাজাতে বাজাতে বায়েন।",
+        "target": "Practice makes perfect."
+      },
+      {
+        "label": "গ",
+        "source": "তুমি তাকে কতটা বুদ্ধিমান মনে কর?",
+        "target": "How intelligent do you consider him?"
+      },
+      {
+        "label": "ঘ",
+        "source": "বৃষ্টি থামার সাথে সাথে তারা বাইরে গেল।",
+        "target": "As soon as the rain stopped, they went outside."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q13",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "general-knowledge",
+    "topic": "বিজ্ঞান",
+    "qno": 13,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সংক্ষিপ্ত উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "ODOMETER কী?",
+        "a": "ওডোমিটার গাড়ির অতিক্রান্ত দূরত্ব পরিমাপ করার যন্ত্র।"
+      },
+      {
+        "label": "খ",
+        "q": "২৪তম বিশ্বকাপ ফুটবল কত সালে অনুষ্ঠিত হবে?",
+        "a": "২৪তম বিশ্বকাপ ফুটবল ২০৩০ সালে অনুষ্ঠিত হবে।"
+      },
+      {
+        "label": "গ",
+        "q": "আইপিএল ২০২৫ এর ৩৩তম ম্যাচে কোন দুটি দল অংশগ্রহণ করেছিল?",
+        "a": "আইপিএল ২০২৫ এর ৩৩তম ম্যাচে মুম্বাই ইন্ডিয়ান্স এবং সানরাইজার্স হায়দ্রাবাদ অংশগ্রহণ করেছিল।"
+      },
+      {
+        "label": "ঘ",
+        "q": "বিবিএস এর ২০২৪ সালের তথ্য অনুযায়ী বাংলাদেশের কত শতাংশ পরিবার ইন্টারনেট ব্যবহার করে?",
+        "a": "বিবিএস এর ২০২৪ সালের তথ্য অনুযায়ী বাংলাদেশের ৫২ শতাংশ পরিবার ইন্টারনেট ব্যবহার করে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "বৈষম্যবিরোধী ছাত্র আন্দোলন মার্চ ফর জাস্টিস কর্মসূচি ঘোষণা করে কত তারিখে?",
+        "a": "বৈষম্যবিরোধী ছাত্র আন্দোলন মার্চ ফর জাস্টিস কর্মসূচি ঘোষণা করে ৩০ জুলাই, ২০২৪ তারিখে।"
+      },
+      {
+        "label": "চ",
+        "q": "জেনকাস্ট কী?",
+        "a": "গুগল এর ডিপমাইন্ড গবেষণা ল্যাব সম্প্রতি 'জেনকাস্ট' নামের একটি নতুন এআই ভিত্তিক আবহাওয়ার পূর্বাভাস মডেল উন্মোচন করেছে।"
+      },
+      {
+        "label": "ছ",
+        "q": "Serial port-এ কয়টি পিন থাকে?",
+        "a": "Serial port-এ ৯টি পিন থাকে।"
+      },
+      {
+        "label": "জ",
+        "q": "ব্রিটেন ইউরোপীয় ইউনিয়ন ত্যাগ করে কবে?",
+        "a": "ব্রিটেন ইউরোপীয় ইউনিয়ন ত্যাগ করে ৩১ জানুয়ারি, ২০২০ সালে।"
+      },
+      {
+        "label": "ঝ",
+        "q": "তুরস্কের আইনসভার নাম কি?",
+        "a": "তুরস্কের আইনসভার নাম গ্র্যান্ড ন্যাশনাল অ্যাসেম্বলি।"
+      },
+      {
+        "label": "ঞ",
+        "q": "UNV এর সদরদপ্তর কোথায়?",
+        "a": "UNV এর সদরদপ্তর বন, জার্মানি।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-nilg-steno-computer-operator-q14",
+    "examId": "job-2025-nilg-steno-computer-operator",
+    "subject": "general-knowledge",
+    "topic": "সংক্ষিপ্ত-রূপ",
+    "qno": 14,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "BCSIR",
+        "a": "Bangladesh Council of Scientific and Industrial Research."
+      },
+      {
+        "label": "খ",
+        "q": "FAO",
+        "a": "Food and Agriculture Organization."
+      },
+      {
+        "label": "গ",
+        "q": "ISESCO",
+        "a": "Islamic World Educational, Scientific and Cultural Organization."
+      },
+      {
+        "label": "ঘ",
+        "q": "OAPEC",
+        "a": "Organization of Arab Petroleum Exporting Countries."
+      },
+      {
+        "label": "ঙ",
+        "q": "SMTP",
+        "a": "Simple Mail Transfer Protocol."
+      }
+    ]
+  }
+]

@@ -958,5 +958,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 15,
   },
+  {
+    id: "job-2025-nilg-steno-computer-operator",
+    ministry: "জাতীয় স্থানীয় সরকার ইনস্টিটিউট",
+    post: "সাঁটমুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+    date: "2025-04-18",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 14,
+  },
+  {
+    id: "job-2025-religious-affairs-office-asst-typist",
+    ministry: "ধর্ম বিষয়ক মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-04-18",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 70,
+    totalQuestions: 20,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

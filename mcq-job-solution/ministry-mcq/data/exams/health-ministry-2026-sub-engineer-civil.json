@@ -5,7 +5,15 @@
     "subject": "general-knowledge",
     "qno": 1,
     "q": "বাংলাদেশের কোন এলাকাকে Marine Protected Area (MPA) ঘোষণা করা হয়েছে?",
-    "answer": "সেন্টমার্টিন ও আশেপাশের এলাকা (উৎস নোট: 'ক' ও 'খ' উভয়ই সঠিক উত্তর হিসেবে গণ্য)"
+    "answer": "সেন্টমার্টিন ও আশেপাশের এলাকা",
+    "options": [
+      "সেন্টমার্টিন",
+      "কুয়াকাটা",
+      "হিরন পয়েন্ট",
+      "সেন্টমার্টিন ও আশেপাশের এলাকা"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনের নোট: 'ক ও খ উভয়ই সঠিক উত্তর'; ওয়েবের সমাধানে সঠিক উত্তর 'সেন্টমার্টিন ও আশেপাশের এলাকা'। যাচাই করে নিন।"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q02",
@@ -13,7 +21,14 @@
     "subject": "english",
     "qno": 2,
     "q": "'I would rather starve — beg — ___.'",
-    "answer": "than"
+    "answer": "than",
+    "options": [
+      "to",
+      "than",
+      "but",
+      "for"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q03",
@@ -21,7 +36,14 @@
     "subject": "english",
     "qno": 3,
     "q": "What is the meaning of 'dead tired'?",
-    "answer": "Very tired"
+    "answer": "Very tired",
+    "options": [
+      "Very tired",
+      "Less tired",
+      "Tired but not dead",
+      "None of the above"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q07",
@@ -29,7 +51,14 @@
     "subject": "general-knowledge",
     "qno": 7,
     "q": "কোন সভ্যতার লোকজন সর্বপ্রথম চাকা (Wheel) আবিষ্কার করেন?",
-    "answer": "সুমেরীয়"
+    "answer": "সুমেরীয়",
+    "options": [
+      "সুমেরীয়",
+      "অ্যাসিরীয়",
+      "ফিনিশিয়",
+      "ব্যবিলনীয়"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q08",
@@ -37,7 +66,14 @@
     "subject": "bangla",
     "qno": 8,
     "q": "বাংলা ভাষায় ছন্দ কত প্রকার?",
-    "answer": "৩ প্রকার"
+    "answer": "৩-প্রকার",
+    "options": [
+      "২-প্রকার",
+      "৩-প্রকার",
+      "৪-প্রকার",
+      "নির্দিষ্ট"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q11",
@@ -45,7 +81,14 @@
     "subject": "bangla",
     "qno": 11,
     "q": "'সিংহ' কোন ভাষার শব্দ?",
-    "answer": "সিংহলি"
+    "answer": "সিংহলি",
+    "options": [
+      "বাংলা",
+      "হিন্দি",
+      "সিংহলি",
+      "ফার্সি"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q12",
@@ -53,7 +96,14 @@
     "subject": "bangla",
     "qno": 12,
     "q": "'মানুষ হও' বাক্যটিতে কোন ধরনের অনুজ্ঞা প্রকাশ পেয়েছে?",
-    "answer": "উপদেশ"
+    "answer": "উপদেশ",
+    "options": [
+      "অনুনয়",
+      "আদেশ",
+      "অনুরোধ",
+      "উপদেশ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q14",
@@ -61,7 +111,14 @@
     "subject": "general-knowledge",
     "qno": 14,
     "q": "'COP 30' সম্মেলনে জলবায়ু সংকট মোকাবিলায় উন্নয়নশীল দেশগুলোর জন্য আর্থিক সহায়তা কতগুণ বাড়াতে বলা হয়েছে?",
-    "answer": "তিনগুণ"
+    "answer": "তিনগুণ",
+    "options": [
+      "দ্বিগুণ",
+      "পাঁচগুণ",
+      "দশগুণ",
+      "তিনগুণ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q16",
@@ -69,7 +126,14 @@
     "subject": "english",
     "qno": 16,
     "q": "'The door is wide open.' Here 'wide' is used as —",
-    "answer": "Adverb"
+    "answer": "Adverb",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Preposition",
+      "None of the above"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q17",
@@ -77,7 +141,15 @@
     "subject": "bangla",
     "qno": 17,
     "q": "বাংলা ভাষার মূল উৎস কী?",
-    "answer": "প্রাচীন ভারতীয় প্রাকৃত ভাষা (আনুমানিক এক হাজার বছর আগে পূর্ব ভারতীয় প্রাকৃত ভাষা থেকে বাংলা ভাষার জন্ম হয়েছে)"
+    "answer": "বৈদিক ভাষা",
+    "options": [
+      "অনার্য ভাষা",
+      "বৈদিক ভাষা",
+      "ইংরেজি ভাষা",
+      "হিন্দি ভাষা"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে এই প্রশ্নে উত্তর চিহ্নিত নেই (নোটে লেখা 'পূর্ব ভারতীয় প্রাকৃত', যা অপশনে নেই)। ওয়েবের সমাধান: বৈদিক ভাষা।"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q20",
@@ -85,7 +157,14 @@
     "subject": "bangla",
     "qno": 20,
     "q": "'অরণ্য'-এর লিঙ্গান্তর কী?",
-    "answer": "অরণ্যানী"
+    "answer": "অরণ্যানী",
+    "options": [
+      "আরণ্য",
+      "অরণ্যানী",
+      "অরণী",
+      "অরণা"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q22",
@@ -93,7 +172,14 @@
     "subject": "bangla",
     "qno": 22,
     "q": "ব্যাকরণের মূল ভিত্তি কী?",
-    "answer": "ভাষা"
+    "answer": "ভাষা",
+    "options": [
+      "ভাব",
+      "ভাষা",
+      "ধ্বনি",
+      "বাক্য"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q23",
@@ -101,7 +187,15 @@
     "subject": "general-knowledge",
     "qno": 23,
     "q": "'ই.পি.আই' কর্মসূচিতে প্রতিষেধক টিকা কয়টি?",
-    "answer": "৭ (বর্তমানে ১৩টি রোগের জন্য ১১টি টিকা দেওয়া হয়)"
+    "answer": "৬",
+    "options": [
+      "৫",
+      "৬",
+      "৭",
+      "৮"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর চিহ্নিত নেই; নোট: 'বর্তমানে ১৩টি রোগের জন্য ১১টি টিকা দেওয়া হয়'। ওয়েবের সমাধান: ৬ (১৯৭৯ সালে শুরুর ৬টি টিকা)।"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q24",
@@ -109,7 +203,14 @@
     "subject": "english",
     "qno": 24,
     "q": "'The teacher said, the truth will always prevail.' Which sentence below is a correct conversion?",
-    "answer": "The teacher said that the truth will always prevail."
+    "answer": "The teacher said that the truth will always prevail",
+    "options": [
+      "The teacher said the truth would always prevail",
+      "The teacher said the truth always prevailed",
+      "The teacher said that the truth will always prevail",
+      "the teacher said that the truth will be always prevailing."
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q26",
@@ -117,7 +218,14 @@
     "subject": "english",
     "qno": 26,
     "q": "'They are building the house.' Which one is correct in passive voice form?",
-    "answer": "The house is being built by them."
+    "answer": "The house is being built by them",
+    "options": [
+      "The house are built by them",
+      "The house is built by them",
+      "The house are being built by them",
+      "The house is being built by them"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q29",
@@ -125,7 +233,14 @@
     "subject": "bangla",
     "qno": 29,
     "q": "'ব্রজবুলি' ভাষার প্রবর্তক কে?",
-    "answer": "বিদ্যাপতি"
+    "answer": "বিদ্যাপতি",
+    "options": [
+      "চন্ডীদাস",
+      "বিদ্যাপতি",
+      "আলাওল",
+      "গোবিন্দ দাস"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q31",
@@ -133,7 +248,14 @@
     "subject": "english",
     "qno": 31,
     "q": "Which is the incorrect sentence?",
-    "answer": "They hurt themselves."
+    "answer": "They hurt themself",
+    "options": [
+      "I hurt myself",
+      "He hurt himself",
+      "She hurts herself",
+      "They hurt themself"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q32",
@@ -141,7 +263,14 @@
     "subject": "bangla",
     "qno": 32,
     "q": "'পথের পাঁচালী' একটি —",
-    "answer": "উপন্যাস"
+    "answer": "উপন্যাস",
+    "options": [
+      "উপন্যাস",
+      "কাব্যগ্রন্থ",
+      "ভ্রমণকাহিনী",
+      "নাটক"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q33",
@@ -149,7 +278,14 @@
     "subject": "english",
     "qno": 33,
     "q": "'Things fall apart, the centre cannot hold.' This expression is coined by —",
-    "answer": "W. B. Yeats"
+    "answer": "W.B. Yeats",
+    "options": [
+      "A.S. Hornby",
+      "William Shakespeare",
+      "W.B. Yeats",
+      "S.T. Coleridge"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q34",
@@ -157,7 +293,14 @@
     "subject": "general-knowledge",
     "qno": 34,
     "q": "উপকূল থেকে বাংলাদেশের অর্থনৈতিক সমুদ্রসীমা কত?",
-    "answer": "২০০ নটিক্যাল মাইল"
+    "answer": "২০০ নটিক্যাল মাইল",
+    "options": [
+      "২২০ নটিক্যাল মাইল",
+      "২০০ নটিক্যাল মাইল",
+      "২২৫ নটিক্যাল মাইল",
+      "১৫০ নটিক্যাল মাইল"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q37",
@@ -165,7 +308,14 @@
     "subject": "general-knowledge",
     "qno": 37,
     "q": "'বলাকা' বাংলাদেশের কোন ফসলের একটি প্রকার?",
-    "answer": "গম"
+    "answer": "গম",
+    "options": [
+      "গম",
+      "ধান",
+      "পাট",
+      "টমেটো"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q38",
@@ -173,7 +323,15 @@
     "subject": "general-knowledge",
     "qno": 38,
     "q": "'লাঙ্গল যার জমি তার' — স্লোগানটি কে দিয়েছিলেন?",
-    "answer": "এ কে ফজলুল হক"
+    "answer": "মাওলানা ভাসানী",
+    "options": [
+      "মাওলানা ভাসানী",
+      "হাজী শরিয়ত উল্লাহ",
+      "এ কে ফজলুল হক",
+      "হোসেন শহীদ সোহরাওয়ার্দী"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর ছাপা 'এ কে ফজলুল হক'; ওয়েবের সমাধানে 'মাওলানা ভাসানী' (সাধারণভাবে এটাই প্রচলিত উত্তর)। যাচাই করে নিন।"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q39",
@@ -181,7 +339,14 @@
     "subject": "english",
     "qno": 39,
     "q": "'He said that he was innocent.' Which one is correct in the form of simple sentence?",
-    "answer": "He declared his innocence."
+    "answer": "He declared his innocence",
+    "options": [
+      "He said his innocent",
+      "He declared innocent",
+      "He said innocence",
+      "He declared his innocence"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q44",
@@ -189,7 +354,14 @@
     "subject": "bangla",
     "qno": 44,
     "q": "বাংলা ভাষায় প্রথম সংবাদপত্র কোনটি?",
-    "answer": "সমাচার দর্পণ"
+    "answer": "সমাচার দর্পণ",
+    "options": [
+      "আজাদী",
+      "বঙ্গদর্শন",
+      "বেঙ্গল গেজেট",
+      "সমাচার দর্পণ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q46",
@@ -197,7 +369,14 @@
     "subject": "general-knowledge",
     "qno": 46,
     "q": "সভ্যতায় রোমানদের অবদান কোনটি?",
-    "answer": "আইন প্রণয়ন"
+    "answer": "আইন প্রণয়ন",
+    "options": [
+      "আইন প্রণয়ন",
+      "ধাতব মুদ্রা প্রচলন",
+      "লিখন পদ্ধতির আবিষ্কার",
+      "বর্ণমালার আবিষ্কার"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q48",
@@ -205,7 +384,14 @@
     "subject": "english",
     "qno": 48,
     "q": "'You do look nice today.' Here 'do' is used for —",
-    "answer": "emphasis"
+    "answer": "emphasis",
+    "options": [
+      "praise",
+      "reporting expression",
+      "emotion",
+      "emphasis"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q50",
@@ -213,7 +399,14 @@
     "subject": "english",
     "qno": 50,
     "q": "Which sentence is incorrect?",
-    "answer": "Oil have nearly double the price."
+    "answer": "Oil have nearly double the price",
+    "options": [
+      "He has been a great help",
+      "Have you walked the dog?",
+      "Please pass me the salt",
+      "Oil have nearly double the price"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q52",
@@ -221,7 +414,14 @@
     "subject": "general-knowledge",
     "qno": 52,
     "q": "কোনটি বাল্টিক রাষ্ট্র নয়?",
-    "answer": "রোমানিয়া"
+    "answer": "রোমানিয়া",
+    "options": [
+      "এস্তোনিয়া",
+      "রোমানিয়া",
+      "লাটভিয়া",
+      "লিথুয়ানিয়া"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q53",
@@ -229,7 +429,14 @@
     "subject": "english",
     "qno": 53,
     "q": "'She can speak six languages.' Here 'can' stands for —",
-    "answer": "ability"
+    "answer": "ability",
+    "options": [
+      "possibility",
+      "obligation",
+      "ability",
+      "none of the above"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q54",
@@ -237,7 +444,14 @@
     "subject": "general-knowledge",
     "qno": 54,
     "q": "প্রাচীন গৌড় নগরীর অংশবিশেষ বাংলাদেশের কোন জেলায় অবস্থিত?",
-    "answer": "চাঁপাইনবাবগঞ্জ"
+    "answer": "চাঁপাইনবাবগঞ্জ",
+    "options": [
+      "চাঁপাইনবাবগঞ্জ",
+      "বগুড়া",
+      "কুমিল্লা",
+      "কুষ্টিয়া"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q55",
@@ -245,7 +459,14 @@
     "subject": "bangla",
     "qno": 55,
     "q": "কোনটি অঘোষ অল্পপ্রাণ ধ্বনি?",
-    "answer": "চ"
+    "answer": "চ",
+    "options": [
+      "ড",
+      "ঠ",
+      "ফ",
+      "চ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q56",
@@ -253,7 +474,14 @@
     "subject": "bangla",
     "qno": 56,
     "q": "খনার বচনে প্রাধান্য পেয়েছে —",
-    "answer": "কৃষি"
+    "answer": "কৃষি",
+    "options": [
+      "কৃষি",
+      "সাহিত্য",
+      "আবহাওয়া",
+      "বিজ্ঞান"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q57",
@@ -261,7 +489,14 @@
     "subject": "general-knowledge",
     "qno": 57,
     "q": "ফ্যাসিজমের প্রবর্তক কে ছিলেন?",
-    "answer": "মুসোলিনি"
+    "answer": "মুসোলিনী",
+    "options": [
+      "হিটলার",
+      "জেনারেল ফ্রাংকো",
+      "মুসোলিনী",
+      "স্ট্যালিন"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q58",
@@ -269,7 +504,14 @@
     "subject": "general-knowledge",
     "qno": 58,
     "q": "'ইনকা সভ্যতা' কোন অঞ্চলে বিরাজমান ছিল?",
-    "answer": "দক্ষিণ আমেরিকা"
+    "answer": "দক্ষিণ আমেরিকা",
+    "options": [
+      "দক্ষিণ আমেরিকা",
+      "আফ্রিকা",
+      "মধ্যপ্রাচ্য",
+      "ইউরোপ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q59",
@@ -277,7 +519,14 @@
     "subject": "english",
     "qno": 59,
     "q": "The idiom 'call it a day' means —",
-    "answer": "Stop working for now."
+    "answer": "Stop working for now",
+    "options": [
+      "Stop working for now",
+      "Call someone during day time",
+      "Name the day",
+      "Go home"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q60",
@@ -285,7 +534,14 @@
     "subject": "bangla",
     "qno": 60,
     "q": "বাংলা সাহিত্যের আদি কবি কে?",
-    "answer": "লুইপা"
+    "answer": "লুইপা",
+    "options": [
+      "কাহ্নপা",
+      "ঢেঁনঢনপা",
+      "ভুসুকুপা",
+      "লুইপা"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q62",
@@ -293,7 +549,14 @@
     "subject": "english",
     "qno": 62,
     "q": "'There are many — in the Sundarbans.'",
-    "answer": "Deer"
+    "answer": "Deer",
+    "options": [
+      "Deers",
+      "Deeres",
+      "Deer",
+      "Deerses"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q63",
@@ -301,7 +564,14 @@
     "subject": "general-knowledge",
     "qno": 63,
     "q": "যুক্তরাষ্ট্রের প্রেসিডেন্ট নির্বাচনে ইলেকটোরাল কলেজের মোট ভোট সংখ্যা কত?",
-    "answer": "৫৩৮"
+    "answer": "৫৩৮",
+    "options": [
+      "৫৩২",
+      "৫৩৬",
+      "৫৩৮",
+      "৫৪০"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q65",
@@ -309,7 +579,14 @@
     "subject": "bangla",
     "qno": 65,
     "q": "'বন্য' শব্দের চলিত রূপ কোনটি?",
-    "answer": "বুনো"
+    "answer": "বুনো",
+    "options": [
+      "বনো",
+      "বন্য",
+      "বুনো",
+      "বনে"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q68",
@@ -317,7 +594,14 @@
     "subject": "general-knowledge",
     "qno": 68,
     "q": "জাতিসংঘের দাপ্তরিক (Official) ভাষা নয় কোনটি?",
-    "answer": "জার্মান"
+    "answer": "জার্মান",
+    "options": [
+      "আরবি",
+      "রুশ",
+      "স্প্যানিশ",
+      "জার্মান"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q69",
@@ -325,7 +609,14 @@
     "subject": "bangla",
     "qno": 69,
     "q": "ব্যঞ্জনসন্ধির উদাহরণ কোনটি?",
-    "answer": "সদুপদেশ"
+    "answer": "সদুপদেশ",
+    "options": [
+      "সদুপদেশ",
+      "বিদ্যালয়",
+      "দেবেন্দ্র",
+      "রাজপুত্র"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q72",
@@ -333,7 +624,14 @@
     "subject": "english",
     "qno": 72,
     "q": "'He is — weak to walk.'",
-    "answer": "too"
+    "answer": "too",
+    "options": [
+      "so",
+      "very",
+      "too",
+      "serious"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q75",
@@ -341,7 +639,14 @@
     "subject": "general-knowledge",
     "qno": 75,
     "q": "আরাকান রাজসভার শ্রেষ্ঠ কবি কে?",
-    "answer": "আলাওল"
+    "answer": "আলাওল",
+    "options": [
+      "রবীন্দ্রনাথ ঠাকুর",
+      "আলাওল",
+      "দৌলত কাজী",
+      "সৈয়দ সুলতান"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q76",
@@ -349,7 +654,14 @@
     "subject": "english",
     "qno": 76,
     "q": "Fill in the blank with correct preposition: 'He is addicted — gambling.'",
-    "answer": "to"
+    "answer": "to",
+    "options": [
+      "in",
+      "to",
+      "into",
+      "of"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q77",
@@ -357,7 +669,14 @@
     "subject": "general-knowledge",
     "qno": 77,
     "q": "'I have a dream' শিরোনামের ভাষণটি কে প্রদান করেছিলেন?",
-    "answer": "মার্টিন লুথার কিং"
+    "answer": "মার্টিন লুথার কিং",
+    "options": [
+      "আব্রাহাম লিংকন",
+      "মার্টিন লুথার কিং",
+      "হ্যারি এস ট্রুম্যান",
+      "বারাক ওবামা"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q79",
@@ -365,7 +684,14 @@
     "subject": "bangla",
     "qno": 79,
     "q": "কোন বানানটি শুদ্ধ?",
-    "answer": "স্বায়ত্তশাসন"
+    "answer": "স্বায়ত্তশাসন",
+    "options": [
+      "সায়ত্বশাসন",
+      "স্বায়ত্বশাসন",
+      "সায়ত্তশাসন",
+      "স্বায়ত্তশাসন"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q80",
@@ -373,7 +699,16 @@
     "subject": "bangla",
     "qno": 80,
     "q": "শুদ্ধ বানান কোনটি?",
-    "answer": "আকুণ্ঠ"
+    "answer": "আকৃষ্ট",
+    "options": [
+      "আকুন্ঠ",
+      "আকৃষ্ট",
+      "অকুন্ঠ",
+      "আকৃষ্ঠ"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "optionsGenerated": true,
+    "explanation": "ওয়েবের প্রশ্নপত্রে দুটো অপশন হুবহু এক ('আকৃষ্ট') ছিল; একটা বদলে দেওয়া হয়েছে। সঠিক উত্তর আকৃষ্ট।"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q81",
@@ -381,15 +716,29 @@
     "subject": "general-knowledge",
     "qno": 81,
     "q": "'থ্রি জিরো' তত্ত্বে অন্তর্ভুক্ত নয় কোনটি?",
-    "answer": "শূন্য ক্ষুধা"
+    "answer": "শূন্য ক্ষুধা",
+    "options": [
+      "শূন্য ক্ষুধা",
+      "শূন্য বেকারত্ব",
+      "শূন্য দারিদ্র্য",
+      "শূন্য নিট কার্বন নিঃসরণ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q82",
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "english",
     "qno": 82,
-    "q": "'The newly appointed officer is found of reading books, learning new things and — new people.'",
-    "answer": "knowing"
+    "q": "'The newly appointed officer is fond of reading books, learning new things and — new people.'",
+    "answer": "knowing",
+    "options": [
+      "to know",
+      "is knowing",
+      "knowing",
+      "the knowing"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q83",
@@ -397,7 +746,14 @@
     "subject": "english",
     "qno": 83,
     "q": "'Reading books is a good habit.' Here 'reading' is in the form of —",
-    "answer": "Gerund"
+    "answer": "Gerund",
+    "options": [
+      "Verb",
+      "Noun",
+      "Gerund",
+      "Adjective"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q84",
@@ -405,15 +761,29 @@
     "subject": "english",
     "qno": 84,
     "q": "Find the correct spelling —",
-    "answer": "Diarrhoea"
+    "answer": "Diarrhoea",
+    "options": [
+      "Diarhia",
+      "Diariya",
+      "Diarrhoea",
+      "Dieriya"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q85",
     "examId": "health-ministry-2026-sub-engineer-civil",
     "subject": "bangla",
     "qno": 85,
-    "q": "'নরমসরম' কোন সমাস?",
-    "answer": "দ্বন্দ্ব সমাস"
+    "q": "'নরমগরম' কোন সমাস?",
+    "answer": "দ্বন্দ্ব সমাস",
+    "options": [
+      "দ্বন্দ্ব সমাস",
+      "তৎপুরুষ",
+      "দ্বিগু",
+      "বহুব্রীহি"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q89",
@@ -421,7 +791,14 @@
     "subject": "general-knowledge",
     "qno": 89,
     "q": "'War and Peace' উপন্যাসের রচয়িতা কে?",
-    "answer": "লিও তলস্তয়"
+    "answer": "লিও টলস্টয়",
+    "options": [
+      "লিও টলস্টয়",
+      "ডেভিড রিকার্ডো",
+      "কাল মার্কস",
+      "জেন অস্টিন"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q90",
@@ -429,7 +806,14 @@
     "subject": "general-knowledge",
     "qno": 90,
     "q": "বাংলাদেশ-মিয়ানমারের সমুদ্রসীমা বিরোধের নিষ্পত্তি হয় কোথায়?",
-    "answer": "ITLOS"
+    "answer": "ITLOS",
+    "options": [
+      "UNCLOS",
+      "ITLOS",
+      "ICC",
+      "TI"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q91",
@@ -437,7 +821,14 @@
     "subject": "bangla",
     "qno": 91,
     "q": "'গবাদি'-র সন্ধি বিচ্ছেদ কোনটি?",
-    "answer": "গো + আদি"
+    "answer": "গো+আদি",
+    "options": [
+      "গো+আদি",
+      "গবা+আদি",
+      "গো+আবাদি",
+      "গবা+দি"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q93",
@@ -445,7 +836,14 @@
     "subject": "general-knowledge",
     "qno": 93,
     "q": "'অপারেশন ডেজার্ট স্টর্ম' পরিচালিত হয় কোন যুদ্ধের সময়?",
-    "answer": "প্রথম উপসাগরীয় যুদ্ধ"
+    "answer": "প্রথম উপসাগরীয় যুদ্ধ",
+    "options": [
+      "প্রথম উপসাগরীয় যুদ্ধ",
+      "ওয়াটার-লু যুদ্ধ",
+      "আরব-ইসরায়েল যুদ্ধ",
+      "ইরাক-ইরান যুদ্ধ"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q94",
@@ -453,7 +851,14 @@
     "subject": "general-knowledge",
     "qno": 94,
     "q": "নিউইয়র্ক সিটির বর্তমান নির্বাচিত মুসলিম মেয়র জোহরান মামদানি কোন দেশে জন্মগ্রহণ করেন?",
-    "answer": "উগান্ডা"
+    "answer": "উগান্ডা",
+    "options": [
+      "ভারত",
+      "উগান্ডা",
+      "নাইজেরিয়া",
+      "ইথিওপিয়া"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q96",
@@ -461,7 +866,14 @@
     "subject": "general-knowledge",
     "qno": 96,
     "q": "দ্বিজেন্দ্রলাল রায় কোন ধরনের লেখক ছিলেন?",
-    "answer": "ঐতিহাসিক"
+    "answer": "ঐতিহাসিক",
+    "options": [
+      "প্রগতিশীল",
+      "ঐতিহাসিক",
+      "আধুনিক",
+      "রোমান্টিক"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q97",
@@ -469,7 +881,14 @@
     "subject": "english",
     "qno": 97,
     "q": "'The person — is honest is trusted.'",
-    "answer": "who"
+    "answer": "who",
+    "options": [
+      "whom",
+      "who",
+      "what",
+      "whose"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "health-ministry-2026-sub-engineer-civil-q99",
@@ -477,6 +896,13 @@
     "subject": "english",
     "qno": 99,
     "q": "'The book will be invaluable for students in higher education.' In the sentence, the word 'invaluable' stands for —",
-    "answer": "Extremely useful"
+    "answer": "Extremely useful",
+    "options": [
+      "Not useful",
+      "Less useful",
+      "Extremely useful",
+      "May or may not be useful"
+    ],
+    "optionsSource": "engineeringclassroom.com"
   }
 ]

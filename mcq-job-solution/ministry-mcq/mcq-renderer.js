@@ -6,6 +6,8 @@
 //   answer                     → সঠিক উত্তরের লেখা (আবশ্যক)
 //   options                    → ঐচ্ছিক। থাকলে ২–৬টা স্ট্রিং, এবং তার মধ্যে ঠিক একটা answer-এর সাথে হুবহু মিলবে
 //   explanation                → ঐচ্ছিক ব্যাখ্যা
+//   passage                    → ঐচ্ছিক অনুচ্ছেদ (comprehension প্রশ্নের জন্য) — কার্ডে ভাঁজ করা অবস্থায় দেখায়
+//   optionsSource              → ঐচ্ছিক — অপশনের উৎসের নাম (পেজের নোটিশে দেখায়)
 //   optionsGenerated           → ঐচ্ছিক true। অপশন আমরা বানালে (উৎসে ছিল না) true দিন — পেজে "অপশন সংযোজিত" নোটিশ দেখায়
 // options না থাকলে শুধু "উত্তর: …" দেখায়; পরে options/explanation যোগ করলে
 // এই ফাইল বা পেজে কোনো পরিবর্তন লাগবে না — কার্ড নিজে থেকেই MCQ আকারে দেখাবে।
@@ -42,8 +44,15 @@ function renderMcqCard(q) {
     ? '<div class="answer-body">💡 ' + mcqEsc(q.explanation) + '</div>'
     : '';
 
-  return '<div class="question-body">' +
+  const passage = q.passage
+    ? '<details class="answer-body" style="margin-bottom:8px"><summary style="cursor:pointer;font-weight:600">📄 অনুচ্ছেদ</summary><div style="margin-top:6px">' + mcqEsc(q.passage) + '</div></details>'
+    : '';
+  const genTag = (q.optionsGenerated && window.MCQ_MIXED)
+    ? '<div class="answer-body" style="font-size:0.8rem;opacity:.8">🔸 এই প্রশ্নের অপশন সংযোজিত</div>'
+    : '';
+
+  return passage + '<div class="question-body">' +
       '<span class="q-num">' + num + '</span>' +
       '<div class="q-text-wrap"><div class="q-text">' + mcqEsc(q.q) + '</div></div>' +
-    '</div>' + body + exp;
+    '</div>' + body + exp + genTag;
 }

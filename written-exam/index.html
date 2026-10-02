@@ -575,6 +575,7 @@
     'english':           'ইংরেজি',
     'math':              'গণিত',
     'general-knowledge': 'সাধারণ জ্ঞান',
+    'gk':                'সাধারণ জ্ঞান', // general-knowledge-এর সংক্ষিপ্ত নাম — দুটোই চলে, একই শিরোনাম দেখায়
   };
 
   // ══════════════════════════════════════════
@@ -624,8 +625,10 @@
     let lastSubject = null;
     questions.forEach(q => {
       // subject বদলালে একটা section heading বসাও (বইয়ে যেমন বাংলা/ইংরেজি/গণিত)
-      if (q.subject !== lastSubject) {
-        lastSubject = q.subject;
+      // শিরোনামের লেখা ধরে তুলনা — gk আর general-knowledge পাশাপাশি থাকলেও শিরোনাম একবারই আসে
+      const subjectKey = SUBJECT_LABELS[q.subject] || q.subject;
+      if (subjectKey !== lastSubject) {
+        lastSubject = subjectKey;
         const heading = document.createElement('div');
         heading.className = 'subject-heading';
         heading.textContent = SUBJECT_LABELS[q.subject] || escText(q.subject || '');

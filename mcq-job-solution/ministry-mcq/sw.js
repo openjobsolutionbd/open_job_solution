@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'ministry-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.364';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.365';
 
 const ASSETS = [
   '/mcq-job-solution/ministry-mcq/',

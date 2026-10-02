@@ -275,7 +275,7 @@ The AI uses only these 4 subjects — it must not invent any new subject:
 | `english` | English grammar, literature, vocabulary |
 | `general-knowledge` | General knowledge, Bangladesh, international, science |
 
-> **Alias (owner decision, 2026-10-02):** in `written-exam/` data, `gk` is an accepted short name for `general-knowledge` — both are valid and the site shows both as "সাধারণ জ্ঞান". Do not rename existing `gk` questions. `_dev/validate_data.js` fails on any other unknown subject name.
+> **Alias (owner decision, 2026-10-02):** in `written-exam/` data, `gk` is an accepted short name for `general-knowledge` — both are valid and the site shows both as "সাধারণ জ্ঞান". Do not rename existing `gk` questions. Likewise `civil-engineering` (10 technical questions in `job-2025-ncc-sub-asst-engineer-civil`) is kept as its own subject, shown as "সিভিল ইঞ্জিনিয়ারিং". `_dev/validate_data.js` fails on any other unknown subject name.
 | `math` | Mathematics, equations, statistics |
 
 After deciding the subject, if possible add the right `topic` from the list in Section ১৭.

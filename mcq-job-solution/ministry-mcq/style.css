@@ -149,9 +149,9 @@ body{font-family:'Noto Serif Bengali','Noto Sans Bengali',system-ui,-apple-syste
 .coming-soon-banner h3{font-size:1.1rem;color:var(--text-2);margin-bottom:6px}
 .coming-soon-banner p{font-size:0.88rem}
 
-.scroll-top-btn{position:fixed;bottom:80px;right:16px;width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow-md);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all var(--transition);z-index:99}
+.scroll-top-btn{position:fixed;bottom:80px;right:16px;width:40px;height:40px;border-radius:50%;background:var(--surface);border:1.5px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.08);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.2s ease;z-index:99}
 .scroll-top-btn.visible{opacity:1;visibility:visible;transform:translateY(0)}
-.scroll-top-btn:hover{background:var(--surface-2)}
+.scroll-top-btn:hover{box-shadow:0 8px 32px rgba(0,0,0,0.14)}
 @media (max-width:480px){
   .scroll-top-btn{bottom:70px;right:14px}
 }

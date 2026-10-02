@@ -716,7 +716,6 @@
   /* ↑ (scroll-top) বাটন — বাকি সব পেজের (#575) মতো একই ডিজাইন, নীল তীর */
   .scroll-top-btn{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom, 0px));right:20px;width:40px;height:40px;border-radius:50%;background:var(--paper-raised);border:1.5px solid var(--line);box-shadow:var(--shadow);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.2s ease;z-index:399}
   .scroll-top-btn.visible{opacity:1;visibility:visible;transform:translateY(0)}
-  @media print{ .scroll-top-btn, .floating-search-wrap{ display:none !important; } }
 
   .topic-modal-overlay{
     position:fixed;
@@ -1583,7 +1582,7 @@
     display:none; /* স্ক্রিনে দেখা যায় না, শুধু প্রিন্ট/PDF আউটপুটে দেখা যায় */
   }
   @media print{
-    .masthead, .search-bar-wrap, .toolbar, .drawer, footer,
+    .masthead, .search-bar-wrap, .toolbar, .drawer, footer, .scroll-top-btn, .floating-search-wrap,
     .card-actions, .seal, .related-topics, .mobile-back-btn,
     .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout, #mcq-layout,
     .back-to-top-btn{

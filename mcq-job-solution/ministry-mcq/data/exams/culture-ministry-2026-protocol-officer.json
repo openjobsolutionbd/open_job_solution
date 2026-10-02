@@ -1,0 +1,977 @@
+[
+  {
+    "id": "culture-ministry-2026-protocol-officer-q01",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 1,
+    "q": "বাতাসের উষ্ণতা বাড়লে শব্দের গতির কী ধরনের পরিবর্তন হয়?",
+    "answer": "বাড়ে",
+    "options": [
+      "প্রথমে কমে পরে বাড়ে",
+      "কমে",
+      "বাড়ে",
+      "অপরিবর্তিত থাকে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q02",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 2,
+    "q": "কোনটি কর্মধারয় সমাস?",
+    "answer": "হাতঘড়ি",
+    "options": [
+      "হাতঘড়ি",
+      "রাজপুত্র",
+      "দিনরাত",
+      "মাতাপিতা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q03",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 3,
+    "q": "ভৌগোলিকভাবে বাংলাদেশের কোন জেলার উপর দিয়ে কর্কটক্রান্তি রেখা অতিক্রম করেছে?",
+    "answer": "মুন্সিগঞ্জ",
+    "options": [
+      "কক্সবাজার",
+      "সিলেট",
+      "মুন্সিগঞ্জ",
+      "পঞ্চগড়"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q04",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 4,
+    "q": "একটি বইয়ের মূল্য ২৪ টাকা। এই মূল্য বই তৈরির ব্যয়ের ৮০%। বাকি মূল্য সরকার ভর্তুকি দিয়ে থাকেন। সরকার প্রতি বইয়ে কত টাকা ভর্তুকি দেন?",
+    "answer": "৬ টাকা",
+    "options": [
+      "৬ টাকা",
+      "৫ টাকা",
+      "৪ টাকা",
+      "৮ টাকা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q05",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 5,
+    "q": "বাংলা সাহিত্যে প্রথম ব্যঙ্গ উপন্যাস কোনটি?",
+    "answer": "কল্পতরু",
+    "options": [
+      "আনন্দমঠ",
+      "দুর্গেশনন্দিনী",
+      "কল্পতরু",
+      "কপালকুণ্ডলা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q07",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 7,
+    "q": "Find the odd pair of words —",
+    "answer": "pertinent : irrelevant",
+    "options": [
+      "happy : joyful",
+      "quick : fast",
+      "big : large",
+      "pertinent : irrelevant"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q08",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 8,
+    "q": "সর্বজনীন দ্রাবক বলা হয় কোনটিকে?",
+    "answer": "পানি",
+    "options": [
+      "অ্যালকোহল",
+      "পানি",
+      "বেনজিন",
+      "ইথার"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q09",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 9,
+    "q": "নিচের কোনটি বেশি স্থিতিস্থাপক?",
+    "answer": "ইস্পাত",
+    "options": [
+      "তামা",
+      "কাচ",
+      "রাবার",
+      "ইস্পাত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q10",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 10,
+    "q": "'Bangladesh is — largest delta in the world.'",
+    "answer": "the",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "one"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q11",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 11,
+    "q": "একটি সরলরেখা (3, 5) বিন্দু দিয়ে যায় এবং অক্ষদ্বয় থেকে বিপরীত চিহ্ন বিশিষ্ট সমান অংশ ছেদ করে। সরলরেখাটির সমীকরণ কোনটি?",
+    "answer": "x − y + 2 = 0",
+    "options": [
+      "x + y + 2 = 0",
+      "x + y − 8 = 0",
+      "x − y + 2 = 0",
+      "x − y − 2 = 0"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q12",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 12,
+    "q": "Fill in the blank with appropriate form of verb: 'The baby — for milk now.'",
+    "answer": "is crying",
+    "options": [
+      "cries",
+      "cried",
+      "is crying",
+      "has cried"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q13",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 13,
+    "q": "'The black umbrella is mine.' The underlined word 'black' is a/an —",
+    "answer": "adjective",
+    "options": [
+      "noun",
+      "adjective",
+      "pronoun",
+      "adverb"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q15",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 15,
+    "q": "পানির ছোট ফোটা গোলাকৃতি হওয়ার কারণ কোনটি?",
+    "answer": "পৃষ্ঠটান",
+    "options": [
+      "বায়ুর চাপ",
+      "পৃষ্ঠটান",
+      "অভিকর্ষ",
+      "সান্দ্রতা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q16",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 16,
+    "q": "'জুলাই সনদ' কবে স্বাক্ষরিত হয়?",
+    "answer": "১৭ অক্টোবর ২০২৫",
+    "options": [
+      "১ জুলাই ২০২৫",
+      "৫ আগস্ট ২০২৫",
+      "১৭ অক্টোবর ২০২৫",
+      "১৬ ডিসেম্বর ২০২৫"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q17",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 17,
+    "q": "sinθ + cosθ = √2 হলে θ = ?",
+    "answer": "45°",
+    "options": [
+      "90°",
+      "45°",
+      "30°",
+      "60°"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q18",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 18,
+    "q": "WIPO-এর সদর দপ্তর কোথায়?",
+    "answer": "জেনেভা",
+    "options": [
+      "ভিয়েনা",
+      "জেনেভা",
+      "নিউইয়র্ক",
+      "প্যারিস"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q19",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 19,
+    "q": "Antonym of 'reckless'.",
+    "answer": "cautious",
+    "options": [
+      "cautious",
+      "rash",
+      "careless",
+      "hasty"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q20",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 20,
+    "q": "2x + 2/x = 3 হলে x² + 1/x² এর মান কত?",
+    "answer": "1/4",
+    "options": [
+      "1/4",
+      "7/4",
+      "9/4",
+      "1/2"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q21",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 21,
+    "q": "'I have already — three cups of coffee.'",
+    "answer": "taken",
+    "options": [
+      "take",
+      "took",
+      "taking",
+      "taken"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q22",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 22,
+    "q": "একটি ভগ্নাংশের লব ও হরের সমষ্টি ১১। লব থেকে ২ বিয়োগ করলে ও হরের সাথে ৩ যোগ করলে ভগ্নাংশটি ১/২ হয়। ভগ্নাংশটি কত?",
+    "answer": "6/5",
+    "options": [
+      "8/3",
+      "5/6",
+      "7/4",
+      "6/5"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q24",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 24,
+    "q": "মিয়ানমারের সাথে বাংলাদেশের কয়টি জেলার সীমান্ত আছে?",
+    "answer": "৩টি",
+    "options": [
+      "৩টি",
+      "৫টি",
+      "৪টি",
+      "২টি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q25",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 25,
+    "q": "গঠন বিচারে বাংলা বাক্য কত প্রকার?",
+    "answer": "৩ প্রকার",
+    "options": [
+      "২ প্রকার",
+      "৫ প্রকার",
+      "৩ প্রকার",
+      "৪ প্রকার"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q26",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 26,
+    "q": "'The new officer is not only talented — interested to learn new things.'",
+    "answer": "but also",
+    "options": [
+      "but only",
+      "but also",
+      "or",
+      "and"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q27",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 27,
+    "q": "'Helal will discuss the issue with Hamid — phone.'",
+    "answer": "by",
+    "options": [
+      "with",
+      "at",
+      "in",
+      "by"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q28",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 28,
+    "q": "জাতীয় কবি কাজী নজরুল ইসলাম কবে জন্মগ্রহণ করেন?",
+    "answer": "২৪ মে ১৮৯৯",
+    "options": [
+      "২৪ মে ১৮৯৯",
+      "১১ জুন ১৮৯৯",
+      "২৫ মে ১৮৯৯",
+      "২৪ মে ১৯০০"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q29",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 29,
+    "q": "'He had all the money in the world; — he was sad.'",
+    "answer": "still",
+    "options": [
+      "because",
+      "so",
+      "still",
+      "hence"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q30",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 30,
+    "q": "বাংলা ভাষা আন্দোলনের 'শহিদ দিবস' কোন সালে আন্তর্জাতিক স্বীকৃতি পায়?",
+    "answer": "১৯৯৯",
+    "options": [
+      "১৯৯৮",
+      "১৯৯৯",
+      "১৯৫২",
+      "২০০০"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q31",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 31,
+    "q": "কোন দেশকে 'রেইনবো নেশন' বলা হয়?",
+    "answer": "দক্ষিণ আফ্রিকা",
+    "options": [
+      "ব্রাজিল",
+      "নিউজিল্যান্ড",
+      "দক্ষিণ আফ্রিকা",
+      "অস্ট্রেলিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q33",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 33,
+    "q": "বাংলাদেশ-ভারত স্থলসীমানা চুক্তি কবে স্বাক্ষরিত হয়?",
+    "answer": "১৯৭৪ সালে",
+    "options": [
+      "১৯৭১ সালে",
+      "১৯৭৫ সালে",
+      "১৯৭৪ সালে",
+      "১৯৭২ সালে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q34",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 34,
+    "q": "'The team is — eleven players.'",
+    "answer": "made up of",
+    "options": [
+      "made of up",
+      "made by",
+      "made on",
+      "made up of"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q35",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 35,
+    "q": "বাংলাদেশ কোন আঞ্চলিক সংস্থার সদস্য নয়?",
+    "answer": "SCO",
+    "options": [
+      "SCO",
+      "BIMSTEC",
+      "SAARC",
+      "D-8"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q36",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 36,
+    "q": "x² + y² − 6x − 8y − 24 = 0 বৃত্তের ব্যাসার্ধ কত?",
+    "answer": "7",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q37",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 37,
+    "q": "সাপের উপদ্রব কমাতে কোন এসিড ব্যবহৃত হয়?",
+    "answer": "কার্বোলিক এসিড",
+    "options": [
+      "সাইট্রিক এসিড",
+      "কার্বোলিক এসিড",
+      "ফরমিক এসিড",
+      "ল্যাকটিক এসিড"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q38",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 38,
+    "q": "'If I knew his office address, I — you.'",
+    "answer": "would tell",
+    "options": [
+      "had told",
+      "would told",
+      "would tell",
+      "will tell"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q39",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 39,
+    "q": "log₃(1/9) এর মান কত?",
+    "answer": "−2",
+    "options": [
+      "2",
+      "−3",
+      "−2",
+      "1/2"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q40",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 40,
+    "q": "বাংলাদেশের বৃহত্তম হাওর কোনটি?",
+    "answer": "হাকালুকি",
+    "options": [
+      "চাতল হাওর",
+      "হাইল হাওর",
+      "হাকালুকি",
+      "টাঙ্গুয়ার হাওর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q41",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 41,
+    "q": "কাজী নজরুল ইসলামের কাব্য খ্যাতি প্রচারে কোন পত্রিকার অবদান রয়েছে?",
+    "answer": "মোসলেম ভারত",
+    "options": [
+      "মোসলেম ভারত",
+      "সমাচার দর্পণ",
+      "তত্ত্ববোধিনী",
+      "বঙ্গদর্শন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q42",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 42,
+    "q": "Which is not a synonym of 'lopsided'?",
+    "answer": "even",
+    "options": [
+      "askew",
+      "crooked",
+      "uneven",
+      "even"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q43",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 43,
+    "q": "যুক্তরাষ্ট্রের Guantanamo Bay Detention Camp-টি কোথায় অবস্থিত?",
+    "answer": "কিউবা",
+    "options": [
+      "হাওয়াই",
+      "কিউবা",
+      "পুয়ের্তো রিকো",
+      "ফ্লোরিডা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q45",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 45,
+    "q": "বিশ্বে প্রথম এক ডোজের ডেঙ্গু রোগের টিকা অনুমোদন দিয়েছে কোন দেশ?",
+    "answer": "ব্রাজিল",
+    "options": [
+      "ইন্দোনেশিয়া",
+      "ভারত",
+      "ব্রাজিল",
+      "জাপান"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q46",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 46,
+    "q": "শব্দের প্রতিধ্বনি শোনার জন্য উৎস ও প্রতিফলকের মধ্যবর্তী দূরত্ব কত?",
+    "answer": "16.6 m",
+    "options": [
+      "8.3 m",
+      "33.2 m",
+      "16.6 m",
+      "10 m"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q47",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 47,
+    "q": "বাংলা চলিত ভাষার প্রবর্তক কে?",
+    "answer": "প্রমথ চৌধুরী",
+    "options": [
+      "বঙ্কিমচন্দ্র চট্টোপাধ্যায়",
+      "রবীন্দ্রনাথ ঠাকুর",
+      "ঈশ্বরচন্দ্র বিদ্যাসাগর",
+      "প্রমথ চৌধুরী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q48",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 48,
+    "q": "যদি f(x) = x³ + ax² − 3x − 6 হয়, তবে a এর কোন মানের জন্য f(−2) = 0 হবে?",
+    "answer": "+2",
+    "options": [
+      "+3",
+      "+2",
+      "0",
+      "−2"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q49",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 49,
+    "q": "ভাষার ক্ষুদ্রতম উপাদান কোনটি?",
+    "answer": "ধ্বনি",
+    "options": [
+      "বাক্য",
+      "শব্দ",
+      "ধ্বনি",
+      "পদ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q50",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 50,
+    "q": "Choose the correct spelling.",
+    "answer": "dynamic",
+    "options": [
+      "dynemic",
+      "dynamik",
+      "dynamic",
+      "dinamic"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q51",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 51,
+    "q": "মাইকেল মধুসূদন দত্ত প্রবর্তিত ছন্দ কোনটি?",
+    "answer": "অমিত্রাক্ষর",
+    "options": [
+      "অক্ষরবৃত্ত",
+      "অমিত্রাক্ষর",
+      "স্বরবৃত্ত",
+      "মাত্রাবৃত্ত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q52",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 52,
+    "q": "'Water the plants.' Here 'water' is a —",
+    "answer": "Verb",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Adverb"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q53",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 53,
+    "q": "কোথায় বাংলা ভাষার প্রাচীন নমুনা পাওয়া যায়?",
+    "answer": "চর্যাপদে",
+    "options": [
+      "চর্যাপদে",
+      "শ্রীকৃষ্ণকীর্তনে",
+      "রামায়ণে",
+      "মঙ্গলকাব্যে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q54",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 54,
+    "q": "ক্রিয়াপদের মূল অংশকে কী বলা হয়?",
+    "answer": "ধাতু",
+    "options": [
+      "ধাতু",
+      "উপসর্গ",
+      "প্রত্যয়",
+      "বিভক্তি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q55",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 55,
+    "q": "সমবাহু ত্রিভুজের একটি বাহুকে উভয় দিকে বর্ধিত করলে উৎপন্ন বহিঃস্থ কোণদ্বয়ের বিয়োগফল কত হবে?",
+    "answer": "0°",
+    "options": [
+      "180°",
+      "0°",
+      "60°",
+      "120°"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q56",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 56,
+    "q": "ব্রাজিলের কোন শহরে Earth Summit অনুষ্ঠিত হয়েছিল?",
+    "answer": "রিও ডি জেনিরো",
+    "options": [
+      "সালভাদর",
+      "রিও ডি জেনিরো",
+      "ব্রাসিলিয়া",
+      "সাও পাওলো"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q57",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 57,
+    "q": "বাংলাদেশের সংবিধানের রক্ষক কে?",
+    "answer": "সুপ্রীম কোর্ট",
+    "options": [
+      "রাষ্ট্রপতি",
+      "জাতীয় সংসদ",
+      "প্রধানমন্ত্রী",
+      "সুপ্রীম কোর্ট"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q58",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 58,
+    "q": "'ময়নামতির চর' গ্রন্থের রচয়িতা কে?",
+    "answer": "বন্দে আলী মিয়া",
+    "options": [
+      "বন্দে আলী মিয়া",
+      "কায়কোবাদ",
+      "জসীম উদদীন",
+      "সুফিয়া কামাল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q59",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 59,
+    "q": "কোন দেশ বাংলা ভাষাকে তাদের অন্যতম রাষ্ট্রভাষা হিসেবে স্বীকৃতি দিয়েছে?",
+    "answer": "সিয়েরা লিওন",
+    "options": [
+      "কেনিয়া",
+      "সিয়েরা লিওন",
+      "ঘানা",
+      "নাইজেরিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q60",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 60,
+    "q": "Find the correct expression —",
+    "answer": "It is now 10 minutes past ten.",
+    "options": [
+      "It is now past 10 minutes ten.",
+      "It is now 10 minutes past ten.",
+      "It is now 10 minutes to past ten.",
+      "It is now ten minutes in past."
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q61",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 61,
+    "q": "'I love — for the people.'",
+    "answer": "working",
+    "options": [
+      "to working",
+      "worked",
+      "work",
+      "working"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q62",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 62,
+    "q": "'— is a good habit.'",
+    "answer": "Reading",
+    "options": [
+      "To reading",
+      "Reading",
+      "Reads",
+      "Read"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q63",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 63,
+    "q": "কোনটি বিশেষণ?",
+    "answer": "কঠিন",
+    "options": [
+      "কঠোরভাবে",
+      "কাঠিন্য",
+      "কঠিন",
+      "কঠোরতা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q64",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 64,
+    "q": "আন্তর্জাতিক আদালতে মিয়ানমারের বিরুদ্ধে গণহত্যার অভিযোগে মামলা করে কোন দেশ?",
+    "answer": "গাম্বিয়া",
+    "options": [
+      "গাম্বিয়া",
+      "মালয়েশিয়া",
+      "বাংলাদেশ",
+      "তুরস্ক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q65",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 65,
+    "q": "Fill in the blank with appropriate words: 'I love my mother, —?'",
+    "answer": "don't I",
+    "options": [
+      "aren't I",
+      "do I",
+      "don't I",
+      "isn't it"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q66",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 66,
+    "q": "'রত্নাকর' শব্দের সঠিক সন্ধিবিচ্ছেদ কোনটি?",
+    "answer": "রত্ন + আকর",
+    "options": [
+      "রত্ন + আকার",
+      "রত্ন + কর",
+      "রত্ন + আকর",
+      "রত্নঃ + আকর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q67",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 67,
+    "q": "'মেরাসমাস' রোগ কাদের হয়?",
+    "answer": "শিশুদের",
+    "options": [
+      "শিশুদের",
+      "গর্ভবতী মায়েদের",
+      "বৃদ্ধদের",
+      "কিশোরীদের"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q68",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 68,
+    "q": "'অগ্নিবীণা' কাব্যগ্রন্থে সংকলিত প্রথম কবিতা কোনটি?",
+    "answer": "প্রলয়োল্লাস",
+    "options": [
+      "বিদ্রোহী",
+      "প্রলয়োল্লাস",
+      "শাত-ইল-আরব",
+      "কামাল পাশা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q69",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 69,
+    "q": "গণপ্রজাতন্ত্রী বাংলাদেশের রাষ্ট্রপতি পদে নির্বাচিত হবার ন্যূনতম বয়স কত?",
+    "answer": "৩৫ বছর",
+    "options": [
+      "৩৫ বছর",
+      "৩০ বছর",
+      "২৫ বছর",
+      "৪০ বছর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q70",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 70,
+    "q": "'I should appreciate it if you could complete the work — Thursday.'",
+    "answer": "by",
+    "options": [
+      "at",
+      "for",
+      "by",
+      "in"
+    ],
+    "optionsGenerated": true
+  }
+]

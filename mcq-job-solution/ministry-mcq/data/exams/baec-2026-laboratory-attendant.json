@@ -554,5 +554,141 @@
       "১৭ এপ্রিল ১৯৭১"
     ],
     "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q42",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 42,
+    "q": "বাংলাদেশের সংবিধানের কত নম্বর অনুচ্ছেদে 'নির্বাহী বিভাগ থেকে বিচার বিভাগের পৃথকীকরণ' সংক্রান্ত নীতি লিপিবদ্ধ আছে?",
+    "answer": "অনুচ্ছেদ ২২",
+    "options": [
+      "অনুচ্ছেদ ২০",
+      "অনুচ্ছেদ ২২",
+      "অনুচ্ছেদ ২৭",
+      "অনুচ্ছেদ ২৩"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q43",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 43,
+    "q": "আন্তর্জাতিক অপরাধ আদালত (ICC)-এর প্রথম নারী সভাপতি কে ছিলেন?",
+    "answer": "সিলভিয়া ফার্নান্দেজ ডি গুরমেন্ডি",
+    "options": [
+      "ফাতৌ বেনসুদা",
+      "কারিম খান",
+      "সিলভিয়া ফার্নান্দেজ ডি গুরমেন্ডি",
+      "জোয়ান ডনোগু"
+    ],
+    "optionsGenerated": true,
+    "explanation": "ম্যাগাজিনে নামটি 'সিলভিয়া স্টাইনার' ছাপা ছিল; ICC-র প্রথম নারী সভাপতির প্রকৃত নাম সিলভিয়া ফার্নান্দেজ ডি গুরমেন্ডি (আর্জেন্টিনা) — সেটাই বসানো হয়েছে।"
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q44",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 44,
+    "q": "কোষের কোন অঙ্গাণুকে 'কোষের আত্মহত্যা থলি' বা 'Suicide Sac' বলা হয়?",
+    "answer": "লাইসোজোম",
+    "options": [
+      "গলজি বডি",
+      "রাইবোজোম",
+      "লাইসোজোম",
+      "মাইটোকন্ড্রিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q45",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 45,
+    "q": "'Svalbard Global Seed Vault' (বিশ্বের প্রধান বীজ ব্যাংক বা কেয়ামতের দিনের বীজাগার) কোন দ্বীপে অবস্থিত?",
+    "answer": "স্পিটসবার্গেন (নরওয়ে)",
+    "options": [
+      "ফারো দ্বীপপুঞ্জ",
+      "আইসল্যান্ড",
+      "গ্রিনল্যান্ড",
+      "স্পিটসবার্গেন (নরওয়ে)"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q46",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 46,
+    "q": "কৃষ্ণ গহ্বর (Black Hole)-এর এমন একটি সীমানা থাকে যা অতিক্রম করলে আলোসহ কোনো কিছুই আর ফিরে আসতে পারে না। এই সীমানাকে কী বলা হয়?",
+    "answer": "ইভেন্ট হরাইজন",
+    "options": [
+      "ইভেন্ট হরাইজন",
+      "সিঙ্গুলারিটি",
+      "অ্যাক্রেশন ডিস্ক",
+      "ফোটন স্ফিয়ার"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q47",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 47,
+    "q": "মানবদেহের কোন গ্রন্থিটিকে 'জৈব ঘড়ি' (Biological Clock) নিয়ন্ত্রক বলা হয়, যা মেলাটোনিন হরমোন নিঃসরণ করে?",
+    "answer": "পাইনিয়াল গ্ল্যান্ড",
+    "options": [
+      "থাইরয়েড গ্রন্থি",
+      "পিটুইটারি গ্রন্থি",
+      "অ্যাড্রিনাল গ্রন্থি",
+      "পাইনিয়াল গ্ল্যান্ড"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q48",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 48,
+    "q": "মানবদেহের কোন অঙ্গটি নিজের ক্ষতিগ্রস্ত বা কেটে ফেলা অংশকে পুনরুৎপাদন (Regeneration) করার অসাধারণ ক্ষমতা রাখে?",
+    "answer": "যকৃৎ",
+    "options": [
+      "হৃৎপিণ্ড",
+      "কিডনি",
+      "যকৃৎ",
+      "মস্তিষ্ক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q49",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 49,
+    "q": "বায়ুমণ্ডলে মিথেন গ্যাসের মতো শক্তিশালী গ্রিনহাউস গ্যাস শোষণ করার ক্ষমতা রাখে এমন বিশেষ ব্যাকটেরিয়াকে কী বলা হয়?",
+    "answer": "মেথানোট্রফ",
+    "options": [
+      "নাইট্রিফায়িং ব্যাকটেরিয়া",
+      "মেথানোট্রফ",
+      "সায়ানোব্যাকটেরিয়া",
+      "মেথানোজেন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "baec-2026-laboratory-attendant-q50",
+    "examId": "baec-2026-laboratory-attendant",
+    "subject": "general-knowledge",
+    "qno": 50,
+    "q": "'ক্রিসপার-ক্যাস৯' (CRISPR-Cas9) প্রযুক্তি বিজ্ঞানে কোন ক্ষেত্রে যুগান্তকারী পরিবর্তনের জন্য ব্যবহৃত হচ্ছে?",
+    "answer": "জিন সম্পাদনা, জিনোম এডিটিং",
+    "options": [
+      "টিস্যু কালচার",
+      "জিন সম্পাদনা, জিনোম এডিটিং",
+      "টিকা সংরক্ষণ",
+      "ক্লোনিং ও প্রাণী প্রজনন"
+    ],
+    "optionsGenerated": true
   }
 ]

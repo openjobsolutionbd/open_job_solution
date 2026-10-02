@@ -1,0 +1,328 @@
+[
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q01",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 2,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "প্রত্যেক",
+        "প্রতি + এক"
+      ],
+      [
+        "নীরোগ",
+        "নিঃ + রোগ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q02",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 2,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "উপকারীর অপকার করে যে",
+        "a": "কৃতঘ্ন"
+      },
+      {
+        "label": "খ",
+        "q": "অশ্বের ডাক",
+        "a": "হেষা"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q03",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "সঠিক বানান লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সঠিক বানান"
+    ],
+    "rows": [
+      [
+        "মন্ত্রীসভা",
+        "মন্ত্রিসভা"
+      ],
+      [
+        "মরিচিকা",
+        "মরীচিকা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q04",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 2,
+    "type": "table",
+    "question": "বিপরীতার্থক শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "প্রসারিত",
+        "সংকুচিত"
+      ],
+      [
+        "বন্ধুর",
+        "মসৃণ/সমতল"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q05",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "bangla",
+    "topic": "যতিচিহ্ন",
+    "qno": 5,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "নিচের বাক্য দুটিতে যতিচিহ্নের {কমা (,)} সঠিক ব্যবহার করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সুজন দেখ তো কে এসেছে।",
+        "a": "সুজন, দেখ তো কে এসেছে।"
+      },
+      {
+        "label": "খ",
+        "q": "কাল তুমি যাকে দেখেছ তিনি আমার পিতা।",
+        "a": "কাল তুমি যাকে দেখেছ, তিনি আমার পিতা।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q06",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Fill in the gaps with preposition:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "He was absent ...... the meeting.",
+        "answer": "from"
+      },
+      {
+        "label": "b",
+        "sentence": "The monkey climed ...... the tree.",
+        "answer": "up"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q07",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 2,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "সে আমাকে বোকা বানালো।",
+        "target": "He made me fool."
+      },
+      {
+        "label": "খ",
+        "source": "সে হাসতে হাসতে ঘরে ঢুকল।",
+        "target": "He entered the room laughing."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q08",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "english",
+    "topic": "spelling",
+    "qno": 8,
+    "marks": 2,
+    "type": "table",
+    "question": "Write the correct spelling of the following words:",
+    "columns": [
+      "Given Words",
+      "Correct Spelt"
+    ],
+    "rows": [
+      [
+        "Cornel",
+        "Colonel"
+      ],
+      [
+        "Diarriah",
+        "Diarrhoea"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q09",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "english",
+    "topic": "verb-forms",
+    "qno": 9,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Write the correct form of verbs:-",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "Suger is (import) from Brazil.",
+        "answer": "imported"
+      },
+      {
+        "label": "b",
+        "sentence": "I have never (see) the Himalayas.",
+        "answer": "seen"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q10",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "english",
+    "topic": "articles",
+    "qno": 10,
+    "marks": 2,
+    "type": "fill-gaps",
+    "question": "Use appropriate articles:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "...... Buriganga is a beautiful river.",
+        "answer": "The"
+      },
+      {
+        "label": "b",
+        "sentence": "My father had ...... ram.",
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q11",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "৪৫০০ টাকায় একটি গরু বিক্রয় করায় ১০% ক্ষতি হয়। গরুটির ক্রয়মূল্য কত?",
+    "steps": [
+      "১০% ক্ষতিতে বিক্রয়মূল্য (১০০ − ১০) = ৯০ টাকা",
+      "বিক্রয়মূল্য ৯০ টাকা হলে ক্রয়মূল্য ১০০ টাকা",
+      "∴ বিক্রয়মূল্য ১ টাকা হলে ক্রয়মূল্য ১০০/৯০ টাকা",
+      "∴ বিক্রয়মূল্য ৪৫০০ টাকা হলে ক্রয়মূল্য (১০০ × ৪৫০০)/৯০ = ৫০০০ টাকা"
+    ],
+    "answer": "৫০০০ টাকা"
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q12",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "যদি $a + b + c = 0$ হয়, প্রমাণ করুন যে, $a^3 + b^3 + c^3 = 3abc$",
+    "steps": [
+      "দেওয়া আছে, $a + b + c = 0$",
+      "বা, $a + b = -c$",
+      "বা, $(a+b)^3 = -c^3$",
+      "বা, $a^3 + b^3 + 3ab(a+b) = -c^3$",
+      "বা, $a^3 + b^3 - 3abc = -c^3$ $[\\because a + b = -c]$",
+      "বা, $a^3 + b^3 + c^3 = 3abc$"
+    ],
+    "answer": "$a^3 + b^3 + c^3 = 3abc$ (প্রমাণিত)"
+  },
+  {
+    "id": "job-2025-supreme-court-photostat-operator-q13",
+    "examId": "job-2025-supreme-court-photostat-operator",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 12,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "নিচের প্রশ্নগুলোর উত্তর দিন (প্রতিটি ১ নম্বর):",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "SDG এর পূর্ণরূপ কি?",
+        "a": "SDG এর পূর্ণরূপ- Sustainable Development Goals."
+      },
+      {
+        "label": "খ",
+        "q": "জাতিসংঘের অফিসিয়াল ভাষা কয়টি?",
+        "a": "জাতিসংঘের অফিসিয়াল ভাষা ৬টি।"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের আইনসভার নাম কি?",
+        "a": "বাংলাদেশের আইনসভার নাম জাতীয় সংসদ।"
+      },
+      {
+        "label": "ঘ",
+        "q": "পানামা খাল কোন কোন মহাসাগরকে সংযুক্ত করেছে?",
+        "a": "পানামা খাল আটলান্টিক-প্রশান্ত মহাসাগরকে সংযুক্ত করেছে।"
+      },
+      {
+        "label": "ঙ",
+        "q": "সেন্টমার্টিন দ্বীপ এর পূর্বের নাম কি?",
+        "a": "সেন্টমার্টিন দ্বীপ এর পূর্বের নাম নারিকেল জিঞ্জিরা।"
+      },
+      {
+        "label": "চ",
+        "q": "কোন নদীকে বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন কেন্দ্র বলা হয়?",
+        "a": "হালদা নদীকে বাংলাদেশের সবচেয়ে বড় প্রাকৃতিক মৎস্য প্রজনন কেন্দ্র বলা হয়।"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলাদেশ সুপ্রীম কোর্ট দিবস কবে?",
+        "a": "বাংলাদেশ সুপ্রীম কোর্ট দিবস ১৮ ডিসেম্বর।"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের জাতীয় গাছ কোনটি?",
+        "a": "বাংলাদেশের জাতীয় গাছ আম গাছ।"
+      },
+      {
+        "label": "ঝ",
+        "q": "দক্ষিণ এশিয়ার স্থল বেষ্টিত দুইটি রাষ্ট্রের নাম লিখুন?",
+        "a": "দক্ষিণ এশিয়ার স্থল বেষ্টিত দুইটি রাষ্ট্র হলো নেপাল ও আফগানিস্তান।"
+      },
+      {
+        "label": "ঞ",
+        "q": "ভূমিকম্প নির্ণায়ক যন্ত্রের নাম কী?",
+        "a": "ভূমিকম্প নির্ণায়ক যন্ত্রের নাম সিসমোগ্রাফ।"
+      }
+    ]
+  }
+]

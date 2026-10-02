@@ -976,5 +976,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 20,
   },
+  {
+    id: "job-2025-religious-affairs-messenger",
+    ministry: "ধর্ম বিষয়ক মন্ত্রণালয়",
+    post: "বার্তাবাহক",
+    date: "2025-04-18",
+    duration: "১ ঘণ্টা",
+    totalMarks: 70,
+    totalQuestions: 15,
+  },
+  {
+    id: "job-2025-supreme-court-photostat-operator",
+    ministry: "বাংলাদেশ সুপ্রীম কোর্ট",
+    post: "ফটোস্ট্যাট মেশিন অপারেটর",
+    date: "2025-04-12",
+    duration: "১ ঘণ্টা",
+    totalMarks: 40,
+    totalQuestions: 13,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

@@ -810,37 +810,6 @@
       "watchSeen": []
     },
     {
-      "key": "2025-dmch-office-asst-typist-q14-p2",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
-      ],
-      "status": "",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-dmch-office-asst-typist-q14",
-          "part": 1,
-          "qMatch": "বর্তমান অন্তর্বতীকালীন স"
-        },
-        {
-          "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 2,
-          "qMatch": "বর্তমান অন্তর্বতীকালীন স"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
-    },
-    {
       "key": "2025-dphe-rangamati-office-asst-typist-q14-p13",
       "class": "slow",
       "topics": [],
@@ -1102,7 +1071,7 @@
       "targets": [
         {
           "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 20,
+          "part": 19,
           "qMatch": "জোহরান মামদানি কে?"
         }
       ],
@@ -1124,7 +1093,7 @@
       "targets": [
         {
           "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 6,
+          "part": 5,
           "qMatch": "জনসংখ্যা অনুযায়ী ঢাকা শ"
         }
       ],

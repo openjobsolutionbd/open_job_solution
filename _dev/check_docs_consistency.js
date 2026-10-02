@@ -19,12 +19,13 @@
  *      এখন স্বয়ংক্রিয়ভাবে আটকানো হয়
  *   ৪. প্রতিটা helper script (_dev/-এর টপ-লেভেল ফাইল, _dev/scripts/, ও
  *      .github/workflows/scripts/-এর ভেতরের .js/.py/.sh ফাইল) যেন AGENTS.md-এ অন্তত ফাইলনাম হিসেবে উল্লেখ থাকে
- *   ৫. job-app-MD.md এখন মূল ফাইল + _docs/job-app/-এর ৪টা অংশ-ফাইলে ভাগ করা
+ *   ৫. job-app-MD.md এখন মূল ফাইল + _docs/job-app/-এর ৬টা অংশ-ফাইলে ভাগ করা (সেকশন-ফোল্ডার অনুযায়ী একটা করে + শেয়ার্ড দুটো)
  *      (কাজ অনুযায়ী শুধু প্রয়োজনীয় অংশ পড়ে টোকেন বাঁচাতে)। ভাগ করা কাঠামো যেন
  *      নিঃশব্দে ভেঙে না যায় — অংশ-ফাইলের তালিকা ঠিক থাকে (কোনোটা হারায়নি, বাড়তি/অনাথ
  *      ফাইল নেই), প্রতিটা সেকশন-শিরোনাম সব ফাইল মিলিয়ে ঠিক একবার আছে (কোনো সেকশন
  *      হারায়নি বা ডুপ্লিকেট হয়নি), মূল ফাইলের সূচিতে প্রতিটা অংশ-ফাইল উল্লিখিত, এবং
- *      "⛔ কঠোর নিষেধাজ্ঞা" ব্লক মূল ফাইলে আছে
+ *      "⛔ কঠোর নিষেধাজ্ঞা" ব্লক মূল ফাইলে আছে, এবং কোনো ডকুমেন্ট `job-app/<নাম>.md` বলে এমন ফাইলের
+ *      উল্লেখ করছে না যা নেই (নাম বদলের পর ভাঙা রেফারেন্স)
  *
  * exit code 0 = ঠিক আছে, 1 = সমস্যা পাওয়া গেছে (CI fail করবে)।
  */
@@ -130,8 +131,10 @@ if (fs.existsSync(AGENTS_DOC)) {
 const PARTS_DIR = path.join(DOCS_DIR, "job-app");
 const PARTS = [
   "version-history.md",
-  "written-exam-data.md",
-  "mcq-sections.md",
+  "written-exam.md",
+  "bcs-mcq.md",
+  "primary-mcq.md",
+  "ministry-mcq.md",
   "topics-and-roadmap.md",
 ];
 const toBn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
@@ -143,6 +146,7 @@ const EXPECTED_HEADINGS = [
   "## Version History",
   ...Array.from({ length: 17 }, (_, i) => `## ${toBn(i + 1)}. `),
   "## ৫-ক. ",
+  "## ৫-খ. ",
   "## ৯-ক. ",
 ];
 const warnings = [];
@@ -197,6 +201,37 @@ if (mdCandidates.length >= 1) {
         errors.push(
           `❌ সেকশন "${prefix.trim()}" একাধিক জায়গায় আছে (${hits.map((h) => h.file).join(", ")}) — ডুপ্লিকেট; প্রতিটা সেকশন ঠিক একটা ফাইলে থাকবে।`
         );
+      }
+    }
+  }
+
+  // মৃত রেফারেন্স: "job-app/<নাম>.md" বলে কিছু উল্লেখ করা হলে সেই ফাইল আসলেই থাকতে হবে
+  // (অংশ-ফাইলের নাম বদলালে পুরনো নামের রেফারেন্স নিঃশব্দে ভেঙে যাওয়া আটকায়)।
+  // version-history.md ইতিহাস-খাতা, তাই বাদ — সেখানে পুরনো নাম থাকতেই পারে।
+  {
+    const scan = [];
+    const walk = (dir) => {
+      for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const p = path.join(dir, e.name);
+        if (e.isDirectory()) walk(p);
+        else if (e.name.endsWith(".md")) scan.push(p);
+      }
+    };
+    walk(DOCS_DIR);
+    const progress = path.join(ROOT, "written-exam", "PROGRESS.md");
+    if (fs.existsSync(progress)) scan.push(progress);
+    for (const f of scan) {
+      if (path.basename(f) === "version-history.md") continue;
+      const text = fs.readFileSync(f, "utf8");
+      const names = new Set();
+      for (const m of text.matchAll(/job-app\/([A-Za-z0-9_-]+\.md)/g)) names.add(m[1]);
+      if (path.dirname(f) === PARTS_DIR) {
+        for (const m of text.matchAll(/\]\(\.\/([A-Za-z0-9_-]+\.md)\)/g)) names.add(m[1]);
+      }
+      for (const n of names) {
+        if (!PARTS.includes(n)) {
+          errors.push(`❌ ${path.relative(ROOT, f)} এমন ফাইলের উল্লেখ করছে যা নেই: job-app/${n} — অংশ-ফাইলের নাম বদলের পর রেফারেন্স আপডেট হয়নি?`);
+        }
       }
     }
   }

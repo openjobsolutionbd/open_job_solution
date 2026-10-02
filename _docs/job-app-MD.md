@@ -3,7 +3,7 @@
 > **Architecture/content version:** v1.22 (last meaningful change — Current Affairs section added)
 > **Last verified/edited:** 2026-10-01
 > **Purpose:** give this document to any AI and it can understand the project's complete structure.
-> **Note:** this document is split into 5 files — this main file holds the always-read parts (prohibitions, checklist, overview, folder structure, general rules); the rest lives in `_docs/job-app/`. **The index below says which file to read for which task.** Version History is in its own file (`job-app/version-history.md`); routine cache/version bumps are not recorded there (they are in `git log` and `_docs/version.txt`). For the git/push/merge workflow rules see `_docs/AGENTS.md` — the two documents complement each other. **Language:** this main file is in English to save tokens; the prohibition block, the checklist and the `_docs/job-app/` parts stay in Bengali. Literal Bengali data values/UI strings (subject names, `⬅️ হোমে ফিরুন`, etc.) must stay Bengali.
+> **Note:** this document is split into 7 files — this main file holds the always-read parts (prohibitions, checklist, overview, folder structure, general rules); the rest lives in `_docs/job-app/`. **The index below says which file to read for which task.** Version History is in its own file (`job-app/version-history.md`); routine cache/version bumps are not recorded there (they are in `git log` and `_docs/version.txt`). For the git/push/merge workflow rules see `_docs/AGENTS.md` — the two documents complement each other. **Language:** this main file is in English to save tokens; the prohibition block, the checklist and the `_docs/job-app/` parts stay in Bengali. Literal Bengali data values/UI strings (subject names, `⬅️ হোমে ফিরুন`, etc.) must stay Bengali.
 
 ---
 
@@ -91,17 +91,19 @@ Project Owner দেখে অনুমোদন দেয়
 
 ## 📑 Document index — which file to read for which task (mandatory)
 
-Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — do not start that kind of task without reading the matching file. Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
+Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — one file per section folder, named after it; do not start that kind of task without reading the matching file. **A task that touches two sections (e.g. moving questions between them, or comparing formats) needs both files.** Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
 
 | File | Sections | Read when |
 |------|----------|-----------|
 | `_docs/job-app-MD.md` (this file) | prohibitions, checklist, §১, §২, §১০, §১১, §১২, §১৩, §১৪ | **always** |
-| [`job-app/written-exam-data.md`](./job-app/written-exam-data.md) | §৩, §৪, §৫, §৬, §৭ | adding or fixing exams/questions in `written-exam/`; any work involving ids or `examId` |
-| [`job-app/mcq-sections.md`](./job-app/mcq-sections.md) | §৫-ক, §৮, §৯, §৯-ক | adding or fixing questions in `bcs-mcq/`, `primary-mcq/`, `ministry-mcq/` |
+| [`job-app/written-exam.md`](./job-app/written-exam.md) | §৩, §৪, §৫, §৬, §৭ | adding or fixing exams/questions in `written-exam/`; any work involving ids or `examId` |
+| [`job-app/bcs-mcq.md`](./job-app/bcs-mcq.md) | §৫-ক, §৮ | adding or fixing questions in `bcs-mcq/` |
+| [`job-app/primary-mcq.md`](./job-app/primary-mcq.md) | §৫-খ, §৯ | adding or fixing questions in `mcq-job-solution/primary-mcq/` |
+| [`job-app/ministry-mcq.md`](./job-app/ministry-mcq.md) | §৯-ক | adding or fixing questions in `mcq-job-solution/ministry-mcq/` |
 | [`job-app/topics-and-roadmap.md`](./job-app/topics-and-roadmap.md) | §১৫, §১৬, §১৭ | giving a question a `topic`; working on `validateQuestion()` or the Automation App |
 | [`job-app/version-history.md`](./job-app/version-history.md) | Version History | only when adding a row for a meaningful change |
 
-> **When you change the split files:** `_dev/check_docs_consistency.js` (a required CI check) verifies that `_docs/job-app/` contains exactly the 4 files above, that every section heading appears exactly once overall (nothing lost, nothing duplicated), and that every file is mentioned in this index. To add a new part file, update the script's `PARTS` list and this index together.
+> **When you change the split files:** `_dev/check_docs_consistency.js` (a required CI check) verifies that `_docs/job-app/` contains exactly the files listed above, that every section heading appears exactly once overall (nothing lost, nothing duplicated), and that every file is mentioned in this index. To add a new part file, update the script's `PARTS` list and this index together.
 
 ---
 
@@ -201,7 +203,7 @@ No section's `index.html` may contain `<link rel="manifest">` — only the root 
 ├── 📁 _assets/                  ← shared static (fonts, icons, floating-search.js)
 │
 ├── 📁 _docs/                    ← governance/reference documents (this file, AGENTS.md, etc.) — not deployed
-│   └── 📁 job-app/              ← the split-out parts of this file (written-exam-data, mcq-sections, topics-and-roadmap, version-history)
+│   └── 📁 job-app/              ← the split-out parts of this file (one file per section: written-exam, bcs-mcq, primary-mcq, ministry-mcq; plus shared topics-and-roadmap and version-history)
 ├── 📁 _dev/                     ← scripts (validate_data.js, session_status.sh, update_version.py) — not deployed
 └── 📁 _staging/                 ← temporary data-entry work (books-staging) — not deployed
 

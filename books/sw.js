@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'books-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.370';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.371';
 
 const ASSETS = [
   '/books/',

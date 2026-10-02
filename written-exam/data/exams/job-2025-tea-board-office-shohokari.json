@@ -1,0 +1,429 @@
+[
+  {
+    "id": "job-2025-tea-board-office-shohokari-q01",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 1,
+    "marks": 5,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "একবার চোখের দেখা দেখব",
+        "a": "করণে ৬ষ্ঠী"
+      },
+      {
+        "label": "খ",
+        "q": "বাঘে মহিষে এক ঘাটে পানি খায়",
+        "a": "কর্তায় ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "সমুদ্রে লবণ আছে",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "ব্যবহারে বংশের পরিচয়",
+        "a": "করণে ৭মী"
+      },
+      {
+        "label": "ঙ",
+        "q": "শিক্ষককে শ্রদ্ধা করো",
+        "a": "সম্প্রদানে ৪র্থী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q02",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 5,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "সাক্ষী গোপাল (কর্তৃত্বহীন দর্শক মাত্র)",
+        "meaning": "এমন সাক্ষী গোপাল ছেলেকে কোনো কাজে পাঠিয়ে শান্তি নেই।"
+      },
+      {
+        "label": "খ",
+        "phrase": "লঙ্কাকাণ্ড (ভয়ানক বা তুমুল গোলযোগ)",
+        "meaning": "হাসান হাতে সামান্য ব্যথা পাওয়ায় বাসায় লঙ্কা কাণ্ড বাঁধিয়ে দিয়েছে।"
+      },
+      {
+        "label": "গ",
+        "phrase": "যক্ষের ধন (কৃপণের ধন)",
+        "meaning": "সে তার সম্পত্তি যক্ষের ধনের মতো আগলে রেখেছে।"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "ঘাটের মড়া (অতি বৃদ্ধ)",
+        "meaning": "টাকার লোভে ঘাটের মড়ার সাথে মেয়ের বিয়ে দেওয়া তোমার ঠিক হয়নি।"
+      },
+      {
+        "label": "ঙ",
+        "phrase": "কুপমণ্ডুক (সংকীর্ণচেতা ব্যক্তি)",
+        "meaning": "কুপমণ্ডুক ব্যক্তি সবাইকে তার নিজের মতো মনে করে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q03",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "bangla",
+    "topic": "প্রতিশব্দ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "সমার্থক বা প্রতিশব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সমার্থক শব্দ"
+    ],
+    "rows": [
+      [
+        "বাতাস",
+        "বায়ু"
+      ],
+      [
+        "সূর্য",
+        "অর্ক"
+      ],
+      [
+        "পতাকা",
+        "কেতন"
+      ],
+      [
+        "হরিণ",
+        "মৃগ"
+      ],
+      [
+        "অগ্নি",
+        "আগুন"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q04",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 4,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "অহনের পূর্বাংশ",
+        "a": "পূর্বাহ্ণ"
+      },
+      {
+        "label": "খ",
+        "q": "অতি কষ্টে যা নিবারণ করা যায়",
+        "a": "দুর্নিবার"
+      },
+      {
+        "label": "গ",
+        "q": "অনুসন্ধানের ইচ্ছা",
+        "a": "অনুসন্ধিৎসা"
+      },
+      {
+        "label": "ঘ",
+        "q": "উপকারীর অপকার করে যে",
+        "a": "কৃতঘ্ন"
+      },
+      {
+        "label": "ঙ",
+        "q": "কী করতে হবে যে স্থির করতে পারে না",
+        "a": "কিংকর্তব্যবিমূঢ়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q05",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 5,
+    "marks": 6,
+    "type": "translate",
+    "question": "ইংরেজি হতে বাংলা করুন:",
+    "parts": [
+      {
+        "label": "a",
+        "source": "He never deviated from truth.",
+        "target": "সে কখনো সত্য হতে বিচ্যুত হয়নি।"
+      },
+      {
+        "label": "b",
+        "source": "He teaches us good manners and discipline.",
+        "target": "তিনি আমাদের ভালো আচরণ ও শৃঙ্খলা শেখান।"
+      },
+      {
+        "label": "c",
+        "source": "A little learning is a dangerous thing.",
+        "target": "অল্প বিদ্যা ভয়ংকর।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q06",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 6,
+    "marks": 6,
+    "type": "translate",
+    "question": "Translate the following Bengali sentences into English:",
+    "parts": [
+      {
+        "label": "a",
+        "source": "সকাল হতে মুষলধারে বৃষ্টি হচ্ছে।",
+        "target": "It has been raining cats and dogs since morning."
+      },
+      {
+        "label": "b",
+        "source": "সে কবুতরকে খাওয়ায়।",
+        "target": "He feeds the pigeon."
+      },
+      {
+        "label": "c",
+        "source": "বাতাস ও পানি মানুষের জন্য অপরিহার্য।",
+        "target": "Air and water are essential for human."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q07",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "english",
+    "topic": "grammar",
+    "qno": 7,
+    "marks": 5,
+    "type": "sentence-change",
+    "question": "Write the right form of verbs:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I (read) for two hours.",
+        "changed": "I have been reading for two hours."
+      },
+      {
+        "label": "b",
+        "original": "If I were you, I (plant) some trees round the house.",
+        "changed": "If I were you, I would plant some trees round the house."
+      },
+      {
+        "label": "c",
+        "original": "My father was (transfer) from Dhaka to Chattogram.",
+        "changed": "My father was transfered from Dhaka to Chattogram."
+      },
+      {
+        "label": "d",
+        "original": "The size of the shoes (be) short.",
+        "changed": "The size of the shoes is short."
+      },
+      {
+        "label": "e",
+        "original": "There (be) two high schools in our village.",
+        "changed": "There are two high schools in our village."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q08",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 8,
+    "marks": 3,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with the appropriate prepositions:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "The duty was imposed ...... me.",
+        "answer": "upon"
+      },
+      {
+        "label": "b",
+        "sentence": "The old man has no influence ...... his sons.",
+        "answer": "over"
+      },
+      {
+        "label": "c",
+        "sentence": "We should not judge anyone ...... appearance.",
+        "answer": "by"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q09",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 9,
+    "marks": 2,
+    "type": "math",
+    "question": "শতকরা বার্ষিক $8\\frac{1}{2}$ টাকা মুনাফায় কত টাকার ৬ বছরের মুনাফা ২৫৫০ টাকা হবে?",
+    "steps": [
+      "আমরা জানি, $I = Pnr$",
+      "এখানে, $I = 2550$ টাকা, $n = 6$ বছর, $r = 8\\frac{1}{2}\\% = \\frac{17}{2 \\times 100}$, $P = ?$",
+      "বা, $P = \\frac{I}{nr} = \\frac{2550}{\\frac{17}{2 \\times 100} \\times 6}$",
+      "$= \\frac{2550 \\times 2 \\times 100}{17 \\times 6} = 5000$"
+    ],
+    "answer": "আসল ৫০০০ টাকা"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q10",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 10,
+    "marks": 3,
+    "type": "math",
+    "question": "গুণফল নির্ণয় করুন:\nক. ০.০১ × ০.০৭ × ৭.০০৯\nখ. ০.০১ × ০.১ × ০.১",
+    "steps": [
+      "ক. ০.০১ × ০.০৭ × ৭.০০৯ = ০.০০৪৯০৬৩",
+      "খ. ০.০১ × ০.১ × ০.১ = ০.০০০১"
+    ],
+    "answer": "ক. ০.০০৪৯০৬৩; খ. ০.০০০১"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q11",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 11,
+    "marks": 2,
+    "type": "math",
+    "question": "ভাগফল নির্ণয় করুন:\nক. ২.০ ÷ ০.০১\nখ. ৪.৫ ÷ ০.৯",
+    "steps": [
+      "ক. ২.০ ÷ ০.০১ = ২০০",
+      "খ. ৪.৫ ÷ ০.৯ = ৫"
+    ],
+    "answer": "ক. ২০০; খ. ৫"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q12",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 12,
+    "marks": 2,
+    "type": "math",
+    "question": "একটি চৌবাচ্চায় ৮০০০ লিটার পানি ধরে। চৌবাচ্চাটির দৈর্ঘ্য ২.৫৬ মিটার এবং প্রস্থ ১.২৫ মিটার হলে চৌবাচ্চাটির গভীরতা কত?",
+    "steps": [
+      "চৌবাচ্চাটির তলার ক্ষেত্রফল = ২.৫৬ মিটার × ১.২৫ মিটার = ২৫৬ সে. মি. × ১২৫ সে. মি. = ৩২০০০ বর্গ সে. মি.",
+      "চৌবাচ্চায় ৮০০০ লিটার বা ৮০০০ × ১০০০ ঘন সে. মি. পানি ধরে।",
+      "অতএব, চৌবাচ্চাটির আয়তন ৮০০০০০০ ঘন সে. মি.",
+      "∴ চৌবাচ্চাটির গভীরতা = ৮০০০০০০ ÷ ৩২০০০ সে. মি. = ২৫০ সে. মি. = ২.৫ মিটার"
+    ],
+    "answer": "২.৫ মিটার"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q13",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 13,
+    "marks": 3,
+    "type": "math",
+    "question": "প্রমাণ করুন যে, $a^x = b$, $b^y = c$ এবং $c^z = a$ হয়, তবে দেখান যে, $xyz = 1$",
+    "steps": [
+      "দেওয়া আছে, $c^z = a$",
+      "বা, $(b^y)^z = a$",
+      "বা, $(a^x)^{yz} = a$",
+      "বা, $a^{xyz} = a^1$",
+      "$\\therefore xyz = 1$ (প্রমাণিত)।"
+    ],
+    "answer": "$xyz = 1$"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q14",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "math",
+    "topic": "পাটিগণিত",
+    "qno": 14,
+    "marks": 3,
+    "type": "math",
+    "question": "একজন চা ব্যবসায়ী একবাক্স চা পাতা কেজি প্রতি ৮০ টাকা হিসেবে ক্রয় করেন। সব চা পাতা কেজি প্রতি ৭৫ টাকা দরে বিক্রয় করায় ৫০০ টাকা ক্ষতি হয়। তিনি কত কেজি চা পাতা ক্রয় করেছিলেন?",
+    "steps": [
+      "কেজি প্রতি চা পাতার ক্রয়মূল্য ৮০ টাকা এবং বিক্রয়মূল্য ৭৫ টাকা",
+      "∴ ১ কেজি চা পাতা বিক্রয় করলে ক্ষতি হয় (৮০ − ৭৫) = ৫ টাকা",
+      "∴ ৫ টাকা ক্ষতি হয় ১ কেজিতে",
+      "∴ ১ টাকা ক্ষতি হয় ১/৫ কেজিতে",
+      "∴ ৫০০ টাকা ক্ষতি হয় (১ × ৫০০) ÷ ৫ = ১০০ কেজিতে"
+    ],
+    "answer": "১০০ কেজি"
+  },
+  {
+    "id": "job-2025-tea-board-office-shohokari-q15",
+    "examId": "job-2025-tea-board-office-shohokari",
+    "subject": "general-knowledge",
+    "topic": "বাংলাদেশ",
+    "qno": 15,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "নিম্নলিখিত প্রশ্নগুলোর উত্তর দিন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "বর্তমান অন্তর্বর্তী সরকার কত তারিখে শপথ গ্রহণ করে?",
+        "a": "বর্তমান অন্তর্বর্তী সরকার ৮ আগস্ট, ২০২৪ শপথ গ্রহণ করে।"
+      },
+      {
+        "label": "খ",
+        "q": "থ্রি জিরো তত্ত্ব বলতে কী বুঝানো হয়েছে?",
+        "a": "থ্রি জিরো তত্ত্ব বলতে দারিদ্র্য, বেকারত্ব ও কার্বন নিঃসরণ শূন্যে নামিয়ে আনাকে বুঝানো হয়েছে।"
+      },
+      {
+        "label": "গ",
+        "q": "বাংলাদেশের জাতীয় জরুরি সেবা নম্বর কোনটি?",
+        "a": "বাংলাদেশের জাতীয় জরুরি সেবা নম্বর ৯৯৯।"
+      },
+      {
+        "label": "ঘ",
+        "q": "পূর্ণরূপ লিখুন: ECNEC; BEPZA",
+        "a": "ECNEC- Executive Committee of the National Economic Council। BEPZA- Bangladesh Export Processing Zones Authority।"
+      },
+      {
+        "label": "ঙ",
+        "q": "UNESCO এর সদরদপ্তর কোথায়?",
+        "a": "UNESCO এর সদরদপ্তর প্যারিস, ফ্রান্স।"
+      },
+      {
+        "label": "চ",
+        "q": "সেভেন সিস্টার্স রাজ্য কোন দেশে অবস্থিত?",
+        "a": "সেভেন সিস্টার্স রাজ্য ভারতে অবস্থিত।"
+      },
+      {
+        "label": "ছ",
+        "q": "বাংলা ভাষা ও সাহিত্যের প্রাচীনতম নিদর্শন কী?",
+        "a": "বাংলা ভাষা ও সাহিত্যের প্রাচীনতম নিদর্শন চর্যাপদ।"
+      },
+      {
+        "label": "জ",
+        "q": "বাংলাদেশের কোন এলাকাকে Marine Protected Area হিসেবে ঘোষণা করা হয়েছে?",
+        "a": "বাংলাদেশের সেন্টমার্টিন এবং এর আশেপাশের এলাকাকে Marine Protected Area হিসেবে ঘোষণা করা হয়েছে।"
+      },
+      {
+        "label": "ঝ",
+        "q": "বাংলাদেশের প্রথম সার্চ ইঞ্জিনের নাম কী?",
+        "a": "বাংলাদেশের প্রথম সার্চ ইঞ্জিনের নাম পিপীলিকা।"
+      },
+      {
+        "label": "ঞ",
+        "q": "জুলাই গণঅভ্যুত্থান সম্পর্কে একটি অনুচ্ছেদ লিখুন।",
+        "a": "২০২৪ সালের জুলাই মাসে বাংলাদেশে ঘটে যাওয়া গণঅভ্যুত্থান 'জুলাই বিপ্লব' বা 'জুলাই গণঅভ্যুত্থান' নামে পরিচিত। এটি দেশের রাজনৈতিক ইতিহাসে একটি গুরুত্বপূর্ণ মাইলফলক হয়ে দাঁড়িয়েছে। এই আন্দোলন মূলত সরকারি চাকরিতে কোটা পুনর্বহালের প্রতিবাদে শুরু হলেও দ্রুত তা সরকারের স্বৈরাচারী শাসন ও মানবাধিকার লঙ্ঘনের বিরুদ্ধে এক বৃহত্তর গণআন্দোলনের রূপ নেয়। ২০২৪ সালের ১ জুলাই বৈষম্য বিরোধী ছাত্র আন্দোলনের ব্যানারে শিক্ষার্থীদের নেতৃত্বে শুরু হওয়া এই আন্দোলন দ্রুত সারা দেশে ছড়িয়ে পড়ে। শুরুতে শান্তিপূর্ণ হলেও সরকারি বাহিনীর সহিংস দমন পীড়নে পরিস্থিতি উত্তপ্ত হয়ে ওঠে। ১৬ জুলাই থেকে ৫ আগস্ট পর্যন্ত চলা এই দমন অভিযানে সরকারি হিসাব অনুযায়ী ১০০০ জনেরও বেশি মানুষ নিহত হন, তবে জাতিসংঘের মানবাধিকার দপ্তর এই সংখ্যা ১৪০০ এরও বেশি বলে উল্লেখ করেছে। এছাড়া ১১৭০০ জনেরও বেশি মানুষ গ্রেপ্তার হন এবং ২০০০০ এরও বেশি মানুষ আহত হন। ছাত্র-জনতার প্রবল আন্দোলনের মুখে ৫ আগস্ট, ২০২৪ ক্ষমতাসীন প্রধানমন্ত্রী শেখ হাসিনা পদত্যাগ করে ভারতে পালিয়ে যান। আন্দোলনকারীরা তাদের এ বিজয়কে 'জুলাই বিপ্লব' নামে অভিহিত করতে ৫ আগস্টকে প্রলম্বিত করে '৩৬ জুলাই' হিসেবে চিহ্নিত করেন, যা তাদের ভাষায় বাংলাদেশের 'দ্বিতীয় স্বাধীনতা'। এরপর নোবেল বিজয়ী অর্থনীতিবিদ ড. মুহাম্মদ ইউনূসের নেতৃত্বে অন্তর্বর্তী সরকার গঠিত হয়। জুলাই বিপ্লব বাংলাদেশের জনগণের রাজনৈতিক সচেতনতা ও সংগ্রামের এক উজ্জ্বল দৃষ্টান্ত। এটি কেবল একটি আন্দোলন নয়; বরং একটি জাতির গণতান্ত্রিক অধিকার প্রতিষ্ঠার সংগ্রামের প্রতীক হয়ে থাকবে।"
+      }
+    ]
+  }
+]

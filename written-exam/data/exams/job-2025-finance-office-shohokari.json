@@ -92,8 +92,8 @@
     "parts": [
       { "original": "A fire (break) out in the slum last night.", "changed": "A fire broke out in the slum last night." },
       { "original": "That room (use) for a meeting today.", "changed": "That room is used for a meeting today." },
-      { "original": "Internet connectivity (be) addressed in a half a dozen different ways.", "changed": "Internet connectivity is addressed in a half a dozen different ways." },
-      { "original": "Ancient Greek (teach) still in some school.", "changed": "Ancient Greek is being taught still in some school." },
+      { "original": "Internet connectivity (be) addressed in half a dozen different ways.", "changed": "Internet connectivity is addressed in half a dozen different ways." },
+      { "original": "Ancient Greek (teach) still in some schools.", "changed": "Ancient Greek is still taught in some schools." },
       { "original": "I would rather (have) coffee than tea.", "changed": "I would rather have coffee than tea." }
     ]
   },
@@ -156,7 +156,7 @@
     "marks": 5,
     "type": "paragraph",
     "question": "Write a short Paragraph on 'The Contribution of RMG Sector in Bangladesh Economy'.",
-    "answer": "The Ready-Made Garment sector is one of the most important pillar's of Bangladesh' economy. It accounts for about 80% of the country's total export earnings and employs million of people, especially women. This sector has played a vital role in reducing poverty, empowering women and improving the standard of living for many families. The RMG industry has also helped to strengthen the country's foreign currency reserves and increase economic growth. By exporting garments to international markets, Bangladesh has earned a strong reputation globally. Although the sector faces challenges such as labor rights issues and competition, its contribution to the overall development of the country is undeniable."
+    "answer": "The Ready-Made Garment sector is one of the most important pillars of Bangladesh's economy. It accounts for about 80% of the country's total export earnings and employs millions of people, especially women. This sector has played a vital role in reducing poverty, empowering women and improving the standard of living for many families. The RMG industry has also helped to strengthen the country's foreign currency reserves and increase economic growth. By exporting garments to international markets, Bangladesh has earned a strong reputation globally. Although the sector faces challenges such as labor rights issues and competition, its contribution to the overall development of the country is undeniable."
   },
   {
     "id": "job-2025-finance-office-shohokari-q11",

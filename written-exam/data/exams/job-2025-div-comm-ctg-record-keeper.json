@@ -225,8 +225,8 @@
     "parts": [
       {
         "label": "a",
-        "original": "He is on bank of ruin.",
-        "changed": "He is on the bank of ruin."
+        "original": "He is on brink of ruin.",
+        "changed": "He is on the brink of ruin."
       },
       {
         "label": "b",
@@ -270,7 +270,7 @@
       },
       {
         "sentence": "If you would like to come, I (be) wait for you.",
-        "answer": "will"
+        "answer": "will be waiting"
       },
       {
         "sentence": "It is high time he (change) his health.",

@@ -164,6 +164,9 @@
          ভবিষ্যতের ডেস্কটপ-নির্দিষ্ট পরিবর্তন এখানে যোগ হবে। */
     }
       .back-home { display:block; text-align:center; margin:18px 0 4px; color:var(--text-secondary); text-decoration:none; font-size:0.9rem; }
+    .scroll-top-btn{position:fixed;bottom:24px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--surface);border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.2s ease;z-index:99}
+    .scroll-top-btn.visible{opacity:1;visibility:visible;transform:translateY(0)}
+    .scroll-top-btn:hover{box-shadow:var(--shadow-hover)}
   </style>
 </head>
 <body>
@@ -207,11 +210,19 @@
 
     <a class="back-home" href="/">⬅️ হোমে ফিরুন</a>
 
-    <footer>MCQ Job Solution · v1.345</footer>
+    <footer>MCQ Job Solution · v1.364</footer>
 
   </div>
 
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
   <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/mcq-job-solution/sw.js').catch(err => {

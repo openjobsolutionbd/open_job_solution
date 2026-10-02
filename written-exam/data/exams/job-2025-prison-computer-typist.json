@@ -169,7 +169,7 @@
       {
         "label": "গ",
         "source": "মেয়েটি যেমন সুন্দরী, তেমনি বুদ্ধিমতী।",
-        "target": "The girl is as beautiful as intelligent."
+        "target": "The girl is as beautiful as she is intelligent."
       },
       {
         "label": "ঘ",
@@ -300,7 +300,7 @@
         "label": "c",
         "phrase": "Eye to eye",
         "meaning": "একমত",
-        "example": "He cannot be eye to eye with me on this matter."
+        "example": "He cannot see eye to eye with me on this matter."
       },
       {
         "label": "d",

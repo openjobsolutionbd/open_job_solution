@@ -93,7 +93,7 @@
       { "original": "A fire (break) out in the slum last night.", "changed": "A fire broke out in the slum last night." },
       { "original": "That room (use) for a meeting today.", "changed": "That room is used for a meeting today." },
       { "original": "Internet connectivity (be) addressed in half a dozen different ways.", "changed": "Internet connectivity is addressed in half a dozen different ways." },
-      { "original": "Ancient Greek (teach) still in some school.", "changed": "Ancient Greek is being taught still in some school." },
+      { "original": "Ancient Greek (teach) still in some schools.", "changed": "Ancient Greek is still taught in some schools." },
       { "original": "I would rather (have) coffee than tea.", "changed": "I would rather have coffee than tea." }
     ]
   },

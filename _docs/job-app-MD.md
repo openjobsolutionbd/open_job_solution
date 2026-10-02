@@ -274,6 +274,8 @@ The AI uses only these 4 subjects — it must not invent any new subject:
 | `bangla` | Bengali grammar, literature, language |
 | `english` | English grammar, literature, vocabulary |
 | `general-knowledge` | General knowledge, Bangladesh, international, science |
+
+> **Alias (owner decision, 2026-10-02):** in `written-exam/` data, `gk` is an accepted short name for `general-knowledge` — both are valid and the site shows both as "সাধারণ জ্ঞান". Do not rename existing `gk` questions. `_dev/validate_data.js` fails on any other unknown subject name.
 | `math` | Mathematics, equations, statistics |
 
 After deciding the subject, if possible add the right `topic` from the list in Section ১৭.
@@ -310,7 +312,7 @@ const APP_METADATA = {
 - `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (see Section ৫); if it doesn't match, the question will not show in the UI
 - `qno` is always a number — do not write a string like `"০১"` or Bengali digits; the UI converts to Bengali digits itself when displaying
 - `date` in `exam-archive.js` must always be written in `YYYY-MM-DD` format
-- the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math`
+- the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math` (written-exam data also accepts `gk` as an alias of `general-knowledge` — see Section ১২)
 - **Math equations must be written inside `$...$` using MathJax (LaTeX) syntax** — e.g. `$64x^3 - 240x^2y$`. Always use the plain hyphen (`-`) for the minus sign, never an en-dash (`–`) or em-dash (`—`) — because MathJax does not recognize those characters as a minus sign
 - `ministry`, `post`, `date`, `duration`, `totalMarks` — these live only in `exam-archive.js` and must not be repeated in the questions of `data/exams/*.json`
 - `written-exam/index.html` loads `exam-archive.js` first; the question data (`data/exams/<examId>.json`) is fetched on demand when an exam is opened, not preloaded with a script tag

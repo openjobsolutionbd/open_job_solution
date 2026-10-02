@@ -217,6 +217,9 @@ function checkTextHygiene(loc, value, key = '') {
 
   if (JOBS) {
     const idEntries = [];
+    // written-exam-এ চালু subject-নাম। gk = general-knowledge (দুটোই চলে, সাইটে একই শিরোনাম)।
+    // civil-engineering ডেটায় আগে থেকেই আছে (১০টা প্রশ্ন) — ভাঙা এড়াতে রাখা হলো।
+    const WRITTEN_SUBJECTS = new Set(['bangla', 'english', 'general-knowledge', 'gk', 'math', 'civil-engineering']);
     const checkParts = (loc, q, fields) => {
       if (!Array.isArray(q.parts) || !q.parts.length) { issues.push(`[${loc}] "parts" নেই বা খালি`); return; }
       q.parts.forEach((p, pi) => fields.forEach(f => {
@@ -232,6 +235,7 @@ function checkTextHygiene(loc, value, key = '') {
       if (!q.examId) issues.push(`[${loc}] examId নেই`);
       if (q.qno === undefined || q.qno === null || q.qno === '') issues.push(`[${loc}] প্রশ্ন নং (qno) নেই — ভিত্তি ফিল্ড, বাধ্যতামূলক`);
       else if (typeof q.qno !== 'number') issues.push(`[${loc}] qno সংখ্যা (number) হতে হবে, string না — এখন: ${JSON.stringify(q.qno)}`);
+      if (!WRITTEN_SUBJECTS.has(q.subject)) issues.push(`[${loc}] subject \"${q.subject}\" অনুমোদিত তালিকায় নেই (${[...WRITTEN_SUBJECTS].join(', ')}) — বানান ভুল কি?`);
       idEntries.push({ id: q.id, where: 'written-exam' });
 
       switch (q.type) {

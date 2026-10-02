@@ -373,7 +373,7 @@
         "label": "e",
         "phrase": "Stone's throw",
         "meaning": "নিকটে",
-        "example": "Our school is at stone's throw from our house."
+        "example": "Our school is at a stone's throw from our house."
       }
     ]
   },
@@ -433,7 +433,7 @@
         "answer": "have seen"
       },
       {
-        "sentence": "He made me to (do) the work.",
+        "sentence": "He made me (do) the work.",
         "answer": "do"
       },
       {

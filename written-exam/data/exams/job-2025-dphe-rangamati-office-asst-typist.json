@@ -193,7 +193,7 @@
       },
       {
         "sentence": "Time and tide......... for none.",
-        "answer": "waits"
+        "answer": "wait"
       }
     ]
   },
@@ -241,7 +241,7 @@
       },
       {
         "label": "b",
-        "q": "a big Kamafuli is river.",
+        "q": "a big Karnaphuli is river.",
         "a": "Karnaphuli is a big river."
       },
       {

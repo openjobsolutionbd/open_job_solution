@@ -37,8 +37,16 @@
 
   </div>
 
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
   <script src="data/manifest.js"></script>
   <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
     const wrap = document.getElementById('bookSections');
 
     Object.values(BOOKS).forEach(book => {

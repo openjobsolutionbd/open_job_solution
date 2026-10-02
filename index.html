@@ -163,6 +163,10 @@
       /* বর্তমানে ডেস্কটপের জন্য বাড়তি কোনো ওভাররাইড প্রয়োজন নেই।
          ভবিষ্যতের ডেস্কটপ-নির্দিষ্ট পরিবর্তন এখানে যোগ হবে। */
     }
+
+    .scroll-top-btn{position:fixed;bottom:24px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--surface);border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.2s ease;z-index:99}
+    .scroll-top-btn.visible{opacity:1;visibility:visible;transform:translateY(0)}
+    .scroll-top-btn:hover{box-shadow:var(--shadow-hover)}
   </style>
 </head>
 <body>
@@ -222,11 +226,19 @@
       </a>
     </div>
 
-    <footer>Open Job Solution · v1.346</footer>
+    <footer>Open Job Solution · v1.363</footer>
 
   </div>
 
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
   <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').catch(err => {

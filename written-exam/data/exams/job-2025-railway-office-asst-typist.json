@@ -242,8 +242,8 @@
       },
       {
         "label": "c",
-        "original": "Mutir Chowdhury is more famous than most other playwrights in Bangladesh. (positive)",
-        "changed": "Very few playwrights in Bangladesh are as famous as Mutir Chowdhury."
+        "original": "Munier Chowdhury is more famous than most other playwrights in Bangladesh. (positive)",
+        "changed": "Very few playwrights in Bangladesh are as famous as Munier Chowdhury."
       },
       {
         "label": "d",
@@ -253,7 +253,7 @@
       {
         "label": "e",
         "original": "Mango tastes sour. (change the voice)",
-        "changed": "Mango is tasted sour."
+        "changed": "Mango is sour when it is tasted."
       }
     ]
   },

@@ -1,0 +1,538 @@
+[
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q01",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "প্রকৃতি ও প্রত্যয়",
+    "qno": 1,
+    "marks": 3,
+    "type": "table",
+    "question": "প্রকৃতি ও প্রত্যয় নির্ণয় করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "প্রকৃতি ও প্রত্যয়"
+    ],
+    "rows": [
+      [
+        "সাহিত্যিক",
+        "সাহিত্য + ষ্ঠিক"
+      ],
+      [
+        "মানব",
+        "মনু + ষঞ্"
+      ],
+      [
+        "কারক",
+        "কৃ + ণক/অক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q02",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 2,
+    "marks": 3,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "উদ্যোগ",
+        "উৎ + যোগ"
+      ],
+      [
+        "মনস্তাপ",
+        "মনঃ + তাপ"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q03",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 3,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "যা পূর্বে শোনা যায়নি",
+        "a": "অশ্রুতপূর্ব"
+      },
+      {
+        "label": "খ",
+        "q": "যে নিজেকে পণ্ডিত মনে করে",
+        "a": "পণ্ডিতম্মন্য"
+      },
+      {
+        "label": "গ",
+        "q": "মাটি দিয়ে তৈরি",
+        "a": "মৃন্ময়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q04",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সমাস",
+    "qno": 4,
+    "marks": 3,
+    "type": "table",
+    "question": "ব্যাসবাক্যসহ সমাস নির্ণয় করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "ব্যাসবাক্যসহ সমাসের নাম"
+    ],
+    "rows": [
+      [
+        "শশব্যস্ত",
+        "শশকের মতো ব্যস্ত (উপমান কর্মধারয়)"
+      ],
+      [
+        "ধামাধরা",
+        "ধামা ধরে যে (উপপদ তৎপুরুষ)"
+      ],
+      [
+        "ডাকমাশুল",
+        "ডাকের জন্য মাশুল (৪র্থী তৎপুরুষ)"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q05",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 5,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "কারক নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "কাঁচের জিনিস সহজে ভাঙ্গে",
+        "a": "করণে ৬ষ্ঠী"
+      },
+      {
+        "label": "খ",
+        "q": "টাকায় কী না হয়",
+        "a": "করণে ৭মী"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q06",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 6,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "শুদ্ধ করে লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সে আকণ্ঠ পর্যন্ত পান করেছে",
+        "a": "সে আকণ্ঠ পান করেছে।"
+      },
+      {
+        "label": "খ",
+        "q": "সে খুবই বিদ্যান ব্যক্তি",
+        "a": "সে বিদ্বান ব্যক্তি।"
+      },
+      {
+        "label": "গ",
+        "q": "দৈন্যতা সব সময় ভালো নয়।",
+        "a": "দৈন্য/দীনতা সব সময় ভালো নয়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q07",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 7,
+    "marks": 2,
+    "type": "table",
+    "question": "ক. 'সোনালী কাবিন' ও খ. 'সবিতা' কাব্যগ্রন্থের লেখকের নাম লিখুন:",
+    "columns": [
+      "কাব্যগ্রন্থ",
+      "লেখকের নাম"
+    ],
+    "rows": [
+      [
+        "সোনালী কাবিন",
+        "আল মাহমুদ"
+      ],
+      [
+        "সবিতা",
+        "সত্যেন্দ্রনাথ দত্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q08",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 8,
+    "marks": 1,
+    "type": "table",
+    "question": "'বঙ্কিম' এর বিপরীত শব্দ কি?",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "বঙ্কিম",
+        "ঋজু"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q09",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 9,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate prepositions:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "I want to live ...... peace with you.",
+        "answer": "in"
+      },
+      {
+        "label": "b",
+        "sentence": "He is junior ...... me.",
+        "answer": "to"
+      },
+      {
+        "label": "c",
+        "sentence": "Guard ...... all errors.",
+        "answer": "against"
+      },
+      {
+        "label": "d",
+        "sentence": "I was ignorant ...... the plan.",
+        "answer": "of"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q10",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 10,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with the following phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Look into (তদন্ত করা)",
+        "meaning": "Please look into the matter."
+      },
+      {
+        "label": "b",
+        "phrase": "Run short of (ফুরিয়ে যাওয়া)",
+        "meaning": "Our provision ran short of."
+      },
+      {
+        "label": "c",
+        "phrase": "By fits and starts (অনিয়মিতভাবে)",
+        "meaning": "She comes to school by fits and starts."
+      },
+      {
+        "label": "d",
+        "phrase": "Make good (ক্ষতিপূরণ)",
+        "meaning": "You should make good my loss."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q11",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "english",
+    "topic": "sentence-correction",
+    "qno": 11,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I insisted him to go there.",
+        "changed": "I insisted him on going there."
+      },
+      {
+        "label": "b",
+        "original": "His hairs are grey.",
+        "changed": "His hair is grey."
+      },
+      {
+        "label": "c",
+        "original": "The food was very tasteful.",
+        "changed": "The food was very tasty."
+      },
+      {
+        "label": "d",
+        "original": "His english knowledge is poor.",
+        "changed": "His knowledge of English is poor."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q12",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "english",
+    "topic": "voice-change",
+    "qno": 12,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "Honey tastes sweet.",
+        "changed": "Honey is sweet when it is tasted."
+      },
+      {
+        "label": "b",
+        "original": "Do not open the window.",
+        "changed": "Let not the window be opened."
+      },
+      {
+        "label": "c",
+        "original": "He fans himself",
+        "changed": "He is fanned by himself."
+      },
+      {
+        "label": "d",
+        "original": "He blamed me for their sufferings.",
+        "changed": "I was blamed by him for their sufferings."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q13",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 13,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with the following pairs of words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Elicit (কোনো কিছু টেনে বের করে আনা); Illicit (অবৈধ)",
+        "meaning": "The teacher asked a question to elicit the correct answer from the students. The police arrested him for selling illicit drugs."
+      },
+      {
+        "label": "b",
+        "phrase": "Coir (নারকেলের খোসা থেকে তৈরি রেশা); Choir (গানের দল)",
+        "meaning": "The made mats and ropes using coir from coconut husks. The choir sang beautifully at the wedding ceremony."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q14",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "সংক্ষিপ্তরূপ",
+    "qno": 14,
+    "marks": 3,
+    "type": "short-qa",
+    "question": "পূর্ণরূপ লিখুন:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "BGMEA",
+        "a": "Bangladesh Garment Manufacturers and Exporters Association."
+      },
+      {
+        "label": "b",
+        "q": "UNGA",
+        "a": "United Nations General Assembly."
+      },
+      {
+        "label": "c",
+        "q": "BSTI",
+        "a": "Bangladesh Standards and Testing Institution."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q15",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "সাহিত্য",
+    "qno": 15,
+    "marks": 2,
+    "type": "short-qa",
+    "question": "গ্রন্থের লেখকের নাম লিখুন:",
+    "parts": [
+      {
+        "label": "a",
+        "q": "A passage to India",
+        "a": "E. M. Forster."
+      },
+      {
+        "label": "b",
+        "q": "Wealth of Nations",
+        "a": "Adam Smith."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q16",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 16,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান (প্রতিটি ১ নম্বর):",
+    "parts": [
+      {
+        "label": "১",
+        "q": "হিজরী সন গণনা করা হয় কত খ্রিষ্টাব্দ হতে?",
+        "a": "হিজরী সন গণনা করা হয় ৬২২ খ্রিষ্টাব্দ হতে।"
+      },
+      {
+        "label": "২",
+        "q": "বাংলাদেশের রিকশাচিত্র কোন আন্তর্জাতিক সংস্থার স্বীকৃতি লাভ করেছে?",
+        "a": "বাংলাদেশের রিকশাচিত্র ইউনেস্কো কর্তৃক স্বীকৃতি লাভ করেছে।"
+      },
+      {
+        "label": "৩",
+        "q": "আন্তর্জাতিক অপরাধ বিষয়ক আদালত কোথায় অবস্থিত?",
+        "a": "আন্তর্জাতিক অপরাধ বিষয়ক আদালত হেগ, নেদারল্যান্ডসে অবস্থিত।"
+      },
+      {
+        "label": "৪",
+        "q": "উপমহাদেশের প্রথম শিক্ষা কমিশনের নাম কি?",
+        "a": "উপমহাদেশের প্রথম শিক্ষা কমিশনের নাম হান্টার শিক্ষা কমিশন।"
+      },
+      {
+        "label": "৫",
+        "q": "প্রতি বছর নোবেল পুরস্কার আনুষ্ঠানিকভাবে কোন তারিখে প্রদান করা হয়?",
+        "a": "প্রতি বছর নোবেল পুরস্কার আনুষ্ঠানিকভাবে ১০ ডিসেম্বর প্রদান করা হয়।"
+      },
+      {
+        "label": "৬",
+        "q": "'ক্যাটালন' কোন দেশের ভাষা?",
+        "a": "'ক্যাটালন' স্পেনের ভাষা।"
+      },
+      {
+        "label": "৭",
+        "q": "বাংলাদেশের সংবিধানের অভিভাবক ও ব্যাখ্যাকারক কে?",
+        "a": "বাংলাদেশের সংবিধানের অভিভাবক ও ব্যাখ্যাকারক সুপ্রীম কোর্ট।"
+      },
+      {
+        "label": "৮",
+        "q": "ECNEC এর প্রধান কে?",
+        "a": "ECNEC এর প্রধান প্রধানমন্ত্রী/প্রধান উপদেষ্টা।"
+      },
+      {
+        "label": "৯",
+        "q": "নিপোর্ট (NIPORT) কী ধরনের গবেষণা প্রতিষ্ঠান?",
+        "a": "নিপোর্ট (NIPORT) জনসংখ্যা বিষয়ক গবেষণামূলক প্রতিষ্ঠান।"
+      },
+      {
+        "label": "১০",
+        "q": "ইউনিডো (UNIDO) এর সদরদপ্তর কোথায়?",
+        "a": "ইউনিডো (UNIDO) এর সদরদপ্তর ভিয়েনা, অস্ট্রিয়া।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q17",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 17,
+    "marks": 4,
+    "type": "math",
+    "question": "একটি পণ্য বিক্রয় করে পাইকারি বিক্রেতার ২০% এবং খুচরা বিক্রেতার ২০% লাভ হয়। যদি পণ্যটির খুচরা বিক্রয়মূল্য ৫৭৬ টাকা হয়, তবে পাইকারী বিক্রেতার ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, পাইকারী বিক্রেতার ক্রয়মূল্য x টাকা",
+      "২০% লাভে বিক্রয়মূল্য x + x × ২০/১০০ = x + x/৫ = ৬x/৫ টাকা",
+      "২০% লাভে খুচরা বিক্রেতার বিক্রয়মূল্য ৬x/৫ + (৬x/৫ × ২০/১০০) = ৬x/৫ + ৬x/২৫ = (৩০x + ৬x)/২৫ = ৩৬x/২৫",
+      "প্রশ্নমতে, ৩৬x/২৫ = ৫৭৬",
+      "বা, ৩৬x = ৫৭৬ × ২৫",
+      "বা, x = (৫৭৬ × ২৫)/৩৬ ∴ x = ৪০০"
+    ],
+    "answer": "৪০০ টাকা"
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q18",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "math",
+    "topic": "সরল সুদ",
+    "qno": 18,
+    "marks": 4,
+    "type": "math",
+    "question": "কোন আসল ৫ বছরে মুনাফা-আসলে ১৬৮০ টাকা এবং ৯ বছরে মুনাফা আসল ২০৬৪ টাকা হয়।",
+    "steps": [
+      "আসল + ৯ বছরের সুদ = ২০৬৪ টাকা",
+      "আসল + ৫ বছরের সুদ = ১৬৮০ টাকা",
+      "∴ ৪ বছরের সুদ = ৩৮৪ টাকা",
+      "∴ ১ বছরের সুদ = ৩৮৪/৪ = ৯৬ টাকা",
+      "∴ ৫ বছরের সুদ = ৯৬ × ৫ = ৪৮০ টাকা",
+      "∴ আসল = ১৬৮০ − ৪৮০ = ১২০০ টাকা"
+    ],
+    "answer": "আসল ১২০০ টাকা"
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q19",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 19,
+    "marks": 4,
+    "type": "math",
+    "question": "আয়তাকার পানিপূর্ণ একটি ট্যাংকের দৈর্ঘ্য ৬ মিটার প্রস্থ, ৫ মিটার এবং গভীরতা ২ মিটার। ট্যাংকটির তলার পরিসীমা ও চার দেওয়ালে মোট ক্ষেত্রফল নির্ণয় করুন।",
+    "steps": [
+      "ট্যাংকটির তলার পরিসীমা = ২(৬ + ৫) = ২ × ১১ = ২২ মি.",
+      "দৈর্ঘ্য বরাবর ১টি দেওয়ালের ক্ষেত্রফল = ৬ × ২ = ১২ ব.মি.; ২টি দেওয়ালের ক্ষেত্রফল = ২ × ১২ = ২৪ ব.মি.",
+      "প্রস্থ বরাবর ১টি দেওয়ালের ক্ষেত্রফল = ৫ × ২ = ১০ ব.মি.; ২টি দেওয়ালের ক্ষেত্রফল = ২ × ১০ = ২০ ব.মি.",
+      "∴ ৪ দেওয়ালের মোট ক্ষেত্রফল = ২৪ + ২০ = ৪৪ ব.মি."
+    ],
+    "answer": "ট্যাংকটির তলার পরিসীমা ২২ মিটার, চার দেওয়ালের মোট ক্ষেত্রফল ৪৪ বর্গমিটার।"
+  },
+  {
+    "id": "job-2025-religious-affairs-office-asst-typist-q20",
+    "examId": "job-2025-religious-affairs-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 20,
+    "marks": 3,
+    "type": "math",
+    "question": "$x^3 + y^3 = 9$ এবং $x + y = 3$ হলে $xy$ এর মান কত?",
+    "steps": [
+      "দেওয়া আছে, $x + y = 3$ এবং $x^3 + y^3 = 9$",
+      "বা, $(x+y)^3 - 3xy(x+y) = 9$",
+      "বা, $3^3 - 3xy \\cdot 3 = 9$",
+      "বা, $27 - 9xy = 9$",
+      "বা, $-9xy = 9 - 27$",
+      "বা, $-9xy = -18$",
+      "বা, $xy = 2$"
+    ],
+    "answer": "$xy = 2$"
+  }
+]

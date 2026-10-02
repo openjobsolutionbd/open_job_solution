@@ -223,7 +223,7 @@
         "changed": "It can be done by me."
       },
       {
-        "original": "Honey is tasted sweet (make it active)",
+        "original": "Honey is sweet when it is tasted (make it active)",
         "changed": "Honey tastes sweet."
       },
       {
@@ -290,7 +290,7 @@
       },
       {
         "answer": "written",
-        "sentence": "Have you you ...... the letter."
+        "sentence": "Have you ...... the letter."
       },
       {
         "answer": "were",

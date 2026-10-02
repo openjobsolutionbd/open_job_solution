@@ -1,0 +1,449 @@
+[
+  {
+    "id": "job-2025-religious-affairs-messenger-q01",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 4,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "সংলাপ",
+        "সম্ + লাপ"
+      ],
+      [
+        "দিগন্ত",
+        "দিক্ + অন্ত"
+      ],
+      [
+        "উচ্চারণ",
+        "উৎ + চারণ"
+      ],
+      [
+        "পরীক্ষা",
+        "পরি + ঈক্ষা"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q02",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "bangla",
+    "topic": "কারক",
+    "qno": 2,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "সে বই পড়ে",
+        "a": "কর্মে শূন্য"
+      },
+      {
+        "label": "খ",
+        "q": "দীনে দয়া কর",
+        "a": "সম্প্রদানে ৭মী"
+      },
+      {
+        "label": "গ",
+        "q": "সে অংকে ভালো",
+        "a": "অধিকরণে ৭মী"
+      },
+      {
+        "label": "ঘ",
+        "q": "ট্রেন স্টেশন ছাড়ল",
+        "a": "কর্তৃকারকে শূন্য"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q03",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 3,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "একই সময়ে বর্তমান",
+        "a": "সমসাময়িক"
+      },
+      {
+        "label": "খ",
+        "q": "যা বাক্যে প্রকাশ করা যায় না",
+        "a": "অনির্বচনীয়"
+      },
+      {
+        "label": "গ",
+        "q": "মুক্তি পেতে ইচ্ছুক",
+        "a": "মুমুক্ষু"
+      },
+      {
+        "label": "ঘ",
+        "q": "যার অন্য কোনো উপায় নেই",
+        "a": "অনন্যোপায়"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q04",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 4,
+    "marks": 4,
+    "type": "idiom",
+    "question": "অর্থসহ বাক্য রচনা করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "শাপের বর (অকল্যাণে কল্যাণ)",
+        "meaning": "চাকরি যাবার কথা ছিল, হয়েছে পদোন্নতি – এ যেন শাপে বর।"
+      },
+      {
+        "label": "খ",
+        "phrase": "ইতরবিশেষ (ভেদাভেদ)",
+        "meaning": "সৃষ্টিকর্তার নিকট সব মানুষই সমান, ইতরবিশেষ নেই।"
+      },
+      {
+        "label": "গ",
+        "phrase": "অকাল বোধন (অসময়ে আবির্ভাব)",
+        "meaning": "শীতকালেও বাজারে আম পাওয়া যায়, এ যেন অকাল বোধন।"
+      },
+      {
+        "label": "ঘ",
+        "phrase": "পায়াভারী (অহংকার)",
+        "meaning": "পরীক্ষায় প্রথম হয়ে তার পায়াভারী হয়েছে।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q05",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 5,
+    "marks": 4,
+    "type": "short-qa",
+    "question": "শুদ্ধ করে লিখুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "তিনি স্বস্ত্রীক বেড়াতে গিয়েছেন।",
+        "a": "তিনি সস্ত্রীক বেড়াতে গিয়েছেন।"
+      },
+      {
+        "label": "খ",
+        "q": "নিরাপরাধী ব্যক্তিকে ক্ষমা কর।",
+        "a": "নিরপরাধ ব্যক্তিকে ক্ষমা কর।"
+      },
+      {
+        "label": "গ",
+        "q": "বানান ভুল দোষনীয়।",
+        "a": "বানান ভুল দূষণীয়।"
+      },
+      {
+        "label": "ঘ",
+        "q": "সকল সদস্যবৃন্দ সভায় উপস্থিত ছিলেন।",
+        "a": "সকল সদস্য সভায় উপস্থিত ছিলেন।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q06",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate prepositions:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "You must conform ...... the regulations.",
+        "answer": "to"
+      },
+      {
+        "label": "b",
+        "sentence": "You should look ...... your parents.",
+        "answer": "after"
+      },
+      {
+        "label": "c",
+        "sentence": "Prohibit ...... all bad habits.",
+        "answer": "from"
+      },
+      {
+        "label": "d",
+        "sentence": "He died ......cancer.",
+        "answer": "of"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q07",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "english",
+    "topic": "idioms",
+    "qno": 7,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with the following phrases:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Get up (শয্যা ত্যাগ করা, উঠে দাঁড়ান)",
+        "meaning": "When do you get up from bed?"
+      },
+      {
+        "label": "b",
+        "phrase": "Come off (অনুষ্ঠিত হওয়া)",
+        "meaning": "The convocation came off smoothly."
+      },
+      {
+        "label": "c",
+        "phrase": "Live in (কোনো জায়গায় বসবাস করা)",
+        "meaning": "Lipi live in Dhaka with her family."
+      },
+      {
+        "label": "d",
+        "phrase": "Take after (সদৃশ হওয়া)",
+        "meaning": "The boy takes after his father."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q08",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "english",
+    "topic": "sentence-correction",
+    "qno": 8,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Correct the following sentences:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "I am seeing a bird",
+        "changed": "I see a bird."
+      },
+      {
+        "label": "b",
+        "original": "The house is made of bricks",
+        "changed": "The house is made from bricks."
+      },
+      {
+        "label": "c",
+        "original": "He will go home yesterday",
+        "changed": "He went home yesterday."
+      },
+      {
+        "label": "d",
+        "original": "He said that he will go to school tomorrow.",
+        "changed": "He said that he would go to school the following day."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q09",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "english",
+    "topic": "voice-change",
+    "qno": 9,
+    "marks": 4,
+    "type": "sentence-change",
+    "question": "Change the voice:",
+    "parts": [
+      {
+        "label": "a",
+        "original": "He is writing a letter.",
+        "changed": "A letter is being written by him."
+      },
+      {
+        "label": "b",
+        "original": "Do the work",
+        "changed": "Let the work be done."
+      },
+      {
+        "label": "c",
+        "original": "He has done the work",
+        "changed": "The work has been done by him."
+      },
+      {
+        "label": "d",
+        "original": "He gave me a pen.",
+        "changed": "I was given a pen by him."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q10",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "english",
+    "topic": "sentence-making",
+    "qno": 10,
+    "marks": 4,
+    "type": "idiom",
+    "question": "Make sentences with the following pairs of words:",
+    "parts": [
+      {
+        "label": "a",
+        "phrase": "Zealous (অত্যন্ত আগ্রহী); Jealous (ঈর্ষান্বিত)",
+        "meaning": "She is a zeolous supporter of environmental protection. He felt jealous when he saw his friends new car."
+      },
+      {
+        "label": "b",
+        "phrase": "Stationary (স্থির); Stationer (যিনি কাগজ কলম বা অফিস সামগ্রী বিক্রি করেন)",
+        "meaning": "The car remained stationary at the red light. I bought some notebooks from the local stationer."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q11",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "math",
+    "topic": "শতকরা",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "১টি বইয়ের মূল্য ২৪ টাকা। এই মূল্যে বই তৈরির ব্যয় ৮০%। বাকী মূল্য সরকার ভর্তুকি দিয়ে থাকে। ভর্তুকি কত?",
+    "steps": [
+      "প্রশ্নমতে, ৮০% = ২৪ টাকা",
+      "∴ ১% = ২৪/৮০",
+      "∴ ১০০% = (২৪ × ১০০)/৮০ = ৩০ টাকা",
+      "∴ সরকার কর্তৃক ভর্তুকি = ৩০ − ২৪ = ৬ টাকা"
+    ],
+    "answer": "৬ টাকা"
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q12",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "math",
+    "topic": "গড়",
+    "qno": 12,
+    "marks": 5,
+    "type": "math",
+    "question": "মাতা ও ৩ পুত্রের বয়সের গড় অপেক্ষা পিতা ও ৩ পুত্রের বয়সের গড় ২.৫ বছর বেশি। পিতার বয়স ৫০ হলে মাতার বয়স কত?",
+    "steps": [
+      "মনে করি, মাতার বয়স x বছর, তিন পুত্রের বয়স y বছর",
+      "পিতা ও ৩ পুত্রের বয়সের গড় = (৫০ + y)/৪",
+      "মাতা ও ৩ পুত্রের বয়সের গড় = (x + y)/৪",
+      "শর্তমতে, (৫০ + y)/৪ = (x + y)/৪ + ২.৫",
+      "বা, (৫০ + y)/৪ = (x + y + ১০)/৪",
+      "বা, ২০০ + ৪y = ৪x + ৪y + ৪০",
+      "বা, ২০০ + ৪y − ৪x − ৪y − ৪০ = ০",
+      "বা, −৪x = −১৬০",
+      "বা, x = ১৬০/৪ ∴ x = ৪০"
+    ],
+    "answer": "মাতার বয়স ৪০ বছর"
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q13",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "math",
+    "topic": "লাভ-ক্ষতি",
+    "qno": 13,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি পণ্য বিক্রয় করে পাইকারি বিক্রেতার ২০% এবং খুচরা বিক্রেতার ২০% লাভ হয়। যদি পণ্যটির খুচরা বিক্রয়মূল্য ৫৭৬ টাকা হয়, তবে পাইকারী বিক্রেতার ক্রয়মূল্য কত?",
+    "steps": [
+      "মনে করি, পাইকারী বিক্রেতার ক্রয়মূল্য x টাকা",
+      "২০% লাভে বিক্রয়মূল্য x + x × ২০/১০০ = x + x/৫ = ৬x/৫ টাকা",
+      "২০% লাভে খুচরা বিক্রেতার বিক্রয়মূল্য ৬x/৫ + (৬x/৫ × ২০/১০০) = ৬x/৫ + ৬x/২৫ = (৩০x + ৬x)/২৫ = ৩৬x/২৫",
+      "প্রশ্নমতে, ৩৬x/২৫ = ৫৭৬",
+      "বা, ৩৬x = ৫৭৬ × ২৫",
+      "বা, x = (৫৭৬ × ২৫)/৩৬ ∴ x = ৪০০"
+    ],
+    "answer": "৪০০ টাকা"
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q14",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 14,
+    "marks": 5,
+    "type": "math",
+    "question": "$a + b = 9$, $a - b = 7$ হলে $ab = ?$",
+    "steps": [
+      "আমরা জানি, $4ab = (a+b)^2 - (a-b)^2$",
+      "বা, $4ab = 9^2 - 7^2 = 81 - 49$",
+      "বা, $4ab = 32$",
+      "বা, $ab = \\frac{32}{4} = 8$"
+    ],
+    "answer": "$ab = 8$"
+  },
+  {
+    "id": "job-2025-religious-affairs-messenger-q15",
+    "examId": "job-2025-religious-affairs-messenger",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 15,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান (প্রতিটি ১ নম্বর):",
+    "parts": [
+      {
+        "label": "১",
+        "q": "বাংলাদেশের প্রাচীন জনপদ কোনটি?",
+        "a": "বাংলাদেশের প্রাচীন জনপদ পুণ্ড্র।"
+      },
+      {
+        "label": "২",
+        "q": "SDGs এর Goal কয়টি?",
+        "a": "SDGs এর Goal ১৭টি।"
+      },
+      {
+        "label": "৩",
+        "q": "বাংলাদেশের ভোটার হওয়ার সর্বনিম্ন বয়স কত?",
+        "a": "বাংলাদেশের ভোটার হওয়ার সর্বনিম্ন বয়স ১৮।"
+      },
+      {
+        "label": "৪",
+        "q": "বাংলাদেশ নেভাল একাডেমী কোথায়?",
+        "a": "বাংলাদেশ নেভাল একাডেমী চট্টগ্রাম।"
+      },
+      {
+        "label": "৫",
+        "q": "বাংলাদেশের একমাত্র পাহাড়ী দ্বীপ কোনটি?",
+        "a": "বাংলাদেশের একমাত্র পাহাড়ী দ্বীপ মহেশখালী।"
+      },
+      {
+        "label": "৬",
+        "q": "বিশ্ব পরিবেশ দিবস কত তারিখে পালন করা হয়?",
+        "a": "বিশ্ব পরিবেশ দিবস পালন করা হয় প্রতি বছর ৫ জুন।"
+      },
+      {
+        "label": "৭",
+        "q": "গম্ভীরা বাংলাদেশের কোন অঞ্চলের লোকসংগীত?",
+        "a": "গম্ভীরা বাংলাদেশের রাজশাহী ও চাপাইনবাবগঞ্জ অঞ্চলের লোকসংগীত।"
+      },
+      {
+        "label": "৮",
+        "q": "উন্নত জীবন ও মহৎ জীবন বইয়ের লেখক কে?",
+        "a": "উন্নত জীবন ও মহৎ জীবন বইয়ের লেখক ডাঃ লুৎফর রহমান।"
+      },
+      {
+        "label": "৯",
+        "q": "বাংলাদেশের প্রধান আইন কর্মকর্তার পদের নাম কি?",
+        "a": "বাংলাদেশের প্রধান আইন কর্মকর্তার পদের নাম অ্যাটর্নি জেনারেল।"
+      },
+      {
+        "label": "১০",
+        "q": "জাতিসংঘ দিবস কবে পালন করা হয়?",
+        "a": "জাতিসংঘ দিবস পালন করা হয় প্রতি বছর ২৪ অক্টোবর।"
+      }
+    ]
+  }
+]

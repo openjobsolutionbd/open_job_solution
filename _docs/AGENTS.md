@@ -15,6 +15,8 @@ One user of this repo wants the git/GitHub technical words — **commit, push, P
 
 The internal work (creating branches, opening PRs, validate checks, merging, etc.) goes on as usual — only the names/mechanics of those steps must not be told to the user. For example, say "আপনার পরীক্ষার ডেটা রিপোতে জমা হয়েছে, এখনো রিভিউ হচ্ছে — লাইভ হয়নি" ("your exam data has been saved to the repo, still under review — not live yet") or "ডেটা রিপোতে গেছে এবং এখন সাইটে লাইভ" ("the data is in the repo and now live on the site") — not "I pushed the branch" or "the PR was merged". Say it in Bengali, like those examples.
 
+**Decisions: always show benefits and risks.** The owner is non-technical and makes the final call on every proposal himself, so he needs the trade-offs in a form he can scan. Whenever you propose something that needs his decision (a restructuring, a deletion, a new rule, a choice between options, anything that can go wrong), end your message with two short lists in plain Bengali — **✅ লাভ** and **⚠️ ঝুঁকি** (2–4 one-line bullets each, no jargon, say what it means for his work, not how the code works) — plus a one-line recommendation of what you would pick. Do this every time, without being asked; also state any risk you are accepting on your own. For a trivial, low-risk step a single line is enough.
+
 ## ⚠️ First step — mandatory before any task
 
 **Run `bash _dev/scripts/session_status.sh` — do this first, before anything else.**

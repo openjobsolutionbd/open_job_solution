@@ -30,7 +30,7 @@ const EXAM_ARCHIVE = [
     ministry: "সরকারি কর্মচারী হাসপাতাল",
     post: "সিনিয়র স্টাফ নার্স",
     date: "2026-08-03",
-    totalQuestions: 58,
+    totalQuestions: 62,
   },
   {
     id: "baec-2026-laboratory-attendant",

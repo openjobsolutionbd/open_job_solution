@@ -994,5 +994,32 @@ const EXAM_ARCHIVE = [
     totalMarks: 40,
     totalQuestions: 13,
   },
+  {
+    id: "job-2024-biddyut-computer-operator",
+    ministry: "বিদ্যুৎ, জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়",
+    post: "কম্পিউটার অপারেটর",
+    date: "2024-12-20",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 12,
+  },
+  {
+    id: "job-2024-biddyut-steno-computer-operator",
+    ministry: "বিদ্যুৎ, জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়",
+    post: "সাঁট মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+    date: "2024-12-20",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 9,
+  },
+  {
+    id: "job-2024-biddyut-office-sohayok",
+    ministry: "বিদ্যুৎ, জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়",
+    post: "অফিস সহায়ক",
+    date: "2024-12-20",
+    duration: "১ ঘণ্টা",
+    totalMarks: 40,
+    totalQuestions: 11,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

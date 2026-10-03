@@ -1419,6 +1419,33 @@
     font-size:14px;
     color:var(--muted,#777);
   }
+  .ntrca-question-list{
+    list-style:none;
+    margin:0 0 8px;
+    padding:0;
+  }
+  .ntrca-question{
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .ntrca-question:last-child{ border-bottom:none; }
+  .ntrca-q-text{
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+    font-weight:600;
+    color:var(--heading);
+    margin-bottom:4px;
+  }
+  .ntrca-a-text{
+    font-family:'Kalpurush',sans-serif;
+    font-size:16px;
+    color:var(--ink);
+  }
+  .ntrca-a-text::before{
+    content:"উ. ";
+    color:var(--accent);
+    font-weight:600;
+  }
   /* ঘটনাপ্রবাহ লাইনের ভেতরে টপিক-লিংকযুক্ত নির্দিষ্ট শব্দ/বাক্যাংশ — একই
      লাইনে একাধিক থাকতে পারে (যেমন "WHO" আর "ইবোলা" আলাদা আলাদা), হালকা
      আন্ডারলাইন ডট দিয়ে বোঝানো হয় এগুলো ইন্টারঅ্যাক্টিভ (Wikipedia-স্টাইল) */
@@ -1710,6 +1737,7 @@
   <button id="ghotonaprobaho-toggle-btn" class="mode-tab">ঘটনাপ্রবাহ</button>
   <button id="top-news-toggle-btn" class="mode-tab">টপ নিউজ</button>
   <button id="mcq-toggle-btn" class="mode-tab">MCQ</button>
+  <button id="ntrca-toggle-btn" class="mode-tab">NTRCA</button>
 </div>
 
 <div class="layout" id="browse-layout">
@@ -1739,6 +1767,22 @@
 
 <div class="layout" id="mcq-layout" style="display:none;">
   <div class="card" id="mcq-card"></div>
+</div>
+
+<div class="layout" id="ntrca-layout" style="display:none;">
+  <div class="drawer">
+    <div class="drawer-label">
+      <span>NTRCA বিষয়সমূহ — <span id="ntrca-subject-count">0</span></span>
+    </div>
+    <div id="ntrca-tab-list"></div>
+  </div>
+
+  <div class="card" id="ntrca-card">
+    <div class="card-placeholder">
+      <div class="big">একটি বিষয় খুলুন</div>
+      বাম পাশের তালিকা থেকে একটি বিষয় বেছে নিন
+    </div>
+  </div>
 </div>
 
 
@@ -1781,6 +1825,9 @@ let MCQ_SETS_PROMISE = null; // concurrent call guard
 // key: `${set.label}||${q.number}` (একই সেটের ভেতর number ইউনিক, একাধিক সেট এলে
 // আলাদা সেট-লেবেল দিয়ে সংঘর্ষ এড়ানো হয়)। value: ক্লিক করা option-এর index।
 let MCQ_ANSWERED = {};
+let NTRCA_SUBJECTS = null; // "NTRCA" ট্যাবের বিষয়ভিত্তিক প্রশ্ন-উত্তর — একবার লোড হলে ক্যাশ থাকে
+let NTRCA_SUBJECTS_PROMISE = null; // concurrent call guard
+let ACTIVE_NTRCA_SLUG = null; // বর্তমানে খোলা বিষয়ের slug (docs/ntrca/<slug>.md থেকে)
 // Bug 1 guard ছিল একটামাত্র গ্লোবাল কাউন্টার — কিন্তু renderTopicContent()
 // দুইটা আলাদা container-এর জন্য কল হয় (openTopic()-এর #card ও
 // openTopicInModal()-এর #topic-modal-body, দেখুন নিচের কমেন্ট)। একটামাত্র
@@ -2460,6 +2507,82 @@ function renderMcqView(){
   });
 }
 
+async function ensureNtrcaLoaded(){
+  if(NTRCA_SUBJECTS !== null) return;
+  if(!NTRCA_SUBJECTS_PROMISE){
+    NTRCA_SUBJECTS_PROMISE = fetch('./ntrca-index.json')
+      .then(r => { if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => { NTRCA_SUBJECTS = data.subjects || []; })
+      .catch(() => { NTRCA_SUBJECTS = []; });
+  }
+  await NTRCA_SUBJECTS_PROMISE;
+}
+
+// "NTRCA" ট্যাব — বাম পাশে বিষয়ের তালিকা (দর্শন/ভূগোল/...), ডানে বাছাই
+// করা বিষয়ের প্রশ্ন-উত্তর, পর্ব অনুযায়ী ভাগ করা। "টপিক" ব্রাউজ মোডের
+// drawer+card লেআউট অনুসরণ করে, কিন্তু আলাদা ডেটাসেট (ntrca-index.json)।
+function renderNtrcaList(){
+  const wrap = document.getElementById('ntrca-tab-list');
+  document.getElementById('ntrca-subject-count').textContent = String((NTRCA_SUBJECTS||[]).length);
+  if(!NTRCA_SUBJECTS || NTRCA_SUBJECTS.length === 0){
+    wrap.innerHTML = '<div class="empty-note">এখনো কোনো বিষয় যোগ হয়নি</div>';
+    return;
+  }
+  wrap.innerHTML = NTRCA_SUBJECTS.map(s => `
+    <button class="tab ${s.slug===ACTIVE_NTRCA_SLUG?'active':''}" data-slug="${escapeHtml(s.slug)}">
+      ${escapeHtml(s.title)}
+      <span class="tab-tags">${s.question_count} টি প্রশ্ন</span>
+    </button>
+  `).join('');
+  wrap.querySelectorAll('.tab').forEach(btn=>{
+    btn.addEventListener('click', ()=> openNtrcaSubject(btn.dataset.slug));
+  });
+}
+
+function openNtrcaSubject(slug){
+  ACTIVE_NTRCA_SLUG = slug;
+  renderNtrcaList();
+  const subject = (NTRCA_SUBJECTS||[]).find(s => s.slug === slug);
+  const card = document.getElementById('ntrca-card');
+  if(!subject){
+    card.innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">বিষয়টি পাওয়া যায়নি</div>
+      </div>`;
+    return;
+  }
+  let html = `<h2 style="margin-left:0;">${escapeHtml(subject.title)}</h2>`;
+  subject.parts.forEach(part => {
+    html += `<div class="mcq-section-heading">${escapeHtml(part.part_label)}</div>`;
+    html += `<ol class="ntrca-question-list">`;
+    part.questions.forEach(q => {
+      html += `<li class="ntrca-question"><div class="ntrca-q-text">${escapeHtml(q.q)}</div><div class="ntrca-a-text">${escapeHtml(q.a)}</div></li>`;
+    });
+    html += `</ol>`;
+  });
+  card.innerHTML = html;
+  card.scrollTop = 0;
+}
+
+function renderNtrcaView(){
+  closeTopicPreview();
+  renderNtrcaList();
+  if(!NTRCA_SUBJECTS || NTRCA_SUBJECTS.length === 0){
+    document.getElementById('ntrca-card').innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">এখনো কোনো বিষয় যোগ হয়নি</div>
+        নতুন প্রশ্ন যোগ হলে এখানে দেখা যাবে
+      </div>`;
+    return;
+  }
+  // প্রথমবার এই মোডে ঢুকলে (কোনো বিষয় বাছাই করা না থাকলে) প্রথম বিষয়টা
+  // ডিফল্ট হিসেবে খুলে যায় — খালি "একটি বিষয় খুলুন" প্লেসহোল্ডার না দেখিয়ে
+  // সরাসরি কনটেন্ট দেখানো ভালো, যেহেতু বিষয়সংখ্যা কম ও সবই সমান গুরুত্বপূর্ণ।
+  openNtrcaSubject(ACTIVE_NTRCA_SLUG && NTRCA_SUBJECTS.some(s=>s.slug===ACTIVE_NTRCA_SLUG)
+    ? ACTIVE_NTRCA_SLUG
+    : NTRCA_SUBJECTS[0].slug);
+}
+
 // Wikipedia-ধাঁচের টপিক প্রিভিউ পপআপ। ডেস্কটপে (>720px ভিউপোর্ট) যে
 // এলিমেন্টে ক্লিক হয়েছে তার কাছাকাছি একটা ছোট অ্যাংকরড কার্ড হিসেবে দেখা যায়;
 // সরু/মোবাইল স্ক্রিনে বরাবরের মতো ডকুমেন্টের নিচ থেকে উঠে আসা শিট হিসেবে দেখা যায়,
@@ -2570,7 +2693,8 @@ const MODE_TAB_IDS = {
   'browse': 'browse-toggle-btn',
   'ghotonaprobaho': 'ghotonaprobaho-toggle-btn',
   'top-news': 'top-news-toggle-btn',
-  'mcq': 'mcq-toggle-btn'
+  'mcq': 'mcq-toggle-btn',
+  'ntrca': 'ntrca-toggle-btn'
 };
 
 function setActiveLayout(mode){
@@ -2578,6 +2702,7 @@ function setActiveLayout(mode){
   document.getElementById('ghotonaprobaho-layout').style.display = mode === 'ghotonaprobaho' ? '' : 'none';
   document.getElementById('top-news-layout').style.display = mode === 'top-news' ? '' : 'none';
   document.getElementById('mcq-layout').style.display = mode === 'mcq' ? '' : 'none';
+  document.getElementById('ntrca-layout').style.display = mode === 'ntrca' ? '' : 'none';
   // ভাসমান সার্চ বক্স "দৈনিক ঘটনাপ্রবাহ" ও "টপ নিউজ" — দুই মোডেই দেখানো হয়,
   // কারণ এই দুই মোডেই বাম পাশের টপিক-তালিকা থাকে না।
   const fsWrap = document.getElementById('floating-search-wrap');
@@ -2612,6 +2737,9 @@ async function setMode(mode){
   } else if(mode === 'mcq'){
     await ensureMcqLoaded();
     renderMcqView();
+  } else if(mode === 'ntrca'){
+    await ensureNtrcaLoaded();
+    renderNtrcaView();
   } else {
     document.getElementById('browse-layout').classList.remove('showing-article');
   }
@@ -3221,6 +3349,10 @@ document.getElementById('top-news-toggle-btn').addEventListener('click', () => {
 });
 document.getElementById('mcq-toggle-btn').addEventListener('click', () => {
   setMode('mcq');
+});
+
+document.getElementById('ntrca-toggle-btn').addEventListener('click', () => {
+  setMode('ntrca');
 });
 
 loadIndex().then(() => {

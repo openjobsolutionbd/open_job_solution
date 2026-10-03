@@ -1012,5 +1012,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 90,
     totalQuestions: 11,
   },
+  {
+    id: "job-2025-defence-office-asst-typist",
+    ministry: "প্রতিরক্ষা মন্ত্রণালয়",
+    post: "অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক/নক্সাকার/টেলিফোন অপারেটর",
+    date: "2025-03-08",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 70,
+    totalQuestions: 12,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

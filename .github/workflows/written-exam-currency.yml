@@ -6,7 +6,7 @@ name: Written Exam Currency Watch
 #  • pull_request: current-status.json-এর কাঠামো ভুল হলে (প্রশ্ন/অংশ হারিয়ে গেছে,
 #    topic পাতা নেই, তারিখ ভুল...) PR লাল হবে।
 #  • schedule + push (topics/ঘটনাপ্রবাহ/টপ-নিউজ বদলালে): কারেন্ট অ্যাফেয়ার্স পাতার "## বর্তমান তথ্য"
-#    অংশ বা যুক্ত তারিখের এন্ট্রি বদলেছে বা রিভিউয়ের তারিখ পেরিয়েছে কিনা দেখে GitHub Issue খোলে/আপডেট করে।
+#    অংশ বা যুক্ত তারিখের এন্ট্রি বদলেছে, যাচাই-খাতার (_docs/verified-facts.json) যুক্ত তথ্য বদলেছে বা রিভিউয়ের তারিখ পেরিয়েছে কিনা দেখে GitHub Issue খোলে/আপডেট করে।
 #
 # এই workflow উত্তর বা নোট নিজে বদলায় না — শুধু জানায়। কারণ সূত্রে বিরোধ থাকতে
 # পারে (যেমন ব্রিকসে সৌদি আরব), তাই লেখার সিদ্ধান্ত রিভিউয়ের পর।
@@ -21,9 +21,11 @@ on:
       - "current-affairs/docs/topics/**"
       - "current-affairs/docs/ghotonaprobaho/**"
       - "current-affairs/docs/top-news/**"
+      - "_docs/verified-facts.json"
   pull_request:
     branches: [main]
     paths:
+      - "_docs/verified-facts.json"
       - "written-exam/data/current-status.json"
       - "written-exam/data/exams/**"
       - "written-exam/check_currency.js"

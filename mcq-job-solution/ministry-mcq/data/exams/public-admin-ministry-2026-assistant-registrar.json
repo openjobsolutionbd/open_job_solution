@@ -1,0 +1,857 @@
+[
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q01",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 1,
+    "q": "জাতিসংঘের মানবাধিকার ঘোষণাপত্র কোথায় গৃহীত হয়?",
+    "answer": "প্যারিসে",
+    "options": [
+      "নিউইয়র্কে",
+      "ওয়াশিংটনে",
+      "প্যারিসে",
+      "জেনেভায়"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q03",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 3,
+    "q": "'মনমাঝি' শব্দের ব্যাসবাক্য কোনটি?",
+    "answer": "মন রূপ মাঝি",
+    "options": [
+      "মনের মাঝি",
+      "মন ও মাঝি",
+      "মন রূপ মাঝি",
+      "মন দ্বারা মাঝি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q04",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 4,
+    "q": "One who is pathologically self-interested is called —",
+    "answer": "egomaniac",
+    "options": [
+      "pessimist",
+      "philanthropist",
+      "altruist",
+      "egomaniac"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q06",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 6,
+    "q": "'Song offering' কোন কাব্যগ্রন্থের অনুবাদ?",
+    "answer": "গীতাঞ্জলি",
+    "options": [
+      "বলাকা",
+      "গীতাঞ্জলি",
+      "গীতিমাল্য",
+      "সোনার তরী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q07",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 7,
+    "q": "লোহায় মরিচা ধরাকে কী বলে?",
+    "answer": "জারণ",
+    "options": [
+      "বিজারণ",
+      "জারণ",
+      "ঊর্ধ্বপাতন",
+      "পাতন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q08",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 8,
+    "q": "'সাবাস বাংলাদেশ' ভাস্কর্যটির স্থপতি কে?",
+    "answer": "নিতুন কুণ্ডু",
+    "options": [
+      "সৈয়দ আবদুল্লাহ খালিদ",
+      "মোহাম্মদ ইব্রাহিম",
+      "নিতুন কুণ্ডু",
+      "হামিদুজ্জামান খান"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q09",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 9,
+    "q": "'মূর্ধন্য-ণ' ব্যবহার করা হয় কোন ধরনের শব্দে?",
+    "answer": "তৎসম",
+    "options": [
+      "তদ্ভব",
+      "দেশি",
+      "তৎসম",
+      "বিদেশি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q10",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 10,
+    "q": "Find out the part of speech of the underlined word 'missile': 'The missile homed in on its target.'",
+    "answer": "noun",
+    "options": [
+      "adverb",
+      "noun",
+      "verb",
+      "adjective"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q11",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 11,
+    "q": "শব্দের মধ্যে বা শেষে 'ব-ফলা' যুক্ত হলে —",
+    "answer": "ব-ফলা যুক্ত ব্যঞ্জনধ্বনির দ্বিত্ব হবে",
+    "options": [
+      "কোনো পরিবর্তন হবে না",
+      "স্বরধ্বনি দীর্ঘ হবে",
+      "ব-ফলা যুক্ত ব্যঞ্জনধ্বনির দ্বিত্ব হবে",
+      "ব-ফলা বাদ যাবে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q13",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 13,
+    "q": "ভারতের সাথে বাংলাদেশের সমুদ্রসীমা মামলা নিষ্পত্তি হয় কোন আদালতে?",
+    "answer": "PCA",
+    "options": [
+      "ICC",
+      "PCA",
+      "ITLOS",
+      "ICJ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q15",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 15,
+    "q": "কোন উপজাতির অবস্থান 'বিরিশিরি' নেত্রকোনায়?",
+    "answer": "গারো",
+    "options": [
+      "চাকমা",
+      "সাঁওতাল",
+      "মারমা",
+      "গারো"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q17",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 17,
+    "q": "নিচের কোনটি Anti-Virus সফটওয়্যার নয়?",
+    "answer": "Oracle",
+    "options": [
+      "Kaspersky",
+      "Avast",
+      "Norton",
+      "Oracle"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q18",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 18,
+    "q": "The violation of correct grammatical structure is called —",
+    "answer": "solecism",
+    "options": [
+      "idiom",
+      "semantics",
+      "solecism",
+      "syntax"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q25",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 25,
+    "q": "What is the verb form of 'Commodity'?",
+    "answer": "Commoditise",
+    "options": [
+      "Commoditise",
+      "Commode",
+      "Commodious",
+      "Commodate"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q26",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 26,
+    "q": "জসীম উদদীন রচিত 'কবর' কবিতাটি কোন পত্রিকায় প্রথম প্রকাশিত হয়েছিল?",
+    "answer": "কল্লোল",
+    "options": [
+      "সবুজপত্র",
+      "প্রবাসী",
+      "সওগাত",
+      "কল্লোল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q27",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 27,
+    "q": "'He did not study seriously; — he passed the examination.' Which conjunction fits best?",
+    "answer": "yet",
+    "options": [
+      "and",
+      "yet",
+      "because",
+      "so"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q30",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 30,
+    "q": "'This is the pen I lost.' Here 'I lost' is —",
+    "answer": "an adjective clause",
+    "options": [
+      "a noun clause",
+      "a principal clause",
+      "an adverb clause",
+      "an adjective clause"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q32",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 32,
+    "q": "'The old man was so tired that he — scarcely stand.'",
+    "answer": "could",
+    "options": [
+      "shall",
+      "will",
+      "could",
+      "can"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q33",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 33,
+    "q": "'She works hard for success.' Here 'Hard' is used as —",
+    "answer": "adverb",
+    "options": [
+      "noun",
+      "adjective",
+      "verb",
+      "adverb"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q36",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 36,
+    "q": "বাংলাদেশের পররাষ্ট্রনীতির সাংবিধানিক ভিত্তি কোন অনুচ্ছেদে বর্ণিত আছে?",
+    "answer": "অনুচ্ছেদ ২৫",
+    "options": [
+      "অনুচ্ছেদ ৩৬",
+      "অনুচ্ছেদ ২৫",
+      "অনুচ্ছেদ ২২",
+      "অনুচ্ছেদ ২৮"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q37",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 37,
+    "q": "কোনটি তারিখ-বাচক শব্দ?",
+    "answer": "পহেলা",
+    "options": [
+      "পহেলা",
+      "একক",
+      "আদি",
+      "প্রথম"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q39",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 39,
+    "q": "Which of the following words gives a positive meaning?",
+    "answer": "regularly",
+    "options": [
+      "regularly",
+      "seldom",
+      "hardly",
+      "rarely"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q40",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 40,
+    "q": "Identify the error: 'Arnold is one of the most celebrated poet of Victorian Period.'",
+    "answer": "celebrated poet",
+    "options": [
+      "of Victorian Period",
+      "one of",
+      "the most",
+      "celebrated poet"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q41",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 41,
+    "q": "বাংলাদেশের সংবিধান কার্যকর হয় —",
+    "answer": "১৬ ডিসেম্বর ১৯৭২",
+    "options": [
+      "১০ এপ্রিল ১৯৭২",
+      "৪ নভেম্বর ১৯৭২",
+      "১৬ ডিসেম্বর ১৯৭২",
+      "২৬ মার্চ ১৯৭২"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q44",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 44,
+    "q": "'The lawyer and the journalist — not always dishonest.'",
+    "answer": "are",
+    "options": [
+      "are",
+      "is",
+      "has been",
+      "was"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q45",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 45,
+    "q": "What is the meaning of the idiom 'weather the storm'?",
+    "answer": "To survive in an adverse situation",
+    "options": [
+      "To enjoy bad weather",
+      "To predict rain",
+      "To survive in an adverse situation",
+      "To escape from danger by running"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q46",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 46,
+    "q": "'আঠারো বছর বয়স' কবিতাটির লেখক কে?",
+    "answer": "সুকান্ত ভট্টাচার্য",
+    "options": [
+      "কাজী নজরুল ইসলাম",
+      "সুকান্ত ভট্টাচার্য",
+      "জীবনানন্দ দাশ",
+      "শামসুর রাহমান"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q48",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 48,
+    "q": "The plural of 'man of war' is —",
+    "answer": "men of war",
+    "options": [
+      "man of wars",
+      "men of war",
+      "men of wars",
+      "mans of war"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q49",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 49,
+    "q": "'ঢাকা মুসলিম সাহিত্য সমাজ' প্রতিষ্ঠাকালে সভাপতি কে ছিলেন?",
+    "answer": "ড. মুহম্মদ শহীদুল্লাহ",
+    "options": [
+      "আবুল হুসেন",
+      "কাজী মোতাহার হোসেন",
+      "ড. মুহম্মদ শহীদুল্লাহ",
+      "কাজী আবদুল ওদুদ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q52",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 52,
+    "q": "যুক্তরাষ্ট্রে আনুষ্ঠানিকভাবে 'গোল্ড ভিসা' কার্ড কবে থেকে চালু হয়?",
+    "answer": "১০ ডিসেম্বর ২০২৫",
+    "options": [
+      "১ জানুয়ারি ২০২৬",
+      "১০ ডিসেম্বর ২০২৫",
+      "২০ জানুয়ারি ২০২৫",
+      "৪ জুলাই ২০২৫"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q53",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 53,
+    "q": "Choose the correct spelling —",
+    "answer": "repetition",
+    "options": [
+      "repatition",
+      "reptition",
+      "repitition",
+      "repetition"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q54",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 54,
+    "q": "'অভাব' অর্থ প্রকাশ করছে নিচের কোন উপসর্গযুক্ত শব্দটি?",
+    "answer": "হাভাত",
+    "options": [
+      "অনুতাপ",
+      "হাভাত",
+      "প্রতিদিন",
+      "সুনাম"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q56",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 56,
+    "q": "'মরুৎ' শব্দের অর্থ কী?",
+    "answer": "বায়ু",
+    "options": [
+      "আগুন",
+      "বায়ু",
+      "পানি",
+      "মাটি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q59",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 59,
+    "q": "ক্ষুধা দূরীকরণ এবং শান্তি বজায় রাখায় অবদানের জন্য ২০২০ সালে জাতিসংঘের কোন সংস্থাটি নোবেল শান্তি পুরস্কার লাভ করে?",
+    "answer": "WFP",
+    "options": [
+      "UNHCR",
+      "WFP",
+      "UNICEF",
+      "WHO"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q62",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 62,
+    "q": "'কালাপানি' কোন দুই রাষ্ট্রের মধ্যে অমীমাংসিত ভূখণ্ড?",
+    "answer": "ভারত ও নেপাল",
+    "options": [
+      "ভারত ও চীন",
+      "ভারত ও নেপাল",
+      "বাংলাদেশ ও ভারত",
+      "ভারত ও পাকিস্তান"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q63",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 63,
+    "q": "বাংলাদেশের ভৌগোলিক অবস্থান কোনটি?",
+    "answer": "৮৮°০১′ থেকে ৯২°৪১′ পূর্ব দ্রাঘিমাংশ",
+    "options": [
+      "৯০°০১′ থেকে ৯৪°৪১′ পূর্ব দ্রাঘিমাংশ",
+      "৮৮°০১′ থেকে ৯২°৪১′ উত্তর অক্ষাংশ",
+      "৮৮°০১′ থেকে ৯২°৪১′ পূর্ব দ্রাঘিমাংশ",
+      "৮০°০১′ থেকে ৯০°৪১′ পূর্ব দ্রাঘিমাংশ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q64",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 64,
+    "q": "রক্ত জমাট বাঁধতে সাহায্য করে —",
+    "answer": "ভিটামিন K",
+    "options": [
+      "ভিটামিন C",
+      "ভিটামিন A",
+      "ভিটামিন K",
+      "ভিটামিন D"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q67",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 67,
+    "q": "কার্বন ডাই-অক্সাইড (CO₂)-কে কঠিন অবস্থায় কী বলে?",
+    "answer": "ড্রাই আইস",
+    "options": [
+      "ড্রাই আইস",
+      "ডায়মন্ড",
+      "কোক",
+      "সিলিকা জেল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q68",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 68,
+    "q": "আয়তনের দিক দিয়ে বিশ্বের বৃহত্তম মুক্ত বাণিজ্য অঞ্চল চীনের কোথায় অবস্থিত?",
+    "answer": "সর্ব দক্ষিণে হাইনান প্রদেশে",
+    "options": [
+      "গুয়াংডং প্রদেশে",
+      "তিব্বতে",
+      "সাংহাইয়ে",
+      "সর্ব দক্ষিণে হাইনান প্রদেশে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q71",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 71,
+    "q": "বাংলা স্বরবর্ণের উপর চন্দ্রবিন্দু ব্যবহার করা হয় কী বোঝাতে?",
+    "answer": "অনুনাসিকতা",
+    "options": [
+      "দীর্ঘতা",
+      "স্বরলোপ",
+      "অনুনাসিকতা",
+      "ঘোষ ধ্বনি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q73",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 73,
+    "q": "'Rahim is senior — Karim — two years.'",
+    "answer": "to, by",
+    "options": [
+      "to, by",
+      "than, by",
+      "from, with",
+      "to, for"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q76",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 76,
+    "q": "ITLOS-এর পূর্ণরূপ —",
+    "answer": "International Tribunal for the Law of the Sea",
+    "options": [
+      "Indian Tribunal on Law of Oceans",
+      "International Tribunal for the Law of the Sea",
+      "International Treaty for the Law of Seas",
+      "International Trade for Law of the Sea"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q77",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 77,
+    "q": "নিচের কোনটি উপন্যাস?",
+    "answer": "শেষের কবিতা",
+    "options": [
+      "সোনার তরী",
+      "গীতাঞ্জলি",
+      "বলাকা",
+      "শেষের কবিতা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q80",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 80,
+    "q": "ক্রিয়ামূলের অপর নাম কী?",
+    "answer": "ধাতু",
+    "options": [
+      "উপসর্গ",
+      "বিভক্তি",
+      "ধাতু",
+      "প্রত্যয়"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q81",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 81,
+    "q": "'Wisdom' শব্দের বাংলা অর্থ কোনটি?",
+    "answer": "প্রজ্ঞা",
+    "options": [
+      "সংবাদ",
+      "স্মৃতি",
+      "সম্পদ",
+      "প্রজ্ঞা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q82",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 82,
+    "q": "'নাটিকা' শব্দটিতে কী অর্থে 'ইকা' প্রত্যয় যুক্ত হয়েছে?",
+    "answer": "ক্ষুদ্রার্থে",
+    "options": [
+      "স্ত্রীবাচক অর্থে",
+      "বিপরীত অর্থে",
+      "বহুবচন অর্থে",
+      "ক্ষুদ্রার্থে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q83",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 83,
+    "q": "'The greater part of their university life was spent in studying.' The underlined phrase is a —",
+    "answer": "noun phrase",
+    "options": [
+      "verb phrase",
+      "noun phrase",
+      "adverb phrase",
+      "adjective phrase"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q84",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 84,
+    "q": "জাতিসংঘ সনদের মোট অনুচ্ছেদ সংখ্যা কত?",
+    "answer": "১১১",
+    "options": [
+      "১০৫",
+      "১২১",
+      "১১৫",
+      "১১১"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q85",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 85,
+    "q": "ফরাসি বিপ্লব সংগঠিত হয় —",
+    "answer": "১৭৮৯ সালে",
+    "options": [
+      "১৭৭৬ সালে",
+      "১৮১৫ সালে",
+      "১৭৯৩ সালে",
+      "১৭৮৯ সালে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q86",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 86,
+    "q": "'Behave as a gentleman behaves.' The underlined part is a/an —",
+    "answer": "adverbial clause",
+    "options": [
+      "adjective clause",
+      "noun clause",
+      "adverbial clause",
+      "principal clause"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q87",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "general-knowledge",
+    "qno": 87,
+    "q": "ফ্যাসিবাদের জনক বলা হয় কাকে?",
+    "answer": "বেনিতো মুসোলিনি",
+    "options": [
+      "অ্যাডলফ হিটলার",
+      "বেনিতো মুসোলিনি",
+      "জোসেফ স্ট্যালিন",
+      "ফ্রান্সিসকো ফ্রাঙ্কো"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q88",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 88,
+    "q": "'পুলিন' শব্দের সমার্থক কোনটি?",
+    "answer": "কূল",
+    "options": [
+      "আকাশ",
+      "কূল",
+      "পাহাড়",
+      "অরণ্য"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q93",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 93,
+    "q": "'তীরে অবস্থিত' — এক কথায় প্রকাশ কোনটি?",
+    "answer": "তটস্থ",
+    "options": [
+      "জলস্থ",
+      "সমুদ্রস্থ",
+      "নদীস্থ",
+      "তটস্থ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q94",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 94,
+    "q": "'অহরহ' শব্দের যথার্থ সন্ধি বিচ্ছেদ কোনটি?",
+    "answer": "অহঃ + অহ",
+    "options": [
+      "অহর + অহ",
+      "অহ + রহ",
+      "অহঃ + রহ",
+      "অহঃ + অহ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q95",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 95,
+    "q": "বাক্যে ব্যবহৃত শব্দকে কী বলা হয়?",
+    "answer": "পদ",
+    "options": [
+      "পদ",
+      "বর্ণ",
+      "ধ্বনি",
+      "অক্ষর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q96",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "bangla",
+    "qno": 96,
+    "q": "বাংলা বর্ণমালায় মৌলিক স্বরধ্বনি কয়টি?",
+    "answer": "৭",
+    "options": [
+      "১১",
+      "৯",
+      "৫",
+      "৭"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "public-admin-ministry-2026-assistant-registrar-q100",
+    "examId": "public-admin-ministry-2026-assistant-registrar",
+    "subject": "english",
+    "qno": 100,
+    "q": "'The lady sat — my mother.'",
+    "answer": "beside",
+    "options": [
+      "beside",
+      "besides",
+      "between",
+      "beyond"
+    ],
+    "optionsGenerated": true
+  }
+]

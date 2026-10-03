@@ -1,0 +1,274 @@
+[
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q01",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "bangla",
+    "topic": "সাহিত্য",
+    "qno": 1,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "বাংলা সাহিত্য:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "মুসলিম রেনেসার কবি কে? তার একটি কাব্যগ্রন্থের নাম লিখুন?",
+        "a": "মুসলিম রেনেসার কবি ফররুখ আহমদ। 'সাত সাগরের মাঝি' তাঁর একটি কাব্যগ্রন্থ।"
+      },
+      {
+        "label": "খ",
+        "q": "'বিষাদসিন্ধু' কি? এর রচয়িতা কে?",
+        "a": "কারবালার বিষাদময় ঘটনাকে উপজীব্য করে রচিত 'বিষাদ-সিন্ধু' বাংলা সাহিত্যের একমাত্র গদ্য মহাকাব্য। এটি মূলত ইতিহাস আশ্রিত গদ্য মহাকাব্যিকধর্মী উপন্যাস। এর রচয়িতা মীর মশাররফ হোসেন।"
+      },
+      {
+        "label": "গ",
+        "q": "\"তুমি অধম, তাই বলিয়া আমি উত্তম হইব না কেন?\" এর রচয়িতা কে?",
+        "a": "কপালকুণ্ডলা উপন্যাসের একটি বিখ্যাত উক্তি- \"তুমি অধম, তাই বলিয়া আমি উত্তম হইব না কেন?\" এটি বাংলা সাহিত্যের প্রথম নীতিবাক্য। এর রচয়িতা বঙ্কিমচন্দ্র চট্টোপাধ্যায়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q02",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "bangla",
+    "topic": "বাগধারা",
+    "qno": 2,
+    "marks": 2,
+    "type": "idiom",
+    "question": "বাগধারা:",
+    "parts": [
+      {
+        "label": "ক",
+        "phrase": "চর্বিত চর্বণ (পুনরাবৃত্তি)",
+        "meaning": "তিনি একই বিষয় নিয়ে বার বার চর্বিত চর্বণ করছেন যা শ্রোতাদের নিকট অপ্রাসঙ্গিক মনে হচ্ছে।"
+      },
+      {
+        "label": "খ",
+        "phrase": "সাক্ষী গোপাল (কর্তৃত্বহীন দর্শক মাত্র)",
+        "meaning": "ছেলেটা এমন সাক্ষী গোপাল কোনো কাজে পাঠিয়ে শান্তি নেই।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q03",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 3,
+    "marks": 2,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "বনস্পতি",
+        "বন + পতি = বনস্পতি"
+      ],
+      [
+        "উপর্যুক্ত",
+        "উপরি + উক্ত = উপর্যুক্ত"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q04",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 4,
+    "marks": 1,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "উপকারীর অপকার করে যে",
+        "a": "কৃতঘ্ন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q05",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "english",
+    "topic": "paragraph",
+    "qno": 5,
+    "marks": 5,
+    "type": "paragraph",
+    "question": "Write a paragraph on 'Golden Fiber of Bangladesh'",
+    "answer": "Jute famously known as the golden fiber of Bangladesh is one of the country's most important natural resources and has been a corner stone of its economy for centuries. Renowned for its golden, silky appearance and durability, jute is used to make a wide range of eco-friendly products such as sacks, bags, ropes and carpets. Bangladesh is one of the world's leading producers and exporters of jute, and the crop plays a vital role in the livelihood of millions of farmers and workers. Beyond its economic value, jute is also celebrated for being biodegradable and sustainable, making it an important resource in the global fight against plastic pollution."
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q06",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 6,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks with appropriate prepositions:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "Call ...... a doctor.",
+        "answer": "in"
+      },
+      {
+        "label": "b",
+        "sentence": "I went to Dhaka ...... train.",
+        "answer": "by"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q07",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 7,
+    "marks": 2,
+    "type": "translate",
+    "question": "Translate into Bangla 'What can't be cured must be endured'.",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "What can't be cured must be endured.",
+        "target": "যা নিরাময় করা যায় না, তা সহ্য করতে হয়।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q08",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 2,
+    "type": "translate",
+    "question": "ইংরেজি কর: বরফের মত সাদা",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "বরফের মত সাদা",
+        "target": "As white as snow."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q09",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "english",
+    "topic": "voice-change",
+    "qno": 9,
+    "marks": 2,
+    "type": "sentence-change",
+    "question": "Let the letters be posted এর active voice কর।",
+    "parts": [
+      {
+        "label": "ক",
+        "original": "Let the letters be posted.",
+        "changed": "Post the letters."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q10",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 10,
+    "marks": 10,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান (প্রতিটি ১ নম্বর):",
+    "parts": [
+      {
+        "label": "১",
+        "q": "২য় বিশ্বযুদ্ধ কত সালে হয়?",
+        "a": "২য় বিশ্বযুদ্ধ ১৯৩৯ সালে হয়।"
+      },
+      {
+        "label": "২",
+        "q": "জাতিসংঘের বর্তমান মহাসচিবের নাম কি?",
+        "a": "জাতিসংঘের বর্তমান মহাসচিব অ্যান্তোনি গুতেরেস।"
+      },
+      {
+        "label": "৩",
+        "q": "বঙ্গভঙ্গ রদ হয় কত সালে?",
+        "a": "বঙ্গভঙ্গ রদ হয় ১৯১১ সালে।"
+      },
+      {
+        "label": "৪",
+        "q": "বাংলাদেশের সবচেয়ে উষ্ণ স্থানের নাম কি?",
+        "a": "বাংলাদেশের সবচেয়ে উষ্ণ স্থানের নাম নাটোরের লালপুর।"
+      },
+      {
+        "label": "৫",
+        "q": "রাজশাহী বিভাগে কতটি জেলা?",
+        "a": "রাজশাহী বিভাগে ৮টি জেলা।"
+      },
+      {
+        "label": "৬",
+        "q": "একটি স্থল বেষ্টিত (land locked) দেশের নাম লিখুন?",
+        "a": "আফগানিস্তান একটি স্থল বেষ্টিত দেশ।"
+      },
+      {
+        "label": "৭",
+        "q": "বাংলাদেশের জাতীয় কবির নাম কি?",
+        "a": "বাংলাদেশের জাতীয় কবি কাজী নজরুল ইসলাম।"
+      },
+      {
+        "label": "৮",
+        "q": "USA এর পূর্ণরূপ কি?",
+        "a": "USA এর পূর্ণরূপ- United States of America."
+      },
+      {
+        "label": "৯",
+        "q": "College এর বাংলা অর্থ কি?",
+        "a": "College এর বাংলা অর্থ- মহাবিদ্যালয়।"
+      },
+      {
+        "label": "১০",
+        "q": "আমার দেশ পত্রিকার সম্পাদকের নাম কি?",
+        "a": "আমার দেশ পত্রিকার সম্পাদক- মাহমুদুর রহমান।"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q11",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "math",
+    "topic": "গতিবেগ",
+    "qno": 11,
+    "marks": 7.5,
+    "type": "math",
+    "question": "এক ব্যক্তি ঘণ্টায় ৩ কিলোমিটার বেগে 'ক' থেকে 'খ' স্থানে যায় এবং ঘণ্টায় ৫ কিলোমিটার বেগে 'খ' থেকে 'ক' স্থানে ফিরে আসে। যাতায়াতে তার ৮ ঘণ্টা সময় লাগে। 'ক' থেকে 'খ' স্থানের দূরত্ব কত?",
+    "steps": [
+      "মনে করি, 'ক' থেকে 'খ' স্থানের দূরত্ব x কি. মি.",
+      "'ক' থেকে 'খ' স্থানে যেতে সময় লাগে x/৩ ঘণ্টা",
+      "আবার 'খ' থেকে 'ক' স্থানে ফিরে আসতে সময় লাগে x/৫ ঘণ্টা",
+      "শর্তমতে, x/৩ + x/৫ = ৮",
+      "বা, (৫x + ৩x)/১৫ = ৮",
+      "বা, ৮x = ৮ × ১৫",
+      "বা, x = ১৫"
+    ],
+    "answer": "'ক' থেকে 'খ' স্থানের দূরত্ব ১৫ কিলোমিটার।"
+  },
+  {
+    "id": "job-2025-dc-court-natore-office-sohayok-q12",
+    "examId": "job-2025-dc-court-natore-office-sohayok",
+    "subject": "math",
+    "topic": "অনুপাত",
+    "qno": 12,
+    "marks": 7.5,
+    "type": "math",
+    "question": "যে পরিমাণ চালে ২০০ জন লোকের ২০ সপ্তাহ চলে উহাতে কত লোকের ৮ সপ্তাহ চলবে?",
+    "steps": [
+      "চালে ২০ সপ্তাহ চলে ২০০ জন লোকের",
+      "∴ ১ সপ্তাহ চলে ২০০ × ২০ জন লোকের",
+      "∴ ৮ সপ্তাহ চলে (২০০ × ২০)/৮ = ৫০০ জন লোকের"
+    ],
+    "answer": "৫০০ জন লোক"
+  }
+]

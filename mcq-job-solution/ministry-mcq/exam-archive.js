@@ -30,7 +30,7 @@ const EXAM_ARCHIVE = [
     ministry: "সরকারি কর্মচারী হাসপাতাল",
     post: "সিনিয়র স্টাফ নার্স",
     date: "2026-08-03",
-    totalQuestions: 58,
+    totalQuestions: 62,
   },
   {
     id: "baec-2026-laboratory-attendant",
@@ -44,7 +44,21 @@ const EXAM_ARCHIVE = [
     ministry: "সংস্কৃতি বিষয়ক মন্ত্রণালয়",
     post: "প্রটোকল অফিসার",
     date: "2026-07-15",
-    totalQuestions: 65,
+    totalQuestions: 91,
+  },
+  {
+    id: "public-admin-ministry-2026-assistant-registrar",
+    ministry: "জনপ্রশাসন মন্ত্রণালয়",
+    post: "সহকারী রেজিস্ট্রার",
+    date: "2026-07-13",
+    totalQuestions: 57,
+  },
+  {
+    id: "govt-employee-hospital-2026-medical-officer",
+    ministry: "সরকারি কর্মচারী হাসপাতাল",
+    post: "মেডিকেল অফিসার",
+    date: "2026-07-07",
+    totalQuestions: 57,
   },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

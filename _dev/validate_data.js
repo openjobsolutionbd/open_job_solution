@@ -218,7 +218,7 @@ function checkTextHygiene(loc, value, key = '') {
   if (JOBS) {
     const idEntries = [];
     // written-exam-এ চালু subject-নাম। gk = general-knowledge (দুটোই চলে, সাইটে একই শিরোনাম)।
-    // civil-engineering ডেটায় আগে থেকেই আছে (১০টা প্রশ্ন) — ভাঙা এড়াতে রাখা হলো।
+    // civil-engineering: প্রকৌশলী পরীক্ষার প্রযুক্তিগত প্রশ্নের আলাদা বিষয় — মালিকের সিদ্ধান্তে রাখা (২০২৬-১০-০২)।
     const WRITTEN_SUBJECTS = new Set(['bangla', 'english', 'general-knowledge', 'gk', 'math', 'civil-engineering']);
     const checkParts = (loc, q, fields) => {
       if (!Array.isArray(q.parts) || !q.parts.length) { issues.push(`[${loc}] "parts" নেই বা খালি`); return; }

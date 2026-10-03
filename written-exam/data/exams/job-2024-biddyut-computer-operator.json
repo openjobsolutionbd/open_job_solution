@@ -1,0 +1,182 @@
+[
+  {
+    "id": "job-2024-biddyut-computer-operator-q01",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "এক কথায় প্রকাশ",
+    "qno": 1,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "এক কথায় প্রকাশ করুন।",
+    "parts": [
+      { "label": "ক", "q": "যে শুনেই মনে রাখতে পারে", "a": "শ্রুতিধর" },
+      { "label": "খ", "q": "যে বন হিংস্র জন্তুতে পরিপূর্ণ", "a": "শ্বাপদসংকুল" },
+      { "label": "গ", "q": "ঈষৎ আমিষ গন্ধ যার", "a": "আঁষটে" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q02",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "সন্ধি-বিচ্ছেদ",
+    "qno": 2,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "সন্ধি-বিচ্ছেদ করুন।",
+    "parts": [
+      { "label": "ক", "q": "তিরোধন", "a": "তিরঃ + ধান" },
+      { "label": "খ", "q": "পাবক", "a": "পৌ + অক" },
+      { "label": "গ", "q": "গবাক্ষ", "a": "গো + অক্ষ" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q03",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "কারক ও বিভক্তি",
+    "qno": 3,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "কারক ও বিভক্তি নির্ণয় করুন।",
+    "parts": [
+      { "label": "ক", "q": "নিজের চেষ্টায় বড় হও", "a": "করণ কারকে ষষ্ঠী বিভক্তি" },
+      { "label": "খ", "q": "নজরুল কর্তৃক অগ্নিবীণা রচিত হয়", "a": "কর্তৃ কারকে তৃতীয়া বিভক্তি" },
+      { "label": "গ", "q": "তিনি ব্যাকরণে পণ্ডিত", "a": "অধিকরণ কারকে সপ্তমী বিভক্তি" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q04",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "শুদ্ধ বানান",
+    "qno": 4,
+    "marks": 4,
+    "type": "sub-parts",
+    "question": "শুদ্ধ বানান লিখুন।",
+    "parts": [
+      { "label": "ক", "q": "সর্বশান্ত", "a": "সর্বস্বান্ত" },
+      { "label": "খ", "q": "প্রোজ্জল", "a": "প্রোজ্জ্বল" },
+      { "label": "গ", "q": "ভূমিষ্ঠ", "a": "ভূমিষ্ঠ" },
+      { "label": "ঘ", "q": "বর্ধণ", "a": "বর্ধন" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q05",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "বিপরীতার্থক শব্দ",
+    "qno": 5,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "বিপরীতার্থক শব্দ লিখুন।",
+    "parts": [
+      { "label": "ক", "q": "ঘাতক", "a": "পালক" },
+      { "label": "খ", "q": "সুশীল", "a": "দুঃশীল" },
+      { "label": "গ", "q": "মৌন", "a": "মুখর" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q06",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "শব্দজোড়ের অর্থ",
+    "qno": 6,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "নিম্নোক্ত শব্দ জোড়ের অর্থ লিখুন।",
+    "parts": [
+      { "label": "ক", "q": "পটল", "a": "অধ্যায়" },
+      { "label": "ক (জোড়)", "q": "পটোল", "a": "সবজি বিশেষ" },
+      { "label": "খ", "q": "মুখপত্র", "a": "ভূমিকা" },
+      { "label": "খ (জোড়)", "q": "মুখপাত্র", "a": "প্রতিনিধি" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q07",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "bangla",
+    "topic": "অনুচ্ছেদ",
+    "qno": 7,
+    "marks": 10,
+    "type": "paragraph",
+    "question": "অনুচ্ছেদ লিখুন: \"নবায়নযোগ্য জ্বালানি\"",
+    "answer": "নবায়নযোগ্য জ্বালানি হচ্ছে সেই ধরনের জ্বালানি যা প্রকৃতির বিভিন্ন উৎস থেকে প্রাপ্ত হয় এবং যা ব্যবহার করার পর পুনরুদ্ধারযোগ্য। এর মধ্যে সোলার (সূর্যশক্তি), উইন্ড (বাতাসের শক্তি), হাইড্রো (জলবিদ্যুৎ), জিও থার্মাল (ভূতাপীয় শক্তি) এবং বায়োমাস অন্তর্ভুক্ত। নবায়নযোগ্য জ্বালানি পরিবেশ বান্ধব, কারণ এটি কার্বন নির্গমন কমায় এবং fossil fuel এর উপর নির্ভরতা কমাতে সাহায্য করে। আজকাল, বিশ্বের বিভিন্ন দেশে নবায়নযোগ্য জ্বালানির ব্যবহার বাড়ানোর জন্য নীতিগত সহায়তা দিচ্ছে এবং প্রযুক্তিগত উদ্ভাবনে বিনিয়োগ করছে। নবায়নযোগ্য জ্বালানির ব্যবহারের প্রধান সুবিধা হলো এর পরিবেশগত প্রভাব কমানো। এটি কার্বন নির্গমন কমায় এবং জলবায়ু পরিবর্তনের বিরুদ্ধে লড়াই করতে সাহায্য করে। এছাড়া, এটি শক্তির নিরাপত্তা বৃদ্ধির মাধ্যমে দেশের অর্থনীতিতে স্থিতিশীলতা আনে। ভবিষ্যৎ নবায়নযোগ্য শক্তির উন্নয়ন একটি অপরিহার্য উপায় হবে টেকসই উন্নয়নের লক্ষ্য পূরণ এবং পরিবেশের সুরক্ষায়।"
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q08",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "english",
+    "topic": "fill in the blanks",
+    "qno": 8,
+    "marks": 4,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      { "label": "a", "sentence": "I have no ...... of him.", "answer": "envy" },
+      { "label": "b", "sentence": "Get rid ..... bad company.", "answer": "of" },
+      { "label": "c", "sentence": "He knows English ..... Bengali.", "answer": "and" },
+      { "label": "d", "sentence": "I ..... rather go by bus.", "answer": "would" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q09",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 9,
+    "marks": 8,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      { "label": "ক", "source": "রবিবার থেকে বৃষ্টি হচ্ছে।", "target": "It has been raining since Sunday." },
+      { "label": "খ", "source": "আমি তাকে উপহাস করিনি।", "target": "I did not laugh at him." },
+      { "label": "গ", "source": "ঐশ্বর্য দীর্ঘদিন থাকে না।", "target": "Riches do not last long." },
+      { "label": "ঘ", "source": "ট্রেনটি সময়মত চলছে।", "target": "The train is running on time." }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q10",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "english",
+    "topic": "idiom",
+    "qno": 10,
+    "marks": 3,
+    "type": "idiom",
+    "question": "Write the Bengali meaning of the following Idioms & Phrases:",
+    "parts": [
+      { "label": "a", "phrase": "Soft soap", "meaning": "তোষামোদ করা" },
+      { "label": "b", "phrase": "Greek and Latin", "meaning": "বুঝতে কষ্টসাধ্য" },
+      { "label": "c", "phrase": "Far cry", "meaning": "বহু ব্যবধান" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q11",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "english",
+    "topic": "antonym",
+    "qno": 11,
+    "marks": 3,
+    "type": "sub-parts",
+    "question": "Write the antonym of the following words:",
+    "parts": [
+      { "label": "a", "q": "Anarchy", "a": "Rule" },
+      { "label": "b", "q": "Extempore", "a": "Prepared" },
+      { "label": "c", "q": "Zenith", "a": "Depth" }
+    ]
+  },
+  {
+    "id": "job-2024-biddyut-computer-operator-q12",
+    "examId": "job-2024-biddyut-computer-operator",
+    "subject": "english",
+    "topic": "voice change",
+    "qno": 12,
+    "marks": 6,
+    "type": "sentence-change",
+    "question": "Changing voice of the following sentences:",
+    "parts": [
+      { "label": "a", "original": "The mason is building the house.", "changed": "The house is being built by the mason." },
+      { "label": "b", "original": "The patient slept a sound sleep.", "changed": "A sound sleep was slept by the patient." },
+      { "label": "c", "original": "I am to make a telephone call.", "changed": "A telephone call is to be made by me." }
+    ]
+  }
+]

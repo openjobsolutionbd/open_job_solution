@@ -167,6 +167,7 @@ Scanned question-bank PDFs (e.g. "১০–৫০তম বিসিএস ব�
 2. If the printed answer key is blank, unreadable or clearly wrong, do **not** import the question; record it under the "বাদ / নোট" column of the tracker instead.
 3. Import only what the PDF actually contains (an incomplete exam is imported as-is), and check every new question against all existing subject files first (`lookup`) — another session may have imported the same exam in parallel.
 4. Keep the import tracker (`_docs/bcs-mcq-bangla-import-tracker.md`) updated in the same PR as the data, so the next session can resume from it.
+5. **Add the batch with `node _dev/import_batch.js <batch.json> --exam "<exam name>"`** (use `--dry` first) instead of editing `bangla.js` by hand. It assigns ids after the file's current highest id, skips questions that already exist (same text **and** same options) in any subject file, rejects malformed entries, and appends in the file's one-line format. Run it right after fetching the latest `main`, then run `node _dev/validate_data.js`, so parallel sessions do not collide on ids.
 
 ## ✍️ Filling in information that is not in the source — when you may write it and when not
 

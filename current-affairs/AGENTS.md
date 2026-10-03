@@ -8,6 +8,8 @@
 
 কারণ: একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে একই সময়ে এই রিপোতে কাজ হয়, এবং প্রায়ই আগের মেসেজে ফিরে গিয়ে নতুন কাজ শুরু হয় — তাই local sandbox বা কথোপকথনের স্মৃতি ভরসাযোগ্য না। **একমাত্র নির্ভরযোগ্য সোর্স GitHub-এর remote অবস্থা।** `session_status.sh` remote fetch করে local-remote তুলনা করে, stray uncommitted পরিবর্তন দেখায়, এবং সব খোলা branch + খোলা/merged/abandoned PR-এর লাইভ তালিকা দেখায় (কাজের পুনরাবৃত্তি এড়াতে)। সমস্যা দেখলে আগে ব্যবহারকারীকে জানিয়ে সমাধান করে তারপর কাজ শুরু করুন।
 
+ফোল্ডার-তালিকা ≠ ফাইল পড়া; github.com ফেচ ব্লক — `git clone` নিন।
+
 প্রথমবার clone করতে (২০২৬-০৯ থেকে এটা স্বতন্ত্র রিপো না, `open_job_solution`
 monorepo-র `current-affairs/` সাবফোল্ডার — পুরনো `open_current_affairs`
 রিপো subtree merge দিয়ে এখানে চলে এসেছে, আলাদা clone/sync লাগে না):
@@ -22,7 +24,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 
 | ফাইল | কখন পড়বেন |
 |---|---|
-| `PR_GUIDE.md` | branch → push → PR → merge → cleanup-এর exact কমান্ড |
+| `PR_GUIDE.md` | `main`-এ push সম্ভবই না; নিজের branch→PR→merge-এর কমান্ড (জিজ্ঞেস করবেন না) |
 | `MCQ_GUIDE.md` | ম্যাগাজিন সোর্সে MCQ সেকশন পেলে |
 | `EDITORIAL_MEMORY.md` | কনটেন্ট আপডেটের সময়কার স্থায়ী সম্পাদকীয় সিদ্ধান্ত — **প্রতি কনটেন্ট-সেশনে পড়া বাধ্যতামূলক** |
 

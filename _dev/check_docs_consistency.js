@@ -25,7 +25,8 @@
  *      ফাইল নেই), প্রতিটা সেকশন-শিরোনাম সব ফাইল মিলিয়ে ঠিক একবার আছে (কোনো সেকশন
  *      হারায়নি বা ডুপ্লিকেট হয়নি), মূল ফাইলের সূচিতে প্রতিটা অংশ-ফাইল উল্লিখিত, এবং
  *      "⛔ কঠোর নিষেধাজ্ঞা" ব্লক মূল ফাইলে আছে, এবং কোনো ডকুমেন্ট `job-app/<নাম>.md` বলে এমন ফাইলের
- *      উল্লেখ করছে না যা নেই (নাম বদলের পর ভাঙা রেফারেন্স)
+ *      উল্লেখ করছে না যা নেই (নাম বদলের পর ভাঙা রেফারেন্স), এবং কোনো সেকশন-ফাইল অন্য সেকশন-ফাইলের
+ *      সেকশন/ফাইলের দিকে পয়েন্ট করছে না (প্রতিটা সেকশন-ফাইল + মূল ফাইল = স্বয়ংসম্পূর্ণ)
  *
  * exit code 0 = ঠিক আছে, 1 = সমস্যা পাওয়া গেছে (CI fail করবে)।
  */
@@ -135,7 +136,7 @@ const PARTS = [
   "bcs-mcq.md",
   "primary-mcq.md",
   "ministry-mcq.md",
-  "topics-and-roadmap.md",
+  "roadmap.md",
 ];
 const toBn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
 // প্রতিটা শিরোনাম-প্রিফিক্স সব ফাইল মিলিয়ে ঠিক একবার থাকতে হবে
@@ -193,6 +194,36 @@ if (mdCandidates.length >= 1) {
         if (!inFence && line.startsWith("## ")) headingLines.push({ file: path.relative(ROOT, f), line });
       }
     }
+    // স্বয়ংসম্পূর্ণতা: প্রতিটা সেকশন-ফাইল (written-exam/bcs-mcq/primary-mcq/ministry-mcq) + মূল ফাইল = সেই সেকশনের কাজের সবকিছু।
+    // তাই এক সেকশন-ফাইল অন্য সেকশন-ফাইলের সেকশনের দিকে পয়েন্ট করতে পারবে না (পাঠক/এজেন্টকে অন্য ফাইলে যেতে হবে — ভুলের ঝুঁকি)।
+    // মূল ফাইলের সেকশন (§১–§২, §১০–§১৪) সবসময় পড়া হয়, তাই সেগুলোর উল্লেখ চলবে। roadmap.md/version-history.md এই নিয়মের বাইরে।
+    {
+      const SECTION_FILES = ["written-exam.md", "bcs-mcq.md", "primary-mcq.md", "ministry-mcq.md"];
+      const owner = {};
+      for (const h of headingLines) {
+        const m = h.line.match(/^## ([০-৯]+(?:-[কখ])?)\. /);
+        if (m) owner[m[1]] = path.basename(h.file);
+      }
+      for (const f of SECTION_FILES) {
+        const fp = path.join(PARTS_DIR, f);
+        if (!fs.existsSync(fp)) continue;
+        let inFence = false;
+        fs.readFileSync(fp, "utf8").split("\n").forEach((line, i) => {
+          if (/^\s*```/.test(line)) { inFence = !inFence; return; }
+          if (inFence) return;
+          for (const m of line.matchAll(/(?:Section|সেকশন|§)\s*([০-৯]+(?:-[কখ])?)/g)) {
+            const o = owner[m[1]];
+            if (o && o !== f && o !== path.basename(MASTER_DOC)) {
+              errors.push(`❌ _docs/job-app/${f}:${i + 1} §${m[1]}-এর উল্লেখ করছে, যা ${o}-এ আছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে (মূল ফাইল + নিজের ফাইলই যথেষ্ট); প্রয়োজনীয় নিয়ম এই ফাইলে আনুন বা উল্লেখটা সরান।`);
+            }
+          }
+          for (const m of line.matchAll(/\]\(\.\/([A-Za-z0-9_-]+\.md)\)/g)) {
+            if (m[1] !== f) errors.push(`❌ _docs/job-app/${f}:${i + 1} অন্য অংশ-ফাইল (${m[1]})-এ লিংক দিচ্ছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে।`);
+          }
+        });
+      }
+    }
+
     for (const prefix of EXPECTED_HEADINGS) {
       const hits = headingLines.filter((h) => h.line.startsWith(prefix));
       if (hits.length === 0) {
@@ -242,7 +273,7 @@ if (mdCandidates.length >= 1) {
 
   // আকার-সতর্কতা (ব্যর্থ করে না) — ভাগ করার উদ্দেশ্যই ছিল মূল ফাইল ছোট রাখা
   const MAIN_WARN_BYTES = 40000;
-  const PART_WARN_BYTES = 30000;
+  const PART_WARN_BYTES = 40000;
   const mainSize = Buffer.byteLength(masterText, "utf8");
   if (mainSize > MAIN_WARN_BYTES) {
     warnings.push(`⚠️  job-app-MD.md এখন ${mainSize} বাইট (সীমা ${MAIN_WARN_BYTES}) — এটা সব কাজেই পড়তে হয়, তাই বড় কোনো অংশ _docs/job-app/-এর ফাইলে সরানো বিবেচনা করুন।`);

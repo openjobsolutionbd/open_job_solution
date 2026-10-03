@@ -116,6 +116,7 @@ Never `view`/`cat` big files in full (`bcs-mcq`/`mcq-job-solution` (primary-mcq,
 - Try to use a fine-grained PAT and, when creating the token, make sure **both Contents and Pull requests are "Read and write"** — don't trust only the repo-level `"push": true` in the API response; verify with a small write test (e.g. try creating a dummy branch)
 - When the work is done, remind the user to delete the token
 - Once a token is given in chat, use it for the whole session — don't ask for it repeatedly; only tell the user when it expires or there is an auth error
+- For long import jobs spread over several sessions, ask the user for a **separate, short-lived fine-grained token limited to this repo**, not a long-lived classic token. A token pasted in chat should be treated as exposed: at the end of every session tell the user to revoke it, and never write the token into any file, commit message or remote URL (strip it from the remote URL after pushing)
 
 ## File structure (summary)
 
@@ -153,6 +154,19 @@ The site is indexed by Google and monetized (AdSense-style), so "duplicate/thin 
 1. **Change the explanation-writing style** — don't write only in the "correct answer is X, because Y" format; write in a reasoning/elimination style: why the correct option is correct, and why 1-2 of the other options may look wrong/misleading. This makes it structurally different from fact-dump-style sites, and is also more useful to the learner.
 2. **Spot-check by searching when in doubt** — quote a part of the new explanation (a specific phrase of 8-12 words) in a web search and see whether identical/near-identical text exists on other sites. You don't need to search every question one by one — a few samples per subject are enough to see the pattern.
 3. **Run `node _dev/validate_data.js` before pushing** — it catches duplicate ids/questions/explanations within our own database (it also runs as a required PR check in the `validate-data.yml` workflow). But remember this script **cannot detect matches with external sites** — humans/AI must spot-check that (step 2).
+
+**Explanation DB is options-aware.** Two different questions can have the identical question text but different options (e.g. "কোন বাক্যটি শুদ্ধ?"). `node _dev/explanations.js add` therefore stores the `options` with every DB entry, and `lookup`/`check` match on question text **and** options (an entry saved without options is matched by question text, and is accepted if at least one same-text question has the stored answer). Never reword a question just to dodge a false "answer mismatch" — run `check` and fix the script/DB entry instead.
+
+**Marking weakly-sourced explanations.** If an answer or explanation rests on only one or two sources, or the sources disagree, save it with `node _dev/explanations.js add <id> --note "<why it needs more checking>"` (without `--verified`) so the next session knows it is unverified.
+
+### Importing questions from a scanned PDF (page order is not trustworthy)
+
+Scanned question-bank PDFs (e.g. "১০–৫০তম বিসিএস বাংলা প্রশ্নের সমাধান") often have pages out of order, a continuation page *before* its header page, missing middle pages, duplicated pages and misprinted dates. So:
+
+1. **Never decide which exam a question belongs to from page layout alone.** Confirm the exam by matching at least one distinctive question against an online solved paper, then set the `exam` field.
+2. If the printed answer key is blank, unreadable or clearly wrong, do **not** import the question; record it under the "বাদ / নোট" column of the tracker instead.
+3. Import only what the PDF actually contains (an incomplete exam is imported as-is), and check every new question against all existing subject files first (`lookup`) — another session may have imported the same exam in parallel.
+4. Keep the import tracker (`_docs/bcs-mcq-bangla-import-tracker.md`) updated in the same PR as the data, so the next session can resume from it.
 
 ## ✍️ Filling in information that is not in the source — when you may write it and when not
 

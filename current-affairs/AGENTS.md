@@ -6,22 +6,13 @@
 
 **`bash scripts/session_status.sh` সবার আগে চালান।**
 
-কারণ: একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে একই সময়ে এই রিপোতে কাজ হয়, এবং প্রায়ই আগের মেসেজে ফিরে গিয়ে নতুন কাজ শুরু হয় — তাই local sandbox বা কথোপকথনের স্মৃতি ভরসাযোগ্য না। **একমাত্র নির্ভরযোগ্য সোর্স GitHub-এর remote অবস্থা।** `session_status.sh` remote fetch করে local-remote তুলনা করে, stray uncommitted পরিবর্তন দেখায়, এবং সব খোলা branch + খোলা/merged/abandoned PR-এর লাইভ তালিকা দেখায় (কাজের পুনরাবৃত্তি এড়াতে)। সমস্যা দেখলে আগে ব্যবহারকারীকে জানিয়ে সমাধান করে তারপর কাজ শুরু করুন।
+কারণ: একাধিক Claude অ্যাকাউন্ট/চ্যাট থেকে একই সময়ে এই রিপোতে কাজ হয়, প্রায়ই আগের মেসেজে ফিরে নতুন কাজ শুরু হয় — তাই local sandbox বা কথোপকথনের স্মৃতি ভরসাযোগ্য না। **একমাত্র নির্ভরযোগ্য সোর্স GitHub-এর remote অবস্থা।** `session_status.sh` fetch করে local-remote তুলনা করে, stray uncommitted পরিবর্তন ও সব খোলা branch + PR-এর লাইভ তালিকা দেখায় (পুনরাবৃত্তি এড়াতে)। সমস্যা দেখলে আগে ব্যবহারকারীকে জানিয়ে সমাধান করে কাজ শুরু করুন।
 
 ফোল্ডার-তালিকা ≠ ফাইল পড়া; github.com ফেচ ব্লক — `git clone` নিন।
 
-### 🔎 "অবস্থা/কভারেজ কী?" জাতীয় শুধু-পড়ার প্রশ্নেও একই নিয়ম (BUG-31)
+**"অবস্থা/কভারেজ কী?" জাতীয় শুধু-পড়ার প্রশ্নেও এটা বাধ্যতামূলক (BUG-31):** কভারেজ ফাইলনাম থেকে অনুমান করবেন না — `content_coverage.py` (শেষে নিজে চলে) দেখুন।
 
-"কনটেন্টের বর্তমান অবস্থা দেখাও", "কোন মাস/তারিখ পর্যন্ত আছে", "কী বাকি" — এসব শুধু-পড়ার প্রশ্নেও কাজ শুরুর মতোই চলে। রিপোর্ট দেওয়ার **আগে**:
-
-1. `bash scripts/session_status.sh` চালান। এটা শেষে `scripts/content_coverage.py` চালিয়ে ফাইলের **ভেতরের** তারিখ থেকে আসল কভারেজ দেখায়।
-2. সেশনে আগে থেকে clone থাকলে সেটাকে বিশ্বাস করবেন না — `session_status.sh` যদি "remote-এ নতুন কমিট আছে"/"local পেছনে" বলে, বা `git pull` ব্যর্থ হয়, রিপোর্টের আগে `git fetch origin main` করে `git checkout -B main origin/main` (uncommitted কিছু থাকলে আগে ব্যাকআপ) দিয়ে মিলিয়ে নিন। ব্যর্থ `pull`/`fetch` উপেক্ষা করা নিষেধ।
-3. **ফাইলের নাম, ফাইলের সংখ্যা বা আকার থেকে কভারেজ অনুমান করবেন না।** `2026-04-25_2026-08-27.md`-এর মতো রেঞ্জ-নাম পুরনো ধরন; নতুন ফাইল (`2026-10-tothyo-probaho-p04-05.md`) নামে কোনো তারিখ-রেঞ্জ রাখে না। এক ফাইল ম্যাগাজিনের শুধু নির্দিষ্ট পেজও কভার করতে পারে।
-4. "কভারেজ এখানে শেষ / ফাঁক আছে" বলার আগে `content_coverage.py`-র আউটপুট ও `archive/` মিলিয়ে নিন। না মিলিয়ে থাকলে স্পষ্ট বলুন "যাচাই করিনি"।
-
-প্রথমবার clone করতে (২০২৬-০৯ থেকে এটা স্বতন্ত্র রিপো না, `open_job_solution`
-monorepo-র `current-affairs/` সাবফোল্ডার — পুরনো `open_current_affairs`
-রিপো subtree merge দিয়ে এখানে চলে এসেছে, আলাদা clone/sync লাগে না):
+প্রথমবার clone করতে (২০২৬-০৯ থেকে এটা `open_job_solution` monorepo-র `current-affairs/` সাবফোল্ডার — পুরনো `open_current_affairs` রিপো subtree merge-এ এসেছে, আলাদা clone/sync লাগে না):
 ```bash
 git clone https://github.com/openjobsolutionbd/open_job_solution.git
 cd open_job_solution/current-affairs && bash scripts/session_status.sh
@@ -46,7 +37,6 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | পাথ | কী |
 |---|---|
 | `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — remote/local + সব branch/PR-এর অবস্থা |
-| `scripts/content_coverage.py` | ঘটনাপ্রবাহ/টপ নিউজ/MCQ/প্রশ্নোত্তরের **আসল** কভারেজ (ফাইলের ভেতরের তারিখ/শিরোনাম থেকে); `session_status.sh` শেষে নিজে চালায় — ফাইলনাম থেকে কভারেজ অনুমানের বদলে এটা দেখুন |
 | `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশন একসাথে চাইলে ঠিক একজন পায়), শুধু-দেখা, `--release`; শব্দ-সীমা মিলানো, ৩ দিনের বেশি পুরনো দখল 'পরিত্যক্ত' চিহ্নিত |
 | `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
 | `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge করে (হাতে অপেক্ষার ফাঁক কমাতে) — `bash scripts/safe_merge.sh <PR_NUMBER>` |
@@ -71,7 +61,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
 | `scripts/js_tests/dom_harness.mjs` | `docs/index.html`-এর real production JS ফাংশন (`renderTopicContent` ইত্যাদি) বের করে fresh jsdom window-এ চালায় — copy-paste সংস্করণ টেস্ট হয় না |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
-| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite (`scripts/pr_checks.py`, `verify_site.py`, `verify_integration_bugs.py`, `js_tests/`, `test_build_index.py`, `test_pr_checks.py`) — কোনো ধাপ fail করলে PR ব্লক হয় |
+| `.github/workflows/pr-check.yml` | current-affairs-এ PR খুললে/আপডেট হলে (paths filter): generated-ফাইল guard + সংঘর্ষ চেক + build+verify+integration-guard+test suite (উপরের সারিগুলোর স্ক্রিপ্টই) — কোনো ধাপ fail করলে PR ব্লক হয় |
 | `.github/workflows/update-wiki.yml` | main-এ push হলে generated output (`topics-index.json`, `sw.js`, `version.json` ইত্যাদি) রিজেনারেট করে branch→PR (`OJS_BOT_TOKEN` দিয়ে, `auto-bump-version.yml`-এর প্যাটার্নে যেহেতু main branch-protected)→merge করে; ব্যর্থ হলে `site-build-failed` Issue |
 | `.github/workflows/current-affairs-health-check.yml` | প্রতিদিন schedule-এ `docs/` আউটপুটে রিগ্রেশন (পুরনো ডোমেইন, ভাঙা JSON, cache-scope bug) চেক করে, সমস্যা পেলে Issue খোলে — `pr-check.yml`/`update-wiki.yml`-এর সাথে ওভারল্যাপ না (ওগুলো PR/push-time, এটা লাইভ output-এর দৈনিক নজরদারি) |
 | `.github/workflows/current-affairs-docs-staleness.yml` | সপ্তাহে একবার এই `AGENTS.md`, `EDITORIAL_MEMORY.md` ও `PR_GUIDE.md`-এ ভাঙা রেফারেন্স/stale স্ন্যাপশট/আকার-সীমা চেক করে (`_dev/scripts/doc_staleness_check.py`), সমস্যা পেলে Issue খোলে — prose নিজে থেকে মোছে না, রিভিউ করে ঠিক করতে হয় |

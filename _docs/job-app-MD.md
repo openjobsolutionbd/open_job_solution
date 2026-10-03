@@ -131,7 +131,7 @@ The three sections are **completely independent**. One section must not depend o
 
 - Each section has **its own** `style.css` and `sw.js` — no file is shared
 - Each section follows its own design, colors, layout and rules — they need not match other sections
-- Each section's data format may differ (see sections ৮ and ৯) — this is not a bug, it is a deliberate decision
+- Each section's data format may differ (for reference only: Section ৮ in `job-app/bcs-mcq.md` and Section ৯ in `job-app/primary-mcq.md` — read them only if you work on those sections) — this is not a bug, it is a deliberate decision
 - When editing one section, the AI must not touch another section's files, and must not guess another section's conventions
 - Only the **link back to the home page** (the `⬅️ হোমে ফিরুন` pattern) is mandatory in every section — it is the one common thing
 
@@ -309,7 +309,7 @@ const APP_METADATA = {
 - **`data/exams/<examId>.json` is the only data source** — each exam in its own file; all questions must not be gathered into one monolithic file
 - The file name must match the `examId` exactly (the browser fetches by exactly this name)
 - `id` is always unique — build it following the id rules of your own section file (Section ৫ in `job-app/written-exam.md` for written-exam), and never duplicate it
-- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (see Section ৫ in `job-app/written-exam.md`); if it doesn't match, the question will not show in the UI
+- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (written-exam: Section ৫ in `job-app/written-exam.md`; ministry-mcq: the id-naming part of Section ৯-ক in `job-app/ministry-mcq.md`); if it doesn't match, the question will not show in the UI
 - `qno` is always a number — do not write a string like `"০১"` or Bengali digits; the UI converts to Bengali digits itself when displaying
 - `date` in `exam-archive.js` must always be written in `YYYY-MM-DD` format
 - the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math` (written-exam data also accepts `gk` as an alias of `general-knowledge` — see Section ১২)

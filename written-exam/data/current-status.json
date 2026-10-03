@@ -23,7 +23,13 @@
       "source": [
         "current-affairs:gdp-bangladesh"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "gdp-growth"
+      ],
+      "factHashes": {
+        "gdp-growth": "9d95781b2281"
+      }
     },
     {
       "key": "2025-biddyut-office-asst-typist-q16-p7",
@@ -70,7 +76,13 @@
         "ফুটবল দলের অধিনায়ক",
         "জাতীয় ফুটবল দল"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "national-football-team"
+      ],
+      "factHashes": {
+        "national-football-team": "5d91bc6fde4b"
+      }
     },
     {
       "key": "2025-biwta-stenographer-pa-q10-p6",
@@ -94,7 +106,13 @@
         "ফুটবল দলের অধিনায়ক",
         "জাতীয় ফুটবল দল"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "national-football-team"
+      ],
+      "factHashes": {
+        "national-football-team": "5d91bc6fde4b"
+      }
     },
     {
       "key": "2025-bof-technician-q19",
@@ -117,7 +135,13 @@
       "source": [
         "current-affairs:gi-ponno-bangladesh"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "gi-products"
+      ],
+      "factHashes": {
+        "gi-products": "f2d943fc40ea"
+      }
     },
     {
       "key": "2025-dc-bhola-q20",
@@ -135,7 +159,13 @@
       "verifiedOn": "2026-09-30",
       "source": [
         "web: টিবিএস (২০২৫-১১-০৯), বিডিনিউজ২৪ (২০২৬-০৯)"
-      ]
+      ],
+      "facts": [
+        "bhola-dc"
+      ],
+      "factHashes": {
+        "bhola-dc": "90a16b3e499f"
+      }
     },
     {
       "key": "2025-dc-manikganj-q23",
@@ -159,7 +189,13 @@
         "current-affairs:gdp-bangladesh",
         "web: প্রথম আলো, বণিক বার্তা (২০২৬-০৬)"
       ],
-      "verifiedOn": "2026-09-30"
+      "verifiedOn": "2026-09-30",
+      "facts": [
+        "per-capita-income"
+      ],
+      "factHashes": {
+        "per-capita-income": "1fdc1b6ab6da"
+      }
     },
     {
       "key": "2025-dc-narayanganj-nazir-cashier-q16-p8",
@@ -183,7 +219,13 @@
         "web:bdservicerules.com/attorney-general-of-bangladesh-2026 (২৫ মার্চ ২০২৬)",
         "web:lawyersclubbangladesh.com (২৩ সেপ্টেম্বর ২০২৬)"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "attorney-general"
+      ],
+      "factHashes": {
+        "attorney-general": "4a4b86a7b356"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p11",
@@ -212,7 +254,13 @@
         "web:bdservicerules.com/attorney-general-of-bangladesh-2026 (২৫ মার্চ ২০২৬)",
         "web:lawyersclubbangladesh.com (২৩ সেপ্টেম্বর ২০২৬)"
       ],
-      "verifiedOn": "2026-09-28"
+      "verifiedOn": "2026-09-28",
+      "facts": [
+        "attorney-general"
+      ],
+      "factHashes": {
+        "attorney-general": "4a4b86a7b356"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p13",
@@ -241,7 +289,13 @@
         "বিসিবি",
         "তামিম ইকবাল"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "bcb-president"
+      ],
+      "factHashes": {
+        "bcb-president": "111c3932fd20"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p9",
@@ -288,7 +342,13 @@
       "watch": [
         "চট্টগ্রাম বন্দর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "chattogram-port-rank"
+      ],
+      "factHashes": {
+        "chattogram-port-rank": "c5ea286c6437"
+      }
     },
     {
       "key": "2025-dpe-accountant-q21-p2",
@@ -331,7 +391,13 @@
         "রেমিট্যান্স",
         "প্রবাসী আয়"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "remittance"
+      ],
+      "factHashes": {
+        "remittance": "af6566b3d96b"
+      }
     },
     {
       "key": "2025-health-services-office-sohayak-q15-p1",
@@ -400,7 +466,13 @@
       "source": [
         "current-affairs:gi-ponno-bangladesh"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "gi-products"
+      ],
+      "factHashes": {
+        "gi-products": "f2d943fc40ea"
+      }
     },
     {
       "key": "2025-nlasp-bench-asst-q08-p7",
@@ -438,7 +510,13 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "per-capita-income"
+      ],
+      "factHashes": {
+        "per-capita-income": "1fdc1b6ab6da"
+      }
     },
     {
       "key": "2025-agri-info-office-asst-q13-p11",
@@ -468,7 +546,13 @@
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
         "web:mofa.gov.np",
         "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
-      ]
+      ],
+      "facts": [
+        "bimstec"
+      ],
+      "factHashes": {
+        "bimstec": "a3d5c3ee5d4a"
+      }
     },
     {
       "key": "2025-agri-info-office-asst-q13-p3",
@@ -495,7 +579,13 @@
         "web:prothomalo.com (২১ আগস্ট ২০২৬)",
         "web:itvbd.com (২১ আগস্ট ২০২৬)"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "president"
+      ],
+      "factHashes": {
+        "president": "d50c9320fd05"
+      }
     },
     {
       "key": "2025-air-force-office-sohayok-q12-p6",
@@ -561,7 +651,13 @@
         "বিশ্ব জনসংখ্যা",
         "বিশ্বের জনসংখ্যা"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "world-population"
+      ],
+      "factHashes": {
+        "world-population": "7fd06878223c"
+      }
     },
     {
       "key": "2025-biwta-shulko-adaykari-q05-p2",
@@ -742,7 +838,13 @@
       "verifiedOn": "2026-09-30",
       "source": [
         "web: প্রথম আলো (২০২৬-০৬-৩০), অবজার্ভার (২০২৬-০৮-০৩)"
-      ]
+      ],
+      "facts": [
+        "constitution-amendments"
+      ],
+      "factHashes": {
+        "constitution-amendments": "2d33a7094da0"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p12",
@@ -807,38 +909,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
-    },
-    {
-      "key": "2025-dmch-office-asst-typist-q14-p2",
-      "class": "slow",
-      "topics": [
-        "bortoman-sorkarer-180-din",
-        "mantrisova"
+      "watchSeen": [],
+      "facts": [
+        "asean"
       ],
-      "status": "",
-      "reviewAfter": "2027-03-27",
-      "targets": [
-        {
-          "id": "job-2025-dmch-office-asst-typist-q14",
-          "part": 1,
-          "qMatch": "বর্তমান অন্তর্বতীকালীন স"
-        },
-        {
-          "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 2,
-          "qMatch": "বর্তমান অন্তর্বতীকালীন স"
-        }
-      ],
-      "topicHashes": {
-        "bortoman-sorkarer-180-din": "f30db2df6be4",
-        "mantrisova": "e856ec0d4b40"
-      },
-      "source": [
-        "current-affairs:bortoman-sorkarer-180-din",
-        "current-affairs:mantrisova"
-      ],
-      "verifiedOn": "2026-09-29"
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-dphe-rangamati-office-asst-typist-q14-p13",
@@ -882,7 +959,13 @@
         "85f52800f88d",
         "b83044c52ae9",
         "cd1f2618a4db"
-      ]
+      ],
+      "facts": [
+        "russia-ukraine-war"
+      ],
+      "factHashes": {
+        "russia-ukraine-war": "9b939b0b24c7"
+      }
     },
     {
       "key": "2025-election-commission-porichonnota-kormi-q12-p1",
@@ -904,7 +987,13 @@
         "নাসির উদ্দীন",
         "নাসির উদ্দিন"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "chief-election-commissioner"
+      ],
+      "factHashes": {
+        "chief-election-commissioner": "2ee473f431d3"
+      }
     },
     {
       "key": "2025-election-commission-porichonnota-kormi-q12-p5",
@@ -934,7 +1023,13 @@
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
         "web:mofa.gov.np",
         "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
-      ]
+      ],
+      "facts": [
+        "bimstec"
+      ],
+      "factHashes": {
+        "bimstec": "a3d5c3ee5d4a"
+      }
     },
     {
       "key": "2025-election-commission-porichonnota-kormi-q12-p8",
@@ -1016,7 +1111,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-health-services-office-sohayak-q15-p8",
@@ -1039,7 +1140,13 @@
       "verifiedOn": "2026-09-30",
       "source": [
         "web: UN DESA LDC list; UN OHRLLS"
-      ]
+      ],
+      "facts": [
+        "ldc"
+      ],
+      "factHashes": {
+        "ldc": "6eb0d744cf00"
+      }
     },
     {
       "key": "2025-janaprashasan-hisab-rakkhok-q17-p3",
@@ -1064,7 +1171,13 @@
         "ঐক্য কমিশন",
         "জাতীয় ঐক্য"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "consensus-commission"
+      ],
+      "factHashes": {
+        "consensus-commission": "32aca970d26f"
+      }
     },
     {
       "key": "2025-judicial-service-office-sohayok-q08-p2",
@@ -1088,7 +1201,13 @@
       "source": [
         "current-affairs:julai-jadughar",
         "web: প্রথম আলো, ঢাকা ট্রিবিউন (২০২৬-০৮-০৫)"
-      ]
+      ],
+      "facts": [
+        "ganabhaban"
+      ],
+      "factHashes": {
+        "ganabhaban": "194c53abb89e"
+      }
     },
     {
       "key": "2025-judicial-service-office-sohayok-q08-p21",
@@ -1102,7 +1221,7 @@
       "targets": [
         {
           "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 20,
+          "part": 19,
           "qMatch": "জোহরান মামদানি কে?"
         }
       ],
@@ -1124,7 +1243,7 @@
       "targets": [
         {
           "id": "job-2025-judicial-service-office-sohayok-q08",
-          "part": 6,
+          "part": 5,
           "qMatch": "জনসংখ্যা অনুযায়ী ঢাকা শ"
         }
       ],
@@ -1152,7 +1271,13 @@
         "আসেয়ান",
         "ASEAN"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-judicial-service-steno-q08-p4",
@@ -1305,7 +1430,13 @@
         "COP",
         "কপ-"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "cop"
+      ],
+      "factHashes": {
+        "cop": "4457df4ae0fb"
+      }
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p14",
@@ -1334,7 +1465,13 @@
       "verifiedOn": "2026-09-28",
       "source": [
         "current-affairs:brics-jot"
-      ]
+      ],
+      "facts": [
+        "brics"
+      ],
+      "factHashes": {
+        "brics": "8129277bbff7"
+      }
     },
     {
       "key": "2025-navy-office-q18",
@@ -1358,7 +1495,13 @@
       "verifiedOn": "2026-09-28",
       "source": [
         "current-affairs:brics-jot"
-      ]
+      ],
+      "facts": [
+        "brics"
+      ],
+      "factHashes": {
+        "brics": "8129277bbff7"
+      }
     },
     {
       "key": "2025-ncc-sub-asst-engineer-civil-q20",
@@ -1378,7 +1521,13 @@
         "COP",
         "কপ-"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "cop"
+      ],
+      "factHashes": {
+        "cop": "4457df4ae0fb"
+      }
     },
     {
       "key": "2025-nlasp-office-asst-typist-q08-p5",
@@ -1419,7 +1568,13 @@
         "গুতেরেস",
         "গুতেরেজ"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "un-secretary-general"
+      ],
+      "factHashes": {
+        "un-secretary-general": "97a28358ab56"
+      }
     },
     {
       "key": "2025-primary-mass-edu-steno-typist-q16-p4",
@@ -1487,7 +1642,13 @@
       "source": [
         "current-affairs:eki-poribare-rashtroneta"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "nepal"
+      ],
+      "factHashes": {
+        "nepal": "0eb7c214eaec"
+      }
     },
     {
       "key": "2025-prison-teacher-q14-p1",
@@ -1569,7 +1730,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-biddyut-office-asst-typist-q16-p8",
@@ -1602,7 +1769,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-btmc-sub-asst-engineer-civil-q11-p10",
@@ -1625,7 +1798,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-coast-guard-support-sep-q13-p11",
@@ -1653,7 +1832,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p6",
@@ -1681,7 +1866,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p13",
@@ -1709,7 +1900,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-prison-teacher-q14-p12",
@@ -1732,7 +1929,13 @@
       "source": [
         "current-affairs:sheetkalin-olympic-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "winter-olympics-2026"
+      ],
+      "factHashes": {
+        "winter-olympics-2026": "90e8c94f4d7d"
+      }
     },
     {
       "key": "2025-iwta-traffic-q06-p14",
@@ -1800,7 +2003,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-erd-steno-typist-q19",

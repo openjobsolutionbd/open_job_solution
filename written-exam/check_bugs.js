@@ -187,9 +187,13 @@ report('Non-positive or non-numeric "marks" (থাকলে)', badMarks);
 
 // ── 10. qno gaps per exam (may mean missing/un-entered questions) ─
 const qnoGaps = [];
+// জানা ও যাচাই-করা সংখ্যা-লাফ, যেখানে প্রশ্ন মিসিং নয়: এই exam-এ qno 15 ব্লকের ভেতরেই
+// আসল প্রশ্ন ১২–২৫ সব আছে (গণিতের ১৪টা অঙ্ক একসাথে), তাই পরের GK ব্লক আসল নম্বর ২৬।
+const knownNumberingJumps = { 'job-2025-dc-narayanganj-nazir-cashier': [[15, 26]] };
 Object.entries(byExam).forEach(([examId, qs]) => {
   const nos = qs.map(q => q.qno).sort((a,b) => a-b);
   for (let i = 1; i < nos.length; i++) {
+    if ((knownNumberingJumps[examId] || []).some(([a, b]) => a === nos[i-1] && b === nos[i])) continue;
     if (nos[i] !== nos[i-1] + 1) qnoGaps.push(`${examId}: gap between qno ${nos[i-1]} and ${nos[i]}`);
   }
 });

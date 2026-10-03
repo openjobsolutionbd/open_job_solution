@@ -91,16 +91,16 @@ Project Owner দেখে অনুমোদন দেয়
 
 ## 📑 Document index — which file to read for which task (mandatory)
 
-Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — one file per section folder, named after it; do not start that kind of task without reading the matching file. **A task that touches two sections (e.g. moving questions between them, or comparing formats) needs both files.** Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
+Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — one file per section folder, named after it; do not start that kind of task without reading the matching file. **Every section task needs exactly two files: this main file + that section's file — nothing else** (each section file is self-contained, and a CI check fails if one section file points into another). Only a task that deliberately spans two sections (e.g. moving questions from one to the other) needs both section files. Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
 
 | File | Sections | Read when |
 |------|----------|-----------|
 | `_docs/job-app-MD.md` (this file) | prohibitions, checklist, §১, §২, §১০, §১১, §১২, §১৩, §১৪ | **always** |
-| [`job-app/written-exam.md`](./job-app/written-exam.md) | §৩, §৪, §৫, §৬, §৭ | adding or fixing exams/questions in `written-exam/`; any work involving ids or `examId` |
+| [`job-app/written-exam.md`](./job-app/written-exam.md) | §৩, §৪, §৫, §৬, §৭, §১৫, §১৭ | adding or fixing exams/questions in `written-exam/`; ids or `examId`; giving a question a `topic` (only written-exam uses `topic`); `validateQuestion()` |
 | [`job-app/bcs-mcq.md`](./job-app/bcs-mcq.md) | §৫-ক, §৮ | adding or fixing questions in `bcs-mcq/` |
 | [`job-app/primary-mcq.md`](./job-app/primary-mcq.md) | §৫-খ, §৯ | adding or fixing questions in `mcq-job-solution/primary-mcq/` |
 | [`job-app/ministry-mcq.md`](./job-app/ministry-mcq.md) | §৯-ক | adding or fixing questions in `mcq-job-solution/ministry-mcq/` |
-| [`job-app/topics-and-roadmap.md`](./job-app/topics-and-roadmap.md) | §১৫, §১৬, §১৭ | giving a question a `topic`; working on `validateQuestion()` or the Automation App |
+| [`job-app/roadmap.md`](./job-app/roadmap.md) | §১৬ | only when working on the (not yet built) Automation App |
 | [`job-app/version-history.md`](./job-app/version-history.md) | Version History | only when adding a row for a meaningful change |
 
 > **When you change the split files:** `_dev/check_docs_consistency.js` (a required CI check) verifies that `_docs/job-app/` contains exactly the files listed above, that every section heading appears exactly once overall (nothing lost, nothing duplicated), and that every file is mentioned in this index. To add a new part file, update the script's `PARTS` list and this index together.
@@ -131,7 +131,7 @@ The three sections are **completely independent**. One section must not depend o
 
 - Each section has **its own** `style.css` and `sw.js` — no file is shared
 - Each section follows its own design, colors, layout and rules — they need not match other sections
-- Each section's data format may differ (see sections ৮ and ৯) — this is not a bug, it is a deliberate decision
+- Each section's data format may differ (for reference only: Section ৮ in `job-app/bcs-mcq.md` and Section ৯ in `job-app/primary-mcq.md` — read them only if you work on those sections) — this is not a bug, it is a deliberate decision
 - When editing one section, the AI must not touch another section's files, and must not guess another section's conventions
 - Only the **link back to the home page** (the `⬅️ হোমে ফিরুন` pattern) is mandatory in every section — it is the one common thing
 
@@ -189,7 +189,7 @@ No section's `index.html` may contain `<link rel="manifest">` — only the root 
 │   └── 📁 data/                 ← ⚠️ not directly at the root, but in the data/ subfolder
 │       └── 📁 exams/            ← ★ the only data source — each exam in its own .json file
 │                                  (the browser fetch()es directly from here; there is no
-│                                   combined "all questions" file — see Section ৪)
+│                                   combined "all questions" file — see Section ৪ in `job-app/written-exam.md`)
 │
 ├── 📁 current-affairs/          ← section 4 (Bengali current affairs)
 │   └── 📁 docs/                 ← ⚠️ generated/synced — do not edit directly
@@ -203,7 +203,7 @@ No section's `index.html` may contain `<link rel="manifest">` — only the root 
 ├── 📁 _assets/                  ← shared static (fonts, icons, floating-search.js)
 │
 ├── 📁 _docs/                    ← governance/reference documents (this file, AGENTS.md, etc.) — not deployed
-│   └── 📁 job-app/              ← the split-out parts of this file (one file per section: written-exam, bcs-mcq, primary-mcq, ministry-mcq; plus shared topics-and-roadmap and version-history)
+│   └── 📁 job-app/              ← the split-out parts of this file (one self-contained file per section: written-exam, bcs-mcq, primary-mcq, ministry-mcq; plus roadmap and version-history)
 ├── 📁 _dev/                     ← scripts (validate_data.js, session_status.sh, update_version.py) — not deployed
 └── 📁 _staging/                 ← temporary data-entry work (books-staging) — not deployed
 
@@ -248,7 +248,7 @@ OCR (extract text from the image)
       ↓
 Metadata Extract (ministry, post, date, time, total marks)
       ↓
-Create a new entry in exam-archive.js (decide the id — Section ৫)
+Create a new entry in exam-archive.js (decide the id — Section ৫ in `job-app/written-exam.md`; for ministry-mcq see `job-app/ministry-mcq.md`)
       ↓
 Question Split (separate the questions)
       ↓
@@ -278,7 +278,7 @@ The AI uses only these 4 subjects — it must not invent any new subject:
 > **Alias (owner decision, 2026-10-02):** in `written-exam/` data, `gk` is an accepted short name for `general-knowledge` — both are valid and the site shows both as "সাধারণ জ্ঞান". Do not rename existing `gk` questions. Likewise `civil-engineering` (10 technical questions in `job-2025-ncc-sub-asst-engineer-civil`) is kept as its own subject, shown as "সিভিল ইঞ্জিনিয়ারিং". `_dev/validate_data.js` fails on any other unknown subject name.
 | `math` | Mathematics, equations, statistics |
 
-After deciding the subject, if possible add the right `topic` from the list in Section ১৭.
+After deciding the subject, if possible add the right `topic` from the list in Section ১৭ (`job-app/written-exam.md` — only written-exam uses `topic`).
 If you are not sure of the topic it may be omitted — a wrong topic must not be given.
 
 ---
@@ -308,8 +308,8 @@ const APP_METADATA = {
 
 - **`data/exams/<examId>.json` is the only data source** — each exam in its own file; all questions must not be gathered into one monolithic file
 - The file name must match the `examId` exactly (the browser fetches by exactly this name)
-- `id` is always unique — build it following the rules of Section ৫, and never duplicate it
-- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (see Section ৫); if it doesn't match, the question will not show in the UI
+- `id` is always unique — build it following the id rules of your own section file (Section ৫ in `job-app/written-exam.md` for written-exam), and never duplicate it
+- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (written-exam: Section ৫ in `job-app/written-exam.md`; ministry-mcq: the id-naming part of Section ৯-ক in `job-app/ministry-mcq.md`); if it doesn't match, the question will not show in the UI
 - `qno` is always a number — do not write a string like `"০১"` or Bengali digits; the UI converts to Bengali digits itself when displaying
 - `date` in `exam-archive.js` must always be written in `YYYY-MM-DD` format
 - the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math` (written-exam data also accepts `gk` as an alias of `general-knowledge` — see Section ১২)
@@ -320,7 +320,7 @@ const APP_METADATA = {
 - no publisher or book name may be included
 - no new subject category may be created
 - the `topic` field is **optional** — if you are not sure it may be omitted, but a wrong topic must not be given
-- a `topic` value must be taken only from the approved list in Section ১৭ — never invent a new topic yourself
+- a `topic` value must be taken only from the approved list in Section ১৭ (`job-app/written-exam.md`) — never invent a new topic yourself
 - **Section independence must not be broken** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` must not use each other's `style.css`, `sw.js`, or data format (see Section ১)
 - **`manifest.json` lives only at the root** — no section's `index.html` may add `<link rel="manifest">` (the app is a single PWA — "Open Job Solution")
 - every section's own `index.html` must have the `⬅️ হোমে ফিরুন` link

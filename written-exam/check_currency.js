@@ -16,6 +16,8 @@
 //      বুলেট বদলেছে/বেড়েছে কিনা।
 //   ২গ) WATCH_NEW (নজর): item-এর "watch" শব্দ ঘটনাপ্রবাহ/টপ-নিউজের নতুন/বদলানো বুলেটে
 //      এসেছে কিনা (তারিখ আগে থেকে জানা না থাকলেও ধরে)।
+//   ২ঘ) FACT_CHANGED (নজর): item-এর "facts" রেফ (_docs/verified-facts.json-এর সারি)-এর যাচাই-করা
+//      অবস্থা (status) বদলেছে কিনা। কোন প্রশ্ন কোন যাচাই-করা তথ্যের ওপর নির্ভর করে, এটাই সেই সংযোগ।
 //   ৩) REVIEW_DUE (নজর): reviewAfter তারিখ পেরিয়ে গেছে কিনা।
 //
 // এই স্ক্রিপ্ট উত্তর নিজে বদলায় না — শুধু জানায়। সিদ্ধান্ত রিভিউয়ের পর।
@@ -44,6 +46,7 @@ const STATUS_FILE = process.env.CURRENCY_STATUS_FILE || path.join(__dirname, 'da
 const TOPICS_DIR = process.env.CURRENCY_TOPICS_DIR || path.join(__dirname, '..', 'current-affairs', 'docs', 'topics');
 const DOCS_DIR = process.env.CURRENCY_DOCS_DIR || path.dirname(TOPICS_DIR); // ঘটনাপ্রবাহ/টপ-নিউজ এখানকার সাবফোল্ডারে
 const LOG_KINDS = ['ghotonaprobaho', 'top-news']; // তারিখ-ভিত্তিক লগ (## <তারিখ> হেডিং)
+const FACTS_FILE = process.env.CURRENCY_FACTS_FILE || path.join(__dirname, '..', '_docs', 'verified-facts.json'); // যাচাই-খাতা (মূল ফাইল)
 const EXAMS_DIR = process.env.CURRENCY_EXAMS_DIR || undefined; // ফাঁকা হলে load_exams-এর ডিফল্ট
 const CLASSES = ['fast', 'slow', 'past', 'future'];
 const REVIEW_DAYS = { fast: 45, slow: 180 };
@@ -162,6 +165,29 @@ function topicHashes(topics) {
   return out;
 }
 
+// যাচাই-খাতা (_docs/verified-facts.json): id → সারি। ফাইল না থাকলে null।
+let _factsCache;
+function loadFacts() {
+  if (_factsCache !== undefined) return _factsCache;
+  if (!fs.existsSync(FACTS_FILE)) { _factsCache = null; return null; }
+  const doc = JSON.parse(fs.readFileSync(FACTS_FILE, 'utf8'));
+  const m = new Map();
+  for (const sec of doc.sections || []) for (const f of sec.facts || []) m.set(f.id, f);
+  _factsCache = m;
+  return m;
+}
+
+// সারির ছাপ শুধু "status" থেকে — একই ফল নিয়ে আবার যাচাই করলে (শুধু তারিখ বদলালে) সতর্কতা আসে না
+function factHashes(ids) {
+  const out = {};
+  const facts = loadFacts();
+  for (const id of ids || []) {
+    const f = facts && facts.get(id);
+    if (f) out[id] = hashOf(f.status);
+  }
+  return out;
+}
+
 function readStatusFile() {
   return JSON.parse(fs.readFileSync(STATUS_FILE, 'utf8'));
 }
@@ -198,6 +224,15 @@ function validate(doc, qIndex) {
     else {
       for (const t of it.topics) {
         if (!fs.existsSync(path.join(TOPICS_DIR, t + '.md'))) errors.push(`${where} topic পাতা নেই: ${t}`);
+      }
+    }
+    if (it.facts != null) {
+      if (!Array.isArray(it.facts) || it.facts.length === 0 || it.facts.some(x => typeof x !== 'string')) {
+        errors.push(`${where} "facts" ফাঁকা-নয় id-এর array হতে হবে`);
+      } else {
+        const facts = loadFacts();
+        if (!facts) errors.push(`${where} "facts" আছে কিন্তু যাচাই-খাতা (_docs/verified-facts.json) পাওয়া যায়নি`);
+        else for (const id of it.facts) if (!facts.has(id)) errors.push(`${where} যাচাই-খাতায় এই id নেই: ${id}`);
       }
     }
     if (it.watch != null) {
@@ -270,6 +305,11 @@ function findings(doc) {
       const fresh = [...watchLines(it.watch)].filter(([h]) => !seen.has(h)).map(([, txt]) => txt);
       if (fresh.length) out.push({ type: 'WATCH_NEW', item: it, detail: fresh });
     }
+    if (it.factHashes) {
+      const cur = factHashes(it.facts);
+      const changedFacts = (it.facts || []).filter(id => it.factHashes[id] && cur[id] && it.factHashes[id] !== cur[id]);
+      if (changedFacts.length) out.push({ type: 'FACT_CHANGED', item: it, detail: changedFacts });
+    }
     if (it.reviewAfter && it.reviewAfter <= now) {
       out.push({ type: 'REVIEW_DUE', item: it, detail: it.reviewAfter });
     }
@@ -287,6 +327,7 @@ function buildReport(doc, found, withoutStatus) {
   const changed = found.filter(f => f.type === 'TOPIC_CHANGED');
   const logChanged = found.filter(f => f.type === 'LOG_CHANGED');
   const watchNew = found.filter(f => f.type === 'WATCH_NEW');
+  const factChanged = found.filter(f => f.type === 'FACT_CHANGED');
   const due = found.filter(f => f.type === 'REVIEW_DUE');
   L.push(`## written-exam — বর্তমান-অবস্থা নজরদারি (${today()})`);
   L.push('');
@@ -310,6 +351,15 @@ function buildReport(doc, found, withoutStatus) {
     }
     L.push('');
   }
+  if (factChanged.length) {
+    L.push(`### যাচাই-খাতার তথ্য বদলেছে (${factChanged.length}টা প্রশ্ন)`);
+    L.push('প্রশ্নের সাথে যুক্ত যাচাই-করা তথ্য (`_docs/verified-facts.json`) বদলেছে — প্রশ্নের উত্তর (বছর-নির্দিষ্ট প্রশ্ন হলে সেই বছরের তথ্য রেখে) এখনো ঠিক কিনা দেখা দরকার।');
+    L.push('');
+    for (const f of factChanged) {
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — তথ্য: ${f.detail.join(', ')} — ${targetsLabel(f.item)}`);
+    }
+    L.push('');
+  }
   if (watchNew.length) {
     L.push(`### নজরে-রাখা শব্দে নতুন খবর এসেছে (${watchNew.length}টা প্রশ্ন)`);
     L.push('প্রশ্নের সাথে যুক্ত শব্দটা ঘটনাপ্রবাহ/টপ-নিউজে নতুন বা বদলানো বুলেটে এসেছে — উত্তর এখনো ঠিক কিনা দেখা দরকার।');
@@ -325,11 +375,11 @@ function buildReport(doc, found, withoutStatus) {
     L.push(`### রিভিউয়ের সময় হয়েছে (${due.length}টা প্রশ্ন)`);
     L.push('');
     for (const f of due) {
-      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${(f.item.topics.length || (f.item.logs || []).length || (f.item.watch || []).length) ? '' : ' — কারেন্ট অ্যাফেয়ার্সে সংযোগ নেই, ওয়েবে যাচাই লাগবে'}`);
+      L.push(`- \`${f.item.key}\` [${f.item.class}] — নির্ধারিত ${f.detail} — ${targetsLabel(f.item)}${(f.item.topics.length || (f.item.logs || []).length || (f.item.watch || []).length || (f.item.facts || []).length) ? '' : ' — কারেন্ট অ্যাফেয়ার্সে সংযোগ নেই, ওয়েবে যাচাই লাগবে'}`);
     }
     L.push('');
   }
-  if (!changed.length && !logChanged.length && !watchNew.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
+  if (!changed.length && !logChanged.length && !watchNew.length && !factChanged.length && !due.length) L.push('নজর দেওয়ার মতো কিছু নেই।');
   L.push('');
   L.push('রিভিউ শেষে: `node written-exam/check_currency.js --accept <key>` (সব একসাথে: `--accept all`)।');
   return L.join('\n');
@@ -380,6 +430,7 @@ function main() {
       if (!it.topicHashes && it.topics.length) { it.topicHashes = topicHashes(it.topics); n++; }
       if (!it.logHashes && (it.logs || []).length) { it.logHashes = logHashes(it.logs); n++; }
       if (it.watch && !it.watchSeen) { it.watchSeen = watchSeen(it.watch); n++; }
+      if ((it.facts || []).length && !it.factHashes) { it.factHashes = factHashes(it.facts); n++; }
     }
     writeStatusFile(doc);
     console.log(`✅ ${n}টা item-এ topicHashes বসানো হলো`);
@@ -402,6 +453,7 @@ function main() {
       if (it.topics.length) it.topicHashes = topicHashes(it.topics);
       if ((it.logs || []).length) it.logHashes = logHashes(it.logs);
       if ((it.watch || []).length) it.watchSeen = watchSeen(it.watch);
+      if ((it.facts || []).length) it.factHashes = factHashes(it.facts);
       const days = extra != null ? Number(extra) : REVIEW_DAYS[it.class];
       if (days) it.reviewAfter = addDays(today(), days);
     }

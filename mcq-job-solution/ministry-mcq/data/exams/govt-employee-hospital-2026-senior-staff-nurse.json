@@ -7,12 +7,12 @@
     "q": "কোনটি GI পণ্য নয়?",
     "answer": "সিলেটের সাতকরা",
     "options": [
-      "ইলিশ",
-      "সিলেটের সাতকরা",
+      "জামদানি শাড়ি",
+      "ঢাকাই মুসলিন",
       "রংপুরের শতরঞ্জি",
-      "জামদানি শাড়ি"
+      "সিলেটের সাতকরা"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q04",
@@ -22,12 +22,12 @@
     "q": "'আমার সন্তান যেন থাকে দুধেভাতে' — এ প্রার্থনা করেছেন কে?",
     "answer": "ঈশ্বরী পাটনী",
     "options": [
-      "বেহুলা",
-      "ফুল্লরা",
-      "ঈশ্বরী পাটনী",
-      "লহনা"
+      "ভাড়ুদত্ত",
+      "নলকুবের",
+      "চাঁদ সওদাগর",
+      "ঈশ্বরী পাটনী"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q05",
@@ -37,12 +37,12 @@
     "q": "The plural of 'crisis' is —",
     "answer": "crises",
     "options": [
-      "crisis's",
       "crisises",
       "crises",
-      "crisies"
+      "crisices",
+      "crisis"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q08",
@@ -52,12 +52,12 @@
     "q": "The Headquarter of the International Council of Nurses (ICN) is located in —",
     "answer": "Geneva",
     "options": [
-      "Geneva",
-      "Paris",
+      "New York",
       "London",
-      "New York"
+      "Geneva",
+      "Paris"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q09",
@@ -67,12 +67,12 @@
     "q": "গ্রাফিতি কী?",
     "answer": "দেয়াল লিপি ও দেয়াল চিত্র",
     "options": [
-      "এক ধরনের নৃত্য",
-      "ভাস্কর্য শিল্প",
-      "প্রাচীন মুদ্রা",
-      "দেয়াল লিপি ও দেয়াল চিত্র"
+      "গ্রানাইটের দেয়াল",
+      "দেয়াল লিপি ও দেয়াল চিত্র",
+      "গ্রাফিকস",
+      "গ্রাফযুক্ত চিত্র"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q10",
@@ -82,12 +82,12 @@
     "q": "'কাঁদতে আসিনি, ফাঁসির দাবি নিয়ে এসেছি' — কবিতাটি কোন ঘটনার প্রেক্ষিতে লিখিত হয়েছিল?",
     "answer": "ভাষা আন্দোলন",
     "options": [
-      "মুক্তিযুদ্ধ",
-      "ঊনসত্তরের গণঅভ্যুত্থান",
-      "বঙ্গভঙ্গ আন্দোলন",
-      "ভাষা আন্দোলন"
+      "দেশ বিভাগ",
+      "ভাষা আন্দোলন",
+      "৬৯ এর গণঅভ্যুত্থান",
+      "মুক্তিযুদ্ধ"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q13",
@@ -97,12 +97,12 @@
     "q": "বাংলাদেশের লোকশিল্প জাদুঘর কোথায় অবস্থিত?",
     "answer": "সোনারগাঁও",
     "options": [
-      "চট্টগ্রাম",
       "সোনারগাঁও",
-      "ঢাকা",
-      "রাজশাহী"
+      "ময়নামতি",
+      "সিলেট",
+      "রংপুর"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q14",
@@ -112,12 +112,12 @@
     "q": "What is the adverb of the word 'confide'?",
     "answer": "Confidingly",
     "options": [
-      "Confided",
-      "Confidingly",
+      "Confidencid",
       "Confidence",
-      "Confidential"
+      "Confidencially",
+      "Confidingly"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q15",
@@ -127,12 +127,12 @@
     "q": "মহাস্থানগড় কোথায় অবস্থিত?",
     "answer": "বগুড়া",
     "options": [
+      "ময়নামতি",
       "বগুড়া",
-      "রাজশাহী",
-      "নওগাঁ",
+      "সোনারগাঁও",
       "কুমিল্লা"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q17",
@@ -142,12 +142,12 @@
     "q": "'He is not ashamed — his mistake.'",
     "answer": "of",
     "options": [
-      "with",
       "of",
-      "at",
-      "for"
+      "on",
+      "for",
+      "by"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q18",
@@ -155,14 +155,14 @@
     "subject": "bangla",
     "qno": 18,
     "q": "'উড্ডীন'-এর সঠিক সন্ধি বিচ্ছেদ কোনটি?",
-    "answer": "উৎ + ডীন",
+    "answer": "উৎ+ডীন",
     "options": [
-      "উত্ + ডীন",
-      "উৎ + ডিন",
-      "উৎ + ডীন",
-      "উদ্ + ডীন"
+      "উৎ+ডীন",
+      "উৎ+ডিন",
+      "উত্ত+ডীন",
+      "উৎ+ড্ডীন"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q19",
@@ -172,12 +172,12 @@
     "q": "'If I — rich, I would travel the world.'",
     "answer": "were",
     "options": [
-      "have been",
+      "am",
+      "was",
       "were",
-      "had been",
-      "am"
+      "be"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q21",
@@ -187,12 +187,12 @@
     "q": "ট্রান্সপারেন্সি ইন্টারন্যাশনালের সদর দপ্তর কোথায়?",
     "answer": "বার্লিন",
     "options": [
-      "লন্ডন",
-      "নিউইয়র্ক",
       "বার্লিন",
-      "জেনেভা"
+      "জেনেভা",
+      "ব্রাসেলস",
+      "লন্ডন"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q25",
@@ -202,12 +202,12 @@
     "q": "বিশ্বের দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত কোথায় অবস্থিত?",
     "answer": "কক্সবাজার",
     "options": [
-      "কক্সবাজার",
-      "রিও ডি জেনিরো",
-      "কুয়াকাটা",
-      "মায়ামি"
+      "ইন্দোনেশিয়া",
+      "থাইল্যান্ড",
+      "মালদ্বীপ",
+      "কক্সবাজার"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q26",
@@ -217,12 +217,12 @@
     "q": "বাংলা গদ্যে যতিচিহ্নের প্রবর্তক কে?",
     "answer": "ঈশ্বরচন্দ্র বিদ্যাসাগর",
     "options": [
-      "রাজা রামমোহন রায়",
-      "প্যারীচাঁদ মিত্র",
+      "মীর মশাররফ হোসেন",
       "ঈশ্বরচন্দ্র বিদ্যাসাগর",
-      "বঙ্কিমচন্দ্র চট্টোপাধ্যায়"
+      "প্রমথ চৌধুরী",
+      "রবীন্দ্রনাথ ঠাকুর"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q27",
@@ -232,12 +232,12 @@
     "q": "Choose the correct passive form of the sentence: 'Who made the mistake?'",
     "answer": "By whom was the mistake made?",
     "options": [
-      "By whom was the mistake made?",
-      "Whom was the mistake made by?",
       "By whom the mistake was made?",
-      "By who the mistake was made?"
+      "By whom was the mistake made?",
+      "The mistake was made by whom?",
+      "Who was made the mistake?"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q28",
@@ -262,12 +262,12 @@
     "q": "'কোন্দল' শব্দের সমার্থক শব্দ কোনটি?",
     "answer": "কলহ",
     "options": [
+      "বুলি",
+      "বড়াই",
       "কলহ",
-      "সন্ধি",
-      "আপস",
-      "মিলন"
+      "উগ্রতা"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q32",
@@ -277,12 +277,12 @@
     "q": "বাংলাদেশ টেস্ট ক্রিকেটের কততম সদস্য?",
     "answer": "দশম",
     "options": [
-      "দশম",
-      "অষ্টম",
       "নবম",
-      "একাদশ"
+      "দশম",
+      "সপ্তম",
+      "অষ্টম"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q33",
@@ -292,12 +292,28 @@
     "q": "'খয়ের খাঁ' বাগধারাটি কোন অর্থ বহন করে?",
     "answer": "তোষামোদকারী",
     "options": [
+      "বিশিষ্ট ব্যক্তি",
       "তোষামোদকারী",
-      "কৃপণ",
-      "অলস",
-      "সাহসী"
+      "সামান্য ব্যক্তি",
+      "নিরেট মূর্খ"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
+  },
+  {
+    "id": "govt-employee-hospital-2026-senior-staff-nurse-q37",
+    "examId": "govt-employee-hospital-2026-senior-staff-nurse",
+    "subject": "bangla",
+    "qno": 37,
+    "q": "নিচের কোনটি কাজী নজরুল ইসলামের রচিত প্রবন্ধ গ্রন্থ?",
+    "answer": "রুদ্রমঙ্গল",
+    "options": [
+      "প্রলয় শিখা",
+      "রুদ্রমঙ্গল",
+      "মৃত্যুক্ষুধা",
+      "ছায়ানট"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর হিসেবে 'মৃত্যুক্ষুধা' ছাপা ছিল (ওটা উপন্যাস); ওয়েবের সমাধানে সঠিক উত্তর 'রুদ্রমঙ্গল' (প্রবন্ধ গ্রন্থ)।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q38",
@@ -307,12 +323,12 @@
     "q": "বাংলাদেশের কোন জেলায় রাখাইন জনগোষ্ঠীর বসবাস বেশি?",
     "answer": "কক্সবাজার",
     "options": [
-      "ময়মনসিংহ",
+      "নেত্রকোনা",
       "কক্সবাজার",
-      "সিলেট",
-      "দিনাজপুর"
+      "বান্দরবান",
+      "পটুয়াখালী"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q40",
@@ -322,12 +338,12 @@
     "q": "What is the antonym of the word 'Expand'?",
     "answer": "Contract",
     "options": [
-      "Enlarge",
+      "Increase",
+      "Grow",
       "Contract",
-      "Extend",
-      "Stretch"
+      "Develop"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q42",
@@ -338,11 +354,11 @@
     "answer": "নেপালের রাজগ্রন্থাগারে",
     "options": [
       "নেপালের রাজগ্রন্থাগারে",
-      "কলকাতার এশিয়াটিক সোসাইটিতে",
-      "ঢাকা বিশ্ববিদ্যালয় গ্রন্থাগারে",
-      "বাংলা একাডেমিতে"
+      "শ্রীলঙ্কার রাজগ্রন্থাগারে",
+      "এশিয়াটিক সোসাইটিতে",
+      "জাতীয় গণগ্রন্থাগারে"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q44",
@@ -352,12 +368,12 @@
     "q": "একুশের উপর প্রথম কবিতা রচনা করেন —",
     "answer": "মাহবুব উল আলম",
     "options": [
-      "আবদুল গাফফার চৌধুরী",
+      "জহির রায়হান",
+      "মুনীর চৌধুরী",
       "মাহবুব উল আলম",
-      "আলাউদ্দিন আল আজাদ",
       "শামসুর রাহমান"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q46",
@@ -367,12 +383,12 @@
     "q": "Which one of the following word is plural?",
     "answer": "Analyses",
     "options": [
-      "Analysis",
+      "Dilemma",
+      "Analyses",
       "Basis",
-      "Crisis",
-      "Analyses"
+      "Agendum"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q47",
@@ -382,12 +398,12 @@
     "q": "বাংলা ব্যাকরণ গ্রন্থ 'গৌড়ীয় ব্যাকরণ' কে রচনা করেছেন?",
     "answer": "রাজা রামমোহন রায়",
     "options": [
+      "ড. সুনীতি কুমার চট্টোপাধ্যায়",
+      "ড. মুহম্মদ শহীদুল্লাহ",
       "রাজা রামমোহন রায়",
-      "নাথানিয়েল ব্রাসি হ্যালহেড",
-      "উইলিয়াম কেরি",
-      "ঈশ্বরচন্দ্র বিদ্যাসাগর"
+      "জ্যোতিভূষণ চাকী"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q49",
@@ -397,12 +413,12 @@
     "q": "দাবা খেলার সর্বোচ্চ খেতাব কী?",
     "answer": "গ্র্যান্ড মাস্টার",
     "options": [
-      "গ্র্যান্ড মাস্টার",
-      "ইন্টারন্যাশনাল মাস্টার",
-      "চেস চ্যাম্পিয়ন",
-      "ফিডে মাস্টার"
+      "মাস্টার",
+      "চ্যাম্পিয়ন",
+      "সেনসে",
+      "গ্র্যান্ড মাস্টার"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q50",
@@ -412,12 +428,12 @@
     "q": "উপসর্গের কাজ কী?",
     "answer": "নতুন শব্দ গঠন",
     "options": [
-      "বাক্য সংক্ষেপ",
-      "বাক্য গঠন",
-      "নতুন শব্দ গঠন",
-      "পদ পরিবর্তন"
+      "বর্ণ সংযোজন",
+      "বর্ণ বিভাজন",
+      "যতি স্থাপন",
+      "নতুন শব্দ গঠন"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q55",
@@ -427,12 +443,12 @@
     "q": "'কিংবদন্তি' শব্দের অর্থ কী?",
     "answer": "জনশ্রুতি",
     "options": [
-      "উপকথা",
-      "ইতিহাস",
-      "জনশ্রুতি",
-      "প্রবাদ"
+      "কবিতা",
+      "রূপকথা",
+      "ছড়া",
+      "জনশ্রুতি"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q56",
@@ -442,12 +458,12 @@
     "q": "Choose the correct sentence.",
     "answer": "He feels bad about the defeat.",
     "options": [
-      "He feels badly about of the defeat.",
-      "He feeling bad about the defeat.",
-      "He feels bad about the defeat.",
-      "He feel bad about the defeat."
+      "He feels badly about the defeat.",
+      "He feels about the defeat badly.",
+      "He feels about the defeat bad.",
+      "He feels bad about the defeat."
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q57",
@@ -457,12 +473,12 @@
     "q": "ভাষার একক কী?",
     "answer": "ধ্বনি",
     "options": [
-      "ছন্দ",
       "ধ্বনি",
-      "অলংকার",
-      "সন্ধি"
+      "বর্ণ",
+      "বাক্য",
+      "শব্দ"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q58",
@@ -472,12 +488,12 @@
     "q": "The synonym of 'Brave' is —",
     "answer": "Courageous",
     "options": [
-      "Timid",
+      "Cowardly",
       "Courageous",
-      "Foolish",
-      "Careless"
+      "Weak",
+      "lazy"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q62",
@@ -487,12 +503,12 @@
     "q": "Select the correctly spelt word.",
     "answer": "miscellaneous",
     "options": [
-      "miscellenious",
-      "miscelleneous",
-      "miscelaneous",
-      "miscellaneous"
+      "miscelanous",
+      "miscellanous",
+      "miscellaneous",
+      "miscelaneous"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q63",
@@ -502,12 +518,12 @@
     "q": "'সোনালী কাবিন' গ্রন্থের রচয়িতা কে?",
     "answer": "আল মাহমুদ",
     "options": [
-      "জীবনানন্দ দাশ",
       "শামসুর রাহমান",
+      "নির্মলেন্দু গুণ",
       "আল মাহমুদ",
-      "সুফিয়া কামাল"
+      "মহাদেব সাহা"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q67",
@@ -517,12 +533,12 @@
     "q": "'টমাহক' কী?",
     "answer": "ক্ষেপণাস্ত্র",
     "options": [
-      "ক্ষেপণাস্ত্র",
-      "ট্যাংক",
-      "যুদ্ধজাহাজ",
-      "বিমান"
+      "মানুষের নাম",
+      "ড্রোন",
+      "বিমান",
+      "ক্ষেপণাস্ত্র"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q68",
@@ -532,12 +548,12 @@
     "q": "Which one is an adjective?",
     "answer": "Beautiful",
     "options": [
-      "Beautifully",
-      "Beautify",
+      "Quickly",
       "Beauty",
-      "Beautiful"
+      "Beautiful",
+      "Beautify"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q69",
@@ -547,12 +563,28 @@
     "q": "'সুনামি' কোন ভাষার শব্দ?",
     "answer": "জাপানি",
     "options": [
-      "চীনা",
-      "কোরিয়ান",
-      "ইন্দোনেশীয়",
-      "জাপানি"
+      "হিন্দি",
+      "চাইনিজ",
+      "জাপানি",
+      "মালয়"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
+  },
+  {
+    "id": "govt-employee-hospital-2026-senior-staff-nurse-q71",
+    "examId": "govt-employee-hospital-2026-senior-staff-nurse",
+    "subject": "english",
+    "qno": 71,
+    "q": "Identify the noun: 'Honesty is the best policy'",
+    "answer": "Honesty",
+    "options": [
+      "best",
+      "policy",
+      "Honesty",
+      "is"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনের নোট: 'policy' ও 'Honesty' দুটোই noun; ওয়েবের সমাধানে 'Honesty' ধরা হয়েছে।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q72",
@@ -562,12 +594,12 @@
     "q": "Choose the correct preposition: 'He insisted — paying the bill.'",
     "answer": "on",
     "options": [
-      "at",
       "to",
       "on",
-      "for"
+      "for",
+      "with"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q73",
@@ -577,12 +609,12 @@
     "q": "বাংলাদেশের সংবিধানের ব্যাখ্যাকারক কে?",
     "answer": "সুপ্রিম কোর্ট",
     "options": [
-      "প্রধানমন্ত্রী",
-      "জাতীয় সংসদ",
-      "রাষ্ট্রপতি",
-      "সুপ্রিম কোর্ট"
+      "সুপ্রিম কোর্ট",
+      "আইন মন্ত্রণালয়",
+      "সংসদ",
+      "প্রধানমন্ত্রী"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q75",
@@ -592,12 +624,12 @@
     "q": "Which article is correct?",
     "answer": "An honest man",
     "options": [
-      "An honest man",
       "A honest man",
-      "A honest men",
-      "An honest men"
+      "An honest man",
+      "The honest man",
+      "Honest man"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q76",
@@ -607,12 +639,12 @@
     "q": "She said, 'I am tired.' (Indirect speech)",
     "answer": "She said that she was tired.",
     "options": [
-      "She said that I was tired.",
-      "She said to that she was tired.",
-      "She said that she were tired.",
-      "She said that she was tired."
+      "She said she is tired.",
+      "She said that she was tired.",
+      "She says she was tired.",
+      "She told she was tired."
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q77",
@@ -622,12 +654,13 @@
     "q": "আসিয়ানের বর্তমান সদস্য রাষ্ট্র কতজন?",
     "answer": "১১",
     "options": [
-      "১১",
-      "১২",
       "৯",
-      "১০"
+      "১১",
+      "১০",
+      "৫"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর ১১ (২০২৫ সালে তিমুর-লেস্তে ১১তম সদস্য হয়েছে); ওয়েবের সমাধানে ১০ — পুরনো তথ্য হতে পারে।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q78",
@@ -637,12 +670,12 @@
     "q": "VAT-এর পূর্ণরূপ কী?",
     "answer": "Value Added Tax",
     "options": [
-      "Valued Assessed Tax",
+      "Voluntary Association of Teachers",
       "Value Added Tax",
-      "Variable Added Tax",
-      "Value Applied Tax"
+      "Vocational Academy of Tangail",
+      "Value Added Transportation"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q79",
@@ -652,12 +685,12 @@
     "q": "'He is good — English.'",
     "answer": "at",
     "options": [
-      "on",
-      "with",
       "at",
+      "in",
+      "on",
       "for"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q80",
@@ -667,12 +700,12 @@
     "q": "'জামদানি' শব্দটি কোন ভাষা থেকে এসেছে?",
     "answer": "ফারসি",
     "options": [
-      "ফারসি",
-      "পর্তুগিজ",
+      "আরবি",
       "তুর্কি",
-      "আরবি"
+      "ফারসি",
+      "হিন্দি"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q82",
@@ -695,15 +728,16 @@
     "examId": "govt-employee-hospital-2026-senior-staff-nurse",
     "subject": "general-knowledge",
     "qno": 83,
-    "q": "সাত গম্বুজ মসজিদের গম্বুজ সংখ্যা কয়টি?",
-    "answer": "৭",
+    "q": "ষাট গম্বুজ মসজিদের কয়টি গম্বুজ?",
+    "answer": "৮১",
     "options": [
-      "৭",
-      "৯",
-      "৫",
-      "১১"
+      "৮১",
+      "৭১",
+      "১৪",
+      "৮২"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে এই প্রশ্নে 'সাত গম্বুজ' ছাপা ছিল; ওয়েবের প্রশ্নপত্রে 'ষাট গম্বুজ মসজিদ' (৭৭ + ৪ = ৮১টি গম্বুজ)।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q84",
@@ -713,12 +747,12 @@
     "q": "'শাহনামা' কোন কবির রচনা?",
     "answer": "ফেরদৌসী",
     "options": [
-      "ওমর খৈয়াম",
-      "হাফিজ",
-      "রুমি",
-      "ফেরদৌসী"
+      "হাফেজ",
+      "জামী",
+      "ফেরদৌসী",
+      "ওমর খৈয়াম"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q85",
@@ -726,14 +760,30 @@
     "subject": "bangla",
     "qno": 85,
     "q": "মুসলিম সাহিত্যিক রচিত প্রথম বাংলা সাহিত্য কর্ম কোনটি?",
-    "answer": "ইউসুফ জোলেখা",
+    "answer": "ইউসুফ জুলেখা",
     "options": [
-      "সয়ফুলমুলুক বদিউজ্জামাল",
-      "লাইলী মজনু",
-      "পদ্মাবতী",
-      "ইউসুফ জোলেখা"
+      "সতীময়না লোরচন্দ্রানী",
+      "ইউসুফ জুলেখা",
+      "নবী বংশ",
+      "জঙ্গনামা"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
+  },
+  {
+    "id": "govt-employee-hospital-2026-senior-staff-nurse-q86",
+    "examId": "govt-employee-hospital-2026-senior-staff-nurse",
+    "subject": "english",
+    "qno": 86,
+    "q": "We find out specific information by —",
+    "answer": "Scanning",
+    "options": [
+      "Skimming",
+      "Inferring",
+      "Reading between line",
+      "Scanning"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর 'Reading between line' ছাপা ছিল; নির্দিষ্ট তথ্য খুঁজে বের করার পদ্ধতি Scanning — ওয়েবের সমাধানও তাই।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q87",
@@ -743,12 +793,12 @@
     "q": "রাষ্ট্রপতি কর্তৃক জারিকৃত আইনকে কী বলে?",
     "answer": "অধ্যাদেশ",
     "options": [
-      "অধ্যাদেশ",
-      "সংবিধান সংশোধনী",
       "প্রজ্ঞাপন",
-      "বিল"
+      "আইন",
+      "বিধি",
+      "অধ্যাদেশ"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q88",
@@ -758,12 +808,12 @@
     "q": "সামষ্টিক জাতীয় সুখ (জি এন এইচ) ধারণাটি কোন দেশের?",
     "answer": "ভুটান",
     "options": [
+      "জাপান",
       "ভুটান",
-      "শ্রীলংকা",
-      "মালদ্বীপ",
-      "নেপাল"
+      "নরওয়ে",
+      "সিঙ্গাপুর"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q89",
@@ -773,12 +823,12 @@
     "q": "The idiom 'Once in a blue moon' means —",
     "answer": "very rarely",
     "options": [
-      "every month",
-      "very often",
-      "never at all",
-      "very rarely"
+      "every day",
+      "very rarely",
+      "at night",
+      "suddenly"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q91",
@@ -788,12 +838,12 @@
     "q": "রবীন্দ্রনাথ ঠাকুরের 'শেষের কবিতা' কোন ধরনের সাহিত্য?",
     "answer": "উপন্যাস",
     "options": [
-      "কাব্য",
-      "প্রবন্ধ",
-      "নাটক",
-      "উপন্যাস"
+      "কবিতা",
+      "উপন্যাস",
+      "ছোট গল্প",
+      "নাটক"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q92",
@@ -803,12 +853,12 @@
     "q": "বাংলাদেশে তৈরি পোশাক শিল্পে নারী শ্রমিক কত শতাংশ?",
     "answer": "৬০%",
     "options": [
-      "৪৫%",
-      "৯৫%",
-      "৩০%",
-      "৬০%"
+      "৫৫%",
+      "৬০%",
+      "৬৫%",
+      "৭০%"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q94",
@@ -818,12 +868,12 @@
     "q": "WHO'র প্রধানের পদবি কী?",
     "answer": "মহাপরিচালক",
     "options": [
+      "সচিব",
+      "পরিচালক",
       "মহাপরিচালক",
-      "সভাপতি",
-      "মহাসচিব",
-      "সচিব"
+      "সভাপতি"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q95",
@@ -833,12 +883,12 @@
     "q": "A book containing information on all subjects —",
     "answer": "Encyclopedia",
     "options": [
-      "Encyclopedia",
-      "Thesaurus",
       "Dictionary",
-      "Atlas"
+      "Appendix",
+      "Biography",
+      "Encyclopedia"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q98",
@@ -846,14 +896,30 @@
     "subject": "english",
     "qno": 98,
     "q": "Which sentence is in the passive voice?",
-    "answer": "Football is played by them.",
+    "answer": "Football is played by them",
     "options": [
-      "They have played football.",
-      "Football is played by them.",
-      "They are playing football.",
-      "They play football."
+      "They play football",
+      "Football is played by them",
+      "They are playing football",
+      "They have played football"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
+  },
+  {
+    "id": "govt-employee-hospital-2026-senior-staff-nurse-q99",
+    "examId": "govt-employee-hospital-2026-senior-staff-nurse",
+    "subject": "bangla",
+    "qno": 99,
+    "q": "সিকান্দার আবু জাফর সম্পাদিত 'সমকাল' পত্রিকাটি ছিল —",
+    "answer": "মাসিক",
+    "options": [
+      "মাসিক",
+      "সাপ্তাহিক",
+      "পাক্ষিক",
+      "ত্রৈমাসিক"
+    ],
+    "optionsSource": "engineeringclassroom.com",
+    "explanation": "ম্যাগাজিনে উত্তর 'সাপ্তাহিক' ছাপা ছিল; ওয়েবের সমাধানে 'মাসিক' (১৯৫৭ সালে মাসিক সাহিত্য পত্রিকা হিসেবে প্রকাশিত)।"
   },
   {
     "id": "govt-employee-hospital-2026-senior-staff-nurse-q100",
@@ -863,11 +929,11 @@
     "q": "ঈশ্বরচন্দ্র গুপ্তের সম্পাদিত পত্রিকার নাম কী?",
     "answer": "সংবাদ প্রভাকর",
     "options": [
-      "বঙ্গদর্শন",
-      "তত্ত্ববোধিনী",
+      "সংবাদ প্রভাকর",
       "সমাচার দর্পণ",
-      "সংবাদ প্রভাকর"
+      "বেঙ্গল গেজেট",
+      "দিগদর্শন"
     ],
-    "optionsGenerated": true
+    "optionsSource": "engineeringclassroom.com"
   }
 ]

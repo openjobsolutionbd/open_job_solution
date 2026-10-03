@@ -194,16 +194,26 @@ if (mdCandidates.length >= 1) {
         if (!inFence && line.startsWith("## ")) headingLines.push({ file: path.relative(ROOT, f), line });
       }
     }
+    // "Section ৯, ৬", "sections ৮ ও ৬", "§৫–§৭", "সেকশন ৫-ক" — তালিকা/রেঞ্জ/ছোট-হাতের/বহুবচনসহ সব সেকশন-নম্বর বের করে।
+    // (শুধু বাংলা অঙ্ক — ডকুমেন্টের নিয়ম; ASCII অঙ্কে "section 3" মানে সাধারণত অ্যাপের সেকশন, তাই ইচ্ছা করেই ধরা হয় না)
+    const NUM = "[০-৯]+(?:-[কখ])?";
+    const REF = new RegExp(`(?:Sections?|সেকশন(?:গুলো)?|§)\\s*(${NUM}(?:\\s*(?:,|ও|এবং|/|–|-|—|বা|and|or|to)\\s*(?:§\\s*)?${NUM})*)`, "gi");
+    const sectionRefs = (line) => {
+      const out = [];
+      for (const m of line.matchAll(REF)) for (const n of m[1].match(new RegExp(NUM, "g"))) out.push(n);
+      return out;
+    };
+    // সেকশন-নম্বর → যে ফাইলে তার "## N." শিরোনাম আছে
+    const owner = {};
+    for (const h of headingLines) {
+      const m = h.line.match(/^## ([০-৯]+(?:-[কখ])?)\. /);
+      if (m) owner[m[1]] = path.basename(h.file);
+    }
     // স্বয়ংসম্পূর্ণতা: প্রতিটা সেকশন-ফাইল (written-exam/bcs-mcq/primary-mcq/ministry-mcq) + মূল ফাইল = সেই সেকশনের কাজের সবকিছু।
     // তাই এক সেকশন-ফাইল অন্য সেকশন-ফাইলের সেকশনের দিকে পয়েন্ট করতে পারবে না (পাঠক/এজেন্টকে অন্য ফাইলে যেতে হবে — ভুলের ঝুঁকি)।
     // মূল ফাইলের সেকশন (§১–§২, §১০–§১৪) সবসময় পড়া হয়, তাই সেগুলোর উল্লেখ চলবে। roadmap.md/version-history.md এই নিয়মের বাইরে।
     {
       const SECTION_FILES = ["written-exam.md", "bcs-mcq.md", "primary-mcq.md", "ministry-mcq.md"];
-      const owner = {};
-      for (const h of headingLines) {
-        const m = h.line.match(/^## ([০-৯]+(?:-[কখ])?)\. /);
-        if (m) owner[m[1]] = path.basename(h.file);
-      }
       for (const f of SECTION_FILES) {
         const fp = path.join(PARTS_DIR, f);
         if (!fs.existsSync(fp)) continue;
@@ -211,10 +221,10 @@ if (mdCandidates.length >= 1) {
         fs.readFileSync(fp, "utf8").split("\n").forEach((line, i) => {
           if (/^\s*```/.test(line)) { inFence = !inFence; return; }
           if (inFence) return;
-          for (const m of line.matchAll(/(?:Section|সেকশন|§)\s*([০-৯]+(?:-[কখ])?)/g)) {
-            const o = owner[m[1]];
+          for (const n of sectionRefs(line)) {
+            const o = owner[n];
             if (o && o !== f && o !== path.basename(MASTER_DOC)) {
-              errors.push(`❌ _docs/job-app/${f}:${i + 1} §${m[1]}-এর উল্লেখ করছে, যা ${o}-এ আছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে (মূল ফাইল + নিজের ফাইলই যথেষ্ট); প্রয়োজনীয় নিয়ম এই ফাইলে আনুন বা উল্লেখটা সরান।`);
+              errors.push(`❌ _docs/job-app/${f}:${i + 1} §${n}-এর উল্লেখ করছে, যা ${o}-এ আছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে (মূল ফাইল + নিজের ফাইলই যথেষ্ট); প্রয়োজনীয় নিয়ম এই ফাইলে আনুন বা উল্লেখটা সরান।`);
             }
           }
           for (const m of line.matchAll(/\]\(\.\/([A-Za-z0-9_-]+\.md)\)/g)) {
@@ -222,6 +232,27 @@ if (mdCandidates.length >= 1) {
           }
         });
       }
+    }
+
+    // মূল ফাইল সবসময় পড়া হয় — তাই এর কোনো লাইন "Section N দেখুন" বলে সেকশন-ফাইলের দিকে পাঠালে সেই লাইনেই ফাইলের নাম থাকতে হবে,
+    // নইলে অন্য সেকশনের কাজ করা এজেন্ট ভুল ফাইলে চলে যেতে পারে। কোড-ব্লক (ফোল্ডার-ট্রির "section 3" = অ্যাপের সেকশন)
+    // এবং "Document index" সেকশন (এটাই নম্বর→ফাইল মানচিত্র) বাদ।
+    {
+      let inFence = false, inIndex = false;
+      masterText.split("\n").forEach((line, i) => {
+        if (/^\s*```/.test(line)) { inFence = !inFence; return; }
+        if (inFence) return;
+        if (line.startsWith("## ")) inIndex = line.startsWith("## 📑");
+        if (inIndex) return;
+        const missing = new Set();
+        for (const n of sectionRefs(line)) {
+          const o = owner[n];
+          if (o && o !== path.basename(MASTER_DOC) && !line.includes(o)) missing.add(`§${n} (${o})`);
+        }
+        if (missing.size > 0) {
+          errors.push(`❌ _docs/job-app-MD.md:${i + 1} সেকশন-ফাইলের দিকে পাঠাচ্ছে কিন্তু ফাইলের নাম লেখেনি: ${[...missing].join(", ")} — একই লাইনে ফাইলের নাম যোগ করুন (যেমন \`job-app/written-exam.md\`)।`);
+        }
+      });
     }
 
     for (const prefix of EXPECTED_HEADINGS) {

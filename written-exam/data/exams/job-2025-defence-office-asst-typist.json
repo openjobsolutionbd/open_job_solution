@@ -1,0 +1,434 @@
+[
+  {
+    "id": "job-2025-defence-office-asst-typist-q01",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "bangla",
+    "topic": "সন্ধি বিচ্ছেদ",
+    "qno": 1,
+    "marks": 5,
+    "type": "table",
+    "question": "সন্ধি বিচ্ছেদ করুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "সন্ধি বিচ্ছেদ"
+    ],
+    "rows": [
+      [
+        "আশাতীত",
+        "আশা + অতীত"
+      ],
+      [
+        "যথেষ্ট",
+        "যথা + ইষ্ট"
+      ],
+      [
+        "অত্যুক্তি",
+        "অতি + উক্তি"
+      ],
+      [
+        "দৈনিক",
+        "দিন + এক"
+      ],
+      [
+        "বাগড়ম্বর",
+        "বাক্ + আড়ম্বর"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q02",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "bangla",
+    "topic": "এক-কথায়-প্রকাশ",
+    "qno": 2,
+    "marks": 5,
+    "type": "short-qa",
+    "question": "এক কথায় প্রকাশ করুন:",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "পঙতিতে বসার অযোগ্য",
+        "a": "অপাঙতেয়"
+      },
+      {
+        "label": "খ",
+        "q": "অধ্যাপনা করেন যিনি",
+        "a": "অধ্যাপক"
+      },
+      {
+        "label": "গ",
+        "q": "একই সময়ে বর্তমান",
+        "a": "সমসাময়িক"
+      },
+      {
+        "label": "ঘ",
+        "q": "ষাট বছর পূর্তিতে পালিত উৎসব",
+        "a": "হীরকজয়ন্তী"
+      },
+      {
+        "label": "ঙ",
+        "q": "শত্রুকে বধ করেন যিনি",
+        "a": "শত্রুঘ্ন"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q03",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "bangla",
+    "topic": "শুদ্ধিকরণ",
+    "qno": 3,
+    "marks": 5,
+    "type": "table",
+    "question": "শুদ্ধ বানান লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "শুদ্ধ বানান"
+    ],
+    "rows": [
+      [
+        "মহত্ব",
+        "মহত্ত্ব"
+      ],
+      [
+        "তিরষ্কার",
+        "তিরস্কার"
+      ],
+      [
+        "নুনতম",
+        "ন্যূনতম"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q04",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "bangla",
+    "topic": "বিপরীত শব্দ",
+    "qno": 4,
+    "marks": 5,
+    "type": "table",
+    "question": "বিপরীতার্থক শব্দ লিখুন:",
+    "columns": [
+      "প্রদত্ত শব্দ",
+      "বিপরীত শব্দ"
+    ],
+    "rows": [
+      [
+        "আবশ্যিক",
+        "অনাবশ্যিক"
+      ],
+      [
+        "অতিবৃষ্টি",
+        "অনাবৃষ্টি"
+      ],
+      [
+        "অনুগ্রহ",
+        "নিগ্রহ"
+      ],
+      [
+        "আবির্ভাব",
+        "তিরোভাব"
+      ],
+      [
+        "দ্যুলোক",
+        "ভূলোক"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q05",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "english",
+    "topic": "fill-in-the-blanks",
+    "qno": 5,
+    "marks": 5,
+    "type": "fill-gaps",
+    "question": "Fill in the blanks:",
+    "parts": [
+      {
+        "label": "a",
+        "sentence": "The cow lives ...... grass.",
+        "answer": "on"
+      },
+      {
+        "label": "b",
+        "sentence": "Nazrul is ...... Shelly of Bangladesh.",
+        "answer": "the"
+      },
+      {
+        "label": "c",
+        "sentence": "He is ...... B.A.",
+        "answer": "a"
+      },
+      {
+        "label": "d",
+        "sentence": "He assured me ...... safty.",
+        "answer": "of"
+      },
+      {
+        "label": "e",
+        "sentence": "He went through ...... open heart surgery.",
+        "answer": "an"
+      }
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q06",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "english",
+    "topic": "gender",
+    "qno": 6,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the Gender:",
+    "columns": [
+      "Given Words",
+      "Opposite Gender"
+    ],
+    "rows": [
+      [
+        "Buck",
+        "Doe"
+      ],
+      [
+        "Wizard",
+        "Witch"
+      ],
+      [
+        "Bride",
+        "Bridegroom"
+      ],
+      [
+        "Drake",
+        "Duck"
+      ],
+      [
+        "Duke",
+        "Duchess"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q07",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "english",
+    "topic": "number",
+    "qno": 7,
+    "marks": 5,
+    "type": "table",
+    "question": "Change the Number:",
+    "columns": [
+      "Given word",
+      "Changed Number"
+    ],
+    "rows": [
+      [
+        "Calf",
+        "Calves"
+      ],
+      [
+        "Goose",
+        "Geese"
+      ],
+      [
+        "Agenda",
+        "Agendum"
+      ],
+      [
+        "Mouse",
+        "Mice"
+      ],
+      [
+        "Data",
+        "Datum"
+      ]
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q08",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "english",
+    "topic": "translation",
+    "qno": 8,
+    "marks": 5,
+    "type": "translate",
+    "question": "Translate into English:",
+    "parts": [
+      {
+        "label": "ক",
+        "source": "মেয়েটি নাচতে নাচতে চলে গেল।",
+        "target": "The girl went away dancing."
+      },
+      {
+        "label": "খ",
+        "source": "খালি কলসি বাজে বেশি।",
+        "target": "An empty vessel sounds much."
+      },
+      {
+        "label": "গ",
+        "source": "তিনি সৎ লোক ছিলেন, তাই না?",
+        "target": "He was an honest man, wasn't he?"
+      },
+      {
+        "label": "ঘ",
+        "source": "যেমন বাপ, তেমন বেটা।",
+        "target": "Like father, like son."
+      },
+      {
+        "label": "ঙ",
+        "source": "এখন আটটা বাজতে পাঁচ মিনিট বাকী।",
+        "target": "Now it is five minutes to eight."
+      }
+    ]
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q09",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "math",
+    "topic": "জ্যামিতি",
+    "qno": 9,
+    "marks": 5,
+    "type": "math",
+    "question": "একটি পুকুরের দৈর্ঘ্য ৩২ মিটার, প্রস্থ ২০ মিটার এবং গভীরতা ৩ মিটার। একটি মেশিন দ্বারা পুকুরটির পানিশূন্য করা হচ্ছে যা প্রতি সেকেন্ডে ০.১ ঘনমিটার সেচ করতে পারে। পুকুরটি সম্পূর্ণ পানি শূন্য করতে কত সময় লাগবে?",
+    "steps": [
+      "পুকুরের আয়তন = (৩২ × ২০ × ৩) = ১৯২০ ঘনমিটার",
+      "০.১ ঘনমিটার পানি সেচতে সময় লাগে ১ সেকেন্ড",
+      "∴ ১ ঘনমিটার পানি সেচতে সময় লাগে ১/০.১ সেকেন্ড",
+      "∴ ১৯২০ ঘনমিটার পানি সেচতে সময় লাগে ১৯২০/০.১ = ১৯২০০ সেকেন্ড",
+      "আমরা জানি, ৩৬০০ সেকেন্ড = ১ ঘণ্টা",
+      "∴ ১৯২০০ সেকেন্ড = ১৯২০০/৩৬০০ = ৫.৩৩ ঘণ্টা",
+      "= ৫ ঘণ্টা + (০.৩৩ × ৬০) মিনিট = ৫ ঘণ্টা ২০ মিনিট (প্রায়)"
+    ],
+    "answer": "৫ ঘণ্টা ২০ মিনিট (প্রায়)"
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q10",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "math",
+    "topic": "সরল সুদ",
+    "qno": 10,
+    "marks": 5,
+    "type": "math",
+    "question": "কোন আসল ৩ বছরে মুনাফা-আসলে ৫,৫০০ টাকা হয়, মুনাফা আসলের ৩/৮ অংশ হলে আসল ও মুনাফার হার নির্ণয় করুন।",
+    "steps": [
+      "ধরি, আসল x টাকা",
+      "মুনাফা-আসলে ৫৫০০ টাকা হলে মুনাফা = (৫৫০০ − x) টাকা",
+      "আবার, মুনাফা আসলের ৩/৮ অংশ হলে মুনাফা = ৩x/৮ টাকা",
+      "শর্তমতে, ৩x/৮ = ৫৫০০ − x",
+      "বা, ৩x = ৮(৫৫০০ − x)",
+      "বা, ৩x = ৪৪০০০ − ৮x",
+      "বা, ৩x + ৮x = ৪৪০০০",
+      "বা, ১১x = ৪৪০০০",
+      "∴ x = ৪৪০০০/১১ = ৪০০০",
+      "∴ মুনাফা = (৫৫০০ − ৪০০০) = ১৫০০ টাকা",
+      "এখন, ৪০০০ টাকায় ৩ বছরে মুনাফা হয় ১৫০০ টাকা",
+      "∴ ১ টাকায় ১ বছরে মুনাফা হয় ১৫০০/(৪০০০ × ৩) টাকা",
+      "∴ ১০০ টাকায় ১ বছরে মুনাফা হয় (১৫০০ × ১০০)/(৪০০০ × ৩) = ১২.৫ টাকা"
+    ],
+    "answer": "আসল ৪০০০ টাকা ও মুনাফার হার ১২.৫%"
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q11",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "math",
+    "topic": "বীজগণিত",
+    "qno": 11,
+    "marks": 5,
+    "type": "math",
+    "question": "$a + \\frac{1}{a} = 7$ হলে, $a^3 + \\frac{1}{a^3}$ এর মান কত?",
+    "steps": [
+      "$a^3 + \\frac{1}{a^3} = \\left(a + \\frac{1}{a}\\right)^3 - 3 \\cdot a \\cdot \\frac{1}{a}\\left(a + \\frac{1}{a}\\right)$",
+      "$= \\left(a + \\frac{1}{a}\\right)^3 - 3\\left(a + \\frac{1}{a}\\right)$",
+      "$= (7)^3 - 3 \\cdot 7 = 343 - 21 = 322$"
+    ],
+    "answer": "$322$"
+  },
+  {
+    "id": "job-2025-defence-office-asst-typist-q12",
+    "examId": "job-2025-defence-office-asst-typist",
+    "subject": "general-knowledge",
+    "topic": "gk-others",
+    "qno": 12,
+    "marks": 15,
+    "type": "short-qa",
+    "question": "সাধারণ জ্ঞান (প্রতিটি ১ নম্বর):",
+    "parts": [
+      {
+        "label": "ক",
+        "q": "আন্তর্জাতিক নারী দিবস কত তারিখে?",
+        "a": "আন্তর্জাতিক নারী দিবস ৮ মার্চ।"
+      },
+      {
+        "label": "খ",
+        "q": "MRT এর পূর্ণরূপ কী?",
+        "a": "MRT-এর পূর্ণরূপ- Mass Rapid Transit."
+      },
+      {
+        "label": "গ",
+        "q": "২য় বিশ্বযুদ্ধের অক্ষশক্তি দেশ সমূহের নাম লিখুন?",
+        "a": "২য় বিশ্বযুদ্ধের অক্ষশক্তি দেশসমূহ হলো জার্মানি, ইতালি এবং জাপান।"
+      },
+      {
+        "label": "ঘ",
+        "q": "মঙ্গোলিয়ার রাজধানী এবং মুদ্রার নাম লিখুন?",
+        "a": "মঙ্গোলিয়ার রাজধানী ওলানবাটোর এবং মুদ্রার নাম তুগরিক।"
+      },
+      {
+        "label": "ঙ",
+        "q": "কৌটিল্যের অর্থশাস্ত্র গ্রন্থের লেখক কে?",
+        "a": "কৌটিল্যের অর্থশাস্ত্র গ্রন্থের লেখক চাণক্য।"
+      },
+      {
+        "label": "চ",
+        "q": "টেসলা ও স্পেসএক্স এর প্রধানের নাম লিখুন।",
+        "a": "টেসলা ও স্পেসএক্স এর প্রধান হলেন ইলন মাস্ক।"
+      },
+      {
+        "label": "ছ",
+        "q": "মহাস্থানগড় এর পূর্বনাম কী?",
+        "a": "মহাস্থানগড় এর পূর্বনাম পুণ্ড্রনগর।"
+      },
+      {
+        "label": "জ",
+        "q": "The Pearl of Indian Ocean কোন দেশকে বলা হয়।",
+        "a": "শ্রীলংকাকে বলা হয় The Pearl of Indian Ocean."
+      },
+      {
+        "label": "ঝ",
+        "q": "ফরায়েজী আন্দোলনের নেতা কে ছিলেন?",
+        "a": "ফরায়েজী আন্দোলনের নেতা ছিলেন হাজী শরিয়তউল্লাহ।"
+      },
+      {
+        "label": "ঞ",
+        "q": "আজ বাংলা পঞ্জিকাবর্ষের কত তারিখ?",
+        "a": "আজ বাংলা পঞ্জিকাবর্ষ ২৩ ফাল্গুন ১৪৩১ বঙ্গাব্দ (পরীক্ষার দিনের তারিখ)।"
+      },
+      {
+        "label": "ট",
+        "q": "Microsoft এর প্রথম প্রোগ্রাম কোনটি?",
+        "a": "মাইক্রোসফট কর্পোরেশন এর প্রথম প্রোগ্রাম MS DOS. এটি একটি Operating System."
+      },
+      {
+        "label": "ঠ",
+        "q": "বাংলাদেশের কোথায় তেজস্ক্রিয় বালু পাওয়া যায়?",
+        "a": "বাংলাদেশে তেজস্ক্রিয় বালু পাওয়া যায় কক্সবাজার সমুদ্র সৈকতে।"
+      },
+      {
+        "label": "ড",
+        "q": "SPARRSO তে কোন বিষয়ে গবেষণা করা হয়?",
+        "a": "স্পারসো ঘূর্ণিঝড় ও প্রাকৃতিক দুর্যোগের পূর্বাভাস প্রদানে সাহায্য করে।"
+      },
+      {
+        "label": "ঢ",
+        "q": "পূর্ণরূপ লিখুন: IMF, DOS",
+        "a": "IMF এর পূর্ণরূপ- International Monetary Fund। এবং DOS এর পূর্ণরূপ- Disk Operating System।"
+      },
+      {
+        "label": "ণ",
+        "q": "যুক্তরাষ্ট্রের ক্রীতদাস প্রথা বিলোপকারী প্রেসিডেন্টের নাম কী?",
+        "a": "যুক্তরাষ্ট্রের ক্রীতদাস প্রথা বিলোপকারী প্রেসিডেন্টের নাম আব্রাহাম লিংকন।"
+      }
+    ]
+  }
+]

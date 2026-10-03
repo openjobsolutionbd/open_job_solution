@@ -994,5 +994,23 @@ const EXAM_ARCHIVE = [
     totalMarks: 40,
     totalQuestions: 13,
   },
+  {
+    id: "job-2025-dc-court-natore-office-sohayok",
+    ministry: "জেলা ও দায়রা জজ আদালত, নাটোর",
+    post: "অফিস সহায়ক",
+    date: "2025-03-22",
+    duration: "১ ঘণ্টা",
+    totalMarks: 50,
+    totalQuestions: 12,
+  },
+  {
+    id: "job-2025-supreme-court-typist-office-asst",
+    ministry: "বাংলাদেশ সুপ্রীম কোর্ট",
+    post: "মুদ্রাক্ষরিক তথা অফিস সহকারী",
+    date: "2025-03-15",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 90,
+    totalQuestions: 11,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

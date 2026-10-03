@@ -16,12 +16,29 @@ function toBnDigits(num) {
   const bnDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
   return String(num).replace(/[0-9]/g, d => bnDigits[d]);
 }
-// $...$ সমীকরণের ভেতরের অঙ্ক MathJax-এর জন্য ইংরেজিই থাকে (STIX ফন্টে বাংলা অঙ্ক নেই);
-// তার বাইরের সব অঙ্ক বাংলা হয়
-function toBnDigitsOutsideTex(str) {
+// গণিতের লেখার সব ইংরেজি অঙ্ক বাংলায় — $...$ সমীকরণের ভেতরেরগুলোও।
+// (আগে সমীকরণের ভেতরে ইংরেজি অঙ্ক রেখে দেওয়া হতো, ফলে একই লাইনে "১০% বৃদ্ধিতে ... = 11x/10"
+//  এর মতো বাংলা-ইংরেজি অঙ্ক মিশে যেত।) সমীকরণের ভেতরে অঙ্ক সরাসরি বদলালে MathJax-এর STIX
+// ফন্টে গ্লিফ থাকে না, তাই প্রতিটা অঙ্ক-গুচ্ছ \text{...}-এ মুড়ে দেওয়া হয় — তাতে MathJax সেগুলো
+// সাধারণ টেক্সট হিসেবে (পেজের বাংলা ফন্টে) আঁকে এবং বাকি TeX-এর অর্থ বদলায় না।
+function toBnDigitsTex(tex) {
+  return tex.replace(
+    /(\\(?:text|mbox|textrm|textbf|textit)\{[^{}]*\})|(\\[A-Za-z]+|\\.)|((?:^|[\^_]))?(\d+(?:[.,]\d+)*)/g,
+    (m, textCmd, cmd, prefix, num) => {
+      if (textCmd) return toBnDigits(textCmd);   // \text{২ টি}-এর ভেতরে সরাসরি বাংলা অঙ্ক
+      if (cmd) return cmd;                       // \frac, \times, \% ইত্যাদি অক্ষত
+      const pre = prefix || '';
+      // x^23 — TeX-এ শুধু প্রথম অঙ্কটা সুপারস্ক্রিপ্ট; সেই অর্থ ঠিক রাখতে প্রথম অঙ্ক আলাদা মোড়ানো
+      if ((pre === '^' || pre === '_') && num.length > 1) {
+        return pre + '\\text{' + toBnDigits(num[0]) + '}\\text{' + toBnDigits(num.slice(1)) + '}';
+      }
+      return pre + '\\text{' + toBnDigits(num) + '}';
+    });
+}
+function toBnDigitsInMath(str) {
   return String(str == null ? '' : str)
     .split(/(\$[^$]*\$)/)
-    .map((part, i) => i % 2 === 1 ? part : toBnDigits(part))
+    .map((part, i) => i % 2 === 1 ? '$' + toBnDigitsTex(part.slice(1, -1)) + '$' : toBnDigits(part))
     .join('');
 }
 function partLabel(p, i) {
@@ -141,16 +158,16 @@ function renderAnswer(q) {
     // ডেটা ফাইল অপরিবর্তিত — শুধু দেখানোর সময় রূপান্তর
     case 'math':
       const stepsHtml = (q.steps || []).map(s =>
-        `<div class="math-step">${escHtml(toBnDigitsOutsideTex(s))}</div>`).join('');
+        `<div class="math-step">${escHtml(toBnDigitsInMath(s))}</div>`).join('');
       const altHtml = q.alternative ? `
         <div class="alt-solution">
           <div class="alt-label">বিকল্প সমাধান:</div>
-          ${(q.alternative.steps || []).map(s => `<div class="math-step">${escHtml(toBnDigitsOutsideTex(s))}</div>`).join('')}
-          <div class="math-answer">উত্তর: ${escHtml(toBnDigitsOutsideTex(q.alternative.answer))}</div>
+          ${(q.alternative.steps || []).map(s => `<div class="math-step">${escHtml(toBnDigitsInMath(s))}</div>`).join('')}
+          <div class="math-answer">উত্তর: ${escHtml(toBnDigitsInMath(q.alternative.answer))}</div>
         </div>` : '';
       return `<div class="ans-math">
         ${stepsHtml}
-        <div class="math-answer">∴ উত্তর: ${escHtml(toBnDigitsOutsideTex(q.answer))}</div>
+        <div class="math-answer">∴ উত্তর: ${escHtml(toBnDigitsInMath(q.answer))}</div>
         ${altHtml}
       </div>`;
 

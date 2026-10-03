@@ -280,6 +280,64 @@ test('শব্দ-নজর: watch ফাঁকা বা ভুল হলে E
   assert.strictEqual(f.run(['--validate-only']).status, 1);
 });
 
+// ---- যাচাই-খাতার (verified-facts) সংযোগ ----
+function factsFixture(status = 'তামিম ইকবাল') {
+  const f = fixture({
+    doc: {
+      version: 1,
+      items: [
+        { key: 'bcb', class: 'fast', topics: [], facts: ['bcb-president'], status: '', asOf: null, reviewAfter: '2027-06-01',
+          targets: [{ id: 'job-e1-q1', part: null, qMatch: 'ব্রিকসের সদস্য' }] },
+      ],
+    },
+  });
+  const factsFile = path.join(f.dir, 'verified-facts.json');
+  const write = st => fs.writeFileSync(factsFile, JSON.stringify({ sections: [{ title: 'ক', facts: [
+    { id: 'bcb-president', label: 'বিসিবি সভাপতি', status: st, date: '2026-09-30', source: 'টেস্ট', review: '2027-06' }] }] }));
+  write(status);
+  const run = (args = []) => f.run(args, { CURRENCY_FACTS_FILE: factsFile });
+  return { ...f, run, write };
+}
+
+test('facts: হ্যাশ বসার পর পরিষ্কার; খাতার অবস্থা বদলালে FACT_CHANGED (exit 2)', () => {
+  const f = factsFixture();
+  assert.strictEqual(f.run(['--init']).status, 0);
+  assert.ok(f.read().items[0].factHashes['bcb-president'], 'factHashes বসেনি');
+  assert.strictEqual(f.run().status, 0);
+  f.write('অন্য কেউ');
+  const r = f.run();
+  assert.strictEqual(r.status, 2);
+  assert.match(r.stdout, /যাচাই-খাতার তথ্য বদলেছে/);
+  assert.match(r.stdout, /bcb-president/);
+});
+
+test('facts: সারির শুধু তারিখ বদলালে (অবস্থা একই) সতর্কতা নয়', () => {
+  const f = factsFixture();
+  f.run(['--init']);
+  const file = path.join(f.dir, 'verified-facts.json');
+  fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace('2026-09-30', '2026-10-05'));
+  assert.strictEqual(f.run().status, 0);
+});
+
+test('facts: --accept-এর পর পরিষ্কার', () => {
+  const f = factsFixture();
+  f.run(['--init']);
+  f.write('অন্য কেউ');
+  assert.strictEqual(f.run().status, 2);
+  assert.strictEqual(f.run(['--accept', 'bcb']).status, 0);
+  assert.strictEqual(f.run().status, 0);
+});
+
+test('facts: খাতায় না-থাকা id হলে ERROR (exit 1)', () => {
+  const f = factsFixture();
+  const doc = f.read();
+  doc.items[0].facts = ['nai-emon-id'];
+  fs.writeFileSync(f.statusFile, JSON.stringify(doc));
+  const r = f.run(['--validate-only']);
+  assert.strictEqual(r.status, 1);
+  assert.match(r.stderr, /nai-emon-id/);
+});
+
 test('আসল current-status.json কাঠামোগতভাবে ঠিক আছে', () => {
   const r = spawnSync('node', [SCRIPT, '--validate-only'], { encoding: 'utf8', env: { ...process.env, CURRENCY_STATUS_FILE: '', CURRENCY_TOPICS_DIR: '', CURRENCY_EXAMS_DIR: '' } });
   assert.strictEqual(r.status, 0, r.stderr);

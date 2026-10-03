@@ -1,0 +1,125 @@
+name: Verified Facts Watch
+
+# উদ্দেশ্য: _docs/verified-facts.json (যাচাই-করা তথ্যের খাতা)-র যে সারির "পুনর্যাচাই" তারিখ
+# পেরিয়ে গেছে, তা কারো মনে রাখার অপেক্ষা না করে সাপ্তাহিক নিজে ধরা — আর কোন কোন প্রশ্ন
+# (written-exam/data/current-status.json-এর "facts" সংযোগ) ওই সারির ওপর নির্ভর করে তা জানানো।
+#
+#  • pull_request/push (খাতা বা স্ক্রিপ্ট বদলালে): কাঠামো ঠিক কিনা এবং _docs/verified-facts.md
+#    হুবহু JSON থেকে বানানো কিনা (হাতে বদলানো হয়েছে কিনা) দেখে। মিলতে না পারলে PR লাল হয়।
+#  • schedule: মেয়াদ-পেরোনো সারি থাকলে GitHub Issue খোলে/আপডেট করে; কিছু না থাকলে পুরনো Issue বন্ধ করে।
+#
+# এই workflow ওয়েবে কিছু খোঁজে না এবং কোনো তথ্য বা প্রশ্নের উত্তর নিজে বদলায় না — শুধু জানায়।
+# যাচাই ও বদল হয় একটা Claude সেশনে, মানুষের চোখের সামনে। (কারণ: "যাচাই-করা" নোটেও ভুল ধরা পড়েছে —
+# কৃষি প্রবৃদ্ধি, মাথাপিছু আয়, RSP-র নাম।)
+#
+# written-exam-currency.yml আলাদা: ওটা প্রশ্ন-ভিত্তিক (কারেন্ট অ্যাফেয়ার্স পাতা বদলেছে কিনা, খাতার তথ্য
+# বদলেছে কিনা); এটা খাতা-ভিত্তিক (সারির মেয়াদ)। দুটোর Issue-র label আলাদা, তাই একটা আরেকটা বন্ধ করে না।
+
+on:
+  schedule:
+    # সপ্তাহে একবার, রবিবার বাংলাদেশ সময় সকাল ৯:৩০ (UTC ০৩:৩০)
+    - cron: "30 3 * * 0"
+  push:
+    branches: [main]
+    paths:
+      - "_docs/verified-facts.json"
+      - "_docs/verified-facts.md"
+      - "_dev/scripts/verified_facts.js"
+  pull_request:
+    branches: [main]
+    paths:
+      - "_docs/verified-facts.json"
+      - "_docs/verified-facts.md"
+      - "_dev/scripts/verified_facts.js"
+      - "_dev/scripts/verified_facts.test.js"
+      - "written-exam/data/current-status.json"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-structure:
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: খাতার কাঠামো ও .md মেলানো
+        run: node _dev/scripts/verified_facts.js --check
+      - name: verified_facts.js-এর টেস্ট
+        run: node --test _dev/scripts/verified_facts.test.js
+
+  expiry-watch:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: মেয়াদ-পেরোনো সারি খোঁজা (advisory — কখনো কিছু ব্লক করে না)
+        id: check
+        continue-on-error: true
+        run: node _dev/scripts/verified_facts.js --due --report /tmp/verified_facts_report.md
+
+      - name: মেয়াদ-পেরোনো সারি পেলে Issue বানানো/আপডেট করা
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/verified_facts_report.md', 'utf8');
+            const label = 'verified-facts-due';
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: label,
+            });
+            if (existing.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing[0].number,
+                body: report,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🕒 যাচাই-খাতা: পুনর্যাচাইয়ের সময় পেরিয়েছে — ${new Date().toISOString().slice(0, 10)}`,
+                body: report,
+                labels: [label],
+              });
+            }
+
+      - name: সব ঠিক থাকলে পুরনো Issue বন্ধ করা
+        if: steps.check.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'verified-facts-due',
+            });
+            for (const issue of existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: 'পরবর্তী স্বয়ংক্রিয় পরীক্ষায় মেয়াদ-পেরোনো কোনো সারি পাওয়া যায়নি — এই Issue বন্ধ করা হলো।',
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+              });
+            }

@@ -85,7 +85,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 
 ## নতুন ম্যাগাজিন সংখ্যা/স্ক্যান থেকে কনটেন্ট যোগ (এক-ধাপ ওয়ার্কফ্লো)
 
-*(২০২৬-০৮ পর্যন্ত এখানে `archive-staging/` ভিত্তিক ৩-ধাপ staging সিস্টেম ছিল — সমান্তরাল সেশনের সংঘর্ষ ও দুই-ধাপে কাজ ভাগ হওয়ার overhead এড়াতে ব্যবহারকারীর সিদ্ধান্তে বাদ দেওয়া হয়েছে। বিস্তারিত ইতিহাস `PROJECT.md`-এর ৭নং সেকশনে।)*
+*(২০২৬-০৮-এর আগে `archive-staging/` ভিত্তিক ৩-ধাপ staging ছিল, ব্যবহারকারীর সিদ্ধান্তে বাদ — ইতিহাস `PROJECT.md` ৭নং সেকশনে।)*
 
 ব্যবহারকারী ম্যাগাজিন পেজের ছবি/PDF দিলে:
 
@@ -99,6 +99,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
    - `docs/top-news/*.md` — সংক্ষিপ্ত হাইলাইট লাইন
    - `docs/mcq/*.md` — MCQ সেকশন (বিস্তারিত `MCQ_GUIDE.md`)
    - "অনন্তলোকে" (প্রয়াত ব্যক্তি) বিভাগ **ডিফল্ট বাদ** — ব্যবহারকারী নির্দিষ্ট করে কাউকে ব্যতিক্রম রাখতে বললে তবেই আলাদা ছোট টপিক ফাইল
+   - পেজের তলার ফুটার/ফিলার-তথ্য **কখনোই নয়, জিজ্ঞেসও করবেন না** (`EDITORIAL_MEMORY.md` §১)
 6. `python3 scripts/build_index.py` + `scripts/verify_site.py` (বা `bash scripts/preflight.sh`) দিয়ে validate।
 7. Commit করুন, তারপর `PR_GUIDE.md` অনুযায়ী branch+PR (ব্যতিক্রম: ব্যবহারকারী স্পষ্টভাবে current সেশনের জন্য সরাসরি main-push অনুমতি দিলে তাই করুন, কিন্তু ধরে নেবেন না)।
 

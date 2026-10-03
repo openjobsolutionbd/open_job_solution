@@ -82,6 +82,30 @@ test('কাঠামো ভুল ধরে: ডুপ্লিকেট id, �
   assert.strictEqual(fixture([{ ...dup, review: 'শীঘ্রই' }]).run(['--check']).status, 1);
 });
 
+test('টেবিল-ভাঙা ঘর ধরে: label/source/reviewNote-এ | বা নতুন লাইন, status-এ নতুন লাইন', () => {
+  const ok = { id: 'a', label: 'ল', status: 's', date: '2026-09-30', source: 'x', review: 'fixed' };
+  for (const bad of [{ label: 'ক|খ' }, { source: 'ক|খ' }, { status: 'ক\nখ' }, { review: 'always', reviewNote: 'ক|খ' }]) {
+    assert.strictEqual(fixture([{ ...ok, ...bad }]).run(['--check']).status, 1, JSON.stringify(bad));
+  }
+});
+
+test('অসম্ভব তারিখ ধরে: date ২০২৬-০২-৩০, review ২০২৭-০২-৩০ ও ২০২৭-১৩', () => {
+  const ok = { id: 'a', label: 'ল', status: 's', date: '2026-09-30', source: 'x', review: 'fixed' };
+  for (const bad of [{ date: '2026-02-30' }, { review: '2027-02-30' }, { review: '2027-13' }, { review: '2027-00' }]) {
+    assert.strictEqual(fixture([{ ...ok, ...bad }]).run(['--check']).status, 1, JSON.stringify(bad));
+  }
+  // সম্ভব তারিখ (লিপ ইয়ার সহ) পাস করে
+  assert.strictEqual(fixture([{ ...ok, date: '2028-02-29', review: '2027-02-28' }]).run(['--render']).status, 0);
+});
+
+test('--update-এ id না দিলে ব্যর্থ (চুপচাপ "ঠিক আছে" নয়)', () => {
+  const f = fixture();
+  const before = fs.readFileSync(f.jsonFile, 'utf8');
+  assert.strictEqual(f.run(['--update']).status, 1);
+  assert.strictEqual(f.run(['--update', '--status', 'x']).status, 1);
+  assert.strictEqual(fs.readFileSync(f.jsonFile, 'utf8'), before);
+});
+
 test('আসল খাতা ঠিক আছে এবং .md মিলছে', () => {
   const r = spawnSync('node', [SCRIPT, '--check'], { encoding: 'utf8', env: { ...process.env, VF_JSON_FILE: '', VF_MD_FILE: '', VF_STATUS_FILE: '', VF_TODAY: '' } });
   assert.strictEqual(r.status, 0, r.stderr + r.stdout);

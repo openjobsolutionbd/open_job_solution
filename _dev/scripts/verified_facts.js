@@ -34,9 +34,19 @@ const REVIEW_RE = /^\d{4}-\d{2}(-\d{2})?$/;
 function today() {
   return process.env.VF_TODAY || new Date().toISOString().slice(0, 10);
 }
+// তারিখটা বাস্তবে আছে কিনা — "২০২৬-০২-৩০"-এর মতো অসম্ভব তারিখ ধরে (Date.parse এগুলো মেনে নিতে পারে)
 function isIsoDate(s) {
-  return typeof s === 'string' && DATE_RE.test(s) && !isNaN(Date.parse(s));
+  if (typeof s !== 'string' || !DATE_RE.test(s)) return false;
+  const d = new Date(s + 'T00:00:00Z');
+  return !isNaN(d) && d.toISOString().slice(0, 10) === s;
 }
+function isValidReview(r) {
+  if (typeof r !== 'string' || !REVIEW_RE.test(r)) return false;
+  const m = Number(r.slice(5, 7));
+  return r.length === 7 ? m >= 1 && m <= 12 : isIsoDate(r);
+}
+// Markdown টেবিলের ঘরে '|' বা নতুন লাইন থাকলে টেবিল ভেঙে যায়
+const CELL_BAD = /[|\r\n]/;
 // "2027-02" মানে ওই মাসের ১ তারিখ থেকে মেয়াদ-পেরোনো ধরা হয়
 function reviewDate(r) {
   if (!REVIEW_RE.test(r)) return null;
@@ -68,9 +78,11 @@ function validate(doc) {
       for (const k of ['label', 'status', 'source']) {
         if (typeof f[k] !== 'string' || !f[k].trim()) errors.push(`${w} "${k}" ফাঁকা`);
       }
-      if (typeof f.status === 'string' && f.status.includes('|')) errors.push(`${w} "status"-এ '|' চিহ্ন চলবে না (টেবিল ভেঙে যায়)`);
+      for (const k of ['label', 'status', 'source', 'reviewNote']) {
+        if (typeof f[k] === 'string' && CELL_BAD.test(f[k])) errors.push(`${w} "${k}"-এ '|' চিহ্ন বা নতুন লাইন চলবে না (টেবিল ভেঙে যায়)`);
+      }
       if (!isIsoDate(f.date)) errors.push(`${w} "date" YYYY-MM-DD হতে হবে`);
-      if (!(f.review === 'fixed' || f.review === 'always' || (REVIEW_RE.test(f.review || '') && !isNaN(Date.parse(reviewDate(f.review)))))) {
+      if (!(f.review === 'fixed' || f.review === 'always' || isValidReview(f.review))) {
         errors.push(`${w} "review" হতে হবে YYYY-MM, YYYY-MM-DD, fixed বা always`);
       }
     }
@@ -184,8 +196,9 @@ function main() {
     return;
   }
 
-  if (val('--update')) {
+  if (flag('--update')) {
     const id = val('--update');
+    if (!id || id.startsWith('--')) { console.error('❌ --update-এর পর সারির id দিতে হবে (যেমন: --update prime-minister --status "...")'); process.exit(1); }
     const f = allFacts(doc).find(x => x.id === id);
     if (!f) { console.error(`❌ id পাওয়া যায়নি: ${id}`); process.exit(1); }
     const status = val('--status');

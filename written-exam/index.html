@@ -642,7 +642,7 @@
         <div class="question-body">
           <span class="q-num">${(q.qno && !hasRedundantQNo(q)) ? toBn(q.qno) + '.' : ''}</span>
           <div class="q-text-wrap">
-            <div class="q-text">${escText(q.type === 'math' ? toBnDigitsOutsideTex(q.question || '') : (q.question || ''))}</div>
+            <div class="q-text">${escText(q.type === 'math' ? toBnDigitsInMath(q.question || '') : (q.question || ''))}</div>
           </div>
         </div>
         <div class="answer-body">${renderAnswer(q)}</div>

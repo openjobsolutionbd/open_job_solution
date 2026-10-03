@@ -41,6 +41,25 @@ function toBnDigitsInMath(str) {
     .map((part, i) => i % 2 === 1 ? '$' + toBnDigitsTex(part.slice(1, -1)) + '$' : toBnDigits(part))
     .join('');
 }
+// বাংলা লেখার মাঝে গাণিতিক রাশির ইংরেজি অঙ্ক বাংলায় (5000×(10/100)×3 → ৫০০০×(১০/১০০)×৩),
+// কিন্তু নাম/সংক্ষেপের অঙ্ক অক্ষত (4IR, F12, F1-F12, 53D)। নিয়ম: অঙ্ক-গুচ্ছের আগে ইংরেজি অক্ষর
+// থাকলে (F12) অথবা পরে বড়হাতের ইংরেজি অক্ষর থাকলে (4IR, 53D) বদলানো হয় না; পরে ছোটহাতের
+// অক্ষর (2a, 12xy, 15x) থাকলে বদলানো হয়। বাংলা অক্ষর না থাকলে (পুরো ইংরেজি লেখা) কিছুই বদলায় না।
+function toBnDigitsMixed(str) {
+  const text = String(str == null ? '' : str);
+  if (!/[\u0980-\u09FF]/.test(text)) return text;
+  return text.replace(/\d+(?:[.,]\d+)*/g, (m, offset, whole) => {
+    const before = whole[offset - 1] || '';
+    const after = whole[offset + m.length] || '';
+    if (/[A-Za-z]/.test(before) || /[A-Z]/.test(after)) return m;
+    return toBnDigits(m);
+  });
+}
+// ইংরেজি বিষয়ের প্রশ্নে অঙ্ক ইংরেজিই থাকে
+function mixDigits(q, text) {
+  return q && q.subject === 'english' ? text : toBnDigitsMixed(text);
+}
+
 function partLabel(p, i) {
   return p.label || BN_PART_LABELS[i] || String(i + 1);
 }
@@ -140,8 +159,8 @@ function renderAnswer(q) {
         <div class="ans-part">
           ${partLabelHtml(p, i)}
           <div class="part-body">
-            ${p.q ? `<span class="part-q">${escHtml(p.q)}</span> <span class="part-eq">=</span> ` : ''}
-            <span class="part-a">${escHtml(p.a)}</span>
+            ${p.q ? `<span class="part-q">${escHtml(mixDigits(q, p.q))}</span> <span class="part-eq">=</span> ` : ''}
+            <span class="part-a">${escHtml(mixDigits(q, p.a))}</span>
             ${currentStatusHtml(p.currentStatus)}
           </div>
         </div>`).join('')}</div>`;
@@ -220,8 +239,8 @@ function renderAnswer(q) {
         <div class="ans-part">
           ${partLabelHtml(p, i)}
           <div class="part-body">
-            <span class="part-q">${escHtml(p.q)}</span>
-            <span class="short-answer">— ${escHtml(p.a)}</span>
+            <span class="part-q">${escHtml(mixDigits(q, p.q))}</span>
+            <span class="short-answer">— ${escHtml(mixDigits(q, p.a))}</span>
             ${currentStatusHtml(p.currentStatus)}
           </div>
         </div>`).join('')}</div>`;

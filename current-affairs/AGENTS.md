@@ -24,7 +24,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 
 | ফাইল | কখন পড়বেন |
 |---|---|
-| `PR_GUIDE.md` | `main`-এ push সম্ভবই না; নিজের branch→PR→merge-এর কমান্ড (জিজ্ঞেস করবেন না) |
+| `PR_GUIDE.md` | `main`-এ push সম্ভবই না; `ship.py` দ্রুত পথ ও কঠোর নিয়ম (জিজ্ঞেস করবেন না, নিয়মফাইল বদল ছাড়া); ত্রুটিতে `PR_GUIDE_REFERENCE.md` |
 | `MCQ_GUIDE.md` | ম্যাগাজিন সোর্সে MCQ সেকশন পেলে |
 | `EDITORIAL_MEMORY.md` | কনটেন্ট আপডেটের সময়কার স্থায়ী সম্পাদকীয় সিদ্ধান্ত — **প্রতি কনটেন্ট-সেশনে পড়া বাধ্যতামূলক** |
 
@@ -37,9 +37,10 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | পাথ | কী |
 |---|---|
 | `scripts/session_status.sh` | প্রতিটা নতুন টাস্কের প্রথম কমান্ড — remote/local + সব branch/PR-এর অবস্থা |
-| `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশন একসাথে চাইলে ঠিক একজন পায়), শুধু-দেখা, `--release`; শব্দ-সীমা মিলানো, ৩ দিনের বেশি পুরনো দখল 'পরিত্যক্ত' চিহ্নিত |
-| `scripts/premerge_check.sh` | merge-এর ঠিক আগে: আপনার branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — দুটো আলাদাভাবে ঠিক PR একসাথে build ভাঙা ধরে |
-| `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge করে (হাতে অপেক্ষার ফাঁক কমাতে) — `bash scripts/safe_merge.sh <PR_NUMBER>` |
+| `scripts/claim_check.sh` | কাজ শুরুর আগে: `--claim <slug>` = পারমাণবিক দখল (দুই সেশনে ঠিক একজন পায়), শুধু-দেখা, `--release`; ৩ দিনের পুরনো দখল 'পরিত্যক্ত' |
+| `scripts/premerge_check.sh` | merge-এর ঠিক আগে: branch + এই মুহূর্তের main মিলিয়ে build/verify/টেস্ট (অস্থায়ী worktree-তে) — আলাদাভাবে ঠিক দুই PR একসাথে build ভাঙলে ধরে |
+| `scripts/ship.py` | কাজ শেষে একটাই কমান্ড: push→PR→চেক→update-branch→`safe_merge.sh`→cleanup; নিয়মফাইল বদলালে merge আটকায় — `python3 scripts/ship.py --claim <slug>` |
+| `scripts/safe_merge.sh` | `premerge_check.sh` চালিয়ে সাথে সাথে সেই sha merge — `ship.py` এটাই ব্যবহার করে |
 | `scripts/site_status.py` | সর্বশেষ `update-wiki` run সফল কিনা + খোলা `site-build-failed` Issue — `session_status.sh` শুরুতেই চালায় |
 | `scripts/pr_build_warnings.py` | `pr-check.yml`-এ build-এর `সতর্কতা:` লাইন PR-কমেন্টে দেখায় (ব্যর্থ করে না) |
 | `scripts/pr_checks.py` | `pr-check.yml`-এর ভেতরে চলে generated-ফাইল guard + অন্য PR-এর সাথে সংঘর্ষ চেক; `safe_add.sh` ও `test_pr_checks.py`-ও এর prefix-তালিকা (`GENERATED_PREFIXES`/`SOURCE_PREFIXES`) import করে |
@@ -57,7 +58,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | `scripts/preflight.sh` | push-এর আগে একটাই কল — fetch+তুলনা+build+verify সব একসাথে |
 | `scripts/check_topic.sh "কীওয়ার্ড"` | নতুন টপিকের আগে দ্রুত ডুপ্লিকেট-চেক (`topics-index.json` গ্রেপ করে) |
 | `scripts/test_build_index.py` | `build_index.py`-র regression টেস্ট (BUGFIX.md-এর bug লক করে) — `preflight.sh` সবসময় চালায় |
-| `scripts/consolidate_month.py` | (ঐচ্ছিক) মাসশেষে ঘটনাপ্রবাহ/টপ নিউজের সেশন-ফাইল একত্র — build আগে-পরে হুবহু মিলিয়ে দেখে, না মিললে নিজে রোলব্যাক করে |
+| `scripts/consolidate_month.py` | (ঐচ্ছিক) মাসশেষে সেশন-ফাইল একত্র — build আগে-পরে মিলিয়ে দেখে, না মিললে নিজে রোলব্যাক |
 | `scripts/js_tests/` | app-shell JS-এর jsdom regression suite — code ফাইল বদলালে `preflight.sh` চালায় (`npm run test:js`) |
 | `scripts/js_tests/dom_harness.mjs` | `docs/index.html`-এর real production JS ফাংশন (`renderTopicContent` ইত্যাদি) বের করে fresh jsdom window-এ চালায় — copy-paste সংস্করণ টেস্ট হয় না |
 | `package.json` | শুধু dev-time JS টেস্ট (`jsdom`) — live site-এ npm dependency লাগে না |
@@ -68,7 +69,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 | `BUGFIX.md` | ধরা পড়া bug-এর স্থায়ী লগ — প্রতিটার matching regression test থাকা উচিত |
 | `TEST_CHECKLIST.md` | বড় ফিচার/কোড পরিবর্তনের পর ম্যানুয়াল যাচাই (automated suite যা ছুঁতে পারে না) |
 | `CHANGELOG.md` | শুধু সিস্টেম/কাঠামো পরিবর্তন — মাসিক কনটেন্ট আপডেট এখানে না |
-| `PR_GUIDE.md`, `MCQ_GUIDE.md` | প্রসঙ্গ-ভিত্তিক এজেন্ট-নির্দেশনা — কখন পড়বেন উপরের টেবিলে |
+| `PR_GUIDE.md`, `PR_GUIDE_REFERENCE.md`, `MCQ_GUIDE.md` | প্রসঙ্গ-ভিত্তিক এজেন্ট-নির্দেশনা — কখন পড়বেন উপরের টেবিলে |
 
 > **২০২৬-০৯-২৭ থেকে:** `pr-check.yml`/`update-wiki.yml` ২০২৬-০৯ subtree-merge-এর পর ভুল পাথে (`current-affairs/.github/workflows/`, যা GitHub পড়ে না) পড়ে থাকায় সাইলেন্টলি কখনো চলেনি — এটা migration-বাগ ছিল, ইচ্ছাকৃত বাতিল না। রুটে সরিয়ে, `pr_checks.py`-র subtree-path বাগ (GitHub PR-files API `current-affairs/docs/...`-এর মতো পাথ দেয়, আগের prefix-তালিকা বেয়ার `docs/...` ধরে নিত) ঠিক করে, ও branch-protection-সামলে-চলা branch→PR ফ্লোতে (`OJS_BOT_TOKEN`) restore করা হয়েছে।
 
@@ -108,7 +109,7 @@ cd open_job_solution/current-affairs && bash scripts/session_status.sh
 ## কনটেন্ট এডিট করার আগে
 
 - **একই বিষয় যেখানেই পাওয়া যাক, existing টপিকে merge করুন, নতুন আলাদা টপিক না।** সোর্সে একই বিষয় একাধিক জায়গায় থাকা স্বাভাবিক। নতুন টপিক লেখার আগে (বা MCQ merge করার সময়, দেখুন `MCQ_GUIDE.md`) existing টপিকে আছে কিনা যাচাই করুন — থাকলে সেখানেই আপডেট করুন ("পরিবর্তনের ইতিহাস"-এ নতুন সারি), পাশাপাশি দুইটা প্রায়-অভিন্ন টপিক না। এই সিদ্ধান্ত সবসময় নিজে পড়ে-বুঝে নিন, script/regex দিয়ে স্বয়ংক্রিয় না।
-  - এটা `docs/ghotonaprobaho/`ও `docs/top-news/`-এ প্রযোজ্য না — এগুলো তারিখ-ভিত্তিক লগ, একই বিষয়ে ভিন্ন তারিখের খবর আলাদা ঘটনা হিসেবেই থাকে। এই দুইয়ের নিয়ম: (১) একই তারিখ-হেডিং-এ নতুন কনটেন্ট যোগ করার আগে ডুপ্লিকেট-চেক করুন (একই ঘটনা দুইবার না বসে); (২) **নিজের নতুন ফাইল বানান** (২০২৬-০৯-২০ থেকে; আগের "সংলগ্ন হলে `git mv` দিয়ে rename করে extend" নিয়ম বাতিল — একাধিক সেশন একসাথে কাজ করলে একই ফাইল সম্পাদনা/rename সংঘর্ষ ঘটায়)। নাম `<YYYY-MM>-<স্কোপ>.md` (স্কোপ = আপনার branch-এর slug, ইংরেজি অক্ষরে শুরু; যেমন `2026-09-tothyo-probaho-p12.md`)। বিদ্যমান মাসিক ফাইল (`2026-04-25_2026-08-27.md` ইত্যাদি) ভুল-সংশোধন ছাড়া বদলাবেন না। একই তারিখ অন্য ফাইলেও থাকলে সমস্যা নেই — build জোড়া লাগায় (হুবহু একই বুলেট দুই ফাইলে থাকলে একটা রাখে, সতর্কতা দেয়); তবু লেখার আগে তারিখ grep করে ডুপ্লিকেট-চেক করুন। বিস্তারিত: `PR_GUIDE.md`-এর "একাধিক সেশন একসাথে কাজ"।
+  - এটা `docs/ghotonaprobaho/`ও `docs/top-news/`-এ প্রযোজ্য না — এগুলো তারিখ-ভিত্তিক লগ, একই বিষয়ে ভিন্ন তারিখের খবর আলাদা ঘটনা হিসেবেই থাকে। এই দুইয়ের নিয়ম: (১) একই তারিখ-হেডিং-এ নতুন কনটেন্ট যোগ করার আগে ডুপ্লিকেট-চেক করুন (একই ঘটনা দুইবার না বসে); (২) **নিজের নতুন ফাইল বানান** (২০২৬-০৯-২০ থেকে; আগের "সংলগ্ন হলে `git mv` দিয়ে rename করে extend" নিয়ম বাতিল — একাধিক সেশন একসাথে কাজ করলে একই ফাইল সম্পাদনা/rename সংঘর্ষ ঘটায়)। নাম `<YYYY-MM>-<স্কোপ>.md` (স্কোপ = আপনার branch-এর slug, ইংরেজি অক্ষরে শুরু; যেমন `2026-09-tothyo-probaho-p12.md`)। বিদ্যমান মাসিক ফাইল (`2026-04-25_2026-08-27.md` ইত্যাদি) ভুল-সংশোধন ছাড়া বদলাবেন না। একই তারিখ অন্য ফাইলেও থাকলে সমস্যা নেই — build জোড়া লাগায় (হুবহু একই বুলেট দুই ফাইলে থাকলে একটা রাখে, সতর্কতা দেয়); বিস্তারিত: `PR_GUIDE.md`-এর "একাধিক সেশন একসাথে কাজ"।
 - নতুন টপিকের আগে `bash scripts/check_topic.sh "কীওয়ার্ড"` — কমপ্যাক্ট ইনডেক্স গ্রেপ করে, বড় raw ফাইল পড়তে হয় না। মিল পেলে সেই ফাইল `view` করে সত্যিই ডুপ্লিকেট কিনা দেখুন (আগে ডুপ্লিকেট টপিক তৈরি হয়ে পরে মার্জ করতে হয়েছিল)।
 - ফ্রন্টম্যাটারে `title`, `tags`, `last_updated` (`YYYY-MM`/`YYYY-MM-DD`) সঠিক রাখুন — সার্চ ইনডেক্স এর উপর নির্ভর করে।
 - ফাইলনামই স্লাগ (`[a-z0-9]+(-[a-z0-9]+)*`), আলাদা slug ফিল্ড নেই।

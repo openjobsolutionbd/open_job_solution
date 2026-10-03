@@ -10,7 +10,7 @@
 # (commit ছাড়া) সেখানেই build_index.py + verify_site.py + টেস্টগুলো চালায়। আপনার working
 # tree ছোঁয় না। commit না-করা পরিবর্তন এই চেকে নেই — আগে commit করুন।
 #
-# ব্যবহার: bash scripts/premerge_check.sh        (merge-এর ঠিক আগে; PR_GUIDE.md ধাপ ৬ দেখুন)
+# ব্যবহার: bash scripts/premerge_check.sh        (merge-এর ঠিক আগে; PR_GUIDE_REFERENCE.md ধাপ ৬ দেখুন)
 # exit code: 0 নিরাপদ | 1 সমস্যা (git সংঘর্ষ বা build/verify/টেস্ট ব্যর্থ) | 2 রিপো-ভুল | 3 fetch করা যায়নি
 # সীমা: এটা "এই মুহূর্তের" main-এর সাথে; মাঝখানে main আরও এগোলে ঝুঁকি থেকে যায় — merge করেই দ্রুত
 # ফল দেখুন; ব্যর্থ হলে update-wiki নিজে GitHub Issue (site-build-failed) খোলে।

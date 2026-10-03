@@ -11,6 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import pr_build_warnings as bw  # noqa: E402
 import pr_checks as pc  # noqa: E402
+import ship as sp  # noqa: E402
 import site_status as ss  # noqa: E402
 
 _tests = []
@@ -151,6 +152,46 @@ def _():
             {"conclusion": "failure", "head_sha": "bbbbbbb2", "created_at": "2026-09-21T11:00:00Z"}]
     _lines, ok = ss.summarize(runs, [])
     assert ok
+
+
+@test("ship.py: নিয়মফাইল/স্ক্রিপ্ট/workflow বদল ধরা পড়ে (merge-এর আগে অনুমতি লাগে), কনটেন্ট ফাইল নয়")
+def _():
+    assert sp.protected_files(["current-affairs/PR_GUIDE.md", "current-affairs/PR_GUIDE_REFERENCE.md",
+                               "current-affairs/AGENTS.md", "current-affairs/EDITORIAL_MEMORY.md",
+                               "current-affairs/scripts/ship.py", "_dev/scripts/x.py",
+                               ".github/workflows/pr-check.yml", "_docs/AGENTS.md"]) == sorted([
+        "current-affairs/PR_GUIDE.md", "current-affairs/PR_GUIDE_REFERENCE.md", "current-affairs/AGENTS.md",
+        "current-affairs/EDITORIAL_MEMORY.md", "current-affairs/scripts/ship.py", "_dev/scripts/x.py",
+        ".github/workflows/pr-check.yml", "_docs/AGENTS.md"])
+    assert sp.protected_files(["current-affairs/docs/topics/a.md", "current-affairs/docs/topics/scripts-guide.md",
+                               "current-affairs/CHANGELOG.md"]) == []
+
+
+def _checks(**kw):
+    base = {"validate": ("completed", "success"), "check": ("completed", "success")}
+    base.update(kw)
+    return [{"name": n, "status": s, "conclusion": c} for n, (s, c) in base.items()]
+
+
+@test("ship.py decide(): merged/বন্ধ/conflict/পিছিয়ে/অপেক্ষা/ব্যর্থ/প্রস্তুত — প্রতিটা আলাদা সিদ্ধান্ত")
+def _():
+    op = {"state": "open", "merged": False, "mergeable": True}
+    assert sp.decide({"merged": True}, 0, [])[0] == "done"
+    assert sp.decide({"state": "closed", "merged": False}, 0, _checks())[0] == "fail"
+    assert sp.decide({**op, "mergeable": False}, 0, _checks())[0] == "fail"          # আসল conflict: update-branch নয়
+    assert sp.decide(op, 3, _checks())[0] == "update"
+    assert sp.decide(op, 0, [])[0] == "wait"                                          # চেক এখনো আসেনি
+    assert sp.decide(op, 0, _checks(check=("in_progress", None)))[0] == "wait"
+    assert sp.decide(op, 0, _checks(validate=("completed", "failure")))[0] == "fail"
+    assert sp.decide(op, 0, _checks())[0] == "merge"
+
+
+@test("ship.py decide(): অ-বাধ্যতামূলক চেক (doc-staleness-check, Cloudflare Pages) merge আটকায় না; mergeable অজানা (None) হলেও এগোয়")
+def _():
+    op = {"state": "open", "merged": False, "mergeable": None}
+    runs = _checks(**{"doc-staleness-check": ("completed", "failure"), "Cloudflare Pages": ("in_progress", None)})
+    assert sp.decide(op, 0, runs)[0] == "merge"
+
 
 
 def main():

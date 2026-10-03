@@ -1,0 +1,857 @@
+[
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q01",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 1,
+    "q": "কাজ করার সামর্থ্যকে বলে —",
+    "answer": "শক্তি",
+    "options": [
+      "বল",
+      "ত্বরণ",
+      "ক্ষমতা",
+      "শক্তি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q02",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 2,
+    "q": "'He swore — Allah.'",
+    "answer": "by",
+    "options": [
+      "by",
+      "for",
+      "to",
+      "at"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q03",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 3,
+    "q": "The meaning of 'Melancholy' is —",
+    "answer": "depressed",
+    "options": [
+      "excited",
+      "depressed",
+      "angry",
+      "cheerful"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q07",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 7,
+    "q": "ইউক্রেন-রাশিয়া যুদ্ধ কোন কোন দেশের অর্থনীতি ও সামাজিক জীবন ক্ষতিগ্রস্ত করেছে?",
+    "answer": "প্রায় সব দেশের",
+    "options": [
+      "শুধু যুদ্ধে জড়িত দেশের",
+      "শুধু ইউক্রেন ও রাশিয়ার",
+      "প্রায় সব দেশের",
+      "শুধু ইউরোপের দেশগুলোর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q08",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 8,
+    "q": "বাংলা ভাষার প্রথম ব্যাকরণ কোন ভাষায় রচিত হয়েছিল?",
+    "answer": "পর্তুগিজ",
+    "options": [
+      "ইংরেজি",
+      "ফারসি",
+      "পর্তুগিজ",
+      "সংস্কৃত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q11",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 11,
+    "q": "কোনটি মৌলিক শব্দ নয়?",
+    "answer": "প্রেম",
+    "options": [
+      "হাত",
+      "মাথা",
+      "প্রেম",
+      "গোলাপ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q12",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 12,
+    "q": "পৃথিবীর সমার্থক শব্দ কোনটি?",
+    "answer": "ক্ষিতি",
+    "options": [
+      "পাবক",
+      "সলিল",
+      "ক্ষিতি",
+      "অম্বর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q14",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 14,
+    "q": "কোনটি ভারতের সেভেন সিস্টারস রাজ্যসমূহের অন্তর্ভুক্ত নয়?",
+    "answer": "কেরালা",
+    "options": [
+      "মেঘালয়",
+      "ত্রিপুরা",
+      "আসাম",
+      "কেরালা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q16",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 16,
+    "q": "'The door opened automatically.' The verb in this sentence is —",
+    "answer": "intransitive",
+    "options": [
+      "auxiliary",
+      "linking",
+      "transitive",
+      "intransitive"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q17",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 17,
+    "q": "নিচের কোনটি মিশ্র শব্দ?",
+    "answer": "চৌহদ্দি",
+    "options": [
+      "চৌহদ্দি",
+      "হাতঘড়ি",
+      "চাঁদমুখ",
+      "বইখাতা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q20",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 20,
+    "q": "'চাঁদের অমাবস্যা' গ্রন্থটির লেখক কে?",
+    "answer": "সৈয়দ ওয়ালীউল্লাহ",
+    "options": [
+      "হাসান আজিজুল হক",
+      "শওকত ওসমান",
+      "আবু ইসহাক",
+      "সৈয়দ ওয়ালীউল্লাহ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q22",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 22,
+    "q": "ভাষা আন্দোলনের পটভূমিতে রচিত 'কবর' নাটকের নাট্যকার কে?",
+    "answer": "মুনীর চৌধুরী",
+    "options": [
+      "মুনীর চৌধুরী",
+      "আবদুল্লাহ আল-মামুন",
+      "সেলিম আল দীন",
+      "সিকান্দার আবু জাফর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q23",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 23,
+    "q": "বিশ্বের বৃহত্তম মহাদেশ কোনটি?",
+    "answer": "এশিয়া",
+    "options": [
+      "উত্তর আমেরিকা",
+      "ইউরোপ",
+      "এশিয়া",
+      "আফ্রিকা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q24",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 24,
+    "q": "'Rahima is good — mathematics.'",
+    "answer": "at",
+    "options": [
+      "on",
+      "at",
+      "for",
+      "with"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q28",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 28,
+    "q": "'Look at the flying bird.' Here 'flying' is an example of —",
+    "answer": "present participle",
+    "options": [
+      "present participle",
+      "gerund",
+      "past participle",
+      "infinitive"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q29",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 29,
+    "q": "'সংবাদ প্রভাকর' পত্রিকার সম্পাদক কে?",
+    "answer": "ঈশ্বরচন্দ্র গুপ্ত",
+    "options": [
+      "রাজা রামমোহন রায়",
+      "ঈশ্বরচন্দ্র গুপ্ত",
+      "ঈশ্বরচন্দ্র বিদ্যাসাগর",
+      "অক্ষয়কুমার দত্ত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q31",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 31,
+    "q": "'The hotel is — the sea.'",
+    "answer": "beside",
+    "options": [
+      "between",
+      "beyond",
+      "beside",
+      "besides"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q34",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 34,
+    "q": "সার্ক (SAARC)-এর সদস্য দেশ কয়টি?",
+    "answer": "৮টি",
+    "options": [
+      "৯টি",
+      "৭টি",
+      "১০টি",
+      "৮টি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q37",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 37,
+    "q": "সুন্দরবন কোন প্রকৃতির অরণ্যের মতো?",
+    "answer": "ম্যানগ্রোভ",
+    "options": [
+      "ক্রান্তীয় মরু",
+      "কণিফার",
+      "ম্যানগ্রোভ",
+      "পর্ণমোচী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q38",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 38,
+    "q": "সমুদ্রতলে বাংলাদেশের মহীসোপান কত নটিক্যাল মাইল পর্যন্ত বিস্তৃত?",
+    "answer": "৩৫০",
+    "options": [
+      "৪৫০",
+      "২৫০",
+      "৩৫০",
+      "২০০"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q39",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 39,
+    "q": "Who is the author of 'White Teeth'?",
+    "answer": "Zadie Smith",
+    "options": [
+      "Chimamanda Ngozi Adichie",
+      "Salman Rushdie",
+      "Zadie Smith",
+      "Arundhati Roy"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q42",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 42,
+    "q": "Who wrote 'The Road Not Taken'?",
+    "answer": "Robert Frost",
+    "options": [
+      "Robert Frost",
+      "Walt Whitman",
+      "W. B. Yeats",
+      "T. S. Eliot"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q43",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 43,
+    "q": "'Education — our mind.'",
+    "answer": "ennobles",
+    "options": [
+      "enable",
+      "ennobles",
+      "ennable",
+      "noble"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q44",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 44,
+    "q": "'Tree Without Roots' কোন গ্রন্থের ইংরেজি অনুবাদ?",
+    "answer": "লালসালু",
+    "options": [
+      "লালসালু",
+      "পদ্মা নদীর মাঝি",
+      "কাঁদো নদী কাঁদো",
+      "চোখের বালি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q46",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 46,
+    "q": "পরীবিবি কে ছিলেন?",
+    "answer": "শায়েস্তা খানের কন্যা",
+    "options": [
+      "সিরাজউদ্দৌলার স্ত্রী",
+      "ঈশা খাঁর কন্যা",
+      "শায়েস্তা খানের কন্যা",
+      "শাহ সুজার কন্যা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q49",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 49,
+    "q": "'Be off my sight.' Here 'off' is —",
+    "answer": "adverb",
+    "options": [
+      "noun",
+      "adjective",
+      "adverb",
+      "conjunction"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q50",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 50,
+    "q": "Present Participle performs the functions of —",
+    "answer": "noun and adjective",
+    "options": [
+      "noun and adjective",
+      "verb and noun",
+      "noun only",
+      "adverb and adjective"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q52",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 52,
+    "q": "পূর্বে কোন দেশটি 'শ্যামদেশ' নামে পরিচিত ছিল?",
+    "answer": "থাইল্যান্ড",
+    "options": [
+      "কম্বোডিয়া",
+      "থাইল্যান্ড",
+      "মিয়ানমার",
+      "লাওস"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q53",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 53,
+    "q": "What is the meaning of the word 'Dismal'?",
+    "answer": "miserable",
+    "options": [
+      "miserable",
+      "cheerful",
+      "brilliant",
+      "ordinary"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q54",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 54,
+    "q": "বাংলাদেশের ২ টাকার কাগজের নোটে কার স্বাক্ষর থাকে?",
+    "answer": "অর্থ সচিব",
+    "options": [
+      "অর্থ সচিব",
+      "রাষ্ট্রপতি",
+      "প্রধানমন্ত্রী",
+      "গভর্নর"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q55",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 55,
+    "q": "চর্যাপদ বাংলা ভাষায় রচিত, এটি প্রমাণ করেন কে?",
+    "answer": "ড. মুহম্মদ শহীদুল্লাহ",
+    "options": [
+      "ড. মুহম্মদ শহীদুল্লাহ",
+      "দীনেশচন্দ্র সেন",
+      "রাজেন্দ্রলাল মিত্র",
+      "হরপ্রসাদ শাস্ত্রী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q56",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 56,
+    "q": "গ্রিক নাটক 'ইডিপাস' বাংলায় কে অনুবাদ করেন?",
+    "answer": "সৈয়দ আলী আহসান",
+    "options": [
+      "মুনীর চৌধুরী",
+      "সৈয়দ আলী আহসান",
+      "শামসুর রাহমান",
+      "আবদুল্লাহ আল-মামুন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q57",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 57,
+    "q": "'যুদ্ধই জীবন, যুদ্ধই সার্বজনীন' — এটি কার উক্তি?",
+    "answer": "হিটলার",
+    "options": [
+      "চার্চিল",
+      "হিটলার",
+      "মুসোলিনি",
+      "নেপোলিয়ন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q58",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 58,
+    "q": "সুইডেনের মুদ্রার নাম কী?",
+    "answer": "ক্রোনা",
+    "options": [
+      "ক্রোনা",
+      "ক্রোন",
+      "জ্লটি",
+      "ফ্র্যাঙ্ক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q59",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 59,
+    "q": "Robert Browning is best known for his mastery in —",
+    "answer": "the dramatic monologue",
+    "options": [
+      "the ode",
+      "the dramatic monologue",
+      "the sonnet",
+      "the epic"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q60",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 60,
+    "q": "বাংলা সাহিত্যে পঞ্চপাণ্ডব কাদের বলা হয়?",
+    "answer": "৫ জন কবিকে",
+    "options": [
+      "৫ জন কবিকে",
+      "৫ জন ঔপন্যাসিককে",
+      "৫ জন নাট্যকারকে",
+      "৫ জন প্রাবন্ধিককে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q62",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 62,
+    "q": "'Utopian' means —",
+    "answer": "idealistic",
+    "options": [
+      "realistic",
+      "pessimistic",
+      "idealistic",
+      "practical"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q63",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 63,
+    "q": "বাংলার প্রাচীনতম জায়গা কোনটি?",
+    "answer": "পুণ্ড্র",
+    "options": [
+      "হরিকেল",
+      "সমতট",
+      "পুণ্ড্র",
+      "বঙ্গ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q65",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 65,
+    "q": "'আপন ভালো সবাই চায়' — এ বাক্যে 'ভালো' কোন পদ?",
+    "answer": "বিশেষ্য",
+    "options": [
+      "বিশেষ্য",
+      "অব্যয়",
+      "বিশেষণ",
+      "ক্রিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q69",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 69,
+    "q": "কোন বানানটি শুদ্ধ?",
+    "answer": "নিশীথ",
+    "options": [
+      "নিশীথ",
+      "নীশিথ",
+      "নিসীথ",
+      "নিশীত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q72",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 72,
+    "q": "'He is gentle — nature.'",
+    "answer": "by",
+    "options": [
+      "of",
+      "with",
+      "for",
+      "by"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q74",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 74,
+    "q": "'শেষের কবিতা' কোন জাতীয় গ্রন্থ?",
+    "answer": "উপন্যাস",
+    "options": [
+      "কাব্য",
+      "উপন্যাস",
+      "প্রবন্ধ",
+      "নাটক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q76",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 76,
+    "q": "'The new policy is not consistent — the company's core values.'",
+    "answer": "with",
+    "options": [
+      "by",
+      "to",
+      "for",
+      "with"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q77",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 77,
+    "q": "'The Lady with the Lamp' কাকে বলা হয়?",
+    "answer": "ফ্লোরেন্স নাইটিঙ্গেল",
+    "options": [
+      "ক্লারা বার্টন",
+      "ম্যারি কুরি",
+      "মাদার তেরেসা",
+      "ফ্লোরেন্স নাইটিঙ্গেল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q79",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 79,
+    "q": "'উক্তি' শব্দের প্রকৃতি-প্রত্যয় কোনটি?",
+    "answer": "√বচ্ + তি",
+    "options": [
+      "√বচ্ + তি",
+      "√উক্ + তি",
+      "√উচ্ + তি",
+      "√উক্ত + ই"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q80",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 80,
+    "q": "কোনটি দেশি শব্দ?",
+    "answer": "কুলা",
+    "options": [
+      "কলম",
+      "চেয়ার",
+      "কুলা",
+      "কর্ম"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q81",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 81,
+    "q": "পাহাড়পুর বৌদ্ধবিহারের নির্মাতা কে?",
+    "answer": "ধর্মপাল",
+    "options": [
+      "গোপাল",
+      "দেবপাল",
+      "মহীপাল",
+      "ধর্মপাল"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q83",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 83,
+    "q": "'He recommended — this book.'",
+    "answer": "no preposition",
+    "options": [
+      "for",
+      "to",
+      "at",
+      "no preposition"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q85",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 85,
+    "q": "'অহিনকুল' বাগধারাটিতে 'নকুল' অর্থ কী?",
+    "answer": "বেজি",
+    "options": [
+      "বেজি",
+      "ময়ূর",
+      "হরিণ",
+      "সাপ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q86",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 86,
+    "q": "কোন ধাতু সবচেয়ে ভালো তাপ পরিবাহী?",
+    "answer": "তামা",
+    "options": [
+      "লোহা",
+      "অ্যালুমিনিয়াম",
+      "তামা",
+      "সিসা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q90",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 90,
+    "q": "WHO-এর সদর দপ্তর কোথায় অবস্থিত?",
+    "answer": "জেনেভা",
+    "options": [
+      "জেনেভা",
+      "রোম",
+      "প্যারিস",
+      "নিউইয়র্ক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q91",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 91,
+    "q": "অনুসর্গ কী করে?",
+    "answer": "বিভক্তির কাজ করে",
+    "options": [
+      "সন্ধি করে",
+      "ক্রিয়ার কাল বোঝায়",
+      "বিভক্তির কাজ করে",
+      "সমাস গঠন করে"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q93",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 93,
+    "q": "'তাহরির স্কয়ার' কোথায় অবস্থিত?",
+    "answer": "কায়রো",
+    "options": [
+      "আলেকজান্দ্রিয়া",
+      "দামেস্ক",
+      "কায়রো",
+      "বৈরুত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q94",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "general-knowledge",
+    "qno": 94,
+    "q": "নিপোর্ট (NIPORT) কী ধরনের গবেষণা প্রতিষ্ঠান?",
+    "answer": "জনসংখ্যা গবেষণা",
+    "options": [
+      "কৃষি গবেষণা",
+      "মৎস্য গবেষণা",
+      "জনসংখ্যা গবেষণা",
+      "ধান গবেষণা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q96",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "bangla",
+    "qno": 96,
+    "q": "কোনটি মুক্তিযুদ্ধভিত্তিক উপন্যাস?",
+    "answer": "রাইফেল রোটি আওরাত",
+    "options": [
+      "কবি",
+      "পদ্মা নদীর মাঝি",
+      "লালসালু",
+      "রাইফেল রোটি আওরাত"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q97",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 97,
+    "q": "A figure of speech in which an exaggeration occurs is —",
+    "answer": "Hyperbole",
+    "options": [
+      "Metaphor",
+      "Hyperbole",
+      "Irony",
+      "Simile"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "govt-employee-hospital-2026-medical-officer-q99",
+    "examId": "govt-employee-hospital-2026-medical-officer",
+    "subject": "english",
+    "qno": 99,
+    "q": "The antonym of 'dormant' is —",
+    "answer": "active",
+    "options": [
+      "passive",
+      "inactive",
+      "active",
+      "asleep"
+    ],
+    "optionsGenerated": true
+  }
+]

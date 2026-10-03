@@ -973,5 +973,395 @@
       "in"
     ],
     "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q72",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 72,
+    "q": "রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের নির্মাতা প্রতিষ্ঠানের নাম —",
+    "answer": "রোসাটম",
+    "options": [
+      "রোসাটম",
+      "জিই (GE)",
+      "মিতসুবিশি",
+      "সিমেন্স"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q73",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 73,
+    "q": "কোন গ্রন্থটি ব্রজবুলি ভাষায় রচিত?",
+    "answer": "ভানুসিংহের পদাবলী",
+    "options": [
+      "শ্রীকৃষ্ণকীর্তন",
+      "গীতাঞ্জলি",
+      "মেঘনাদবধ কাব্য",
+      "ভানুসিংহের পদাবলী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q74",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 74,
+    "q": "একটি 48 মিটার লম্বা খুঁটি ভেঙে গিয়ে সম্পূর্ণভাবে বিচ্ছিন্ন না হয়ে ভূমির সাথে 30° কোণ উৎপন্ন করে। খুঁটিটি কত উঁচুতে ভেঙেছিল?",
+    "answer": "16 মিটার",
+    "options": [
+      "32 মিটার",
+      "12 মিটার",
+      "24 মিটার",
+      "16 মিটার"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q75",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 75,
+    "q": "'কাঁদো নদী কাঁদো' গ্রন্থের রচয়িতা কে?",
+    "answer": "সৈয়দ ওয়ালীউল্লাহ",
+    "options": [
+      "সৈয়দ ওয়ালীউল্লাহ",
+      "আখতারুজ্জামান ইলিয়াস",
+      "হাসান আজিজুল হক",
+      "শওকত ওসমান"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q77",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 77,
+    "q": "কোনটি মুক্তিযুদ্ধকেন্দ্রিক উপন্যাস?",
+    "answer": "জলাংগী",
+    "options": [
+      "পথের পাঁচালী",
+      "লালসালু",
+      "পদ্মা নদীর মাঝি",
+      "জলাংগী"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q78",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 78,
+    "q": "কোনো শব্দ শোনার পর কানে কতক্ষণ তার রেশ থাকে?",
+    "answer": "1/10 সেকেন্ড",
+    "options": [
+      "1 সেকেন্ড",
+      "1/100 সেকেন্ড",
+      "1/2 সেকেন্ড",
+      "1/10 সেকেন্ড"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q79",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 79,
+    "q": "২০২২ সালের বিশ্বকাপ ফুটবলে কোন খেলোয়াড় 'গোল্ডেন গ্লাভ' পুরস্কার পেয়েছিলেন?",
+    "answer": "এমিলিয়ানো মার্টিনেজ",
+    "options": [
+      "এমিলিয়ানো মার্টিনেজ",
+      "হুগো লরিস",
+      "ইয়াসিন বুনু",
+      "থিবো কোর্তোয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q80",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 80,
+    "q": "উপকূল থেকে বাংলাদেশের অর্থনৈতিক সমুদ্রসীমা কত নটিক্যাল মাইল?",
+    "answer": "২০০",
+    "options": [
+      "১২",
+      "২৪",
+      "২০০",
+      "৩৫০"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q81",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 81,
+    "q": "1 − 1 + 1 − 1 + 1 − ... ধারাটির 2n + 1 সংখ্যক পদের সমষ্টি কত?",
+    "answer": "+1",
+    "options": [
+      "+1",
+      "−1",
+      "0",
+      "2n + 1"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q82",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 82,
+    "q": "'We clapped — our team won.'",
+    "answer": "when",
+    "options": [
+      "whom",
+      "when",
+      "what",
+      "which"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q83",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 83,
+    "q": "কোন দ্বীপকে 'সামুদ্রিক সংরক্ষিত এলাকা' হিসেবে ঘোষণা করা হয়েছে?",
+    "answer": "নিঝুম দ্বীপ",
+    "options": [
+      "নিঝুম দ্বীপ",
+      "হাতিয়া",
+      "ভোলা",
+      "কুতুবদিয়া"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q84",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 84,
+    "q": "ক, খ ও গ এর বেতনের অনুপাত 7 : 5 : 3। খ, গ অপেক্ষা 222 টাকা বেশি পেলে ক এর বেতন কত?",
+    "answer": "777",
+    "options": [
+      "777",
+      "888",
+      "555",
+      "666"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q85",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 85,
+    "q": "এক ব্যক্তি তার দুই কন্যাকে কিছু সংখ্যক স্বর্ণমুদ্রা এমনভাবে বণ্টন করে দিলেন যাতে তাদের প্রাপ্ত মুদ্রার সংখ্যার বর্গের অন্তর তাদের প্রাপ্ত মুদ্রার সংখ্যার বিয়োগফলের 45 গুণ হয়। তিনি কতগুলো মুদ্রা বণ্টন করেছিলেন?",
+    "answer": "45",
+    "options": [
+      "45",
+      "9",
+      "15",
+      "90"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q86",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 86,
+    "q": "'দ্যা ক্যাপটিভ লেডি' গ্রন্থটি কার লেখা?",
+    "answer": "মাইকেল মধুসূদন দত্ত",
+    "options": [
+      "রবীন্দ্রনাথ ঠাকুর",
+      "তোরু দত্ত",
+      "মাইকেল মধুসূদন দত্ত",
+      "বঙ্কিমচন্দ্র চট্টোপাধ্যায়"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q87",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 87,
+    "q": "'পূর্ববঙ্গ গীতিকা' সংগ্রহের প্রধান সম্পাদক কে?",
+    "answer": "দীনেশ চন্দ্র সেন",
+    "options": [
+      "দীনেশ চন্দ্র সেন",
+      "সুকুমার সেন",
+      "চন্দ্রকুমার দে",
+      "আশুতোষ ভট্টাচার্য"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q89",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 89,
+    "q": "'NIPORT' কোন ধরনের প্রতিষ্ঠান?",
+    "answer": "জনসংখ্যা গবেষণা",
+    "options": [
+      "জলবায়ু গবেষণা",
+      "শিক্ষা গবেষণা",
+      "জনসংখ্যা গবেষণা",
+      "কৃষি গবেষণা"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q90",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 90,
+    "q": "'Culprit' means —",
+    "answer": "offender",
+    "options": [
+      "offender",
+      "victim",
+      "witness",
+      "judge"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q91",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 91,
+    "q": "'We must keep our fingers — that the weather will remain fine tomorrow.'",
+    "answer": "crossed",
+    "options": [
+      "pointed",
+      "folded",
+      "closed",
+      "crossed"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q92",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 92,
+    "q": "'He is — back tomorrow.'",
+    "answer": "coming",
+    "options": [
+      "coming",
+      "came",
+      "come",
+      "has come"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q93",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 93,
+    "q": "চিপস এর প্যাকেটে কোন গ্যাস থাকে?",
+    "answer": "নাইট্রোজেন",
+    "options": [
+      "অক্সিজেন",
+      "কার্বন ডাই-অক্সাইড",
+      "হাইড্রোজেন",
+      "নাইট্রোজেন"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q95",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 95,
+    "q": "খাদ্যদ্রব্য পচে যাওয়ার জন্য দায়ী কোনটি?",
+    "answer": "ব্যাকটেরিয়া",
+    "options": [
+      "ভিটামিন",
+      "খনিজ লবণ",
+      "ব্যাকটেরিয়া",
+      "স্টার্চ"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q96",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "english",
+    "qno": 96,
+    "q": "'I — her in the plane.'",
+    "answer": "met",
+    "options": [
+      "meet",
+      "have meet",
+      "met",
+      "meeting"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q97",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "general-knowledge",
+    "qno": 97,
+    "q": "কোনটি সামরিক জোট নয়?",
+    "answer": "NAM",
+    "options": [
+      "NATO",
+      "CENTO",
+      "SEATO",
+      "NAM"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q98",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 98,
+    "q": "কোনটি অশুদ্ধ শব্দ?",
+    "answer": "সোনালী",
+    "options": [
+      "বাঙালি",
+      "সোনালী",
+      "দেশি",
+      "সোনালি"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q99",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "bangla",
+    "qno": 99,
+    "q": "কোন দ্বিরুক্ত শব্দগুলো বহুবচন ইঙ্গিত করে?",
+    "answer": "পাকা পাকা আম",
+    "options": [
+      "থেকে থেকে",
+      "পাকা পাকা আম",
+      "ধীরে ধীরে",
+      "টুকটুক"
+    ],
+    "optionsGenerated": true
+  },
+  {
+    "id": "culture-ministry-2026-protocol-officer-q100",
+    "examId": "culture-ministry-2026-protocol-officer",
+    "subject": "math",
+    "qno": 100,
+    "q": "৬টি কমলার ক্রয়মূল্য ৫টি কমলার বিক্রয়মূল্যের সমান হলে, শতকরা কত লাভ হবে?",
+    "answer": "20%",
+    "options": [
+      "16.67%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "optionsGenerated": true
   }
 ]

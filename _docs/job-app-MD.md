@@ -141,11 +141,13 @@ Although the sections are independent, **the whole app is one single PWA** — n
 
 | File | Where | Purpose |
 |------|-------|---------|
-| `manifest.json` | **root only** (`/manifest.json`) | App name, icon, install prompt — the only source |
+| `manifest.json` | **root only** (`/manifest.json`) | App name, icon, install prompt — the only manifest the app uses |
 | `sw.js` (root) | `/sw.js` | Caches only the home page, scope `/` |
-| `sw.js` (in each section) | `/bcs-mcq/sw.js` etc. | A separate scope for its own folder — runs offline, but there is no manifest.json there, so no separate install prompt appears |
+| `sw.js` (in each section) | `/bcs-mcq/sw.js` etc. | A separate scope for its own folder — runs offline; the section has no manifest of its own, so no separate install prompt appears |
 
-No section's `index.html` may contain `<link rel="manifest">` — only the root `index.html` has it.
+**Every page of the app links the same root manifest:** each section's `index.html` (and the other top-level pages, e.g. `books/book.html`) must contain `<link rel="manifest" href="/manifest.json">` (absolute path; the root `index.html` uses `manifest.json`). A section must **not** create or link a manifest of its own — that would give a separate install prompt; the install identity is the one "Open Job Solution" app whichever page the user is on (decision of #299). `_dev/check_docs_consistency.js` enforces this.
+
+> **Known leftover:** `current-affairs/docs/manifest.json` (+ its icons) is not linked from any page, but current-affairs' service-worker precache (`current-affairs/scripts/sw_template.js`) still lists it — do not delete it without updating that template, or that section's offline install breaks.
 
 ---
 
@@ -322,7 +324,7 @@ const APP_METADATA = {
 - the `topic` field is **optional** — if you are not sure it may be omitted, but a wrong topic must not be given
 - a `topic` value must be taken only from the approved list in Section ১৭ (`job-app/written-exam.md`) — never invent a new topic yourself
 - **Section independence must not be broken** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` must not use each other's `style.css`, `sw.js`, or data format (see Section ১)
-- **`manifest.json` lives only at the root** — no section's `index.html` may add `<link rel="manifest">` (the app is a single PWA — "Open Job Solution")
+- **One manifest only, linked from every page** — `manifest.json` lives at the root and every section's entry page links it with `<link rel="manifest" href="/manifest.json">`; never create or link a section-specific manifest (the app is a single PWA — "Open Job Solution")
 - every section's own `index.html` must have the `⬅️ হোমে ফিরুন` link
 - **The path in `<script src="...">` must match the real file location exactly** — if a file is in the `data/` subfolder you must write `src="data/filename.js"`; writing just `src="filename.js"` makes the browser look in the wrong place and the whole section breaks (Primary MCQ was broken for this reason in v1.15)
 - **The `class="..."` names in HTML and the selector names in CSS must be identical character for character** — a singular/plural mistake (`tag` vs `tags`) means the style is not applied and it silently stays broken without any error (the error badge was unstyled for this reason in v1.15)

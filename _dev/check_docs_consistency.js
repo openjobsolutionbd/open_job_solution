@@ -3,7 +3,7 @@
  * check_docs_consistency.js
  *
  * প্রজেক্টের গভর্নেন্স ডকুমেন্ট (_docs/job-app-MD.md, _docs/AGENTS.md) যেন
- * repo-র বাস্তব অবস্থা থেকে "হিবিজিবি" হয়ে সরে না যায় — সেটার জন্য পাঁচটা
+ * repo-র বাস্তব অবস্থা থেকে "হিবিজিবি" হয়ে সরে না যায় — সেটার জন্য ছয়টা
  * স্ট্রাকচারাল চেক করে। এটা prose/বিবরণ সঠিক কিনা যাচাই করে না (সেটা
  * মানুষ/AI-কেই মাঝেমধ্যে re-verify করতে হবে) — শুধু নিচের ধরনের ড্রিফট
  * আটকায়, যেগুলো আগে সমস্যা তৈরি করেছিল:
@@ -29,6 +29,8 @@
  *      সেকশন/ফাইলের দিকে পয়েন্ট করছে না (প্রতিটা সেকশন-ফাইল + মূল ফাইল = স্বয়ংসম্পূর্ণ)
  *
  * exit code 0 = ঠিক আছে, 1 = সমস্যা পাওয়া গেছে (CI fail করবে)।
+ *   ৬. PWA নিয়ম: প্রতিটা HTML পেজ (রুট থেকে ৩ ধাপের মধ্যে) রুটের একই manifest লিংক করে এবং কোনো পেজ অন্য manifest লিংক করে না
+ *      (job-app-MD.md §১ "PWA rule" — ডকুমেন্টে নিয়মটা একবার উল্টো লেখা ছিল)
  */
 
 const fs = require("fs");
@@ -315,6 +317,42 @@ if (mdCandidates.length >= 1) {
       if (!fs.existsSync(fp)) continue;
       const sz = fs.statSync(fp).size;
       if (sz > PART_WARN_BYTES) warnings.push(`⚠️  _docs/job-app/${f} এখন ${sz} বাইট (সীমা ${PART_WARN_BYTES}) — ভাগ করা বা ছাঁটাই বিবেচনা করুন।`);
+    }
+  }
+}
+
+// ── চেক ৬: PWA নিয়ম — ডকুমেন্ট বনাম আসল HTML ──────────────────
+// নিয়ম (job-app-MD.md §১ "PWA rule"): পুরো অ্যাপ একটাই PWA। প্রতিটা পেজ রুটের একই manifest লিংক করে
+// (<link rel="manifest" href="/manifest.json">); কোনো সেকশন নিজের manifest বানায়/লিংক করে না।
+// এই নিয়ম একবার ডকুমেন্টে ঠিক উল্টো ("কোনো সেকশনে লিংক থাকবে না") লেখা ছিল — আসল কোড ও #299-এর সিদ্ধান্তের বিপরীত,
+// ফলে ডকুমেন্ট মানতে গিয়ে কেউ সব সেকশন থেকে লিংক সরিয়ে দিতে পারত। তাই এখন নিয়মটা যাচাই হয়।
+{
+  const HTML_SKIP = new Set([".git", "node_modules", "_docs", "_dev", "_staging", "_assets"]);
+  const pages = [];
+  const walkHtml = (dir, depth) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) {
+        if (!HTML_SKIP.has(e.name)) walkHtml(p, depth + 1);
+      } else if (e.name.endsWith(".html")) {
+        pages.push({ p, depth: depth + 1 }); // depth = ফাইলনামসহ পাথের ধাপ-সংখ্যা (রুটের index.html = ১)
+      }
+    }
+  };
+  walkHtml(ROOT, 0);
+  const MANIFEST_TAG = /<link\b[^>]*\brel\s*=\s*["']manifest["'][^>]*>/gi;
+  for (const { p, depth } of pages) {
+    const rel = path.relative(ROOT, p);
+    const tags = fs.readFileSync(p, "utf8").match(MANIFEST_TAG) || [];
+    // (ক) যেকোনো পেজে manifest লিংক থাকলে সেটা রুটের manifest-ই হতে হবে
+    for (const tag of tags) {
+      const h = (tag.match(/\bhref\s*=\s*["']([^"']+)["']/i) || [])[1];
+      const ok = rel === "index.html" ? h === "manifest.json" || h === "/manifest.json" : h === "/manifest.json";
+      if (!ok) errors.push(`❌ ${rel}: manifest লিংক "${h}" — রুটের /manifest.json ছাড়া অন্য manifest লিংক করা যাবে না (একটাই PWA)।`);
+    }
+    // (খ) সেকশনের এন্ট্রি-পেজ (রুট থেকে ৩ ধাপের মধ্যে; কারেন্ট-অ্যাফেয়ার্সের জেনারেটেড topic/ পেজ ৪+ ধাপ, তাই বাদ) অবশ্যই লিংক করবে
+    if (depth <= 3 && tags.length === 0) {
+      errors.push(`❌ ${rel}: <link rel="manifest" href="/manifest.json"> নেই — প্রতিটা পেজ রুটের একই manifest লিংক করবে (job-app-MD.md §১ PWA rule)।`);
     }
   }
 }

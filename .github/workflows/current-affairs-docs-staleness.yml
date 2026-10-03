@@ -30,6 +30,10 @@ on:
 permissions:
   contents: read
   issues: write
+  # pull_request-এ রিপোর্ট কমেন্ট করতে লাগে — না থাকলে createComment
+  # "Resource not accessible by integration" দিয়ে ব্যর্থ হয়ে চেকটা লাল হয়ে যায়
+  # (pr-check.yml-ও একই কারণে দুটোই রাখে)।
+  pull-requests: write
 
 jobs:
   doc-staleness-check:

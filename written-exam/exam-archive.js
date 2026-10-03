@@ -1021,5 +1021,14 @@ const EXAM_ARCHIVE = [
     totalMarks: 70,
     totalQuestions: 12,
   },
+  {
+    id: "job-2025-govt-transport-accounts-office-asst",
+    ministry: "সরকারি যানবাহন অধিদপ্তর",
+    post: "হিসাব সহকারী/অফিস সহকারী কাম-কম্পিউটার মুদ্রাক্ষরিক",
+    date: "2025-02-28",
+    duration: "১:৩০ ঘণ্টা",
+    totalMarks: 100,
+    totalQuestions: 14,
+  },
   // পরবর্তী পরীক্ষা এখানে যোগ করুন
 ];

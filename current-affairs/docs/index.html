@@ -403,10 +403,9 @@
     right:16px;
     bottom:calc(76px + env(safe-area-inset-bottom, 0px));
     z-index:400;
-    display:none; /* শুধু ghotonaprobaho/top-news মোডে দেখানো হয় — JS টগল করে */
+    display:block; /* সব মোডে (টপিক, ঘটনাপ্রবাহ, টপ নিউজ, MCQ) সবসময় দেখা যায় — পড়তে পড়তে কিছু জানার দরকার হলেই সার্চ */
     font-family:'Kalpurush', sans-serif;
   }
-  .floating-search-wrap.visible{ display:block; }
 
   /* ══════════════════════════════════════════════════════
      "ওপরে ফিরুন" বাটন — সব ভিউতে (হোম/টপিক/ঘটনাপ্রবাহ/টপ-নিউজ/MCQ/
@@ -519,6 +518,8 @@
       width:36px;
       height:36px;
     }
+    /* ৩৬px পিলের কেন্দ্র ৪০px ↑ বাটনের কেন্দ্রের ঠিক ওপরে রাখতে ডান কিনারা ২২px */
+    .floating-search-wrap{ right:22px; }
   }
   @keyframes fsiBreathe{
     0%, 100%{ transform:scale(1) rotate(0deg); }
@@ -2578,15 +2579,9 @@ function setActiveLayout(mode){
   document.getElementById('ghotonaprobaho-layout').style.display = mode === 'ghotonaprobaho' ? '' : 'none';
   document.getElementById('top-news-layout').style.display = mode === 'top-news' ? '' : 'none';
   document.getElementById('mcq-layout').style.display = mode === 'mcq' ? '' : 'none';
-  // ভাসমান সার্চ বক্স "দৈনিক ঘটনাপ্রবাহ" ও "টপ নিউজ" — দুই মোডেই দেখানো হয়,
-  // কারণ এই দুই মোডেই বাম পাশের টপিক-তালিকা থাকে না।
-  const fsWrap = document.getElementById('floating-search-wrap');
-  if(mode === 'ghotonaprobaho' || mode === 'top-news'){
-    fsWrap.classList.add('visible');
-  } else {
-    fsWrap.classList.remove('visible');
-    closeFloatingSearch();
-  }
+  // ভাসমান সার্চ বক্স সব মোডেই থাকে (CSS-এ সবসময় দৃশ্যমান); মোড বদলালে
+  // আগের মোডের অর্ধেক-লেখা সার্চ ও ফলাফল পরিষ্কার করে বক্সটা বন্ধ করা হয়।
+  closeFloatingSearch();
 }
 
 function resetModeTabButtons(){
@@ -2792,7 +2787,7 @@ function currentFiltered(q){
 // "সকল টপিক" তালিকায় দেখানোর জন্য চূড়ান্ত ফিল্টার — সার্চ কোয়েরি +
 // ঐচ্ছিক "শুধু প্রিয়" ফিল্টার একসাথে প্রয়োগ করে। ভাসমান সার্চ
 // (renderFloatingResults) ইচ্ছাকৃতভাবে এটা ব্যবহার করে না, কারণ সেটা
-// "দৈনিক ঘটনাপ্রবাহ" মোডে যেকোনো টপিক খুঁজে বের করার জন্য — বুকমার্ক
+// যেকোনো মোডে পড়তে পড়তে যেকোনো টপিক খুঁজে বের করার জন্য — বুকমার্ক
 // ফিল্টার দিয়ে সীমিত করা উচিত না।
 function visibleTopics(q){
   let list = currentFiltered(q);
@@ -2817,7 +2812,7 @@ document.getElementById('bookmark-filter-toggle').addEventListener('click', (e) 
 });
 
 // ══════════════════════════════════════════════════════
-// ভাসমান সার্চ বক্স ("দৈনিক ঘটনাপ্রবাহ" মোডে) — উপরের মূল #search-এর
+// ভাসমান সার্চ বক্স (সব মোডে — টপিক, ঘটনাপ্রবাহ, টপ নিউজ, MCQ) — উপরের মূল #search-এর
 // মতোই matchTopic/currentFiltered ব্যবহার করে টপিক খোঁজে, কিন্তু ফলাফল
 // একটা ছোট dropdown-এ দেখায় এবং ক্লিক করলে openTopicInModal() দিয়ে
 // একটা মডাল ওভারলেতে দেখায় — বর্তমান মোড/স্ক্রিন বদলায় না।

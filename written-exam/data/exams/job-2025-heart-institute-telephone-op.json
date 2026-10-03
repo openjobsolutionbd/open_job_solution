@@ -30,7 +30,7 @@
         "দিক্ + অন্ত"
       ],
       [
-        "চিত্রার্কষণ",
+        "চিত্রাকর্ষণ",
         "চিত্র + আকর্ষণ"
       ]
     ]
@@ -231,7 +231,7 @@
         "answer": "with"
       },
       {
-        "sentence": "This is the more in interesting ....... the two.",
+        "sentence": "This is the more interesting ....... the two.",
         "answer": "of"
       },
       {
@@ -265,8 +265,8 @@
       },
       {
         "label": "b",
-        "original": "Everybody wants friend. (Negative)",
-        "changed": "There is no body but wants friend."
+        "original": "Everybody wants friends. (Negative)",
+        "changed": "There is nobody who does not want friends."
       },
       {
         "label": "c",
@@ -310,13 +310,13 @@
       {
         "label": "c",
         "phrase": "Take liberties",
-        "meaning": "স্বাধীনতা হরণ করা",
-        "example": "We should not take liberties from anyone."
+        "meaning": "ধৃষ্টতা দেখানো/অতিরিক্ত স্বাধীনতা নেওয়া",
+        "example": "We should not take liberties with our teachers."
       },
       {
         "label": "d",
         "phrase": "Read between the lines",
-        "meaning": "মধ্যবর্তীকে বুঝা",
+        "meaning": "অন্তর্নিহিত অর্থ বোঝা",
         "example": "Try to read between the lines of the letter"
       },
       {

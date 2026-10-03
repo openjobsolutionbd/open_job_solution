@@ -119,7 +119,7 @@
       },
       {
         "label": "c",
-        "q": "Pros and Cons = খুঁটিনাটি",
+        "q": "Pros and Cons = পক্ষে-বিপক্ষের যুক্তি/ভালো-মন্দ দিক",
         "a": "I know the pros and cons of the matter"
       },
       {
@@ -342,7 +342,7 @@
       {
         "label": "ছ",
         "q": "TIN এর পূর্ণরূপ লিখুন।",
-        "a": "Taxpayer's Identification Numbers"
+        "a": "Taxpayer's Identification Number"
       },
       {
         "label": "জ",

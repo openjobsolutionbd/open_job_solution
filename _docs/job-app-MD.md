@@ -1,9 +1,9 @@
 # BCS-MCQ-Project — Master Reference Document
 
-> **আর্কিটেকচার/কনটেন্ট ভার্সন:** v1.22 (সর্বশেষ অর্থপূর্ণ পরিবর্তন — Current Affairs সেকশন যোগ)
-> **সর্বশেষ যাচাই/সম্পাদনা:** ২৪ আগস্ট ২০২৬
-> **উদ্দেশ্য:** এই ডকুমেন্ট যেকোনো AI-কে দিলে সে প্রজেক্টের সম্পূর্ণ কাঠামো বুঝতে পারবে।
-> **নোট:** নিচের Version History টেবিলের বেশিরভাগ এন্ট্রি (v1.23+) `_dev/update_version.py` স্ক্রিপ্ট প্রতিটা ডিপ্লয়ে স্বয়ংক্রিয়ভাবে যোগ করে (routine cache/version bump, সাইটের `APP_VERSION`-এর সাথে মেলে) — এগুলো এই ডকুমেন্টের নিজস্ব আর্কিটেকচার-ভার্সন থেকে আলাদা। প্রজেক্টের গিট/পুশ/মার্জ ওয়ার্কফ্লো নিয়মের জন্য `_docs/AGENTS.md` দেখুন — এই দুই ডকুমেন্ট একে অপরের পরিপূরক।
+> **Architecture/content version:** v1.22 (last meaningful change — Current Affairs section added)
+> **Last verified/edited:** 2026-10-01
+> **Purpose:** give this document to any AI and it can understand the project's complete structure.
+> **Note:** this document is split into 7 files — this main file holds the always-read parts (prohibitions, checklist, overview, folder structure, general rules); the rest lives in `_docs/job-app/`. **The index below says which file to read for which task.** Version History is in its own file (`job-app/version-history.md`); routine cache/version bumps are not recorded there (they are in `git log` and `_docs/version.txt`). For the git/push/merge workflow rules see `_docs/AGENTS.md` — the two documents complement each other. **Language:** this main file is in English to save tokens; the prohibition block, the checklist and the `_docs/job-app/` parts stay in Bengali. Literal Bengali data values/UI strings (subject names, `⬅️ হোমে ফিরুন`, etc.) must stay Bengali.
 
 ---
 
@@ -41,6 +41,8 @@ Project Owner দেখে অনুমোদন দেয়
         ↓
 পুরানো version আর্কাইভ হয়
 ```
+
+> ✏️ **মালিক-অনুমোদিত সম্পাদনা (১ অক্টোবর ২০২৬ যোগ করা):** Project Owner যদি চ্যাটে স্পষ্টভাবে নির্দেশ দেন (যেমন "এই ডকুমেন্ট সম্পাদনা/অনুবাদ করো"), তাহলে AI সরাসরি এই ফাইলেই সেই নির্দিষ্ট পরিবর্তন করতে পারবে এবং `job-app/version-history.md`-এ সারি যোগ করতে পারবে। **এই repo-তে `job-app-MD*.md` নামে একটাই ফাইল থাকে** (একাধিক হলে CI আটকায়; ইতিহাস git-এ), তাই উপরের "নতুন ফাইলে/পুরানো version আর্কাইভ" ধাপ এবং নিচের চেকলিস্টের `job-app-vX.X.md` নাম-নিয়ম এখন প্রযোজ্য নয় — সেটা সরাসরি এই ফাইলে সম্পাদনা দিয়ে হয়। তবে নিজের উদ্যোগে, "উন্নতির নামে" বা মালিকের নির্দেশের বাইরে কোনো নিয়ম যোগ/বদল/মোছা তখনও নিষিদ্ধ।
 
 > 🔒 **এই নিষেধাজ্ঞা ব্লকটি কখনো সরানো যাবে না বা পরিবর্তন করা যাবে না।**
 > যেকোনো AI যদি এই নিয়ম লঙ্ঘন করে, সেটি Project Owner-এর বিশ্বাসঘাতকতা।
@@ -87,753 +89,153 @@ Project Owner দেখে অনুমোদন দেয়
 
 ---
 
-## Version History
+## 📑 Document index — which file to read for which task (mandatory)
 
-| Version | তারিখ | পরিবর্তন |
-|---------|-------|----------|
-| v1.339 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.339-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.338 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.338-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.337 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.337-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.336 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.336-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.335 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.335-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.334 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.334-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.333 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.333-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.332 | ২৯ সেপ্টেম্বর ২০২৬ | Version v1.332-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.331 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.331-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.330 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.330-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.329 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.329-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.328 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.328-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.327 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.327-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.326 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.326-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.325 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.325-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.324 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.324-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.323 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.323-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.322 | ২৮ সেপ্টেম্বর ২০২৬ | Version v1.322-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.321 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.321-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.320 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.320-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.319 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.319-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.318 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.318-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.317 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.317-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.316 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.316-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.315 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.315-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.314 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.314-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.313 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.313-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.312 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.312-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.311 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.311-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.310 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.310-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.309 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.309-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.308 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.308-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.307 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.307-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.306 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.306-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.305 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.305-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.304 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.304-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.303 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.303-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.302 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.302-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.301 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.301-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.300 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.300-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.299 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.299-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.298 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.298-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.297 | ২৭ সেপ্টেম্বর ২০২৬ | Version v1.297-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.296 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.296-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.295 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.295-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.294 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.294-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.293 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.293-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.292 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.292-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.291 | ২৬ সেপ্টেম্বর ২০২৬ | Version v1.291-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.290 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.290-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.289 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.289-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.288 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.288-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.287 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.287-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.286 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.286-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.285 | ২৫ সেপ্টেম্বর ২০২৬ | Version v1.285-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.284 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.284-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.283 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.283-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.282 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.282-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.281 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.281-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.280 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.280-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.279 | ২৪ সেপ্টেম্বর ২০২৬ | Version v1.279-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.278 | ২৩ সেপ্টেম্বর ২০২৬ | Version v1.278-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.277 | ২১ সেপ্টেম্বর ২০২৬ | Version v1.277-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.276 | ২০ সেপ্টেম্বর ২০২৬ | Version v1.276-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.275 | ১৯ সেপ্টেম্বর ২০২৬ | Version v1.275-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.274 | ১৯ সেপ্টেম্বর ২০২৬ | Version v1.274-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.273 | ১৯ সেপ্টেম্বর ২০২৬ | Version v1.273-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.272 | ১৯ সেপ্টেম্বর ২০২৬ | Version v1.272-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.271 | ১৯ সেপ্টেম্বর ২০২৬ | Version v1.271-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.270 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.270-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.269 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.269-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.268 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.268-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.267 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.267-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.266 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.266-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.265 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.265-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.264 | ১৮ সেপ্টেম্বর ২০২৬ | Version v1.264-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.263 | ১৭ সেপ্টেম্বর ২০২৬ | Version v1.263-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.262 | ১৫ সেপ্টেম্বর ২০২৬ | Version v1.262-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.261 | ১৩ সেপ্টেম্বর ২০২৬ | Version v1.261-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.260 | ১৩ সেপ্টেম্বর ২০২৬ | Version v1.260-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.259 | ১৩ সেপ্টেম্বর ২০২৬ | Version v1.259-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.258 | ১৩ সেপ্টেম্বর ২০২৬ | Version v1.258-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.257 | ১৩ সেপ্টেম্বর ২০২৬ | Version v1.257-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.256 | ১২ সেপ্টেম্বর ২০২৬ | Version v1.256-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.255 | ১১ সেপ্টেম্বর ২০২৬ | Version v1.255-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.254 | ১১ সেপ্টেম্বর ২০২৬ | Version v1.254-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.253 | ১১ সেপ্টেম্বর ২০২৬ | Version v1.253-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.252 | ১১ সেপ্টেম্বর ২০২৬ | Version v1.252-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.251 | ৮ সেপ্টেম্বর ২০২৬ | Version v1.251-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.250 | ৭ সেপ্টেম্বর ২০২৬ | Version v1.250-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.249 | ৭ সেপ্টেম্বর ২০২৬ | Version v1.249-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.248 | ৭ সেপ্টেম্বর ২০২৬ | Version v1.248-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.247 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.247-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.246 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.246-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.245 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.245-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.244 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.244-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.243 | ৬ সেপ্টেম্বর ২০২৬ | Version v1.243-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.242 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.242-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.241 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.241-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.240 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.240-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.239 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.239-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.238 | ৫ সেপ্টেম্বর ২০২৬ | Version v1.238-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.237 | ৪ সেপ্টেম্বর ২০২৬ | Version v1.237-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.236 | ২ সেপ্টেম্বর ২০২৬ | Version v1.236-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.235 | ২ সেপ্টেম্বর ২০২৬ | Version v1.235-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.234 | ১ সেপ্টেম্বর ২০২৬ | Version v1.234-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.233 | ১ সেপ্টেম্বর ২০২৬ | Version v1.233-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.232 | ১ সেপ্টেম্বর ২০২৬ | Version v1.232-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.231 | ১ সেপ্টেম্বর ২০২৬ | Version v1.231-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.230 | ১ সেপ্টেম্বর ২০২৬ | Version v1.230-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.229 | ১ সেপ্টেম্বর ২০২৬ | Version v1.229-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.228 | ১ সেপ্টেম্বর ২০২৬ | Version v1.228-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.227 | ১ সেপ্টেম্বর ২০২৬ | Version v1.227-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.226 | ১ সেপ্টেম্বর ২০২৬ | Version v1.226-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.225 | ৩১ আগস্ট ২০২৬ | Version v1.225-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.224 | ৩১ আগস্ট ২০২৬ | Version v1.224-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.223 | ৩১ আগস্ট ২০২৬ | Version v1.223-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.222 | ৩১ আগস্ট ২০২৬ | Version v1.222-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.221 | ৩১ আগস্ট ২০২৬ | Version v1.221-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.220 | ৩১ আগস্ট ২০২৬ | Version v1.220-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.219 | ৩০ আগস্ট ২০২৬ | Version v1.219-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.218 | ৩০ আগস্ট ২০২৬ | Version v1.218-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.217 | ৩০ আগস্ট ২০২৬ | Version v1.217-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.216 | ৩০ আগস্ট ২০২৬ | Version v1.216-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.215 | ৩০ আগস্ট ২০২৬ | Version v1.215-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.214 | ৩০ আগস্ট ২০২৬ | Version v1.214-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.213 | ৩০ আগস্ট ২০২৬ | Version v1.213-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.212 | ৩০ আগস্ট ২০২৬ | Version v1.212-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.211 | ৩০ আগস্ট ২০২৬ | Version v1.211-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.210 | ৩০ আগস্ট ২০২৬ | Version v1.210-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.209 | ৩০ আগস্ট ২০২৬ | Version v1.209-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.208 | ৩০ আগস্ট ২০২৬ | Version v1.208-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.207 | ৩০ আগস্ট ২০২৬ | Version v1.207-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.206 | ৩০ আগস্ট ২০২৬ | Version v1.206-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.205 | ৩০ আগস্ট ২০২৬ | Version v1.205-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.204 | ৩০ আগস্ট ২০২৬ | Version v1.204-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.203 | ৩০ আগস্ট ২০২৬ | Version v1.203-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.202 | ৩০ আগস্ট ২০২৬ | Version v1.202-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.201 | ৩০ আগস্ট ২০২৬ | Version v1.201-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.200 | ৩০ আগস্ট ২০২৬ | Version v1.200-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.199 | ২৯ আগস্ট ২০২৬ | Version v1.199-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.198 | ২৯ আগস্ট ২০২৬ | Version v1.198-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.197 | ২৯ আগস্ট ২০২৬ | Version v1.197-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.196 | ২৯ আগস্ট ২০২৬ | Version v1.196-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.195 | ২৯ আগস্ট ২০২৬ | Version v1.195-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.194 | ২৯ আগস্ট ২০২৬ | Version v1.194-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.193 | ২৯ আগস্ট ২০২৬ | Version v1.193-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.192 | ২৯ আগস্ট ২০২৬ | Version v1.192-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.191 | ২৯ আগস্ট ২০২৬ | Version v1.191-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.190 | ২৯ আগস্ট ২০২৬ | Version v1.190-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.189 | ২৯ আগস্ট ২০২৬ | Version v1.189-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.188 | ২৯ আগস্ট ২০২৬ | Version v1.188-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.187 | ২৯ আগস্ট ২০২৬ | Version v1.187-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.186 | ২৯ আগস্ট ২০২৬ | Version v1.186-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.185 | ২৯ আগস্ট ২০২৬ | Version v1.185-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.184 | ২৯ আগস্ট ২০২৬ | Version v1.184-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.183 | ২৯ আগস্ট ২০২৬ | Version v1.183-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.182 | ২৮ আগস্ট ২০২৬ | Version v1.182-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.181 | ২৮ আগস্ট ২০২৬ | Version v1.181-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.180 | ২৮ আগস্ট ২০২৬ | Version v1.180-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.179 | ২৮ আগস্ট ২০২৬ | Version v1.179-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.178 | ২৮ আগস্ট ২০২৬ | Version v1.178-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.177 | ২৮ আগস্ট ২০২৬ | Version v1.177-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.176 | ২৮ আগস্ট ২০২৬ | Version v1.176-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.175 | ২৭ আগস্ট ২০২৬ | Version v1.175-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.174 | ২৭ আগস্ট ২০২৬ | Version v1.174-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.173 | ২৭ আগস্ট ২০২৬ | Version v1.173-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.172 | ২৭ আগস্ট ২০২৬ | Version v1.172-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.171 | ২৭ আগস্ট ২০২৬ | Version v1.171-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.170 | ২৭ আগস্ট ২০২৬ | Version v1.170-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.169 | ২৭ আগস্ট ২০২৬ | Version v1.169-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.168 | ২৭ আগস্ট ২০২৬ | Version v1.168-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.167 | ২৭ আগস্ট ২০২৬ | Version v1.167-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.166 | ২৭ আগস্ট ২০২৬ | Version v1.166-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.165 | ২৭ আগস্ট ২০২৬ | Version v1.165-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.164 | ২৭ আগস্ট ২০২৬ | Version v1.164-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.163 | ২৭ আগস্ট ২০২৬ | Version v1.163-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.162 | ২৬ আগস্ট ২০২৬ | Version v1.162-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.161 | ২৬ আগস্ট ২০২৬ | Version v1.161-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.160 | ২৬ আগস্ট ২০২৬ | Version v1.160-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.159 | ২৬ আগস্ট ২০২৬ | Version v1.159-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.158 | ২৬ আগস্ট ২০২৬ | Version v1.158-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.157 | ২৬ আগস্ট ২০২৬ | Version v1.157-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.156 | ২৬ আগস্ট ২০২৬ | Version v1.156-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.155 | ২৬ আগস্ট ২০২৬ | Version v1.155-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.154 | ২৬ আগস্ট ২০২৬ | Version v1.154-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.153 | ২৬ আগস্ট ২০২৬ | Version v1.153-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.152 | ২৬ আগস্ট ২০২৬ | Version v1.152-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.151 | ২৬ আগস্ট ২০২৬ | Version v1.151-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.150 | ২৬ আগস্ট ২০২৬ | Version v1.150-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.149 | ২৬ আগস্ট ২০২৬ | Version v1.149-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.148 | ২৫ আগস্ট ২০২৬ | Version v1.148-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.147 | ২৫ আগস্ট ২০২৬ | Version v1.147-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.146 | ২৫ আগস্ট ২০২৬ | Version v1.146-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.145 | ২৫ আগস্ট ২০২৬ | Version v1.145-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.144 | ২৫ আগস্ট ২০২৬ | Version v1.144-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.143 | ২৫ আগস্ট ২০২৬ | Version v1.143-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.142 | ২৫ আগস্ট ২০২৬ | Version v1.142-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.141 | ২৫ আগস্ট ২০২৬ | Version v1.141-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.140 | ২৫ আগস্ট ২০২৬ | Version v1.140-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.139 | ২৫ আগস্ট ২০২৬ | Version v1.139-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.138 | ২৫ আগস্ট ২০২৬ | Version v1.138-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.137 | ২৫ আগস্ট ২০২৬ | Version v1.137-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.136 | ২৫ আগস্ট ২০২৬ | Version v1.136-এ আপগ্রেড। Cache সব module-এ update। |
-| v1.22–v1.135 | ১২ আগস্ট ২০২৬ – ২৪ আগস্ট ২০২৬ | *(routine, auto-generated by `_dev/update_version.py` — শুধু cache/version bump, কোনো architecture/content পরিবর্তন নেই, 114টা এন্ট্রি কম্প্রেস করা হলো)* |
-| v1.16 | ২০ জুন ২০২৬ | **Lazy Loading পরিকল্পনা যোগ (Section ১৫):** ডেটা বড় হলে speed সমস্যা এড়াতে একটা নতুন Pending Task যোগ করা হয়েছে। নিয়ম: `job-solution.js`-এ মোট প্রশ্ন সংখ্যা ৫০০ ছাড়ালে, এক ফাইলের বদলে প্রতিটা পরীক্ষার জন্য আলাদা ফাইল (`written-exam/data/exams/{examId}.js`) বানিয়ে শুধু প্রয়োজনীয় পরীক্ষার ডেটা লোড করতে হবে। AI-কে নির্দেশ দেওয়া হয়েছে যেন প্রশ্ন সংখ্যা ৫০০ এর কাছাকাছি পৌঁছালে প্রজেক্ট মালিককে সতর্ক করে। |
-| v1.15 | ২০ জুন ২০২৬ | **পুরো প্রজেক্ট লাইন-বাই-লাইন গভীর স্ক্যান — ৩টা বাগ পাওয়া ও ঠিক করা হয়েছে:** (১) `primary-mcq/index.html`-এ `<script src="data.js">` ভুল path ছিল — আসল ফাইল `data/data.js`-এ, ফলে পুরো Primary MCQ সেকশন ডেটা লোড না হয়ে ভেঙে ছিল; path ঠিক করা হয়েছে। (২) `bcs-mcq/style.css`-এ `.tab-icon` ক্লাসের কোনো CSS রুল ছিল না এবং SVG আইকনে width/height সেট ছিল না — ফলে বিষয়ের ট্যাবের আইকন ব্রাউজারের ডিফল্ট সাইজে (৩০০×১৫০px) বিশাল হয়ে দেখাতো; `.tab-icon` ও `.tab-icon svg` রুল যোগ করা হয়েছে। (৩) `bcs-mcq/app.js`-এ ভুল উত্তরের সংখ্যা দেখানোর badge-এ `class="tag error"` (একবচন) লেখা ছিল কিন্তু CSS-এ `.tags`/`.tags.error` (বহুবচন) সংজ্ঞায়িত — ক্লাস নাম না মেলায় badge স্টাইল পেত না; `tag` কে `tags` করে ঠিক করা হয়েছে। এছাড়া ডেটা ইন্টিগ্রিটি সম্পূর্ণভাবে যাচাই করা হয়েছে: ১৩১৭টা BCS প্রশ্নে id/options/correctIndex, ৩০টা Primary প্রশ্নে id prefix, এবং ১৫টা Written Exam প্রশ্নে examId/type — সব সঠিক পাওয়া গেছে, কোনো নতুন সমস্যা নেই। |
-| v1.14 | ২০ জুন ২০২৬ | **MathJax যোগ ও গণিত নোটেশন ঠিক করা:** `written-exam/index.html`-এ MathJax (CDN) যোগ করা হয়েছে যাতে `$...$` এর ভেতরের LaTeX সমীকরণ সুন্দর গাণিতিক আকারে দেখায়। `job-solution.js`-এর সব গণিত প্রশ্নে en-dash (`–`) বাদ দিয়ে সাধারণ হাইফেন (`-`) এ পরিবর্তন করা হয়েছে, কারণ MathJax en-dash কে বিয়োগ চিহ্ন হিসেবে চেনে না। Section ১৪-এ নতুন নিয়ম যোগ — ভবিষ্যতে গণিত প্রশ্ন লেখার সময় সবসময় সাধারণ হাইফেন ব্যবহার করতে হবে। |
-| v1.13 | ২০ জুন ২০২৬ | **গুরুত্বপূর্ণ বাগ ফিক্স — examId লিংক:** আবিষ্কার হয়েছিল যে `job-solution.js`-এ প্রশ্ন ও `exam-archive.js`-এ পরীক্ষার মধ্যে কোনো নিশ্চিত সংযোগ ছিল না (ডকুমেন্টে লেখা `ministry`/`date` ফিল্ড বাস্তবে প্রতিটা প্রশ্নে ছিল না) — ফলে কোনো পরীক্ষায় ক্লিক করলে প্রশ্ন দেখাতো না। সমাধান: প্রতিটা প্রশ্নে বাধ্যতামূলক `examId` ফিল্ড যোগ। Section ৫, ৬, ৭ আপডেট করে বাস্তব ডেটা স্ট্রাকচারের সাথে মিলানো হয়েছে। `qno` ফিল্ড Bengali-digit string থেকে সংখ্যায় (number) ফিরিয়ে আনা হয়েছে — UI নিজে থেকে বাংলা সংখ্যায় দেখায়। `written-exam/index.html`-এ filter + search সিস্টেম যোগ করা হয়েছে (মন্ত্রণালয়, বছর, সার্চ, বিষয় ট্যাব)। |
-| v1.12 | ১৯ জুন ২০২৬ | **Topic System যোগ করা হয়েছে:** প্রতিটা প্রশ্নে ঐচ্ছিক `topic` ফিল্ড যোগ করা হয়েছে যা বিষয়ের ভেতরে আরো সূক্ষ্ম ফিল্টার করার সুবিধা দেবে (যেমন বাংলার মধ্যে শুধু সমাস বা সন্ধি দেখা)। প্রতিটা বিষয়ের অনুমোদিত topic তালিকা Section ১২ ও Section ১৭-এ যোগ করা হয়েছে। পুরানো ডেটায় topic না থাকলে সমস্যা হবে না — ফিল্টার স্বয়ংক্রিয়ভাবে স্কিপ করবে। |
-| v1.11 | ১৮ জুন ২০২৬ | **ফন্ট self-host করা হয়েছে (H-02 ফিক্স):** আগে বাংলা লেখার ফন্ট (Noto Serif Bengali) প্রতিবার Google-এর সার্ভার থেকে আনতে হতো, যার ফলে নেট স্লো থাকলে অ্যাপ ইনস্টল আটকে যেত এবং সম্পূর্ণ অফলাইনে ফন্ট ঠিকভাবে লোড হতো না। এখন ৪টা ফন্ট ফাইল (Regular, Medium, SemiBold, Bold — মোট ৪টা ওজন) সরাসরি অ্যাপের ভেতরে (`/fonts/` ফোল্ডারে) রাখা হয়েছে এবং Service Worker-এ pre-cache করা হয়েছে, ফলে একবার অ্যাপ ইনস্টল হয়ে গেলে নেট না থাকলেও বাংলা লেখা সঠিক ফন্টে দেখাবে। সব ৪টা সেকশনের (হোম, BCS, Primary, Written Exam) HTML থেকে Google Fonts-এর লিংক সরিয়ে স্থানীয় ফন্ট ফাইলের লিংকে পরিবর্তন করা হয়েছে।
-| v1.10 | ১৮ জুন ২০২৬ | **লাইন-বাই-লাইন কোড রিভিউ থেকে বাগফিক্স:** (১) বাংলা বিষয়ের ডেটায় ৫১টি সম্পূর্ণ ডুপ্লিকেট প্রশ্ন (একই প্রশ্ন+অপশন+উত্তর একাধিকবার) চিহ্নিত করে অপসারণ করা হয়েছে — ৯২৪ থেকে ৮৭৩টি ইউনিক প্রশ্নে নামানো হয়েছে। (২) Dark mode থিম বাটনের আইকন ঠিক করা হয়েছে — bcs-mcq ও primary-mcq সেকশনে আগে dark mode-এ ভুলভাবে 🌙 দেখাত (root ও written-exam-এর সাথে অসামঞ্জস্যপূর্ণ ছিল), এখন সব সেকশনে dark mode-এ ☀️ দেখায়। (৩) written-exam সেকশনে প্রশ্নের টেক্সট ও পরীক্ষার নাম (ministry/post) HTML escape ছাড়া সরাসরি বসানো হতো — এখন `escHtml()` দিয়ে সুরক্ষিত করা হয়েছে। (৪) written-exam-এর paragraph ও letter টাইপ উত্তরে multi-paragraph টেক্সট রেন্ডার করার সময় malformed `<p>` ট্যাগ (opening/closing ছাড়া) তৈরি হতো — এখন প্রতিটা প্যারাগ্রাফ সঠিকভাবে matched `<p>...</p>` দিয়ে wrap হয়। (৫) ব্যবহৃত-হয়নি এমন `general-knowledge.js`-এ ভুল subject filter (`"general-knowledge"` এর বদলে সঠিক `"gk"`) ঠিক করা হয়েছে। (৬) root-এর `update_version.py` script-এর regex pattern v1.8-এর cache-prefix পরিবর্তনের পর অকেজো হয়ে গিয়েছিল — নতুন pattern-এ ঠিক করা হয়েছে এবং root index.html-এর footer version প্যাচ করার entry যুক্ত করা হয়েছে। (৭) root `index.html`-এর footer-এ হার্ডকোডেড পুরনো "v1.5" ছিল — এখন সঠিক ভার্সন দেখায়। (৮) bcs-mcq ফোল্ডারের ভেতরের অকেজো ডুপ্লিকেট `update_version.py` (যা ভুল ফোল্ডারে version.txt খুঁজত) মুছে ফেলা হয়েছে।
-| v1.9 | ১৭ জুন ২০২৬ | **বাগফিক্স:** (১) Written Exam সেকশনে `job-solution.js`-এর script path ভুল ছিল (`data/` ফোল্ডার বাদ পড়েছিল), ফলে `JOB_SOLUTIONS` কখনো লোড হতো না এবং কোনো exam খোলা যেত না — path ঠিক করা হয়েছে। (২) BCS MCQ-এর ৯টা সাবজেক্ট ফাইলে (science, computer, geography, english, bangladesh, international, math, mental, ethics) প্রশ্নের id ১ থেকে শুরু হতো প্রতিটায় আলাদাভাবে, ফলে "সব কুইজ" মোডে ভিন্ন বিষয়ের একই id-র প্রশ্নগুলোর answered/bookmark/error state একসাথে মিশে যেত — প্রতিটা id-তে subject prefix যুক্ত করা হয়েছে (যেমন `science-1`, `math-1`), এবং পুরনো corrupted সংখ্যা-id ভিত্তিক localStorage ডেটা একবারের জন্য স্বয়ংক্রিয়ভাবে clear করার migration যুক্ত করা হয়েছে।
-| v1.8 | ১৭ জুন ২০২৬ | **বাগফিক্স:** (১) Service Worker cache collision ঠিক করা হয়েছে — root, bcs-mcq, primary-mcq, written-exam প্রতিটার `sw.js`-এ এখন আলাদা cache prefix (`home-`, `bcs-`, `primary-`, `written-`) ব্যবহার করা হয়, ফলে একটা সেকশনের activate-এ অন্য সেকশনের cache মুছে যাওয়ার ঝুঁকি দূর হয়েছে। (২) বাংলা বিষয়ের ডেটা লোড না হওয়ার বাগ ঠিক করা হয়েছে — `bcs-mcq/data/bangla.js`-এ `window.DATA_SETS.bangla` প্যাটার্নের পরিবর্তে বাকি ৯টা সাবজেক্ট ফাইলের মতো `var data_bangla` প্যাটার্নে আনা হয়েছে, ফলে ৯২৪টা বাংলা প্রশ্ন এখন সঠিকভাবে চিনতে পারছে অ্যাপ এবং "সব কুইজ"-এও যুক্ত হচ্ছে।
-| v1.7.2 | ১৭ জুন ২০২৬ | Cache সব module-এ v1.7.2-এ আপডেট. |
-| v1.0 | ১৪ জুন ২০২৬ | প্রথম চূড়ান্ত স্ট্রাকচার তৈরি |
-| v1.1 | ১৪ জুন ২০২৬ | নতুন আর্কিটেকচার: `job-solution.js` মূল ডেটার উৎস। AI নিষেধাজ্ঞা ব্লক যোগ। |
-| v1.2 | ১৫ জুন ২০২৬ | `id` নামকরণ নিয়ম যোগ। `date` ISO format। `examYear` বাদ। Script loading order যোগ। `admin/` সুরক্ষা পদ্ধতি যোগ। BCS MCQ ও Primary MCQ ডেটা ফরম্যাট যোগ। |
-| v1.3 | ১৫ জুন ২০২৬ | Pending Implementation Tasks সেকশন যোগ। |
-| v1.7 | ১৬ জুন ২০২৬ | **PWA নিয়ম স্পষ্ট করা:** অ্যাপের নাম "Open Job Solution"। পুরো অ্যাপ একটাই PWA — `manifest.json` শুধু root-এ থাকবে, কোনো সেকশনে নয়। `bcs-mcq/manifest.json` মুছে ফেলা হয়েছে। root-এ নতুন `sw.js` যোগ হয়েছে (শুধু হোম পেজ cache করে)। |
-| v1.6 | ১৬ জুন ২০২৬ | **আর্কিটেকচার পরিবর্তন:** BCS MCQ root থেকে `/bcs-mcq/`-এ সরানো হয়েছে, root এখন হোম পেজ (৩টা সেকশন কার্ড)। Section ১ ও ২ সম্পূর্ণ পুনর্লিখন। নতুন নিয়ম — **সেকশন স্বাধীনতা**: প্রতিটা সেকশনের নিজস্ব `style.css`/`sw.js`, কোনো শেয়ার্ড ফাইল নেই। প্রতি সেকশনে `⬅️ হোমে ফিরুন` link বাধ্যতামূলক করা হয়েছে। |
-| v1.5 | ১৫ জুন ২০২৬ | Primary MCQ ডেটা ফরম্যাট সংশোধন (Section ৫ ও ৯)। app.js duplicate icon bug fix। Section ১৬ — Automation App পরিকল্পনা যোগ। app.js ও sw.js version v1.5-এ আপডেট। ZIP folder name ঠিক করা। Sort mutation fix — `[...result].sort()`। Offline fallback routing fix — primary-mcq ও written-exam আলাদা route। |
-| v1.4 | ১৫ জুন ২০২৬ | AI Self-Check Checklist যোগ। Section reference ও metadata version ঠিক করা। |
+Read every part of this main file (prohibitions, checklist, §১, §২, §১০–§১৪) for **every task**. Read the files below **by task** — one file per section folder, named after it; do not start that kind of task without reading the matching file. **Every section task needs exactly two files: this main file + that section's file — nothing else** (each section file is self-contained, and a CI check fails if one section file points into another). Only a task that deliberately spans two sections (e.g. moving questions from one to the other) needs both section files. Section numbers are identical across all files, so when you see "see Section ৬", find its file in the table below.
+
+| File | Sections | Read when |
+|------|----------|-----------|
+| `_docs/job-app-MD.md` (this file) | prohibitions, checklist, §১, §২, §১০, §১১, §১২, §১৩, §১৪ | **always** |
+| [`job-app/written-exam.md`](./job-app/written-exam.md) | §৩, §৪, §৫, §৬, §৭, §১৫, §১৭ | adding or fixing exams/questions in `written-exam/`; ids or `examId`; giving a question a `topic` (only written-exam uses `topic`); `validateQuestion()` |
+| [`job-app/bcs-mcq.md`](./job-app/bcs-mcq.md) | §৫-ক, §৮ | adding or fixing questions in `bcs-mcq/` |
+| [`job-app/primary-mcq.md`](./job-app/primary-mcq.md) | §৫-খ, §৯ | adding or fixing questions in `mcq-job-solution/primary-mcq/` |
+| [`job-app/ministry-mcq.md`](./job-app/ministry-mcq.md) | §৯-ক | adding or fixing questions in `mcq-job-solution/ministry-mcq/` |
+| [`job-app/roadmap.md`](./job-app/roadmap.md) | §১৬ | only when working on the (not yet built) Automation App |
+| [`job-app/version-history.md`](./job-app/version-history.md) | Version History | only when adding a row for a meaningful change |
+
+> **When you change the split files:** `_dev/check_docs_consistency.js` (a required CI check) verifies that `_docs/job-app/` contains exactly the files listed above, that every section heading appears exactly once overall (nothing lost, nothing duplicated), and that every file is mentioned in this index. To add a new part file, update the script's `PARTS` list and this index together.
 
 ---
 
-## ১. প্রজেক্ট পরিচিতি
+## ১. Project overview
 
-**অ্যাপের নাম: Open Job Solution**
+**App name: Open Job Solution**
 
-এটি বাংলাদেশের চাকরি পরীক্ষার প্রস্তুতির একটি ওয়েব অ্যাপ।
-Cloudflare Pages-এ হোস্ট করা। কোনো GitHub dependency নেই।
+A web app for preparing for Bangladesh job exams.
+Hosted on Cloudflare Pages. No GitHub dependency.
 
-রুটে (`/`) একটা হোম পেজ থাকে — সেখান থেকে তিনটা সেকশনে যাওয়া যায়:
+The root (`/`) has a home page — from it you can reach these sections:
 
-| অ্যাপ | ফোল্ডার | কাজ |
-|-------|---------|-----|
-| BCS MCQ | `/bcs-mcq/` | MCQ প্র্যাকটিস |
-| MCQ Job Solution (হাব) | `/mcq-job-solution/` | তিনটা সাব-সেকশনের প্রবেশদ্বার (নিচের তিনটা) |
-| ↳ Primary MCQ | `/mcq-job-solution/primary-mcq/` | প্রাথমিক পরীক্ষার MCQ |
-| ↳ NCTB MCQ | `/mcq-job-solution/nctb-mcq/` | NCTB পাঠ্যবইভিত্তিক MCQ (আপাতত "শীঘ্রই আসছে" পেজ) |
-| ↳ বিভিন্ন মন্ত্রণালয়ের MCQ | `/mcq-job-solution/ministry-mcq/` | মন্ত্রণালয়/বছর ফিল্টারসহ নিয়োগ পরীক্ষার MCQ সমাধান |
-| Written Exam | `/written-exam/` | লিখিত পরীক্ষার প্রশ্নব্যাংক |
+| App | Folder | Purpose |
+|-----|--------|---------|
+| BCS MCQ | `/bcs-mcq/` | MCQ practice |
+| MCQ Job Solution (hub) | `/mcq-job-solution/` | Entry point to three sub-sections (the next three rows) |
+| ↳ Primary MCQ | `/mcq-job-solution/primary-mcq/` | Primary-exam MCQs |
+| ↳ NCTB MCQ | `/mcq-job-solution/nctb-mcq/` | MCQs based on NCTB textbooks (for now just a "শীঘ্রই আসছে" / coming-soon page) |
+| ↳ বিভিন্ন মন্ত্রণালয়ের MCQ (MCQs of various ministries) | `/mcq-job-solution/ministry-mcq/` | Recruitment-exam MCQ solutions with ministry/year filters |
+| Written Exam | `/written-exam/` | Written-exam question bank |
 
-### 🔒 মূল নিয়ম — সেকশন স্বাধীনতা (Section Independence)
+### 🔒 Core rule — Section Independence
 
-তিনটা সেকশন **সম্পূর্ণ স্বাধীন**। একটা সেকশন আরেকটার উপর নির্ভর করবে না।
+The three sections are **completely independent**. One section must not depend on another.
 
-- প্রতিটা সেকশনের **নিজস্ব** `style.css`, `sw.js` থাকবে — কোনো ফাইল শেয়ার হবে না
-- প্রতিটা সেকশন নিজের ডিজাইন, রং, layout, ও নিয়মে চলবে — অন্য সেকশনের সাথে মেলাতে হবে না
-- প্রতিটা সেকশনের ডেটা ফরম্যাট আলাদা হতে পারে (সেকশন ৮ ও ৯ দেখুন) — এটা bug নয়, ইচ্ছাকৃত সিদ্ধান্ত
-- একটা সেকশন এডিট করার সময় AI অন্য সেকশনের ফাইল ছোঁবে না, এবং অন্য সেকশনের convention অনুমান করে বসাবে না
-- শুধু **হোম পেজে ফেরার link** (`⬅️ হোমে ফিরুন` প্যাটার্ন) প্রতিটা সেকশনে বাধ্যতামূলক — এটাই একমাত্র common জিনিস
+- Each section has **its own** `style.css` and `sw.js` — no file is shared
+- Each section follows its own design, colors, layout and rules — they need not match other sections
+- Each section's data format may differ (for reference only: Section ৮ in `job-app/bcs-mcq.md` and Section ৯ in `job-app/primary-mcq.md` — read them only if you work on those sections) — this is not a bug, it is a deliberate decision
+- When editing one section, the AI must not touch another section's files, and must not guess another section's conventions
+- Only the **link back to the home page** (the `⬅️ হোমে ফিরুন` pattern) is mandatory in every section — it is the one common thing
 
-### 📲 PWA নিয়ম — একটাই PWA
+### 📲 PWA rule — a single PWA
 
-সেকশন স্বাধীন হলেও, **পুরো অ্যাপ মিলে একটাই PWA** — নাম "Open Job Solution"। তিনটা আলাদা PWA না।
+Although the sections are independent, **the whole app is one single PWA** — named "Open Job Solution". Not three separate PWAs.
 
-| ফাইল | কোথায় | কাজ |
-|------|--------|-----|
-| `manifest.json` | **শুধু root-এ** (`/manifest.json`) | App name, icon, install prompt — একমাত্র উৎস |
-| `sw.js` (root) | `/sw.js` | শুধু হোম পেজ cache করে, scope `/` |
-| `sw.js` (প্রতি সেকশনে) | `/bcs-mcq/sw.js` ইত্যাদি | নিজের ফোল্ডারের জন্য আলাদা scope — অফলাইন কাজ চালায়, কিন্তু কোনো manifest.json নেই, তাই আলাদা install prompt আসবে না |
+| File | Where | Purpose |
+|------|-------|---------|
+| `manifest.json` | **root only** (`/manifest.json`) | App name, icon, install prompt — the only source |
+| `sw.js` (root) | `/sw.js` | Caches only the home page, scope `/` |
+| `sw.js` (in each section) | `/bcs-mcq/sw.js` etc. | A separate scope for its own folder — runs offline, but there is no manifest.json there, so no separate install prompt appears |
 
-কোনো সেকশনের `index.html`-এ `<link rel="manifest">` থাকবে না — শুধু root `index.html`-এ থাকবে।
+No section's `index.html` may contain `<link rel="manifest">` — only the root `index.html` has it.
 
 ---
 
-## ২. সম্পূর্ণ ফোল্ডার স্ট্রাকচার
+## ২. Complete folder structure
 
 ```
-📂 BCS-MCQ-Project              ← শুধু এই ফোল্ডার Cloudflare-এ আপলোড হয়
+📂 BCS-MCQ-Project              ← only this folder is uploaded to Cloudflare
 │
-├── 📄 index.html               ← হোম পেজ (সেকশন বাছাই)
-├── 📄 manifest.json            ← ★ একমাত্র manifest — "Open Job Solution" PWA
-├── 📄 sw.js                    ← root SW, শুধু হোম পেজ cache করে (scope: /)
+├── 📄 index.html               ← home page (section chooser)
+├── 📄 manifest.json            ← ★ the only manifest — the "Open Job Solution" PWA
+├── 📄 sw.js                    ← root SW, caches only the home page (scope: /)
 ├── 📄 _headers
 ├── 📄 _redirects
 │
-├── 📁 bcs-mcq/                  ← সেকশন ১
+├── 📁 bcs-mcq/                  ← section 1
 │   ├── index.html / app.js / style.css / sw.js / version.txt
 │   └── 📁 data/                 (science.js, computer.js, geography.js, bangla.js,
 │                                  english.js, bangladesh.js, international.js,
 │                                  math.js, mental.js, ethics.js)
 │
-├── 📁 mcq-job-solution/         ← সেকশন ২ (হাব — ভেতরে তিনটা সাব-সেকশন)
-│   ├── index.html / sw.js       (হাব পেজ; sw.js হাব ও nctb-mcq/ পেজ cache করে)
-│   ├── 📁 primary-mcq/          ← আগে root-এর primary-mcq/ ছিল; পুরোপুরি এখানে ঢুকে গেছে
+├── 📁 mcq-job-solution/         ← section 2 (hub — three sub-sections inside)
+│   ├── index.html / sw.js       (hub page; sw.js caches the hub and the nctb-mcq/ page)
+│   ├── 📁 primary-mcq/          ← used to be primary-mcq/ at the root; now fully moved in here
 │   │   ├── index.html / style.css / sw.js
 │   │   └── 📁 data/
-│   │       └── data.js          ← ⚠️ root-এ সরাসরি data.js না, data/ সাবফোল্ডারে
-│   ├── 📁 nctb-mcq/             (আপাতত শুধু "শীঘ্রই আসছে" index.html)
-│   └── 📁 ministry-mcq/         ← "বিভিন্ন মন্ত্রণালয়ের MCQ" (written-exam-এর মতো তালিকা + ফিল্টার)
+│   │       └── data.js          ← ⚠️ not data.js directly at the root, but in the data/ subfolder
+│   ├── 📁 nctb-mcq/             (for now just a "শীঘ্রই আসছে" / coming-soon index.html)
+│   └── 📁 ministry-mcq/         ← "বিভিন্ন মন্ত্রণালয়ের MCQ" (a list + filters, like written-exam)
 │       ├── index.html / style.css / sw.js / mcq-renderer.js
-│       ├── exam-archive.js      ← পরীক্ষার তালিকা (ministry/post/date/totalQuestions)
+│       ├── exam-archive.js      ← exam list (ministry/post/date/totalQuestions)
 │       └── 📁 data/exams/<examId>.json
 │
-├── 📁 written-exam/             ← সেকশন ৩
+├── 📁 written-exam/             ← section 3
 │   ├── index.html / style.css / sw.js / renderer.js
 │   ├── exam-archive.js
-│   ├── PROGRESS.md              ← ডেটা-এন্ট্রি ট্র্যাকিং, কাজ শুরুর আগে অবশ্যই পড়ুন
-│   ├── load_exams.js            ← exams/*.json লোড+মার্জ করার শেয়ার্ড helper (script-দের জন্য)
-│   ├── check_bugs.js            ← ডেটা বাগ-চেকার (advisory, CI-তে required না)
-│   ├── check-spelling.js        ← বাংলা spellcheck (advisory, CI-তে required না)
-│   ├── generate_index.js        ← EXAM_INDEX.md রিজেনারেট করে
-│   └── 📁 data/                 ← ⚠️ root-এ সরাসরি না, data/ সাবফোল্ডারে
-│       └── 📁 exams/            ← ★ একমাত্র ডেটার উৎস — প্রতিটা পরীক্ষা একটা আলাদা .json ফাইলে
-│                                  (ব্রাউজার সরাসরি এখান থেকেই fetch() করে, কোনো
-│                                   একত্রিত "সব প্রশ্ন" ফাইল নেই — নিচে Section ৪ দেখুন)
+│   ├── PROGRESS.md              ← data-entry tracking; must be read before starting work
+│   ├── load_exams.js            ← shared helper that loads+merges exams/*.json (for scripts)
+│   ├── check_bugs.js            ← data bug checker (advisory, not required in CI)
+│   ├── check-spelling.js        ← Bengali spellcheck (advisory, not required in CI)
+│   ├── generate_index.js        ← regenerates EXAM_INDEX.md
+│   └── 📁 data/                 ← ⚠️ not directly at the root, but in the data/ subfolder
+│       └── 📁 exams/            ← ★ the only data source — each exam in its own .json file
+│                                  (the browser fetch()es directly from here; there is no
+│                                   combined "all questions" file — see Section ৪ in `job-app/written-exam.md`)
 │
-├── 📁 current-affairs/          ← সেকশন ৪ (বাংলা কারেন্ট অ্যাফেয়ার্স)
-│   └── 📁 docs/                 ← ⚠️ generated/synced — সরাসরি এডিট করবেন না
-│       (mcq/, topics/, top-news/, ghotonaprobaho/ ইত্যাদি সাবফোল্ডার)
+├── 📁 current-affairs/          ← section 4 (Bengali current affairs)
+│   └── 📁 docs/                 ← ⚠️ generated/synced — do not edit directly
+│       (subfolders mcq/, topics/, top-news/, ghotonaprobaho/, etc.)
 │
-├── 📁 books/                    ← সেকশন ৫ (বই রিডার)
+├── 📁 books/                    ← section 5 (book reader)
 │   ├── index.html / book.html / style.css / sw.js
 │   └── 📁 data/
 │       └── manifest.js
 │
 ├── 📁 _assets/                  ← shared static (fonts, icons, floating-search.js)
 │
-├── 📁 _docs/                    ← গভর্নেন্স/রেফারেন্স ডকুমেন্ট (এই ফাইল, AGENTS.md ইত্যাদি) — deploy হয় না
-├── 📁 _dev/                     ← স্ক্রিপ্ট (validate_data.js, session_status.sh, update_version.py) — deploy হয় না
-└── 📁 _staging/                 ← ডেটা-এন্ট্রির অস্থায়ী কাজ (books-staging) — deploy হয় না
+├── 📁 _docs/                    ← governance/reference documents (this file, AGENTS.md, etc.) — not deployed
+│   └── 📁 job-app/              ← the split-out parts of this file (one self-contained file per section: written-exam, bcs-mcq, primary-mcq, ministry-mcq; plus roadmap and version-history)
+├── 📁 _dev/                     ← scripts (validate_data.js, session_status.sh, update_version.py) — not deployed
+└── 📁 _staging/                 ← temporary data-entry work (books-staging) — not deployed
 
-📁 admin/                       ← ⚠️ BCS-MCQ-Project ফোল্ডারের বাইরে রাখতে হবে
-    └── metadata.js           ← কখনো Cloudflare-এ যাবে না
+📁 admin/                       ← ⚠️ must be kept OUTSIDE the BCS-MCQ-Project folder
+    └── metadata.js           ← never goes to Cloudflare
 ```
 
-> নিয়ম: git/পুশ/মার্জ ওয়ার্কফ্লো `_docs/AGENTS.md`-এ, ডেটা-এন্ট্রি প্রগ্রেস প্রতিটা সেকশনের নিজের PROGRESS.md/STATUS.md ফাইলে (যেমন `written-exam/PROGRESS.md`) — এই ফাইলে সেগুলো ডুপ্লিকেট করা হয় না, সবসময় ঐ ফাইলগুলোই দেখুন সর্বশেষ অবস্থার জন্য।
+> Rule: the git/push/merge workflow is in `_docs/AGENTS.md`; data-entry progress is in each section's own PROGRESS.md/STATUS.md (e.g. `written-exam/PROGRESS.md`) — they are not duplicated in this file, so always look at those files for the latest state.
 
-প্রতিটা সেকশনের `sw.js` নিজের ফোল্ডারে নিজের scope নিয়ে কাজ করে (`/bcs-mcq/`, `/mcq-job-solution/` (হাব) ও তার ভেতরে `primary-mcq/`, `ministry-mcq/` প্রতিটার নিজস্ব sw.js, `/written-exam/`) — অফলাইন cache-এর জন্য। root `sw.js`-এর scope `/` হলেও এটা শুধু হোম পেজ handle করে; সেকশনগুলোর বেশি specific scope থাকায় browser সেগুলোকেই priority দেয়। `_headers` ফাইলে প্রতিটা scope-এর জন্য `Service-Worker-Allowed` আলাদাভাবে declare করতে হবে।
+Each section's `sw.js` works in its own folder with its own scope (`/bcs-mcq/`, `/mcq-job-solution/` (hub) and inside it `primary-mcq/`, `ministry-mcq/` each with its own sw.js, `/written-exam/`) — for offline caching. Although the root `sw.js` has scope `/`, it handles only the home page; since the sections have more specific scopes, the browser gives priority to those. The `_headers` file must declare `Service-Worker-Allowed` separately for each scope.
 
 ---
 
-## ৩. Written Exam ফাইলের দায়িত্ব
+## ১০. Protecting the admin/ folder
 
-| ফাইল | কাজ |
-|------|-----|
-| `data/exams/<examId>.json` | **★ একমাত্র ডেটার উৎস।** প্রতিটা পরীক্ষার সব প্রশ্ন এখানে, আলাদা ফাইলে। নতুন প্রশ্ন এখানেই যোগ করুন। ব্রাউজার runtime-এ সরাসরি এই ফাইলটাই `fetch()` করে (কোনো build/generate ধাপ নেই)। |
-| `load_exams.js` | Node script-দের জন্য শেয়ার্ড helper — সব `exams/*.json` পড়ে একটা array-তে মার্জ করে (`check_bugs.js`, `generate_index.js`, `_dev/validate_data.js` এটা ব্যবহার করে) |
-| `check_bugs.js` | ডেটা বাগ-চেকার (advisory — `node written-exam/check_bugs.js`, CI-তে required check না) |
-| `check-spelling.js` | বাংলা spellcheck (advisory — `_dev/check-spelling.js`-এর মতোই কিন্তু `data/exams/*.json`-এর জন্য, CI-তে required check না) |
-| `generate_index.js` | `EXAM_INDEX.md` রিজেনারেট করে (`npm run index`) |
-| `exam-archive.js` | সব পরীক্ষার হেডিং তথ্যের মাস্টার লিস্ট |
-| `PROGRESS.md` | কোন এক্সাম/ক্রম নম্বর ইতিমধ্যে যোগ করা হয়েছে তার ট্র্যাকিং — **নতুন এক্সাম যোগ করার আগে অবশ্যই পড়ুন**, যোগ করার পর অবশ্যই আপডেট করুন (নাহলে অন্য সেশন ডুপ্লিকেট কাজ করবে) |
-| `metadata.js` | AI Classification Rules — পাবলিক নয়, `admin/` ফোল্ডারে |
+The `admin/` folder must **never** go to Cloudflare Pages.
 
----
-
-## ৪. ডেটা আর্কিটেকচার
-
-### exams/*.json হলো একমাত্র সত্য (Single Source of Truth) — কোনো একত্রিত build output নেই
+### Correct folder structure
 
 ```
-হোম পেজ খোলার সময়:   শুধু exam-archive.js লোড হয় (পরীক্ষার তালিকা, ছোট)
-পরীক্ষায় ক্লিক করলে: শুধু সেই একটা data/exams/<examId>.json fetch() হয় (runtime lazy loading)
-```
-
-আগে (v1.185 পর্যন্ত) `exams/*.json` থেকে একটা একত্রিত `job-solution.js` build-time-এ রিজেনারেট হতো এবং ব্রাউজার সেই একটা বড় ফাইল একবারে লোড করত। এখন সেটা সম্পূর্ণ বাদ — `written-exam/index.html` প্রতিটা এক্সাম খোলার সময় সরাসরি সেই একটা `.json` ফাইল `fetch()` করে আনে। কোনো build/generate ধাপ ছাড়াই এই ফাইলগুলো সরাসরি ব্যবহার হয়।
-
-প্রতিটা পরীক্ষা নিজের ফাইলে থাকায় দুটো সেশন একসাথে কাজ করলেও কখনো একই ফাইল touch করে না, তাই merge conflict structurally অসম্ভব (আগে সবাই একই একত্রিত ফাইলের শেষে যোগ করত বলে conflict হতো)।
-
-### এই সিদ্ধান্তের কারণ
-
-- নতুন প্রশ্ন শুধু নতুন `exams/<examId>.json` ফাইলে যোগ করলেই হবে, বিদ্যমান কোনো ফাইল স্পর্শ করা লাগে না, কোনো build ধাপও লাগে না
-- সমান্তরাল সেশনগুলোর মধ্যে merge conflict structurally সম্ভব না
-- হোম পেজ প্রথমবার খোলার সময় শুধু ছোট `exam-archive.js` লোড হয় — সব পরীক্ষার সব প্রশ্ন (১৫০০+) একসাথে না
-- **Trade-off:** যে এক্সাম আগে একবারও fetch হয়নি, সেটা offline-এ পাওয়া যাবে না — Service Worker শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে রাখে (`written-exam/sw.js`)
-
-### ফাইলের নাম = examId (গুরুত্বপূর্ণ)
-
-ব্রাউজার সরাসরি `data/exams/${examId}.json` পাথে fetch করে — তাই ফাইলের নাম **অবশ্যই হুবহু** সেই পরীক্ষার `examId`-এর সাথে মিলতে হবে, নাহলে এক্সাম খুললে "ডেটা লোড হয়নি" দেখাবে।
-
-### নতুন এক্সাম যোগ করার ফরম্যাট
-
-`data/exams/<examId>.json` — সেই পরীক্ষার সব প্রশ্নের একটা JSON array:
-
-```json
-[
-  {
-    "id": "job-2025-example-office-asst-q1",
-    "examId": "job-2025-example-office-asst",
-    "subject": "bangla",
-    "qno": 1,
-    "marks": 10,
-    "type": "paragraph",
-    "question": "...",
-    "answer": "..."
-  }
-]
-```
-
-যোগ করার পর: `npm run validate` (বা `npm run check`)। বিস্তারিত: `written-exam/data/exams/README.md`।
-
----
-
-## ৫. id নামকরণ নিয়ম
-
-### Written Exam — id ফরম্যাট
-
-```
-job-{YYYY}-{exam-slug}-q{NN}
-```
-
-| অংশ | নিয়ম | উদাহরণ |
-|-----|-------|---------|
-| `job` | সবসময় `job` | `job` |
-| `{YYYY}` | ৪ সংখ্যার বছর | `2025` |
-| `{exam-slug}` | মন্ত্রণালয়/প্রতিষ্ঠান বোঝানো ছোট নাম — নিচে দেখুন | `dc-joypurhat` |
-| `q{NN}` | প্রশ্ন নম্বর, সবসময় ২ সংখ্যায় | `q01`, `q12` |
-
-### exam-slug কীভাবে ঠিক করবেন
-
-আগে শুধু Ministry Code টেবিল থেকে কোড নেওয়ার নিয়ম ছিল। কিন্তু বাস্তবে একই মন্ত্রণালয়ে একই বছরে একাধিক পদের পরীক্ষা হতে পারে (যেমন "কারিগরি শিক্ষা অধিদপ্তর"-এর "সহকারী কাম কিপার" আর "ড্রাইভার কাম মেকানিক" — দুটো আলাদা পরীক্ষা, একই বছরে)। তাই slug এ প্রয়োজনে পদ বা জেলার নামও যোগ করতে হবে যাতে প্রতিটা পরীক্ষা আলাদাভাবে চেনা যায়।
-
-```
-✅ ভালো slug:        dc-joypurhat, dc-bhola, tech-edu, tech-edu-driver, coast-guard, navy
-❌ একই slug দুইবার:   একই বছরে দুটো ভিন্ন পরীক্ষায় একই slug ব্যবহার করা যাবে না
-```
-
-> **নিয়ম:** একই পরীক্ষার মধ্যে `q01` থেকে শুরু করতে হবে। `id` একবার তৈরি হলে আর পরিবর্তন করা যাবে না।
-
-### Ministry Code টেবিল (slug এর প্রথম অংশ হিসেবে ব্যবহার করুন)
-
-| মন্ত্রণালয় / প্রতিষ্ঠান | code |
-|--------------------------|------|
-| অর্থ মন্ত্রণালয় | `finance` |
-| শিক্ষা মন্ত্রণালয় | `edu` |
-| স্বাস্থ্য মন্ত্রণালয় | `health` |
-| আইন মন্ত্রণালয় | `law` |
-| কৃষি মন্ত্রণালয় | `agri` |
-| তথ্য ও যোগাযোগ প্রযুক্তি মন্ত্রণালয় | `ict` |
-| পরিবহন মন্ত্রণালয় | `transport` |
-| স্থানীয় সরকার মন্ত্রণালয় | `lgrd` |
-| পানি সম্পদ মন্ত্রণালয় | `water` |
-| জেলা প্রশাসকের কার্যালয় | `dc` |
-| বাংলাদেশ ব্যাংক | `bb` |
-| সোনালী ব্যাংক | `sonali` |
-| নতুন কোনো প্রতিষ্ঠান | Project Owner নতুন code ঠিক করবেন এবং এই টেবিলে যোগ করবেন |
-
-### exam-archive.js — id ফরম্যাট
-
-```
-job-{YYYY}-{exam-slug}
-```
-
-উদাহরণ: `job-2025-dc-joypurhat`
-
-> **বর্তমান ডেটায় নোট:** এখন পর্যন্ত শুধু একটা DC পরীক্ষা আছে বলে তার id সংক্ষেপে `job-2025-dc` রাখা হয়েছে — এটা ঠিক আছে। কিন্তু যখন আরেকটা DC পরীক্ষা (অন্য জেলার) যোগ হবে, তখন থেকে নতুন সব exam-এর slug-এ জেলা/পদের নামও যোগ করতে হবে (যেমন `dc-bhola`) যাতে দুটো আলাদা থাকে।
-
-### ⚠️ সবচেয়ে গুরুত্বপূর্ণ নিয়ম — examId লিংক
-
-প্রশ্ন আর পরীক্ষা একসাথে যুক্ত হয় `id` এর শুরুর অংশ মিলিয়ে **নয়** — কারণ এতে ভুল মিল হওয়ার ঝুঁকি থাকে (যেমন `tech-edu` আর `tech-edu-driver` কাছাকাছি slug হলে ভুল মিলে যেতে পারে)।
-
-তার বদলে, `data/exams/<examId>.json`-এর প্রতিটা প্রশ্নে একটা `examId` ফিল্ড **বাধ্যতামূলক** — যার মান হুবহু সেই পরীক্ষার `exam-archive.js`-এর `id` এর সমান হতে হবে।
-
-```javascript
-// exam-archive.js
-{ id: "job-2025-dc", ... }
-
-// data/exams/job-2025-dc.json — প্রতিটা প্রশ্নে
-{ id: "job-2025-dc-q01", examId: "job-2025-dc", ... }
-{ id: "job-2025-dc-q02", examId: "job-2025-dc", ... }
-```
-
-`examId` ছাড়া প্রশ্ন কোনো পরীক্ষার সাথে UI তে যুক্ত হবে না — প্রশ্ন তালিকায় দেখাবে না।
-
-### BCS MCQ — id ফরম্যাট
-
-```
-bcs-{NN}-{subject-code}-q{NNN}
-```
-
-| অংশ | নিয়ম | উদাহরণ |
-|-----|-------|---------|
-| `bcs` | সবসময় `bcs` | `bcs` |
-| `{NN}` | BCS পরীক্ষার নম্বর | `44`, `45` |
-| `{subject-code}` | নিচের BCS Subject Code টেবিল থেকে | `sci` |
-| `q{NNN}` | প্রশ্ন নম্বর, ৩ সংখ্যায় | `q001`, `q025` |
-
-### BCS Subject Code টেবিল
-
-| subject | code |
-|---------|------|
-| `science.js` | `sci` |
-| `computer.js` | `comp` |
-| `geography.js` | `geo` |
-| `bangla.js` | `ban` |
-| `english.js` | `eng` |
-| `bangladesh.js` | `bd` |
-| `international.js` | `intl` |
-| `math.js` | `math` |
-| `mental.js` | `mental` |
-| `ethics.js` | `ethics` |
-
-### Primary MCQ — id ফরম্যাট
-
-```
-{subject-prefix}{NNN}
-```
-
-| subject | prefix | উদাহরণ |
-|---------|--------|---------|
-| bangla | `pb` | `pb001` |
-| math | `pm` | `pm001` |
-| english | `pe` | `pe001` |
-| gk | `pg` | `pg001` |
-| child | `pc` | `pc001` |
-
-উদাহরণ: `pb001`, `pm012`, `pc003`
-
----
-
-## ৬. প্রশ্নের ডেটা ফরম্যাট (data/exams/*.json)
-
-### ★ ভিত্তি (বাধ্যতামূলক) ফিল্ড বনাম ঐচ্ছিক ফিল্ড
-
-একটা পরীক্ষা/প্রশ্নের **ভিত্তি (মূল পরিচয়)** এই ৪টা ফিল্ড দিয়ে তৈরি — এগুলো ছাড়া প্রশ্ন সঠিকভাবে চেনাই যায় না, তাই এগুলো **বাধ্যতামূলক** (`_dev/validate_data.js`-এ ব্যর্থ হলে PR আটকে যায়):
-
-| ভিত্তি ফিল্ড | কোথায় থাকে |
-|---|---|
-| প্রতিষ্ঠান (`ministry`) | `exam-archive.js` |
-| পদ (`post`) | `exam-archive.js` |
-| তারিখ (`date`) | `exam-archive.js` |
-| প্রশ্ন নং (`qno`) | প্রতিটা প্রশ্নে, `data/exams/*.json` |
-
-`duration` (সময়) ও `totalMarks` (পূর্ণমান) **ভিত্তি ফিল্ড না** — এগুলো ঐচ্ছিক। উৎস থেকে এই তথ্য না পাওয়া গেলে খালি রাখা যাবে, PR আটকাবে না। একইভাবে প্রতিটা প্রশ্নের `marks` ফিল্ডও ঐচ্ছিক — না থাকলে সমস্যা না (থাকলে অবশ্যই positive number হতে হবে)।
-
-### নকশার মূলনীতি
-
-`ministry`, `post`, `date`, `duration`, `totalMarks` — এই তথ্যগুলো **শুধু `exam-archive.js`-এ একবার** থাকে। প্রতিটা প্রশ্নে এগুলো আবার লেখা হয় না — কারণ একটা পরীক্ষায় ১৫-৪০টা প্রশ্ন থাকতে পারে, প্রতিটায় একই তথ্য বারবার লেখা হলে ভুল হওয়ার ঝুঁকি বাড়ে এবং ডেটা অপ্রয়োজনীয়ভাবে বড় হয়।
-
-প্রশ্ন আর পরীক্ষার সংযোগ হয় শুধু `examId` ফিল্ড দিয়ে (Section ৫ দেখুন)। প্রতিটা পরীক্ষার প্রশ্ন থাকে তার নিজের `data/exams/<examId>.json` ফাইলে — একটা প্লেইন JSON array (JS ভ্যারিয়েবল না, কারণ ব্রাউজার সরাসরি `fetch()` + `res.json()` দিয়ে পড়ে):
-
-```json
-[
-
-  {
-    "id": "job-2025-dc-q01",
-    "examId": "job-2025-dc",
-    "subject": "bangla",
-    "topic": "পত্রলিখন",
-    "qno": 1,
-    "marks": 5,
-    "type": "letter",
-    "question": "প্রশ্নের টেক্সট...",
-    "letter": {
-      "to": "প্রাপক",
-      "subject": "বিষয়",
-      "body": "মূল পত্র",
-      "closing": "ধন্যবাদান্তে",
-      "sender": "প্রেরকের নাম"
-    }
-  },
-
-  {
-    "id": "job-2025-dc-q11",
-    "examId": "job-2025-dc",
-    "subject": "math",
-    "topic": "বীজগণিত",
-    "qno": 11,
-    "marks": 5,
-    "type": "math",
-    "question": "$(4x - 5y)$ এর ঘন নির্ণয় করুন।",
-    "steps": ["...ধাপ..."],
-    "answer": "$64x^3 - 240x^2y + 300xy^2 - 125y^3$"
-  }
-
-]
-```
-
-### প্রতিটা ফিল্ডের মানে
-
-| ফিল্ড | মানে | নোট |
-|-------|------|-----|
-| `id` | প্রতিটা প্রশ্নের আলাদা পরিচয় | সেকশন ৫-এর নিয়ম মেনে |
-| `examId` | কোন পরীক্ষার প্রশ্ন | **বাধ্যতামূলক** — exam-archive.js এর id এর সাথে হুবহু মিলতে হবে |
-| `subject` | বিষয় | শুধু ৪টি মান — Section ১২ দেখুন |
-| `topic` | বিষয়ের ভেতরে নির্দিষ্ট টপিক | **ঐচ্ছিক** — Section ১৭-এর তালিকা থেকে নিতে হবে; না থাকলে সমস্যা নেই |
-| `qno` | প্রশ্ন নম্বর | **সবসময় সংখ্যা (number)** — `1`, `11` ইত্যাদি; কখনো `"০১"` এর মতো string/বাংলা সংখ্যা নয়। UI নিজেই বাংলা সংখ্যায় দেখায়। |
-| `marks` | এই প্রশ্নের নম্বর | |
-| `type` | প্রশ্নের ধরন | এই ফাইলের শুরুতে "Question Types" তালিকা দেখুন (letter/math/table/idiom ইত্যাদি) |
-| `question` | প্রশ্নের টেক্সট | |
-| *(type-specific)* | `answer` / `parts` / `steps` / `letter` / `columns`+`rows` ইত্যাদি | `type` অনুযায়ী পরিবর্তিত হয় — renderer.js দেখুন |
-
-> **মন্ত্রণালয়, পদ, তারিখ, সময়, পূর্ণমান এই ফাইলে লেখা হয় না — শুধু Section ৭-এর `exam-archive.js`-এ থাকে।**
-
----
-
-## ৭. exam-archive.js ডেটা ফরম্যাট
-
-```javascript
-const EXAM_ARCHIVE = [
-
-  {
-    id: "job-2025-dc",
-    ministry: "জেলা প্রশাসকের কার্যালয়, জয়পুরহাট",
-    post: "নাজির কাম ক্যাশিয়ার/সার্টিফিকেট পেশকার",
-    date: "2025-06-27",        // সবসময় YYYY-MM-DD ফরম্যাট
-    duration: "৯০ মিনিট",
-    totalMarks: 100,
-    totalQuestions: 15
-  }
-
-];
-```
-
-### exam-archive.js এবং data/exams/*.json এর সংযোগ
-
-```
-exam-archive.js              →  id: "job-2025-dc"
-data/exams/job-2025-dc.json  →  examId: "job-2025-dc"  (প্রতিটা প্রশ্নে — id নয়, examId দিয়ে মিল)
-```
-
-ফাইলের নামও (`job-2025-dc.json`) সেই `id`-এর সাথে হুবহু মিলতে হবে — ব্রাউজার সরাসরি `data/exams/${examId}.json` পাথে fetch করে।
-
----
-
-## ৮. BCS MCQ ডেটা ফরম্যাট
-
-প্রতিটি subject ফাইলে (`science.js`, `bangla.js` ইত্যাদি) এই ফরম্যাট:
-
-```javascript
-const SCIENCE_QUESTIONS = [
-
-  {
-    id: "bcs-44-sci-q001",
-    bcs: 44,
-    question: "কোন মৌলিক অধাতু সাধারণ তাপমাত্রায় তরল?",
-    options: {
-      a: "আয়োডিন",
-      b: "ব্রোমিন",
-      c: "পারদ",
-      d: "সালফার"
-    },
-    answer: "b"
-  },
-
-  {
-    id: "bcs-44-sci-q002",
-    bcs: 44,
-    question: "সমুদ্রের গভীরতা মাপার যন্ত্রের নাম কি?",
-    options: {
-      a: "ব্যারোমিটার",
-      b: "থার্মোমিটার",
-      c: "ফ্যাদোমিটার",
-      d: "অ্যানিমোমিটার"
-    },
-    answer: "c"
-  }
-
-];
-```
-
-### BCS MCQ ফিল্ডের মানে
-
-| ফিল্ড | মানে | নোট |
-|-------|------|-----|
-| `id` | প্রশ্নের আলাদা পরিচয় | সেকশন ৫-এর BCS নিয়ম মেনে |
-| `bcs` | কততম BCS পরীক্ষা | সংখ্যা |
-| `question` | প্রশ্নের টেক্সট | |
-| `options` | ৪টি বিকল্প | সবসময় `a`, `b`, `c`, `d` |
-| `answer` | সঠিক উত্তরের key | `"a"` / `"b"` / `"c"` / `"d"` |
-
----
-
-## ৯. Primary MCQ ডেটা ফরম্যাট
-
-`mcq-job-solution/primary-mcq/data/data.js` ফাইলে বিষয় অনুযায়ী আলাদা array-তে প্রশ্ন থাকে:
-
-```javascript
-const PRIMARY_DATA = {
-
-  bangla: [
-    {
-      id: "pb001",
-      year: "২০২৩",             // বাংলা সংখ্যায়
-      q: "বাংলা ভাষার উদ্ভব হয়েছে কোন ভাষা থেকে?",
-      options: ["সংস্কৃত", "প্রাকৃত", "পালি", "অপভ্রংশ"],
-      answer: 1,                // 0=প্রথম, 1=দ্বিতীয়, 2=তৃতীয়, 3=চতুর্থ
-      explanation: "ব্যাখ্যা এখানে"
-    }
-  ],
-
-  math:    [ /* একই ফরম্যাট */ ],
-  english: [ /* একই ফরম্যাট */ ],
-  gk:      [ /* একই ফরম্যাট */ ],
-  child:   [ /* শিশু বিকাশ — একই ফরম্যাট */ ]
-
-};
-```
-
-### Primary MCQ ফিল্ডের মানে
-
-| ফিল্ড | মানে | নোট |
-|-------|------|-----|
-| `id` | প্রশ্নের আলাদা পরিচয় | subject prefix + সিরিয়াল নম্বর — যেমন `pb001` (bangla), `pm001` (math), `pe001` (english), `pg001` (gk), `pc001` (child) |
-| `year` | পরীক্ষার বছর | বাংলা সংখ্যায় string — যেমন `"২০২৩"` |
-| `q` | প্রশ্নের টেক্সট | |
-| `options` | ৪টি বিকল্প | Array — `["ক", "খ", "গ", "ঘ"]` ক্রমে |
-| `answer` | সঠিক উত্তরের index | `0` / `1` / `2` / `3` (options array-এর position) |
-| `explanation` | উত্তরের ব্যাখ্যা | |
-
-### Primary MCQ বিষয় তালিকা
-
-| key | বিষয় |
-|-----|-------|
-| `bangla` | বাংলা |
-| `math` | গণিত |
-| `english` | English |
-| `gk` | সাধারণ জ্ঞান |
-| `child` | শিশু বিকাশ |
-
----
-
-## ৯-ক. মন্ত্রণালয়ের MCQ (`mcq-job-solution/ministry-mcq/`) ডেটা ফরম্যাট
-
-- `exam-archive.js` → `EXAM_ARCHIVE` array: `id`, `ministry`, `post`, `date` (`YYYY-MM-DD`), `totalQuestions` (ঠিক ওই JSON-এর প্রশ্নসংখ্যা)
-- `data/exams/<id>.json` → array; প্রতিটা প্রশ্ন: `id`, `examId` (= ফাইলের নাম), `subject` (`bangla`/`english`/`math`/`general-knowledge`), `qno` (number), `q`, `answer` — সব আবশ্যক
-- **`options`** (২–৬টা string, তার ঠিক একটা `answer`-এর সাথে হুবহু মিলবে) ও **`explanation`** — ঐচ্ছিক। ম্যাগাজিন-সমাধানে শুধু সঠিক উত্তর ছাপা থাকে, তাই আপাতত "প্রশ্ন + উত্তর" আকারে দেখায়; পরে options/ব্যাখ্যা যোগ করলে কার্ড নিজে থেকেই MCQ আকারে দেখাবে (কোড বদলাতে হবে না)
-- UI: written-exam-এর মতো "সব মন্ত্রণালয় / সব বছর / রিসেট" ফিল্টার ও সার্চ; `_dev/validate_data.js` এই ফরম্যাট CI-তে যাচাই করে
-- এখানকার প্রশ্ন **MCQ-উৎসের** — লিখিত পরীক্ষার প্রশ্ন `written-exam/`-এই থাকবে, এখানে মেশানো যাবে না
-
-## ১০. admin/ ফোল্ডার সুরক্ষা
-
-`admin/` ফোল্ডার **কখনো** Cloudflare Pages-এ যাবে না।
-
-### সঠিক ফোল্ডার কাঠামো
-
-```
-📂 আমার-কম্পিউটার/
+📂 my-computer/
 │
-├── 📁 BCS-MCQ-Project/    ← এটাই Cloudflare-এ আপলোড হয়
+├── 📁 BCS-MCQ-Project/    ← this is what is uploaded to Cloudflare
 │   ├── index.html
 │   ├── written-exam/
 │   └── ...
 │
-└── 📁 admin/              ← BCS-MCQ-Project-এর বাইরে, কখনো আপলোড হয় না
+└── 📁 admin/              ← outside BCS-MCQ-Project, never uploaded
     └── metadata.js
 ```
 
-> **নিয়ম:** `admin/` ফোল্ডারটি সবসময় `BCS-MCQ-Project` ফোল্ডারের **বাইরে** রাখতে হবে। ভেতরে রাখলে ভুলে আপলোড হয়ে যাওয়ার ঝুঁকি আছে।
+> **Rule:** the `admin/` folder must always be kept **outside** the `BCS-MCQ-Project` folder. Inside it, there is a risk of it being uploaded by mistake.
 
 ---
 
@@ -842,46 +244,48 @@ const PRIMARY_DATA = {
 ```
 Exam Image / PDF
       ↓
-OCR (ছবি থেকে লেখা বের করা)
+OCR (extract text from the image)
       ↓
-Metadata Extract (মন্ত্রণালয়, পদ, তারিখ, সময়, পূর্ণমান)
+Metadata Extract (ministry, post, date, time, total marks)
       ↓
-exam-archive.js এ নতুন entry তৈরি (id ঠিক করা — Section ৫)
+Create a new entry in exam-archive.js (decide the id — Section ৫ in `job-app/written-exam.md`; for ministry-mcq see `job-app/ministry-mcq.md`)
       ↓
-Question Split (প্রশ্নগুলো আলাদা করা)
+Question Split (separate the questions)
       ↓
-Subject Classification (বিষয় নির্ধারণ)
+Subject Classification (decide the subject)
       ↓
-data/exams/<examId>.json নতুন ফাইল তৈরি — প্রতিটা প্রশ্নে examId যোগ করতে হবে
-                         (exam-archive.js এ তৈরি করা id এর সাথে হুবহু মিলিয়ে,
-                          এবং ফাইলের নামও সেই id-এর সাথে হুবহু মিলতে হবে)
+Create a new file data/exams/<examId>.json — add examId to every question
+                         (matching exactly the id created in exam-archive.js,
+                          and the file name must also match that id exactly)
       ↓
 Cloudflare Pages Upload
 ```
 
-> **⚠️ ভুল এড়াতে:** exam-archive.js এর `id` আগে ঠিক করে নিতে হবে, তারপর `data/exams/<সেই-id>.json` ফাইলের প্রতিটা প্রশ্নে সেই `id`-টাই `examId` হিসেবে বসাতে হবে। দুটো জায়গায় (এবং ফাইলের নামে) বানান বা অক্ষর এক বিন্দু আলাদা হলে প্রশ্ন পরীক্ষায় দেখাবে না।
+> **⚠️ To avoid mistakes:** decide the `id` in exam-archive.js first, then put that same `id` as `examId` in every question of the `data/exams/<that-id>.json` file. If even one character differs between the two places (and the file name), the questions will not show up in the exam.
 
 ---
 
-## ১২. Subject Classification নিয়ম
+## ১২. Subject Classification rules
 
-AI শুধু এই ৪টি subject ব্যবহার করবে — নতুন কোনো subject বানাবে না:
+The AI uses only these 4 subjects — it must not invent any new subject:
 
-| subject value | কোন ধরনের প্রশ্ন |
-|---------------|-----------------|
-| `bangla` | বাংলা ব্যাকরণ, সাহিত্য, ভাষা |
+| subject value | Kind of question |
+|---------------|------------------|
+| `bangla` | Bengali grammar, literature, language |
 | `english` | English grammar, literature, vocabulary |
-| `general-knowledge` | সাধারণ জ্ঞান, বাংলাদেশ, আন্তর্জাতিক, বিজ্ঞান |
-| `math` | গণিত, সমীকরণ, পরিসংখ্যান |
+| `general-knowledge` | General knowledge, Bangladesh, international, science |
 
-subject নির্ধারণের পর, সম্ভব হলে Section ১৭-এর তালিকা থেকে সঠিক `topic` যোগ করতে হবে।
-topic নিশ্চিত না হলে বাদ দেওয়া যাবে — ভুল topic দেওয়া যাবে না।
+> **Alias (owner decision, 2026-10-02):** in `written-exam/` data, `gk` is an accepted short name for `general-knowledge` — both are valid and the site shows both as "সাধারণ জ্ঞান". Do not rename existing `gk` questions. Likewise `civil-engineering` (10 technical questions in `job-2025-ncc-sub-asst-engineer-civil`) is kept as its own subject, shown as "সিভিল ইঞ্জিনিয়ারিং". `_dev/validate_data.js` fails on any other unknown subject name.
+| `math` | Mathematics, equations, statistics |
+
+After deciding the subject, if possible add the right `topic` from the list in Section ১৭ (`job-app/written-exam.md` — only written-exam uses `topic`).
+If you are not sure of the topic it may be omitted — a wrong topic must not be given.
 
 ---
 
-## ১৩. metadata.js — শুধু লোকাল
+## ১৩. metadata.js — local only
 
-এই ফাইল `admin/` ফোল্ডারে থাকবে — Cloudflare-এ আপলোড হবে না।
+This file stays in the `admin/` folder — it is not uploaded to Cloudflare.
 
 ```javascript
 const APP_METADATA = {
@@ -900,228 +304,32 @@ const APP_METADATA = {
 
 ---
 
-## ১৪. AI-এর জন্য গুরুত্বপূর্ণ নিয়ম
+## ১৪. Important rules for the AI
 
-- **`data/exams/<examId>.json` একমাত্র ডেটা সোর্স** — প্রতিটা পরীক্ষা তার নিজের ফাইলে, একটা মনোলিথিক ফাইলে সব প্রশ্ন জড়ো করা যাবে না
-- ফাইলের নাম হুবহু `examId`-এর সাথে মিলতে হবে (ব্রাউজার সরাসরি এই নাম দিয়েই fetch করে)
-- `id` সবসময় unique — সেকশন ৫-এর নিয়ম মেনে বানাতে হবে, কখনো duplicate করা যাবে না
-- প্রতিটা প্রশ্নে `examId` **বাধ্যতামূলক** — সংশ্লিষ্ট `exam-archive.js` entry-র `id` এর সাথে হুবহু মিলতে হবে (Section ৫ দেখুন); না মিললে প্রশ্ন UI তে দেখাবে না
-- `qno` সবসময় সংখ্যা (number) — `"০১"` এর মতো string বা বাংলা সংখ্যা লেখা যাবে না; UI নিজেই বাংলা সংখ্যায় রূপান্তর করে দেখায়
-- `exam-archive.js`-এ `date` সবসময় `YYYY-MM-DD` ফরম্যাটে লিখতে হবে
-- `subject` ফিল্ডে শুধু: `bangla` / `english` / `general-knowledge` / `math`
-- **গণিতের সমীকরণ `$...$` এর ভেতরে MathJax (LaTeX) সিনট্যাক্স দিয়ে লিখতে হবে** — যেমন `$64x^3 - 240x^2y$`। বিয়োগ চিহ্নের জন্য সবসময় সাধারণ হাইফেন (`-`) ব্যবহার করতে হবে, কখনো en-dash (`–`) বা em-dash (`—`) ব্যবহার করা যাবে না — কারণ MathJax এই চিহ্নগুলোকে বিয়োগ চিহ্ন হিসেবে চেনে না
-- `ministry`, `post`, `date`, `duration`, `totalMarks` — এগুলো শুধু `exam-archive.js`-এ থাকবে, `data/exams/*.json`-এর প্রশ্নে পুনরাবৃত্তি করা যাবে না
-- `written-exam/index.html`-এ প্রথমে `exam-archive.js` লোড হয়; প্রশ্নের ডেটা (`data/exams/<examId>.json`) exam খোলার সময় on-demand fetch হয়, আগে থেকে script tag দিয়ে লোড করা হয় না
-- `admin/` ফোল্ডার সবসময় `BCS-MCQ-Project`-এর বাইরে রাখতে হবে
-- কোনো প্রকাশক বা বইয়ের নাম রাখা যাবে না
-- নতুন subject category বানানো যাবে না
-- `topic` ফিল্ড **ঐচ্ছিক** — নিশ্চিত না হলে বাদ দেওয়া যাবে, কিন্তু ভুল topic দেওয়া যাবে না
-- `topic` এর মান শুধু Section ১৭-এর অনুমোদিত তালিকা থেকে নিতে হবে — নিজে থেকে নতুন topic বানানো যাবে না
-- **সেকশন স্বাধীনতা ভাঙা যাবে না** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` একে অন্যের `style.css`, `sw.js`, বা ডেটা ফরম্যাট ব্যবহার করবে না (সেকশন ১ দেখুন)
-- **`manifest.json` শুধু root-এ থাকবে** — কোনো সেকশনের `index.html`-এ `<link rel="manifest">` যোগ করা যাবে না (অ্যাপ একটাই PWA — "Open Job Solution")
-- প্রতিটা সেকশনের নিজস্ব `index.html`-এ `⬅️ হোমে ফিরুন` link থাকা বাধ্যতামূলক
-- **`<script src="...">` এর path আর আসল ফাইলের লোকেশন হুবহু মিলতে হবে** — কোনো ফাইল `data/` সাবফোল্ডারে থাকলে `src="data/filename.js"` লিখতে হবে, শুধু `src="filename.js"` লিখলে ব্রাউজার ভুল জায়গায় খুঁজবে এবং পুরো সেকশন ভেঙে যাবে (v1.15-এ এই কারণে Primary MCQ ভাঙা ছিল)
-- **HTML-এর `class="..."` আর CSS-এর সিলেক্টর নাম অক্ষরে-অক্ষরে এক হতে হবে** — একবচন/বহুবচন (`tag` বনাম `tags`) ভুল হলে স্টাইল প্রয়োগ হবে না, কোনো error ছাড়াই চুপচাপ ভেঙে থাকবে (v1.15-এ এই কারণে error badge স্টাইলহীন ছিল)
-- **কোনো SVG ইনলাইন বসালে হয় SVG-তে `width`/`height` দিতে হবে, নয়তো তাকে ধরে রাখা wrapper-এ CSS দিয়ে সাইজ বেঁধে দিতে হবে** — নাহলে ব্রাউজার ডিফল্ট ৩০০×১৫০px সাইজ নেয় (v1.15-এ এই কারণে ট্যাব আইকন বিশাল দেখাত)
-- নতুন কোনো `index.html`/`app.js`/`style.css` জমা দেওয়ার আগে নিচের ক্রস-চেক করতে হবে: (১) যত `<script src>` আছে সব আসল ফাইলের সাথে মেলে কিনা, (২) JS-এ ব্যবহৃত প্রতিটা `class="..."` নাম CSS ফাইলে হুবহু সংজ্ঞায়িত আছে কিনা
-
----
-
-## ১৫. Pending Implementation Tasks
-
-### ⏳ validateQuestion() — বাস্তবায়ন বাকি
-
-**অবস্থা:** পরিকল্পিত, এখনো তৈরি হয়নি
-
-**কাজটা কী:**
-`data/exams/<examId>.json`-এ নতুন প্রশ্ন যোগ করার আগে যাচাই করবে — ডেটা সঠিক কিনা।
-
-**যা যাচাই করবে:**
-
-| চেক | নিয়ম |
-|-----|-------|
-| `id` format | `job-{YYYY}-{exam-slug}-q{NN}` মেনে চলছে কিনা |
-| `examId` | খালি নয়, এবং `exam-archive.js`-এ এই `id` দিয়ে একটা entry সত্যিই আছে কিনা |
-| `subject` value | শুধু `bangla` / `english` / `general-knowledge` / `math` — অন্য কিছু নয় |
-| `topic` value | দেওয়া থাকলে Section ১৭-এর তালিকায় আছে কিনা |
-| `qno` type | সংখ্যা (number), string বা বাংলা সংখ্যা নয় |
-| `type` value | renderer.js-এ যে ধরনগুলো সাপোর্ট করে তার একটা কিনা |
-| `id` uniqueness | একই `id` আগে আছে কিনা (Duplicate Guard) |
-
-**Schema যা confirm হয়েছে (Section ৬ থেকে):**
-
-```javascript
-{
-  id: "job-2025-dc-q01",            // বাধ্যতামূলক, unique
-  examId: "job-2025-dc",  // বাধ্যতামূলক, exam-archive.js এর id এর সাথে মিলতে হবে
-  subject: "bangla",                // বাধ্যতামূলক, ৪টির মধ্যে একটি
-  topic: "পত্রলিখন",                 // ঐচ্ছিক
-  qno: 1,                           // বাধ্যতামূলক, সংখ্যা
-  marks: 5,                         // বাধ্যতামূলক
-  type: "letter",                   // বাধ্যতামূলক — renderer.js এর type অনুযায়ী
-  question: "প্রশ্নের টেক্সট",       // বাধ্যতামূলক
-  // type অনুযায়ী আরো ফিল্ড: answer / parts / steps / letter / columns+rows ইত্যাদি
-}
-```
-
-> মন্ত্রণালয়, পদ, তারিখ, সময়, পূর্ণমান এখানে থাকে না — সেগুলো `exam-archive.js`-এ আলাদা থাকে (Section ৭ দেখুন)।
-
-**কখন বানাবে:** Written Exam কাজ শেষ হলে।
-
-**AI-এর জন্য নির্দেশ:** এই সেকশন দেখলে সরাসরি `validateQuestion()` এবং `assertUniqueId()` function লিখতে পারবে — আর schema জিজ্ঞেস করতে হবে না।
+- **`data/exams/<examId>.json` is the only data source** — each exam in its own file; all questions must not be gathered into one monolithic file
+- The file name must match the `examId` exactly (the browser fetches by exactly this name)
+- `id` is always unique — build it following the id rules of your own section file (Section ৫ in `job-app/written-exam.md` for written-exam), and never duplicate it
+- `examId` is **mandatory** in every question — it must match the `id` of the corresponding `exam-archive.js` entry exactly (written-exam: Section ৫ in `job-app/written-exam.md`; ministry-mcq: the id-naming part of Section ৯-ক in `job-app/ministry-mcq.md`); if it doesn't match, the question will not show in the UI
+- `qno` is always a number — do not write a string like `"০১"` or Bengali digits; the UI converts to Bengali digits itself when displaying
+- `date` in `exam-archive.js` must always be written in `YYYY-MM-DD` format
+- the `subject` field takes only: `bangla` / `english` / `general-knowledge` / `math` (written-exam data also accepts `gk` as an alias of `general-knowledge` — see Section ১২)
+- **Math equations must be written inside `$...$` using MathJax (LaTeX) syntax** — e.g. `$64x^3 - 240x^2y$`. Always use the plain hyphen (`-`) for the minus sign, never an en-dash (`–`) or em-dash (`—`) — because MathJax does not recognize those characters as a minus sign
+- `ministry`, `post`, `date`, `duration`, `totalMarks` — these live only in `exam-archive.js` and must not be repeated in the questions of `data/exams/*.json`
+- `written-exam/index.html` loads `exam-archive.js` first; the question data (`data/exams/<examId>.json`) is fetched on demand when an exam is opened, not preloaded with a script tag
+- the `admin/` folder must always be kept outside `BCS-MCQ-Project`
+- no publisher or book name may be included
+- no new subject category may be created
+- the `topic` field is **optional** — if you are not sure it may be omitted, but a wrong topic must not be given
+- a `topic` value must be taken only from the approved list in Section ১৭ (`job-app/written-exam.md`) — never invent a new topic yourself
+- **Section independence must not be broken** — `bcs-mcq/`, `mcq-job-solution/primary-mcq/`, `mcq-job-solution/ministry-mcq/`, `written-exam/` must not use each other's `style.css`, `sw.js`, or data format (see Section ১)
+- **`manifest.json` lives only at the root** — no section's `index.html` may add `<link rel="manifest">` (the app is a single PWA — "Open Job Solution")
+- every section's own `index.html` must have the `⬅️ হোমে ফিরুন` link
+- **The path in `<script src="...">` must match the real file location exactly** — if a file is in the `data/` subfolder you must write `src="data/filename.js"`; writing just `src="filename.js"` makes the browser look in the wrong place and the whole section breaks (Primary MCQ was broken for this reason in v1.15)
+- **The `class="..."` names in HTML and the selector names in CSS must be identical character for character** — a singular/plural mistake (`tag` vs `tags`) means the style is not applied and it silently stays broken without any error (the error badge was unstyled for this reason in v1.15)
+- **When inlining any SVG, either give the SVG `width`/`height`, or fix its size with CSS on the wrapper holding it** — otherwise the browser takes the default 300×150px size (the tab icon looked huge for this reason in v1.15)
+- Before submitting any new `index.html`/`app.js`/`style.css`, do these cross-checks: (1) every `<script src>` matches an actual file, (2) every `class="..."` name used in JS is defined exactly in the CSS file
 
 ---
 
-### ✅ পরীক্ষা-ভিত্তিক ডেটা স্প্লিট + Lazy Loading — সম্পূর্ণ সমাধান হয়ে গেছে
-
-**অবস্থা:** সম্পন্ন। এই কাজটা দুই ধাপে হয়েছে:
-
-1. **প্রথম ধাপ (PR #204):** `job-solution.js`-এ সব পরীক্ষার সব প্রশ্ন এক ফাইলে থাকায় (১৫০০+ প্রশ্ন) একাধিক সেশন সমান্তরালে কাজ করলে বারবার merge conflict হতো — সমাধানে ডেটা `data/exams/<examId>.json`-এ ভাঙা হলো, কিন্তু `job-solution.js`-কে তখন **build-time-এ auto-generate** করে রাখা হয়েছিল (git-conflict সমস্যা সমাধান হলো, browser load-time সমস্যা তখনও থেকে গিয়েছিল)।
-2. **দ্বিতীয় ধাপ:** `job-solution.js` ও তার build script (`build_job_solution.js`) সম্পূর্ণ বাদ দেওয়া হলো। এখন `written-exam/index.html` কোনো এক্সাম খোলার সময় সরাসরি সেই একটা `data/exams/<examId>.json` ফাইল ব্রাউজারে `fetch()` করে — সত্যিকারের runtime lazy loading।
-
-**চূড়ান্ত আর্কিটেকচার:** বিস্তারিত Section ৪ দেখুন।
-
-**Trade-off (সচেতনভাবে গ্রহণ করা):** আগে পুরো `job-solution.js` precache হতো বলে একবার অ্যাপ খুললে সব এক্সাম offline-এ পাওয়া যেত। এখন যে এক্সাম আগে একবারও খোলা হয়নি সেটা internet ছাড়া দেখা যাবে না (`written-exam/sw.js` শুধু আগে-fetch-করা এক্সাম runtime-এ cache করে)। **owner-এর সিদ্ধান্ত (২০২৬-০৮-৩০):** এই ট্রেড-অফ গ্রহণযোগ্য, বাংলাদেশে নেট-কানেকশন যথেষ্ট ভালো — "অফলাইনের জন্য ডাউনলোড" জাতীয় ফিচার প্রস্তাব করার দরকার নেই, এটা pending কাজ না।
-
-**বাতিল হয়ে যাওয়া ফাইল:** `bangla.js`, `english.js`, `general-knowledge.js`, `math.js` (subject-filter ভিউ, কখনো ব্যবহৃতই হয়নি), `build_job_solution.js`, `data/job-solution.js` — সব মুছে ফেলা হয়েছে।
-
-বিস্তারিত নিয়ম: `written-exam/data/exams/README.md`।
-
----
-
-## ১৬. Automation App — পরিকল্পনা
-
-### উদ্দেশ্য
-
-প্রশ্নপত্রের ছবি দিলে AI নিজেই extract করে সঠিক ফরম্যাটে সাজিয়ে `.js` ফাইল তৈরি করে দেবে। Project Owner শুধু approve করবেন এবং Cloudflare-এ আপলোড করবেন।
-
-### Workflow
-
-```
-Project Owner ছবি আপলোড করবেন
-        ↓
-AI বুঝবে — BCS MCQ / Primary MCQ / Written — কোন section
-        ↓
-প্রশ্ন, উত্তর, metadata extract করবে
-        ↓
-এই document-এর নিয়ম অনুযায়ী সঠিক ফরম্যাটে সাজাবে
-        ↓
-Project Owner preview দেখবেন, ভুল থাকলে ঠিক করবেন
-        ↓
-"Approve" করলে আপডেট করা .js ফাইল download হবে
-        ↓
-Project Owner Cloudflare Pages-এ আপলোড করবেন  ← একমাত্র manual কাজ
-```
-
-### তিনটা Section-এর জন্য আলাদা নিয়ম
-
-| Section | AI কী করবে | Output ফাইল |
-|---------|-----------|-------------|
-| BCS MCQ | প্রশ্ন + ৪টা option + উত্তর extract, `bcs-NN-{subject}-q{NNN}` format | `data/{subject}.js` |
-| Primary MCQ | বিষয় চিনবে, `pb/pm/pe/pg/pc` prefix দিয়ে id বানাবে | `mcq-job-solution/primary-mcq/data/data.js` |
-| মন্ত্রণালয়ের MCQ | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন + সঠিক উত্তর extract করবে (অপশন/ব্যাখ্যা পরে), `<examId>-qNN` format | `mcq-job-solution/ministry-mcq/data/exams/<examId>.json` + `exam-archive.js` |
-| Written Exam | মন্ত্রণালয়, পদ, তারিখ, প্রশ্ন extract করবে, `job-{YYYY}-{code}-q{NN}` format | `written-exam/data/exams/<examId>.json` + `exam-archive.js` |
-
-### AI-এর জন্য নির্দেশ
-
-ছবি পেলে প্রথমে section চিনবে, তারপর সেই section-এর নিয়ম (Section ৫, ৬, ৭, ৮, বা ৯) অনুযায়ী ফরম্যাট করবে। id generate করার আগে বিদ্যমান ফাইলের সর্বশেষ id দেখে নেবে যাতে duplicate না হয়।
-
-### অবস্থা
-
-⏳ পরিকল্পিত — এখনো তৈরি হয়নি।
-
----
-
-## ১৭. Topic System — বিষয়ের ভেতরে সূক্ষ্ম ফিল্টার
-
-### উদ্দেশ্য
-
-`subject` দিয়ে বড় ভাগ হয় (বাংলা/ইংরেজি/গণিত/সাধারণ জ্ঞান)।
-`topic` দিয়ে সেই ভাগের ভেতরে আরো সূক্ষ্মভাবে খোঁজা যাবে।
-
-উদাহরণ: "শুধু সমাস প্রশ্ন দেখতে চাই" → `subject: "bangla"` + `topic: "সমাস"`
-
-### নিয়ম
-
-- `topic` ফিল্ড সবসময় **ঐচ্ছিক**
-- পুরানো ডেটায় `topic` না থাকলে কোনো সমস্যা নেই — ফিল্টার স্বয়ংক্রিয়ভাবে স্কিপ করবে
-- নিচের অনুমোদিত তালিকার বাইরে কোনো topic ব্যবহার করা যাবে না
-- নিশ্চিত না হলে topic বাদ দেওয়াই ভালো — ভুল topic দেওয়া যাবে না
-
-### অনুমোদিত Topic তালিকা
-
-#### বাংলা (`subject: "bangla"`)
-
-| topic মান | কোন ধরনের প্রশ্ন |
-|-----------|-----------------|
-| `সমাস` | ব্যাসবাক্যসহ সমাস নির্ণয় |
-| `সন্ধি` | সন্ধি বিচ্ছেদ ও নির্ণয় |
-| `কারক` | কারক ও বিভক্তি নির্ণয় |
-| `বাগধারা` | বাগধারার অর্থ ও বাক্য গঠন |
-| `এক-কথায়-প্রকাশ` | এক কথায় প্রকাশ |
-| `বিপরীত-শব্দ` | বিপরীত বা বিলোম শব্দ |
-| `প্রতিশব্দ` | সমার্থক বা প্রতিশব্দ |
-| `শুদ্ধিকরণ` | বানান বা বাক্য শুদ্ধিকরণ |
-| `ভাবসম্প্রসারণ` | ভাবসম্প্রসারণ |
-| `পত্রলিখন` | আবেদনপত্র, চিঠি, দরখাস্ত |
-| `রচনা` | প্রবন্ধ বা রচনা |
-| `অনুবাদ` | বাংলা থেকে ইংরেজি বা ইংরেজি থেকে বাংলা অনুবাদ |
-| `ব্যাকরণ-অন্যান্য` | উপরের কোনো category-তে পড়ে না এমন বাংলা ব্যাকরণ |
-
-#### ইংরেজি (`subject: "english"`)
-
-| topic মান | কোন ধরনের প্রশ্ন |
-|-----------|-----------------|
-| `paragraph` | Paragraph writing |
-| `letter` | Letter, application writing |
-| `translation` | Translation (Bengali to English / English to Bengali) |
-| `fill-in-the-blanks` | Fill in the blanks (preposition, article, tense) |
-| `sentence-making` | Sentence making with idioms/phrases |
-| `grammar` | Tense, voice, narration, transformation |
-| `vocabulary` | Synonyms, antonyms, spelling |
-| `english-others` | উপরের কোনো category-তে পড়ে না এমন ইংরেজি প্রশ্ন |
-
-#### গণিত (`subject: "math"`)
-
-| topic মান | কোন ধরনের প্রশ্ন |
-|-----------|-----------------|
-| `বীজগণিত` | সমীকরণ, উৎপাদক, সরলীকরণ |
-| `পাটিগণিত` | শতকরা, লাভ-ক্ষতি, সুদ-আসল, অনুপাত |
-| `জ্যামিতি` | ক্ষেত্রফল, পরিসীমা, কোণ |
-| `সংখ্যাতত্ত্ব` | গসাগু, লসাগু, মৌলিক সংখ্যা |
-| `পরিসংখ্যান` | গড়, মধ্যক, প্রচুরক |
-| `math-others` | উপরের কোনো category-তে পড়ে না এমন গণিত প্রশ্ন |
-
-#### সাধারণ জ্ঞান (`subject: "general-knowledge"`)
-
-| topic মান | কোন ধরনের প্রশ্ন |
-|-----------|-----------------|
-| `বাংলাদেশ` | বাংলাদেশের ইতিহাস, ভূগোল, সরকার, অর্থনীতি |
-| `আন্তর্জাতিক` | বিশ্বের দেশ, সংস্থা, চুক্তি, ঘটনা |
-| `বিজ্ঞান` | সাধারণ বিজ্ঞান, প্রযুক্তি |
-| `সাম্প্রতিক` | সাম্প্রতিক ঘটনা ও খবর |
-| `gk-others` | উপরের কোনো category-তে পড়ে না এমন সাধারণ জ্ঞান |
-
-### UI তে কীভাবে দেখাবে
-
-```
-বিষয় → বাংলা ▼
-টপিক → সমাস ▼       ← বিষয় বাছাই করলে সেই বিষয়ের topic অটো আসবে
-         সন্ধি
-         কারক
-         বাগধারা
-         ...
-```
-
-বাংলা বাছাই করলে বাংলার topic, ইংরেজি বাছাই করলে ইংরেজির topic।
-
-### validateQuestion() এ যোগ করার নিয়ম (Section ১৫ দেখুন)
-
-`topic` ফিল্ড থাকলে যাচাই করতে হবে —
-- সংশ্লিষ্ট `subject` এর অনুমোদিত তালিকায় আছে কিনা
-- না থাকলে error দেবে
-
----
-
-> **নোট:** এই ডকুমেন্ট BCS-MCQ-Project এর চূড়ান্ত রেফারেন্স।
-> নতুন সিদ্ধান্ত হলে version বাড়িয়ে নতুন ফাইল তৈরি করুন।
+> **Note:** this document is the final reference for BCS-MCQ-Project.
+> When a new decision is made, bump the version by editing this file in place (see the owner-approved-edit note in the prohibition block — do not create a second `job-app-MD*.md`; CI forbids it).

@@ -5,7 +5,14 @@
     "subject": "bangla",
     "qno": 1,
     "q": "নিচের কোনটি অর্ধ-তৎসম শব্দের উদাহরণ?",
-    "answer": "গিন্নি"
+    "answer": "গিন্নি",
+    "options": [
+      "সূর্য",
+      "গিন্নি",
+      "চরম",
+      "ডাব"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q02",
@@ -13,7 +20,14 @@
     "subject": "bangla",
     "qno": 2,
     "q": "'হ' কোন ধরনের ধ্বনি?",
-    "answer": "ঘোষ মহাপ্রাণ"
+    "answer": "ঘোষ মহাপ্রাণ",
+    "options": [
+      "ঘোষ মহাপ্রাণ",
+      "অঘোষ অল্পপ্রাণ",
+      "ঘোষ অল্পপ্রাণ",
+      "অঘোষ মহাপ্রাণ"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q03",
@@ -21,7 +35,14 @@
     "subject": "bangla",
     "qno": 3,
     "q": "নির্দোষ শব্দের সন্ধি-বিচ্ছেদ কোনটি?",
-    "answer": "নিঃ + দোষ"
+    "answer": "নিঃ + দোষ",
+    "options": [
+      "নির + দোষ",
+      "নিঃ + দোষ",
+      "নিব + দোস",
+      "নিরা + দোস"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q04",
@@ -29,7 +50,14 @@
     "subject": "bangla",
     "qno": 4,
     "q": "কোনটি ভাষার মৌলিক অংশ নয়?",
-    "answer": "বর্ণ"
+    "answer": "বর্ণ",
+    "options": [
+      "ধ্বনি",
+      "শব্দ",
+      "বাক্য",
+      "বর্ণ"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q05",
@@ -37,7 +65,14 @@
     "subject": "bangla",
     "qno": 5,
     "q": "Overrule-এর বাংলা প্রতিশব্দ হলো —",
-    "answer": "বাতিল করা"
+    "answer": "বাতিল করা",
+    "options": [
+      "আমলে আনা",
+      "মুলতবি করা",
+      "বাতিল করা",
+      "কার্যকর করা"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q06",
@@ -45,7 +80,14 @@
     "subject": "bangla",
     "qno": 6,
     "q": "অগ্রপশ্চাৎ বিবেচনা না করে কাজ করে যে, একককথায় কী হবে?",
-    "answer": "অবিমৃষ্যকারী"
+    "answer": "অবিমৃষ্যকারী",
+    "options": [
+      "অবাচীন",
+      "অবিমৃষ্যকারী",
+      "অবিবেচক",
+      "অতৎকারী"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q07",
@@ -53,15 +95,31 @@
     "subject": "bangla",
     "qno": 7,
     "q": "নিচের কোন বাক্যটি শুদ্ধ?",
-    "answer": "তাহার জীবন সংশয়াপন্ন"
+    "answer": "তাহার জীবন সংশয়াপন্ন।",
+    "options": [
+      "তাহার জীবন সংশয়ময়।",
+      "তাহার জীবন সংশয়াপন্ন।",
+      "তাহার জীবন সংশয়পূর্ণ।",
+      "তাহার জীবন সংশয়ান্বিত।"
+    ],
+    "optionsSource": "myexaminer.net",
+    "optionsGenerated": true,
+    "explanation": "ওয়েবের প্রশ্নপত্রে দুটো অপশন হুবহু একই ছাপা ছিল; এখানে একটা (সংশয়ান্বিত) বদলে দেওয়া হয়েছে।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q08",
     "examId": "uttara-bank-plc-2026-ao",
     "subject": "bangla",
     "qno": 8,
-    "q": "'নিশীত রাতে বাজছে বাঁশি।' এখানে 'নিশীথ' কোন পদ?",
-    "answer": "বিশেষণ"
+    "q": "'নিশীথ রাতে বাজছে বাঁশি।' এখানে 'নিশীথ' কোন পদ?",
+    "answer": "বিশেষণ",
+    "options": [
+      "বিশেষ্য",
+      "বিশেষণ",
+      "অব্যয়",
+      "ক্রিয়া"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q09",
@@ -69,7 +127,14 @@
     "subject": "bangla",
     "qno": 9,
     "q": "'পাউরুটি' শব্দটি কোন ভাষা থেকে বাংলা ভাষায় এসেছে?",
-    "answer": "পর্তুগিজ"
+    "answer": "পর্তুগিজ",
+    "options": [
+      "পর্তুগিজ",
+      "ফরাসি",
+      "ওলন্দাজ",
+      "তুর্কি"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q10",
@@ -77,7 +142,14 @@
     "subject": "bangla",
     "qno": 10,
     "q": "'নিষ্কর' কোন সমাসের উদাহরণ?",
-    "answer": "বহুব্রীহি সমাস"
+    "answer": "বহুব্রীহি সমাস",
+    "options": [
+      "অব্যয়ীভাব সমাস",
+      "তৎপুরুষ সমাস",
+      "বহুব্রীহি সমাস",
+      "কর্মধারয় সমাস"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q11",
@@ -85,7 +157,14 @@
     "subject": "bangla",
     "qno": 11,
     "q": "'ব্যায়ামে শরীর ভালো থাকে' বাক্যে 'ব্যায়ামে' শব্দটি কোন কারকে কোন বিভক্তি?",
-    "answer": "করণে সপ্তমী"
+    "answer": "করণে সপ্তমী",
+    "options": [
+      "কর্মে সপ্তমী",
+      "অপাদানে সপ্তমী",
+      "অধিকরণে সপ্তমী",
+      "করণে সপ্তমী"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q12",
@@ -93,7 +172,14 @@
     "subject": "bangla",
     "qno": 12,
     "q": "কোনো কথার দৃষ্টান্ত বা বিস্তার বোঝাতে বসে —",
-    "answer": "যথা"
+    "answer": "ড্যাশ",
+    "options": [
+      "সেমিকোলন",
+      "ড্যাশ",
+      "কমা",
+      "হাইফেন"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q13",
@@ -101,7 +187,14 @@
     "subject": "bangla",
     "qno": 13,
     "q": "'কপোত' শব্দের সমার্থক শব্দ কোনটি?",
-    "answer": "কবুতর"
+    "answer": "কবুতর",
+    "options": [
+      "কবুতর",
+      "কাক",
+      "কোকিল",
+      "ময়ূর"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q14",
@@ -109,7 +202,14 @@
     "subject": "bangla",
     "qno": 14,
     "q": "'তামার বিষ' বাগধারাটির সঠিক অর্থ কী?",
-    "answer": "অর্থের কুপ্রভাব"
+    "answer": "অর্থের কুপ্রভাব",
+    "options": [
+      "তীব্র রাগ",
+      "বিষাক্ত বস্তু",
+      "কৃপণতা",
+      "অর্থের কুপ্রভাব"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q15",
@@ -117,7 +217,14 @@
     "subject": "bangla",
     "qno": 15,
     "q": "'আকুঞ্চন'-এর বিপরীতার্থক শব্দ কোনটি?",
-    "answer": "প্রসারণ"
+    "answer": "প্রসারণ",
+    "options": [
+      "সংকোচন",
+      "প্রসারণ",
+      "বিশাল",
+      "বিকাশ"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q16",
@@ -125,7 +232,14 @@
     "subject": "bangla",
     "qno": 16,
     "q": "যে ব্যক্তি বিনা বিচারে অন্যের অনুকরণ করে —",
-    "answer": "অন্ধানুকারী"
+    "answer": "অন্ধানুকারী",
+    "options": [
+      "অন্ধানুকারী",
+      "অন্ধ",
+      "অনুগামী",
+      "অনুরাগী"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q17",
@@ -133,7 +247,15 @@
     "subject": "english",
     "qno": 17,
     "q": "'He is very hard up now.' বাক্যটির যথাযথ অনুবাদ কোনটি?",
-    "answer": "সে এখন খুবই অভাবগ্রস্ত।"
+    "answer": "সে খুব কষ্টে দিনাতিপাত করছে।",
+    "options": [
+      "সে খুব শক্ত মনের মানুষ।",
+      "তাকে ইদানিং অসহ্য লাগে।",
+      "তার দিন আর চলে না।",
+      "সে খুব কষ্টে দিনাতিপাত করছে।"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ম্যাগাজিনে উত্তর ছাপা 'সে এখন খুবই অভাবগ্রস্ত'; ওয়েবের অপশনে সেই বাক্যটা নেই, সমার্থক অপশনটা ধরা হয়েছে।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q18",
@@ -141,7 +263,15 @@
     "subject": "bangla",
     "qno": 18,
     "q": "কাজী নজরুল ইসলামের 'অগ্নিবীণা' কোন ধরনের রচনা?",
-    "answer": "কাব্য"
+    "answer": "কাব্য",
+    "options": [
+      "প্রবন্ধ",
+      "কাব্য",
+      "নাটক",
+      "ছোট গল্প"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "নোট: ওয়েবের প্রশ্নপত্রে এই প্রশ্নে 'অগ্নিবীণা'র জায়গায় 'রুদ্র-মঙ্গল' লেখা (তার উত্তর হতো প্রবন্ধ)। এখানে ম্যাগাজিনের প্রশ্ন ও উত্তর রাখা হয়েছে — যাচাই করে নিন।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q19",
@@ -149,7 +279,15 @@
     "subject": "bangla",
     "qno": 19,
     "q": "কেউ কিছু বলছে না — এই বাক্যটির অস্তিবাচক রূপ কোনটি?",
-    "answer": "সবাই নীরব"
+    "answer": "সবাই চুপচাপ।",
+    "options": [
+      "কেউ কিন্তু বলছে।",
+      "কেউ কিন্তু না বলে বলছে না।",
+      "সবাই চুপচাপ।",
+      "কেউ কিছু বলবে।"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ম্যাগাজিনে উত্তর ছাপা 'সবাই নীরব'; ওয়েবের অপশনে লেখা 'সবাই চুপচাপ' — একই অর্থ।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q20",
@@ -157,7 +295,14 @@
     "subject": "bangla",
     "qno": 20,
     "q": "'ডালভাত' কোন অর্থে শব্দযোগে দ্বিরুক্তি?",
-    "answer": "ভিন্নার্থক"
+    "answer": "ভিন্নার্থক",
+    "options": [
+      "সমার্থক",
+      "মিলনার্থক",
+      "বিপরীতার্থক",
+      "ভিন্নার্থক"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q21",
@@ -165,7 +310,15 @@
     "subject": "english",
     "qno": 21,
     "q": "What issues does Martin Luther King's speech address?",
-    "answer": "End to racism and civil and economic rights."
+    "answer": "End to racism and civil and economic rights",
+    "options": [
+      "Continuation of racism",
+      "Civil rights",
+      "End to racism and civil and economic rights",
+      "Civil War"
+    ],
+    "optionsSource": "myexaminer.net",
+    "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
   },
   {
     "id": "uttara-bank-plc-2026-ao-q22",
@@ -173,7 +326,15 @@
     "subject": "english",
     "qno": 22,
     "q": "What pushes King to speak: 'I have a dream'?",
-    "answer": "He is prompted by Mahalia Jackson."
+    "answer": "He is prompted by Mahalia Jackson",
+    "options": [
+      "He reads out the Emancipation Proclamation",
+      "He is prompted by Mahalia Jackson",
+      "He is overwhelmed by the crowd",
+      "Lincoln had asked him to give the speech"
+    ],
+    "optionsSource": "myexaminer.net",
+    "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
   },
   {
     "id": "uttara-bank-plc-2026-ao-q23",
@@ -181,7 +342,15 @@
     "subject": "english",
     "qno": 23,
     "q": "From the last paragraph, give one word for 'to leave'.",
-    "answer": "Departed."
+    "answer": "Departed",
+    "options": [
+      "Departed",
+      "Proclamation",
+      "Improvised",
+      "Address"
+    ],
+    "optionsSource": "myexaminer.net",
+    "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
   },
   {
     "id": "uttara-bank-plc-2026-ao-q24",
@@ -189,7 +358,15 @@
     "subject": "english",
     "qno": 24,
     "q": "What is the name of Martin Luther King's famed speech?",
-    "answer": "I Have a Dream."
+    "answer": "I have a Dream",
+    "options": [
+      "I have a Dream",
+      "An Improvisation",
+      "A Peroration",
+      "The Emancipation Proclamation"
+    ],
+    "optionsSource": "myexaminer.net",
+    "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
   },
   {
     "id": "uttara-bank-plc-2026-ao-q25",
@@ -197,7 +374,15 @@
     "subject": "english",
     "qno": 25,
     "q": "In front of whom does King speak?",
-    "answer": "The civil rights supporters."
+    "answer": "The civil rights supporters",
+    "options": [
+      "Lincoln",
+      "His friends",
+      "The civil rights supporters",
+      "The Negroes"
+    ],
+    "optionsSource": "myexaminer.net",
+    "passage": "'I Have a Dream' is a public speech delivered by American civil rights activist Martin Luther King Jr. during the March on Washington for Jobs and Freedom on August 28, 1963, in which he calls for an end to racism in the United States and calls for civil and economic rights. Delivered to over 250,000 civil rights supporters from the steps of the Lincoln Memorial in Washington, D.C., the speech was a defining moment of the civil rights movement. Beginning with a reference to the Emancipation Proclamation, which freed millions of slaves in 1863, King observes that: 'one hundred years later, the Negro still is not free'. Toward the end of the speech, King departed from his prepared text for a partly improvised peroration on the theme 'I have a dream', prompted by Mahalia Jackson's cry: 'Tell them about the dream, Martin!' In this part of the speech, which most excited the listeners and has now become its most famous, King described his dreams of freedom and equality arising from a land of slavery and hatred. Jon Meacham writes that, 'With a single phrase, Martin Luther King Jr. joined Jefferson and Lincoln in the ranks of men who've shaped modern America'. The speech was ranked the top American speech of the 20th century in a 1999 poll of public address scholars."
   },
   {
     "id": "uttara-bank-plc-2026-ao-q26",
@@ -205,7 +390,15 @@
     "subject": "english",
     "qno": 26,
     "q": "Error identification — 'Although a kangaroo (a) normally uses (b) its large feet and strong legs (c) for hopping (d) but it can also swim.' Which underlined part must be changed?",
-    "answer": "(d) but it can also swim — should be 'and can also swim'."
+    "answer": "(d) but it can",
+    "options": [
+      "(a) normally",
+      "(b) its large feet",
+      "(c) for",
+      "(d) but it can"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ভুল অংশ 'but it can' — হবে 'and it can'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q27",
@@ -213,7 +406,15 @@
     "subject": "english",
     "qno": 27,
     "q": "Error identification — 'Canals are (a) artificial waterways, often constructed (b) either to transport heavy loads or to (c) delivering water (d) to cities and farms.' Which underlined part must be changed?",
-    "answer": "(c) delivering water — should be 'deliver water'."
+    "answer": "(c) delivering water",
+    "options": [
+      "(a) artificial waterways",
+      "(b) either to transport heavy loads or to",
+      "(c) delivering water",
+      "(d) to cities and farms"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ভুল অংশ 'delivering water' — হবে 'deliver water'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q28",
@@ -221,7 +422,15 @@
     "subject": "english",
     "qno": 28,
     "q": "Error identification — 'Anne Elizabeth McDowell is (a) best (b) remembered for a (c) weekly journal, Woman's Advocate, (d) who she launched in January 1855.' Which underlined part must be changed?",
-    "answer": "(d) who — should be 'which'."
+    "answer": "(d) who",
+    "options": [
+      "(a) best",
+      "(b) remembered",
+      "(c) weekly",
+      "(d) who"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ভুল অংশ 'who' — হবে 'which'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q29",
@@ -229,15 +438,31 @@
     "subject": "english",
     "qno": 29,
     "q": "Error identification — 'A ray of light passing (a) through (b) the center of a thin lens (c) keep its (d) original direction.' Which underlined part must be changed?",
-    "answer": "(c) keep its — should be 'keeps its'."
+    "answer": "(c) keep",
+    "options": [
+      "(a) through",
+      "(b) the center",
+      "(c) keep",
+      "(d) original"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ভুল অংশ 'keep' — হবে 'keeps'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q30",
     "examId": "uttara-bank-plc-2026-ao",
     "subject": "english",
     "qno": 30,
-    "q": "Error identification — 'The customer hardly had (a) no money to (b) pay for (c) the drinks, (d).' Which underlined part must be changed?",
-    "answer": "(a) no money to — should be 'any money to'."
+    "q": "Error identification — 'The customer hardly had (a) / no money to (b) / pay for (c) / the drinks (d).' Which part must be changed?",
+    "answer": "(b) no money to",
+    "options": [
+      "(a) hardly had",
+      "(b) no money to",
+      "(c) pay for",
+      "(d) the drinks"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "ভুল অংশ 'no money to' — 'hardly'-র সাথে 'no' বসলে না-বোধক দ্বিগুণ হয়; হবে 'any money to'।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q31",
@@ -245,7 +470,14 @@
     "subject": "english",
     "qno": 31,
     "q": "Fill in the blank with the most effective word: 'How do you expect that country to progress when its government is corrupt, — and still largely feudal?'",
-    "answer": "despotic"
+    "answer": "despotic",
+    "options": [
+      "devalued",
+      "swindling",
+      "despotic",
+      "demeaning"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q32",
@@ -253,7 +485,14 @@
     "subject": "english",
     "qno": 32,
     "q": "Fill in the blank with the most effective word: 'I have a profound respect for his political —.'",
-    "answer": "sagacity"
+    "answer": "sagacity",
+    "options": [
+      "personality",
+      "ambition",
+      "temperament",
+      "sagacity"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q33",
@@ -261,7 +500,14 @@
     "subject": "english",
     "qno": 33,
     "q": "Fill in the blank with the most effective word: 'Two of the fugitives managed to remain free by adeptly avoiding the — of the police.'",
-    "answer": "pursuit"
+    "answer": "pursuit",
+    "options": [
+      "torture",
+      "pursuit",
+      "discovery",
+      "following"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q34",
@@ -269,7 +515,14 @@
     "subject": "english",
     "qno": 34,
     "q": "Fill in the blank with the most effective word: 'Experts fail to understand the — behind the decision to move coal by road when there is enough rail capacity in this sector.'",
-    "answer": "rationale"
+    "answer": "rationale",
+    "options": [
+      "ideology",
+      "judgment",
+      "rationale",
+      "politics"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q35",
@@ -277,7 +530,14 @@
     "subject": "english",
     "qno": 35,
     "q": "Fill in the blank with the most effective word: 'He should be dismissed for his — remarks about his superior.'",
-    "answer": "scurrilous"
+    "answer": "scurrilous",
+    "options": [
+      "scurrilous",
+      "depreciatory",
+      "critical",
+      "laudatory"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q36",
@@ -285,7 +545,14 @@
     "subject": "english",
     "qno": 36,
     "q": "Choose the word which is opposite to the given word: 'Feral'",
-    "answer": "Tame"
+    "answer": "Tame",
+    "options": [
+      "Tame",
+      "Unyielding",
+      "Natural",
+      "Grim"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q37",
@@ -293,7 +560,14 @@
     "subject": "english",
     "qno": 37,
     "q": "Choose the word which is opposite to the given word: 'Dilettante'",
-    "answer": "Professional"
+    "answer": "Professional",
+    "options": [
+      "Professional",
+      "Tidy",
+      "Rapid",
+      "Stupid"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q38",
@@ -301,7 +575,14 @@
     "subject": "english",
     "qno": 38,
     "q": "Choose the word which is opposite to the given word: 'Kith'",
-    "answer": "Strangers"
+    "answer": "Strangers",
+    "options": [
+      "Strangers",
+      "Outfit",
+      "Son",
+      "Relative"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q39",
@@ -309,7 +590,14 @@
     "subject": "english",
     "qno": 39,
     "q": "Choose the word which is opposite to the given word: 'Transmit'",
-    "answer": "Withhold"
+    "answer": "Withhold",
+    "options": [
+      "Televise",
+      "Withhold",
+      "Reply",
+      "Show"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q40",
@@ -317,7 +605,14 @@
     "subject": "english",
     "qno": 40,
     "q": "Choose the word which is opposite to the given word: 'Stagnant'",
-    "answer": "Mobile"
+    "answer": "Mobile",
+    "options": [
+      "Inertia",
+      "Mobile",
+      "Progress",
+      "Effervescence"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q41",
@@ -325,15 +620,29 @@
     "subject": "math",
     "qno": 41,
     "q": "যদি ∛32 (cube root of 32) = 2^x হয়, তবে x এর মান কত?",
-    "answer": "5/3"
+    "answer": "5/3",
+    "options": [
+      "3",
+      "5/3",
+      "3/5",
+      "5"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q42",
     "examId": "uttara-bank-plc-2026-ao",
     "subject": "math",
     "qno": 42,
-    "q": "9^x × 81^2 ÷ 27^3 = 3^x হলে, x এর মান কত?",
-    "answer": "5"
+    "q": "9^3 × 81^2 ÷ 27^3 = 3^x হলে, x এর মান কত?",
+    "answer": "5",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q44",
@@ -341,7 +650,14 @@
     "subject": "math",
     "qno": 44,
     "q": "৩টি পাম্প প্রতিদিন ৮ ঘণ্টা করে একসাথে কাজ করলে ২ দিনে একটি ট্যাংক খালি করতে পারে। ১ দিনে ট্যাংক খালি করতে ৪টি পাম্পকে প্রতিদিন কত ঘণ্টা কাজ করতে হবে?",
-    "answer": "১২ ঘণ্টা"
+    "answer": "12",
+    "options": [
+      "10",
+      "12",
+      "9",
+      "15"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q45",
@@ -349,7 +665,14 @@
     "subject": "math",
     "qno": 45,
     "q": "২০৬ টাকা x, y এবং z এর মধ্যে এমনভাবে ভাগ করা হয়েছে যে y, x এর চেয়ে ৬ টাকা বেশি পায় এবং z, x এর প্রাপ্ত টাকার দ্বিগুণ পায়। y কত টাকা পাবে?",
-    "answer": "৫৬ টাকা"
+    "answer": "56",
+    "options": [
+      "36",
+      "48",
+      "56",
+      "52"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q46",
@@ -357,7 +680,15 @@
     "subject": "math",
     "qno": 46,
     "q": "যদি p একটি জোড় পূর্ণ সংখ্যা এবং q একটি বিজোড় পূর্ণ সংখ্যা হয়, তবে নিচের কোনটি অবশ্যই একটি বিজোড় পূর্ণ সংখ্যা হবে?",
-    "answer": "2p + q"
+    "answer": "2p + q",
+    "options": [
+      "2p + q",
+      "pq",
+      "2(p + q)",
+      "q"
+    ],
+    "optionsSource": "myexaminer.net",
+    "explanation": "নোট: অপশন 'q'-ও বিজোড় (প্রশ্নেই q বিজোড় ধরা আছে); ম্যাগাজিনের সঠিক উত্তর 2p + q।"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q47",
@@ -365,7 +696,14 @@
     "subject": "math",
     "qno": 47,
     "q": "২০, ২৫, ৩০, ..., ১৪০ ধারাটিতে মোট কতটি পদ আছে?",
-    "answer": "২৫"
+    "answer": "25",
+    "options": [
+      "22",
+      "25",
+      "30",
+      "40"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q48",
@@ -373,7 +711,14 @@
     "subject": "math",
     "qno": 48,
     "q": "৭৮ জন শিক্ষার্থীর একটি শ্রেণিতে ৪১ জন ফরাসি এবং ২২ জন জার্মান ভাষা পড়ে। ফরাসি বা জার্মান পড়া শিক্ষার্থীদের মধ্যে ৯ জন উভয় বিষয়ই পড়ে। কোনো বিষয়েই ভর্তি নয় এমন শিক্ষার্থীর সংখ্যা কত?",
-    "answer": "২৪"
+    "answer": "24",
+    "options": [
+      "28",
+      "16",
+      "20",
+      "24"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q49",
@@ -381,7 +726,14 @@
     "subject": "math",
     "qno": 49,
     "q": "১১, ৯, ৭ ও ৪ বছর বয়সি চারজন শিক্ষার্থী তাদের বয়সের অনুপাতে কিছু টাকা ভাগ করে। সর্বকনিষ্ঠ শিক্ষার্থী ১২০০ টাকা পেলে মোট টাকার পরিমাণ কত?",
-    "answer": "৯৩০০ টাকা"
+    "answer": "9300",
+    "options": [
+      "8500",
+      "9000",
+      "9500",
+      "9300"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q50",
@@ -389,15 +741,29 @@
     "subject": "math",
     "qno": 50,
     "q": "তিনটি সংখ্যার মধ্যে প্রথম ও দ্বিতীয় সংখ্যার গড়, দ্বিতীয় ও তৃতীয় সংখ্যার গড়ের চেয়ে ১৫ বেশি। প্রথম ও তৃতীয় সংখ্যার পার্থক্য কত?",
-    "answer": "৩০"
+    "answer": "30",
+    "options": [
+      "18",
+      "30",
+      "25",
+      "32"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q51",
     "examId": "uttara-bank-plc-2026-ao",
     "subject": "math",
     "qno": 51,
-    "q": "কোনো নির্দিষ্ট টাকার পরপর দুই বছরের বৃদ্ধি সুদ যথাক্রমে ২২৫ টাকা এবং ২৩৮.৫ টাকা হলে, বার্ষিক সুদের হার কত?",
-    "answer": "৬%"
+    "q": "কোনো নির্দিষ্ট টাকার পরপর দুই বছরের চক্রবৃদ্ধি সুদ যথাক্রমে ২২৫ টাকা এবং ২৩৮.৫ টাকা হলে, বার্ষিক সুদের হার কত?",
+    "answer": "6%",
+    "options": [
+      "10%",
+      "8%",
+      "6%",
+      "5%"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q52",
@@ -405,7 +771,14 @@
     "subject": "math",
     "qno": 52,
     "q": "সমান হারে পানি প্রবাহিত হয় এমন ৮টি কল ৩০ মিনিটে একটি ট্যাংক পূর্ণ করতে পারে। যদি ২টি কল নষ্ট হয়ে যায়, তবে অবশিষ্ট ৬টি কল দিয়ে ট্যাংকটি পূর্ণ করতে কত সময় লাগবে?",
-    "answer": "৪০ মিনিট"
+    "answer": "40 min",
+    "options": [
+      "40 min",
+      "35 min",
+      "45 min",
+      "50 min"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q53",
@@ -413,7 +786,14 @@
     "subject": "math",
     "qno": 53,
     "q": "যদি A এর আয় B এর আয়ের চেয়ে ২৫% কম হয়, তবে B এর আয় A এর আয়ের চেয়ে কত শতাংশ বেশি?",
-    "answer": "৩৩.৩৩%"
+    "answer": "33.33",
+    "options": [
+      "35.33",
+      "35",
+      "30",
+      "33.33"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q54",
@@ -421,7 +801,14 @@
     "subject": "math",
     "qno": 54,
     "q": "বিক্রয় করসহ একটি পণ্যের বিক্রয়মূল্য ৬১৬ টাকা। বিক্রয় করের হার ১০%। যদি দোকানদার পণ্যটি বিক্রয়ে ১২% লাভ করে থাকে, তবে পণ্যটির ক্রয়মূল্য কত?",
-    "answer": "৫০০ টাকা"
+    "answer": "Tk. 500",
+    "options": [
+      "Tk. 400",
+      "Tk. 500",
+      "Tk. 450",
+      "Tk. 550"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q55",
@@ -429,7 +816,14 @@
     "subject": "math",
     "qno": 55,
     "q": "৩৮০ সেমি দৈর্ঘ্য এবং ১৮০ সেমি প্রস্থ বিশিষ্ট একটি আয়তাকার ক্ষেত্রের চারদিকে প্রতি মিটার ১০০ টাকা হারে বেড়া দিতে মোট কত টাকা খরচ হবে?",
-    "answer": "১০৪০ টাকা"
+    "answer": "Tk. 1040",
+    "options": [
+      "Tk. 1040",
+      "Tk. 1000",
+      "Tk. 1100",
+      "Tk. 950"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q56",
@@ -437,7 +831,14 @@
     "subject": "general-knowledge",
     "qno": 56,
     "q": "Which economist developed the concept of National Income Measurement and its significance in Economic Development?",
-    "answer": "Simon Kuznets"
+    "answer": "Simon Kuznets",
+    "options": [
+      "Ragnar Nurkse",
+      "Amartya Sen",
+      "Simon Kuznets",
+      "John Maynard Keynes"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q57",
@@ -445,7 +846,14 @@
     "subject": "general-knowledge",
     "qno": 57,
     "q": "The term '16 yards hit' is associated with —",
-    "answer": "Hockey"
+    "answer": "Hockey",
+    "options": [
+      "Polo",
+      "Hockey",
+      "Baseball",
+      "Badminton"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q58",
@@ -453,7 +861,14 @@
     "subject": "general-knowledge",
     "qno": 58,
     "q": "The process of breeding fish in ponds/artificial reservoirs is known as —",
-    "answer": "Pisciculture"
+    "answer": "Pisciculture",
+    "options": [
+      "Aquaculture",
+      "Fishing",
+      "Apiculture",
+      "Pisciculture"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q59",
@@ -461,7 +876,14 @@
     "subject": "general-knowledge",
     "qno": 59,
     "q": "Bangladesh's first Export Processing Zone (EPZ) was established in —",
-    "answer": "Chattogram"
+    "answer": "Chattogram",
+    "options": [
+      "Dhaka",
+      "Chattogram",
+      "Khulna",
+      "Cumilla"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q60",
@@ -469,7 +891,14 @@
     "subject": "general-knowledge",
     "qno": 60,
     "q": "The authority responsible for regulating the capital market in Bangladesh is —",
-    "answer": "BSEC"
+    "answer": "BSEC",
+    "options": [
+      "Bangladesh Bank",
+      "BSEC",
+      "BBS",
+      "IDRA"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q61",
@@ -477,7 +906,14 @@
     "subject": "general-knowledge",
     "qno": 61,
     "q": "Polythene is industrially prepared by the polymerization of —",
-    "answer": "Ethylene"
+    "answer": "Ethylene",
+    "options": [
+      "Methane",
+      "Styrene",
+      "Acetylene",
+      "Ethylene"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q62",
@@ -485,7 +921,14 @@
     "subject": "general-knowledge",
     "qno": 62,
     "q": "Which countries are separated by the McMahon Line?",
-    "answer": "India and China"
+    "answer": "India and China",
+    "options": [
+      "India and Pakistan",
+      "India and Tibet",
+      "India and China",
+      "India and Bangladesh"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q63",
@@ -493,7 +936,14 @@
     "subject": "general-knowledge",
     "qno": 63,
     "q": "Which country has the largest foreign exchange reserves in the world?",
-    "answer": "China"
+    "answer": "China",
+    "options": [
+      "Switzerland",
+      "Japan",
+      "China",
+      "India"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q64",
@@ -501,7 +951,14 @@
     "subject": "general-knowledge",
     "qno": 64,
     "q": "The largest oil-exporting country in the world is —",
-    "answer": "Saudi Arabia"
+    "answer": "Saudi Arabia",
+    "options": [
+      "Saudi Arabia",
+      "Russia",
+      "United States",
+      "Iraq"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q65",
@@ -509,7 +966,14 @@
     "subject": "general-knowledge",
     "qno": 65,
     "q": "Thalassemia is a hereditary disease affecting —",
-    "answer": "Blood"
+    "answer": "Blood",
+    "options": [
+      "Blood",
+      "Lungs",
+      "Heart",
+      "Kidney"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q66",
@@ -517,7 +981,14 @@
     "subject": "general-knowledge",
     "qno": 66,
     "q": "Who scored the only goal in the 2026 FIFA World Cup Final?",
-    "answer": "Ferran Torres"
+    "answer": "Ferran Torres",
+    "options": [
+      "Ferran Torres",
+      "Lionel Messi",
+      "Lamine Yamal",
+      "Pedri"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q67",
@@ -525,7 +996,14 @@
     "subject": "general-knowledge",
     "qno": 67,
     "q": "Euro was introduced in —",
-    "answer": "1999"
+    "answer": "1999",
+    "options": [
+      "1990",
+      "1993",
+      "1996",
+      "1999"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q68",
@@ -533,7 +1011,14 @@
     "subject": "general-knowledge",
     "qno": 68,
     "q": "Which organization publishes the World Economic Outlook?",
-    "answer": "IMF"
+    "answer": "IMF",
+    "options": [
+      "World Bank",
+      "IMF",
+      "WTO",
+      "ADB"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q69",
@@ -541,7 +1026,14 @@
     "subject": "general-knowledge",
     "qno": 69,
     "q": "Which attack encrypts bank data and demands payment for decryption?",
-    "answer": "Ransomware"
+    "answer": "Ransomware",
+    "options": [
+      "SQL Injection",
+      "Ransomware",
+      "Spoofing",
+      "Sniffing"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q70",
@@ -549,7 +1041,14 @@
     "subject": "general-knowledge",
     "qno": 70,
     "q": "Which payment system is primarily used for high-value, real-time interbank fund transfers?",
-    "answer": "RTGS"
+    "answer": "RTGS",
+    "options": [
+      "BEFTN",
+      "BACPS",
+      "RTGS",
+      "NPSB"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q71",
@@ -557,7 +1056,14 @@
     "subject": "general-knowledge",
     "qno": 71,
     "q": "Which of the following is not a payment system operator in Bangladesh?",
-    "answer": "Uttara Bank"
+    "answer": "Uttara Bank",
+    "options": [
+      "bKash",
+      "SSL Commerce",
+      "ShurjoPay",
+      "Uttara Bank"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q72",
@@ -565,7 +1071,14 @@
     "subject": "general-knowledge",
     "qno": 72,
     "q": "Which technology is the foundation of Open Banking?",
-    "answer": "Secure APIs"
+    "answer": "Secure APIs",
+    "options": [
+      "FTP Secure",
+      "Secure APIs",
+      "Secure Bluetooth",
+      "NFC only"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q73",
@@ -573,7 +1086,14 @@
     "subject": "general-knowledge",
     "qno": 73,
     "q": "Which storage device generally provides the fastest performance?",
-    "answer": "SSD"
+    "answer": "SSD",
+    "options": [
+      "HDD",
+      "DVD",
+      "SSD",
+      "CD-ROM"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q74",
@@ -581,7 +1101,14 @@
     "subject": "general-knowledge",
     "qno": 74,
     "q": "Which country is the largest producer of natural rubber?",
-    "answer": "Thailand"
+    "answer": "Thailand",
+    "options": [
+      "India",
+      "Thailand",
+      "Brazil",
+      "Malaysia"
+    ],
+    "optionsSource": "myexaminer.net"
   },
   {
     "id": "uttara-bank-plc-2026-ao-q75",
@@ -589,6 +1116,13 @@
     "subject": "general-knowledge",
     "qno": 75,
     "q": "Which vitamin deficiency causes night blindness?",
-    "answer": "Vitamin A"
+    "answer": "Vitamin A",
+    "options": [
+      "Vitamin A",
+      "Vitamin B",
+      "Vitamin C",
+      "Vitamin E"
+    ],
+    "optionsSource": "myexaminer.net"
   }
 ]

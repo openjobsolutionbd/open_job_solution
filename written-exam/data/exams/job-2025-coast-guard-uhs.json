@@ -205,7 +205,7 @@
       {
         "label": "",
         "source": "চারটা বাজতে দশ মিনিট বাকি।",
-        "target": "It is ten minutes past four."
+        "target": "It is ten minutes to four."
       },
       {
         "label": "",
@@ -235,7 +235,7 @@
       },
       {
         "sentence": "I tried...... doing the same thing day after day.",
-        "answer": "avoid"
+        "answer": "to avoid"
       },
       {
         "sentence": "You can go......... the highway.",

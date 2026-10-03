@@ -5,30 +5,26 @@ Open Job Solution — Root Version Manager
 যেকোনো module থেকে নয়, ROOT folder থেকে চালান:
     python3 update_version.py           # auto patch increment (1.7.1 → 1.7.2)
     python3 update_version.py 1.8.0     # নির্দিষ্ট version set করুন
+    python3 update_version.py --check   # কিছু না বদলে শুধু যাচাই: সব জায়গায় version.txt-এর ভার্সনই আছে কিনা
+                                        # (অমিল/প্যাটার্ন-না-মেলা থাকলে exit 1 — CI-র validate জব এটা চালায়)
+    python3 update_version.py --check-live https://ojsapp.pages.dev
+                                        # লাইভ সাইট থেকে একই ফাইলগুলো এনে দেখে সেখানে version.txt-এর ভার্সনই
+                                        # চলছে কিনা (deploy আটকালে/ব্যর্থ হলে ধরা পড়ে; live-site-check.yml চালায়)
 
 এই script একসাথে করে:
     1. সব sw.js + app.js-এ version update
     2. version.txt update
-    3. job-app-MD-*.md-এ changelog entry
-    4. git init (না থাকলে), তারপর auto commit
+    3. git init (না থাকলে), তারপর auto commit
+(job-app-MD.md-এ আর কোনো changelog রো যোগ হয় না — routine bump-এর ইতিহাস git log ও version.txt-এ)
 """
 
-import re, sys, os, subprocess
+import re, sys, os, subprocess, time
+import urllib.error
+import urllib.request
 from pathlib import Path
 from datetime import datetime
 
 ROOT = Path(__file__).parent.parent
-
-# ── Bengali helpers ────────────────────────────────────────────
-BN_MONTHS = [
-    "", "জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন",
-    "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"
-]
-BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
-
-def bn_date(dt):
-    day = str(dt.day).translate(BN_DIGITS)
-    return f"{day} {BN_MONTHS[dt.month]} {str(dt.year).translate(BN_DIGITS)}"
 
 # ── Git helpers ────────────────────────────────────────────────
 def run_git(*args):
@@ -70,16 +66,6 @@ def ensure_git():
             return False
     return True
 
-def get_changed_files():
-    """git diff HEAD দিয়ে changed files list করে"""
-    changed = []
-    # staged + unstaged
-    for cmd in [["diff", "--name-only", "HEAD"], ["diff", "--name-only"]]:
-        code, out, _ = run_git(*cmd)
-        if code == 0 and out:
-            changed += [f.strip() for f in out.splitlines() if f.strip()]
-    return list(dict.fromkeys(changed))  # deduplicate
-
 def git_stage_and_commit(new_tag):
     """সব পরিবর্তন stage করে commit করে"""
     run_git("add", "-A")
@@ -95,9 +81,108 @@ def git_stage_and_commit(new_tag):
 VERSION_FILE = ROOT / "_docs" / "version.txt"
 current = VERSION_FILE.read_text().strip() if VERSION_FILE.exists() else "1.7.1"
 
+CHECK_ONLY = "--check" in sys.argv
+args = [a for a in sys.argv[1:] if a not in ("--check", "--check-live")]
+
+# ── কোন ফাইলে কোন প্যাটার্নে ভার্সন লেখা আছে (একমাত্র তালিকা) ──
+# {tag} জায়গায় "v1.2.3" বসে। bump ও --check দুটোই এই একই তালিকা ব্যবহার করে,
+# তাই নতুন ফাইল যোগ করলে শুধু এখানে একটা লাইন যোগ করলেই দুই জায়গায় কাজ করবে।
+SW_PATTERN = (r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
+              "const CACHE_VERSION = CACHE_PREFIX + '{tag}'")
+APP_PATTERN = (r"const APP_VERSION = 'v[\d.]+'", "const APP_VERSION = '{tag}'")
+
+PATCH_SPECS = [
+    ("sw.js", *SW_PATTERN),
+    ("bcs-mcq/sw.js", *SW_PATTERN),
+    ("bcs-mcq/app.js", *APP_PATTERN),
+    ("mcq-job-solution/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/index.html", r"MCQ Job Solution · v[\d.]+", "MCQ Job Solution · {tag}"),
+    ("mcq-job-solution/nctb-mcq/index.html", r"NCTB MCQ · v[\d.]+", "NCTB MCQ · {tag}"),
+    ("mcq-job-solution/primary-mcq/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/primary-mcq/index.html", *APP_PATTERN),
+    ("mcq-job-solution/ministry-mcq/sw.js", *SW_PATTERN),
+    ("mcq-job-solution/ministry-mcq/index.html", *APP_PATTERN),
+    ("written-exam/sw.js", *SW_PATTERN),
+    ("written-exam/index.html", *APP_PATTERN),
+    ("books/sw.js", *SW_PATTERN),
+    ("index.html", r"Open Job Solution · v[\d.]+", "Open Job Solution · {tag}"),
+]
+
+def plan_patches(tag):
+    """
+    সব ফাইলে আগে মেমোরিতে প্যাটার্ন বসিয়ে দেখে — এখনও ডিস্কে কিছু লেখে না।
+    return: (পরিকল্পনা [(path, নতুন_কনটেন্ট, বদলেছে_কিনা)], সমস্যার তালিকা)
+    """
+    plan, problems = [], []
+    for rel, pattern, template in PATCH_SPECS:
+        path = ROOT / rel
+        if not path.exists():
+            problems.append(f"  ❌  ফাইল পাওয়া যায়নি: {rel}")
+            continue
+        content = path.read_text(encoding="utf-8")
+        new_content, count = re.subn(pattern, template.replace("{tag}", tag), content)
+        if count == 0:
+            problems.append(f"  ❌  প্যাটার্ন মেলেনি: {rel}")
+            continue
+        plan.append((path, new_content, new_content != content))
+    return plan, problems
+
+# ── --check-live মোড: লাইভ সাইটে আসলে কোন ভার্সন চলছে তা যাচাই ─────
+# রিপোতে ভার্সন ঠিক থাকলেও Cloudflare deploy আটকে/ব্যর্থ হলে ব্যবহারকারীরা পুরনো ফাইল ও পুরনো ডেটা পায়।
+# এই মোড একই PATCH_SPECS-এর ফাইলগুলো লাইভ থেকে এনে সেখানকার ভার্সন version.txt-এর সাথে মেলায়।
+LIVE_ARGS = [a for a in sys.argv[1:] if a == "--check-live"]
+if LIVE_ARGS:
+    rest = args[:]  # --check ছাড়া বাকি আর্গুমেন্ট
+    if not rest or not rest[0].startswith("http"):
+        print("ব্যবহার: python3 _dev/update_version.py --check-live https://<সাইটের-ঠিকানা>")
+        sys.exit(2)
+    base = rest[0].rstrip("/") + "/"
+    expected = f"v{current}"
+    stamp = int(time.time())
+    problems, ok = [], 0
+    for rel, pattern, _tmpl in PATCH_SPECS:
+        url = f"{base}{rel}?_={stamp}"   # unique query: Cloudflare/ব্রাউজারের ক্যাশ এড়াতে
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (OJS live-version check)", "Cache-Control": "no-cache"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                body = resp.read().decode("utf-8", errors="replace")
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            problems.append(f"  ❌  লাইভ থেকে আনা যায়নি: {rel} ({e})")
+            continue
+        m = re.search(pattern, body)
+        if not m:
+            problems.append(f"  ❌  লাইভ ফাইলে ভার্সন-প্যাটার্ন পাওয়া যায়নি: {rel}")
+            continue
+        found = re.search(r"v[\d.]+", m.group(0))
+        found = found.group(0) if found else "?"
+        if found != expected:
+            problems.append(f"  ❌  লাইভে {found}, রিপোতে {expected}: {rel}")
+        else:
+            ok += 1
+    if problems:
+        print(f"\n❌  লাইভ সাইট ({base}) রিপোর সাথে মেলে না — রিপোতে {expected}, ঠিক {ok}/{len(PATCH_SPECS)}:")
+        print("\n".join(problems))
+        sys.exit(1)
+    print(f"✅  লাইভ সাইটের সব {len(PATCH_SPECS)}টা জায়গায় ভার্সন {expected} — রিপোর সাথে মিল আছে")
+    sys.exit(0)
+
+# ── --check মোড: কিছু না বদলে শুধু যাচাই ─────────────────────────
+if CHECK_ONLY:
+    plan, problems = plan_patches(f"v{current}")
+    for path, _, changed in plan:
+        if changed:
+            problems.append(f"  ❌  ভার্সন অমিল (version.txt = {current}): {path.relative_to(ROOT)}")
+    if problems:
+        print(f"\n❌  ভার্সন সিঙ্ক যাচাই ব্যর্থ (version.txt = {current}):")
+        print("\n".join(problems))
+        print("\n    ঠিক করতে: python3 _dev/update_version.py " + current + "  (একই ভার্সন আবার সব জায়গায় বসাবে)")
+        sys.exit(1)
+    print(f"✅  সব {len(PATCH_SPECS)}টা জায়গায় ভার্সন v{current} — মিল আছে")
+    sys.exit(0)
+
 # ── Determine new version ──────────────────────────────────────
-if len(sys.argv) > 1:
-    new_ver = sys.argv[1].lstrip("v")
+if args:
+    new_ver = args[0].lstrip("v")
 else:
     parts = current.split(".")
     parts[-1] = str(int(parts[-1]) + 1)
@@ -106,169 +191,24 @@ else:
 new_tag = f"v{new_ver}"
 print(f"\n🔖  Version: {current}  →  {new_ver}\n")
 
-# ── Ensure git exists BEFORE patching (so diff is accurate) ───
+# ── আগে সব ফাইল যাচাই — একটাও সমস্যা থাকলে কিছুই না লিখে থামা ──
+# (আগে: সমস্যা থাকলেও বাকি ফাইল বদলে "Done" বলত, ফলে আধা-আধি ভার্সন তৈরি হতো)
+plan, problems = plan_patches(new_tag)
+if problems:
+    print("❌  কোনো ফাইল বদলানো হয়নি, কারণ নিচের সমস্যা আছে:")
+    print("\n".join(problems))
+    sys.exit(1)
+
+# ── Ensure git exists ──────────────────────────────────────────
 git_ok = ensure_git()
 
-# ── Detect changed files BEFORE we overwrite anything ─────────
-changed_files = get_changed_files() if git_ok else []
-
-# ── Patch all version strings ──────────────────────────────────
-PATCHES = [
-    (ROOT / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "bcs-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "bcs-mcq" / "app.js",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "index.html",
-     r"MCQ Job Solution · v[\d.]+",
-     f"MCQ Job Solution · {new_tag}"),
-    (ROOT / "mcq-job-solution" / "nctb-mcq" / "index.html",
-     r"NCTB MCQ · v[\d.]+",
-     f"NCTB MCQ · {new_tag}"),
-    (ROOT / "mcq-job-solution" / "primary-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "primary-mcq" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "ministry-mcq" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "mcq-job-solution" / "ministry-mcq" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "written-exam" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "written-exam" / "index.html",
-     r"const APP_VERSION = 'v[\d.]+'",
-     f"const APP_VERSION = '{new_tag}'"),
-    (ROOT / "books" / "sw.js",
-     r"const CACHE_VERSION = CACHE_PREFIX \+ 'v[\d.]+'",
-     f"const CACHE_VERSION = CACHE_PREFIX + '{new_tag}'"),
-    (ROOT / "index.html",
-     r"Open Job Solution · v[\d.]+",
-     f"Open Job Solution · {new_tag}"),
-]
-
-errors = []
-for filepath, pattern, replacement in PATCHES:
-    if not filepath.exists():
-        errors.append(f"  ⚠️  File not found: {filepath.relative_to(ROOT)}")
-        continue
-    content = filepath.read_text(encoding="utf-8")
-    new_content, count = re.subn(pattern, replacement, content)
-    if count == 0:
-        errors.append(f"  ⚠️  Pattern not matched: {filepath.relative_to(ROOT)}")
-        continue
-    filepath.write_text(new_content, encoding="utf-8")
-    print(f"  ✅  {filepath.relative_to(ROOT)}")
+# ── সব ঠিক থাকলে তবেই লেখা ─────────────────────────────────────
+for path, new_content, _ in plan:
+    path.write_text(new_content, encoding="utf-8")
+    print(f"  ✅  {path.relative_to(ROOT)}")
 
 VERSION_FILE.write_text(new_ver)
 print(f"  ✅  version.txt")
-
-# ── Build changelog summary ────────────────────────────────────
-FILE_LABELS = {
-    "bcs-mcq/app.js":             "BCS MCQ লজিক",
-    "bcs-mcq/style.css":          "BCS MCQ স্টাইল",
-    "bcs-mcq/index.html":         "BCS MCQ UI",
-    "mcq-job-solution/index.html":                "MCQ Job Solution হাব",
-    "mcq-job-solution/primary-mcq/index.html":    "Primary MCQ UI",
-    "mcq-job-solution/primary-mcq/style.css":     "Primary MCQ স্টাইল",
-    "mcq-job-solution/ministry-mcq/index.html":   "মন্ত্রণালয়ের MCQ UI",
-    "mcq-job-solution/ministry-mcq/style.css":    "মন্ত্রণালয়ের MCQ স্টাইল",
-    "mcq-job-solution/ministry-mcq/mcq-renderer.js": "মন্ত্রণালয়ের MCQ renderer",
-    "written-exam/index.html":    "লিখিত পরীক্ষা UI",
-    "written-exam/style.css":     "লিখিত পরীক্ষা স্টাইল",
-    "written-exam/renderer.js":   "লিখিত পরীক্ষা renderer",
-    "index.html":                 "হোম পেজ",
-    "manifest.json":              "PWA manifest",
-    "_redirects":                 "Cloudflare routing",
-    "_headers":                   "HTTP headers",
-}
-DATA_LABELS = {
-    "bangla": "বাংলা", "english": "English", "math": "গণিত",
-    "science": "বিজ্ঞান", "computer": "কম্পিউটার", "geography": "ভূগোল",
-    "bangladesh": "বাংলাদেশ", "international": "আন্তর্জাতিক",
-    "mental": "মানসিক", "ethics": "নৈতিকতা", "data": "ডেটা",
-    "general-knowledge": "সাধারণ জ্ঞান", "job-solution": "প্রশ্নব্যাংক",
-    "exam-archive": "পরীক্ষা আর্কাইভ",
-}
-SKIP = {"version.txt", "update_version.py"}
-
-def build_summary(files):
-    if not files:
-        return f"Version {new_tag}-এ আপগ্রেড। Cache সব module-এ update।"
-
-    parts = []
-    data_subjects = set()
-    labeled = []
-
-    for f in files:
-        fname = Path(f).name
-        if any(s in f for s in SKIP): continue
-        if "job-app-MD" in f: continue
-        if any(s in f for s in ["sw.js", "update_version"]): continue
-
-        if "/data/" in f:
-            stem = Path(f).stem
-            data_subjects.add(DATA_LABELS.get(stem, stem))
-        elif f in FILE_LABELS:
-            labeled.append(FILE_LABELS[f])
-        else:
-            labeled.append(fname)
-
-    if data_subjects:
-        parts.append(f"ডেটা আপডেট ({', '.join(sorted(data_subjects))})")
-    if labeled:
-        parts.append(f"{', '.join(dict.fromkeys(labeled))} পরিবর্তন")
-    if not parts:
-        parts.append(f"Cache সব module-এ {new_tag}-এ আপডেট")
-
-    return ". ".join(parts) + "."
-
-summary = build_summary(changed_files)
-
-# ── Update MD changelog ────────────────────────────────────────
-# শুধু job-app-MD.md-এই changelog entry যোগ হবে (একমাত্র "live" reference
-# doc)। আগে এখানে _docs/*.md এর সব ফাইলে (glob) blindly যোগ হতো, ফলে পুরনো
-# version-snapshot ফাইলে (যেমন job-app-MD-v1.22.md) অনন্তকাল ধরে নতুন রো
-# যোগ হয়ে যেত অথচ বাকি কনটেন্ট sync হতো না — সেই ফাইলটাই পরে delete করা
-# হয়েছে। নতুন কোনো MD "master doc" দরকার হলে এখানে নাম explicit যোগ করুন,
-# আবার glob দিয়ে সব ফাইল ধরাবেন না।
-md_files = [ROOT / "_docs" / "job-app-MD.md"]
-md_updated = False
-
-for md_path in md_files:
-    content = md_path.read_text(encoding="utf-8")
-    if "## Version History" not in content:
-        continue
-    if f"| {new_tag} |" in content:
-        print(f"  ⏭️  {md_path.name} — {new_tag} already logged")
-        md_updated = True
-        continue
-
-    new_row = f"| {new_tag} | {bn_date(datetime.now())} | {summary} |"
-    pattern = r"(## Version History\s*\n\s*\|[^\n]+\|\s*\n\s*\|[-| ]+\|\s*\n)"
-    new_content, count = re.subn(pattern, r"\g<1>" + new_row + "\n", content)
-
-    if count == 0:
-        errors.append(f"  ⚠️  Version History table not found in {md_path.name}")
-        continue
-
-    md_path.write_text(new_content, encoding="utf-8")
-    print(f"  ✅  {md_path.name}  →  \"{summary[:70]}\"")
-    md_updated = True
-
-if not md_updated:
-    errors.append("  ⚠️  কোনো MD file-এ Version History section পাওয়া যায়নি")
 
 # ── Git commit ─────────────────────────────────────────────────
 if git_ok:
@@ -276,9 +216,5 @@ if git_ok:
 
 # ── Final summary ──────────────────────────────────────────────
 print()
-if errors:
-    print("⚠️  কিছু সমস্যা:")
-    for e in errors: print(e)
-else:
-    print(f"🎉  Done! সব file এখন {new_tag}")
-    print(f"     ZIP করুন: Open_Job_Solution-{new_tag}.zip")
+print(f"🎉  Done! সব file এখন {new_tag}")
+print(f"     ZIP করুন: Open_Job_Solution-{new_tag}.zip")

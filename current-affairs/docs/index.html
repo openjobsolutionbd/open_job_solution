@@ -395,71 +395,18 @@
      সাথে সাথে ভেসে থাকে। ছোট, গোলগাল, একটু কিউট।
      ══════════════════════════════════════════════════════ */
   .floating-search-wrap{
-    position:relative;
+    /* ↑ (scroll-top) বাটনের ঠিক ওপরে সবসময় স্থির। ডান কিনারা থেকে ১৬px —
+       ৪৮px পিলের কেন্দ্র আর ৪০px ↑ বাটনের কেন্দ্র একই লাইনে থাকে। ডান
+       কিনারায় অ্যাঙ্কর করা, তাই পিলের width বাড়লে বক্স আপনাআপনি বাম দিকে
+       প্রসারিত হয়, বন্ধ করলে আগের জায়গায় ফিরে আসে। মোবাইল-ডেস্কটপ একই। */
+    position:fixed;
+    right:16px;
+    bottom:calc(76px + env(safe-area-inset-bottom, 0px));
     z-index:400;
-    display:none; /* শুধু ghotonaprobaho মোডে দেখানো হয় — JS টগল করে */
+    display:block; /* সব মোডে (টপিক, ঘটনাপ্রবাহ, টপ নিউজ, MCQ) সবসময় দেখা যায় — পড়তে পড়তে কিছু জানার দরকার হলেই সার্চ */
     font-family:'Kalpurush', sans-serif;
   }
-  .floating-search-wrap.visible{ display:block; }
-  /* BUG FIX: আগে পুরো সময় position:relative থাকায় স্ক্রল করলে বক্সটা
-     পেজের বাকি কন্টেন্টের সাথে সাথে ওপরে/নিচে সরে যেত, স্ক্রল করে নিচে
-     গেলে স্ক্রিন থেকে বেরিয়ে যেত। CSS position:sticky এখানে কাজ করে
-     না, কারণ এর প্যারেন্ট (.toolbar) মাত্র একটা সরু সারি — sticky
-     এলিমেন্ট নিজের প্যারেন্টের উচ্চতার বাইরে "ভাসতে" পারে না। তাই JS
-     দিয়ে স্ক্রল-ভিত্তিক টগল করা হচ্ছে: টুলবার ভিউপোর্ট থেকে ওপরে
-     স্ক্রল হয়ে গেলে .scroll-pinned ক্লাস লাগিয়ে position:fixed করা
-     হয় (নিচে ভিডিও/স্ক্রল-হেডিং-এর মতো), আর টুলবার আবার দৃশ্যমান
-     হলে ক্লাসটা সরিয়ে স্বাভাবিক ফ্লোতে ফিরিয়ে আনা হয়। এভাবে বক্সটা
-     সবসময় ভিউপোর্টের একই জায়গায় (top:12px) স্থির দেখা যায়, স্ক্রল
-     ওপরে/নিচে যেকোনো দিকেই করা হোক না কেন — একদম পেজের শুরুতে ফিরলে
-     টুলবারের নিজের জায়গায় ফিরে আসে। */
-  .floating-search-wrap.scroll-pinned{
-    position:fixed;
-    top:88px;
-    right:16px;
-  }
-  .floating-search-wrap.dragged{
-    position:fixed;
-    top:0;
-    left:0;
-  }
 
-  /* ══════════════════════════════════════════════════════
-     "ওপরে ফিরুন" বাটন — সব ভিউতে (হোম/টপিক/ঘটনাপ্রবাহ/টপ-নিউজ/MCQ/
-     written-exam) সবসময় DOM-এ থাকে, শুধু নিচের দিকে স্ক্রল করলে
-     দেখা যায়। নীল রঙ স্পষ্টভাবে চাওয়া হয়েছে, তাই থিমের সবুজ --accent
-     ব্যবহার না করে আলাদা কালার হার্ডকোড করা হলো।
-     ══════════════════════════════════════════════════════ */
-  .back-to-top-btn{
-    position:fixed;
-    right:20px;
-    bottom:24px;
-    z-index:500;
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    border:1.5px solid var(--line);
-    background:var(--paper-raised);
-    color:#2563eb;
-    font-size:1.1rem;
-    line-height:1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 2px 16px rgba(0,0,0,0.08);
-    cursor:pointer;
-    opacity:0;
-    visibility:hidden;
-    transform:translateY(8px);
-    transition:all 0.2s ease;
-  }
-  .back-to-top-btn.visible{
-    opacity:1;
-    visibility:visible;
-    transform:translateY(0);
-  }
-  .back-to-top-btn:hover{ box-shadow:0 8px 32px rgba(0,0,0,0.14); }
-  .back-to-top-btn:active{ transform:translateY(0) scale(0.94); }
 
   /* আধুনিক 3D "embossed button" pill — গভীরতা তৈরি হয় inset হাইলাইট
      (ওপরের কিনারায় আলো) ও নিচের গাঢ় শ্যাডো (ভর/উচ্চতা) মিলিয়ে। */
@@ -477,18 +424,11 @@
     height:48px;
     transition:width 0.32s cubic-bezier(.34,1.2,.4,1), transform 0.25s ease;
     overflow:hidden;
-    cursor:grab;
+    cursor:pointer;
   }
   .floating-search-pill:hover{ transform:translateY(-3px) rotate(-3deg); }
-  /* ড্র্যাগ চলাকালীন transition/hover-lift বন্ধ রাখা হয় যাতে বক্সটা
-     মাউসের পিছু পিছু আটকে না গিয়ে ঠিকঠাক অনুসরণ করে। */
-  .floating-search-pill.dragging{
-    cursor:grabbing;
-    transition:none;
-    transform:scale(1.05) rotate(-2deg);
-  }
   .floating-search-pill.open{
-    width:min(80vw, 280px);
+    width:min(calc(100vw - 32px), 280px);
     cursor:default;
     border-radius:24px;
     padding-left:6px;
@@ -523,7 +463,7 @@
     flex:0 0 auto;
     line-height:1;
     user-select:none;
-    cursor:grab;
+    cursor:pointer;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -542,6 +482,8 @@
       width:36px;
       height:36px;
     }
+    /* ৩৬px পিলের কেন্দ্র ৪০px ↑ বাটনের কেন্দ্রের ঠিক ওপরে রাখতে ডান কিনারা ২২px */
+    .floating-search-wrap{ right:22px; }
   }
   @keyframes fsiBreathe{
     0%, 100%{ transform:scale(1) rotate(0deg); }
@@ -557,11 +499,6 @@
     50%{ transform:scale(0.96) rotate(9deg); }
     75%{ transform:scale(1.1) rotate(-5deg); }
     100%{ transform:scale(1) rotate(0deg); }
-  }
-  .floating-search-pill.dragging .floating-search-icon{
-    cursor:grabbing;
-    animation:none;
-    transform:scale(1.12) rotate(-6deg);
   }
   /* ক্লিক করার মুহূর্তে ছোট্ট "pop" — JS ক্লাস টগল করে */
   .floating-search-icon.fsi-pop{ animation:fsiPop 0.4s cubic-bezier(.34,1.56,.64,1); }
@@ -629,8 +566,8 @@
   .floating-search-results{
     position:absolute;
     right:0;
-    top:56px;
-    width:min(92vw, 380px);
+    bottom:56px;
+    width:min(calc(100vw - 32px), 380px);
     max-height:min(58vh, 420px);
     overflow-y:auto;
     background:var(--paper-raised);
@@ -646,21 +583,10 @@
     padding:8px;
     display:none;
     opacity:0;
-    transform:translateY(-6px) scale(0.98);
+    transform:translateY(6px) scale(0.98);
     transition:opacity 0.18s ease, transform 0.18s ease;
   }
   .floating-search-results.visible{ display:block; opacity:1; transform:translateY(0) scale(1); }
-  /* বক্সটা টেনে সরানো (dragged) হলে আবার নিচে-ডানে ফিক্সড পজিশনের
-     পুরনো আচরণে ফিরে যায় — তখন রেজাল্ট বক্সটা ওপরের দিকে খোলে, যাতে
-     স্ক্রিনের নিচের কিনারার বাইরে চলে না যায়। */
-  .floating-search-wrap.dragged .floating-search-results{
-    top:auto;
-    bottom:56px;
-    transform:translateY(6px) scale(0.98);
-  }
-  .floating-search-wrap.dragged .floating-search-results.visible{
-    transform:translateY(0) scale(1);
-  }
   .floating-search-result-item{
     display:block;
     width:100%;
@@ -746,12 +672,16 @@
   @media (max-width:720px){
     /* আগে এখানে .floating-search-wrap-কে right/bottom দিয়ে ফিক্সড পজিশন
        করা হতো, কিন্তু ডিফল্ট পজিশন এখন টুলবারের ভেতরে (in-flow), তাই এই
-       ওভাররাইডের আর দরকার নেই — clampFloatingSearchToViewport() ইতিমধ্যে
-       ড্র্যাগ করা অবস্থায় ছোট স্ক্রিনেও বক্সটাকে ভিউপোর্টের মধ্যে রাখে। */
+       ওভাররাইডের আর দরকার নেই — এখন বক্সটা সবসময় fixed (↑ বাটনের ওপরে)। */
   }
 
   /* ভাসমান সার্চ থেকে টপিক খুললে এই মডালে দেখানো হয় — এতে বর্তমান
      মোড/স্ক্রিন (যেমন "দৈনিক ঘটনাপ্রবাহ") অক্ষত থাকে, অন্য কোথাও যেতে হয় না। */
+
+  /* ↑ (scroll-top) বাটন — বাকি সব পেজের (#575) মতো একই ডিজাইন, নীল তীর */
+  .scroll-top-btn{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom, 0px));right:20px;width:40px;height:40px;border-radius:50%;background:var(--paper-raised);border:1.5px solid var(--line);box-shadow:var(--shadow);cursor:pointer;color:#2563eb;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.2s ease;z-index:399}
+  .scroll-top-btn.visible{opacity:1;visibility:visible;transform:translateY(0)}
+
   .topic-modal-overlay{
     position:fixed;
     inset:0;
@@ -1454,6 +1384,33 @@
     font-size:14px;
     color:var(--muted,#777);
   }
+  .ntrca-question-list{
+    list-style:none;
+    margin:0 0 8px;
+    padding:0;
+  }
+  .ntrca-question{
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .ntrca-question:last-child{ border-bottom:none; }
+  .ntrca-q-text{
+    font-family:'Kalpurush',sans-serif;
+    font-size:16.8px;
+    font-weight:600;
+    color:var(--heading);
+    margin-bottom:4px;
+  }
+  .ntrca-a-text{
+    font-family:'Kalpurush',sans-serif;
+    font-size:16px;
+    color:var(--ink);
+  }
+  .ntrca-a-text::before{
+    content:"উ. ";
+    color:var(--accent);
+    font-weight:600;
+  }
   /* ঘটনাপ্রবাহ লাইনের ভেতরে টপিক-লিংকযুক্ত নির্দিষ্ট শব্দ/বাক্যাংশ — একই
      লাইনে একাধিক থাকতে পারে (যেমন "WHO" আর "ইবোলা" আলাদা আলাদা), হালকা
      আন্ডারলাইন ডট দিয়ে বোঝানো হয় এগুলো ইন্টারঅ্যাক্টিভ (Wikipedia-স্টাইল) */
@@ -1617,10 +1574,9 @@
     display:none; /* স্ক্রিনে দেখা যায় না, শুধু প্রিন্ট/PDF আউটপুটে দেখা যায় */
   }
   @media print{
-    .masthead, .search-bar-wrap, .toolbar, .drawer, footer,
+    .masthead, .search-bar-wrap, .toolbar, .drawer, footer, .scroll-top-btn, .floating-search-wrap,
     .card-actions, .seal, .related-topics, .mobile-back-btn,
-    .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout, #mcq-layout,
-    .back-to-top-btn{
+    .mode-tabs-row, #ghotonaprobaho-layout, #top-news-layout, #mcq-layout{
       display:none !important;
     }
     body{ background:#fff; }
@@ -1745,6 +1701,7 @@
   <button id="ghotonaprobaho-toggle-btn" class="mode-tab">ঘটনাপ্রবাহ</button>
   <button id="top-news-toggle-btn" class="mode-tab">টপ নিউজ</button>
   <button id="mcq-toggle-btn" class="mode-tab">MCQ</button>
+  <button id="ntrca-toggle-btn" class="mode-tab">NTRCA</button>
 </div>
 
 <div class="layout" id="browse-layout">
@@ -1776,6 +1733,24 @@
   <div class="card" id="mcq-card"></div>
 </div>
 
+<div class="layout" id="ntrca-layout" style="display:none;">
+  <div class="drawer">
+    <div class="drawer-label">
+      <span>NTRCA বিষয়সমূহ — <span id="ntrca-subject-count">0</span></span>
+    </div>
+    <div id="ntrca-tab-list"></div>
+  </div>
+
+  <div class="card" id="ntrca-card">
+    <div class="card-placeholder">
+      <div class="big">একটি বিষয় খুলুন</div>
+      বাম পাশের তালিকা থেকে একটি বিষয় বেছে নিন
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="উপরে যান">↑</button>
 
 <div class="topic-modal-overlay" id="topic-modal-overlay">
   <div class="topic-modal" id="topic-modal">
@@ -1791,8 +1766,6 @@
      প্রতি পাতায় পুনরাবৃত্তি হয়)। <a> ট্যাগ হওয়ায় ব্রাউজারের
      "প্রিন্ট → PDF হিসেবে সেভ" করলে PDF-এও লিংকটা ক্লিকযোগ্য থাকে। -->
 <a href="/current-affairs/docs/" class="print-watermark">Open Job Solution</a>
-
-<button type="button" id="back-to-top-btn" class="back-to-top-btn" aria-label="পাতার ওপরে ফিরে যান" title="ওপরে ফিরুন">↑</button>
 
 <script>
 let ALL_TOPICS = [];
@@ -1814,6 +1787,9 @@ let MCQ_SETS_PROMISE = null; // concurrent call guard
 // key: `${set.label}||${q.number}` (একই সেটের ভেতর number ইউনিক, একাধিক সেট এলে
 // আলাদা সেট-লেবেল দিয়ে সংঘর্ষ এড়ানো হয়)। value: ক্লিক করা option-এর index।
 let MCQ_ANSWERED = {};
+let NTRCA_SUBJECTS = null; // "NTRCA" ট্যাবের বিষয়ভিত্তিক প্রশ্ন-উত্তর — একবার লোড হলে ক্যাশ থাকে
+let NTRCA_SUBJECTS_PROMISE = null; // concurrent call guard
+let ACTIVE_NTRCA_SLUG = null; // বর্তমানে খোলা বিষয়ের slug (docs/ntrca/<slug>.md থেকে)
 // Bug 1 guard ছিল একটামাত্র গ্লোবাল কাউন্টার — কিন্তু renderTopicContent()
 // দুইটা আলাদা container-এর জন্য কল হয় (openTopic()-এর #card ও
 // openTopicInModal()-এর #topic-modal-body, দেখুন নিচের কমেন্ট)। একটামাত্র
@@ -2493,6 +2469,82 @@ function renderMcqView(){
   });
 }
 
+async function ensureNtrcaLoaded(){
+  if(NTRCA_SUBJECTS !== null) return;
+  if(!NTRCA_SUBJECTS_PROMISE){
+    NTRCA_SUBJECTS_PROMISE = fetch('./ntrca-index.json')
+      .then(r => { if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => { NTRCA_SUBJECTS = data.subjects || []; })
+      .catch(() => { NTRCA_SUBJECTS = []; });
+  }
+  await NTRCA_SUBJECTS_PROMISE;
+}
+
+// "NTRCA" ট্যাব — বাম পাশে বিষয়ের তালিকা (দর্শন/ভূগোল/...), ডানে বাছাই
+// করা বিষয়ের প্রশ্ন-উত্তর, পর্ব অনুযায়ী ভাগ করা। "টপিক" ব্রাউজ মোডের
+// drawer+card লেআউট অনুসরণ করে, কিন্তু আলাদা ডেটাসেট (ntrca-index.json)।
+function renderNtrcaList(){
+  const wrap = document.getElementById('ntrca-tab-list');
+  document.getElementById('ntrca-subject-count').textContent = String((NTRCA_SUBJECTS||[]).length);
+  if(!NTRCA_SUBJECTS || NTRCA_SUBJECTS.length === 0){
+    wrap.innerHTML = '<div class="empty-note">এখনো কোনো বিষয় যোগ হয়নি</div>';
+    return;
+  }
+  wrap.innerHTML = NTRCA_SUBJECTS.map(s => `
+    <button class="tab ${s.slug===ACTIVE_NTRCA_SLUG?'active':''}" data-slug="${escapeHtml(s.slug)}">
+      ${escapeHtml(s.title)}
+      <span class="tab-tags">${s.question_count} টি প্রশ্ন</span>
+    </button>
+  `).join('');
+  wrap.querySelectorAll('.tab').forEach(btn=>{
+    btn.addEventListener('click', ()=> openNtrcaSubject(btn.dataset.slug));
+  });
+}
+
+function openNtrcaSubject(slug){
+  ACTIVE_NTRCA_SLUG = slug;
+  renderNtrcaList();
+  const subject = (NTRCA_SUBJECTS||[]).find(s => s.slug === slug);
+  const card = document.getElementById('ntrca-card');
+  if(!subject){
+    card.innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">বিষয়টি পাওয়া যায়নি</div>
+      </div>`;
+    return;
+  }
+  let html = `<h2 style="margin-left:0;">${escapeHtml(subject.title)}</h2>`;
+  subject.parts.forEach(part => {
+    html += `<div class="mcq-section-heading">${escapeHtml(part.part_label)}</div>`;
+    html += `<ol class="ntrca-question-list">`;
+    part.questions.forEach(q => {
+      html += `<li class="ntrca-question"><div class="ntrca-q-text">${escapeHtml(q.q)}</div><div class="ntrca-a-text">${escapeHtml(q.a)}</div></li>`;
+    });
+    html += `</ol>`;
+  });
+  card.innerHTML = html;
+  card.scrollTop = 0;
+}
+
+function renderNtrcaView(){
+  closeTopicPreview();
+  renderNtrcaList();
+  if(!NTRCA_SUBJECTS || NTRCA_SUBJECTS.length === 0){
+    document.getElementById('ntrca-card').innerHTML = `
+      <div class="card-placeholder">
+        <div class="big">এখনো কোনো বিষয় যোগ হয়নি</div>
+        নতুন প্রশ্ন যোগ হলে এখানে দেখা যাবে
+      </div>`;
+    return;
+  }
+  // প্রথমবার এই মোডে ঢুকলে (কোনো বিষয় বাছাই করা না থাকলে) প্রথম বিষয়টা
+  // ডিফল্ট হিসেবে খুলে যায় — খালি "একটি বিষয় খুলুন" প্লেসহোল্ডার না দেখিয়ে
+  // সরাসরি কনটেন্ট দেখানো ভালো, যেহেতু বিষয়সংখ্যা কম ও সবই সমান গুরুত্বপূর্ণ।
+  openNtrcaSubject(ACTIVE_NTRCA_SLUG && NTRCA_SUBJECTS.some(s=>s.slug===ACTIVE_NTRCA_SLUG)
+    ? ACTIVE_NTRCA_SLUG
+    : NTRCA_SUBJECTS[0].slug);
+}
+
 // Wikipedia-ধাঁচের টপিক প্রিভিউ পপআপ। ডেস্কটপে (>720px ভিউপোর্ট) যে
 // এলিমেন্টে ক্লিক হয়েছে তার কাছাকাছি একটা ছোট অ্যাংকরড কার্ড হিসেবে দেখা যায়;
 // সরু/মোবাইল স্ক্রিনে বরাবরের মতো ডকুমেন্টের নিচ থেকে উঠে আসা শিট হিসেবে দেখা যায়,
@@ -2603,7 +2655,8 @@ const MODE_TAB_IDS = {
   'browse': 'browse-toggle-btn',
   'ghotonaprobaho': 'ghotonaprobaho-toggle-btn',
   'top-news': 'top-news-toggle-btn',
-  'mcq': 'mcq-toggle-btn'
+  'mcq': 'mcq-toggle-btn',
+  'ntrca': 'ntrca-toggle-btn'
 };
 
 function setActiveLayout(mode){
@@ -2611,15 +2664,10 @@ function setActiveLayout(mode){
   document.getElementById('ghotonaprobaho-layout').style.display = mode === 'ghotonaprobaho' ? '' : 'none';
   document.getElementById('top-news-layout').style.display = mode === 'top-news' ? '' : 'none';
   document.getElementById('mcq-layout').style.display = mode === 'mcq' ? '' : 'none';
-  // ভাসমান সার্চ বক্স "দৈনিক ঘটনাপ্রবাহ" ও "টপ নিউজ" — দুই মোডেই দেখানো হয়,
-  // কারণ এই দুই মোডেই বাম পাশের টপিক-তালিকা থাকে না।
-  const fsWrap = document.getElementById('floating-search-wrap');
-  if(mode === 'ghotonaprobaho' || mode === 'top-news'){
-    fsWrap.classList.add('visible');
-  } else {
-    fsWrap.classList.remove('visible');
-    closeFloatingSearch();
-  }
+  document.getElementById('ntrca-layout').style.display = mode === 'ntrca' ? '' : 'none';
+  // ভাসমান সার্চ বক্স সব মোডেই থাকে (CSS-এ সবসময় দৃশ্যমান); মোড বদলালে
+  // আগের মোডের অর্ধেক-লেখা সার্চ ও ফলাফল পরিষ্কার করে বক্সটা বন্ধ করা হয়।
+  closeFloatingSearch();
 }
 
 function resetModeTabButtons(){
@@ -2645,6 +2693,9 @@ async function setMode(mode){
   } else if(mode === 'mcq'){
     await ensureMcqLoaded();
     renderMcqView();
+  } else if(mode === 'ntrca'){
+    await ensureNtrcaLoaded();
+    renderNtrcaView();
   } else {
     document.getElementById('browse-layout').classList.remove('showing-article');
   }
@@ -2825,7 +2876,7 @@ function currentFiltered(q){
 // "সকল টপিক" তালিকায় দেখানোর জন্য চূড়ান্ত ফিল্টার — সার্চ কোয়েরি +
 // ঐচ্ছিক "শুধু প্রিয়" ফিল্টার একসাথে প্রয়োগ করে। ভাসমান সার্চ
 // (renderFloatingResults) ইচ্ছাকৃতভাবে এটা ব্যবহার করে না, কারণ সেটা
-// "দৈনিক ঘটনাপ্রবাহ" মোডে যেকোনো টপিক খুঁজে বের করার জন্য — বুকমার্ক
+// যেকোনো মোডে পড়তে পড়তে যেকোনো টপিক খুঁজে বের করার জন্য — বুকমার্ক
 // ফিল্টার দিয়ে সীমিত করা উচিত না।
 function visibleTopics(q){
   let list = currentFiltered(q);
@@ -2850,51 +2901,20 @@ document.getElementById('bookmark-filter-toggle').addEventListener('click', (e) 
 });
 
 // ══════════════════════════════════════════════════════
-// ভাসমান সার্চ বক্স ("দৈনিক ঘটনাপ্রবাহ" মোডে) — উপরের মূল #search-এর
+// ভাসমান সার্চ বক্স (সব মোডে — টপিক, ঘটনাপ্রবাহ, টপ নিউজ, MCQ) — উপরের মূল #search-এর
 // মতোই matchTopic/currentFiltered ব্যবহার করে টপিক খোঁজে, কিন্তু ফলাফল
 // একটা ছোট dropdown-এ দেখায় এবং ক্লিক করলে openTopicInModal() দিয়ে
 // একটা মডাল ওভারলেতে দেখায় — বর্তমান মোড/স্ক্রিন বদলায় না।
 // ══════════════════════════════════════════════════════
 const floatWrap = document.getElementById('floating-search-wrap');
 
-// ══════════════════════════════════════════════════════
-// স্ক্রল করলে সার্চ বাডি যাতে স্ক্রিনে একটা নির্দিষ্ট জায়গায় (উপরের
-// টুলবার এলাকায়) স্থির থেকে যায় — IntersectionObserver দিয়ে টুলবার
-// (theme-toggle-btn) ভিউপোর্টের ভেতরে আছে কিনা চেক করা হয়। টুলবার
-// দৃশ্যমান থাকলে বাডিটা স্বাভাবিক ফ্লোতে থাকে; স্ক্রল করে টুলবার
-// ভিউপোর্টের বাইরে চলে গেলে (ওপরে বা নিচে, যেকোনো দিকে স্ক্রল করলেই)
-// .scroll-pinned ক্লাস লেগে position:fixed হয়ে যায়, তাই বাডিটা
-// ভিউপোর্টের একই কোণায় (top:12px; right:16px) স্থির দেখা যায়। বক্সটা
-// টেনে সরানো (dragged) অবস্থায় থাকলে এই পিনিং প্রযোজ্য নয় — তখন
-// ড্র্যাগের নিজস্ব পজিশন প্রাধান্য পায়।
-// ══════════════════════════════════════════════════════
-(function enableFloatingSearchScrollPin(){
-  const anchor = document.getElementById('theme-toggle-btn');
-  if(!anchor || !('IntersectionObserver' in window)) return;
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(floatWrap.classList.contains('dragged')) return; // ড্র্যাগ করা অবস্থায় হস্তক্ষেপ করা হয় না
-      floatWrap.classList.toggle('scroll-pinned', !entry.isIntersecting);
-    });
-  }, { threshold: 0 });
-  observer.observe(anchor);
-})();
-
-// স্ক্রিন ঘোরালে, উইন্ডো রিসাইজ করলে, বা সার্চ পিল ওপেন করলে (width বেড়ে
-// যাওয়ায়) আগে টেনে সরানো বক্সটা স্ক্রিনের বাইরে চলে যেতে পারে — সেটা
-// ঠেকাতে বক্সটাকে আবার স্ক্রিনের সীমার মধ্যে টেনে আনা হয়। যেসব ক্ষেত্রে
-// বক্স কখনো টানা হয়নি (ডিফল্ট right/bottom পজিশনে আছে), সেখানে কিছু
-// করার দরকার নেই — CSS নিজেই সামলায়।
-function clampFloatingSearchToViewport(){
-  if(!floatWrap.classList.contains('dragged')) return;
-  const rect = floatWrap.getBoundingClientRect();
-  const maxLeft = Math.max(0, window.innerWidth - rect.width);
-  const maxTop = Math.max(0, window.innerHeight - rect.height);
-  const newLeft = Math.min(rect.left, maxLeft);
-  const newTop = Math.min(rect.top, maxTop);
-  floatWrap.style.left = newLeft + 'px';
-  floatWrap.style.top = newTop + 'px';
-}
+// ভাসমান সার্চ বক্স CSS-এ position:fixed — ↑ বাটনের ঠিক ওপরে স্থির, তাই
+// স্ক্রল-পিন/ড্র্যাগের কোনো JS লাগে না। ↑ বাটন ৩০০px স্ক্রলের পর দেখা যায়।
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+  scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+}, {passive:true});
+scrollTopBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 const floatPill = document.getElementById('floating-search-pill');
 const floatInput = document.getElementById('floating-search-input');
 const floatResults = document.getElementById('floating-search-results');
@@ -2905,11 +2925,6 @@ const topicModalClose = document.getElementById('topic-modal-close');
 function openFloatingSearch(){
   floatPill.classList.add('open');
   floatInput.focus();
-  // BUG FIX: পিল আগে থেকে টেনে সরানো (dragged) থাকলে এবং ডান কিনারার
-  // কাছাকাছি অবস্থায় থাকলে, ওপেন হওয়ার সময় width বেড়ে গিয়ে বক্সটা
-  // ভিউপোর্টের বাইরে চলে যেত — ইউজারকে হাত দিয়ে টেনে আনতে হতো। এখন
-  // ওপেন হওয়ার সাথে সাথেই ভিউপোর্টের মধ্যে ফিরিয়ে আনা হয়।
-  requestAnimationFrame(clampFloatingSearchToViewport);
 }
 
 function closeFloatingSearch(){
@@ -2999,101 +3014,6 @@ document.addEventListener('keydown', (e)=>{
     closeTopicModal();
   }
 });
-
-// ══════════════════════════════════════════════════════
-// ভাসমান সার্চ বক্স মাউস/টাচ দিয়ে টেনে মনিটরের যেকোনো জায়গায় রাখা যায়।
-// পজিশনটা শুধু চলতি সেশনে থাকে — পেজ রিফ্রেশ করলে আবার ডিফল্ট জায়গায়
-// (টুলবারে, লাইট/ডার্ক মোড বাটনের পাশে) ফিরে যায়, তাই কোথাও সংরক্ষণ
-// করার দরকার নেই। পিলের "🔍" আইকন বা বন্ধ-অবস্থার গোল বাটনটাই handle —
-// খোলা অবস্থায় ইনপুট বক্সের ভেতর ক্লিক করলে টাইপ করা যাবে, ড্র্যাগ
-// শুরু হবে না।
-// ══════════════════════════════════════════════════════
-(function enableFloatingSearchDrag(){
-  let dragging = false;
-  let moved = false;
-  let startX = 0, startY = 0;
-  let startLeft = 0, startTop = 0;
-
-  function getClientXY(e){
-    if(e.touches && e.touches.length) return {x:e.touches[0].clientX, y:e.touches[0].clientY};
-    return {x:e.clientX, y:e.clientY};
-  }
-
-  function dragStart(e){
-    // ইনপুট বক্স বা বন্ধ-বাটনে ক্লিক করলে ড্র্যাগ শুরু হবে না, শুধু
-    // পিলের বাকি অংশ (আইকন/ব্যাকগ্রাউন্ড) থেকেই ড্র্যাগ শুরু হয়।
-    if(e.target === floatInput || e.target === floatClose) return;
-    const {x, y} = getClientXY(e);
-    const rect = floatWrap.getBoundingClientRect();
-    dragging = true;
-    moved = false;
-    startX = x;
-    startY = y;
-    startLeft = rect.left;
-    startTop = rect.top;
-    floatPill.classList.add('dragging');
-    document.addEventListener('mousemove', dragMove);
-    document.addEventListener('mouseup', dragEnd);
-    document.addEventListener('touchmove', dragMove, {passive:false});
-    document.addEventListener('touchend', dragEnd);
-  }
-
-  function dragMove(e){
-    if(!dragging) return;
-    const {x, y} = getClientXY(e);
-    const dx = x - startX;
-    const dy = y - startY;
-    if(Math.abs(dx) > 3 || Math.abs(dy) > 3) moved = true;
-    if(!moved) return;
-    if(e.cancelable) e.preventDefault();
-
-    const rect = floatWrap.getBoundingClientRect();
-    const maxLeft = window.innerWidth - rect.width;
-    const maxTop = window.innerHeight - rect.height;
-    let newLeft = startLeft + dx;
-    let newTop = startTop + dy;
-    // মনিটরের বাইরে চলে যাওয়া ঠেকাতে সীমার মধ্যে রাখা হয়
-    newLeft = Math.max(0, Math.min(newLeft, Math.max(0, maxLeft)));
-    newTop = Math.max(0, Math.min(newTop, Math.max(0, maxTop)));
-
-    floatWrap.classList.add('dragged');
-    floatWrap.classList.remove('scroll-pinned'); // ড্র্যাগ শুরু হলে scroll-pin বাতিল, নাহলে দুই fixed পজিশন সাংঘর্ষিক হতে পারে
-    floatWrap.style.left = newLeft + 'px';
-    floatWrap.style.top = newTop + 'px';
-  }
-
-  function dragEnd(){
-    dragging = false;
-    floatPill.classList.remove('dragging');
-    document.removeEventListener('mousemove', dragMove);
-    document.removeEventListener('mouseup', dragEnd);
-    document.removeEventListener('touchmove', dragMove);
-    document.removeEventListener('touchend', dragEnd);
-    // ড্র্যাগ শেষে ক্লিক ইভেন্ট বাতিল করা হয়, যাতে টেনে ছাড়ার পর
-    // ভুলবশত পিল open/close টগল না হয়ে যায়। এই লিসেনারটা নিজে থেকেই
-    // সরে যায় ক্লিক এলে — কিন্তু কোনো কারণে click ইভেন্ট না এলে (যেমন
-    // ছেড়ে দেওয়ার পর মাউস অন্য কোথাও চলে যায়) যাতে চিরস্থায়ীভাবে লেগে
-    // থেকে পরের আসল ক্লিককে দমন না করে, তাই একটা টাইমআউট ফলব্যাক
-    // হিসেবে অল্প সময় পরই নিজে থেকে সরিয়ে দেয়।
-    if(moved){
-      const suppressClick = (ev) => {
-        ev.stopPropagation();
-        floatPill.removeEventListener('click', suppressClick, true);
-        clearTimeout(cleanupTimer);
-      };
-      floatPill.addEventListener('click', suppressClick, true);
-      const cleanupTimer = setTimeout(() => {
-        floatPill.removeEventListener('click', suppressClick, true);
-      }, 300);
-    }
-  }
-
-  floatPill.addEventListener('mousedown', dragStart);
-  floatPill.addEventListener('touchstart', dragStart, {passive:true});
-
-  window.addEventListener('resize', clampFloatingSearchToViewport);
-  window.addEventListener('orientationchange', clampFloatingSearchToViewport);
-})();
 
 // ══════════════════════════════════════════════════════
 // সার্চ বাডির কিউট আচরণ: র‍্যান্ডম বিরতিতে চোখের পলক (যাতে যান্ত্রিক
@@ -3387,6 +3307,10 @@ document.getElementById('mcq-toggle-btn').addEventListener('click', () => {
   setMode('mcq');
 });
 
+document.getElementById('ntrca-toggle-btn').addEventListener('click', () => {
+  setMode('ntrca');
+});
+
 loadIndex().then(() => {
   INDEX_LOADED = true;
   // লোডিং চলাকালীন hashchange ইভেন্ট এসে থাকলে সেই স্লাগ ব্যবহার করা হবে,
@@ -3455,26 +3379,6 @@ if (cacheRefreshBtn) {
     window.location.href = url.toString();
   });
 }
-
-// "ওপরে ফিরুন" বাটন — স্ক্রল একটা থ্রেশহোল্ডের বেশি নামলে দেখায়, ক্লিকে
-// smooth scroll করে ওপরে নিয়ে যায়। সব ভিউতে একই বাটন (DOM-এ একবারই আছে)।
-(function initBackToTop() {
-  const btn = document.getElementById("back-to-top-btn");
-  if (!btn) return;
-  const SHOW_AFTER_PX = 320;
-  function toggleVisibility() {
-    if (window.scrollY > SHOW_AFTER_PX) {
-      btn.classList.add("visible");
-    } else {
-      btn.classList.remove("visible");
-    }
-  }
-  window.addEventListener("scroll", toggleVisibility, { passive: true });
-  toggleVisibility();
-  btn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-})();
 </script>
 
 </body>

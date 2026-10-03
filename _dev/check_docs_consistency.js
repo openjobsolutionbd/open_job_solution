@@ -25,7 +25,8 @@
  *      ফাইল নেই), প্রতিটা সেকশন-শিরোনাম সব ফাইল মিলিয়ে ঠিক একবার আছে (কোনো সেকশন
  *      হারায়নি বা ডুপ্লিকেট হয়নি), মূল ফাইলের সূচিতে প্রতিটা অংশ-ফাইল উল্লিখিত, এবং
  *      "⛔ কঠোর নিষেধাজ্ঞা" ব্লক মূল ফাইলে আছে, এবং কোনো ডকুমেন্ট `job-app/<নাম>.md` বলে এমন ফাইলের
- *      উল্লেখ করছে না যা নেই (নাম বদলের পর ভাঙা রেফারেন্স)
+ *      উল্লেখ করছে না যা নেই (নাম বদলের পর ভাঙা রেফারেন্স), এবং কোনো সেকশন-ফাইল অন্য সেকশন-ফাইলের
+ *      সেকশন/ফাইলের দিকে পয়েন্ট করছে না (প্রতিটা সেকশন-ফাইল + মূল ফাইল = স্বয়ংসম্পূর্ণ)
  *
  * exit code 0 = ঠিক আছে, 1 = সমস্যা পাওয়া গেছে (CI fail করবে)।
  */
@@ -135,7 +136,7 @@ const PARTS = [
   "bcs-mcq.md",
   "primary-mcq.md",
   "ministry-mcq.md",
-  "topics-and-roadmap.md",
+  "roadmap.md",
 ];
 const toBn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
 // প্রতিটা শিরোনাম-প্রিফিক্স সব ফাইল মিলিয়ে ঠিক একবার থাকতে হবে
@@ -193,6 +194,67 @@ if (mdCandidates.length >= 1) {
         if (!inFence && line.startsWith("## ")) headingLines.push({ file: path.relative(ROOT, f), line });
       }
     }
+    // "Section ৯, ৬", "sections ৮ ও ৬", "§৫–§৭", "সেকশন ৫-ক" — তালিকা/রেঞ্জ/ছোট-হাতের/বহুবচনসহ সব সেকশন-নম্বর বের করে।
+    // (শুধু বাংলা অঙ্ক — ডকুমেন্টের নিয়ম; ASCII অঙ্কে "section 3" মানে সাধারণত অ্যাপের সেকশন, তাই ইচ্ছা করেই ধরা হয় না)
+    const NUM = "[০-৯]+(?:-[কখ])?";
+    const REF = new RegExp(`(?:Sections?|সেকশন(?:গুলো)?|§)\\s*(${NUM}(?:\\s*(?:,|ও|এবং|/|–|-|—|বা|and|or|to)\\s*(?:§\\s*)?${NUM})*)`, "gi");
+    const sectionRefs = (line) => {
+      const out = [];
+      for (const m of line.matchAll(REF)) for (const n of m[1].match(new RegExp(NUM, "g"))) out.push(n);
+      return out;
+    };
+    // সেকশন-নম্বর → যে ফাইলে তার "## N." শিরোনাম আছে
+    const owner = {};
+    for (const h of headingLines) {
+      const m = h.line.match(/^## ([০-৯]+(?:-[কখ])?)\. /);
+      if (m) owner[m[1]] = path.basename(h.file);
+    }
+    // স্বয়ংসম্পূর্ণতা: প্রতিটা সেকশন-ফাইল (written-exam/bcs-mcq/primary-mcq/ministry-mcq) + মূল ফাইল = সেই সেকশনের কাজের সবকিছু।
+    // তাই এক সেকশন-ফাইল অন্য সেকশন-ফাইলের সেকশনের দিকে পয়েন্ট করতে পারবে না (পাঠক/এজেন্টকে অন্য ফাইলে যেতে হবে — ভুলের ঝুঁকি)।
+    // মূল ফাইলের সেকশন (§১–§২, §১০–§১৪) সবসময় পড়া হয়, তাই সেগুলোর উল্লেখ চলবে। roadmap.md/version-history.md এই নিয়মের বাইরে।
+    {
+      const SECTION_FILES = ["written-exam.md", "bcs-mcq.md", "primary-mcq.md", "ministry-mcq.md"];
+      for (const f of SECTION_FILES) {
+        const fp = path.join(PARTS_DIR, f);
+        if (!fs.existsSync(fp)) continue;
+        let inFence = false;
+        fs.readFileSync(fp, "utf8").split("\n").forEach((line, i) => {
+          if (/^\s*```/.test(line)) { inFence = !inFence; return; }
+          if (inFence) return;
+          for (const n of sectionRefs(line)) {
+            const o = owner[n];
+            if (o && o !== f && o !== path.basename(MASTER_DOC)) {
+              errors.push(`❌ _docs/job-app/${f}:${i + 1} §${n}-এর উল্লেখ করছে, যা ${o}-এ আছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে (মূল ফাইল + নিজের ফাইলই যথেষ্ট); প্রয়োজনীয় নিয়ম এই ফাইলে আনুন বা উল্লেখটা সরান।`);
+            }
+          }
+          for (const m of line.matchAll(/\]\(\.\/([A-Za-z0-9_-]+\.md)\)/g)) {
+            if (m[1] !== f) errors.push(`❌ _docs/job-app/${f}:${i + 1} অন্য অংশ-ফাইল (${m[1]})-এ লিংক দিচ্ছে — সেকশন-ফাইল স্বয়ংসম্পূর্ণ হতে হবে।`);
+          }
+        });
+      }
+    }
+
+    // মূল ফাইল সবসময় পড়া হয় — তাই এর কোনো লাইন "Section N দেখুন" বলে সেকশন-ফাইলের দিকে পাঠালে সেই লাইনেই ফাইলের নাম থাকতে হবে,
+    // নইলে অন্য সেকশনের কাজ করা এজেন্ট ভুল ফাইলে চলে যেতে পারে। কোড-ব্লক (ফোল্ডার-ট্রির "section 3" = অ্যাপের সেকশন)
+    // এবং "Document index" সেকশন (এটাই নম্বর→ফাইল মানচিত্র) বাদ।
+    {
+      let inFence = false, inIndex = false;
+      masterText.split("\n").forEach((line, i) => {
+        if (/^\s*```/.test(line)) { inFence = !inFence; return; }
+        if (inFence) return;
+        if (line.startsWith("## ")) inIndex = line.startsWith("## 📑");
+        if (inIndex) return;
+        const missing = new Set();
+        for (const n of sectionRefs(line)) {
+          const o = owner[n];
+          if (o && o !== path.basename(MASTER_DOC) && !line.includes(o)) missing.add(`§${n} (${o})`);
+        }
+        if (missing.size > 0) {
+          errors.push(`❌ _docs/job-app-MD.md:${i + 1} সেকশন-ফাইলের দিকে পাঠাচ্ছে কিন্তু ফাইলের নাম লেখেনি: ${[...missing].join(", ")} — একই লাইনে ফাইলের নাম যোগ করুন (যেমন \`job-app/written-exam.md\`)।`);
+        }
+      });
+    }
+
     for (const prefix of EXPECTED_HEADINGS) {
       const hits = headingLines.filter((h) => h.line.startsWith(prefix));
       if (hits.length === 0) {
@@ -242,7 +304,7 @@ if (mdCandidates.length >= 1) {
 
   // আকার-সতর্কতা (ব্যর্থ করে না) — ভাগ করার উদ্দেশ্যই ছিল মূল ফাইল ছোট রাখা
   const MAIN_WARN_BYTES = 40000;
-  const PART_WARN_BYTES = 30000;
+  const PART_WARN_BYTES = 40000;
   const mainSize = Buffer.byteLength(masterText, "utf8");
   if (mainSize > MAIN_WARN_BYTES) {
     warnings.push(`⚠️  job-app-MD.md এখন ${mainSize} বাইট (সীমা ${MAIN_WARN_BYTES}) — এটা সব কাজেই পড়তে হয়, তাই বড় কোনো অংশ _docs/job-app/-এর ফাইলে সরানো বিবেচনা করুন।`);

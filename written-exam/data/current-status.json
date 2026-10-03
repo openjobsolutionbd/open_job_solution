@@ -510,7 +510,13 @@
       "source": [
         "current-affairs:jatiyo-bajet-2026-27-o-srijonshil-orthoniti"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "per-capita-income"
+      ],
+      "factHashes": {
+        "per-capita-income": "1fdc1b6ab6da"
+      }
     },
     {
       "key": "2025-agri-info-office-asst-q13-p11",
@@ -540,7 +546,13 @@
         "web:bimstec.org (বাংলাদেশ এপ্রিল ২০২৫ থেকে দুই বছরের জন্য চেয়ার)",
         "web:mofa.gov.np",
         "web: BIMSTEC/UNB (২০২৫-০৪, ২০২৬-০৭)"
-      ]
+      ],
+      "facts": [
+        "bimstec"
+      ],
+      "factHashes": {
+        "bimstec": "a3d5c3ee5d4a"
+      }
     },
     {
       "key": "2025-agri-info-office-asst-q13-p3",
@@ -567,7 +579,13 @@
         "web:prothomalo.com (২১ আগস্ট ২০২৬)",
         "web:itvbd.com (২১ আগস্ট ২০২৬)"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "president"
+      ],
+      "factHashes": {
+        "president": "d50c9320fd05"
+      }
     },
     {
       "key": "2025-air-force-office-sohayok-q12-p6",
@@ -891,7 +909,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-dphe-rangamati-office-asst-typist-q14-p13",
@@ -1087,7 +1111,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-health-services-office-sohayak-q15-p8",
@@ -1241,7 +1271,13 @@
         "আসেয়ান",
         "ASEAN"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-judicial-service-steno-q08-p4",
@@ -1394,7 +1430,13 @@
         "COP",
         "কপ-"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "cop"
+      ],
+      "factHashes": {
+        "cop": "4457df4ae0fb"
+      }
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p14",
@@ -1423,7 +1465,13 @@
       "verifiedOn": "2026-09-28",
       "source": [
         "current-affairs:brics-jot"
-      ]
+      ],
+      "facts": [
+        "brics"
+      ],
+      "factHashes": {
+        "brics": "8129277bbff7"
+      }
     },
     {
       "key": "2025-navy-office-q18",
@@ -1447,7 +1495,13 @@
       "verifiedOn": "2026-09-28",
       "source": [
         "current-affairs:brics-jot"
-      ]
+      ],
+      "facts": [
+        "brics"
+      ],
+      "factHashes": {
+        "brics": "8129277bbff7"
+      }
     },
     {
       "key": "2025-ncc-sub-asst-engineer-civil-q20",
@@ -1467,7 +1521,13 @@
         "COP",
         "কপ-"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "cop"
+      ],
+      "factHashes": {
+        "cop": "4457df4ae0fb"
+      }
     },
     {
       "key": "2025-nlasp-office-asst-typist-q08-p5",
@@ -1508,7 +1568,13 @@
         "গুতেরেস",
         "গুতেরেজ"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "un-secretary-general"
+      ],
+      "factHashes": {
+        "un-secretary-general": "97a28358ab56"
+      }
     },
     {
       "key": "2025-primary-mass-edu-steno-typist-q16-p4",
@@ -1664,7 +1730,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-biddyut-office-asst-typist-q16-p8",
@@ -1697,7 +1769,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-btmc-sub-asst-engineer-civil-q11-p10",
@@ -1720,7 +1798,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-coast-guard-support-sep-q13-p11",
@@ -1748,7 +1832,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-dc-office-sunamganj-hisab-sohokari-q12-p6",
@@ -1776,7 +1866,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-national-population-research-training-institute-prodhan-sohokari-q12-p13",
@@ -1804,7 +1900,13 @@
       "source": [
         "current-affairs:football-biswakap-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "fifa-world-cup-2026"
+      ],
+      "factHashes": {
+        "fifa-world-cup-2026": "f0caa87f4b51"
+      }
     },
     {
       "key": "2025-prison-teacher-q14-p12",
@@ -1827,7 +1929,13 @@
       "source": [
         "current-affairs:sheetkalin-olympic-2026"
       ],
-      "verifiedOn": "2026-09-29"
+      "verifiedOn": "2026-09-29",
+      "facts": [
+        "winter-olympics-2026"
+      ],
+      "factHashes": {
+        "winter-olympics-2026": "90e8c94f4d7d"
+      }
     },
     {
       "key": "2025-iwta-traffic-q06-p14",
@@ -1895,7 +2003,13 @@
         "ASEAN",
         "পূর্ব তিমুর"
       ],
-      "watchSeen": []
+      "watchSeen": [],
+      "facts": [
+        "asean"
+      ],
+      "factHashes": {
+        "asean": "2ad26040c6d2"
+      }
     },
     {
       "key": "2025-erd-steno-typist-q19",

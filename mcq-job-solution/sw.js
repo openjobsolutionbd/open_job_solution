@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'mcqhub-';
-const CACHE_VERSION = CACHE_PREFIX + 'v1.409';
+const CACHE_VERSION = CACHE_PREFIX + 'v1.410';
 
 // এই sw.js শুধু MCQ Job Solution হাবের নিজের পেজ (ও nctb-mcq/ প্লেসহোল্ডার) cache করে —
 // primary-mcq/ ও ministry-mcq/ প্রতিটার নিজস্ব sw.js আলাদাভাবে নিজেদের ফাইল cache করে।
